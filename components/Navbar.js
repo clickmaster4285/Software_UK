@@ -145,13 +145,6 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <Link
-            href="/login"
-            className={`transition-colors font-body text-sm ${isScrolled ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
-              }`}
-          >
-            Sign In
-          </Link>
-          <Link
             href="/contact"
             className="px-5 py-2.5 bg-accent text-white font-body text-sm font-medium rounded-lg hover:bg-accent-hover transition-colors shadow-lg"
           >

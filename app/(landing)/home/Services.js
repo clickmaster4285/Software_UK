@@ -10,42 +10,42 @@ const services = [
     description: "Custom enterprise platforms and scalable SaaS products engineered for high performance.",
     icon: <Code2 className="w-10 h-10" />,
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop",
-    href: "/solutions/software-development"
+    href: "/software-development"
   },
   {
     title: "Web Development",
     description: "Modern web applications and SEO-optimized portals that convert visitors into revenue.",
     icon: <Globe2 className="w-10 h-10" />,
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop",
-    href: "/solutions/web-development"
+    href: "/web-development"
   },
   {
     title: "Mobile Development",
     description: "Native and cross-platform mobile apps for iOS and Android with seamless sync capabilities.",
     icon: <Smartphone className="w-10 h-10" />,
     image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop",
-    href: "/solutions/mobile-development"
+    href: "/mobile-development"
   },
   {
     title: "AI & Machine Learning",
     description: "Transformative generative AI, RAG systems, and predictive models integrated into your workflow.",
     icon: <BrainCircuit className="w-10 h-10" />,
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop",
-    href: "/solutions/artificial-intelligence-ai"
+    href: "/artificial-intelligence-ai"
   },
   {
     title: "UI/UX Design",
     description: "User-first design systems and interactive prototypes focused on measurable business outcomes.",
     icon: <Palette className="w-10 h-10" />,
     image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    href: "/solutions/design"
+    href: "/design"
   },
   {
     title: "Cloud & DevOps",
     description: "Scalable cloud-native architecture and automated CI/CD pipelines for zero-downtime releases.",
     icon: <Database className="w-10 h-10" />,
     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
-    href: "/solutions/cloud-devops"
+    href: "/cloud-devops"
   }
 ];
 
@@ -126,15 +126,6 @@ export default function Services() {
               </Link>
             </motion.div>
           ))}
-        </div>
-
-        <div className="mt-20 text-center">
-          <Link
-            href="/solutions"
-            className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-white font-body font-bold rounded-2xl hover:bg-accent transition-all shadow-xl shadow-primary/20 hover:scale-105 active:scale-95"
-          >
-            View All Specialized Services
-          </Link>
         </div>
       </div>
     </section>

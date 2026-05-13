@@ -17,12 +17,12 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-  title: "ClickMasters | Software Development Company",
-  description: "We build powerful software that helps companies work smarter everywhere. Custom web apps, mobile apps, and enterprise software solutions.",
+  title: "Best Software Development Company in UK",
+  description: "Creating the future of business. We’re a Software development Company delivering bespoke web, mobile, SaaS, and AI-powered systems including AI monitoring solutions powering a global market",
   keywords: ["software development", "web apps", "mobile apps", "enterprise software", "SaaS", "AI solutions"],
   openGraph: {
-    title: "ClickMasters | Software Development Company",
-    description: "We build powerful software that helps companies work smarter everywhere.",
+    title: "Best Software Development Company in UK",
+    description: "Creating the future of business. We’re a Software development Company delivering bespoke web, mobile, SaaS, and AI-powered systems including AI monitoring solutions powering a global market",
     type: "website",
   },
 };
