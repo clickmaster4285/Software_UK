@@ -35,13 +35,13 @@ export function TechStackSection() {
     <section className="relative py-12 lg:py-32 bg-primary overflow-hidden">
       {/* Background patterns */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,var(--color-accent)_1px,transparent_1px)] bg-[size:40px_40px]" />
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,var(--color-accent)_1px,transparent_1px)] bg-size-[40px_40px]" />
       </div>
 
       {/* Decorative Illustrations */}
       <motion.img
         initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 0.4, x: 0 }}
+        whileInView={{ opacity: 0.8, x: 0 }}
         animate={{ y: [0, 10, 0] }}
         transition={{ 
           x: { duration: 1 }, 
@@ -55,7 +55,7 @@ export function TechStackSection() {
 
       <motion.img
         initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 0.4, x: 0 }}
+        whileInView={{ opacity: 0.8, x: 0 }}
         animate={{ y: [0, -10, 0] }}
         transition={{ 
           x: { duration: 1 }, 
@@ -85,7 +85,7 @@ export function TechStackSection() {
         </motion.div>
       </div>
 
-      <div className="relative w-full aspect-square max-w-[1000px] mx-auto flex items-center justify-center scale-90 md:scale-100">
+      <div className="relative w-full aspect-square max-w-250 mx-auto flex items-center justify-center scale-90 md:scale-100">
         <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full pointer-events-none overflow-visible">
           <defs>
             <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -186,12 +186,12 @@ export function TechStackSection() {
                   <motion.div 
                     animate={{ y: [0, -6, 0], x: [0, 4, 0] }}
                     transition={{ duration: 4 + (i % 3), repeat: Infinity, ease: "easeInOut" }}
-                    className="w-8 h-8 md:w-14 md:h-14 bg-primary/90 backdrop-blur-xl border border-white/5 rounded-full flex items-center justify-center p-1.5 group-hover:border-accent group-hover:bg-accent/10 group-hover:shadow-[0_0_20px_rgba(212,160,23,0.3)] transition-all duration-500"
+                    className="w-10 h-10 md:w-18 md:h-18 bg-primary/90 backdrop-blur-xl border border-white/5 rounded-full flex items-center justify-center p-1.5 group-hover:border-accent group-hover:bg-accent/10 group-hover:shadow-[0_0_20px_rgba(212,160,23,0.3)] transition-all duration-500"
                   >
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-full h-full object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 scale-90 group-hover:scale-110"
+                      className="w-full h-full object-contain transition-all duration-500  group-hover:scale-115"
                     />
                   </motion.div>
                   

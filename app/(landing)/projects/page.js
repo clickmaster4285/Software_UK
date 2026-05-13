@@ -4,7 +4,8 @@ import { useProjectList } from '@/hooks/useProjects';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Globe, Layout, Smartphone, GitBranch, Server } from 'lucide-react';
+import { ExternalLink, Globe, Layout, Smartphone, GitBranch, Server, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const iconMap = {
   'web': <Globe className="w-5 h-5" />,
@@ -97,7 +98,7 @@ export default function ProjectsPage() {
                           </a>
                         </Button>
                         <Button variant="outline" size="icon" className="w-8 h-8 rounded-lg border-slate-200">
-                          <Github className="w-4 h-4" />
+                          <GitBranch className="w-4 h-4" />
                         </Button>
                       </div>
                       <a 

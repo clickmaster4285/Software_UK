@@ -1,107 +1,143 @@
-'use client';
+"use client";
 
 import Link from "next/link";
-import { useCategoryList } from "@/hooks/useCategories";
-import { Skeleton } from "@/components/ui/skeleton";
-import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowRight, Code2, Globe2, Smartphone, Palette, BrainCircuit, Database } from "lucide-react";
 
-const mainServices = [
-   {
-      title: "Agile Software Development",
-      description: "Sprint-based delivery with full transparency. Our software developers ship faster, iterate smarter, and keep you in control at every milestone.",
-   },
-   {
-      title: "Scalable & Future-Proof Architecture",
-      description: "We engineer software solutions on proven stacks � React, Node.js, and cloud-native infrastructure � built to scale without costly rewrites.",
-   },
-   {
-      title: "Enterprise Security & Compliance",
-      description: "Every product from our software house follows OWASP standards, GDPR best practices, and rigorous QA � so your business and users stay protected.",
-   },
-   {
-      title: "24/7 Dedicated Support",
-      description: "Our software development company stays with you post-launch � monitoring performance, deploying updates, and resolving issues around the clock.",
-   },
+const services = [
+  {
+    title: "Software Development",
+    description: "Custom enterprise platforms and scalable SaaS products engineered for high performance.",
+    icon: <Code2 className="w-10 h-10" />,
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop",
+    href: "/solutions/software-development"
+  },
+  {
+    title: "Web Development",
+    description: "Modern web applications and SEO-optimized portals that convert visitors into revenue.",
+    icon: <Globe2 className="w-10 h-10" />,
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop",
+    href: "/solutions/web-development"
+  },
+  {
+    title: "Mobile Development",
+    description: "Native and cross-platform mobile apps for iOS and Android with seamless sync capabilities.",
+    icon: <Smartphone className="w-10 h-10" />,
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop",
+    href: "/solutions/mobile-development"
+  },
+  {
+    title: "AI & Machine Learning",
+    description: "Transformative generative AI, RAG systems, and predictive models integrated into your workflow.",
+    icon: <BrainCircuit className="w-10 h-10" />,
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop",
+    href: "/solutions/artificial-intelligence-ai"
+  },
+  {
+    title: "UI/UX Design",
+    description: "User-first design systems and interactive prototypes focused on measurable business outcomes.",
+    icon: <Palette className="w-10 h-10" />,
+    image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    href: "/solutions/design"
+  },
+  {
+    title: "Cloud & DevOps",
+    description: "Scalable cloud-native architecture and automated CI/CD pipelines for zero-downtime releases.",
+    icon: <Database className="w-10 h-10" />,
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
+    href: "/solutions/cloud-devops"
+  }
 ];
 
 export default function Services() {
-   const { data: categories, isLoading } = useCategoryList();
-   const homeCategories = categories?.filter(c => c.showOnHome && !c.deleted) || [];
+  return (
+    <section className="py-32 bg-surface overflow-hidden">
+      <div className="max-w-400 mx-auto px-6">
+        <div className="text-center mb-20">
+          <motion.span 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-accent/60 font-bold uppercase tracking-loose text-[9.25rem] leading-0 "
+          >
+            What We Do
+          </motion.span>
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            viewport={{ once: true }}
+            className="font-heading font-bold text-2xl md:text-3xl text-primary mt-4 mb-6 tracking-tight"
+          >
+            End-to-End <span className="text-accent">Engineering Excellence</span>
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ once: true }}
+            className="text-text-body font-body text-lg "
+          >
+            We combine strategic product design with deep technical expertise to build software that scales.
+          </motion.p>
+        </div>
 
-   return (
-      <section className="py-24 bg-surface">
-         <div className="max-w-400 mx-auto px-6">
-            <div className="text-center mb-16">
-               <h2 className="font-heading font-bold text-3xl md:text-5xl text-primary mb-4 tracking-tight">
-                  Ready to accelerate your business?
-               </h2>
-               <p className="text-text-body font-body max-w-2xl mx-auto">
-                  Partner with a software house that prioritizes your ROI through technical excellence and strategic engineering.
-               </p>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <motion.div
+              key={service.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <Link
+                href={service.href}
+                className="group relative block h-105 rounded-[2.5rem] overflow-hidden bg-white shadow-sm hover:shadow-2xl transition-all duration-500"
+              >
+                {/* Background Image with Overlay */}
+                <div className="absolute inset-0 z-0">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 grayscale group-hover:grayscale-0 group-hover:opacity-40"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/10 to-primary/40 z-10" />
+                </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-               {mainServices.map((service, index) => (
-                  <div key={index} className="p-10 bg-white rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
-                     <h3 className="font-heading font-bold text-2xl text-primary mb-4 tracking-tight">
-                        {service.title}
-                     </h3>
-                     <p className="text-text-body font-body leading-relaxed">{service.description}</p>
+                {/* Content */}
+                <div className="relative z-20 p-10 h-full flex flex-col justify-between">
+                  <div>
+                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white shadow-lg text-accent mb-8 group-hover:scale-110 group-hover:bg-accent group-hover:text-white transition-all duration-500">
+                      {service.icon}
+                    </div>
+                    <h3 className="font-heading font-semibold text-3xl text-white mb-4 group-hover:text-accent transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-100 font-body text-sm leading-relaxed max-w-60 group-hover:text-white transition-colors duration-500">
+                      {service.description}
+                    </p>
                   </div>
-               ))}
-            </div>
 
-            <div className="text-center mb-12">
-               <span className="text-accent font-bold uppercase tracking-widest text-sm">Specialized Expertise</span>
-               <h3 className="font-heading font-bold text-3xl text-primary mt-4 mb-4">
-                  Comprehensive Software Solutions
-               </h3>
-               <p className="text-text-body font-body max-w-2xl mx-auto">
-                  From custom web apps to complex cloud infrastructure, we deliver the technical edge your business needs to scale.
-               </p>
-            </div>
+                  <div className="flex items-center gap-2 text-white  font-bold text-xs uppercase tracking-wide transition-colors duration-500">
+                    Explore Solution <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-               {isLoading ? (
-                  [1, 2, 3, 4].map(i => <Skeleton key={i} className="h-40 rounded-2xl" />)
-               ) : (
-                  homeCategories.map((cat) => (
-                     <Link
-                        key={cat._id}
-                        href={`/solutions/${cat.slug || cat._id}`}
-                        className="p-6 bg-white rounded-2xl border border-slate-100 hover:border-primary hover:shadow-xl transition-all group relative flex flex-col justify-between"
-                     >
-                        <div>
-                           <h4 className="font-heading font-bold text-lg text-primary mb-3 group-hover:text-accent transition-colors">
-                              {cat.name}
-                           </h4>
-                           <p className="text-text-muted font-body text-sm leading-relaxed">
-                              {cat.description || "Expert software development and strategic consulting."}
-                           </p>
-                        </div>
-                        <div className="mt-6 flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity">
-                           Explore Solution <ArrowRight className="w-4 h-4" />
-                        </div>
-                     </Link>
-                  ))
-               )}
-            </div>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-               <Link
-                  href="/contact"
-                  className="w-full sm:w-auto px-8 py-4 bg-primary text-white font-body font-bold rounded-xl hover:bg-primary-light transition-all shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 text-center"
-               >
-                  Get Free Consultation
-               </Link>
-               <Link
-                  href="/solutions"
-                  className="w-full sm:w-auto px-8 py-4 bg-white text-primary border-2 border-primary font-body font-bold rounded-xl hover:bg-slate-50 transition-all text-center"
-               >
-                  View All Solutions
-               </Link>
-            </div>
-         </div>
-      </section>
-   );
+        <div className="mt-20 text-center">
+          <Link
+            href="/solutions"
+            className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-white font-body font-bold rounded-2xl hover:bg-accent transition-all shadow-xl shadow-primary/20 hover:scale-105 active:scale-95"
+          >
+            View All Specialized Services
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
 }
+
