@@ -1,0 +1,12 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f5f5f5"/>
+  <g transform="translate(25, 35)">
+    <rect x="0" y="0" width="40" height="50" fill="none" stroke="#6712AE" stroke-width="2" rx="2"/>
+    <rect x="50" y="10" width="35" height="40" fill="none" stroke="#6712AE" stroke-width="2" rx="2"/>
+    <circle cx="20" cy="15" r="3" fill="#6712AE"/>
+    <circle cx="20" cy="35" r="3" fill="#6712AE"/>
+    <circle cx="67" cy="25" r="3" fill="#6712AE"/>
+    <line x1="40" y1="25" x2="50" y2="25" stroke="#6712AE" stroke-width="1" stroke-dasharray="2,2"/>
+  </g>
+  <text x="100" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">Infrastructure</text>
+</svg>
