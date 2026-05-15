@@ -6,50 +6,49 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { ExternalLink, ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export default function SolutionCTA() {
   const { data: projects, isLoading } = useProjectList();
-  
+  const sectionRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "center center"],
+  });
+
+  // Section level scroll animations
+  const scale = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const blur = useTransform(scrollYProgress, [0, 1], ["blur(10px)", "blur(0px)"]);
+
   // Show only featured or latest 3 projects
   const featuredProjects = projects?.slice(0, 3) || [];
 
   return (
-    <section className="py-32 bg-white relative overflow-hidden">
-      <div className="max-w-400 mx-auto px-6 relative z-10">
+    <section ref={sectionRef} className="py-32 bg-white relative overflow-hidden">
+      <motion.div 
+        style={{ scale, opacity, filter: blur }}
+        className="max-w-400 mx-auto px-6 relative z-10"
+      >
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <motion.span 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-accent font-bold uppercase tracking-widest text-sm"
-            >
+            <span className="text-accent font-bold uppercase tracking-widest text-sm block mb-4">
               Our Recent Work
-            </motion.span>
-            <motion.h2 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              viewport={{ once: true }}
-              className="font-heading font-bold text-3xl md:text-5xl text-primary mt-4 tracking-tight"
-            >
+            </span>
+            <h2 className="font-heading font-bold text-3xl md:text-5xl text-primary tracking-tight">
               Software Solutions That <span className="text-accent">Deliver Results</span>
-            </motion.h2>
+            </h2>
           </div>
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <Link
               href="/projects"
               className="group inline-flex items-center gap-2 text-primary font-bold hover:text-accent transition-colors"
             >
               View All Projects <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-          </motion.div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -64,39 +63,49 @@ export default function SolutionCTA() {
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="py-0 group border-none shadow-sm hover:shadow-2xl transition-all duration-500 rounded-[2.5rem] overflow-hidden bg-surface flex flex-col h-full">
-                  <div className="aspect-4/3 relative overflow-hidden bg-slate-100">
+                <Card className=" py-0 group border border-border/50 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 rounded-[2rem] overflow-hidden bg-white flex flex-col h-full cursor-pointer">
+                  <div className="aspect-16/10 relative overflow-hidden">
                     <img 
                       src={project.thumbnail || "https://via.placeholder.com/800x600?text=Project"} 
                       alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute top-6 right-6">
-                      <Badge className="bg-white/95 text-primary border-none backdrop-blur-md uppercase tracking-wider text-[10px] font-black px-3 py-1.5 shadow-lg">
+                    {/* Subtle overlay on hover */}
+                    <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    
+                    <div className="absolute top-4 right-4">
+                      <Badge className="bg-white/80 backdrop-blur-md text-primary border-none uppercase tracking-wider text-[10px] font-bold px-3 py-1.5 shadow-sm">
                         {project.status || "Completed"}
                       </Badge>
                     </div>
                   </div>
-                  <CardContent className="p-10 flex-1 flex flex-col">
-                    <h3 className="text-2xl font-heading font-bold text-primary mb-4 group-hover:text-accent transition-colors">
-                      {project.title}
-                    </h3>
-                    <p className="text-text-body font-body text-sm line-clamp-3 mb-8 flex-1 leading-relaxed">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {project.tags?.slice(0, 3).map(tag => (
-                        <span key={tag} className="text-[10px] font-bold text-text-muted uppercase tracking-wider bg-white border border-border px-3 py-1 rounded-full">
-                          #{tag}
-                        </span>
-                      ))}
+
+                  <CardContent className="p-8 flex-1 flex flex-col">
+                    <div className="flex-1">
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.tags?.slice(0, 3).map(tag => (
+                          <span key={tag} className="text-[10px] font-bold text-accent uppercase tracking-widest bg-accent/5 px-2.5 py-1 rounded-lg border border-accent/10">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <h3 className="text-2xl font-heading font-bold text-primary mb-3 group-hover:text-accent transition-colors leading-tight">
+                        {project.title}
+                      </h3>
+                      <p className="text-text-body font-body text-sm line-clamp-2 mb-6 leading-relaxed opacity-80">
+                        {project.description}
+                      </p>
                     </div>
+
                     <Link 
                       href={project.url || "#"} 
                       target="_blank"
-                      className="w-full py-4 bg-primary hover:bg-accent text-white font-bold rounded-2xl flex items-center justify-center gap-2 transition-all shadow-xl shadow-primary/10"
+                      className="inline-flex items-center gap-3 text-primary font-bold group/btn hover:text-accent transition-colors"
                     >
-                      View Project <ExternalLink className="w-4 h-4" />
+                      <span>Explore Project</span>
+                      <div className="w-9 h-9 rounded-full bg-primary/5 flex items-center justify-center group-hover/btn:bg-accent group-hover/btn:text-white transition-all duration-300">
+                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-0.5 transition-transform" />
+                      </div>
                     </Link>
                   </CardContent>
                 </Card>
@@ -104,8 +113,7 @@ export default function SolutionCTA() {
             ))
           )}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
-
