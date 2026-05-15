@@ -77,7 +77,7 @@ export default function FinalCTA() {
           </Link>
           
           <Link
-            href="/portfolio"
+            href="/projects"
             className="px-10 py-5 bg-white/5 text-white font-heading font-bold rounded-2xl border border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm"
           >
             View Our Work

@@ -229,7 +229,7 @@
   .faq-hero,
   .contact-hero,
   .page-hero {
-    @apply py-30 md:py-20 text-center;
+    @apply py-10 md:py-30 text-center;
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 40%, var(--accent) 100%);
   }
 
@@ -506,12 +506,6 @@
   .info-item svg {
     @apply text-accent shrink-0 mt-0.5;
   }
-
-  /* BLOG PAGE */
-  .page-hero {
-    @apply py-30 md:py-20;
-  }
-
 
   .btn-primary {
     @apply inline-flex items-center justify-center rounded-lg px-7 py-3.5 text-white font-semibold text-sm font-sans transition-all duration-300 ease-in-out hover:transform hover:-translate-y-0.5 hover:shadow-lg;

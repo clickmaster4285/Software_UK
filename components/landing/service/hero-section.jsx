@@ -1,0 +1,399 @@
+'use client';
+
+import React, { useEffect, useState, useRef } from 'react';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { ArrowRight, FileText, Mail, User, Phone, Send, CheckCircle2, DollarSign } from 'lucide-react';
+import { NeonOrbs } from '@/components/ui/neon-orbs';
+
+const heroBullets = [
+  'MVP to full-scale SaaS development',
+  'Native, cross-platform & enterprise mobile apps',
+  'AI & automation systems',
+  'ERP, CRM, and enterprise solutions',
+  'Built for scalability, performance & ROI',
+];
+
+function useInViewOnce(ref, threshold = 0.15) {
+  const [visible, setVisible] = useState(false);
+  const done = useRef(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || done.current) return;
+
+    const io = new IntersectionObserver(
+      ([e]) => {
+        if (e.isIntersecting) {
+          done.current = true;
+          setVisible(true);
+          io.disconnect();
+        }
+      },
+      { threshold, rootMargin: '40px' }
+    );
+
+    io.observe(el);
+    return () => io.disconnect();
+  }, [ref, threshold]);
+
+  return visible;
+}
+
+const Counter = ({ end, duration = 2, delay = 0 }) => {
+  const [count, setCount] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInViewOnce(ref, 0.2);
+
+  useEffect(() => {
+    if (!isInView) return;
+
+    let startTime;
+    let animationFrame;
+
+    const animate = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = (timestamp - startTime) / (duration * 1000);
+
+      if (progress < 1) {
+        setCount(Math.min(Math.floor(end * progress), end));
+        animationFrame = requestAnimationFrame(animate);
+      } else {
+        setCount(end);
+      }
+    };
+
+    const timeoutId = window.setTimeout(() => {
+      animationFrame = requestAnimationFrame(animate);
+    }, delay * 1000);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+      if (animationFrame) cancelAnimationFrame(animationFrame);
+    };
+  }, [isInView, end, duration, delay]);
+
+  return <span ref={ref}>{count}+</span>;
+};
+
+const stats = [
+  { end: 1860, label: 'Projects Delivered' },
+  { end: 3500, label: 'Happy Clients' },
+  { end: 75, label: 'Awards Won' },
+  { end: 5, label: 'Years Experience' },
+];
+
+// Typewriter Component
+const Typewriter = ({ texts, typingSpeed = 80, deletingSpeed = 40, pauseTime = 1500 }) => {
+  const [displayText, setDisplayText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [isWaiting, setIsWaiting] = useState(false);
+
+  useEffect(() => {
+    let timer;
+
+    if (isWaiting) {
+      timer = setTimeout(() => {
+        setIsWaiting(false);
+        setIsDeleting(true);
+      }, pauseTime);
+      return () => clearTimeout(timer);
+    }
+
+    const currentText = texts[currentIndex];
+
+    if (isDeleting) {
+      if (displayText.length === 0) {
+        setIsDeleting(false);
+        setCurrentIndex((prev) => (prev + 1) % texts.length);
+      } else {
+        timer = setTimeout(() => {
+          setDisplayText((prev) => prev.slice(0, -1));
+        }, deletingSpeed);
+      }
+    } else {
+      if (displayText.length === currentText.length) {
+        setIsWaiting(true);
+      } else {
+        timer = setTimeout(() => {
+          setDisplayText((prev) => currentText.slice(0, prev.length + 1));
+        }, typingSpeed);
+      }
+    }
+
+    return () => clearTimeout(timer);
+  }, [displayText, isDeleting, isWaiting, currentIndex, texts, typingSpeed, deletingSpeed, pauseTime]);
+
+  return (
+    <span className="inline-block min-w-[280px] text-left text-primary font-medium sm:min-w-[340px] md:min-w-[400px]">
+      {displayText}
+      <span className="inline-block h-5 w-0.5 -mb-0.5 bg-primary animate-pulse" />
+    </span>
+  );
+};
+
+export function HeroSection() {
+  const [heroForm, setHeroForm] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    budget: '',
+    message: '',
+  });
+  const [heroSending, setHeroSending] = useState(false);
+  const [heroSuccess, setHeroSuccess] = useState(false);
+  const [heroError, setHeroError] = useState(null);
+
+  const heroFieldClass = "w-full rounded-xl border border-white/25 bg-white/5 px-3 py-2.5 pl-9 text-base sm:text-sm text-white placeholder:text-gray-200 focus:border-primary/60 focus:outline-none focus:ring-2 focus:ring-primary/30";
+
+  const handleHeroChange = (e) => {
+    const { name, value } = e.target;
+    setHeroForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleHeroSubmit = async (e) => {
+    e.preventDefault();
+    setHeroSending(true);
+    setHeroError(null);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+          phone,
+          budget,
+          services: 'Homepage hero inquiry',
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.message || 'Something went wrong');
+      
+      setHeroSuccess(true);
+      setHeroForm({ name: '', email: '', phone: '', budget: '', message: '' });
+      setTimeout(() => setHeroSuccess(false), 5000);
+    } catch (err) {
+      setHeroError(err instanceof Error ? err.message : 'Failed to send. Please try again.');
+    } finally {
+      setHeroSending(false);
+    }
+  };
+
+  return (
+    <section
+      /* ─── CHANGE 1: mobile = auto height + scroll; desktop = h-screen ─── */
+      className="relative min-h-screen flex flex-col lg:flex-row lg:items-stretch overflow-x-hidden"
+      aria-labelledby="hero-heading"
+    >
+      <div className="absolute inset-0 -z-30">
+        <NeonOrbs />
+      </div>
+      <div className="absolute inset-0 -z-20 bg-black/50" />
+
+      <div className="container relative z-10 mx-auto w-full max-w-full min-w-0 px-3 sm:px-4 lg:px-14 flex flex-col justify-center min-h-screen">
+        <div className="mx-auto w-full min-w-0 px-4 sm:px-6 lg:px-10">
+          {/* ─── CHANGE 2: single-col on mobile, two-col on lg ─── */}
+          <div className="grid gap-10 pt-24 pb-10 lg:pt-0 lg:pb-0 lg:min-h-screen lg:grid-cols-[1fr_400px] xl:gap-16 lg:items-center">
+
+            {/* ── Left column ── */}
+            <div className="flex flex-col justify-center text-left">
+              {/* Heading */}
+              <div className="mb-6 md:mb-8">
+                <div className="overflow-hidden">
+                  <div className="animate-slide-in-up font-display text-[1.65rem] font-bold leading-tight tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl">
+                     Software Development
+                  </div>
+                </div>
+                <div className="overflow-hidden mt-2">
+                  <div className="animate-slide-in-up font-display text-[1.45rem] font-bold leading-tight tracking-tight text-gray-300 sm:text-3xl md:text-4xl lg:text-5xl">
+                    That Scales Your Business Revenue <span className="text-primary">Software Development Company</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sub-description */}
+              <p className="animate-slide-in-up text-base sm:text-lg md:text-xl text-gray-100 leading-relaxed mb-8">
+                We design, build, and deploy high-performance web, mobile, SaaS, and AI-powered
+                systems for companies in the USA, Europe &amp; Middle East.
+              </p>
+
+              {/* Typewriter */}
+              <div className="animate-slide-in-up mb-10">
+                <div className="inline-block rounded-2xl bg-white/5 px-4 sm:px-6 py-3 backdrop-blur-sm border border-white/10 max-w-full overflow-hidden">
+                  <div className="text-left text-sm sm:text-base lg:text-lg font-medium text-gray-100">
+                    <Typewriter texts={heroBullets} typingSpeed={60} deletingSpeed={30} pauseTime={2000} />
+                  </div>
+                </div>
+              </div>
+
+              {/* Buttons */}
+              <div className="animate-slide-in-up flex flex-col sm:flex-row gap-4">
+                <Button
+                  size="lg"
+                  className="group w-full sm:w-auto min-h-[52px] rounded-xl bg-primary px-6 text-sm sm:text-base font-medium hover:bg-primary/90"
+                  asChild
+                >
+                  <Link href="/contact-us">
+                    Get Free Software Strategy Call
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </Button>
+
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="w-full sm:w-auto min-h-[52px] rounded-xl border-white/30 hover:bg-white/5"
+                  asChild
+                >
+                  <Link href="/contact-us">
+                    <FileText className="mr-2 h-5 w-5" />
+                    Request Proposal
+                  </Link>
+                </Button>
+              </div>
+
+
+
+
+
+
+                  {/* Stats Section */}
+          <div
+            className="animate-slide-in-up mt-6 lg:mt-10 grid grid-cols-2 gap-x-8 gap-y-10  pt-10 pb-10 md:grid-cols-4 md:gap-x-12"
+            role="list"
+            aria-label="Company achievements"
+            style={{ animationDelay: '400ms' }}
+          >
+            {stats.map((stat, index) => (
+              <div key={stat.label} className="text-left" role="listitem">
+                <p className="font-display text-2xl md:text-4xl font-bold tabular-nums text-white tracking-[-2px]">
+                  <Counter end={stat.end} duration={2.2} delay={0.1 * index} />
+                </p>
+                <p className="mt-2 text-sm md:text-base text-gray-400 font-medium">
+                  {stat.label}
+                </p>
+              </div>
+            ))}
+              </div>
+              
+              
+            </div>
+
+            {/* ── Right column CTA Form, vertically centered ── */}
+            <div className="flex items-center justify-center lg:h-screen w-full">
+              <div className="animate-slide-in-up w-full">
+                <div className="rounded-2xl border border-white/15 bg-black/60 p-6 sm:p-8 shadow-2xl shadow-black/50 backdrop-blur-md">
+                  <h2 className="font-display text-lg font-bold text-white">Get a free quote</h2>
+                  <p className="mt-1 mb-6 text-sm text-gray-300">
+                    Share your details we&apos;ll respond within one business day.
+                  </p>
+
+                  {heroError && (
+                    <div className="mb-4 rounded-xl border border-red-400/40 bg-red-950/50 px-4 py-3 text-sm text-red-100">
+                      {heroError}
+                    </div>
+                  )}
+
+                  {heroSuccess ? (
+                    <div className="rounded-xl bg-green-950/40 border border-green-400/30 p-8 text-center">
+                      <CheckCircle2 className="mx-auto mb-4 h-12 w-12 text-primary" />
+                      <p className="font-semibold text-white">Message received!</p>
+                      <p className="mt-1 text-sm text-gray-300">We&apos;ll get back to you shortly.</p>
+                    </div>
+                  ) : (
+                    <form onSubmit={handleHeroSubmit} className="space-y-4">
+                      <div className="relative">
+                        <User className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+                        <input
+                          type="text"
+                          name="name"
+                          value={heroForm.name}
+                          onChange={handleHeroChange}
+                          placeholder="Full name"
+                          className={heroFieldClass}
+                          required
+                        />
+                      </div>
+
+                      <div className="relative">
+                        <Mail className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+                        <input
+                          type="email"
+                          name="email"
+                          value={heroForm.email}
+                          onChange={handleHeroChange}
+                          placeholder="Work email"
+                          className={heroFieldClass}
+                          required
+                        />
+                      </div>
+
+                      <div className="relative">
+                        <Phone className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+                        <input
+                          type="tel"
+                          name="phone"
+                          value={heroForm.phone}
+                          onChange={handleHeroChange}
+                          placeholder="Phone (optional)"
+                          className={heroFieldClass}
+                        />
+                      </div>
+
+                      <div className="relative">
+                        <DollarSign className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+                        <input
+                          type="text"
+                          name="budget"
+                          value={heroForm.budget}
+                          onChange={handleHeroChange}
+                          placeholder="Estimated budget (optional)"
+                          className={heroFieldClass}
+                        />
+                      </div>
+
+                      <textarea
+                        name="message"
+                        rows={3}
+                        value={heroForm.message}
+                        onChange={handleHeroChange}
+                        placeholder="What would you like to build?"
+                        className="min-h-[88px] w-full resize-y rounded-xl border border-white/25 bg-white/5 px-3 py-3 text-sm text-white placeholder:text-gray-200 focus:border-primary/60 focus:outline-none focus:ring-2 focus:ring-primary/30"
+                        required
+                      />
+
+                      <button
+                        type="submit"
+                        disabled={heroSending}
+                        className="w-full min-h-[52px] rounded-xl bg-primary text-base font-semibold text-white transition hover:bg-primary/90 disabled:opacity-60"
+                      >
+                        {heroSending ? 'Sending...' : 'Send Message'}
+                      </button>
+                    </form>
+                  )}
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+      
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes slideInUp {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide-in-up {
+          animation: slideInUp 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+          opacity: 0;
+        }
+      `}</style>
+    </section>
+  );
+}

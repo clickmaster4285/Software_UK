@@ -158,8 +158,16 @@ function ServiceCard({ service, index }) {
         style={{ rotateX, rotateY, transformStyle: 'preserve-3d' }}
         className={`group relative flex flex-col justify-between ${
           service.span === 'tall' ? 'h-full min-h-145' : 'h-115'
-        } rounded-[40px] border border-white/20 bg-white/40 backdrop-blur-2xl p-8 overflow-hidden transition-all duration-500 hover:bg-white/60 hover:border-white/40`}
+        } rounded-[40px] border bg-white/40 backdrop-blur-2xl p-8 overflow-hidden transition-all duration-500 hover:bg-white/60`}
+        style={{ 
+          borderColor: `${accent}77`, // 20% opacity initial border
+        }}
       >
+        {/* Hover Border Overlay */}
+        <div 
+          className="absolute inset-0 rounded-[40px] border-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+          style={{ borderColor: `${accent}66` }} // 40% opacity hover border
+        />
         {/* Dynamic Accent Shadow */}
         <div 
           className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"

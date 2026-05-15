@@ -45,7 +45,7 @@ export default function Hero() {
                         }
                      />
                      <Link
-                        href="/solutions"
+                        href="/contact"
                         className="px-8 py-4 border-2 border-white text-white font-body font-bold text-lg rounded-lg hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-xl"
                      >
                         Request Proposal

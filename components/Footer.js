@@ -60,7 +60,7 @@ export default function Footer() {
             
             <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl">
               <h4 className="font-heading font-bold text-lg mb-2 flex items-center gap-2">
-                <Mail className="w-4 h-4 text-accent" />
+                <Mail className="w-6 h-6 text-accent" />
                 Stay Updated
               </h4>
               <p className="text-white/60 font-body text-sm mb-6">
@@ -115,7 +115,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-4">
                 <li className="flex items-start gap-3 text-white/60 text-sm font-body">
                   <MapPin className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-                  <span>London, United Kingdom<br />Global Remote Team</span>
+                  <span>London, United Kingdom</span>
                 </li>
                 <li className="flex items-center gap-3 text-white/60 text-sm font-body">
                   <Phone className="w-4 h-4 text-accent shrink-0" />
