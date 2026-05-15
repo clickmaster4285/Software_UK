@@ -157,7 +157,7 @@ function ServiceCard({ service, index }) {
         onMouseLeave={handleLeave}
         style={{ rotateX, rotateY, transformStyle: 'preserve-3d' }}
         className={`group relative flex flex-col justify-between ${
-          service.span === 'tall' ? 'h-full min-h-[580px]' : 'h-[460px]'
+          service.span === 'tall' ? 'h-full min-h-145' : 'h-115'
         } rounded-[40px] border border-white/20 bg-white/40 backdrop-blur-2xl p-8 overflow-hidden transition-all duration-500 hover:bg-white/60 hover:border-white/40`}
       >
         {/* Dynamic Accent Shadow */}
@@ -187,7 +187,7 @@ function ServiceCard({ service, index }) {
           {/* Top: Tag */}
           <div className="flex items-start justify-between">
             <span 
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white/90 border border-white/50 shadow-sm text-[10px] font-bold tracking-[0.1em] uppercase"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white/90 border border-white/50 shadow-sm text-[10px] font-bold tracking-widest uppercase"
               style={{ color: accent }}
             >
               <Sparkles className="w-3 h-3" />
@@ -253,12 +253,12 @@ export default function Services() {
     <section className="relative py-20 bg-background overflow-hidden">
       {/* Ambient background glows */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-blue-500/5 blur-[120px]" />
-        <div className="absolute top-[20%] -right-[10%] w-[40%] h-[40%] rounded-full bg-purple-500/5 blur-[120px]" />
-        <div className="absolute -bottom-[10%] left-[20%] w-[40%] h-[40%] rounded-full bg-emerald-500/5 blur-[120px]" />
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-blue-500/5 blur-[120px]" />
+        <div className="absolute top-[20%] right-[-10%] w-[40%] h-[40%] rounded-full bg-purple-500/5 blur-[120px]" />
+        <div className="absolute bottom-[-10%] left-[20%] w-[40%] h-[40%] rounded-full bg-emerald-500/5 blur-[120px]" />
       </div>
 
-      <div className="relative w-full px-6 xl:px-12 max-w-[1600px] mx-auto">
+      <div className="relative w-full px-6 xl:px-12 max-w-400 mx-auto">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -8,7 +8,7 @@
 - **Service Segments:** Custom Software, Web Development, Mobile Apps, AI & Automation, ERP Systems, Cybersecurity.
 
 ### Contact Information
-- **Emails:** marketing@clickmasters.pk | info@clickmasters.pk
+- **Emails:** sale@clickmasterssoftwaredevelopmentcompany.co.uk
 - **Phones:** +44798856086 
 - **Office:** Main PWD Rd, Islamabad, Punjab, Pakistan
 - **Hours:** Mon-Sat: 9AM - 6PM (24/7 Support for clients)
@@ -20,13 +20,13 @@
 ### Color Palette
 | Token | OKLCH | Usage |
 |-------|-------|-------|
-| `primary` | `oklch(0.28 0.02 250)` | Backgrounds, dark sections, footer |
-| `primary-mid` | `oklch(0.32 0.03 250)` | Card dark backgrounds |
-| `accent` | `oklch(70.5% 0.145 85.6)` | CTA buttons, highlights, icons |
-| `accent-hover` | `oklch(62.8% 0.138 81.5)` | Button hover states |
-| `surface` | `oklch(0.97 0.01 250)` | Light gray section backgrounds |
-| `text-primary` | `oklch(0.28 0.02 250)` | Dark headings |
-| `text-light` | `oklch(1 0 0)` | Text on dark backgrounds |
+| `primary` || Backgrounds, dark sections, footer |
+| `primary-mid` | Card dark backgrounds |
+| `accent` | CTA buttons, highlights, icons |
+| `accent-hover` | Button hover states |
+| `surface` |Light gray section backgrounds |
+| `text-primary` | Dark headings |
+| `text-light` | Text on dark backgrounds |
 
 ### Typography
 - **Headings:** `Sora` (Bold 700 / SemiBold 600)
@@ -42,7 +42,7 @@
 - **Shadows:** 
   - Standard: `0 2px 16px rgba(0,0,0,0.07)`
   - Hover: `0 8px 32px rgba(0,0,0,0.12)`
-  - Pricing (Popular): `0 16px 48px rgba(212, 160, 23, 0.18)`
+  - Pricing (Popular): `0 16px 48px color fom global css`
 - **Transitions:** Smooth fade-up on scroll (0.6s), 0.25s hover transitions.
 
 ### Key Component Patterns

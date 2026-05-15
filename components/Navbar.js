@@ -111,9 +111,12 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-sm border-b border-border py-2" : "bg-transparent py-4"
       }`}>
       <div className="max-w-400 mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className={`font-heading font-bold text-2xl transition-colors ${isScrolled ? "text-primary" : "text-white"
-          }`}>
-          ClickMasters
+        <Link href="/" className="flex items-center">
+          <img 
+            src="/cm-logos/logo.png" 
+            alt="ClickMasters" 
+            className={`h-12 w-auto transition-all ${!isScrolled ? "brightness-0 invert" : ""}`}
+          />
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
