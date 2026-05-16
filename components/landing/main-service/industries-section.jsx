@@ -304,12 +304,12 @@ export function IndustriesSection() {
               <h3 className="text-3xl md:text-4xl font-bold text-black mb-4">
                 Ready to Transform Your Industry?
                 <span className="font-bold block mt-2 text-primary">
-                  Let's Build Something Extraordinary
+                  Let&apos;s Build Something Extraordinary
                 </span>
               </h3>
 
               <p className="text-gray-700 text-base leading-relaxed max-w-2xl mx-auto">
-                Whether you're in manufacturing, healthcare, or retail, we have the expertise to
+                Whether you&apos;re in manufacturing, healthcare, or retail, we have the expertise to
                 build software that drives your business forward.
               </p>
 

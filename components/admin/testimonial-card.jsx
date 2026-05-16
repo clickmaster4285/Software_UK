@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Star, Quote, Building2, Briefcase } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
 
 export function TestimonialCard({ authorName, authorRole, authorCompany, content, avatarUrl, rating = 5, href }) {
    const authorLabel = [authorRole, authorCompany].filter(Boolean).join(' • ');
@@ -31,7 +32,7 @@ export function TestimonialCard({ authorName, authorRole, authorCompany, content
 
             {/* Content */}
             <blockquote className="text-slate-700 text-lg leading-relaxed font-medium line-clamp-4 relative">
-               "{content}"
+               &quot;{content}&quot;
             </blockquote>
 
             {/* Author Section */}
@@ -39,11 +40,13 @@ export function TestimonialCard({ authorName, authorRole, authorCompany, content
                {/* Avatar */}
                <div className="relative">
                   {avatarUrl ? (
-                     <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-slate-200 shadow-sm">
-                        <img
+                     <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-slate-200 shadow-sm">
+                        <Image
                            src={avatarUrl}
-                           alt={authorName}
-                           className="w-full h-full object-cover"
+                           alt={authorName || 'Avatar'}
+                           fill
+                           className="object-cover"
+                           unoptimized
                         />
                      </div>
                   ) : (

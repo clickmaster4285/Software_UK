@@ -136,7 +136,7 @@ export default function TestimonialDetailPage() {
 
           {/* Testimonial Content */}
           <blockquote className="text-2xl md:text-3xl leading-relaxed text-slate-700 font-medium mb-12 relative">
-            "{testimonial.content}"
+            &quot;{testimonial.content}&quot;
           </blockquote>
 
           {/* Additional Info */}
@@ -158,7 +158,7 @@ export default function TestimonialDetailPage() {
                 <h3 className="font-bold text-slate-900">Client Satisfaction</h3>
               </div>
               <p className="text-slate-600">
-                Our commitment to excellence is reflected in this client's feedback,
+                Our commitment to excellence is reflected in this client&apos;s feedback,
                 showcasing our dedication to exceeding expectations.
               </p>
             </div>

@@ -36,15 +36,18 @@ export default function ProjectForm({ initialData, id }) {
 
   useEffect(() => {
     if (initialData) {
-      setFormData({
-        title: initialData.title || '',
-        description: initialData.description || '',
-        url: initialData.url || '',
-        category: initialData.category?._id || initialData.category || '',
-        tags: initialData.tags || [],
-        status: initialData.status || 'live',
-        thumbnail: initialData.thumbnail || '',
-      });
+      const timer = setTimeout(() => {
+        setFormData({
+          title: initialData.title || '',
+          description: initialData.description || '',
+          url: initialData.url || '',
+          category: initialData.category?._id || initialData.category || '',
+          tags: initialData.tags || [],
+          status: initialData.status || 'live',
+          thumbnail: initialData.thumbnail || '',
+        });
+      }, 0);
+      return () => clearTimeout(timer);
     }
   }, [initialData]);
 

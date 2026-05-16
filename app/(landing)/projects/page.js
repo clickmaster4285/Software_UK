@@ -25,7 +25,7 @@ export default function ProjectsPage() {
           <span className="section-label">PORTFOLIO</span>
           <h1>Our Project Gallery</h1>
           <p className="hero-sub text-white/90 max-w-2xl mx-auto">
-            A showcase of custom software solutions, web applications, and digital products we've engineered for our global clients.
+            A showcase of custom software solutions, web applications, and digital products we&apos;ve engineered for our global clients.
           </p>
         </div>
       </section>
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
           ) : !projects || projects.length === 0 ? (
             <div className="text-center py-20 bg-white rounded-3xl shadow-sm border border-slate-100">
               <h3 className="text-2xl font-bold text-slate-900">Projects coming soon</h3>
-              <p className="text-slate-500 mt-2">We're currently updating our portfolio with our latest work. Check back soon!</p>
+              <p className="text-slate-500 mt-2">We&apos;re currently updating our portfolio with our latest work. Check back soon!</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -128,7 +128,7 @@ export default function ProjectsPage() {
             <div className="max-w-2xl mx-auto relative z-10">
               <h2 className="text-3xl md:text-5xl font-black mb-6">Have a project in mind?</h2>
               <p className="text-primary/70 text-lg mb-10 leading-relaxed font-medium">
-                We're always looking for exciting new challenges. Let's build something exceptional together.
+                We&apos;re always looking for exciting new challenges. Let&apos;s build something exceptional together.
               </p>
               <Button size="lg" className="bg-primary text-accent font-bold h-16 px-12 rounded-2xl hover:bg-primary/90 shadow-xl shadow-primary/20" asChild>
                 <Link href="/contact">Start a Conversation</Link>

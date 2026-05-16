@@ -83,7 +83,8 @@ const InsightCardItem = ({ card, tall = false }) => {
 
   useEffect(() => {
     // Set image source after mount to avoid hydration issues
-    setImgSrc(card.thumbnail);
+    const timer = setTimeout(() => setImgSrc(card.thumbnail), 0);
+    return () => clearTimeout(timer);
   }, [card.thumbnail]);
 
   useEffect(() => {

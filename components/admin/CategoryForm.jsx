@@ -27,12 +27,15 @@ export default function CategoryForm({ initialData, id }) {
 
   useEffect(() => {
     if (initialData) {
-      setFormData({
-        name: initialData.name || '',
-        slug: initialData.slug || '',
-        description: initialData.description || '',
-        showOnHome: initialData.showOnHome || false,
-      });
+      const timer = setTimeout(() => {
+        setFormData({
+          name: initialData.name || '',
+          slug: initialData.slug || '',
+          description: initialData.description || '',
+          showOnHome: initialData.showOnHome || false,
+        });
+      }, 0);
+      return () => clearTimeout(timer);
     }
   }, [initialData]);
 

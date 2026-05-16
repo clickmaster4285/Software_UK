@@ -29,7 +29,7 @@ function TestimonialCard({ testimonial }) {
 
       {/* Content */}
       <blockquote className="text-slate-700 mb-6 text-lg leading-relaxed font-medium">
-        "{testimonial.content}"
+        &quot;{testimonial.content}&quot;
       </blockquote>
 
       {/* Author */}
@@ -88,7 +88,7 @@ export default function TestimonialsPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Client Testimonials</h1>
             <p className="text-white/80 text-xl mb-8 leading-relaxed">
-              Don't just take our word for it. Hear directly from the amazing clients we've had the privilege to work with.
+              Don&apos;t just take our word for it. Hear directly from the amazing clients we&apos;ve had the privilege to work with.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl px-6 py-3 border border-white/20">
@@ -132,7 +132,7 @@ export default function TestimonialsPage() {
                     Ready to Join Our Success Stories?
                   </h2>
                   <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-                    Let's discuss how our technical expertise can help transform your business and achieve remarkable results.
+                    Let&apos;s discuss how our technical expertise can help transform your business and achieve remarkable results.
                   </p>
                   <Link href="/contact">
                     <Button size="lg" className="bg-accent text-primary hover:bg-accent-hover px-8 py-4 text-lg font-bold rounded-xl transition-all hover:scale-105 active:scale-95 shadow-xl">
@@ -150,7 +150,7 @@ export default function TestimonialsPage() {
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">No Testimonials Yet</h3>
               <p className="text-slate-600 mb-8 max-w-md mx-auto">
-                We're just getting started! Check back soon to hear from our amazing clients.
+                We&apos;re just getting started! Check back soon to hear from our amazing clients.
               </p>
               <Link href="/contact">
                 <Button className="bg-primary text-accent hover:bg-primary/90">

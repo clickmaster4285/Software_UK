@@ -4,11 +4,11 @@ import { useCategoryList } from '@/hooks/useCategories';
 import { useProjectList } from '@/hooks/useProjects';
 import { useParams } from 'next/navigation';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, ExternalLink, Globe } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function CategoryDetailPage() {
@@ -35,7 +35,7 @@ export default function CategoryDetailPage() {
     return (
       <div className="container py-40 text-center">
         <h1 className="text-4xl font-bold text-primary mb-4">Category not found</h1>
-        <p className="text-slate-500 mb-8">The solution category you're looking for doesn't exist or has been moved.</p>
+        <p className="text-slate-500 mb-8">The solution category you&apos;re looking for doesn&apos;t exist or has been moved.</p>
         <Button asChild variant="outline">
           <Link href="/solutions"><ArrowLeft className="mr-2 w-4 h-4" /> Back to Solutions</Link>
         </Button>
@@ -119,7 +119,7 @@ export default function CategoryDetailPage() {
         <div className="container text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">Ready to start your project?</h2>
           <p className="text-slate-600 max-w-2xl mx-auto mb-10 text-lg">
-            Let's discuss how our {category.name.toLowerCase()} expertise can help your business scale.
+            Let&apos;s discuss how our {category.name.toLowerCase()} expertise can help your business scale.
           </p>
           <Button size="lg" className="bg-accent text-primary font-bold h-16 px-10 rounded-2xl" asChild>
             <Link href="/contact">Book a Strategy Call</Link>
@@ -129,5 +129,3 @@ export default function CategoryDetailPage() {
     </main>
   );
 }
-
-import { Button } from '@/components/ui/button';

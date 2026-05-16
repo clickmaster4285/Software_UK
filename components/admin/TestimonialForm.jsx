@@ -32,15 +32,18 @@ export default function TestimonialForm({ initialData, id }) {
 
   useEffect(() => {
     if (initialData) {
-      setFormData({
-        authorName: initialData.authorName || '',
-        authorRole: initialData.authorRole || '',
-        authorCompany: initialData.authorCompany || '',
-        content: initialData.content || '',
-        avatarUrl: initialData.avatarUrl || '',
-        rating: initialData.rating || 5,
-        isActive: initialData.isActive !== undefined ? initialData.isActive : true,
-      });
+      const timer = setTimeout(() => {
+        setFormData({
+          authorName: initialData.authorName || '',
+          authorRole: initialData.authorRole || '',
+          authorCompany: initialData.authorCompany || '',
+          content: initialData.content || '',
+          avatarUrl: initialData.avatarUrl || '',
+          rating: initialData.rating || 5,
+          isActive: initialData.isActive !== undefined ? initialData.isActive : true,
+        });
+      }, 0);
+      return () => clearTimeout(timer);
     }
   }, [initialData]);
 

@@ -35,7 +35,7 @@ export default function FinalCTA() {
             Ready to Build Your <span className="text-accent">Digital Future?</span>
           </h2>
           <p className="text-white/70 font-body text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
-            Whether you're a startup looking for an MVP or an enterprise scaling your operations, our expert team is ready to turn your vision into high-performance software.
+            Whether you&apos;re a startup looking for an MVP or an enterprise scaling your operations, our expert team is ready to turn your vision into high-performance software.
           </p>
         </div>
 

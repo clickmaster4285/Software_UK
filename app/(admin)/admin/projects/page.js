@@ -40,7 +40,7 @@ export default function ProjectListPage() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold text-slate-900">Projects</h1>
-          <p className="text-sm text-slate-500">Showcase your agency's best work.</p>
+          <p className="text-sm text-slate-500">Showcase your agency&apos;s best work.</p>
         </div>
         <Button asChild className="bg-primary text-accent hover:bg-primary/90">
           <Link href="/admin/projects/new">

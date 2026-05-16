@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Target, Lightbulb, CheckCircle2, ChevronRight, Share2, Printer } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
 export default function CaseStudyDetailPage() {
@@ -103,10 +104,12 @@ export default function CaseStudyDetailPage() {
 
         {/* Featured Image */}
         <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-primary/10 mb-16 aspect-video">
-          <img
+          <Image
             src={study.thumbnail || study.project?.thumbnail || 'https://via.placeholder.com/1200x600?text=Case+Study'}
-            alt={study.title}
-            className="w-full h-full object-cover"
+            alt={study.title || 'Case study image'}
+            fill
+            className="object-cover"
+            unoptimized
           />
           <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent"></div>
         </div>
@@ -211,7 +214,7 @@ export default function CaseStudyDetailPage() {
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
             <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-              Let's discuss how our technical expertise can help you achieve remarkable results like this case study.
+              Let&apos;s discuss how our technical expertise can help you achieve remarkable results like this case study.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">

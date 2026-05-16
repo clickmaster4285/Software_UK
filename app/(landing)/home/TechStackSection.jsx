@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { techStackImages, techStackNames } from "@/data/aboutData";
 import { useMemo } from "react";
+import Image from "next/image";
 
 // --- ANIMATION CONFIGURATION ---
 // Set to true to play animations ONLY ONE TIME when section is first seen.
@@ -188,10 +189,13 @@ export function TechStackSection() {
                     transition={{ duration: 4 + (i % 3), repeat: Infinity, ease: "easeInOut" }}
                     className="w-10 h-10 md:w-18 md:h-18 bg-primary/90 backdrop-blur-xl border border-white/5 rounded-full flex items-center justify-center p-1.5 group-hover:border-accent group-hover:bg-accent/10 group-hover:shadow-[0_0_20px_rgba(212,160,23,0.3)] transition-all duration-500"
                   >
-                    <img
+                    <Image
                       src={item.image}
                       alt={item.name}
-                      className="w-full h-full object-contain transition-all duration-500  group-hover:scale-115"
+                      width={100}
+                      height={100}
+                      className="w-full h-full object-contain transition-all duration-500 group-hover:scale-115"
+                      unoptimized
                     />
                   </motion.div>
                   

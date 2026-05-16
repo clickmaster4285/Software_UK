@@ -12,7 +12,7 @@ export default function ContactPage() {
         <section className="contact-hero">
           <div className="container">
             <h1>Get in Touch</h1>
-            <p className="hero-sub">Share your details—we'll respond within one business day.</p>
+            <p className="hero-sub">Share your details—we&apos;ll respond within one business day.</p>
           </div>
         </section>
 

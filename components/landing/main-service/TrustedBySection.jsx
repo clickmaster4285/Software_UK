@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import {useState} from "react";
 
 const partners = [
   { name: "Amazon", logo: "/partners/amazon.png" },
@@ -80,9 +81,13 @@ const createShuffledRow = (originalArray) => {
 };
 
 export default function TrustedBySection() {
-  // Create unique distribution for each row
-  const rowOneItems = createShuffledRow(partners);
-  const rowTwoItems = createShuffledRow(partners);
+  const [rowOne, setRowOne] = useState([]);
+  const [rowTwo, setRowTwo] = useState([]);
+
+  React.useEffect(() => {
+    // Create unique distribution for each row
+    const rowOneItems = createShuffledRow(partners);
+    const rowTwoItems = createShuffledRow(partners);
 
   // Extend arrays for seamless marquee (no duplicates at the join point)
   const extendForMarquee = (arr) => {
@@ -106,8 +111,14 @@ export default function TrustedBySection() {
     return extended;
   };
 
-  const rowOne = extendForMarquee(rowOneItems);
-  const rowTwo = extendForMarquee(rowTwoItems);
+    const timer = setTimeout(() => {
+      setRowOne(extendForMarquee(rowOneItems));
+      setRowTwo(extendForMarquee(rowTwoItems));
+    }, 0);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!rowOne.length) return null;
 
   return (
     <>
@@ -166,7 +177,7 @@ export default function TrustedBySection() {
               <div className="marquee-left flex w-max gap-4 md:gap-6">
                 {rowOne.map((item, index) => (
                   <PartnerCard
-                    key={`${item.name}-${index}-${Math.random()}`}
+                    key={`row-one-${item.name}-${index}`}
                     item={item}
                   />
                 ))}
@@ -181,7 +192,7 @@ export default function TrustedBySection() {
               <div className="marquee-right flex w-max gap-4 md:gap-6">
                 {rowTwo.map((item, index) => (
                   <PartnerCard
-                    key={`${item.name}-second-${index}-${Math.random()}`}
+                    key={`row-two-${item.name}-${index}`}
                     item={item}
                   />
                 ))}

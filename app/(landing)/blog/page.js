@@ -36,7 +36,7 @@ export default function BlogPage() {
           ) : publishedBlogs.length === 0 ? (
             <div className="text-center py-20 bg-white rounded-3xl shadow-sm border border-slate-100">
               <h3 className="text-2xl font-bold text-slate-900">Our blog is coming soon</h3>
-              <p className="text-slate-500 mt-2">We're currently writing some amazing content for you. Check back soon!</p>
+              <p className="text-slate-500 mt-2">We&apos;re currently writing some amazing content for you. Check back soon!</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -12,6 +12,36 @@ import {
 } from "lucide-react";
 import ExpandOnHover from "@/components/ui/expand-cards";
 
+const AnimatedCounter = ({ value, suffix, isFloat = false, metricsInView }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!metricsInView) return;
+    
+    let start = 0;
+    const duration = 1500;
+    const increment = value / (duration / 16);
+
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= value) {
+        setCount(value);
+        clearInterval(timer);
+      } else {
+        setCount(isFloat ? Math.round(start * 10) / 10 : Math.floor(start));
+      }
+    }, 16);
+
+    return () => clearInterval(timer);
+  }, [value, isFloat, metricsInView]);
+
+  return (
+    <span className="font-heading font-bold text-primary">
+      {isFloat ? count.toFixed(1) : Math.floor(count)}{suffix}
+    </span>
+  );
+};
+
 export function ProcessPage({ serviceData }) {
   const metricsRef = useRef(null);
   const expandSectionRef = useRef(null);
@@ -92,36 +122,6 @@ export function ProcessPage({ serviceData }) {
     "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&h=600&fit=crop",
   ];
 
-  const AnimatedCounter = ({ value, suffix, isFloat = false }) => {
-    const [count, setCount] = useState(0);
-
-    useEffect(() => {
-      if (!metricsInView) return;
-      
-      let start = 0;
-      const duration = 1500;
-      const increment = value / (duration / 16);
-
-      const timer = setInterval(() => {
-        start += increment;
-        if (start >= value) {
-          setCount(value);
-          clearInterval(timer);
-        } else {
-          setCount(isFloat ? Math.round(start * 10) / 10 : Math.floor(start));
-        }
-      }, 16);
-
-      return () => clearInterval(timer);
-    }, [value, isFloat, metricsInView]);
-
-    return (
-      <span className="font-heading font-bold text-primary">
-        {isFloat ? count.toFixed(1) : Math.floor(count)}{suffix}
-      </span>
-    );
-  };
-
   return (
     <section className="bg-white py-24 font-sans overflow-hidden">
       <div ref={expandSectionRef} className="container mx-auto px-4 lg:px-8">
@@ -159,6 +159,7 @@ export function ProcessPage({ serviceData }) {
                     value={metric.value} 
                     suffix={metric.suffix} 
                     isFloat={metric.isFloat || metric.value % 1 !== 0} 
+                    metricsInView={metricsInView}
                   />
                 </div>
                 <p className="text-slate-500 font-body text-sm uppercase tracking-wide">{metric.label}</p>
