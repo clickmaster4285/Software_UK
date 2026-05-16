@@ -79,10 +79,10 @@ export default function MegaMenu({ categories, trigger }) {
          {isVisible && (
             <div className={`absolute top-full left-1/2 transform -translate-x-1/2 w-screen max-w-6xl pt-4 z-50 transition-all duration-300 ease-out ${isOpen ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 -translate-y-2'
                }`} onWheel={(e) => e.stopPropagation()}>
-               <div className="bg-white border border-slate-200 rounded-xl shadow-2xl overflow-hidden max-h-[40vh]">
-                  <div className="flex h-full min-h-75 max-h-[40vh]">
+               <div className="bg-white border border-slate-200 rounded-xl shadow-2xl overflow-hidden max-h-[45vh]">
+                  <div className="flex h-full min-h-75 max-h-[45vh]">
                      {/* Categories Column */}
-                     <div className="w-80 bg-slate-50 border-r border-slate-200 p-6 flex flex-col max-h-[40vh]">
+                     <div className="w-80 bg-slate-50 border-r border-slate-200 p-6 flex flex-col max-h-[45vh]">
                         <h3 className="text-lg font-bold text-slate-900 mb-4">
                            {categories?.some(category => category.viewAllHref) ? 'Resources' : 'Our Services'}
                         </h3>
@@ -98,8 +98,8 @@ export default function MegaMenu({ categories, trigger }) {
                                     onClick={() => handleMouseLeave()}
                                  >
                                     <div className={`flex items-center justify-between p-3 rounded-lg transition-all duration-200 ${isActive
-                                          ? 'bg-black text-white shadow-md'
-                                          : 'hover:bg-black hover:text-white text-slate-700'
+                                          ? 'bg-accent text-white shadow-md'
+                                          : 'hover:bg-accent hover:text-white text-slate-700'
                                        }`}>
                                        <span className="text-sm font-medium">
                                           {category.label}
@@ -118,12 +118,12 @@ export default function MegaMenu({ categories, trigger }) {
                         {hoveredCategory ? (
                            <div>
                               <div className="flex items-center justify-between mb-6">
-                                 <h3 className="text-xl font-bold text-slate-900">
+                                 <h3 className="text-2xl font-bold text-accent">
                                     {hoveredCategory.label}
                                  </h3>
                                  <Link
                                     href={getCategoryHref(hoveredCategory)}
-                                    className="text-sm font-medium text-primary hover:text-accent-hover transition-colors flex items-center gap-1"
+                                    className="text-sm font-medium text-accent underline hover:text-accent-hover transition-colors flex items-center gap-1"
                                     onClick={() => handleMouseLeave()}
                                  >
                                     View All <ChevronRight className="w-4 h-4" />

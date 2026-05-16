@@ -8,6 +8,7 @@ export const servicesData= {
     tagline: "Build Scalable, Robust Enterprise Solutions",
     description: "We craft custom software solutions that streamline operations, enhance productivity, and drive business growth. From concept to deployment, our expert engineers deliver high-performance applications tailored to your unique needs.",
     heroBadge: "10+ Enterprise Solutions Delivered",
+    heroImage: "https://images.unsplash.com/photo-1675627451054-99b6c760b6d2?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "200+", label: "Projects Delivered" },
       { value: "99.9%", label: "Uptime Guarantee" },
@@ -49,6 +50,7 @@ export const servicesData= {
     tagline: "Create Stunning, High-Performance Websites",
     description: "We build modern, responsive websites and web applications that captivate audiences and drive conversions. Using latest frameworks and technologies, we deliver lightning-fast, SEO-optimized web experiences.",
     heroBadge: "500+ Websites Launched",
+    heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "500+", label: "Websites Built" },
       { value: "98%", label: "Client Satisfaction" },
@@ -89,6 +91,7 @@ export const servicesData= {
     tagline: "Native & Cross-Platform Mobile Apps",
     description: "Transform your ideas into powerful mobile applications for iOS and Android. We specialize in both native and cross-platform development, delivering seamless user experiences that keep users coming back.",
     heroBadge: "100+ Apps on App Stores",
+    heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "100+", label: "Apps Published" },
       { value: "4.8★", label: "Avg Rating" },
@@ -126,6 +129,7 @@ export const servicesData= {
     tagline: "Beautiful, User-Centered Design Solutions",
     description: "Our design team creates intuitive, engaging experiences that users love. From UI/UX design to branding and visual identity, we craft designs that communicate your brand story effectively.",
     heroBadge: "Award-Winning Design Team",
+    heroImage: "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "300+", label: "Design Projects" },
       { value: "15+", label: "Design Awards" },
@@ -164,6 +168,7 @@ export const servicesData= {
     tagline: "Intelligent Solutions for Modern Businesses",
     description: "Leverage the power of AI to automate processes, gain insights, and create innovative solutions that drive growth and efficiency.",
     heroBadge: "Leading AI Innovators",
+    heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "50+", label: "AI Projects" },
       { value: "97%", label: "Model Accuracy" },
@@ -205,6 +210,7 @@ export const servicesData= {
     tagline: "Intelligent Data-Driven Solutions",
     description: "Harness the power of machine learning to transform your data into actionable insights. We build custom ML models that automate decisions, predict outcomes, and drive business intelligence.",
     heroBadge: "50+ ML Models Deployed",
+    heroImage: "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "50+", label: "ML Models" },
       { value: "95%", label: "Accuracy Rate" },
@@ -243,6 +249,7 @@ export const servicesData= {
     tagline: "Advanced Language and Vision Technologies",
     description: "Transform how you process text, speech, and visual data with cutting-edge NLP and computer vision solutions that understand and interpret human language and images.",
     heroBadge: "Advanced AI Technologies",
+    heroImage: "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "30+", label: "NLP/CV Projects" },
       { value: "98%", label: "Recognition Accuracy" },
@@ -280,6 +287,7 @@ export const servicesData= {
     tagline: "Comprehensive Data Management Solutions",
     description: "Transform your raw data into valuable business assets. We provide end-to-end data services including collection, processing, analysis, and visualization to drive informed decision-making.",
     heroBadge: "100+ Data Projects Completed",
+    heroImage: "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "100+", label: "Data Projects" },
       { value: "99.9%", label: "Data Quality" },
@@ -317,6 +325,7 @@ export const servicesData= {
     tagline: "Smart Business Intelligence Solutions",
     description: "Transform your data into strategic business intelligence. We build comprehensive BI solutions that combine data analytics, reporting, and predictive modeling to drive growth and competitive advantage.",
     heroBadge: "75+ BI Implementations",
+    heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "75+", label: "BI Projects" },
       { value: "98%", label: "Data Accuracy" },
@@ -357,6 +366,7 @@ export const servicesData= {
     tagline: "Intelligent Automation Solutions",
     description: "Revolutionize your customer service and operations with intelligent automation and chatbot solutions. We build conversational AI that handles inquiries 24/7 and automates repetitive tasks.",
     heroBadge: "200+ Bots Deployed",
+    heroImage: "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "200+", label: "Chatbots Built" },
       { value: "95%", label: "Query Resolution" },
@@ -396,6 +406,7 @@ export const servicesData= {
     tagline: "Seamless System Integration Solutions",
     description: "Connect and automate your entire business ecosystem. We integrate disparate systems, automate workflows, and create seamless data flow across your organization.",
     heroBadge: "150+ Integration Projects",
+    heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "150+", label: "Integrations" },
       { value: "99.5%", label: "Success Rate" },
@@ -433,6 +444,7 @@ export const servicesData= {
     tagline: "Modern Cloud Infrastructure Solutions",
     description: "Transform your infrastructure with cloud-native solutions and DevOps best practices. We build scalable, secure, and automated cloud environments that accelerate development cycles.",
     heroBadge: "200+ Cloud Migrations",
+    heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "200+", label: "Cloud Projects" },
       { value: "99.9%", label: "Uptime" },
@@ -472,6 +484,7 @@ export const servicesData= {
     tagline: "Robust Database Management Solutions",
     description: "Design, optimize, and manage high-performance database systems that power your applications. We provide comprehensive database services ensuring data integrity, security, and scalability.",
     heroBadge: "300+ Database Implementations",
+    heroImage: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "300+", label: "Database Projects" },
       { value: "99.9%", label: "Data Integrity" },
@@ -508,6 +521,7 @@ export const servicesData= {
     tagline: "Comprehensive Security Solutions",
     description: "Protect your digital assets with advanced cybersecurity solutions. We implement multi-layered security strategies to safeguard your data, systems, and reputation from evolving threats.",
     heroBadge: "100+ Security Audits Completed",
+    heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "100+", label: "Security Projects" },
       { value: "99.9%", label: "Threat Prevention" },
@@ -545,6 +559,7 @@ export const servicesData= {
     tagline: "Quality Assurance Solutions",
     description: "Ensure software excellence through comprehensive testing and quality assurance. We implement robust testing strategies to deliver bug-free, high-performance applications that exceed user expectations.",
     heroBadge: "500+ Testing Projects",
+    heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "500+", label: "Test Projects" },
       { value: "99.5%", label: "Bug Detection" },
@@ -582,6 +597,7 @@ export const servicesData= {
     tagline: "Dedicated Support Solutions",
     description: "Access expert technical support and development resources on-demand. We provide comprehensive support services and dedicated development teams to extend your capabilities and ensure smooth operations.",
     heroBadge: "200+ Support Contracts",
+    heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "200+", label: "Support Clients" },
       { value: "98%", label: "Satisfaction Rate" },
@@ -618,6 +634,7 @@ export const servicesData= {
     tagline: "Decentralized Future Solutions",
     description: "Build the future of decentralized applications and Web3 solutions. We develop smart contracts, DApps, and blockchain infrastructure that leverage the power of distributed ledger technology.",
     heroBadge: "50+ Blockchain Projects",
+    heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "50+", label: "Blockchain Projects" },
       { value: "99.9%", label: "Contract Security" },
@@ -656,6 +673,7 @@ export const servicesData= {
     tagline: "Connected Future Solutions",
     description: "Transform your business with Internet of Things and emerging technologies. We build connected ecosystems that integrate sensors, devices, and advanced technologies for real-time monitoring and automation.",
     heroBadge: "75+ IoT Implementations",
+    heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "75+", label: "IoT Projects" },
       { value: "99.5%", label: "Device Uptime" },
@@ -691,6 +709,7 @@ export const servicesData= {
     tagline: "Next-Generation Experience Solutions",
     description: "Create immersive digital experiences with AR, VR, and mixed reality technologies. We build cutting-edge solutions that transform how users interact with digital content and environments.",
     heroBadge: "25+ Immersive Projects",
+    heroImage: "https://images.unsplash.com/photo-1478416272538-5f7e51dc5400?q=80&w=1332&auto=format&fit=crop",
     stats: [
       { value: "25+", label: "Immersive Projects" },
       { value: "95%", label: "User Engagement" },

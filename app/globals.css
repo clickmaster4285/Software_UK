@@ -229,7 +229,7 @@
   .faq-hero,
   .contact-hero,
   .page-hero {
-    @apply py-10 md:py-30 text-center;
+    @apply h-[45vh] flex items-center justify-center text-center;
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 40%, var(--accent) 100%);
   }
 

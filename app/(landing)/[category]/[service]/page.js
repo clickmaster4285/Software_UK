@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getAllServicePages, getServicePage, slugify } from '@/data/service-pages';
 import { siteConfig } from '@/app/metadata-config';
-import ServiceClient from '../ServiceClient';
+import ServiceDetailClient from './ServiceDetailClient';
 
 export async function generateStaticParams() {
   const services = getAllServicePages();
@@ -33,5 +33,5 @@ export default async function ServiceDetailPage({ params }) {
     notFound();
   }
 
-  return <ServiceClient serviceData={page} />;
+  return <ServiceDetailClient service={page} categorySlug={category} />;
 }

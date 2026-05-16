@@ -3,8 +3,9 @@
 import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import MegaMenu from "./MegaMenu";
-import { serviceMenuSections } from "@/data/service-pages";
+import { serviceMenuSections, slugify } from "@/data/service-pages";
 import { ChevronDown } from "lucide-react";
 import { useBlogList } from "@/hooks/useBlog";
 import { useCaseStudyList } from "@/hooks/useCaseStudies";
@@ -18,9 +19,31 @@ const navLinks = [
   { name: "Contact", href: "/contact" },
 ];
 
+// Slugs for service categories to identify service routes dynamically
+const serviceCategorySlugs = serviceMenuSections.map(s => slugify(s.label));
+
+// Other specific routes that should always have a white background
+const forceWhiteBgRoutes = [];
+
 export default function Navbar() {
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // Determine if the navbar should have a white background based on scroll or route
+  const hasWhiteBg = useMemo(() => {
+    if (isScrolled) return true;
+
+    const pathSegments = pathname.split('/').filter(Boolean);
+    if (pathSegments.length > 0) {
+      const rootSegment = pathSegments[0];
+      // If the first part of the URL is a service category (main or sub service)
+      if (serviceCategorySlugs.includes(rootSegment)) return true;
+    }
+
+    // Check against other explicitly defined white-background routes
+    return forceWhiteBgRoutes.some(route => pathname === route || pathname.startsWith(`${route}/`));
+  }, [isScrolled, pathname]);
 
   const { data: blogs } = useBlogList();
   const { data: caseStudies } = useCaseStudyList();
@@ -109,8 +132,11 @@ export default function Navbar() {
   ], [blogs, caseStudies, testimonials]);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-sm border-b border-border py-2" : "bg-transparent py-4"
-      }`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      hasWhiteBg 
+        ? "bg-white/95 backdrop-blur-sm border-b border-border py-2 shadow-sm" 
+        : "bg-transparent py-4"
+    }`}>
       <div className="max-w-400 mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image 
@@ -120,7 +146,7 @@ export default function Navbar() {
             height={48}
             priority
             style={{ width: "auto", height: "auto" }}
-            className={`h-12 w-auto transition-all ${!isScrolled ? "brightness-0 invert" : ""}`}
+            className={`h-12 w-auto transition-all ${!hasWhiteBg ? "brightness-0 invert" : ""}`}
           />
         </Link>
 
@@ -131,8 +157,9 @@ export default function Navbar() {
                 key={link.name}
                 categories={link.name === "Resources" ? resourcesCategories : serviceMenuSections}
                 trigger={
-                  <div className={`flex items-center gap-1 transition-colors font-body text-sm cursor-pointer ${isScrolled ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
-                    }`}>
+                  <div className={`flex items-center gap-1 transition-colors font-body text-sm cursor-pointer ${
+                    hasWhiteBg ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
+                  }`}>
                     {link.name}
                     <ChevronDown className="w-3 h-3" />
                   </div>
@@ -142,8 +169,9 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`transition-colors font-body text-sm ${isScrolled ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
-                  }`}
+                className={`transition-colors font-body text-sm ${
+                  hasWhiteBg ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
+                }`}
               >
                 {link.name}
               </Link>
@@ -161,7 +189,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className={`md:hidden p-2 transition-colors ${isScrolled ? "text-primary" : "text-white"}`}
+          className={`md:hidden p-2 transition-colors ${hasWhiteBg ? "text-primary" : "text-white"}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -201,4 +229,3 @@ export default function Navbar() {
     </nav>
   );
 }
-

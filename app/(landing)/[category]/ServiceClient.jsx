@@ -34,23 +34,16 @@ export default function ServiceClient({ serviceData }) {
   })) || [];
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white pt-18">
       {/* Premium Breadcrumb */}
       <div className="relative z-20 border-b border-slate-100 bg-white/80 backdrop-blur-md">
-        <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-400 px-4 py-4 sm:px-6 lg:px-8">
           <nav className="flex items-center space-x-2 text-sm font-medium">
             <Link 
               href="/" 
               className="text-slate-500 hover:text-primary transition-colors duration-200 font-body"
             >
               Home
-            </Link>
-            <ChevronRight className="h-4 w-4 text-slate-300" />
-            <Link 
-              href="/services" 
-              className="text-slate-500 hover:text-primary transition-colors duration-200 font-body"
-            >
-              Services
             </Link>
             <ChevronRight className="h-4 w-4 text-slate-300" />
             <span className="text-slate-900 font-heading font-semibold">
