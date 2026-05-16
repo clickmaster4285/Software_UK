@@ -6,6 +6,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Star, Quote, Calendar, Building2, Briefcase, ChevronRight, Share2, Link as LinkIcon } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
 export default function TestimonialDetailPage() {
@@ -73,7 +74,7 @@ export default function TestimonialDetailPage() {
                 <div className="relative">
                   <div className="w-16 h-16 rounded-full bg-linear-to-br from-primary to-primary-mid overflow-hidden border-2 border-white shadow-lg">
                     {testimonial.avatarUrl ? (
-                      <img src={testimonial.avatarUrl} alt={testimonial.authorName} className="w-full h-full object-cover" />
+                      <Image src={testimonial.avatarUrl} alt={testimonial.authorName} fill sizes="64px" className="object-cover" />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-accent font-bold text-lg">
                         {testimonial.authorName.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2)}

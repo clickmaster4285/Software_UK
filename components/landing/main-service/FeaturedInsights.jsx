@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useBlogList } from "@/hooks/useBlog";
+import { useCaseStudyList } from "@/hooks/useCaseStudies";
 import Link from "next/link";
-import { apiFetch } from "@/lib/api";
+import Image from "next/image";
 import { resolveImageUrl } from "@/lib/utils";
 
 // ─── Types ─────────────────────────────────────────────────────────────────────
@@ -127,15 +128,17 @@ const InsightCardItem = ({ card, tall = false }) => {
     >
       <div
         className={[
-          "w-full overflow-hidden bg-linear-to-br from-gray-800 to-gray-900",
+          "relative w-full overflow-hidden bg-linear-to-br from-gray-800 to-gray-900",
           tall ? "aspect-4/5" : "aspect-16/10"
         ].join(" ")}
       >
         {imgSrc && (
-          <img
+          <Image
             src={imgSrc}
             alt={card.title}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            fill
+            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
           />
         )}
@@ -143,14 +146,14 @@ const InsightCardItem = ({ card, tall = false }) => {
 
       <div className="absolute bottom-0 left-0 right-0 p-3">
         {/* stronger dark gradient base (fixes readability instantly) */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/60 to-transparent" />
 
         {/* subtle glass blur ONLY at bottom */}
         <div className="absolute inset-0 backdrop-blur-[3px]" />
 
         {/* content always above */}
         <div className="relative z-10">
-          <p className="text-[11px] font-medium mb-1 text-orange-300">
+          <p className="text-[11px] font-medium mb-1 text-accent">
             {card.type}
           </p>
 
@@ -170,7 +173,7 @@ const InsightCardItem = ({ card, tall = false }) => {
 const SkeletonCard = ({ tall = false }) => (
   <div
     className={[
-      "rounded-2xl bg-gradient-to-br from-gray-200 to-gray-300 animate-pulse",
+      "rounded-2xl bg-linear-to-br from-gray-200 to-gray-300 animate-pulse",
       tall ? "aspect-4/5" : "aspect-16/10"
     ].join(" ")}
   />
@@ -210,17 +213,15 @@ const InsightsHeader = () => {
       ].join(" ")}
     >
       <p
-        className="text-xs tracking-widest uppercase font-medium"
-        style={{ color: "#ea580c" }}
+        className="text-xs tracking-widest uppercase font-medium text-accent"
       >
-        Sucess Stories
+        Success Stories
       </p>
       <h2
-        className="text-3xl xl:text-4xl font-medium leading-tight"
-        style={{ color: "#0c2a2a" }}
+        className="text-3xl xl:text-4xl font-medium leading-tight text-primary"
       >
         Stories of our transformations{" "}
-        <span style={{ color: "#ea580c" }}>
+        <span className="text-accent">
           across Services and Industries
         </span>
       </h2>
@@ -235,8 +236,7 @@ const InsightsHeader = () => {
 
       <Link
         href="/blog"
-        className="w-fit px-6 py-2.5 rounded-full text-white text-sm font-medium transition-opacity hover:opacity-90"
-        style={{ background: "#ea580c" }}
+        className="w-fit px-6 py-2.5 rounded-full text-white text-sm font-medium transition-opacity hover:opacity-90 bg-accent"
       >
         Explore More
       </Link>
@@ -255,7 +255,7 @@ const InsightsCards = ({ cards, isLoading }) => {
   return (
     <>
       {/* Column 1 - 2 cards */}
-      <div className="flex flex-col gap-4 w-[260px] xl:w-[320px] justify-center">
+      <div className="flex flex-col gap-4 w-65 xl:w-[320px] justify-center">
         {isLoading ? (
           <>
             <SkeletonCard />
@@ -269,7 +269,7 @@ const InsightsCards = ({ cards, isLoading }) => {
       </div>
 
       {/* Column 2 - 3 cards */}
-      <div className="flex flex-col gap-4 w-[260px] xl:w-[320px]">
+      <div className="flex flex-col gap-4 w-65 xl:w-[320px]">
         {isLoading ? (
           <>
             <SkeletonCard />
@@ -284,7 +284,7 @@ const InsightsCards = ({ cards, isLoading }) => {
       </div>
 
       {/* Column 3 - 3 cards */}
-      <div className="flex flex-col gap-4 w-[260px] xl:w-[320px]">
+      <div className="flex flex-col gap-4 w-65 xl:w-[320px]">
         {isLoading ? (
           <>
             <SkeletonCard />
@@ -304,23 +304,8 @@ const InsightsCards = ({ cards, isLoading }) => {
 // ─── Main Component ────────────────────────────────────────────────────────────
 
 export default function FeaturedInsights() {
-  const { data: blogs = [], isLoading: blogsLoading } = useQuery({
-    queryKey: ["featured-insights-blogs"],
-    queryFn: async () => {
-      const res = await apiFetch("/api/blog");
-      if (!res.ok) throw new Error("Failed to fetch blogs");
-      return res.json();
-    },
-  });
-
-  const { data: caseStudies = [], isLoading: csLoading } = useQuery({
-    queryKey: ["featured-insights-case-studies"],
-    queryFn: async () => {
-      const res = await apiFetch("/api/case-studies");
-      if (!res.ok) throw new Error("Failed to fetch case studies");
-      return res.json();
-    },
-  });
+  const { data: blogs = [], isLoading: blogsLoading } = useBlogList();
+  const { data: caseStudies = [], isLoading: csLoading } = useCaseStudyList();
 
   const isLoading = blogsLoading || csLoading;
 
@@ -342,9 +327,9 @@ export default function FeaturedInsights() {
     if (slot === "cs" && csIdx < publishedCS.length) {
       const cs = publishedCS[csIdx++];
       cards.push({
-        id,
+        id: cs._id,
         type: "Case Study",
-        title,
+        title: cs.title,
         thumbnail: thumb(cs.thumbnail, "Case Study", cs.title, cards.length),
         href: caseStudyHref(cs),
         index: cards.length,
@@ -352,9 +337,9 @@ export default function FeaturedInsights() {
     } else if (slot === "blog" && blogIdx < publishedBlogs.length) {
       const blog = publishedBlogs[blogIdx++];
       cards.push({
-        id,
+        id: blog._id,
         type: "Blog",
-        title,
+        title: blog.title,
         thumbnail: thumb(blog.thumbnail, "Blog", blog.title, cards.length),
         href: blogHref(blog),
         index: cards.length,
@@ -364,7 +349,7 @@ export default function FeaturedInsights() {
 
   return (
     <section
-      className="w-full px-4 sm:px-6 lg:px-8 xl:px-22 py-16 overflow-hidden bg-gradient-to-b from-white to-slate-50 "
+      className="w-full px-4 sm:px-6 lg:px-8 xl:px-22 py-16 overflow-hidden bg-linear-to-b from-white to-slate-50 "
      
     >
       {/* Mobile layout: 2 columns grid */}
@@ -395,7 +380,7 @@ export default function FeaturedInsights() {
       {/* Desktop layout: 3 columns with exact distribution (2, 3, 3) */}
       <div className="hidden lg:flex justify-between gap-6 xl:gap-8 lg:px-16">
         {/* Header - left side */}
-        <div className="sticky top-24 flex-shrink-0 w-[280px] xl:w-[520px]">
+        <div className="sticky top-24 shrink-0 w-70 xl:w-130">
           <InsightsHeader />
         </div>
 

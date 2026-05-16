@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Edit, ExternalLink, Globe, Tag, Calendar, User } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { use } from 'react';
 import { Label } from '@/components/ui/label';
 
@@ -38,7 +39,7 @@ export default function ProjectDetailPage({ params }) {
       case 'live': return 'bg-green-100 text-green-700';
       case 'in-progress': return 'bg-blue-100 text-blue-700';
       case 'coming-soon': return 'bg-purple-100 text-purple-700';
-      case 'maintenance': return 'bg-orange-100 text-orange-700';
+      case 'maintenance': return 'bg-accent/10 text-accent';
       case 'completed': return 'bg-emerald-100 text-emerald-700';
       default: return 'bg-slate-100 text-slate-700';
     }
@@ -66,7 +67,13 @@ export default function ProjectDetailPage({ params }) {
           <Card className="border-none shadow-sm overflow-hidden">
             <div className="aspect-video bg-slate-100 relative">
               {project.thumbnail ? (
-                <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover" />
+                <Image 
+                  src={project.thumbnail} 
+                  alt={project.title} 
+                  fill 
+                  sizes="(max-width: 1200px) 100vw, 66vw"
+                  className="object-cover" 
+                />
               ) : (
                 <div className="flex items-center justify-center h-full text-slate-400 italic">No thumbnail provided</div>
               )}
@@ -129,10 +136,10 @@ export default function ProjectDetailPage({ params }) {
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-medium truncate max-w-38">{project.url}</span>
                   <Button variant="outline" size="sm" asChild className="h-8 px-2">
-                    <a href={project.url} target="_blank" rel="noopener noreferrer">
+                    <Link href={project.url} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="w-3.5 h-3.5 mr-1.5" />
                       Visit
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </div>

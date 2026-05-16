@@ -6,16 +6,14 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
 import React, { useState, useRef, useEffect } from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Quote, ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
-import { motion, useInView } from "framer-motion";
+import {  useInView } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay, EffectCoverflow } from "swiper/modules";
-import { useQuery } from "@tanstack/react-query";
-import { apiFetch } from "@/lib/api"; // Make sure this path is correct
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { useTestimonialList } from "@/hooks/useTestimonials";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -29,11 +27,11 @@ export const TestimonialCard = ({
     "70% 30% 70% 30% / 40% 60% 40% 60%";
 
   return (
-    <div className="relative mx-auto w-full max-w-[420px] px-3 py-14">
+    <div className="relative mx-auto w-full max-w-105 px-3 py-14">
       {/* Background Blob */}
       <div
         aria-hidden
-        className={`absolute inset-x-2 inset-y-6 -z-0 bg-primary transition-all duration-500 ${
+        className={`absolute inset-x-2 inset-y-6 z-0 bg-primary transition-all duration-500 ${
           isActive
             ? "rotate-[-10deg] scale-[1.03]"
             : "rotate-[-8deg] opacity-90"
@@ -43,7 +41,7 @@ export const TestimonialCard = ({
 
       {/* Card */}
       <div
-        className={`relative min-h-[420px] bg-card shadow-xl transition-all duration-500 ${
+        className={`relative min-h-105 bg-card shadow-xl transition-all duration-500 ${
           isActive
             ? "scale-100 shadow-2xl"
             : "scale-95 opacity-90"
@@ -97,15 +95,8 @@ export function TestimonialsSection() {
   const sectionRef = useRef(null);
   const headerInView = useInView(sectionRef, { once, amount: 0.2 });
 
-  // Fetch testimonials from API
-  const { data: testimonials = [], isLoading, error } = useQuery({
-    queryKey: ["testimonials"],
-    queryFn: async () => {
-      const res = await apiFetch("/api/testimonials");
-      if (!res.ok) throw new Error("Failed to fetch testimonials");
-      return res.json();
-    },
-  });
+  // Fetch testimonials from API using organized hook
+  const { data: testimonials = [], isLoading, error } = useTestimonialList();
 
   useEffect(() => {
     if (!swiperRef) return;
@@ -153,17 +144,17 @@ export function TestimonialsSection() {
   if (testimonials.length === 0) return null;
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden bg-gradient-to-b from-white to-slate-50 py-24">
+    <section ref={sectionRef} className="relative overflow-hidden bg-linear-to-b from-white to-slate-50 py-24">
       <div className="mx-auto px-6 ">
         
            {/* Header original design */}
       <div className="text-center mb-12">
         <div className="inline-flex items-center gap-2 mb-3">
-          <span className="w-8 h-[2px] bg-primary rounded-full" />
-          <p className="text-orange-800 text-[11px] font-bold tracking-[0.2em] uppercase">
+          <span className="w-8 h-0.5 bg-primary rounded-full" />
+          <p className="text-accent text-[11px] font-bold tracking-[0.2em] uppercase">
           Testimonial
           </p>
-          <span className="w-8 h-[2px] bg-primary rounded-full" />
+          <span className="w-8 h-0.5 bg-primary rounded-full" />
         </div>
 
         <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-3">
@@ -175,15 +166,7 @@ export function TestimonialsSection() {
             <p className="text-gray-700 max-w-2xl mx-auto text-sm">
            Real stories from real clients who turned their ideas into successful digital products with us.
         </p>
-
-      
       </div>
-
-
-
-
-        
-        
 
        
 {/* Carousel */}
@@ -208,10 +191,10 @@ export function TestimonialsSection() {
       768: { slidesPerView: 2.2, spaceBetween: 0 },
       1024: { slidesPerView: 3, spaceBetween: 10 },
     }}
-    className="!px-4 !py-6"
+    className="px-4! py-6!"
   >
     {testimonials.map((t, i) => (
-      <SwiperSlide key={t._id} className="!h-auto">
+      <SwiperSlide key={t._id} className="h-auto!">
         <TestimonialCard testimonial={t} isActive={i === activeIndex} />
       </SwiperSlide>
     ))}

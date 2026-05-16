@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, Edit, ExternalLink, Calendar, User } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function BlogDetailPage({ params }) {
   const { id } = use(params);
@@ -48,8 +49,8 @@ export default function BlogDetailPage({ params }) {
         </div>
 
         {post.thumbnail && (
-          <div className="rounded-2xl overflow-hidden aspect-video border border-slate-200">
-            <img src={post.thumbnail} alt={post.title} className="w-full h-full object-cover" />
+          <div className="relative rounded-2xl overflow-hidden aspect-video border border-slate-200">
+            <Image src={post.thumbnail} alt={post.title} fill sizes="(max-width: 1024px) 100vw, 896px" className="object-cover" />
           </div>
         )}
 

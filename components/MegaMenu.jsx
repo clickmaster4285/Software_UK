@@ -8,6 +8,8 @@ import { CaseStudyCard } from '@/components/admin/case-study-card';
 import { TestimonialCard } from '@/components/admin/testimonial-card';
 import { FAQCard } from '@/components/admin/faq-card';
 
+import { slugify } from '@/data/service-pages';
+
 export default function MegaMenu({ categories, trigger }) {
    const [hoveredCategory, setHoveredCategory] = useState(null);
    const [isOpen, setIsOpen] = useState(false);
@@ -53,6 +55,18 @@ export default function MegaMenu({ categories, trigger }) {
       };
    }, []);
 
+   const getCategoryHref = (category) => {
+      if (category.viewAllHref) return category.viewAllHref;
+      return `/${slugify(category.label)}`;
+   };
+
+   const getItemHref = (category, item) => {
+      if (item.href) return item.href;
+      const categorySlug = slugify(category.label);
+      const itemSlug = slugify(item.title);
+      return `/${categorySlug}/${itemSlug}`;
+   };
+
    return (
       <div
          className="relative"
@@ -75,10 +89,12 @@ export default function MegaMenu({ categories, trigger }) {
                            {categories.map((category, index) => {
                               const isActive = hoveredCategory?.label === category.label;
                               return (
-                                 <div
+                                 <Link
                                     key={index}
-                                    className="group cursor-pointer"
+                                    href={getCategoryHref(category)}
+                                    className="group block"
                                     onMouseEnter={() => setHoveredCategory(category)}
+                                    onClick={() => handleMouseLeave()}
                                  >
                                     <div className={`flex items-center justify-between p-3 rounded-lg transition-all duration-200 ${isActive
                                           ? 'bg-black text-white shadow-md'
@@ -90,7 +106,7 @@ export default function MegaMenu({ categories, trigger }) {
                                        <ChevronRight className={`w-4 h-4 transition-colors ${isActive ? 'text-white' : 'text-slate-400 group-hover:text-white'
                                           }`} />
                                     </div>
-                                 </div>
+                                 </Link>
                               );
                            })}
                         </div>
@@ -105,8 +121,9 @@ export default function MegaMenu({ categories, trigger }) {
                                     {hoveredCategory.label}
                                  </h3>
                                  <Link
-                                    href={hoveredCategory.viewAllHref || `/services/${hoveredCategory.label.toLowerCase().replace(/\s+/g, '-')}`}
+                                    href={getCategoryHref(hoveredCategory)}
                                     className="text-sm font-medium text-primary hover:text-accent-hover transition-colors flex items-center gap-1"
+                                    onClick={() => handleMouseLeave()}
                                  >
                                     View All <ChevronRight className="w-4 h-4" />
                                  </Link>
@@ -146,7 +163,8 @@ export default function MegaMenu({ categories, trigger }) {
                                     return (
                                        <Link
                                           key={key}
-                                          href={item.href || `/services/${item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`}
+                                          href={getItemHref(hoveredCategory, item)}
+                                           onClick={() => handleMouseLeave()}
                                           className="group block h-full rounded-2xl border border-slate-100 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20"
                                        >
                                           <h4 className="text-sm font-semibold text-slate-900 group-hover:text-primary mb-2 transition-colors">

@@ -10,6 +10,7 @@ import {
   ArrowUpRight
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const benefits = [
   {
@@ -132,11 +133,15 @@ export default function Benefits() {
             viewport={{ once: true }}
             className="absolute bottom-20 -right-12 md:-right-60 w-48 h-48 md:w-160 md:h-160 pointer-events-none z-20 hidden lg:block"
           >
-            <img 
-              src="/landing/high-performace.png" 
-              alt="High Performance" 
-              className="w-full h-full object-contain"
-            />
+            <div className="relative w-full h-full">
+              <Image 
+                src="/landing/high-performace.png" 
+                alt="High Performance" 
+                fill
+                sizes="(max-width: 1024px) 0vw, 640px"
+                className="object-contain"
+              />
+            </div>
           </motion.div>
         </div>
       </div>

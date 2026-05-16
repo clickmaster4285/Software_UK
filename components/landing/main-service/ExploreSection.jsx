@@ -3,10 +3,21 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { servicesData } from '@/src/lib/services';
-import {  Layers3,  Code2,  Globe,  Smartphone,  Database,  Cloud,  ShieldCheck,  Briefcase,  LayoutDashboard,  MessageSquareQuote,  Newspaper,  Users,  ArrowRight,  DatabaseZap,  TestTube,  Headphones,  Link2,  Glasses,  Workflow,  Bot,  BarChart3,  Cpu,  Palette,  Brain,  Eye,  CpuIcon,  Target,  Building,  Rocket,  Monitor,  Plug,  Puzzle,  Server,  Settings,  Zap,  Wrench,  FileText,  ShoppingCart,  Package,  Store,  ShoppingBag,  MessageCircle,  Edit3,  Cog,  BotMessageSquare,  Sparkles,  Lightbulb,  Microscope,  FileSpreadsheet,  FileText,  BarChart,  Database,  HardDrive,  Search,  Globe2,  Webhook,  Bug,  Wrench,  Users2,  UserCheck,  Headset,  Link,  Coins,  CreditCard,  Palette,  Glasses,  Gamepad2,  Box,  Factory,  Cpu,
+import { servicesData } from '@/data/services';
+import { 
+  Layers3, Code2, Globe, Smartphone, Database, Cloud, ShieldCheck, Target, Building, Rocket, Monitor, Plug, Puzzle, Server, Zap, ShoppingCart, Package, Store, ShoppingBag, Brain, Cpu, Eye, BarChart3, Bot, Workflow, DatabaseZap, TestTube, Headphones, Link2, CpuIcon, Glasses, MessageCircle, Microscope, FileText, LayoutDashboard, Search, Edit3, BarChart, HardDrive, Globe2, Webhook, Users2, UserCheck, Headset, Coins, CreditCard, Gamepad2, Box, Factory, Sparkles, BotMessageSquare, FileSpreadsheet,
+  Palette, Users, Cog, Settings, Bug,
+  ArrowRight
 } from 'lucide-react';
 import { metadataConfig } from '@/app/metadata-config';
+
+// Re-defining icons that might have been missing or mismatched
+const BarChartIcon = BarChart;
+const DatabaseIcon = Database;
+const FileTextIcon = FileText;
+const VrIcon = Glasses;
+const WrenchIcon = Settings;
+const Wrench = Settings;
 
 export const metadata = metadataConfig.home();
 
@@ -226,7 +237,7 @@ const subServiceIcons = {
   '3D Application Development': Gamepad2,
 };
 
-export default function ExploreSection({ serviceData }) {
+export function ExploreSection({ serviceData }) {
   const [showAll, setShowAll] = useState(false);
   
   // Determine what to show based on context
@@ -244,11 +255,11 @@ export default function ExploreSection({ serviceData }) {
       }))
     : Object.values(servicesData).map((service) => ({
         href: `/${service.slug}`,
-        title,
-        desc,
+        title: service.title,
+        desc: service.description,
         ariaLabel: `Learn about ${service.title}: ${service.description}`,
-        icon,
-        color: serviceColors[service.slug] || 'text-blue-500',
+        icon: serviceIcons[service.slug] || Code2,
+        color: serviceColors[service.slug] || 'text-primary',
       }));
 
   // Show first 12 items (2 rows of 6) when not showing all
@@ -264,21 +275,21 @@ export default function ExploreSection({ serviceData }) {
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="w-8 h-[2px] bg-primary rounded-full" />
-            <p className="text-secondarytext-[11px] font-bold tracking-[0.2em] uppercase">
+            <span className="w-8 h-0.5 bg-primary rounded-full" />
+            <p className="text-[11px] font-bold tracking-[0.2em] uppercase text-slate-500">
               {isServicePage ? 'Specialized Services' : 'Explore Our Ecosystem'}
             </p>
-            <span className="w-8 h-[2px] bg-primary rounded-full" />
+            <span className="w-8 h-0.5 bg-primary rounded-full" />
           </div>
 
           <h2
             id="home-explore-heading"
-            className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-2xl lg:text-3xl"
+            className="mt-5 font-heading text-3xl font-bold tracking-tight text-slate-900 sm:text-2xl lg:text-3xl"
           >
             {isServicePage ? `${serviceData.title} Services` : 'Explore ClickMasters'}
           </h2>
 
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg font-body">
             {isServicePage 
               ? `Explore our specialized ${serviceData.title.toLowerCase()} services designed to meet your specific business needs.`
               : 'Discover our engineering capabilities, delivery expertise, case studies, and strategic technology solutions built for modern businesses.'
@@ -289,38 +300,29 @@ export default function ExploreSection({ serviceData }) {
         {/* Grid */}
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
           {displayedLinks.map((item, index) => {
-            const Icon = typeof item.icon === 'function' ? item.icon() : item.icon;
-            const isHighlight = Boolean(item.highlight);
+            const Icon = item.icon;
 
             return (
               <Link
                 key={`${item.href}-${index}`}
                 href={item.href}
                 aria-label={item.ariaLabel}
-                className={`group relative overflow-hidden rounded-3xl border bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${
-                  isHighlight
-                    ? 'border-primary/30 shadow-lg shadow-primary/10'
-                    : 'border-slate-200 hover:border-primary/30'
-                }`}
+                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-primary/30"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.03] via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="absolute inset-0 bg-linear-to-br from-primary/3 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
                 <div className="relative flex justify-center">
-                  {typeof item.icon === 'function' ? (
-                    <div className="text-4xl">{Icon}</div>
-                  ) : (
-                    <Icon
-                      className={`h-12 w-12 transition-all duration-300 group-hover:scale-110 ${item.color}`}
-                      strokeWidth={2}
-                    />
-                  )}
+                  <Icon
+                    className={`h-12 w-12 transition-all duration-300 group-hover:scale-110 ${item.color}`}
+                    strokeWidth={1.5}
+                  />
                 </div>
 
                 <div className="relative mt-7 text-center">
-                  <h3 className="font-display text-lg font-bold text-slate-900 transition-colors group-hover:text-primary">
+                  <h3 className="font-heading text-lg font-bold text-slate-900 transition-colors group-hover:text-primary">
                     {item.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-600 line-clamp-3">
+                  <p className="mt-3 text-sm leading-relaxed text-slate-600 line-clamp-3 font-body">
                     {item.desc}
                   </p>
                 </div>
@@ -353,7 +355,7 @@ export default function ExploreSection({ serviceData }) {
               ) : (
                 <>
                   See More ({allLinks.length - 12} more)
-                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  <ArrowRight className="h-4 w-4 transition-transform duration-300" />
                 </>
               )}
             </button>

@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import MegaMenu from "./MegaMenu";
 import { serviceMenuSections } from "@/data/service-pages";
 import { ChevronDown } from "lucide-react";
@@ -112,9 +113,12 @@ export default function Navbar() {
       }`}>
       <div className="max-w-400 mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <img 
+          <Image 
             src="/cm-logos/logo.png" 
             alt="ClickMasters" 
+            width={180}
+            height={48}
+            priority
             className={`h-12 w-auto transition-all ${!isScrolled ? "brightness-0 invert" : ""}`}
           />
         </Link>

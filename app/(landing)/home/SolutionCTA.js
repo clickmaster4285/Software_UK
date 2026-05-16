@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
 
 export default function SolutionCTA() {
@@ -65,10 +66,12 @@ export default function SolutionCTA() {
               >
                 <Card className=" py-0 group border border-border/50 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 rounded-[2rem] overflow-hidden bg-white flex flex-col h-full cursor-pointer">
                   <div className="aspect-16/10 relative overflow-hidden">
-                    <img 
+                    <Image 
                       src={project.thumbnail || "https://via.placeholder.com/800x600?text=Project"} 
                       alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     {/* Subtle overlay on hover */}
                     <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

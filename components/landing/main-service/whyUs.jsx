@@ -107,11 +107,11 @@ export function WhyChooseUs({ countryName, items, subtitle = "Competitive differ
         {/* Header Section */}
         <div className="mx-auto max-w-3xl text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="h-[2px] w-8 rounded-full bg-primary" />
+            <span className="h-0.5 w-8 rounded-full bg-primary" />
             <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary/80">
               Why Choose ClickMasters
             </p>
-            <span className="h-[2px] w-8 rounded-full bg-primary" />
+            <span className="h-0.5 w-8 rounded-full bg-primary" />
           </div>
 
         <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-2xl lg:text-3xl">
@@ -151,7 +151,7 @@ export function WhyChooseUs({ countryName, items, subtitle = "Competitive differ
                 >
                   <div className="relative bg-white rounded-2xl p-6 border border-primary/10 shadow-[0_4px_20px_rgb(0,0,0,0.02)] h-full overflow-hidden group">
                     <motion.div
-                      className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent"
+                      className="absolute inset-0 bg-linear-to-r from-primary/5 to-transparent"
                       animate={{ x: ['-100%', '100%'] }}
                       transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
                     />
@@ -213,7 +213,7 @@ export function WhyChooseUs({ countryName, items, subtitle = "Competitive differ
                 >
                   <div className="relative bg-white rounded-2xl p-6 border border-primary/10 shadow-[0_4px_20px_rgb(0,0,0,0.02)] h-full overflow-hidden group">
                     <motion.div
-                      className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent"
+                      className="absolute inset-0 bg-linear-to-r from-primary/5 to-transparent"
                       animate={{ x: ['-100%', '100%'] }}
                       transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
                     />

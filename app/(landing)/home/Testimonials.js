@@ -4,6 +4,7 @@ import { useTestimonialList } from '@/hooks/useTestimonials';
 import { Star, Quote, CheckCircle2 } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Testimonials() {
   const { data: testimonials, isLoading } = useTestimonialList();
@@ -120,11 +121,15 @@ function TestimonialCard({ t, className }) {
 
       <div className="flex items-center gap-4 border-t border-white/5 pt-6">
         {t.avatarUrl ? (
-          <img 
-            src={t.avatarUrl} 
-            alt={t.authorName} 
-            className="w-14 h-14 rounded-full object-cover border-2 border-white/20 shadow-xl"
-          />
+          <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-white/20 shadow-xl">
+            <Image 
+              src={t.avatarUrl} 
+              alt={t.authorName} 
+              fill
+              sizes="56px"
+              className="object-cover"
+            />
+          </div>
         ) : (
           <div className="w-14 h-14 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold border border-accent/30">
             {t.authorName[0]}

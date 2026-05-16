@@ -109,11 +109,11 @@ export function HelpSection() {
         {/* Header Section - Matching FAQ Style */}
         <div ref={headerRef} className="mx-auto max-w-3xl text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="h-[2px] w-8 rounded-full bg-orange-400" />
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-orange-800">
+            <span className="h-0.5 w-8 rounded-full bg-accent" />
+            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
               Resources & Support
             </p>
-            <span className="h-[2px] w-8 rounded-full bg-orange-400" />
+            <span className="h-0.5 w-8 rounded-full bg-accent" />
           </div>
 
           <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-2xl lg:text-3xl">
@@ -141,12 +141,12 @@ export function HelpSection() {
                 className="group relative cursor-pointer"
               >
                 {/* Premium Card Design */}
-                <div className="relative bg-white rounded-2xl p-6 border border-orange-100 shadow-[0_4px_20px_rgb(0,0,0,0.02)] h-full overflow-hidden transition-all duration-300">
+                <div className="relative bg-white rounded-2xl p-6 border border-accent/10 shadow-[0_4px_20px_rgb(0,0,0,0.02)] h-full overflow-hidden transition-all duration-300">
                   
                   {/* Header with Icon and Stat */}
                   <div className="flex items-start justify-between mb-4">
                     <div className="relative">
-                      <div className="relative w-12 h-12 flex items-center justify-center bg-gray-50 rounded-xl group-hover:bg-orange-50 transition-colors duration-300">
+                      <div className="relative w-12 h-12 flex items-center justify-center bg-gray-50 rounded-xl group-hover:bg-accent/5 transition-colors duration-300">
                         <Icon className="w-6 h-6 text-black/70 group-hover:text-primary transition-colors duration-300" strokeWidth={1.5} />
                       </div>
                     </div>
@@ -171,7 +171,7 @@ export function HelpSection() {
                   {/* Bottom Corner Accent */}
                   <div className="absolute bottom-3 right-3 w-6 h-6">
                     <motion.div
-                      className="w-full h-full border-b border-r border-orange-200 group-hover:border-primary transition-all duration-300"
+                      className="w-full h-full border-b border-r border-accent/20 group-hover:border-primary transition-all duration-300"
                       animate={{
                         rotate: hoveredIndex === index ? 90 : 0,
                       }}

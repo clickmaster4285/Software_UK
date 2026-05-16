@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Globe, Layout, Smartphone, GitBranch, Server, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const iconMap = {
   'web': <Globe className="w-5 h-5" />,
@@ -49,12 +50,14 @@ export default function ProjectsPage() {
                   style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'forwards' }}
                 >
                   <div className="aspect-video relative overflow-hidden bg-slate-100">
-                    <img 
+                    <Image 
                       src={project.thumbnail || 'https://via.placeholder.com/800x450?text=Project'} 
                       alt={project.title} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute top-4 left-4">
+                    <div className="absolute top-4 left-4 z-10">
                       <Badge className="bg-primary/80 backdrop-blur-md text-white border-none">
                         {project.category?.name || 'Project'}
                       </Badge>
@@ -93,22 +96,22 @@ export default function ProjectsPage() {
                     <div className="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
                       <div className="flex gap-2">
                         <Button variant="outline" size="icon" className="w-8 h-8 rounded-lg border-slate-200" asChild>
-                          <a href={project.url} target="_blank" rel="noopener noreferrer">
+                          <Link href={project.url} target="_blank" rel="noopener noreferrer">
                             <ExternalLink className="w-4 h-4" />
-                          </a>
+                          </Link>
                         </Button>
                         <Button variant="outline" size="icon" className="w-8 h-8 rounded-lg border-slate-200">
                           <GitBranch className="w-4 h-4" />
                         </Button>
                       </div>
-                      <a 
+                      <Link 
                         href={project.url} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-primary font-bold text-[10px] uppercase tracking-widest flex items-center gap-2 hover:text-accent transition-colors"
                       >
                         Visit Project <ArrowRight className="w-3 h-3" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </article>

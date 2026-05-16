@@ -126,14 +126,16 @@ const Typewriter = ({ texts, typingSpeed = 80, deletingSpeed = 40, pauseTime = 1
   }, [displayText, isDeleting, isWaiting, currentIndex, texts, typingSpeed, deletingSpeed, pauseTime]);
 
   return (
-    <span className="inline-block min-w-[280px] text-left text-primary font-medium sm:min-w-[340px] md:min-w-[400px]">
+    <span className="inline-block min-w-70 text-left text-primary font-medium sm:min-w-85 md:min-w-100">
       {displayText}
       <span className="inline-block h-5 w-0.5 -mb-0.5 bg-primary animate-pulse" />
     </span>
   );
 };
 
-export function HeroSection() {
+import { useContactMutation } from '@/hooks/useContact';
+
+export function HeroSection({ serviceData }) {
   const [heroForm, setHeroForm] = useState({
     name: '',
     email: '',
@@ -141,11 +143,10 @@ export function HeroSection() {
     budget: '',
     message: '',
   });
-  const [heroSending, setHeroSending] = useState(false);
-  const [heroSuccess, setHeroSuccess] = useState(false);
-  const [heroError, setHeroError] = useState(null);
 
-  const heroFieldClass = "w-full rounded-xl border border-white/25 bg-white/5 px-3 py-2.5 pl-9 text-base sm:text-sm text-white placeholder:text-gray-200 focus:border-primary/60 focus:outline-none focus:ring-2 focus:ring-primary/30";
+  const { sendMessage, isSending, isSuccess, error } = useContactMutation();
+
+  const heroFieldClass = "w-full rounded-xl border border-white/25 bg-white/5 px-3 py-2.5 pl-9 text-base sm:text-sm text-white placeholder:text-gray-200 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30 transition-all duration-200";
 
   const handleHeroChange = (e) => {
     const { name, value } = e.target;
@@ -154,77 +155,70 @@ export function HeroSection() {
 
   const handleHeroSubmit = async (e) => {
     e.preventDefault();
-    setHeroSending(true);
-    setHeroError(null);
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-          phone,
-          budget,
-          services: 'Homepage hero inquiry',
-        }),
+      await sendMessage({
+        ...heroForm,
+        services: `Main Service: ${serviceData?.title || 'General Inquiry'}`,
+        source: 'Hero Form'
       });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.message || 'Something went wrong');
-      
-      setHeroSuccess(true);
       setHeroForm({ name: '', email: '', phone: '', budget: '', message: '' });
-      setTimeout(() => setHeroSuccess(false), 5000);
     } catch (err) {
-      setHeroError(err instanceof Error ? err.message : 'Failed to send. Please try again.');
-    } finally {
-      setHeroSending(false);
+      console.error('Submission failed:', err);
     }
   };
 
+  const displayStats = serviceData?.stats || stats;
+  const displayBullets = serviceData?.features?.map(f => f.title) || heroBullets;
+
   return (
     <section
-      /* ─── CHANGE 1: mobile = auto height + scroll; desktop = h-screen ─── */
       className="relative min-h-screen flex flex-col lg:flex-row lg:items-stretch overflow-x-hidden"
       aria-labelledby="hero-heading"
     >
       <div className="absolute inset-0 -z-30">
         <NeonOrbs />
       </div>
-      <div className="absolute inset-0 -z-20 bg-black/50" />
+      <div className="absolute inset-0 -z-20 bg-black/60 backdrop-blur-[2px]" />
 
       <div className="container relative z-10 mx-auto w-full max-w-full min-w-0 px-3 sm:px-4 lg:px-14 flex flex-col justify-center min-h-screen">
         <div className="mx-auto w-full min-w-0 px-4 sm:px-6 lg:px-10">
-          {/* ─── CHANGE 2: single-col on mobile, two-col on lg ─── */}
           <div className="grid gap-10 pt-24 pb-10 lg:pt-0 lg:pb-0 lg:min-h-screen lg:grid-cols-[1fr_400px] xl:gap-16 lg:items-center">
 
-            {/* ── Left column ── */}
+            {/* Left column */}
             <div className="flex flex-col justify-center text-left">
+              {/* Badge */}
+              {serviceData?.heroBadge && (
+                <div className="animate-slide-in-up mb-6">
+                  <span className="section-label">
+                    {serviceData.heroBadge}
+                  </span>
+                </div>
+              )}
+
               {/* Heading */}
               <div className="mb-6 md:mb-8">
                 <div className="overflow-hidden">
-                  <div className="animate-slide-in-up font-display text-[1.65rem] font-bold leading-tight tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl">
-                     Software Development
-                  </div>
+                  <h1 id="hero-heading" className="animate-slide-in-up font-heading text-[2rem] font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
+                     {serviceData?.title || "Software Development"}
+                  </h1>
                 </div>
-                <div className="overflow-hidden mt-2">
-                  <div className="animate-slide-in-up font-display text-[1.45rem] font-bold leading-tight tracking-tight text-gray-300 sm:text-3xl md:text-4xl lg:text-5xl">
-                    That Scales Your Business Revenue <span className="text-primary">Software Development Company</span>
+                <div className="overflow-hidden mt-3">
+                  <div className="animate-slide-in-up font-heading text-[1.5rem] font-semibold leading-tight tracking-tight text-gray-300 sm:text-2xl md:text-3xl lg:text-4xl">
+                    {serviceData?.tagline || "That Scales Your Business Revenue"}
                   </div>
                 </div>
               </div>
 
               {/* Sub-description */}
-              <p className="animate-slide-in-up text-base sm:text-lg md:text-xl text-gray-100 leading-relaxed mb-8">
-                We design, build, and deploy high-performance web, mobile, SaaS, and AI-powered
-                systems for companies in the USA, Europe &amp; Middle East.
+              <p className="animate-slide-in-up font-body text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed mb-8 max-w-2xl">
+                {serviceData?.description || "We design, build, and deploy high-performance systems for companies globally."}
               </p>
 
-              {/* Typewriter */}
+              {/* Typewriter / Features */}
               <div className="animate-slide-in-up mb-10">
                 <div className="inline-block rounded-2xl bg-white/5 px-4 sm:px-6 py-3 backdrop-blur-sm border border-white/10 max-w-full overflow-hidden">
                   <div className="text-left text-sm sm:text-base lg:text-lg font-medium text-gray-100">
-                    <Typewriter texts={heroBullets} typingSpeed={60} deletingSpeed={30} pauseTime={2000} />
+                    <Typewriter texts={displayBullets} typingSpeed={60} deletingSpeed={30} pauseTime={2000} />
                   </div>
                 </div>
               </div>
@@ -233,75 +227,71 @@ export function HeroSection() {
               <div className="animate-slide-in-up flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="group w-full sm:w-auto min-h-[52px] rounded-xl bg-primary px-6 text-sm sm:text-base font-medium hover:bg-primary/90"
+                  className="btn-primary group w-full sm:w-auto min-h-13"
                   asChild
                 >
-                  <Link href="/contact-us">
-                    Get Free Software Strategy Call
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                  <Link href="/contact">
+                    {serviceData?.ctaText || "Get Started"}
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
 
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto min-h-[52px] rounded-xl border-white/30 hover:bg-white/5"
+                  className="w-full sm:w-auto min-h-13 rounded-xl border-white/30 text-white hover:bg-white/10 transition-colors"
                   asChild
                 >
-                  <Link href="/contact-us">
+                  <Link href="/contact">
                     <FileText className="mr-2 h-5 w-5" />
                     Request Proposal
                   </Link>
                 </Button>
               </div>
 
-
-
-
-
-
-                  {/* Stats Section */}
-          <div
-            className="animate-slide-in-up mt-6 lg:mt-10 grid grid-cols-2 gap-x-8 gap-y-10  pt-10 pb-10 md:grid-cols-4 md:gap-x-12"
-            role="list"
-            aria-label="Company achievements"
-            style={{ animationDelay: '400ms' }}
-          >
-            {stats.map((stat, index) => (
-              <div key={stat.label} className="text-left" role="listitem">
-                <p className="font-display text-2xl md:text-4xl font-bold tabular-nums text-white tracking-[-2px]">
-                  <Counter end={stat.end} duration={2.2} delay={0.1 * index} />
-                </p>
-                <p className="mt-2 text-sm md:text-base text-gray-400 font-medium">
-                  {stat.label}
-                </p>
+              {/* Stats Section */}
+              <div
+                className="animate-slide-in-up mt-8 lg:mt-14 grid grid-cols-2 gap-x-8 gap-y-10 pt-8 border-t border-white/10 md:grid-cols-4 md:gap-x-12"
+                role="list"
+                aria-label="Service achievements"
+              >
+                {displayStats.map((stat, index) => (
+                  <div key={stat.label} className="text-left" role="listitem">
+                    <p className="font-heading text-2xl md:text-3xl font-bold tabular-nums text-white tracking-tight">
+                      {typeof stat.value === 'string' && stat.value.includes('+') ? (
+                        <Counter end={parseInt(stat.value)} duration={2.2} delay={0.1 * index} />
+                      ) : (
+                        <span>{stat.value}</span>
+                      )}
+                    </p>
+                    <p className="mt-1 text-sm text-gray-400 font-medium">
+                      {stat.label}
+                    </p>
+                  </div>
+                ))}
               </div>
-            ))}
-              </div>
-              
-              
             </div>
 
-            {/* ── Right column CTA Form, vertically centered ── */}
+            {/* Right column CTA Form */}
             <div className="flex items-center justify-center lg:h-screen w-full">
-              <div className="animate-slide-in-up w-full">
-                <div className="rounded-2xl border border-white/15 bg-black/60 p-6 sm:p-8 shadow-2xl shadow-black/50 backdrop-blur-md">
-                  <h2 className="font-display text-lg font-bold text-white">Get a free quote</h2>
-                  <p className="mt-1 mb-6 text-sm text-gray-300">
+              <div className="animate-slide-in-up w-full max-w-md">
+                <div className="rounded-2xl border border-white/15 bg-black/40 p-6 sm:p-8 shadow-2xl shadow-black/50 backdrop-blur-xl">
+                  <h2 className="font-heading text-xl font-bold text-white mb-2">Get a free quote</h2>
+                  <p className="mb-6 text-sm text-gray-300 font-body">
                     Share your details we&apos;ll respond within one business day.
                   </p>
 
-                  {heroError && (
+                  {error && (
                     <div className="mb-4 rounded-xl border border-red-400/40 bg-red-950/50 px-4 py-3 text-sm text-red-100">
-                      {heroError}
+                      {error?.message || 'Something went wrong'}
                     </div>
                   )}
 
-                  {heroSuccess ? (
+                  {isSuccess ? (
                     <div className="rounded-xl bg-green-950/40 border border-green-400/30 p-8 text-center">
-                      <CheckCircle2 className="mx-auto mb-4 h-12 w-12 text-primary" />
-                      <p className="font-semibold text-white">Message received!</p>
-                      <p className="mt-1 text-sm text-gray-300">We&apos;ll get back to you shortly.</p>
+                      <CheckCircle2 className="mx-auto mb-4 h-12 w-12 text-accent" />
+                      <p className="font-heading font-semibold text-white">Message received!</p>
+                      <p className="mt-1 text-sm text-gray-300 font-body">We&apos;ll get back to you shortly.</p>
                     </div>
                   ) : (
                     <form onSubmit={handleHeroSubmit} className="space-y-4">
@@ -361,16 +351,16 @@ export function HeroSection() {
                         value={heroForm.message}
                         onChange={handleHeroChange}
                         placeholder="What would you like to build?"
-                        className="min-h-[88px] w-full resize-y rounded-xl border border-white/25 bg-white/5 px-3 py-3 text-sm text-white placeholder:text-gray-200 focus:border-primary/60 focus:outline-none focus:ring-2 focus:ring-primary/30"
+                        className="min-h-25 w-full resize-none rounded-xl border border-white/25 bg-white/5 px-3 py-3 text-sm text-white placeholder:text-gray-200 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30 transition-all duration-200 font-body"
                         required
                       />
 
                       <button
                         type="submit"
-                        disabled={heroSending}
-                        className="w-full min-h-[52px] rounded-xl bg-primary text-base font-semibold text-white transition hover:bg-primary/90 disabled:opacity-60"
+                        disabled={isSending}
+                        className="btn-primary w-full min-h-13 text-base"
                       >
-                        {heroSending ? 'Sending...' : 'Send Message'}
+                        {isSending ? 'Sending...' : 'Send Message'}
                       </button>
                     </form>
                   )}
@@ -379,18 +369,16 @@ export function HeroSection() {
             </div>
 
           </div>
-
-      
         </div>
       </div>
 
       <style jsx>{`
         @keyframes slideInUp {
-          from { opacity: 0; transform: translateY(30px); }
+          from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
         }
         .animate-slide-in-up {
-          animation: slideInUp 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+          animation: slideInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
           opacity: 0;
         }
       `}</style>

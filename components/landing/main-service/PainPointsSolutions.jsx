@@ -26,7 +26,7 @@ const painPoints = [
     title: 'The Infinite Timeline',
     description: '"It’ll be ready next quarter..." Agency black-box development with zero visibility.',
     icon: Clock,
-    gradient: 'from-primary to-orange-600',
+    gradient: 'from-primary to-accent',
   },
   {
     id: 'security',
@@ -40,7 +40,7 @@ const painPoints = [
     title: 'The Scalability Ceiling',
     description: 'Your app crashes during success. Legacy systems can’t handle real growth.',
     icon: TrendingUp,
-    gradient: 'from-rose-500 to-orange-600',
+    gradient: 'from-rose-500 to-accent',
   },
 ];
 
@@ -68,16 +68,16 @@ export default function PainPointsSolutions({ countryName }) {
 
          <div className="mx-auto max-w-3xl text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="h-[2px] w-8 rounded-full bg-orange-400" />
+            <span className="h-0.5 w-8 rounded-full bg-accent" />
             
             <div className="inline-flex items-center gap-1.5">
-              <Zap className="h-3.5 w-3.5 text-orange-700" />
-              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-orange-800">
+              <Zap className="h-3.5 w-3.5 text-accent" />
+              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
                 {hasLocation ? `Problems Businesses Face in ${countryName}` : 'Stop Settling For Mediocre'}
               </p>
             </div>
 
-            <span className="h-[2px] w-8 rounded-full bg-orange-400" />
+            <span className="h-0.5 w-8 rounded-full bg-accent" />
           </div>
 
           <h2 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-2xl lg:text-3xl leading-tight">
@@ -123,7 +123,7 @@ export default function PainPointsSolutions({ countryName }) {
 
                   {/* Icon */}
                   <motion.div 
-                    className="mb-6 inline-flex rounded-2xl  p-4 text-orange-600"
+                    className="mb-6 inline-flex rounded-2xl  p-4 text-accent"
                     whileHover={{ scale: 1.12 }}
                   >
                     <Icon className="h-8 w-8" />
@@ -161,7 +161,7 @@ export default function PainPointsSolutions({ countryName }) {
                     <p className="text-slate-600 flex-1 leading-relaxed font-medium">{solution.description}</p>
 
                     {solution.metric && (
-                      <div className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-orange-50 px-4 py-2.5 text-sm font-semibold text-orange-700">
+                      <div className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-accent/5 px-4 py-2.5 text-sm font-semibold text-accent">
                         📈 {solution.metric}
                       </div>
                     )}

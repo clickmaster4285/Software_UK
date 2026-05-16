@@ -264,11 +264,11 @@ const cardsData = communityFeatures.map((feature, index) => ({
         {/* Header Section - Matching FAQ Style */}
         <div ref={headerRef} className="mx-auto max-w-3xl text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="h-[2px] w-8 rounded-full bg-orange-400" />
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-orange-800">
+            <span className="h-0.5 w-8 rounded-full bg-accent" />
+            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
               Why Choose Us
             </p>
-            <span className="h-[2px] w-8 rounded-full bg-orange-400" />
+            <span className="h-0.5 w-8 rounded-full bg-accent" />
           </div>
 
           <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-2xl lg:text-3xl">
@@ -334,7 +334,7 @@ const cardsData = communityFeatures.map((feature, index) => ({
                       delay: idx * 0.3,
                     }}
                   >
-                    <span className="absolute inset-0 bg-orange-500/10 rounded-full blur-md -z-10" />
+                    <span className="absolute inset-0 bg-accent/10 rounded-full blur-md -z-10" />
                     <CountUp
                       start={0}
                       end={numericValue}
@@ -351,7 +351,7 @@ const cardsData = communityFeatures.map((feature, index) => ({
                     {stat.label}
                   </p>
 
-                  <div className="absolute bottom-0 left-1/2 h-px bg-orange-500/30 w-10 -translate-x-1/2" />
+                  <div className="absolute bottom-0 left-1/2 h-px bg-accent/30 w-10 -translate-x-1/2" />
                 </div>
               </motion.div>
             );
@@ -387,7 +387,7 @@ const cardsData = communityFeatures.map((feature, index) => ({
               boxShadow: '0 10px 25px -5px rgba(249,115,22,0.2)',
             }}
             whileTap={{ scale: 0.98 }}
-            className="px-8 py-3 bg-transparent text-black text-sm font-medium tracking-wider border border-orange-200 hover:border-primary rounded-md transition-all duration-300 relative overflow-hidden group"
+            className="px-8 py-3 bg-transparent text-black text-sm font-medium tracking-wider border border-accent/20 hover:border-primary rounded-md transition-all duration-300 relative overflow-hidden group"
             onClick={() => router.push('/testimonials')}
           >
             <span className="relative z-10 flex items-center">
@@ -395,7 +395,7 @@ const cardsData = communityFeatures.map((feature, index) => ({
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </span>
             <motion.div
-              className="absolute inset-0 bg-orange-50"
+              className="absolute inset-0 bg-accent/5"
               initial={{ scale: 0 }}
               whileHover={{ scale: 1 }}
               transition={{ duration: 0.3 }}

@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Plus, Edit, Trash2, Star, User } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { toast } from 'sonner';
 
 export default function TestimonialListPage() {
@@ -78,8 +79,8 @@ export default function TestimonialListPage() {
                     <TableCell className="font-medium">
                       <div className="flex items-center gap-3">
                         {t.avatarUrl ? (
-                          <div className="w-9 h-9 rounded-full overflow-hidden border border-slate-100 shrink-0">
-                            <img src={t.avatarUrl} alt="" className="w-full h-full object-cover" />
+                          <div className="relative w-9 h-9 rounded-full overflow-hidden border border-slate-100 shrink-0">
+                            <Image src={t.avatarUrl} alt="" fill sizes="36px" className="object-cover" />
                           </div>
                         ) : (
                           <div className="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 shrink-0">

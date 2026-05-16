@@ -1,6 +1,7 @@
 
 "use client";
 
+import Link from "next/link";
 import { Lightbulb, Rocket, ShieldCheck, Headphones, ArrowRight, Sparkles } from "lucide-react";
 import { StackedCards, GlassCardItem } from "@/components/ui/glass-cards";
 
@@ -11,7 +12,7 @@ const values = [
     title: "Agile Software Development",
     description:
       "Sprint-based delivery with full transparency. Our software developers ship faster, iterate smarter, and keep you in control at every milestone. We follow agile methodologies to ensure continuous improvement, faster feedback loops, and predictable delivery cycles for every project.",
-    color: "rgba(226,106,63,0.8)",
+    color: "var(--accent)",
     cta: { label: "Learn more", href: "#" },
   },
   {
@@ -20,7 +21,7 @@ const values = [
     title: "Scalable & Future-Proof Architecture",
     description:
       "We engineer software solutions on proven stacks React, Node.js, and cloud-native infrastructure built to scale without costly rewrites. Our architecture is designed to handle growth, high traffic, and evolving business needs while maintaining performance and stability.",
-    color: "rgba(244,169,140,0.8)",
+    color: "var(--accent-light)",
     cta: { label: "Learn more", href: "#" },
   },
   {
@@ -29,7 +30,7 @@ const values = [
     title: "Enterprise Security & Compliance",
     description:
       "Every product from our software house follows OWASP standards, GDPR best practices, and rigorous QA so your business and users stay protected. We implement multi-layer security, encrypted data handling, and continuous vulnerability testing to ensure maximum protection.",
-    color: "rgba(226,106,63,0.8)",
+    color: "var(--accent)",
     cta: { label: "Learn more", href: "#" },
   },
   {
@@ -38,7 +39,7 @@ const values = [
     title: "24/7 Dedicated Support",
     description:
       "Our software development company stays with you post-launch monitoring performance, deploying updates, and resolving issues around the clock. We ensure uninterrupted operations, proactive maintenance, and fast response support whenever you need assistance.",
-    color: "rgba(244,169,140,0.8)",
+    color: "var(--accent-light)",
     cta: { label: "Learn more", href: "#" },
   },
 ];
@@ -50,16 +51,16 @@ export function AboutSection() {
       {/* Header */}
        <div className="mx-auto max-w-5xl px-6 pt-24 pb-12 text-center">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="h-[2px] w-8 rounded-full bg-orange-400" />
+            <span className="h-0.5 w-8 rounded-full bg-accent" />
             
             <div className="inline-flex items-center gap-1.5">
               
-              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-orange-800">
+              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
                About ClickMasters
               </p>
             </div>
 
-            <span className="h-[2px] w-8 rounded-full bg-orange-400" />
+            <span className="h-0.5 w-8 rounded-full bg-accent" />
           </div>
 
           <h2 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-2xl lg:text-3xl leading-tight">
@@ -87,9 +88,9 @@ export function AboutSection() {
 
                <h2 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-2xl lg:text-3xl leading-tight">
           We Don't Just Build Software {" "}
-          <span className="relative inline-block text-[#e26a3f]">
+          <span className="relative inline-block text-accent">
             We Build Revenue Systems
-            <span className="absolute -bottom-2 left-0 h-[3px] w-full rounded-md bg-gradient-to-r from-[#f4a98c] to-[#e26a3f]" />
+            <span className="absolute -bottom-2 left-0 h-[3px] w-full rounded-md bg-linear-to-r from-accent-light to-accent" />
           </span>
 
           </h2>
@@ -100,7 +101,7 @@ export function AboutSection() {
 
   <p className="text-lg leading-relaxed text-justify text-foreground/80">
     ClickMasters is a{" "}
-    <span className="font-semibold text-[#e26a3f]">
+    <span className="font-semibold text-accent">
       professional software development company
     </span>{" "}
     with a proven track record delivering custom software solutions across
@@ -132,52 +133,52 @@ export function AboutSection() {
 
               <p className="text-base leading-relaxed text-justify text-foreground/80">
     Explore our{" "}
-    <a
-      className="text-[#e26a3f] underline-offset-2 hover:underline"
+    <Link
+      className="text-accent underline-offset-2 hover:underline"
       href="#"
     >
       web application development
-    </a>
+    </Link>
     ,{" "}
-    <a
-      className="text-[#e26a3f] underline-offset-2 hover:underline"
+    <Link
+      className="text-accent underline-offset-2 hover:underline"
       href="#"
     >
       mobile app development
-    </a>
+    </Link>
     , and{" "}
-    <a
-      className="text-[#e26a3f] underline-offset-2 hover:underline"
+    <Link
+      className="text-accent underline-offset-2 hover:underline"
       href="#"
     >
       custom software development
-    </a>{" "}
+    </Link>{" "}
     services, or browse the{" "}
-    <a
-      className="text-[#e26a3f] underline-offset-2 hover:underline"
+    <Link
+      className="text-accent underline-offset-2 hover:underline"
       href="#"
     >
       software solutions portfolio
-    </a>{" "}
+    </Link>{" "}
     by industry.
   </p>
             
   <div className="flex flex-wrap gap-3 pt-3">
-    <a
+    <Link
       href="#"
-      className="group inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-[#e26a3f] to-[#e26a3f] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-[#e26a3f]/20 transition hover:shadow-xl hover:shadow-[#e26a3f]/30"
+      className="group inline-flex items-center gap-2 rounded-md bg-linear-to-r from-accent to-accent-hover px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/20 transition hover:shadow-xl hover:shadow-accent/30"
     >
       Start Your Project
       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-    </a>
+    </Link>
 
-    <a
+    <Link
       href="#"
-      className="inline-flex items-center gap-2 rounded-md border border-[#f4a98c]/50 bg-white px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-[#fff5ef]"
+      className="inline-flex items-center gap-2 rounded-md border border-accent/50 bg-white px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-accent/5"
     >
       View Our Work
       <ArrowRight className="h-4 w-4" />
-    </a>
+    </Link>
             </div>
             
 

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { 
   Facebook, 
   // Twitter, 
@@ -48,9 +49,11 @@ export default function Footer() {
           {/* Brand & Newsletter Column */}
           <div className="lg:col-span-4">
             <Link href="/" className="inline-block mb-8">
-              <img 
+              <Image 
                 src="/cm-logos/logo_white.webp" 
                 alt="ClickMasters Logo" 
+                width={180}
+                height={48}
                 className="h-12 w-auto"
               />
             </Link>
@@ -128,42 +131,48 @@ export default function Footer() {
               </ul>
               
               <div className="mt-8 flex gap-4">
-                <a 
+                <Link 
                   href="https://linkedin.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-2.5 bg-white/5 rounded-xl border border-white/10 text-white/60 hover:text-accent hover:border-accent/50 hover:bg-white/10 transition-all group"
                 >
-                  <img 
+                  <Image 
                     src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" 
                     alt="LinkedIn" 
+                    width={20}
+                    height={20}
                     className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity"
                   />
-                </a>
-                <a 
+                </Link>
+                <Link 
                   href="https://github.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-2.5 bg-white/5 rounded-xl border border-white/10 text-white/60 hover:text-accent hover:border-accent/50 hover:bg-white/10 transition-all group"
                 >
-                  <img 
+                  <Image 
                     src="https://img.icons8.com/ios-filled/50/ffffff/github.png" 
                     alt="GitHub" 
+                    width={20}
+                    height={20}
                     className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity"
                   />
-                </a>
-                <a 
+                </Link>
+                <Link 
                   href="https://unsplash.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-2.5 bg-white/5 rounded-xl border border-white/10 text-white/60 hover:text-accent hover:border-accent/50 hover:bg-white/10 transition-all group"
                 >
-                  <img 
+                  <Image 
                     src="https://img.icons8.com/ios-filled/50/ffffff/unsplash.png" 
                     alt="Unsplash" 
+                    width={20}
+                    height={20}
                     className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity"
                   />
-                </a>
+                </Link>
               </div>
 
             </div>

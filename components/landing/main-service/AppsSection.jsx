@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
-import { useQuery } from '@tanstack/react-query';
+import { useProjectList } from '@/hooks/useProjects';
+import { useCategoryList } from '@/hooks/useCategories';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
-import { apiFetch } from '@/lib/api';
 import { getCategoryName, resolveImageUrl } from '@/lib/utils';
 import { FolderKanban, ArrowRight } from 'lucide-react';
 
@@ -15,7 +15,7 @@ function groupProjectsByCategory(projects) {
   for (const project of projects) {
     const name = getCategoryName(project.category);
     if (!map.has(name)) map.set(name, []);
-    map.get(name)!.push(project);
+    map.get(name).push(project);
   }
 
   return Array.from(map.entries())
@@ -24,25 +24,10 @@ function groupProjectsByCategory(projects) {
 }
 
 export function AppsSection() {
-  const { data: projects = [], isLoading } = useQuery({
-    queryKey: ['projects-public'],
-    queryFn: async () => {
-      const res = await apiFetch('/api/projects');
-      if (!res.ok) throw new Error('Failed to fetch projects');
-      return res.json();
-    },
-    staleTime: 300000,
-  });
+  const { data: projects = [], isLoading: projectsLoading } = useProjectList();
+  const { data: categories = [], isLoading: categoriesLoading } = useCategoryList();
 
-  const { data: categories = [] } = useQuery({
-    queryKey: ['categories-public'],
-    queryFn: async () => {
-      const res = await apiFetch('/api/categories');
-      if (!res.ok) throw new Error('Failed to fetch categories');
-      return res.json();
-    },
-    staleTime: 300000,
-  });
+  const isLoading = projectsLoading || categoriesLoading;
 
   const visibleCategoryNames = new Set(
     categories.filter((c) => c.showOnHome).map((c) => c.name)
@@ -86,7 +71,7 @@ export function AppsSection() {
             <div key={categoryName} className="space-y-6">
               <div className="flex items-center gap-3">
                 <h3 className="text-2xl font-bold text-black">{categoryName}</h3>
-                <div className="h-px flex-1 bg-gradient-to-r from-primary/30 to-transparent" />
+                <div className="h-px flex-1 bg-linear-to-r from-primary/30 to-transparent" />
                 <Badge className="bg-primary/10 text-primary border-0">
                   {categoryProjects.length}
                 </Badge>
@@ -102,7 +87,7 @@ export function AppsSection() {
                     className="group block"
                   >
                     <div className="bg-white rounded-2xl border border-primary/10 overflow-hidden transition-shadow hover:shadow-lg">
-                      <div className="aspect-video bg-gradient-to-br from-primary/5 to-primary/10 relative overflow-hidden">
+                      <div className="aspect-video bg-linear-to-br from-primary/5 to-primary/10 relative overflow-hidden">
                         {project.thumbnail ? (
                           <Image
                             src={resolveImageUrl(project.thumbnail)}
@@ -135,7 +120,7 @@ export function AppsSection() {
         <div className="mt-16 text-center">
           <Link
             href="/software-solutions"
-            className="inline-flex min-h-[48px] min-w-[48px] items-center justify-center gap-2 rounded-md bg-black px-8 py-3 text-center font-medium text-white transition-colors hover:bg-primary"
+            className="inline-flex min-h-12 min-w-12 items-center justify-center gap-2 rounded-md bg-black px-8 py-3 text-center font-medium text-white transition-colors hover:bg-primary"
           >
             View all solutions
             <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />

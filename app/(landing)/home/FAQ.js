@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import {
   Accordion,
   AccordionContent,
@@ -87,13 +88,13 @@ export default function FAQ() {
               Can't find the answer you're looking for? Reach out to our team directly and we'll be happy to help you.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a 
+              <Link 
                 href="/contact" 
                 className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white font-heading font-bold rounded-xl hover:bg-accent-hover transition-all shadow-lg hover:shadow-accent/25 hover:-translate-y-0.5 active:translate-y-0"
               >
                 <MessageCircle className="w-5 h-5" />
                 Contact Support
-              </a>
+              </Link>
               <span className="text-white/60 font-body text-sm">Or email us at support@clickmasters.uk</span>
             </div>
           </div>

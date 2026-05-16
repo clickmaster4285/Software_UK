@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion, useScroll, useTransform, useMotionValue } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
 import { Check, ArrowRight, Zap, Target, Layers, Globe, MousePointer2 } from "lucide-react";
 
@@ -36,7 +37,7 @@ export default function Pricing() {
    return (
       <section ref={containerRef} className="py-12 bg-surface/30 relative overflow-hidden">
          {/* Aesthetic background glows */}
-         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[160px] pointer-events-none" />
+         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-accent/5 rounded-full blur-[160px] pointer-events-none" />
 
          {/* Decorative Corner Images - Honeycomb Soft Shapes */}
          <motion.div 
@@ -50,10 +51,12 @@ export default function Pricing() {
             style={{ clipPath: "polygon(5% 5%, 85% 5%, 95% 50%, 85% 95%, 15% 95%, 5% 50%)" }}
             className="absolute top-18 left-24 w-80 h-80 overflow-hidden pointer-events-none hidden xl:block rounded-[3rem]"
          >
-            <img 
+            <Image 
                src="/landing/pricing_1.avif" 
                alt="" 
-               className="w-full h-full object-cover"
+               fill
+               sizes="320px"
+               className="object-cover"
             />
          </motion.div>
 
@@ -68,10 +71,12 @@ export default function Pricing() {
             style={{ clipPath: "polygon(9% 5%, 85% 5%, 95% 50%, 85% 95%, 9% 95%, 5% 50%)" }}
             className="absolute bottom-32 right-1 w-96 h-96 overflow-hidden pointer-events-none hidden xl:block rounded-[4rem]"
          >
-            <img 
+            <Image 
                src="/landing/pricing_2.jpg" 
                alt="" 
-               className="w-full h-full object-cover"
+               fill
+               sizes="384px"
+               className="object-cover"
             />
          </motion.div>
 
@@ -112,7 +117,7 @@ export default function Pricing() {
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="relative group p-px rounded-[3.5rem] bg-gradient-to-b from-border/50 via-white to-border/50 shadow-2xl overflow-hidden"
+                  className="relative group p-px rounded-[3.5rem] bg-linear-to-b from-border/50 via-white to-border/50 shadow-2xl overflow-hidden"
                >
                   {/* Flashlight Overlay */}
                   <div 
@@ -159,7 +164,7 @@ export default function Pricing() {
                            </h3>
                            
                            <div className="space-y-10 relative">
-                              <div className="absolute left-[15px] top-4 bottom-4 w-px bg-gradient-to-b from-accent/50 via-border to-primary/30" />
+                              <div className="absolute left-3.75 top-4 bottom-4 w-px bg-linear-to-b from-accent/50 via-border to-primary/30" />
 
                               <motion.div 
                                  whileHover={{ x: 10 }}

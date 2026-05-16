@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Mail, User, Phone, Send, CheckCircle2, DollarSign } from 'lucide-react';
+import { useContactMutation } from '@/hooks/useContact';
 
 export function HomeQuoteForm({ inquirySource, className = '' }) {
   const [form, setForm] = useState({
@@ -12,9 +13,8 @@ export function HomeQuoteForm({ inquirySource, className = '' }) {
     budget: '',
     message: '',
   });
-  const [sending, setSending] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(null);
+
+  const { sendMessage, isSending, isSuccess, error } = useContactMutation();
 
   const fieldClass =
     'w-full rounded-xl border border-white/20 bg-white/5 px-3 py-2.5 pl-9 text-base sm:text-sm text-white placeholder:text-gray-400 focus:border-primary/60 focus:outline-none focus:ring-2 focus:ring-primary/30';
@@ -26,30 +26,14 @@ export function HomeQuoteForm({ inquirySource, className = '' }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSending(true);
-    setError(null);
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-          phone,
-          budget,
-          services,
-        }),
+      await sendMessage({
+        ...form,
+        source: inquirySource || 'Home Quote Form'
       });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.message || 'Something went wrong');
-      setSuccess(true);
       setForm({ name: '', email: '', phone: '', budget: '', message: '' });
-      setTimeout(() => setSuccess(false), 5000);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to send. Please try again.');
-    } finally {
-      setSending(false);
+      console.error('Submission failed:', err);
     }
   };
 
@@ -66,11 +50,11 @@ export function HomeQuoteForm({ inquirySource, className = '' }) {
             className="mb-3 rounded-xl border border-red-400/40 bg-red-950/50 px-3 py-2 text-sm text-red-200"
             role="alert"
           >
-            {error}
+            {error?.message || 'Something went wrong'}
           </div>
         )}
 
-        {success ? (
+        {isSuccess ? (
           <div className="rounded-xl border border-green-400/30 bg-green-950/40 px-4 py-6 text-center">
             <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
               <CheckCircle2 className="h-6 w-6 text-primary" aria-hidden />
@@ -149,16 +133,16 @@ export function HomeQuoteForm({ inquirySource, className = '' }) {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What would you like to build?"
-                className="min-h-[88px] w-full resize-y rounded-xl border border-white/20 bg-white/5 px-3 py-2.5 text-sm text-white placeholder:text-gray-400 focus:border-primary/60 focus:outline-none focus:ring-2 focus:ring-primary/30"
+                className="min-h-22 w-full resize-y rounded-xl border border-white/20 bg-white/5 px-3 py-2.5 text-sm text-white placeholder:text-gray-400 focus:border-primary/60 focus:outline-none focus:ring-2 focus:ring-primary/30"
                 required
               />
             </div>
             <button
               type="submit"
-              disabled={sending}
-              className="flex min-h-[48px] w-full touch-manipulation items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-base font-semibold text-white shadow-lg shadow-primary/30 transition hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-60 sm:text-sm"
+              disabled={isSending}
+              className="flex min-h-12 w-full touch-manipulation items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-base font-semibold text-white shadow-lg shadow-primary/30 transition hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-60 sm:text-sm"
             >
-              {sending ? (
+              {isSending ? (
                 'Sending…'
               ) : (
                 <>
