@@ -66,13 +66,14 @@ export default function TrustedBy() {
                      {duplicatedLogos.map((logo, idx) => (
                         <div
                            key={`${logo.name}-${idx}`}
-                           className="shrink-0 flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+                           className="shrink-0 flex items-center justify-center opacity-50 hover:opacity-100 transition-all duration-500"
                         >
                            <Image
                               src={logo.url}
                               alt={logo.name}
                               width={150}
                               height={48}
+                             
                               className="h-10 md:h-12 w-auto object-contain"
                            />
                         </div>
@@ -102,13 +103,14 @@ export default function TrustedBy() {
                      {[...duplicatedLogos].reverse().map((logo, idx) => (
                         <div
                            key={`${logo.name}-rev-${idx}`}
-                           className="shrink-0 flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500 hover:scale-110"
+                           className="shrink-0 flex items-center justify-center  opacity-50 hover:opacity-100 transition-all duration-500 hover:scale-110"
                         >
                            <Image
                               src={logo.url}
                               alt={logo.name}
                               width={150}
                               height={48}
+                             
                               className="h-10 md:h-12 w-auto object-contain"
                            />
                         </div>

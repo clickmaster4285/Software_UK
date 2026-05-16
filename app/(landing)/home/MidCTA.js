@@ -18,7 +18,7 @@ export default function MidCTA() {
    const y = useTransform(scrollYProgress, [0, 1], [100, 0]);
 
    return (
-      <section ref={containerRef} className="py-12 bg-white relative overflow-hidden">
+      <section ref={containerRef} className="py-12 relative bg-white overflow-hidden">
          <div className="max-w-400 mx-auto px-6 relative z-10">
             <motion.div 
                style={{ scale, opacity, y }}

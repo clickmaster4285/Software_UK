@@ -28,7 +28,7 @@ export default function SolutionCTA() {
   const featuredProjects = projects?.slice(0, 3) || [];
 
   return (
-    <section ref={sectionRef} className="py-32 bg-white relative overflow-hidden">
+    <section ref={sectionRef} className="py-32 relative bg-white overflow-hidden">
       <motion.div 
         style={{ scale, opacity, filter: blur }}
         className="max-w-400 mx-auto px-6 relative z-10"
