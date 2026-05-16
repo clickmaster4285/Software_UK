@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { StrategyCallModal } from "@/components/StrategyCallModal";
 
@@ -45,7 +46,7 @@ export default function Hero() {
                         }
                      />
                      <Link
-                        href="/solutions"
+                        href="/contact"
                         className="px-8 py-4 border-2 border-white text-white font-body font-bold text-lg rounded-lg hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-xl"
                      >
                         Request Proposal
@@ -54,8 +55,13 @@ export default function Hero() {
                   <div className="flex items-center gap-4">
                      <div className="flex -space-x-3">
                         {[1, 2, 3, 4].map((i) => (
-                           <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gray-300 overflow-hidden">
-                              <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="client" />
+                           <div key={i} className="relative w-10 h-10 rounded-full border-2 border-white bg-gray-300 overflow-hidden">
+                              <Image 
+                                src={`https://i.pravatar.cc/100?img=${i + 10}`} 
+                                alt="client" 
+                                fill
+                                className="object-cover"
+                              />
                            </div>
                         ))}
                      </div>
@@ -74,17 +80,24 @@ export default function Hero() {
                   {/* Decorative background glow */}
                   <div className="absolute inset-0 bg-accent/20 blur-3xl rounded-full" />
 
-                  <motion.img
+                  <motion.div
                      animate={{ y: [0, -20, 0] }}
                      transition={{
                         duration: 4,
                         repeat: Infinity,
                         ease: "easeInOut"
                      }}
-                     src="/landing/hero-home-image-1.webp"
-                     alt="Software Development Specialist"
                      className="relative z-10 w-full max-w-lg h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
-                  />
+                  >
+                    <Image
+                       src="/landing/hero-home-image-1.webp"
+                       alt="Software Development Specialist"
+                       width={600}
+                       height={800}
+                       priority
+                       className="w-full h-auto"
+                    />
+                  </motion.div>
                </motion.div>
             </div>
          </div>

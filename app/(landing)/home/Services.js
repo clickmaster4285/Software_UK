@@ -1,134 +1,313 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { ArrowRight, Code2, Globe2, Smartphone, Palette, BrainCircuit, Database } from "lucide-react";
+import { motion, useMotionTemplate, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import {
+  ArrowUpRight,
+  ShieldCheck,
+  Globe2,
+  Smartphone,
+  BrainCircuit,
+  Palette,
+  Database,
+  Server,
+  Sparkles,
+} from 'lucide-react';
+import { useRef } from 'react';
+import Image from 'next/image';
+import softwareimg from "@/public/assets/software development icon.png";
+import webdevelopment from "@/public/assets/web-development.png";
+import mobileapp from "@/public/assets/mobile-app-development.svg";
+
+// New high-quality 3D image assets
+const imgAi = '/landing/service-ai.png';
+const imgDesign = '/landing/service_uiux.png';
+const imgCloud = '/landing/service_cloudsecu.png';
+const imgInfra = '/landing/service_machinelern.png';
+const imgEnterprise = '/landing/service_enterpriceapp.png';
 
 const services = [
   {
-    title: "Software Development",
-    description: "Custom enterprise platforms and scalable SaaS products engineered for high performance.",
-    icon: <Code2 className="w-10 h-10" />,
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop",
-    href: "/software-development"
+    title: 'Software Development',
+    description: 'Custom software solutions tailored to your business needs.',
+    Icon: ShieldCheck,
+    AltIcon: Globe2,
+    image: softwareimg,
+    tag: 'Enterprise',
+    span: 'wide',
+    accent: '#3b82f6', // Blue
   },
   {
-    title: "Web Development",
-    description: "Modern web applications and SEO-optimized portals that convert visitors into revenue.",
-    icon: <Globe2 className="w-10 h-10" />,
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop",
-    href: "/web-development"
+    title: 'Web Development',
+    description: 'Modern web applications with responsive design and seamless user experience.',
+    Icon: Globe2,
+    AltIcon: Server,
+    image: webdevelopment,
+    tag: 'Web3 Ready',
+    accent: '#ec4899', // Pink
   },
   {
-    title: "Mobile Development",
-    description: "Native and cross-platform mobile apps for iOS and Android with seamless sync capabilities.",
-    icon: <Smartphone className="w-10 h-10" />,
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop",
-    href: "/mobile-development"
+    title: 'Mobile Development',
+    description: 'Build secure and scalable mobile applications for iOS and Android.',
+    Icon: Smartphone,
+    AltIcon: ShieldCheck,
+    image: mobileapp,
+    tag: 'Cross-Platform',
+    accent: '#10b981', // Green
   },
   {
-    title: "AI & Machine Learning",
-    description: "Transformative generative AI, RAG systems, and predictive models integrated into your workflow.",
-    icon: <BrainCircuit className="w-10 h-10" />,
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop",
-    href: "/artificial-intelligence-ai"
+    title: 'AI Monitoring',
+    description: 'AI-powered monitoring systems with predictive threat intelligence.',
+    Icon: BrainCircuit,
+    AltIcon: Database,
+    image: imgAi,
+    tag: 'Intelligence',
+    span: 'tall',
+    accent: '#8b5cf6', // Purple
   },
   {
-    title: "UI/UX Design",
-    description: "User-first design systems and interactive prototypes focused on measurable business outcomes.",
-    icon: <Palette className="w-10 h-10" />,
-    image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    href: "/design"
+    title: 'UI/UX Systems',
+    description: 'Elegant digital experiences focused on usability and conversion.',
+    Icon: Palette,
+    AltIcon: Globe2,
+    image: imgDesign,
+    tag: 'Design',
+    accent: '#f59e0b', // Amber
   },
   {
-    title: "Cloud & DevOps",
-    description: "Scalable cloud-native architecture and automated CI/CD pipelines for zero-downtime releases.",
-    icon: <Database className="w-10 h-10" />,
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
-    href: "/cloud-devops"
-  }
+    title: 'Cloud Security',
+    description: 'Secure cloud-native infrastructure with scalable DevOps workflows.',
+    Icon: Database,
+    AltIcon: Server,
+    image: imgCloud,
+    tag: 'DevSecOps',
+    span: 'wide',
+    accent: '#0ea5e9', // Sky
+  },
+  {
+    title: 'Machine Learning',
+    description: 'Scalable infrastructure architecture with maximum uptime and reliability.',
+    Icon: Server,
+    AltIcon: BrainCircuit,
+    image: imgInfra,
+    tag: 'Reliability',
+    accent: '#14b8a6', // Teal
+  },
+  {
+    title: 'Enterprise Apps',
+    description: 'Custom enterprise-grade applications built for automation and growth.',
+    Icon: Database,
+    AltIcon: Palette,
+    image: imgEnterprise,
+    tag: 'Platform',
+    accent: '#6366f1', // Indigo
+  },
 ];
+
+const marqueeItems = [
+  'ISO 27001',
+  'SOC 2 Type II',
+  'GDPR Ready',
+  'Zero Trust',
+  '24/7 SOC',
+  'Pen-Tested',
+  'AI Native',
+  'Edge Deployed',
+];
+
+function ServiceCard({ service, index }) {
+  const ref = useRef(null);
+  const mx = useMotionValue(0.5);
+  const my = useMotionValue(0.5);
+  const rotateX = useSpring(useTransform(my, [0, 1], [10, -10]), { stiffness: 100, damping: 30 });
+  const rotateY = useSpring(useTransform(mx, [0, 1], [-10, 10]), { stiffness: 100, damping: 30 });
+  const glowX = useTransform(mx, (v) => `${v * 100}%`);
+  const glowY = useTransform(my, (v) => `${v * 100}%`);
+
+  const handleMove = (e) => {
+    const rect = ref.current?.getBoundingClientRect();
+    if (!rect) return;
+    mx.set((e.clientX - rect.left) / rect.width);
+    my.set((e.clientY - rect.top) / rect.height);
+  };
+  const handleLeave = () => {
+    mx.set(0.5);
+    my.set(0.5);
+  };
+
+  const { accent } = service;
+  const spanClass =
+    service.span === 'wide'
+      ? 'sm:col-span-2'
+      : service.span === 'tall'
+        ? 'xl:row-span-2'
+        : '';
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: index * 0.1, ease: [0.21, 1, 0.44, 1] }}
+      viewport={{ once: true, margin: '-50px' }}
+      className={spanClass}
+      style={{ perspective: 1000 }}
+    >
+      <motion.div
+        ref={ref}
+        onMouseMove={handleMove}
+        onMouseLeave={handleLeave}
+        style={{ rotateX, rotateY, transformStyle: 'preserve-3d' }}
+        className={`group relative flex flex-col justify-between ${
+          service.span === 'tall' ? 'h-full min-h-145' : 'h-115'
+        } rounded-[40px] border bg-white/40 backdrop-blur-2xl p-8 overflow-hidden transition-all duration-500 hover:bg-white/60`}
+        style={{ 
+          borderColor: `${accent}77`, // 20% opacity initial border
+        }}
+      >
+        {/* Hover Border Overlay */}
+        <div 
+          className="absolute inset-0 rounded-[40px] border-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+          style={{ borderColor: `${accent}66` }} // 40% opacity hover border
+        />
+        {/* Dynamic Accent Shadow */}
+        <div 
+          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
+          style={{
+            boxShadow: `0 30px 60px -15px ${accent}30`,
+          }}
+        />
+
+        {/* Mouse-tracking glow */}
+        <motion.div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          style={{
+            background: useMotionTemplate`radial-gradient(500px circle at ${glowX} ${glowY}, ${accent}15, transparent 70%)`,
+          }}
+        />
+
+        {/* Background Decorative Blob */}
+        <div 
+          className="absolute -top-24 -right-24 w-64 h-64 rounded-full blur-[80px] opacity-10 group-hover:opacity-20 transition-all duration-700"
+          style={{ background: accent }}
+        />
+
+        <div className="relative z-10 flex flex-col h-full" style={{ transform: 'translateZ(40px)' }}>
+          {/* Top: Tag */}
+          <div className="flex items-start justify-between">
+            <span 
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white/90 border border-white/50 shadow-sm text-[10px] font-bold tracking-widest uppercase"
+              style={{ color: accent }}
+            >
+              <Sparkles className="w-3 h-3" />
+              {service.tag}
+            </span>
+          </div>
+
+          {/* Center: Image */}
+          <div className="flex-1 flex items-center justify-center my-6 relative">
+            <div 
+              className="absolute w-40 h-40 rounded-full blur-[60px] opacity-30 group-hover:opacity-50 transition-all duration-700"
+              style={{ background: accent }}
+            />
+            
+            <motion.div
+              whileHover={{ 
+                scale: 1.1,
+                z: 80 
+              }}
+              transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+              className="relative w-56 h-56"
+              style={{ transformStyle: 'preserve-3d' }}
+            >
+              <Image
+                src={service.image}
+                alt={service.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 224px"
+                className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] animate-float-slow transition-transform duration-500"
+              />
+            </motion.div>
+          </div>
+
+          {/* Bottom Content */}
+          <div className='mb-6' style={{ transform: 'translateZ(20px)' }}>
+            <h3 className="text-2xl font-bold text-foreground mb-2 tracking-tight">
+              {service.title}
+            </h3>
+            <p className="text-sm text-muted-foreground/90 leading-relaxed line-clamp-2">
+              {service.description}
+            </p>
+            
+            <div className="mb-6 flex items-center justify-between">
+              <span className="text-[10px] font-bold tracking-widest uppercase opacity-40 group-hover:opacity-100 transition-opacity" style={{ color: accent }}>
+                Learn More
+              </span>
+              <div 
+                className="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:rotate-45"
+                style={{ background: `linear-gradient(135deg, ${accent}, ${accent}cc)` }}
+              >
+                <ArrowUpRight className="w-5 h-5 text-white" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+}
 
 export default function Services() {
   return (
-    <section className="py-32 bg-surface overflow-hidden">
-      <div className="max-w-400 mx-auto px-6">
-        <div className="text-center mb-20">
-          <motion.span 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-accent/60 font-bold uppercase tracking-loose text-[9.25rem] leading-0 "
-          >
-            What We Do
-          </motion.span>
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            viewport={{ once: true }}
-            className="font-heading font-bold text-2xl md:text-3xl text-primary mt-4 mb-6 tracking-tight"
-          >
-            End-to-End <span className="text-accent">Engineering Excellence</span>
-          </motion.h2>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            viewport={{ once: true }}
-            className="text-text-body font-body text-lg "
-          >
-            We combine strategic product design with deep technical expertise to build software that scales.
-          </motion.p>
+    <section className="relative py-20 bg-background overflow-hidden">
+      {/* Ambient background glows */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-blue-500/5 blur-[120px]" />
+        <div className="absolute top-[20%] right-[-10%] w-[40%] h-[40%] rounded-full bg-purple-500/5 blur-[120px]" />
+        <div className="absolute bottom-[-10%] left-[20%] w-[40%] h-[40%] rounded-full bg-emerald-500/5 blur-[120px]" />
+      </div>
+
+      <div className="relative w-full px-6 xl:px-12 max-w-400 mx-auto">
+        {/* Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-24"
+        >
+          <h2 className="mt-6 text-5xl md:text-7xl font-bold text-foreground tracking-tight">
+            Innovating your{' '}
+            <span className="text-accent text-[5.0rem]">
+              digital future
+            </span>
+          </h2>
+          <p className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground/80 font-medium">
+            We blend cutting-edge technology with world-class design to build products that define industries.
+          </p>
+        </motion.div>
+
+        {/* Bento grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 auto-rows-[460px] gap-8">
+          {services.map((service, i) => (
+            <ServiceCard key={service.title} service={service} index={i} />
+          ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <motion.div
-              key={service.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <Link
-                href={service.href}
-                className="group relative block h-105 rounded-[2.5rem] overflow-hidden bg-white shadow-sm hover:shadow-2xl transition-all duration-500"
+        {/* Marquee Credibility */}
+        <div className="mt-32 pt-12 border-t border-white/10">
+          <div className="flex gap-16 animate-marquee whitespace-nowrap w-max opacity-30 grayscale hover:grayscale-0 transition-all duration-500">
+            {[...marqueeItems, ...marqueeItems].map((item, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-4 text-foreground text-xs font-bold tracking-[0.3em] uppercase"
               >
-                {/* Background Image with Overlay */}
-                <div className="absolute inset-0 z-0">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 grayscale group-hover:grayscale-0 group-hover:opacity-40"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/10 to-primary/40 z-10" />
-                </div>
-
-                {/* Content */}
-                <div className="relative z-20 p-10 h-full flex flex-col justify-between">
-                  <div>
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white shadow-lg text-accent mb-8 group-hover:scale-110 group-hover:bg-accent group-hover:text-white transition-all duration-500">
-                      {service.icon}
-                    </div>
-                    <h3 className="font-heading font-semibold text-3xl text-white mb-4 group-hover:text-accent transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-100 font-body text-sm leading-relaxed max-w-60 group-hover:text-white transition-colors duration-500">
-                      {service.description}
-                    </p>
-                  </div>
-
-                  <div className="flex items-center gap-2 text-white  font-bold text-xs uppercase tracking-wide transition-colors duration-500">
-                    Explore Solution <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
-          ))}
+                <div className="w-2 h-2 rounded-full bg-blue-600" />
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
 }
-

@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calendar, User, Clock, ChevronRight, Share2, Link as LinkIcon } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
@@ -66,7 +67,7 @@ export default function BlogPostDetailPage() {
                 <div className="relative">
                   <div className="w-12 h-12 rounded-full bg-linear-to-br from-primary to-primary-mid overflow-hidden border-2 border-white shadow-lg">
                     {post.authorImage ? (
-                      <img src={post.authorImage} alt={post.author} className="w-full h-full object-cover" />
+                      <Image src={post.authorImage} alt={post.author} fill sizes="48px" className="object-cover" />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-accent font-bold">
                         {(post.author || 'Engineering Team').split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2)}
@@ -108,9 +109,9 @@ export default function BlogPostDetailPage() {
               <div className="flex gap-2">
                 {post.authorLinkedin && (
                   <Button variant="outline" size="icon" className="rounded-xl border-slate-200 hover:bg-primary hover:text-accent hover:border-primary transition-all" asChild>
-                    <a href={post.authorLinkedin} target="_blank" rel="noopener noreferrer">
+                    <Link href={post.authorLinkedin} target="_blank" rel="noopener noreferrer">
                       <LinkIcon className="w-4 h-4" />
-                    </a>
+                    </Link>
                   </Button>
                 )}
                 <Button variant="outline" size="icon" className="rounded-xl border-slate-200 hover:bg-primary hover:text-accent hover:border-primary transition-all">
@@ -123,12 +124,15 @@ export default function BlogPostDetailPage() {
 
         {/* Featured Image */}
         <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-primary/10 mb-16 aspect-video opacity-0 animate-fade-up" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-          <img
+          <Image
             src={post.image || post.thumbnail || 'https://via.placeholder.com/1200x600?text=Insights'}
             alt={post.title}
-            className="w-full h-full object-cover"
+            fill
+            priority
+            sizes="(max-width: 1024px) 100vw, 896px"
+            className="object-cover"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent z-10"></div>
         </div>
 
         {/* Content */}

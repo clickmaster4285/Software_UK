@@ -7,7 +7,9 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, ExternalLink, Globe } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export default function CategoryDetailPage() {
   const { id } = useParams();
@@ -77,10 +79,12 @@ export default function CategoryDetailPage() {
               {categoryProjects.map((project) => (
                 <Card key={project._id} className="group border-none shadow-sm hover:shadow-xl transition-all duration-500 rounded-[2rem] overflow-hidden bg-white flex flex-col">
                   <div className="aspect-video relative overflow-hidden bg-slate-100">
-                    <img 
+                    <Image 
                       src={project.thumbnail || 'https://via.placeholder.com/800x450?text=Project'} 
                       alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute top-4 right-4">
                       <Badge className="bg-white/90 text-primary border-none backdrop-blur-md uppercase tracking-wider text-[10px] font-bold">

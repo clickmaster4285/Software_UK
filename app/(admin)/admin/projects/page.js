@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Plus, Edit, Trash2, Eye, ExternalLink, Globe } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { toast } from 'sonner';
 
 export default function ProjectListPage() {
@@ -28,7 +29,7 @@ export default function ProjectListPage() {
       case 'live': return 'bg-green-100 text-green-700';
       case 'in-progress': return 'bg-blue-100 text-blue-700';
       case 'coming-soon': return 'bg-purple-100 text-purple-700';
-      case 'maintenance': return 'bg-orange-100 text-orange-700';
+      case 'maintenance': return 'bg-accent/10 text-accent';
       case 'completed': return 'bg-emerald-100 text-emerald-700';
       default: return 'bg-slate-100 text-slate-700';
     }
@@ -83,17 +84,17 @@ export default function ProjectListPage() {
                     <TableCell className="font-medium">
                       <div className="flex items-center gap-3">
                         {project.thumbnail && (
-                          <div className="w-10 h-10 rounded overflow-hidden border border-slate-100 shrink-0">
-                            <img src={project.thumbnail} alt="" className="w-full h-full object-cover" />
+                          <div className="relative w-10 h-10 rounded overflow-hidden border border-slate-100 shrink-0">
+                            <Image src={project.thumbnail} alt="" fill sizes="40px" className="object-cover" />
                           </div>
                         )}
                         <div className="flex flex-col">
                           <span className="truncate max-w-50">{project.title}</span>
                           {project.url && (
-                            <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-[10px] text-primary flex items-center gap-0.5 hover:underline">
+                            <Link href={project.url} target="_blank" rel="noopener noreferrer" className="text-[10px] text-primary flex items-center gap-0.5 hover:underline">
                               <Globe className="w-2.5 h-2.5" />
                               Visit Site
-                            </a>
+                            </Link>
                           )}
                         </div>
                       </div>

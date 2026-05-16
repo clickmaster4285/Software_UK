@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { useTestimonialMutations } from '@/hooks/useTestimonials';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -177,8 +178,8 @@ export default function TestimonialForm({ initialData, id }) {
                 <div className="mt-4 flex flex-col items-center p-4 bg-slate-50 rounded-xl border border-dashed border-slate-200">
                   <Label className="text-[10px] text-slate-400 uppercase mb-3">Preview</Label>
                   {formData.avatarUrl ? (
-                    <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-md">
-                      <img src={formData.avatarUrl} alt="Avatar Preview" className="w-full h-full object-cover" />
+                    <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-md">
+                      <Image src={formData.avatarUrl} alt="Avatar Preview" fill unoptimized sizes="80px" className="object-cover" />
                     </div>
                   ) : (
                     <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center text-slate-300 shadow-sm">

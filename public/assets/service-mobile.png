@@ -1,0 +1,10 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f5f5f5"/>
+  <g transform="translate(50, 40)">
+    <rect width="100" height="70" rx="10" fill="none" stroke="#6712AE" stroke-width="2"/>
+    <circle cx="50" cy="15" r="8" fill="#6712AE"/>
+    <rect x="40" y="35" width="20" height="30" fill="#6712AE" opacity="0.5"/>
+    <rect x="70" y="35" width="20" height="30" fill="#6712AE" opacity="0.3"/>
+  </g>
+  <text x="100" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="#666">Mobile Security</text>
+</svg>

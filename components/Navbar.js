@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import MegaMenu from "./MegaMenu";
 import { serviceMenuSections } from "@/data/service-pages";
 import { ChevronDown } from "lucide-react";
@@ -111,9 +112,15 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-sm border-b border-border py-2" : "bg-transparent py-4"
       }`}>
       <div className="max-w-400 mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className={`font-heading font-bold text-2xl transition-colors ${isScrolled ? "text-primary" : "text-white"
-          }`}>
-          ClickMasters
+        <Link href="/" className="flex items-center">
+          <Image 
+            src="/cm-logos/logo.png" 
+            alt="ClickMasters" 
+            width={180}
+            height={48}
+            priority
+            className={`h-12 w-auto transition-all ${!isScrolled ? "brightness-0 invert" : ""}`}
+          />
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

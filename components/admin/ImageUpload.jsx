@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -148,11 +149,14 @@ export default function ImageUpload({
         <Card className="relative group">
           <CardContent className="pt-6">
             <div className="relative">
-              <div className={`rounded-lg overflow-hidden border border-slate-200 bg-slate-50 ${getAspectRatioClass()}`}>
-                <img 
+              <div className={`relative rounded-lg overflow-hidden border border-slate-200 bg-slate-50 ${getAspectRatioClass()}`}>
+                <Image 
                   src={preview} 
                   alt="Preview" 
-                  className="w-full h-full object-cover"
+                  fill
+                  unoptimized
+                  sizes="(max-width: 1024px) 100vw, 400px"
+                  className="object-cover"
                 />
               </div>
               <Button

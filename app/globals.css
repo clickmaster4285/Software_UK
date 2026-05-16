@@ -229,7 +229,7 @@
   .faq-hero,
   .contact-hero,
   .page-hero {
-    @apply py-30 md:py-20 text-center;
+    @apply py-10 md:py-30 text-center;
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 40%, var(--accent) 100%);
   }
 
@@ -391,7 +391,7 @@
   }
 
   .avatar {
-    @apply w-9 h-9 rounded-full bg-gradient-to-br from-primary to-primary-mid border-2 border-white -ml-2.5;
+    @apply w-9 h-9 rounded-full bg-linear-to-br from-primary to-primary-mid border-2 border-white -ml-2.5;
   }
 
   .avatar:first-child {
@@ -420,7 +420,7 @@
   }
 
   .placeholder-image {
-    @apply w-full aspect-[4/5] bg-gradient-to-br from-primary to-primary-mid rounded-3xl flex items-center justify-center text-white text-lg;
+    @apply w-full aspect-[4/5] bg-linear-to-br from-primary to-primary-mid rounded-3xl flex items-center justify-center text-white text-lg;
   }
 
   .rotating-badge {
@@ -507,72 +507,6 @@
     @apply text-accent shrink-0 mt-0.5;
   }
 
-  /* BLOG PAGE */
-  .page-hero {
-    @apply py-30 md:py-20;
-  }
-
-  .blog-section {
-    @apply py-20 bg-white;
-  }
-
-  .blog-grid {
-    @apply grid grid-cols-1 md:grid-cols-3 gap-6;
-  }
-
-  .blog-card {
-    @apply p-6 bg-white rounded-xl transition-all duration-300 ease-in-out animate-fade-up opacity-0 hover:border-accent/30 hover:shadow-lg hover:shadow-accent/12 hover:transform hover:-translate-y-1;
-    border: 1px solid var(--border);
-    animation: fadeUp 0.6s ease-out forwards;
-    animation-fill-mode: forwards;
-  }
-
-  .blog-category {
-    @apply inline-block px-3 py-1 bg-surface rounded-full text-[11px] font-semibold text-accent mb-3;
-  }
-
-  .blog-card h3 {
-    @apply font-heading font-semibold text-lg text-primary mb-3 leading-tight;
-  }
-
-  .blog-card p {
-    @apply text-text-muted text-sm leading-relaxed mb-4 line-clamp-2;
-  }
-
-  .blog-meta {
-    @apply flex justify-between items-center text-xs;
-  }
-
-  .blog-date {
-    @apply text-text-muted;
-  }
-
-  .read-more {
-    @apply text-accent font-semibold;
-  }
-
-  /* CASE STUDIES */
-  .case-studies-grid {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-8;
-  }
-
-  .case-study-card {
-    @apply p-6 bg-white rounded-xl transition-all duration-300 ease-in-out hover:border-accent/30 hover:shadow-lg hover:shadow-accent/15;
-    border: 1px solid var(--border);
-  }
-
-  .case-study-card:hover {
-    @apply transform -translate-y-1;
-  }
-
-  .case-study-card h3 {
-    @apply font-heading font-semibold text-xl text-primary mb-2;
-  }
-
-  .case-study-meta {
-    @apply text-text-muted text-sm mb-4;
-  }
-
   .btn-primary {
     @apply inline-flex items-center justify-center rounded-lg px-7 py-3.5 text-white font-semibold text-sm font-sans transition-all duration-300 ease-in-out hover:transform hover:-translate-y-0.5 hover:shadow-lg;
     background: linear-gradient(90deg, var(--accent), var(--accent-hover));
@@ -588,24 +522,17 @@
     border: 1px solid var(--border);
   }
 
-  .accent-underline {
-    @apply w-20 h-0.75 bg-accent mx-auto;
+  /* Custom Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
   }
 
-  .container-softflow {
-    @apply max-w-[1200px] mx-auto px-6;
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
   }
 
-  .section-hero {
-    @apply py-30 md:py-20;
-  }
-
-  .section-standard {
-    @apply py-20;
-  }
-
-  .section-compact {
-    @apply py-10;
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-slate-200 rounded-full hover:bg-slate-300 transition-colors;
   }
 }
 
