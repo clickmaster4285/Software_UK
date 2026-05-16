@@ -4,11 +4,11 @@ import { useCategoryList } from '@/hooks/useCategories';
 import { useProjectList } from '@/hooks/useProjects';
 import { useParams } from 'next/navigation';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, ExternalLink, Globe } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function CategoryDetailPage() {
@@ -129,5 +129,3 @@ export default function CategoryDetailPage() {
     </main>
   );
 }
-
-import { Button } from '@/components/ui/button';
