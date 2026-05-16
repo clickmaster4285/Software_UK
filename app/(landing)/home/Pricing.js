@@ -35,7 +35,7 @@ export default function Pricing() {
    ];
 
    return (
-      <section ref={containerRef} className="py-12 bg-surface/30 relative overflow-hidden">
+      <section ref={containerRef} className="py-12 relative bg-surface/30 overflow-hidden">
          {/* Aesthetic background glows */}
          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-accent/5 rounded-full blur-[160px] pointer-events-none" />
 

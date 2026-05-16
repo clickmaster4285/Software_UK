@@ -101,8 +101,8 @@ export function TechStackSection() {
           
           {allTechItems.map((item, i) => {
             const rad = (item.angle * Math.PI) / 180;
-            const x2 = 50 + Math.cos(rad) * item.length;
-            const y2 = 50 + Math.sin(rad) * item.length;
+            const x2 = Number((50 + Math.cos(rad) * item.length).toFixed(4));
+            const y2 = Number((50 + Math.sin(rad) * item.length).toFixed(4));
             
             return (
               <g key={i}>
@@ -171,8 +171,8 @@ export function TechStackSection() {
                 whileInView={{ 
                   opacity: 1, 
                   scale: 1,
-                  x: Math.cos(rad) * (item.length * 10),
-                  y: Math.sin(rad) * (item.length * 10)
+                  x: Number((Math.cos(rad) * (item.length * 10)).toFixed(4)),
+                  y: Number((Math.sin(rad) * (item.length * 10)).toFixed(4))
                 }}
                 transition={{ 
                   delay: (i * staggerDelay) + lineDuration, 

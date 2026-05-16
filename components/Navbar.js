@@ -119,6 +119,7 @@ export default function Navbar() {
             width={180}
             height={48}
             priority
+            style={{ width: "auto", height: "auto" }}
             className={`h-12 w-auto transition-all ${!isScrolled ? "brightness-0 invert" : ""}`}
           />
         </Link>

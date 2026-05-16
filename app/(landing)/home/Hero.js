@@ -60,6 +60,7 @@ export default function Hero() {
                                 src={`https://i.pravatar.cc/100?img=${i + 10}`} 
                                 alt="client" 
                                 fill
+                                sizes="40px"
                                 className="object-cover"
                               />
                            </div>
