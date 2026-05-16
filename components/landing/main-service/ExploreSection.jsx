@@ -326,7 +326,7 @@ export function ExploreSection({ serviceData }) {
                       />
                     </div>
 
-                    <div className="relative flex-grow">
+                    <div className="relative grow">
                       <h3 className="text-xl font-heading font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors duration-500">
                         {item.title}
                       </h3>

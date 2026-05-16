@@ -30,21 +30,6 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Determine if the navbar should have a white background based on scroll or route
-  const hasWhiteBg = useMemo(() => {
-    if (isScrolled) return true;
-
-    const pathSegments = pathname.split('/').filter(Boolean);
-    if (pathSegments.length > 0) {
-      const rootSegment = pathSegments[0];
-      // If the first part of the URL is a service category (main or sub service)
-      if (serviceCategorySlugs.includes(rootSegment)) return true;
-    }
-
-    // Check against other explicitly defined white-background routes
-    return forceWhiteBgRoutes.some(route => pathname === route || pathname.startsWith(`${route}/`));
-  }, [isScrolled, pathname]);
-
   const { data: blogs } = useBlogList();
   const { data: caseStudies } = useCaseStudyList();
   const { data: testimonials } = useTestimonialList();
@@ -56,6 +41,21 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Determine if the navbar should have a white background based on scroll or route
+  const hasWhiteBg = useMemo(() => {
+    if (isScrolled) return true;
+
+    const pathSegments = pathname.split('/').filter(Boolean);
+    if (pathSegments.length > 0) {
+      const rootSegment = pathSegments[0];
+      // If the first part of the URL is a service category
+      if (serviceCategorySlugs.includes(rootSegment)) return true;
+    }
+
+    // Check against other explicitly defined white-background routes
+    return forceWhiteBgRoutes.some(route => pathname === route || pathname.startsWith(`${route}/`));
+  }, [isScrolled, pathname]);
 
   const resourcesCategories = useMemo(() => [
     {

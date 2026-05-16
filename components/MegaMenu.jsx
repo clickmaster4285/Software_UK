@@ -79,11 +79,11 @@ export default function MegaMenu({ categories, trigger }) {
          {isVisible && (
             <div className={`absolute top-full left-1/2 transform -translate-x-1/2 w-screen max-w-6xl pt-4 z-50 transition-all duration-300 ease-out ${isOpen ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 -translate-y-2'
                }`} onWheel={(e) => e.stopPropagation()}>
-               <div className="bg-white border border-slate-200 rounded-xl shadow-2xl overflow-hidden max-h-[45vh]">
+               <div className="bg-white border border-border rounded-xl shadow-2xl overflow-hidden max-h-[45vh]">
                   <div className="flex h-full min-h-75 max-h-[45vh]">
                      {/* Categories Column */}
-                     <div className="w-80 bg-slate-50 border-r border-slate-200 p-6 flex flex-col max-h-[45vh]">
-                        <h3 className="text-lg font-bold text-slate-900 mb-4">
+                     <div className="w-80 bg-surface border-r border-border p-6 flex flex-col max-h-[45vh]">
+                        <h3 className="text-lg font-bold text-text-primary mb-4">
                            {categories?.some(category => category.viewAllHref) ? 'Resources' : 'Our Services'}
                         </h3>
                         <div className="space-y-1 flex-1 overflow-y-auto pr-2 custom-scrollbar">
@@ -99,12 +99,12 @@ export default function MegaMenu({ categories, trigger }) {
                                  >
                                     <div className={`flex items-center justify-between p-3 rounded-lg transition-all duration-200 ${isActive
                                           ? 'bg-accent text-white shadow-md'
-                                          : 'hover:bg-accent hover:text-white text-slate-700'
+                                          : 'hover:bg-accent hover:text-white text-text-body'
                                        }`}>
                                        <span className="text-sm font-medium">
                                           {category.label}
                                        </span>
-                                       <ChevronRight className={`w-4 h-4 transition-colors ${isActive ? 'text-white' : 'text-slate-400 group-hover:text-white'
+                                       <ChevronRight className={`w-4 h-4 transition-colors ${isActive ? 'text-white' : 'text-text-muted group-hover:text-white'
                                           }`} />
                                     </div>
                                  </Link>
@@ -166,12 +166,12 @@ export default function MegaMenu({ categories, trigger }) {
                                           key={key}
                                           href={getItemHref(hoveredCategory, item)}
                                            onClick={() => handleMouseLeave()}
-                                          className="group block h-full rounded-2xl border border-slate-100 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20"
+                                          className="group block h-full rounded-2xl border border-border/50 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20"
                                        >
-                                          <h4 className="text-sm font-semibold text-slate-900 group-hover:text-primary mb-2 transition-colors">
+                                          <h4 className="text-sm font-semibold text-text-primary group-hover:text-primary mb-2 transition-colors">
                                              {item.title}
                                          </h4>
-                                          <p className="text-xs leading-relaxed text-slate-600 line-clamp-2">
+                                          <p className="text-xs leading-relaxed text-text-body line-clamp-2">
                                              {item.description}
                                           </p>
                                        </Link>
@@ -182,13 +182,13 @@ export default function MegaMenu({ categories, trigger }) {
                         ) : (
                            <div className="flex items-center justify-center h-full text-center py-20">
                               <div className="max-w-sm">
-                                 <div className="w-16 h-16 bg-slate-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <ChevronRight className="w-8 h-8 text-slate-300" />
+                                 <div className="w-16 h-16 bg-surface rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <ChevronRight className="w-8 h-8 text-text-muted" />
                                  </div>
-                                 <h3 className="text-xl font-bold text-slate-900 mb-2">
+                                 <h3 className="text-xl font-bold text-text-primary mb-2">
                                     {categories?.some(category => category.viewAllHref) ? 'Explore Our Resources' : 'Explore Our Services'}
                                  </h3>
-                                 <p className="text-sm text-slate-600">
+                                 <p className="text-sm text-text-body">
                                     {categories?.some(category => category.viewAllHref)
                                        ? 'Select a category from the left to browse our latest insights, case studies, and guides.'
                                        : 'Select a service category to discover how we can help your business grow with tailored solutions.'
