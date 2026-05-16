@@ -59,7 +59,7 @@ export default function BlogDetailPage({ params }) {
             <CardTitle className="text-slate-500 text-sm uppercase tracking-widest font-bold">Excerpt</CardTitle>
           </CardHeader>
           <CardContent className="text-lg text-slate-700 leading-relaxed italic">
-            "{post.excerpt}"
+            &quot;{post.excerpt}&quot;
           </CardContent>
         </Card>
 

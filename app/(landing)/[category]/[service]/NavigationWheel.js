@@ -267,10 +267,13 @@ export function NavigationWheel({ sections, activeSection, scrollDirection, whee
   const prevVisibleRef = useRef(false);
 
   useEffect(() => {
-    setSizes(getSizes());
     const handleResize = () => setSizes(getSizes());
+    const raf = requestAnimationFrame(handleResize);
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   // Handle entrance and exit animations
@@ -308,12 +311,17 @@ export function NavigationWheel({ sections, activeSection, scrollDirection, whee
   // Initial render check
   useEffect(() => {
     if (isVisible && !shouldRender) {
-      setShouldRender(true);
-      setIsAnimatingIn(true);
+      const initTimer = setTimeout(() => {
+        setShouldRender(true);
+        setIsAnimatingIn(true);
+      }, 0);
       const timer = setTimeout(() => setIsAnimatingIn(false), 500);
-      return () => clearTimeout(timer);
+      return () => {
+        clearTimeout(initTimer);
+        clearTimeout(timer);
+      };
     }
-  }, [isVisible]);
+  }, [isVisible, shouldRender]);
 
   if (!sizes) return null;
   if (!shouldRender && !isVisible && !isAnimatingIn) return null;

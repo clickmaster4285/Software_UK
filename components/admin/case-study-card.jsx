@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { ArrowRight, Target, CheckCircle2, TrendingUp, Award } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
 
 export function CaseStudyCard({ title, excerpt, challenge, results, category = 'Project', thumbnail, href }) {
    const content = (
@@ -11,10 +12,12 @@ export function CaseStudyCard({ title, excerpt, challenge, results, category = '
          <div className="relative aspect-video overflow-hidden bg-linear-to-br from-slate-100 to-slate-200">
             {thumbnail ? (
                <>
-                  <img
+                  <Image
                      src={thumbnail}
-                     alt={title}
-                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                     alt={title || 'Thumbnail'}
+                     fill
+                     className="object-cover transition-transform duration-700 group-hover:scale-110"
+                     unoptimized
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 

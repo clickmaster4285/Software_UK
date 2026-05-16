@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Label } from '@/components/ui/label';
 import { ArrowLeft, Edit, Calendar, User, Layout, CheckCircle2, Target, Lightbulb, Loader2 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function CaseStudyDetailPage() {
   const { id } = useParams();
@@ -55,10 +56,12 @@ export default function CaseStudyDetailPage() {
           {/* Header Card */}
           <Card className="border-none shadow-sm overflow-hidden">
             <div className="aspect-video relative bg-slate-100">
-              <img
+              <Image
                 src={study.thumbnail || study.project?.thumbnail || 'https://via.placeholder.com/1200x675?text=No+Image'}
-                alt={study.title}
-                className="w-full h-full object-cover"
+                alt={study.title || 'Case study image'}
+                fill
+                className="object-cover"
+                unoptimized
               />
               <div className="absolute top-4 right-4">
                 <Badge variant={study.published ? 'success' : 'secondary'} className={study.published ? 'bg-green-500 text-white border-none' : ''}>

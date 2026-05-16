@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function CTASectionImage({
   title,
@@ -10,12 +11,12 @@ export default function CTASectionImage({
       <section className="relative flex w-full flex-col items-center justify-center gap-12 overflow-hidden bg-white px-6 py-12 lg:flex-row lg:px-16 lg:py-14">
 
         {/* Background Blobs */}
-        <div className="absolute -left-12 -top-12 h-[280px] w-[280px] rounded-full bg-[radial-gradient(circle,#fdf0e8_60%,transparent_100%)]" />
-        <div className="absolute bottom-[-40px] left-[80px] h-[180px] w-[180px] rounded-full bg-[radial-gradient(circle,#fce8d8_60%,transparent_100%)]" />
+        <div className="absolute -left-12 -top-12 h-70 w-70 rounded-full bg-[radial-gradient(circle,#fdf0e8_60%,transparent_100%)]" />
+        <div className="absolute -bottom-10 left-20 h-45 w-45 rounded-full bg-[radial-gradient(circle,#fce8d8_60%,transparent_100%)]" />
 
         {/* Rotating Gear Top */}
         <svg
-          className="absolute left-[150px] top-5 z-0 h-[90px] w-[90px] animate-spin opacity-10"
+          className="absolute left-37.5 top-5 z-0 h-22.5 w-22.5 animate-spin opacity-10"
           style={{ animationDuration: "18s" }}
           viewBox="0 0 100 100"
           fill="#b0a090"
@@ -39,10 +40,13 @@ export default function CTASectionImage({
             </svg>
           </div>
 
-          <img
+          <Image
             src="/ctaImage.png"
             alt="Developer working"
-            className="w-full max-w-[420px] object-contain drop-shadow-[0_10px_30px_rgba(220,100,40,0.16)]"
+            width={500}
+            height={500}
+            className="w-full max-w-105 object-contain drop-shadow-[0_10px_30px_rgba(220,100,40,0.16)]"
+            unoptimized
           />
         </div>
 
@@ -56,12 +60,12 @@ export default function CTASectionImage({
           </div>
 
           {/* Title */}
-          <h2 className="max-w-[600px] text-4xl font-extrabold leading-tight tracking-[-1px] text-[#1a1a1a] md:text-5xl">
+          <h2 className="max-w-150 text-4xl font-extrabold leading-tight tracking-[-1px] text-[#1a1a1a] md:text-5xl">
             {title ? (
               title
             ) : (
               <>
-                Let's Build Your Next{" "}
+                Let&apos;s Build Your Next &nbsp;
                 <span className="text-[#E07B39]">
                   Software Product
                   <br />
@@ -73,7 +77,7 @@ export default function CTASectionImage({
 
           {/* Description */}
           {description && (
-            <p className="mt-4 max-w-[500px] text-gray-600 text-sm md:text-base">
+            <p className="mt-4 max-w-125 text-gray-600 text-sm md:text-base">
               {description}
             </p>
           )}

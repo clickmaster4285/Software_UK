@@ -61,7 +61,7 @@ export function AppsSection() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Our Solutions</h2>
           <p className="text-gray-700 text-lg">
-            Explore custom software, web applications, and software solutions we've built for
+            Explore custom software, web applications, and software solutions we&apos;ve built for
             clients worldwide.
           </p>
         </div>

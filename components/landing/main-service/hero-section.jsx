@@ -105,8 +105,10 @@ const Typewriter = ({ texts, typingSpeed = 80, deletingSpeed = 40, pauseTime = 1
 
     if (isDeleting) {
       if (displayText.length === 0) {
-        setIsDeleting(false);
-        setCurrentIndex((prev) => (prev + 1) % texts.length);
+        timer = setTimeout(() => {
+          setIsDeleting(false);
+          setCurrentIndex((prev) => (prev + 1) % texts.length);
+        }, deletingSpeed);
       } else {
         timer = setTimeout(() => {
           setDisplayText((prev) => prev.slice(0, -1));
@@ -114,7 +116,7 @@ const Typewriter = ({ texts, typingSpeed = 80, deletingSpeed = 40, pauseTime = 1
       }
     } else {
       if (displayText.length === currentText.length) {
-        setIsWaiting(true);
+        timer = setTimeout(() => setIsWaiting(true), 0);
       } else {
         timer = setTimeout(() => {
           setDisplayText((prev) => currentText.slice(0, prev.length + 1));
@@ -261,7 +263,7 @@ export function HeroSection({ serviceData }) {
                       {typeof stat.value === 'string' && stat.value.includes('+') ? (
                         <Counter end={parseInt(stat.value)} duration={2.2} delay={0.1 * index} />
                       ) : (
-                        <span>{stat.value}</span>
+                        <span>{stat.value || stat.end}</span>
                       )}
                     </p>
                     <p className="mt-1 text-sm text-gray-400 font-medium">

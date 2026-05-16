@@ -33,12 +33,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${sora.variable} ${dmSans.variable} antialiased`}
     >
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+
       <body className="min-h-full flex flex-col font-sans">
         <ToasterProvider />
         <SmoothScroll>

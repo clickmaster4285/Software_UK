@@ -42,20 +42,23 @@ export default function CaseStudyForm({ initialData, id }) {
 
   useEffect(() => {
     if (initialData) {
-      setFormData({
-        project: initialData.project?._id || initialData.project || '',
-        title: initialData.title || '',
-        slug: initialData.slug || '',
-        excerpt: initialData.excerpt || '',
-        client: initialData.client || '',
-        technologies: initialData.technologies || [],
-        thumbnail: initialData.thumbnail || '',
-        status: initialData.status || 'completed',
-        challenge: initialData.challenge || '',
-        approach: initialData.approach || '',
-        results: initialData.results || '',
-        published: initialData.published || false,
-      });
+      const timer = setTimeout(() => {
+        setFormData({
+          project: initialData.project?._id || initialData.project || '',
+          title: initialData.title || '',
+          slug: initialData.slug || '',
+          excerpt: initialData.excerpt || '',
+          client: initialData.client || '',
+          technologies: initialData.technologies || [],
+          thumbnail: initialData.thumbnail || '',
+          status: initialData.status || 'completed',
+          challenge: initialData.challenge || '',
+          approach: initialData.approach || '',
+          results: initialData.results || '',
+          published: initialData.published || false,
+        });
+      }, 0);
+      return () => clearTimeout(timer);
     }
   }, [initialData]);
 

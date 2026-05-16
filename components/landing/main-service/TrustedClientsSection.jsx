@@ -75,7 +75,7 @@ function ClientCard({
 
   return (
     <div
-      className="group relative bg-white hover:bg-gray-50 transition-colors duration-200 p-8 flex flex-col items-center justify-center gap-5 min-h-[180px]"
+      className="group relative bg-white hover:bg-gray-50 transition-colors duration-200 p-8 flex flex-col items-center justify-center gap-5 min-h-45"
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(20px)",
@@ -84,7 +84,7 @@ function ClientCard({
     >
       {/* Gold bottom accent bar on hover */}
       <span
-        className="absolute bottom-0 left-0 w-full h-[3px] bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+        className="absolute bottom-0 left-0 w-full h-0.75 bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-200"
         aria-hidden="true"
       />
 

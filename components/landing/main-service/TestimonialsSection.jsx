@@ -79,7 +79,7 @@ export const TestimonialCard = ({
 
           {/* Content */}
           <p className="text-sm leading-7 text-muted-foreground">
-            "{testimonial.content}"
+            &quot;{testimonial.content}&quot;
           </p>
         </div>
       </div>

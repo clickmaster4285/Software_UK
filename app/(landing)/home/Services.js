@@ -155,13 +155,15 @@ function ServiceCard({ service, index }) {
         ref={ref}
         onMouseMove={handleMove}
         onMouseLeave={handleLeave}
-        style={{ rotateX, rotateY, transformStyle: 'preserve-3d' }}
+        style={{ 
+          rotateX, 
+          rotateY, 
+          transformStyle: 'preserve-3d',
+          borderColor: `${accent}77`,
+        }}
         className={`group relative flex flex-col justify-between ${
           service.span === 'tall' ? 'h-full min-h-145' : 'h-115'
         } rounded-[40px] border bg-white/40 backdrop-blur-2xl p-8 overflow-hidden transition-all duration-500 hover:bg-white/60`}
-        style={{ 
-          borderColor: `${accent}77`, // 20% opacity initial border
-        }}
       >
         {/* Hover Border Overlay */}
         <div 

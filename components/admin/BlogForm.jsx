@@ -43,11 +43,14 @@ export default function BlogForm({ initialData, id }) {
 
   useEffect(() => {
     if (initialData) {
-      setFormData({
-        ...initialData,
-        tags: initialData.tags || [],
-        faqs: initialData.faqs || [],
-      });
+      const timer = setTimeout(() => {
+        setFormData({
+          ...initialData,
+          tags: initialData.tags || [],
+          faqs: initialData.faqs || [],
+        });
+      }, 0);
+      return () => clearTimeout(timer);
     }
   }, [initialData]);
 

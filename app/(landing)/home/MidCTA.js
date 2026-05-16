@@ -61,7 +61,7 @@ export default function MidCTA() {
                   </h2>
                   
                   <p className="text-white/60 font-body text-lg md:text-xl mb-14 max-w-2xl mx-auto leading-relaxed">
-                     Don't just launch software. Deploy a competitive advantage. 
+                     Don&apos;t just launch software. Deploy a competitive advantage. 
                      Our high-performance systems are built to scale with your ambition.
                   </p>
 

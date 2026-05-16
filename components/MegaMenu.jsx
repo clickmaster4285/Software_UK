@@ -19,9 +19,10 @@ export default function MegaMenu({ categories, trigger }) {
    // Set first category as default when categories change or menu becomes visible
    useEffect(() => {
       if (categories && categories.length > 0 && !hoveredCategory) {
-         setHoveredCategory(categories[0]);
+         const timer = setTimeout(() => setHoveredCategory(categories[0]), 0);
+         return () => clearTimeout(timer);
       }
-   }, [categories]);
+   }, [categories, hoveredCategory]);
 
    const handleMouseEnter = () => {
       if (timeoutRef.current) {

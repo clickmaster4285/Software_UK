@@ -6,12 +6,12 @@ import { useEffect, useState } from "react";
 
 export const AnimatedBackground = ({ type = "404" }) => {
   const [isClient, setIsClient] = useState(false);
+  const [particlesConfig, setParticlesConfig] = useState([]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsClient(true);
   }, []);
-
-  if (!isClient) return <div className="fixed inset-0 -z-10" />;
 
   // Background configurations for each error type
   const backgrounds = {
@@ -39,29 +39,46 @@ export const AnimatedBackground = ({ type = "404" }) => {
 
   const config = backgrounds[type] || backgrounds["404"];
 
+  useEffect(() => {
+    const configs = Array.from({ length: config.particles }).map(() => ({
+      initialX: Math.random() * 100,
+      initialY: Math.random() * 100,
+      scale: Math.random() * 0.5 + 0.5,
+      animateX: Math.random() * 100,
+      animateY: Math.random() * 100,
+      duration: Math.random() * 10 + 10,
+      width: Math.random() * 10 + 5,
+      height: Math.random() * 10 + 5,
+    }));
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setParticlesConfig(configs);
+  }, [config.particles]);
+
+  if (!isClient) return <div className="fixed inset-0 -z-10" />;
+
   return (
     <div className={`fixed inset-0 -z-10 ${config.gradient}`}>
-      {[...Array(config.particles)].map((_, i) => (
+      {particlesConfig.map((p, i) => (
         <motion.div
           key={i}
           className={`absolute rounded-full ${config.particleColor}`}
           initial={{
-            x: Math.random() * 100,
-            y: Math.random() * 100,
-            scale: Math.random() * 0.5 + 0.5,
+            x: p.initialX,
+            y: p.initialY,
+            scale: p.scale,
           }}
           animate={{
-            x: [null, Math.random() * 100],
-            y: [null, Math.random() * 100],
+            x: [null, p.animateX],
+            y: [null, p.animateY],
           }}
           transition={{
-            duration: Math.random() * 10 + 10,
+            duration: p.duration,
             repeat: Infinity,
             repeatType: "reverse",
           }}
           style={{
-            width: `${Math.random() * 10 + 5}px`,
-            height: `${Math.random() * 10 + 5}px`,
+            width: `${p.width}px`,
+            height: `${p.height}px`,
           }}
         />
       ))}

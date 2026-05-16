@@ -85,7 +85,7 @@ export default function FAQ() {
           <div className="relative z-10">
             <h3 className="font-heading text-2xl font-bold mb-4">Still have questions?</h3>
             <p className="text-white/80 font-body mb-8 max-w-xl mx-auto">
-              Can't find the answer you're looking for? Reach out to our team directly and we'll be happy to help you.
+              Can&apos;t find the answer you&apos;re looking for? Reach out to our team directly and we&apos;ll be happy to help you.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link 

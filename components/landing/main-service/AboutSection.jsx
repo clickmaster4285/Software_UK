@@ -2,7 +2,7 @@
 "use client";
 
 import Link from "next/link";
-import { Lightbulb, Rocket, ShieldCheck, Headphones, ArrowRight, Sparkles } from "lucide-react";
+import { Lightbulb, Rocket, ShieldCheck, Headphones, ArrowRight } from "lucide-react";
 import { StackedCards, GlassCardItem } from "@/components/ui/glass-cards";
 
 const values = [
@@ -67,17 +67,16 @@ export function AboutSection() {
         </p>
       </div>
 
-
       {/* MAIN GRID */}
       <div className="mx-auto lg:px-24 px-6 pb-12">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16 items-start">
           {/* LEFT COPY (sticky) */}
           <div className="lg:sticky lg:top-24 lg:self-start lg:pt-8 space-y-5 max-w-2xl">
             <h2 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-2xl lg:text-3xl leading-tight">
-              We Don't Just Build Software {" "}
+              We Don&apos;t Just Build Software &nbsp;
               <span className="relative inline-block text-accent">
                 We Build Revenue Systems
-                <span className="absolute -bottom-2 left-0 h-[3px] w-full rounded-md bg-linear-to-r from-accent-light to-accent" />
+                <span className="absolute -bottom-2 left-0 h-0.75 w-full rounded-md bg-linear-to-r from-accent-light to-accent" />
               </span>
             </h2>
 

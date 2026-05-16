@@ -116,7 +116,7 @@ function TestimonialCard({ t, className }) {
       </div>
 
       <blockquote className="text-white/80 font-body leading-relaxed mb-8 italic whitespace-normal text-lg">
-        "{t.content}"
+        &quot;{t.content}&quot;
       </blockquote>
 
       <div className="flex items-center gap-4 border-t border-white/5 pt-6">

@@ -31,7 +31,7 @@ export default function CaseStudiesPage() {
           ) : publishedStudies.length === 0 ? (
             <div className="text-center py-20 bg-white rounded-3xl shadow-sm border border-slate-100">
               <h3 className="text-2xl font-bold text-slate-900">Case studies coming soon</h3>
-              <p className="text-slate-500 mt-2">We're currently preparing our latest success stories. Check back soon!</p>
+              <p className="text-slate-500 mt-2">We&apos;re currently preparing our latest success stories. Check back soon!</p>
               <Button asChild className="mt-8 bg-primary text-accent">
                 <Link href="/contact">Start Your Project</Link>
               </Button>
@@ -68,7 +68,7 @@ export default function CaseStudiesPage() {
         <div className="container relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready to Be Our Next Success Story?</h2>
           <p className="text-white/70 mb-10 max-w-xl mx-auto text-lg">
-            Let's discuss how our technical expertise can help your business achieve measurable growth.
+            Let&apos;s discuss how our technical expertise can help your business achieve measurable growth.
           </p>
           <Link
             href="/contact"

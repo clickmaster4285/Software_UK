@@ -55,7 +55,7 @@ export function ProjectCTAHero() {
             <h2 className="mt-6 text-4xl font-bold leading-tight md:text-5xl">
               Ready to Start Your Project?
               <br />
-              Let's Build Something Amazing
+              Let&apos;s Build Something Amazing
               <br />
               <span className="uppercase">Together</span>
             </h2>
@@ -70,7 +70,7 @@ export function ProjectCTAHero() {
           </div>
 
          <div
-  className="relative h-[420px] w-96 overflow-hidden"   // w-96 = 384px, adjust
+  className="relative h-105 w-96 overflow-hidden"   // w-96 = 384px, adjust
   onMouseEnter={() => setPaused(true)}
   onMouseLeave={() => setPaused(false)}
   style={{
