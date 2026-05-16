@@ -162,7 +162,7 @@ export function IndustriesSection() {
                 <div className="relative bg-white rounded-2xl p-6 border border-primary/10 shadow-[0_4px_20px_rgb(0,0,0,0.02)] h-full overflow-hidden group">
                   {/* Animated background that moves on hover (matching WhyChooseSection) */}
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent"
+                    className="absolute inset-0 bg-linear-to-r from-primary/10 to-transparent"
                     animate={{
                       x: ['-100%', '100%'],
                     }}
@@ -227,7 +227,7 @@ export function IndustriesSection() {
                       </span>
                     </div>
 
-                 
+
                   </div>
 
                   {/* Corner Accent with rotation */}
@@ -250,7 +250,7 @@ export function IndustriesSection() {
         {/* Bottom CTA Section */}
         <div ref={ctaRef} className="mt-20">
           <motion.div
-            className="relative bg-gradient-to-br from-gray-50 to-primary/20 rounded-3xl p-12 overflow-hidden border border-primary/10"
+            className="relative bg-linear-to-br from-gray-50 to-primary/20 rounded-3xl p-12 overflow-hidden border border-primary/10"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -276,7 +276,7 @@ export function IndustriesSection() {
 
             {/* Animated light sweep (matching WhyChooseSection) */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent"
+              className="absolute inset-0 bg-linear-to-r from-transparent via-primary/10 to-transparent"
               animate={{
                 x: ['-100%', '100%'],
               }}

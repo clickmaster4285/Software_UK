@@ -115,22 +115,22 @@ export function TrustedClientsSection() {
   const { ref, visible } = useInView();
 
   return (
-    <section ref={ref} className="bg-gradient-to-b from-white to-slate-50  py-6 px-6 lg:px-26 lg:py-16 ">
+    <section ref={ref} className="bg-linear-to-b from-white to-slate-50  py-6 px-6 lg:px-26 lg:py-16 ">
 
 
 
-     
-  
-    
+
+
+
 
       {/* Header original design */}
       <div className="text-center mb-12">
         <div className="inline-flex items-center gap-2 mb-3">
-           <span className="h-0.5 w-8 rounded-full bg-accent" />
-              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
-                Trusted By Industry Leaders
-              </p>
-              <span className="h-0.5 w-8 rounded-full bg-accent" />
+          <span className="h-0.5 w-8 rounded-full bg-accent" />
+          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
+            Trusted By Industry Leaders
+          </p>
+          <span className="h-0.5 w-8 rounded-full bg-accent" />
         </div>
 
         <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-3">

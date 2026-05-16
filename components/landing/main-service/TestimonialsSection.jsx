@@ -93,7 +93,7 @@ export function TestimonialsSection() {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [swiperRef, setSwiperRef] = useState(null);
   const sectionRef = useRef(null);
-  const headerInView = useInView(sectionRef, { once, amount: 0.2 });
+  const headerInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
   // Fetch testimonials from API using organized hook
   const { data: testimonials = [], isLoading, error } = useTestimonialList();

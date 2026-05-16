@@ -9,7 +9,7 @@ import {
   Palette, Users, Cog, Settings, Bug,
   ArrowRight
 } from 'lucide-react';
-import { metadataConfig } from '@/app/metadata-config';
+
 
 // Re-defining icons that might have been missing or mismatched
 const BarChartIcon = BarChart;
@@ -19,7 +19,7 @@ const VrIcon = Glasses;
 const WrenchIcon = Settings;
 const Wrench = Settings;
 
-export const metadata = metadataConfig.home();
+
 
 // Icon mapping for services
 const serviceIcons = {

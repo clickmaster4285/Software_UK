@@ -68,7 +68,7 @@ export default function SolutionsPage() {
   }
 
   return (
-    <main className="bg-gradient-to-b from-white to-slate-50">
+    <main className="bg-linear-to-b from-white to-slate-50">
       {/* overflow-x-clip prevents scrollbar without clipping bottom */}
       <section className="py-12 sm:py-16 md:py-24 bg-gray-50 overflow-x-clip">
 

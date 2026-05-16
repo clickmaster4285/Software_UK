@@ -391,7 +391,7 @@
   }
 
   .avatar {
-    @apply w-9 h-9 rounded-full bg-gradient-to-br from-primary to-primary-mid border-2 border-white -ml-2.5;
+    @apply w-9 h-9 rounded-full bg-linear-to-br from-primary to-primary-mid border-2 border-white -ml-2.5;
   }
 
   .avatar:first-child {
@@ -420,7 +420,7 @@
   }
 
   .placeholder-image {
-    @apply w-full aspect-[4/5] bg-gradient-to-br from-primary to-primary-mid rounded-3xl flex items-center justify-center text-white text-lg;
+    @apply w-full aspect-[4/5] bg-linear-to-br from-primary to-primary-mid rounded-3xl flex items-center justify-center text-white text-lg;
   }
 
   .rotating-badge {

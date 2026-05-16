@@ -42,19 +42,19 @@ function PartnerCard({
 const createSeamlessArray = (arr, targetLength = 32) => {
   const result = [];
   let lastAddedIndex = -1;
-  
+
   for (let i = 0; i < targetLength; i++) {
     // Find available indices that aren't the same last added
     const availableIndices = arr
       .map((_, idx) => idx)
       .filter(idx => idx !== lastAddedIndex);
-    
+
     // Pick a random index from available ones
     const randomIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)];
     result.push(arr[randomIndex]);
     lastAddedIndex = randomIndex;
   }
-  
+
   return result;
 };
 
@@ -66,7 +66,7 @@ const createShuffledRow = (originalArray) => {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
-  
+
   // Ensure no two identical are consecutive
   for (let i = 0; i < shuffled.length - 1; i++) {
     if (shuffled[i].name === shuffled[i + 1].name) {
@@ -75,7 +75,7 @@ const createShuffledRow = (originalArray) => {
       [shuffled[i + 1], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[i + 1]];
     }
   }
-  
+
   return shuffled;
 };
 
@@ -83,13 +83,13 @@ export default function TrustedBySection() {
   // Create unique distribution for each row
   const rowOneItems = createShuffledRow(partners);
   const rowTwoItems = createShuffledRow(partners);
-  
+
   // Extend arrays for seamless marquee (no duplicates at the join point)
   const extendForMarquee = (arr) => {
     const extended = [...arr];
     const lastItem = arr[arr.length - 1];
     const firstItem = arr[0];
-    
+
     // Add items ensuring the join point doesn't have duplicates
     for (let i = 1; i <= arr.length; i++) {
       const nextItem = arr[i % arr.length];
@@ -102,10 +102,10 @@ export default function TrustedBySection() {
         else extended.push(nextItem);
       }
     }
-    
+
     return extended;
   };
-  
+
   const rowOne = extendForMarquee(rowOneItems);
   const rowTwo = extendForMarquee(rowTwoItems);
 
@@ -155,13 +155,13 @@ export default function TrustedBySection() {
 
       <section className="relative overflow-hidden bg-white lg:px-10">
         <div className="mx-auto px-4 sm:px-6 lg:px-12">
-        
+
           {/* Slider Wrapper */}
           <div className="mt-4 space-y-4">
             {/* Row 1 */}
             <div className="relative overflow-hidden">
-              <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-gradient-to-r from-white to-transparent" />
-              <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-white to-transparent" />
+              <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-linear-to-r from-white to-transparent" />
+              <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-linear-to-l from-white to-transparent" />
 
               <div className="marquee-left flex w-max gap-4 md:gap-6">
                 {rowOne.map((item, index) => (
@@ -175,8 +175,8 @@ export default function TrustedBySection() {
 
             {/* Row 2 */}
             <div className="relative overflow-hidden">
-              <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-gradient-to-r from-white to-transparent" />
-              <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-white to-transparent" />
+              <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-linear-to-r from-white to-transparent" />
+              <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-linear-to-l from-white to-transparent" />
 
               <div className="marquee-right flex w-max gap-4 md:gap-6">
                 {rowTwo.map((item, index) => (
