@@ -63,7 +63,7 @@ export function TrustedClientsSection({ clients = defaultClients, title, subtitl
 
   return (
     <section className="bg-background py-20 lg:py-32 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <motion.div
