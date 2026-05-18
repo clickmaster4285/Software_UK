@@ -24,6 +24,7 @@ const imgDesign = '/landing/service_uiux.png';
 const imgCloud = '/landing/service_cloudsecu.png';
 const imgInfra = '/landing/service_machinelern.png';
 const imgEnterprise = '/landing/service_enterpriceapp.png';
+const imgTesting = '/landing/service_testing.png';
 
 const services = [
   {
@@ -55,7 +56,7 @@ const services = [
     accent: '#10b981', // Green
   },
   {
-    title: 'AI Monitoring',
+    title: 'Artificial Intelligence',
     description: 'AI-powered monitoring systems with predictive threat intelligence.',
     Icon: BrainCircuit,
     AltIcon: Database,
@@ -100,6 +101,15 @@ const services = [
     image: imgEnterprise,
     tag: 'Platform',
     accent: '#6366f1', // Indigo
+  },
+  {
+    title: 'Testing & QA',
+    description: 'Scalable infrastructure architecture with maximum uptime and reliability.',
+    Icon: Database,
+    AltIcon: Palette,
+    image: imgTesting,
+    tag: 'Platform',
+    accent: '#42f560', // Red
   },
 ];
 
@@ -263,9 +273,9 @@ export default function Services() {
     <section className="relative py-20 bg-background overflow-hidden">
       {/* Ambient background glows */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-blue-500/5 blur-[120px]" />
-        <div className="absolute top-[20%] right-[-10%] w-[40%] h-[40%] rounded-full bg-purple-500/5 blur-[120px]" />
-        <div className="absolute bottom-[-10%] left-[20%] w-[40%] h-[40%] rounded-full bg-emerald-500/5 blur-[120px]" />
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-blue-500/15 blur-[120px]" />
+        <div className="absolute top-[20%] right-[-10%] w-[40%] h-[40%] rounded-full bg-purple-500/15 blur-[120px]" />
+        <div className="absolute bottom-[-10%] left-[20%] w-[40%] h-[40%] rounded-full bg-emerald-500/15 blur-[120px]" />
       </div>
 
       <div className="relative w-full px-6 xl:px-12 max-w-400 mx-auto">
