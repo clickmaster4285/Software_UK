@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useReducedMotion } from "framer-motion";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
   Lightbulb,
   Code2,
@@ -9,173 +11,541 @@ import {
   ShieldCheck,
   RefreshCw,
   Users,
+  Check,
+  Clock,
 } from "lucide-react";
-import ExpandOnHover from "@/components/ui/expand-cards";
 
-const AnimatedCounter = ({ value, suffix, isFloat = false, metricsInView }) => {
-  const [count, setCount] = useState(0);
+gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
-    if (!metricsInView) return;
-    
-    let start = 0;
-    const duration = 1500;
-    const increment = value / (duration / 16);
+const DEFAULT_PHASES = [
+  {
+    step: "01",
+    title: "Discovery & Strategy",
+    icon: Lightbulb,
+    description:
+      "We learn your goals, users, and constraints — then define scope, stack, and milestones.",
+    deliverables: ["Requirements doc", "Technical roadmap", "Timeline"],
+    duration: "1–2 weeks",
+  },
+  {
+    step: "02",
+    title: "UX/UI Design",
+    icon: Users,
+    description:
+      "Wireframes and visual design focused on clarity, conversion, and usability.",
+    deliverables: ["Wireframes", "UI mockups", "Design system"],
+    duration: "2–3 weeks",
+  },
+  {
+    step: "03",
+    title: "Agile Development",
+    icon: Code2,
+    description:
+      "Two-week sprints with demos, so you always see progress — never a black box.",
+    deliverables: ["Working builds", "Sprint demos", "Source code"],
+    duration: "Ongoing",
+  },
+  {
+    step: "04",
+    title: "QA & Security",
+    icon: ShieldCheck,
+    description:
+      "Testing, performance checks, and security review before anything goes live.",
+    deliverables: ["Test reports", "Security audit", "Benchmarks"],
+    duration: "1–2 weeks",
+  },
+  {
+    step: "05",
+    title: "Deployment",
+    icon: Rocket,
+    description:
+      "Staged rollout, monitoring, and launch support with minimal downtime.",
+    deliverables: ["Production deploy", "Monitoring", "Launch checklist"],
+    duration: "~1 week",
+  },
+  {
+    step: "06",
+    title: "Growth & Support",
+    icon: RefreshCw,
+    description:
+      "Analytics, fixes, and improvements after launch — we stay with you.",
+    deliverables: ["Analytics setup", "Optimization plan", "Support SLA"],
+    duration: "Ongoing",
+  },
+];
 
-    const timer = setInterval(() => {
-      start += increment;
-      if (start >= value) {
-        setCount(value);
-        clearInterval(timer);
-      } else {
-        setCount(isFloat ? Math.round(start * 10) / 10 : Math.floor(start));
-      }
-    }, 16);
+const PHASE_ICONS = [Lightbulb, Users, Code2, ShieldCheck, Rocket, RefreshCw];
+const EASE = [0.22, 1, 0.36, 1];
 
-    return () => clearInterval(timer);
-  }, [value, isFloat, metricsInView]);
-
-  return (
-    <span className="font-heading font-bold text-primary">
-      {isFloat ? count.toFixed(1) : Math.floor(count)}{suffix}
-    </span>
-  );
+/**
+ * Left panel scroll behaviour (desktop).
+ * Scroll down: 23vh → slowly → 51vh (end of timeline).
+ * Scroll up:  51vh → slowly → 23vh (reverses automatically).
+ */
+const PIN_CONFIG = {
+  topStart: "23vh",
+  topEnd: "51vh",
+  scrollStart: "top 23vh",
+  scrollEnd: "bottom bottom",
+  scrub: 0.85,
+  minWidth: "(min-width: 1024px)",
 };
 
+function parseMetric(raw) {
+  const str = String(raw ?? "");
+  if (str.includes("/")) return { display: str, animate: false };
+  const numeric = parseFloat(str.replace(/[^0-9.]/g, "")) || 0;
+  if (!numeric && str) return { display: str, animate: false };
+  const suffix = str.includes("%")
+    ? "%"
+    : str.includes("+")
+      ? "+"
+      : str.includes("★")
+        ? "★"
+        : str.replace(/[0-9.]/g, "") || "";
+  return {
+    display: `${numeric}${suffix}`,
+    animate: true,
+    value: numeric,
+    suffix,
+    isFloat: numeric % 1 !== 0,
+  };
+}
+
+function MetricStat({ metric }) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: "-40px" });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 12 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.45, ease: EASE }}
+      className="group relative text-center py-1"
+    >
+      <span
+        className="absolute inset-x-2 bottom-0 h-px origin-center scale-x-0 bg-accent opacity-0 transition-all duration-300 group-hover:scale-x-100 group-hover:opacity-100"
+        aria-hidden
+      />
+      <p className="font-heading text-2xl md:text-3xl font-bold text-primary transition-colors duration-300 group-hover:text-accent">
+        {metric.display}
+      </p>
+      <p className="mt-1 text-sm text-text-muted font-body">{metric.label}</p>
+    </motion.div>
+  );
+}
+
+function ProcessStepCard({ phase, cardRef, nodeRef, isActive, reducedMotion }) {
+  const Icon = phase.icon;
+  const stepNum = phase.step.replace(/^0/, "");
+
+  return (
+    <article
+      ref={cardRef}
+      className={`relative pl-14 md:pl-16 ${reducedMotion ? "opacity-100" : "opacity-0"}`}
+    >
+      {/* Timeline node */}
+      <div
+        ref={nodeRef}
+        className={`absolute left-0 top-6 z-10 flex h-10 w-10 items-center justify-center rounded-full border-2 text-sm font-bold font-heading transition-all duration-500 ${
+          isActive
+            ? "scale-110 border-accent bg-accent text-white shadow-[0_0_0_6px_color-mix(in_oklch,var(--accent)_22%,transparent)]"
+            : "scale-100 border-border bg-white text-primary"
+        }`}
+        aria-hidden
+      >
+        {stepNum}
+      </div>
+
+      <div
+        className={`group rounded-xl border bg-white p-5 md:p-6 shadow-[0_2px_16px_rgba(0,0,0,0.05)] transition-all duration-500 ${
+          isActive
+            ? "border-accent/40 shadow-[0_12px_36px_rgba(0,0,0,0.08)]"
+            : "border-border"
+        }`}
+      >
+        <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
+          <div className="flex items-center gap-3">
+            <span
+              className={`icon-circle shrink-0 transition-transform duration-500 ${
+                isActive ? "scale-105" : ""
+              }`}
+            >
+              <Icon className="h-5 w-5" aria-hidden />
+            </span>
+            <h3 className="font-heading text-lg font-semibold text-text-primary">
+              {phase.title}
+            </h3>
+          </div>
+          {phase.duration && (
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-surface px-3 py-1 text-xs font-medium text-text-muted border border-border">
+              <Clock className="h-3.5 w-3.5 text-accent" aria-hidden />
+              {phase.duration}
+            </span>
+          )}
+        </div>
+
+        <p className="text-sm md:text-base text-text-body font-body leading-relaxed">
+          {phase.description}
+        </p>
+
+        {phase.deliverables?.length > 0 && (
+          <ul className="mt-4 pt-4 border-t border-border space-y-2">
+            <li className="text-xs font-medium uppercase tracking-[0.08em] text-text-muted mb-1">
+              You receive
+            </li>
+            {phase.deliverables.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-2 text-sm text-text-body font-body"
+              >
+                <Check className="h-4 w-4 shrink-0 text-accent mt-0.5" aria-hidden />
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </article>
+  );
+}
+
 export function ProcessPage({ serviceData }) {
-  const metricsRef = useRef(null);
-  const expandSectionRef = useRef(null);
+  const reducedMotion = useReducedMotion();
+  const sectionRef = useRef(null);
+  const trackRef = useRef(null);
+  const leftPanelRef = useRef(null);
+  const lineBgRef = useRef(null);
+  const lineProgressRef = useRef(null);
+  const cardRefs = useRef([]);
+  const nodeRefs = useRef([]);
 
-  const metricsInView = useInView(metricsRef, { once: true });
+  const [activeStep, setActiveStep] = useState(0);
 
-  const defaultPhases = [
-    {
-      step: "01",
-      title: "Discovery & Strategy",
-      icon: Lightbulb,
-      description: "We align technology with business goals through deep discovery sessions.",
-    },
-    {
-      step: "02",
-      title: "UX/UI Design",
-      icon: Users,
-      description: "User-centered design that balances aesthetics with functionality.",
-    },
-    {
-      step: "03",
-      title: "Agile Development",
-      icon: Code2,
-      description: "Sprint-based engineering with continuous integration and reviews.",
-    },
-    {
-      step: "04",
-      title: "QA & Security",
-      icon: ShieldCheck,
-      description: "Rigorous quality assurance and compliance validation before release.",
-    },
-    {
-      step: "05",
-      title: "Deployment",
-      icon: Rocket,
-      description: "Zero-downtime deployment and launch orchestration.",
-    },
-    {
-      step: "06",
-      title: "Growth",
-      icon: RefreshCw,
-      description: "Post-launch analytics and continuous optimization.",
-    },
-  ];
-
-  // Map serviceData.lifecycle to phases
-  const phases = serviceData?.lifecycle?.map((l, idx) => {
-    const icons = [Lightbulb, Users, Code2, ShieldCheck, Rocket, RefreshCw];
-    return {
+  const phases =
+    serviceData?.lifecycle?.map((l, idx) => ({
       step: l.step || `0${idx + 1}`,
       title: l.title,
       description: l.description,
-      icon: icons[idx % icons.length],
-      color: "from-primary to-orange-600",
-      bgLight: "bg-slate-50",
-      deliverables: l.deliverables || ["Documentation", "Working Code", "QA Report"],
+      icon: PHASE_ICONS[idx % PHASE_ICONS.length],
+      deliverables: l.deliverables || [
+        "Documentation",
+        "Working code",
+        "QA report",
+      ],
       duration: l.duration || "Flexible",
+    })) || DEFAULT_PHASES;
+
+  const defaultMetrics = [
+    { ...parseMetric("98%"), label: "On-time delivery" },
+    { ...parseMetric("3.5x"), label: "Avg. revenue growth" },
+    { ...parseMetric("40%"), label: "Faster launch" },
+    { ...parseMetric("100%"), label: "IP ownership" },
+  ];
+
+  const displayMetrics =
+    serviceData?.stats?.map((s) => ({
+      label: s.label,
+      ...parseMetric(s.value),
+    })) || defaultMetrics;
+
+  const serviceTitle = serviceData?.title || "Our";
+
+  cardRefs.current = cardRefs.current.slice(0, phases.length);
+  nodeRefs.current = nodeRefs.current.slice(0, phases.length);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    const lineProgress = lineProgressRef.current;
+    if (!track || !lineProgress) return;
+
+    const prefersReduced = reducedMotion === true;
+
+    const leftPanel = leftPanelRef.current;
+
+    if (prefersReduced) {
+      gsap.set(lineProgress, { scaleY: 1 });
+      cardRefs.current.forEach((card) => {
+        if (card) gsap.set(card, { opacity: 1, y: 0 });
+      });
+      if (leftPanel) gsap.set(leftPanel, { top: PIN_CONFIG.topStart });
+      return;
+    }
+
+    const ctx = gsap.context(() => {
+      gsap.set(lineProgress, { scaleY: 0, transformOrigin: "top center" });
+
+      const mm = gsap.matchMedia();
+      mm.add(PIN_CONFIG.minWidth, () => {
+        if (!leftPanel) return;
+
+        gsap.set(leftPanel, { top: PIN_CONFIG.topStart });
+
+        ScrollTrigger.create({
+          trigger: track,
+          start: PIN_CONFIG.scrollStart,
+          end: PIN_CONFIG.scrollEnd,
+          pin: leftPanel,
+          pinSpacing: false,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+        });
+
+        gsap.fromTo(
+          leftPanel,
+          { top: PIN_CONFIG.topStart },
+          {
+            top: PIN_CONFIG.topEnd,
+            ease: "none",
+            scrollTrigger: {
+              trigger: track,
+              start: PIN_CONFIG.scrollStart,
+              end: PIN_CONFIG.scrollEnd,
+              scrub: PIN_CONFIG.scrub,
+              invalidateOnRefresh: true,
+            },
+          }
+        );
+      });
+
+      gsap.to(lineProgress, {
+        scaleY: 1,
+        ease: "none",
+        scrollTrigger: {
+          trigger: track,
+          start: "top 58%",
+          end: "bottom 42%",
+          scrub: 0.45,
+        },
+      });
+
+      cardRefs.current.forEach((card, index) => {
+        if (!card) return;
+
+        gsap.fromTo(
+          card,
+          { opacity: 0, y: 56 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.7,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: card,
+              start: "top 88%",
+              end: "top 55%",
+              toggleActions: "play none none reverse",
+            },
+          }
+        );
+
+        ScrollTrigger.create({
+          trigger: card,
+          start: "top 65%",
+          end: "bottom 35%",
+          onEnter: () => setActiveStep(index),
+          onEnterBack: () => setActiveStep(index),
+          onLeaveBack: () => {
+            if (index > 0) setActiveStep(index - 1);
+          },
+        });
+
+        const node = nodeRefs.current[index];
+        if (node) {
+          gsap.fromTo(
+            node,
+            { scale: 0.5, opacity: 0.4 },
+            {
+              scale: 1,
+              opacity: 1,
+              duration: 0.5,
+              ease: "back.out(1.6)",
+              scrollTrigger: {
+                trigger: card,
+                start: "top 80%",
+                toggleActions: "play none none reverse",
+              },
+            }
+          );
+        }
+      });
+    }, sectionRef);
+
+    const refreshTimer = setTimeout(() => ScrollTrigger.refresh(), 150);
+
+    return () => {
+      clearTimeout(refreshTimer);
+      ctx.revert();
     };
-  }) || defaultPhases;
+  }, [phases.length, reducedMotion]);
 
-  const metrics = serviceData?.stats?.map(s => ({
-    value: parseFloat(s.value) || 0,
-    suffix: s.value.includes('%') ? '%' : (s.value.includes('+') ? '+' : ''),
-    label: s.label
-  })) || [
-    { value: 98, suffix: "%", label: "Projects delivered on time" },
-    { value: 3.5, suffix: "x", label: "Avg. client revenue growth", isFloat: true },
-    { value: 40, suffix: "%", label: "Faster time-to-market" },
-    { value: 100, suffix: "%", label: "IP ownership" },
-  ];
-
-  const allProcessImages = [
-    "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&h=600&fit=crop",
-  ];
+  const scrollToStep = (index) => {
+    const card = cardRefs.current[index];
+    if (card) {
+      card.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
 
   return (
-    <section className="bg-white py-24 font-sans overflow-hidden">
-      <div ref={expandSectionRef} className="container mx-auto px-4 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-3">
-            <span className="h-0.5 w-8 rounded-full bg-primary" />
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
-              Our Methodology
-            </p>
-            <span className="h-0.5 w-8 rounded-full bg-primary" />
-          </div>
+    <section
+      ref={sectionRef}
+      className="relative overflow-x-clip bg-white py-20 font-sans"
+      aria-labelledby="process-heading"
+    >
+      <motion.div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+      >
+        <div
+          className="absolute -top-24 right-0 h-80 w-80 rounded-full blur-3xl opacity-25"
+          style={{
+            background:
+              "radial-gradient(circle, color-mix(in oklch, var(--accent) 20%, transparent), transparent 70%)",
+          }}
+        />
+      </motion.div>
 
-          <h2 className="mt-5 font-heading text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            {serviceData?.title || 'Our'} Development Process
+      <div className="container relative z-10">
+        <motion.header
+          className="text-center mb-12 "
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.55, ease: EASE }}
+        >
+          <span className="text-lg font-bold uppercase tracking-[0.2em] text-accent">Our process</span>
+          <h2
+            id="process-heading"
+            className="mt-4 font-heading text-3xl font-bold text-text-primary sm:text-4xl"
+          >
+            How we build your {serviceTitle.toLowerCase()} project
           </h2>
-
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-600 font-body sm:text-lg">
-            We follow a proven, agile-driven approach to ensure every project is delivered with surgical precision and exceptional quality.
+          <p className="mt-4 text-base text-text-body font-body leading-relaxed">
+            Scroll through each phase — the line tracks your progress from
+            discovery to launch.
           </p>
-        </div>
+        </motion.header>
 
-        {/* Metrics Section */}
-        <div ref={metricsRef} className="mb-20">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 max-w-5xl mx-auto">
-            {metrics.map((metric, idx) => (
+        <motion.div
+          className="mb-14 md:mb-20 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 max-w-4xl mx-auto rounded-2xl border border-border bg-surface px-6 py-8 md:px-10"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: EASE }}
+        >
+          {displayMetrics.map((metric) => (
+            <MetricStat key={metric.label} metric={metric} />
+          ))}
+        </motion.div>
+
+        {/* Two-column layout: left = pinned step card, right = scrolling timeline */}
+        <div className="max-w-7xl mx-auto lg:flex lg:items-start lg:gap-14">
+          {/* leftPanelRef — scrolls 30vh → 60vh while pinned (PIN_CONFIG) */}
+          <aside className="hidden lg:block lg:w-[34%] lg:shrink-0">
+            <div ref={leftPanelRef} className="w-full">
               <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                animate={metricsInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: idx * 0.1, duration: 0.6 }}
-                className="text-center group"
+                initial={{ opacity: 0, x: -16 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, ease: EASE }}
+                className="rounded-2xl border border-border bg-white p-6 shadow-[0_2px_20px_rgba(0,0,0,0.06)]"
               >
-                <div className="text-4xl md:text-5xl font-heading font-bold mb-2 group-hover:scale-110 transition-transform duration-300">
-                  <AnimatedCounter 
-                    value={metric.value} 
-                    suffix={metric.suffix} 
-                    isFloat={metric.isFloat || metric.value % 1 !== 0} 
-                    metricsInView={metricsInView}
-                  />
-                </div>
-                <p className="text-slate-500 font-body text-sm uppercase tracking-wide">{metric.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+              <p className="text-xs font-medium uppercase tracking-[0.1em] text-accent mb-2">
+                Step {String(activeStep + 1).padStart(2, "0")} of{" "}
+                {String(phases.length).padStart(2, "0")}
+              </p>
+              <h3 className="font-heading text-xl font-bold text-text-primary leading-snug transition-all duration-300">
+                {phases[activeStep]?.title}
+              </h3>
+              <p className="mt-3 text-sm text-text-body font-body leading-relaxed line-clamp-4">
+                {phases[activeStep]?.description}
+              </p>
 
-        {/* Expandable Process Journey */}
-        <div className="relative rounded-3xl overflow-hidden border border-slate-100 shadow-2xl">
-          <ExpandOnHover
-            images={allProcessImages}
-            phases={phases}
-            defaultExpandedIndex={0}
-            containerHeight="32rem"
-          />
+              <nav
+                className="mt-6 flex flex-col gap-1 max-h-[min(42vh,320px)] overflow-y-auto custom-scrollbar pr-1"
+                aria-label="Process steps"
+              >
+                {phases.map((phase, index) => (
+                  <button
+                    key={phase.step}
+                    type="button"
+                    onClick={() => scrollToStep(index)}
+                    className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm transition-all duration-300 ${
+                      activeStep === index
+                        ? "bg-surface border border-accent/30 text-text-primary font-medium"
+                        : "text-text-muted hover:text-text-body hover:bg-surface/60"
+                    }`}
+                  >
+                    <span
+                      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold font-heading transition-colors duration-300 ${
+                        activeStep >= index
+                          ? "bg-accent text-white"
+                          : "bg-surface border border-border text-text-muted"
+                      }`}
+                    >
+                      {phase.step.replace(/^0/, "")}
+                    </span>
+                    <span className="truncate">{phase.title}</span>
+                  </button>
+                ))}
+              </nav>
+              </motion.div>
+            </div>
+          </aside>
+
+          {/* Right — scroll track + cards */}
+          <div className="lg:flex-1 lg:min-w-0 relative" ref={trackRef}>
+            <div className="mb-8 lg:hidden rounded-xl border border-border bg-surface p-4">
+              <p className="text-xs font-medium uppercase tracking-[0.1em] text-accent">
+                Step {String(activeStep + 1).padStart(2, "0")} of{" "}
+                {String(phases.length).padStart(2, "0")}
+              </p>
+              <p className="mt-1 font-heading font-semibold text-text-primary">
+                {phases[activeStep]?.title}
+              </p>
+            </div>
+
+            {/* Background line */}
+            <div
+              ref={lineBgRef}
+              className="absolute left-5 top-0 bottom-0 w-0.5 bg-border"
+              aria-hidden
+            />
+            {/* Progress line — grows on scroll */}
+            <div
+              ref={lineProgressRef}
+              className="absolute left-5 top-0 w-0.5 h-full origin-top will-change-transform"
+              style={{
+                background:
+                  "linear-gradient(180deg, var(--accent) 0%, var(--primary) 100%)",
+                boxShadow:
+                  "0 0 12px color-mix(in oklch, var(--accent) 40%, transparent)",
+              }}
+              aria-hidden
+            />
+
+            <div className="flex flex-col gap-12 md:gap-16">
+              {phases.map((phase, index) => (
+                <ProcessStepCard
+                  key={phase.step}
+                  phase={phase}
+                  isActive={activeStep >= index}
+                  reducedMotion={reducedMotion === true}
+                  cardRef={(el) => {
+                    cardRefs.current[index] = el;
+                  }}
+                  nodeRef={(el) => {
+                    nodeRefs.current[index] = el;
+                  }}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

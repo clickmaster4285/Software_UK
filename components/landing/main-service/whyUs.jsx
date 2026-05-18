@@ -103,7 +103,7 @@ export function WhyChooseUs({ countryName, items, subtitle = "Competitive differ
   return (
     <section ref={sectionRef} className="relative py-24 overflow-hidden bg-white font-sans">
       <div className="relative z-10 mx-auto px-4 sm:px-6 lg:px-10 ">
-        
+
         {/* Header Section */}
         <div className="mx-auto max-w-3xl text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-3">
@@ -114,13 +114,13 @@ export function WhyChooseUs({ countryName, items, subtitle = "Competitive differ
             <span className="h-0.5 w-8 rounded-full bg-primary" />
           </div>
 
-        <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-2xl lg:text-3xl">
-  Why Choose ClickMasters{" "}
-  {countryName && (
-    <span>in {countryName}</span>
-  )}
+          <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-2xl lg:text-3xl">
+            Why Choose ClickMasters{" "}
+            {countryName && (
+              <span>in {countryName}</span>
+            )}
           </h2>
-          
+
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
             {subtitle}
@@ -285,7 +285,7 @@ export function WhyChooseUs({ countryName, items, subtitle = "Competitive differ
           )}
         </div>
 
-       
+
       </div>
     </section>
   );

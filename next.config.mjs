@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // have to allow image from https://img.icons8.com
   images: {
     remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.jsdelivr.net',
+      },
       {
         protocol: 'https',
         hostname: 'img.icons8.com',

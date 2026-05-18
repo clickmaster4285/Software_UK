@@ -61,13 +61,15 @@ export default function ServiceClient({ serviceData }) {
       ExploreSection jsx file  
       TrustedClientsSection jsx file 
       AppsSection jsx file 
+ProcessPage  jsx file 
+TechStackSection jsx file 
+WhyChooseUs jsx file 
+
       */}
 
       {/* Main Service Sections */}
       <HeroSection serviceData={serviceData} />
-
       <ExploreSection serviceData={serviceData} />
-
       <Suspense fallback={<div className="h-96 animate-pulse bg-surface" />}>
         <TrustedClientsSection
           clients={serviceData?.trustedClients}
@@ -75,17 +77,13 @@ export default function ServiceClient({ serviceData }) {
           subtitle={`We partner with industry leaders to deliver mission-critical ${serviceData?.title?.toLowerCase()} solutions.`}
         />
       </Suspense>
-
       <AppsSection />
       <ProcessPage serviceData={serviceData} />
       <TechStackSection />
-
-      <div className="py-20 lg:py-32">
-        <WhyChooseUs
-          items={whyUsItems}
-          subtitle={`Discover why leading enterprises trust our ${serviceData?.title?.toLowerCase()} expertise.`}
-        />
-      </div>
+      <WhyChooseUs
+        items={whyUsItems}
+        subtitle={`Discover why leading enterprises trust our ${serviceData?.title?.toLowerCase()} expertise.`}
+      />
 
       <div className="bg-surface">
         <PricingSection
