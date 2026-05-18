@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import HomeLogoLink from "@/components/HomeLogoLink";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 import { 
   Facebook, 
   // Twitter, 
@@ -43,12 +45,13 @@ export default function Footer() {
     <footer className="bg-primary text-white pt-24 pb-12 relative overflow-hidden">
       {/* Subtle Background Glow */}
       <div className="absolute bottom-0 right-0 w-125 h-125 bg-accent/10 rounded-full blur-[120px] pointer-events-none" />
+      <ScrollToTopButton />
       
       <div className="max-w-400 mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
           {/* Brand & Newsletter Column */}
           <div className="lg:col-span-4">
-            <Link href="/" className="inline-block mb-8">
+            <HomeLogoLink className="inline-block mb-8">
               <Image 
                 src="/cm-logos/logo_white.webp" 
                 alt="ClickMasters Logo" 
@@ -56,7 +59,7 @@ export default function Footer() {
                 height={48}
                 className="h-12 w-auto"
               />
-            </Link>
+            </HomeLogoLink>
             <p className="text-white/70 font-body text-base mb-8 max-w-sm leading-relaxed">
               We design and build scalable software systems, SaaS platforms, mobile apps, and AI solutions for global businesses.
             </p>

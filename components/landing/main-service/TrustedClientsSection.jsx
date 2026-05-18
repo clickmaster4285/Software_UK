@@ -3,23 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { iconMap } from '@/data/main-services';
-import {
-  Cpu,
-  Stethoscope,
-  ShoppingBag,
-  Building2,
-  GraduationCap,
-  Coins,
-  Truck,
-  Tv2,
-  Landmark,
-  Leaf,
-  Hotel,
-  Activity,
-  CircuitBoard,
-  ShieldCheck,
-  BarChart3,
-} from "lucide-react";
+import {  Building2 } from "lucide-react";
 
 const defaultClients = [
   { name: "TechCorp", industry: "Manufacturing", icon: 'Cpu' },
@@ -88,11 +72,9 @@ export function TrustedClientsSection({ clients = defaultClients, title, subtitl
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 mb-4"
           >
-            <span className="w-10 h-0.5 bg-accent rounded-full" />
-            <span className="text-[11px] font-bold uppercase tracking-[0.3em] text-accent">
+            <span className="text-lg font-bold uppercase tracking-[0.2em] text-accent">
               Recognition
             </span>
-            <span className="w-10 h-0.5 bg-accent rounded-full" />
           </motion.div>
 
           <motion.h3

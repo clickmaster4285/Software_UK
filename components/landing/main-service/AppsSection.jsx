@@ -1,129 +1,77 @@
 'use client';
 
 import React from 'react';
-import { useProjectList } from '@/hooks/useProjects';
-import { useCategoryList } from '@/hooks/useCategories';
+import { useGroupedProjects } from '@/hooks/useProjects';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
-import { getCategoryName, resolveImageUrl } from '@/lib/utils';
-import { FolderKanban, ArrowRight } from 'lucide-react';
-
-function groupProjectsByCategory(projects) {
-  const map = new Map();
-
-  for (const project of projects) {
-    const name = getCategoryName(project.category);
-    if (!map.has(name)) map.set(name, []);
-    map.get(name).push(project);
-  }
-
-  return Array.from(map.entries())
-    .map(([categoryName, projects]) => ({ categoryName, projects }))
-    .sort((a, b) => a.categoryName.localeCompare(b.categoryName));
-}
+import { ArrowRight } from 'lucide-react';
+import { ProjectCard } from '../../admin/ProjectCard';
+import { Skeleton } from '@/components/ui/skeleton';
 
 export function AppsSection() {
-  const { data: projects = [], isLoading: projectsLoading } = useProjectList();
-  const { data: categories = [], isLoading: categoriesLoading } = useCategoryList();
-
-  const isLoading = projectsLoading || categoriesLoading;
-
-  const visibleCategoryNames = new Set(
-    categories.filter((c) => c.showOnHome).map((c) => c.name)
-  );
-
-  const displayedCategories = groupProjectsByCategory(
-    projects.filter((p) => visibleCategoryNames.has(getCategoryName(p.category)))
-  )
-    .map((category) => ({
-      ...category,
-      projects: category.projects.slice(0, 4),
-    }))
-    .filter((category) => category.projects.length > 0);
+  const { displayedCategories, isLoading } = useGroupedProjects();
 
   if (!isLoading && displayedCategories.length === 0) return null;
 
-  if (isLoading) {
-    return (
-      <section className="py-6 bg-white">
-        <div className="container mx-auto  px-4 text-center">
-          <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent" />
-          <p className="mt-4 text-gray-600">Loading solutions...</p>
-        </div>
-      </section>
-    );
-  }
-
   return (
-    <section className="py-6 bg-white">
-      <div className="container mx-auto  px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Our Solutions</h2>
-          <p className="text-gray-700 text-lg">
+    <section className="py-24 bg-white overflow-hidden">
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <span className="text-accent font-bold uppercase tracking-widest text-sm block mb-4">
+            Our Solutions
+          </span>
+          <h2 className="text-3xl md:text-5xl font-bold text-primary tracking-tight mb-6">
+            Software Solutions That <span className="text-accent">Deliver Results</span>
+          </h2>
+          <p className="text-gray-600 text-lg leading-relaxed">
             Explore custom software, web applications, and software solutions we&apos;ve built for
             clients worldwide.
           </p>
         </div>
 
-        <div className="space-y-16">
-          {displayedCategories.map(({ categoryName, projects: categoryProjects }) => (
-            <div key={categoryName} className="space-y-6">
+        <div className="space-y-24">
+          {isLoading ? (
+            <div className="space-y-12">
               <div className="flex items-center gap-3">
-                <h3 className="text-2xl font-bold text-black">{categoryName}</h3>
-                <div className="h-px flex-1 bg-linear-to-r from-primary/30 to-transparent" />
-                <Badge className="bg-primary/10 text-primary border-0">
-                  {categoryProjects.length}
-                </Badge>
+                <Skeleton className="h-8 w-48" />
+                <div className="h-px flex-1 bg-border/50" />
               </div>
-
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {categoryProjects.map((project) => (
-                  <Link
-                    key={project._id}
-                    href={project.url?.startsWith('http') ? project.url : `/software-solutions/${project._id}`}
-                    target={project.url?.startsWith('http') ? '_blank' : undefined}
-                    rel={project.url?.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="group block"
-                  >
-                    <div className="bg-white rounded-2xl border border-primary/10 overflow-hidden transition-shadow hover:shadow-lg">
-                      <div className="aspect-video bg-linear-to-br from-primary/5 to-primary/10 relative overflow-hidden">
-                        {project.thumbnail ? (
-                          <Image
-                            src={resolveImageUrl(project.thumbnail)}
-                            alt={`${project.title} project thumbnail`}
-                            fill
-                            sizes="(max-width) 100vw, (max-width) 50vw, 25vw"
-                            className="object-cover transition-transform duration-300 group-hover:scale-105"
-                          />
-                        ) : (
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <FolderKanban className="h-10 w-10 text-primary/30" />
-                          </div>
-                        )}
-                      </div>
-
-                      <div className="p-5">
-                        <h3 className="font-semibold text-black mb-2 line-clamp-1">
-                          {project.title}
-                        </h3>
-                        <p className="text-gray-600 text-sm line-clamp-2">{project.description}</p>
-                      </div>
-                    </div>
-                  </Link>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {[1, 2, 3, 4].map((i) => (
+                  <Skeleton key={i} className="aspect-square rounded-2xl" />
                 ))}
               </div>
             </div>
-          ))}
+          ) : (
+            displayedCategories.map(({ categoryName, projects: categoryProjects }) => (
+              <div key={categoryName} className="space-y-8">
+                <div className="flex items-center gap-3">
+                  <h3 className="text-2xl md:text-3xl font-bold text-primary tracking-tight">
+                    {categoryName}
+                  </h3>
+                  <div className="h-px flex-1 bg-linear-to-r from-primary/20 to-transparent" />
+                  <Badge className="bg-primary/5 text-primary border-primary/10 px-4 py-1">
+                    {categoryProjects.length} Projects
+                  </Badge>
+                </div>
+
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                  {categoryProjects.map((project) => (
+                    <ProjectCard key={project._id} project={project} />
+                  ))}
+                </div>
+              </div>
+            ))
+          )}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-20 text-center">
           <Link
             href="/software-solutions"
-            className="inline-flex min-h-12 min-w-12 items-center justify-center gap-2 rounded-md bg-black px-8 py-3 text-center font-medium text-white transition-colors hover:bg-primary"
+            className="group inline-flex items-center gap-3 bg-primary text-white px-10 py-4 rounded-xl font-bold transition-all hover:bg-accent hover:shadow-xl hover:shadow-accent/20 active:scale-95"
           >
-            View all solutions
-            <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
+            View All Solutions
+            <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
       </div>

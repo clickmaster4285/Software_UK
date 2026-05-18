@@ -77,7 +77,7 @@ export function ExploreSection({ serviceData }) {
   return (
     <section
       ref={sectionRef}
-      className="bg-background py-20 lg:py-32 relative overflow-hidden"
+      className="bg-background py-20 relative overflow-hidden"
       aria-labelledby="explore-heading"
     >
       {/* Background Snake Line Animation */}
@@ -116,8 +116,7 @@ export function ExploreSection({ serviceData }) {
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 mb-4"
           >
-            <span className="w-12 h-1 bg-accent rounded-full" />
-            <span className="text-sm font-bold tracking-widest uppercase text-accent">
+            <span className="text-xl font-bold tracking-wide uppercase text-accent">
               {isServicePage ? 'Capabilities' : 'Ecosystem'}
             </span>
           </motion.div>

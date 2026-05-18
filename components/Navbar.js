@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import MegaMenu from "./MegaMenu";
+import HomeLogoLink from "./HomeLogoLink";
 import { serviceMenuSections, slugify } from "@/data/main-services";
 import { ChevronDown } from "lucide-react";
 import { useBlogList } from "@/hooks/useBlog";
@@ -137,7 +138,7 @@ export default function Navbar() {
         : "bg-transparent py-4"
       }`}>
       <div className="max-w-400 mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
+        <HomeLogoLink className="flex items-center">
           <Image
             src="/cm-logos/logo.png"
             alt="ClickMasters"
@@ -147,7 +148,7 @@ export default function Navbar() {
             style={{ width: "auto", height: "auto" }}
             className={`h-12 w-auto transition-all ${!hasWhiteBg ? "brightness-0 invert" : ""}`}
           />
-        </Link>
+        </HomeLogoLink>
 
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (

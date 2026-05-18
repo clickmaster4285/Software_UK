@@ -1,9 +1,35 @@
 "use client";
 
-import { useEffect } from "react";
+import { createContext, useCallback, useContext, useEffect, useRef } from "react";
 import Lenis from "lenis";
 
+const LenisContext = createContext(null);
+
+export function useLenisScroll() {
+  const context = useContext(LenisContext);
+
+  const scrollToTop = useCallback(() => {
+    if (context?.scrollToTop) {
+      context.scrollToTop();
+      return;
+    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [context]);
+
+  return { scrollToTop };
+}
+
 export default function SmoothScroll({ children }) {
+  const lenisRef = useRef(null);
+
+  const scrollToTop = useCallback(() => {
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(0, { duration: 1.2 });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, []);
+
   useEffect(() => {
     const lenis = new Lenis({
       lerp: 0.1,
@@ -12,9 +38,7 @@ export default function SmoothScroll({ children }) {
       orientation: "vertical",
     });
 
-    lenis.on("scroll", (e) => {
-      // Can add scroll-based animations here
-    });
+    lenisRef.current = lenis;
 
     function raf(time) {
       lenis.raf(time);
@@ -24,9 +48,14 @@ export default function SmoothScroll({ children }) {
     requestAnimationFrame(raf);
 
     return () => {
+      lenisRef.current = null;
       lenis.destroy();
     };
   }, []);
 
-  return <>{children}</>;
+  return (
+    <LenisContext.Provider value={{ scrollToTop }}>
+      {children}
+    </LenisContext.Provider>
+  );
 }
