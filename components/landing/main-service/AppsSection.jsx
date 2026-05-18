@@ -4,7 +4,7 @@ import React from 'react';
 import { useGroupedProjects } from '@/hooks/useProjects';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import { ProjectCard } from '@/components/projects/ProjectCard';
+import { ProjectCard } from '@/components/admin/ProjectCard';
 import { Skeleton } from '@/components/ui/skeleton';
 
 function ProjectCardSkeleton() {
@@ -54,13 +54,11 @@ export function AppsSection() {
       />
 
       <div className="container relative z-10 mx-auto px-6">
-        <div className="mx-auto mb-20 max-w-3xl text-center">
+        <div className="mx-auto mb-20  text-center">
           <div className="mb-4 inline-flex items-center gap-2">
-            <span className="h-0.5 w-8 rounded-full bg-accent" />
-            <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
+            <span className="text-lg font-bold uppercase tracking-[0.2em] text-accent">
               Our Solutions
             </span>
-            <span className="h-0.5 w-8 rounded-full bg-accent" />
           </div>
           <h2 className="mb-6 text-3xl font-bold tracking-tight text-primary md:text-5xl">
             Software Solutions That{' '}
@@ -92,15 +90,7 @@ export function AppsSection() {
             displayedCategories.map(({ categoryName, projects: categoryProjects }) => (
               <div key={categoryName} className="space-y-8">
                 <div className="flex flex-wrap items-center gap-4">
-                  <div className="flex items-center gap-3">
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-linear-to-br from-accent to-accent-hover text-sm font-bold text-white shadow-sm shadow-accent/20">
-                      {categoryProjects.length}
-                    </span>
-                    <h3 className="text-2xl font-bold tracking-tight text-primary md:text-3xl">
-                      {categoryName}
-                    </h3>
-                  </div>
-                  <div className="hidden h-px min-w-[60px] flex-1 bg-linear-to-r from-primary/15 to-transparent sm:block" />
+                  <div className="hidden h-px min-w-15 flex-1 bg-linear-to-r from-primary/15 to-transparent sm:block" />
                   <span className="rounded-full border border-primary/10 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary/70 shadow-sm">
                     {categoryProjects.length}{' '}
                     {categoryProjects.length === 1 ? 'Project' : 'Projects'}
@@ -117,7 +107,7 @@ export function AppsSection() {
           )}
         </div>
 
-        <div className="mt-20 text-center">
+        {/* <div className="mt-20 text-center">
           <Link
             href="/software-solutions"
             className="group inline-flex items-center gap-3 rounded-xl bg-linear-to-r from-primary to-primary-mid px-10 py-4 font-bold text-white shadow-lg shadow-primary/15 transition-all hover:from-accent hover:to-accent-hover hover:shadow-xl hover:shadow-accent/20 active:scale-[0.98]"
@@ -125,7 +115,7 @@ export function AppsSection() {
             View All Solutions
             <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

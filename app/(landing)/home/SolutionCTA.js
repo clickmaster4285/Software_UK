@@ -5,12 +5,12 @@ import { Skeleton } from "@/components/ui/skeleton";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { ProjectCard } from "@/components/projects/ProjectCard";
+import { ProjectCard } from "@/components/admin/ProjectCard";
 
 function ShowcaseCardSkeleton() {
   return (
-    <div className="min-h-[420px] overflow-hidden rounded-2xl bg-white ring-1 ring-primary/8 shadow-[0_2px_16px_rgba(0,0,0,0.07)]">
-      <Skeleton className="aspect-[5/4] w-full rounded-none" />
+    <div className="min-h-105 overflow-hidden rounded-2xl bg-white ring-1 ring-primary/8 shadow-[0_2px_16px_rgba(0,0,0,0.07)]">
+      <Skeleton className="aspect-5/4 w-full rounded-none" />
       <div className="space-y-3 p-5 sm:p-6">
         <div className="flex gap-2">
           <Skeleton className="h-5 w-16 rounded-full" />

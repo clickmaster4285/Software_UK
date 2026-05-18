@@ -27,7 +27,7 @@ function ClientCard({ client, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.05 }}
-      className="group relative bg-card hover:bg-surface transition-all duration-300 p-8 flex flex-col items-center justify-center gap-4 min-h-[160px] border border-border/50 hover:border-accent/20 hover:shadow-xl hover:shadow-accent/5"
+      className="group relative bg-card hover:bg-surface transition-all duration-300 p-8 flex flex-col items-center justify-center gap-4 min-h-40 border border-border/50 hover:border-accent/20 hover:shadow-xl hover:shadow-accent/5"
     >
       {/* Accent bar on hover */}
       <span
