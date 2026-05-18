@@ -6,6 +6,8 @@ import {
   Stethoscope, Truck, Tv2, Landmark, Leaf, Hotel, Activity, CircuitBoard,
   Layers3, Layers, Blocks, FlaskConical, Settings2, Shield, TrendingUp, MessageSquare, GraduationCap, Building2
 } from 'lucide-react';
+import { enrichServiceData } from './service-section-data';
+
 /**
  * ICON MAPPING
  * This mapping allows us to use string identifiers in our data objects
@@ -51,11 +53,6 @@ export const mainServicesData = {
       { value: "99.9%", label: "Uptime Guarantee" },
       { value: "50+", label: "Expert Engineers" },
       { value: "24/7", label: "Support" }
-    ],
-    features: [
-      { title: "Custom Architecture", description: "Tailored solutions built for your requirements", icon: 'Building' },
-      { title: "Agile Development", description: "Rapid iterations with continuous feedback", icon: 'Rocket' },
-      { title: "Quality Assurance", description: "Comprehensive testing for bug-free code", icon: 'ShieldCheck' }
     ],
     trustedClients: [
       { name: 'TechCorp', industry: 'Manufacturing', icon: 'Cpu' },
@@ -124,10 +121,6 @@ export const mainServicesData = {
     heroBadge: '500+ Websites Launched',
     heroImage: 'https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop',
     stats: [{ value: "500+", label: "Websites Built" }, { value: "98%", label: "Satisfaction" }],
-    features: [
-      { title: "Responsive Design", description: "Perfect viewing on all devices", icon: 'Smartphone' },
-      { title: "SEO Optimized", description: "Built-in best practices for rankings", icon: 'Search' },
-    ],
     trustedClients: [
       { name: 'RetailHub', industry: 'Retail', icon: 'ShoppingBag' },
       { name: 'Skyline Hotels', industry: 'Hospitality', icon: 'Hotel' },
@@ -164,10 +157,6 @@ export const mainServicesData = {
     heroBadge: '100+ Apps Published',
     heroImage: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop',
     stats: [{ value: "100+", label: "Apps Published" }, { value: "4.8★", label: "Avg Rating" }],
-    features: [
-      { title: "Native Development", description: "Swift and Kotlin expertise", icon: 'Smartphone' },
-      { title: "Cross-Platform", description: "React Native & Flutter solutions", icon: 'Layers3' },
-    ],
     trustedClients: [
       { name: 'Pulse Fitness', industry: 'Health', icon: 'Activity' },
       { name: 'HealthPlus', industry: 'Healthcare', icon: 'Stethoscope' },
@@ -200,10 +189,6 @@ export const mainServicesData = {
     heroBadge: 'Award-Winning Design Team',
     heroImage: 'https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop',
     stats: [{ value: "300+", label: "Design Projects" }, { value: "95%", label: "User Satisfaction" }],
-    features: [
-      { title: "UX Research", description: "Data-driven design decisions", icon: 'Search' },
-      { title: "Design Systems", description: "Reusable design languages", icon: 'LayoutDashboard' },
-    ],
     trustedClients: [
       { name: 'MediaWave', industry: 'Media', icon: 'Tv2' },
       { name: 'EduSmart', industry: 'Education', icon: 'GraduationCap' },
@@ -229,10 +214,6 @@ export const mainServicesData = {
     heroBadge: 'Leading AI Innovators',
     heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop',
     stats: [{ value: "50+", label: "AI Projects" }, { value: "97%", label: "Accuracy" }],
-    features: [
-      { title: "Machine Learning", description: "Advanced ML models", icon: 'Cpu' },
-      { title: "NLP", description: "Text analysis", icon: 'MessageCircle' },
-    ],
     trustedClients: [
       { name: 'Quantum Dynamics', industry: 'Tech', icon: 'CircuitBoard' },
       { name: 'HealthPlus', industry: 'Healthcare', icon: 'Stethoscope' },
@@ -272,10 +253,6 @@ export const mainServicesData = {
     heroBadge: '50+ ML Models Deployed',
     heroImage: 'https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop',
     stats: [{ value: "50+", label: "ML Models" }, { value: "95%", label: "Accuracy" }],
-    features: [
-      { title: "Predictive Analytics", description: "Forecast trends", icon: 'BarChart3' },
-      { title: "Deep Learning", description: "Advanced neural models", icon: 'Brain' },
-    ],
     subServices: [
       { title: "Machine Learning Solutions", slug: "machine-learning-solutions", description: "Tailored ML systems.", icon: 'Brain' },
       { title: "Machine Learning Experts", slug: "machine-learning-experts", description: "Expert ML practitioners.", icon: 'Users' },
@@ -417,8 +394,12 @@ export const mainServicesData = {
  * Get full data for a main service by its slug.
  */
 export const getServiceData = (slug) => {
-  return mainServicesData[slug] || null;
+  const service = mainServicesData[slug];
+  if (!service) return null;
+  return enrichServiceData(slug, service);
 };
+
+export { enrichServiceData, SERVICE_SECTION_DATA } from './service-section-data';
 
 export { getWhyChooseUsData, DEFAULT_WHY_CHOOSE_US_BENEFITS } from './whyChooseUsData';
 

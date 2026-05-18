@@ -26,15 +26,15 @@ export async function generateMetadata({ params }) {
 }
 
 import { getServicePage } from '@/data/sub-services';
+import { mainServicesData } from '@/data/main-services';
 
 export default async function ServicePage({ params }) {
    const { category } = await params;
 
-   // getServicePage already merges overrides with base data from service-pages logic
-   const pageContent = getServicePage(category);
-
-   // If no content found for this slug, try base services as fallback
-   const mainData = pageContent || getServiceData(category);
+   // Main category pages use enriched data from main-services + service-section-data
+   const mainData = mainServicesData[category]
+      ? getServiceData(category)
+      : getServicePage(category);
 
    if (!mainData) {
       notFound();
