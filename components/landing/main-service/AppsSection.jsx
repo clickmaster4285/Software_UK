@@ -2,8 +2,6 @@
 
 import React from 'react';
 import { useGroupedProjects } from '@/hooks/useProjects';
-import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 import { ProjectCard } from '@/components/admin/ProjectCard';
 import { Skeleton } from '@/components/ui/skeleton';
 
@@ -34,7 +32,7 @@ export function AppsSection() {
   if (!isLoading && displayedCategories.length === 0) return null;
 
   return (
-    <section className="relative overflow-hidden bg-surface py-24">
+    <section className="bg-surface py-20">
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.35]"
         aria-hidden

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import MegaMenu from "./MegaMenu";
 import HomeLogoLink from "./HomeLogoLink";
-import { serviceMenuSections, slugify } from "@/data/main-services";
+import { serviceMenuSections } from "@/data/main-services";
 import { ChevronDown } from "lucide-react";
 import { useBlogList } from "@/hooks/useBlog";
 import { useCaseStudyList } from "@/hooks/useCaseStudies";
@@ -21,7 +21,7 @@ const navLinks = [
 ];
 
 // Slugs for service categories to identify service routes dynamically
-const serviceCategorySlugs = serviceMenuSections.map(s => slugify(s.label));
+const serviceCategorySlugs = serviceMenuSections.map((s) => s.slug);
 
 // Other specific routes that should always have a white background
 const forceWhiteBgRoutes = [];

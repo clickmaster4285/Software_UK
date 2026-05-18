@@ -16,14 +16,12 @@ import { WhyChooseUs } from '@/components/landing/main-service/whyUs';
 import { PricingSection } from '@/components/landing/main-service/pricing-section';
 import { TestimonialsSection } from '@/components/landing/main-service/TestimonialsSection';
 import { FaqSection } from '@/components/landing/main-service/FaqSection';
+// import { CeoVision } from '@/src/components/landingPage/servicesPage/CeoVision';
+// import LifecycleSection from '@/src/components/landingPage/slug/LifecycleSection';
+// import { ParallaxProjectsSection } from '@/src/components/landingPage/slug/ProjectsSection';
+// import Testimonials from '@/src/components/landingPage/Testimonials/page';
 
 export default function ServiceClient({ serviceData }) {
-  // Map features to WhyChooseUs items if they exist
-  const whyUsItems = serviceData?.features?.map((f) => ({
-    title: f.title,
-    desc: f.description,
-  })) || [];
-
   // Use pricing from serviceData if available (passed from page.js which merged it)
   const pricingPlans = serviceData?.pricing?.map(p => ({
     name: p.type,
@@ -61,9 +59,10 @@ export default function ServiceClient({ serviceData }) {
       ExploreSection jsx file  
       TrustedClientsSection jsx file 
       AppsSection jsx file 
-ProcessPage  jsx file 
-TechStackSection jsx file 
-WhyChooseUs jsx file 
+      ProcessPage  jsx file 
+      TechStackSection jsx file 
+      FeaturedInsights jsx file remains
+      WhyChooseUs jsx file 
 
       */}
 
@@ -80,11 +79,12 @@ WhyChooseUs jsx file
       <AppsSection />
       <ProcessPage serviceData={serviceData} />
       <TechStackSection />
+      <FeaturedInsights />
       <WhyChooseUs
-        items={whyUsItems}
-        subtitle={`Discover why leading enterprises trust our ${serviceData?.title?.toLowerCase()} expertise.`}
+        slug={serviceData?.slug}
+        service={serviceData}
       />
-
+      
       <div className="bg-surface">
         <PricingSection
           plans={pricingPlans}
@@ -92,7 +92,6 @@ WhyChooseUs jsx file
         />
       </div>
       <TestimonialsSection />
-      <FeaturedInsights />
       <FaqSection faqs={serviceData?.faqs} />
     </main>
   );

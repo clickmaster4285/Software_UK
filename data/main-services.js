@@ -2,11 +2,10 @@ import {
   Code2, Globe, Smartphone, Palette, Brain, Cpu, Eye, Database, BarChart3, Bot, Workflow, Cloud, DatabaseZap, ShieldCheck, TestTube, Headphones, Link2, CpuIcon, Glasses,
   Target, Building, Rocket, Monitor, Plug, Puzzle, Server, Zap, ShoppingCart, Package, Store, ShoppingBag, 
   MessageCircle, Microscope, FileText, Search, Edit3, LayoutDashboard, BarChart, HardDrive, Globe2, Webhook, Users2, UserCheck, Headset, Coins, CreditCard, Gamepad2, Box, Factory, Sparkles, BotMessageSquare, FileSpreadsheet,
-  Settings, Bug, Users, Cog,
+  Settings, Bug, Users, Cog, Clock,
   Stethoscope, Truck, Tv2, Landmark, Leaf, Hotel, Activity, CircuitBoard,
   Layers3, Layers, Blocks, FlaskConical, Settings2, Shield, TrendingUp, MessageSquare, GraduationCap, Building2
 } from 'lucide-react';
-
 /**
  * ICON MAPPING
  * This mapping allows us to use string identifiers in our data objects
@@ -16,7 +15,7 @@ export const iconMap = {
   Code2, Globe, Smartphone, Palette, Brain, Cpu, Eye, Database, BarChart3, Bot, Workflow, Cloud, DatabaseZap, ShieldCheck, TestTube, Headphones, Link2, CpuIcon, Glasses,
   Target, Building, Rocket, Monitor, Plug, Puzzle, Server, Zap, ShoppingCart, Package, Store, ShoppingBag, 
   MessageCircle, Microscope, FileText, Search, Edit3, LayoutDashboard, BarChart, HardDrive, Globe2, Webhook, Users2, UserCheck, Headset, Coins, CreditCard, Gamepad2, Box, Factory, Sparkles, BotMessageSquare, FileSpreadsheet,
-  Settings, Bug, Users, Cog,
+  Settings, Bug, Users, Cog, Clock,
   Stethoscope, Truck, Tv2, Landmark, Leaf, Hotel, Activity, CircuitBoard,
   Layers3, Layers, Blocks, FlaskConical, Settings2, Shield, TrendingUp, MessageSquare, GraduationCap, Building2
 };
@@ -420,6 +419,8 @@ export const mainServicesData = {
 export const getServiceData = (slug) => {
   return mainServicesData[slug] || null;
 };
+
+export { getWhyChooseUsData, DEFAULT_WHY_CHOOSE_US_BENEFITS } from './whyChooseUsData';
 
 /**
  * Get all slugs for main service categories.

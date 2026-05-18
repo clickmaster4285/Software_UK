@@ -84,7 +84,7 @@ export function TechStackSection() {
 
   return (
     <section
-      className="relative overflow-x-clip bg-surface py-20 md:py-28 font-sans"
+      className="bg-surface py-20 font-sans"
       aria-labelledby="tech-stack-heading"
     >
       <motion.div
@@ -106,27 +106,25 @@ export function TechStackSection() {
 
       <div className="container relative z-10">
         <motion.header
-          className="mx-auto max-w-3xl text-center mb-12 md:mb-16"
+          className="text-center mb-12 "
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.55, ease: EASE }}
         >
           <motion.div className="inline-flex items-center gap-2 mb-4">
-            <span className="h-px w-8 rounded-full bg-accent" aria-hidden />
-            <span className="section-label">Technology Stack</span>
-            <span className="h-px w-8 rounded-full bg-accent" aria-hidden />
+            <span className="text-lg font-bold uppercase tracking-[0.2em] text-accent">Technology Stack</span>
           </motion.div>
           <h2
             id="tech-stack-heading"
             className="font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl"
           >
             Modern tools powering{" "}
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-accent">
+            <span className="font-bold uppercase tracking-wide text-accent">
               scalable applications
             </span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-text-body font-body leading-relaxed sm:text-lg">
+          <p className="mt-4 text-base text-text-body font-body leading-relaxed sm:text-lg">
             Proven frameworks and cloud platforms our engineers use to build
             secure, high-performance products.
           </p>

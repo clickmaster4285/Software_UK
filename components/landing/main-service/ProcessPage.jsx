@@ -148,29 +148,26 @@ function ProcessStepCard({ phase, cardRef, nodeRef, isActive, reducedMotion }) {
       {/* Timeline node */}
       <div
         ref={nodeRef}
-        className={`absolute left-0 top-6 z-10 flex h-10 w-10 items-center justify-center rounded-full border-2 text-sm font-bold font-heading transition-all duration-500 ${
-          isActive
+        className={`absolute left-0 top-6 z-10 flex h-10 w-10 items-center justify-center rounded-full border-2 text-sm font-bold font-heading transition-all duration-500 ${isActive
             ? "scale-110 border-accent bg-accent text-white shadow-[0_0_0_6px_color-mix(in_oklch,var(--accent)_22%,transparent)]"
             : "scale-100 border-border bg-white text-primary"
-        }`}
+          }`}
         aria-hidden
       >
         {stepNum}
       </div>
 
       <div
-        className={`group rounded-xl border bg-white p-5 md:p-6 shadow-[0_2px_16px_rgba(0,0,0,0.05)] transition-all duration-500 ${
-          isActive
+        className={`group rounded-xl border bg-white p-5 md:p-6 shadow-[0_2px_16px_rgba(0,0,0,0.05)] transition-all duration-500 ${isActive
             ? "border-accent/40 shadow-[0_12px_36px_rgba(0,0,0,0.08)]"
             : "border-border"
-        }`}
+          }`}
       >
         <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
           <div className="flex items-center gap-3">
             <span
-              className={`icon-circle shrink-0 transition-transform duration-500 ${
-                isActive ? "scale-105" : ""
-              }`}
+              className={`icon-circle shrink-0 transition-transform duration-500 ${isActive ? "scale-105" : ""
+                }`}
             >
               <Icon className="h-5 w-5" aria-hidden />
             </span>
@@ -390,7 +387,7 @@ export function ProcessPage({ serviceData }) {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-x-clip bg-white py-20 font-sans"
+      className="py-20 font-sans"
       aria-labelledby="process-heading"
     >
       <motion.div
@@ -423,7 +420,8 @@ export function ProcessPage({ serviceData }) {
             id="process-heading"
             className="mt-4 font-heading text-3xl font-bold text-text-primary sm:text-4xl"
           >
-            How we build your {serviceTitle.toLowerCase()} project
+            How we build your{" "}
+            <span className="text-accent capitalize"> {serviceTitle}</span> project
           </h2>
           <p className="mt-4 text-base text-text-body font-body leading-relaxed">
             Scroll through each phase — the line tracks your progress from
@@ -455,45 +453,43 @@ export function ProcessPage({ serviceData }) {
                 transition={{ duration: 0.5, ease: EASE }}
                 className="rounded-2xl border border-border bg-white p-6 shadow-[0_2px_20px_rgba(0,0,0,0.06)]"
               >
-              <p className="text-xs font-medium uppercase tracking-[0.1em] text-accent mb-2">
-                Step {String(activeStep + 1).padStart(2, "0")} of{" "}
-                {String(phases.length).padStart(2, "0")}
-              </p>
-              <h3 className="font-heading text-xl font-bold text-text-primary leading-snug transition-all duration-300">
-                {phases[activeStep]?.title}
-              </h3>
-              <p className="mt-3 text-sm text-text-body font-body leading-relaxed line-clamp-4">
-                {phases[activeStep]?.description}
-              </p>
+                <p className="text-xs font-medium uppercase tracking-[0.1em] text-accent mb-2">
+                  Step {String(activeStep + 1).padStart(2, "0")} of{" "}
+                  {String(phases.length).padStart(2, "0")}
+                </p>
+                <h3 className="font-heading text-xl font-bold text-text-primary leading-snug transition-all duration-300">
+                  {phases[activeStep]?.title}
+                </h3>
+                <p className="mt-3 text-sm text-text-body font-body leading-relaxed line-clamp-4">
+                  {phases[activeStep]?.description}
+                </p>
 
-              <nav
-                className="mt-6 flex flex-col gap-1 max-h-[min(42vh,320px)] overflow-y-auto custom-scrollbar pr-1"
-                aria-label="Process steps"
-              >
-                {phases.map((phase, index) => (
-                  <button
-                    key={phase.step}
-                    type="button"
-                    onClick={() => scrollToStep(index)}
-                    className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm transition-all duration-300 ${
-                      activeStep === index
-                        ? "bg-surface border border-accent/30 text-text-primary font-medium"
-                        : "text-text-muted hover:text-text-body hover:bg-surface/60"
-                    }`}
-                  >
-                    <span
-                      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold font-heading transition-colors duration-300 ${
-                        activeStep >= index
-                          ? "bg-accent text-white"
-                          : "bg-surface border border-border text-text-muted"
-                      }`}
+                <nav
+                  className="mt-6 flex flex-col gap-1 max-h-[min(42vh,320px)] overflow-y-auto custom-scrollbar pr-1"
+                  aria-label="Process steps"
+                >
+                  {phases.map((phase, index) => (
+                    <button
+                      key={phase.step}
+                      type="button"
+                      onClick={() => scrollToStep(index)}
+                      className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm transition-all duration-300 ${activeStep === index
+                          ? "bg-surface border border-accent/30 text-text-primary font-medium"
+                          : "text-text-muted hover:text-text-body hover:bg-surface/60"
+                        }`}
                     >
-                      {phase.step.replace(/^0/, "")}
-                    </span>
-                    <span className="truncate">{phase.title}</span>
-                  </button>
-                ))}
-              </nav>
+                      <span
+                        className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold font-heading transition-colors duration-300 ${activeStep >= index
+                            ? "bg-accent text-white"
+                            : "bg-surface border border-border text-text-muted"
+                          }`}
+                      >
+                        {phase.step.replace(/^0/, "")}
+                      </span>
+                      <span className="truncate">{phase.title}</span>
+                    </button>
+                  ))}
+                </nav>
               </motion.div>
             </div>
           </aside>

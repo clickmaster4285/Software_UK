@@ -4,7 +4,7 @@
 import Link from 'next/link';
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring, useTransform } from 'framer-motion';
-import { mainServicesData, slugify, iconMap } from '@/data/main-services';
+import { mainServicesData, iconMap } from '@/data/main-services';
 import {
   ArrowRight,
   Code2
@@ -57,7 +57,7 @@ export function ExploreSection({ serviceData }) {
 
   const allLinks = isServicePage && serviceData.subServices
     ? serviceData.subServices.map((subService) => ({
-      href: `/${serviceData.slug}/${slugify(subService.title)}`,
+      href: `/${serviceData.slug}/${subService.slug}`,
       title: subService.title,
       desc: subService.description,
       ariaLabel: `Learn about ${subService.title}: ${subService.description}`,

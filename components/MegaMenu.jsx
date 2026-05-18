@@ -58,13 +58,15 @@ export default function MegaMenu({ categories, trigger }) {
 
    const getCategoryHref = (category) => {
       if (category.viewAllHref) return category.viewAllHref;
-      return `/${slugify(category.label)}`;
+      // Use canonical slug from main-services data (slugify(label) drops "and" from "&" titles)
+      const categorySlug = category.slug || slugify(category.label);
+      return `/${categorySlug}`;
    };
 
    const getItemHref = (category, item) => {
       if (item.href) return item.href;
-      const categorySlug = slugify(category.label);
-      const itemSlug = slugify(item.title);
+      const categorySlug = category.slug || slugify(category.label);
+      const itemSlug = item.slug || slugify(item.title);
       return `/${categorySlug}/${itemSlug}`;
    };
 

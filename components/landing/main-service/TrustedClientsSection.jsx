@@ -62,7 +62,7 @@ export function TrustedClientsSection({ clients = defaultClients, title, subtitl
   const clientsList = Array.isArray(clients) ? clients : defaultClients;
 
   return (
-    <section className="bg-background py-20 lg:py-32 overflow-hidden">
+    <section className="bg-background py-20 overflow-hidden">
       <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
