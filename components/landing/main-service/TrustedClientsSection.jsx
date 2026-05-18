@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { iconMap } from '@/data/main-services';
 import {
   Cpu,
   Stethoscope,
@@ -21,20 +22,20 @@ import {
 } from "lucide-react";
 
 const defaultClients = [
-  { name: "TechCorp", industry: "Manufacturing", icon: Cpu },
-  { name: "HealthPlus", industry: "Healthcare", icon: Stethoscope },
-  { name: "RetailHub", industry: "Retail", icon: ShoppingBag },
-  { name: "EstatePro", industry: "Real Estate", icon: Building2 },
-  { name: "EduSmart", industry: "Education", icon: GraduationCap },
-  { name: "FinTrust", industry: "Finance", icon: Coins },
-  { name: "LogiFlow", industry: "Logistics", icon: Truck },
-  { name: "MediaWave", industry: "Media", icon: Tv2 },
-  { name: "NovaBank", industry: "Banking", icon: Landmark },
-  { name: "GreenField", industry: "Agriculture", icon: Leaf },
+  { name: "TechCorp", industry: "Manufacturing", icon: 'Cpu' },
+  { name: "HealthPlus", industry: "Healthcare", icon: 'Stethoscope' },
+  { name: "RetailHub", industry: "Retail", icon: 'ShoppingBag' },
+  { name: "EstatePro", industry: "Real Estate", icon: 'Building2' },
+  { name: "EduSmart", industry: "Education", icon: 'GraduationCap' },
+  { name: "FinTrust", industry: "Finance", icon: 'Coins' },
+  { name: "LogiFlow", industry: "Logistics", icon: 'Truck' },
+  { name: "MediaWave", industry: "Media", icon: 'Tv2' },
+  { name: "NovaBank", industry: "Banking", icon: 'Landmark' },
+  { name: "GreenField", industry: "Agriculture", icon: 'Leaf' },
 ];
 
 function ClientCard({ client, index }) {
-  const Icon = client.icon || Building2;
+  const Icon = (typeof client.icon === 'string' ? iconMap[client.icon] : client.icon) || Building2;
 
   return (
     <motion.div
@@ -81,7 +82,7 @@ export function TrustedClientsSection({ clients = defaultClients, title, subtitl
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -94,7 +95,7 @@ export function TrustedClientsSection({ clients = defaultClients, title, subtitl
             <span className="w-10 h-0.5 bg-accent rounded-full" />
           </motion.div>
 
-          <motion.h3 
+          <motion.h3
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -104,7 +105,7 @@ export function TrustedClientsSection({ clients = defaultClients, title, subtitl
             {title || "Trusted by Visionary Brands"}
           </motion.h3>
 
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

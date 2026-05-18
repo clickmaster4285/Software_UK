@@ -307,13 +307,13 @@ export default function Services() {
 
         {/* Marquee Credibility */}
         <div className="mt-32 pt-12 border-t border-white/10">
-          <div className="flex gap-16 animate-marquee whitespace-nowrap w-max opacity-30 grayscale hover:grayscale-0 transition-all duration-500">
+          <div className="flex gap-16 animate-marquee whitespace-nowrap w-max opacity-70 hover:grayscale-0 transition-all duration-500">
             {[...marqueeItems, ...marqueeItems].map((item, i) => (
               <div
                 key={i}
-                className="flex items-center gap-4 text-foreground text-xs font-bold tracking-[0.3em] uppercase"
+                className="flex items-center gap-4 text-foreground text-xs font-bold tracking-[0.2rem] uppercase"
               >
-                <div className="w-2 h-2 rounded-full bg-blue-600" />
+                <div className="w-2 h-2 rounded-full bg-accent" />
                 {item}
               </div>
             ))}

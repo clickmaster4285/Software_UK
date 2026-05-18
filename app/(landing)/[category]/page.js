@@ -1,8 +1,8 @@
 // app/services/[slug]/page.tsx
 import { notFound } from 'next/navigation';
-import { getServiceData, getAllServiceSlugs } from '@/data/services';
+import { getServiceData, getAllServiceSlugs } from '@/data/main-services';
 import { metadataConfig } from '@/app/metadata-config';
-import ServiceClient from './ServiceClient';
+import ServiceClient from './main-service';
 
 // Generate static paths for all services at build time
 export async function generateStaticParams() {
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
    );
 }
 
-import { getServicePage } from '@/data/service-pages';
+import { getServicePage } from '@/data/sub-services';
 
 export default async function ServicePage({ params }) {
    const { category } = await params;

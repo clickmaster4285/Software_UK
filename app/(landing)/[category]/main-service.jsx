@@ -34,20 +34,20 @@ export default function ServiceClient({ serviceData }) {
   })) || [];
 
   return (
-    <main className="min-h-screen bg-white pt-18 relative">
-
+    <main className="min-h-screen bg-background pt-18 relative">
+      
       {/* Premium Breadcrumb */}
-      <div className="relative z-20 border-b border-slate-100 bg-white/80 backdrop-blur-md">
+      <div className="relative z-20 border-b border-border/40 bg-background/80 backdrop-blur-md">
         <div className="mx-auto max-w-400 px-4 py-4 sm:px-6 lg:px-8">
           <nav className="flex items-center space-x-2 text-sm font-medium">
-            <Link
-              href="/"
-              className="text-slate-500 hover:text-primary transition-colors duration-200 font-body"
+            <Link 
+              href="/" 
+              className="text-muted-foreground hover:text-primary transition-colors duration-200 font-body"
             >
               Home
             </Link>
-            <ChevronRight className="h-4 w-4 text-slate-300" />
-            <span className="text-slate-900 font-heading font-semibold">
+            <ChevronRight className="h-4 w-4 text-border" />
+            <span className="text-foreground font-heading font-semibold">
               {serviceData?.title}
             </span>
           </nav>
@@ -64,29 +64,36 @@ export default function ServiceClient({ serviceData }) {
 
       {/* Main Service Sections */}
       <HeroSection serviceData={serviceData} />
+      
       <ExploreSection serviceData={serviceData} />
-      <Suspense fallback={<div className="h-96 animate-pulse bg-slate-50" />}>
-        <TrustedClientsSection />
+      
+      <Suspense fallback={<div className="h-96 animate-pulse bg-surface" />}>
+        <TrustedClientsSection 
+          clients={serviceData?.trustedClients} 
+          title={`Leading Brands in ${serviceData?.title}`}
+          subtitle={`We partner with industry leaders to deliver mission-critical ${serviceData?.title?.toLowerCase()} solutions.`}
+        />
       </Suspense>
+
       <AppsSection />
       <ProcessPage serviceData={serviceData} />
       <TechStackSection />
-
+      
       <div className="py-20 lg:py-32">
-        <WhyChooseUs
-          items={whyUsItems}
+        <WhyChooseUs 
+          items={whyUsItems} 
           subtitle={`Discover why leading enterprises trust our ${serviceData?.title?.toLowerCase()} expertise.`}
         />
       </div>
 
-      <div className="bg-slate-50">
-        <PricingSection
-          plans={pricingPlans}
+      <div className="bg-surface">
+        <PricingSection 
+          plans={pricingPlans} 
           title={`${serviceData?.title} Pricing`}
         />
       </div>
       <TestimonialsSection />
-      <FeaturedInsights />
+      <FeaturedInsights /> 
       <FaqSection faqs={serviceData?.faqs} />
     </main>
   );

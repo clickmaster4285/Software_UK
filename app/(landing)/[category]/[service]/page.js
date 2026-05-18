@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getAllServicePages, getServicePage, slugify } from '@/data/service-pages';
+import { getAllServicePages, getServicePage, slugify } from '@/data/sub-services';
 import { siteConfig } from '@/app/metadata-config';
-import ServiceDetailClient from './ServiceDetailClient';
+import ServiceDetailClient from './subservice';
 
 export async function generateStaticParams() {
   const services = getAllServicePages();

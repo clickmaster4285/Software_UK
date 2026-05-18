@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import MegaMenu from "./MegaMenu";
-import { serviceMenuSections, slugify } from "@/data/service-pages";
+import { serviceMenuSections, slugify } from "@/data/main-services";
 import { ChevronDown } from "lucide-react";
 import { useBlogList } from "@/hooks/useBlog";
 import { useCaseStudyList } from "@/hooks/useCaseStudies";
@@ -132,16 +132,15 @@ export default function Navbar() {
   ], [blogs, caseStudies, testimonials]);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      hasWhiteBg 
-        ? "bg-white/95 backdrop-blur-sm border-b border-border py-2 shadow-sm" 
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${hasWhiteBg
+        ? "bg-white/95 backdrop-blur-sm border-b border-border py-2 shadow-sm"
         : "bg-transparent py-4"
-    }`}>
+      }`}>
       <div className="max-w-400 mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center">
-          <Image 
-            src="/cm-logos/logo.png" 
-            alt="ClickMasters" 
+          <Image
+            src="/cm-logos/logo.png"
+            alt="ClickMasters"
             width={180}
             height={48}
             priority
@@ -157,9 +156,8 @@ export default function Navbar() {
                 key={link.name}
                 categories={link.name === "Resources" ? resourcesCategories : serviceMenuSections}
                 trigger={
-                  <div className={`flex items-center gap-1 transition-colors font-body text-sm cursor-pointer ${
-                    hasWhiteBg ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
-                  }`}>
+                  <div className={`flex items-center gap-1 transition-colors font-body text-sm cursor-pointer ${hasWhiteBg ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
+                    }`}>
                     {link.name}
                     <ChevronDown className="w-3 h-3" />
                   </div>
@@ -169,9 +167,8 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`transition-colors font-body text-sm ${
-                  hasWhiteBg ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
-                }`}
+                className={`transition-colors font-body text-sm ${hasWhiteBg ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
+                  }`}
               >
                 {link.name}
               </Link>
