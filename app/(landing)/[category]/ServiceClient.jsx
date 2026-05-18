@@ -34,13 +34,14 @@ export default function ServiceClient({ serviceData }) {
   })) || [];
 
   return (
-    <main className="min-h-screen bg-white pt-18">
+    <main className="min-h-screen bg-white pt-18 relative">
+
       {/* Premium Breadcrumb */}
       <div className="relative z-20 border-b border-slate-100 bg-white/80 backdrop-blur-md">
         <div className="mx-auto max-w-400 px-4 py-4 sm:px-6 lg:px-8">
           <nav className="flex items-center space-x-2 text-sm font-medium">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="text-slate-500 hover:text-primary transition-colors duration-200 font-body"
             >
               Home
@@ -53,6 +54,14 @@ export default function ServiceClient({ serviceData }) {
         </div>
       </div>
 
+      {/*
+      page style/structure 
+     Breadcrumb in the file 
+     hero-section jsx file 
+      ExploreSection jsx file  
+      
+      */}
+
       {/* Main Service Sections */}
       <HeroSection serviceData={serviceData} />
       <ExploreSection serviceData={serviceData} />
@@ -62,22 +71,22 @@ export default function ServiceClient({ serviceData }) {
       <AppsSection />
       <ProcessPage serviceData={serviceData} />
       <TechStackSection />
-      
+
       <div className="py-20 lg:py-32">
-        <WhyChooseUs 
-          items={whyUsItems} 
+        <WhyChooseUs
+          items={whyUsItems}
           subtitle={`Discover why leading enterprises trust our ${serviceData?.title?.toLowerCase()} expertise.`}
         />
       </div>
 
       <div className="bg-slate-50">
-        <PricingSection 
-          plans={pricingPlans} 
+        <PricingSection
+          plans={pricingPlans}
           title={`${serviceData?.title} Pricing`}
         />
       </div>
       <TestimonialsSection />
-      <FeaturedInsights /> 
+      <FeaturedInsights />
       <FaqSection faqs={serviceData?.faqs} />
     </main>
   );

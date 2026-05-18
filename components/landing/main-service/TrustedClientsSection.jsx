@@ -116,13 +116,6 @@ export function TrustedClientsSection() {
 
   return (
     <section ref={ref} className="bg-linear-to-b from-white to-slate-50  py-6 px-6 lg:px-26 lg:py-16 ">
-
-
-
-
-
-
-
       {/* Header original design */}
       <div className="text-center mb-12">
         <div className="inline-flex items-center gap-2 mb-3">
