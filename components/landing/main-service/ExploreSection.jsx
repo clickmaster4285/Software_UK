@@ -2,24 +2,15 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import { motion, AnimatePresence, useScroll, useSpring, useTransform } from 'framer-motion';
 import { servicesData } from '@/data/services';
+import { slugify } from '@/data/service-pages';
 import { 
   Layers3, Code2, Globe, Smartphone, Database, Cloud, ShieldCheck, Target, Building, Rocket, Monitor, Plug, Puzzle, Server, Zap, ShoppingCart, Package, Store, ShoppingBag, Brain, Cpu, Eye, BarChart3, Bot, Workflow, DatabaseZap, TestTube, Headphones, Link2, CpuIcon, Glasses, MessageCircle, Microscope, FileText, LayoutDashboard, Search, Edit3, BarChart, HardDrive, Globe2, Webhook, Users2, UserCheck, Headset, Coins, CreditCard, Gamepad2, Box, Factory, Sparkles, BotMessageSquare, FileSpreadsheet,
   Palette, Users, Cog, Settings, Bug,
   ArrowRight
 } from 'lucide-react';
-
-
-// Re-defining icons that might have been missing or mismatched
-const BarChartIcon = BarChart;
-const DatabaseIcon = Database;
-const FileTextIcon = FileText;
-const VrIcon = Glasses;
-const WrenchIcon = Settings;
-const Wrench = Settings;
-
-
 
 // Icon mapping for services
 const serviceIcons = {
@@ -42,29 +33,6 @@ const serviceIcons = {
   'blockchain-and-web3': Link2,
   'iot-and-emerging-tech': CpuIcon,
   'immersive-tech': Glasses,
-};
-
-// Color mapping for services
-const serviceColors = {
-  'software-development': 'text-primary',
-  'web-development': 'text-primary',
-  'mobile-development': 'text-primary',
-  'design-ui-ux': 'text-primary',
-  'artificial-intelligence-ai': 'text-primary',
-  'machine-learning-ml': 'text-primary',
-  'nlp-computer-vision': 'text-primary',
-  'data-services': 'text-primary',
-  'data-and-intelligence': 'text-primary',
-  'automation-and-chatbot': 'text-primary',
-  'automation-and-integration': 'text-primary',
-  'cloud-and-devops': 'text-primary',
-  'database-services': 'text-primary',
-  'cybersecurity': 'text-primary',
-  'testing-and-qa': 'text-primary',
-  'support-and-outsourcing': 'text-primary',
-  'blockchain-and-web3': 'text-primary',
-  'iot-and-emerging-tech': 'text-primary',
-  'immersive-tech': 'text-primary',
 };
 
 // Sub-service icon mappings
@@ -140,22 +108,22 @@ const subServiceIcons = {
   
   // Data Services
   'Data Science & Analytics': BarChart3,
-  'Business Intelligence (BI)': BarChartIcon,
+  'Business Intelligence (BI)': BarChart,
   'Data Engineering': Database,
   'Data Warehousing': HardDrive,
   'Data Visualization': BarChart3,
-  'Big Data Solutions': DatabaseIcon,
+  'Big Data Solutions': Database,
   
   // Data & Intelligence
   'Data Scraping Specialists': Search,
   'Web Scraping Specialists': Globe2,
   'Excel Experts': FileSpreadsheet,
-  'Google Sheets Experts': FileTextIcon,
-  'Power BI Developers': BarChartIcon,
+  'Google Sheets Experts': FileText,
+  'Power BI Developers': BarChart,
   'Data Scientists': Brain,
   'Data Engineers': Database,
   'Tableau Developers': BarChart3,
-  'SQL Database Developers': DatabaseIcon,
+  'SQL Database Developers': Database,
   
   // Automation & Chatbot
   'Chatbot Developers': BotMessageSquare,
@@ -190,7 +158,7 @@ const subServiceIcons = {
   'Database Management': Settings,
   'Data Migration': ArrowRight,
   'Database Optimization': Zap,
-  'SQL & NoSQL Solutions': DatabaseIcon,
+  'SQL & NoSQL Solutions': Database,
   
   // Cybersecurity
   'Cybersecurity Services': ShieldCheck,
@@ -206,10 +174,10 @@ const subServiceIcons = {
   'Manual Testing': Users2,
   'Performance Testing': Zap,
   'Load Testing': BarChart3,
-  'Bug Fixing': WrenchIcon,
+  'Bug Fixing': Settings,
   
   // Support & Outsourcing
-  'Maintenance & Support': Wrench,
+  'Maintenance & Support': Settings,
   'Dedicated Development Teams': Users2,
   'IT Outsourcing': Globe,
   'Staff Augmentation': UserCheck,
@@ -232,26 +200,56 @@ const subServiceIcons = {
   
   // Immersive Tech
   'AR Development': Smartphone,
-  'VR Development': VrIcon,
+  'VR Development': Glasses,
   'Mixed Reality (MR) Solutions': Glasses,
   '3D Application Development': Gamepad2,
 };
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.05
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+};
+
 export function ExploreSection({ serviceData }) {
   const [showAll, setShowAll] = useState(false);
+  const sectionRef = useRef(null);
   
-  // Determine what to show based on context
+  // Scroll animation hooks
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"]
+  });
+
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 50,
+    damping: 20,
+    restDelta: 0.001
+  });
+
+  const pathLength = smoothProgress;
+  const opacity = useTransform(smoothProgress, [0, 0.1, 0.9, 1], [0, 0.4, 0.4, 0]);
+  const secondaryPathLength = useTransform(smoothProgress, (v) => v * 1.1);
+  const secondaryOpacity = useTransform(opacity, (v) => v * 0.4);
+
   const isServicePage = !!serviceData;
   
-  // Generate links based on context
   const allLinks = isServicePage && serviceData.subServices 
-    ? serviceData.subServices.map((subService, index) => ({
-        href: `/${serviceData.slug}/${subService.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`,
+    ? serviceData.subServices.map((subService) => ({
+        href: `/${serviceData.slug}/${slugify(subService.title)}`,
         title: subService.title,
         desc: subService.description,
         ariaLabel: `Learn about ${subService.title}: ${subService.description}`,
         icon: subServiceIcons[subService.title] || Code2,
-        color: 'text-primary',
       }))
     : Object.values(servicesData).map((service) => ({
         href: `/${service.slug}`,
@@ -259,107 +257,156 @@ export function ExploreSection({ serviceData }) {
         desc: service.description,
         ariaLabel: `Learn about ${service.title}: ${service.description}`,
         icon: serviceIcons[service.slug] || Code2,
-        color: serviceColors[service.slug] || 'text-primary',
       }));
 
-  // Show first 12 items (2 rows of 6) when not showing all
   const displayedLinks = showAll ? allLinks : allLinks.slice(0, 12);
   const hasMoreItems = allLinks.length > 12;
 
   return (
     <section
-      className=" bg-white py-16 sm:py-20 lg:px-10"
-      aria-labelledby="home-explore-heading"
+      ref={sectionRef}
+      className="bg-background py-20 relative overflow-hidden"
+      aria-labelledby="explore-heading"
     >
-      <div className="mx-auto px-4 sm:px-6 lg:px-12">
+      {/* Background Snake Line Animation */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <svg
+          className="w-full h-full"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <motion.path
+            d="M 5 0 C 15 20 40 10 50 40 C 60 70 85 60 95 100"
+            stroke="var(--accent)"
+            strokeWidth="1.2"
+            strokeLinecap="round"
+            strokeDasharray="1 2"
+            style={{ pathLength, opacity }}
+          />
+          <motion.path
+            d="M 95 0 C 85 30 60 20 50 50 C 40 80 15 70 5 100"
+            stroke="var(--primary)"
+            strokeWidth="0.8"
+            strokeLinecap="round"
+            style={{ pathLength: secondaryPathLength, opacity: secondaryOpacity }}
+          />
+        </svg>
+      </div>
+
+      <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 mb-3">
-            <span className="w-8 h-0.5 bg-primary rounded-full" />
-            <p className="text-[11px] font-bold tracking-[0.2em] uppercase text-slate-500">
-              {isServicePage ? 'Specialized Services' : 'Explore Our Ecosystem'}
-            </p>
-            <span className="w-8 h-0.5 bg-primary rounded-full" />
-          </div>
-
-          <h2
-            id="home-explore-heading"
-            className="mt-5 font-heading text-3xl font-bold tracking-tight text-slate-900 sm:text-2xl lg:text-3xl"
+        <div className="max-w-5xl mb-16">
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-2 mb-4"
           >
-            {isServicePage ? `${serviceData.title} Services` : 'Explore ClickMasters'}
-          </h2>
+            <span className="text-2xl font-bold tracking-wide uppercase text-accent">
+              {isServicePage ? 'Capabilities' : 'Ecosystem'}
+            </span>
+          </motion.div>
 
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg font-body">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            id="explore-heading"
+            className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-6"
+          >
+            {isServicePage ? `${serviceData.title} Services` : 'Explore Our Expertise'}
+          </motion.h2>
+
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-lg md:text-xl text-muted-foreground font-body leading-relaxed"
+          >
             {isServicePage 
-              ? `Explore our specialized ${serviceData.title.toLowerCase()} services designed to meet your specific business needs.`
-              : 'Discover our engineering capabilities, delivery expertise, case studies, and strategic technology solutions built for modern businesses.'
+              ? `Deep-dive into our core ${serviceData.title.toLowerCase()} capabilities designed for enterprise scale and performance.`
+              : 'From cloud architecture to AI implementation, discover how we build and scale modern technology solutions for global brands.'
             }
-          </p>
+          </motion.p>
         </div>
 
         {/* Grid */}
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
-          {displayedLinks.map((item, index) => {
-            const Icon = item.icon;
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
+          <AnimatePresence mode="popLayout">
+            {displayedLinks.map((item, index) => {
+              const Icon = item.icon;
 
-            return (
-              <Link
-                key={`${item.href}-${index}`}
-                href={item.href}
-                aria-label={item.ariaLabel}
-                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-primary/30"
-              >
-                <div className="absolute inset-0 bg-linear-to-br from-primary/3 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              return (
+                <motion.div
+                  layout
+                  key={`${item.href}-${index}`}
+                  variants={itemVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit={{ opacity: 0, scale: 0.95 }}
+                >
+                  <Link
+                    href={item.href}
+                    aria-label={item.ariaLabel}
+                    className="group flex flex-col h-full bg-card rounded-3xl border border-border p-8 transition-all duration-500 hover:border-accent/20 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] hover:-translate-y-2 relative overflow-hidden"
+                  >
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full -mr-16 -mt-16 transition-transform duration-700 group-hover:scale-150" />
+                    
+                    <div className="relative mb-8 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-surface group-hover:bg-accent/10 transition-colors duration-500">
+                      <Icon
+                        className="w-7 h-7 text-muted-foreground group-hover:text-accent transition-colors duration-500"
+                        strokeWidth={1.5}
+                      />
+                    </div>
 
-                <div className="relative flex justify-center">
-                  <Icon
-                    className={`h-12 w-12 transition-all duration-300 group-hover:scale-110 ${item.color}`}
-                    strokeWidth={1.5}
-                  />
-                </div>
+                    <div className="relative grow">
+                      <h3 className="text-xl font-heading font-bold text-foreground mb-3 group-hover:text-accent transition-colors duration-500">
+                        {item.title}
+                      </h3>
+                      <p className="text-muted-foreground font-body text-sm leading-relaxed line-clamp-3">
+                        {item.desc}
+                      </p>
+                    </div>
 
-                <div className="relative mt-7 text-center">
-                  <h3 className="font-heading text-lg font-bold text-slate-900 transition-colors group-hover:text-primary">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-600 line-clamp-3 font-body">
-                    {item.desc}
-                  </p>
-                </div>
-
-                <div className="relative mt-8 flex items-center justify-center gap-2">
-                  <span className="text-sm font-medium text-primary">
-                    {isServicePage ? 'Learn more' : 'Explore now'}
-                  </span>
-                  <ArrowRight className="h-4 w-4 text-primary transition-transform duration-300 group-hover:translate-x-1" />
-                </div>
-
-                <div className="absolute inset-0 rounded-3xl ring-1 ring-transparent transition-all duration-300 group-hover:ring-primary/20" />
-              </Link>
-            );
-          })}
-        </div>
+                    <div className="relative mt-8 pt-6 border-t border-border flex items-center gap-2 group-hover:gap-3 transition-all duration-300">
+                      <span className="text-sm font-bold text-accent tracking-wide">
+                        EXPLORE SERVICE
+                      </span>
+                      <ArrowRight className="w-4 h-4 text-accent" />
+                    </div>
+                  </Link>
+                </motion.div>
+              );
+            })}
+          </AnimatePresence>
+        </motion.div>
 
         {/* Show More / Show Less Button */}
         {hasMoreItems && (
-          <div className="mt-12 text-center">
+          <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="mt-16 flex justify-center"
+          >
             <button
               onClick={() => setShowAll(!showAll)}
-              className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-base font-semibold text-primary shadow-md transition-all duration-300 hover:bg-primary hover:text-white hover:shadow-xl border border-primary/20"
+              className="group flex items-center gap-3 bg-primary text-primary-foreground px-10 py-4 rounded-2xl font-heading font-bold tracking-wide hover:bg-accent transition-all duration-300 shadow-xl shadow-primary/10"
             >
-              {showAll ? (
-                <>
-                  Show Less
-                  <ArrowRight className="h-4 w-4 rotate-90 transition-transform duration-300" />
-                </>
-              ) : (
-                <>
-                  See More ({allLinks.length - 12} more)
-                  <ArrowRight className="h-4 w-4 transition-transform duration-300" />
-                </>
-              )}
+              {showAll ? 'SHOW LESS' : `VIEW ALL SERVICES (${allLinks.length})`}
+              <ArrowRight className={`w-5 h-5 transition-transform duration-300 ${showAll ? '-rotate-90' : 'group-hover:translate-x-1'}`} />
             </button>
-          </div>
+          </motion.div>
         )}
       </div>
     </section>

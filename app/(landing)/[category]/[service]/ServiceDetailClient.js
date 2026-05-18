@@ -154,7 +154,7 @@ export default function ServiceDetailClient({ service, categorySlug }) {
   const IconComponent = categoryIcons[service.category] || Code2;
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-18">
       {/* Navigation Wheel */}
       <NavigationWheel
         sections={sections}
@@ -171,8 +171,6 @@ export default function ServiceDetailClient({ service, categorySlug }) {
         <div className="container mx-auto max-w-7xl px-4 py-4">
           <nav className="flex items-center gap-2 text-sm text-text-muted">
             <Link href="/" className="hover:text-accent transition-colors">Home</Link>
-            <span>/</span>
-            <Link href="/services" className="hover:text-accent transition-colors">Services</Link>
             <span>/</span>
             <Link href={`/${categorySlug}`} className="hover:text-accent transition-colors">
               {service.category}

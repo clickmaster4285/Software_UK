@@ -9,7 +9,7 @@ export default function ContactPage() {
   return (
     <>
       <main>
-        <section className="contact-hero">
+        <section className="page-hero">
           <div className="container">
             <h1>Get in Touch</h1>
             <p className="hero-sub">Share your details—we&apos;ll respond within one business day.</p>

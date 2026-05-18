@@ -64,7 +64,7 @@ export default function Portfolio() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="text-accent/70 font-bold uppercase tracking-tight text-9xl leading-none"
+                  className="text-accent/90 font-bold uppercase tracking-tight text-9xl leading-none"
                >
                   Industry Expertise
                </motion.span>
@@ -102,21 +102,21 @@ export default function Portfolio() {
                         <span className="font-heading font-black text-4xl text-accent group-hover:scale-110 transition-transform inline-block">
                            {industry.stat}
                         </span>
-                        <span className="text-gray-400 font-bold text-xs uppercase tracking-widest">
+                        <span className="text-gray-200 font-bold text-xs uppercase tracking-widest">
                            {industry.statLabel}
                         </span>
                      </div>
                      <h3 className="font-heading font-bold text-2xl text-white mb-4">
                         {industry.title}
                      </h3>
-                     <p className="text-gray-300 font-body text-sm mb-8 leading-relaxed">
+                     <p className="text-gray-100 font-body text-sm mb-8 leading-relaxed">
                         {industry.description}
                      </p>
                      <div className="flex flex-wrap gap-2">
                         {industry.items.map((item) => (
                            <span
                               key={item}
-                              className="px-3 py-1 bg-white/5 border border-white/10 rounded-full font-body text-[10px] font-bold text-gray-400 uppercase tracking-wider"
+                              className="px-3 py-1 bg-white/5 border border-white/10 rounded-full font-body text-[10px] font-bold text-gray-200 uppercase tracking-wider"
                            >
                               {item}
                            </span>
