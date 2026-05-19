@@ -87,7 +87,7 @@ export function FinalCTA() {
             {/* Interactive Ticker Side */}
             <div className="relative hidden md:block">
               <div
-                className="relative h-[450px] w-full max-w-sm mx-auto overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm"
+                className="relative h-112.5 w-full max-w-sm mx-auto overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm"
                 onMouseEnter={() => setPaused(true)}
                 onMouseLeave={() => setPaused(false)}
                 style={{
@@ -110,7 +110,7 @@ export function FinalCTA() {
               </div>
               
               {/* Floating element for depth */}
-              <div className="absolute -top-6 -right-6 p-4 rounded-2xl bg-accent shadow-2xl animate-bounce duration-[3000ms]">
+              <div className="absolute -top-6 -right-6 p-4 rounded-2xl bg-accent shadow-2xl animate-bounce duration-3000">
                 <Sparkles className="h-6 w-6 text-white" />
               </div>
             </div>

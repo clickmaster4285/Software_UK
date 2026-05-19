@@ -387,29 +387,55 @@ export function ProcessPage({ serviceData }) {
   return (
     <section
       ref={sectionRef}
-      className="py-20 font-sans"
+      className="relative py-20 overflow-hidden bg-transparent font-sans"
       aria-labelledby="process-heading"
     >
-      <motion.div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-      >
-        <div
-          className="absolute -top-24 right-0 h-80 w-80 rounded-full blur-3xl opacity-25"
-          style={{
-            background:
-              "radial-gradient(circle, color-mix(in oklch, var(--accent) 20%, transparent), transparent 70%)",
-          }}
-        />
-      </motion.div>
+      {/* Premium Background Elements */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Animated Mesh Gradients */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="absolute inset-0"
+        >
+          <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-primary/15 rounded-full blur-[120px] -translate-y-1/2" />
+          <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-accent/15 rounded-full blur-[140px] translate-y-1/2" />
+          <div className="absolute rounded-lg top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 bg-accent/20" />
+        </motion.div>
+        
+        {/* Subtle Grid Overlay */}
+        <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'linear-gradient(var(--accent) 1px, transparent 1px), linear-gradient(90deg, var(--accent) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+
+        {/* Decorative Floating Nodes */}
+        <div className="absolute inset-0 overflow-hidden">
+          {[...Array(3)].map((_, i) => (
+            <motion.div
+              key={i}
+              animate={{
+                y: [0, 30, 0],
+                x: [0, 10, 0],
+                opacity: [0.1, 0.2, 0.1],
+              }}
+              transition={{
+                duration: 7 + i * 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: i * 2,
+              }}
+              className="absolute h-20 w-20 rounded-full bg-primary"
+              style={{
+                top: `${30 + i * 25}%`,
+                left: `${15 + (i % 2) * 70}%`,
+              }}
+            />
+          ))}
+        </div>
+      </div>
 
       <div className="container relative z-10">
         <motion.header
-          className="text-center mb-12 "
+          className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
@@ -418,19 +444,19 @@ export function ProcessPage({ serviceData }) {
           <span className="text-lg font-bold uppercase tracking-[0.2em] text-accent">Our process</span>
           <h2
             id="process-heading"
-            className="mt-4 font-heading text-3xl font-bold text-text-primary sm:text-4xl"
+            className="mt-6 font-heading text-4xl font-bold text-text-primary leading-tight"
           >
             How we build your{" "}
             <span className="text-accent capitalize"> {serviceTitle}</span> project
           </h2>
-          <p className="mt-4 text-base text-text-body font-body leading-relaxed">
+          <p className="mt-6 text-lg md:text-xl text-text-body font-body leading-relaxed max-w-2xl mx-auto">
             Scroll through each phase — the line tracks your progress from
             discovery to launch.
           </p>
         </motion.header>
 
         <motion.div
-          className="mb-14 md:mb-20 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 max-w-4xl mx-auto rounded-2xl border border-border bg-surface px-6 py-8 md:px-10"
+          className="mb-14 md:mb-24 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 max-w-4xl mx-auto rounded-3xl border border-border bg-white px-6 py-10 md:px-12 shadow-sm"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -451,21 +477,21 @@ export function ProcessPage({ serviceData }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, ease: EASE }}
-                className="rounded-2xl border border-border bg-white p-6 shadow-[0_2px_20px_rgba(0,0,0,0.06)]"
+                className="rounded-3xl border border-border bg-white p-8 shadow-[0_4px_30px_rgba(0,0,0,0.04)]"
               >
-                <p className="text-xs font-medium uppercase tracking-[0.1em] text-accent mb-2">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-3">
                   Step {String(activeStep + 1).padStart(2, "0")} of{" "}
                   {String(phases.length).padStart(2, "0")}
                 </p>
-                <h3 className="font-heading text-xl font-bold text-text-primary leading-snug transition-all duration-300">
+                <h3 className="font-heading text-2xl font-bold text-text-primary leading-tight transition-all duration-300">
                   {phases[activeStep]?.title}
                 </h3>
-                <p className="mt-3 text-sm text-text-body font-body leading-relaxed line-clamp-4">
+                <p className="mt-4 text-base text-text-body font-body leading-relaxed line-clamp-4">
                   {phases[activeStep]?.description}
                 </p>
 
                 <nav
-                  className="mt-6 flex flex-col gap-1 max-h-[min(42vh,320px)] overflow-y-auto custom-scrollbar pr-1"
+                  className="mt-8 flex flex-col gap-2 max-h-[min(42vh,320px)] overflow-y-auto custom-scrollbar pr-1"
                   aria-label="Process steps"
                 >
                   {phases.map((phase, index) => (
@@ -473,13 +499,13 @@ export function ProcessPage({ serviceData }) {
                       key={phase.step}
                       type="button"
                       onClick={() => scrollToStep(index)}
-                      className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm transition-all duration-300 ${activeStep === index
-                          ? "bg-surface border border-accent/30 text-text-primary font-medium"
-                          : "text-text-muted hover:text-text-body hover:bg-surface/60"
+                      className={`flex items-center gap-4 rounded-xl px-4 py-3 text-left text-sm transition-all duration-300 border ${activeStep === index
+                          ? "bg-surface border-accent/20 text-text-primary font-bold"
+                          : "border-transparent text-text-muted hover:text-text-body hover:bg-surface/60"
                         }`}
                     >
                       <span
-                        className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold font-heading transition-colors duration-300 ${activeStep >= index
+                        className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs font-bold font-heading transition-colors duration-300 ${activeStep >= index
                             ? "bg-accent text-white"
                             : "bg-surface border border-border text-text-muted"
                           }`}
@@ -496,12 +522,12 @@ export function ProcessPage({ serviceData }) {
 
           {/* Right — scroll track + cards */}
           <div className="lg:flex-1 lg:min-w-0 relative" ref={trackRef}>
-            <div className="mb-8 lg:hidden rounded-xl border border-border bg-surface p-4">
-              <p className="text-xs font-medium uppercase tracking-[0.1em] text-accent">
+            <div className="mb-8 lg:hidden rounded-2xl border border-border bg-white p-5 shadow-sm">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent">
                 Step {String(activeStep + 1).padStart(2, "0")} of{" "}
                 {String(phases.length).padStart(2, "0")}
               </p>
-              <p className="mt-1 font-heading font-semibold text-text-primary">
+              <p className="mt-2 font-heading text-lg font-bold text-text-primary">
                 {phases[activeStep]?.title}
               </p>
             </div>
@@ -509,7 +535,7 @@ export function ProcessPage({ serviceData }) {
             {/* Background line */}
             <div
               ref={lineBgRef}
-              className="absolute left-5 top-0 bottom-0 w-0.5 bg-border"
+              className="absolute left-5 top-0 bottom-0 w-0.5 bg-border/60"
               aria-hidden
             />
             {/* Progress line — grows on scroll */}
@@ -520,7 +546,7 @@ export function ProcessPage({ serviceData }) {
                 background:
                   "linear-gradient(180deg, var(--accent) 0%, var(--primary) 100%)",
                 boxShadow:
-                  "0 0 12px color-mix(in oklch, var(--accent) 40%, transparent)",
+                  "0 0 15px color-mix(in oklch, var(--accent) 30%, transparent)",
               }}
               aria-hidden
             />

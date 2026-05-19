@@ -150,7 +150,7 @@ export function HeroSection({ serviceData }) {
       />
       
       {/* Constraints for the main content */}
-      <div className="relative z-10 w-full max-w-400 mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div className="relative z-10 w-full max-w-400 mx-auto px-4 py-16 lg:py-24">
         <div className="grid gap-12 lg:grid-cols-[1fr_480px] items-center">
 
           {/* ── Left column ── */}

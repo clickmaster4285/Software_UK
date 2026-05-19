@@ -41,7 +41,7 @@ export default function ServiceClient({ serviceData }) {
 
       {/* Premium Breadcrumb */}
       <div className="relative z-20 border-b border-border/40 bg-background/80 backdrop-blur-md">
-        <div className="mx-auto max-w-[1200px] px-4 py-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-400 px-4 py-4 sm:px-6 lg:px-8">
           <nav className="flex items-center space-x-2 text-sm font-medium">
             <Link
               href="/"
