@@ -36,23 +36,6 @@ export function ExploreSection({ serviceData }) {
   const [showAll, setShowAll] = useState(false);
   const sectionRef = useRef(null);
 
-  // Scroll animation hooks
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"]
-  });
-
-  const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 50,
-    damping: 20,
-    restDelta: 0.001
-  });
-
-  const pathLength = smoothProgress;
-  const opacity = useTransform(smoothProgress, [0, 0.1, 0.9, 1], [0, 0.4, 0.4, 0]);
-  const secondaryPathLength = useTransform(smoothProgress, (v) => v * 1.1);
-  const secondaryOpacity = useTransform(opacity, (v) => v * 0.4);
-
   const isServicePage = !!serviceData;
 
   const allLinks = isServicePage && serviceData.subServices
@@ -77,36 +60,9 @@ export function ExploreSection({ serviceData }) {
   return (
     <section
       ref={sectionRef}
-      className="bg-background py-20 relative overflow-hidden"
+      className="bg-transparent py-20 relative overflow-hidden"
       aria-labelledby="explore-heading"
     >
-      {/* Background Snake Line Animation */}
-      <div className="absolute inset-0 pointer-events-none z-0">
-        <svg
-          className="w-full h-full"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <motion.path
-            d="M 5 0 C 15 20 40 10 50 40 C 60 70 85 60 95 100"
-            stroke="var(--accent)"
-            strokeWidth="1.2"
-            strokeLinecap="round"
-            strokeDasharray="1 2"
-            style={{ pathLength, opacity }}
-          />
-          <motion.path
-            d="M 95 0 C 85 30 60 20 50 50 C 40 80 15 70 5 100"
-            stroke="var(--primary)"
-            strokeWidth="0.8"
-            strokeLinecap="round"
-            style={{ pathLength: secondaryPathLength, opacity: secondaryOpacity }}
-          />
-        </svg>
-      </div>
-
       <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="max-w-3xl mb-16">

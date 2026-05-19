@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import {
   Factory,
   Store,
@@ -10,236 +10,232 @@ import {
   GraduationCap,
   Building2,
   ArrowRight,
+  ChevronRight,
+  Globe2,
+  Cpu
 } from 'lucide-react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRouter } from 'next/navigation';
-import CountUp from 'react-countup';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
-// Register GSAP plugins
-gsap.registerPlugin(ScrollTrigger);
-
-// Define TypeScript interfaces
 const industries = [
   {
     icon: Factory,
     title: 'Manufacturing',
     description:
-      'Custom ERP, MES, production planning, and inventory software. We build manufacturing software that integrates with your shop floor and supply chain.',
-    features: ['ERP & MRP', 'Production Planning', 'Quality Control', 'Inventory Systems'],
+      'We build MES and ERP systems that digitize the factory floor. Our software integrates legacy hardware with modern cloud intelligence.',
+    features: ['Real-time Monitoring', 'Predictive Maintenance', 'Supply Chain ERP'],
     stats: '40%',
     statLabel: 'Efficiency Increase',
+    slug: 'manufacturing'
   },
   {
     icon: Store,
     title: 'Retail & eCommerce',
     description:
-      'E-commerce platforms, POS systems, and omnichannel retail software. Custom web and mobile apps for online stores and in-store operations.',
-    features: ['E-commerce Apps', 'POS Software', 'Inventory Sync', 'Customer Portals'],
+      'Omnichannel solutions that unify online and offline sales. High-performance eCommerce engines built for peak traffic stability.',
+    features: ['Inventory Sync', 'Custom Checkout', 'Customer Insights'],
     stats: '3.5x',
     statLabel: 'Sales Growth',
+    slug: 'retail'
   },
   {
     icon: Briefcase,
     title: 'Professional Services',
     description:
-      'Project management, time tracking, billing, and client portal software. Custom software for consultancies, agencies, and service firms.',
-    features: ['Project Management', 'Time & Billing', 'Client Portals', 'Reporting'],
+      'Scalable platforms for consulting and legal firms. Automate complex workflows and client interactions with enterprise portals.',
+    features: ['Workflow Automation', 'Secure Client Portals', 'Resource ERP'],
     stats: '60%',
-    statLabel: 'Time Saved',
+    statLabel: 'Operational ROI',
+    slug: 'professional-services'
   },
   {
     icon: Heart,
     title: 'Healthcare',
     description:
-      'Patient management, scheduling, EHR integrations, and compliant healthcare software. Secure, HIPAA-aware applications for clinics and hospitals.',
-    features: ['Patient Management', 'Scheduling', 'EHR Integration', 'Telehealth'],
+      'Secure, HIPAA-ready applications for clinics and healthtech. We build patient-centric systems with robust data protection.',
+    features: ['Patient Management', 'EHR Integration', 'Telehealth Systems'],
     stats: '99.9%',
-    statLabel: 'Uptime',
+    statLabel: 'System Uptime',
+    slug: 'healthcare'
   },
   {
     icon: GraduationCap,
-    title: 'Education',
+    title: 'EdTech & Learning',
     description:
-      'Learning management systems, student portals, and education software. Custom web and mobile apps for schools, universities, and ed-tech.',
-    features: ['LMS', 'Student Portals', 'Course Management', 'Attendance'],
+      'Learning Management Systems (LMS) designed for engagement. We build portals that handle thousands of concurrent learners.',
+    features: ['Custom LMS', 'Student Dashboards', 'Interactive Testing'],
     stats: '50k+',
-    statLabel: 'Students Served',
+    statLabel: 'Learners Served',
+    slug: 'education'
   },
   {
     icon: Building2,
     title: 'Real Estate',
     description:
-      'Property management, listing platforms, and real estate software. Custom solutions for agents, developers, and property managers.',
-    features: ['Property Management', 'Listing Platforms', 'Lease Management', 'Tenant Portals'],
+      'PropTech solutions for property management and development. Advanced listing platforms and tenant interaction systems.',
+    features: ['Lease Management', 'Listing Engines', 'Tenant Portals'],
     stats: '25k+',
-    statLabel: 'Properties Managed',
+    statLabel: 'Assets Managed',
+    slug: 'real-estate'
   },
 ];
 
-const stats = [
-  { number: '150+', label: 'Projects Delivered' },
-  { number: '12+', label: 'Industries Served' },
-  { number: '99%', label: 'Client Satisfaction' },
+const globalStats = [
+  { number: '150+', label: 'Digital Products' },
+  { number: '12+', label: 'Industry Sectors' },
+  { number: '99%', label: 'Client Retention' },
 ];
 
 export function IndustriesSection() {
   const router = useRouter();
-
   const sectionRef = useRef(null);
-  const headerRef = useRef(null);
-  const cardsRef = useRef([]);
-  const ctaRef = useRef(null);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [hasAnimated, setHasAnimated] = useState(false);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"]
+  });
 
-  // Premium hover animation for cards (matching WhyChooseSection style)
-  const handleCardHover = (index, isHovering) => {
-    setHoveredIndex(isHovering ? index : null);
-    // No GSAP animations needed - handled by Framer Motion
-  };
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const backgroundRotate = useTransform(scrollYProgress, [0, 1], [0, 10]);
 
   return (
-    <section ref={sectionRef} className="relative py-24 overflow-hidden bg-white font-sans">
-      <div className=" relative z-10 mx-auto  px-4 lg:px:12">
-        {/* Header Section */}
-        <div ref={headerRef} className="text-center mb-10">
+    <section 
+      id="industries-expertise"
+      ref={sectionRef} 
+      className="relative py-20 overflow-hidden bg-transparent"
+      aria-labelledby="industries-heading"
+    >
+      {/* Premium Tech Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <motion.div 
+          style={{ rotate: backgroundRotate }}
+          className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[110%] h-[140%] opacity-30 will-change-transform"
+        >
+          <div className="w-full h-full" style={{ backgroundImage: 'linear-gradient(var(--accent) 1px, transparent 1px), linear-gradient(90deg, var(--accent) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
+        </motion.div>
+        
+    
+        
+        {/* Gradients */}
+        <div className="absolute top-0 right-0 w-150 h-150 bg-accent/15 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 left-0 w-150 h-150 bg-primary/15 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2" />
+      </div>
+
+      <div className="container relative z-10">
+        {/* Section Header */}
+        <div className="mx-auto max-w-4xl text-center mb-20">
           <motion.div
-            initial={{ width: 0 }}
-            whileInView={{ width: 80 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="h-px bg-primary mx-auto mb-8"
-          />
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/5 border border-accent/10 mb-6"
+          >
+            <Globe2 className="h-3.5 w-3.5 text-accent" />
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent">
+              Sector Specialization
+            </span>
+          </motion.div>
 
           <motion.h2
-            className="text-3xl md:text-4xl font-bold text-black mt-2"
-            initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            Driving <span className="text-primary">Excellence</span>
-          </motion.h2>
-
-          <motion.p
-            className="text-gray-700 max-w-2xl mx-auto text-base mt-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ delay: 0.1 }}
+            id="industries-heading"
+            className="font-heading text-4xl font-bold text-text-primary leading-tight mb-4"
           >
-            Deep expertise meets technical excellence across every sector
+            Driving <span className="text-accent">Growth</span> Across Every Industry
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-priamry text-lg md:text-xl font-body leading-relaxed"
+          >
+            Our domain experts translate complex industry requirements into 
+            <span className="text-accent font-semibold"> high-performance digital products</span>.
           </motion.p>
         </div>
 
         {/* Industries Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {industries.map((industry, index) => {
             const Icon = industry.icon;
+            const isHovered = hoveredIndex === index;
+
             return (
               <motion.div
                 key={industry.title}
-                ref={(el) => {
-                  cardsRef.current[index] = el;
-                }}
-                className="relative cursor-pointer"
-                initial={{ opacity: 0, y: 100 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: '0 25px 35px -15px rgba(249,115,22,0.3)',
-                  borderColor: 'rgb(249, 115, 22)',
-                  transition: { duration: 0.3 },
-                }}
-                onMouseEnter={() => handleCardHover(index, true)}
-                onMouseLeave={() => handleCardHover(index, false)}
-                style={{ transformStyle: 'preserve-3d' }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className="group relative cursor-pointer"
+                aria-labelledby={`industry-title-${index}`}
               >
-                {/* Premium Card Design */}
-                <div className="relative bg-white rounded-2xl p-6 border border-primary/10 shadow-[0_4px_20px_rgb(0,0,0,0.02)] h-full overflow-hidden group">
-                  {/* Animated background that moves on hover (matching WhyChooseSection) */}
-                  <motion.div
-                    className="absolute inset-0 bg-linear-to-r from-primary/10 to-transparent"
-                    animate={{
-                      x: ['-100%', '100%'],
-                    }}
-                    transition={{
-                      duration: 3,
-                      repeat: Infinity,
-                      ease: 'linear',
-                    }}
-                  />
+                {/* Premium Industry Card */}
+                <div className="relative h-full bg-white rounded-[2rem] p-8 border border-border shadow-sm transition-all duration-500 group-hover:border-accent/30 group-hover:shadow-2xl group-hover:shadow-accent/5 overflow-hidden">
+                  
+                  {/* Hover background layer */}
+                  <div className="absolute inset-0 bg-linear-to-br from-accent/3 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  
+                  {/* Decorative number */}
+                  <div className="absolute top-6 right-8 font-heading text-5xl font-black text-surface group-hover:text-accent/5 transition-colors duration-500 pointer-events-none">
+                    {String(index + 1).padStart(2, '0')}
+                  </div>
 
-                  {/* Icon with rotation on hover */}
-                  <motion.div
-                    className="card-icon relative mb-5 transform-gpu transition-transform duration-300"
-                    whileHover={{ rotate: 360 }}
-                    transition={{ duration: 0.6 }}
-                  >
-                    <div className="relative inline-block">
-                      <div className="absolute inset-0 bg-primary/20 rounded-full blur-md scale-0 group-hover:scale-150 transition-transform duration-500" />
-                      <div className="relative w-12 h-12 flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-black/80" strokeWidth={1.5} />
+                  <div className="relative z-10">
+                    {/* Icon Container */}
+                    <motion.div
+                      animate={{ 
+                        scale: isHovered ? 1.1 : 1,
+                        rotate: isHovered ? 5 : 0
+                      }}
+                      className="mb-8 relative inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-surface group-hover:bg-accent/10 transition-colors duration-500"
+                    >
+                      <Icon className="w-8 h-8 text-text-primary group-hover:text-accent transition-colors duration-500" strokeWidth={1.5} />
+                    </motion.div>
+
+                    <h3 id={`industry-title-${index}`} className="font-heading text-2xl font-bold text-text-primary mb-4 group-hover:text-accent transition-colors">
+                      {industry.title}
+                    </h3>
+
+                    <p className="text-text-body text-sm leading-relaxed mb-8 font-body">
+                      {industry.description}
+                    </p>
+
+                    {/* Features Chips */}
+                    <div className="flex flex-wrap gap-2 mb-8">
+                      {industry.features.map((feature) => (
+                        <span
+                          key={feature}
+                          className="text-[9px] font-bold uppercase tracking-wider px-3 py-1.5 bg-surface text-text-muted rounded-lg border border-border group-hover:border-accent/10 group-hover:text-text-primary transition-all"
+                        >
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* Stats & Link */}
+                    <div className="pt-6 border-t border-border flex items-center justify-between">
+                      <div>
+                        <span className="text-2xl font-heading font-bold text-accent block leading-none">
+                          {industry.stats}
+                        </span>
+                        <span className="text-[10px] font-bold uppercase tracking-widest text-text-muted mt-1">
+                          {industry.statLabel}
+                        </span>
+                      </div>
+                      
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-surface border border-border group-hover:bg-accent group-hover:border-accent transition-all duration-300">
+                        <ChevronRight className="h-5 w-5 text-text-muted group-hover:text-white transition-colors" />
                       </div>
                     </div>
-                  </motion.div>
-
-                  {/* Title */}
-                  <h3 className="card-title text-xl font-bold text-black mb-2 relative z-10">
-                    {industry.title}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="card-desc text-gray-700 text-sm leading-relaxed mb-4 relative z-10">
-                    {industry.description}
-                  </p>
-
-                  {/* Features with staggered animation */}
-                  <div className="card-features flex flex-wrap gap-2 mb-4 relative z-10">
-                    {industry.features.map((feature, i) => (
-                      <motion.span
-                        key={feature}
-                        className="text-xs px-2 py-1 bg-gray-50 text-gray-600 rounded-full"
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.1 * i }}
-                      >
-                        {feature}
-                      </motion.span>
-                    ))}
-                  </div>
-
-                  {/* Stats with premium animation */}
-                  <div className="card-stats pt-3 border-t border-primary/20 flex items-baseline justify-between relative z-10">
-                    <div>
-                      <motion.span
-                        className="text-2xl font-bold text-primary block leading-none"
-                        whileHover={{ scale: 1.05 }}
-                      >
-                        {industry.stats}
-                      </motion.span>
-                      <span className="text-xs uppercase tracking-wider text-gray-500">
-                        {industry.statLabel}
-                      </span>
-                    </div>
-
-
-                  </div>
-
-                  {/* Corner Accent with rotation */}
-                  <div className="absolute bottom-3 right-3 w-6 h-6">
-                    <motion.div
-                      className="w-full h-full border-b border-r border-primary"
-                      animate={{
-                        rotate: hoveredIndex === index ? 180 : 0,
-                        opacity: hoveredIndex === index ? 0.3 : 0.1,
-                      }}
-                      transition={{ duration: 0.5 }}
-                    />
                   </div>
                 </div>
               </motion.div>
@@ -247,125 +243,56 @@ export function IndustriesSection() {
           })}
         </div>
 
-        {/* Bottom CTA Section */}
-        <div ref={ctaRef} className="mt-20">
+        {/* Interactive Industry CTA */}
+        <div className="mt-24">
           <motion.div
-            className="relative bg-linear-to-br from-gray-50 to-primary/20 rounded-3xl p-12 overflow-hidden border border-primary/10"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            whileHover={{ scale: 1.02 }}
+            className="relative bg-primary rounded-[3rem] p-12 md:p-20 overflow-hidden shadow-3xl shadow-primary/20"
           >
-            {/* Animated Pattern */}
-            <motion.div
-              className="absolute inset-0 opacity-5"
-              animate={{
-                backgroundPosition: ['0% 0%', '100% 100%'],
-              }}
-              transition={{
-                duration: 20,
-                repeat: Infinity,
-                ease: 'linear',
-              }}
-              style={{
-                backgroundImage: `radial-gradient(circle at 2px 2px, #f97316 1px, transparent 0)`,
-                backgroundSize: '30px 30px',
-              }}
-            />
-
-            {/* Animated light sweep (matching WhyChooseSection) */}
-            <motion.div
-              className="absolute inset-0 bg-linear-to-r from-transparent via-primary/10 to-transparent"
-              animate={{
-                x: ['-100%', '100%'],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: 'linear',
-              }}
-            />
-
-            <div className="relative z-10 max-w-4xl mx-auto text-center">
-              <motion.div
-                className="w-12 h-px bg-primary mx-auto mb-8"
-                animate={{
-                  width: ['48px', '96px', '48px'],
-                  opacity: [0.5, 1, 0.5],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: 'easeInOut',
-                }}
-              />
-
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-4">
-                Ready to Transform Your Industry?
-                <span className="font-bold block mt-2 text-primary">
-                  Let&apos;s Build Something Extraordinary
-                </span>
-              </h3>
-
-              <p className="text-gray-700 text-base leading-relaxed max-w-2xl mx-auto">
-                Whether you&apos;re in manufacturing, healthcare, or retail, we have the expertise to
-                build software that drives your business forward.
-              </p>
-
-              {/* Stats Row with premium hover */}
-              <motion.div className="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-12 mt-8 pt-8 border-t border-primary/10">
-                {stats.map((stat, idx) => (
-                  <motion.div
-                    key={idx}
-                    whileHover={{
-                      y: -5,
-                      scale: 1.05,
-                    }}
-                    className="text-center cursor-default"
+            {/* Background elements */}
+            <div className="absolute inset-0 bg-linear-to-br from-accent/20 to-transparent opacity-40 pointer-events-none" />
+            <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(white 1px, transparent 1px)', backgroundSize: '24px 24px' }} />
+            
+            <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white text-[10px] font-bold uppercase tracking-widest mb-6">
+                  <Cpu className="h-3 w-3" />
+                  Engineering for Scale
+                </div>
+                <h3 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                  Ready to Lead Your <span className="text-accent">Industry?</span>
+                </h3>
+                <p className="text-white/70 text-lg font-body leading-relaxed mb-10 max-w-xl">
+                  Whether you are digitizing legacy workflows or building a new market-disrupting product, our specialized engineering teams are ready to help you win.
+                </p>
+                
+                <div className="flex flex-wrap gap-4">
+                  <Button
+                    asChild
+                    className="btn-primary h-14 px-10 rounded-xl bg-accent text-white hover:bg-accent-hover shadow-xl shadow-accent/20 transition-all border-none"
                   >
-                    <motion.div
-                      className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary"
-                      animate={{
-                        textShadow: [
-                          '0 0 0 rgba(249,115,22,0)',
-                          '0 0 10px rgba(249,115,22,0.3)',
-                          '0 0 0 rgba(249,115,22,0)',
-                        ],
-                      }}
-                      transition={{
-                        duration: 2,
-                        repeat: Infinity,
-                        delay: idx * 0.3,
-                      }}
-                    >
+                    <Link href="/contact">
+                      Discuss Your Project
+                      <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                {globalStats.map((stat, idx) => (
+                  <div key={idx} className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm hover:bg-white/10 transition-colors">
+                    <div className="text-3xl md:text-4xl font-heading font-bold text-accent mb-2">
                       {stat.number}
-                    </motion.div>
-                    <div className="text-xs sm:text-sm uppercase tracking-wider text-gray-500 mt-1">
+                    </div>
+                    <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50">
                       {stat.label}
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
-              </motion.div>
-
-              {/* Premium CTA Button */}
-              <motion.button
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: '0 10px 25px -5px rgba(249,115,22,0.4)',
-                }}
-                whileTap={{ scale: 0.98 }}
-                className="mt-8 px-8 py-3 bg-black text-white text-sm font-medium tracking-wider rounded-md hover:bg-primary transition-all duration-300 relative overflow-hidden group"
-                onClick={() => router.push('/contact-us')}
-              >
-                <span className="relative z-10">Discuss Your Project</span>
-                <motion.div
-                  className="absolute inset-0 bg-primary"
-                  initial={{ x: '100%' }}
-                  whileHover={{ x: 0 }}
-                  transition={{ duration: 0.3 }}
-                />
-              </motion.button>
+              </div>
             </div>
           </motion.div>
         </div>

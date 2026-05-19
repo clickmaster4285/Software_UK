@@ -132,7 +132,7 @@ export function FaqSection({ faqs: customFaqs, serviceTitle, subtitle }) {
 
   return (
     <section
-      className="relative overflow-hidden font-sans"
+      className="relative overflow-hidden font-sans bg-accent/80"
       aria-labelledby="faq-heading"
     >
       {/* Primary gradient canvas */}
@@ -140,10 +140,15 @@ export function FaqSection({ faqs: customFaqs, serviceTitle, subtitle }) {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(145deg, var(--primary) 0%, var(--primary-mid) 42%, color-mix(in oklch, var(--accent) 35%, var(--accent)) 100%)",
+            "linear-gradient(145deg, var(--primary) 0%, var(--primary-mid) 42%, color-mix(in oklch, var(--accent) 35%, var(--accent)) 100%) ",
+          clipPath: "polygon(0 0%, 100% 0, 100% 100%, 0 90%)",
         }}
         aria-hidden
       />
+
+      {/* style={{
+        clipPath: "polygon(0 7%, 100% 0, 100% 93%, 0 100%)",
+      }} */}
 
       {/* Atmospheric layers */}
       <div
@@ -171,7 +176,7 @@ export function FaqSection({ faqs: customFaqs, serviceTitle, subtitle }) {
         }}
       />
 
-      <div className="container relative z-10 py-20">
+      <div className="container relative z-10 py-28">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,30rem)_1fr] lg:items-start">
           {/* Editorial sidebar */}
           <motion.aside

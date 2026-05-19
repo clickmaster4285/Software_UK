@@ -5,36 +5,34 @@ import { useEffect, useState } from "react";
 
 /**
  * ScrollSnakeLine - A background animation component that draws a "snake-like"
- * line that grows and moves based on scroll progress.
+ * line that grows and moves based on scroll progress of a target element.
+ * 
+ * @param {Object} props
+ * @param {React.RefObject} props.targetRef - The ref of the container to track scroll progress.
  */
-export const ScrollSnakeLine = () => {
+export const ScrollSnakeLine = ({ targetRef }) => {
   const [isClient, setIsClient] = useState(false);
-  const { scrollYProgress } = useScroll();
+  
+  // Track scroll progress relative to the target element
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start end", "end start"]
+  });
 
   // Smooth the scroll progress for a more "organic" feel
   const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 50,
-    damping: 20,
+    stiffness: 70,
+    damping: 30,
     restDelta: 0.001
   });
 
   // Transform scroll progress into various path properties
-  // ALL HOOKS MUST BE DECLARED HERE, BEFORE ANY CONDITIONAL RETURNS
   const pathLength = smoothProgress;
-  const opacity = useTransform(smoothProgress, [0, 0.1, 0.9, 1], [0, 0.3, 0.3, 0]);
+  const opacity = useTransform(smoothProgress, [0, 0.1, 0.9, 1], [0, 0.5, 0.5, 0]);
   
   // Secondary path properties
   const secondaryPathLength = useTransform(smoothProgress, (v) => v * 1.1);
   const secondaryOpacity = useTransform(opacity, (v) => v * 0.5);
-
-  // Floating head properties
-  const headX = useTransform(smoothProgress, [0, 1], [10, 50]);
-  const headY = useTransform(smoothProgress, [0, 1], [0, 1000]);
-  const headScale = useTransform(smoothProgress, [0, 0.1], [0, 1]);
-
-  // Glow properties
-  const glowX = useTransform(smoothProgress, [0, 1], ["10%", "50%"]);
-  const glowY = useTransform(smoothProgress, [0, 1], ["0%", "100%"]);
 
   useEffect(() => {
     setIsClient(true);
@@ -43,10 +41,10 @@ export const ScrollSnakeLine = () => {
   if (!isClient) return null;
 
   return (
-    <div className="fixed inset-0 -z-10 pointer-events-none overflow-hidden select-none">
+    <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden select-none">
       <svg
         className="w-full h-full"
-        viewBox="0 0 100 1000"
+        viewBox="0 0 100 1200"
         preserveAspectRatio="none"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -75,31 +73,7 @@ export const ScrollSnakeLine = () => {
             opacity: secondaryOpacity
           }}
         />
-
-        {/* Floating "head" of the snake */}
-        <motion.circle
-          cx={headX}
-          cy={headY}
-          r="0.8"
-          fill="var(--accent)"
-          style={{ 
-            opacity,
-            scale: headScale
-          }}
-        />
       </svg>
-      
-      {/* Subtle Glow at the snake head */}
-      <motion.div
-        className="absolute w-64 h-64 rounded-full bg-accent/10 blur-[80px]"
-        style={{
-          left: glowX,
-          top: glowY,
-          x: "-50%",
-          y: "-50%",
-          opacity
-        }}
-      />
     </div>
   );
 };
