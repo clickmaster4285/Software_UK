@@ -188,7 +188,7 @@ export function HeroSection({ serviceData }) {
 
             {/* Typewriter */}
             <div className="mb-10">
-              <div className="inline-block rounded-2xl bg-white/5 px-4 sm:px-6 py-3 backdrop-blur-sm border border-white/10 max-w-full overflow-hidden">
+              <div className="inline-block rounded-2xl bg-white/5 px-4 sm:px-6 py-3 backdrop-blur-sm border  max-w-full overflow-hidden border-accent/">
                 <div className="text-left text-sm sm:text-base lg:text-lg font-medium text-accent">
                   <Typewriter
                     texts={displayBullets}
@@ -202,16 +202,15 @@ export function HeroSection({ serviceData }) {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="btn-primary group w-full sm:w-auto min-h-13" asChild>
+              <Button size="lg" className="btn-primary group " asChild>
                 <Link href="/contact">
                   {serviceData?.ctaText || 'Get Started'}
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full bg-white/10 sm:w-auto min-h-13 rounded-xl border-white/20 text-white hover:bg-white/20 transition-colors backdrop-blur-sm"
                 asChild
               >
                 <Link href="/contact">
@@ -236,7 +235,7 @@ export function HeroSection({ serviceData }) {
                       <span>{stat.value || stat.end}</span>
                     )}
                   </p>
-                  <p className="mt-1 text-sm text-gray-400 font-medium">{stat.label}</p>
+                  <p className="mt-1 text-sm text-gray-300 font-medium">{stat.label}</p>
                 </div>
               ))}
             </div>

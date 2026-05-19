@@ -5,7 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import MegaMenu from "./MegaMenu";
-import { serviceMenuSections, slugify } from "@/data/service-pages";
+import HomeLogoLink from "./HomeLogoLink";
+import { serviceMenuSections } from "@/data/main-services";
 import { ChevronDown } from "lucide-react";
 import { useBlogList } from "@/hooks/useBlog";
 import { useCaseStudyList } from "@/hooks/useCaseStudies";
@@ -20,7 +21,7 @@ const navLinks = [
 ];
 
 // Slugs for service categories to identify service routes dynamically
-const serviceCategorySlugs = serviceMenuSections.map(s => slugify(s.label));
+const serviceCategorySlugs = serviceMenuSections.map((s) => s.slug);
 
 // Other specific routes that should always have a white background
 const forceWhiteBgRoutes = [];
@@ -132,23 +133,22 @@ export default function Navbar() {
   ], [blogs, caseStudies, testimonials]);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      hasWhiteBg 
-        ? "bg-white/95 backdrop-blur-sm border-b border-border py-2 shadow-sm" 
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${hasWhiteBg
+        ? "bg-white/95 backdrop-blur-sm border-b border-border py-2 shadow-sm"
         : "bg-transparent py-4"
-    }`}>
+      }`}>
       <div className="max-w-400 mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
-          <Image 
-            src="/cm-logos/logo.png" 
-            alt="ClickMasters" 
+        <HomeLogoLink className="flex items-center">
+          <Image
+            src="/cm-logos/logo.png"
+            alt="ClickMasters"
             width={180}
             height={48}
             priority
             style={{ width: "auto", height: "auto" }}
             className={`h-12 w-auto transition-all ${!hasWhiteBg ? "brightness-0 invert" : ""}`}
           />
-        </Link>
+        </HomeLogoLink>
 
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
@@ -157,9 +157,8 @@ export default function Navbar() {
                 key={link.name}
                 categories={link.name === "Resources" ? resourcesCategories : serviceMenuSections}
                 trigger={
-                  <div className={`flex items-center gap-1 transition-colors font-body text-sm cursor-pointer ${
-                    hasWhiteBg ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
-                  }`}>
+                  <div className={`flex items-center gap-1 transition-colors font-body text-sm cursor-pointer ${hasWhiteBg ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
+                    }`}>
                     {link.name}
                     <ChevronDown className="w-3 h-3" />
                   </div>
@@ -169,9 +168,8 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`transition-colors font-body text-sm ${
-                  hasWhiteBg ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
-                }`}
+                className={`transition-colors font-body text-sm ${hasWhiteBg ? "text-text-body hover:text-primary" : "text-white hover:text-accent"
+                  }`}
               >
                 {link.name}
               </Link>

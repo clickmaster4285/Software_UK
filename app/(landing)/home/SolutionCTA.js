@@ -2,121 +2,105 @@
 
 import { useProjectList } from "@/hooks/useProjects";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import { ExternalLink, ArrowRight } from "lucide-react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
-import { useRef } from "react";
+import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { ProjectCard } from "@/components/admin/ProjectCard";
+
+function ShowcaseCardSkeleton() {
+  return (
+    <div className="min-h-105 overflow-hidden rounded-2xl bg-white ring-1 ring-primary/8 shadow-[0_2px_16px_rgba(0,0,0,0.07)]">
+      <Skeleton className="aspect-5/4 w-full rounded-none" />
+      <div className="space-y-3 p-5 sm:p-6">
+        <div className="flex gap-2">
+          <Skeleton className="h-5 w-16 rounded-full" />
+          <Skeleton className="h-5 w-20 rounded-full" />
+        </div>
+        <Skeleton className="h-7 w-4/5" />
+        <Skeleton className="h-4 w-full" />
+        <Skeleton className="h-4 w-2/3" />
+        <div className="flex items-center justify-between border-t border-primary/8 pt-4">
+          <Skeleton className="h-4 w-20" />
+          <Skeleton className="h-9 w-9 rounded-lg" />
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function SolutionCTA() {
   const { data: projects, isLoading } = useProjectList();
-  const sectionRef = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "center center"],
-  });
-
-  // Section level scroll animations
-  const scale = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
-  const blur = useTransform(scrollYProgress, [0, 1], ["blur(10px)", "blur(0px)"]);
-
-  // Show only featured or latest 3 projects
   const featuredProjects = projects?.slice(0, 3) || [];
 
   return (
-    <section ref={sectionRef} className="py-32 relative bg-white overflow-hidden">
-      <motion.div 
-        style={{ scale, opacity, filter: blur }}
-        className="max-w-400 mx-auto px-6 relative z-10"
-      >
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+    <section className="relative overflow-hidden bg-surface py-24 md:py-32">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.35]"
+        aria-hidden
+        style={{
+          backgroundImage:
+            'radial-gradient(circle at 1px 1px, color-mix(in oklch, var(--primary) 12%, transparent) 1px, transparent 0)',
+          backgroundSize: '28px 28px',
+        }}
+      />
+      <div
+        className="pointer-events-none absolute -right-32 top-16 h-96 w-96 rounded-full bg-accent/10 blur-3xl"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute -left-24 bottom-8 h-72 w-72 rounded-full bg-primary/5 blur-3xl"
+        aria-hidden
+      />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-14 flex flex-col gap-6 md:mb-16 md:flex-row md:items-end md:justify-between"
+        >
           <div className="max-w-2xl">
-            <span className="text-accent font-bold uppercase tracking-widest text-sm block mb-4">
-              Our Recent Work
-            </span>
-            <h2 className="font-heading font-bold text-3xl md:text-5xl text-primary tracking-tight">
-              Software Solutions That <span className="text-accent">Deliver Results</span>
+            <div className="mb-4 inline-flex items-center gap-2">
+              <span className="h-0.5 w-8 rounded-full bg-accent" />
+              <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
+                Our Recent Work
+              </span>
+              <span className="h-0.5 w-8 rounded-full bg-accent" />
+            </div>
+            <h2 className="font-heading text-3xl font-bold tracking-tight text-primary md:text-5xl">
+              Software Solutions That{" "}
+              <span className="bg-linear-to-r from-accent to-accent-hover bg-clip-text text-transparent">
+                Deliver Results
+              </span>
             </h2>
           </div>
-          <div>
-            <Link
-              href="/projects"
-              className="group inline-flex items-center gap-2 text-primary font-bold hover:text-accent transition-colors"
-            >
-              View All Projects <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </div>
+          <Link
+            href="/software-solutions"
+            className="group inline-flex items-center gap-2 font-bold text-primary transition-colors hover:text-accent"
+          >
+            View All Projects
+            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+          </Link>
+        </motion.div>
+
+        <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          {isLoading
+            ? [1, 2, 3].map((i) => <ShowcaseCardSkeleton key={i} />)
+            : featuredProjects.map((project, index) => (
+                <motion.div
+                  key={project._id}
+                  initial={{ opacity: 0, y: 28 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1, duration: 0.45 }}
+                  viewport={{ once: true }}
+                  className="h-full"
+                >
+                  <ProjectCard project={project} variant="showcase" />
+                </motion.div>
+              ))}
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {isLoading ? (
-            [1, 2, 3].map(i => <Skeleton key={i} className="h-112 rounded-[2rem]" />)
-          ) : (
-            featuredProjects.map((project, index) => (
-              <motion.div
-                key={project._id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Card className=" py-0 group border border-border/50 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 rounded-[2rem] overflow-hidden bg-white flex flex-col h-full cursor-pointer">
-                  <div className="aspect-16/10 relative overflow-hidden">
-                    <Image 
-                      src={project.thumbnail || "https://via.placeholder.com/800x600?text=Project"} 
-                      alt={project.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    {/* Subtle overlay on hover */}
-                    <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    
-                    <div className="absolute top-4 right-4">
-                      <Badge className="bg-white/80 backdrop-blur-md text-primary border-none uppercase tracking-wider text-[10px] font-bold px-3 py-1.5 shadow-sm">
-                        {project.status || "Completed"}
-                      </Badge>
-                    </div>
-                  </div>
-
-                  <CardContent className="p-8 flex-1 flex flex-col">
-                    <div className="flex-1">
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {project.tags?.slice(0, 3).map(tag => (
-                          <span key={tag} className="text-[10px] font-bold text-accent uppercase tracking-widest bg-accent/5 px-2.5 py-1 rounded-lg border border-accent/10">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                      <h3 className="text-2xl font-heading font-bold text-primary mb-3 group-hover:text-accent transition-colors leading-tight">
-                        {project.title}
-                      </h3>
-                      <p className="text-text-body font-body text-sm line-clamp-2 mb-6 leading-relaxed opacity-80">
-                        {project.description}
-                      </p>
-                    </div>
-
-                    <Link 
-                      href={project.url || "#"} 
-                      target="_blank"
-                      className="inline-flex items-center gap-3 text-primary font-bold group/btn hover:text-accent transition-colors"
-                    >
-                      <span>Explore Project</span>
-                      <div className="w-9 h-9 rounded-full bg-primary/5 flex items-center justify-center group-hover/btn:bg-accent group-hover/btn:text-white transition-all duration-300">
-                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-0.5 transition-transform" />
-                      </div>
-                    </Link>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))
-          )}
         </div>
-      </motion.div>
     </section>
   );
 }

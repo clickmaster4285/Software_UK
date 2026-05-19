@@ -8,7 +8,7 @@ import { CaseStudyCard } from '@/components/admin/case-study-card';
 import { TestimonialCard } from '@/components/admin/testimonial-card';
 import { FAQCard } from '@/components/admin/faq-card';
 
-import { slugify } from '@/data/service-pages';
+import { slugify } from '@/data/main-services';
 
 export default function MegaMenu({ categories, trigger }) {
    const [hoveredCategory, setHoveredCategory] = useState(null);
@@ -58,13 +58,15 @@ export default function MegaMenu({ categories, trigger }) {
 
    const getCategoryHref = (category) => {
       if (category.viewAllHref) return category.viewAllHref;
-      return `/${slugify(category.label)}`;
+      // Use canonical slug from main-services data (slugify(label) drops "and" from "&" titles)
+      const categorySlug = category.slug || slugify(category.label);
+      return `/${categorySlug}`;
    };
 
    const getItemHref = (category, item) => {
       if (item.href) return item.href;
-      const categorySlug = slugify(category.label);
-      const itemSlug = slugify(item.title);
+      const categorySlug = category.slug || slugify(category.label);
+      const itemSlug = item.slug || slugify(item.title);
       return `/${categorySlug}/${itemSlug}`;
    };
 
@@ -98,8 +100,8 @@ export default function MegaMenu({ categories, trigger }) {
                                     onClick={() => handleMouseLeave()}
                                  >
                                     <div className={`flex items-center justify-between p-3 rounded-lg transition-all duration-200 ${isActive
-                                          ? 'bg-accent text-white shadow-md'
-                                          : 'hover:bg-accent hover:text-white text-text-body'
+                                       ? 'bg-accent text-white shadow-md'
+                                       : 'hover:bg-accent hover:text-white text-text-body'
                                        }`}>
                                        <span className="text-sm font-medium">
                                           {category.label}
@@ -165,12 +167,12 @@ export default function MegaMenu({ categories, trigger }) {
                                        <Link
                                           key={key}
                                           href={getItemHref(hoveredCategory, item)}
-                                           onClick={() => handleMouseLeave()}
+                                          onClick={() => handleMouseLeave()}
                                           className="group block h-full rounded-2xl border border-border/50 bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-primary/20"
                                        >
                                           <h4 className="text-sm font-semibold text-text-primary group-hover:text-primary mb-2 transition-colors">
                                              {item.title}
-                                         </h4>
+                                          </h4>
                                           <p className="text-xs leading-relaxed text-text-body line-clamp-2">
                                              {item.description}
                                           </p>

@@ -1,176 +1,116 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import {
-  Cpu,
-  Stethoscope,
-  ShoppingBag,
-  Building2,
-  GraduationCap,
-  Coins,
-  Truck,
-  Tv2,
-  Landmark,
-  Leaf,
-  Hotel,
-  Activity,
-  CircuitBoard,
-  ShieldCheck,
-  BarChart3,
-} from "lucide-react";
+import React from "react";
+import { motion } from "framer-motion";
+import { iconMap } from '@/data/main-services';
+import {  Building2 } from "lucide-react";
 
-const trustedClients = [
-  { name: "TechCorp", industry: "Manufacturing", icon: Cpu },
-  { name: "HealthPlus", industry: "Healthcare", icon: Stethoscope },
-  { name: "RetailHub", industry: "Retail", icon: ShoppingBag },
-  { name: "EstatePro", industry: "Real Estate", icon: Building2 },
-  { name: "EduSmart", industry: "Education", icon: GraduationCap },
-  { name: "FinTrust", industry: "Finance", icon: Coins },
-  { name: "LogiFlow", industry: "Logistics", icon: Truck },
-  { name: "MediaWave", industry: "Media", icon: Tv2 },
-  { name: "NovaBank", industry: "Banking", icon: Landmark },
-  { name: "GreenField", industry: "Agriculture", icon: Leaf },
-  { name: "Skyline Hotels", industry: "Hospitality", icon: Hotel },
-  { name: "Pulse Fitness", industry: "Health & Fitness", icon: Activity },
-  { name: "Quantum Dynamics", industry: "Technology", icon: CircuitBoard },
-  { name: "Lumina Insurance", industry: "Insurance", icon: ShieldCheck },
-  { name: "Vertex Solutions", industry: "Consulting", icon: BarChart3 },
+const defaultClients = [
+  { name: "TechCorp", industry: "Manufacturing", icon: 'Cpu' },
+  { name: "HealthPlus", industry: "Healthcare", icon: 'Stethoscope' },
+  { name: "RetailHub", industry: "Retail", icon: 'ShoppingBag' },
+  { name: "EstatePro", industry: "Real Estate", icon: 'Building2' },
+  { name: "EduSmart", industry: "Education", icon: 'GraduationCap' },
+  { name: "FinTrust", industry: "Finance", icon: 'Coins' },
+  { name: "LogiFlow", industry: "Logistics", icon: 'Truck' },
+  { name: "MediaWave", industry: "Media", icon: 'Tv2' },
+  { name: "NovaBank", industry: "Banking", icon: 'Landmark' },
+  { name: "GreenField", industry: "Agriculture", icon: 'Leaf' },
 ];
 
-// const stats = [
-//   { value: "3,500+", label: "Clients worldwide" },
-//   { value: "12", label: "Industries served" },
-//   { value: "98%", label: "Satisfaction rate" },
-// ];
-
-function useInView(threshold = 0.15) {
-  const ref = useRef(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          obs.disconnect();
-        }
-      },
-      { threshold }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, [threshold]);
-
-  return { ref, visible };
-}
-
-function ClientCard({
-  client,
-  index,
-  visible,
-}) {
-  const Icon = client.icon;
+function ClientCard({ client, index }) {
+  const Icon = (typeof client.icon === 'string' ? iconMap[client.icon] : client.icon) || Building2;
 
   return (
-    <div
-      className="group relative bg-white hover:bg-gray-50 transition-colors duration-200 p-8 flex flex-col items-center justify-center gap-5 min-h-45"
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(20px)",
-        transition: `opacity 0.4s ease ${index * 50}ms, transform 0.4s ease ${index * 50}ms, background-color 0.2s`,
-      }}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.05 }}
+      className="group relative bg-card hover:bg-surface transition-all duration-300 p-8 flex flex-col items-center justify-center gap-4 min-h-40 border border-border/50 hover:border-accent/20 hover:shadow-xl hover:shadow-accent/5"
     >
-      {/* Gold bottom accent bar on hover */}
+      {/* Accent bar on hover */}
       <span
-        className="absolute bottom-0 left-0 w-full h-0.75 bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+        className="absolute top-0 left-0 w-full h-1 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
         aria-hidden="true"
       />
 
-      {/* Icon */}
-      <div className="w-16 h-16 flex items-center justify-center rounded-xl  group-hover:border-primary group-hover:bg-primary/10 transition-all duration-200">
+      {/* Icon Container */}
+      <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-surface group-hover:bg-accent/10 transition-colors duration-300">
         <Icon
           size={28}
-          className="text-primary"
+          className="text-muted-foreground group-hover:text-accent transition-colors duration-300"
           strokeWidth={1.5}
-          aria-hidden
         />
       </div>
 
-      {/* Text */}
+      {/* Text Info */}
       <div className="text-center">
-        <p className="text-base font-semibold text-gray-900 leading-snug">
+        <p className="text-sm font-heading font-bold text-foreground leading-tight mb-1">
           {client.name}
         </p>
-        <p className="text-[11px] uppercase tracking-widest text-gray-400 mt-1">
+        <p className="text-[10px] uppercase tracking-widest text-muted-foreground font-body">
           {client.industry}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
-export function TrustedClientsSection() {
-  const { ref, visible } = useInView();
+export function TrustedClientsSection({ clients = defaultClients, title, subtitle }) {
+  // Ensure we have an array to map over
+  const clientsList = Array.isArray(clients) ? clients : defaultClients;
 
   return (
-    <section ref={ref} className="bg-linear-to-b from-white to-slate-50  py-6 px-6 lg:px-26 lg:py-16 ">
-      {/* Header original design */}
-      <div className="text-center mb-12">
-        <div className="inline-flex items-center gap-2 mb-3">
-          <span className="h-0.5 w-8 rounded-full bg-accent" />
-          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
-            Trusted By Industry Leaders
-          </p>
-          <span className="h-0.5 w-8 rounded-full bg-accent" />
+    <section className="bg-background py-20 overflow-hidden">
+      <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-2 mb-4"
+          >
+            <span className="text-lg font-bold uppercase tracking-[0.2em] text-accent">
+              Recognition
+            </span>
+          </motion.div>
+
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6"
+          >
+            {title || "Trusted by Visionary Brands"}
+          </motion.h3>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-muted-foreground max-w-2xl mx-auto font-body text-lg"
+          >
+            {subtitle || "Join 3,500+ businesses globally that leverage our engineering excellence to scale their digital infrastructure."}
+          </motion.p>
         </div>
 
-        <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-3">
-          Our Trusted Partners & Clients
-        </h3>
-
-        <p className="text-gray-700 max-w-2xl mx-auto text-sm">
-          Join 3,500+ businesses that trust ClickMasters to deliver exceptional software solutions
-        </p>
+        {/* Client Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 border border-border/60 rounded-[2rem] overflow-hidden">
+          {clientsList.map((client, idx) => (
+            <ClientCard
+              key={`${client.name}-${idx}`}
+              client={client}
+              index={idx}
+            />
+          ))}
+        </div>
       </div>
-
-      {/* Client Grid */}
-      <div className="border border-gray-200 rounded-xl overflow-hidden grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 divide-x divide-y divide-gray-200 lg:mx-20">
-        {trustedClients.map((client, idx) => (
-          <ClientCard
-            key={client.name}
-            client={client}
-            index={idx}
-            visible={visible}
-          />
-        ))}
-      </div>
-
-      {/* Stats Bar */}
-      {/* <div className="mt-10 flex items-center justify-center gap-10 flex-wrap">
-        {stats.map((stat, i) => (
-          <React.Fragment key={stat.label}>
-            {i > 0 && (
-              <span className="w-px h-8 bg-gray-200 hidden sm:block" aria-hidden />
-            )}
-            <div className="text-center">
-              <p
-                className="text-2xl font-semibold text-gray-900"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-              >
-                {stat.value}
-              </p>
-              <p className="text-[10px] uppercase tracking-widest text-gray-400 mt-0.5">
-                {stat.label}
-              </p>
-            </div>
-          </React.Fragment>
-        ))}
-      </div> */}
     </section>
   );
 }
 
 export default TrustedClientsSection;
-

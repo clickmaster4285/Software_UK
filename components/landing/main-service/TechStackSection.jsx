@@ -1,218 +1,178 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { techStackImages, techStackNames } from "@/data/aboutData";
 
-const techStackData = {
-  frontend: {
-    category: "Frontend Development",
-    items: [
-      { name: "React.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-      { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-      { name: "Angular", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" },
-      { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-      { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
-      { name: "Vue.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
-    ],
-  },
-  backend: {
-    category: "Backend Development",
-    items: [
-      { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-      { name: "Python/Django", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-      { name: "Laravel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" },
-      { name: "Go", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" },
-      { name: "Java/Spring", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-      { name: "Ruby on Rails", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original.svg" },
-    ],
-  },
-  mobile: {
-    category: "Mobile Development",
-    items: [
-      { name: "React Native", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-      { name: "Flutter", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
-      { name: "Swift/iOS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" },
-      { name: "Ionic", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" },
-      { name: "Kotlin/Android", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" },
-    ],
-  },
-  database: {
-    category: "Database & Storage",
-    items: [
-      { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-      { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-      { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-      { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" },
-      { name: "Elasticsearch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" },
-      { name: "Redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
-    ],
-  },
-  cloud: {
-    category: "Cloud & Infrastructure",
-    items: [
-      { name: "AWS", icon: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
-      { name: "Google Cloud", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
-      { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
-      { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" },
-      { name: "Terraform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
-      { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-    ],
-  },
-  devops: {
-    category: "DevOps & Monitoring",
-    items: [
-      { name: "GitHub Actions", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-      { name: "Jenkins", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" },
-      { name: "Prometheus", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" },
-      { name: "New Relic", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/newrelic/newrelic-original.svg" },
-      { name: "Grafana", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" },
-    ],
-  },
-};
+const EASE = [0.22, 1, 0.36, 1];
 
-function useInView(threshold = 0.1) {
-  const ref = useRef(null);
-  const [visible, setVisible] = useState(false);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setVisible(true); obs.disconnect(); } },
-      { threshold }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, [threshold]);
-  return { ref, visible };
+const CATEGORIES = [
+  { key: "frontend", label: "Frontend Development" },
+  { key: "backend", label: "Backend Development" },
+  { key: "mobile", label: "Mobile Development" },
+  { key: "database", label: "Database & Storage" },
+  { key: "cloud", label: "Cloud & Infrastructure" },
+  { key: "devops", label: "DevOps & Monitoring" },
+];
+
+function buildCategories() {
+  return CATEGORIES.map(({ key, label }) => ({
+    key,
+    label,
+    items: (techStackNames[key] || [])
+      .map((name, idx) => ({
+        name,
+        icon: techStackImages[key]?.[idx],
+      }))
+      .filter((item) => item.icon),
+  }));
 }
 
-function TechBadge({ item, index }) {
+function TechIconCell({ name, icon }) {
   return (
-    <div
-      className="inline-flex items-center gap-2 px-3 py-2 rounded-full border border-slate-200 bg-white hover:border-slate-300 hover:shadow-sm transition-all duration-200 cursor-default"
-      style={{ animationDelay: `${index * 40}ms` }}
+    <motion.div
+      className="group flex flex-col items-center gap-2 rounded-xl border border-transparent bg-surface/80 p-3 transition-colors duration-300 hover:border-accent/25 hover:bg-white"
+      whileHover={{ y: -3 }}
+      transition={{ type: "spring", stiffness: 400, damping: 24 }}
     >
-      <div className="relative w-5 h-5 shrink-0">
+      <motion.div className="relative flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-white p-2 shadow-sm transition-shadow duration-300 group-hover:shadow-[0_4px_16px_rgba(0,0,0,0.08)]">
         <Image
-          src={item.icon}
-          alt={item.name}
-          fill
-          className="object-contain"
-          onError={(e) => {
-            (e.target).style.display = "none";
-          }}
+          src={icon}
+          alt={name}
+          width={32}
+          height={32}
+          className="h-8 w-8 object-contain"
         />
-      </div>
-      <span className="text-[13px] font-medium text-slate-700 whitespace-nowrap">
-        {item.name}
+      </motion.div>
+      <span className="text-center text-[11px] font-medium leading-tight text-text-body font-body line-clamp-2">
+        {name}
       </span>
-    </div>
+    </motion.div>
   );
 }
 
-function CategoryBlock({
-  category,
-  items,
-  visible,
-  delay,
-}) {
+function CategoryCard({ category, items, index }) {
   return (
-    <div
-      className="p-6"
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(16px)",
-        transition: `opacity 0.5s ease ${delay}ms, transform 0.5s ease ${delay}ms`,
-      }}
+    <motion.article
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-40px" }}
+      transition={{ duration: 0.5, delay: index * 0.07, ease: EASE }}
+      className="rounded-2xl border border-border bg-white p-5 md:p-6 shadow-[0_2px_16px_rgba(0,0,0,0.05)] transition-shadow duration-300 hover:shadow-[0_8px_28px_rgba(0,0,0,0.08)]"
     >
-      <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 mb-4">
-        {category}
-      </p>
-      <div className="flex flex-wrap gap-2">
-        {items.map((item, i) => (
-          <TechBadge key={item.name} item={item} index={i} />
+      <div className="mb-4 flex items-center gap-3">
+        <span className="h-8 w-1 rounded-full bg-accent" aria-hidden />
+        <h3 className="font-heading text-base font-semibold text-text-primary md:text-lg">
+          {category}
+        </h3>
+      </div>
+      <div className="grid grid-cols-3 gap-2 sm:gap-3">
+        {items.map((item) => (
+          <TechIconCell key={item.name} name={item.name} icon={item.icon} />
         ))}
       </div>
-    </div>
+    </motion.article>
   );
 }
 
 export function TechStackSection() {
-  const { ref, visible } = useInView(0.1);
+  const categories = useMemo(() => buildCategories(), []);
+  const [activeTab, setActiveTab] = useState(categories[0]?.key ?? "frontend");
 
-  const leftCol = [techStackData.frontend, techStackData.mobile, techStackData.cloud];
-  const rightCol = [techStackData.backend, techStackData.database, techStackData.devops];
+  const activeCategory = categories.find((c) => c.key === activeTab) ?? categories[0];
 
   return (
-    <div className="bg-white py-16 lg:py-24 lg:px-12" ref={ref}>
-      <div className=" mx-auto px-6 lg:px-10">
-        {/* Header */}
-  
+    <section
+      className="bg-surface py-20 font-sans"
+      aria-labelledby="tech-stack-heading"
+    >
+      <motion.div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+      >
+        <div
+          className="absolute bottom-0 left-0 h-64 w-64 rounded-full blur-3xl opacity-20"
+          style={{
+            background:
+              "radial-gradient(circle, color-mix(in oklch, var(--primary) 15%, transparent), transparent 70%)",
+          }}
+        />
+      </motion.div>
 
+      <div className="container relative z-10">
+        <motion.header
+          className="text-center mb-12 "
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.55, ease: EASE }}
+        >
+          <motion.div className="inline-flex items-center gap-2 mb-4">
+            <span className="text-lg font-bold uppercase tracking-[0.2em] text-accent">Technology Stack</span>
+          </motion.div>
+          <h2
+            id="tech-stack-heading"
+            className="font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl"
+          >
+            Modern tools powering{" "}
+            <span className="font-bold uppercase tracking-wide text-accent">
+              scalable applications
+            </span>
+          </h2>
+          <p className="mt-4 text-base text-text-body font-body leading-relaxed sm:text-lg">
+            Proven frameworks and cloud platforms our engineers use to build
+            secure, high-performance products.
+          </p>
+        </motion.header>
 
-            <div className="mx-auto max-w-3xl text-center mb-12 sm:mb-14 md:mb-16">
-  <div className="inline-flex items-center gap-2 mb-3">
-    <span className="h-0.5 w-8 rounded-full bg-accent" />
-    <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
-      Technology Stack
-    </p>
-    <span className="h-0.5 w-8 rounded-full bg-accent" />
-  </div>
-
-  <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-2xl lg:text-4xl">
-    Modern tools powering scalable applications
- 
-  </h2>
-
-  <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
-    Modern technologies and frameworks we use to build secure,
-    high-performance digital experiences.
-  </p>
-</div>
-
-        {/* Grid */}
-        <div className="border border-dashed border-slate-300 rounded-2xl overflow-hidden">
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            {leftCol.map((section, i) => {
-              const rightSection = rightCol[i];
-              const isLast = i === leftCol.length - 1;
-              return (
-                <div key={section.category} className="contents">
-                  {/* Left cell */}
-                  <div
-                    className={`${
-                      !isLast ? "border-b border-dashed border-slate-300" : ""
-                    } lg:border-r lg:border-dashed lg:border-slate-300`}
-                  >
-                    <CategoryBlock
-                      category={section.category}
-                      items={section.items}
-                      visible={visible}
-                      delay={i * 100}
-                    />
-                  </div>
-
-                  {/* Right cell */}
-                  <div
-                    className={`${
-                      !isLast ? "border-b border-dashed border-slate-300" : ""
-                    }`}
-                  >
-                    <CategoryBlock
-                      category={rightSection.category}
-                      items={rightSection.items}
-                      visible={visible}
-                      delay={i * 100 + 50}
-                    />
-                  </div>
-                </div>
-              );
-            })}
+        {/* Mobile: category tabs */}
+        <div className="lg:hidden mb-6 -mx-1 overflow-x-auto custom-scrollbar">
+          <div className="flex gap-2 px-1 pb-1 min-w-min">
+            {categories.map((cat) => (
+              <button
+                key={cat.key}
+                type="button"
+                onClick={() => setActiveTab(cat.key)}
+                className={`shrink-0 rounded-full px-4 py-2 text-xs font-medium font-body transition-all duration-300 ${
+                  activeTab === cat.key
+                    ? "bg-primary text-text-light shadow-sm"
+                    : "bg-white border border-border text-text-muted hover:text-text-body"
+                }`}
+              >
+                {cat.label.split(" ")[0]}
+              </button>
+            ))}
           </div>
         </div>
+
+        {/* Mobile: single active card */}
+        <div className="lg:hidden">
+          {activeCategory && (
+            <CategoryCard
+              category={activeCategory.label}
+              items={activeCategory.items}
+              index={0}
+            />
+          )}
+        </div>
+
+        {/* Desktop: bento grid */}
+        <div className="hidden lg:grid lg:grid-cols-2 gap-5 md:gap-6">
+          {categories.map((cat, index) => (
+            <CategoryCard
+              key={cat.key}
+              category={cat.label}
+              items={cat.items}
+              index={index}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
-
-export default TechStackSection;

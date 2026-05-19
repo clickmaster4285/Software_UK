@@ -1,8 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // have to allow image from https://img.icons8.com
+  async redirects() {
+    return [
+      // Legacy navbar slugs (slugify dropped "and" from "&" in titles)
+      { source: '/cloud-devops', destination: '/cloud-and-devops', permanent: true },
+      { source: '/cloud-devops/:path*', destination: '/cloud-and-devops/:path*', permanent: true },
+      { source: '/testing-qa', destination: '/testing-and-qa', permanent: true },
+      { source: '/testing-qa/:path*', destination: '/testing-and-qa/:path*', permanent: true },
+      { source: '/blockchain-web3', destination: '/blockchain-and-web3', permanent: true },
+      { source: '/blockchain-web3/:path*', destination: '/blockchain-and-web3/:path*', permanent: true },
+      { source: '/support-outsourcing', destination: '/support-and-outsourcing', permanent: true },
+      { source: '/support-outsourcing/:path*', destination: '/support-and-outsourcing/:path*', permanent: true },
+    ];
+  },
   images: {
     remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.jsdelivr.net',
+      },
       {
         protocol: 'https',
         hostname: 'img.icons8.com',
