@@ -76,10 +76,6 @@ export const mainServicesData = {
           { type: 'Custom App', investment: '$25,000+', timeline: '3-6 months' },
           { type: 'Enterprise', investment: '$60,000+', timeline: '6-18 months' },
         ],
-        faqs: [
-          { question: 'How much does custom software development cost?', answer: 'Costs range from $8,000 for a simple MVP to $250,000+ for a full enterprise system.' },
-          { question: 'How long does it take?', answer: 'A production-ready MVP takes 6-12 weeks. Full systems range from 3-18 months.' }
-        ]
       },
       { 
         title: 'Enterprise Software Development', 
@@ -89,9 +85,6 @@ export const mainServicesData = {
         metaTitle: 'Enterprise Software Development Company | Custom ERP & B2B Systems',
         lead: 'Enterprise software built for operational complexity - not around it.',
         highlights: ['ERP & CRM systems', 'Legacy modernization', 'Enterprise integrations', 'Compliance-grade security'],
-        faqs: [
-          { question: 'What is enterprise software?', answer: 'Large-scale systems with high availability, access control, and robust integration architecture.' },
-        ]
       },
       { 
         title: 'SaaS Product Development', 
@@ -227,9 +220,6 @@ export const mainServicesData = {
         metaTitle: 'Generative AI Solutions Company | Custom AI for B2B',
         lead: 'Generative AI that ships to production - not just proof of concept.',
         highlights: ['LLM apps', 'AI chatbots', 'Vector databases', 'Enterprise governance'],
-        faqs: [
-          { question: 'What is RAG?', answer: 'Retrieval-Augmented Generation grounds LLM responses with proprietary data.' }
-        ]
       },
       { title: 'AI Experts', slug: 'ai-experts', description: 'Strategic AI advice.', icon: 'Users' },
       { title: 'AI Developers', slug: 'ai-developers', description: 'Custom AI apps.', icon: 'Code2' },

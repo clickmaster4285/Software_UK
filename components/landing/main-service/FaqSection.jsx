@@ -1,114 +1,248 @@
 "use client";
 
-import { ChevronDown } from 'lucide-react';
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import Link from "next/link";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  ChevronDown,
+  Sparkles,
+  MessageCircle,
+  ArrowRight,
+  HelpCircle,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-const defaultFaqs = [
+const EASE = [0.22, 1, 0.36, 1];
+
+const DEFAULT_FAQS = [
   {
-    question: 'How much does custom software development cost?',
+    question: "How much does custom software development cost?",
     answer:
-      'Custom software development costs vary based on complexity, features, and timeline. A basic web application typically starts from $5,000-$15,000, while enterprise systems range from $30,000-$200,000+. We provide free consultations to give accurate project estimates.',
+      "Costs depend on complexity, integrations, and timeline. MVPs often start around $8,000, full applications from $25,000, and enterprise platforms are scoped individually. Every engagement begins with a free discovery call and written estimate.",
   },
   {
-    question: 'How long does it take to build a custom software application?',
+    question: "How long does a typical project take?",
     answer:
-      'Development timelines depend on the project scope. An MVP takes 6-12 weeks, a full web or mobile application takes 3-6 months, and enterprise systems can take 6-18 months. We use agile sprints to deliver working software every 2 weeks.',
+      "MVPs ship in 6–12 weeks. Full web or mobile products usually take 3–6 months. Enterprise programs run 6–18 months with working releases every two weeks via agile sprints.",
   },
   {
-    question: 'What technologies does ClickMasters use?',
+    question: "What technologies do you use?",
     answer:
-      "We use modern, proven technologies including React, Next.js, Node.js, Python, Flutter, React Native, PostgreSQL, MongoDB, AWS, Google Cloud, and Azure. We choose the best stack for each project's specific needs.",
+      "We use React, Next.js, Node.js, Python, Flutter, React Native, PostgreSQL, MongoDB, and cloud platforms including AWS, Azure, and GCP — chosen per project requirements.",
   },
   {
-    question: 'Do you provide post-launch support and maintenance?',
+    question: "Do you provide post-launch support?",
     answer:
-      'Yes. ClickMasters provides 24/7 post-launch support, security updates, performance monitoring, and feature development. We offer monthly maintenance plans to keep your software running smoothly.',
+      "Yes. We offer maintenance retainers covering security patches, monitoring, performance tuning, and ongoing feature development with SLA-backed response times.",
   },
 ];
 
-export function FaqSection({ faqs: customFaqs }) {
-  const [openIndex, setOpenIndex] = useState(null);
-  const displayFaqs = customFaqs && customFaqs.length > 0 ? customFaqs : defaultFaqs;
-
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+function FaqItem({ item, index, isOpen, onToggle }) {
+  const num = String(index + 1).padStart(2, "0");
 
   return (
-    <section 
-      className="bg-white py-24 font-sans" 
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-20px" }}
+      transition={{ duration: 0.45, delay: index * 0.06, ease: EASE }}
+      className={`group relative overflow-hidden rounded-2xl border transition-all duration-300 ${
+        isOpen
+          ? "border-accent/50 bg-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.2)]"
+          : "border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/[0.07]"
+      }`}
+    >
+      {isOpen && (
+        <span
+          className="absolute left-0 top-0 bottom-0 w-1 bg-accent"
+          aria-hidden
+        />
+      )}
+
+      <button
+        type="button"
+        id={`faq-trigger-${index}`}
+        aria-expanded={isOpen}
+        aria-controls={`faq-panel-${index}`}
+        onClick={onToggle}
+        className="flex w-full items-start gap-4 p-5 md:p-6 text-left"
+      >
+        <span
+          className={`mt-0.5 shrink-0 font-heading text-xs font-bold tracking-[0.2em] transition-colors duration-300 ${
+            isOpen ? "text-accent" : "text-white/35"
+          }`}
+          aria-hidden
+        >
+          {num}
+        </span>
+
+        <span className="flex-1 min-w-0">
+          <span
+            className={`block font-heading text-base md:text-lg font-semibold leading-snug transition-colors duration-300 ${
+              isOpen ? "text-white" : "text-white/90 group-hover:text-white"
+            }`}
+          >
+            {item.question}
+          </span>
+        </span>
+
+        <span
+          className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ${
+            isOpen
+              ? "border-accent/40 bg-accent text-white rotate-180"
+              : "border-white/15 bg-white/5 text-white/70 group-hover:border-white/30"
+          }`}
+        >
+          <ChevronDown className="h-4 w-4" aria-hidden />
+        </span>
+      </button>
+
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            id={`faq-panel-${index}`}
+            role="region"
+            aria-labelledby={`faq-trigger-${index}`}
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.32, ease: EASE }}
+            className="overflow-hidden"
+          >
+            <div className="border-t border-white/10 px-5 md:px-6 pb-5 md:pb-6 pt-4 ml-10 md:ml-11">
+              <p className="text-sm md:text-base leading-relaxed text-white/75 font-body">
+                {item.answer}
+              </p>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+}
+
+export function FaqSection({ faqs: customFaqs, serviceTitle, subtitle }) {
+  const displayFaqs =
+    customFaqs?.length > 0 ? customFaqs : DEFAULT_FAQS;
+  const [openIndex, setOpenIndex] = useState(0);
+
+  const headline = serviceTitle
+    ? `${serviceTitle} — FAQs`
+    : "Frequently asked questions";
+
+  return (
+    <section
+      className="relative overflow-hidden font-sans"
       aria-labelledby="faq-heading"
     >
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-3">
-            <span className="h-0.5 w-8 rounded-full bg-primary" />
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
-              Expertise & Support
-            </p>
-            <span className="h-0.5 w-8 rounded-full bg-primary" />
-          </div>
+      {/* Primary gradient canvas */}
+      <motion.div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(145deg, var(--primary) 0%, var(--primary-mid) 42%, color-mix(in oklch, var(--accent) 35%, var(--accent)) 100%)",
+        }}
+        aria-hidden
+      />
 
-          <h2 
-            id="faq-heading"
-            className="mt-5 font-heading text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+      {/* Atmospheric layers */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.07]"
+        aria-hidden
+        style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
+          backgroundSize: "28px 28px",
+        }}
+      />
+      <div
+        className="pointer-events-none absolute -top-32 -right-32 h-96 w-96 rounded-full opacity-30"
+        aria-hidden
+        style={{
+          background:
+            "radial-gradient(circle, color-mix(in oklch, var(--accent) 50%, transparent), transparent 70%)",
+        }}
+      />
+      <motion.div
+        className="pointer-events-none absolute -bottom-24 -left-24 h-80 w-80 rounded-full opacity-20"
+        aria-hidden
+        style={{
+          background:
+            "radial-gradient(circle, white, transparent 65%)",
+        }}
+      />
+
+      <div className="container relative z-10 py-20">
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,30rem)_1fr] lg:items-start">
+          {/* Editorial sidebar */}
+          <motion.aside
+            className="lg:sticky lg:top-28"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.6, ease: EASE }}
           >
-            Frequently Asked Questions
-          </h2>
-        </div>
+            <div className="inline-flex items-center gap-2 mb-5">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.08em] text-white/80 font-body backdrop-blur-sm">
+                <Sparkles className="h-3.5 w-3.5 text-accent" aria-hidden />
+                Expertise &amp; Support
+              </span>
+            </div>
 
-        {/* FAQ Items - Dark Navy Pills Design */}
-        <div className="space-y-4">
-          {displayFaqs.map((item, index) => {
-            const isOpen = openIndex === index;
-            return (
-              <div
-                key={index}
-                className={`overflow-hidden rounded-2xl transition-all duration-300 border ${
-                  isOpen ? "bg-slate-900 border-slate-900 shadow-xl" : "bg-white border-slate-200 hover:border-primary/40"
-                }`}
+            <h2
+              id="faq-heading"
+              className="font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl text-balance"
+            >
+              {headline}
+            </h2>
+
+            <p className="mt-4 text-base text-white/65 font-body leading-relaxed">
+              {subtitle ||
+                "Straight answers on scope, timelines, and how we work — before you book a call."}
+            </p>
+
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col">
+              <Button
+                asChild
+                className="h-12 rounded-xl bg-accent text-white hover:bg-accent-hover font-body shadow-lg shadow-accent/20"
               >
-                <button
-                  onClick={() => toggleFAQ(index)}
-                  className="flex w-full items-center justify-between p-6 text-left"
-                >
-                  <h3 className={`text-lg font-heading font-semibold transition-colors duration-300 ${
-                    isOpen ? "text-white" : "text-slate-900"
-                  }`}>
-                    {item.question}
-                  </h3>
-                  <div className={`flex h-8 w-8 items-center justify-center rounded-full transition-all duration-300 ${
-                    isOpen ? "bg-primary text-white" : "bg-slate-100 text-slate-500"
-                  }`}>
-                    <ChevronDown
-                      className={`h-5 w-5 transition-transform duration-300 ${
-                        isOpen ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </div>
-                </button>
-                
-                <AnimatePresence>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                    >
-                      <div className="px-6 pb-6 border-t border-white/10 pt-4">
-                        <p className="text-base leading-relaxed text-slate-300 font-body">
-                          {item.answer}
-                        </p>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            );
-          })}
+                <Link href="/contact">
+                  <MessageCircle className="mr-2 h-4 w-4" aria-hidden />
+                  Ask a question
+                  <ArrowRight className="ml-2 h-4 w-4" aria-hidden />
+                </Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="h-12 rounded-xl border-white/25 bg-white/5 text-white hover:bg-white/10 hover:text-white font-body backdrop-blur-sm"
+              >
+                <Link href="/faq">
+                  <HelpCircle className="mr-2 h-4 w-4" aria-hidden />
+                  Browse all FAQs
+                </Link>
+              </Button>
+            </div>
+
+            <p className="mt-8 hidden lg:flex items-center gap-2 text-xs text-white/40 font-body">
+              <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent" />
+              {displayFaqs.length} questions answered below
+            </p>
+          </motion.aside>
+
+          {/* Accordion stack */}
+          <div className="space-y-3 md:space-y-4">  
+            {displayFaqs.map((item, index) => (
+              <FaqItem
+                key={item.question}
+                item={item}
+                index={index}
+                isOpen={openIndex === index}
+                onToggle={() =>
+                  setOpenIndex(openIndex === index ? null : index)
+                }
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

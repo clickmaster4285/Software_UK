@@ -23,13 +23,16 @@ import { FaqSection } from '@/components/landing/main-service/FaqSection';
 
 export default function ServiceClient({ serviceData }) {
   // Use pricing from serviceData if available (passed from page.js which merged it)
-  const pricingPlans = serviceData?.pricing?.map(p => ({
-    name: p.type,
-    price: p.investment,
-    description: p.bestFor,
-    period: p.timeline,
-    features: p.features || [], // fallback to empty if missing
-  })) || [];
+  const pricingPlans =
+    serviceData?.pricing?.map((p, index) => ({
+      name: p.type,
+      price: p.investment,
+      description: p.bestFor,
+      period: p.timeline,
+      features: p.features || [],
+      popular: index === 1,
+      cta: index === 0 ? 'Get a Quote' : index === 2 ? 'Contact Sales' : 'Start Project',
+    })) || [];
 
   return (
     <main className="min-h-screen bg-background pt-18 relative">
@@ -85,14 +88,17 @@ export default function ServiceClient({ serviceData }) {
         service={serviceData}
       />
       
-      <div className="bg-surface">
-        <PricingSection
-          plans={pricingPlans}
-          title={`${serviceData?.title} Pricing`}
-        />
-      </div>
-      <TestimonialsSection />
-      <FaqSection faqs={serviceData?.faqs} />
+      <PricingSection
+        plans={pricingPlans}
+        title={`${serviceData?.title} Investment`}
+        subtitle={`Flexible engagement models for ${serviceData?.title?.toLowerCase() || 'your project'} — scoped to your timeline, team size, and goals.`}
+      />
+      <TestimonialsSection serviceTitle={serviceData?.title} />
+      <FaqSection
+        faqs={serviceData?.faqs}
+        serviceTitle={serviceData?.title}
+        subtitle={`Common questions about ${serviceData?.title?.toLowerCase() || 'our services'}, delivery, and engagement models.`}
+      />
     </main>
   );
 }

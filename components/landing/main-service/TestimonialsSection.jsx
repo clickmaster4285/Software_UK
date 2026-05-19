@@ -1,102 +1,118 @@
 "use client";
 
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
-import React, { useState, useRef, useEffect } from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Quote, ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
-import {  useInView } from "framer-motion";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { Quote, ChevronLeft, ChevronRight, Play, Pause, Star, Sparkles, ArrowRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { useTestimonialList } from "@/hooks/useTestimonials";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger);
+const EASE = [0.22, 1, 0.36, 1];
+
+function StarRating({ rating = 5 }) {
+  return (
+    <motion.div
+      className="flex justify-center gap-0.5 mb-4"
+      aria-label={`${rating} out of 5 stars`}
+    >
+      {Array.from({ length: 5 }).map((_, i) => (
+        <Star
+          key={i}
+          className={`h-4 w-4 ${
+            i < rating
+              ? "fill-accent text-accent"
+              : "fill-border text-border"
+          }`}
+          aria-hidden
+        />
+      ))}
+    </motion.div>
+  );
 }
 
-export const TestimonialCard = ({
-  testimonial,
-  isActive,
-}) => {
-  const blobRadius =
-    "70% 30% 70% 30% / 40% 60% 40% 60%";
+export function TestimonialCard({ testimonial, isActive }) {
+  const initials = testimonial.authorName
+    ?.split(" ")
+    .map((n) => n[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
 
   return (
-    <div className="relative mx-auto w-full max-w-105 px-3 py-14">
-      {/* Background Blob */}
+    <article
+      className={`relative mx-auto w-full max-w-sm px-2 py-4 transition-all duration-500 ${
+        isActive ? "scale-100" : "scale-[0.97] opacity-85"
+      }`}
+    >
       <div
-        aria-hidden
-        className={`absolute inset-x-2 inset-y-6 z-0 bg-primary transition-all duration-500 ${
+        className={`relative flex h-full min-h-72 flex-col rounded-2xl border bg-white p-6 md:p-8 text-center shadow-[0_2px_16px_rgba(0,0,0,0.06)] transition-all duration-500 ${
           isActive
-            ? "rotate-[-10deg] scale-[1.03]"
-            : "rotate-[-8deg] opacity-90"
+            ? "border-accent/35 shadow-[0_12px_40px_rgba(0,0,0,0.1)]"
+            : "border-border"
         }`}
-        style={{ borderRadius: blobRadius }}
-      />
-
-      {/* Card */}
-      <div
-        className={`relative min-h-105 bg-card shadow-xl transition-all duration-500 ${
-          isActive
-            ? "scale-100 shadow-2xl"
-            : "scale-95 opacity-90"
-        }`}
-        style={{ borderRadius: blobRadius }}
       >
-        <div className="flex h-full flex-col items-center px-8 pb-14 pt-20 text-center">
-          {/* Avatar */}
-          <Avatar className="absolute -top-8 left-1/2 h-20 w-20 -translate-x-1/2 border-4 border-card shadow-md">
-            <AvatarImage
-              src={testimonial.avatarUrl}
-              alt={testimonial.authorName}
-            />
-            <AvatarFallback>
-              {testimonial.authorName.slice(0, 2).toUpperCase()}
-            </AvatarFallback>
-          </Avatar>
+        <Quote
+          className="mx-auto mb-3 h-7 w-7 text-accent/80"
+          aria-hidden
+        />
 
-          {/* Name */}
-          <h3 className="text-lg font-semibold text-foreground">
-            {testimonial.authorName}
-          </h3>
+        <StarRating rating={testimonial.rating ?? 5} />
 
-          {/* Role */}
-          <p className="mb-5 text-sm text-muted-foreground">
-            {testimonial.authorRole}
-            {testimonial.authorRole &&
-              testimonial.authorCompany &&
-              ", "}
-            {testimonial.authorCompany}
-          </p>
+        <blockquote className="flex-1 text-sm md:text-base text-text-body font-body leading-relaxed">
+          &ldquo;{testimonial.content}&rdquo;
+        </blockquote>
 
-          {/* Quote Icon */}
-          <Quote className="mb-3 h-6 w-6 fill-primary text-primary" />
-
-          {/* Content */}
-          <p className="text-sm leading-7 text-muted-foreground">
-            &quot;{testimonial.content}&quot;
-          </p>
-        </div>
+        <footer className="mt-6 flex flex-col items-center gap-3 border-t border-border pt-6">
+          {testimonial.avatarUrl ? (
+            <motion.div
+              className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-accent/20 shadow-md"
+              whileHover={{ scale: 1.05 }}
+            >
+              <Image
+                src={testimonial.avatarUrl}
+                alt=""
+                fill
+                sizes="56px"
+                className="object-cover"
+                unoptimized
+              />
+            </motion.div>
+          ) : (
+            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-surface border border-border font-heading text-sm font-bold text-primary">
+              {initials}
+            </div>
+          )}
+          <div>
+            <p className="font-heading text-base font-semibold text-text-primary">
+              {testimonial.authorName}
+            </p>
+            <p className="text-sm text-text-muted font-body">
+              {[testimonial.authorRole, testimonial.authorCompany]
+                .filter(Boolean)
+                .join(" · ")}
+            </p>
+          </div>
+        </footer>
       </div>
-    </div>
+    </article>
   );
-};
+}
 
-
-export function TestimonialsSection() {
+export function TestimonialsSection({ serviceTitle }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [swiperRef, setSwiperRef] = useState(null);
-  const sectionRef = useRef(null);
-  const headerInView = useInView(sectionRef, { once: true, amount: 0.2 });
 
-  // Fetch testimonials from API using organized hook
   const { data: testimonials = [], isLoading, error } = useTestimonialList();
+
+  const activeTestimonials = testimonials.filter(
+    (t) => t.isActive !== false
+  );
 
   useEffect(() => {
     if (!swiperRef) return;
@@ -104,148 +120,166 @@ export function TestimonialsSection() {
     else swiperRef.autoplay?.stop();
   }, [isAutoPlaying, swiperRef]);
 
-  // Show loading state
+  const headline = serviceTitle
+    ? `Trusted for ${serviceTitle}`
+    : "Trusted by growing businesses";
+
   if (isLoading) {
     return (
-     <section className="relative overflow-visible bg-secondary/40 py-24">
-        <div className="mx-auto  px-6 lg:px-22">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-16">
-            <div>
-              <div className="h-8 w-32 bg-muted rounded animate-pulse mb-5" />
-              <div className="h-12 w-64 bg-muted rounded animate-pulse" />
-            </div>
-            <div className="flex items-start md:justify-end">
-              <div className="h-20 w-64 bg-muted rounded animate-pulse" />
-            </div>
+      <section className="relative bg-white py-20 md:py-28">
+        <motion.div className="container">
+          <div className="mx-auto max-w-xl text-center mb-12">
+            <div className="h-4 w-32 bg-surface rounded-full animate-pulse mx-auto mb-4" />
+            <motion.div className="h-10 w-64 bg-surface rounded-xl animate-pulse mx-auto" />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="h-96 bg-muted rounded-2xl animate-pulse" />
+              <div
+                key={i}
+                className="h-72 rounded-2xl border border-border bg-surface animate-pulse"
+              />
             ))}
           </div>
-        </div>
+        </motion.div>
       </section>
     );
   }
 
-  // Handle error state
   if (error) {
-    console.error("Error fetching testimonials:", error);
     return (
-      <section className="relative overflow-hidden bg-secondary/40 py-24">
-        <div className="mx-auto max-w-7xl px-6 text-center">
-          <p className="text-red-500">Failed to load testimonials. Please try again later.</p>
-        </div>
+      <section className="bg-white py-16">
+        <motion.p className="container text-center text-sm text-text-muted font-body">
+          Testimonials are temporarily unavailable.{" "}
+          <Link href="/testimonials" className="text-accent underline-offset-4 hover:underline">
+            View our stories
+          </Link>
+        </motion.p>
       </section>
     );
   }
 
-  // Don't render if no testimonials
-  if (testimonials.length === 0) return null;
+  if (activeTestimonials.length === 0) return null;
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden bg-linear-to-b from-white to-slate-50 py-24">
-      <div className="mx-auto px-6 ">
-        
-           {/* Header original design */}
-      <div className="text-center mb-12">
-        <div className="inline-flex items-center gap-2 mb-3">
-          <span className="w-8 h-0.5 bg-primary rounded-full" />
-          <p className="text-accent text-[11px] font-bold tracking-[0.2em] uppercase">
-          Testimonial
+    <section
+      className="relative overflow-hidden bg-white py-20 md:py-28 font-sans"
+      aria-labelledby="testimonials-heading"
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-25"
+        style={{
+          background:
+            "radial-gradient(ellipse at 50% 100%, color-mix(in oklch, var(--primary) 10%, transparent), transparent 65%)",
+        }}
+      />
+
+      <motion.div className="container relative z-10">
+        <motion.header
+          className="mx-auto max-w-3xl text-center mb-12 md:mb-14"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.55, ease: EASE }}
+        >
+          <div className="inline-flex items-center gap-2 mb-4">
+            <span className="h-px w-8 rounded-full bg-accent" aria-hidden />
+            <span className="section-label inline-flex items-center gap-1.5">
+              <Sparkles className="h-3.5 w-3.5 text-accent" aria-hidden />
+              Client Stories
+            </span>
+            <span className="h-px w-8 rounded-full bg-accent" aria-hidden />
+          </div>
+
+          <h2
+            id="testimonials-heading"
+            className="font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl"
+          >
+            {headline}
+          </h2>
+          <p className="mt-4 text-base text-text-body font-body leading-relaxed sm:text-lg">
+            Real feedback from teams who shipped products with ClickMasters — on time,
+            on budget, and built to scale.
           </p>
-          <span className="w-8 h-0.5 bg-primary rounded-full" />
+
+          <Link
+            href="/testimonials"
+            className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-accent-hover transition-colors font-body"
+          >
+            View all testimonials
+            <ArrowRight className="h-4 w-4" aria-hidden />
+          </Link>
+        </motion.header>
+
+        <div className="relative">
+          <Swiper
+            modules={[Autoplay]}
+            onSwiper={setSwiperRef}
+            onSlideChange={(s) => setActiveIndex(s.realIndex)}
+            centeredSlides
+            loop={activeTestimonials.length >= 3}
+            autoplay={
+              isAutoPlaying
+                ? { delay: 4500, disableOnInteraction: false, pauseOnMouseEnter: true }
+                : false
+            }
+            speed={700}
+            spaceBetween={16}
+            slidesPerView={1.05}
+            breakpoints={{
+              640: { slidesPerView: 1.4, spaceBetween: 20 },
+              768: { slidesPerView: 2.1, spaceBetween: 24 },
+              1024: { slidesPerView: 3, spaceBetween: 28 },
+            }}
+            className="!pb-2"
+          >
+            {activeTestimonials.map((t, i) => (
+              <SwiperSlide key={t._id} className="!h-auto">
+                <TestimonialCard testimonial={t} isActive={i === activeIndex} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          <motion.div className="mt-8 flex items-center justify-center gap-4">
+            <button
+              type="button"
+              onClick={() => {
+                swiperRef?.slidePrev();
+                setIsAutoPlaying(false);
+              }}
+              aria-label="Previous testimonial"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-primary shadow-sm transition hover:border-accent/40 hover:bg-surface"
+            >
+              <ChevronLeft className="h-5 w-5" aria-hidden />
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setIsAutoPlaying((v) => !v)}
+              aria-label={isAutoPlaying ? "Pause carousel" : "Play carousel"}
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-white shadow-md transition hover:bg-accent-hover hover:scale-105"
+            >
+              {isAutoPlaying ? (
+                <Pause className="h-4 w-4" aria-hidden />
+              ) : (
+                <Play className="h-4 w-4 ml-0.5" aria-hidden />
+              )}
+            </button>
+
+            <button
+              type="button"
+              onClick={() => {
+                swiperRef?.slideNext();
+                setIsAutoPlaying(false);
+              }}
+              aria-label="Next testimonial"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-primary shadow-sm transition hover:border-accent/40 hover:bg-surface"
+            >
+              <ChevronRight className="h-5 w-5" aria-hidden />
+            </button>
+          </motion.div>
         </div>
-
-        <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-3">
-            Hear What <span className="text-primary">Our Clients</span>{ " "}Say about Us
-             
-            
-          </h3>
-          
-            <p className="text-gray-700 max-w-2xl mx-auto text-sm">
-           Real stories from real clients who turned their ideas into successful digital products with us.
-        </p>
-      </div>
-
-       
-{/* Carousel */}
-<div className="relative pt-16">
-
-  <Swiper
-    modules={[Navigation, Pagination, Autoplay]}
-    onSwiper={setSwiperRef}
-    onSlideChange={(s) => setActiveIndex(s.realIndex)}
-    centeredSlides
-    loop={testimonials.length >= 3}
-    autoplay={
-      isAutoPlaying
-        ? { delay: 3500, disableOnInteraction: false, pauseOnMouseEnter: true }
-        : false
-    }
-    speed={800}
-    spaceBetween={-20}
-    slidesPerView={1.1}
-    breakpoints={{
-      640: { slidesPerView: 1.6, spaceBetween: -10 },
-      768: { slidesPerView: 2.2, spaceBetween: 0 },
-      1024: { slidesPerView: 3, spaceBetween: 10 },
-    }}
-    className="px-4! py-6!"
-  >
-    {testimonials.map((t, i) => (
-      <SwiperSlide key={t._id} className="h-auto!">
-        <TestimonialCard testimonial={t} isActive={i === activeIndex} />
-      </SwiperSlide>
-    ))}
-  </Swiper>
-
-  {/* Controls (Prev + Play/Pause + Next) */}
-  <div className="mt-8 flex items-center justify-center gap-4">
-
-    {/* Prev */}
-    <button
-      onClick={() => {
-        swiperRef?.slidePrev();
-        setIsAutoPlaying(false);
-      }}
-      aria-label="Previous"
-      className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-primary bg-card text-primary shadow-md transition hover:bg-primary hover:text-primary-foreground"
-    >
-      <ChevronLeft className="h-5 w-5" />
-    </button>
-
-    {/* Play/Pause */}
-    <button
-      onClick={() => setIsAutoPlaying((v) => !v)}
-      className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition hover:scale-110"
-      aria-label={isAutoPlaying ? "Pause" : "Play"}
-    >
-      {isAutoPlaying ? (
-        <Pause className="h-4 w-4" />
-      ) : (
-        <Play className="h-4 w-4" />
-      )}
-    </button>
-
-    {/* Next */}
-    <button
-      onClick={() => {
-        swiperRef?.slideNext();
-        setIsAutoPlaying(false);
-      }}
-      aria-label="Next"
-      className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-primary bg-card text-primary shadow-md transition hover:bg-primary hover:text-primary-foreground"
-    >
-      <ChevronRight className="h-5 w-5" />
-    </button>
-
-  </div>
-</div>
-
-
-
-      </div>
+      </motion.div>
     </section>
   );
 }
