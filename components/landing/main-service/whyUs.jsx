@@ -133,8 +133,8 @@ export function WhyChooseUs({ slug, service, countryName }) {
         >
           <div className="absolute top-0 left-1/4 w-125 h-125 bg-accent/15 rounded-full blur-[120px] -translate-y-1/2" />
           <div className="absolute bottom-0 right-1/4 w-150 h-150 bg-primary/15 rounded-full blur-[140px] translate-y-1/2" />
-          <div className="absolute top-1/4 left-1/4 -translate-x-1/3 -translate-y-1/4 w-3/4 h-32 h-2/3  bg-accent/15" />
-          <div className="absolute top-1/2 right-1/4 translate-x-1/3 translate-y-1/4 w-3/4 h-32 h-2/3  bg-accent/15" />
+          <div className="absolute top-1/6 left-1/4 -translate-x-1/3 -translate-y-1/4 w-3/4 h-32 h-2/3  bg-accent/15" />
+          <div className="absolute top-2/5 right-1/4 translate-x-1/3 translate-y-1/4 w-3/4 h-32 h-2/3  bg-accent/15" />
           <div className="absolute top-3/4 right-13 left-1/4 -translate-x-1/3 -translate-y-1/4 w-3/4 h-32 h-2/3  bg-accent/15" />
         </motion.div>
         

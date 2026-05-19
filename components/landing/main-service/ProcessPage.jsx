@@ -14,6 +14,7 @@ import {
   Check,
   Clock,
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -84,7 +85,7 @@ const EASE = [0.22, 1, 0.36, 1];
  */
 const PIN_CONFIG = {
   topStart: "23vh",
-  topEnd: "51vh",
+  topEnd: "40vh",
   scrollStart: "top 23vh",
   scrollEnd: "bottom bottom",
   scrub: 0.85,
@@ -149,8 +150,8 @@ function ProcessStepCard({ phase, cardRef, nodeRef, isActive, reducedMotion }) {
       <div
         ref={nodeRef}
         className={`absolute left-0 top-6 z-10 flex h-10 w-10 items-center justify-center rounded-full border-2 text-sm font-bold font-heading transition-all duration-500 ${isActive
-            ? "scale-110 border-accent bg-accent text-white shadow-[0_0_0_6px_color-mix(in_oklch,var(--accent)_22%,transparent)]"
-            : "scale-100 border-border bg-white text-primary"
+          ? "scale-110 border-accent bg-accent text-white shadow-[0_0_0_6px_color-mix(in_oklch,var(--accent)_22%,transparent)]"
+          : "scale-100 border-border bg-white text-primary"
           }`}
         aria-hidden
       >
@@ -159,8 +160,8 @@ function ProcessStepCard({ phase, cardRef, nodeRef, isActive, reducedMotion }) {
 
       <div
         className={`group rounded-xl border bg-white p-5 md:p-6 shadow-[0_2px_16px_rgba(0,0,0,0.05)] transition-all duration-500 ${isActive
-            ? "border-accent/40 shadow-[0_12px_36px_rgba(0,0,0,0.08)]"
-            : "border-border"
+          ? "border-accent/40 shadow-[0_12px_36px_rgba(0,0,0,0.08)]"
+          : "border-border"
           }`}
       >
         <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
@@ -393,7 +394,7 @@ export function ProcessPage({ serviceData }) {
       {/* Premium Background Elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Animated Mesh Gradients */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -403,7 +404,7 @@ export function ProcessPage({ serviceData }) {
           <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-accent/15 rounded-full blur-[140px] translate-y-1/2" />
           <div className="absolute rounded-lg top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 bg-accent/20" />
         </motion.div>
-        
+
         {/* Subtle Grid Overlay */}
         <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'linear-gradient(var(--accent) 1px, transparent 1px), linear-gradient(90deg, var(--accent) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
@@ -455,18 +456,6 @@ export function ProcessPage({ serviceData }) {
           </p>
         </motion.header>
 
-        <motion.div
-          className="mb-14 md:mb-24 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 max-w-4xl mx-auto rounded-3xl border border-border bg-white px-6 py-10 md:px-12 shadow-sm"
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: EASE }}
-        >
-          {displayMetrics.map((metric) => (
-            <MetricStat key={metric.label} metric={metric} />
-          ))}
-        </motion.div>
-
         {/* Two-column layout: left = pinned step card, right = scrolling timeline */}
         <div className="max-w-7xl mx-auto lg:flex lg:items-start lg:gap-14">
           {/* leftPanelRef — scrolls 30vh → 60vh while pinned (PIN_CONFIG) */}
@@ -500,14 +489,14 @@ export function ProcessPage({ serviceData }) {
                       type="button"
                       onClick={() => scrollToStep(index)}
                       className={`flex items-center gap-4 rounded-xl px-4 py-3 text-left text-sm transition-all duration-300 border ${activeStep === index
-                          ? "bg-surface border-accent/20 text-text-primary font-bold"
-                          : "border-transparent text-text-muted hover:text-text-body hover:bg-surface/60"
+                        ? "bg-surface border-accent/20 text-text-primary font-bold"
+                        : "border-transparent text-text-muted hover:text-text-body hover:bg-surface/60"
                         }`}
                     >
                       <span
                         className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xs font-bold font-heading transition-colors duration-300 ${activeStep >= index
-                            ? "bg-accent text-white"
-                            : "bg-surface border border-border text-text-muted"
+                          ? "bg-accent text-white"
+                          : "bg-surface border border-border text-text-muted"
                           }`}
                       >
                         {phase.step.replace(/^0/, "")}
@@ -516,6 +505,13 @@ export function ProcessPage({ serviceData }) {
                     </button>
                   ))}
                 </nav>
+                <div className="pt-2 flex items-center justify-center  ">
+                  <Button
+                    className="bg-accent text-white "
+                    type="button"
+                    href="/contact">
+                    Get a free quote</Button>
+                </div>
               </motion.div>
             </div>
           </aside>
