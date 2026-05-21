@@ -239,6 +239,7 @@ const baseServices = serviceMenuSections.flatMap(
       category: section.label,
       title: item.title,
       serviceName: item.title,
+      heroImage: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1332&auto=format&fit=crop",
       metaDescription: `${item.title} services by ClickMasters. Expert ${item.title.toLowerCase()} for scalable, secure, and business-focused digital products.`,
       lead: `Our ${item.title.toLowerCase()} services help you plan, build, and scale with clear timelines, quality engineering, and long-term support.`,
       highlights: [
@@ -266,6 +267,7 @@ const customSoftwareDevelopmentOverride = {
   category: "Software Development",
   title: "Custom Software Development Company That Delivers Software Built to Scale Your Business",
   serviceName: "Custom Software Development",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Custom Software Development Company | USA, Europe, Canada | ClickMasters",
   metaDescription: "ClickMasters builds custom software solutions - web apps, SaaS platforms, enterprise systems, and APIs - for B2B companies in the USA, Europe, Canada & Australia. Get a free strategy call.",
   lead: "ClickMasters delivers end-to-end custom software development for B2B companies in the USA, Europe, Canada, and Australia. From SaaS platforms to enterprise systems, we build software that solves real business problems and compounds in value over time.",
@@ -399,6 +401,7 @@ const enterpriseSoftwareDevelopmentOverride = {
   category: "Software Development",
   title: "Enterprise Software Development Company for B2B Organizations in USA, Europe and Canada",
   serviceName: "Enterprise Software Development",
+  heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Enterprise Software Development Company | Custom ERP & B2B Systems | ClickMasters",
   metaDescription: "ClickMasters builds enterprise software for complex B2B operations - custom ERP, workflow automation, SaaS platforms, and system integrations. Serving USA, Europe, Canada & Australia.",
   lead: "ClickMasters engineers enterprise software solutions for B2B organizations whose operational complexity has outgrown off the shelf tools. Custom ERP systems, enterprise workflow automation, multi system integrations, and scalable SaaS platforms built to your exact business logic, compliance requirements, and scale targets.",
@@ -543,6 +546,7 @@ const aiAgentsDevelopmentOverride = {
   category: "Artificial Intelligence (AI)",
   title: "AI Agents Development Company",
   serviceName: "AI Agents Development",
+  heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "AI Agents Development Company | Custom Autonomous AI Agents for B2B | ClickMasters",
   metaDescription: "ClickMasters builds production-grade autonomous AI agents research agents, data agents, workflow agents, and multi-agent systems for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters engineers production-grade AI agent systems for B2B companies across the USA, Europe, Canada, and Australia. Research agents that investigate and synthesize. Data agents that extract, transform, and load. Workflow agents that orchestrate complex business processes end-to-end. Multi-agent systems where specialized agents collaborate on tasks no single model could handle alone.",
@@ -748,6 +752,7 @@ const aiAutomationSystemsOverride = {
   category: "Artificial Intelligence (AI)",
   title: "AI Automation Systems",
   serviceName: "AI Automation Systems",
+  heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "AI Automation Systems | Intelligent Workflow Automation | ClickMasters",
   metaDescription: "ClickMasters builds AI-powered automation systems intelligent document processing, workflow automation, and decision automation for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds AI-powered automation systems for B2B companies across the USA, Europe, Canada, and Australia. Intelligent document processing that extracts structured data from invoices, contracts, and forms with 95%+ accuracy. LLM-powered workflow automation that routes, categorises, summarises, and responds to inbound content. AI decision systems that apply your business rules to high-volume decisions without a human in the loop for every case. Built with LangChain, LlamaIndex, and your existing systems.",
@@ -935,6 +940,7 @@ const aiChatbotDevelopmentOverride = {
   category: "Artificial Intelligence (AI)",
   title: "AI Chatbot Development Company",
   serviceName: "AI Chatbot Development",
+  heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "AI Chatbot Development Company | Custom LLM Chatbots for B2B | ClickMasters",
   metaDescription: "ClickMasters builds production-grade AI chatbots customer support AI, internal knowledge assistants, and sales bots for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds production-grade AI chatbots for B2B companies in the USA, Europe, Canada, and Australia. Customer support AI that deflects 50-70% of tickets. Internal knowledge assistants that answer employee questions instantly. Sales qualification bots that book meetings 24/7. All built on GPT-4o, Claude, or your chosen LLM integrated into your product, your workflow, and your data.",
@@ -1154,6 +1160,7 @@ const aiModelDevelopmentOverride = {
   category: "Artificial Intelligence (AI)",
   title: "AI Model Development",
   serviceName: "AI Model Development",
+  heroImage: "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "AI Model Development | Fine-Tuning, Custom Models & MLOps | ClickMasters",
   metaDescription: "ClickMasters builds and fine-tunes AI models custom LLM fine-tuning, classification models, and MLOps pipelines for B2B companies needing proprietary AI beyond off-the-shelf APIs.",
   lead: "ClickMasters builds and fine-tunes AI models for B2B companies across the USA, Europe, Canada, and Australia. LLM fine-tuning (GPT-4o, Llama 3, Mistral) for domain-specific accuracy on your proprietary terminology and output formats. Custom classification and extraction models (BERT, RoBERTa, DistilBERT) for production efficiency. MLOps pipelines for training, evaluation, versioning, and deployment. Self-hosted models on your infrastructure when data cannot leave your environment.",
@@ -1293,6 +1300,7 @@ const dataEngineeringOverride = {
   category: "Data Services",
   title: "Data Engineering Company Building Robust Data Foundations",
   serviceName: "Data Engineering",
+  heroImage: "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Data Engineering Services | ETL, Data Lakes & Warehousing | ClickMasters",
   metaDescription: "ClickMasters builds robust data pipelines and infrastructure. ETL, data lakes, and real-time streaming to power your AI and analytics.",
   lead: "ClickMasters builds the data foundations that power modern B2B enterprises. From scalable ETL pipelines and high-performance data warehouses to real-time event streaming we ensure your data is clean, reliable, and accessible for AI, ML, and business intelligence.",
@@ -1398,6 +1406,7 @@ const generativeAiSolutionsOverride = {
   category: "Artificial Intelligence (AI)",
   title: "Generative AI Solutions Company",
   serviceName: "Generative AI Solutions",
+  heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Generative AI Solutions Company | Custom AI Development for B2B | ClickMasters",
   metaDescription: "ClickMasters builds production-ready generative AI solutions LLM applications, AI chatbots, RAG systems, and AI agents for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds production-grade generative AI solutions for B2B companies in the USA, Europe, Canada, and Australia. Custom LLM applications, RAG-powered knowledge systems, AI chatbots, autonomous agents, and AI automation pipelines engineered to solve real business problems, not to demo in a boardroom.",
@@ -1604,6 +1613,7 @@ const mobileAppDevelopmentOverride = {
   category: "Mobile Development",
   title: "Mobile App Development Company Building Production Ready iOS & Android Applications",
   serviceName: "Mobile App Development",
+  heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Mobile App Development Company | iOS, Android & Cross-Platform | ClickMasters",
   metaDescription: "ClickMasters builds production-ready iOS, Android, and cross-platform mobile apps for B2B companies in the USA, Europe, Canada & Australia. React Native, Flutter, Swift, and Kotlin.",
   lead: "ClickMasters designs and builds production-ready mobile applications for B2B companies across the USA, Europe, Canada, and Australia. Whether you need a native iOS app, an Android application, or a single cross-platform codebase that runs on both our mobile development team delivers apps your users will actually use, rated highly, and built to scale.",
@@ -1796,6 +1806,7 @@ const saasProductDevelopmentOverride = {
   category: "Software Development",
   title: "SaaS Product Development Company for Founders and B2B Teams in USA, Europe and Canada",
   serviceName: "SaaS Product Development",
+  heroImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "SaaS Product Development Company | Build & Launch Your SaaS Platform | ClickMasters",
   metaDescription: "ClickMasters builds production-ready SaaS platforms - multi-tenant architecture, billing, auth, and API layer - for startups and B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters designs, engineers, and launches SaaS platforms for founders, operators, and B2B product teams. Multi tenant architecture, subscription billing, SSO authentication, usage based pricing, developer APIs built production ready from day one. We serve clients across the USA, Europe, Canada, and Australia.",
@@ -1960,6 +1971,7 @@ const websiteDevelopmentOverride = {
   category: "Web Development",
   title: "Website Development Company Building B2B Growth Assets",
   serviceName: "Website Development",
+  heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Website Development Company | B2B Websites & Lead Gen | ClickMasters",
   metaDescription: "ClickMasters builds high-performance B2B websites, SaaS marketing sites, and content hubs. Core Web Vitals compliant, SEO-optimized, and CRM-integrated.",
   lead: "ClickMasters builds corporate websites, SaaS marketing sites, landing pages, and CMS-powered content hubs for B2B companies across the USA, Europe, Canada, and Australia. Every site is built to Google Core Web Vitals 'Good' thresholds, optimized for organic search, integrated with your CRM and marketing automation, and built on a CMS your marketing team can operate without calling a developer.",
@@ -2104,6 +2116,7 @@ const webApplicationDevelopmentOverride = {
   category: "Web Development",
   title: "Web Application Development Company Building High-Performance B2B Solutions",
   serviceName: "Web Application Development",
+  heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Web Application Development Company | Custom Web Apps | ClickMasters",
   metaDescription: "ClickMasters builds high-performance custom web applications - dashboards, portals, SaaS platforms, and internal tools - for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters engineers high-performance custom web applications for B2B companies across the USA, Europe, Canada, and Australia. From customer portals and operations dashboards to complex SaaS platforms and data-driven internal tools we build web applications that work exactly as your business demands, load in under 2 seconds, and scale without architectural debt.",
@@ -2276,6 +2289,7 @@ const mvpDevelopmentOverride = {
   category: "Software Development",
   title: "MVP Development Company That Builds Production Ready Products for Startups in USA, Europe and Canada",
   serviceName: "MVP Development",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "MVP Development Company | Build Production-Ready MVPs | ClickMasters",
   metaDescription: "ClickMasters builds production-ready MVPs for startups in USA, Europe & Canada. 8-12 week delivery, scalable architecture, working auth & payments. Fixed price.",
   lead: "ClickMasters builds production ready MVPs for startup founders and B2B operators across the USA, Europe, Canada, and Australia. Not a prototype. Not a demo. A live, deployed product with real users, real data, working authentication, payment processing, and the architectural foundation to scale to 100,000 users without a rebuild.",
@@ -2440,6 +2454,7 @@ const desktopApplicationDevelopmentOverride = {
   category: "Software Development",
   title: "Desktop Application Development Company for B2B Enterprises in USA, Europe and Canada",
   serviceName: "Desktop Application Development",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Desktop Application Development Company | Electron, Tauri & Native | ClickMasters",
   metaDescription: "ClickMasters builds production-grade desktop applications using Electron, Tauri, WPF, and Swift for B2B enterprises in the USA, Europe & Canada. OS-level integration.",
   lead: "ClickMasters builds production grade desktop applications for B2B enterprises across the USA, Europe, Canada, and Australia. Electron and Tauri for cross platform (Windows + macOS + Linux) from web technologies. WPF and WinUI 3 for Windows enterprise. Native macOS in Swift. Professional tools that access the file system, integrate with hardware, appear in the system tray, and work offline capabilities the browser cannot deliver.",
@@ -2600,6 +2615,7 @@ const apiDevelopmentIntegrationOverride = {
   category: "Software Development",
   title: "API Development & Integration Services Connecting Enterprise Systems",
   serviceName: "API Development & Integration",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "API Development & Integration Services | REST, GraphQL & Webhooks",
   metaDescription: "ClickMasters builds production-grade APIs and enterprise integrations. REST, GraphQL, Webhooks, and deep system connectivity for B2B companies.",
   lead: "ClickMasters designs and builds production-grade APIs and enterprise integrations for B2B companies across the USA, Europe, Canada, and Australia. REST APIs that developers love using. GraphQL APIs that eliminate over-fetching. Enterprise integrations that connect Salesforce, SAP, HubSpot, Stripe, and your custom systems into a unified data layer.",
@@ -2726,6 +2742,7 @@ const backendDevelopmentOverride = {
   category: "Software Development",
   title: "Backend Development Company Building High-Performance Server-Side Systems",
   serviceName: "Backend Development",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Backend Development Company | Node.js, Python & Go APIs",
   metaDescription: "ClickMasters builds production-grade backend systems. REST & GraphQL APIs, real-time systems, and background job processing for B2B companies.",
   lead: "ClickMasters designs and builds production-grade backend systems for B2B companies across the USA, Europe, Canada, and Australia. REST and GraphQL APIs. Real-time systems. Background job processing. Auth systems. Data pipelines. Written in Node.js (Fastify), Python (FastAPI), or Go matched to your specific performance and ecosystem requirements.",
@@ -2841,6 +2858,7 @@ const frontendDevelopmentOverride = {
   category: "Software Development",
   title: "Frontend Development Company Building High-Performance React & Next.js Applications",
   serviceName: "Frontend Development",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Frontend Development Company | React & Next.js Experts",
   metaDescription: "ClickMasters builds production-grade React and Next.js applications for B2B companies. Lighthouse 90+, WCAG 2.1 AA, and TypeScript strict mode as standard.",
   lead: "ClickMasters builds production-grade frontend applications for B2B companies across the USA, Europe, Canada, and Australia. React SPAs with TypeScript, Zustand, and TanStack Query. Next.js web applications with App Router, Server Components, and sub-second Core Web Vitals. Design systems in Storybook that give your product and design teams a shared language.",
@@ -2969,6 +2987,7 @@ const fullStackDevelopmentOverride = {
   category: "Software Development",
   title: "Full Stack Development Company Building Complete End-to-End Applications",
   serviceName: "Full Stack Development",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Full Stack Development Company | Next.js, Node.js & Python Experts",
   metaDescription: "ClickMasters builds complete full stack web applications. Next.js, Node.js, Python, PostgreSQL, and AWS deployment for B2B companies.",
   lead: "ClickMasters builds complete full stack web applications for B2B companies across the USA, Europe, Canada, and Australia. Next.js frontend with TypeScript and Tailwind. Node.js or Python backend with REST or GraphQL APIs. PostgreSQL database with Prisma ORM. Redis caching and BullMQ queues. AWS deployment with CI/CD. One team. One engagement. One product.",
@@ -3079,6 +3098,7 @@ const microservicesArchitectureOverride = {
   category: "Software Development",
   title: "Microservices Architecture Design & Development for Scalable B2B Systems",
   serviceName: "Microservices Architecture",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Microservices Architecture Design | Monolith to Microservices Migration",
   metaDescription: "ClickMasters designs and builds scalable microservices architectures. DDD service decomposition, Kubernetes, Kafka, and Strangler Fig migrations for B2B companies.",
   lead: "ClickMasters designs and builds microservices architectures for B2B companies across the USA, Europe, Canada, and Australia. Service decomposition using domain-driven design. API gateway design and implementation. Event-driven architectures with Kafka and RabbitMQ. Kubernetes orchestration for independent service deployment.",
@@ -3203,6 +3223,7 @@ const progressiveWebDevelopmentOverride = {
   category: "Web Development",
   title: "Progressive Web App (PWA) Development Company Building Installable Web Apps",
   serviceName: "PWA Development",
+  heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Progressive Web App (PWA) Development Company | ClickMasters",
   metaDescription: "ClickMasters builds offline-capable, installable Progressive Web Apps (PWA) for B2B companies. 30-50% cost of native apps. Lighthouse 100 PWA score.",
   lead: "ClickMasters builds Progressive Web Apps for B2B companies across the USA, Europe, Canada, and Australia. Offline-capable field applications for teams working in low-connectivity environments. Installable web apps that appear on the home screen without an App Store submission. Push notification systems that re-engage users without a native app. Built on React or Next.js single codebase, all platforms, Core Web Vitals compliant.",
@@ -3351,6 +3372,7 @@ const headlessCmsDevelopmentOverride = {
   category: "Web Development",
   title: "Headless CMS Development Company Building Omnichannel Content Systems",
   serviceName: "Headless CMS Development",
+  heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Headless CMS Development Company | Contentful, Sanity & Strapi",
   metaDescription: "ClickMasters builds omnichannel content systems using Contentful, Sanity, Strapi & Prismic. decoupled architectures with Next.js frontends.",
   lead: "ClickMasters implements headless CMS architectures for B2B companies across the USA, Europe, Canada, and Australia. Contentful for enterprise content teams. Sanity for custom content workflows. Strapi for self-hosted flexibility. Prismic and Storyblok for marketing-team-managed content. All connected to Next.js frontends that deliver sub-second page loads.",
@@ -3493,6 +3515,7 @@ const headlessEcommerceOverride = {
   category: "Web Development",
   title: "Headless E-commerce Development Company Building Composable Storefronts",
   serviceName: "Headless E-commerce",
+  heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Headless E-commerce Development | Next.js, Medusa & Shopify API",
   metaDescription: "ClickMasters builds high-performance headless e-commerce storefronts. Decoupled frontends for maximum speed, scale, and design freedom.",
   lead: "ClickMasters builds composable headless e-commerce storefronts that decouple the buyer experience from the commerce engine. Next.js frontends connected to Shopify Storefront API, Medusa.js, or BigCommerce. Deliver sub-second page loads, unique brand experiences, and omnichannel consistency across web and mobile.",
@@ -3685,6 +3708,7 @@ const shopifyDevelopmentOverride = {
   category: "Web Development",
   title: "Shopify & Shopify Plus Development Company Building High-Growth Stores",
   serviceName: "Shopify Development",
+  heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Shopify & Shopify Plus Development Company | ClickMasters",
   metaDescription: "ClickMasters builds custom Shopify and Shopify Plus stores. Theme development, app integration, and B2B solutions for scaling brands.",
   lead: "ClickMasters builds custom Shopify and Shopify Plus stores for B2C and B2B brands. Performance-optimized Liquid themes, custom Shopify App development, and deep ERP integrations. Launch fast, scale reliably, and own your customer experience.",
@@ -3859,6 +3883,7 @@ const androidAppDevelopmentOverride = {
   category: "Mobile Development",
   title: "Android App Development Company | Native Kotlin & Jetpack Compose",
   serviceName: "Android App Development",
+  heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Android App Development Company | Native Kotlin & Jetpack Compose | ClickMasters",
   metaDescription: "ClickMasters builds production-grade native Android apps in Kotlin with Jetpack Compose for B2B companies across the USA, Europe, Canada & Australia. From enterprise tools to consumer apps.",
   lead: "ClickMasters builds production-grade native Android applications for B2B companies across the USA, Europe, Canada, and Australia. Enterprise field tools that work offline. Customer-facing apps with Material Design 3 polish. Internal operations tools integrated with your backend systems. Written in Kotlin with Jetpack Compose the modern Android stack not legacy Java or XML layouts from 2015.",
@@ -4031,6 +4056,7 @@ const crossPlatformAppDevelopmentOverride = {
   category: "Mobile Development",
   title: "Cross-Platform App Development | React Native & Flutter",
   serviceName: "Cross-Platform App Development",
+  heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Cross-Platform App Development | React Native & Flutter | ClickMasters",
   metaDescription: "ClickMasters builds cross-platform mobile apps in React Native and Flutter one codebase, iOS and Android for B2B companies needing both platforms without the cost of two native builds. USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds cross-platform mobile applications in React Native and Flutter for B2B companies across the USA, Europe, Canada, and Australia. One engineering team. One codebase. Both App Store and Google Play. 30-50% lower development cost than two separate native builds. Performance that real users cannot distinguish from native for the vast majority of B2B and consumer app use cases.",
@@ -4208,6 +4234,7 @@ const iosAppDevelopmentOverride = {
   category: "Mobile Development",
   title: "iOS App Development Company | Native Swift & SwiftUI",
   serviceName: "iOS App Development",
+  heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "iOS App Development Company | Native Swift & SwiftUI | ClickMasters",
   metaDescription: "ClickMasters builds production-grade native iOS apps in Swift and SwiftUI for iPhone and iPad. B2B enterprise tools, consumer apps, and App Store submissions USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds production-grade native iOS applications for B2B companies across the USA, Europe, Canada, and Australia. Enterprise field tools with Face ID authentication and Secure Enclave data protection. Consumer apps built to Apple Human Interface Guidelines with the polish that App Store reviewers and users expect. iPad productivity apps with Apple Pencil support and multi-window. Written in Swift with SwiftUI the modern iOS stack not Objective-C or UIKit from 2010.",
@@ -4381,6 +4408,7 @@ const flutterAppDevelopmentOverride = {
   category: "Mobile Development",
   title: "Flutter App Development Company | iOS & Android From One Codebase",
   serviceName: "Flutter App Development",
+  heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Flutter App Development Company | iOS & Android From One Codebase | ClickMasters",
   metaDescription: "ClickMasters builds production-grade Flutter apps in Dart iOS, Android, and web from a single codebase for B2B companies in the USA, Europe, Canada & Australia. Riverpod, GoRouter, 60fps guaranteed.",
   lead: "ClickMasters builds production-grade Flutter applications for B2B companies across the USA, Europe, Canada, and Australia. One Dart codebase. iOS and Android from a single build. Optional web and desktop targets. Material 3 or custom design systems with the animation fluidity that Flutter's rendering engine delivers as standard. State management with Riverpod. Navigation with GoRouter. CI/CD with Codemagic.",
@@ -4550,6 +4578,7 @@ const reactNativeDevelopmentOverride = {
   category: "Mobile Development",
   title: "React Native Development Company | iOS & Android in TypeScript",
   serviceName: "React Native Development",
+  heroImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "React Native Development Company | iOS & Android in TypeScript | ClickMasters",
   metaDescription: "ClickMasters builds production-grade React Native apps with the New Architecture (JSI + Fabric) iOS and Android from one TypeScript codebase for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds production-grade React Native applications using the New Architecture JSI, Fabric renderer, and TurboModules for B2B companies across the USA, Europe, Canada, and Australia. TypeScript throughout. Zustand for state. WatermelonDB for offline data. Detox for E2E. EAS Build for CI/CD that produces iOS builds without a macOS runner. Both stores from one TypeScript codebase.",
@@ -4727,6 +4756,7 @@ const woocommerceDevelopmentOverride = {
   category: "Web Development",
   title: "WooCommerce Development Company for WordPress-Native Commerce",
   serviceName: "WooCommerce Development",
+  heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "WooCommerce Development Company | Custom WordPress Commerce",
   metaDescription: "Custom WooCommerce development for WordPress-native teams. Scalable, secure, and integrated commerce platforms built to convert.",
   lead: "ClickMasters builds high-performance WooCommerce stores for organizations that want the power of WordPress with scalable e-commerce. Custom themes, deep plugin development, and specialized B2B commerce rules tailored to your unique workflow.",
@@ -4745,7 +4775,7 @@ const woocommerceDevelopmentOverride = {
   // ],
   servicesCards: [
     { title: "Custom WooCommerce Themes", description: "Developing bespoke themes built on modern CSS frameworks (Tailwind) that prioritize mobile performance and eliminate WordPress bloat." },
-    { title: "B2B Pricing & Logic", description: "Implementing customer-specific pricing, tiered discounts, and trade account workflows that fit your exact business rules." },
+    { title: "B2B Pricing & Logic", description: "Implementing customer-specific pricing, tiered discounts, and trade account workflows that fit your exactact business rules." },
     { title: "Custom Plugin Development", description: "Building specialized WooCommerce extensions to handle unique shipping rules, payment flows, or integrations that standard plugins cannot." },
     { title: "Performance Optimization", description: "Advanced caching strategies with Redis, database query tuning, and CDN configuration to make WooCommerce load as fast as a static site." },
     { title: "ERP & Accounting Sync", description: "Deep bidirectional integration with Xero, QuickBooks, Sage, or custom ERP systems to automate order fulfillment and reconciliation." },
@@ -4782,7 +4812,7 @@ const woocommerceDevelopmentOverride = {
   ],
   industryUseCases: [
     { name: "Content-Commerce Hybrid", description: "Blogs or media sites that sell products alongside high-volume editorial content with native WordPress SEO." },
-    { name: "B2B Trade Accounts", description: "Organizations needing deep customization of the customer login and pricing experience without Plus fees." },
+    { name: "B2B Trade Accounts", description: "Organizations needing deep customization of the customer login andicing experience without Plus fees." },
     { name: "Local Manufacturers", description: "Wholesale ordering portals with custom shipping and local pickup logic, full data ownership." },
     { name: "Service-Product Hybrid", description: "Booking systems combined with physical product e-commerce on a single WordPress platform." }
   ],
@@ -4907,6 +4937,7 @@ const ecommerceDevelopmentOverride = {
   category: "Web Development",
   title: "E-commerce Development Company Building High-Converting Commerce Platforms",
   serviceName: "E-commerce Development",
+  heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "E-commerce Development Company | Shopify, WooCommerce & Headless",
   metaDescription: "ClickMasters builds high-converting e-commerce stores. Shopify, WooCommerce, Headless, and Custom B2B platforms for startups and enterprise.",
   lead: "ClickMasters builds high-converting e-commerce stores and custom commerce platforms for B2B and B2C companies across the USA, Europe, Canada, and Australia. Shopify Plus development. WooCommerce customization. Headless commerce on Next.js + Shopify Storefront API. Custom B2B wholesale portals. Multi-vendor marketplaces. And migrations from platforms that have stopped serving your growth.",
@@ -5016,7 +5047,7 @@ const ecommerceDevelopmentOverride = {
         ["LCP (Page Speed)", "< 2.5 seconds", "SSR, preloading, WebP/AVIF"],
         ["CLS (Stability)", "< 0.1", "Explicit dimensions, skeleton loaders"],
         ["INP (Interactivity)", "< 200ms", "Bundle splitting, event debouncing"],
-        ["TTFB (Response)", "< 800ms", "Edge caching, connection pooling"]
+        ["TTFB (Response)", "< 800ms", "Edge caching, connectionion pooling"]
       ]
     }
   ],
@@ -5065,6 +5096,7 @@ const uiUxDesignOverride = {
   category: "Design",
   title: "UI/UX Design Services for B2B Software",
   serviceName: "UI/UX Design",
+  heroImage: "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "UI/UX Design Services | B2B Product & Web App Design | ClickMasters",
   metaDescription: "ClickMasters delivers UI/UX design for B2B web apps, SaaS platforms, mobile apps, and portals research-backed, Figma-first, WCAG-compliant. Serving USA, Europe, Canada & Australia.",
   lead: "ClickMasters delivers UI/UX design for B2B web applications, SaaS platforms, enterprise portals, and mobile apps across the USA, Europe, Canada, and Australia. Research-driven. Figma-first. WCAG 2.1 AA accessible. Designed to be handed off to developers and built exactly as designed no interpretation required.",
@@ -5085,7 +5117,7 @@ const uiUxDesignOverride = {
   servicesCards: [
     { title: "UX Research & Discovery", description: "Stakeholder interviews, user interviews, contextual inquiry, survey design, competitive UX audit, and analytics review. Deliverables: research synthesis report, user personas, JTBD framework, pain point priority matrix." },
     { title: "Information Architecture & User Flows", description: "Product structure definition, navigation hierarchy, feature grouping. User flow mapping including error states, empty states, loading states, and decision branch points." },
-    { title: "Wireframing & Low-Fidelity Prototyping", description: "Structural wireframes in Figma defining layout, content hierarchy, and interaction patterns. Interactive low-fidelity prototypes for usability testing find and fix 70% of usability problems at 10% of post-launch cost." },
+    { title: "Wireframing & Low-Fidelitrototyping", description: "Structural wireframes in Figma defining layout, content hierarchy, and interaction patterns. Interactive low-fidelity prototypes for usability testing find and fix 70% of usability problems at 10% of post-launch cost." },
     { title: "High-Fidelity UI Design", description: "Production-ready UI design in Figma: pixel-precise mockups for every screen state, interaction, and responsive breakpoint. B2B-specific: data-dense tables, multi-level navigation, role-based UI variants." },
     { title: "Interactive Prototyping & Usability Testing", description: "High-fidelity interactive prototypes for demos and testing. Moderated usability testing with 5-8 representative users. Findings report with severity-rated issues." },
     { title: "Design Systems", description: "Documented library of reusable UI components, design tokens (color, typography, spacing, elevation), usage guidelines, and Figma source files synchronized with your frontend component library." },
@@ -5245,6 +5277,7 @@ const jamstackDevelopmentOverride = {
   category: "Web Development",
   title: "JAMstack Development Company Building High-Performance Edge-First Sites",
   serviceName: "JAMstack Development",
+  heroImage: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "JAMstack Development Company | Next.js, Gatsby & Astro Experts",
   metaDescription: "ClickMasters builds high-performance JAMstack sites using Next.js, Gatsby & Astro. Sub-second loads, global edge distribution, and zero server maintenance.",
   lead: "ClickMasters builds JAMstack applications for B2B companies across the USA, Europe, Canada, and Australia. Next.js for dynamic marketing sites and web applications with edge rendering. Gatsby for content-heavy documentation and blogs. Astro for maximum performance content sites with zero JavaScript overhead. Deployed on Vercel or Cloudflare Pages distributed globally, horizontally scalable by default, no server to maintain.",
@@ -5388,6 +5421,7 @@ const productDesignOverride = {
   category: "Design",
   title: "Product Design Services",
   serviceName: "Product Design",
+  heroImage: "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Product Design Services | UX-Led B2B Software Design | ClickMasters",
   metaDescription: "ClickMasters delivers product design for B2B software discovery, UX strategy, user flows, prototyping, and high-fidelity Figma for companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters delivers product design for B2B software companies across the USA, Europe, Canada, and Australia. User research to ground design decisions in real behaviour. Jobs-to-be-done mapping to clarify what users actually need. Information architecture to structure complex B2B workflows. High-fidelity Figma prototypes that communicate design intent precisely enough for engineering to build without ambiguity. Design that reduces development rework the most expensive design mistake.",
@@ -5422,7 +5456,7 @@ const productDesignOverride = {
     { phase: "Discovery", title: "Discovery", timeline: "Week 1-2", text: "Stakeholder interviews (product vision, business goals, success metrics), competitive analysis (3-5 competitors), user interview planning, and problem framing. Deliverable: Discovery Report." },
     { phase: "User Research", title: "User Research", timeline: "Week 2-3", text: "5-8 user interviews (moderated, recorded, transcribed), affinity mapping, user journey mapping, and persona development. Deliverable: Research Report + Journey Map." },
     { phase: "Information Architecture", title: "Information Architecture", timeline: "Week 2-3", text: "Site map or screen inventory, user flow diagrams, navigation architecture, content hierarchy, and data model alignment. Deliverable: IA Document + User Flow Diagrams." },
-    { phase: "Wireframing", title: "Wireframing", timeline: "Week 3-5", text: "Low-fidelity wireframes for all screens and states (default, empty, loading, error, success). Clickable prototype for usability testing. Deliverable: Wireframe Library + Clickable Prototype." },
+    { phase: "Wireframing", title: "Wireframing", timeline: "Week 3-5", text: "Low-fidelity wirwireframes for all screens and states (default, empty, loading, error, success). Clickable prototype for usability testing. Deliverable: Wireframe Library + Clickable Prototype." },
     { phase: "Visual Design", title: "Visual Design", timeline: "Week 4-8", text: "High-fidelity Figma designs: colour system, typography scale, component library (all interactive states), responsive layouts, and motion design. Deliverable: Figma Design File + Component Library." },
     { phase: "Usability Testing", title: "Usability Testing", timeline: "Week 6-8", text: "Moderated usability tests (5-8 participants), task completion rates measured, severity-ranked issue list, and design iteration. Deliverable: Usability Test Report + Revised Designs." },
     { phase: "Design-to-Dev Handoff", title: "Design-to-Dev Handoff", timeline: "Week 8", text: "Figma developer mode configuration, interaction notes, responsive behaviour documentation, component state documentation, and accessibility annotations. Deliverable: Handoff-Ready Figma File + Interaction Spec." }
@@ -5526,6 +5560,7 @@ const webDesignOverride = {
   category: "Design",
   title: "Web Design Services",
   serviceName: "Web Design",
+  heroImage: "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Web Design Services | Conversion-Focused B2B Web Design | ClickMasters",
   metaDescription: "ClickMasters designs high-converting B2B websites responsive, accessible, Core Web Vitals optimised for companies in the USA, Europe, Canada & Australia. Figma to production.",
   lead: "ClickMasters designs B2B websites for companies across the USA, Europe, Canada, and Australia. Conversion architecture that moves ICP visitors from awareness to qualified lead. Messaging hierarchy that communicates value in 5 seconds. Responsive layouts that perform on the devices your audience actually uses. Figma designs that hand off to development without ambiguity. Core Web Vitals 90+ standard.",
@@ -5540,7 +5575,7 @@ const webDesignOverride = {
   // marketStats: [
   //   { label: 'Average time a B2B visitor decides whether to stay or leave your hero must communicate value', value: '5 sec' },
   //   { label: 'Of first impressions are design-related poor design signals poor product (ResearchGate)', value: '94%' },
-  //   { label: 'Of B2B buyers judge a company\'s credibility by its website design (Stanford credibility study)', value: '75%' },
+  //   { label: 'Of B2B buyers judge a company\'s credibility by its website design (Stanford credibility study)', value: '7 },
   //   { label: 'Average conversion rate improvement from a conversion-focused redesign vs aesthetics-first redesign', value: '2.3x' },
   // ],
   servicesCards: [
@@ -5661,6 +5696,7 @@ const mobileAppDesignOverride = {
   category: "Design",
   title: "Mobile App Design Services",
   serviceName: "Mobile App Design",
+  heroImage: "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Mobile App Design Services | iOS & Android UX Design | ClickMasters",
   metaDescription: "ClickMasters designs iOS and Android mobile apps HIG-compliant iOS UI, Material Design 3 Android, and cross-platform for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters designs iOS and Android mobile applications for B2B companies across the USA, Europe, Canada, and Australia. HIG-compliant iOS designs that Apple reviewers approve and iPhone users expect. Material Design 3 Android designs with dynamic colour and updated component set. Cross-platform designs that feel right on both platforms. Every design in Figma, ready for Swift/Kotlin development.",
@@ -5718,9 +5754,9 @@ const mobileAppDesignOverride = {
   ],
   industryUseCases: [
     { name: "B2B Field Worker App", description: "iOS-first design for field workers who use iPhones. Offline-first considerations, large touch targets for gloved hands, barcode scanning integration." },
-    { name: "Consumer Mobile App", description: "Platform-native design for both iOS and Android. Social features, push notifications, deep links, and App Store optimisation." },
+    { nameame: "Consumer Mobile App", description: "Platform-native design for both iOS and Android. Social features, push notifications, deep links, and App Store optimisation." },
     { name: "Enterprise Internal App", description: "Android-first or cross-platform depending on device deployment. MDM integration considerations, authentication flows, data security." },
-    { name: "Mobile Banking/Fintech", description: "Highest security standards, biometric authentication integration, transaction flows, and accessibility compliance (WCAG 2.1 AA)." }
+    { name: "Mobile Bang/Fintech", description: "Highest security standards, biometric authentication integration, transaction flows, and accessibility compliance (WCAG 2.1 AA)." }
   ],
   sections: [
     {
@@ -5798,6 +5834,7 @@ const uxResearchOverride = {
   category: "Design",
   title: "UX Research Services",
   serviceName: "UX Research",
+  heroImage: "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "UX Research Services | User Research & Usability Testing | ClickMasters",
   metaDescription: "ClickMasters conducts user research moderated interviews, usability testing, and journey mapping to ground product decisions in real user behaviour for B2B companies worldwide.",
   lead: "ClickMasters conducts user research for B2B software companies across the USA, Europe, Canada, and Australia. Moderated interviews with your target users not internal opinions dressed as user insight. Usability testing on prototypes before engineering begins. Journey mapping that reveals the gap between the experience your product delivers and the experience your users need. Research that earns a seat at the product roadmap table.",
@@ -5934,9 +5971,10 @@ const wireframingPrototypingOverride = {
   category: "Design",
   title: "Wireframing & Prototyping Services",
   serviceName: "Wireframing & Prototyping",
+  heroImage: "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Wireframing & Prototyping Services | Figma Prototypes | ClickMasters",
   metaDescription: "ClickMasters delivers wireframes and interactive prototypes for web and mobile from low-fidelity flows to high-fidelity Figma prototypes ready for user testing and developer handoff.",
-  lead: "ClickMasters delivers wireframes and interactive prototypes for web and mobile applications from low-fidelity flow sketches to high-fidelity clickable Figma prototypes ready for usability testing or investor demos. Validate user flows with stakeholders and users before committing to visual design. Communicate complex interactions to engineering without ambiguity. Move faster by separating the layout question from the aesthetic question.",
+  lead: "ClickMasters delivers wireframes and interactive prototypes for web and mobile applications from low-fidelity flow sketches to high-fidelity clickable Figma prototypes ready for usability testing or investor demos. Validate user flows with stakeholders and users before committing to visual design. Communicate complex interactions to engineering without ambiguity. Move faster er by separating the layout question from the aesthetic question.",
   highlights: [
     "Low & High Fidelity Wireframes",
     "Interactive Figma Prototypes",
@@ -5962,8 +6000,7 @@ const wireframingPrototypingOverride = {
     { feature: "Edge Case Documentation", description: "Empty, loading, error, success states designed upfront | Basic: Only happy path (engineering has to figure out edge cases)" },
     { feature: "User Testing Ready", description: "Figma prototypes usable for moderated testing (no account needed) | Basic: Static images (can't test flows)" },
     { feature: "Investor Demos", description: "High-fidelity + animations + demo script + presentation config | Basic: Low-fidelity for demos (fails to impress investors)" },
-    { feature: "Figma Smart Animate", description: "Native Figma transitions for realistic app feel | Basic: No transitions (static click-through only)" }
-  ],
+    { feature: "Figma Smart Animate", description: "Native Figma transitions for realistic app feel | Basic: No transitions (static click-through only)" }],
   processPhases: [
     { phase: "Phase 1", title: "User Flow Mapping", timeline: "Week 1", text: "Task analysis, happy path definition, edge case identification (empty, loading, error, permission states), decision tree documentation. Deliverable: Figma Flow Diagram." },
     { phase: "Phase 2", title: "Low-Fidelity Wireframes", timeline: "Week 2-3", text: "Greyscale wireframes for all screens, all states. Layout, content hierarchy, navigation. Stakeholder review. Deliverable: Wireframe Library." },
@@ -6015,7 +6052,7 @@ const wireframingPrototypingOverride = {
     },
     {
       question: "Do I need wireframes before visual design?",
-      answer: `Wireframes before visual design is ClickMasters' strong recommendation for any product with more than 5 screens, any product being user-tested before development, and any product where the layout or information architecture is uncertain. Wireframes separate two distinct questions: "what is on this screen and in what order?" (a content and architecture question) and "how does it look?" (a visual and brand question). Mixing them designing high-fidelity mockups while the layout is still being decided is expensive. Every change to the layout in a high-fidelity design requires reworking the visual design, not just the boxes. Wireframes allow the layout question to be resolved cheaply before visual design investment begins.`
+      answer: `Wireframes before visual design is ClickMasters' strong recommendation for any product with more than 5 screens, any product being user-tested before development, and any product where the layout or ir information architecture is uncertain. Wireframes separate two distinct questions: "what is on this screen and in what order?" (a content and architecture question) and "how does it look?" (a visual and brand question). Mixing them designing high-fidelity mockups while the layout is still being decided is expensive. Every change to the layout in a high-fidelity design requires reworking the visual design, not just the boxes. Wireframes allow the layout question to be resolved cheaply before visual design investment begins.`
     },
     {
       question: "How long does wireframing take?",
@@ -6062,6 +6099,7 @@ const designSystemsOverride = {
   category: "Design",
   title: "Design Systems Services",
   serviceName: "Design Systems",
+  heroImage: "https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Design Systems Services | Figma + Storybook Component Libraries | ClickMasters",
   metaDescription: "ClickMasters builds design systems Figma component libraries, design tokens, and Storybook code implementation for B2B software companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds design systems for B2B software companies across the USA, Europe, Canada, and Australia. Figma component libraries that designers use as the source of truth. Storybook implementations that developers consume as production-ready code. Design tokens that flow from Figma to Tailwind CSS automatically via Style Dictionary. And visual regression testing with Chromatic that catches unintended changes before they reach production.",
@@ -6191,6 +6229,7 @@ const aiIntegrationServicesOverride = {
   category: "Artificial Intelligence (AI)",
   title: "AI Integration Services",
   serviceName: "AI Integration Services",
+  heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "AI Integration Services | Add AI to Your Existing Software | ClickMasters",
   metaDescription: "ClickMasters integrates AI capabilities LLMs, vision, speech, and embedding models into existing B2B software products and internal tools for companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters integrates AI capabilities into existing B2B software for companies across the USA, Europe, Canada, and Australia. OpenAI GPT-4o and Anthropic Claude for text generation and analysis. Embeddings and vector search for semantic search and RAG. Vision models for image analysis. Speech-to-text and text-to-speech. We handle model selection, prompt engineering, RAG architecture, streaming, rate limiting, cost management, and production reliability so your team ships the AI feature, not the AI infrastructure.",
@@ -6211,7 +6250,7 @@ const aiIntegrationServicesOverride = {
   servicesCards: [
     { title: "LLM Feature Integration", description: "Adding LLM-powered features to existing product: API client setup (OpenAI/Anthropic SDK with retry logic, timeout configuration), streaming response implementation (Server-Sent Events from backend to frontend), prompt engineering (system prompts, few-shot examples, chain-of-thought), structured output (JSON mode with Pydantic/Zod schema validation), and model fallback." },
     { title: "RAG Implementation", description: "Adding proprietary knowledge to LLM responses: document chunking strategy (semantic chunking, not fixed-size), embedding generation (OpenAI text-embedding-3-small), vector database setup (pgvector or Pinecone), retrieval pipeline (query embedding + similarity search + top-k retrieval + reranking), and augmented generation with source attribution." },
-    { title: "Semantic Search Integration", description: "Replacing or augmenting keyword search with semantic search: embedding generation pipeline (product descriptions, documentation, support tickets), search API (query embedding, cosine similarity, ranked results), filter integration (semantic + structured filters), and search analytics with LLM-based relevance judge." },
+    { title: "Semantic Search Integration", description: "Replacing or augmenting keyword search with semantic search: embedding generation pipeline (product descriptions, documentation, support tickets), search API (query embedding, cosine similarity, ranked results), filter integration (semantic + structured filt), and search analytics with LLM-based relevance judge." },
     { title: "Vision AI Integration", description: "Adding visual understanding: image analysis (GPT-4o vision describe content, extract text, classify images, identify objects), document image processing (extract structured data from scans, forms, receipts), quality control (compare images against specifications), and visual content moderation." },
     { title: "Speech AI Integration", description: "Adding voice capabilities: speech-to-text (Whisper API transcription with speaker diarisation via AssemblyAI/Deepgram), text-to-speech (OpenAI TTS or ElevenLabs), voice interface (React with Web Audio API for microphone capture, streaming transcription, TTS playback), and meeting intelligence (transcribe + summarise + extract action items)." }
   ],
@@ -6228,7 +6267,7 @@ const aiIntegrationServicesOverride = {
     { phase: "Phase 3", title: "Streaming & Response Handling", timeline: "Week 2-4", text: "Server-Sent Events from backend to frontend. ReadableStream API on frontend for token-by-token display. Error handling, timeout management, cancellation support. Deliverable: Streaming Implementation." },
     { phase: "Phase 4", title: "RAG Pipeline (If Required)", timeline: "Week 3-6", text: "Document chunking strategy, embedding generation, vector database setup, retrieval pipeline with reranking, augmented generation with citations. Deliverable: Production RAG Pipeline." },
     { phase: "Phase 5", title: "Cost Management & Observability", timeline: "Week 4-6", text: "Token counting pre-request, response caching, model tiering logic, per-user rate limiting. LangSmith/Halicone setup for tracing, latency measurement, token tracking, and alerting. Deliverable: Cost Dashboard + Observability Stack." },
-    { phase: "Phase 6", title: "Testing & Deployment", timeline: "Week 5-7", text: "Unit tests for prompt outputs, integration tests for API calls, load testing for concurrency. Deploy with feature flag, gradual rollout. Deliverable: Production AI Feature." }
+    { phase: "Phase 6", title: "Testing & DepDeployment", timeline: "Week 5-7", text: "Unit tests for prompt outputs, integration tests for API calls, load testing for concurrency. Deploy with feature flag, gradual rollout. Deliverable: Production AI Feature." }
   ],
   techStackCategories: [
     { layer: "LLM APIs", technologies: "OpenAI (GPT-4o, GPT-4o mini, text-embedding-3-small, Whisper, TTS), Anthropic (Claude 3.5 Sonnet, Haiku), Google (Gemini 1.5 Pro, Flash)" },
@@ -6344,6 +6383,7 @@ const llmApplicationsDevelopmentOverride = {
   category: "Artificial Intelligence (AI)",
   title: "LLM Applications Development",
   serviceName: "LLM Applications Development",
+  heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "LLM Application Development | Production LLM Products | ClickMasters",
   metaDescription: "ClickMasters builds production LLM applications RAG systems, AI writing tools, document analysis platforms, and LLM-powered SaaS features for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds production LLM applications for B2B companies across the USA, Europe, Canada, and Australia. Document Q&A systems that answer questions from your proprietary knowledge base with cited sources. AI writing assistants that generate on-brand content at scale. Contract analysis platforms that extract and compare terms across thousands of documents. Code review tools. Report generation systems. Every LLM application built with streaming, cost management, evaluation frameworks, and production observability not just a wrapper around an API call.",
@@ -6364,7 +6404,7 @@ const llmApplicationsDevelopmentOverride = {
   servicesCards: [
     { title: "Document Q&A / Knowledge Base Application", description: "LLM application answering questions from document corpus: ingestion pipeline (PDFs, Word docs, web pages via Unstructured.io, semantic chunking, embeddings in pgvector), query pipeline (question embedded \xE2\u2020\u2019 top-k retrieval \xE2\u2020\u2019 Cohere reranking \xE2\u2020\u2019 GPT-4o answer with citations), streaming response, source attribution UI, and admin interface for knowledge base management." },
     { title: "AI Writing Assistant", description: "LLM-powered content generation for B2B: brand-voice writing assistant (system prompt encodes voice, few-shot examples demonstrate style), email and proposal generator (first-draft from template + CRM context), content repurposing tool (blog \xE2\u2020\u2019 social posts, summaries, newsletters), and multilingual content generation." },
-    { title: "Contract & Document Analysis Platform", description: "LLM-powered contract analysis: clause extraction (payment terms, liability caps, termination provisions structured JSON output), contract comparison (flag deviations from standard, severity rating), risk scoring, bulk analysis (hundreds of contracts), and contract Q&A with clause-level citations." },
+    { title: "Contract & Document Analysis Platform", description: "LLM-powered contract analysis: clause extraction (payment terms, liability caps, termination provisions structured JSON output), contract comparison (flag deviations from standard, severity rating), risk scoring, bulk analysiysis (hundreds of contracts), and contract Q&A with clause-leveltations." },
     { title: "AI-Powered Report Generation", description: "Automated report generation from structured data: data-to-narrative (financial metrics, survey results \xE2\u2020\u2019 narrative interpretation), executive summary generation, personalised report generation (each user sees analysis of their specific data), and scheduled report generation (weekly/monthly automated reports)." },
     { title: "Code Review & Analysis Tool", description: "LLM-powered developer tooling: automated code review (GitHub PR integration bugs, security vulnerabilities, style violations, test gaps), code explanation (plain language for onboarding), technical debt identification, and natural language to SQL (business questions \xE2\u2020\u2019 SQL queries against schema)." }
   ],
@@ -6493,6 +6533,7 @@ const machineLearningSolutionsOverride = {
   category: "Artificial Intelligence (AI)",
   title: "Machine Learning Solutions Company",
   serviceName: "Machine Learning Solutions",
+  heroImage: "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Machine Learning Solutions Company | Custom ML Models for B2B | ClickMasters",
   metaDescription: "ClickMasters builds production-grade machine learning solutions predictive models, recommendation systems, classification, NLP, and computer vision for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds, deploys, and operates machine learning solutions for B2B companies across the USA, Europe, Canada, and Australia. Churn prediction models that identify at-risk customers before they cancel. Demand forecasting models that optimize inventory and capacity. Fraud detection models that flag risk before transactions complete. Recommendation engines that drive product discovery and revenue. Deployed in production with monitoring, retraining pipelines, and measurable business outcomes.",
@@ -6512,7 +6553,7 @@ const machineLearningSolutionsOverride = {
   // ],
   servicesCards: [
     { title: "Predictive Analytics Models", description: "Supervised learning models predicting continuous outcomes (regression) or classifying inputs (classification). Business applications: churn prediction, revenue forecasting, demand forecasting, CLV prediction, sales pipeline forecasting. Feature engineering drives most predictive value." },
-    { title: "Anomaly Detection & Fraud Detection", description: "Unsupervised and semi-supervised models identifying unusual patterns in high-volume transaction streams. Isolation Forest, DBSCAN, autoencoders, and XGBoost with real-time scoring API (<100ms latency)." },
+    { title: "Anomaly Detection & Fraud Detection", description: "Unsupervised and semi-supervised models identifying unusual terns in high-volume transaction streams. Isolation Forest, DBSCAN, autoencoders, and XGBoost with real-time scoring API (<100ms0ms latency)." },
     { title: "Recommendation Systems", description: "Collaborative filtering, content-based, and hybrid recommendation systems. Matrix factorization (ALS), neural two-tower models, and LLM-based semantic similarity. Real-time serving (<50ms)." },
     { title: "Natural Language Processing (NLP)", description: "Fine-tuned transformer models (BERT, RoBERTa, DeBERTa) for classification, sentiment analysis, NER, and document classification. Combining with LLM APIs for reasoning-heavy tasks." },
     { title: "Computer Vision Models", description: "CNNs and vision transformers for image analysis: quality control defect detection, document digitization, safety compliance monitoring. YOLO for real-time detection, ResNet/EfficientNet for classification." },
@@ -6526,7 +6567,7 @@ const machineLearningSolutionsOverride = {
     { feature: "MLOps Standard", description: "MLflow + Evidently AI + Feast + monitoring + retraining pipelines | Basic: Model file delivered, monitoring absent" }
   ],
   processPhases: [
-    { phase: "Phase 1", title: "Problem Definition & Data Assessment", timeline: "Week 1-2", text: "Define prediction target, success metrics (business), cost matrix (false positive vs false negative), data audit (sufficiency, quality, labeling). Deliverable: ML Feasibility Report with go/no-go recommendation." },
+    { phase: "Phase 1", title: "Problem Deftion & Data Assessment", timeline: "Week 1-2", text: "Define prediction target, success metrics (business), cost matrix (false positive vs false negative), data audit (sufficiency, quality, labeling). Deliverable: ML Feasibility Report with go/no-go recommendation." },
     { phase: "Phase 2", title: "Data Engineering & Feature Pipeline", timeline: "Week 2-5", text: "Raw data ingestion, data cleaning, feature engineering (domain-specific features, temporal features, aggregations, encodings), train/validation/test split with temporal awareness. Primary determinant of model accuracy." },
     { phase: "Phase 3", title: "Model Development & Experimentation", timeline: "Week 3-7", text: "Baseline model (logistic regression), candidate algorithm evaluation (XGBoost, LightGBM, Random Forest, neural networks), feature selection, hyperparameter optimization (Optuna), cross-validation. All experiments tracked in MLflow." },
     { phase: "Phase 4", title: "Model Evaluation & Business Validation", timeline: "Week 6-8", text: "Technical metrics (AUC-ROC, precision/recall/F1, RMSE/MAE/MAPE), calibration check, fairness evaluation, business outcome translation (expected catch rate, false alarm rate). Approve before deployment." },
@@ -6591,7 +6632,7 @@ const machineLearningSolutionsOverride = {
     },
     {
       heading: "ClickMasters Default ML Recommendation for B2B Tabular Data",
-      body: "For the vast majority of B2B ML use cases churn prediction, fraud detection, demand forecasting, lead scoring, risk classification gradient boosting (XGBoost or LightGBM) outperforms deep learning on structured tabular data at a fraction of the compute cost and training time, with interpretable feature importance. Deep learning is reserved for unstructured data (images, audio, text) at scale. ClickMasters selects the simplest model that meets the accuracy requirement not the most impressive-sounding one.",
+      body: "For the vast majority of B2B ML use cases churn prediction, fraud detection, demand forecasting, lead scoring, risk classification gradient boosg (XGBoost or LightGBM) outperforms deep learning on structured tabular data at a fraction of the compute cost and training time, with interpretable feature importance. Deep learning is reserved for unstructured data (images, audio, text) at scale. ClickMasters selects the simplest model that meets the accuracy requirement not the most impressive-sounding one.",
       items: []
     },
     {
@@ -6631,7 +6672,7 @@ const machineLearningSolutionsOverride = {
     },
     {
       question: "What is data drift and model drift in machine learning?",
-      answer: "Data drift occurs when the statistical distribution of input features in production differs from the distribution in the training data for example, a fraud model trained on 2022 transaction patterns deployed in 2025 when transaction patterns have changed significantly. Data drift is an early warning signal that model accuracy may be degrading, even before accuracy measurements can confirm it. Model drift (concept drift) occurs when the relationship between input features and the prediction target changes the model's learned patterns are no longer correct, even if the feature distribution is stable. Both types of drift require monitoring and can trigger model retraining. ClickMasters implements drift monitoring using Evidently AI or custom Prometheus metrics as standard in all production ML engagements."
+      answer: "Data drift occurs when the statistical distribution of input features in production differs from the distribution in the training data for example, a fraud model trained on 2022 transaction patterns deployed in 2025 when transaction patterns have changed significantly. Data drift is an early warning signal that model accuracy cy may be degrading, even before accuracy measurements can confirm it. Model drift (concept drift) occurs when the relationship between input features and the prediction target changes the model's learned patterns are no longer correct, even if the feature distribution is stable. Both types of drift require monitoring and can trigger model retraining. ClickMasters implements drift monitoring using Evidently AI or custom Prometheus metrics as standard in all production ML engagements."
     },
     {
       question: "How do you deploy a machine learning model to production?",
@@ -6690,6 +6731,7 @@ const predictiveAnalyticsOverride = {
   category: "Artificial Intelligence (AI)",
   title: "Predictive Analytics Services",
   serviceName: "Predictive Analytics",
+  heroImage: "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Predictive Analytics Services | ML Forecasting & Prediction | ClickMasters",
   metaDescription: "ClickMasters builds predictive analytics systems churn prediction, demand forecasting, lead scoring, and anomaly detection using scikit-learn, XGBoost, and LightGBM for B2B companies worldwide.",
   lead: "ClickMasters builds predictive analytics systems for B2B companies across the USA, Europe, Canada, and Australia. Churn prediction that identifies at-risk customers 30-90 days before they cancel. Demand forecasting that reduces inventory waste and stockouts. Lead scoring that ranks your pipeline by close probability. Anomaly detection that surfaces fraud and operational issues in real time. Built on scikit-learn, XGBoost, and LightGBM deployed as production APIs your applications can call.",
@@ -6826,6 +6868,7 @@ const recommendationSystemsOverride = {
   category: "Artificial Intelligence (AI)",
   title: "Recommendation Systems",
   serviceName: "Recommendation Systems",
+  heroImage: "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Recommendation System Development | Collaborative & Content-Based | ClickMasters",
   metaDescription: "ClickMasters builds recommendation systems collaborative filtering, content-based, and hybrid for B2B e-commerce, SaaS, and content platforms in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds recommendation systems for B2B e-commerce, SaaS, and content platforms across the USA, Europe, Canada, and Australia. Collaborative filtering that learns from collective user behaviour. Content-based recommendations from item features and user preferences. Hybrid models that combine both signals. Two-tower neural architectures for large-scale retrieval. Real-time recommendation APIs that respond in under 50ms.",
@@ -6895,7 +6938,7 @@ const recommendationSystemsOverride = {
       body: "",
       items: [
         'Collaborative Filtering: Finds users with similar behaviour and recommends what those similar users liked. "Users like you also engaged with..." Best for products/content with rich user-item interaction history. Strong for cross-sell and surprise discovery. Data requirement: High needs sufficient user-item interactions.',
-        'Content-Based: Recommends items similar to what the user has previously engaged with, based on item features (category, tags, description embedding). Works for new items without interaction history. Good for "similar to this item". Data requirement: Low item features only, no interaction data required.',
+        'Content-Based: Recommends items similar to what the user has previously engaged with, based on item features (category, tags, description embedding). Works for netems without interaction history. Good for "similar to this item". Data requirement: Low item features only, no interaction data required.',
         "Hybrid: Combines collaborative + content-based signals collaborative for users with interaction history, content-based for cold-start. Best overall performance when both interaction and feature data exist. Data requirement: Moderate benefits from both.",
         "Matrix Factorisation: Decomposes user-item interaction matrix into latent user and item vectors. ALS (Alternating Least Squares) for implicit feedback (clicks, views without explicit ratings). Classical production baseline. Efficient at scale. Data requirement: High dense-enough matrix for factorisation.",
         "Two-Tower Neural: Two separate neural networks one for users, one for items each producing an embedding. Recommendations = approximate nearest neighbour search in embedding space. Large-scale retrieval (millions of items). YouTube, Pinterest, TikTok-style recommendation at scale.",
@@ -6947,7 +6990,7 @@ const recommendationSystemsOverride = {
     { name: "Candidate Generation", text: "CF (ALS matrix factorisation) or content-based embeddings, ANN index (FAISS)." },
     { name: "Re-Ranking & Filtering", text: "Lightweight ML model (XGBoost) with real-time features, business rules." },
     { name: "API & Integration", text: "REST API with user_id+context input, ranked outputs, Redis cache." },
-    { name: "A/B Testing Framework", text: "Experiment assignment, variant config, metric collection, significance calculation." },
+    { name: "A/B Testing Framework", text: "Experiment assignment, variant config, metric ic collection, significance calculation." },
     { name: "Retraining & Monitoring", text: "Scheduled retraining, CTR/coverage/diversity monitoring, performance alerts." }
   ],
   itemList: [
@@ -6972,6 +7015,7 @@ const modelTrainingOptimisationOverride = {
   category: "Artificial Intelligence (AI)",
   title: "Model Training & Optimisation",
   serviceName: "Model Training & Optimisation",
+  heroImage: "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Model Training & Optimisation Services | Hyperparameter Tuning | ClickMasters",
   metaDescription: "ClickMasters trains and optimises ML models hyperparameter tuning, cross-validation, model selection, and MLOps deployment for B2B companies needing production-quality predictive models.",
   lead: "ClickMasters trains and optimises ML models for B2B companies across the USA, Europe, Canada, and Australia. Hyperparameter tuning with Optuna that systematically finds the model configuration your team's manual grid search missed. Feature selection that reduces overfitting and improves generalisation. Cross-validation that gives you honest performance estimates. And the MLOps infrastructure to retrain, evaluate, and deploy model updates without manual intervention.",
@@ -7098,6 +7142,7 @@ const deepLearningSolutionsOverride = {
   category: "Artificial Intelligence (AI)",
   title: "Deep Learning Solutions",
   serviceName: "Deep Learning Solutions",
+  heroImage: "https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Deep Learning Solutions | Neural Networks & PyTorch | ClickMasters",
   metaDescription: "ClickMasters builds deep learning solutions computer vision CNNs, NLP transformers, time series LSTMs, and tabular neural networks using PyTorch and TensorFlow for B2B companies worldwide.",
   lead: "ClickMasters builds deep learning solutions for B2B companies across the USA, Europe, Canada, and Australia. CNN-based image classification and object detection. Transformer-based NLP models for text classification and named entity recognition. LSTM and Transformer models for time series forecasting. Tabular deep learning for high-dimensional structured data. Transfer learning from pre-trained models when labelled data is limited. Deployed with ONNX Runtime or TorchServe for production inference.",
@@ -7138,7 +7183,7 @@ const deepLearningSolutionsOverride = {
   ],
   techStackCategories: [
     { layer: "Frameworks", technologies: "PyTorch (primary dynamic computation graph, HuggingFace native), TensorFlow/Keras, JAX (XLA compilation)" },
-    { layer: "Vision Libraries", technologies: "torchvision (datasets, transforms, pre-trained models), timm (700+ pre-trained vision architectures), Ultralytics YOLO v8 (object detection production-ready), Detectron2 (Faster R-CNN, Mask R-CNN)" },
+    { layer: "Vision Libraries", technologies: "torchvision (datastasets, transforms, pre-trained models), timm (700+ pre-trained vision architectures), Ultralytics YOLO v8 (object detection production-ready), Detectron2 (Faster R-CNN, Mask R-CNN)" },
     { layer: "NLP Libraries", technologies: "Hugging Face Transformers (500,000+ pre-trained models: BERT, RoBERTa, T5, BART, DeBERTa), PEFT (LoRA, prefix tuning), spaCy (tokenisation, NER, parsing)" },
     { layer: "Time Series", technologies: "PyTorch Forecasting (TFT, N-BEATS, N-HiTS), Darts, Nixtla (TimeGPT, StatsForecast)" },
     { layer: "Experiment Tracking", technologies: "Weights & Biases (primary richer visualisation), MLflow, TensorBoard" },
@@ -7185,7 +7230,7 @@ const deepLearningSolutionsOverride = {
     },
     {
       question: "What is transfer learning and how does it reduce data requirements?",
-      answer: "Transfer learning uses a model pre-trained on a large general dataset as the starting point for training on a smaller task-specific dataset rather than training from random weights. For computer vision: a ResNet or EfficientNet pre-trained on ImageNet (1.2M labelled images, 1,000 classes) has learned general visual features edges, textures, shapes that transfer usefully to almost any visual recognition task. Fine-tuning this pre-trained model on 1,000-10,000 domain-specific labelled images produces better results than training from scratch on the same data. For NLP: BERT and its variants (RoBERTa, DeBERTa) pre-trained on billions of words have learned language representations that transfer to classification, NER, and QA tasks with 100-10,000 labelled examples. Transfer learning makes deep learning practical for B2B use cases where labelling costs limit dataset size."
+      answer: "Transfer learning uses a model pre-trained on a large general dataset as the starting point for training on a smaller task-specific dataset rather than training from random weights. For computer vision: a ResNet or EfficientNet pre-trained on ImageNet (1.2M labelled images, 1,000 classes) has learned general visual features edges, textures, shapes that transfer usefully to almost any visual recognition task. Fine-tuning this pre-trained model on 1,000-10,000 domain-specific labelled images produces better results than traig from scratch on the same data. For NLP: BERT and its variants (RoBERTa, DeBERTa) pre-trained on billions of words have learned language representations that transfer to classification, NER, and QA tasks with 100-10,000 labelled examples. Transfer learning makes deep learning practical for B2B use cases where labelling costs limit dataset size."
     },
     {
       question: "What is the difference between PyTorch and TensorFlow?",
@@ -7216,7 +7261,7 @@ const deepLearningSolutionsOverride = {
   ],
   itemList: [
     "Computer Vision Image Classification & Object Detection",
-    "NLP Text Classification & Sequence Modelling",
+    "NLP Text ClassificationSequence Modelling",
     "Time Series Deep Learning",
     "Tabular Deep Learning",
     "Transfer Learning & Few-Shot Learning"
@@ -7235,6 +7280,7 @@ const naturalLanguageProcessingOverride = {
   category: "Artificial Intelligence (AI)",
   title: "Natural Language Processing Services",
   serviceName: "Natural Language Processing",
+  heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Natural Language Processing Services | NLP Development | ClickMasters",
   metaDescription: "ClickMasters builds NLP systems text classification, NER, sentiment analysis, semantic search, and summarisation using Hugging Face Transformers for B2B companies worldwide.",
   lead: "ClickMasters builds NLP systems for B2B companies across the USA, Europe, Canada, and Australia. Text classification that categorises thousands of documents per second. Named entity recognition that extracts specific information from unstructured text. Sentiment analysis that monitors customer voice at scale. Semantic search that understands what users mean, not just what they type. Summarisation that condenses long documents to decision-ready briefs. All built on Hugging Face Transformers.",
@@ -7282,7 +7328,7 @@ const naturalLanguageProcessingOverride = {
   pricingTiers: [
     { type: "NLP Scoping & Data Audit", investment: "$3,000 - $6,000", timeline: "1 - 2 weeks", bestFor: "Task definition, data quality review, model selection, labelling requirements" },
     { type: "Text Classification Model", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "BERT fine-tune, evaluation, REST API, monitoring" },
-    { type: "Named Entity Recognition", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Token classifier, custom entity types, evaluation, API" },
+    { type: "Named Entity Recognition", investment: "$8,08,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Token classifier, custom entity types, evaluation, API" },
     { type: "Sentiment Analysis System", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "Doc-level or aspect-based, dashboard integration" },
     { type: "Semantic Search Engine", investment: "$10,000 - $28,000", timeline: "4 - 7 weeks", bestFor: "Bi-encoder, pgvector/FAISS, re-ranking, search API" },
     { type: "Summarisation Pipeline", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "T5/BART fine-tune or prompting, batch + on-demand API" },
@@ -7310,7 +7356,7 @@ const naturalLanguageProcessingOverride = {
   faqs: [
     {
       question: "What is NLP and what problems does it solve?",
-      answer: "Natural Language Processing (NLP) is the field of machine learning focused on enabling computers to understand, interpret, and generate human language. In B2B software, NLP solves the problem of unstructured text data the contracts, support tickets, customer emails, product reviews, and meeting transcripts that contain valuable business intelligence but cannot be analysed at scale by human teams. NLP systems convert this unstructured text into structured, actionable signals: a text classifier that categorises 10,000 support tickets per hour by issue type (no human triage team can do this); a sentiment analysis system that monitors customer sentiment across 50,000 reviews in real time; a semantic search engine that finds documents by meaning, not just keyword match. The underlying technology is transformer models (BERT and its variants, trained on billions of words) fine-tuned on labelled examples from your specific domain."
+      answer: "Natural Language Processing (NLP) is the field of machine learning focused on enabling computers to understand, interpret, and generate human language. In B2B software, NLP solves the problem of unstructured text data the contracts, support tickets, customer emails, product reviews, and meeting transcripts that contain valuable business intelligence but cannot be analysed at scale by human teams. NLP systems convert this unstructured text into structured, actionable signals: a text classifier that categorises 10,000 support tickets per hour by issue type (no human triage team can do this); a sentiment analysis system that monitors customer sentiment across 50,000 reviews in real time; a semantic search engine that finds documents by meaning, not just keyword match. The underlying teology is transformer models (BERT and its variants, trained on billions of words) fine-tuned on labelled examples from your specific domain."
     },
     {
       question: "How many labelled examples do I need for text classification?",
@@ -7363,6 +7409,7 @@ const speechRecognitionOverride = {
   category: "Artificial Intelligence (AI)",
   title: "Speech Recognition Services",
   serviceName: "Speech Recognition",
+  heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Speech Recognition Services | Transcription & Voice AI | ClickMasters",
   metaDescription: "ClickMasters builds speech recognition systems meeting transcription, voice command interfaces, call analytics, and multilingual ASR using Whisper and Deepgram for B2B companies worldwide.",
   lead: "ClickMasters builds speech recognition systems for B2B companies across the USA, Europe, Canada, and Australia. Meeting transcription with speaker diarisation who said what, when. Call centre analytics transcribe, analyse sentiment, and extract action items from thousands of calls daily. Voice command interfaces for mobile and web applications. Real-time and batch transcription in 100+ languages. Built on OpenAI Whisper and Deepgram.",
@@ -7495,6 +7542,7 @@ const textAnalyticsOverride = {
   category: "Artificial Intelligence (AI)",
   title: "Text Analytics Services",
   serviceName: "Text Analytics",
+  heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Text Analytics Services | Customer Feedback & Contract Analysis | ClickMasters",
   metaDescription: "ClickMasters builds text analytics systems topic modelling, sentiment monitoring, contract analysis, and customer feedback intelligence for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds text analytics systems for B2B companies across the USA, Europe, Canada, and Australia. Topic modelling that surfaces the 12 recurring themes in 50,000 customer support tickets automatically. Sentiment monitoring dashboards that track brand health across review platforms. Contract analytics that flags non-standard clauses before legal review. Voice-of-customer systems that translate customer language into product roadmap evidence.",
@@ -7625,6 +7673,7 @@ const computerVisionOverride = {
   category: "Artificial Intelligence (AI)",
   title: "Computer Vision Services",
   serviceName: "Computer Vision",
+  heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Computer Vision Services | Image Recognition & Object Detection | ClickMasters",
   metaDescription: "ClickMasters builds computer vision systems image classification, object detection, defect detection, and visual inspection using YOLO, DETR, and EfficientNet for B2B companies worldwide.",
   lead: "ClickMasters builds computer vision systems for B2B companies across the USA, Europe, Canada, and Australia. Image classification that categorises millions of product images per day. Object detection that locates and identifies items in real-time video streams. Defect detection that replaces manual visual inspection on manufacturing lines. Document layout analysis that understands the structure of complex PDF documents. Medical image analysis. Satellite and aerial image processing.",
@@ -7755,6 +7804,7 @@ const imageProcessingOverride = {
   category: "Artificial Intelligence (AI)",
   title: "Image Processing Services",
   serviceName: "Image Processing",
+  heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Image Processing Services | Automated Image Enhancement & Analysis | ClickMasters",
   metaDescription: "ClickMasters builds image processing pipelines automated enhancement, OCR, background removal, image denoising, and batch processing at scale for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds image processing pipelines for B2B companies across the USA, Europe, Canada, and Australia. Batch image enhancement (brightness, contrast, noise reduction, sharpening) at millions of images per day. Background removal and product image standardisation for e-commerce. OCR pipelines that extract text from scanned documents with 99% accuracy. Image quality assessment that filters unusable images before they reach production. Medical image processing and DICOM pipelines.",
@@ -7806,7 +7856,7 @@ const imageProcessingOverride = {
     { type: "Batch Enhancement Pipeline", investment: "$6,000 - $18,000", timeline: "2 - 5 weeks", bestFor: "OpenCV/Pillow pipeline, S3 trigger, Lambda/ECS deployment" },
     { type: "Background Removal System", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "U2-Net/SAM, batch S3 pipeline, e-commerce platform integration" },
     { type: "OCR Document Pipeline", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Pre-processing + Textract/Tesseract + post-processing + JSON output" },
-    { type: "Image Quality Assessment", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "BRISQUE + blur detection + ML IQA, filtering API, monitoring" },
+    { type: "Image Quality Assessment", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "BRISQUE lur detection + ML IQA, filtering API, monitoring" },
     { type: "Super-Resolution Pipeline", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "Real-ESRGAN batch upscaling, S3 pipeline, quality validation" },
     { type: "DICOM Medical Pipeline", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "pydicom parsing, anonymisation, windowing, MONAI preprocessing" },
     { type: "Image Processing Retainer", investment: "$2,000 - $5,000/mo", timeline: "Ongoing", bestFor: "Pipeline maintenance, new processing steps, throughput scaling" }
@@ -7885,6 +7935,7 @@ const videoAnalyticsOverride = {
   category: "Artificial Intelligence (AI)",
   title: "Video Analytics Services",
   serviceName: "Video Analytics",
+  heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Video Analytics Services | AI Video Analysis & Object Tracking | ClickMasters",
   metaDescription: "ClickMasters builds video analytics systems object tracking, action recognition, crowd analysis, and real-time surveillance analytics using YOLO, DeepSORT, and SlowFast for B2B companies worldwide.",
   lead: "ClickMasters builds video analytics systems for B2B companies across the USA, Europe, Canada, and Australia. Object detection and tracking in live video streams detect, identify, and follow every object of interest. Retail analytics customer flow, dwell time, queue length, conversion zone heatmaps. Crowd analysis and density estimation. Action recognition detect specific events and behaviours. License plate recognition. All analytics delivered as real-time event streams your operations team can act on.",
@@ -8015,6 +8066,7 @@ const dataScienceAnalyticsOverride = {
   category: "Data Science & Analytics",
   title: "Data Science & Analytics Services",
   serviceName: "Data Science & Analytics",
+  heroImage: "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Data Science & Analytics Services | BI, Data Engineering & Insights | ClickMasters",
   metaDescription: "ClickMasters delivers data science, business intelligence, data engineering, and analytics platforms for B2B companies in the USA, Europe, Canada & Australia. Turn data into decisions.",
   lead: "ClickMasters builds data platforms, BI dashboards, analytics pipelines, and predictive models for B2B companies across the USA, Europe, Canada, and Australia. We turn scattered data across your CRM, ERP, billing system, and product database into a unified intelligence layer that tells you what is happening, why it is happening, and what will happen next.",
@@ -8136,7 +8188,7 @@ const dataScienceAnalyticsOverride = {
       body: "The modern data stack is a collection of cloud-native, composable tools that have replaced legacy ETL systems and on-premise data warehouses as the standard architecture for data-driven organizations.",
       items: [
         "Data Ingestion: Airbyte (open-source, 300+ connectors) or Fivetran moves raw data from source systems to the data warehouse automatically.",
-        "Data Warehouse: Snowflake (primary multi-cloud, elastic), BigQuery (GCP-native, serverless), or Redshift (AWS-native) centralized columnar storage optimized for analytical queries.",
+        "Data Warehrehouse: Snowflake (primary multi-cloud, elastic), BigQuery (GCP-native, serverless), or Redshift (AWS-native) centralized columnar storage optimized for analytical queries.",
         "Data Transformation: dbt (data build tool) industry standard for SQL-based data transformation with version control, testing, and documentation.",
         "Data Orchestration: Apache Airflow or Prefect schedules and monitors data pipelines, ensures data freshness, handles failures.",
         "Data Quality: Great Expectations or dbt tests detects data quality issues before they reach dashboards.",
@@ -8161,7 +8213,7 @@ const dataScienceAnalyticsOverride = {
     },
     {
       question: "How much does it cost to build a data analytics platform?",
-      answer: "Building a data analytics platform costs between $15,000 for a basic modern data stack foundation (data warehouse, ingestion pipelines, initial dbt models) to $80,000 for a full platform including customer analytics, predictive models, and self-service BI. The primary cost drivers are: number of data sources to ingest, complexity of data transformation and metric definitions, whether predictive modeling is in scope, and the number of dashboards and analytics use cases. Cloud data warehouse running costs (Snowflake, BigQuery) are typically $300-3,000/month depending on data volume. ClickMasters provides fixed-price proposals after a free data audit session."
+      answer: "Building a data analytics platform costs between $15,000 for a basic modern data stack foundation (data warehouse, ingestion pipelines, initial dbt models) to $80,000 for a full platform including customer analytics, predictive models, and self-service BI. The primary cost drivers are: numbef data sources to ingest, complexity of data transformation and metric definitions, whether predictive modeling is in scope, and the number of dashboards and analytics use cases. Cloud data warehouse running costs (Snowflake, BigQuery) are typically $300-3,000/month depending on data volume. ClickMasters provides fixed-price proposals after a free data audit session."
     },
     {
       question: "What is a data warehouse and do I need one?",
@@ -8177,7 +8229,7 @@ const dataScienceAnalyticsOverride = {
     },
     {
       question: "Do you provide ongoing data engineering and analytics support after delivery?",
-      answer: "Yes. ClickMasters offers ongoing data engineering and analytics retainers from $5,000-18,000/month covering: new data source integration (connecting additional systems as your stack grows), pipeline maintenance and incident response (fixing broken pipelines, handling source system API changes), model retraining (refreshing predictive models with new data and evaluating for drift), new dashboard and report development, data quality monitoring, and analytics iteration based on business question evolution. Most clients transition to a retainer after initial delivery because data needs grow with the business new products, new markets, new reporting requirements."
+      answer: "Yes. ClickMasters offers ongoing data engineering and analytics retainers from $5,000-18,000/month covering: new data source integration (connecting additional systems as your stack grows), pipeline maintenance and incident response (fixing broken pipelines, handling source system API changes), model retraining (refreshing predictive models with new data and evaluating for drift), new dashboard and report development, data quality monitoring, and analytics iteration based on business question evolution. Most clielients transition to a retainer after initial delivery because data needs grow with the business new products, new markets, new reporting requirements."
     }
   ],
   testimonial: {
@@ -8222,13 +8274,14 @@ const businessIntelligenceOverride = {
   category: "Data Science & Analytics",
   title: "Business Intelligence Services",
   serviceName: "Business Intelligence",
+  heroImage: "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Business Intelligence Services | BI Dashboards & Analytics | ClickMasters",
   metaDescription: "ClickMasters builds business intelligence systems data warehouses, BI dashboards, self-service analytics, and KPI reporting using Metabase, Looker, and dbt for B2B companies worldwide.",
   lead: "ClickMasters builds business intelligence systems for B2B companies across the USA, Europe, Canada, and Australia. Data warehouses that consolidate your fragmented data sources into a single, queryable source of truth. dbt data models that define your business metrics in code version-controlled, tested, and consistent. Metabase or Looker dashboards that let your business teams answer their own questions. Embedded analytics in your product. KPI monitoring that alerts before problems become crises.",
   highlights: [
     "dbt Data Modelling",
     "Metabase / Looker Dashboards",
-    "Snowflake / BigQuery Warehouse",
+    "Snowflake / BigQuery Warehous",
     "Self-Service Analytics",
     "Embedded Analytics",
     "Automated KPI Alerts"
@@ -8255,7 +8308,7 @@ const businessIntelligenceOverride = {
   ],
   processPhases: [
     { phase: "Phase 1", title: "BI Discovery & Architecture", timeline: "Week 1-2", text: "Source system audit, warehouse design, tool selection (Metabase vs Looker vs Superset), metric definition workshop, roadmap. Deliverable: BI Architecture Plan." },
-    { phase: "Phase 2", title: "Data Warehouse Build", timeline: "Week 2-5", text: "Schema design (star schema or medallion), ingestion pipelines (Airbyte/Fivetran), staging tables, access control. Deliverable: Production Data Warehouse." },
+    { phase: "Phase 2", title: "Data Warehouse Build", timeline: "Week 2-5", text: "Schema design (star schechema or medallion), ingestion pipelines (Airbyte/Fivetran), staging tables, access control. Deliverable: Production Data Warehouse." },
     { phase: "Phase 3", title: "dbt Data Modelling", timeline: "Week 3-5", text: "Staging models (clean source data), intermediate models (business logic), mart models (business-facing tables), dbt tests, dbt docs generation. Deliverable: dbt Project + Documentation." },
     { phase: "Phase 4", title: "Dashboard Development", timeline: "Week 4-7", text: "Connect BI tool to warehouse, build native SQL dashboards, configure auto-refresh, set up row-level security, embed dashboards if required. Deliverable: Production Dashboards." },
     { phase: "Phase 5", title: "KPI Monitoring & Alerts", timeline: "Week 6-8", text: "Define KPI thresholds, configure anomaly detection, set up alert routing (Slack/email), build executive digest. Deliverable: KPI Monitoring System." }
@@ -8285,7 +8338,7 @@ const businessIntelligenceOverride = {
   ],
   sections: [
     {
-      heading: "Metabase vs Looker Which BI Tool Should I Choose?",
+      heading: "Metabase vs Looker Which BI Tool uld I Choose?",
       body: `Metabase is the better choice for most B2B companies that primarily need internal dashboards and self-service analytics for their own team: it is open-source (self-hosted at no licensing cost), has a simple, approachable UI that non-technical business users can use without training, and deploys in hours. Looker is the better choice when: you need to embed BI in your product (Looker's Embedded Analytics SDK and LookML semantic layer are significantly more powerful for product embedding), you have a large team with multiple stakeholders who need governed, consistent metric definitions (LookML enforces the "one source of truth" for each metric), or you are on the Google Cloud Platform (BigQuery integration is native). ClickMasters defaults to Metabase for internal analytics and Looker (or custom chart libraries) for customer-facing embedded analytics.`,
       items: []
     },
@@ -8352,6 +8405,7 @@ const dataWarehousingOverride = {
   category: "Data Science & Analytics",
   title: "Data Warehousing Services",
   serviceName: "Data Warehousing",
+  heroImage: "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Data Warehousing Services | Snowflake, BigQuery & Redshift | ClickMasters",
   metaDescription: "ClickMasters builds cloud data warehouses on Snowflake, BigQuery, and Redshift schema design, optimisation, migration, and cost management for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds cloud data warehouses for B2B companies across the USA, Europe, Canada, and Australia. Snowflake for organisations that want near-zero infrastructure management and pay-as-you-use compute. BigQuery for GCP-native teams and event-heavy workloads. Redshift for AWS-native architectures. Schema designs that your data team will still understand in 3 years. Query optimisation that keeps costs predictable. And migrations from legacy on-premises warehouses to the cloud.",
@@ -8428,7 +8482,7 @@ const dataWarehousingOverride = {
     },
     {
       question: "How much does it cost to run Snowflake?",
-      answer: "Snowflake costs have two components: compute (virtual warehouse credits charged per second of warehouse activity) and storage (compressed data storage approximately $23/TB/month). A typical startup with one X-Small virtual warehouse running 8 hours/day, 250GB of data, and ELT pipelines costs approximately $150-400/month. A growing B2B SaaS company with multiple warehouses, 1TB data, and active BI usage costs $500-2,000/month. Enterprise deployments with multiple teams, heavy ML workloads, and terabytes of data can cost $5,000-50,000+/month. The most common Snowflake overspending pattern is virtual warehouses that do not auto-suspend (running 24/7 when queries only run for 2 hours/day). ClickMasters configures auto-suspend to 1-5 minutes on all warehouses typically reducing Snowflake spend by 40-60% on new deployments where auto-suspend was not configured."
+      answer: "Snowflake costs have two components: comcompute (virtual warehouse credits charged per second of warehouse activity) and storage (compressed data storage approximately $23/TB/month). A typical startup with one X-Small virtual warehouse running 8 hours/day, 250GB of data, and ELT pipelines costs approximately $150-400/month. A growing B2B SaaS company with multiple warehouses, 1TB data, and active BI usage costs $500-2,000/month. Enterprise deployments with multiple teams, heavy ML workloads, and terabytes of data can cost $5,000-50,000+/month. The most common Snowflake overspending pattern is virtual warehouses that do not auto-suspend (running 24/7 when queries only run for 2 hours/day). ClickMasters configures auto-suspend to 1-5 minutes on all warehouses typically reducing Snowflake spend by 40-60% on new deployments where auto-suspend was not configured."
     },
     {
       question: "What is the star schema and why is it used in data warehouses?",
@@ -8479,9 +8533,10 @@ const dataVisualizationOverride = {
   category: "Data Science & Analytics",
   title: "Data Visualization Services",
   serviceName: "Data Visualization",
+  heroImage: "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Data Visualization Services | Dashboards & Interactive Charts | ClickMasters",
   metaDescription: "ClickMasters builds data visualisation systems interactive dashboards, D3.js custom charts, React data visualisation, and embedded analytics for B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters builds data visualisation systems for B2B companies across the USA, Europe, Canada, and Australia. Custom D3.js and Recharts dashboards for data-dense B2B products. Interactive React dashboards that let users explore their data without contacting support. Embedded analytics that make your SaaS product feel data-native. And data storytelling that converts raw numbers into decisions.",
+  lead: "ClickMasters builds data visualisation systems for B2B companies across the USA, Europe, Canada, and Aralia. Custom D3.js and Recharts dashboards for data-dense B2B products. Interactive React dashboards that let users explore their data without contacting support. Embedded analytics that make your SaaS product feel data-native. And data storytelling that converts raw numbers into decisions.",
   highlights: [
     "D3.js Custom Charts",
     "Recharts + Nivo Dashboards",
@@ -8607,6 +8662,7 @@ const bigDataSolutionsOverride = {
   category: "Data Science & Analytics",
   title: "Big Data Solutions",
   serviceName: "Big Data Solutions",
+  heroImage: "https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Big Data Solutions | Spark, Kafka & Data Lakehouse | ClickMasters",
   metaDescription: "ClickMasters builds big data infrastructure Apache Spark processing, Kafka streaming, data lakehouses on Delta Lake, and petabyte-scale analytics for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds big data infrastructure for B2B companies across the USA, Europe, Canada, and Australia. Apache Spark on Databricks or AWS EMR for distributed processing of terabyte to petabyte datasets. Apache Kafka for event streams at millions of events per second. Delta Lake and Apache Iceberg for data lakehouse architectures that combine the scale of object storage with ACID transaction guarantees. When your data has genuinely outgrown your SQL warehouse, we build the infrastructure that scales.",
@@ -8715,7 +8771,7 @@ const bigDataSolutionsOverride = {
     },
     {
       question: "How do you manage costs for big data infrastructure?",
-      answer: "Big data infrastructure cost management focuses on five levers. Cluster auto-termination (Spark clusters that run continuously when idle are the most common big data cost waste configure auto-terminate after 30-60 minutes of inactivity, spin up on schedule or trigger). Spot/preemptible instances (AWS Spot or GCP Preemptible instances for worker nodes 60-80% cheaper than on-demand, with automatic replacement on spot interruption appropriate for fault-tolerant batch workloads). Data partition pruning (design partition schemes on S3/Delta Lake so queries only scan relevant partitions the single most impactful query cost optimisation). Caching (Spark RDD/DataFrame caching for iteratively queried datasets reduces recomputation). Storage tiering (S3 Intelligent-Tiering automatically moves infrequently accessed data to cheaper storage classes reduces long-term data lake storage costs by 30-40%). ClickMasters implements monitoring dashboards for all big data engagements daily cost per pipeline and cluster with budget alerts."
+      answer: "Big data infrastructure cost management focuses on five levers. Cluster auto-termination (Spark clusters that run continuously when idle are the most common big datdata cost waste configure auto-terminate after 30-60 minutes of inactivity, spin up on schedule or trigger). Spot/preemptible instances (AWS Spot or GCP Preemptible instances for worker nodes 60-80% cheaper than on-demand, with automatic replacement on spot interruption appropriate for fault-tolerant batch workloads). Data partition pruning (design partition schemes on S3/Delta Lake so queries only scan relevant partitions the single most impactful query cost optimisation). Caching (Spark RDD/DataFrame caching for iteratively queried datasets reduces recomputation). Storage tiering (S3 Intelligent-Tiering automatically moves infrequently accessed data to cheaper storage classes reduces long-term data lake storage costs by 30-40%). ClickMasters implements monitoring dashboards for all big data engagements daily cost per pipeline and cluster with budget alerts."
     }
   ],
   testimonial: {
@@ -8760,6 +8816,7 @@ const webScrapingDataExtractionOverride = {
   category: "Automation & Integration",
   title: "Web Scraping & Data Extraction Services",
   serviceName: "Web Scraping & Data Extraction",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Web Scraping & Data Extraction Services | Python Crawlers | ClickMasters",
   metaDescription: "ClickMasters builds web scraping and data extraction systems Python crawlers, Playwright automation, anti-bot bypass, and structured data pipelines for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds web scraping and data extraction systems for B2B companies across the USA, Europe, Canada, and Australia. Competitor price monitoring that updates your pricing dashboard daily. Lead data extraction that builds targeted prospect lists from business directories. Product catalogue extraction from supplier websites to your ERP. Market intelligence scraping from news sites, job boards, and public filings. Python-based crawlers using Playwright and Scrapy, with proxy rotation and anti-detection measures where legally appropriate.",
@@ -8772,7 +8829,7 @@ const webScrapingDataExtractionOverride = {
     "Scheduled Cloud Crawlers"
   ],
   // marketStats: [
-  //   { label: 'Residential proxies (Oxylabs, Bright Data) IP addresses from real ISPs, significantly harder to block than datacenter proxies', value: 'Residential Proxies' },
+  //   { label: 'Residential proxies (Oxylabs, Bright Data) IP addresses from real ISPs, significantly harder to block than datacenter proxies', valueResidential Proxies' },
   //   { label: 'Playwright stealth plugin masks headless browser indicators, patches navigator.plugins, WebGL, canvas fingerprint', value: 'Stealth Plugin' },
   //   { label: 'Poisson-distributed random delays human-realistic timing, not fixed intervals that are statistically detectable', value: '2-8 sec' },
   //   { label: 'CAPTCHA solving services used only where legally appropriate', value: '2captcha / Anti-Captcha' },
@@ -8819,7 +8876,7 @@ const webScrapingDataExtractionOverride = {
   ],
   industryUseCases: [
     { name: "Competitor Price Monitoring", description: "Daily scrape of competitor pricing pages. Extract price, SKU, availability, promotions. Change detection alerts. Pricing intelligence dashboard. E-commerce price matching." },
-    { name: "Lead Data Extraction", description: "Extract company data from business directories (LinkedIn, Crunchbase, industry directories). Company name, size, industry, location, decision-maker titles. Enrich with Clearbit/Apollo. CRM import." },
+    { name: "Lead Data Extraction", description: "Extract company data from business directories (LinkedIn, Crunchbase, industry directories). Compampany name, size, industry, location, decision-maker titles. Enrich with Clearbit/Apollo. CRM import." },
     { name: "Market Intelligence", description: "Scrape news sites, job boards, public filings for market signals. Extract job postings (hiring trends), press releases (product launches), SEC filings (financial health). Weekly intelligence digest." },
     { name: "Supplier Product Catalogue", description: "Extract product catalogues from supplier websites. Product name, SKU, price, availability, specifications. Scheduled sync to ERP/PIM. Automate supplier data ingestion." }
   ],
@@ -8842,7 +8899,7 @@ const webScrapingDataExtractionOverride = {
     },
     {
       question: "What is the difference between Playwright and Scrapy for web scraping?",
-      answer: "Scrapy is an asynchronous Python spider framework optimised for high-throughput scraping of server-rendered HTML it is fast, memory-efficient, and well-suited for static HTML pages where the data is in the page source. Playwright is a browser automation library that runs a full Chromium/Firefox/WebKit browser it handles JavaScript-rendered content (React SPAs, dynamically loaded data, infinite scroll) that Scrapy cannot access because Scrapy only sees the server's HTML response, not the page after JavaScript execution. ClickMasters uses Scrapy for high-volume static HTML scraping (news sites, product catalogues, directories) and Playwright for JavaScript-heavy sites (modern SPAs, sites with dynamic loading, sites requiring JavaScript interaction to reveal data). For anti-detection requirements, Playwright with stealth plugins is more effective than Scrapy's built-in features."
+      answer: "Scrapy is an asynchronous Python spider framework optimised for high-throughput scraping of server-rendered HTML it is fast, memory-efficient, and well-suited for static HTML pages where the data is in the page source. Playwright is a browser automation library that runs a full Chromium/Firefox/WebKit browser it handles JavaScript-rendered content (React SPAs, dynamically loa data, infinite scroll) that Scrapy cannot access because Scrapy only sees the server's HTML response, not the page after JavaScript execution. ClickMasters uses Scrapy for high-volume static HTML scraping (news sites, product catalogues, directories) and Playwright for JavaScript-heavy sites (modern SPAs, sites with dynamic loading, sites requiring JavaScript interaction to reveal data). For anti-detection requirements, Playwright with stealth plugins is more effective than Scrapy's built-in features."
     },
     {
       question: "How do you handle sites that block scraping?",
@@ -8892,6 +8949,7 @@ const businessProcessAutomationOverride = {
   category: "Automation & Integration",
   title: "Business Process Automation Services",
   serviceName: "Business Process Automation",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Business Process Automation Services | Custom BPA for B2B | ClickMasters",
   metaDescription: "ClickMasters automates manual B2B workflows approval chains, document processing, system integrations, and reporting for companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters engineers custom business process automation for B2B companies across the USA, Europe, Canada, and Australia. Approval workflows that route themselves. Documents that process without human intervention. Reports that generate and deliver on schedule. Integrations that keep your systems in sync without manual data entry. Built to handle exceptions not just happy paths.",
@@ -9056,6 +9114,7 @@ const workflowAutomationOverride = {
   category: "Automation & Integration",
   title: "Workflow Automation Services",
   serviceName: "Workflow Automation",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Workflow Automation Services | n8n, Make & Zapier | ClickMasters",
   metaDescription: "ClickMasters builds workflow automation systems n8n, Make.com, Zapier, and custom automation pipelines that connect your tools and eliminate manual handoffs for B2B companies worldwide.",
   lead: "ClickMasters builds workflow automation for B2B companies across the USA, Europe, Canada, and Australia. n8n self-hosted for complete control and no per-execution pricing. Make.com for rapid deployment of complex multi-step workflows. Custom Python/Node.js automation for workflows that no-code tools cannot handle. Connect your CRM, billing, communication, and operations tools into seamless automated processes that run while your team focuses on the work that actually requires human judgment.",
@@ -9190,6 +9249,7 @@ const systemIntegrationOverride = {
   category: "Automation & Integration",
   title: "System Integration Services",
   serviceName: "System Integration",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "System Integration Services | ERP, CRM & SaaS Integration | ClickMasters",
   metaDescription: "ClickMasters builds system integrations ERP, CRM, SaaS, and custom API integrations that connect your enterprise software stack for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds system integrations for B2B companies across the USA, Europe, Canada, and Australia. ERP integrations (NetSuite, SAP, Microsoft Dynamics) connected to your e-commerce, WMS, and CRM. Salesforce and HubSpot integrated with billing, finance, and customer success tools. Custom middleware that translates between legacy system data formats and modern API standards. Event-driven integrations using webhooks and message queues for real-time data consistency.",
@@ -9325,6 +9385,7 @@ const apiIntegrationOverride = {
   category: "Automation & Integration",
   title: "API Integration Services",
   serviceName: "API Integration",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "API Integration Services | Third-Party API Development | ClickMasters",
   metaDescription: "ClickMasters builds API integrations Stripe, Salesforce, Twilio, SendGrid, Google, and custom REST/GraphQL APIs for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters integrates third-party APIs into B2B products across the USA, Europe, Canada, and Australia. Stripe for payments, subscriptions, and marketplace payouts. Twilio for SMS, voice, and WhatsApp. SendGrid for transactional and marketing email. Salesforce, HubSpot, and Pipedrive CRM integration. Google Maps, Calendar, and Workspace. OAuth 2.0 social login. Webhook consumer infrastructure. Any REST or GraphQL API your product depends on.",
@@ -9464,6 +9525,7 @@ const cloudSolutionsOverride = {
   category: "Cloud & DevOps",
   title: "Cloud Solutions & Migration",
   serviceName: "Cloud Solutions",
+  heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Cloud Solutions & Migration Services | AWS, GCP, Azure | ClickMasters",
   metaDescription: "ClickMasters delivers cloud solutions cloud migration, architecture design, cost optimisation, and managed AWS/GCP/Azure infrastructure for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters delivers cloud solutions for B2B companies across the USA, Europe, Canada, and Australia. Cloud migration from on-premises or legacy hosting to AWS, GCP, or Azure lift-and-shift or cloud-native re-architecture. Cloud infrastructure design that is secure, scalable, and cost-predictable from day one. FinOps cost optimisation that reduces your cloud bill without sacrificing performance. And ongoing managed cloud operations for teams that want the infrastructure handled.",
@@ -9605,6 +9667,7 @@ const cloudNativeDevelopmentOverride = {
   category: "Cloud & DevOps",
   title: "Cloud-Native Development",
   serviceName: "Cloud-Native Development",
+  heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Cloud-Native Development Services | Microservices & Kubernetes | ClickMasters",
   metaDescription: "ClickMasters builds cloud-native applications microservices, containerised deployments, ECS Fargate, Kubernetes, and 12-factor apps for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds cloud-native applications for B2B companies across the USA, Europe, Canada, and Australia. 12-factor applications that run in containers, scale horizontally, and deploy without downtime. Microservices architectures on ECS Fargate that scale each service independently. Kubernetes deployments for organisations that need the full container orchestration platform. Event-driven architectures on SQS/SNS/EventBridge for loosely coupled, resilient services.",
@@ -9742,6 +9805,7 @@ const devopsServicesOverride = {
   category: "Cloud & DevOps",
   title: "DevOps Services",
   serviceName: "DevOps Services",
+  heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "DevOps Services | CI/CD, Infrastructure Automation & Monitoring | ClickMasters",
   metaDescription: "ClickMasters delivers DevOps services CI/CD pipelines, infrastructure automation, monitoring, and SRE practices for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters delivers DevOps services for B2B companies across the USA, Europe, Canada, and Australia. CI/CD pipelines that go from commit to production in minutes not hours of manual release steps. Infrastructure-as-code that makes every environment reproducible. Monitoring and alerting that catches problems before users do. SLOs and error budgets that give your team data-driven freedom to move fast without breaking things.",
@@ -9870,6 +9934,7 @@ const devsecopsOverride = {
   category: "Cloud & DevOps",
   title: "DevSecOps Services",
   serviceName: "DevSecOps",
+  heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "DevSecOps Services | Security in CI/CD & Cloud Infrastructure | ClickMasters",
   metaDescription: "ClickMasters embeds security into DevOps pipelines SAST, DAST, container scanning, secrets management, and policy-as-code for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters embeds security into CI/CD pipelines and cloud infrastructure for B2B companies across the USA, Europe, Canada, and Australia. SAST (Static Application Security Testing) in every pull request. Container image scanning before every deployment. Secrets detection to prevent credentials from entering the codebase. Policy-as-code that enforces security standards on infrastructure changes. And the security documentation your enterprise customers require.",
@@ -10021,6 +10086,7 @@ const serverlessArchitectureOverride = {
   category: "Cloud & DevOps",
   title: "Serverless Architecture Services",
   serviceName: "Serverless Architecture",
+  heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Serverless Architecture Services | AWS Lambda & Serverless Framework | ClickMasters",
   metaDescription: "ClickMasters builds serverless architectures AWS Lambda, API Gateway, EventBridge, and Step Functions that scale from zero to millions without managing servers for B2B companies worldwide.",
   lead: "ClickMasters builds serverless architectures for B2B companies across the USA, Europe, Canada, and Australia. AWS Lambda functions that scale automatically zero to thousands of concurrent invocations without any capacity planning. API Gateway REST or HTTP APIs fronting Lambda for serverless HTTP backends. EventBridge and SQS for event-driven Lambda triggers. Step Functions for complex multi-step serverless workflows. Infrastructure defined in AWS CDK or Serverless Framework reproducible, version-controlled, deployable in minutes.",
@@ -10162,6 +10228,7 @@ const databaseDesignOverride = {
   category: "Database & Data Management",
   title: "Database Design Services",
   serviceName: "Database Design",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Database Design Services | PostgreSQL & Schema Architecture | ClickMasters",
   metaDescription: "ClickMasters designs production databases PostgreSQL schema design, normalisation, indexing strategy, and multi-tenant data models for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters designs production databases for B2B companies across the USA, Europe, Canada, and Australia. PostgreSQL schema design grounded in normalisation principles. Indexing strategies designed for your query patterns not generic textbook indexes. Multi-tenant data models with row-level security for SaaS products. Enum types, constraints, and triggers that enforce business rules at the database level rather than relying on application code. And the migration strategy to get from your current schema to the correct one without downtime.",
@@ -10295,6 +10362,7 @@ const databaseManagementOverride = {
   category: "Database & Data Management",
   title: "Database Management Services",
   serviceName: "Database Management",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Database Management Services | Managed PostgreSQL & DBA | ClickMasters",
   metaDescription: "ClickMasters manages production databases backup validation, monitoring, replication, connection pooling, and DBA support for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters manages production databases for B2B companies across the USA, Europe, Canada, and Australia. Backup and recovery not just configured, but tested weekly with a restore-and-verify procedure. PgBouncer connection pooling that prevents connection exhaustion under load. Replication and high availability with automatic failover. Vacuuming and autovacuum tuning that prevents table bloat from degrading performance. And the monitoring that tells your team about database problems before users notice them.",
@@ -10428,6 +10496,7 @@ const dataMigrationOverride = {
   category: "Database & Data Management",
   title: "Data Migration Services",
   serviceName: "Data Migration",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Data Migration Services | Database Migration & ETL | ClickMasters",
   metaDescription: "ClickMasters executes data migrations database platform migrations, schema migrations, cloud migrations, and application data migrations with zero data loss for B2B companies worldwide.",
   lead: "ClickMasters executes data migrations for B2B companies across the USA, Europe, Canada, and Australia. MySQL to PostgreSQL migrations that preserve every row, every relationship, and every business rule. On-premises to AWS RDS migrations with AWS Database Migration Service. Schema migrations that re-architect the data model without downtime. Application data migrations that transform and consolidate data from multiple systems. Every migration proceeds through a validated plan no surprises on cutover day.",
@@ -10557,6 +10626,7 @@ const sqlNosqlSolutionsOverride = {
   category: "Database & Data Management",
   title: "SQL & NoSQL Database Solutions",
   serviceName: "SQL & NoSQL Solutions",
+  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "SQL & NoSQL Database Solutions | PostgreSQL, MongoDB & Redis | ClickMasters",
   metaDescription: "ClickMasters selects, designs, and implements SQL and NoSQL databases PostgreSQL, MongoDB, Redis, DynamoDB, and Elasticsearch matched to your data model and query patterns.",
   lead: "ClickMasters selects and implements the correct database for each use case for B2B companies across the USA, Europe, Canada, and Australia. PostgreSQL for relational data that requires ACID transactions and complex queries. Redis for caching, sessions, and queues. MongoDB for document data with variable schemas. DynamoDB for high-throughput key-value access at serverless scale. Elasticsearch for full-text search and log analytics. ClickHouse for analytical queries at scale. The right database for the right job not the one your team is most comfortable with.",
@@ -10703,6 +10773,7 @@ const cybersecurityServicesOverride = {
   category: "Cybersecurity & Compliance",
   title: "Cybersecurity Services for B2B Software Companies",
   serviceName: "Cybersecurity Services",
+  heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Cybersecurity Services Company | Pen Testing, Audits & Compliance | ClickMasters",
   metaDescription: "ClickMasters delivers application security, penetration testing, security audits, and SOC 2/ISO 27001 compliance for B2B software companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters delivers application security, penetration testing, security audits, and compliance consulting for B2B software companies in the USA, Europe, Canada, and Australia. OWASP ASVS-aligned security reviews. Penetration test reports accepted by enterprise customers. SOC 2, ISO 27001, HIPAA, and GDPR compliance pathways mapped, implemented, and maintained.",
@@ -10879,6 +10950,7 @@ const securityAuditsOverride = {
   category: "Cybersecurity & Compliance",
   title: "Security Audit Services",
   serviceName: "Security Audits",
+  heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Security Audit Services | Application & Cloud Security Review | ClickMasters",
   metaDescription: "ClickMasters conducts security audits application code review, cloud infrastructure security, and OWASP Top 10 assessment for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters conducts security audits for B2B companies across the USA, Europe, Canada, and Australia. Application security audits covering the OWASP Top 10 injection, broken authentication, sensitive data exposure, misconfigured security headers. Cloud infrastructure security reviews IAM, VPC configuration, S3 exposure, CloudTrail, GuardDuty. Code reviews that surface security vulnerabilities before they reach production. And the remediation guidance your engineering team needs to fix every finding.",
@@ -11010,6 +11082,7 @@ const penetrationTestingOverride = {
   category: "Cybersecurity & Compliance",
   title: "Penetration Testing Services",
   serviceName: "Penetration Testing",
+  heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Penetration Testing Services | Web App & API Pen Testing | ClickMasters",
   metaDescription: "ClickMasters conducts penetration testing web application, API, cloud, and network pen tests with detailed findings reports for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters conducts penetration testing for B2B companies across the USA, Europe, Canada, and Australia. Web application pen tests covering authentication bypass, injection, broken authorisation, and session management. API pen testing against REST and GraphQL endpoints. Cloud infrastructure pen testing AWS IAM privilege escalation, exposed services, misconfigured resources. Authenticated and unauthenticated testing scenarios. Detailed findings report with CVSS severity scores, proof-of-concept reproduction steps, and remediation guidance.",
@@ -11043,7 +11116,7 @@ const penetrationTestingOverride = {
   ],
   processPhases: [
     { phase: "Phase 1", title: "Pen Test Scoping", timeline: "Week 1", text: "Rules of Engagement (RoE): scope definition (systems, IP ranges, authentication levels), prohibited actions (no DoS attacks affecting production, no exfiltration of real customer data), testing window. Deliverable: Signed RoE + Test Plan." },
-    { phase: "Phase 2", title: "Reconnaissance", timeline: "Week 1-2", text: "Passive reconnaissance (DNS enumeration, WHOIS, subdomain discovery, technology fingerprinting), open-source intelligence (OSINT), automated scanning (Burp/ZAP spider, directory fuzzing). Deliverable: Asset Inventory + Attack Surface Map." },
+    { phase: "Phase 2", title: "Reconnaissance", timeline: "Week 1-2", text: "Passive reconnaissance (DNS enumeration, WHOIS, subdomain discovery, technology fingerprinting), open-source intelligence (OSINT), automated scanning (Burp/ZAP spider, directory fuzzing). Deliverable: Asset Invententory + Attack Surface Map." },
     { phase: "Phase 3", title: "Active Testing & Exploitation", timeline: "Week 2-3", text: "Authentication bypass, authorisation (IDOR), injection (SQL/XSS/SSTI/command), business logic abuse, API-specific attacks (GraphQL introspection, mass assignment), privilege escalation, attack chaining, data exfiltration simulation. Deliverable: Exploitation Proof-of-Concepts." },
     { phase: "Phase 4", title: "Reporting & Review", timeline: "Week 3-4", text: "Executive summary, technical findings (CVSS scores, PoC, impact, remediation), risk matrix, attack narrative. One-hour review session. Deliverable: Full Pen Test Report." },
     { phase: "Phase 5", title: "Remediation Support & Re-Test", timeline: "Week 4-5", text: "Remediation guidance clarification, re-test of critical/high findings after fixes, verification report. Deliverable: Re-Test Verification Report." }
@@ -11138,6 +11211,7 @@ const vulnerabilityAssessmentOverride = {
   category: "Cybersecurity & Compliance",
   title: "Vulnerability Assessment Services",
   serviceName: "Vulnerability Assessment",
+  heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Vulnerability Assessment Services | CVE Scanning & Risk Prioritisation | ClickMasters",
   metaDescription: "ClickMasters conducts vulnerability assessments automated scanning, CVE triage, dependency audits, and container image scanning for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters conducts vulnerability assessments for B2B companies across the USA, Europe, Canada, and Australia. Automated infrastructure scanning with Nessus and Tenable.io. Container image CVE scanning with Trivy and Grype. Application dependency audits. Cloud misconfiguration scanning with Prowler and ScoutSuite. CVSS-scored findings with business-context risk prioritisation not a raw CVE dump. And the remediation plan that tells your engineering team what to fix first.",
@@ -11276,6 +11350,7 @@ const complianceRiskManagementOverride = {
   category: "Cybersecurity & Compliance",
   title: "Compliance & Risk Management Services",
   serviceName: "Compliance & Risk Management",
+  heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Compliance & Risk Management Services | SOC 2, GDPR & ISO 27001 | ClickMasters",
   metaDescription: "ClickMasters helps B2B companies achieve SOC 2 Type II, GDPR, ISO 27001, and HIPAA compliance gap assessment, policy documentation, and technical control implementation.",
   lead: "ClickMasters helps B2B companies across the USA, Europe, Canada, and Australia achieve the security compliance that enterprise customers require before signing. SOC 2 Type II readiness gap assessment, policy documentation, technical controls, and audit preparation. GDPR compliance data mapping, privacy by design, DPIAs, and Article 32 security measures. ISO 27001 ISMS design and Annex A control implementation. HIPAA security rule compliance for healthcare technology. Compliance automation with Vanta or Drata to reduce ongoing compliance overhead.",
@@ -11412,6 +11487,7 @@ const applicationSecurityOverride = {
   category: "Cybersecurity & Compliance",
   title: "Application Security Services",
   serviceName: "Application Security",
+  heroImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Application Security Services | Secure Software Development | ClickMasters",
   metaDescription: "ClickMasters embeds security into application development secure coding practices, threat modelling, SAST, authentication hardening, and OWASP mitigations for B2B companies worldwide.",
   lead: "ClickMasters embeds application security into B2B software for companies across the USA, Europe, Canada, and Australia. Threat modelling that identifies security requirements before design decisions are made. Parameterised queries that prevent SQL injection at the ORM and raw SQL layer. Authentication hardening bcrypt/Argon2 password hashing, JWT best practices, OAuth 2.0 PKCE. Content Security Policy implementation. Rate limiting and input validation. The specific security fixes your audit or pen test identified.",
@@ -11547,6 +11623,7 @@ const qaSoftwareTestingOverride = {
   category: "QA & Software Testing",
   title: "QA & Software Testing Services",
   serviceName: "QA & Software Testing",
+  heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "QA & Software Testing Services | Automated & Manual Testing | ClickMasters",
   metaDescription: "ClickMasters delivers automated testing, manual QA, performance testing, and load testing for B2B software companies in the USA, Europe, Canada & Australia. Ship with confidence.",
   lead: "ClickMasters delivers automated testing, manual QA, performance testing, and load testing for B2B software companies across the USA, Europe, Canada, and Australia. We build test suites that catch bugs before users do, performance baselines that survive launch day, and regression safety nets that let your team deploy without fear.",
@@ -11747,6 +11824,7 @@ const automatedTestingOverride = {
   category: "QA & Software Testing",
   title: "Automated Testing Services",
   serviceName: "Automated Testing",
+  heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Automated Testing Services | Jest, Playwright & Cypress | ClickMasters",
   metaDescription: "ClickMasters builds automated test suites unit tests, integration tests, and end-to-end tests with Playwright and Cypress for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds automated test suites for B2B companies across the USA, Europe, Canada, and Australia. Unit tests that verify business logic in isolation. Integration tests with Testcontainers that test real database interactions. End-to-end tests with Playwright that verify complete user workflows across browsers. API tests with Supertest. React component tests with React Testing Library. All integrated into CI/CD merge to main triggers the full test suite, and deployment is blocked if any test fails.",
@@ -11896,6 +11974,7 @@ const manualTestingOverride = {
   category: "QA & Software Testing",
   title: "Manual Testing Services",
   serviceName: "Manual Testing",
+  heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Manual Testing Services | Exploratory QA & UAT | ClickMasters",
   metaDescription: "ClickMasters delivers manual testing exploratory testing, UAT, regression testing, and usability testing for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters delivers manual testing for B2B companies across the USA, Europe, Canada, and Australia. Exploratory testing that finds the bugs test cases never thought to look for. UAT that validates the product from the user's perspective before release. Regression testing that confirms existing functionality is unbroken after a change. Test case documentation that makes the next release faster. Cross-browser and cross-device testing. And the detailed bug reports with reproduction steps that engineering teams can act on immediately.",
@@ -12030,6 +12109,7 @@ const performanceTestingOverride = {
   category: "QA & Software Testing",
   title: "Performance Testing Services",
   serviceName: "Performance Testing",
+  heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Performance Testing Services | API & Web Performance Testing | ClickMasters",
   metaDescription: "ClickMasters conducts performance testing response time benchmarking, Core Web Vitals testing, database query profiling, and frontend rendering performance for B2B companies worldwide.",
   lead: "ClickMasters conducts performance testing for B2B companies across the USA, Europe, Canada, and Australia. API response time benchmarking with k6 establish P50/P95/P99 baselines and validate SLOs. Core Web Vitals testing with Lighthouse CI LCP, CLS, and INP against Google performance thresholds. Database query profiling with EXPLAIN ANALYZE identify the queries adding 2 seconds to your API responses. Frontend rendering profiling in Chrome DevTools identify long tasks, layout thrash, and render-blocking scripts.",
@@ -12165,6 +12245,7 @@ const loadTestingOverride = {
   category: "QA & Software Testing",
   title: "Load Testing Services",
   serviceName: "Load Testing",
+  heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Load Testing Services | k6, Gatling & Locust | ClickMasters",
   metaDescription: "ClickMasters conducts load testing stress tests, spike tests, and soak tests with k6 and Gatling to find your application's breaking point before production for B2B companies worldwide.",
   lead: "ClickMasters conducts load testing for B2B companies across the USA, Europe, Canada, and Australia. Spike tests that simulate a sudden 10x traffic increase from a product launch or marketing campaign. Stress tests that find the exact concurrent user count at which response times degrade and errors appear. Soak tests that run sustained load for hours to find memory leaks and connection exhaustion. And the test report that tells your engineering team exactly what needs to be fixed before the launch.",
@@ -12306,6 +12387,7 @@ const bugFixingOverride = {
   category: "QA & Software Testing",
   title: "Bug Fixing Services",
   serviceName: "Bug Fixing",
+  heroImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Bug Fixing Services | Software Debug & Defect Resolution | ClickMasters",
   metaDescription: "ClickMasters resolves complex software bugs production defects, performance regressions, memory leaks, and race conditions for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters resolves complex software bugs for B2B companies across the USA, Europe, Canada, and Australia. Production crashes traced to their root cause using Sentry, distributed tracing, and heap profiling. Memory leaks isolated through heap dump comparison and allocation tracking. Race conditions reproduced and fixed with deterministic concurrency controls. Performance regressions traced to the specific commit, query, or dependency that caused them. And the regression test that ensures the bug never returns.",
@@ -12433,6 +12515,7 @@ const maintenanceSupportOverride = {
   category: "Managed Services",
   title: "Software Maintenance & Support Services",
   serviceName: "Software Maintenance & Support",
+  heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Software Maintenance & Support Services | Ongoing Development | ClickMasters",
   metaDescription: "ClickMasters delivers software maintenance and support bug fixes, dependency updates, monitoring, and ongoing feature development for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters delivers ongoing software maintenance and support for B2B companies across the USA, Europe, Canada, and Australia. Bug fixes with defined SLA response times. Dependency updates that keep your stack secure and current. Performance monitoring with proactive alerting. Feature enhancements from a team that already knows your codebase. And the peace of mind that comes from having a dedicated engineering partner not starting from scratch with a new team every time something breaks.",
@@ -12560,6 +12643,7 @@ const dedicatedDevelopmentTeamsOverride = {
   category: "Managed Services",
   title: "Dedicated Development Teams",
   serviceName: "Dedicated Development Teams",
+  heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Dedicated Development Team | Hire a Software Team | ClickMasters",
   metaDescription: "ClickMasters provides dedicated development teams full-stack, backend, frontend, and AI engineers that work exclusively on your product for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters provides dedicated development teams for B2B companies across the USA, Europe, Canada, and Australia. A team of 2-8 engineers full-stack, backend, frontend, AI, QA, and DevOps assembled for your specific product and stack. Working exclusively on your roadmap. Integrated into your Jira, Slack, and GitHub workflows. Available within 2 weeks. No recruitment risk, no notice periods, no HR overhead.",
@@ -12697,6 +12781,7 @@ const itOutsourcingOverride = {
   category: "Managed Services",
   title: "IT Outsourcing Services",
   serviceName: "IT Outsourcing",
+  heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "IT Outsourcing Services | Software Development Outsourcing | ClickMasters",
   metaDescription: "ClickMasters delivers IT outsourcing full software development, infrastructure management, and technical operations outsourced to an expert partner for B2B companies worldwide.",
   lead: "ClickMasters delivers IT outsourcing for B2B companies across the USA, Europe, Canada, and Australia. Outsource your entire software development function product design, engineering, QA, and DevOps. Outsource infrastructure management cloud operations, monitoring, security, and cost management. Outsource technical operations system administration, vendor management, and IT governance. One partner for your technology function, with transparent reporting and full IP ownership.",
@@ -12821,6 +12906,7 @@ const staffAugmentationOverride = {
   category: "Managed Services",
   title: "Staff Augmentation Services",
   serviceName: "Staff Augmentation",
+  heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Staff Augmentation Services | Hire Remote Engineers | ClickMasters",
   metaDescription: "ClickMasters provides staff augmentation vetted remote engineers integrated directly into your team for B2B companies in the USA, Europe, Canada & Australia needing to scale quickly.",
   lead: "ClickMasters provides staff augmentation for B2B companies across the USA, Europe, Canada, and Australia. Vetted engineers pre-screened for the specific technical skills your team needs integrated directly into your workflows, your Slack, your GitHub, and your sprint board. Working under your engineering lead's direction. Available within 2 weeks. Scalable up or down with 30-day notice. No recruiter fees, no benefits overhead, no notice period risk.",
@@ -12955,6 +13041,7 @@ const technicalSupportOverride = {
   category: "Managed Services",
   title: "Technical Support Services",
   serviceName: "Technical Support",
+  heroImage: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Technical Support Services | L1, L2 & L3 Software Support | ClickMasters",
   metaDescription: "ClickMasters delivers technical support L1 user support, L2 bug investigation, L3 engineering escalation, and helpdesk management for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters delivers structured technical support for B2B companies across the USA, Europe, Canada, and Australia. L1 user support answering how-to questions and resolving known issues. L2 investigation diagnosing bugs, reproducing issues in staging, and providing documented findings. L3 engineering escalation routing confirmed bugs to the engineering team with full reproduction context. Support tickets handled by trained agents who know your product not developers whose focus should be on building.",
@@ -13088,6 +13175,7 @@ const augmentedRealityDevelopmentOverride = {
   category: "Extended Reality",
   title: "Augmented Reality Development",
   serviceName: "AR Development",
+  heroImage: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Augmented Reality Development | ARKit, ARCore & WebAR | ClickMasters",
   metaDescription: "ClickMasters builds AR applications ARKit for iOS, ARCore for Android, 8th Wall WebAR, and industrial AR for field service for B2B companies worldwide.",
   lead: "ClickMasters builds augmented reality applications for B2B companies across the USA, Europe, Canada, and Australia. ARKit for iOS plane detection, image tracking, LiDAR depth sensing on iPhone Pro. ARCore for Android environmental understanding, Depth API, instant placement. 8th Wall WebAR AR product visualisation in the browser, no app download required. Industrial AR for field service step-by-step maintenance instructions overlaid on real equipment. HoloLens 2 for hands-free industrial applications.",
@@ -13218,6 +13306,7 @@ const virtualRealityDevelopmentOverride = {
   category: "Extended Reality",
   title: "Virtual Reality Development Services",
   serviceName: "VR Development",
+  heroImage: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Virtual Reality Development Services | Meta Quest & SteamVR | ClickMasters",
   metaDescription: "ClickMasters builds VR applications safety training simulations, architectural walkthroughs, and virtual showrooms for Meta Quest, SteamVR, and WebVR for B2B companies worldwide.",
   lead: "ClickMasters builds VR applications for B2B companies across the USA, Europe, Canada, and Australia. Manufacturing and industrial safety training simulations practice hazardous procedures without real risk. Architectural walkthroughs and real estate virtual tours walk through a building before it is built. Medical simulation. Virtual product showrooms and configurators. Built on Unity XR Toolkit and Unreal Engine 5 for Meta Quest standalone, SteamVR PCVR, and WebVR.",
@@ -13349,6 +13438,7 @@ const mixedRealitySolutionsOverride = {
   category: "Extended Reality",
   title: "Mixed Reality Solutions",
   serviceName: "Mixed Reality",
+  heroImage: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Mixed Reality Development | HoloLens 2 & Apple Vision Pro | ClickMasters",
   metaDescription: "ClickMasters builds mixed reality solutions HoloLens 2 with MRTK, Apple Vision Pro visionOS, and Microsoft Mesh for industrial, medical, and enterprise B2B use cases worldwide.",
   lead: "ClickMasters builds mixed reality solutions for B2B companies across the USA, Europe, Canada, and Australia. Microsoft HoloLens 2 applications for hands-free industrial field service maintenance instructions, remote expert collaboration, and diagnostics. Apple Vision Pro spatial computing applications on visionOS. Shared holographic collaboration spaces with Microsoft Mesh. Medical simulation and surgical planning with DICOM 3D reconstruction. Every MR application built on Unity with MRTK 3 or native visionOS SwiftUI.",
@@ -13478,6 +13568,7 @@ const iotDevelopmentOverride = {
   category: "IoT & Embedded Systems",
   title: "IoT Development Services",
   serviceName: "IoT Development",
+  heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "IoT Development Services | Connected Device Solutions | ClickMasters",
   metaDescription: "ClickMasters builds IoT systems device firmware, cloud backend, real-time dashboards, and MQTT/AWS IoT integration for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds IoT systems for B2B companies across the USA, Europe, Canada, and Australia. Device firmware for microcontrollers and single-board computers. MQTT and HTTPS communication via AWS IoT Core. Real-time telemetry dashboards. Over-the-air firmware updates with A/B partition rollback. Alerts and automated responses to sensor threshold breaches. The complete IoT stack from sensor to dashboard.",
@@ -13616,6 +13707,7 @@ const smartSystemsDevelopmentOverride = {
   category: "IoT & Embedded Systems",
   title: "Smart Systems Development",
   serviceName: "Smart Systems Development",
+  heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Smart Systems Development | BMS & Predictive Maintenance | ClickMasters",
   metaDescription: "ClickMasters builds smart systems building automation, predictive maintenance, fleet telematics, and digital twins for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds smart systems for B2B companies across the USA, Europe, Canada, and Australia. Building management systems that reduce energy consumption by automating HVAC, lighting, and access control via BACnet and Modbus. Predictive maintenance systems that use vibration, thermal, and current signature analysis to detect equipment failure before it happens. Connected fleet management with real-time GPS, OBD-II telematics, and driver scoring. Digital twin platforms on Azure Digital Twins or AWS IoT TwinMaker.",
@@ -13746,6 +13838,7 @@ const industrialIoTOverride = {
   category: "IoT & Embedded Systems",
   title: "Industrial IoT (IIoT) Development",
   serviceName: "Industrial IoT",
+  heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Industrial IoT (IIoT) Development | OPC-UA & OEE | ClickMasters",
   metaDescription: "ClickMasters builds IIoT systems OPC-UA/Modbus PLC connectivity, OEE monitoring, SCADA integration, and edge computing for manufacturing B2B companies worldwide.",
   lead: "ClickMasters builds IIoT systems for manufacturing and industrial B2B companies across the USA, Europe, Canada, and Australia. OPC-UA and Modbus TCP connectivity to PLCs, CNCs, and legacy industrial controllers. Real-time OEE dashboards with downtime categorisation and shift reporting. Ignition SCADA with MQTT Sparkplug B to cloud. Edge computing with AWS Greengrass and NVIDIA Jetson. IT/OT network segmentation per ISA/IEC 62443.",
@@ -13876,6 +13969,7 @@ const embeddedSystemsDevelopmentOverride = {
   category: "IoT & Embedded Systems",
   title: "Embedded Systems Development",
   serviceName: "Embedded Systems Development",
+  heroImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Embedded Systems Development | Firmware & RTOS | ClickMasters",
   metaDescription: "ClickMasters develops embedded firmware bare-metal C/C++, FreeRTOS, Zephyr, BSP porting, and low-power design for B2B hardware products in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters develops embedded firmware for B2B companies across the USA, Europe, Canada, and Australia. Bare-metal C/C++ for latency-critical microcontroller applications. FreeRTOS for multi-tasking ARM Cortex-M devices. Zephyr RTOS for Nordic nRF52/nRF53 BLE products. BSP porting and hardware bring-up for new PCB designs. Low-power design for battery-operated devices targeting sub-10\xC2\xB5A average current. Static analysis with MISRA C and Cppcheck. Hardware-in-the-loop testing in CI/CD.",
@@ -14010,6 +14104,7 @@ const blockchainDevelopmentOverride = {
   category: "Blockchain & Web3",
   title: "Blockchain Development Company",
   serviceName: "Blockchain Development",
+  heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Blockchain Development Company | Smart Contracts, DApps & Web3 | ClickMasters",
   metaDescription: "ClickMasters builds production-grade blockchain applications smart contracts, DApps, NFT marketplaces, crypto wallets, and Web3 platforms for enterprise and startup clients in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds production-grade blockchain applications for enterprises and startups across the USA, Europe, Canada, and Australia. Smart contracts that execute business logic without intermediaries. DApps with real users. NFT marketplaces with real liquidity. Crypto wallets that enterprise security teams approve. And the honest architectural guidance to tell you when blockchain is the right answer and when it is not.",
@@ -14194,6 +14289,7 @@ const smartContractDevelopmentOverride = {
   category: "Blockchain & Web3",
   title: "Smart Contract Development Services",
   serviceName: "Smart Contract Development",
+  heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Smart Contract Development Services | Solidity & Ethereum | ClickMasters",
   metaDescription: "ClickMasters builds and audits smart contracts Solidity on Ethereum, Polygon, BNB Chain, and Avalanche for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds and audits smart contracts for B2B companies across the USA, Europe, Canada, and Australia. ERC-20 token contracts with vesting schedules and governance. ERC-721 and ERC-1155 NFT contracts with royalty enforcement (ERC-2981). DeFi protocols staking, liquidity pools, yield farming. Custom business logic in Solidity on Ethereum, Polygon, BNB Chain, and Avalanche. Every contract tested with Hardhat and Foundry, gas-optimised, and audited before mainnet deployment.",
@@ -14326,6 +14422,7 @@ const dappDevelopmentOverride = {
   category: "Blockchain & Web3",
   title: "DApp Development Services",
   serviceName: "DApp Development",
+  heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "DApp Development Services | Decentralised Application | ClickMasters",
   metaDescription: "ClickMasters builds DApps decentralised applications with React frontend, smart contract backend, and Web3 wallet integration for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds DApps for B2B companies across the USA, Europe, Canada, and Australia. React frontends with wagmi and viem for type-safe Ethereum interactions. MetaMask, WalletConnect, and Coinbase Wallet integration. Real-time transaction state management pending, confirmed, failed. The Graph for efficient on-chain data indexing. IPFS for decentralised storage. Every DApp built with the same production standards as a traditional web application Lighthouse 90+, TypeScript, accessible, and deployable via CI/CD.",
@@ -14458,6 +14555,7 @@ const web3DevelopmentOverride = {
   category: "Blockchain & Web3",
   title: "Web3 Development Services",
   serviceName: "Web3 Development",
+  heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Web3 Development Services | Blockchain Integration & dApps | ClickMasters",
   metaDescription: "ClickMasters delivers Web3 development blockchain integration, wallet authentication, token-gated access, and DAO tooling for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters delivers Web3 development for B2B companies across the USA, Europe, Canada, and Australia. Sign In With Ethereum (SIWE) authenticate users with their wallet, no password required. Token-gated access restrict content or features to holders of a specific NFT or token. On-chain identity and reputation build products that read and write to the emerging Web3 identity layer. DAO tooling governance proposals, voting, and treasury management. NFT integration in existing products. Built on Alchemy, Infura, and The Graph.",
@@ -14590,6 +14688,7 @@ const cryptoWalletDevelopmentOverride = {
   category: "Blockchain & Web3",
   title: "Crypto Wallet Development Services",
   serviceName: "Crypto Wallet Development",
+  heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Crypto Wallet Development Services | Web & Mobile Wallets | ClickMasters",
   metaDescription: "ClickMasters builds crypto wallets custodial, non-custodial, and MPC wallets for web and mobile for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds crypto wallet solutions for B2B companies across the USA, Europe, Canada, and Australia. Custodial wallets for exchanges and financial platforms secure key management with HSM and MPC. Non-custodial embedded wallets using Privy or Alchemy Account Kit users own their keys without seed phrase friction. Multi-chain support Ethereum, Polygon, BNB Chain, Solana, Bitcoin. Transaction signing and broadcasting. Portfolio balance displays. Hardware wallet integration.",
@@ -14726,6 +14825,7 @@ const nftMarketplaceDevelopmentOverride = {
   category: "Blockchain & Web3",
   title: "NFT Marketplace Development Services",
   serviceName: "NFT Marketplace Development",
+  heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "NFT Marketplace Development Services | Custom NFT Platform | ClickMasters",
   metaDescription: "ClickMasters builds NFT marketplaces minting, listing, auction, royalties, and secondary sales for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters builds NFT marketplaces for B2B companies across the USA, Europe, Canada, and Australia. Primary drop platforms scheduled reveals, allow lists, presale and public mint phases. Secondary marketplaces list, bid, buy, and sell NFTs with creator royalties enforced on-chain via ERC-2981. Lazy minting to reduce gas costs for large collections. Metadata storage on IPFS. Real-time floor price and trading volume analytics. Built on Ethereum, Polygon, or Base.",
@@ -14861,6 +14961,7 @@ const tokenDevelopmentOverride = {
   category: "Blockchain & Web3",
   title: "Token Development Services",
   serviceName: "Token Development",
+  heroImage: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Token Development Services | ERC-20 & Tokenomics Design | ClickMasters",
   metaDescription: "ClickMasters develops tokens ERC-20 utility tokens, governance tokens, stablecoins, and tokenomics design for B2B companies in the USA, Europe, Canada & Australia.",
   lead: "ClickMasters develops tokens for B2B companies across the USA, Europe, Canada, and Australia. ERC-20 utility tokens with configurable supply, minting, and burning. Governance tokens with delegation and on-chain voting (OpenZeppelin Governor). Vesting contracts with cliff, linear, and custom schedules. Staking contracts with reward distribution. Tokenomics design that aligns incentives without creating unsustainable inflation. Every token contract audited before launch.",

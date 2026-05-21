@@ -507,8 +507,8 @@ export function ServiceHero({ page }) {
             >
               <div className="relative w-full max-w-2xl lg:max-w-none">
                 <Image
-                  src="/hero-img.png"
-                  alt="Platform dashboard preview"
+                  src={page.heroImage}
+                  alt={page.title || "Platform dashboard preview"}
                   width={860}
                   height={620}
                   priority

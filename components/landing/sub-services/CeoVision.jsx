@@ -31,7 +31,7 @@ export function CeoVision() {
           {/* Left Image */}
           <div className="relative h-64 sm:h-80 md:h-full md:w-1/2 shrink-0">
             <Image
-              src="/ceo.jpeg"
+              src="/landing/sub-services/ceo.jpeg"
               alt="CEO Vision"
               fill
               className="object-cover object-center"
