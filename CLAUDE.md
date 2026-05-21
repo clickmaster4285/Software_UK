@@ -77,76 +77,39 @@
 
 
 
+## 5. MAIN SERVICE ARCHITECTURE & COMPONENT GUIDE
 
+### 5.1 Strategic Overview
+- **Data-Driven Core**: Dynamic routing at `app/(landing)/[category]/page.js`. Data is sourced from `data/main-services.js` and enriched via `data/service-section-data.js` using `enrichServiceData()` to ensure content density and fallbacks.
+- **Premium Aesthetics**: Strictly uses Tailwind 4 OKLCH tokens. Features atmospheric depth through mesh gradients (`bg-primary/15`, `blur-120px`), grid overlays, and `backdrop-blur` layers.
+- **Motion Orchestration**: 
+    - **GSAP (ScrollTrigger)**: High-precision pinning and "Snake Line" progress tracking.
+    - **Framer Motion**: Smooth entrance animations and layout transitions.
+    - **React Custom**: Typewriter effects and animated stat counters for real-time engagement.
 
+### 5.2 Active Component Directory
+| Component | Purpose | Functionality |
+| :--- | :--- | :--- |
+| **HeroSection** | Identity | Video/Image background, typewriter sub-services, and live counters. |
+| **ExploreSection** | Capabilities | Dynamic sub-service grid with 3D-hover effects and scroll-pathing. |
+| **TrustedClients** | Authority | Industry-categorized logo grid for social proof. |
+| **AppsSection** | Portfolio | Dynamic project fetching from API with skeleton loading states. |
+| **ProcessPage** | Methodology | Interactive vertical timeline with pinned phase indicators. |
+| **TechStack** | Trust | Bento-grid layout showcasing modern framework expertise. |
+| **WhyChooseUs** | Value | ROI-driven benefit cards with validated micro-stats. |
+| **PricingSection** | Conversion | Three-tier investment models (Discovery, Project, Partnership). |
+| **Testimonials** | Validation | Swiper-based carousel with star ratings and verified avatars. |
+| **FaqSection** | Clarity | Themed accordion stack handling cost, time, and tech objections. |
 
+### 5.3 Library & Recommendation Guide
+| Component | How it Works | Strategic Value |
+| :--- | :--- | :--- |
+| **PainPoints** | Flip Cards | **High**: Addresses user problems before proposing solutions. |
+| **Industries** | Sector 3D Cards | **High**: Demonstrates deep domain expertise (Healthcare, Retail, etc.). |
+| **FinalCTA** | Benefit Ticker | **High**: Strong conversion push with bold visual hooks. |
+| **AboutSection** | Stacked Cards | **Medium**: Adds narrative depth to the company's "Why." |
 
-1. Analysis of Currently Used Components
-
-  These are the components already working in your main-service.jsx. They form a high-quality, professional structure.
-
-  ┌───────────────────────┬────────────────────┬───────────────────────────────────────────────────────────────────────────────┐   
-  │ Component             │ Working / Purpose  │ Functionality                                                                 │   
-  ├───────────────────────┼────────────────────┼───────────────────────────────────────────────────────────────────────────────┤   
-  │ HeroSection           │ Displays Service   │ Features a background video/image, typewriter effect for sub-services, and a  │   
-  │                       │ Identity           │ live counter for project stats. It creates the first impression.              │   
-  │ ExploreSection        │ Navigation &       │ Uses a "snake line" SVG animation that follows scrolling. It lists specific   │   
-  │                       │ Capabilities       │ sub-services with 3D-hover effects.                                           │   
-  │ TrustedClientsSection │ Social Proof       │ A clean grid showing logos of industries and brands you've worked with.       │   
-  │                       │ (Logos)            │ Essential for building authority.                                             │   
-  │ AppsSection           │ Portfolio Display  │ Dynamically fetches projects from your API and displays them by category with │   
-  │                       │                    │ skeleton loading states.                                                      │   
-  │ ProcessPage           │ The "How We Work"  │ A complex GSAP-powered vertical timeline. As the user scrolls, a progress     │   
-  │                       │                    │ line "grows," and the active phase (Discovery, Design, etc.) pins to the      │   
-  │                       │                    │ left.                                                                         │   
-  │ TechStackSection      │ Technical          │ A bento-grid style layout showing the technologies used (React, Node.js,      │   
-  │                       │ Credibility        │ etc.) with icon cells.                                                        │   
-  │ FeaturedInsights      │ Thought Leadership │ Displays blog posts or case studies related to the service.                   │   
-  │ WhyChooseUs           │ Competitive        │ Highlights benefits like "ROI-driven," "Scalable," and "Security." It         │   
-  │                       │ Advantage          │ includes small stat strips for quick validation.                              │   
-  │ PricingSection        │ Conversion / Tiers │ Displays three clear investment tiers (Discovery, Project, Partnership) with  │
-  │                       │                    │ feature lists and "Recommended" badges.                                       │   
-  │ TestimonialsSection   │ User Validation    │ A Swiper-based carousel of real client quotes with star ratings and author    │   
-  │                       │                    │ avatars.                                                                      │   
-  │ FaqSection            │ Objection Handling │ A dark-themed accordion stack that answers common questions about cost, time, │   
-  │                       │                    │ and tech.                                                                     │   
-  └───────────────────────┴────────────────────┴───────────────────────────────────────────────────────────────────────────────┘   
-  ---
-
-  2. Analysis of Unused Components
-
-  I checked the code for the remaining pages in components/landing/main-service. Here is how they work and what is missing from the  current page:
-
-  ┌─────────────────────────┬─────────────────────────────────────────────┬────────────────────────────────────────────────────┐   
-  │ Component               │ How it Works                                │ Is it needed?                                      │   
-  ├─────────────────────────┼─────────────────────────────────────────────┼────────────────────────────────────────────────────┤   
-  │ PainPointsSolutions.jsx │ Interactive Flip Cards. When you hover over │ YES. The current page shows "Why Us," but it       │   
-  │                         │ a "Pain Point" (e.g., "Legacy Code"), it    │ doesn't explicitly talk about the problems the     │   
-  │                         │ flips/reveals the "Solution."               │ client is currently facing. This creates a         │   
-  │                         │                                             │ stronger emotional hook.                           │   
-  │ IndustriesSection.jsx   │ Sector Expertise. 3D cards for              │ YES. While you have TrustedClientsSection, this    │   
-  │                         │ Manufacturing, Healthcare, Retail, etc.,    │ page explicitly details what you do for each       │   
-  │                         │ with specific metrics for each (e.g., "40%  │ industry. It makes the service feel more           │   
-  │                         │ Efficiency Increase").                      │ "bespoke."                                         │   
-  │ finalCta.jsx            │ The Final Hook. A high-contrast section     │ YES. Currently, your page ends with FAQs. Ending a │   
-  │                         │ with a vertical-scrolling ticker of your    │ page without a big, clear button is a missed       │   
-  │                         │ benefits and a big "Contact Us" button.     │ opportunity for conversion.                        │   
-  │ AboutSection.jsx        │ Glass Stacked Cards. Uses a sticky          │ OPTIONAL. Your "Why Choose Us" already covers most │   
-  │                         │ left-column for text and a "Stacked Card"   │ of this. Use only if you want a longer, more       │   
-  │                         │ animation on the right for company values.  │ narrative page.                                    │   
-  │ CTASectionImage.jsx     │ Standard CTA. A split layout with an image  │ NO. finalCta.jsx is more modern and fits your      │   
-  │                         │ on the left and text/buttons on the right.  │ current aesthetic better.                          │   
-  │ CommunitySection.jsx    │ Why Choose Us (Alternative). Uses 3D cards  │ NO. It overlaps 90% with your existing WhyChooseUs │   
-  │                         │ and count-up stats.                         │ and hero-section stats.                            │   
-  └─────────────────────────┴─────────────────────────────────────────────┴────────────────────────────────────────────────────┘   
-  Your current page is technically excellent and visually complete. However, to make it a high-converting sales page, you should   
-  add the "missing emotional and industry links."
-
-  My Recommendation:
-  Add these 3 specific components to fill the gaps:
-
-   1. PainPointsSolutions: Place it after ExploreSection. It tells the user "We know your problems (debt, slow speed)" before you  
-      tell them "We are great."
-   2. IndustriesSection: Place it before Testimonials. It proves you are experts in their specific field (Healthcare, Retail,      
-      etc.).
-   3. finalCta: Place it at the very bottom. It is the final "push" for them to click "Contact Us."
+### 5.4 Best Practices for Updates
+- **Data Enrichment**: Always update `data/service-section-data.js` when adding new global features or pricing tiers.
+- **Section Import**: Keep `main-service.jsx` imports lean; document unused imports in the file header for quick reactivation.
+- **Performance**: Wrap data-heavy sections like `AppsSection` or `TrustedClients` in `Suspense` with themed pulse skeletons.
