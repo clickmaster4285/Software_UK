@@ -118,7 +118,6 @@ export function ServiceHero({ page }) {
   const sectionRef = useRef(null);
   const heroRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
-  const videoRef = useRef(null);
 
   const isGoalPage = Boolean(page.parentService && page.currentPageLabel);
   const boldTerms =
@@ -142,7 +141,7 @@ export function ServiceHero({ page }) {
       const isBold = terms.some((t) => part.toLowerCase() === t.toLowerCase());
       if (isBold) {
         return (
-          <span key={index} className="font-black text-primary">
+          <span key={index} className="font-semibold bg-white px-1 rounded-lg text-xl text-accent">
             {part}
           </span>
         );
@@ -156,15 +155,6 @@ export function ServiceHero({ page }) {
   useEffect(() => {
     if (isInView) controls.start("visible");
   }, [controls, isInView]);
-
-  // Auto-play video when component mounts
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch((error) => {
-        console.log("Video autoplay failed:", error);
-      });
-    }
-  }, []);
 
   // Make navbar transparent using GSAP ScrollTrigger
   useEffect(() => {
@@ -230,36 +220,29 @@ export function ServiceHero({ page }) {
   return (
     <div
       ref={heroRef}
-      className="w-full relative overflow-hidden bg-black/40 min-h-screen flex flex-col  "
+      className="w-full  relative overflow-hidden bg-black/40 min-h-screen flex flex-col  "
     >
-      {/* Video Background */}
+      {/* Background Image */}
       <div className="absolute inset-0 w-full h-full z-0">
-        <video
-          ref={videoRef}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover"
-          poster="/videos/services-video-poster.jpg"
-        >
-          <source src="/video/services-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <Image
+          src="/landing/sub-services/sub-service-bg.jpg"
+          alt="Background"
+          fill
+          priority
+          className="object-cover"
+        />
         {/* Dark Overlay for better text contrast */}
         <div className="absolute inset-0 bg-gradient-to-b from-primary/95 via-primary-mid/90 to-primary/95" />
       </div>
 
       {/* Breadcrumb */}
       <motion.div
-        className="relative z-10 border-b border-white/10 w-full px-6 md:px-8 lg:px-10 xl:px-24 pt-24"
-        
-
+        className="relative  z-10 border-b border-white/10 w-full px-6 pt-20"
         initial={{ opacity: 0, y: -16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        <div className="px-4 md:px-8 lg:px-12 py-3.5">
+        <div className=" mx-auto max-w-400 px-4 md:px-8 py-3.5">
           <nav className="flex items-center gap-1.5 text-sm">
             <Link
               href="/"
@@ -307,13 +290,13 @@ export function ServiceHero({ page }) {
       {/* Main Hero Content */}
       <section
         ref={sectionRef}
-        className="relative z-10 w-full flex-1  flex items-center px-6 md:px-6 lg:px-6 xl:px-20"
+        className="relative z-10 mx-auto max-w-400 flex-1 flex items-center px-6"
       >
-        <div className="mx-auto max-w-400 px-4 md:px-8  py-12 lg:py-16 w-full">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-8 xl:gap-12">
+        <div className="py-12 lg:py-16">
+          <div className="grid gap-12 lg:grid-cols-[1fr_480px] items-center lg:items-center lg:gap-8">
             {/* LEFT COLUMN */}
             <motion.div
-              className="flex-1 min-w-0"
+              className="flex flex-col "
               variants={staggerContainer}
               initial="hidden"
               animate={controls}
@@ -347,7 +330,7 @@ export function ServiceHero({ page }) {
 
               {/* Lead */}
               <motion.p
-                className="mt-5 max-w-xl text-base leading-relaxed text-slate-200 lg:text-lg"
+                className="mt-5 max-w-4xl text-base text-surface lg:text-lg"
                 variants={fadeInUp}
               >
                 {makeBoldInText(page.lead, boldTerms)}
@@ -500,22 +483,19 @@ export function ServiceHero({ page }) {
 
             {/* RIGHT COLUMN Hero Image */}
             <motion.div
-              className="relative flex-shrink-0 w-full lg:w-[52%] xl:w-[55%] flex items-end justify-center lg:justify-end mt-8 lg:mt-0"
+              className="relative shrink-0 max-w-100"
               variants={fadeInRight}
               initial="hidden"
               animate={controls}
             >
-              <div className="relative w-full max-w-2xl lg:max-w-none">
                 <Image
                   src={page.heroImage}
                   alt={page.title || "Platform dashboard preview"}
-                  width={860}
-                  height={620}
+                  width={460}
+                  height={320}
                   priority
-                  className="w-full h-auto object-contain drop-shadow-2xl"
-                  style={{ maxHeight: "520px" }}
+                  className="w-full  rounded-4xl h-auto object-contain drop-shadow-2xl"
                 />
-              </div>
             </motion.div>
           </div>
         </div>
