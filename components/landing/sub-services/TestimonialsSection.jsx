@@ -62,7 +62,7 @@ export function TestimonialsSection({
 
   if (isLoading) {
     return (
-      <section id="testimonials" className="scroll-mt-24 py-12 sm:py-16 md:py-20 bg-slate-50">
+      <section id="testimonials" className="mx-auto max-w-400 scroll-mt-24 py-12 sm:py-16 md:py-20 bg-slate-50">
         <div className=" mx-auto  ">
           <div className="flex items-center gap-3 mb-8 sm:mb-10">
             <div className="h-8 sm:h-10 w-1 " />
@@ -92,7 +92,7 @@ export function TestimonialsSection({
   const currentTestimonials = groupedTestimonials[currentGroup] || [];
 
   return (
-    <section id="testimonials" className="scroll-mt-24  relative overflow-hidden">
+    <section id="testimonials" className="scroll-mt-24 mx-auto max-w-400 relative overflow-hidden">
       <div className=" mx-auto px-4  relative">
         {/* Header */}
         <div className="flex items-center gap-3 mb-8 sm:mb-10 md:mb-12">

@@ -95,7 +95,7 @@ export const IndustriesSection = ({ industryUseCases }) => {
   return (
     <motion.section 
       id="industries" 
-      className="scroll-mt-24"
+      className="mx-auto max-w-400 scroll-mt-24"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

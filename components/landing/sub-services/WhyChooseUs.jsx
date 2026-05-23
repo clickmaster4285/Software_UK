@@ -237,7 +237,7 @@ export function WhyChooseUs({ slug, differentiators }) {
   return (
     <section
       id="why-choose-us"
-      className="relative scroll-mt-24 overflow-hidden py-4 md:py-8"
+      className="relative mx-auto max-w-400 scroll-mt-24 overflow-hidden py-4 md:py-8"
       aria-labelledby="why-choose-heading"
     >
       <div

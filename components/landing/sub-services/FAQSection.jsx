@@ -48,7 +48,7 @@ export const FAQSection = ({ faqs }) => {
   if (!faqs || faqs.length === 0) return null;
 
   return (
-    <section id="faq" className="scroll-mt-24 mb-10 mt-10">
+    <section id="faq" className="scroll-mt-24 mb-10 mt-10 mx-auto max-w-400">
       <div className="flex items-center gap-3">
         <div className="h-10 w-1 rounded-full bg-primary" />
         <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">

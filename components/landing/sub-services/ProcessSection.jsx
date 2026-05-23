@@ -426,7 +426,7 @@ export const ProcessSection = ({ serviceName, processPhases }) => {
       key={cycle} 
       ref={sectionRef}
       id="our-process" 
-      className="scroll-mt-24 py-8 md:py-12 lg:py-16 bg-white px-4 md:px-0"
+      className="mx-auto max-w-400 scroll-mt-24 py-8 md:py-12 lg:py-16 bg-white px-4 md:px-0"
     >
    <motion.div
   initial={{ opacity: 0, y: 30 }}

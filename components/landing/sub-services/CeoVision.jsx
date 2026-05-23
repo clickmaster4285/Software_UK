@@ -5,7 +5,7 @@ import { ContainerScroll } from "@/components/landing/sub-services/container-scr
 
 export function CeoVision() {
   return (
-    <section className="w-full overflow-hidden">
+    <section className="mx-auto max-w-400 overflow-hidden">
       <ContainerScroll
         titleComponent={
           <div className="space-y-6 px-4 sm:px-6 md:px-10 mt-40">

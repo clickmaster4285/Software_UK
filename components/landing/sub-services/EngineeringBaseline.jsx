@@ -1,116 +1,201 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Badge } from "@/components/ui/badge";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import {
+  Check,
+  CheckCircle2,
+  FileText,
+  GitBranch,
+  Layers,
+  Server,
+  Shield,
+  ArrowRight,
+} from "lucide-react";
+import { cn } from "@/lib/utils";
 
-export const EngineeringBaseline = ({ serviceName, checklist }) => {
-  if (!checklist || checklist.length === 0) return null;
+const EASE = [0.22, 1, 0.36, 1];
+
+const CHECKLIST_ICONS = [
+  { match: /architecture|separation|concern|design pattern|modular/i, Icon: Layers },
+  { match: /test|coverage|qa|quality|unit|integration/i, Icon: CheckCircle2 },
+  { match: /ci\/cd|pipeline|deploy|security scan|automated/i, Icon: GitBranch },
+  { match: /documentation|api doc|technical doc|comprehensive/i, Icon: FileText },
+  { match: /infrastructure|terraform|cloud|scalab|configured as code/i, Icon: Server },
+  { match: /security|compliance|audit|owasp/i, Icon: Shield },
+];
+
+function getChecklistIcon(text) {
+  for (const { match, Icon } of CHECKLIST_ICONS) {
+    if (match.test(text)) return Icon;
+  }
+  return CheckCircle2;
+}
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 28 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, delay: i * 0.06, ease: EASE },
+  }),
+};
+
+function BaselineCard({ item, index, showStandardBadge }) {
+  const Icon = getChecklistIcon(item.item);
+  const number = String(index + 1).padStart(2, "0");
 
   return (
-    <section id="checklist" className="scroll-mt-16 sm:scroll-mt-24 pt-8 sm:pt-12 md:pt-16 px-4 sm:px-0">
-      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-6 mb-6 sm:mb-8 md:mb-10">
-        <div className="flex items-start gap-3">
-          <motion.div
-            initial={{ scaleY: 0 }}
-            whileInView={{ scaleY: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-         className="h-8 sm:h-10 md:h-12 w-1 rounded-full bg-primary shrink-0"
-          />
-          <div>
-            <motion.h2 
-              className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <span className="font-black">{serviceName}</span>{" "}
-              <span className="whitespace-normal sm:whitespace-nowrap">Engineering Baseline</span>
-            </motion.h2>
-            <motion.p
-              className="text-sm sm:text-base text-slate-500 mt-1"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              Our engineering standards and best practices
-            </motion.p>
-          </div>
-        </div>
-        
-        <motion.div
-         className="flex items-center gap-2 text-xs sm:text-sm text-primary ml-4 sm:ml-0"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+    <motion.article
+      custom={index}
+      variants={cardVariants}
+      className={cn(
+        "group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-white p-5 sm:p-6",
+        "shadow-[0_2px_16px_rgba(0,0,0,0.06)] transition-all duration-300",
+        "hover:-translate-y-1 hover:border-accent/25 hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)]"
+      )}
+    >
+      <div className="absolute top-0 left-0 h-1 w-0 origin-left bg-gradient-to-r from-accent to-accent-hover transition-all duration-500 group-hover:w-full" />
+
+      <div className="relative z-10 flex items-start justify-between gap-3">
+        <div
+          className={cn(
+            "flex h-11 w-11 shrink-0 items-center justify-center rounded-xl",
+            "bg-accent/10 text-accent ring-1 ring-accent/15",
+            "transition-colors group-hover:bg-accent group-hover:text-white group-hover:ring-accent/30"
+          )}
         >
-          <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4" />
-          <span>All {checklist.length} standards verified</span>
+          <Icon className="h-5 w-5" strokeWidth={2} aria-hidden />
+        </div>
+        <span className="font-heading text-sm font-bold tabular-nums text-text-muted/40 transition-colors group-hover:text-accent/30">
+          {number}
+        </span>
+      </div>
+
+      <h3 className="mt-4 font-heading text-base font-semibold leading-snug text-text-primary sm:text-lg">
+        {item.item}
+      </h3>
+
+      {showStandardBadge && item.standard && (
+        <p className="mt-2 inline-flex w-fit items-center gap-1.5 rounded-full border border-border bg-surface/80 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.06em] text-text-muted">
+          <Check className="h-3 w-3 shrink-0 text-accent" strokeWidth={2.5} aria-hidden />
+          {item.standard}
+        </p>
+      )}
+
+      <div className="mt-auto flex items-center justify-end pt-4">
+        <span
+          className={cn(
+            "inline-flex items-center gap-1 text-xs font-medium text-accent",
+            "opacity-0 translate-y-1 transition-all duration-300",
+            "group-hover:opacity-100 group-hover:translate-y-0"
+          )}
+        >
+          Verified
+          <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+        </span>
+      </div>
+    </motion.article>
+  );
+}
+
+export function EngineeringBaseline({ serviceName, checklist }) {
+  const gridRef = useRef(null);
+  const isInView = useInView(gridRef, { once: true, margin: "-80px" });
+
+  if (!checklist?.length) return null;
+
+  const count = checklist.length;
+  const uniqueStandards = [...new Set(checklist.map((c) => c.standard).filter(Boolean))];
+  const showPerCardBadge = uniqueStandards.length > 1;
+  const sharedStandard = uniqueStandards.length === 1 ? uniqueStandards[0] : null;
+
+  return (
+    <section
+      className="relative mx-auto max-w-400 scroll-mt-24 overflow-hidden py-4 md:py-8"
+      aria-labelledby="engineering-baseline-heading"
+    >
+      <div
+        className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+        aria-hidden
+      >
+        <div className="absolute -top-20 left-1/4 h-64 w-64 rounded-full bg-primary/6 blur-[90px]" />
+        <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-accent/10 blur-[100px]" />
+        <div
+          className="absolute inset-0 opacity-[0.025]"
+          style={{
+            backgroundImage:
+              "radial-gradient(var(--text-muted) 0.5px, transparent 0.5px)",
+            backgroundSize: "28px 28px",
+          }}
+        />
+      </div>
+
+      <div className="relative z-10">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between sm:gap-8">
+          <div className="max-w-3xl">
+            <p className="mb-3 inline-flex items-center rounded-full border border-border bg-surface px-3 py-1 text-[11px] font-medium uppercase tracking-[0.08em] text-accent">
+              Engineering standards
+            </p>
+            <div className="flex items-start gap-3">
+              <div className="mt-1 h-10 w-1 shrink-0 rounded-full bg-accent" />
+              <h2
+                id="engineering-baseline-heading"
+                className="font-heading text-2xl font-semibold leading-snug text-text-primary sm:text-3xl"
+              >
+                <span className="text-accent">{serviceName}</span> Engineering
+                Baseline
+              </h2>
+            </div>
+          </div>
+          <p className="shrink-0 text-sm font-medium tabular-nums text-text-muted sm:pt-10">
+            {String(count).padStart(2, "0")} standards
+          </p>
+        </div>
+
+        <p className="mt-6 max-w-3xl text-lg leading-relaxed text-text-body">
+          Every {serviceName.toLowerCase()} engagement ships with non-negotiable
+          engineering discipline — architecture, testing, automation, and
+          documentation baked in from day one.
+        </p>
+
+        {sharedStandard && (
+          <motion.div
+            className="mt-6 inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/5 px-4 py-2 text-sm font-medium text-text-primary"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.45, ease: EASE }}
+          >
+            <CheckCircle2 className="h-4 w-4 shrink-0 text-accent" aria-hidden />
+            <span>
+              All {count} items meet:{" "}
+              <span className="font-semibold text-accent">{sharedStandard}</span>
+            </span>
+          </motion.div>
+        )}
+
+        <motion.div
+          ref={gridRef}
+          className={cn(
+            "mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5",
+            count >= 5 ? "lg:grid-cols-3 xl:grid-cols-5" : "lg:grid-cols-3"
+          )}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+        >
+          {checklist.map((item, index) => (
+            <BaselineCard
+              key={`${item.item}-${index}`}
+              item={item}
+              index={index}
+              showStandardBadge={showPerCardBadge}
+            />
+          ))}
         </motion.div>
       </div>
 
-      {/* Mobile: 1 column, Tablet: 2-3 columns, Desktop: 5 columns */}
-     <div className="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-4 w-full">
-        {checklist.map((item, i) => (
-          <motion.div
-            key={i}
-            className="group"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.05 }}
-          >
-            <div className="bg-white rounded-xl overflow-hidden border border-slate-200 transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1">
-              {/* Top accent bar */}
-            <div className="h-1 bg-gradient-to-r from-primary to-primary w-0 group-hover:w-full transition-all duration-500" />
-              
-              <div className="p-4 sm:p-5">
-                <div className="flex items-center justify-between mb-3 sm:mb-4">
-                  <div className="text-2xl sm:text-3xl font-bold text-slate-200 group-hover:text-orange-200 transition-colors duration-300">
-                    {(i + 1).toString().padStart(2, '0')}
-                  </div>
-                  <Badge className="bg-transparent border border-slate-200 text-slate-500 group-hover:bg-orange-50 group-hover:border-orange-200 group-hover:text-primary transition-all duration-300 text-xs sm:text-xs">
-                    {item.standard}
-                  </Badge>
-                </div>
-                
-                <h3 className="font-semibold text-slate-900 text-sm sm:text-base mb-1 sm:mb-2 line-clamp-2">
-                  {item.item}
-                </h3>
-                
-                <p className="text-xs sm:text-sm text-slate-500">
-                  Industry-standard compliance
-                </p>
-                
-                {/* Slide up icon on hover - visible on desktop only */}
-                <div className="mt-3 sm:mt-4 flex justify-end overflow-hidden">
-                  <motion.div
-                    initial={{ y: 20, opacity: 0 }}
-                    whileHover={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                    className="text-primary hidden sm:block"
-                  >
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
-                  </motion.div>
-                  {/* Always visible arrow on mobile */}
-                  <ArrowRight className="w-3 h-3 text-primary sm:hidden" />
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-
-      {/* Bottom Divider */}
-      <div className="my-8 sm:my-12 md:my-16 flex items-center gap-4">
-        <div className="h-px flex-1 bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
-      </div>
+      <div className="mt-14 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent md:mt-16" />
     </section>
   );
-};
-
-
+}

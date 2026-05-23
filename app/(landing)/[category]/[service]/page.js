@@ -187,7 +187,7 @@ export default async function ServiceByCategoryPage({ params }) {
           <ServiceHero page={page} />
         </div>
 
-        <div className="mx-auto max-w-400 px-4 md:px-8">
+        <div className="px-4 md:px-8">
           <main className="py-8 md:py-12">
             {sections.length > 0 && (
               <DynamicSections
@@ -209,21 +209,21 @@ export default async function ServiceByCategoryPage({ params }) {
                 differentiators={page.differentiators}
               />
             )}
-             
+
             <div id="checklist" className="scroll-mt-20">
               {page.checklist && (
-                <EngineeringBaseline 
-                  serviceName={page.serviceName} 
-                  checklist={page.checklist} 
+                <EngineeringBaseline
+                  serviceName={page.serviceName}
+                  checklist={page.checklist}
                 />
               )}
             </div>
 
             <div id="our-process" className="scroll-mt-20">
               {page.processPhases && (
-                <ProcessSection 
-                  serviceName={page.serviceName} 
-                  processPhases={page.processPhases} 
+                <ProcessSection
+                  serviceName={page.serviceName}
+                  processPhases={page.processPhases}
                 />
               )}
             </div>
@@ -242,17 +242,17 @@ export default async function ServiceByCategoryPage({ params }) {
 
             <div id="pricing" className="scroll-mt-20">
               {page.pricingTiers && (
-                <PricingSection 
-                  serviceName={page.serviceName} 
-                  pricingTiers={page.pricingTiers} 
+                <PricingSection
+                  serviceName={page.serviceName}
+                  pricingTiers={page.pricingTiers}
                 />
               )}
             </div>
-            
+
             <CeoVision />
 
             {page.tables && page.tables.map((table) => (
-              <section key={table.title} id={slugify(table.title)} className="scroll-mt-20 pt-16">
+              <section key={table.title} id={slugify(table.title)} className="mx-auto max-w-400 scroll-mt-20 pt-16">
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-1 rounded-full bg-primary" />
                   <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
@@ -292,10 +292,10 @@ export default async function ServiceByCategoryPage({ params }) {
             ))}
 
             <div id="testimonials" className="scroll-mt-20">
-              <TestimonialsSection  />
+              <TestimonialsSection />
             </div>
 
-            <div id="case-study" className="mb-10 scroll-mt-20">
+            <div id="case-study" className="mb-10 scroll-mt-20 mx-auto max-w-400">
               <div className="w-full flex flex-col mt-4 sm:mt-6 py-6 sm:py-8">
                 <div className="flex items-center gap-3 px-4 sm:px-6 md:px-8">
                   <div className="h-8 sm:h-10 w-1 rounded-full bg-primary" />
@@ -312,8 +312,8 @@ export default async function ServiceByCategoryPage({ params }) {
             </div>
           </main>
         </div>
-      
-        <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-20">
+
+        <section className="mx-auto max-w-400 border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-20">
           <div className="mx-auto max-w-5xl px-5 text-center md:px-8">
             <h2 className="text-3xl font-semibold text-slate-900 sm:text-4xl">
               Explore Related Capabilities

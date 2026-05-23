@@ -107,7 +107,7 @@ export function PricingSection({ serviceName, pricingTiers }) {
   return (
     <motion.section
       id="pricing"
-      className="scroll-mt-24 py-6 sm:py-8 md:py-12 mx-6"
+      className="scroll-mt-24 py-6 sm:py-8 md:py-12 mx-auto max-w-400"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

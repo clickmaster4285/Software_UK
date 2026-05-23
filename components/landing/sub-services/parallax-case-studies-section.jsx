@@ -19,13 +19,13 @@ export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
   }
 
   // Transform case studies into sections with proper formatting
-  const sections = caseStudies.slice(0,4).map((study, index) => ({
+  const sections = caseStudies.slice(0, 4).map((study, index) => ({
     id: study._id,
     title: study.title,
     description: study.excerpt,
-    imageUrl: study.thumbnail 
+    imageUrl: study.thumbnail
       ? resolveImageUrl(study.thumbnail)
-      : study.project?.thumbnail 
+      : study.project?.thumbnail
         ? resolveImageUrl(study.project.thumbnail)
         : null,
     reverse: index % 2 !== 0,
@@ -40,7 +40,7 @@ export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
 
   // Create refs and animations for each section
   const sectionRefs = sections.map(() => useRef(null));
-  
+
   const scrollYProgress = sections.map((_, index) => {
     return useScroll({
       target: sectionRefs[index],
@@ -49,19 +49,19 @@ export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
   });
 
   // Create animations for each section
-  const opacityContents = scrollYProgress.map(progress => 
+  const opacityContents = scrollYProgress.map(progress =>
     useTransform(progress, [0, 0.7], [0, 1])
   );
-  
-  const clipProgresses = scrollYProgress.map(progress => 
+
+  const clipProgresses = scrollYProgress.map(progress =>
     useTransform(progress, [0, 0.7], ["inset(0 100% 0 0)", "inset(0 0% 0 0)"])
   );
-  
-  const translateContents = scrollYProgress.map(progress => 
+
+  const translateContents = scrollYProgress.map(progress =>
     useTransform(progress, [0, 1], [-30, 0])
   );
 
-  const translateImages = scrollYProgress.map(progress => 
+  const translateImages = scrollYProgress.map(progress =>
     useTransform(progress, [0, 1], [30, 0])
   );
 
@@ -75,21 +75,21 @@ export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
   };
 
   return (
-    <div className="relative overflow-hidden">
-    
+    <div className="relative overflow-hidden mx-auto max-w-400">
+
       {/* Parallax Sections */}
       <div className="flex flex-col pb-6 sm:pb-8">
         {sections.map((section, index) => (
-          <div 
+          <div
             key={section.id}
-            ref={sectionRefs[index]} 
+            ref={sectionRefs[index]}
             className={cn(
               "flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-12 py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8",
               section.reverse ? 'lg:flex-row-reverse' : ''
             )}
           >
             {/* Content - Always on top for mobile */}
-            <motion.div 
+            <motion.div
               style={{ y: translateContents[index] }}
               className="w-full lg:w-1/2 order-1 lg:order-none"
             >
@@ -104,23 +104,23 @@ export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
               )}
 
               {/* Title */}
-              <motion.h2 
-                style={{ y: translateContents[index] }} 
+              <motion.h2
+                style={{ y: translateContents[index] }}
                 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-2 sm:mb-3 leading-tight mt-4"
               >
                 {section.title}
               </motion.h2>
 
               {/* Description */}
-              <motion.p 
-                style={{ y: translateContents[index] }} 
+              <motion.p
+                style={{ y: translateContents[index] }}
                 className="text-slate-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4"
               >
                 {section.description}
               </motion.p>
 
               {/* Metadata Grid - Responsive wrapping */}
-              <motion.div 
+              <motion.div
                 style={{ y: translateContents[index] }}
                 className="flex flex-wrap gap-2 sm:gap-3 mb-3 sm:mb-4"
               >
@@ -146,7 +146,7 @@ export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
 
               {/* Technologies */}
               {section.technologies && section.technologies.length > 0 && (
-                <motion.div 
+                <motion.div
                   style={{ y: translateContents[index] }}
                   className="mb-3 sm:mb-4"
                 >
@@ -189,8 +189,8 @@ export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
             </motion.div>
 
             {/* Image - Below content on mobile, then side by side on desktop */}
-            <motion.div 
-              style={{ 
+            <motion.div
+              style={{
                 opacity: opacityContents[index],
                 clipPath: clipProgresses[index],
                 y: translateImages[index]
@@ -230,9 +230,9 @@ export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
           <h3 className='text-lg sm:text-xl md:text-2xl font-bold text-slate-900 mb-2 px-4'>
             Ready for Your Success Story?
           </h3>
-          <Button 
-            asChild 
-            size="default" 
+          <Button
+            asChild
+            size="default"
             className="bg-gradient-to-r from-accent to-accent-hover text-white hover:text-white rounded-lg px-6 sm:px-8 mt-3 w-full sm:w-auto font-semibold shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
           >
             <Link href="/contact">
