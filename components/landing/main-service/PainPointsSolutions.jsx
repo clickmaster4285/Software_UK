@@ -1,102 +1,175 @@
-// components/sections/PainPointsSolutions.tsx
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import {
   XCircle,
   Clock,
   ShieldAlert,
   TrendingUp,
   CheckCircle2,
+  Zap,
   ArrowRight,
-  Zap
+  MousePointer2
 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 const painPoints = [
   {
     id: 'cost',
     title: 'The Costly Cycle',
-    description: 'You spend more maintaining legacy code than building new features. Technical debt is silently killing your margins.',
+    description: 'Stop burning budget on technical debt. We replace legacy maintenance with high-velocity feature delivery.',
     icon: XCircle,
-    gradient: 'from-primary to-rose-600',
+    color: 'var(--accent)',
   },
   {
     id: 'timeline',
-    title: 'The Infinite Timeline',
-    description: '"It’ll be ready next quarter..." Agency black-box development with zero visibility.',
+    title: 'The Black Box',
+    description: 'Eliminate "infinite timelines." Our agile sprints provide 100% transparency with weekly production-ready demos.',
     icon: Clock,
-    gradient: 'from-primary to-accent',
+    color: 'var(--accent)',
   },
   {
     id: 'security',
-    title: 'The Security Gamble',
-    description: 'Vulnerable plugins and shortcuts put your customer data and reputation at constant risk.',
+    title: 'Security Risks',
+    description: 'Vulnerable code is a liability. We embed enterprise-grade security (OWASP) into your core architecture from day one.',
     icon: ShieldAlert,
-    gradient: 'from-primary to-red-600',
+    color: 'var(--accent)',
   },
   {
     id: 'scalability',
-    title: 'The Scalability Ceiling',
-    description: 'Your app crashes during success. Legacy systems can’t handle real growth.',
+    title: 'Growth Ceilings',
+    description: 'Don\'t let your app crash during success. Our cloud-native systems are built to scale with your 10x growth.',
     icon: TrendingUp,
-    gradient: 'from-rose-500 to-accent',
+    color: 'var(--accent)',
   },
 ];
 
 const solutions = [
-  { title: 'Predictable ROI Architecture', description: 'Modern, maintainable stack (Node.js + React + Cloud-native) built to last.', metric: 'Up to 70% lower maintenance costs' },
-  { title: 'Radical Transparency', description: 'Agile sprints with weekly demos. You always see real progress never surprises.', metric: '98% on-time delivery' },
-  { title: 'Enterprise-Grade Security', description: 'OWASP Top 10, GDPR compliant, regular penetration testing by default.', metric: 'Zero security breaches' },
-  { title: 'Built for 10x Growth', description: 'Auto-scaling AWS/Azure infrastructure designed for massive traffic from day one.', metric: '99.99% uptime SLA' },
+  { 
+    title: 'ROI-First Architecture', 
+    description: 'Modern, maintainable Node.js & React stack built to lower TCO and maximize long-term ROI.', 
+    metric: '70% lower maintenance' 
+  },
+  { 
+    title: 'Radical Transparency', 
+    description: 'Full Jira/GitHub access and weekly syncs. You own the process as much as the code.', 
+    metric: '98% on-time delivery' 
+  },
+  { 
+    title: 'Compliance-Ready', 
+    description: 'GDPR, HIPAA, and ISO standards ready. We handle the complexity of regulated industries.', 
+    metric: 'Zero data breaches' 
+  },
+  { 
+    title: 'Auto-Scaling Infrastructure', 
+    description: 'Multi-region AWS/Azure setups that handle millions of requests without breaking a sweat.', 
+    metric: '99.99% Uptime SLA' 
+  },
 ];
 
+const FloatingParticle = ({ delay = 0, x = "0%", y = "0%", size = 4 }) => (
+  <motion.div
+    initial={{ opacity: 0, scale: 0 }}
+    animate={{ 
+      opacity: [0.2, 0.5, 0.2], 
+      scale: [1, 1.5, 1],
+      y: ["0%", "-20%", "0%"],
+      x: ["0%", "10%", "0%"]
+    }}
+    transition={{ 
+      duration: 10 + Math.random() * 10, 
+      repeat: Infinity, 
+      delay,
+      ease: "easeInOut" 
+    }}
+    className="absolute rounded-full bg-accent/20 blur-xl"
+    style={{ left: x, top: y, width: size, height: size }}
+  />
+);
 
-export default function PainPointsSolutions({ countryName }) {
+export default function PainPointsSolutions() {
   const [activeIndex, setActiveIndex] = useState(null);
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
 
-  const hasLocation = !!countryName;
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+  const hasLocation = true;
+  const countryName = "United Kingdom";
+
   return (
-    <section className="relative overflow-hidden bg-linear-to-b from-white to-gray-50 py-24 md:py-32 lg:px-14">
-      <div className="relative mx-auto px-4 sm:px-6 lg:px-12">
+    <section 
+      id="solutions-strategy"
+      ref={containerRef}
+      className="relative overflow-hidden bg-transparent py-24 md:py-32"
+      aria-labelledby="solutions-heading"
+    >
+      {/* Premium Background Mesh */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <motion.div 
+          style={{ y: backgroundY }}
+          className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[110%] h-[120%] opacity-40 will-change-transform"
+        >
+          <div className="absolute top-0 right-0 w-100 h-100 bg-accent/5 rounded-full blur-[100px]" />
+          <div className="absolute bottom-0 left-0 w-125 h-125 bg-primary/5 rounded-full blur-[120px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-175 h-175 bg-surface rounded-full blur-[140px]" />
+        </motion.div>
+        
+        {/* Decorative Floating Elements */}
+        <FloatingParticle x="5%" y="20%" size={100} delay={0} />
+        <FloatingParticle x="80%" y="15%" size={140} delay={2} />
+        <FloatingParticle x="70%" y="80%" size={180} delay={4} />
+        <FloatingParticle x="2%" y="70%" size={120} delay={1} />
+        
+        {/* Subtle Grid Overlay */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(var(--text-muted) 0.5px, transparent 0.5px)', backgroundSize: '32px 32px' }} />
+      </div>
 
-        {/* Header */}
+      <div className="container relative z-10">
+        {/* Header Section */}
+        <div className="text-center mb-10">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-3 mb-6"
+          >
+              <span className="text-lg font-bold uppercase tracking-wide text-accent">
+              {hasLocation ? `Challenges in ${countryName}` : 'Strategic Problem Solving'}
+              </span>
+          </motion.div>
 
-
-
-
-
-        <div className="mx-auto max-w-3xl text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-3">
-            <span className="h-0.5 w-8 rounded-full bg-accent" />
-
-            <div className="inline-flex items-center gap-1.5">
-              <Zap className="h-3.5 w-3.5 text-accent" />
-              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
-                {hasLocation ? `Problems Businesses Face in ${countryName}` : 'Stop Settling For Mediocre'}
-              </p>
-            </div>
-
-            <span className="h-0.5 w-8 rounded-full bg-accent" />
-          </div>
-
-          <h2 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-2xl lg:text-3xl leading-tight">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            id="solutions-heading"
+            className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-text-primary leading-[1.1]"
+          >
             {hasLocation
-              ? `Painful Development Realities in ${countryName} and How We Fix Them`
-              : 'Painful Development Realities and How We Fix them'
+              ? `Realities of Software Development in ${countryName}`
+              : 'Stop Settling for "Good Enough" Codebases'
             }
-          </h2>
+          </motion.h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
-            {hasLocation
-              ? 'Common challenges that hinder business growth and efficiency'
-              : 'Most agencies deliver headaches wrapped in pretty proposals. Here\'s the reality and why ClickMasters approaches development differently.'
-            }
-          </p>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="py-6 text-lg md:text-xl text-text-body font-body"
+          >
+            Most agencies deliver technical debt wrapped in a pretty proposal. We build 
+            <span className="text-accent font-semibold"> revenue-generating systems </span> 
+            engineered for long-term scale and security.
+          </motion.p>
         </div>
 
-        {/* Pain → Solution Cards */}
-        <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        {/* Pain → Solution Grid */}
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {painPoints.map((pain, idx) => {
             const Icon = pain.icon;
             const solution = solutions[idx];
@@ -105,85 +178,109 @@ export default function PainPointsSolutions({ countryName }) {
             return (
               <motion.div
                 key={pain.id}
-                initial={{ opacity: 0, y: 60 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="group relative h-full cursor-pointer"
+                transition={{ duration: 0.6, delay: idx * 0.1 }}
+                className="group perspective-1000 h-100 cursor-pointer"
                 onMouseEnter={() => setActiveIndex(idx)}
                 onMouseLeave={() => setActiveIndex(null)}
+                aria-labelledby={`pain-title-${idx}`}
               >
-                <motion.div
-                  className={`relative h-full flex flex-col rounded-3xl border border-slate-100 bg-white p-8 overflow-hidden shadow-lg
-                    ${isActive ? 'shadow-2xl' : 'hover:shadow-xl'}`}
-                  animate={{ scale: isActive ? 1.03 : 1 }}
-                  transition={{ duration: 0.4 }}
-                >
-
-
-                  {/* Icon */}
-                  <motion.div
-                    className="mb-6 inline-flex rounded-2xl  p-4 text-accent"
-                    whileHover={{ scale: 1.12 }}
-                  >
-                    <Icon className="h-8 w-8" />
-                  </motion.div>
-
-                  {/* Pain Content */}
-                  <motion.div
-                    className={`transition-all duration-500 ${isActive ? 'opacity-0 scale-95' : 'opacity-100'}`}
-                    animate={{ opacity: isActive ? 0 : 1, scale: isActive ? 0.95 : 1 }}
-                  >
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3 leading-tight">{pain.title}</h3>
-                    <p className="text-slate-600 leading-relaxed font-medium">{pain.description}</p>
-                  </motion.div>
-
-                  {/* Solution Reveal */}
-                  <motion.div
-                    className={`absolute inset-0 p-8 flex flex-col bg-white
-                      ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
-                    animate={{
-                      opacity: isActive ? 1 : 0,
-                      y: isActive ? 0 : 48
-                    }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="rounded-2xl bg-emerald-100 p-3 text-emerald-600">
-                        <CheckCircle2 className="h-7 w-7" />
+                <div className={`relative h-full w-full transition-all duration-700 preserve-3d ${isActive ? 'rotate-y-180' : ''}`}>
+                  
+                  {/* FRONT: PAIN SIDE */}
+                  <div className="absolute inset-0 backface-hidden rounded-[2rem] border border-border bg-white/40 p-8 backdrop-blur-xl shadow-sm group-hover:shadow-xl transition-all duration-500 group-hover:border-accent/20">
+                    <div className="relative z-10 flex flex-col h-full">
+                      {/* Icon with Glowing Aura */}
+                      <div className="mb-8 relative inline-block">
+                        <div className="absolute inset-0 bg-accent/20 blur-2xl rounded-full scale-0 group-hover:scale-150 transition-transform duration-700" />
+                        <div className="relative w-16 h-16 flex items-center justify-center rounded-2xl bg-surface border border-border transition-colors duration-300">
+                          <Icon className="h-8 w-8 text-text-primary group-hover:text-accent transition-colors duration-300" strokeWidth={1.5} />
+                        </div>
                       </div>
-                      <div>
-                        <p className="text-xs font-semibold uppercase tracking-widest text-emerald-600">How We Fix It</p>
-                        <p className="text-xl font-bold text-slate-900 leading-tight">{solution.title}</p>
+
+                      <h3 id={`pain-title-${idx}`} className="font-heading text-2xl font-bold text-text-primary mb-4 leading-tight">
+                        {pain.title}
+                      </h3>
+                      
+                      <p className="text-text-body text-sm leading-relaxed font-body">
+                        {pain.description}
+                      </p>
+
+                      <div className="mt-auto flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-accent/60 group-hover:text-accent transition-colors">
+                        <MousePointer2 className="h-3 w-3" />
+                        See Our Solution
                       </div>
                     </div>
 
-                    <p className="text-slate-600 flex-1 leading-relaxed font-medium">{solution.description}</p>
+                    {/* Subtle corner accent */}
+                    <div className="absolute bottom-4 right-4 w-8 h-8 opacity-10">
+                      <div className="w-full h-full border-b-2 border-r-2 border-text-primary rounded-br-lg" />
+                    </div>
+                  </div>
 
-                    {solution.metric && (
-                      <div className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-accent/5 px-4 py-2.5 text-sm font-semibold text-accent">
-                        📈 {solution.metric}
+                  {/* BACK: SOLUTION SIDE */}
+                  <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-[2rem] border-2 border-accent/20 bg-primary p-8 shadow-2xl overflow-hidden">
+                    {/* Background Glow */}
+                    <div className="absolute -top-12 -right-12 w-32 h-32 bg-accent/20 blur-3xl rounded-full" />
+                    
+                    <div className="relative z-10 flex flex-col h-full text-white">
+                      <div className="flex items-center gap-4 mb-8">
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent text-white shadow-lg shadow-accent/20">
+                          <CheckCircle2 className="h-6 w-6" />
+                        </div>
+                        <div>
+                          <p className="text-[10px] font-bold uppercase tracking-widest text-accent/80">The Fix</p>
+                          <h4 className="font-heading text-lg font-bold leading-tight">{solution.title}</h4>
+                        </div>
                       </div>
-                    )}
-                  </motion.div>
 
+                      <p className="text-white/80 text-sm leading-relaxed font-body mb-6">
+                        {solution.description}
+                      </p>
 
-                  <motion.div
-                    className="mt-auto w-full  flex items-center justify-center gap-2 rounded-2xl  py-3.5 text-xs font-semibold text-primary active:scale-95 transition-all"
-                    whileHover={{ y: -2 }}
-                    whileTap={{ scale: 0.97 }}
-                  >
+                      <div className="mt-auto space-y-4">
+                        <div className="inline-flex items-center gap-3 rounded-xl bg-white/10 px-4 py-2.5 text-xs font-bold backdrop-blur-md border border-white/10">
+                          <TrendingUp className="h-4 w-4 text-accent" />
+                          <span>{solution.metric}</span>
+                        </div>
+                        
+                        <div className="flex items-center gap-2 text-xs font-semibold text-accent group-hover:translate-x-1 transition-transform">
+                          Contact Our Team <ArrowRight className="h-3.5 w-3.5" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-
-                    Hover to see the fix
-                  </motion.div>
-
-                </motion.div>
+                </div>
               </motion.div>
             );
           })}
         </div>
+
+        {/* Global SEO Footer for section */}
+        <div className="mt-16 text-center lg:mt-24">
+          <p className="text-sm text-text-muted font-body">
+            Engineering excellence for visionary brands. Built with security, performance, and ROI in mind.
+          </p>
+        </div>
       </div>
+
+      <style jsx>{`
+        .perspective-1000 {
+          perspective: 1000px;
+        }
+        .preserve-3d {
+          transform-style: preserve-3d;
+        }
+        .backface-hidden {
+          backface-visibility: hidden;
+        }
+        .rotate-y-180 {
+          transform: rotateY(180deg);
+        }
+      `}</style>
     </section>
   );
 }

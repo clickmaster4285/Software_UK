@@ -119,56 +119,83 @@ export function WhyChooseUs({ slug, service, countryName }) {
 
   return (
     <section
-      className="bg-white py-20 font-sans"
+      className="relative bg-transparent py-20 overflow-hidden"
       aria-labelledby="why-choose-heading"
     >
-      <motion.div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-      >
-        <div
-          className="absolute top-0 left-1/2 -translate-x-1/2 h-72 w-[min(100%,720px)] opacity-25"
-          style={{
-            background:
-              "radial-gradient(ellipse at center, color-mix(in oklch, var(--accent) 18%, transparent), transparent 70%)",
-          }}
-        />
-      </motion.div>
+      {/* Premium Background Elements */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Animated Mesh Gradients */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="absolute inset-0"
+        >
+          <div className="absolute top-0 left-1/4 w-125 h-125 bg-accent/15 rounded-full blur-[120px] -translate-y-1/2" />
+          <div className="absolute bottom-0 right-1/4 w-150 h-150 bg-primary/15 rounded-full blur-[140px] translate-y-1/2" />
+          <div className="absolute top-1/6 left-1/4 -translate-x-1/3 -translate-y-1/4 w-3/4 h-32 h-2/3  bg-accent/15" />
+          <div className="absolute top-2/5 right-1/4 translate-x-1/3 translate-y-1/4 w-3/4 h-32 h-2/3  bg-accent/15" />
+          <div className="absolute top-3/4 right-13 left-1/4 -translate-x-1/3 -translate-y-1/4 w-3/4 h-32 h-2/3  bg-accent/15" />
+        </motion.div>
+        
+        {/* Subtle Grid Overlay */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(var(--text-muted) 0.5px, transparent 0.5px)', backgroundSize: '32px 32px' }} />
+
+        {/* Decorative Floating Nodes */}
+        <div className="absolute inset-0 overflow-hidden">
+          {[...Array(4)].map((_, i) => (
+            <motion.div
+              key={i}
+              animate={{
+                y: [0, -20, 0],
+                opacity: [0.1, 0.3, 0.1],
+              }}
+              transition={{
+                duration: 5 + i * 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: i,
+              }}
+              className="absolute h-1.5 w-1.5 rounded-full bg-accent"
+              style={{
+                top: `${20 + i * 20}%`,
+                left: `${10 + (i % 2) * 80}%`,
+              }}
+            />
+          ))}
+        </div>
+      </div>
 
       <motion.div className="container relative z-10">
         <motion.header
-          className="text-center mb-12 md:mb-14"
+          className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.55, ease: EASE }}
         >
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-lg font-bold uppercase tracking-[0.2em] text-accent">
+          <div className="inline-flex items-center gap-2 mb-6">
+            <span className="text-lg font-bold uppercase tracking-wide text-accent">
               Why Choose Us
             </span>
           </div>
 
           <h2
             id="why-choose-heading"
-            className="font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl"
+            className="font-heading text-4xl font-bold tracking-tight text-text-primary leading-tight mb-8"
           >
             Why Choose {" "}
-            <span className="font-bold uppercase text-accent">ClickMasters in United Kingdom </span>
+            <span className="text-accent">ClickMasters</span>
           </h2>
 
-          <p className="mt-4 text-base text-text-body font-body leading-relaxed sm:text-lg">
+          <p className="mt-4 text-lg md:text-xl text-text-body font-body leading-relaxed max-w-2xl mx-auto">
             {displaySubtitle}
           </p>
         </motion.header>
 
         {stats.length > 0 && <StatsStrip stats={stats} />}
 
-        <motion.div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+        <motion.div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {benefits.map((benefit, index) => (
             <BenefitCard
               key={benefit.title}

@@ -74,3 +74,42 @@
 - **Drafts Handling**: Enabled admin editing for unpublished case studies.
 - **Blog Form**: Added dynamic tags input and basic HTML toolbar.
 - **Scrolling Fix**: Resolved scroll-locking issue in `app/layout.js`.
+
+
+
+## 5. MAIN SERVICE ARCHITECTURE & COMPONENT GUIDE
+
+### 5.1 Strategic Overview
+- **Data-Driven Core**: Dynamic routing at `app/(landing)/[category]/page.js`. Data is sourced from `data/main-services.js` and enriched via `data/service-section-data.js` using `enrichServiceData()` to ensure content density and fallbacks.
+- **Premium Aesthetics**: Strictly uses Tailwind 4 OKLCH tokens. Features atmospheric depth through mesh gradients (`bg-primary/15`, `blur-120px`), grid overlays, and `backdrop-blur` layers.
+- **Motion Orchestration**: 
+    - **GSAP (ScrollTrigger)**: High-precision pinning and "Snake Line" progress tracking.
+    - **Framer Motion**: Smooth entrance animations and layout transitions.
+    - **React Custom**: Typewriter effects and animated stat counters for real-time engagement.
+
+### 5.2 Active Component Directory
+| Component | Purpose | Functionality |
+| :--- | :--- | :--- |
+| **HeroSection** | Identity | Video/Image background, typewriter sub-services, and live counters. |
+| **ExploreSection** | Capabilities | Dynamic sub-service grid with 3D-hover effects and scroll-pathing. |
+| **TrustedClients** | Authority | Industry-categorized logo grid for social proof. |
+| **AppsSection** | Portfolio | Dynamic project fetching from API with skeleton loading states. |
+| **ProcessPage** | Methodology | Interactive vertical timeline with pinned phase indicators. |
+| **TechStack** | Trust | Bento-grid layout showcasing modern framework expertise. |
+| **WhyChooseUs** | Value | ROI-driven benefit cards with validated micro-stats. |
+| **PricingSection** | Conversion | Three-tier investment models (Discovery, Project, Partnership). |
+| **Testimonials** | Validation | Swiper-based carousel with star ratings and verified avatars. |
+| **FaqSection** | Clarity | Themed accordion stack handling cost, time, and tech objections. |
+
+### 5.3 Library & Recommendation Guide
+| Component | How it Works | Strategic Value |
+| :--- | :--- | :--- |
+| **PainPoints** | Flip Cards | **High**: Addresses user problems before proposing solutions. |
+| **Industries** | Sector 3D Cards | **High**: Demonstrates deep domain expertise (Healthcare, Retail, etc.). |
+| **FinalCTA** | Benefit Ticker | **High**: Strong conversion push with bold visual hooks. |
+| **AboutSection** | Stacked Cards | **Medium**: Adds narrative depth to the company's "Why." |
+
+### 5.4 Best Practices for Updates
+- **Data Enrichment**: Always update `data/service-section-data.js` when adding new global features or pricing tiers.
+- **Section Import**: Keep `main-service.jsx` imports lean; document unused imports in the file header for quick reactivation.
+- **Performance**: Wrap data-heavy sections like `AppsSection` or `TrustedClients` in `Suspense` with themed pulse skeletons.

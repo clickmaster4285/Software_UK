@@ -176,20 +176,15 @@ export function TestimonialsSection({ serviceTitle }) {
 
       <motion.div className="container relative z-10">
         <motion.header
-          className="mx-auto max-w-3xl text-center mb-12 md:mb-14"
+          className=" text-center mb-12 md:mb-14"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.55, ease: EASE }}
         >
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="h-px w-8 rounded-full bg-accent" aria-hidden />
-            <span className="section-label inline-flex items-center gap-1.5">
-              <Sparkles className="h-3.5 w-3.5 text-accent" aria-hidden />
+            <span className="text-lg font-semibold text-accent font-body mb-2">
               Client Stories
             </span>
-            <span className="h-px w-8 rounded-full bg-accent" aria-hidden />
-          </div>
 
           <h2
             id="testimonials-heading"
