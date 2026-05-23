@@ -113,6 +113,25 @@ const staggerContainer = {
   },
 };
 
+const CLIENT_AVATARS = [
+  {
+    src: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&h=64&fit=crop&crop=faces",
+    alt: "Business client portrait",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop&crop=faces",
+    alt: "Business client portrait",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=faces",
+    alt: "Business client portrait",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=64&h=64&fit=crop&crop=faces",
+    alt: "Business client portrait",
+  },
+];
+
 export function ServiceHero({ page }) {
   const controls = useAnimation();
   const sectionRef = useRef(null);
@@ -452,14 +471,19 @@ export function ServiceHero({ page }) {
               >
                 <motion.div className="flex items-center gap-2" variants={fadeInUp}>
                   <div className="flex -space-x-2">
-                    {[1, 2, 3, 4].map((i) => (
+                    {CLIENT_AVATARS.map((avatar) => (
                       <div
-                        key={i}
-                        className="h-8 w-8 rounded-full border-2 border-white/80"
-                        style={{
-                          background: `hsl(${20 + i * 15}, 60%, ${50 + i * 4}%)`,
-                        }}
-                      />
+                        key={avatar.src}
+                        className="relative h-8 w-8 overflow-hidden rounded-full border-2 border-white/80"
+                      >
+                        <Image
+                          src={avatar.src}
+                          alt={avatar.alt}
+                          fill
+                          sizes="32px"
+                          className="object-cover"
+                        />
+                      </div>
                     ))}
                   </div>
                   <span>

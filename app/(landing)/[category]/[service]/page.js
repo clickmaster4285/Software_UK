@@ -2,10 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound, redirect } from 'next/navigation';
 import Script from 'next/script';
-import { Star } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { breadcrumbSchema, faqSchema, homepageFaqSchema, serviceSchema, siteConfig } from '@/app/metadata-config';
-import { makeBoldServiceName, getSectionId } from '@/lib/subservice-utils';
+import { getSectionId } from '@/lib/subservice-utils';
 import {
   getAllServicePages,
   getServicePage,
@@ -13,6 +12,7 @@ import {
   slugify,
 } from '@/data/sub-services';
 import { ServiceHero } from '@/components/landing/sub-services/service-hero';
+import DynamicSections from '@/components/landing/sub-services/DynamicSections';
 import { ServicesSection } from '@/components/landing/sub-services/ServicesSection';
 import { ProcessSection } from '@/components/landing/sub-services/ProcessSection';
 import { IndustriesSection } from '@/components/landing/sub-services/IndustriesSection';
@@ -183,72 +183,32 @@ export default async function ServiceByCategoryPage({ params }) {
       <div className="min-h-screen text-primary relative overflow-x-hidden">
         <ClientScrollWheel tocItems={tocItems} />
 
-        <div id="overview ">
+        <div id="overview">
           <ServiceHero page={page} />
         </div>
 
-        <div className="mx-auto max-w-400 px-4 md:px-8 ">
-          <main className="py-12">
-            {sections.map((section, index) => (
-              <section
-                key={section.heading}
-                id={getSectionId(section.heading, index, slugify)}
-                className="scroll-mt-20"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="h-10 w-1 rounded-full bg-primary" />
-                  <h2 
-                    className="text-2xl font-semibold text-slate-900 sm:text-3xl"
-                    dangerouslySetInnerHTML={{ __html: makeBoldServiceName(section.heading, page.serviceName) }}
-                  />
-                </div>
+        <div className="mx-auto max-w-400 px-4 md:px-8">
+          <main className="py-8 md:py-12">
+            {sections.length > 0 && (
+              <DynamicSections
+                sections={sections}
+                serviceName={page.serviceName}
+              />
+            )}
 
-                <div className="mt-6 space-y-4 text-slate-600 leading-relaxed">
-                  <p 
-                    className="text-lg whitespace-pre-line"
-                    dangerouslySetInnerHTML={{ __html: makeBoldServiceName(section.body, page.serviceName) }}
-                  />
-                  
-                  {section.items && (
-                    <ul className="mt-6 space-y-4">
-                      {section.items.map((item, i) => (
-                        <li key={i} className="flex gap-3">
-                          <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-orange-600">
-                            <Star className="h-3 w-3 fill-current" />
-                          </div>
-                          <span 
-                            className="italic"
-                            dangerouslySetInnerHTML={{ __html: makeBoldServiceName(item, page.serviceName) }}
-                          />
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
+            {page.servicesCards && (
+              <ServicesSection
+                serviceName={page.serviceName}
+                servicesCards={page.servicesCards}
+              />
+            )}
 
-                <div className="my-6 flex items-center">
-                  <div className="h-px w-full bg-gray-300" />
-                </div>
-              </section>
-            ))}
-
-            <div id="our-services" className="scroll-mt-20">
-              {page.servicesCards && (
-                <ServicesSection 
-                  serviceName={page.serviceName} 
-                  servicesCards={page.servicesCards} 
-                />
-              )}
-            </div>
-
-            <div id="why-choose-us" className="scroll-mt-20">
-              {page.differentiators && (
-                <WhyChooseUs 
-                  slug={page.slug} 
-                  differentiators={page.differentiators} 
-                />
-              )}
-            </div>
+            {page.differentiators && (
+              <WhyChooseUs
+                slug={page.slug}
+                differentiators={page.differentiators}
+              />
+            )}
              
             <div id="checklist" className="scroll-mt-20">
               {page.checklist && (
