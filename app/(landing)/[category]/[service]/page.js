@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { notFound, redirect } from 'next/navigation';
 import Script from 'next/script';
 import { cn } from '@/lib/utils';
@@ -14,18 +15,22 @@ import {
 import { ServiceHero } from '@/components/landing/sub-services/service-hero';
 import DynamicSections from '@/components/landing/sub-services/DynamicSections';
 import { ServicesSection } from '@/components/landing/sub-services/ServicesSection';
-import { ProcessSection } from '@/components/landing/sub-services/ProcessSection';
-import { IndustriesSection } from '@/components/landing/sub-services/IndustriesSection';
-import { CaseStudySection } from '@/components/landing/sub-services/CaseStudySection';
-import { FAQSection } from '@/components/landing/sub-services/FAQSection';
 import { EngineeringBaseline } from '@/components/landing/sub-services/EngineeringBaseline';
 import { WhyChooseUs } from '@/components/landing/sub-services/WhyChooseUs';
 import { TechStack } from '@/components/landing/sub-services/TechStack';
-import { PricingSection } from '@/components/landing/sub-services/PricingSection';
-import { TestimonialsSection } from '@/components/landing/sub-services/TestimonialsSection';
 import { CTAComponents } from '@/components/landing/sub-services/FooterCTA';
 import { CeoVision } from '@/components/landing/sub-services/CeoVision';
 import { ClientScrollWheel } from './ClientScrollWheel';
+
+// Dynamically import heavy below-the-fold components
+const ProcessSection = dynamic(() => import('@/components/landing/sub-services/ProcessSection').then(mod => mod.ProcessSection));
+const IndustriesSection = dynamic(() => import('@/components/landing/sub-services/IndustriesSection').then(mod => mod.IndustriesSection));
+const CaseStudySection = dynamic(() => import('@/components/landing/sub-services/CaseStudySection').then(mod => mod.CaseStudySection), {
+  ssr: true,
+});
+const PricingSection = dynamic(() => import('@/components/landing/sub-services/PricingSection').then(mod => mod.PricingSection));
+const TestimonialsSection = dynamic(() => import('@/components/landing/sub-services/TestimonialsSection').then(mod => mod.TestimonialsSection));
+const FAQSection = dynamic(() => import('@/components/landing/sub-services/FAQSection').then(mod => mod.FAQSection));
 
 const defaultFaqs = homepageFaqSchema.mainEntity.map((item) => ({
   question: item.name,
@@ -187,8 +192,8 @@ export default async function ServiceByCategoryPage({ params }) {
           <ServiceHero page={page} />
         </div>
 
-        <div className="mx-auto max-w-400 px-4 md:px-8">
-          <main className="py-8 md:py-12">
+        <div className="px-4 md:px-8">
+          <main className="">
             {sections.length > 0 && (
               <DynamicSections
                 sections={sections}
@@ -209,21 +214,21 @@ export default async function ServiceByCategoryPage({ params }) {
                 differentiators={page.differentiators}
               />
             )}
-             
+
             <div id="checklist" className="scroll-mt-20">
               {page.checklist && (
-                <EngineeringBaseline 
-                  serviceName={page.serviceName} 
-                  checklist={page.checklist} 
+                <EngineeringBaseline
+                  serviceName={page.serviceName}
+                  checklist={page.checklist}
                 />
               )}
             </div>
 
             <div id="our-process" className="scroll-mt-20">
               {page.processPhases && (
-                <ProcessSection 
-                  serviceName={page.serviceName} 
-                  processPhases={page.processPhases} 
+                <ProcessSection
+                  serviceName={page.serviceName}
+                  processPhases={page.processPhases}
                 />
               )}
             </div>
@@ -242,17 +247,17 @@ export default async function ServiceByCategoryPage({ params }) {
 
             <div id="pricing" className="scroll-mt-20">
               {page.pricingTiers && (
-                <PricingSection 
-                  serviceName={page.serviceName} 
-                  pricingTiers={page.pricingTiers} 
+                <PricingSection
+                  serviceName={page.serviceName}
+                  pricingTiers={page.pricingTiers}
                 />
               )}
             </div>
-            
+
             <CeoVision />
 
             {page.tables && page.tables.map((table) => (
-              <section key={table.title} id={slugify(table.title)} className="scroll-mt-20 pt-16">
+              <section key={table.title} id={slugify(table.title)} className="mx-auto max-w-400 scroll-mt-20 pt-16">
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-1 rounded-full bg-primary" />
                   <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
@@ -292,19 +297,19 @@ export default async function ServiceByCategoryPage({ params }) {
             ))}
 
             <div id="testimonials" className="scroll-mt-20">
-              <TestimonialsSection  />
+              <TestimonialsSection />
             </div>
 
-            <div id="case-study" className="mb-10 scroll-mt-20">
-              <div className="w-full flex flex-col mt-4 sm:mt-6 py-6 sm:py-8">
-                <div className="flex items-center gap-3 px-4 sm:px-6 md:px-8">
-                  <div className="h-8 sm:h-10 w-1 rounded-full bg-primary" />
+            <div id="case-study" className="scroll-mt-20 mx-auto max-w-400">
+              <div className="w-full flex flex-col mt-4">
+                <div className="flex items-center gap-3 px-8 ">
+                  <div className="h-8 sm:h-10 w-1 rounded-full bg-accent" />
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-slate-900">
                     Success Stories
                   </h2>
                 </div>
               </div>
-              <CaseStudySection />
+              <CaseStudySection serviceName={page.serviceName} />
             </div>
 
             <div id="faq" className="scroll-mt-20">
@@ -312,7 +317,7 @@ export default async function ServiceByCategoryPage({ params }) {
             </div>
           </main>
         </div>
-      
+
         <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-20">
           <div className="mx-auto max-w-5xl px-5 text-center md:px-8">
             <h2 className="text-3xl font-semibold text-slate-900 sm:text-4xl">

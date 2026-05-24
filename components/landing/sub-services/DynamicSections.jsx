@@ -18,7 +18,7 @@ export default function DynamicSections({ sections, serviceName }) {
   if (!sections?.length) return null;
 
   return (
-    <div className="relative -mx-4 overflow-hidden border-y border-border/50 bg-gradient-to-b from-primary/30 via-surface to-surface-2/80 px-4 py-10 sm:rounded-2xl sm:border md:-mx-8 md:px-8 md:py-14">
+    <div className="relative mx-auto max-w-400  -mx-4 overflow-hidden px-4 py-10 sm:rounded-2xl md:py-14">
       <div
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{

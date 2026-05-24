@@ -171,7 +171,7 @@ export function WheelAnimation({ scrollDirection, scrollProgress, sizes, isAnima
         <path
           d={fullCirclePath(sizes.R_DASH)}
           fill="none"
-          stroke="#D4A017"
+          stroke="var(--accent)"
           strokeWidth={sizes.WHEEL_W > 150 ? 3 : 2.5}
           strokeDasharray={sizes.WHEEL_W > 150 ? "10 16" : "8 14"}
           strokeLinecap="round"
@@ -215,7 +215,7 @@ export function WheelAnimation({ scrollDirection, scrollProgress, sizes, isAnima
         <polyline
           points={sizes.WHEEL_W > 150 ? "-8,14  0,5  8,14" : "-6,11  0,4  6,11"}
           fill="none"
-          stroke={upActive ? '#D4A017' : '#9CA3AF'}
+          stroke={upActive ? 'var(--accent)' : '#9CA3AF'}
           strokeWidth={upActive ? (sizes.WHEEL_W > 150 ? 3 : 2.5) : (sizes.WHEEL_W > 150 ? 2.5 : 2)}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -223,7 +223,7 @@ export function WheelAnimation({ scrollDirection, scrollProgress, sizes, isAnima
         <polyline
           points={sizes.WHEEL_W > 150 ? "-8,22  0,13  8,22" : "-6,19  0,12  6,19"}
           fill="none"
-          stroke={upActive ? '#D4A017' : '#9CA3AF'}
+          stroke={upActive ? 'var(--accent)' : '#9CA3AF'}
           strokeWidth={upActive ? (sizes.WHEEL_W > 150 ? 2.5 : 2) : (sizes.WHEEL_W > 150 ? 2 : 1.5)}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -235,7 +235,7 @@ export function WheelAnimation({ scrollDirection, scrollProgress, sizes, isAnima
         <polyline
           points={sizes.WHEEL_W > 150 ? "-8,-14  0,-5  8,-14" : "-6,-11  0,-4  6,-11"}
           fill="none"
-          stroke={downActive ? '#D4A017' : '#9CA3AF'}
+          stroke={downActive ? 'var(--accent)' : '#9CA3AF'}
           strokeWidth={downActive ? (sizes.WHEEL_W > 150 ? 3 : 2.5) : (sizes.WHEEL_W > 150 ? 2.5 : 2)}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -243,7 +243,7 @@ export function WheelAnimation({ scrollDirection, scrollProgress, sizes, isAnima
         <polyline
           points={sizes.WHEEL_W > 150 ? "-8,-22  0,-13  8,-22" : "-6,-19  0,-12  6,-19"}
           fill="none"
-          stroke={downActive ? '#D4A017' : '#9CA3AF'}
+          stroke={downActive ? 'var(--accent)' : '#9CA3AF'}
           strokeWidth={downActive ? (sizes.WHEEL_W > 150 ? 2.5 : 2) : (sizes.WHEEL_W > 150 ? 2 : 1.5)}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -252,7 +252,7 @@ export function WheelAnimation({ scrollDirection, scrollProgress, sizes, isAnima
       </g>
 
       {/* Hub dot */}
-      <circle cx={CX} cy={CY} r={sizes.WHEEL_W > 150 ? 11 : 7} fill="#D4A017" />
+      <circle cx={CX} cy={CY} r={sizes.WHEEL_W > 150 ? 11 : 7} fill="var(--accent)" />
       <circle cx={CX} cy={CY} r={sizes.WHEEL_W > 150 ? 5 : 3} fill="white" opacity="0.9" />
     </svg>
   );
@@ -429,7 +429,7 @@ export function NavigationWheel({ sections, activeSection, scrollDirection, whee
               fontSize: sizes.FONT_CURR,
               fontWeight: 700,
               lineHeight: 1.2,
-              color: '#D4A017',
+              color: 'var(--accent)',
             }}>
               {truncate(currSection.label, sizes.TRUNCATE_CURR)}
             </span>

@@ -89,7 +89,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links Grid */}
-          <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-2">
             <div>
               <h4 className="font-heading font-bold text-white mb-6 uppercase tracking-widest text-xs opacity-50">Services</h4>
               <ul className="flex flex-col gap-4">
@@ -127,10 +127,10 @@ export default function Footer() {
                   <Phone className="w-4 h-4 text-accent shrink-0" />
                   <span>+44 (7988) 56 086</span>
                 </li>
-                <li className="flex items-center gap-3 text-white/60 text-sm font-body hover:text-accent transition-colors cursor-pointer">
+                <Link href="mailto:sale@clickmasterssoftwaredevelopmentcompany.co.uk" className="flex items-center gap-3 text-white/60 text-sm font-body hover:text-accent transition-colors cursor-pointer">
                   <Mail className="w-4 h-4 text-accent shrink-0" />
                   <span>sale@clickmasterssoftwaredevelopmentcompany.co.uk</span>
-                </li>
+                </Link>
               </ul>
               
               <div className="mt-8 flex gap-4">
@@ -184,7 +184,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex flex-wrap justify-center gap-6 text-xs text-white/40 font-body uppercase tracking-widest">
+          <div className="flex flex-wrap justify-center gap-6 text-xs text-white/60 font-body uppercase tracking-widest">
             {footerLinks.legal.map((link) => (
               <Link key={link.name} href={link.href} className="hover:text-white transition-colors">
                 {link.name}
@@ -193,8 +193,8 @@ export default function Footer() {
           </div>
           
           <div className="flex items-center gap-6">
-            <p className="text-white/40 font-body text-xs tracking-wider">
-              © 2026 CLICKMASTERS.UK
+            <p className="text-white/60 font-body text-sm captitalize  tracking-wide">
+              © 2026 clickmasters software company
             </p>
           </div>
         </div>
