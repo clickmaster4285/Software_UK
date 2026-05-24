@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { notFound, redirect } from 'next/navigation';
 import Script from 'next/script';
 import { cn } from '@/lib/utils';
@@ -14,18 +15,22 @@ import {
 import { ServiceHero } from '@/components/landing/sub-services/service-hero';
 import DynamicSections from '@/components/landing/sub-services/DynamicSections';
 import { ServicesSection } from '@/components/landing/sub-services/ServicesSection';
-import { ProcessSection } from '@/components/landing/sub-services/ProcessSection';
-import { IndustriesSection } from '@/components/landing/sub-services/IndustriesSection';
-import { CaseStudySection } from '@/components/landing/sub-services/CaseStudySection';
-import { FAQSection } from '@/components/landing/sub-services/FAQSection';
 import { EngineeringBaseline } from '@/components/landing/sub-services/EngineeringBaseline';
 import { WhyChooseUs } from '@/components/landing/sub-services/WhyChooseUs';
 import { TechStack } from '@/components/landing/sub-services/TechStack';
-import { PricingSection } from '@/components/landing/sub-services/PricingSection';
-import { TestimonialsSection } from '@/components/landing/sub-services/TestimonialsSection';
 import { CTAComponents } from '@/components/landing/sub-services/FooterCTA';
 import { CeoVision } from '@/components/landing/sub-services/CeoVision';
 import { ClientScrollWheel } from './ClientScrollWheel';
+
+// Dynamically import heavy below-the-fold components
+const ProcessSection = dynamic(() => import('@/components/landing/sub-services/ProcessSection').then(mod => mod.ProcessSection));
+const IndustriesSection = dynamic(() => import('@/components/landing/sub-services/IndustriesSection').then(mod => mod.IndustriesSection));
+const CaseStudySection = dynamic(() => import('@/components/landing/sub-services/CaseStudySection').then(mod => mod.CaseStudySection), {
+  ssr: true,
+});
+const PricingSection = dynamic(() => import('@/components/landing/sub-services/PricingSection').then(mod => mod.PricingSection));
+const TestimonialsSection = dynamic(() => import('@/components/landing/sub-services/TestimonialsSection').then(mod => mod.TestimonialsSection));
+const FAQSection = dynamic(() => import('@/components/landing/sub-services/FAQSection').then(mod => mod.FAQSection));
 
 const defaultFaqs = homepageFaqSchema.mainEntity.map((item) => ({
   question: item.name,
@@ -296,15 +301,15 @@ export default async function ServiceByCategoryPage({ params }) {
             </div>
 
             <div id="case-study" className="scroll-mt-20 mx-auto max-w-400">
-              <div className="w-full flex flex-col mt-4 sm:mt-6 py-6 sm:py-8">
-                <div className="flex items-center gap-3 px-4 sm:px-6 md:px-8">
-                  <div className="h-8 sm:h-10 w-1 rounded-full bg-primary" />
+              <div className="w-full flex flex-col mt-4">
+                <div className="flex items-center gap-3 px-8 ">
+                  <div className="h-8 sm:h-10 w-1 rounded-full bg-accent" />
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-slate-900">
                     Success Stories
                   </h2>
                 </div>
               </div>
-              <CaseStudySection />
+              <CaseStudySection serviceName={page.serviceName} />
             </div>
 
             <div id="faq" className="scroll-mt-20">
