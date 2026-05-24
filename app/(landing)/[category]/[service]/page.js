@@ -188,7 +188,7 @@ export default async function ServiceByCategoryPage({ params }) {
         </div>
 
         <div className="px-4 md:px-8">
-          <main className="py-8 md:py-12">
+          <main className="">
             {sections.length > 0 && (
               <DynamicSections
                 sections={sections}
@@ -295,7 +295,7 @@ export default async function ServiceByCategoryPage({ params }) {
               <TestimonialsSection />
             </div>
 
-            <div id="case-study" className="mb-10 scroll-mt-20 mx-auto max-w-400">
+            <div id="case-study" className="scroll-mt-20 mx-auto max-w-400">
               <div className="w-full flex flex-col mt-4 sm:mt-6 py-6 sm:py-8">
                 <div className="flex items-center gap-3 px-4 sm:px-6 md:px-8">
                   <div className="h-8 sm:h-10 w-1 rounded-full bg-primary" />
@@ -313,7 +313,7 @@ export default async function ServiceByCategoryPage({ params }) {
           </main>
         </div>
 
-        <section className="mx-auto max-w-400 border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-20">
+        <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-20">
           <div className="mx-auto max-w-5xl px-5 text-center md:px-8">
             <h2 className="text-3xl font-semibold text-slate-900 sm:text-4xl">
               Explore Related Capabilities

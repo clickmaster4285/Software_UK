@@ -1,9 +1,8 @@
 // /src/components/landingPage/servicesPage/PricingSection.tsx
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { PricingCard } from "@/components/landing/sub-services/PricingCard";
-import { useState } from "react";
 
 const parseInvestment = (value) => {
   if (!value) return null;
@@ -47,6 +46,14 @@ const chunkArray = (array, size) => {
 
 export function PricingSection({ serviceName, pricingTiers }) {
   const CHUNK_SIZE = 6;
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+
+  const blob1Y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
+  const blob2Y = useTransform(scrollYProgress, [0, 1], [80, -80]);
 
   const pricingChunks = chunkArray(pricingTiers, CHUNK_SIZE);
   const [activePage, setActivePage] = useState(0);
@@ -107,6 +114,7 @@ export function PricingSection({ serviceName, pricingTiers }) {
   return (
     <motion.section
       id="pricing"
+      ref={sectionRef}
       className="relative mx-auto max-w-400 overflow-hidden"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -115,8 +123,14 @@ export function PricingSection({ serviceName, pricingTiers }) {
     >
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 -z-10 pointer-events-none" aria-hidden="true">
-        <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-accent/5 blur-[120px]" />
-        <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-primary/5 blur-[120px]" />
+        <motion.div
+          style={{ y: blob1Y }}
+          className="absolute top-0 right-0 h-96 w-96 rounded-full bg-accent/5 blur-[120px]"
+        />
+        <motion.div
+          style={{ y: blob2Y }}
+          className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-primary/5 blur-[120px]"
+        />
       </div>
 
       {/* ================= HEADER ================= */}
