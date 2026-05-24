@@ -14,15 +14,15 @@ export const FAQSection = ({ faqs }) => {
   // Helper function to make text bold with orange color
   const makeBoldWithColor = (text) => {
     if (!text) return text;
-    
+
     // Match text that's already marked for bolding (look for existing bold patterns or key terms)
     // For now, we'll make terms like "Custom Software Development" bold and orange
     const parts = [];
     const keywords = ['custom software development', 'ai development', 'mobile development', 'web development', 'data engineering', 'ui/ux design'];
-    
-    const  lastIndex = 0;
+
+    const lastIndex = 0;
     const lowerText = text.toLowerCase();
-    
+
     keywords.forEach(keyword => {
       const regex = new RegExp(`(${keyword})`, 'gi');
       if (regex.test(lowerText)) {
@@ -41,7 +41,7 @@ export const FAQSection = ({ faqs }) => {
         });
       }
     });
-    
+
     return parts.length > 0 ? parts : text;
   };
 
@@ -71,12 +71,11 @@ export const FAQSection = ({ faqs }) => {
                 {makeBoldWithColor(faq.question)}
               </h3>
               <ChevronDown
-                className={`h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300 ${
-                  openIndex === index ? 'rotate-180' : ''
-                }`}
+                className={`h-5 w-5 shrink-0 text-slate-400 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''
+                  }`}
               />
             </button>
-            
+
             <AnimatePresence mode="wait">
               {openIndex === index && (
                 <motion.div

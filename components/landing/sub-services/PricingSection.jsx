@@ -1,6 +1,6 @@
 // /src/components/landingPage/servicesPage/PricingSection.tsx
 "use client";
-
+import React from "react";
 import { motion } from "framer-motion";
 import { PricingCard } from "@/components/landing/sub-services/PricingCard";
 import { useState } from "react";
@@ -107,35 +107,39 @@ export function PricingSection({ serviceName, pricingTiers }) {
   return (
     <motion.section
       id="pricing"
-      className="scroll-mt-24 py-6 sm:py-8 md:py-12 mx-auto max-w-400"
+      className="relative mx-auto max-w-400 overflow-hidden"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
+      {/* Decorative Background Elements */}
+      <div className="absolute inset-0 -z-10 pointer-events-none" aria-hidden="true">
+        <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-accent/5 blur-[120px]" />
+        <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-primary/5 blur-[120px]" />
+      </div>
+
       {/* ================= HEADER ================= */}
-      <div className="mx-auto max-w-3xl text-center mb-12 sm:mb-14 md:mb-16">
+      <div className="mx-auto max-w-3xl text-center ">
 
         <div className="inline-flex items-center gap-2 mb-3">
-          <span className="h-[2px] w-8 rounded-full bg-orange-400" />
-          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-orange-800">
+          <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
             Pricing
           </p>
-          <span className="h-[2px] w-8 rounded-full bg-orange-400" />
         </div>
 
         <motion.h2
-          className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900"
+          className="mt-5 font-heading text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl"
           initial={{ scale: 0.9, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="font-black">{serviceName}</span> Development Pricing
+          <span className="text-accent">{serviceName}</span> Development Pricing
         </motion.h2>
 
         <motion.p
-          className="mx-auto mt-5 max-w-2xl text-base sm:text-lg text-slate-600"
+          className="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-slate-600 leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -146,8 +150,7 @@ export function PricingSection({ serviceName, pricingTiers }) {
       </div>
 
       {/* ================= CARDS ================= */}
-      {/* ================= CARDS ================= */}
-      <div className="mt-6 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+      <div className="mt-6 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
         {pricingCardsData.map((cardData, index) => (
           <PricingCard
             key={index}
@@ -169,9 +172,9 @@ export function PricingSection({ serviceName, pricingTiers }) {
             <button
               key={idx}
               onClick={() => setActivePage(idx)}
-              className={`px-3 py-1 rounded-md text-sm border transition ${activePage === idx
-                ? "bg-primary text-white"
-                : "bg-white text-slate-600"
+              className={`px-4 py-2 rounded-lg text-sm font-semibold border transition-all ${activePage === idx
+                ? "bg-accent text-white border-accent shadow-lg shadow-accent/20"
+                : "bg-white text-slate-600 hover:bg-slate-50 border-border"
                 }`}
             >
               {idx + 1}
@@ -205,7 +208,7 @@ export function PricingSection({ serviceName, pricingTiers }) {
               transition={{ duration: 0.4, delay: 0.5 + idx * 0.1 }}
             >
               <svg
-                className="h-3 w-3 sm:h-4 sm:w-4 text-primary"
+                className="h-3 w-3 sm:h-4 sm:w-4 text-accent"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
