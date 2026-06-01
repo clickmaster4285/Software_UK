@@ -68,17 +68,17 @@ const teamMembers = [
   {
     name: 'Sarah Mitchell',
     role: 'Head of Sales',
-    image: '/contact/support-women.jpg',
+    image: '/contact/support-women.webp',
   },
   {
     name: 'James Wilson',
     role: 'Technical Lead',
-    image: '/contact/support-person.jpg',
+    image: '/contact/support-person.webp',
   },
   {
     name: 'Our Support Team',
     role: 'Always Ready to Help',
-    image: '/contact/support-team.jpg',
+    image: '/contact/support-team.webp',
   },
 ];
 
@@ -155,11 +155,11 @@ export default function ContactPage() {
     <main className="min-h-screen bg-background relative overflow-x-hidden">
 
       {/* ── Hero Section with Background Image ── */}
-      <section className="relative min-h-[70vh] flex items-center justify-center">
+      <section className="relative min-h-[75vh] flex items-center justify-center">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/contact/contact-bg.jpg"
+            src="/contact/contact-bg.webp"
             alt="Contact ClickMasters"
             fill
             priority
@@ -248,7 +248,7 @@ export default function ContactPage() {
           </svg>
         </div>
 
-        <div className="container mx-auto max-w-7xl px-6 relative z-10">
+        <div className="container mx-auto max-w-400 px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -278,7 +278,7 @@ export default function ContactPage() {
 
 
       {/* ── Meet Our Team Section ── */}
-      <section className="py-20 bg-surface relative overflow-hidden">
+      <section className="py-20 border-t bg-surface relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-[100px]" />
           <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-[100px]" />

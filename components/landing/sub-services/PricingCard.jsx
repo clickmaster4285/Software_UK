@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card";
 import { motion, useInView } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
@@ -17,12 +17,8 @@ export function PricingCard({
   onButtonClick,
 }) {
   const containerRef = useRef(null);
+  // useInView with once: true returns false after first trigger, which is the desired behavior
   const isInView = useInView(containerRef, { once: true, amount: 0.2 });
-  const [hasAnimated, setHasAnimated] = useState(false);
-
-  useEffect(() => {
-    if (isInView && !hasAnimated) setHasAnimated(true);
-  }, [isInView, hasAnimated]);
 
   const formatPrice = (value) => {
     if (!value || value <= 0) return null;
@@ -36,7 +32,7 @@ export function PricingCard({
     <motion.div
       ref={containerRef}
       initial={{ opacity: 0, y: 30 }}
-      animate={hasAnimated ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ y: -8 }}
       className="h-full"

@@ -134,13 +134,13 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${hasWhiteBg
-        ? "bg-white/95 backdrop-blur-sm border-b border-border py-2 shadow-sm"
-        : "bg-transparent py-4"
+      ? "bg-white/95 backdrop-blur-sm border-b border-border py-2 shadow-sm"
+      : "bg-transparent py-4"
       }`}>
       <div className="max-w-400 mx-auto px-6 flex items-center justify-between">
         <HomeLogoLink className="flex items-center">
           <Image
-            src="/cm-logos/logo.png"
+            src="/cm-logos/logo.webp"
             alt="ClickMasters"
             width={180}
             height={48}
