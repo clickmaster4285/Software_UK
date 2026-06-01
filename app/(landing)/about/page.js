@@ -168,7 +168,7 @@ export default function AboutPage() {
             className="max-w-400 mx-auto text-center"
           >
             {/* Breadcrumb */}
-            <nav className="flex items-start justify-start gap-2 text-sm text-white mb-8">
+            <nav className="flex items-center justify-center gap-2 text-sm text-white mb-8">
               <Link href="/" className="hover:text-accent transition-colors">Home</Link>
               <ChevronRight className="w-4 h-4" />
               <span className="font-medium">About Us</span>
