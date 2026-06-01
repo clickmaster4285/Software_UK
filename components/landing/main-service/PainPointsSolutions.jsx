@@ -76,11 +76,11 @@ const FloatingParticle = ({ delay = 0, x = "0%", y = "0%", size = 4 }) => (
       y: ["0%", "-20%", "0%"],
       x: ["0%", "10%", "0%"]
     }}
-    transition={{ 
-      duration: 10 + Math.random() * 10, 
-      repeat: Infinity, 
+    transition={{
+      duration: 15,
+      repeat: Infinity,
       delay,
-      ease: "easeInOut" 
+      ease: "easeInOut"
     }}
     className="absolute rounded-full bg-accent/20 blur-xl"
     style={{ left: x, top: y, width: size, height: size }}

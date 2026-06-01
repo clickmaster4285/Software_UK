@@ -250,8 +250,11 @@ export function ProcessPage({ serviceData }) {
 
   const serviceTitle = serviceData?.title || "Our";
 
-  cardRefs.current = cardRefs.current.slice(0, phases.length);
-  nodeRefs.current = nodeRefs.current.slice(0, phases.length);
+  // Initialize refs in useEffect to avoid render-time access
+  useEffect(() => {
+    cardRefs.current = cardRefs.current.slice(0, phases.length);
+    nodeRefs.current = nodeRefs.current.slice(0, phases.length);
+  }, [phases.length]);
 
   useEffect(() => {
     const track = trackRef.current;

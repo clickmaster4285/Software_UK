@@ -153,7 +153,7 @@ export const FAQSection = ({ faqs }) => {
           Still have questions?
         </h3>
         <p className="mt-3 text-slate-600 max-w-lg mx-auto">
-          Can't find the answer you're looking for? Please chat to our friendly team.
+          Can&apos;t find the answer you&apos;re looking for? Please chat to our friendly team.
         </p>
         <div className="mt-8">
           <Button asChild className="bg-accent hover:bg-accent-hover text-white rounded-xl px-8 py-6 font-semibold shadow-lg shadow-accent/20 transition-all hover:-translate-y-0.5 border-0">

@@ -64,7 +64,7 @@ export default function Portfolio() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="text-accent/90 font-bold uppercase tracking-tight text-9xl leading-none"
+                  className="text-accent font-bold uppercase tracking-tight text-4xl md:text-6xl lg:text-9xl xl:text-9xl leading-none"
                >
                   Industry Expertise
                </motion.span>
