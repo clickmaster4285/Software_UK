@@ -16,7 +16,7 @@ import {
 import { useRef } from 'react';
 import Image from 'next/image';
 import softwareimg from "@/public/assets/software development icon.png";
-import webdevelopment from "@/public/assets/web-development.png";
+import webdevelopment from "@/public/assets/web-development.webp";
 import mobileapp from "@/public/assets/mobile-app-development.svg";
 
 // New high-quality 3D image assets
@@ -233,7 +233,7 @@ function ServiceCard({ service, index }) {
           </div>
 
           {/* Center: Image */}
-          <div className="flex-1 flex items-center justify-center my-6 relative">
+          <div className="flex-1 flex items-center justify-center mb-6 relative">
             <div 
               className="absolute w-40 h-40 rounded-full blur-[60px] opacity-30 group-hover:opacity-50 transition-all duration-700"
               style={{ background: accent }}
@@ -305,13 +305,13 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center mb-24"
         >
-          <h2 className="mt-6 text-5xl md:text-7xl font-bold text-foreground tracking-tight">
+          <h2 className="mt-6 text-3xl md:text-5xl font-bold text-foreground tracking-tight">
             Innovating your{' '}
-            <span className="text-accent text-[5.0rem]">
+            <span className="text-accent">
               digital future
             </span>
           </h2>
-          <p className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground/80 font-medium">
+          <p className="mt-6 text-lg text-muted-foreground/80 font-medium">
             We blend cutting-edge technology with world-class design to build products that define industries.
           </p>
         </motion.div>
@@ -324,7 +324,7 @@ export default function Services() {
         </div>
 
         {/* Marquee Credibility */}
-        <div className="mt-32 pt-12 border-t border-white/10">
+        {/* <div className="mt-32 pt-12 border-t border-white/10">
           <div className="flex gap-16 animate-marquee whitespace-nowrap w-max opacity-70 hover:grayscale-0 transition-all duration-500">
             {[...marqueeItems, ...marqueeItems].map((item, i) => (
               <div
@@ -336,7 +336,7 @@ export default function Services() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

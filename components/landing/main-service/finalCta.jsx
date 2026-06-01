@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Sparkles, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const cards = [
   { subtitle: "Free Consultation" },
@@ -107,11 +107,6 @@ export function FinalCTA() {
                     </div>
                   ))}
                 </div>
-              </div>
-              
-              {/* Floating element for depth */}
-              <div className="absolute -top-6 -right-6 p-4 rounded-2xl bg-accent shadow-2xl animate-bounce duration-3000">
-                <Sparkles className="h-6 w-6 text-white" />
               </div>
             </div>
           </div>

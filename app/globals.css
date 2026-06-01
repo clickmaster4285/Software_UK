@@ -1,4 +1,4 @@
-@import "tailwindcss";
+  @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
@@ -543,3 +543,35 @@
   --card: oklch(0.32 0.03 250);
   --card-foreground: oklch(1 0 0);
 }
+
+/* ── Journey section wave animations ── */
+@keyframes wave-slow {
+  0%   { transform: translateX(0) translateY(0) scaleY(1); }
+  50%  { transform: translateX(-60px) translateY(18px) scaleY(1.06); }
+  100% { transform: translateX(0) translateY(0) scaleY(1); }
+}
+
+@keyframes wave-mid {
+  0%   { transform: translateX(0) translateY(0) scaleY(1); }
+  50%  { transform: translateX(50px) translateY(-14px) scaleY(0.95); }
+  100% { transform: translateX(0) translateY(0) scaleY(1); }
+}
+
+@keyframes wave-fast {
+  0%   { transform: translateX(0) translateY(0); }
+  33%  { transform: translateX(40px) translateY(12px); }
+  66%  { transform: translateX(-30px) translateY(-8px); }
+  100% { transform: translateX(0) translateY(0); }
+}
+
+@keyframes blob-drift {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(40px, -30px) scale(1.08); }
+  66%  { transform: translate(-25px, 20px) scale(0.95); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+.wave-slow  { animation: wave-slow 14s ease-in-out infinite; }
+.wave-mid   { animation: wave-mid  10s ease-in-out infinite; }
+.wave-fast  { animation: wave-fast  7s ease-in-out infinite; }
+.blob-drift { animation: blob-drift 18s ease-in-out infinite; }
