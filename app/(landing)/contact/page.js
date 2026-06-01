@@ -228,91 +228,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-
-      {/* ── Why Contact Us Section ── */}
-      <section className="py-20 relative overflow-hidden" style={{ background: 'oklch(0.99 0.005 250)' }}>
-
-        {/* Animated wave background */}
-        <div className="absolute inset-0 pointer-events-none z-0" aria-hidden="true">
-          <div className="blob-drift absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full opacity-30"
-            style={{ background: 'radial-gradient(circle, oklch(0.5675 0.2072 318.97 / 0.18) 0%, transparent 70%)' }} />
-          <div className="blob-drift absolute -bottom-32 -right-32 w-[450px] h-[450px] rounded-full opacity-25"
-            style={{ background: 'radial-gradient(circle, oklch(0.5675 0.2072 318.97 / 0.14) 0%, transparent 70%)', animationDelay: '-6s' }} />
-
-          <svg className="wave-slow absolute bottom-0 left-0 w-full" style={{ height: '220px' }}
-            viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0,120 C240,180 480,60 720,120 C960,180 1200,60 1440,120 L1440,220 L0,220 Z"
-              fill="oklch(0.5675 0.2072 318.97 / 0.06)"
-            />
-          </svg>
-        </div>
-
-        <div className="container mx-auto max-w-400 px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="inline-flex items-center gap-2 text-accent text-xl font-medium mb-4">
-              <MessageSquare className="w-5 h-5" />
-              Why Contact Us
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-heading">
-              We&apos;re Here to <span className="text-accent">Help You Succeed</span>
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Every interaction with ClickMasters is designed to give you confidence in your project
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {reasons.map((reason, i) => (
-              <ReasonCard key={reason.title} reason={reason} index={i} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-
-      {/* ── Meet Our Team Section ── */}
-      <section className="py-20 border-t bg-surface relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-[100px]" />
-          <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-[100px]" />
-        </div>
-
-        <div className="container mx-auto max-w-7xl px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="inline-flex items-center gap-2 text-accent text-xl font-medium mb-4">
-              <Users className="w-5 h-5" />
-              Meet Our Team
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-heading">
-              The People Who Will <span className="text-accent">Help You</span>
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our dedicated team is ready to understand your needs and deliver solutions that exceed expectations
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-            {teamMembers.map((member, i) => (
-              <TeamCard key={member.name} member={member} index={i} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-
       {/* ── Contact Form & Info Section ── */}
       <section id="contact-form" className="py-20 relative">
         <div className="container mx-auto max-w-7xl px-6">
@@ -428,6 +343,88 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* ── Why Contact Us Section ── */}
+      <section className="py-20 relative overflow-hidden" style={{ background: 'oklch(0.99 0.005 250)' }}>
+
+        {/* Animated wave background */}
+        <div className="absolute inset-0 pointer-events-none z-0" aria-hidden="true">
+          <div className="blob-drift absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full opacity-30"
+            style={{ background: 'radial-gradient(circle, oklch(0.5675 0.2072 318.97 / 0.18) 0%, transparent 70%)' }} />
+          <div className="blob-drift absolute -bottom-32 -right-32 w-[450px] h-[450px] rounded-full opacity-25"
+            style={{ background: 'radial-gradient(circle, oklch(0.5675 0.2072 318.97 / 0.14) 0%, transparent 70%)', animationDelay: '-6s' }} />
+
+          <svg className="wave-slow absolute bottom-0 left-0 w-full" style={{ height: '220px' }}
+            viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0,120 C240,180 480,60 720,120 C960,180 1200,60 1440,120 L1440,220 L0,220 Z"
+              fill="oklch(0.5675 0.2072 318.97 / 0.06)"
+            />
+          </svg>
+        </div>
+
+        <div className="container mx-auto max-w-400 px-6 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <span className="inline-flex items-center gap-2 text-accent text-xl font-medium mb-4">
+              <MessageSquare className="w-5 h-5" />
+              Why Contact Us
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-heading">
+              We&apos;re Here to <span className="text-accent">Help You Succeed</span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Every interaction with ClickMasters is designed to give you confidence in your project
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {reasons.map((reason, i) => (
+              <ReasonCard key={reason.title} reason={reason} index={i} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* ── Meet Our Team Section ── */}
+      <section className="py-20 border-t bg-surface relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-[100px]" />
+          <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-[100px]" />
+        </div>
+
+        <div className="container mx-auto max-w-7xl px-6 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <span className="inline-flex items-center gap-2 text-accent text-xl font-medium mb-4">
+              <Users className="w-5 h-5" />
+              Meet Our Team
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-heading">
+              The People Who Will <span className="text-accent">Help You</span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Our dedicated team is ready to understand your needs and deliver solutions that exceed expectations
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+            {teamMembers.map((member, i) => (
+              <TeamCard key={member.name} member={member} index={i} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* ── CTA Section ── */}
       <FinalCTA />
