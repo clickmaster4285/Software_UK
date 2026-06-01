@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion, useMotionTemplate, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import {
   ArrowUpRight,
@@ -25,6 +26,19 @@ const imgCloud = '/landing/service_cloudsecu.png';
 const imgInfra = '/landing/service_machinelern.png';
 const imgEnterprise = '/landing/service_enterpriceapp.png';
 const imgTesting = '/landing/service_testing.png';
+
+// Route mapping for clickable cards
+const serviceRoutes = {
+  'Software Development': '/software-development',
+  'Web Development': '/web-development',
+  'Mobile Development': '/mobile-development',
+  'Artificial Intelligence': '/artificial-intelligence-ai',
+  'UI/UX Systems': '/design-ui-ux',
+  'Cloud & DevOps': '/cloud-and-devops',
+  'Machine Learning': '/machine-learning-ml',
+  'Data Services': '/data-services',
+  'Testing & QA': '/testing-and-qa',
+};
 
 const services = [
   {
@@ -75,7 +89,7 @@ const services = [
     accent: '#f59e0b', // Amber
   },
   {
-    title: 'Cloud Security',
+    title: 'Cloud & DevOps',
     description: 'Secure cloud-native infrastructure with scalable DevOps workflows.',
     Icon: Database,
     AltIcon: Server,
@@ -94,8 +108,8 @@ const services = [
     accent: '#14b8a6', // Teal
   },
   {
-    title: 'Enterprise Apps',
-    description: 'Custom enterprise-grade applications built for automation and growth.',
+    title: 'Data Services',
+    description: 'Data engineering, warehousing, and analytics solutions. ',
     Icon: Database,
     AltIcon: Palette,
     image: imgEnterprise,
@@ -152,6 +166,8 @@ function ServiceCard({ service, index }) {
         ? 'xl:row-span-2'
         : '';
 
+  const route = serviceRoutes[service.title];
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -161,17 +177,18 @@ function ServiceCard({ service, index }) {
       className={spanClass}
       style={{ perspective: 1000 }}
     >
+    <Link href={route || '/services'}>
       <motion.div
         ref={ref}
         onMouseMove={handleMove}
         onMouseLeave={handleLeave}
-        style={{ 
-          rotateX, 
-          rotateY, 
+        style={{
+          rotateX,
+          rotateY,
           transformStyle: 'preserve-3d',
           borderColor: `${accent}77`,
         }}
-        className={`group relative flex flex-col justify-between ${
+        className={`group relative flex flex-col justify-between cursor-pointer ${
           service.span === 'tall' ? 'h-full min-h-145' : 'h-115'
         } rounded-[40px] border bg-white/40 backdrop-blur-2xl p-8 overflow-hidden transition-all duration-500 hover:bg-white/60`}
       >
@@ -264,6 +281,7 @@ function ServiceCard({ service, index }) {
           </div>
         </div>
       </motion.div>
+    </Link>
     </motion.div>
   );
 }
