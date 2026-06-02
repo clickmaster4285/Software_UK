@@ -1,28 +1,22 @@
-https://clickmasterssoftwaredevelopmentcompany.co.uk/
-
-44
-86
-100
-100
-44
+62
 Performance
 86
 Accessibility
-100
+78
 Best Practices
 100
 SEO
-44
+62
 FCP
 +10
 LCP
-+10
++22
 TBT
 +0
 CLS
 +25
 SI
-+0
++4
 Performance
 Values are estimated and may vary. The performance score is calculated directly from these metrics.See calculator.
 0–49
@@ -33,15 +27,15 @@ Final Screenshot
 Metrics
 Expand view
 First Contentful Paint
-0.7 s
+0.5 s
 Largest Contentful Paint
-2.8 s
+1.2 s
 Total Blocking Time
-5,390 ms
+1,440 ms
 Cumulative Layout Shift
 0
 Speed Index
-9.5 s
+2.5 s
 View Treemap
 Screenshot
 Screenshot
@@ -63,219 +57,271 @@ TBT
 
 CLS
 Insights
-Modern HTTP Est savings of 1,220 ms
+Modern HTTP Est savings of 300 ms
 HTTP/2 and HTTP/3 offer many benefits over HTTP/1.1, such as multiplexing. Learn more about using modern HTTP.FCPLCPUnscored
 URL
 Protocol
-clickmasterssoftwaredevelopmentcompany.co.uk 1st party
-https://clickmasterssoftwaredevelopmentcompany.co.uk
+192.168.88.62 1st party
+http://192.168.88.62:3000
 http/1.1
-…media/5c285b27cdda1fe8-s.p.0yo6-5yoeeudq.woff2(clickmasterssoftwaredevelopmentcompany.co.uk)
+…media/5c285b27cdda1fe8-s.p.0yo6-5yoeeudq.woff2(192.168.88.62)
 http/1.1
-…media/6bd983bd58a87a3d-s.p.0h108oidc_0fm.woff2(clickmasterssoftwaredevelopmentcompany.co.uk)
+…media/6bd983bd58a87a3d-s.p.0h108oidc_0fm.woff2(192.168.88.62)
 http/1.1
-/_next/image?url=%2Fcm-logos%2Flogo.webp&w=384&q=75(clickmasterssoftwaredevelopmentcompany.co.uk)
+/_next/image?url=%2Fcm-logos%2Flogo.webp&w=256&q=75(192.168.88.62)
 http/1.1
-/_next/image?url=%2Flanding%2Fhero-home-image-1.webp&w=1200&q=75(clickmasterssoftwaredevelopmentcompany.co.uk)
+/_next/image?url=%2Flanding%2Fhero-home-image-1.webp&w=640&q=75(192.168.88.62)
 http/1.1
-/landing/3d-illustration-man-flying-catch-golden-coin-busin….png(clickmasterssoftwaredevelopmentcompany.co.uk)
+/landing/3d-illustration-man-flying-catch-golden-coin-busin….png(192.168.88.62)
 http/1.1
-/landing/man_coding.webp(clickmasterssoftwaredevelopmentcompany.co.uk)
+/landing/man_coding.webp(192.168.88.62)
 http/1.1
-/landing/coding%20illustration.png(clickmasterssoftwaredevelopmentcompany.co.uk)
+/landing/coding%20illustration.png(192.168.88.62)
 http/1.1
-…chunks/0hulcaxy6xv04.css(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0hulcaxy6xv04.css(192.168.88.62)
 http/1.1
-…chunks/07e27~v31psy2.css(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0jtnv7_mww66c.css(192.168.88.62)
 http/1.1
-…chunks/0fifc~x7~ngxu.css(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0fifc~x7~ngxu.css(192.168.88.62)
 http/1.1
-…chunks/0t1et0tty8o9s.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0t1et0tty8o9s.js(192.168.88.62)
 http/1.1
-…chunks/0q3xzow2q0d1m.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0q3xzow2q0d1m.js(192.168.88.62)
 http/1.1
-…chunks/027-kmq2jh6s6.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/027-kmq2jh6s6.js(192.168.88.62)
 http/1.1
-…chunks/0415n8y0lkq2u.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0415n8y0lkq2u.js(192.168.88.62)
 http/1.1
-…chunks/0jb5dvey4dlfk.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0jb5dvey4dlfk.js(192.168.88.62)
 http/1.1
-…chunks/turbopack-0qehj7cipuh5..js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/turbopack-0qehj7cipuh5..js(192.168.88.62)
 http/1.1
-…chunks/0vqm.6zn0_q0e.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0vqm.6zn0_q0e.js(192.168.88.62)
 http/1.1
-…chunks/0804xuaha3ain.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0804xuaha3ain.js(192.168.88.62)
 http/1.1
-…chunks/004a0ueh6rtsj.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/004a0ueh6rtsj.js(192.168.88.62)
 http/1.1
-…chunks/0evz._vizlug1.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0evz._vizlug1.js(192.168.88.62)
 http/1.1
-…chunks/0t0xz2id0tqif.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0t0xz2id0tqif.js(192.168.88.62)
 http/1.1
-…chunks/0k8b5hvzmoicn.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0k8b5hvzmoicn.js(192.168.88.62)
 http/1.1
-…chunks/03gj53mi7rs7x.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/03gj53mi7rs7x.js(192.168.88.62)
 http/1.1
-…chunks/0ezq2.7m91~xx.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0ezq2.7m91~xx.js(192.168.88.62)
 http/1.1
-…chunks/0st2mv6jwh~.e.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0st2mv6jwh~.e.js(192.168.88.62)
 http/1.1
-…chunks/11iinfyo_s20j.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/11iinfyo_s20j.js(192.168.88.62)
 http/1.1
-…chunks/01oe42uhc~_-n.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/0~j.~jx54jk-m.js(192.168.88.62)
 http/1.1
-…chunks/0mu~yd.448qbd.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/01agc8bfu5qfu.js(192.168.88.62)
 http/1.1
-/vedios/bg-vedio1.mp4(clickmasterssoftwaredevelopmentcompany.co.uk)
+/vedios/bg-video.webm(192.168.88.62)
 http/1.1
-/landing/purple-background-with-wavy-shapes.png(clickmasterssoftwaredevelopmentcompany.co.uk)
+/landing/purple-background-with-wavy-shapes.png(192.168.88.62)
 http/1.1
-/_next/image?url=…(clickmasterssoftwaredevelopmentcompany.co.uk)
+/_next/image?url=…(192.168.88.62)
 http/1.1
-/_next/image?url=…(clickmasterssoftwaredevelopmentcompany.co.uk)
+/_next/image?url=…(192.168.88.62)
 http/1.1
-/_next/image?url=…(clickmasterssoftwaredevelopmentcompany.co.uk)
+/_next/image?url=…(192.168.88.62)
 http/1.1
-/_next/image?url=…(clickmasterssoftwaredevelopmentcompany.co.uk)
+/_next/image?url=…(192.168.88.62)
 http/1.1
-/api/blog(clickmasterssoftwaredevelopmentcompany.co.uk)
+/api/blog(192.168.88.62)
 http/1.1
-/api/case-studies(clickmasterssoftwaredevelopmentcompany.co.uk)
+/api/case-studies(192.168.88.62)
 http/1.1
-/api/testimonials(clickmasterssoftwaredevelopmentcompany.co.uk)
+/api/testimonials(192.168.88.62)
 http/1.1
-/api/projects(clickmasterssoftwaredevelopmentcompany.co.uk)
+/api/projects(192.168.88.62)
 http/1.1
-/contact?_rsc=1r34m(clickmasterssoftwaredevelopmentcompany.co.uk)
+/contact?_rsc=1r34m(192.168.88.62)
 http/1.1
-/about?_rsc=1r34m(clickmasterssoftwaredevelopmentcompany.co.uk)
+/about?_rsc=1r34m(192.168.88.62)
 http/1.1
-/solutions?_rsc=1r34m(clickmasterssoftwaredevelopmentcompany.co.uk)
+/solutions?_rsc=1r34m(192.168.88.62)
 http/1.1
-/?_rsc=1pn8p(clickmasterssoftwaredevelopmentcompany.co.uk)
+/?_rsc=1pn8p(192.168.88.62)
 http/1.1
-/?_rsc=nn07o(clickmasterssoftwaredevelopmentcompany.co.uk)
+/?_rsc=nn07o(192.168.88.62)
 http/1.1
-/contact?_rsc=1pn8p(clickmasterssoftwaredevelopmentcompany.co.uk)
+/favicon.ico?favicon.0~7bte4s732w0.ico(192.168.88.62)
 http/1.1
-/contact?_rsc=14ks9(clickmasterssoftwaredevelopmentcompany.co.uk)
+/contact?_rsc=1pn8p(192.168.88.62)
 http/1.1
-/contact?_rsc=1kpit(clickmasterssoftwaredevelopmentcompany.co.uk)
+/contact?_rsc=14ks9(192.168.88.62)
 http/1.1
-/contact?_rsc=1d5da(clickmasterssoftwaredevelopmentcompany.co.uk)
+/contact?_rsc=1kpit(192.168.88.62)
 http/1.1
-/about?_rsc=1pn8p(clickmasterssoftwaredevelopmentcompany.co.uk)
+/contact?_rsc=1d5da(192.168.88.62)
 http/1.1
-/about?_rsc=1rcbj(clickmasterssoftwaredevelopmentcompany.co.uk)
+/about?_rsc=1pn8p(192.168.88.62)
 http/1.1
-/about?_rsc=1m903(clickmasterssoftwaredevelopmentcompany.co.uk)
+/about?_rsc=1rcbj(192.168.88.62)
 http/1.1
-…chunks/07z3x9j1_o-8u.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+/about?_rsc=1m903(192.168.88.62)
 http/1.1
-/solutions?_rsc=1pn8p(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/07z3x9j1_o-8u.js(192.168.88.62)
 http/1.1
-/solutions?_rsc=1at47(clickmasterssoftwaredevelopmentcompany.co.uk)
+/solutions?_rsc=1pn8p(192.168.88.62)
 http/1.1
-/solutions?_rsc=1t6cb(clickmasterssoftwaredevelopmentcompany.co.uk)
+/solutions?_rsc=1at47(192.168.88.62)
 http/1.1
-…chunks/0~nk4227dwx1x.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+/solutions?_rsc=1t6cb(192.168.88.62)
 http/1.1
-/?_rsc=qizgd(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/079l3ggl3.355.js(192.168.88.62)
 http/1.1
-…chunks/109sz5rzvidvb.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+/?_rsc=qizgd(192.168.88.62)
 http/1.1
-/favicon.ico?favicon.0~7bte4s732w0.ico(clickmasterssoftwaredevelopmentcompany.co.uk)
+…chunks/109sz5rzvidvb.js(192.168.88.62)
 http/1.1
-Render-blocking requests Est savings of 170 ms
-Requests are blocking the page's initial render, which may delay LCP. Deferring or inlining can move these network requests out of the critical path.FCPLCPUnscored
+Legacy JavaScript Est savings of 13 KiB
+Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile Baseline features, unless you know you must support older browsers. Learn why most sites can deploy ES6+ code without transpilingFCPLCPUnscored
 URL
-Transfer Size
-Duration
-clickmasterssoftwaredevelopmentcompany.co.uk 1st party
-31.9 KiB	780 ms
-…chunks/0fifc~x7~ngxu.css(clickmasterssoftwaredevelopmentcompany.co.uk)
-1.1 KiB
-270 ms
-…chunks/07e27~v31psy2.css(clickmasterssoftwaredevelopmentcompany.co.uk)
-29.8 KiB
-320 ms
-…chunks/0hulcaxy6xv04.css(clickmasterssoftwaredevelopmentcompany.co.uk)
-1.0 KiB
-190 ms
+Wasted bytes
+192.168.88.62 1st party
+13.4 KiB
+…chunks/027-kmq2jh6s6.js(192.168.88.62)
+13.4 KiB
+027-kmq2jh6s6.js:1
+Array.prototype.at
+027-kmq2jh6s6.js:1
+Array.prototype.flat
+027-kmq2jh6s6.js:1
+Array.prototype.flatMap
+027-kmq2jh6s6.js:1
+Object.fromEntries
+027-kmq2jh6s6.js:1
+Object.hasOwn
+027-kmq2jh6s6.js:1
+String.prototype.trimEnd
+027-kmq2jh6s6.js:1
+String.prototype.trimStart
 Forced reflow
-LCP breakdown
 LCP request discovery
 Network dependency tree
 Use efficient cache lifetimes Est savings of 36 KiB
-Improve image delivery Est savings of 626 KiB
-Legacy JavaScript Est savings of 13 KiB
+Improve image delivery Est savings of 642 KiB
+Render-blocking requests
+Layout shift culprits
 Optimize DOM size
+LCP breakdown
 3rd parties
 These insights are also available in the Chrome DevTools Performance Panel - record a trace to view more detailed information.
 Diagnostics
-Minimize main-thread work 39.5 s
+Minimize main-thread work 10.0 s
 Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. Learn how to minimize main-thread workTBTUnscored
 Category
 Time Spent
 Other
-25,644 ms
+6,453 ms
 Style & Layout
-7,590 ms
+1,938 ms
 Script Evaluation
-5,631 ms
+1,430 ms
 Rendering
-515 ms
-Garbage Collection
-66 ms
+128 ms
 Script Parsing & Compilation
-41 ms
+48 ms
+Garbage Collection
+27 ms
 Parse HTML & CSS
-28 ms
-Reduce unused JavaScript Est savings of 44 KiB
+22 ms
+Reduce unused JavaScript Est savings of 46 KiB
 Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. Learn how to reduce unused JavaScript.FCPLCPUnscored
 URL
 Transfer Size
 Est Savings
-clickmasterssoftwaredevelopmentcompany.co.uk 1st party
-108.0 KiB	44.5 KiB
-…chunks/027-kmq2jh6s6.js(clickmasterssoftwaredevelopmentcompany.co.uk)
-69.2 KiB
-22.4 KiB
-…chunks/0evz._vizlug1.js(clickmasterssoftwaredevelopmentcompany.co.uk)
+192.168.88.62 1st party
+107.9 KiB	46.4 KiB
+…chunks/027-kmq2jh6s6.js(192.168.88.62)
+69.1 KiB
+24.4 KiB
+…chunks/0evz._vizlug1.js(192.168.88.62)
 38.8 KiB
 22.0 KiB
-Reduce JavaScript execution time 5.6 s
+Reduce JavaScript execution time 1.4 s
 Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. Learn how to reduce Javascript execution time.TBTUnscored
 URL
 Total CPU Time
 Script Evaluation
 Script Parse
-clickmasterssoftwaredevelopmentcompany.co.uk 1st party
-37,795 ms	5,488 ms	17 ms
-…chunks/027-kmq2jh6s6.js(clickmasterssoftwaredevelopmentcompany.co.uk)
-29,013 ms
-4,794 ms
-7 ms
-https://clickmasterssoftwaredevelopmentcompany.co.uk
-8,054 ms
-101 ms
+192.168.88.62 1st party
+9,369 ms	1,390 ms	22 ms
+…chunks/027-kmq2jh6s6.js(192.168.88.62)
+6,928 ms
+1,175 ms
+12 ms
+http://192.168.88.62:3000
+2,143 ms
+29 ms
 2 ms
-…chunks/0evz._vizlug1.js(clickmasterssoftwaredevelopmentcompany.co.uk)
-653 ms
-545 ms
-3 ms
-…chunks/0415n8y0lkq2u.js(clickmasterssoftwaredevelopmentcompany.co.uk)
-75 ms
-48 ms
-5 ms
+…chunks/0evz._vizlug1.js(192.168.88.62)
+238 ms
+147 ms
+4 ms
+…chunks/0415n8y0lkq2u.js(192.168.88.62)
+61 ms
+39 ms
+4 ms
 Unattributable
-1,585 ms	57 ms	0 ms
+599 ms	10 ms	0 ms
 Unattributable
-1,585 ms
-57 ms
+599 ms
+10 ms
 0 ms
 Image elements do not have explicit width and height
-Avoid enormous network payloads Total size was 33,904 KiB
+Avoid enormous network payloads Total size was 14,454 KiB
 Avoid long main-thread tasks 20 long tasks found
 More information about the performance of your application. These numbers don't directly affect the Performance score.
-Passed audits (12)
+Passed audits (11)      
+
+
+
+
+
+
+
+
+now check the performance 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+framer-motion/dist/es
+36.53 KB
+
+and
+
+motion-dom/dist/es
+84.68 KB
+
+Combined, Framer Motion is costing well over 100 KB.
+
+If your homepage uses motion everywhere:
+
+<motion.div />
+<motion.section />
+<motion.h2 />
+
+that directly impacts TBT.
+
+For sections below the fold:
+
+const ProcessSection = dynamic(
+  () => import("./ProcessSection"),

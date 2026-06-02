@@ -3,23 +3,72 @@
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import { Suspense, useRef } from 'react';
+import dynamic from 'next/dynamic';
 
-// Import refined landing components
+// Eager: Hero is above-the-fold
 import { HeroSection } from '@/components/landing/main-service/hero-section';
-import { ExploreSection } from '@/components/landing/main-service/ExploreSection';
-import { TrustedClientsSection } from '@/components/landing/main-service/TrustedClientsSection';
-import { AppsSection } from '@/components/landing/main-service/AppsSection';
-import { ProcessPage } from '@/components/landing/main-service/ProcessPage';
-import { TechStackSection } from '@/components/landing/main-service/TechStackSection';
-import FeaturedInsights from '@/components/landing/main-service/FeaturedInsights';
-import { WhyChooseUs } from '@/components/landing/main-service/whyUs';
-import { PricingSection } from '@/components/landing/main-service/pricing-section';
-import { TestimonialsSection } from '@/components/landing/main-service/TestimonialsSection';
-import { FaqSection } from '@/components/landing/main-service/FaqSection';
-import PainPointsSolutions from '@/components/landing/main-service/PainPointsSolutions';
-import { IndustriesSection } from '@/components/landing/main-service/industries-section';
-import { FinalCTA } from '@/components/landing/main-service/finalCta';
 import { ScrollSnakeLine } from '@/components/ui/scroll-snake-line';
+
+// Lazy: default export components
+const ExploreSection = dynamic(() => import('@/components/landing/main-service/ExploreSection'), { ssr: true });
+const PainPointsSolutions = dynamic(() => import('@/components/landing/main-service/PainPointsSolutions'), { ssr: true });
+const TrustedClientsSection = dynamic(() => import('@/components/landing/main-service/TrustedClientsSection'), { ssr: true });
+const AppsSection = dynamic(() => import('@/components/landing/main-service/AppsSection'), { ssr: true });
+const ProcessPage = dynamic(() => import('@/components/landing/main-service/ProcessPage'), { ssr: true });
+const FeaturedInsights = dynamic(() => import('@/components/landing/main-service/FeaturedInsights'), { ssr: true });
+const IndustriesSection = dynamic(() => import('@/components/landing/main-service/industries-section'), { ssr: true });
+const TestimonialsSection = dynamic(() => import('@/components/landing/main-service/TestimonialsSection'), { ssr: true });
+
+// Lazy: named export components — wrap as component functions
+const TechStackSection = dynamic(() =>
+  import('@/components/landing/main-service/TechStackSection').then(mod => {
+    const Comp = mod.TechStackSection;
+    const Wrapper = (props) => <Comp {...props} />;
+    Wrapper.displayName = 'TechStackSection';
+    return Wrapper;
+  }),
+  { ssr: true }
+);
+
+const WhyChooseUs = dynamic(() =>
+  import('@/components/landing/main-service/whyUs').then(mod => {
+    const Comp = mod.WhyChooseUs;
+    const Wrapper = (props) => <Comp {...props} />;
+    Wrapper.displayName = 'WhyChooseUs';
+    return Wrapper;
+  }),
+  { ssr: true }
+);
+
+const PricingSection = dynamic(() =>
+  import('@/components/landing/main-service/pricing-section').then(mod => {
+    const Comp = mod.PricingSection;
+    const Wrapper = (props) => <Comp {...props} />;
+    Wrapper.displayName = 'PricingSection';
+    return Wrapper;
+  }),
+  { ssr: true }
+);
+
+const FaqSection = dynamic(() =>
+  import('@/components/landing/main-service/FaqSection').then(mod => {
+    const Comp = mod.FaqSection;
+    const Wrapper = (props) => <Comp {...props} />;
+    Wrapper.displayName = 'FaqSection';
+    return Wrapper;
+  }),
+  { ssr: true }
+);
+
+const FinalCTA = dynamic(() =>
+  import('@/components/landing/main-service/finalCta').then(mod => {
+    const Comp = mod.FinalCTA;
+    const Wrapper = (props) => <Comp {...props} />;
+    Wrapper.displayName = 'FinalCTA';
+    return Wrapper;
+  }),
+  { ssr: true }
+);
 
 export default function ServiceClient({ serviceData }) {
   const scrollPathRef = useRef(null);
@@ -57,51 +106,17 @@ export default function ServiceClient({ serviceData }) {
         </div>
       </div>
 
-      {/*
-      Used sections from components/landing/main-service
-      ------------------------------------------------
-      1. Breadcrumb (Defined in-file)
-      2. HeroSection (hero-section.jsx)
-      3. ExploreSection (ExploreSection.jsx)
-      4. PainPointsSolutions (PainPointsSolutions.jsx)
-      5. TrustedClientsSection (TrustedClientsSection.jsx)
-      6. AppsSection (AppsSection.jsx)
-      7. ProcessPage (ProcessPage.jsx)
-      8. TechStackSection (TechStackSection.jsx)
-      9. FeaturedInsights (FeaturedInsights.jsx)
-      10. WhyChooseUs (whyUs.jsx)
-      11. IndustriesSection (industries-section.jsx)
-      12. PricingSection (pricing-section.jsx)
-      13. TestimonialsSection (TestimonialsSection.jsx)
-      14. FaqSection (FaqSection.jsx)
-      15. FinalCTA (finalCta.jsx)
-
-      Unused sections from components/landing/main-service
-      --------------------------------------------------
-      ├── AboutSection.jsx
-      ├── CommunitySection.jsx
-      ├── CTASectionImage.jsx
-      ├── global-globe-section.jsx
-      ├── help-section.jsx
-      ├── hero-spline-panel.jsx
-      ├── home-quote-form.jsx
-      ├── info-cts.jsx
-      ├── LandingHomeDeferredHeavy.jsx
-      ├── Solutions.jsx
-      └── TrustedBySection.jsx
-      */}
-
       {/* Main Service Sections */}
       <HeroSection serviceData={serviceData} />
-      
+
       {/* Shared Scroll Path for Snake Line */}
       <div ref={scrollPathRef} className="relative">
         <ScrollSnakeLine targetRef={scrollPathRef} />
-        
+
         <ExploreSection serviceData={serviceData} />
-        
+
         <PainPointsSolutions />
-        
+
         <Suspense fallback={<div className="h-96 animate-pulse bg-surface" />}>
           <TrustedClientsSection
             clients={serviceData?.trustedClients}
@@ -127,9 +142,9 @@ export default function ServiceClient({ serviceData }) {
       />
 
       <IndustriesSection />
-      
+
       <TestimonialsSection serviceTitle={serviceData?.title} />
-      
+
       <FaqSection
         faqs={serviceData?.faqs}
         serviceTitle={serviceData?.title}

@@ -61,7 +61,6 @@ export function PricingSection({ serviceName, pricingTiers }) {
   const activeTiers = pricingChunks[activePage] || [];
 
   if (!pricingTiers || pricingTiers.length === 0) return null;
-  console.log("serviceName", serviceName);
 
   const pricingCardsData = activeTiers
     .map((tier) => {
@@ -104,9 +103,7 @@ export function PricingSection({ serviceName, pricingTiers }) {
 
         buttonText: isCustom ? "Contact Us" : "Get Started",
 
-        onButtonClick: () => {
-          console.log(`Selected ${tier.type} plan`);
-        },
+        onButtonClick: () => {        },
       };
     })
     .filter(Boolean); // remove nulls safely

@@ -55,7 +55,7 @@ export default function Portfolio() {
          {/* Fixed Background Image */}
          <div 
             className="absolute inset-0 z-0 opacity-40 bg-fixed bg-cover bg-center"
-            style={{ backgroundImage: "url(\"/landing/purple-background-with-wavy-shapes.png\")" }}
+            style={{ backgroundImage: "url(\"/landing/purple-background-with-wavy-shapes.webp\")" }}
          />
          
          <div className="relative z-10 max-w-400 mx-auto px-6">

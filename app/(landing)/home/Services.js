@@ -15,17 +15,17 @@ import {
 } from 'lucide-react';
 import { useRef } from 'react';
 import Image from 'next/image';
-import softwareimg from "@/public/assets/software development icon.png";
+import softwareimg from "@/public/assets/software-development-icon.webp";
 import webdevelopment from "@/public/assets/web-development.webp";
 import mobileapp from "@/public/assets/mobile-app-development.svg";
 
 // New high-quality 3D image assets
-const imgAi = '/landing/service-ai.png';
-const imgDesign = '/landing/service_uiux.png';
-const imgCloud = '/landing/service_cloudsecu.png';
-const imgInfra = '/landing/service_machinelern.png';
-const imgEnterprise = '/landing/service_enterpriceapp.png';
-const imgTesting = '/landing/service_testing.png';
+const imgAi = '/landing/service-ai.webp';
+const imgDesign = '/landing/service-uiux.webp';
+const imgCloud = '/landing/service-cloudsecu.webp';
+const imgInfra = '/landing/service-machinelern.webp';
+const imgEnterprise = '/landing/service-enterpriseapp.webp';
+const imgTesting = '/landing/service-testing.webp';
 
 // Route mapping for clickable cards
 const serviceRoutes = {

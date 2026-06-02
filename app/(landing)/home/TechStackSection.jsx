@@ -63,7 +63,7 @@ export function TechStackSection() {
           y: { duration: 5, repeat: Infinity, ease: "easeInOut" } 
         }}
         viewport={{ once: ANIMATE_ONCE }}
-        src="/landing/coding illustration.png"
+        src="/landing/coding-illustration.webp"
         alt="Coding Illustration"
         className="absolute bottom-10 right-10 w-64 md:w-96 h-auto pointer-events-none z-0 hidden lg:block"
       />

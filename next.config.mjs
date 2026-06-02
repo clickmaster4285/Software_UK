@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
+import bundleAnalyzer from "@next/bundle-analyzer";
+
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: "true",
+});
+
 const nextConfig = {
   async redirects() {
     return [
-      // Legacy navbar slugs (slugify dropped "and" from "&" in titles)
       { source: '/cloud-devops', destination: '/cloud-and-devops', permanent: true },
       { source: '/cloud-devops/:path*', destination: '/cloud-and-devops/:path*', permanent: true },
       { source: '/testing-qa', destination: '/testing-and-qa', permanent: true },
@@ -37,7 +42,12 @@ const nextConfig = {
       }
     ],
   },
+  experimental: {
+    optimizePackageImports: [
+      "lucide-react",
+    ],
+  },
   allowedDevOrigins: ['192.168.88.62'],
 };
 
-export default nextConfig;
+export default withBundleAnalyzer(nextConfig);

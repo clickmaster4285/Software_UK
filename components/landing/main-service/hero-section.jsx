@@ -147,7 +147,7 @@ export function HeroSection({ serviceData }) {
       {/* Background Image - Full length and width coverage */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/landing/main-services/hero-bg.png')" }}
+        style={{ backgroundImage: "url('/landing/main-services/hero-bg.webp')" }}
       />
       
       {/* Constraints for the main content */}
@@ -246,7 +246,6 @@ export function HeroSection({ serviceData }) {
           <div className="hidden lg:flex items-center justify-center w-full">
             <div className="w-full max-w-xl">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-black/40 border border-white/10 aspect-4/3 group">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <Image
                   width={500}
                   height={500}

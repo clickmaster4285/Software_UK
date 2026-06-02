@@ -22,11 +22,6 @@ const userSchema = new mongoose.Schema(
 const User = mongoose.models.User || mongoose.model('User', userSchema);
 
 async function seedAdmin() {
-  console.log('[seed-admin] starting');
-  console.log(`[seed-admin] MONGODB_URI present: ${Boolean(MONGODB_URI)}`);
-  console.log(`[seed-admin] ADMIN_EMAIL present: ${Boolean(ADMIN_EMAIL)}`);
-  console.log(`[seed-admin] ADMIN_PASSWORD present: ${Boolean(ADMIN_PASSWORD)}`);
-
   if (!MONGODB_URI || !ADMIN_EMAIL || !ADMIN_PASSWORD) {
     console.error('[seed-admin] missing required environment variables');
     process.exitCode = 1;
