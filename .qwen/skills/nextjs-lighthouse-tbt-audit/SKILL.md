@@ -26,6 +26,20 @@ Instruct the user to paste the Lighthouse scores or read the `lighthouse.txt` fi
 - **Legacy JS**: indicates unnecessary polyfill transpilation.
 - **Image delivery**: indicates unoptimized image payloads.
 
+### 1b. Remove Dead Code First
+
+Before auditing performance, eliminate dead code that still gets compiled and bundled. See the `nextjs-dead-code-removal` skill for the full procedure. Quick version:
+
+1. List all files in `components/` subdirectories
+2. For each file, grep the entire project for actual imports (`from '.../FileName'` or `import('.../FileName')`)
+3. Files with zero imports outside their own directory are dead code — delete them
+4. Watch for "unused" comments that are outdated — trust grep results, not comments
+5. Watch for broken dynamic imports (e.g., `@/components/landingPage/` when no `landingPage/` directory exists)
+
+**Known dead code patterns in ClickMasters project:**
+- `LandingHomeDeferredHeavy.jsx` — orchestrator with broken dynamic imports to non-existent `@/components/landingPage/` path; only referenced in a comment, never actually imported
+- Components listed as "unused" in comments within `main-service.jsx` — verify with grep before deleting
+
 ### 2. Read package.json — Identify Heavy Libraries
 
 Check for animation/UI libraries that inflate TBT:
@@ -41,16 +55,32 @@ Read `app/(landing)/page.js` and identify:
 - How many sections are imported synchronously vs dynamically
 - Count components: if > 10 sections load at once, lazy-load below-the-fold ones
 
+**Critical: `dynamic()` with `ssr: true` does NOT defer JS loading.** It means the component SSRs, but if it's rendered in the tree (not conditionally), its JS still downloads on page load. True deferral requires either:
+- `{ ssr: false }` (client-only, skips SSR entirely)
+- Conditional rendering (e.g., `isInView && <LazyComponent />`) so the component only mounts when needed
+
 For EACH imported section component, check:
 - Does it import `framer-motion`? Count motion values per component.
 - Does it use `useMotionValue`, `useSpring`, `useTransform`? Each creates rAF loops.
 - Does it use `AnimatePresence` with staggered children? Expensive on mount.
 - Does `framer-motion` usage wrap more than 3 elements per section? Excessive.
+- **Does it use `animate={{ ... }}` with `repeat: Infinity`?** This creates a continuous main-thread animation loop that NEVER stops — a major TBT killer even in "lazy-loaded" sections.
 
 **Red flags:**
 - A single component creating > 10 motion values (e.g., 9 cards × 9 values each = 81)
 - `useSpring` + `useMotionValue` pairs for simple hover effects (use CSS instead)
 - `useScroll` + `useTransform` for parallax (use CSS `position: sticky` instead)
+- **Infinite animation loops** (`repeat: Infinity`) — replace with CSS `@keyframes` + `animation` property. These run on the main thread continuously and are one of the top TBT contributors.
+- **Components "lazy-loaded" with `dynamic()` but rendered immediately** — their JS still loads on page load. The `dynamic()` only helps if the component is conditionally rendered or below the initial viewport fold.
+
+### 3b. Audit Non-Homepage Landing Pages
+
+Check ALL landing page routes for lazy-loading gaps. Common pages that are often missed:
+- `app/(landing)/about/page.js` — often imports heavy sections (Services, TechStack, TrustedClients) statically
+- `app/(landing)/contact/page.js` — often imports FinalCTA and other heavy components statically
+- `app/(landing)/pricing/page.js`, `/faq/page.js`, `/projects/page.js`, `/blog/page.js`, `/case-studies/page.js` — usually lighter but check anyway
+
+For each page, count synchronous imports of components that use framer-motion or other heavy libraries. Any page with > 3 synchronous heavy imports needs lazy-loading.
 
 ### 4. Audit Service/Sub-Page Routes
 
@@ -74,11 +104,18 @@ Common duplicate pairs found in Next.js projects:
 - Check for external image URLs (pravatar.cc, unsplash) — replace with local optimized versions
 - Ensure `<Image>` components have explicit `width` and `height` props
 
-### 7. Check Build Configuration
+### 7. Check next.config.mjs
 
-- Look for `browserslist` in `package.json` or `.browserslistrc`
-- If missing or targeting old browsers, 13+ KB of unnecessary polyfills get bundled
-- Target: `last 2 Chrome/Firefox/Safari/Edge versions, not dead, not ie 11`
+- **`optimizePackageImports`**: Check for this experimental config. It rewrites imports from large barrel-export libraries (like `lucide-react`) so only used exports get bundled. Verify it's present for icon libraries:
+  ```js
+  experimental: {
+    optimizePackageIcons: ["lucide-react"],
+  }
+  ```
+  This is a bundle-size optimization only — it doesn't reduce main-thread execution cost.
+- **`browserslist` in `package.json`**: If missing or targeting old browsers, 13+ KB of unnecessary polyfills get bundled. Target: `last 2 Chrome/Firefox/Safari/Edge versions, not dead, not ie 11`.
+- **Bundle analyzer**: Check if `@next/bundle-analyzer` is enabled. Run `ANALYZE=true npm run build` to see per-page bundle breakdown.
+- **`allowedDevOrigins`**: IP addresses for dev server access — not a production concern.
 
 ### 8. Write the Solutions Document
 
@@ -93,15 +130,16 @@ Produce `lighthouse-solutions.txt` with this structure:
 ### 9. Rank Fixes by Impact
 
 Priority order (highest TBT reduction first):
-1. Lazy-load below-the-fold sections with `next/dynamic`
-2. Remove duplicate animation libraries (GSAP or framer-motion, not both)
-3. Replace heavy per-element motion values with CSS transitions
-4. Remove smooth scroll libraries (use native scroll)
-5. Replace Swiper with CSS scroll-snap
-6. Optimize images (PNG → WebP)
-7. Add modern browserslist config
-8. Inline critical CSS
-9. Enable HTTP/2 in production
+1. Remove duplicate animation libraries (GSAP or framer-motion, not both) — saves 40-121 KB JS parse/eval
+2. Replace infinite animation loops (`repeat: Infinity`) with CSS `@keyframes` — eliminates continuous main-thread work
+3. Lazy-load below-the-fold sections with `next/dynamic` — but only effective for sections rendered conditionally or truly below fold (immediate-render `dynamic()` with `ssr: true` still loads JS on page load)
+4. Replace heavy per-element motion values with CSS transitions
+5. Remove smooth scroll libraries (use native scroll) — eliminates continuous rAF loop
+6. Replace Swiper with CSS scroll-snap
+7. Optimize images (PNG → WebP)
+8. Add modern browserslist config
+9. Inline critical CSS
+10. Enable HTTP/2 in production
 
 ## Output Format
 

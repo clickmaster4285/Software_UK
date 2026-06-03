@@ -1,10 +1,10 @@
 "use client";
 
 import { ArrowUp } from "lucide-react";
-import { useLenisScroll } from "@/components/SmoothScroll";
+import { useScrollToTop } from "@/components/SmoothScroll";
 
 export default function ScrollToTopButton() {
-  const { scrollToTop } = useLenisScroll();
+  const { scrollToTop } = useScrollToTop();
 
   return (
     <button

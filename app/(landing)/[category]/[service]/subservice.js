@@ -148,9 +148,8 @@ export default function ServiceDetailClient({ service, categorySlug }) {
         activeSection={activeSection}
         scrollDirection={scrollDir}
         wheelTop={wheelTop}
-        lenisRef={lenisRef}
         scrollProgress={scrollProgress}
-        isVisible={wheelTop >= 0}  // Add this prop
+        isVisible={wheelTop >= 0}
       />
 
       {/* Breadcrumb */}

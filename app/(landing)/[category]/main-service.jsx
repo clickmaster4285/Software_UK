@@ -142,6 +142,28 @@ export default function ServiceClient({ serviceData }) {
       />
 
       <FinalCTA />
+
+{/*
+      Used sections from components/landing/main-service
+      ------------------------------------------------
+      1. Breadcrumb (Defined in-file)
+      2. HeroSection (hero-section.jsx)
+      3. ExploreSection (ExploreSection.jsx)
+      4. PainPointsSolutions (PainPointsSolutions.jsx)
+      5. TrustedClientsSection (TrustedClientsSection.jsx)
+      6. AppsSection (AppsSection.jsx)
+      7. ProcessPage (ProcessPage.jsx)
+      8. TechStackSection (TechStackSection.jsx)
+      9. FeaturedInsights (FeaturedInsights.jsx)
+      10. WhyChooseUs (whyUs.jsx)
+      11. IndustriesSection (industries-section.jsx)
+      12. PricingSection (pricing-section.jsx)
+      13. TestimonialsSection (TestimonialsSection.jsx)
+      14. FaqSection (FaqSection.jsx)
+      15. FinalCTA (finalCta.jsx)
+
+      */}
+
     </main>
   );
 }

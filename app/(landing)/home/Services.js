@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { motion, useMotionTemplate, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import {
   ArrowUpRight,
   ShieldCheck,
@@ -13,7 +12,6 @@ import {
   Server,
   Sparkles,
 } from 'lucide-react';
-import { useRef } from 'react';
 import Image from 'next/image';
 import softwareimg from "@/public/assets/software-development-icon.webp";
 import webdevelopment from "@/public/assets/web-development.webp";
@@ -139,25 +137,6 @@ const marqueeItems = [
 ];
 
 function ServiceCard({ service, index }) {
-  const ref = useRef(null);
-  const mx = useMotionValue(0.5);
-  const my = useMotionValue(0.5);
-  const rotateX = useSpring(useTransform(my, [0, 1], [10, -10]), { stiffness: 100, damping: 30 });
-  const rotateY = useSpring(useTransform(mx, [0, 1], [-10, 10]), { stiffness: 100, damping: 30 });
-  const glowX = useTransform(mx, (v) => `${v * 100}%`);
-  const glowY = useTransform(my, (v) => `${v * 100}%`);
-
-  const handleMove = (e) => {
-    const rect = ref.current?.getBoundingClientRect();
-    if (!rect) return;
-    mx.set((e.clientX - rect.left) / rect.width);
-    my.set((e.clientY - rect.top) / rect.height);
-  };
-  const handleLeave = () => {
-    mx.set(0.5);
-    my.set(0.5);
-  };
-
   const { accent } = service;
   const spanClass =
     service.span === 'wide'
@@ -169,48 +148,26 @@ function ServiceCard({ service, index }) {
   const route = serviceRoutes[service.title];
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: index * 0.1, ease: [0.21, 1, 0.44, 1] }}
-      viewport={{ once: true, margin: '-50px' }}
-      className={spanClass}
-      style={{ perspective: 1000 }}
+    <div
+      className={`service-card-tilt opacity-0 ${spanClass}`}
+      style={{ animationDelay: `${index * 0.1}s` }}
+      data-fade-up
     >
       <Link href={route || '/services'}>
-        <motion.div
-          ref={ref}
-          onMouseMove={handleMove}
-          onMouseLeave={handleLeave}
-          style={{
-            rotateX,
-            rotateY,
-            transformStyle: 'preserve-3d',
-            borderColor: `${accent}77`,
-          }}
+        <div
           className={`group relative flex flex-col justify-between cursor-pointer ${service.span === 'tall' ? 'h-full min-h-145' : 'h-115'
             } rounded-[40px] border bg-white/40 backdrop-blur-2xl p-8 overflow-hidden transition-all duration-500 hover:bg-white/60`}
+          style={{ borderColor: `${accent}77` }}
         >
           {/* Hover Border Overlay */}
           <div
             className="absolute inset-0 rounded-[40px] border-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-            style={{ borderColor: `${accent}66` }} // 40% opacity hover border
+            style={{ borderColor: `${accent}66` }}
           />
           {/* Dynamic Accent Shadow */}
           <div
             className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-            style={{
-              boxShadow: `0 30px 60px -15px ${accent}30`,
-            }}
-          />
-
-          {/* Mouse-tracking glow */}
-          <motion.div
-            aria-hidden
-            className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            style={{
-              background: useMotionTemplate`radial-gradient(500px circle at ${glowX} ${glowY}, ${accent}15, transparent 70%)`,
-            }}
+            style={{ boxShadow: `0 30px 60px -15px ${accent}30` }}
           />
 
           {/* Background Decorative Blob */}
@@ -219,7 +176,7 @@ function ServiceCard({ service, index }) {
             style={{ background: accent }}
           />
 
-          <div className="relative z-10 flex flex-col h-full" style={{ transform: 'translateZ(40px)' }}>
+          <div className="relative z-10 flex flex-col h-full">
             {/* Top: Tag */}
             <div className="flex items-start justify-between">
               <span
@@ -237,28 +194,19 @@ function ServiceCard({ service, index }) {
                 className="absolute w-40 h-40 rounded-full blur-[60px] opacity-30 group-hover:opacity-50 transition-all duration-700"
                 style={{ background: accent }}
               />
-
-              <motion.div
-                whileHover={{
-                  scale: 1.1,
-                  z: 80
-                }}
-                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-                className="relative w-56 h-56"
-                style={{ transformStyle: 'preserve-3d' }}
-              >
+              <div className="relative w-56 h-56 card-image-zoom">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 224px"
-                  className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] animate-float-slow transition-transform duration-500"
+                  className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] hero-float"
                 />
-              </motion.div>
+              </div>
             </div>
 
             {/* Bottom Content */}
-            <div className='mb-6' style={{ transform: 'translateZ(20px)' }}>
+            <div className='mb-6'>
               <h3 className="text-2xl font-bold text-foreground mb-2 tracking-tight">
                 {service.title}
               </h3>
@@ -279,9 +227,9 @@ function ServiceCard({ service, index }) {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </Link>
-    </motion.div>
+    </div>
   );
 }
 
@@ -297,13 +245,7 @@ export default function Services() {
 
       <div className="relative w-full px-6 xl:px-12 max-w-[96vw] lg:max-w-[90vw] mx-auto">
         {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-24"
-        >
+        <div className="text-center mb-24 services-heading-fade">
           <h2 className="mt-6 text-3xl md:text-5xl font-bold text-foreground tracking-tight">
             Innovating your{' '}
             <span className="text-accent">
@@ -313,7 +255,7 @@ export default function Services() {
           <p className="mt-6 text-lg text-muted-foreground/80 font-medium">
             We blend cutting-edge technology with world-class design to build products that define industries.
           </p>
-        </motion.div>
+        </div>
 
         {/* Bento grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 auto-rows-[460px] gap-8">
@@ -321,21 +263,6 @@ export default function Services() {
             <ServiceCard key={service.title} service={service} index={i} />
           ))}
         </div>
-
-        {/* Marquee Credibility */}
-        {/* <div className="mt-32 pt-12 border-t border-white/10">
-          <div className="flex gap-16 animate-marquee whitespace-nowrap w-max opacity-70 hover:grayscale-0 transition-all duration-500">
-            {[...marqueeItems, ...marqueeItems].map((item, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-4 text-foreground text-xs font-bold tracking-[0.2rem] uppercase"
-              >
-                <div className="w-2 h-2 rounded-full bg-accent" />
-                {item}
-              </div>
-            ))}
-          </div>
-        </div> */}
       </div>
     </section>
   );

@@ -2,11 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useLenisScroll } from "@/components/SmoothScroll";
+import { useScrollToTop } from "@/components/SmoothScroll";
 
 export default function HomeLogoLink({ children, className }) {
   const pathname = usePathname();
-  const { scrollToTop } = useLenisScroll();
+  const { scrollToTop } = useScrollToTop();
 
   const handleClick = (e) => {
     if (pathname === "/") {
