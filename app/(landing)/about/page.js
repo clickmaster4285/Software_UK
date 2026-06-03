@@ -179,7 +179,7 @@ export default function AboutPage() {
               {/* "Building the Future of" — crayon texture through the letters */}
               <span className="text-white block"
                 // style={{
-                //   backgroundImage: 'url(/assets/white-crayon-removebg-preview.png)',
+                //   backgroundImage: 'url(/assets/white-crayon-removebg-preview.webp)',
                 //   backgroundSize: 'contain',
                 //   backgroundPosition: 'right',
                 //   WebkitBackgroundClip: 'text',
@@ -195,7 +195,7 @@ export default function AboutPage() {
               {/* "Digital Innovation" — crayon image as solid background behind text */}
               <span className="text-accent"
                 style={{
-                  backgroundImage: 'url(/assets/white-crayon-removebg-preview.png)',
+                  backgroundImage: 'url(/assets/white-crayon-removebg-preview.webp)',
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   display: 'inline-block',

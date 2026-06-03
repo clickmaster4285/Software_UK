@@ -15,9 +15,12 @@ export default function Hero() {
                loop
                muted
                playsInline
+               preload="metadata"
                className="absolute inset-0 w-full h-full object-cover"
             >
-               <source src="/vedios/bg-vedio1.mp4" type="video/mp4" />
+               {/* <source src="/vedios/bg-vedio1.mp4" type="video/mp4" /> */}
+               <source src="/vedios/bg-video.webm" type="video/webm" />
+               <source src="/vedios/bg-video-final.mp4" type="video/mp4" />
             </video>
             {/* Overlay for readability */}
             <div className="absolute inset-0 bg-black/60 z-10" />

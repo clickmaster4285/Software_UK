@@ -32,11 +32,9 @@ export default function ServiceDetailClient({ service, categorySlug }) {
   const [activeSection, setActiveSection] = useState('hero');
   const [scrollDir, setScrollDir] = useState('down');
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [wheelTop, setWheelTop] = useState(-360); // Start hidden (using desktop size as default)
+  const [wheelTop, setWheelTop] = useState(-360);
 
   const lastScrollY = useRef(0);
-  const lenisRef = useRef(null);
-  const rafIdRef = useRef(null);
 
   // ── Build sections array ──────────────────────────────────────────────────
   const sections = [
@@ -70,84 +68,73 @@ export default function ServiceDetailClient({ service, categorySlug }) {
     return 180;                      // Mobile
   };
 
-  // ── Lenis smooth scroll setup ─────────────────────────────────────────────
+  // ── Native scroll-based wheel tracking ────────────────────────────────────
   useEffect(() => {
-    let lenis;
-
-    async function initLenis() {
-      const { default: Lenis } = await import('@studio-freight/lenis');
-
-      lenis = new Lenis({
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        direction: 'vertical',
-        smooth: true,
-      });
-
-      lenisRef.current = lenis;
-
-      function raf(time) {
-        lenis.raf(time);
-        rafIdRef.current = requestAnimationFrame(raf);
-      }
-      rafIdRef.current = requestAnimationFrame(raf);
-
-      lenis.on('scroll', ({ scroll, direction, limit }) => {
-        const st = scroll;
-        const vh = window.innerHeight;
-        const dir = direction > 0 ? 'down' : 'up';
-
-        setScrollDir(dir);
-
-        // Calculate scroll progress for wheel rotation (0 to 1)
-        const maxScroll = limit;
-        const progress = Math.min(st / maxScroll, 1);
-        setScrollProgress(progress);
-
-        // Get dynamic wheel height based on screen width
-        const wheelHeight = getWheelHeight();
-        const NAVBAR_H = 72;
-        const SCROLL_START = 80; // pixels scrolled before wheel appears
-
-        if (st < SCROLL_START) {
-          setWheelTop(-wheelHeight);
-        } else {
-          const minTop = NAVBAR_H + 16;
-          const maxTop = vh - wheelHeight - 16;
-          const scrollRange = maxScroll - SCROLL_START;
-          const scrollAmount = Math.max(0, st - SCROLL_START);
-          let topPos = minTop + (scrollAmount / scrollRange) * (maxTop - minTop);
-          topPos = Math.min(maxTop, Math.max(minTop, topPos));
-          setWheelTop(topPos);
-        }
-
-        // Active section detection
-        const sectionElements = [
-          { id: 'hero', el: document.getElementById('hero') },
-          ...(service.highlights?.length ? [{ id: 'benefits', el: document.getElementById('benefits') }] : []),
-          ...(service.sections?.length ? service.sections.map((_, i) => ({ id: `section-${i}`, el: document.getElementById(`section-${i}`) })) : []),
-          ...(service.howToSteps?.length ? [{ id: 'process', el: document.getElementById('process') }] : []),
-          ...(service.itemList?.length ? [{ id: 'deliver', el: document.getElementById('deliver') }] : []),
-          ...(service.definedTerms?.length ? [{ id: 'terms', el: document.getElementById('terms') }] : []),
-          ...(service.faqs?.length ? [{ id: 'faq', el: document.getElementById('faq') }] : []),
-        ].filter(s => s.el);
-
-        for (let i = sectionElements.length - 1; i >= 0; i--) {
-          const rect = sectionElements[i].el.getBoundingClientRect();
-          if (rect.top <= NAVBAR_H + 100) {
-            setActiveSection(sectionElements[i].id);
-            break;
-          }
-        }
-      });
-    }
-
-    initLenis();
-
-    return () => {
-      lenis?.destroy();
-      if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
+    const getWheelHeight = () => {
+      if (typeof window === 'undefined') return 360;
+      const width = window.innerWidth;
+      if (width >= 1024) return 360;
+      if (width >= 768) return 230;
+      return 180;
     };
+
+    const buildSectionElements = () => {
+      const items = [
+        { id: 'hero', el: document.getElementById('hero') },
+        ...(service.highlights?.length ? [{ id: 'benefits', el: document.getElementById('benefits') }] : []),
+        ...(service.sections?.length ? service.sections.map((_, i) => ({ id: `section-${i}`, el: document.getElementById(`section-${i}`) })) : []),
+        ...(service.howToSteps?.length ? [{ id: 'process', el: document.getElementById('process') }] : []),
+        ...(service.itemList?.length ? [{ id: 'deliver', el: document.getElementById('deliver') }] : []),
+        ...(service.definedTerms?.length ? [{ id: 'terms', el: document.getElementById('terms') }] : []),
+        ...(service.faqs?.length ? [{ id: 'faq', el: document.getElementById('faq') }] : []),
+      ];
+      return items.filter(s => s.el);
+    };
+
+    const handleScroll = () => {
+      const st = window.scrollY;
+      const vh = window.innerHeight;
+      const maxScroll = document.documentElement.scrollHeight - vh;
+
+      // Scroll direction
+      setScrollDir(st > lastScrollY.current ? 'down' : 'up');
+      lastScrollY.current = st;
+
+      // Scroll progress
+      const progress = maxScroll > 0 ? Math.min(st / maxScroll, 1) : 0;
+      setScrollProgress(progress);
+
+      // Wheel position
+      const wheelHeight = getWheelHeight();
+      const NAVBAR_H = 72;
+      const SCROLL_START = 80;
+
+      if (st < SCROLL_START) {
+        setWheelTop(-wheelHeight);
+      } else {
+        const minTop = NAVBAR_H + 16;
+        const maxTop = vh - wheelHeight - 16;
+        const scrollRange = maxScroll - SCROLL_START;
+        const scrollAmount = Math.max(0, st - SCROLL_START);
+        let topPos = minTop + (scrollAmount / scrollRange) * (maxTop - minTop);
+        topPos = Math.min(maxTop, Math.max(minTop, topPos));
+        setWheelTop(topPos);
+      }
+
+      // Active section detection
+      const sectionElements = buildSectionElements();
+      for (let i = sectionElements.length - 1; i >= 0; i--) {
+        const rect = sectionElements[i].el.getBoundingClientRect();
+        if (rect.top <= NAVBAR_H + 100) {
+          setActiveSection(sectionElements[i].id);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // initial call
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [service]);
 
   const toggleFaq = (i) => setOpenFaq(openFaq === i ? null : i);

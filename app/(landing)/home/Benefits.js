@@ -135,7 +135,7 @@ export default function Benefits() {
           >
             <div className="relative w-full h-full">
               <Image 
-                src="/landing/high-performace.png" 
+                src="/landing/high-performace.webp" 
                 alt="High Performance" 
                 fill
                 sizes="(max-width: 1024px) 0vw, 640px"

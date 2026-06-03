@@ -4,6 +4,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, FileText } from 'lucide-react';
+import Image from 'next/image';
 
 const heroBullets = [
   'MVP to full-scale SaaS development',
@@ -146,7 +147,7 @@ export function HeroSection({ serviceData }) {
       {/* Background Image - Full length and width coverage */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/landing/main-services/hero-bg.png')" }}
+        style={{ backgroundImage: "url('/landing/main-services/hero-bg.webp')" }}
       />
       
       {/* Constraints for the main content */}
@@ -245,8 +246,9 @@ export function HeroSection({ serviceData }) {
           <div className="hidden lg:flex items-center justify-center w-full">
             <div className="w-full max-w-xl">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-black/40 border border-white/10 aspect-4/3 group">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
+                  width={500}
+                  height={500}
                   src={heroImageUrl}
                   alt={serviceData?.title || 'Service'}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

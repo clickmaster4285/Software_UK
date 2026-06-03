@@ -66,7 +66,7 @@ export default function About() {
                         repeat: Infinity,
                         ease: "easeInOut"
                      }}
-                     src="/landing/3d-illustration-man-flying-catch-golden-coin-business-graph-rendering.png" 
+                     src="/landing/3d-illustration-man-flying.webp" 
                      alt="Business Growth Illustration" 
                      className="relative z-10 w-full max-w-xl h-auto drop-shadow-2xl"
                   />

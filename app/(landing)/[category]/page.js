@@ -1,4 +1,4 @@
-// app/services/[slug]/page.tsx
+// \app\(landing)\[category]\page.js
 import { notFound } from 'next/navigation';
 import { getServiceData, getAllServiceSlugs } from '@/data/main-services';
 import { metadataConfig } from '@/app/metadata-config';
