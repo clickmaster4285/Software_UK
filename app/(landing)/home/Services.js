@@ -177,111 +177,110 @@ function ServiceCard({ service, index }) {
       className={spanClass}
       style={{ perspective: 1000 }}
     >
-    <Link href={route || '/services'}>
-      <motion.div
-        ref={ref}
-        onMouseMove={handleMove}
-        onMouseLeave={handleLeave}
-        style={{
-          rotateX,
-          rotateY,
-          transformStyle: 'preserve-3d',
-          borderColor: `${accent}77`,
-        }}
-        className={`group relative flex flex-col justify-between cursor-pointer ${
-          service.span === 'tall' ? 'h-full min-h-145' : 'h-115'
-        } rounded-[40px] border bg-white/40 backdrop-blur-2xl p-8 overflow-hidden transition-all duration-500 hover:bg-white/60`}
-      >
-        {/* Hover Border Overlay */}
-        <div 
-          className="absolute inset-0 rounded-[40px] border-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-          style={{ borderColor: `${accent}66` }} // 40% opacity hover border
-        />
-        {/* Dynamic Accent Shadow */}
-        <div 
-          className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-          style={{
-            boxShadow: `0 30px 60px -15px ${accent}30`,
-          }}
-        />
-
-        {/* Mouse-tracking glow */}
+      <Link href={route || '/services'}>
         <motion.div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ref={ref}
+          onMouseMove={handleMove}
+          onMouseLeave={handleLeave}
           style={{
-            background: useMotionTemplate`radial-gradient(500px circle at ${glowX} ${glowY}, ${accent}15, transparent 70%)`,
+            rotateX,
+            rotateY,
+            transformStyle: 'preserve-3d',
+            borderColor: `${accent}77`,
           }}
-        />
+          className={`group relative flex flex-col justify-between cursor-pointer ${service.span === 'tall' ? 'h-full min-h-145' : 'h-115'
+            } rounded-[40px] border bg-white/40 backdrop-blur-2xl p-8 overflow-hidden transition-all duration-500 hover:bg-white/60`}
+        >
+          {/* Hover Border Overlay */}
+          <div
+            className="absolute inset-0 rounded-[40px] border-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+            style={{ borderColor: `${accent}66` }} // 40% opacity hover border
+          />
+          {/* Dynamic Accent Shadow */}
+          <div
+            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
+            style={{
+              boxShadow: `0 30px 60px -15px ${accent}30`,
+            }}
+          />
 
-        {/* Background Decorative Blob */}
-        <div 
-          className="absolute -top-24 -right-24 w-64 h-64 rounded-full blur-[80px] opacity-10 group-hover:opacity-20 transition-all duration-700"
-          style={{ background: accent }}
-        />
+          {/* Mouse-tracking glow */}
+          <motion.div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            style={{
+              background: useMotionTemplate`radial-gradient(500px circle at ${glowX} ${glowY}, ${accent}15, transparent 70%)`,
+            }}
+          />
 
-        <div className="relative z-10 flex flex-col h-full" style={{ transform: 'translateZ(40px)' }}>
-          {/* Top: Tag */}
-          <div className="flex items-start justify-between">
-            <span 
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white/90 border border-white/50 shadow-sm text-[10px] font-bold tracking-widest uppercase"
-              style={{ color: accent }}
-            >
-              <Sparkles className="w-3 h-3" />
-              {service.tag}
-            </span>
-          </div>
+          {/* Background Decorative Blob */}
+          <div
+            className="absolute -top-24 -right-24 w-64 h-64 rounded-full blur-[80px] opacity-10 group-hover:opacity-20 transition-all duration-700"
+            style={{ background: accent }}
+          />
 
-          {/* Center: Image */}
-          <div className="flex-1 flex items-center justify-center mb-6 relative">
-            <div 
-              className="absolute w-40 h-40 rounded-full blur-[60px] opacity-30 group-hover:opacity-50 transition-all duration-700"
-              style={{ background: accent }}
-            />
-            
-            <motion.div
-              whileHover={{ 
-                scale: 1.1,
-                z: 80 
-              }}
-              transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-              className="relative w-56 h-56"
-              style={{ transformStyle: 'preserve-3d' }}
-            >
-              <Image
-                src={service.image}
-                alt={service.title}
-                fill
-                sizes="(max-width: 768px) 100vw, 224px"
-                className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] animate-float-slow transition-transform duration-500"
-              />
-            </motion.div>
-          </div>
-
-          {/* Bottom Content */}
-          <div className='mb-6' style={{ transform: 'translateZ(20px)' }}>
-            <h3 className="text-2xl font-bold text-foreground mb-2 tracking-tight">
-              {service.title}
-            </h3>
-            <p className="text-sm text-muted-foreground/90 leading-relaxed line-clamp-2">
-              {service.description}
-            </p>
-            
-            <div className="mb-6 flex items-center justify-between">
-              <span className="text-[10px] font-bold tracking-widest uppercase opacity-40 group-hover:opacity-100 transition-opacity" style={{ color: accent }}>
-                Learn More
-              </span>
-              <div 
-                className="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:rotate-45"
-                style={{ background: `linear-gradient(135deg, ${accent}, ${accent}cc)` }}
+          <div className="relative z-10 flex flex-col h-full" style={{ transform: 'translateZ(40px)' }}>
+            {/* Top: Tag */}
+            <div className="flex items-start justify-between">
+              <span
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white/90 border border-white/50 shadow-sm text-[10px] font-bold tracking-widest uppercase"
+                style={{ color: accent }}
               >
-                <ArrowUpRight className="w-5 h-5 text-white" />
+                <Sparkles className="w-3 h-3" />
+                {service.tag}
+              </span>
+            </div>
+
+            {/* Center: Image */}
+            <div className="flex-1 flex items-center justify-center mb-6 relative">
+              <div
+                className="absolute w-40 h-40 rounded-full blur-[60px] opacity-30 group-hover:opacity-50 transition-all duration-700"
+                style={{ background: accent }}
+              />
+
+              <motion.div
+                whileHover={{
+                  scale: 1.1,
+                  z: 80
+                }}
+                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                className="relative w-56 h-56"
+                style={{ transformStyle: 'preserve-3d' }}
+              >
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 224px"
+                  className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] animate-float-slow transition-transform duration-500"
+                />
+              </motion.div>
+            </div>
+
+            {/* Bottom Content */}
+            <div className='mb-6' style={{ transform: 'translateZ(20px)' }}>
+              <h3 className="text-2xl font-bold text-foreground mb-2 tracking-tight">
+                {service.title}
+              </h3>
+              <p className="text-sm text-muted-foreground/90 leading-relaxed line-clamp-2">
+                {service.description}
+              </p>
+
+              <div className="mb-6 flex items-center justify-between">
+                <span className="text-[10px] font-bold tracking-widest uppercase opacity-40 group-hover:opacity-100 transition-opacity" style={{ color: accent }}>
+                  Learn More
+                </span>
+                <div
+                  className="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:rotate-45"
+                  style={{ background: `linear-gradient(135deg, ${accent}, ${accent}cc)` }}
+                >
+                  <ArrowUpRight className="w-5 h-5 text-white" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </motion.div>
-    </Link>
+        </motion.div>
+      </Link>
     </motion.div>
   );
 }
@@ -296,7 +295,7 @@ export default function Services() {
         <div className="absolute bottom-[-10%] left-[20%] w-[40%] h-[40%] rounded-full bg-emerald-500/15 blur-[120px]" />
       </div>
 
-      <div className="relative w-full px-6 xl:px-12 max-w-400 mx-auto">
+      <div className="relative w-full px-6 xl:px-12 max-w-[96vw] lg:max-w-[90vw] mx-auto">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

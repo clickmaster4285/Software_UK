@@ -27,8 +27,8 @@ export default function TrustedBy() {
 
    return (
       <section className="py-24 bg-white overflow-hidden">
-         <div className="max-w-400 mx-auto px-6">
-            <motion.div 
+         <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-6">
+            <motion.div
                initial={{ opacity: 0, scale: 0.9 }}
                whileInView={{ opacity: 1, scale: 1 }}
                transition={{ duration: 0.8, ease: "easeOut" }}
@@ -66,15 +66,15 @@ export default function TrustedBy() {
                      {duplicatedLogos.map((logo, idx) => (
                         <div
                            key={`${logo.name}-${idx}`}
-                           className="shrink-0 flex items-center justify-center opacity-50 hover:opacity-100 transition-all duration-500"
+                           className="shrink-0 flex items-center justify-center transition-all duration-500"
                         >
                            <Image
                               src={logo.url}
                               alt={logo.name}
                               width={150}
                               height={48}
-                             
-                              className="h-10 md:h-12 w-auto object-contain"
+
+                              className="h-8 lg:h-12 w-auto object-contain"
                            />
                         </div>
                      ))}
@@ -110,7 +110,7 @@ export default function TrustedBy() {
                               alt={logo.name}
                               width={150}
                               height={48}
-                             
+
                               className="h-10 md:h-12 w-auto object-contain"
                            />
                         </div>

@@ -177,7 +177,7 @@ export function ServiceHero({ page }) {
 
   // Make navbar transparent using GSAP ScrollTrigger
   useEffect(() => {
-   const navbar = document.getElementById("main-navbar");
+    const navbar = document.getElementById("main-navbar");
 
     if (navbar && heroRef.current) {
       ScrollTrigger.create({
@@ -261,7 +261,7 @@ export function ServiceHero({ page }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        <div className=" mx-auto max-w-400 px-4 md:px-8 py-3.5">
+        <div className=" mx-auto max-w-[96vw] lg:max-w-[90vw] px-4 md:px-8 py-3.5">
           <nav className="flex items-center gap-1.5 text-sm">
             <Link
               href="/"
@@ -309,7 +309,7 @@ export function ServiceHero({ page }) {
       {/* Main Hero Content */}
       <section
         ref={sectionRef}
-        className="relative z-10 mx-auto max-w-400 flex-1 flex items-center px-6"
+        className="relative z-10 mx-auto max-w-[96vw] lg:max-w-[90vw] flex-1 flex items-center px-6"
       >
         <div className="py-12 lg:py-16">
           <div className="grid gap-12 lg:grid-cols-[1fr_480px] items-center lg:items-center lg:gap-8">
@@ -452,7 +452,7 @@ export function ServiceHero({ page }) {
                         transition: { duration: 0.15 },
                       }}
                     >
-                     
+
                       <div>
                         <Counter targetValue={stat.value} />
                         <p className="text-xs sm:text-sm font-medium text-slate-300 mt-0.5">
@@ -512,14 +512,14 @@ export function ServiceHero({ page }) {
               initial="hidden"
               animate={controls}
             >
-                <Image
-                  src={page.heroImage}
-                  alt={page.title || "Platform dashboard preview"}
-                  width={460}
-                  height={320}
-                  priority
-                  className="w-full  rounded-4xl h-auto object-contain drop-shadow-2xl"
-                />
+              <Image
+                src={page.heroImage}
+                alt={page.title || "Platform dashboard preview"}
+                width={460}
+                height={320}
+                priority
+                className="w-full  rounded-4xl h-auto object-contain drop-shadow-2xl"
+              />
             </motion.div>
           </div>
         </div>

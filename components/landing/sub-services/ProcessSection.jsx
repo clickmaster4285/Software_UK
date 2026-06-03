@@ -608,7 +608,7 @@ export const ProcessSection = ({ serviceName, processPhases }) => {
   return (
     <section
       ref={sectionRef}
-      className="relative mx-auto max-w-400 overflow-x-clip bg-white"
+      className="relative mx-auto max-w-[96vw] lg:max-w-[90vw] overflow-x-clip bg-white"
       aria-labelledby="process-section-heading"
     >
       {/* Background blobs */}

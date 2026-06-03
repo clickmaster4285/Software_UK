@@ -15,7 +15,7 @@ function Counter({ value }) {
     damping: 30,
   });
 
-  const displayValue = useTransform(spring, (current) => 
+  const displayValue = useTransform(spring, (current) =>
     Math.round(current).toLocaleString() + suffix
   );
 
@@ -32,15 +32,15 @@ function Counter({ value }) {
 
 export default function StatsBanner() {
   const stats = [
-    { value: "1860+", label: "Projects Delivered Across SaaS & AI" },
+    { value: "1860+", label: "Projects Delivered " },
     { value: "3500+", label: "Clients Served Globally" },
     { value: "75+", label: "Awards & Recognitions" },
-    { value: "5+", label: "Years Building Scalable Systems" },
+    { value: "5+", label: "Years Building Systems" },
   ];
 
   return (
     <section className="py-20 bg-primary border-y border-white/5">
-      <div className="max-w-400 mx-auto px-6">
+      <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
           {stats.map((stat, index) => (
             <div key={index} className="text-center group">

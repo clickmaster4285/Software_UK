@@ -137,11 +137,11 @@ const Typewriter = ({ texts, typingSpeed = 80, deletingSpeed = 40, pauseTime = 1
 export function HeroSection({ serviceData }) {
   const displayStats = serviceData?.stats || stats;
   const displayBullets = serviceData?.features?.map((f) => f.title) || heroBullets;
-  const heroImageUrl = serviceData?.heroImage ;
+  const heroImageUrl = serviceData?.heroImage;
 
   return (
     <section
-      className="relative w-full min-h-screen flex items-center overflow-hidden" 
+      className="relative w-full min-h-screen flex items-center overflow-hidden"
       aria-labelledby="hero-heading"
     >
       {/* Background Image - Full length and width coverage */}
@@ -149,9 +149,9 @@ export function HeroSection({ serviceData }) {
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/landing/main-services/hero-bg.webp')" }}
       />
-      
+
       {/* Constraints for the main content */}
-      <div className="relative z-10 w-full max-w-400 mx-auto px-4 py-16 lg:py-24">
+      <div className="relative z-10 w-full max-w-[96vw] lg:max-w-[90vw] mx-auto px-4 py-16 lg:py-24">
         <div className="grid gap-12 lg:grid-cols-[1fr_480px] items-center">
 
           {/* ── Left column ── */}

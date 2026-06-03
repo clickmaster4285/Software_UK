@@ -1,11 +1,11 @@
 'use client';
 
-import { 
-  BarChart3, 
-  Users, 
-  Trophy, 
-  Calendar, 
-  Cpu, 
+import {
+  BarChart3,
+  Users,
+  Trophy,
+  Calendar,
+  Cpu,
   ShieldCheck,
   ArrowUpRight
 } from 'lucide-react';
@@ -70,7 +70,7 @@ export default function Benefits() {
       <div className="absolute top-0 right-0 w-75 h-75 bg-accent/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-75 h-75 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="max-w-400 mx-auto px-6 relative z-10">
+      <div className="max-w-full lg:max-w-[90vw] mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-primary text-[11px] font-medium uppercase tracking-[0.08em] mb-4 border border-border">
             <span>Why ClickMasters</span>
@@ -85,8 +85,8 @@ export default function Benefits() {
 
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6 relative">
           {benefits.map((benefit, index) => (
-            <motion.div 
-              key={index} 
+            <motion.div
+              key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
@@ -126,17 +126,17 @@ export default function Benefits() {
           ))}
 
           {/* High Performance Decorative Image */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, rotateX: 5, rotateY: -5, rotateZ: 10 }}
             transition={{ delay: 0.5, duration: 0.8 }}
             viewport={{ once: true }}
-            className="absolute bottom-20 -right-12 md:-right-60 w-48 h-48 md:w-160 md:h-160 pointer-events-none z-20 hidden lg:block"
+            className="absolute bottom-20 -right-12 md:-right-48 w-48 h-48 md:w-160 md:h-160 pointer-events-none z-20 hidden lg:block"
           >
             <div className="relative w-full h-full">
-              <Image 
-                src="/landing/high-performace.webp" 
-                alt="High Performance" 
+              <Image
+                src="/landing/high-performace.webp"
+                alt="High Performance"
                 fill
                 sizes="(max-width: 1024px) 0vw, 640px"
                 className="object-contain"

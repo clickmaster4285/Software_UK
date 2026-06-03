@@ -53,14 +53,14 @@ export default function Portfolio() {
    return (
       <section className="relative py-32 overflow-hidden bg-primary">
          {/* Fixed Background Image */}
-         <div 
-            className="absolute inset-0 z-0 opacity-40 bg-fixed bg-cover bg-center"
+         <div
+            className="absolute inset-0 z-0 opacity-20 bg-fixed bg-cover bg-center"
             style={{ backgroundImage: "url(\"/landing/purple-background-with-wavy-shapes.webp\")" }}
          />
-         
-         <div className="relative z-10 max-w-400 mx-auto px-6">
+
+         <div className="relative z-10 max-w-[96vw] lg:max-w-[90vw] mx-auto px-6">
             <div className="text-center mb-16">
-               <motion.span 
+               <motion.span
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -68,7 +68,7 @@ export default function Portfolio() {
                >
                   Industry Expertise
                </motion.span>
-               <motion.h2 
+               <motion.h2
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 }}
@@ -77,7 +77,7 @@ export default function Portfolio() {
                >
                   Driving Excellence Across Sectors
                </motion.h2>
-               <motion.p 
+               <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
@@ -90,7 +90,7 @@ export default function Portfolio() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                {industries.map((industry, index) => (
-                  <motion.div 
+                  <motion.div
                      key={index}
                      initial={{ opacity: 0, scale: 0.95 }}
                      whileInView={{ opacity: 1, scale: 1 }}

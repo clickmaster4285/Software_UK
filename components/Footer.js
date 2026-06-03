@@ -2,14 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import HomeLogoLink from "@/components/HomeLogoLink";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import { 
-  Facebook, 
+import {
+  Facebook,
   // Twitter, 
   // Linkedin, 
   // Github, 
-  Mail, 
-  Phone, 
-  MapPin, 
+  Mail,
+  Phone,
+  MapPin,
   ArrowRight,
   ExternalLink
 } from "lucide-react";
@@ -46,15 +46,15 @@ export default function Footer() {
       {/* Subtle Background Glow */}
       <div className="absolute bottom-0 right-0 w-125 h-125 bg-accent/10 rounded-full blur-[120px] pointer-events-none" />
       <ScrollToTopButton />
-      
-      <div className="max-w-400 mx-auto px-6 relative z-10">
+
+      <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
           {/* Brand & Newsletter Column */}
           <div className="lg:col-span-4">
             <HomeLogoLink className="inline-block mb-8">
-              <Image 
-                src="/cm-logos/logo_white.webp" 
-                alt="ClickMasters Logo" 
+              <Image
+                src="/cm-logos/logo_white.webp"
+                alt="ClickMasters Logo"
                 width={180}
                 height={48}
                 className="h-12 w-auto"
@@ -63,7 +63,7 @@ export default function Footer() {
             <p className="text-white/70 font-body text-base mb-8 max-w-sm leading-relaxed">
               We design and build scalable software systems, SaaS platforms, mobile apps, and AI solutions for global businesses.
             </p>
-            
+
             <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl">
               <h4 className="font-heading font-bold text-lg mb-2 flex items-center gap-2">
                 <Mail className="w-6 h-6 text-accent" />
@@ -132,45 +132,45 @@ export default function Footer() {
                   <span>sale@clickmasterssoftwaredevelopmentcompany.co.uk</span>
                 </Link>
               </ul>
-              
+
               <div className="mt-8 flex gap-4">
-                <Link 
-                  href="https://linkedin.com" 
-                  target="_blank" 
+                <Link
+                  href="https://linkedin.com"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="p-2.5 bg-white/5 rounded-xl border border-white/10 text-white/60 hover:text-accent hover:border-accent/50 hover:bg-white/10 transition-all group"
                 >
-                  <Image 
-                    src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" 
-                    alt="LinkedIn" 
+                  <Image
+                    src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
+                    alt="LinkedIn"
                     width={20}
                     height={20}
                     className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity"
                   />
                 </Link>
-                <Link 
-                  href="https://github.com" 
-                  target="_blank" 
+                <Link
+                  href="https://github.com"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="p-2.5 bg-white/5 rounded-xl border border-white/10 text-white/60 hover:text-accent hover:border-accent/50 hover:bg-white/10 transition-all group"
                 >
-                  <Image 
-                    src="https://img.icons8.com/ios-filled/50/ffffff/github.png" 
-                    alt="GitHub" 
+                  <Image
+                    src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                    alt="GitHub"
                     width={20}
                     height={20}
                     className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity"
                   />
                 </Link>
-                <Link 
-                  href="https://unsplash.com" 
-                  target="_blank" 
+                <Link
+                  href="https://unsplash.com"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="p-2.5 bg-white/5 rounded-xl border border-white/10 text-white/60 hover:text-accent hover:border-accent/50 hover:bg-white/10 transition-all group"
                 >
-                  <Image 
-                    src="https://img.icons8.com/ios-filled/50/ffffff/unsplash.png" 
-                    alt="Unsplash" 
+                  <Image
+                    src="https://img.icons8.com/ios-filled/50/ffffff/unsplash.png"
+                    alt="Unsplash"
                     width={20}
                     height={20}
                     className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity"
@@ -191,7 +191,7 @@ export default function Footer() {
               </Link>
             ))}
           </div>
-          
+
           <div className="flex items-center gap-6">
             <p className="text-white/60 font-body text-sm captitalize  tracking-wide">
               © 2026 clickmasters software company

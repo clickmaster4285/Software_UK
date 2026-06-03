@@ -362,7 +362,7 @@ export default function ContactPage() {
           </svg>
         </div>
 
-        <div className="container mx-auto max-w-400 px-6 relative z-10">
+        <div className="container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

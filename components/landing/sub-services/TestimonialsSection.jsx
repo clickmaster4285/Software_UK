@@ -9,9 +9,9 @@ import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion'
 export function TestimonialsSection({ featuredOnly = true, limit = 9 }) {
   const sectionRef = useRef(null);
   const [isReady, setIsReady] = useState(false);
-  
+
   const { data: allTestimonials = [], isLoading, error } = useTestimonialList({});
-  
+
   const testimonials = useMemo(() => {
     let filtered = [...allTestimonials];
     if (featuredOnly) {
@@ -80,7 +80,7 @@ export function TestimonialsSection({ featuredOnly = true, limit = 9 }) {
 
   if (isLoading) {
     return (
-      <section id="testimonials" className="mx-auto max-w-400 scroll-mt-24 py-12 sm:py-16 md:py-20">
+      <section id="testimonials" className="mx-auto max-w-[96vw] lg:max-w-[90vw] scroll-mt-24 py-12 sm:py-16 md:py-20">
         <div className="mx-auto px-4">
           <div className="flex items-center gap-3 mb-8 sm:mb-10">
             <div className="h-8 sm:h-10 w-1 rounded-full bg-accent" />
@@ -110,7 +110,7 @@ export function TestimonialsSection({ featuredOnly = true, limit = 9 }) {
   const currentTestimonials = groupedTestimonials[currentGroup] || [];
 
   return (
-    <section id="testimonials" ref={sectionRef} className="scroll-mt-24 mx-auto max-w-400 relative overflow-hidden py-4 md:py-8">
+    <section id="testimonials" ref={sectionRef} className="scroll-mt-24 mx-auto max-w-[96vw] lg:max-w-[90vw] relative overflow-hidden py-4 md:py-8">
       {/* Background blobs */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
         <motion.div

@@ -28,7 +28,7 @@ export function CeoVision() {
   const isInView = useInView(containerRef, { once: true, amount: 0.2 });
 
   return (
-    <section ref={containerRef} className="relative mx-auto max-w-400 overflow-hidden px-4 py-20">
+    <section ref={containerRef} className="relative mx-auto max-w-[96vw] lg:max-w-[90vw] overflow-hidden px-4 py-20">
       {/* Decorative Background Waves */}
       <div className="absolute inset-0 -z-10 pointer-events-none" aria-hidden="true">
         <svg className="h-full w-full opacity-[0.1]" viewBox="0 0 1440 800" fill="none" preserveAspectRatio="none">
