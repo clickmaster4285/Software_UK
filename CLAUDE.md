@@ -175,3 +175,100 @@ Summary: About Page & Services Updates
 
   ✅  About page now has premium sections: Hero → Stats → Journey → Services → Values → Tech      Stack → Clients → CTA
   Stack → Clients → CTA
+
+
+  Session Summary — ClickMasters Website Cleanup
+
+    Project
+    ClickMasters agency website — Next.js (app router), React 19, Tailwind 4, framer-motion. Package manager: pnpm. Dev server uses --turbopack.
+
+    ---
+
+    1. Removed swiper, lenis, @studio-freight/lenis packages
+
+    `package.json` — removed all three dependencies.
+
+    ---
+
+    2. Removed all swiper/lenis code from files
+
+
+    ┌──────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────┐      
+    │ File                                                     │ Change                                                                                           │      
+    ├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────┤      
+    │ components/SmoothScroll.jsx                              │ Removed LenisContext, renamed to ScrollContext. useLenisScroll → useScrollToTop. Uses native     │      
+    │                                                          │ window.scrollTo({ top: 0, behavior: "smooth" }).                                                 │      
+    ├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────┤      
+    │ components/ScrollToTopButton.jsx                         │ Updated import: useLenisScroll → useScrollToTop                                                  │      
+    ├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────┤      
+    │ components/HomeLogoLink.jsx                              │ Updated import: useLenisScroll → useScrollToTop                                                  │      
+    ├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────┤      
+    │                                                          │ Full rewrite — removed all swiper, swiper/css, swiper/css/effect-coverflow, swiper/react,        │      
+    │ components/landing/main-service/TestimonialsSection.jsx  │ swiper/modules imports. Replaced <Swiper> / <SwiperSlide> with a custom framer-motion carousel:  │      
+    │                                                          │ grid of 3 cards (prev/current/next), AnimatePresence slide transitions, dot indicators, autoplay │      
+    │                                                          │  with pause-on-hover, prev/next/play-pause controls.                                             │      
+    ├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────┤      
+    │ app/(landing)/[category]/[service]/subservice.js         │ Removed lenisRef={lenisRef} prop from <NavigationWheel>                                          │      
+    ├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────┤      
+    │ app/(landing)/[category]/[service]/ClientScrollWheel.jsx │ Removed lenisRef={{ current: null }} prop from <NavigationWheel>                                 │      
+    ├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────┤      
+    │ app/(landing)/[category]/[service]/NavigationWheel.js    │ Removed lenisRef from destructured props. scrollTo() now uses native el.scrollIntoView({         │      
+    │                                                          │ behavior: 'smooth', block: 'start' }) only.                                                      │      
+    └──────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────┘      
+
+    ---
+
+    3. Deleted unused files from components/landing/main-service/
+
+    11 files removed:
+     - AboutSection.jsx
+     - CommunitySection.jsx
+     - CTASectionImage.jsx
+     - global-globe-section.jsx
+     - help-section.jsx
+     - hero-spline-panel.jsx
+     - home-quote-form.jsx
+     - info-cts.jsx
+     - Solutions.jsx
+     - TrustedBySection.jsx
+     - LandingHomeDeferredHeavy.jsx (had broken dynamic imports to non-existent @/components/landingPage/ path)
+
+    14 files remain — all actively imported by app/(landing)/[category]/main-service.jsx.
+
+    Also cleaned up the stale "Unused sections" comment block in app/(landing)/[category]/main-service.jsx.
+
+    ---
+
+    4. Deleted unused files from components/landing/sub-services/
+
+    4 files removed:
+     - container-scroll-animation.jsx
+     - subpage-layout.js
+     - ServiceSubpageBreadcrumb.jsx
+     - table-of-contents.jsx
+
+    16 files remain — all actively imported (directly or dynamically) by app/(landing)/[category]/[service]/page.js or by each other.
+
+    ---
+
+    5. Build status
+
+    Build was failing due to stale .next cache. Has not yet been verified after the cleanup. Next step should be:
+
+     1 cd "C:\Users\PC-24\Desktop\Software uk"
+     2 rmdir /s /q .next
+     3 npm install
+     4 npm run build
+
+    ---
+
+    Key file inventory after cleanup
+
+    `components/landing/main-service/` (14 files):
+    AppsSection.jsx, ExploreSection.jsx, FaqSection.jsx, FeaturedInsights.jsx, finalCta.jsx, hero-section.jsx, industries-section.jsx, PainPointsSolutions.jsx,
+    pricing-section.jsx, ProcessPage.jsx, TechStackSection.jsx, TestimonialsSection.jsx, TrustedClientsSection.jsx, whyUs.jsx
+
+    `components/landing/sub-services/` (16 files):
+    CaseStudySection.jsx, CeoVision.jsx, DynamicSections.jsx, EngineeringBaseline.jsx, FAQSection.jsx, FooterCTA.jsx, IndustriesSection.jsx,
+    parallax-case-studies-section.jsx, PricingCard.jsx, PricingSection.jsx, ProcessSection.jsx, service-hero.jsx, ServicesSection.jsx, TechStack.jsx,
+    TestimonialsSection.jsx, WhyChooseUs.jsx

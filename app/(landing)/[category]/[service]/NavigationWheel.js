@@ -259,7 +259,7 @@ export function WheelAnimation({ scrollDirection, scrollProgress, sizes, isAnima
 }
 
 // ─── NavigationWheel ──────────────────────────────────────────────────────────
-export function NavigationWheel({ sections, activeSection, scrollDirection, wheelTop, lenisRef, scrollProgress, isVisible }) {
+export function NavigationWheel({ sections, activeSection, scrollDirection, wheelTop, scrollProgress, isVisible }) {
   const [sizes, setSizes] = useState(null);
   const [isAnimatingIn, setIsAnimatingIn] = useState(false);
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
@@ -351,11 +351,7 @@ export function NavigationWheel({ sections, activeSection, scrollDirection, whee
   function scrollTo(id) {
     const el = document.getElementById(id);
     if (!el) return;
-    if (lenisRef?.current) {
-      lenisRef.current.scrollTo(el, { offset: -80, duration: 0.6 });
-    } else {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   const labelOpacity = isAnimatingIn || isAnimatingOut ? 0 : 1;

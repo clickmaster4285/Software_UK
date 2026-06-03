@@ -79,7 +79,6 @@ export function ClientScrollWheel({ tocItems }) {
       activeSection={activeSection}
       scrollDirection={scrollDir}
       wheelTop={wheelTop}
-      lenisRef={{ current: null }}
       scrollProgress={scrollProgress}
       isVisible={wheelTop >= 0}
     />

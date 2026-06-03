@@ -1,15 +1,10 @@
 "use client";
 
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { Quote, ChevronLeft, ChevronRight, Play, Pause, Star, Sparkles, ArrowRight } from "lucide-react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { motion, AnimatePresence } from "framer-motion";
+import { Quote, ChevronLeft, ChevronRight, Play, Pause, Star, ArrowRight } from "lucide-react";
 import { useTestimonialList } from "@/hooks/useTestimonials";
 
 const EASE = [0.22, 1, 0.36, 1];
@@ -106,7 +101,8 @@ export function TestimonialCard({ testimonial, isActive }) {
 export function TestimonialsSection({ serviceTitle }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [swiperRef, setSwiperRef] = useState(null);
+  const [direction, setDirection] = useState(0);
+  const autoplayRef = useRef(null);
 
   const { data: testimonials = [], isLoading, error } = useTestimonialList();
 
@@ -114,11 +110,33 @@ export function TestimonialsSection({ serviceTitle }) {
     (t) => t.isActive !== false
   );
 
+  const total = activeTestimonials.length;
+
+  const goTo = useCallback((idx, dir = 1) => {
+    setDirection(dir);
+    setActiveIndex(((idx % total) + total) % total);
+  }, [total]);
+
+  const goNext = useCallback(() => {
+    goTo(activeIndex + 1, 1);
+  }, [activeIndex, goTo]);
+
+  const goPrev = useCallback(() => {
+    goTo(activeIndex - 1, -1);
+  }, [activeIndex, goTo]);
+
+  // Autoplay
   useEffect(() => {
-    if (!swiperRef) return;
-    if (isAutoPlaying) swiperRef.autoplay?.start();
-    else swiperRef.autoplay?.stop();
-  }, [isAutoPlaying, swiperRef]);
+    if (!isAutoPlaying || total <= 1) return;
+    autoplayRef.current = setInterval(goNext, 4500);
+    return () => {
+      if (autoplayRef.current) clearInterval(autoplayRef.current);
+    };
+  }, [isAutoPlaying, goNext, total]);
+
+  // Pause on hover
+  const handleMouseEnter = () => setIsAutoPlaying(false);
+  const handleMouseLeave = () => setIsAutoPlaying(true);
 
   const headline = serviceTitle
     ? `Trusted for ${serviceTitle}`
@@ -158,7 +176,23 @@ export function TestimonialsSection({ serviceTitle }) {
     );
   }
 
-  if (activeTestimonials.length === 0) return null;
+  if (total === 0) return null;
+
+  // Determine which 3 cards to show (prev, current, next)
+  const getVisibleIndices = () => {
+    if (total <= 3) return Array.from({ length: total }, (_, i) => i);
+    const prev = ((activeIndex - 1) % total + total) % total;
+    const next = (activeIndex + 1) % total;
+    return [prev, activeIndex, next];
+  };
+
+  const visibleIndices = getVisibleIndices();
+
+  const slideVariants = {
+    enter: (dir) => ({ x: dir > 0 ? 300 : -300, opacity: 0, scale: 0.95 }),
+    center: { x: 0, opacity: 1, scale: 1 },
+    exit: (dir) => ({ x: dir > 0 ? -300 : 300, opacity: 0, scale: 0.95 }),
+  };
 
   return (
     <section
@@ -176,15 +210,15 @@ export function TestimonialsSection({ serviceTitle }) {
 
       <motion.div className="container relative z-10">
         <motion.header
-          className=" text-center mb-12 md:mb-14"
+          className="text-center mb-12 md:mb-14"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.55, ease: EASE }}
         >
-            <span className="text-lg font-semibold text-accent font-body mb-2">
-              Client Stories
-            </span>
+          <span className="text-lg font-semibold text-accent font-body mb-2">
+            Client Stories
+          </span>
 
           <h2
             id="testimonials-heading"
@@ -206,40 +240,65 @@ export function TestimonialsSection({ serviceTitle }) {
           </Link>
         </motion.header>
 
-        <div className="relative">
-          <Swiper
-            modules={[Autoplay]}
-            onSwiper={setSwiperRef}
-            onSlideChange={(s) => setActiveIndex(s.realIndex)}
-            centeredSlides
-            loop={activeTestimonials.length >= 3}
-            autoplay={
-              isAutoPlaying
-                ? { delay: 4500, disableOnInteraction: false, pauseOnMouseEnter: true }
-                : false
-            }
-            speed={700}
-            spaceBetween={16}
-            slidesPerView={1.05}
-            breakpoints={{
-              640: { slidesPerView: 1.4, spaceBetween: 20 },
-              768: { slidesPerView: 2.1, spaceBetween: 24 },
-              1024: { slidesPerView: 3, spaceBetween: 28 },
-            }}
-            className="!pb-2"
-          >
-            {activeTestimonials.map((t, i) => (
-              <SwiperSlide key={t._id} className="!h-auto">
-                <TestimonialCard testimonial={t} isActive={i === activeIndex} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <div
+          className="relative"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          {/* Carousel track */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-7 items-stretch">
+            {visibleIndices.map((idx, pos) => {
+              const t = activeTestimonials[idx];
+              const isCenter = idx === activeIndex;
+              return (
+                <div key={`${idx}-${t._id}`} className="flex justify-center">
+                  <AnimatePresence mode="wait" custom={direction}>
+                    <motion.div
+                      key={t._id}
+                      custom={direction}
+                      variants={slideVariants}
+                      initial="enter"
+                      animate="center"
+                      exit="exit"
+                      transition={{ duration: 0.5, ease: EASE }}
+                      className="w-full max-w-sm"
+                    >
+                      <TestimonialCard testimonial={t} isActive={isCenter} />
+                    </motion.div>
+                  </AnimatePresence>
+                </div>
+              );
+            })}
+          </div>
 
-          <motion.div className="mt-8 flex items-center justify-center gap-4">
+          {/* Dot indicators */}
+          {total > 3 && (
+            <div className="mt-6 flex items-center justify-center gap-2">
+              {Array.from({ length: total }).map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => {
+                    setDirection(i > activeIndex ? 1 : -1);
+                    setActiveIndex(i);
+                    setIsAutoPlaying(false);
+                  }}
+                  aria-label={`Go to testimonial ${i + 1}`}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    i === activeIndex
+                      ? "w-6 bg-accent"
+                      : "w-2 bg-border hover:bg-accent/40"
+                  }`}
+                />
+              ))}
+            </div>
+          )}
+
+          {/* Controls */}
+          <motion.div className="mt-6 flex items-center justify-center gap-4">
             <button
               type="button"
               onClick={() => {
-                swiperRef?.slidePrev();
+                goPrev();
                 setIsAutoPlaying(false);
               }}
               aria-label="Previous testimonial"
@@ -264,7 +323,7 @@ export function TestimonialsSection({ serviceTitle }) {
             <button
               type="button"
               onClick={() => {
-                swiperRef?.slideNext();
+                goNext();
                 setIsAutoPlaying(false);
               }}
               aria-label="Next testimonial"

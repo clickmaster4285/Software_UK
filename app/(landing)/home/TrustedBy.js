@@ -22,9 +22,31 @@ const logos = [
    { name: "Cisco", url: "https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" },
 ];
 
-export default function TrustedBy() {
-   const duplicatedLogos = [...logos, ...logos, ...logos];
+function MarqueeTrack({ logos: logoList, reverse = false, dimmed = false }) {
+   const doubled = [...logoList, ...logoList];
+   return (
+      <div className="overflow-hidden whitespace-nowrap">
+         <div className={`flex items-center gap-16 md:gap-24 ${reverse ? "marquee-rtl" : "marquee-ltr"}`}>
+            {doubled.map((logo, idx) => (
+               <div
+                  key={`${logo.name}-${idx}`}
+                  className={`shrink-0 flex items-center justify-center transition-all duration-500 ${dimmed ? "opacity-50 hover:opacity-100 hover:scale-110" : ""}`}
+               >
+                  <Image
+                     src={logo.url}
+                     alt={logo.name}
+                     width={150}
+                     height={48}
+                     className={`w-auto object-contain ${dimmed ? "h-10 md:h-12" : "h-8 lg:h-12"}`}
+                  />
+               </div>
+            ))}
+         </div>
+      </div>
+   );
+}
 
+export default function TrustedBy() {
    return (
       <section className="py-24 bg-white overflow-hidden">
          <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-6">
@@ -44,79 +66,18 @@ export default function TrustedBy() {
                </p>
             </motion.div>
 
-            {/* Left to Right Marquee with Gas Effect (Masking) */}
+            {/* Left to Right Marquee */}
             <div className="relative mb-12 py-8">
-               {/* Masking Overlays for Gas Effect */}
                <div className="absolute inset-y-0 left-0 w-32 bg-linear-to-r from-white to-transparent z-10 pointer-events-none" />
                <div className="absolute inset-y-0 right-0 w-32 bg-linear-to-l from-white to-transparent z-10 pointer-events-none" />
-
-               <div className="overflow-hidden whitespace-nowrap">
-                  <motion.div
-                     animate={{ x: [0, -2000] }}
-                     transition={{
-                        x: {
-                           repeat: Infinity,
-                           repeatType: "loop",
-                           duration: 40,
-                           ease: "linear",
-                        },
-                     }}
-                     className="flex items-center gap-16 md:gap-24"
-                  >
-                     {duplicatedLogos.map((logo, idx) => (
-                        <div
-                           key={`${logo.name}-${idx}`}
-                           className="shrink-0 flex items-center justify-center transition-all duration-500"
-                        >
-                           <Image
-                              src={logo.url}
-                              alt={logo.name}
-                              width={150}
-                              height={48}
-
-                              className="h-8 lg:h-12 w-auto object-contain"
-                           />
-                        </div>
-                     ))}
-                  </motion.div>
-               </div>
+               <MarqueeTrack logos={logos} />
             </div>
 
             {/* Right to Left Marquee */}
             <div className="relative py-8">
                <div className="absolute inset-y-0 left-0 w-32 bg-linear-to-r from-white to-transparent z-10 pointer-events-none" />
                <div className="absolute inset-y-0 right-0 w-32 bg-linear-to-l from-white to-transparent z-10 pointer-events-none" />
-
-               <div className="overflow-hidden whitespace-nowrap">
-                  <motion.div
-                     animate={{ x: [-2000, 0] }}
-                     transition={{
-                        x: {
-                           repeat: Infinity,
-                           repeatType: "loop",
-                           duration: 45,
-                           ease: "linear",
-                        },
-                     }}
-                     className="flex items-center gap-16 md:gap-24"
-                  >
-                     {[...duplicatedLogos].reverse().map((logo, idx) => (
-                        <div
-                           key={`${logo.name}-rev-${idx}`}
-                           className="shrink-0 flex items-center justify-center  opacity-50 hover:opacity-100 transition-all duration-500 hover:scale-110"
-                        >
-                           <Image
-                              src={logo.url}
-                              alt={logo.name}
-                              width={150}
-                              height={48}
-
-                              className="h-10 md:h-12 w-auto object-contain"
-                           />
-                        </div>
-                     ))}
-                  </motion.div>
-               </div>
+               <MarqueeTrack logos={logos} reverse dimmed />
             </div>
          </div>
       </section>

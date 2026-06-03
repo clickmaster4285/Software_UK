@@ -1,6 +1,5 @@
 import { Sora, DM_Sans } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "@/components/SmoothScroll";
 import Providers from "@/components/Providers";
 import { ToasterProvider } from "@/components/ToasterProvider";
 
@@ -36,11 +35,9 @@ export default function RootLayout({ children }) {
 
       <body className="min-h-full flex flex-col font-sans">
         <ToasterProvider />
-        <SmoothScroll>
-          <Providers>
-            {children}
-          </Providers>
-        </SmoothScroll>
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

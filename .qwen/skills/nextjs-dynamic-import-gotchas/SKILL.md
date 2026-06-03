@@ -152,8 +152,29 @@ This works because `mod.ProcessSection` IS already a function component. It's eq
 
 **Difference from Pattern 2:** The wrapper creates a new component (`Wrapper`) that renders `<Comp {...props} />`. The direct return gives `next/dynamic` the raw function. Both are valid React components. The wrapper pattern is more defensive and preserves `displayName`.
 
-## SSR Behavior
+## SSR Behavior vs JS Loading — Critical Distinction
 
-- `{ ssr: true }` (default): Component renders on server + client. Use for all above-the-fold-adjacent content.
-- `{ ssr: false }`: Client-only. Only use for components that access `window`/`document` directly at module level (e.g., map libraries, browser-only APIs).
+**`{ ssr: true }` does NOT mean the JS is lazy-loaded.** It means the component's HTML is rendered on the server. The component's JavaScript STILL downloads on page load if it's rendered in the tree.
+
+```js
+// This component's JS loads on page load even though it's "lazy-loaded":
+const TrustedBy = dynamic(() => import('./TrustedBy'), { ssr: true });
+// ... later:
+<TrustedBy />  // rendered immediately → JS loads immediately
+```
+
+**To truly defer JS loading:**
+1. Use `{ ssr: false }` — skips SSR entirely, only loads on client
+2. Use conditional rendering — only mount when needed:
+   ```js
+   const [showSection, setShowSection] = useState(false);
+   // ... after scroll or intersection:
+   {showSection && <LazyComponent />}
+   ```
+3. Use `IntersectionObserver` / `useInView` to trigger mounting only when near viewport
+
+**Impact on TBT:** Components with `dynamic()` + `ssr: true` that render immediately contribute to the same TBT as static imports. The `dynamic()` only helps with TBT when the component is conditionally rendered or far below the initial viewport.
+
+- `{ ssr: true }` (default): Component renders on server + client. JS may still load on page load.
+- `{ ssr: false }`: Client-only. JS loads only when component mounts. Use for components that access `window`/`document` directly at module level (e.g., map libraries, browser-only APIs).
 - Components that conditionally check `typeof window !== 'inside useEffect'` are SSR-safe with `ssr: true`.
