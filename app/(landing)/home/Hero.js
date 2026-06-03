@@ -27,14 +27,14 @@ export default function Hero() {
          </div>
 
          <div className="relative z-20 max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 py-24 w-full">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.8fr] gap-10 items-center">
                <motion.div
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8 }}
                   className="text-left"
                >
-                  <h1 className="font-heading font-bold text-3xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight">
+                  <h1 className="font-heading font-bold text-3xl md:text-4xl lg:text-6xl text-white mb-6 leading-tight">
                      Software Development Company <span className="italic font-semibold "> whose mission is  <span /> </span><span className="text-accent">We Build. You Grow</span>
                   </h1>
                   <p className="text-gray-200 font-body text-lg md:text-xl mb-10 max-w-3xl">
