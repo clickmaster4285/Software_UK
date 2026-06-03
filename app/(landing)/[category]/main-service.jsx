@@ -9,65 +9,55 @@ import dynamic from 'next/dynamic';
 import { HeroSection } from '@/components/landing/main-service/hero-section';
 import { ScrollSnakeLine } from '@/components/ui/scroll-snake-line';
 
-// Lazy: default export components
-const ExploreSection = dynamic(() => import('@/components/landing/main-service/ExploreSection'), { ssr: true });
+// Lazy: components with default export
 const PainPointsSolutions = dynamic(() => import('@/components/landing/main-service/PainPointsSolutions'), { ssr: true });
-const TrustedClientsSection = dynamic(() => import('@/components/landing/main-service/TrustedClientsSection'), { ssr: true });
-const AppsSection = dynamic(() => import('@/components/landing/main-service/AppsSection'), { ssr: true });
-const ProcessPage = dynamic(() => import('@/components/landing/main-service/ProcessPage'), { ssr: true });
 const FeaturedInsights = dynamic(() => import('@/components/landing/main-service/FeaturedInsights'), { ssr: true });
-const IndustriesSection = dynamic(() => import('@/components/landing/main-service/industries-section'), { ssr: true });
-const TestimonialsSection = dynamic(() => import('@/components/landing/main-service/TestimonialsSection'), { ssr: true });
 
-// Lazy: named export components — wrap as component functions
+// Lazy: components with both named + default export (default works)
+const TrustedClientsSection = dynamic(() => import('@/components/landing/main-service/TrustedClientsSection'), { ssr: true });
+const ProcessPage = dynamic(() => import('@/components/landing/main-service/ProcessPage'), { ssr: true });
+const FaqSection = dynamic(() => import('@/components/landing/main-service/FaqSection'), { ssr: true });
+
+// Lazy: named export only — wrap as component functions
+const ExploreSection = dynamic(() =>
+  import('@/components/landing/main-service/ExploreSection').then(mod => {
+    const C = mod.ExploreSection; const W = (p) => <C {...p} />; W.displayName = 'ExploreSection'; return W;
+  }), { ssr: true }
+);
+const AppsSection = dynamic(() =>
+  import('@/components/landing/main-service/AppsSection').then(mod => {
+    const C = mod.AppsSection; const W = (p) => <C {...p} />; W.displayName = 'AppsSection'; return W;
+  }), { ssr: true }
+);
+const IndustriesSection = dynamic(() =>
+  import('@/components/landing/main-service/industries-section').then(mod => {
+    const C = mod.IndustriesSection; const W = (p) => <C {...p} />; W.displayName = 'IndustriesSection'; return W;
+  }), { ssr: true }
+);
+const TestimonialsSection = dynamic(() =>
+  import('@/components/landing/main-service/TestimonialsSection').then(mod => {
+    const C = mod.TestimonialsSection; const W = (p) => <C {...p} />; W.displayName = 'TestimonialsSection'; return W;
+  }), { ssr: true }
+);
 const TechStackSection = dynamic(() =>
   import('@/components/landing/main-service/TechStackSection').then(mod => {
-    const Comp = mod.TechStackSection;
-    const Wrapper = (props) => <Comp {...props} />;
-    Wrapper.displayName = 'TechStackSection';
-    return Wrapper;
-  }),
-  { ssr: true }
+    const C = mod.TechStackSection; const W = (p) => <C {...p} />; W.displayName = 'TechStackSection'; return W;
+  }), { ssr: true }
 );
-
 const WhyChooseUs = dynamic(() =>
   import('@/components/landing/main-service/whyUs').then(mod => {
-    const Comp = mod.WhyChooseUs;
-    const Wrapper = (props) => <Comp {...props} />;
-    Wrapper.displayName = 'WhyChooseUs';
-    return Wrapper;
-  }),
-  { ssr: true }
+    const C = mod.WhyChooseUs; const W = (p) => <C {...p} />; W.displayName = 'WhyChooseUs'; return W;
+  }), { ssr: true }
 );
-
 const PricingSection = dynamic(() =>
   import('@/components/landing/main-service/pricing-section').then(mod => {
-    const Comp = mod.PricingSection;
-    const Wrapper = (props) => <Comp {...props} />;
-    Wrapper.displayName = 'PricingSection';
-    return Wrapper;
-  }),
-  { ssr: true }
+    const C = mod.PricingSection; const W = (p) => <C {...p} />; W.displayName = 'PricingSection'; return W;
+  }), { ssr: true }
 );
-
-const FaqSection = dynamic(() =>
-  import('@/components/landing/main-service/FaqSection').then(mod => {
-    const Comp = mod.FaqSection;
-    const Wrapper = (props) => <Comp {...props} />;
-    Wrapper.displayName = 'FaqSection';
-    return Wrapper;
-  }),
-  { ssr: true }
-);
-
 const FinalCTA = dynamic(() =>
   import('@/components/landing/main-service/finalCta').then(mod => {
-    const Comp = mod.FinalCTA;
-    const Wrapper = (props) => <Comp {...props} />;
-    Wrapper.displayName = 'FinalCTA';
-    return Wrapper;
-  }),
-  { ssr: true }
+    const C = mod.FinalCTA; const W = (p) => <C {...p} />; W.displayName = 'FinalCTA'; return W;
+  }), { ssr: true }
 );
 
 export default function ServiceClient({ serviceData }) {

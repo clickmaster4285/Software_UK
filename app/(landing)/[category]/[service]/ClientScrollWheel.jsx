@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { NavigationWheel } from './NavigationWheel';
 
 export function ClientScrollWheel({ tocItems }) {
@@ -8,9 +8,7 @@ export function ClientScrollWheel({ tocItems }) {
   const [scrollDir, setScrollDir] = useState('down');
   const [scrollProgress, setScrollProgress] = useState(0);
   const [wheelTop, setWheelTop] = useState(-360);
-
-  const lenisRef = useRef(null);
-  const rafIdRef = useRef(null);
+  const lastScrollY = useRef(0);
 
   // Map tocItems to sections format expected by NavigationWheel
   const sections = tocItems.map(item => ({
@@ -26,78 +24,54 @@ export function ClientScrollWheel({ tocItems }) {
     return 180;
   };
 
-  useEffect(() => {
-    let lenis;
+  const handleScroll = useCallback(() => {
+    const st = window.scrollY;
+    const vh = window.innerHeight;
+    const maxScroll = document.documentElement.scrollHeight - vh;
 
-    async function initLenis() {
-      const { default: Lenis } = await import('@studio-freight/lenis');
+    // Scroll direction
+    setScrollDir(st > lastScrollY.current ? 'down' : 'up');
+    lastScrollY.current = st;
 
-      lenis = new Lenis({
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        direction: 'vertical',
-        smooth: true,
-      });
+    // Scroll progress (0 to 1)
+    const progress = maxScroll > 0 ? Math.min(st / maxScroll, 1) : 0;
+    setScrollProgress(progress);
 
-      lenisRef.current = lenis;
+    // Wheel position
+    const wheelHeight = getWheelHeight();
+    const NAVBAR_H = 72;
+    const SCROLL_START = 80;
 
-      function raf(time) {
-        lenis.raf(time);
-        rafIdRef.current = requestAnimationFrame(raf);
-      }
-      rafIdRef.current = requestAnimationFrame(raf);
-
-      lenis.on('scroll', ({ scroll, direction, limit }) => {
-        const st = scroll;
-        const vh = window.innerHeight;
-        const dir = direction > 0 ? 'down' : 'up';
-
-        setScrollDir(dir);
-
-        // Calculate scroll progress for wheel rotation (0 to 1)
-        const maxScroll = limit > 0 ? limit : 1; 
-        const progress = Math.min(st / maxScroll, 1);
-        setScrollProgress(progress);
-
-        const wheelHeight = getWheelHeight();
-        const NAVBAR_H = 72;
-        const SCROLL_START = 80;
-
-        if (st < SCROLL_START) {
-          setWheelTop(-wheelHeight);
-        } else {
-          const minTop = NAVBAR_H + 16;
-          const maxTop = vh - wheelHeight - 16;
-          const scrollRange = maxScroll - SCROLL_START;
-          const scrollAmount = Math.max(0, st - SCROLL_START);
-          let topPos = minTop + (scrollAmount / scrollRange) * (maxTop - minTop);
-          topPos = Math.min(maxTop, Math.max(minTop, topPos));
-          setWheelTop(topPos);
-        }
-
-        // Active section detection
-        const sectionElements = tocItems.map(item => ({
-          id: item.id,
-          el: document.getElementById(item.id)
-        })).filter(s => s.el);
-
-        for (let i = sectionElements.length - 1; i >= 0; i--) {
-          const rect = sectionElements[i].el.getBoundingClientRect();
-          if (rect.top <= NAVBAR_H + 100) {
-            setActiveSection(sectionElements[i].id);
-            break;
-          }
-        }
-      });
+    if (st < SCROLL_START) {
+      setWheelTop(-wheelHeight);
+    } else {
+      const minTop = NAVBAR_H + 16;
+      const maxTop = vh - wheelHeight - 16;
+      const scrollRange = maxScroll - SCROLL_START;
+      const scrollAmount = Math.max(0, st - SCROLL_START);
+      let topPos = minTop + (scrollAmount / scrollRange) * (maxTop - minTop);
+      topPos = Math.min(maxTop, Math.max(minTop, topPos));
+      setWheelTop(topPos);
     }
 
-    initLenis();
-
-    return () => {
-      lenis?.destroy();
-      if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
-    };
+    // Active section detection
+    for (let i = tocItems.length - 1; i >= 0; i--) {
+      const el = document.getElementById(tocItems[i].id);
+      if (el) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= NAVBAR_H + 100) {
+          setActiveSection(tocItems[i].id);
+          break;
+        }
+      }
+    }
   }, [tocItems]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // initial call
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [handleScroll]);
 
   return (
     <NavigationWheel
@@ -105,7 +79,7 @@ export function ClientScrollWheel({ tocItems }) {
       activeSection={activeSection}
       scrollDirection={scrollDir}
       wheelTop={wheelTop}
-      lenisRef={lenisRef}
+      lenisRef={{ current: null }}
       scrollProgress={scrollProgress}
       isVisible={wheelTop >= 0}
     />

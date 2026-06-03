@@ -66,16 +66,40 @@ const TechStackSection = dynamic(() =>
 
 ## How to Check Export Type
 
-Before writing a dynamic import, grep the source file to check the export:
+**ALWAYS** verify each component's export before writing the dynamic import. Never assume — many files have both, only named, or only default.
 
 ```bash
-grep "^export" path/to/Component.jsx
+grep "^export " path/to/Component.jsx
 ```
 
-Results:
-- `export default function ComponentName` → use Pattern 1 (simple)
-- `export function ComponentName()` → use Pattern 2 (wrapper required)
-- `export default SomeName;` → use Pattern 1 (simple, it has a default)
+Results and which pattern to use:
+- **Only `export default`** → Pattern 1 (simple `dynamic(() => import(...))`)
+- **Only named `export function`** → Pattern 2 (MUST wrap with `.then()`)
+- **Both `export function` + `export default`** → Either pattern works; Pattern 1 is simpler
+
+### Common Mistake: Assuming Default When Only Named Exists
+
+When dynamically importing many components in bulk (e.g., lazy-loading 10+ sections), it's easy to put them all in the "default export" group without checking. **This causes the exact "Element type is invalid: got: object" error** because `next/dynamic` receives `undefined` for `.default` and passes an empty object `{}` to React.
+
+**Debug approach when build fails with "got: object":**
+1. Note which page URL fails (e.g., `/software-development`)
+2. Read the page component file to find all `dynamic()` calls
+3. For **each** dynamically imported component, grep its source: `grep "^export " path/to/Component.jsx`
+4. Any component that only has named exports but was imported with simple Pattern 1 → change to Pattern 2 wrapping
+
+### Example: Bulk Audit of main-service.jsx
+
+When we had 8 dynamically imported components in `main-service.jsx`:
+- `ExploreSection.jsx` — `export function ExploreSection` only → needed wrapper ❌ was simple
+- `PainPointsSolutions.jsx` — `export default function` only → simple import OK ✓
+- `TrustedClientsSection.jsx` — both named + default → simple import OK ✓
+- `AppsSection.jsx` — `export function AppsSection` only → needed wrapper ❌ was simple
+- `ProcessPage.jsx` — both named + default → simple import OK ✓
+- `FeaturedInsights.jsx` — `export default function` only → simple import OK ✓
+- `industries-section.jsx` — `export function IndustriesSection` only → needed wrapper ❌ was simple
+- `TestimonialsSection.jsx` — `export function TestimonialsSection` only → needed wrapper ❌ was simple
+
+**4 out of 8 were wrong** — all 4 "named export only" components were imported with simple Pattern 1, causing the build to fail with "Element type is invalid: got: object".
 
 ## Batch Implementation Pattern
 
@@ -112,6 +136,21 @@ Common unrelated errors you can ignore if they existed before your changes:
 - `TypeError: Cannot read properties of null (reading 'useContext')` in SmoothScroll/Lenis
 - `ChunkLoadError` for modules you didn't touch
 - Admin page errors when only landing pages were modified
+
+## Pattern 3: Named Export — Direct Return (Also Valid)
+
+An alternative to the wrapper function pattern — directly return the named function:
+
+```js
+// ✅ Also works — returns the function component directly
+const ProcessSection = dynamic(() =>
+  import('@/components/landings/sub-services/ProcessSection').then(mod => mod.ProcessSection)
+);
+```
+
+This works because `mod.ProcessSection` IS already a function component. It's equivalent to Pattern 2 but without the wrapper.
+
+**Difference from Pattern 2:** The wrapper creates a new component (`Wrapper`) that renders `<Comp {...props} />`. The direct return gives `next/dynamic` the raw function. Both are valid React components. The wrapper pattern is more defensive and preserves `displayName`.
 
 ## SSR Behavior
 
