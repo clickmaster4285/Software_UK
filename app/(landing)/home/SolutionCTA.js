@@ -52,7 +52,7 @@ export default function SolutionCTA() {
         aria-hidden
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6">
+      <div className="relative z-10 mx-auto max-w-[96vw] lg:max-w-[90vw] px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -62,11 +62,9 @@ export default function SolutionCTA() {
         >
           <div className="max-w-2xl">
             <div className="mb-4 inline-flex items-center gap-2">
-              <span className="h-0.5 w-8 rounded-full bg-accent" />
-              <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent">
+              <span className="text-base font-bold uppercase tracking-[0.2em] text-accent">
                 Our Recent Work
               </span>
-              <span className="h-0.5 w-8 rounded-full bg-accent" />
             </div>
             <h2 className="font-heading text-3xl font-bold tracking-tight text-primary md:text-5xl">
               Software Solutions That{" "}

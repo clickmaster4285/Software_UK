@@ -63,7 +63,7 @@ export function ExploreSection({ serviceData }) {
       className="bg-transparent py-20 relative overflow-hidden"
       aria-labelledby="explore-heading"
     >
-      <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="max-w-3xl mb-16">
           <motion.div

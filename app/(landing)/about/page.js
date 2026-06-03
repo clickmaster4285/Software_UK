@@ -160,12 +160,12 @@ export default function AboutPage() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto max-w-400 px-6 py-20">
+        <div className="relative z-10 container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 py-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-400 mx-auto text-center"
+            className="max-w-[96vw] lg:max-w-[90vw] mx-auto text-center"
           >
             {/* Breadcrumb */}
             <nav className="flex items-center justify-center gap-2 text-sm text-white mb-8">
@@ -178,16 +178,16 @@ export default function AboutPage() {
 
               {/* "Building the Future of" — crayon texture through the letters */}
               <span className="text-white block"
-                // style={{
-                //   backgroundImage: 'url(/assets/white-crayon-removebg-preview.webp)',
-                //   backgroundSize: 'contain',
-                //   backgroundPosition: 'right',
-                //   WebkitBackgroundClip: 'text',
-                //   WebkitTextFillColor: 'transparent',
-                //   backgroundClip: 'text',
-                //   color: 'transparent',
-                //   display: 'block',
-                // }}
+              // style={{
+              //   backgroundImage: 'url(/assets/white-crayon-removebg-preview.webp)',
+              //   backgroundSize: 'contain',
+              //   backgroundPosition: 'right',
+              //   WebkitBackgroundClip: 'text',
+              //   WebkitTextFillColor: 'transparent',
+              //   backgroundClip: 'text',
+              //   color: 'transparent',
+              //   display: 'block',
+              // }}
               >
                 Building the Future of
               </span>
@@ -459,7 +459,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-        <Services />
+      <Services />
 
       {/* ── Values Section ── */}
       <section className="py-20 bg-surface relative overflow-hidden">
@@ -468,7 +468,7 @@ export default function AboutPage() {
           <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-[100px]" />
         </div>
 
-        <div className="container mx-auto max-w-400 px-6 relative z-10">
+        <div className="container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

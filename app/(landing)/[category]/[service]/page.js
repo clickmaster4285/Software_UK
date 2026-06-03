@@ -257,7 +257,7 @@ export default async function ServiceByCategoryPage({ params }) {
             <CeoVision />
 
             {page.tables && page.tables.map((table) => (
-              <section key={table.title} id={slugify(table.title)} className="mx-auto max-w-400 scroll-mt-20 pt-16">
+              <section key={table.title} id={slugify(table.title)} className="mx-auto max-w-[96vw] lg:max-w-[90vw] scroll-mt-20 pt-16">
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-1 rounded-full bg-primary" />
                   <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
@@ -300,7 +300,7 @@ export default async function ServiceByCategoryPage({ params }) {
               <TestimonialsSection />
             </div>
 
-            <div id="case-study" className="scroll-mt-20 mx-auto max-w-400">
+            <div id="case-study" className="scroll-mt-20 mx-auto max-w-[96vw] lg:max-w-[90vw]">
               <div className="w-full flex flex-col mt-4">
                 <div className="flex items-center gap-3 px-8 ">
                   <div className="h-8 sm:h-10 w-1 rounded-full bg-accent" />

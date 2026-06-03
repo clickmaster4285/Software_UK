@@ -63,7 +63,7 @@ export const ServicesSection = ({ serviceName, servicesCards }) => {
   const count = servicesCards.length;
 
   return (
-    <section id="our-services" className="scroll-mt-24 pt-4 md:pt-8 mx-auto max-w-400">
+    <section id="our-services" className="scroll-mt-24 pt-4 md:pt-8 mx-auto max-w-[96vw] lg:max-w-[90vw]">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between sm:gap-8">
         <div className="max-w-3xl">
           <p className="mb-3 inline-flex items-center rounded-full border border-border bg-surface px-3 py-1 text-[11px] font-medium uppercase tracking-[0.08em] text-accent">

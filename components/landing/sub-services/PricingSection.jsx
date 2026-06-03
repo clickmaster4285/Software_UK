@@ -103,7 +103,7 @@ export function PricingSection({ serviceName, pricingTiers }) {
 
         buttonText: isCustom ? "Contact Us" : "Get Started",
 
-        onButtonClick: () => {        },
+        onButtonClick: () => { },
       };
     })
     .filter(Boolean); // remove nulls safely
@@ -112,7 +112,7 @@ export function PricingSection({ serviceName, pricingTiers }) {
     <motion.section
       id="pricing"
       ref={sectionRef}
-      className="relative mx-auto max-w-400 overflow-hidden"
+      className="relative mx-auto max-w-[96vw] lg:max-w-[90vw] overflow-hidden"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

@@ -68,7 +68,7 @@ export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
   const blob2Y = useTransform(scrollYProgress, [0, 1], [100, -100]);
 
   return (
-    <div ref={containerRef} className="relative overflow-hidden mx-auto max-w-400">
+    <div ref={containerRef} className="relative overflow-hidden mx-auto max-w-[96vw] lg:max-w-[90vw]">
       {isLoading ? (
         <ParallaxSkeleton />
       ) : !caseStudies || !caseStudies.length ? (
@@ -100,7 +100,7 @@ export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
 
           {/* Load More Button */}
           {caseStudies && caseStudies.length > visibleCount && (
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="flex justify-center py-8 sm:py-12"

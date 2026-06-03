@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { iconMap } from '@/data/main-services';
-import {  Building2 } from "lucide-react";
+import { Building2 } from "lucide-react";
 
 const defaultClients = [
   { name: "TechCorp", industry: "Manufacturing", icon: 'Cpu' },
@@ -63,7 +63,7 @@ export function TrustedClientsSection({ clients = defaultClients, title, subtitl
 
   return (
     <section className="bg-transparent py-20 overflow-hidden">
-      <div className="max-w-400 mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <motion.div
@@ -84,9 +84,9 @@ export function TrustedClientsSection({ clients = defaultClients, title, subtitl
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6"
           >
-            Leading Brands in {" "} 
+            Leading Brands in {" "}
             <span className="text-accent">
-            {title || "Trusted by Visionary Brands"}
+              {title || "Trusted by Visionary Brands"}
             </span>
           </motion.h3>
 

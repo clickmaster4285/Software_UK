@@ -96,7 +96,7 @@ export const FAQSection = ({ faqs }) => {
   );
 
   return (
-    <section id="faq" className="relative scroll-mt-24 py-16 md:py-24 mx-auto max-w-400 overflow-hidden">
+    <section id="faq" className="relative scroll-mt-24 py-16 md:py-24 mx-auto max-w-[96vw] lg:max-w-[90vw] overflow-hidden">
       {/* Background Decorations */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
         <div className="absolute top-1/4 -right-16 h-72 w-72 rounded-full bg-accent/5 blur-[100px]" />
@@ -128,10 +128,10 @@ export const FAQSection = ({ faqs }) => {
         {columns.map((columnFaqs, colIdx) => (
           <div key={colIdx} className="flex flex-col gap-4">
             {columnFaqs.map((faq, index) => (
-              <FAQItem 
-                key={index} 
-                faq={faq} 
-                actualIndex={colIdx === 0 ? index : index + midIndex} 
+              <FAQItem
+                key={index}
+                faq={faq}
+                actualIndex={colIdx === 0 ? index : index + midIndex}
               />
             ))}
           </div>

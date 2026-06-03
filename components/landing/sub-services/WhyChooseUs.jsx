@@ -225,11 +225,11 @@ export function WhyChooseUs({ slug, differentiators }) {
 
   const comparisonRows = isComparison
     ? differentiators
-        .map((diff) => ({
-          ...diff,
-          parts: parseDescription(diff.description),
-        }))
-        .filter((diff) => diff.parts)
+      .map((diff) => ({
+        ...diff,
+        parts: parseDescription(diff.description),
+      }))
+      .filter((diff) => diff.parts)
     : [];
 
   const standardItems = !isComparison ? differentiators : [];
@@ -237,7 +237,7 @@ export function WhyChooseUs({ slug, differentiators }) {
   return (
     <section
       id="why-choose-us"
-      className="relative mx-auto max-w-400 scroll-mt-24 overflow-hidden py-4 md:py-8"
+      className="relative mx-auto max-w-[96vw] lg:max-w-[90vw] scroll-mt-24 overflow-hidden py-4 md:py-8"
       aria-labelledby="why-choose-heading"
     >
       <div
@@ -337,22 +337,22 @@ export function WhyChooseUs({ slug, differentiators }) {
         >
           {isComparison
             ? comparisonRows.map((row, index) => (
-                <ComparisonRow
-                  key={row.feature}
-                  feature={row.feature}
-                  parts={row.parts}
-                  columns={columns}
-                  index={index}
-                />
-              ))
+              <ComparisonRow
+                key={row.feature}
+                feature={row.feature}
+                parts={row.parts}
+                columns={columns}
+                index={index}
+              />
+            ))
             : standardItems.map((diff, index) => (
-                <BenefitCard
-                  key={diff.feature}
-                  feature={diff.feature}
-                  description={diff.description}
-                  index={index}
-                />
-              ))}
+              <BenefitCard
+                key={diff.feature}
+                feature={diff.feature}
+                description={diff.description}
+                index={index}
+              />
+            ))}
         </motion.div>
 
         <motion.div

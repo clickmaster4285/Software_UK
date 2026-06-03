@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 export default function About() {
    return (
       <section className="py-24 bg-surface overflow-hidden">
-         <div className="max-w-400 mx-auto px-6">
+         <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-               <motion.div 
+               <motion.div
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8 }}
@@ -32,7 +32,7 @@ export default function About() {
                         As a full-service software house, we handle everything from discovery and UI/UX design to backend development, QA testing, cloud deployment, and long-term maintenance.
                      </p>
                   </div>
-                  
+
                   <div className="flex flex-wrap gap-4 mt-10">
                      <Link
                         href="/contact"
@@ -49,7 +49,7 @@ export default function About() {
                   </div>
                </motion.div>
 
-               <motion.div 
+               <motion.div
                   initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
                   whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
                   transition={{ duration: 1, ease: "easeOut" }}
@@ -58,16 +58,16 @@ export default function About() {
                >
                   {/* Decorative background circle */}
                   <div className="absolute inset-0 bg-accent/10 blur-3xl rounded-full transform scale-110" />
-                  
-                  <motion.img 
+
+                  <motion.img
                      animate={{ y: [0, -15, 0] }}
                      transition={{
                         duration: 5,
                         repeat: Infinity,
                         ease: "easeInOut"
                      }}
-                     src="/landing/3d-illustration-man-flying.webp" 
-                     alt="Business Growth Illustration" 
+                     src="/landing/3d-illustration-man-flying.webp"
+                     alt="Business Growth Illustration"
                      className="relative z-10 w-full max-w-xl h-auto drop-shadow-2xl"
                   />
                </motion.div>

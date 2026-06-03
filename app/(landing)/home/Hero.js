@@ -26,7 +26,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-black/60 z-10" />
          </div>
 
-         <div className="relative z-20 max-w-400 mx-auto px-6 py-24 w-full">
+         <div className="relative z-20 max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 py-24 w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                <motion.div
                   initial={{ opacity: 0, x: -50 }}
@@ -35,10 +35,10 @@ export default function Hero() {
                   className="text-left"
                >
                   <h1 className="font-heading font-bold text-3xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight">
-                     Software Development Company <span className="italic font-semibold "> whose mission is  <span/> </span><span className="text-accent">We Build. You Grow</span>
+                     Software Development Company <span className="italic font-semibold "> whose mission is  <span /> </span><span className="text-accent">We Build. You Grow</span>
                   </h1>
                   <p className="text-gray-200 font-body text-lg md:text-xl mb-10 max-w-3xl">
-                     Creating the future of business. We’re a Software development Company delivering bespoke web, mobile, SaaS, and AI-powered systems including AI monitoring solutions powering a global market 
+                     Creating the future of business. We’re a Software development Company delivering bespoke web, mobile, SaaS, and AI-powered systems including AI monitoring solutions powering a global market
                   </p>
                   <div className="flex flex-wrap gap-4 mb-10">
                      <StrategyCallModal
@@ -59,12 +59,12 @@ export default function Hero() {
                      <div className="flex -space-x-3">
                         {[1, 2, 3, 4].map((i) => (
                            <div key={i} className="relative w-10 h-10 rounded-full border-2 border-white bg-gray-300 overflow-hidden">
-                              <Image 
-                                src={`https://i.pravatar.cc/100?img=${i + 10}`} 
-                                alt="client" 
-                                fill
-                                sizes="40px"
-                                className="object-cover"
+                              <Image
+                                 src={`https://i.pravatar.cc/100?img=${i + 10}`}
+                                 alt="client"
+                                 fill
+                                 sizes="40px"
+                                 className="object-cover"
                               />
                            </div>
                         ))}
@@ -93,14 +93,14 @@ export default function Hero() {
                      }}
                      className="relative z-10 w-full max-w-lg h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
                   >
-                    <Image
-                       src="/landing/hero-home-image-1.webp"
-                       alt="Software Development Specialist"
-                       width={600}
-                       height={800}
-                       priority
-                       className="w-full h-auto"
-                    />
+                     <Image
+                        src="/landing/hero-home-image-1.webp"
+                        alt="Software Development Specialist"
+                        width={600}
+                        height={800}
+                        priority
+                        className="w-full h-auto"
+                     />
                   </motion.div>
                </motion.div>
             </div>

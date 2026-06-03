@@ -19,25 +19,25 @@ export default function MidCTA() {
 
    return (
       <section ref={containerRef} className="py-12 relative bg-white overflow-hidden">
-         <div className="max-w-400 mx-auto px-6 relative z-10">
-            <motion.div 
+         <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 relative z-10">
+            <motion.div
                style={{ scale, opacity, y }}
                className="relative rounded-[4rem] bg-primary p-12 md:p-24 text-center overflow-hidden shadow-2xl shadow-primary/30"
             >
                {/* Background Decorative Glows */}
                <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-[100px] -mr-32 -mt-32 pointer-events-none" />
                <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-[100px] -ml-32 -mb-32 pointer-events-none" />
-               
+
                {/* Floating Elements (Dark Mode Optimized) */}
-               <motion.div 
+               <motion.div
                   animate={{ y: [0, -20, 0], rotate: [0, 15, 0] }}
                   transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                   className="absolute top-16 left-16 w-16 h-16 bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 flex items-center justify-center text-accent hidden lg:flex"
                >
                   <Code className="w-8 h-8" />
                </motion.div>
-               
-               <motion.div 
+
+               <motion.div
                   animate={{ y: [0, 20, 0], rotate: [0, -15, 0] }}
                   transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
                   className="absolute bottom-16 right-16 w-20 h-20 bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 flex items-center justify-center text-white/40 hidden lg:flex"
@@ -59,9 +59,9 @@ export default function MidCTA() {
                      Building the Future of <br />
                      <span className="text-accent italic font-serif">Digital Innovation.</span>
                   </h2>
-                  
+
                   <p className="text-white/60 font-body text-lg md:text-xl mb-14 max-w-2xl mx-auto leading-relaxed">
-                     Don&apos;t just launch software. Deploy a competitive advantage. 
+                     Don&apos;t just launch software. Deploy a competitive advantage.
                      Our high-performance systems are built to scale with your ambition.
                   </p>
 
