@@ -1,7 +1,8 @@
 /**
  * Conversion Script: Case Studies DOCX → Data File
  *
- * Parses all 280 case study .docx files and generates data/case-studies.js
+ * Content-based extraction — finds tables by their content, not position.
+ * Works regardless of how many extra tables (Related Pages, CTA, etc.) exist.
  *
  * Usage: node scripts/convert-case-studies.js
  */
@@ -13,7 +14,8 @@ const mammoth = require('mammoth');
 const CASE_STUDIES_DIR = path.join(__dirname, '..', 'Clickmasterssoftwaredevelopmentcompany.co.uk', 'Case-Study');
 const OUTPUT_FILE = path.join(__dirname, '..', 'data', 'case-studies.js');
 
-// Helper to extract text from HTML
+// ─── Helpers ────────────────────────────────────────────────────────
+
 function stripHtml(html) {
   return html
     .replace(/<[^>]*>/g, ' ')
@@ -21,224 +23,213 @@ function stripHtml(html) {
     .trim();
 }
 
-// Extract meta fields from first table
-function extractMeta(html) {
-  const meta = {};
-
-  // Extract META TITLE - look in the first meta table specifically
-  const firstTableMatch = html.match(/<table>[\s\S]*?<\/table>/);
-  if (firstTableMatch) {
-    const tableContent = firstTableMatch[0];
-
-    const titleMatch = tableContent.match(/META TITLE:\s*([^\n<]+)/i);
-    if (titleMatch) meta.metaTitle = titleMatch[1].trim();
-
-    const descMatch = tableContent.match(/META DESC:\s*([^\n<]+)/i);
-    if (descMatch) meta.metaDesc = descMatch[1].trim();
-
-    const slugMatch = tableContent.match(/SLUG:\s*([^\n<]+)/i);
-    if (slugMatch) meta.slug = slugMatch[1].trim();
+// Find a table whose stripped text matches a regex. Returns { text, raw, index } or null.
+function findTable(tables, regex) {
+  for (let i = 0; i < tables.length; i++) {
+    const text = stripHtml(tables[i]);
+    if (regex.test(text)) {
+      return { text, raw: tables[i], index: i };
+    }
   }
+  return null;
+}
+
+// Get the byte-position of a table in the original HTML
+function getTablePosition(html, tableRaw) {
+  const idx = html.indexOf(tableRaw);
+  if (idx === -1) return null;
+  return { start: idx, end: idx + tableRaw.length };
+}
+
+// Extract text between two tables (by their raw HTML)
+function extractBetween(html, afterTableRaw, beforeTableRaw) {
+  const afterEnd = html.indexOf(afterTableRaw);
+  const beforeStart = html.indexOf(beforeTableRaw);
+  if (afterEnd === -1 || beforeStart === -1 || afterEnd >= beforeStart) return '';
+  const chunk = html.substring(afterEnd + afterTableRaw.length, beforeStart);
+  return stripHtml(chunk).trim();
+}
+
+// ─── Extraction Functions ───────────────────────────────────────────
+
+function extractMeta(tables) {
+  const meta = {};
+  const t = findTable(tables, /META TITLE:/i);
+  if (!t) return meta;
+
+  const titleMatch = t.text.match(/META TITLE:\s*([\s\S]*?)(?=META DESC:|$)/i);
+  if (titleMatch) meta.metaTitle = titleMatch[1].trim();
+
+  const descMatch = t.text.match(/META DESC:\s*([\s\S]*?)(?=SLUG:|$)/i);
+  if (descMatch) meta.metaDesc = descMatch[1].trim();
+
+  // SLUG is followed by </p> or </td> — stop there
+  const slugMatch = t.text.match(/SLUG:\s*([a-z0-9\-\/]+)/i);
+  if (slugMatch) meta.slug = slugMatch[1].trim();
 
   return meta;
 }
 
-// Extract header info (last updated, reading time, etc.)
-function extractHeader(html) {
+function extractHeader(tables) {
   const header = {};
+  const t = findTable(tables, /Last updated:/i);
+  if (!t) return header;
 
-  // Extract "Last updated: Month Year"
-  const lastUpdatedMatch = html.match(/Last updated:\s*([^|]+)/i);
+  const lastUpdatedMatch = t.text.match(/Last updated:\s*([^|]+?)(?=\s*\||$)/i);
   if (lastUpdatedMatch) header.lastUpdated = lastUpdatedMatch[1].trim();
 
-  // Extract "Reading time: X min"
-  const readingTimeMatch = html.match(/Reading time:\s*(\d+)\s*min/i);
+  const readingTimeMatch = t.text.match(/Reading time:\s*(\d+)\s*min/i);
   if (readingTimeMatch) header.readingTime = parseInt(readingTimeMatch[1]);
 
-  // Extract "Written by: ..."
-  const writtenByMatch = html.match(/Written by:\s*([^|]+)/i);
+  const writtenByMatch = t.text.match(/Written by:\s*([^|]+?)(?=\s*\||$)/i);
   if (writtenByMatch) header.writtenBy = writtenByMatch[1].trim();
 
-  // Extract "Reviewed by: ..."
-  const reviewedByMatch = html.match(/Reviewed by:\s*([^|]+)/i);
+  const reviewedByMatch = t.text.match(/Reviewed by:\s*([^|]+?)(?=\s*\||$)/i);
   if (reviewedByMatch) header.reviewedBy = reviewedByMatch[1].trim();
 
   return header;
 }
 
-// Extract title from H1
 function extractTitle(html) {
   const h1Match = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
-  if (h1Match) {
-    return stripHtml(h1Match[1]);
-  }
+  if (h1Match) return stripHtml(h1Match[1]);
   return '';
 }
 
-// Extract badges (sector, country, status, contract) from the badges table
-function extractBadges(html) {
-  const badges = {
-    sector: '',
-    country: '',
-    compliance: '',
-    status: '',
-    contract: ''
-  };
+function extractBadges(tables) {
+  const badges = { sector: '', country: '', status: '', contract: '' };
+  // The badges table contains sector emoji + country emoji + status + contract
+  const t = findTable(tables, /[🏭🏥🚗🛒💊🏛️💰🎓📦🏗️🌾🔧🎮📱🚀]/);
+  if (!t) return badges;
 
-  // Find tables that contain sector badges (with emojis like 🏭)
-  const tables = html.match(/<table>[\s\S]*?<\/table>/gi) || [];
+  const text = t.text;
 
-  for (const table of tables) {
-    const tableText = stripHtml(table);
+  // Sector: text after sector emoji, before country emoji or pipe
+  const sectorMatch = text.match(/[🏭🏥🚗🛒💊🏛️💰🎓📦🏗️🌾🔧🎮📱🚀]\s*([^|🇬🇧🇺🇸🇩🇪🇫🇷🇪🇸🇮🇪🇦🇺🇨🇦]+)/);
+  if (sectorMatch) badges.sector = sectorMatch[1].replace(/\|.*/, '').trim();
 
-    // Look for table with sector emoji pattern
-    if (tableText.includes('🏭') || tableText.includes('🏥') || tableText.includes('🚗') ||
-        tableText.includes('🇬🇧') || tableText.includes('🇺🇸')) {
+  // Country: text after country flag emoji
+  const countryMatch = text.match(/[🇬🇧🇺🇸🇩🇪🇫🇷🇪🇸🇮🇪🇦🇺🇨🇦]\s*([A-Za-z\s]+?)(?=\s*[✅⚠️⏳📋]|$)/);
+  if (countryMatch) badges.country = countryMatch[1].trim();
 
-      // Extract sector - look for text after sector emoji
-      const sectorMatch = table.match(/🏭\s*([^|<]+)|🏥\s*([^|<]+)|🚗\s*([^|<]+)|🛒\s*([^|<]+)|💊\s*([^|<]+)|🏛️\s*([^|<]+)|💰\s*([^|<]+)|🎓\s*([^|<]+)|📦\s*([^|<]+)|🏗️\s*([^|<]+)|🌾\s*([^|<]+)|🔧\s*([^|<]+)|🎮\s*([^|<]+)|📱\s*([^|<]+)|🚀\s*([^|<]+)/);
-      if (sectorMatch) {
-        badges.sector = (sectorMatch[1] || sectorMatch[2] || sectorMatch[3] || sectorMatch[4] || sectorMatch[5] ||
-                         sectorMatch[6] || sectorMatch[7] || sectorMatch[8] || sectorMatch[9] || sectorMatch[10] ||
-                         sectorMatch[11] || sectorMatch[12] || sectorMatch[13] || sectorMatch[14] || sectorMatch[15]).trim();
-      }
+  // Status: text after status emoji
+  const statusMatch = text.match(/[✅⚠️⏳]\s*([A-Za-z\s]+?)(?=\s*[📋]|$)/);
+  if (statusMatch) badges.status = statusMatch[1].trim();
 
-      // Extract country
-      const countryMatch = table.match(/🇬🇧\s*([^|<]+)|🇺🇸\s*([^|<]+)|🇩🇪\s*([^|<]+)|🇫🇷\s*([^|<]+)|🇪🇸\s*([^|<]+)/);
-      if (countryMatch) {
-        badges.country = (countryMatch[1] || countryMatch[2] || countryMatch[3] || countryMatch[4] || countryMatch[5]).trim();
-      }
-
-      // Extract status
-      const statusMatch = table.match(/✅\s*([^|<]+)|⚠️\s*([^|<]+)|⏳\s*([^|<]+)/);
-      if (statusMatch) {
-        badges.status = (statusMatch[1] || statusMatch[2] || statusMatch[3]).trim();
-      }
-
-      // Extract contract type
-      const contractMatch = table.match(/📋\s*([^|<]+)/);
-      if (contractMatch) badges.contract = contractMatch[1].trim();
-
-      // Look for compliance (💷 emoji)
-      const complianceMatch = table.match(/💷\s*([^|<]+)/);
-      if (complianceMatch) badges.compliance = complianceMatch[1].trim();
-
-      break;
-    }
-  }
+  // Contract: text after 📋 emoji
+  const contractMatch = text.match(/📋\s*(.+)/);
+  if (contractMatch) badges.contract = contractMatch[1].trim();
 
   return badges;
 }
 
-// Extract tech stack from second table
-function extractTechStack(html) {
-  const techStack = {
-    technology: '',
-    compliance: ''
-  };
+function extractTechAndCompliance(tables) {
+  const result = { technologies: [], compliance: '' };
+  // The tech table contains "Sector:" and "Tech:" and "Compliance:"
+  const t = findTable(tables, /Tech:\s/i);
+  if (!t) return result;
 
-  // Look for the technology table
-  const techMatch = html.match(/Technology:\s*([^\n<]+)/i);
-  if (techMatch) techStack.technology = techMatch[1].trim();
+  const techMatch = t.text.match(/Tech:\s*([^|]+)/i);
+  if (techMatch) {
+    result.technologies = techMatch[1].split(',').map(s => s.trim()).filter(Boolean);
+  }
 
-  const complianceMatch = html.match(/Compliance:\s*([^\n<]+)/i);
-  if (complianceMatch) techStack.compliance = complianceMatch[1].trim();
+  const complianceMatch = t.text.match(/Compliance:\s*(.+)/i);
+  if (complianceMatch) result.compliance = complianceMatch[1].trim();
 
-  return techStack;
+  return result;
 }
 
-// Extract sections: Challenge, Approach, Results
-function extractSections(html) {
-  const sections = {
-    challenge: '',
-    approach: '',
-    results: ''
-  };
+function extractSections(html, tables) {
+  const sections = { challenge: '', approach: '', results: '' };
 
-  // Extract The Challenge section
-  const challengeMatch = html.match(/<strong>The Challenge[\s\S]*?<\/strong>([\s\S]*?)(?=<strong>Our Approach|<table>|$)/i);
-  if (challengeMatch) sections.challenge = stripHtml(challengeMatch[1]);
+  const challengeTable = findTable(tables, /The Challenge/i);
+  const approachTable = findTable(tables, /Our Approach/i);
+  const resultTable = findTable(tables, /The Result/i);
 
-  // Extract Our Approach section
-  const approachMatch = html.match(/<strong>Our Approach[\s\S]*?<\/strong>([\s\S]*?)(?=<strong>The Result|<table>|$)/i);
-  if (approachMatch) sections.approach = stripHtml(approachMatch[1]);
+  if (challengeTable && approachTable) {
+    sections.challenge = extractBetween(html, challengeTable.raw, approachTable.raw);
+  }
 
-  // Extract The Result section
-  const resultsMatch = html.match(/<strong>The Result[\s\S]*?<\/strong>([\s\S]*?)(?=<blockquote|<table>|$)/i);
-  if (resultsMatch) sections.results = stripHtml(resultsMatch[1]);
+  if (approachTable && resultTable) {
+    sections.approach = extractBetween(html, approachTable.raw, resultTable.raw);
+  }
+
+  // Results = from after "The Result" table until the next table that contains a quote (has " and is long)
+  // or the "Category Details" table
+  if (resultTable) {
+    const resultPos = getTablePosition(html, resultTable.raw);
+    if (resultPos) {
+      // Find the next table after resultTable that is either the quote or Category Details
+      let nextBoundary = null;
+      for (let i = 0; i < tables.length; i++) {
+        const pos = getTablePosition(html, tables[i]);
+        if (pos && pos.start > resultPos.end) {
+          const text = stripHtml(tables[i]);
+          // Stop at Category Details, Related Pages, or CTA table
+          if (/Category Details/i.test(text) || /Related Pages/i.test(text) || /Build Something Similar/i.test(text) || /Article\s*\|/i.test(text)) {
+            nextBoundary = pos.start;
+            break;
+          }
+          // Also stop at quote table (contains " and is long, or starts with ")
+          if ((text.includes('"') && text.length > 100) || text.startsWith('"')) {
+            nextBoundary = pos.start;
+            break;
+          }
+        }
+      }
+      if (nextBoundary) {
+        const chunk = html.substring(resultPos.end, nextBoundary);
+        sections.results = stripHtml(chunk).trim();
+      }
+    }
+  }
 
   return sections;
 }
 
-// Extract client quote
-function extractQuote(html) {
-  const blockquoteMatch = html.match(/<blockquote[^>]*>([\s\S]*?)<\/blockquote>/i);
-  if (blockquoteMatch) {
-    return stripHtml(blockquoteMatch[1]);
+function extractQuote(tables) {
+  // Quote table: contains " and is typically a long block of text
+  const t = findTable(tables, /^["\s].*["\s]$/);
+  if (t) return t.text.replace(/^["\s]+|["\s]+$/g, '').trim();
+
+  // Fallback: find any table with a long quote-like text
+  for (let i = 0; i < tables.length; i++) {
+    const text = stripHtml(tables[i]);
+    if (text.includes('"') && text.length > 100 && !/Category Details/i.test(text)) {
+      return text.replace(/^["\s]+|["\s]+$/g, '').trim();
+    }
   }
   return '';
 }
 
-// Extract final tech table details
-function extractFinalTechTable(html) {
-  const details = {
-    technologies: [],
-    complianceAchieved: '',
-    deliveryModel: '',
-    timeline: '',
-    ipOwnership: ''
-  };
+function extractFinalDetails(tables) {
+  const details = { technologies: [], compliance: '', contract: '', ipOwnership: '' };
+  const t = findTable(tables, /Category Details/i);
+  if (!t) return details;
 
-  // Look for the final table with tech stack details
-  // This is in the last table with categories like "Technologies Used", "Compliance Achieved", etc.
-  const tables = html.match(/<table[\s\S]*?<\/table>/gi) || [];
+  let content = t.text.replace(/^Category Details\s*/i, '');
 
-  for (const table of tables) {
-    const tableText = stripHtml(table);
-    if (tableText.includes('Technologies Used') && tableText.includes('Compliance Achieved')) {
-      // Extract technologies
-      const techMatch = tableText.match(/Technologies Used[\s\S]*?(Compliance Achieved|Delivery Model)/i);
-      if (techMatch) {
-        const techStr = techMatch[0].replace('Technologies Used', '').trim();
-        details.technologies = techStr.split(/[,;]/).map(t => t.trim()).filter(t => t);
-      }
+  const techMatch = content.match(/Technologies\s+(.+?)\s+Compliance\s+/i);
+  if (techMatch) details.technologies = techMatch[1].split(',').map(s => s.trim()).filter(Boolean);
 
-      // Extract compliance
-      const compMatch = tableText.match(/Compliance Achieved[\s\S]*?(Delivery Model|Timeline)/i);
-      if (compMatch) {
-        details.complianceAchieved = compMatch[0].replace('Compliance Achieved', '').trim();
-      }
+  const compMatch = content.match(/Compliance\s+(.+?)\s+Contract\s+/i);
+  if (compMatch) details.compliance = compMatch[1].trim();
 
-      // Extract delivery model
-      const deliveryMatch = tableText.match(/Delivery Model[\s\S]*?(Timeline|IP Ownership)/i);
-      if (deliveryMatch) {
-        details.deliveryModel = deliveryMatch[0].replace('Delivery Model', '').trim();
-      }
+  const contractMatch = content.match(/Contract\s+(.+?)\s+IP\s+/i);
+  if (contractMatch) details.contract = contractMatch[1].trim();
 
-      // Extract timeline
-      const timelineMatch = tableText.match(/Timeline[\s\S]*?(IP Ownership)/i);
-      if (timelineMatch) {
-        details.timeline = timelineMatch[0].replace('Timeline', '').trim();
-      }
-
-      // Extract IP ownership
-      const ipMatch = tableText.match(/IP Ownership[\s\S]*/i);
-      if (ipMatch) {
-        details.ipOwnership = ipMatch[0].replace('IP Ownership', '').trim();
-      }
-
-      break;
-    }
-  }
+  const ipMatch = content.match(/IP\s+(.+)/i);
+  if (ipMatch) details.ipOwnership = ipMatch[1].trim();
 
   return details;
 }
 
-// Main conversion function
-async function convertCaseStudies() {
-  console.log('Starting case studies conversion...\n');
+// ─── Main ───────────────────────────────────────────────────────────
 
-  // Get all docx files
+async function convertCaseStudies() {
+  console.log('Starting case studies conversion (content-based extraction)...\n');
+
   const files = fs.readdirSync(CASE_STUDIES_DIR).filter(f => f.endsWith('.docx'));
   console.log(`Found ${files.length} case study files\n`);
 
@@ -250,25 +241,22 @@ async function convertCaseStudies() {
     const filePath = path.join(CASE_STUDIES_DIR, file);
 
     try {
-      // Extract P number from filename
       const pNumberMatch = file.match(/P(\d+)_/);
       const pNumber = pNumberMatch ? `P${pNumberMatch[1]}` : '';
 
-      // Convert docx to HTML
       const result = await mammoth.convertToHtml({ path: filePath });
       const html = result.value;
+      const tables = html.match(/<table[\s\S]*?<\/table>/gi) || [];
 
-      // Extract all fields
-      const meta = extractMeta(html);
-      const header = extractHeader(html);
+      const meta = extractMeta(tables);
+      const header = extractHeader(tables);
       const title = extractTitle(html);
-      const badges = extractBadges(html);
-      const techStack = extractTechStack(html);
-      const sections = extractSections(html);
-      const quote = extractQuote(html);
-      const finalTech = extractFinalTechTable(html);
+      const badges = extractBadges(tables);
+      const techCompliance = extractTechAndCompliance(tables);
+      const sections = extractSections(html, tables);
+      const quote = extractQuote(tables);
+      const finalDetails = extractFinalDetails(tables);
 
-      // Build case study object
       const caseStudy = {
         id: pNumber,
         slug: meta.slug ? meta.slug.replace(/^\/case-studies\//, '').replace(/\/$/, '') : '',
@@ -278,60 +266,87 @@ async function convertCaseStudies() {
         sector: badges.sector || '',
         country: badges.country || '',
         status: badges.status || '',
-        contract: badges.contract || '',
-        technology: techStack.technology || finalTech.technologies.join(', ') || '',
-        compliance: techStack.compliance || finalTech.complianceAchieved || '',
+        contract: badges.contract || finalDetails.contract || '',
+        technologies: techCompliance.technologies.length > 0 ? techCompliance.technologies : finalDetails.technologies,
+        technology: (techCompliance.technologies.length > 0 ? techCompliance.technologies : finalDetails.technologies).join(', '),
+        compliance: techCompliance.compliance || finalDetails.compliance || '',
+        complianceAchieved: finalDetails.compliance || '',
         challenge: sections.challenge || '',
         approach: sections.approach || '',
         results: sections.results || '',
         clientQuote: quote || '',
-        technologies: finalTech.technologies,
-        complianceAchieved: finalTech.complianceAchieved,
-        deliveryModel: finalTech.deliveryModel,
-        timeline: finalTech.timeline,
-        ipOwnership: finalTech.ipOwnership,
+        deliveryModel: '',
+        timeline: '',
+        ipOwnership: finalDetails.ipOwnership || '',
         lastUpdated: header.lastUpdated || '',
         readingTime: header.readingTime || 0,
-        writtenBy: header.writtenBy || '',
-        reviewedBy: header.reviewedBy || ''
+        writtenBy: (header.writtenBy || '').replace(/<[^>]*>/g, '').trim(),
+        reviewedBy: (header.reviewedBy || '').replace(/<[^>]*>/g, '').trim(),
       };
 
       caseStudies.push(caseStudy);
 
       if ((i + 1) % 20 === 0) {
-        console.log(`Processed ${i + 1}/${files.length} files...`);
+        console.log(`  Processed ${i + 1}/${files.length} files...`);
       }
 
     } catch (err) {
       errors.push({ file, error: err.message });
-      console.error(`Error processing ${file}: ${err.message}`);
+      console.error(`  Error processing ${file}: ${err.message}`);
     }
   }
 
   console.log(`\nProcessed ${caseStudies.length} case studies successfully`);
-  console.log(`Errors: ${errors.length}`);
+  if (errors.length > 0) {
+    console.log(`Errors: ${errors.length}`);
+    errors.forEach(e => console.error(`  - ${e.file}: ${e.error}`));
+  }
 
-  // Handle duplicates - use lowest P_Number as canonical
+  // Deduplicate by slug — keep lowest P_Number (numeric comparison)
   const slugMap = new Map();
   caseStudies.forEach(cs => {
     if (!cs.slug) return;
     const existing = slugMap.get(cs.slug);
-    if (!existing || cs.id < existing.id) {
+    if (!existing) {
       slugMap.set(cs.slug, cs);
+    } else {
+      // Compare P_Numbers numerically (P898 < P1155)
+      const existingNum = parseInt(existing.id.replace('P', ''));
+      const currentNum = parseInt(cs.id.replace('P', ''));
+      if (currentNum < existingNum) {
+        slugMap.set(cs.slug, cs);
+      }
     }
   });
 
   const uniqueCaseStudies = Array.from(slugMap.values());
-  console.log(`Unique case studies (after deduplication): ${uniqueCaseStudies.length}`);
+  uniqueCaseStudies.sort((a, b) => parseInt(a.id.replace('P', '')) - parseInt(b.id.replace('P', '')));
 
-  // Sort by ID
-  uniqueCaseStudies.sort((a, b) => a.id.localeCompare(b.id));
+  console.log(`Unique case studies (after dedup): ${uniqueCaseStudies.length}`);
 
-  // Generate the data file
+  // Log samples for verification
+  const samples = ['P1003', 'P517', 'P898'];
+  samples.forEach(pid => {
+    const s = uniqueCaseStudies.find(cs => cs.id === pid);
+    if (s) {
+      console.log(`\nSample ${pid}:`);
+      console.log(`  slug: ${s.slug}`);
+      console.log(`  title: ${s.title.substring(0, 80)}`);
+      console.log(`  sector: ${s.sector} | country: ${s.country}`);
+      console.log(`  challenge (${s.challenge.length} chars): ${s.challenge.substring(0, 80)}...`);
+      console.log(`  approach (${s.approach.length} chars): ${s.approach.substring(0, 80)}...`);
+      console.log(`  results (${s.results.length} chars): ${s.results.substring(0, 80)}...`);
+      console.log(`  quote (${s.clientQuote.length} chars): ${s.clientQuote.substring(0, 80)}...`);
+    } else {
+      console.log(`\nSample ${pid}: NOT FOUND`);
+    }
+  });
+
   const output = `/**
  * Case Studies Data
  * Generated from ${files.length} DOCX files
  * Unique entries: ${uniqueCaseStudies.length}
+ * Extraction: content-based (table-count-agnostic)
  */
 
 export const caseStudies = ${JSON.stringify(uniqueCaseStudies, null, 2)};
@@ -343,7 +358,6 @@ export const caseStudies = ${JSON.stringify(uniqueCaseStudies, null, 2)};
   return { total: files.length, unique: uniqueCaseStudies.length, errors };
 }
 
-// Run the conversion
 convertCaseStudies()
   .then(result => {
     console.log('\n=== CONVERSION COMPLETE ===');

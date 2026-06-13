@@ -24,7 +24,7 @@ const navLinks = [
 const serviceCategorySlugs = serviceMenuSections.map((s) => s.slug);
 
 // Other specific routes that should always have a white background
-const forceWhiteBgRoutes = [];
+const forceWhiteBgRoutes = ["/case-studies"];
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -55,7 +55,7 @@ export default function Navbar() {
     }
 
     // Check against other explicitly defined white-background routes
-    return forceWhiteBgRoutes.some(route => pathname === route || pathname.startsWith(`${route}/`));
+    return forceWhiteBgRoutes.some(route => pathname.startsWith(`${route}/`));
   }, [isScrolled, pathname]);
 
   const resourcesCategories = useMemo(() => [
