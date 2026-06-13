@@ -1,41 +1,42 @@
-'use client';
-
-import { useParams } from 'next/navigation';
-import { useCaseStudy } from '@/hooks/useCaseStudies';
-import { Skeleton } from '@/components/ui/skeleton';
+import { caseStudies } from '@/data/case-studies';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
+import { Metadata } from 'next';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Target, Lightbulb, CheckCircle2, ChevronRight, Share2, Printer } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { notFound } from 'next/navigation';
 
-export default function CaseStudyDetailPage() {
-  const { id } = useParams();
-  const { data: study, isLoading, error } = useCaseStudy(id);
+// Generate static params for SSG
+export async function generateStaticParams() {
+  return caseStudies.map((study) => ({
+    slug: study.slug,
+  }));
+}
 
-  if (isLoading) {
-    return (
-      <div className="min-h-screen bg-slate-50 pt-32 pb-24">
-        <div className="container">
-          <Skeleton className="h-10 w-48 mb-8" />
-          <Skeleton className="h-20 w-3/4 mb-12" />
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-2 space-y-8">
-              <Skeleton className="h-100 w-full rounded-3xl" />
-              <Skeleton className="h-64 w-full rounded-2xl" />
-            </div>
-            <div className="space-y-6">
-              <Skeleton className="h-96 w-full rounded-2xl" />
-            </div>
-          </div>
-        </div>
-      </div>
-    );
+// Generate metadata for SEO
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const study = caseStudies.find((cs) => cs.slug === slug);
+
+  if (!study) {
+    return {
+      title: 'Case Study Not Found | ClickMasters',
+    };
   }
 
-  if (error || !study) {
-    return notFound();
+  return {
+    title: study.metaTitle || study.title,
+    description: study.metaDesc || study.challenge?.substring(0, 160),
+  };
+}
+
+export default async function CaseStudyDetailPage({ params }) {
+  const { slug } = await params;
+  const study = caseStudies.find((cs) => cs.slug === slug);
+
+  if (!study) {
+    notFound();
   }
 
   return (
@@ -54,11 +55,11 @@ export default function CaseStudyDetailPage() {
         <header className="mb-16">
           <div className="flex items-center gap-4 mb-8">
             <Badge className="bg-accent text-primary hover:bg-accent/90 px-4 py-2 text-sm font-bold">
-              {study.project?.category?.name || 'Success Story'}
+              {study.sector || 'Success Story'}
             </Badge>
             <div className="h-px bg-slate-200 flex-1"></div>
             <Badge className="bg-emerald-100 text-emerald-700 px-4 py-2 text-sm font-bold">
-              {study.status}
+              {study.status || 'Completed'}
             </Badge>
           </div>
 
@@ -73,22 +74,20 @@ export default function CaseStudyDetailPage() {
                   <Target className="w-6 h-6" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Client</div>
-                  <div className="text-lg font-bold text-slate-900">{study.client || 'Confidential'}</div>
+                  <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Country</div>
+                  <div className="text-lg font-bold text-slate-900">{study.country || 'Confidential'}</div>
                 </div>
               </div>
 
-              {study.project && (
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-linear-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white">
-                    <Lightbulb className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Solution</div>
-                    <div className="text-lg font-bold text-slate-900">{study.project.title}</div>
-                  </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-linear-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white">
+                  <Lightbulb className="w-6 h-6" />
                 </div>
-              )}
+                <div>
+                  <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Contract</div>
+                  <div className="text-lg font-bold text-slate-900">{study.contract || 'N/A'}</div>
+                </div>
+              </div>
 
               <div className="flex gap-2">
                 <Button variant="outline" size="icon" className="rounded-xl border-slate-200 hover:bg-primary hover:text-accent hover:border-primary transition-all">
@@ -102,31 +101,44 @@ export default function CaseStudyDetailPage() {
           </div>
         </header>
 
-        {/* Featured Image */}
-        <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-primary/10 mb-16 aspect-video">
-          <Image
-            src={study.thumbnail || study.project?.thumbnail || 'https://via.placeholder.com/1200x600?text=Case+Study'}
-            alt={study.title || 'Case study image'}
-            fill
-            className="object-cover"
-            unoptimized
-          />
+        {/* Featured Image Placeholder */}
+        <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-primary/10 mb-16 aspect-video bg-gradient-to-br from-primary/20 to-accent/20">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-6xl mb-4">{study.sector?.charAt(0) || '📁'}</div>
+              <div className="text-xl font-bold text-primary">{study.sector}</div>
+            </div>
+          </div>
           <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent"></div>
         </div>
 
         {/* Overview */}
         <div className="bg-white rounded-3xl border border-slate-200 p-8 md:p-12 shadow-lg mb-16">
           <h2 className="text-3xl font-bold text-primary mb-6">Project Overview</h2>
-          <p className="text-lg text-slate-600 leading-relaxed mb-8">{study.excerpt}</p>
+          <p className="text-lg text-slate-600 leading-relaxed mb-8">{study.metaDesc}</p>
 
           {/* Technologies */}
           {study.technologies?.length > 0 && (
             <div>
               <h3 className="text-lg font-bold text-slate-900 mb-4">Technologies Used</h3>
               <div className="flex flex-wrap gap-3">
-                {study.technologies.map(tech => (
+                {study.technologies.map((tech) => (
                   <Badge key={tech} variant="secondary" className="bg-slate-100 text-slate-600 hover:bg-primary hover:text-accent border border-slate-200 px-4 py-2 text-sm font-medium transition-all">
                     {tech}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Compliance */}
+          {study.compliance && (
+            <div className="mt-6">
+              <h3 className="text-lg font-bold text-slate-900 mb-4">Compliance</h3>
+              <div className="flex flex-wrap gap-3">
+                {study.compliance.split(',').map((comp) => (
+                  <Badge key={comp} variant="outline" className="border-emerald-200 text-emerald-700 bg-emerald-50 px-4 py-2 text-sm font-medium">
+                    {comp.trim()}
                   </Badge>
                 ))}
               </div>
@@ -161,49 +173,65 @@ export default function CaseStudyDetailPage() {
           </div>
         </div>
 
-        {/* Project Details */}
-        {study.project && (
+        {/* Client Quote */}
+        {study.clientQuote && (
           <div className="bg-white rounded-3xl border border-slate-200 p-8 md:p-12 shadow-lg mb-16">
-            <h2 className="text-3xl font-bold text-primary mb-8">Related Solution</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">{study.project.title}</h3>
-                <p className="text-slate-600 leading-relaxed mb-6">{study.project.description}</p>
-                <div className="flex flex-wrap gap-3">
-                  {study.project.tags?.map(tag => (
-                    <Badge key={tag} variant="outline" className="border-slate-200 text-slate-600">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-              </div>
-              <div className="bg-slate-50 rounded-2xl p-6">
-                <div className="space-y-4">
+            <blockquote className="text-xl md:text-2xl font-medium text-slate-700 italic leading-relaxed">
+              &ldquo;{study.clientQuote}&rdquo;
+            </blockquote>
+          </div>
+        )}
+
+        {/* Project Details */}
+        <div className="bg-white rounded-3xl border border-slate-200 p-8 md:p-12 shadow-lg mb-16">
+          <h2 className="text-3xl font-bold text-primary mb-8">Project Details</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <div className="space-y-4">
+                {study.sector && (
                   <div>
-                    <div className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Category</div>
-                    <div className="text-lg font-bold text-slate-900">{study.project.category?.name}</div>
+                    <div className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Sector</div>
+                    <div className="text-lg font-bold text-slate-900">{study.sector}</div>
                   </div>
+                )}
+                {study.country && (
+                  <div>
+                    <div className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Country</div>
+                    <div className="text-lg font-bold text-slate-900">{study.country}</div>
+                  </div>
+                )}
+                {study.status && (
                   <div>
                     <div className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Status</div>
-                    <div className="text-lg font-bold text-slate-900">{study.project.status}</div>
+                    <div className="text-lg font-bold text-slate-900">{study.status}</div>
                   </div>
-                  {study.project.url && (
-                    <div>
-                      <div className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Live URL</div>
-                      <Link
-                        href={study.project.url}
-                        target="_blank"
-                        className="text-primary hover:text-accent transition-colors font-medium"
-                      >
-                        View Project →
-                      </Link>
-                    </div>
-                  )}
-                </div>
+                )}
+              </div>
+            </div>
+            <div className="bg-slate-50 rounded-2xl p-6">
+              <div className="space-y-4">
+                {study.readingTime > 0 && (
+                  <div>
+                    <div className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Reading Time</div>
+                    <div className="text-lg font-bold text-slate-900">{study.readingTime} min</div>
+                  </div>
+                )}
+                {study.lastUpdated && (
+                  <div>
+                    <div className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Last Updated</div>
+                    <div className="text-lg font-bold text-slate-900">{study.lastUpdated}</div>
+                  </div>
+                )}
+                {study.ipOwnership && (
+                  <div>
+                    <div className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">IP Ownership</div>
+                    <div className="text-lg font-bold text-slate-900">{study.ipOwnership}</div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
-        )}
+        </div>
 
         {/* CTA Section */}
         <div className="bg-linear-to-r from-primary to-primary-mid rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">

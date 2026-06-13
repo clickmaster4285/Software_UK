@@ -1,14 +1,12 @@
-'use client';
-
-import { useCaseStudyList } from '@/hooks/useCaseStudies';
-import { Skeleton } from '@/components/ui/skeleton';
-import { CaseStudyCard } from '@/components/admin/case-study-card';
-import { Button } from '@/components/ui/button';
+import { caseStudies } from '@/data/case-studies';
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { CaseStudyCard } from '@/components/admin/case-study-card';
 
+// Server component - fetches data directly from static file
 export default function CaseStudiesPage() {
-  const { data: caseStudies, isLoading } = useCaseStudyList();
-  const publishedStudies = caseStudies?.filter(s => s.published) || [];
+  // Sort by ID (P number) for consistent ordering
+  const sortedStudies = [...caseStudies].sort((a, b) => a.id.localeCompare(b.id));
 
   return (
     <main className="bg-white">
@@ -24,11 +22,7 @@ export default function CaseStudiesPage() {
 
       <section className="py-24 bg-surface">
         <div className="container">
-          {isLoading ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              {[1, 2, 3, 4].map(i => <Skeleton key={i} className="h-100 rounded-3xl" />)}
-            </div>
-          ) : publishedStudies.length === 0 ? (
+          {sortedStudies.length === 0 ? (
             <div className="text-center py-20 bg-white rounded-3xl shadow-sm border border-slate-100">
               <h3 className="text-2xl font-bold text-slate-900">Case studies coming soon</h3>
               <p className="text-slate-500 mt-2">We&apos;re currently preparing our latest success stories. Check back soon!</p>
@@ -37,21 +31,21 @@ export default function CaseStudiesPage() {
               </Button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {publishedStudies.map((study, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              {sortedStudies.map((study, index) => (
                 <div
-                  key={study._id}
+                  key={study.id}
                   className="opacity-0 animate-fade-up"
                   style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'forwards' }}
                 >
                   <CaseStudyCard
                     title={study.title}
-                    excerpt={study.excerpt}
+                    excerpt={study.metaDesc || study.challenge?.substring(0, 200)}
                     challenge={study.challenge}
                     results={study.results}
-                    category={study.project?.category?.name || 'Project'}
-                    thumbnail={study.thumbnail || study.project?.thumbnail || 'https://via.placeholder.com/800x450?text=Success+Story'}
-                    href={`/case-studies/${study.slug || study._id}`}
+                    category={study.sector?.split('/')[0]?.trim() || 'Case Study'}
+                    thumbnail={null}
+                    href={`/case-studies/${study.slug}`}
                   />
                 </div>
               ))}
