@@ -149,9 +149,7 @@ function ServiceCard({ service, index }) {
 
   return (
     <div
-      className={`service-card-tilt opacity-0 ${spanClass}`}
-      style={{ animationDelay: `${index * 0.1}s` }}
-      data-fade-up
+      className={`service-card-tilt ${spanClass}`}
     >
       <Link href={route || '/services'}>
         <div
@@ -200,7 +198,7 @@ function ServiceCard({ service, index }) {
                   alt={service.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 224px"
-                  className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] hero-float"
+                  className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] "
                 />
               </div>
             </div>

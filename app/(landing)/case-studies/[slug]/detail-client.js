@@ -45,7 +45,7 @@ function ReadingProgress() {
   return (
     <div className="fixed top-0 left-0 right-0 z-[60] h-1">
       <div
-        className="h-full bg-gradient-to-r from-accent to-accent-light transition-all duration-150 ease-out"
+        className="h-full bg-linear-to-r from-accent to-accent-light transition-all duration-150 ease-out"
         style={{ width: `${progress}%` }}
       />
     </div>
@@ -288,7 +288,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
               <section className="mb-14">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {study.challenge && (
-                    <div id="challenge" className="scroll-mt-28 rounded-2xl bg-gradient-to-br from-red-50 via-white to-white border border-red-100 p-7 flex flex-col">
+                    <div id="challenge" className="scroll-mt-28 rounded-2xl bg-linear-to-br from-red-50 via-white to-white border border-red-100 p-7 flex flex-col">
                       <div className="flex items-center gap-3 mb-5">
                         <div className="w-11 h-11 bg-red-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-red-200">
                           <Target className="w-5 h-5" />
@@ -300,7 +300,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
                   )}
 
                   {study.approach && (
-                    <div id="approach" className="scroll-mt-28 rounded-2xl bg-gradient-to-br from-blue-50 via-white to-white border border-blue-100 p-7 flex flex-col">
+                    <div id="approach" className="scroll-mt-28 rounded-2xl bg-linear-to-br from-blue-50 via-white to-white border border-blue-100 p-7 flex flex-col">
                       <div className="flex items-center gap-3 mb-5">
                         <div className="w-11 h-11 bg-blue-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-blue-200">
                           <Lightbulb className="w-5 h-5" />
@@ -312,7 +312,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
                   )}
 
                   {study.results && (
-                    <div id="results" className="scroll-mt-28 rounded-2xl bg-gradient-to-br from-emerald-50 via-white to-white border border-emerald-100 p-7 flex flex-col md:col-span-2 lg:col-span-1">
+                    <div id="results" className="scroll-mt-28 rounded-2xl bg-linear-to-br from-emerald-50 via-white to-white border border-emerald-100 p-7 flex flex-col md:col-span-2 lg:col-span-1">
                       <div className="flex items-center gap-3 mb-5">
                         <div className="w-11 h-11 bg-emerald-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-emerald-200">
                           <CheckCircle2 className="w-5 h-5" />
@@ -405,7 +405,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
                       href={`/case-studies/${cs.slug}`}
                       className="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
                     >
-                      <div className="h-32 bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center border-b border-slate-100">
+                      <div className="h-32 bg-linear-to-br from-slate-50 to-slate-100 flex items-center justify-center border-b border-slate-100">
                         <span className="text-4xl">{getSectorEmojiFn(cs.sector)}</span>
                       </div>
                       <div className="p-5">
@@ -422,7 +422,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
             )}
 
             {/* Bottom CTA */}
-            <div className="bg-gradient-to-br from-primary to-primary-mid rounded-3xl p-10 md:p-16 text-center relative overflow-hidden">
+            <div className="bg-linear-to-br from-primary to-primary-mid rounded-3xl p-10 md:p-16 text-center relative overflow-hidden">
               <div className="absolute inset-0 opacity-10 pointer-events-none">
                 <div className="absolute top-0 left-0 w-64 h-64 bg-accent rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2" />
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent rounded-full blur-[120px] translate-x-1/2 translate-y-1/2" />

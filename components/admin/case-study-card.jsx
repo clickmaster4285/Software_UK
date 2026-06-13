@@ -23,7 +23,7 @@ export function CaseStudyCard({
       <div className="relative h-2 bg-linear-to-r from-primary via-accent to-primary" />
 
       {/* Image / Emoji Section */}
-      <div className="relative h-44 overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 border-b border-slate-100">
+      <div className="relative h-44 overflow-hidden bg-linear-to-br from-slate-50 to-slate-100 border-b border-slate-100">
         {thumbnail ? (
           <img
             src={thumbnail}
