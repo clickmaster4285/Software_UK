@@ -5,108 +5,76 @@ import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { caseStudies } from '@/data/case-studies';
 import { CaseStudyCard } from '@/components/admin/case-study-card';
-import { Button } from '@/components/ui/button';
-import { ChevronLeft, ChevronRight, Search, SlidersHorizontal, X, ArrowRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Search, SlidersHorizontal, X, ArrowRight, Sparkles } from 'lucide-react';
 import { Skeleton } from '@/components/ui/skeleton';
 
 const ITEMS_PER_PAGE = 12;
 
-// Emoji mapping for sectors
 const sectorEmoji = {
-  'FinTech': '💰',
-  'HealthTech': '🏥',
-  'GovTech': '🏛️',
-  'EdTech': '🎓',
-  'RetailTech': '🛒',
-  'eCommerce': '📦',
-  'PropTech': '🏗️',
-  'InsurTech': '🛡️',
-  'LegalTech': '⚖️',
-  'Manufacturing Tech': '🔧',
-  'AgriTech': '🌾',
-  'CleanTech': '♻️',
-  'LogTech': '🚛',
-  'HRTech': '👥',
-  'Data': '📊',
-  'Data Engineering': '⚙️',
-  'B2B SaaS': '☁️',
-  'MedTech': '💊',
-  'RegTech': '📋',
-  'WealthTech': '💎',
+  'FinTech': '💰', 'HealthTech': '🏥', 'GovTech': '🏛️', 'EdTech': '🎓',
+  'RetailTech': '🛒', 'eCommerce': '📦', 'PropTech': '🏗️', 'InsurTech': '🛡️',
+  'LegalTech': '⚖️', 'Manufacturing Tech': '🔧', 'AgriTech': '🌾', 'CleanTech': '♻️',
+  'LogTech': '🚛', 'HRTech': '👥', 'Data': '📊', 'Data Engineering': '⚙️',
+  'B2B SaaS': '☁️', 'MedTech': '💊', 'RegTech': '📋', 'WealthTech': '💎',
   'Association Tech': '🤝',
 };
 
+function extractSectorKey(sector) {
+  if (!sector) return '';
+  return sector.split('/')[0]?.trim().replace(/[\uD800-\uDFFF]/g, '').trim();
+}
+
 function getSectorEmoji(sector) {
-  if (!sector) return '📁';
-  const key = sector.split('/')[0]?.trim();
-  return sectorEmoji[key] || '📁';
+  const key = extractSectorKey(sector);
+  return key ? (sectorEmoji[key] || '📁') : '📁';
 }
 
 function getSectorColor(sector) {
-  if (!sector) return 'bg-slate-400';
-  const key = sector.split('/')[0]?.trim();
+  const key = extractSectorKey(sector);
   const colors = {
-    'FinTech': 'bg-emerald-500',
-    'HealthTech': 'bg-rose-500',
-    'GovTech': 'bg-indigo-500',
-    'EdTech': 'bg-amber-500',
-    'RetailTech': 'bg-orange-500',
-    'eCommerce': 'bg-cyan-500',
-    'PropTech': 'bg-stone-500',
-    'InsurTech': 'bg-blue-500',
-    'LegalTech': 'bg-violet-500',
-    'Manufacturing Tech': 'bg-slate-500',
-    'AgriTech': 'bg-lime-500',
-    'CleanTech': 'bg-green-500',
-    'LogTech': 'bg-yellow-600',
-    'HRTech': 'bg-pink-500',
-    'Data': 'bg-teal-500',
-    'Data Engineering': 'bg-sky-500',
-    'B2B SaaS': 'bg-purple-500',
-    'MedTech': 'bg-red-500',
-    'RegTech': 'bg-fuchsia-500',
-    'WealthTech': 'bg-amber-600',
-    'Association Tech': 'bg-emerald-600',
+    'FinTech': 'bg-emerald-500', 'HealthTech': 'bg-rose-500', 'GovTech': 'bg-indigo-500',
+    'EdTech': 'bg-amber-500', 'RetailTech': 'bg-orange-500', 'eCommerce': 'bg-cyan-500',
+    'PropTech': 'bg-stone-500', 'InsurTech': 'bg-blue-500', 'LegalTech': 'bg-violet-500',
+    'Manufacturing Tech': 'bg-slate-500', 'AgriTech': 'bg-lime-500', 'CleanTech': 'bg-green-500',
+    'LogTech': 'bg-yellow-600', 'HRTech': 'bg-pink-500', 'Data': 'bg-teal-500',
+    'Data Engineering': 'bg-sky-500', 'B2B SaaS': 'bg-purple-500', 'MedTech': 'bg-red-500',
+    'RegTech': 'bg-fuchsia-500', 'WealthTech': 'bg-amber-600', 'Association Tech': 'bg-emerald-600',
   };
   return colors[key] || 'bg-slate-400';
 }
+
 function CaseStudiesContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
   const [showFilters, setShowFilters] = useState(false);
 
-  // Get current page from URL
   const currentPage = parseInt(searchParams.get('page') || '1', 10);
   const activeSector = searchParams.get('sector') || '';
 
-  // Extract unique sectors
   const sectors = useMemo(() => {
     const set = new Set();
     caseStudies.forEach(s => {
-      if (s.sector) set.add(s.sector.split('/')[0]?.trim());
+      const key = extractSectorKey(s.sector);
+      if (key) set.add(key);
     });
     return Array.from(set).sort();
   }, []);
 
-  // Count studies per sector
   const sectorCounts = useMemo(() => {
     const counts = {};
     caseStudies.forEach(s => {
-      const sec = s.sector?.split('/')[0]?.trim();
+      const sec = extractSectorKey(s.sector);
       if (sec) counts[sec] = (counts[sec] || 0) + 1;
     });
     return counts;
   }, []);
 
-  // Filter studies
   const filteredStudies = useMemo(() => {
     let results = [...caseStudies];
-
     if (activeSector) {
-      results = results.filter(s => s.sector?.split('/')[0]?.trim() === activeSector);
+      results = results.filter(s => extractSectorKey(s.sector) === activeSector);
     }
-
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
       results = results.filter(s =>
@@ -117,12 +85,10 @@ function CaseStudiesContent() {
         s.technologies?.some(t => t.toLowerCase().includes(q))
       );
     }
-
     results.sort((a, b) => a.id.localeCompare(b.id));
     return results;
   }, [activeSector, searchQuery]);
 
-  // Pagination
   const totalPages = Math.ceil(filteredStudies.length / ITEMS_PER_PAGE);
   const safePage = Math.min(Math.max(1, currentPage), totalPages || 1);
   const paginatedStudies = filteredStudies.slice(
@@ -139,8 +105,7 @@ function CaseStudiesContent() {
   }, [router]);
 
   const handleSectorClick = useCallback((sector) => {
-    const newSector = activeSector === sector ? '' : sector;
-    updateURL(1, newSector);
+    updateURL(1, activeSector === sector ? '' : sector);
   }, [activeSector, updateURL]);
 
   const handlePageChange = useCallback((page) => {
@@ -155,7 +120,6 @@ function CaseStudiesContent() {
 
   const hasActiveFilters = activeSector || searchQuery.trim();
 
-  // Generate page numbers to display
   const pageNumbers = useMemo(() => {
     if (totalPages <= 7) return Array.from({ length: totalPages }, (_, i) => i + 1);
     const pages = [];
@@ -178,54 +142,54 @@ function CaseStudiesContent() {
   }, [safePage, totalPages]);
 
   return (
-    <main className="bg-white">
-      {/* Hero */}
-      <section className="relative bg-primary pt-28 pb-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.07]">
-          <div className="absolute top-10 left-[10%] w-72 h-72 bg-accent rounded-full blur-[100px]" />
-          <div className="absolute bottom-0 right-[5%] w-96 h-96 bg-accent rounded-full blur-[120px]" />
-        </div>
-        <div className="container relative z-10 text-center">
-          <span className="inline-block px-4 py-1.5 rounded-full border border-white/20 text-white/80 text-xs font-bold uppercase tracking-[0.2em] mb-6">
+    <div className="min-h-screen bg-background">
+      {/* ── Hero ── */}
+      <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-mid to-primary-light" />
+        <div className="absolute top-10 right-[8%] w-[500px] h-[500px] rounded-full bg-accent/8 blur-3xl" />
+        <div className="absolute bottom-0 left-[5%] w-[400px] h-[400px] rounded-full bg-accent/5 blur-3xl" />
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+
+        <div className="relative max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 text-center">
+          <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">
+            <Sparkles className="w-3 h-3 mr-1.5 inline -mt-0.5" />
             Portfolio
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Case Studies
           </h1>
-          <p className="text-white/70 max-w-2xl mx-auto text-lg">
+          <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
             {filteredStudies.length} projects delivered across {sectors.length} sectors — each one a measurable business outcome.
           </p>
         </div>
       </section>
 
-      {/* Search & Filter Bar */}
-      <section className="sticky  top-(--navbar-height,72px) z-30 bg-white/95 backdrop-blur-md border-b border-border shadow-sm">
-        <div className="container py-4 max-w-[96vw] lg:max-w-[90vw] mx-auto">
+      {/* ── Search & Filter Bar ── */}
+      <section className="sticky top-16 z-30 bg-white/95 backdrop-blur-md border-b border-border shadow-sm">
+        <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 py-4">
           <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
-            {/* Search */}
             <div className="relative flex-1">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" />
               <input
                 type="text"
                 placeholder="Search by title, tech, sector..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-border bg-white text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition-all"
+                className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-border bg-white text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition-all"
               />
               {searchQuery && (
-                <button onClick={() => setSearchQuery('')} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
+                <button onClick={() => setSearchQuery('')} className="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-text-body">
                   <X className="w-4 h-4" />
                 </button>
               )}
             </div>
 
-            {/* Filter toggle */}
             <button
               onClick={() => setShowFilters(!showFilters)}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-xl border text-sm font-medium transition-all ${
                 showFilters || activeSector
                   ? 'bg-accent/10 border-accent text-accent'
-                  : 'border-border text-slate-600 hover:bg-slate-50'
+                  : 'border-border text-text-body hover:bg-surface'
               }`}
             >
               <SlidersHorizontal className="w-4 h-4" />
@@ -238,7 +202,7 @@ function CaseStudiesContent() {
             {hasActiveFilters && (
               <button
                 onClick={clearFilters}
-                className="flex items-center gap-1.5 px-3 py-2.5 text-sm text-slate-500 hover:text-slate-700 transition-colors"
+                className="flex items-center gap-1.5 px-3 py-2.5 text-sm text-text-muted hover:text-text-body transition-colors"
               >
                 <X className="w-3.5 h-3.5" />
                 Clear
@@ -246,27 +210,25 @@ function CaseStudiesContent() {
             )}
           </div>
 
-          {/* Sector filters */}
           {showFilters && (
-            <div className="mt-4 pb-2 flex flex-wrap gap-2 animate-in slide-in-from-top-2 duration-200">
+            <div className="mt-4 pb-1 flex flex-wrap gap-2">
               {sectors.map(sector => {
                 const isActive = activeSector === sector;
                 const count = sectorCounts[sector] || 0;
-                const emoji = sectorEmoji[sector] || '📁';
                 return (
                   <button
                     key={sector}
                     onClick={() => handleSectorClick(sector)}
-                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold transition-all ${
+                    className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
                       isActive
                         ? 'bg-accent text-white shadow-md shadow-accent/20 scale-105'
-                        : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                        : 'bg-surface text-text-body hover:bg-surface-2 border border-border'
                     }`}
                   >
-                    <span>{emoji}</span>
+                    <span>{sectorEmoji[sector] || '📁'}</span>
                     {sector}
                     <span className={`ml-0.5 px-1.5 py-0.5 rounded-full text-[10px] ${
-                      isActive ? 'bg-white/20' : 'bg-slate-200/70'
+                      isActive ? 'bg-white/20' : 'bg-border'
                     }`}>
                       {count}
                     </span>
@@ -278,31 +240,29 @@ function CaseStudiesContent() {
         </div>
       </section>
 
-      {/* Results */}
-      <section className="py-16 bg-surface min-h-[60vh] ">
-        <div className="container max-w-[96vw] lg:max-w-[90vw] mx-auto">
+      {/* ── Results ── */}
+      <section className="py-16 px-6 bg-surface min-h-[60vh]">
+        <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
           {filteredStudies.length === 0 ? (
             <div className="text-center py-24">
               <div className="text-6xl mb-6">🔍</div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">No case studies found</h3>
-              <p className="text-slate-500 max-w-md mx-auto">
+              <h3 className="font-heading text-2xl font-bold text-text-primary mb-3">No case studies found</h3>
+              <p className="text-text-muted max-w-md mx-auto mb-6">
                 Try adjusting your search or filter criteria to find what you&apos;re looking for.
               </p>
-              <Button onClick={clearFilters} className="mt-6 bg-accent text-white hover:bg-accent-hover">
+              <button onClick={clearFilters} className="btn-primary inline-flex items-center gap-2">
                 Clear Filters
-              </Button>
+              </button>
             </div>
           ) : (
             <>
-              {/* Results count */}
               <div className="flex items-center justify-between mb-8">
-                <p className="text-sm text-slate-500">
-                  Showing <span className="font-semibold text-slate-700">{(safePage - 1) * ITEMS_PER_PAGE + 1}–{Math.min(safePage * ITEMS_PER_PAGE, filteredStudies.length)}</span> of <span className="font-semibold text-slate-700">{filteredStudies.length}</span> case studies
+                <p className="text-sm text-text-muted">
+                  Showing <span className="font-semibold text-text-primary">{(safePage - 1) * ITEMS_PER_PAGE + 1}–{Math.min(safePage * ITEMS_PER_PAGE, filteredStudies.length)}</span> of <span className="font-semibold text-text-primary">{filteredStudies.length}</span> case studies
                   {activeSector && <span className="ml-1">in <span className="font-semibold text-accent">{activeSector}</span></span>}
                 </p>
               </div>
 
-              {/* Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {paginatedStudies.map((study, index) => (
                   <div
@@ -315,7 +275,7 @@ function CaseStudiesContent() {
                       excerpt={study.metaDesc || study.challenge?.substring(0, 200)}
                       challenge={study.challenge}
                       results={study.results}
-                      category={study.sector?.split('/')[0]?.trim() || 'Case Study'}
+                      category={extractSectorKey(study.sector) || 'Case Study'}
                       thumbnail={null}
                       href={`/case-studies/${study.slug}`}
                       emoji={getSectorEmoji(study.sector)}
@@ -327,23 +287,20 @@ function CaseStudiesContent() {
                 ))}
               </div>
 
-              {/* Pagination */}
               {totalPages > 1 && (
                 <div className="mt-16 flex items-center justify-center gap-2">
-                  {/* Prev */}
                   <button
                     onClick={() => handlePageChange(safePage - 1)}
                     disabled={safePage === 1}
-                    className="flex items-center gap-1 px-3 py-2 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-100 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+                    className="flex items-center gap-1 px-3 py-2 rounded-xl text-sm font-medium text-text-body hover:bg-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
                   >
                     <ChevronLeft className="w-4 h-4" />
                     Prev
                   </button>
 
-                  {/* Page numbers */}
                   {pageNumbers.map((page, idx) =>
                     page === '...' ? (
-                      <span key={`ellipsis-${idx}`} className="w-9 h-9 flex items-center justify-center text-slate-400 text-sm">…</span>
+                      <span key={`ellipsis-${idx}`} className="w-9 h-9 flex items-center justify-center text-text-muted text-sm">…</span>
                     ) : (
                       <button
                         key={page}
@@ -351,7 +308,7 @@ function CaseStudiesContent() {
                         className={`w-9 h-9 rounded-xl text-sm font-semibold transition-all ${
                           page === safePage
                             ? 'bg-accent text-white shadow-md shadow-accent/20'
-                            : 'text-slate-600 hover:bg-slate-100'
+                            : 'text-text-body hover:bg-white'
                         }`}
                       >
                         {page}
@@ -359,11 +316,10 @@ function CaseStudiesContent() {
                     )
                   )}
 
-                  {/* Next */}
                   <button
                     onClick={() => handlePageChange(safePage + 1)}
                     disabled={safePage === totalPages}
-                    className="flex items-center gap-1 px-3 py-2 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-100 disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+                    className="flex items-center gap-1 px-3 py-2 rounded-xl text-sm font-medium text-text-body hover:bg-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
                   >
                     Next
                     <ChevronRight className="w-4 h-4" />
@@ -375,47 +331,51 @@ function CaseStudiesContent() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-24 bg-primary text-white text-center relative overflow-hidden ">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute top-0 left-0 w-64 h-64 bg-accent rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent rounded-full blur-[120px] translate-x-1/2 translate-y-1/2" />
-        </div>
-        <div className="container relative z-10 max-w-3xl">
-          <span className="inline-block px-4 py-1.5 rounded-full border border-white/20 text-white/70 text-xs font-bold uppercase tracking-[0.2em] mb-6">
-            Start Today
-          </span>
-          <h2 className="text-3xl md:text-5xl font-black mb-6">Ready to Be Our Next Success Story?</h2>
-          <p className="text-white/60 mb-10 text-lg">
-            Let&apos;s discuss how our technical expertise can help your business achieve measurable growth.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-10 py-4 bg-accent text-primary font-bold rounded-xl hover:bg-accent-hover transition-all shadow-xl shadow-black/20 hover:scale-105 active:scale-95 text-lg"
-          >
-            Start Your Journey
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+      {/* ── CTA ── */}
+      <section className="py-20 px-6">
+        <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary-mid to-primary-light px-8 py-16 md:px-16 md:py-20 text-center">
+            <div className="absolute top-0 right-0 w-[300px] h-[300px] rounded-full bg-accent/10 blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-[250px] h-[250px] rounded-full bg-accent/5 blur-3xl" />
+
+            <div className="relative">
+              <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">
+                Start Today
+              </span>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
+                Ready to Be Our Next Success Story?
+              </h2>
+              <p className="text-white/60 max-w-xl mx-auto mb-10 text-lg">
+                Let&apos;s discuss how our technical expertise can help your business achieve measurable growth.
+              </p>
+              <Link
+                href="/contact"
+                className="btn-primary inline-flex items-center justify-center gap-2 text-base px-10 py-4"
+              >
+                Start Your Journey
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 
-// Loading fallback
 function CaseStudiesLoading() {
   return (
-    <main className="bg-white">
-      <section className="relative bg-primary pt-28 pb-20 overflow-hidden">
-        <div className="container relative z-10 text-center">
+    <div className="min-h-screen bg-background">
+      <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-mid to-primary-light" />
+        <div className="relative max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 text-center">
           <Skeleton className="h-6 w-24 mx-auto mb-6 bg-white/20" />
           <Skeleton className="h-14 w-64 mx-auto mb-6 bg-white/20" />
           <Skeleton className="h-6 w-96 mx-auto bg-white/20" />
         </div>
       </section>
-
       <section className="py-16 bg-surface">
-        <div className="container">
+        <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {Array.from({ length: 6 }).map((_, i) => (
               <Skeleton key={i} className="h-96 rounded-3xl" />
@@ -423,11 +383,10 @@ function CaseStudiesLoading() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 
-// Wrap default export with Suspense
 export default function CaseStudiesPageWithSuspense() {
   return (
     <Suspense fallback={<CaseStudiesLoading />}>
