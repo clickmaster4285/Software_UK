@@ -10,7 +10,9 @@
     "lint": "eslint",
     "lint:fix": "next lint --fix",
     "seed:admin": "node scripts/seed-admin.mjs",
-    "seed:case-studies": "node scripts/convert-case-studies.js"
+    "seed:case-studies": "node scripts/convert-case-studies.js",
+    "seed:hire": "node scripts/convert-hire-pages.js",
+    "seed:pages": "node scripts/convert-case-studies.js && node scripts/convert-hire-pages.js"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^16.2.7",

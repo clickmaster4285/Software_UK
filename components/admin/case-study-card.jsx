@@ -120,7 +120,7 @@ export function CaseStudyCard({
             Read Full Story
           </span>
           <div className="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent transition-colors duration-300">
-            <ArrowRight className="w-3.5 h-3.5 text-accent group-hover:translate-x-0.5 transition-transform duration-300" />
+            <ArrowRight className="w-3.5 h-3.5 text-accent group-hover:translate-x-0.5 group-hover:text-white transition-transform duration-300" />
           </div>
         </div>
       </CardContent>

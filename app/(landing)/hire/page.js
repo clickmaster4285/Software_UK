@@ -1,27 +1,6 @@
 import Link from 'next/link';
-import { hirePages } from '@/data/hire-pages';
+import { getHireRolesMap } from '@/data/hire-pages';
 import { ArrowRight, Shield, CheckCircle, Clock, Users, MapPin, Sparkles, ChevronRight } from 'lucide-react';
-
-// Group hire pages by role
-const rolesMap = new Map();
-
-hirePages.forEach(hp => {
-  if (!rolesMap.has(hp.role)) {
-    rolesMap.set(hp.role, {
-      role: hp.role,
-      roleDisplay: hp.role.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
-      cities: []
-    });
-  }
-  rolesMap.get(hp.role).cities.push({
-    city: hp.city,
-    cityDisplay: hp.cityDisplay || hp.city,
-    slug: hp.slug,
-    rate: hp.rate
-  });
-});
-
-const roles = Array.from(rolesMap.values());
 
 export const metadata = {
   title: 'Hire Developers | ClickMasters — Vetted UK Engineers',
@@ -62,6 +41,8 @@ const trustCards = [
 ];
 
 export default function HirePage() {
+  const roles = getHireRolesMap();
+
   return (
     <div className="min-h-screen bg-background">
       {/* ── Hero ── */}
@@ -196,7 +177,8 @@ export default function HirePage() {
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className="font-heading text-xl font-semibold text-text-primary group-hover:text-accent transition-colors duration-300">
-                      {roleData.roleDisplay} Developer
+                      {/* {roleData.roleDisplay} Developer */}
+                      {roleData.roleDisplay}
                     </h3>
                     <p className="text-sm text-text-muted mt-1 flex items-center gap-1.5">
                       <MapPin className="w-3.5 h-3.5" />

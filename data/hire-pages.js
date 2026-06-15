@@ -9426,3 +9426,53 @@ export const hirePages = [
     "reviewedBy": "James Whitmore, CTO"
   }
 ];
+
+// ── Lightweight listing data (no heavy text fields) ──
+export const hirePageListings = hirePages.map(({ slug, role, city, cityDisplay, rate }) => ({
+  slug, role, city, cityDisplay, rate,
+}));
+
+// ── Lookup single hire page by role + city ──
+export function getHirePageByRoleCity(role, city) {
+  return hirePages.find(hp => hp.role === role && hp.city === city) || null;
+}
+
+// ── Group listings by role (for /hire page) ──
+export function getHireRolesMap() {
+  const rolesMap = new Map();
+  hirePages.forEach(hp => {
+    if (!rolesMap.has(hp.role)) {
+      rolesMap.set(hp.role, {
+        role: hp.role,
+        roleDisplay: hp.role.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+        cities: []
+      });
+    }
+    rolesMap.get(hp.role).cities.push({
+      city: hp.city,
+      cityDisplay: hp.cityDisplay || hp.city,
+      slug: hp.slug,
+      rate: hp.rate
+    });
+  });
+  return Array.from(rolesMap.values());
+}
+
+// ── Get related pages: same role, different city ──
+export function getRelatedHirePages(role, city, limit = 8) {
+  return hirePages
+    .filter(hp => hp.role === role && hp.city !== city)
+    .slice(0, limit);
+}
+
+// ── Deduplicate FAQs by question text ──
+export function getDedupedFaqs(faqs) {
+  if (!faqs || faqs.length === 0) return [];
+  const seen = new Set();
+  return faqs.filter(faq => {
+    const key = faq.question?.replace(/^:\s*/, '').trim().toLowerCase();
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}

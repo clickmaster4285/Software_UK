@@ -1,25 +1,19 @@
 import { notFound } from 'next/navigation';
-import { hirePages } from '@/data/hire-pages';
+import { hirePageListings, getHirePageByRoleCity, getRelatedHirePages, getDedupedFaqs } from '@/data/hire-pages';
 import { HireDetailClient } from './detail-client';
 
 // Generate static params for all hire pages
 export async function generateStaticParams() {
-  const params = [];
-
-  hirePages.forEach(hp => {
-    params.push({
-      role: hp.role,
-      city: hp.city
-    });
-  });
-
-  return params;
+  return hirePageListings.map((hp) => ({
+    role: hp.role,
+    city: hp.city,
+  }));
 }
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }) {
   const { role, city } = await params;
-  const hirePage = hirePages.find(hp => hp.role === role && hp.city === city);
+  const hirePage = getHirePageByRoleCity(role, city);
 
   if (!hirePage) {
     return { title: 'Hire Developer Not Found | ClickMasters' };
@@ -33,16 +27,14 @@ export async function generateMetadata({ params }) {
 
 export default async function HireDetailPage({ params }) {
   const { role, city } = await params;
-  const hirePage = hirePages.find(hp => hp.role === role && hp.city === city);
+  const hirePage = getHirePageByRoleCity(role, city);
 
   if (!hirePage) {
     notFound();
   }
 
   // Get related pages: same role, different city
-  const relatedPages = hirePages
-    .filter(hp => hp.role === role && hp.city !== city)
-    .slice(0, 8);
+  const relatedPages = getRelatedHirePages(role, city, 8);
 
   // Build JSON-LD structured data
   const cityName = hirePage.cityDisplay
@@ -78,12 +70,13 @@ export default async function HireDetailPage({ params }) {
     }),
   };
 
-  // Build FAQ structured data
-  const faqJsonLd = hirePage.faqs?.length > 0
+  // Build FAQ structured data (deduplicated)
+  const dedupedFaqs = getDedupedFaqs(hirePage.faqs);
+  const faqJsonLd = dedupedFaqs.length > 0
     ? {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        mainEntity: hirePage.faqs.map(faq => ({
+        mainEntity: dedupedFaqs.map(faq => ({
           '@type': 'Question',
           name: faq.question.replace(/^:\s*/, ''),
           acceptedAnswer: {
@@ -106,7 +99,7 @@ export default async function HireDetailPage({ params }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       )}
-      <HireDetailClient hirePage={hirePage} relatedPages={relatedPages} />
+      <HireDetailClient hirePage={{ ...hirePage, faqs: dedupedFaqs }} relatedPages={relatedPages} />
     </>
   );
 }

@@ -1,16 +1,18 @@
 import { notFound } from 'next/navigation';
-import { caseStudies } from '@/data/case-studies';
+import { getCaseStudyBySlug, getRelatedCaseStudies } from '@/data/case-studies';
 import { CaseStudyDetailClient } from './detail-client';
 
 // Generate static params for all case study pages
 export async function generateStaticParams() {
-  return caseStudies.map((cs) => ({ slug: cs.slug }));
+  // Use lightweight data for params generation
+  const { caseStudyListings } = await import('@/data/case-studies');
+  return caseStudyListings.map((cs) => ({ slug: cs.slug }));
 }
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const study = caseStudies.find((cs) => cs.slug === slug);
+  const study = getCaseStudyBySlug(slug);
 
   if (!study) {
     return { title: 'Case Study Not Found | ClickMasters' };
@@ -24,18 +26,14 @@ export async function generateMetadata({ params }) {
 
 export default async function CaseStudyDetailPage({ params }) {
   const { slug } = await params;
-  const study = caseStudies.find((cs) => cs.slug === slug);
+  const study = getCaseStudyBySlug(slug);
 
   if (!study) {
     notFound();
   }
 
   // Related studies: same sector, excluding current
-  const cleanSector = (s) => s?.split('/')[0]?.trim().replace(/[\uD800-\uDFFF]/g, '').trim() || '';
-  const currentSector = cleanSector(study.sector);
-  const relatedStudies = caseStudies
-    .filter(cs => cs.slug !== slug && cleanSector(cs.sector) === currentSector)
-    .slice(0, 3);
+  const relatedStudies = getRelatedCaseStudies(slug, 3);
 
   // Build JSON-LD structured data
   const jsonLd = {

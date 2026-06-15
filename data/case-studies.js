@@ -9705,3 +9705,39 @@ export const caseStudies = [
     "reviewedBy": "James Whitmore, CTO"
   }
 ];
+
+// ── Lightweight listing data (no heavy text fields) ──
+// Use this for generateStaticParams, listing pages, and anywhere
+// you don't need the full content body.
+export const caseStudyListings = caseStudies.map(({ id, slug, title, metaDesc, sector, country, status, contract, technologies }) => ({
+  id, slug, title, metaDesc, sector, country, status, contract, technologies,
+}));
+
+// ── Lookup single study by slug (avoids importing full array into server components) ──
+export function getCaseStudyBySlug(slug) {
+  return caseStudies.find(cs => cs.slug === slug) || null;
+}
+
+// ── Get sectors metadata (computed once from lightweight data) ──
+let _sectorsMeta = null;
+export function getSectorsMeta() {
+  if (_sectorsMeta) return _sectorsMeta;
+  const set = new Set();
+  const counts = {};
+  caseStudyListings.forEach(s => {
+    const key = s.sector?.split('/')[0]?.trim().replace(/[\uD800-\uDFFF]/g, '').trim();
+    if (key) { set.add(key); counts[key] = (counts[key] || 0) + 1; }
+  });
+  _sectorsMeta = { sectors: Array.from(set).sort(), sectorCounts: counts };
+  return _sectorsMeta;
+}
+
+// ── Lookup related studies by sector ──
+export function getRelatedCaseStudies(slug, limit = 3) {
+  const study = caseStudies.find(cs => cs.slug === slug);
+  if (!study) return [];
+  const currentSector = study.sector?.split('/')[0]?.trim().replace(/[\uD800-\uDFFF]/g, '').trim() || '';
+  return caseStudies
+    .filter(cs => cs.slug !== slug && (cs.sector?.split('/')[0]?.trim().replace(/[\uD800-\uDFFF]/g, '').trim() || '') === currentSector)
+    .slice(0, limit);
+}
