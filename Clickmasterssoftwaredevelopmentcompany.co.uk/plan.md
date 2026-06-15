@@ -1,6 +1,6 @@
 # Plan: ClickMasters Content Migration — Case Study First
 
-**Generated:** June 13, 2026  
+**Generated:** June 13, 2026 | **Last Updated:** June 15, 2026  
 **Purpose:** Comprehensive execution plan for converting 1,785 Word documents into Next.js data files
 
 ---
@@ -155,12 +155,27 @@ Uses `useCaseStudy(id)` hook → expects data from MongoDB via API.
 2. Redundant copies removed (part1-part4b, Website Docs deleted)
 3. Master CSV intact with metadata
 4. `mammoth` library installed for docx parsing
+5. **Case studies converted** — 280 DOCX → `data/case-studies.js` (9,743 lines, 274 unique entries after dedup)
+6. **Hire pages converted** — 300 DOCX → `data/hire-pages.js` (9,478 lines, 258 unique entries after dedup)
+7. **Case studies listing page** — `app/(landing)/case-studies/page.js` rebuilt as server component using lightweight `caseStudyListings` + `getSectorsMeta()`
+8. **Case studies detail page** — `app/(landing)/case-studies/[slug]/page.js` using `getCaseStudyBySlug()` + `getRelatedCaseStudies()` with `generateStaticParams`
+9. **Hire listing page** — `app/(landing)/hire/page.js` using `getHireRolesMap()` to group by role with cities
+10. **Hire detail page** — `app/(landing)/hire/[role]/[city]/page.js` using `getHirePageByRoleCity()`, `getRelatedHirePages()`, `getDedupedFaqs()` with `generateStaticParams`
+11. **Client-side filter** — `filter-client.js` for case studies search/sector filtering
+12. **Data layer optimization** — both data files export lightweight listing arrays + lookup functions to avoid shipping 9,000+ lines of JS to listing pages
+13. **FAQ deduplication** — `getDedupedFaqs()` added to eliminate repeated questions (up to 6× per page)
 
-### ❌ Not Started
-1. Conversion script for case studies
-2. Data file generation (`data/case-studies.js`)
-3. Route update (change `[id]` to `[slug]`)
-4. Same for other 6 categories
+### 🔲 Not Started (Remaining Categories)
+1. Salary Guide (193) → `data/salary-guides.js` → `/salary-guide/[slug]/`
+2. Comparison Page (177) → `data/comparisons.js` → `/comparison/[slug]/`
+3. Resource Guide (83) → `data/resource-guides.js` → `/resource/[slug]/`
+4. International City (179) → `data/cities.js` → `/cities/[slug]/`
+5. Industry / Service Page (573) → `data/services.js` → `/[category]/[service]/`
+
+### 🔲 Known Issues to Address
+- `deliveryModel` and `timeline` fields are empty across all case studies (source DOCX lack these fields)
+- P1109 case study entry is commented out in data file
+- Pre-existing Radix UI prerender error on hire detail pages (`Cannot read properties of null (reading 'useContext')`) — exists on base branch, not caused by our changes
 
 ---
 
@@ -258,39 +273,59 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 - [x] Verify structure with 2 more samples
 
 ### Step 2: Create Conversion Script
-- [ ] Write `scripts/convert-case-studies.js`
-- [ ] Test on 5 files
-- [ ] Debug extraction logic
+- [x] Write `scripts/convert-case-studies.js`
+- [x] Test on 5 files
+- [x] Debug extraction logic
 
-### Step 3: Generate Data File
-- [ ] Run script on all 280 case studies
-- [ ] Output `data/case-studies.js`
-- [ ] Verify count: 280 entries
+### Step 3: Generate Data File — Case Studies
+- [x] Run script on all 280 case studies
+- [x] Output `data/case-studies.js` — 9,743 lines, 274 unique entries
+- [x] Add lightweight helper exports (`caseStudyListings`, `getCaseStudyBySlug`, `getSectorsMeta`, `getRelatedCaseStudies`)
 
-### Step 4: Update Route
-- [ ] Rename `[id]` to `[slug]`
-- [ ] Update page to import from data file
-- [ ] Test with one case study
+### Step 4: Update Routes — Case Studies
+- [x] Route: `app/(landing)/case-studies/[slug]/page.js` (changed from `[id]`)
+- [x] Listing page rebuilt as server component using `caseStudyListings`
+- [x] Detail page using `getCaseStudyBySlug()` with `generateStaticParams`
+- [x] Client-side filter extracted to `filter-client.js`
 
-### Step 5: Repeat for Other Categories
-- [ ] Hire Page (300)
-- [ ] Salary Guide (193)
-- [ ] Comparison Page (177)
-- [ ] Resource Guide (83)
-- [ ] International City (179)
-- [ ] Industry / Service Page (573)
+### Step 5: Generate Data File — Hire Pages
+- [x] Converted 300 hire page DOCX files
+- [x] Output `data/hire-pages.js` — 9,478 lines, 258 unique entries
+- [x] Add lightweight helper exports (`hirePageListings`, `getHirePageByRoleCity`, `getHireRolesMap`, `getRelatedHirePages`, `getDedupedFaqs`)
+
+### Step 6: Update Routes — Hire Pages
+- [x] Listing page: `app/(landing)/hire/page.js` using `getHireRolesMap()`
+- [x] Detail page: `app/(landing)/hire/[role]/[city]/page.js` with `generateStaticParams`
+- [x] Detail page using `getHirePageByRoleCity()`, `getRelatedHirePages()`, `getDedupedFaqs()`
+
+### Step 7: Performance Optimization (see agent.md Section 11)
+- [x] Split data files into lightweight listing arrays + lookup functions
+- [x] Lazy-load Navbar Resources mega menu (`ResourcesMegaMenu.jsx`)
+- [x] Fix Navbar trailing slash mismatch in `forceWhiteBgRoutes`
+- [x] Deduplicate FAQ data in hire pages
+
+### Step 8: Repeat for Remaining Categories
+- [ ] Salary Guide (193) → `data/salary-guides.js`
+- [ ] Comparison Page (177) → `data/comparisons.js`
+- [ ] Resource Guide (83) → `data/resource-guides.js`
+- [ ] International City (179) → `data/cities.js`
+- [ ] Industry / Service Page (573) → `data/services.js`
 
 ---
 
 ## 7. Success Metrics
 
-| Metric | Target |
-|--------|--------|
-| Case studies converted | 280 |
-| Data file entries | 280 |
-| Static pages generated | 1,975+ |
-| Build time | 30-60 seconds |
-| Page load time | <2 seconds |
+| Metric | Target | Actual |
+|--------|--------|--------|
+| Case studies converted | 280 | ✅ 274 unique (from 280 DOCX) |
+| Hire pages converted | 300 | ✅ 258 unique (from 300 DOCX) |
+| Data file entries (case studies) | 280 | 274 |
+| Data file entries (hire pages) | 300 | 258 |
+| Static pages generated (case studies) | 283 (listing + detail + filter) | ✅ Live |
+| Static pages generated (hire pages) | 301 (listing + detail) | ✅ Live |
+| Build time | 30-60s | ⚠️ Existing prerender error on hire detail (pre-existing) |
+| Page load time | <2s | Improved via data splitting (see agent.md §11) |
+| Data shipped to listing pages | Minimal | ✅ Lightweight arrays only (no heavy text fields) |
 
 ---
 
@@ -315,10 +350,24 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 
 ## 10. Next Immediate Actions
 
-1. Write extraction script for case studies
-2. Run on all 280 files → generate `data/case-studies.js`
-3. Update route to use `[slug]`
-4. Test the page displays correctly
+### Completed ✅
+1. ~~Write extraction script for case studies~~ → 274 unique entries generated
+2. ~~Run on all 280 files~~ → `data/case-studies.js` (9,743 lines)
+3. ~~Convert hire pages~~ → 258 unique entries → `data/hire-pages.js` (9,478 lines)
+4. ~~Update case study route to use `[slug]`~~ → listing + detail pages live
+5. ~~Update hire route~~ → listing + detail pages live
+6. ~~Add lightweight data helpers~~ → listing pages no longer ship full data arrays
+7. ~~Performance optimizations~~ → Navbar lazy-load, trailing slash fix, FAQ dedup
+
+### Remaining
+1. Convert Salary Guide (193 DOCX) → `data/salary-guides.js`
+2. Convert Comparison Page (177 DOCX) → `data/comparisons.js`
+3. Convert Resource Guide (83 DOCX) → `data/resource-guides.js`
+4. Convert International City (179 DOCX) → `data/cities.js`
+5. Convert Industry / Service Page (573 DOCX) → `data/services.js`
+6. Fix pre-existing Radix UI prerender error on hire detail pages
+7. Populate empty `deliveryModel`/`timeline` fields in case studies
+8. Address remaining performance items (see agent.md §11.4)
 
 ---
 

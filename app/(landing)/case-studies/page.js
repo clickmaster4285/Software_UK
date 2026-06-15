@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import Link from 'next/link';
 import { CaseStudyCard } from '@/components/admin/case-study-card';
 import { caseStudyListings, getSectorsMeta } from '@/data/case-studies';
@@ -44,11 +45,18 @@ function CaseStudiesFilter({ sectors, sectorCounts, activeSector }) {
   return (
     <section className="sticky top-16 z-30 bg-white/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 py-4">
-        <CaseStudiesFilterClient
-          sectors={sectors}
-          sectorCounts={sectorCounts}
-          activeSector={activeSector}
-        />
+        <Suspense fallback={
+          <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center w-full">
+            <div className="relative flex-1 h-10 bg-white border border-border rounded-xl animate-pulse" />
+            <div className="w-24 h-10 bg-surface border border-border rounded-xl animate-pulse" />
+          </div>
+        }>
+          <CaseStudiesFilterClient
+            sectors={sectors}
+            sectorCounts={sectorCounts}
+            activeSector={activeSector}
+          />
+        </Suspense>
       </div>
     </section>
   );

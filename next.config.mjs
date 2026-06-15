@@ -43,6 +43,7 @@ const nextConfig = {
     ],
   },
   experimental: {
+    cpus: 5,
     optimizePackageImports: [
       "lucide-react",
     ],
