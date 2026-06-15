@@ -179,7 +179,7 @@ const CaseStudyParallaxItem = ({ section, index }) => {
             transition: { staggerChildren: 0.1, duration: 0.7, ease: EASE }
           }
         }}
-        className="w-full lg:w-1/2 order-1 lg:order-none"
+        className="w-full lg:w-1/2 order-1 lg:order-0"
       >
         {/* Client Badge */}
         {section.client && (
@@ -214,19 +214,19 @@ const CaseStudyParallaxItem = ({ section, index }) => {
         >
           {section.industry && (
             <div className="flex items-center gap-1 sm:gap-1.5 text-xs text-slate-700">
-              <Target className="h-3 w-3 text-accent flex-shrink-0" />
+              <Target className="h-3 w-3 text-accent shrink-0" />
               <span className="truncate">{section.industry}</span>
             </div>
           )}
           {section.timeline && (
             <div className="flex items-center gap-1 sm:gap-1.5 text-xs text-slate-700">
-              <Calendar className="h-3 w-3 text-accent flex-shrink-0" />
+              <Calendar className="h-3 w-3 text-accent shrink-0" />
               <span className="truncate">{section.timeline}</span>
             </div>
           )}
           {formattedDate(section.createdAt) && (
             <div className="flex items-center gap-1 sm:gap-1.5 text-xs text-slate-700">
-              <Calendar className="h-3 w-3 text-accent flex-shrink-0" />
+              <Calendar className="h-3 w-3 text-accent shrink-0" />
               <span className="truncate">{formattedDate(section.createdAt)}</span>
             </div>
           )}
@@ -239,7 +239,7 @@ const CaseStudyParallaxItem = ({ section, index }) => {
             className="mb-3 sm:mb-4"
           >
             <div className="flex items-center gap-1 sm:gap-1.5 mb-1.5 sm:mb-2">
-              <Tag className="h-3 w-3 text-accent flex-shrink-0" />
+              <Tag className="h-3 w-3 text-accent shrink-0" />
               <span className="text-[11px] sm:text-xs font-medium text-slate-500 uppercase tracking-wider">
                 Core Tech Stack
               </span>
@@ -277,7 +277,7 @@ const CaseStudyParallaxItem = ({ section, index }) => {
       </motion.div>
 
       {/* Image - Below content on mobile, then side by side on desktop */}
-      <div className="w-full lg:w-1/2 order-2 lg:order-none mt-8 sm:mt-10 lg:mt-0">
+      <div className="w-full lg:w-1/2 order-2 lg:order-0 mt-8 sm:mt-10 lg:mt-0">
         <motion.div
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -290,7 +290,7 @@ const CaseStudyParallaxItem = ({ section, index }) => {
               transition: { duration: 0.8, ease: EASE }
             }
           }}
-          className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-border/30 group"
+          className="relative aspect-4/3 rounded-2xl overflow-hidden shadow-2xl border border-border/30 group"
         >
           <motion.div style={{ y: imageY }} className="absolute inset-0 h-[120%] -top-[10%]">
             {section.imageUrl ? (

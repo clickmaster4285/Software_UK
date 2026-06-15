@@ -38,7 +38,7 @@ export function CTAComponents() {
             <div className="absolute -left-10 -bottom-10 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
 
             <div className="relative text-center max-w-3xl mx-auto">
-              <Badge className="bg-surface border-border border text-accent text-[11px] font-medium tracking-[0.08em] uppercase rounded-full mb-4 px-4 py-1.5 font-medium hover:bg-surface">
+              <Badge className="bg-surface border-border border text-accent text-[11px] font-medium tracking-[0.08em] uppercase rounded-full mb-4 px-4 py-1.5 hover:bg-surface">
                 Limited Time Opportunity
               </Badge>
 

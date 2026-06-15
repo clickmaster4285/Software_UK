@@ -178,7 +178,7 @@ function FluidHPipe({ progress, reverse = false, reducedMotion }) {
   const arrowOpacity = Math.min(1, Math.max(0, (fill - 0.75) / 0.25));
 
   return (
-    <div className="relative mx-2 hidden min-w-[180px] flex-1 items-center lg:flex">
+    <div className="relative mx-2 hidden min-w-45 flex-1 items-center lg:flex">
       {!reverse && (
         <motion.div
           style={{ opacity: arrowOpacity, scale: arrowOpacity }}
@@ -306,7 +306,7 @@ function ProcessDevWidget({ widget, side, index, visible, reducedMotion }) {
           </div>
           <span className={cn("h-2 w-2 shrink-0 rounded-full", widget.dot)} />
         </div>
-        <div className="min-h-[2rem] font-mono text-[10px] leading-relaxed">
+        <div className="min-h-8 font-mono text-[10px] leading-relaxed">
           <AnimatePresence mode="wait">
             <motion.p
               key={lineIndex}
@@ -625,11 +625,11 @@ export const ProcessSection = ({ serviceName, processPhases }) => {
         className="relative z-10 mx-auto mb-12 max-w-3xl text-center px-4"
       >
         <div className="mb-3 inline-flex items-center gap-2">
-          <span className="h-[2px] w-8 rounded-full bg-accent" />
+          <span className="h-0.5 w-8 rounded-full bg-accent" />
           <span className="rounded-full border border-border bg-surface px-3 py-1 text-[11px] font-medium uppercase tracking-[0.08em] text-accent">
             Our Process
           </span>
-          <span className="h-[2px] w-8 rounded-full bg-accent" />
+          <span className="h-0.5 w-8 rounded-full bg-accent" />
         </div>
         <h2
           id="process-section-heading"

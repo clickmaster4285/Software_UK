@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function TechCard({ item }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-2 flex-shrink-0 w-20 sm:w-24 md:w-28 group cursor-default">
+    <div className="flex flex-col items-center justify-center gap-2 shrink-0 w-20 sm:w-24 md:w-28 group cursor-default">
       <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
         <Image
           src={item.icon || ""}
