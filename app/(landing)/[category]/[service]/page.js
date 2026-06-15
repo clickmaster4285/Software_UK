@@ -291,7 +291,7 @@ export default async function ServiceByCategoryPage({ params }) {
                   </div>
                 </div>
                 <div className="my-16 flex items-center gap-4">
-                  <div className="h-px flex-1 bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+                  <div className="h-px flex-1 bg-linear-to-r from-transparent via-slate-200 to-transparent" />
                 </div>
               </section>
             ))}
@@ -318,7 +318,7 @@ export default async function ServiceByCategoryPage({ params }) {
           </main>
         </div>
 
-        <section className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white py-20">
+        <section className="border-t border-slate-200 bg-linear-to-b from-slate-50 to-white py-20">
           <div className="mx-auto max-w-5xl px-5 text-center md:px-8">
             <h2 className="text-3xl font-semibold text-slate-900 sm:text-4xl">
               Explore Related Capabilities

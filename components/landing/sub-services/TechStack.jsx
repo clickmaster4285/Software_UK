@@ -82,8 +82,8 @@ export const TechStack = ({ techStack }) => {
 
                 <div className="relative overflow-hidden">
                   {/* Gradient masks - smaller on mobile */}
-                  <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-20 z-10 bg-gradient-to-r from-white to-transparent" />
-                  <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-20 z-10 bg-gradient-to-l from-white to-transparent" />
+                  <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-20 z-10 bg-linear-to-r from-white to-transparent" />
+                  <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-20 z-10 bg-linear-to-l from-white to-transparent" />
 
                   <div className={`flex gap-4 sm:gap-6 md:gap-8 w-max ${goLeft ? "marquee-left" : "marquee-right"}`}>
                     {[...repeated, ...repeated].map((item, i) => (
@@ -98,7 +98,7 @@ export const TechStack = ({ techStack }) => {
 
         {/* Bottom Divider - responsive spacing */}
         <div className="my-12 sm:my-14 md:my-16 flex items-center gap-4">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+          <div className="h-px flex-1 bg-linear-to-r from-transparent via-slate-200 to-transparent" />
         </div>
       </section>
     </>

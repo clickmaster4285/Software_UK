@@ -403,8 +403,8 @@ export function ProcessPage({ serviceData }) {
           viewport={{ once: true }}
           className="absolute inset-0"
         >
-          <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-primary/15 rounded-full blur-[120px] -translate-y-1/2" />
-          <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-accent/15 rounded-full blur-[140px] translate-y-1/2" />
+          <div className="absolute top-0 right-1/4 w-125 h-125 bg-primary/15 rounded-full blur-[120px] -translate-y-1/2" />
+          <div className="absolute bottom-0 left-1/4 w-150600px] bg-accent/15 rounded-full blur-[140px] translate-y-1/2" />
           <div className="absolute rounded-lg top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 bg-accent/20" />
         </motion.div>
 

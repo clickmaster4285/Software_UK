@@ -145,9 +145,9 @@ function CaseStudiesContent() {
     <div className="min-h-screen bg-background">
       {/* ── Hero ── */}
       <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-mid to-primary-light" />
-        <div className="absolute top-10 right-[8%] w-[500px] h-[500px] rounded-full bg-accent/8 blur-3xl" />
-        <div className="absolute bottom-0 left-[5%] w-[400px] h-[400px] rounded-full bg-accent/5 blur-3xl" />
+        <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
+        <div className="absolute top-10 right-[8%] w-125 h-125 rounded-full bg-accent/8 blur-3xl" />
+        <div className="absolute bottom-0 left-[5%] w-100 h-100 rounded-full bg-accent/5 blur-3xl" />
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
 
         <div className="relative max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 text-center">
@@ -186,11 +186,10 @@ function CaseStudiesContent() {
 
             <button
               onClick={() => setShowFilters(!showFilters)}
-              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl border text-sm font-medium transition-all ${
-                showFilters || activeSector
-                  ? 'bg-accent/10 border-accent text-accent'
-                  : 'border-border text-text-body hover:bg-surface'
-              }`}
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-xl border text-sm font-medium transition-all ${showFilters || activeSector
+                ? 'bg-accent/10 border-accent text-accent'
+                : 'border-border text-text-body hover:bg-surface'
+                }`}
             >
               <SlidersHorizontal className="w-4 h-4" />
               Filters
@@ -219,17 +218,15 @@ function CaseStudiesContent() {
                   <button
                     key={sector}
                     onClick={() => handleSectorClick(sector)}
-                    className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${
-                      isActive
-                        ? 'bg-accent text-white shadow-md shadow-accent/20 scale-105'
-                        : 'bg-surface text-text-body hover:bg-surface-2 border border-border'
-                    }`}
+                    className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all ${isActive
+                      ? 'bg-accent text-white shadow-md shadow-accent/20 scale-105'
+                      : 'bg-surface text-text-body hover:bg-surface-2 border border-border'
+                      }`}
                   >
                     <span>{sectorEmoji[sector] || '📁'}</span>
                     {sector}
-                    <span className={`ml-0.5 px-1.5 py-0.5 rounded-full text-[10px] ${
-                      isActive ? 'bg-white/20' : 'bg-border'
-                    }`}>
+                    <span className={`ml-0.5 px-1.5 py-0.5 rounded-full text-[10px] ${isActive ? 'bg-white/20' : 'bg-border'
+                      }`}>
                       {count}
                     </span>
                   </button>
@@ -305,11 +302,10 @@ function CaseStudiesContent() {
                       <button
                         key={page}
                         onClick={() => handlePageChange(page)}
-                        className={`w-9 h-9 rounded-xl text-sm font-semibold transition-all ${
-                          page === safePage
-                            ? 'bg-accent text-white shadow-md shadow-accent/20'
-                            : 'text-text-body hover:bg-white'
-                        }`}
+                        className={`w-9 h-9 rounded-xl text-sm font-semibold transition-all ${page === safePage
+                          ? 'bg-accent text-white shadow-md shadow-accent/20'
+                          : 'text-text-body hover:bg-white'
+                          }`}
                       >
                         {page}
                       </button>
@@ -334,9 +330,9 @@ function CaseStudiesContent() {
       {/* ── CTA ── */}
       <section className="py-20 px-6">
         <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary-mid to-primary-light px-8 py-16 md:px-16 md:py-20 text-center">
-            <div className="absolute top-0 right-0 w-[300px] h-[300px] rounded-full bg-accent/10 blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-[250px] h-[250px] rounded-full bg-accent/5 blur-3xl" />
+          <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-primary via-primary-mid to-primary-light px-8 py-16 md:px-16 md:py-20 text-center">
+            <div className="absolute top-0 right-0 w-75 h-75 rounded-full bg-accent/10 blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-63 h-63 rounded-full bg-accent/5 blur-3xl" />
 
             <div className="relative">
               <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">
@@ -367,7 +363,7 @@ function CaseStudiesLoading() {
   return (
     <div className="min-h-screen bg-background">
       <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-mid to-primary-light" />
+        <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
         <div className="relative max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 text-center">
           <Skeleton className="h-6 w-24 mx-auto mb-6 bg-white/20" />
           <Skeleton className="h-14 w-64 mx-auto mb-6 bg-white/20" />

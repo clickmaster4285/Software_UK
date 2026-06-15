@@ -145,7 +145,7 @@ export const IndustriesSection = ({ industryUseCases }) => {
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <div className="h-px flex-1 bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+        <div className="h-px flex-1 bg-linear-to-r from-transparent via-slate-200 to-transparent" />
       </motion.div>
     </motion.section>
   );

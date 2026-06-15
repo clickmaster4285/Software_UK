@@ -69,8 +69,8 @@ export default function HirePage() {
         {/* Background linear */}
         <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
         {/* Decorative blobs */}
-        <div className="absolute top-20 right-[10%] w-[500px] h-[500px] rounded-full bg-accent/8 blur-3xl" />
-        <div className="absolute bottom-0 left-[5%] w-[400px] h-[400px] rounded-full bg-accent/5 blur-3xl" />
+        <div className="absolute top-20 right-[10%] w-125 h-125 rounded-full bg-accent/8 blur-3xl" />
+        <div className="absolute bottom-0 left-[5%] w-100 h-100 rounded-full bg-accent/5 blur-3xl" />
         {/* Grid pattern overlay */}
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-linear(circle, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
 
@@ -153,11 +153,10 @@ export default function HirePage() {
               return (
                 <div
                   key={card.title}
-                  className={`relative p-7 rounded-2xl border transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] ${
-                    card.highlight
-                      ? 'bg-primary text-white border-primary shadow-[0_4px_24px_rgba(0,0,0,0.15)]'
-                      : 'bg-white border-border hover:border-accent/30'
-                  }`}
+                  className={`relative p-7 rounded-2xl border transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] ${card.highlight
+                    ? 'bg-primary text-white border-primary shadow-[0_4px_24px_rgba(0,0,0,0.15)]'
+                    : 'bg-white border-border hover:border-accent/30'
+                    }`}
                 >
                   <div className={`icon-circle mb-5 ${card.highlight ? 'bg-white/15' : ''}`}>
                     <Icon className={`w-5 h-5 ${card.highlight ? 'text-white' : ''}`} />
@@ -281,8 +280,8 @@ export default function HirePage() {
         <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
           <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-primary via-primary-mid to-primary-light px-8 py-16 md:px-16 md:py-20 text-center">
             {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-[300px] h-[300px] rounded-full bg-accent/10 blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-[250px] h-[250px] rounded-full bg-accent/5 blur-3xl" />
+            <div className="absolute top-0 right-0 w-75 h-75 rounded-full bg-accent/10 blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-63 h-63 rounded-full bg-accent/5 blur-3xl" />
 
             <div className="relative">
               <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">

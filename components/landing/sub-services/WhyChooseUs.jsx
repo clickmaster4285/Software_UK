@@ -187,7 +187,7 @@ function BenefitCard({ feature, description, index }) {
         "hover:-translate-y-1 hover:border-accent/25 hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)]"
       )}
     >
-      <div className="absolute top-0 left-0 h-1 w-0 bg-gradient-to-r from-accent to-accent-hover transition-all duration-500 group-hover:w-full" />
+      <div className="absolute top-0 left-0 h-1 w-0 bg-linear-to-r from-accent to-accent-hover transition-all duration-500 group-hover:w-full" />
 
       <div className="flex items-start justify-between gap-3">
         <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent ring-1 ring-accent/15 transition-colors group-hover:bg-accent group-hover:text-white group-hover:ring-accent/30">
@@ -244,7 +244,7 @@ export function WhyChooseUs({ slug, differentiators }) {
         className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
         aria-hidden
       >
-        <div className="absolute -top-24 right-0 h-72 w-72 rounded-full bg-accent/10 blur-[100px]" />
+        <div className="absolute -top-24 right-0 h-72 w-72 rounded-full bg-accent/10 blur-25" />
         <div className="absolute bottom-0 left-0 h-64 w-64 rounded-full bg-primary/8 blur-[90px]" />
         <div
           className="absolute inset-0 opacity-[0.025]"
@@ -379,7 +379,7 @@ export function WhyChooseUs({ slug, differentiators }) {
         </motion.div>
       </div>
 
-      <div className="mt-14 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent md:mt-16" />
+      <div className="mt-14 h-px w-full bg-linear-to-r from-transparent via-border to-transparent md:mt-16" />
     </section>
   );
 }

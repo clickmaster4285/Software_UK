@@ -67,8 +67,8 @@ export default function Benefits() {
   return (
     <section className="py-24 bg-surface relative overflow-hidden">
       {/* Subtle Background Elements */}
-      <div className="absolute top-0 right-0 w-75 h-75 bg-accent/5 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-75 h-75 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-75 h-75 bg-accent/5 rounded-full blur-25 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-75 h-75 bg-primary/5 rounded-full blur-25 pointer-events-none" />
 
       <div className="max-w-full lg:max-w-[90vw] mx-auto px-6 relative z-10">
         <div className="text-center mb-16">

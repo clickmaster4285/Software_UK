@@ -79,7 +79,7 @@ export default function CategoriesListPage() {
                 <TableRow key={category._id} className="group border-slate-50 hover:bg-slate-50/50 transition-colors">
                   <TableCell>
                     <div className="font-bold text-slate-900">{category.name}</div>
-                    <div className="text-xs text-slate-400 line-clamp-1 max-w-[300px]">{category.description || 'No description'}</div>
+                    <div className="text-xs text-slate-400 line-clamp-1 max-w-75">{category.description || 'No description'}</div>
                   </TableCell>
                   <TableCell>
                     <code className="text-xs bg-slate-100 px-2 py-1 rounded text-slate-600">/solutions/{category.slug}</code>
@@ -103,9 +103,9 @@ export default function CategoriesListPage() {
                           <Pencil className="w-4 h-4 text-slate-400 hover:text-primary" />
                         </Link>
                       </Button>
-                      <Button 
-                        variant="ghost" 
-                        size="icon" 
+                      <Button
+                        variant="ghost"
+                        size="icon"
                         onClick={() => handleDelete(category._id)}
                         title="Delete Category"
                         className="hover:bg-red-50"

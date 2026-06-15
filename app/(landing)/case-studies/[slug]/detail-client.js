@@ -47,7 +47,7 @@ function ReadingProgress() {
   return (
     <div className="fixed top-0 left-0 right-0 z-[60] h-1">
       <div
-        className="h-full bg-gradient-to-r from-accent to-accent-light transition-all duration-150 ease-out"
+        className="h-full bg-linear-to-r from-accent to-accent-light transition-all duration-150 ease-out"
         style={{ width: `${progress}%` }}
       />
     </div>
@@ -132,9 +132,9 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
 
       {/* ── Hero ── */}
       <section className="relative overflow-hidden pt-16 pb-14 md:pt-20 md:pb-18">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-mid to-primary-light" />
-        <div className="absolute top-10 right-[8%] w-[500px] h-[500px] rounded-full bg-accent/8 blur-3xl" />
-        <div className="absolute bottom-0 left-[5%] w-[400px] h-[400px] rounded-full bg-accent/5 blur-3xl" />
+        <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
+        <div className="absolute top-10 right-[8%] w-125 h-125 rounded-full bg-accent/8 blur-3xl" />
+        <div className="absolute bottom-0 left-[5%] w-100 h-100 rounded-full bg-accent/5 blur-3xl" />
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
 
         <div className="relative max-w-[96vw] lg:max-w-[90vw] mx-auto px-6">
@@ -154,11 +154,10 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
                 {emoji} {extractSectorKey(study.sector) || 'Success Story'}
               </span>
               {study.status && (
-                <span className={`px-3 py-1.5 text-xs font-semibold rounded-full ${
-                  study.status.toLowerCase().includes('time')
-                    ? 'bg-emerald-500/20 text-emerald-200 border border-emerald-400/20'
-                    : 'bg-blue-500/20 text-blue-200 border border-blue-400/20'
-                }`}>
+                <span className={`px-3 py-1.5 text-xs font-semibold rounded-full ${study.status.toLowerCase().includes('time')
+                  ? 'bg-emerald-500/20 text-emerald-200 border border-emerald-400/20'
+                  : 'bg-blue-500/20 text-blue-200 border border-blue-400/20'
+                  }`}>
                   {study.status}
                 </span>
               )}
@@ -312,7 +311,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
             <section className="mb-16">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {study.challenge && (
-                  <div id="challenge" className="scroll-mt-28 rounded-2xl bg-gradient-to-br from-red-50 via-white to-white border border-red-100 p-7 flex flex-col hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-shadow duration-300">
+                  <div id="challenge" className="scroll-mt-28 rounded-2xl bg-linear-to-br from-red-50 via-white to-white border border-red-100 p-7 flex flex-col hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-shadow duration-300">
                     <div className="flex items-center gap-3 mb-5">
                       <div className="w-11 h-11 bg-red-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-red-200">
                         <Target className="w-5 h-5" />
@@ -324,7 +323,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
                 )}
 
                 {study.approach && (
-                  <div id="approach" className="scroll-mt-28 rounded-2xl bg-gradient-to-br from-blue-50 via-white to-white border border-blue-100 p-7 flex flex-col hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-shadow duration-300">
+                  <div id="approach" className="scroll-mt-28 rounded-2xl bg-linear-to-br from-blue-50 via-white to-white border border-blue-100 p-7 flex flex-col hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-shadow duration-300">
                     <div className="flex items-center gap-3 mb-5">
                       <div className="w-11 h-11 bg-blue-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-blue-200">
                         <Lightbulb className="w-5 h-5" />
@@ -336,7 +335,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
                 )}
 
                 {study.results && (
-                  <div id="results" className="scroll-mt-28 rounded-2xl bg-gradient-to-br from-emerald-50 via-white to-white border border-emerald-100 p-7 flex flex-col md:col-span-2 lg:col-span-1 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-shadow duration-300">
+                  <div id="results" className="scroll-mt-28 rounded-2xl bg-linear-to-br from-emerald-50 via-white to-white border border-emerald-100 p-7 flex flex-col md:col-span-2 lg:col-span-1 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-shadow duration-300">
                     <div className="flex items-center gap-3 mb-5">
                       <div className="w-11 h-11 bg-emerald-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-emerald-200">
                         <CheckCircle2 className="w-5 h-5" />
@@ -353,9 +352,9 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
           {/* ── Client Quote ── */}
           {study.clientQuote && (
             <section id="testimonial" className="mb-16 scroll-mt-28">
-              <div className="relative bg-gradient-to-br from-primary via-primary-mid to-primary-light rounded-3xl p-10 md:p-14 overflow-hidden">
+              <div className="relative bg-linear-to-br from-primary via-primary-mid to-primary-light rounded-3xl p-10 md:p-14 overflow-hidden">
                 <div className="absolute top-6 left-8 text-8xl text-white/5 font-serif leading-none select-none">&ldquo;</div>
-                <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent/10 blur-[100px]" />
+                <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent/10 blur-25" />
 
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-8">
@@ -425,7 +424,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
                     href={`/case-studies/${cs.slug}`}
                     className="group bg-white rounded-2xl border border-border overflow-hidden hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300"
                   >
-                    <div className="h-32 bg-gradient-to-br from-surface to-surface-2 flex items-center justify-center border-b border-border">
+                    <div className="h-32 bg-linear-to-br from-surface to-surface-2 flex items-center justify-center border-b border-border">
                       <span className="text-4xl">{getSectorEmoji(cs.sector)}</span>
                     </div>
                     <div className="p-5">
@@ -446,9 +445,9 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
           )}
 
           {/* ── Bottom CTA ── */}
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary-mid to-primary-light px-8 py-14 md:px-14 md:py-18 text-center">
-            <div className="absolute top-0 right-0 w-[250px] h-[250px] rounded-full bg-accent/10 blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-[200px] h-[200px] rounded-full bg-accent/5 blur-3xl" />
+          <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-primary via-primary-mid to-primary-light px-8 py-14 md:px-14 md:py-18 text-center">
+            <div className="absolute top-0 right-0 w-63 h-63 rounded-full bg-accent/10 blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-50 h-50 rounded-full bg-accent/5 blur-3xl" />
 
             <div className="relative">
               <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">

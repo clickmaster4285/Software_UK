@@ -20,10 +20,10 @@ export function CaseStudyCard({
   const content = (
     <Card className="py-0 group h-full overflow-hidden border border-border bg-white rounded-2xl shadow-[0_2px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-400">
       {/* Header Strip */}
-      <div className="relative h-1.5 bg-gradient-to-r from-primary via-accent to-primary" />
+      <div className="relative h-1.5 bg-linear-to-r from-primary via-accent to-primary" />
 
       {/* Image / Emoji Section */}
-      <div className="relative h-44 overflow-hidden bg-gradient-to-br from-surface to-surface-2 border-b border-border">
+      <div className="relative h-44 overflow-hidden bg-linear-to-br from-surface to-surface-2 border-b border-border">
         {thumbnail ? (
           <img
             src={thumbnail}

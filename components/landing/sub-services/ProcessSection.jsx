@@ -195,12 +195,12 @@ function FluidHPipe({ progress, reverse = false, reducedMotion }) {
               scaleX: fill,
               transformOrigin: reverse ? "right" : "left",
             }}
-            className="h-full w-full rounded-full bg-gradient-to-r from-primary via-accent to-accent-hover"
+            className="h-full w-full rounded-full bg-linear-to-r from-primary via-accent to-accent-hover"
             transition={{ duration: 0.3, ease: EASE_OUT }}
           />
           {!reducedMotion && fill > 0 && fill < 1 && (
             <motion.div
-              className="absolute inset-0 h-full w-[200%] rounded-full bg-gradient-to-r from-transparent via-white/40 to-transparent"
+              className="absolute inset-0 h-full w-[200%] rounded-full bg-linear-to-r from-transparent via-white/40 to-transparent"
               animate={{ x: ["-50%", "0%"] }}
               transition={{ duration: 1.8, repeat: Infinity, ease: "linear" }}
             />
@@ -245,7 +245,7 @@ function FluidVPipe({ progress, align = "end", reducedMotion }) {
         <div className="absolute inset-x-0 top-0 bottom-0 overflow-hidden rounded-full bg-surface">
           <motion.div
             style={{ scaleY: fill, transformOrigin: "top" }}
-            className="h-full w-full rounded-full bg-gradient-to-b from-primary via-accent to-accent-hover"
+            className="h-full w-full rounded-full bg-linear-to-b from-primary via-accent to-accent-hover"
             transition={{ duration: 0.3, ease: EASE_OUT }}
           />
         </div>
@@ -410,7 +410,7 @@ function DesktopProcessCard({ phase, progress, side }) {
         </h3>
         <p className="text-sm leading-relaxed text-text-body">{phase.text}</p>
         <motion.div
-          className={`mt-3 h-1 origin-left rounded-full bg-gradient-to-r md:mt-4 ${colors.from} ${colors.to}`}
+          className={`mt-3 h-1 origin-left rounded-full bg-linear-to-r md:mt-4 ${colors.from} ${colors.to}`}
           style={{ width: `${Math.min(120, 80 * p)}px` }}
           animate={{ width: `${Math.min(120, 80 * p)}px` }}
           transition={{ duration: 0.3, ease: EASE_OUT }}
@@ -459,7 +459,7 @@ function MobileProcessCard({ phase, progress }) {
         <h3 className="mb-2 text-lg font-bold text-text-primary">{phase.title}</h3>
         <p className="text-sm leading-relaxed text-text-body">{phase.text}</p>
         <motion.div
-          className={`mt-3 h-1 rounded-full bg-gradient-to-r ${colors.from} ${colors.to}`}
+          className={`mt-3 h-1 rounded-full bg-linear-to-r ${colors.from} ${colors.to}`}
           style={{ width: `${Math.min(80, 60 * p)}px` }}
           animate={{ width: `${Math.min(80, 60 * p)}px` }}
           transition={{ duration: 0.3, ease: EASE_OUT }}
@@ -476,7 +476,7 @@ function MobilePipe({ progress }) {
       <div className="relative h-10 w-1 overflow-hidden rounded-full bg-surface">
         <motion.div
           style={{ scaleY: p, transformOrigin: "top" }}
-          className="h-full w-full rounded-full bg-gradient-to-b from-primary to-accent"
+          className="h-full w-full rounded-full bg-linear-to-b from-primary to-accent"
         />
       </div>
     </div>
@@ -614,7 +614,7 @@ export const ProcessSection = ({ serviceName, processPhases }) => {
       {/* Background blobs */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
         <div className="absolute -top-16 left-1/3 h-56 w-56 rounded-full bg-accent/8 blur-[90px]" />
-        <div className="absolute bottom-0 right-1/4 h-64 w-64 rounded-full bg-primary/6 blur-[100px]" />
+        <div className="absolute bottom-0 right-1/4 h-64 w-64 rounded-full bg-primary/6 blur-25" />
       </div>
 
       {/* Header - stays visible */}
@@ -698,7 +698,7 @@ export const ProcessSection = ({ serviceName, processPhases }) => {
           >
             <motion.button
               type="button"
-              className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-accent to-accent-hover px-8 py-3.5 text-sm font-semibold text-white shadow-[0_2px_16px_rgba(0,0,0,0.07)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] md:text-base"
+              className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-linear-to-r from-accent to-accent-hover px-8 py-3.5 text-sm font-semibold text-white shadow-[0_2px_16px_rgba(0,0,0,0.07)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] md:text-base"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -711,9 +711,9 @@ export const ProcessSection = ({ serviceName, processPhases }) => {
 
       {/* Decorative footer */}
       <div className="relative z-10 mx-auto mt-12 flex items-center gap-4 px-4">
-        <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent" />
+        <div className="h-px flex-1 bg-linear-to-r from-transparent via-border to-transparent" />
         <Gem className="h-3 w-3 text-text-muted/40" aria-hidden />
-        <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent" />
+        <div className="h-px flex-1 bg-linear-to-r from-transparent via-border to-transparent" />
       </div>
     </section>
   );

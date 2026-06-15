@@ -49,8 +49,8 @@ export function HireDetailClient({ hirePage, relatedPages }) {
       {/* ── Hero ── */}
       <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20">
         {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-mid to-primary-light" />
-        <div className="absolute top-10 right-[5%] w-[600px] h-[600px] rounded-full bg-accent/8 blur-3xl" />
+        <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
+        <div className="absolute top-10 right-[5%] w-150 h-150 rounded-full bg-accent/8 blur-3xl" />
         <div className="absolute bottom-0 left-[10%] w-[350px] h-[350px] rounded-full bg-accent/5 blur-3xl" />
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
 
@@ -126,7 +126,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
       {directAnswer && (
         <section className="py-14 px-6 border-b border-border">
           <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
-            <div className="max-w-3xl mx-auto relative overflow-hidden rounded-2xl border border-accent/20 bg-gradient-to-br from-accent/[0.04] to-transparent p-8">
+            <div className="max-w-3xl mx-auto relative overflow-hidden rounded-2xl border border-accent/20 bg-linear-to-br from-accent/[0.04] to-transparent p-8">
               <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-accent/5 blur-2xl" />
               <div className="relative">
                 <div className="flex items-center gap-2 mb-4">
@@ -282,7 +282,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
                   >
                     {/* Step number */}
                     <div className="shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-accent-hover flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-full bg-linear-to-br from-accent to-accent-hover flex items-center justify-center">
                         <span className="font-heading font-bold text-white text-lg">
                           {stage.stage || index + 1}
                         </span>
@@ -330,31 +330,27 @@ export function HireDetailClient({ hirePage, relatedPages }) {
                   return (
                     <div
                       key={index}
-                      className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
-                        isOpen
-                          ? 'border-accent/30 bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)]'
-                          : 'border-border bg-white hover:border-accent/20'
-                      }`}
+                      className={`rounded-2xl border transition-all duration-300 overflow-hidden ${isOpen
+                        ? 'border-accent/30 bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)]'
+                        : 'border-border bg-white hover:border-accent/20'
+                        }`}
                     >
                       <button
                         onClick={() => toggleFaq(index)}
                         className="w-full flex items-center justify-between p-6 text-left cursor-pointer"
                       >
-                        <span className={`font-heading font-semibold pr-4 transition-colors duration-200 ${
-                          isOpen ? 'text-accent' : 'text-text-primary'
-                        }`}>
+                        <span className={`font-heading font-semibold pr-4 transition-colors duration-200 ${isOpen ? 'text-accent' : 'text-text-primary'
+                          }`}>
                           {question}
                         </span>
                         <ChevronDown
-                          className={`w-5 h-5 shrink-0 transition-transform duration-300 ${
-                            isOpen ? 'rotate-180 text-accent' : 'text-text-muted'
-                          }`}
+                          className={`w-5 h-5 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-accent' : 'text-text-muted'
+                            }`}
                         />
                       </button>
                       <div
-                        className={`transition-all duration-300 ease-in-out ${
-                          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                        } overflow-hidden`}
+                        className={`transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                          } overflow-hidden`}
                       >
                         <div className="px-6 pb-6">
                           <div className="pl-4 border-l-2 border-accent/30">
@@ -410,9 +406,9 @@ export function HireDetailClient({ hirePage, relatedPages }) {
       <section className="py-20 px-6">
         <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
           <div className="max-w-3xl mx-auto">
-            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary-mid to-primary-light px-8 py-14 md:px-14 md:py-18 text-center">
-              <div className="absolute top-0 right-0 w-[250px] h-[250px] rounded-full bg-accent/10 blur-3xl" />
-              <div className="absolute bottom-0 left-0 w-[200px] h-[200px] rounded-full bg-accent/5 blur-3xl" />
+            <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-primary via-primary-mid to-primary-light px-8 py-14 md:px-14 md:py-18 text-center">
+              <div className="absolute top-0 right-0 w-63 h-63 rounded-full bg-accent/10 blur-3xl" />
+              <div className="absolute bottom-0 left-0 w-50 h-50 rounded-full bg-accent/5 blur-3xl" />
 
               <div className="relative">
                 <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">

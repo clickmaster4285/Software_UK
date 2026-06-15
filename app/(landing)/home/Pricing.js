@@ -145,7 +145,7 @@ export default function Pricing() {
                            opacity: [0.3, 0.5, 0.3]
                         }}
                         transition={{ duration: 15, repeat: Infinity }}
-                        className="absolute -top-1/2 -right-1/2 w-full h-full bg-accent/5 rounded-full blur-[100px] pointer-events-none"
+                        className="absolute -top-1/2 -right-1/2 w-full h-full bg-accent/5 rounded-full blur-25 pointer-events-none"
                      />
 
                      <div className="grid lg:grid-cols-2 gap-20 items-center">

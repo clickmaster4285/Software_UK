@@ -79,7 +79,7 @@ export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
             <motion.div
               style={{ y: blob1Y }}
-              className="absolute -top-16 left-1/4 h-64 w-64 rounded-full bg-accent/5 blur-[100px]"
+              className="absolute -top-16 left-1/4 h-64 w-64 rounded-full bg-accent/5 blur-25"
             />
             <motion.div
               style={{ y: blob2Y }}
@@ -132,7 +132,7 @@ export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-accent to-accent-hover text-white hover:text-white rounded-lg px-6 sm:px-8 mt-3 w-full sm:w-auto font-semibold shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
+                className="bg-linear-to-r from-accent to-accent-hover text-white hover:text-white rounded-lg px-6 sm:px-8 mt-3 w-full sm:w-auto font-semibold shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
               >
                 <Link href="/contact">
                   Start Project
@@ -266,7 +266,7 @@ const CaseStudyParallaxItem = ({ section, index }) => {
           <Button
             asChild
             size="default"
-            className="group bg-gradient-to-r from-accent to-accent-hover text-white hover:text-white rounded-lg px-4 sm:px-5 py-2 sm:py-2.5 text-sm sm:text-base font-semibold shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto cursor-pointer"
+            className="group bg-linear-to-r from-accent to-accent-hover text-white hover:text-white rounded-lg px-4 sm:px-5 py-2 sm:py-2.5 text-sm sm:text-base font-semibold shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto cursor-pointer"
           >
             <Link href={`/case-studies/${encodeURIComponent(section.slug)}`}>
               Read more
@@ -303,7 +303,7 @@ const CaseStudyParallaxItem = ({ section, index }) => {
                 priority={index === 0}
               />
             ) : (
-              <div className="w-full h-full bg-gradient-to-br from-surface to-surface-2 flex items-center justify-center border border-border">
+              <div className="w-full h-full bg-linear-to-br from-surface to-surface-2 flex items-center justify-center border border-border">
                 <Briefcase className="h-12 w-12 sm:h-16 sm:w-16 text-text-muted" />
               </div>
             )}

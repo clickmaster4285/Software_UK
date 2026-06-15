@@ -100,26 +100,26 @@ export function IndustriesSection() {
   const backgroundRotate = useTransform(scrollYProgress, [0, 1], [0, 10]);
 
   return (
-    <section 
+    <section
       id="industries-expertise"
-      ref={sectionRef} 
+      ref={sectionRef}
       className="relative py-20 overflow-hidden bg-transparent"
       aria-labelledby="industries-heading"
     >
       {/* Premium Tech Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <motion.div 
+        <motion.div
           style={{ rotate: backgroundRotate }}
           className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[110%] h-[140%] opacity-30 will-change-transform"
         >
           <div className="w-full h-full" style={{ backgroundImage: 'linear-gradient(var(--accent) 1px, transparent 1px), linear-gradient(90deg, var(--accent) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
         </motion.div>
-        
-    
-        
+
+
+
         {/* Gradients */}
         <div className="absolute top-0 right-0 w-150 h-150 bg-accent/15 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-0 left-0 w-150 h-150 bg-primary/15 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2" />
+        <div className="absolute bottom-0 left-0 w-150 h-150 bg-primary/15 rounded-full blur-25 -translate-x-1/2 translate-y-1/2" />
       </div>
 
       <div className="container relative z-10">
@@ -155,7 +155,7 @@ export function IndustriesSection() {
             transition={{ delay: 0.2 }}
             className="text-priamry text-lg md:text-xl font-body leading-relaxed"
           >
-            Our domain experts translate complex industry requirements into 
+            Our domain experts translate complex industry requirements into
             <span className="text-accent font-semibold"> high-performance digital products</span>.
           </motion.p>
         </div>
@@ -180,10 +180,10 @@ export function IndustriesSection() {
               >
                 {/* Premium Industry Card */}
                 <div className="relative h-full bg-white rounded-[2rem] p-8 border border-border shadow-sm transition-all duration-500 group-hover:border-accent/30 group-hover:shadow-2xl group-hover:shadow-accent/5 overflow-hidden">
-                  
+
                   {/* Hover background layer */}
                   <div className="absolute inset-0 bg-linear-to-br from-accent/3 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
+
                   {/* Decorative number */}
                   <div className="absolute top-6 right-8 font-heading text-5xl font-black text-surface group-hover:text-accent/5 transition-colors duration-500 pointer-events-none">
                     {String(index + 1).padStart(2, '0')}
@@ -192,7 +192,7 @@ export function IndustriesSection() {
                   <div className="relative z-10">
                     {/* Icon Container */}
                     <motion.div
-                      animate={{ 
+                      animate={{
                         scale: isHovered ? 1.1 : 1,
                         rotate: isHovered ? 5 : 0
                       }}
@@ -231,7 +231,7 @@ export function IndustriesSection() {
                           {industry.statLabel}
                         </span>
                       </div>
-                      
+
                       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-surface border border-border group-hover:bg-accent group-hover:border-accent transition-all duration-300">
                         <ChevronRight className="h-5 w-5 text-text-muted group-hover:text-white transition-colors" />
                       </div>
@@ -254,7 +254,7 @@ export function IndustriesSection() {
             {/* Background elements */}
             <div className="absolute inset-0 bg-linear-to-br from-accent/20 to-transparent opacity-40 pointer-events-none" />
             <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(white 1px, transparent 1px)', backgroundSize: '24px 24px' }} />
-            
+
             <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white text-[10px] font-bold uppercase tracking-widest mb-6">
@@ -267,7 +267,7 @@ export function IndustriesSection() {
                 <p className="text-white/70 text-lg font-body leading-relaxed mb-10 max-w-xl">
                   Whether you are digitizing legacy workflows or building a new market-disrupting product, our specialized engineering teams are ready to help you win.
                 </p>
-                
+
                 <div className="flex flex-wrap gap-4">
                   <Button
                     asChild

@@ -112,7 +112,7 @@ export const ServicesSection = ({ serviceName, servicesCards }) => {
                 "hover:-translate-y-1 hover:border-accent/25 hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)]"
               )}
             >
-              <div className="absolute top-0 left-0 h-1 w-0 bg-gradient-to-r from-accent to-accent-hover transition-all duration-500 group-hover:w-full" />
+              <div className="absolute top-0 left-0 h-1 w-0 bg-linear-to-r from-accent to-accent-hover transition-all duration-500 group-hover:w-full" />
 
               <div className="relative z-10 flex items-start justify-between gap-3">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent ring-1 ring-accent/15 transition-colors group-hover:bg-accent group-hover:text-white group-hover:ring-accent/30">
@@ -137,7 +137,7 @@ export const ServicesSection = ({ serviceName, servicesCards }) => {
         })}
       </motion.div>
 
-      <div className="mt-14 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent md:mt-16" />
+      <div className="mt-14 h-px w-full bg-linear-to-r from-transparent via-border to-transparent md:mt-16" />
     </section>
   );
 };

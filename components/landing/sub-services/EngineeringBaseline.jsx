@@ -55,7 +55,7 @@ function BaselineCard({ item, index, showStandardBadge }) {
         "hover:-translate-y-1 hover:border-accent/25 hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)]"
       )}
     >
-      <div className="absolute top-0 left-0 h-1 w-0 origin-left bg-gradient-to-r from-accent to-accent-hover transition-all duration-500 group-hover:w-full" />
+      <div className="absolute top-0 left-0 h-1 w-0 origin-left bg-linear-to-r from-accent to-accent-hover transition-all duration-500 group-hover:w-full" />
 
       <div className="relative z-10 flex items-start justify-between gap-3">
         <div
@@ -120,7 +120,7 @@ export function EngineeringBaseline({ serviceName, checklist }) {
         aria-hidden
       >
         <div className="absolute -top-20 left-1/4 h-64 w-64 rounded-full bg-primary/6 blur-[90px]" />
-        <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-accent/10 blur-[100px]" />
+        <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-accent/10 blur-25" />
         <div
           className="absolute inset-0 opacity-[0.025]"
           style={{
@@ -195,7 +195,7 @@ export function EngineeringBaseline({ serviceName, checklist }) {
         </motion.div>
       </div>
 
-      <div className="mt-14 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent md:mt-16" />
+      <div className="mt-14 h-px w-full bg-linear-to-r from-transparent via-border to-transparent md:mt-16" />
     </section>
   );
 }

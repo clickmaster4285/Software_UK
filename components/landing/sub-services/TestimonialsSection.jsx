@@ -115,7 +115,7 @@ export function TestimonialsSection({ featuredOnly = true, limit = 9 }) {
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
         <motion.div
           style={{ y: blob1Y }}
-          className="absolute -top-16 left-1/4 h-64 w-64 rounded-full bg-accent/5 blur-[100px]"
+          className="absolute -top-16 left-1/4 h-64 w-64 rounded-full bg-accent/5 blur-25"
         />
         <motion.div
           style={{ y: blob2Y }}
@@ -169,7 +169,7 @@ export function TestimonialsSection({ featuredOnly = true, limit = 9 }) {
                     className="group"
                   >
                     <div className="relative h-full bg-white rounded-2xl p-6 sm:p-7 md:p-8 shadow-[0_2px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)] border border-border hover:border-accent/25 transition-all duration-300 flex flex-col overflow-hidden">
-                      <div className="absolute top-0 left-0 h-1 w-0 bg-gradient-to-r from-accent to-accent-hover transition-all duration-500 group-hover:w-full" />
+                      <div className="absolute top-0 left-0 h-1 w-0 bg-linear-to-r from-accent to-accent-hover transition-all duration-500 group-hover:w-full" />
 
                       {/* Large Quote Icon */}
                       <Quote className="h-8 w-8 sm:h-10 sm:w-10 text-accent/20 mb-4 sm:mb-6" />

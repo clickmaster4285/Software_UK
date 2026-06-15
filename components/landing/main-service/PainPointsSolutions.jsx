@@ -45,33 +45,33 @@ const painPoints = [
 ];
 
 const solutions = [
-  { 
-    title: 'ROI-First Architecture', 
-    description: 'Modern, maintainable Node.js & React stack built to lower TCO and maximize long-term ROI.', 
-    metric: '70% lower maintenance' 
+  {
+    title: 'ROI-First Architecture',
+    description: 'Modern, maintainable Node.js & React stack built to lower TCO and maximize long-term ROI.',
+    metric: '70% lower maintenance'
   },
-  { 
-    title: 'Radical Transparency', 
-    description: 'Full Jira/GitHub access and weekly syncs. You own the process as much as the code.', 
-    metric: '98% on-time delivery' 
+  {
+    title: 'Radical Transparency',
+    description: 'Full Jira/GitHub access and weekly syncs. You own the process as much as the code.',
+    metric: '98% on-time delivery'
   },
-  { 
-    title: 'Compliance-Ready', 
-    description: 'GDPR, HIPAA, and ISO standards ready. We handle the complexity of regulated industries.', 
-    metric: 'Zero data breaches' 
+  {
+    title: 'Compliance-Ready',
+    description: 'GDPR, HIPAA, and ISO standards ready. We handle the complexity of regulated industries.',
+    metric: 'Zero data breaches'
   },
-  { 
-    title: 'Auto-Scaling Infrastructure', 
-    description: 'Multi-region AWS/Azure setups that handle millions of requests without breaking a sweat.', 
-    metric: '99.99% Uptime SLA' 
+  {
+    title: 'Auto-Scaling Infrastructure',
+    description: 'Multi-region AWS/Azure setups that handle millions of requests without breaking a sweat.',
+    metric: '99.99% Uptime SLA'
   },
 ];
 
 const FloatingParticle = ({ delay = 0, x = "0%", y = "0%", size = 4 }) => (
   <motion.div
     initial={{ opacity: 0, scale: 0 }}
-    animate={{ 
-      opacity: [0.2, 0.5, 0.2], 
+    animate={{
+      opacity: [0.2, 0.5, 0.2],
       scale: [1, 1.5, 1],
       y: ["0%", "-20%", "0%"],
       x: ["0%", "10%", "0%"]
@@ -100,7 +100,7 @@ export default function PainPointsSolutions() {
   const countryName = "United Kingdom";
 
   return (
-    <section 
+    <section
       id="solutions-strategy"
       ref={containerRef}
       className="relative overflow-hidden bg-transparent py-24 md:py-32"
@@ -108,21 +108,21 @@ export default function PainPointsSolutions() {
     >
       {/* Premium Background Mesh */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <motion.div 
+        <motion.div
           style={{ y: backgroundY }}
           className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[110%] h-[120%] opacity-40 will-change-transform"
         >
-          <div className="absolute top-0 right-0 w-100 h-100 bg-accent/5 rounded-full blur-[100px]" />
+          <div className="absolute top-0 right-0 w-100 h-100 bg-accent/5 rounded-full blur-25" />
           <div className="absolute bottom-0 left-0 w-125 h-125 bg-primary/5 rounded-full blur-[120px]" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-175 h-175 bg-surface rounded-full blur-[140px]" />
         </motion.div>
-        
+
         {/* Decorative Floating Elements */}
         <FloatingParticle x="5%" y="20%" size={100} delay={0} />
         <FloatingParticle x="80%" y="15%" size={140} delay={2} />
         <FloatingParticle x="70%" y="80%" size={180} delay={4} />
         <FloatingParticle x="2%" y="70%" size={120} delay={1} />
-        
+
         {/* Subtle Grid Overlay */}
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(var(--text-muted) 0.5px, transparent 0.5px)', backgroundSize: '32px 32px' }} />
       </div>
@@ -130,18 +130,18 @@ export default function PainPointsSolutions() {
       <div className="container relative z-10">
         {/* Header Section */}
         <div className="text-center mb-10">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="inline-flex items-center gap-3 mb-6"
           >
-              <span className="text-lg font-bold uppercase tracking-wide text-accent">
+            <span className="text-lg font-bold uppercase tracking-wide text-accent">
               {hasLocation ? `Challenges in ${countryName}` : 'Strategic Problem Solving'}
-              </span>
+            </span>
           </motion.div>
 
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -155,15 +155,15 @@ export default function PainPointsSolutions() {
             }
           </motion.h2>
 
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             className="py-6 text-lg md:text-xl text-text-body font-body"
           >
-            Most agencies deliver technical debt wrapped in a pretty proposal. We build 
-            <span className="text-accent font-semibold"> revenue-generating systems </span> 
+            Most agencies deliver technical debt wrapped in a pretty proposal. We build
+            <span className="text-accent font-semibold"> revenue-generating systems </span>
             engineered for long-term scale and security.
           </motion.p>
         </div>
@@ -188,7 +188,7 @@ export default function PainPointsSolutions() {
                 aria-labelledby={`pain-title-${idx}`}
               >
                 <div className={`relative h-full w-full transition-all duration-700 preserve-3d ${isActive ? 'rotate-y-180' : ''}`}>
-                  
+
                   {/* FRONT: PAIN SIDE */}
                   <div className="absolute inset-0 backface-hidden rounded-[2rem] border border-border bg-white/40 p-8 backdrop-blur-xl shadow-sm group-hover:shadow-xl transition-all duration-500 group-hover:border-accent/20">
                     <div className="relative z-10 flex flex-col h-full">
@@ -203,7 +203,7 @@ export default function PainPointsSolutions() {
                       <h3 id={`pain-title-${idx}`} className="font-heading text-2xl font-bold text-text-primary mb-4 leading-tight">
                         {pain.title}
                       </h3>
-                      
+
                       <p className="text-text-body text-sm leading-relaxed font-body">
                         {pain.description}
                       </p>
@@ -224,7 +224,7 @@ export default function PainPointsSolutions() {
                   <div className="absolute inset-0 rotate-y-180 backface-hidden rounded-[2rem] border-2 border-accent/20 bg-primary p-8 shadow-2xl overflow-hidden">
                     {/* Background Glow */}
                     <div className="absolute -top-12 -right-12 w-32 h-32 bg-accent/20 blur-3xl rounded-full" />
-                    
+
                     <div className="relative z-10 flex flex-col h-full text-white">
                       <div className="flex items-center gap-4 mb-8">
                         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent text-white shadow-lg shadow-accent/20">
@@ -245,7 +245,7 @@ export default function PainPointsSolutions() {
                           <TrendingUp className="h-4 w-4 text-accent" />
                           <span>{solution.metric}</span>
                         </div>
-                        
+
                         <div className="flex items-center gap-2 text-xs font-semibold text-accent group-hover:translate-x-1 transition-transform">
                           Contact Our Team <ArrowRight className="h-3.5 w-3.5" />
                         </div>
