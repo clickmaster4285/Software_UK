@@ -53,8 +53,10 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 ├── International-City/  (179 .docx)
 ├── Resource-Guide/       (83 .docx)
 ├── Salary-Guide/        (193 .docx)
-└── data/
-    └── case-studies.js       ← to be generated
+├── data/
+│   ├── case-studies.js       ✅ (274 unique)
+│   ├── hire-pages.js        ✅ (258 unique)
+│   └── salary-guides.js     ✅ (99 unique)
 ```
 
 ---
@@ -137,12 +139,12 @@ Each case study has this HTML pattern:
 3. Update route: `[id]` → `[slug]`
 
 ### Phase 2: Other Categories
-1. Hire Page (300) → `data/hire-pages.js` → `/hire/[role]/[city]/`
-2. Salary Guide (193) → `data/salary-guides.js` → `/salary-guide/[slug]/`
-3. Comparison Page (177) → `data/comparisons.js` → `/comparison/[slug]/`
-4. Resource Guide (83) → `data/resource-guides.js` → `/resource/[slug]/`
-5. International City (179) → `data/cities.js` → `/cities/[slug]/`
-6. Industry / Service (573) → `data/services.js` → `/[category]/[service]/`
+1. Hire Page (300) → `data/hire-pages.js` → `/hire/[role]/[city]/` ✅
+2. Salary Guide (193) → `data/salary-guides.js` → `/salary-guide/[slug]/` ✅
+3. Comparison Page (177) → `data/comparisons.js` → `/comparison/[slug]/` 🔲
+4. Resource Guide (83) → `data/resource-guides.js` → `/resource/[slug]/` 🔲
+5. International City (179) → `data/cities.js` → `/cities/[slug]/` 🔲
+6. Industry / Service (573) → `data/services.js` → `/[category]/[service]/` 🔲
 
 ---
 
@@ -376,9 +378,10 @@ const Component = dynamic(() =>
 6. ~~Build hire listing + detail pages~~ ✅ Done
 7. ~~Add lightweight data helpers~~ (`caseStudyListings`, `getHireRolesMap`, etc.) ✅
 8. ~~Navbar lazy-loading + trailing slash fix + FAQ dedup~~ ✅
-9. Next: Convert remaining 5 categories (Salary Guide, Comparison, Resource Guide, International City, Industry/Service)
+9. ✅ Salary Guide (193 → 99 unique) — `/salary-guide/[slug]` live with SSG
+10. Next: Convert remaining 4 categories (Comparison, Resource Guide, International City, Industry/Service)
 
 ---
 
-**Last Updated:** June 15, 2026
+**Last Updated:** June 16, 2026
 **See also:** `plan.md` (detailed execution plan)

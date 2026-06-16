@@ -68,11 +68,11 @@ export default function HirePage() {
               <span className="bg-linear-to-r from-accent to-accent-light bg-clip-text text-transparent">
                 Vetted Developers
               </span>
-              <br className="hidden md:block" />
+              <br className="md:hidden block" />
               {' '}Across the UK
             </h1>
 
-            <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="text-lg md:text-xl text-white/70 max-w-4xl mx-auto mb-10 leading-relaxed">
               IR35-compliant. 3-stage technical vetting. 30-day rolling contracts.
               Your team, your way.
             </p>
@@ -119,10 +119,10 @@ export default function HirePage() {
             <span className="section-label mb-4">Why ClickMasters</span>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4">
               Enterprise-Grade Hiring,
-              <br className="hidden md:block" />
+              <br className="md:hidden block" />
               {' '}Without the Enterprise Overhead
             </h2>
-            <p className="text-text-muted max-w-2xl mx-auto">
+            <p className="text-text-muted max-w-3xl mx-auto">
               Every developer we place has passed our rigorous vetting process.
               You get senior talent without the compliance headaches.
             </p>

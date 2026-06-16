@@ -64,7 +64,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
             <span className="text-white/90">{cityName}</span>
           </nav>
 
-          <div className="max-w-3xl">
+          <div className="max-w-7xl">
             <span className="section-label mb-5 bg-white/10 border-white/15 text-white/80">
               <MapPin className="w-3 h-3 mr-1.5 inline -mt-0.5" />
               {cityName}, UK
@@ -126,7 +126,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
       {directAnswer && (
         <section className="py-14 px-6 border-b border-border">
           <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
-            <div className="max-w-3xl mx-auto relative overflow-hidden rounded-2xl border border-accent/20 bg-linear-to-br from-accent/[0.04] to-transparent p-8">
+            <div className="max-w-7xl mx-auto relative overflow-hidden rounded-2xl border border-accent/20 bg-linear-to-br from-accent/4 to-transparent p-8">
               <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-accent/5 blur-2xl" />
               <div className="relative">
                 <div className="flex items-center gap-2 mb-4">
@@ -144,7 +144,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
       {benefits.length > 0 && (
         <section className="py-20 px-6">
           <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-7xl mx-auto">
               <span className="section-label mb-4">Why {cityName} Businesses Choose Us</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4">
                 Why Hire Through ClickMasters?
@@ -176,7 +176,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
       {rates && (rates.mid || rates.senior || rates.lead) && (
         <section id="rates" className="py-20 px-6 bg-surface">
           <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-7xl mx-auto">
               <span className="section-label mb-4">Transparent Pricing</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4">
                 {cityName} Developer Rates — 2025 Pricing
@@ -239,7 +239,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
       {skills.length > 0 && (
         <section className="py-20 px-6">
           <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-7xl mx-auto">
               <span className="section-label mb-4">Technical Skills</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-8">
                 What Our Developers Know
@@ -264,7 +264,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
       {vettingProcess.length > 0 && (
         <section className="py-20 px-6 bg-surface">
           <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-7xl mx-auto">
               <span className="section-label mb-4">Our Vetting Process</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4">
                 Every Developer. Three Stages. No Exceptions.
@@ -312,7 +312,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
       {faqs.length > 0 && (
         <section className="py-20 px-6">
           <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-7xl mx-auto">
               <span className="section-label mb-4">FAQs</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4">
                 Frequently Asked Questions
@@ -373,7 +373,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
       {relatedPages.length > 0 && (
         <section className="py-20 px-6 bg-surface">
           <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-7xl mx-auto">
               <span className="section-label mb-4">Other Locations</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4">
                 Hire in Other Cities
@@ -405,7 +405,6 @@ export function HireDetailClient({ hirePage, relatedPages }) {
       {/* ── CTA ── */}
       <section className="py-20 px-6">
         <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
-          <div className="max-w-3xl mx-auto">
             <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-primary via-primary-mid to-primary-light px-8 py-14 md:px-14 md:py-18 text-center">
               <div className="absolute top-0 right-0 w-63 h-63 rounded-full bg-accent/10 blur-3xl" />
               <div className="absolute bottom-0 left-0 w-50 h-50 rounded-full bg-accent/5 blur-3xl" />
@@ -430,7 +429,6 @@ export function HireDetailClient({ hirePage, relatedPages }) {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
-            </div>
           </div>
         </div>
       </section>
