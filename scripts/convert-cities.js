@@ -55,16 +55,21 @@ function extractMeta(html) {
 
 function extractHeader(html) {
   const header = {};
-  const lastUpdatedMatch = html.match(/Last updated:\s*([^|]+?)(?=\s*\||$)/i);
+
+  const headerTable = html.match(/<table[\s\S]*?(?:Last updated|Reading time)[\s\S]*?<\/table>/i);
+  if (!headerTable) return header;
+  const text = stripHtml(headerTable[0]);
+
+  const lastUpdatedMatch = text.match(/Last updated:\s*(.+?)(?=\s*\|)/i);
   if (lastUpdatedMatch) header.lastUpdated = lastUpdatedMatch[1].trim();
 
-  const readingMatch = html.match(/Reading time:\s*(\d+)\s*min/i);
+  const readingMatch = text.match(/Reading time:\s*(\d+)\s*min/i);
   if (readingMatch) header.readingTime = parseInt(readingMatch[1]);
 
-  const writtenMatch = html.match(/Written by:\s*([^|]+?)(?=\s*\||$)/i);
+  const writtenMatch = text.match(/Written by:\s*(.+?)(?=\s*\|)/i);
   if (writtenMatch) header.writtenBy = writtenMatch[1].trim();
 
-  const reviewedMatch = html.match(/Reviewed by:\s*([^|]+?)(?=\s*\||$)/i);
+  const reviewedMatch = text.match(/Reviewed by:\s*(.+)/i);
   if (reviewedMatch) header.reviewedBy = reviewedMatch[1].trim();
 
   return header;
@@ -99,7 +104,7 @@ function extractDirectAnswer(html) {
 }
 
 function extractBenefits(html) {
-  const whyChooseIndex = html.search(/Why\s+.+?\s+(Choose|Work|Trust)\s/i);
+  const whyChooseIndex = html.search(/Why\s+.+?\s+(Choose|Work|Trust|Use)\s/i);
   if (whyChooseIndex === -1) return [];
 
   const chunk = html.substring(whyChooseIndex);
@@ -114,9 +119,22 @@ function extractEcosystem(html) {
   const ecoIndex = html.search(/Technology\s+(Ecosystem|Hub|Landscape|Market)/i);
   if (ecoIndex === -1) return '';
 
-  const chunk = html.substring(ecoIndex);
-  const pMatches = chunk.match(/<p[^>]*>([\s\S]*?)<\/p>/gi) || [];
-  return pMatches.map(p => stripHtml(p)).filter(Boolean).join('\n\n').substring(0, 2000);
+  const after = html.substring(ecoIndex);
+  const sectionBoundary = after.search(/<strong>[^<]*?(?:💷|UK Compliance for|How We Work in|Frequently Asked|FAQs|Why\s+\w+\s+Businesses\s+Use|EU GDPR vs)/i);
+  const endPos = sectionBoundary !== -1 ? ecoIndex + sectionBoundary : html.length;
+
+  const chunk = html.substring(ecoIndex, endPos);
+  const noTables = chunk.replace(/<table[\s\S]*?<\/table>/gi, '');
+  const pMatches = noTables.match(/<p[^>]*>([\s\S]*?)<\/p>/gi) || [];
+  const tableMatches = chunk.match(/<table[\s\S]*?<\/table>/gi) || [];
+  const tableTexts = tableMatches.map(t => stripHtml(t)).filter(Boolean);
+
+  const texts = [
+    ...pMatches.map(p => stripHtml(p)).filter(Boolean),
+    ...tableTexts
+  ];
+
+  return texts.join('\n\n').substring(0, 2000);
 }
 
 function parseHtmlTableToArrays(tableHtml) {
@@ -231,7 +249,7 @@ function extractRelatedPages(html) {
 }
 
 function extractAuthor(html) {
-  const authorMatch = html.match(/AUTHOR[\s\S]*?<\/table>/i);
+  const authorMatch = html.match(/\bAUTHOR\b[\s\S]*?<\/table>/i);
   if (authorMatch) {
     const cells = authorMatch[0].match(/<td[^>]*>([\s\S]*?)<\/td>/gi) || [];
     if (cells.length >= 2) {
