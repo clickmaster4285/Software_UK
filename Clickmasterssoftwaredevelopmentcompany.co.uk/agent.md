@@ -56,7 +56,9 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 ├── data/
 │   ├── case-studies.js       ✅ (274 unique)
 │   ├── hire-pages.js        ✅ (258 unique)
-│   └── salary-guides.js     ✅ (99 unique)
+│   ├── salary-guides.js     ✅ (99 unique)
+│   ├── comparisons.js       ✅ (141 unique)
+│   └── cities.js            ✅ (98 unique)
 ```
 
 ---
@@ -141,9 +143,9 @@ Each case study has this HTML pattern:
 ### Phase 2: Other Categories
 1. Hire Page (300) → `data/hire-pages.js` → `/hire/[role]/[city]/` ✅
 2. Salary Guide (193) → `data/salary-guides.js` → `/salary-guide/[slug]/` ✅
-3. Comparison Page (177) → `data/comparisons.js` → `/comparison/[slug]/` 🔲
-4. Resource Guide (83) → `data/resource-guides.js` → `/resource/[slug]/` 🔲
-5. International City (179) → `data/cities.js` → `/cities/[slug]/` 🔲
+3. Comparison Page (177) → `data/comparisons.js` → `/comparison/[slug]/` ✅
+4. International City (179) → `data/cities.js` → `/cities/[slug]/` ✅
+5. Resource Guide (83) → `data/resource-guides.js` → `/resource/[slug]/` 🔲
 6. Industry / Service (573) → `data/services.js` → `/[category]/[service]/` 🔲
 
 ---
@@ -379,7 +381,9 @@ const Component = dynamic(() =>
 7. ~~Add lightweight data helpers~~ (`caseStudyListings`, `getHireRolesMap`, etc.) ✅
 8. ~~Navbar lazy-loading + trailing slash fix + FAQ dedup~~ ✅
 9. ✅ Salary Guide (193 → 99 unique) — `/salary-guide/[slug]` live with SSG
-10. Next: Convert remaining 4 categories (Comparison, Resource Guide, International City, Industry/Service)
+10. ✅ Comparison Pages (177 → 141 unique) — `/comparison/[slug]` live with SSG
+11. ✅ International City (179 → 98 unique) — `/cities/[slug]` live with SSG
+12. Next: Convert remaining 2 categories (Resource Guide, Industry/Service)
 
 ---
 
