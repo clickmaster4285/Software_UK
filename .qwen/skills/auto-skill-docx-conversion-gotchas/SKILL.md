@@ -1,11 +1,11 @@
 ---
 name: docx-conversion-gotchas
-description: Fix docx-to-data extraction failures caused by variable table counts, duplicate slug dedup bugs, and mammoth HTML quirks
+description: Fix docx-to-data extraction failures — variable table counts, dedup bugs, mammoth quirks, checklist splitting (✓/✅), FAQ/header filtering, gap paragraphs
 source: auto-skill
-extracted_at: '2026-06-13T10:59:26.607Z'
+extracted_at: '2026-06-18T08:54:24.228Z'
 ---
 
-# DOCX Conversion Gotchas — Case Studies & Beyond
+# DOCX Conversion Gotchas — Resource Guides & Beyond
 
 ## When to Use
 
@@ -13,6 +13,8 @@ extracted_at: '2026-06-13T10:59:26.607Z'
 - Entry count in output doesn't match expected count after dedup
 - Extracted fields are empty, garbled, or shifted for certain files
 - Duplicate slug handling keeps the wrong entry
+- Paragraphs contain FAQ Q:/A: lines, header artifacts, or related page links that shouldn't be there
+- Checklist items (✓ or ✅) are merged into a single paragraph string
 
 ## Known Issues Discovered
 
@@ -101,7 +103,181 @@ const slugMatch = html.match(/SLUG:\s*(\/case-studies\/[a-z0-9-]+)\//i);
 const slugMatch = html.match(/SLUG:\s*([^\s<]+)/i);
 ```
 
-### 4. Empty/Debug Files in Project Root
+### 4. Checklist Tables — Split ✅ and ✓ Items into Individual Paragraphs
+
+**Symptom:** A section that should contain checklist items has all items concatenated into a single unreadable string, or zero paragraphs.
+
+**Root Cause:** Mammoth renders checklist items as table cells. Two different checkmark characters appear in DOCX files:
+- `✅` (Unicode U+2705, heavy check mark emoji) — used in GDPR checklist etc.
+- `✓` (Unicode U+2713, check mark) — used in contract guides, CTA sections
+
+Both must be handled. Also, checklist content can arrive via two code paths:
+1. **Gap path**: HTML `<p>` elements between tables → `extractParagraphsFromHtml()`
+2. **Standalone paragraph path**: single-cell table with ≥120 chars → `isStandaloneParagraph` branch in `extractContentSections()`
+
+**Fix** — In both `extractParagraphsFromHtml()` AND the `isStandaloneParagraph` branch, split on both characters:
+
+```js
+// In extractParagraphsFromHtml() — after collecting paragraphs:
+const splitParagraphs = [];
+for (const para of paragraphs) {
+  if (para.includes('✅') || para.includes('✓')) {
+    const parts = para.split(/(?=[✅✓])/).map(s => s.trim()).filter(s => s.length > 0);
+    splitParagraphs.push(...parts);
+  } else {
+    splitParagraphs.push(para);
+  }
+}
+```
+
+```js
+// In extractContentSections() — isStandaloneParagraph branch:
+const paras = (text.includes('✅') || text.includes('✓'))
+  ? text.split(/(?=[✅✓])/).map(s => s.trim()).filter(s => s.length > 0)
+  : [text];
+if (currentSection) {
+  currentSection.paragraphs.push(...paras);
+} else {
+  currentSection = { title: '', paragraphs: [...paras], table: null };
+}
+```
+
+**Verification:** After fix, each checklist item should be its own paragraph starting with `✓` or `✅`.
+
+### 5. Gap Paragraphs Between Title Tables and Data Tables
+
+**Symptom:** A section title is correctly identified, but its paragraphs are empty. The content that should be in the section is lost.
+
+**Root Cause:** In resource guide DOCX files, the structure is often:
+```
+[Title Table] → <p>intro text</p> → [Data Table with <th>]
+```
+The title table and data table are both detected, but the `<p>` content *between* them (in the HTML gap) is not extracted. The converter only looked at content *within* tables, not the HTML between them.
+
+**Fix:** When processing a title table, extract the HTML gap between the previous table's end and this title table's start. Also extract the gap between a title table and the next data table. Use `extractParagraphsFromHtml` on these gaps:
+
+```js
+// When encountering a title table at position i:
+const prevEnd = i > 0 ? relevantTables[i - 1].pos.end : daEnd;
+const gapHtml = html.substring(prevEnd, pos.start);
+const gapParagraphs = extractParagraphsFromHtml(gapHtml);
+
+// Attach gap paragraphs to the section that came BEFORE this title
+if (currentSection) {
+  if (currentSection.table) {
+    sections.push(currentSection);
+  } else {
+    currentSection.paragraphs.push(...gapParagraphs);
+  }
+}
+```
+
+Also extract **trailing gaps** — content between the last relevant table and the next non-content table (Related Pages, AUTHOR, CTA):
+
+```js
+// After processing all relevant tables:
+if (lastTable.pos.end < boundary) {
+  const trailingChunk = html.substring(lastTable.pos.end, boundary);
+  const trailingParagraphs = extractParagraphsFromHtml(trailingChunk);
+  if (trailingParagraphs.length > 0 && sections.length > 0) {
+    sections[sections.length - 1].paragraphs.push(...trailingParagraphs);
+  }
+}
+```
+
+And **intro gaps** — content between the Direct Answer table and the first content table:
+
+```js
+if (firstTableStart > daEnd) {
+  const introChunk = html.substring(daEnd, firstTableStart);
+  const introParagraphs = extractParagraphsFromHtml(introChunk);
+  if (introParagraphs.length > 0) {
+    sections[0].paragraphs.unshift(...introParagraphs);
+  }
+}
+```
+
+### 6. Filter FAQ Q:/A: Lines from Paragraphs
+
+**Symptom:** Section `paragraphs` arrays contain `Q: ...` and `A: ...` FAQ lines. The same FAQs are also correctly extracted into the top-level `faqs` array. This causes duplicate FAQ rendering.
+
+**Root Cause:** When mammoth converts DOCX gap content, FAQ text appears as `<p>Q: question</p>` and `<p>A: answer</p>` between tables. `extractParagraphsFromHtml()` picks them up as regular paragraphs. Meanwhile `extractFaqs()` independently extracts the same FAQs from the full HTML.
+
+**Affected scope:** 50+ guides, ~250 paragraph-level FAQ instances across the dataset.
+
+**Fix:** Add a filter at the end of `extractParagraphsFromHtml()`:
+
+```js
+// Filter out FAQ Q:/A: lines (handled by extractFaqs())
+return splitParagraphs.filter(p => {
+  const t = p.trim();
+  if (/^Q:\s*.+/i.test(t)) return false;
+  if (/^A:\s*.+/i.test(t)) return false;
+  return true;
+});
+```
+
+**Verification:** After fix, no paragraph should start with `Q:` or `A:`. FAQs should only appear in the `faqs` array.
+
+### 7. Filter Header Artifacts ("FAQs", "Related Pages") from Paragraphs
+
+**Symptom:** Section `paragraphs` arrays contain standalone strings like `"FAQs"`, `"FAQ"`, or `"Related Pages"`. These are section headers from the DOCX, not content paragraphs.
+
+**Root Cause:** Mammoth renders structural header text as `<p>` elements in gap content. `extractParagraphsFromHtml()` picks them up as regular paragraphs.
+
+**Affected scope:** ~65 instances across ~50 guides (every guide that has inline FAQs also has a "FAQs" header artifact).
+
+**Fix:** Extend the filter in `extractParagraphsFromHtml()`:
+
+```js
+return splitParagraphs.filter(p => {
+  const t = p.trim();
+  // Remove header artifacts
+  if (t === 'FAQs' || t === 'FAQ' || t === 'Related Pages' || t === 'Related Pages:') return false;
+  // ... other filters ...
+  return true;
+});
+```
+
+### 8. Filter Related Page Link Lines from Paragraphs
+
+**Symptom:** Section `paragraphs` arrays contain lines like `"Custom Software Development UK: /custom-software-development/"`. These are related page links already in the `relatedPages` array.
+
+**Root Cause:** After the last content table, HTML gap content includes related page links formatted as `"Title: /slug/"`. These are picked up by `extractParagraphsFromHtml()`.
+
+**Affected scope:** 7 instances in 2 guides (`uk-software-development-contract-guide`, `uk-gdpr-software-compliance-checklist`).
+
+**Fix:** Extended filter using pattern matching:
+
+```js
+return splitParagraphs.filter(p => {
+  const t = p.trim();
+  // Remove related page link lines (e.g. "Title: /slug/")
+  if (/^[A-Z][^:]+:\s*\/[a-z0-9\-]+\/?$/.test(t)) return false;
+  // ... other filters ...
+  return true;
+});
+```
+
+### 9. Complete Combined Filter for `extractParagraphsFromHtml()`
+
+The full recommended filter at the end of `extractParagraphsFromHtml()`:
+
+```js
+return splitParagraphs.filter(p => {
+  const t = p.trim();
+  // Remove header artifacts
+  if (t === 'FAQs' || t === 'FAQ' || t === 'Related Pages' || t === 'Related Pages:') return false;
+  // Remove FAQ Q:/A: lines (handled by extractFaqs())
+  if (/^Q:\s*.+/i.test(t)) return false;
+  if (/^A:\s*.+/i.test(t)) return false;
+  // Remove related page link lines (e.g. "Custom Software Development UK: /custom-software-development/")
+  if (/^[A-Z][^:]+:\s*\/[a-z0-9\-]+\/?$/.test(t)) return false;
+  return true;
+});
+```
+
+### 10. Empty/Debug Files in Project Root
 
 During conversion script development, these scratch files get created in the project root:
 
@@ -136,6 +312,51 @@ node -e "
 
 # 4. Compare DOCX file count vs data entry count (account for expected dedup)
 # Expected: DOCX count - duplicate groups = data entries
+```
+
+### Resource Guide–Specific Verification
+
+For `data/resource-guides.js`, additionally verify:
+
+```bash
+# 5. Zero sections with title but no paragraphs or table
+node -e "
+  const fs = require('fs');
+  const data = fs.readFileSync('data/resource-guides.js','utf-8');
+  const m = data.match(/export const resourceGuides = (\[[\s\S]*?\]);/);
+  const guides = JSON.parse(m[1]);
+  let empty = 0;
+  guides.forEach(g => g.contentSections.forEach(s => {
+    if (s.paragraphs.length === 0 && !s.table && s.title) empty++;
+  }));
+  console.log('Sections with title but no content:', empty);
+"
+
+# 6. Spot-check a checklist guide (e.g., GDPR) — each section should have ✅ paragraphs
+node -e "
+  const fs = require('fs');
+  const data = fs.readFileSync('data/resource-guides.js','utf-8');
+  const m = data.match(/export const resourceGuides = (\[[\s\S]*?\]);/);
+  const guides = JSON.parse(m[1]);
+  const gdpr = guides.find(g => g.slug.includes('gdpr'));
+  gdpr.contentSections.forEach((s,i) => {
+    const hasCheck = s.paragraphs.some(p => p.includes('✅'));
+    console.log('Section', i, ':', s.title.substring(0,50), '| paras:', s.paragraphs.length, '| hasCheck:', hasCheck);
+  });
+"
+
+# 7. Spot-check a guide with gap paragraphs (e.g., IR35) — sections should have content
+node -e "
+  const fs = require('fs');
+  const data = fs.readFileSync('data/resource-guides.js','utf-8');
+  const m = data.match(/export const resourceGuides = (\[[\s\S]*?\]);/);
+  const guides = JSON.parse(m[1]);
+  const ir35 = guides.find(g => g.slug.includes('ir35'));
+  ir35.contentSections.forEach((s,i) => {
+    console.log('Section', i, ':', s.title.substring(0,50), '| paras:', s.paragraphs.length);
+    s.paragraphs.forEach((p,j) => console.log('  P'+j+':', p.substring(0,80)));
+  });
+"
 ```
 
 ## Rerunning the Script
