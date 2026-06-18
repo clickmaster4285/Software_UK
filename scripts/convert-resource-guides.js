@@ -339,7 +339,7 @@ function extractContentSections(html, tables) {
     if (/Direct Answer/i.test(text)) continue;
     if (/Related Pages/i.test(text)) continue;
     if (/AUTHOR/i.test(text)) continue;
-    if (/JSON-LD/i.test(text) || /Article \+ FAQ/i.test(text)) continue;
+    if (/JSON-LD/i.test(text) || /Article\s*[+|]\s*FAQ/i.test(text) || /^\s*Article\s*[+|]/i.test(text)) continue;
     if (/Free Consultation|Get a Free|Book a|clickmasterssoftwaredevelopmentcompany\.co\.uk\/contact/i.test(text) && text.length < 300) continue;
 
     relevantTables.push({ table, pos, text });
@@ -366,14 +366,19 @@ function extractContentSections(html, tables) {
 
       // If there's an active section, attach gap paragraphs to it BEFORE closing
       if (currentSection) {
-        // If current section already has a table, start a new sub-section
         if (currentSection.table) {
+          // Current section already has a table — push it
           sections.push(currentSection);
-          currentSection = {
-            title: '',
-            paragraphs: gapParagraphs,
-            table: null
-          };
+          // Only create a new gap section if there's actual gap content
+          if (gapParagraphs.length > 0) {
+            currentSection = {
+              title: '',
+              paragraphs: gapParagraphs,
+              table: null
+            };
+          } else {
+            currentSection = null;
+          }
         } else {
           currentSection.paragraphs.push(...gapParagraphs);
         }
@@ -432,6 +437,33 @@ function extractContentSections(html, tables) {
   }
 
   if (currentSection) sections.push(currentSection);
+
+  // Extract trailing gap: content between last relevant table and the next
+  // non-content table (Related Pages, AUTHOR, CTA, Article, FAQ, etc.)
+  if (relevantTables.length > 0) {
+    const lastTable = relevantTables[relevantTables.length - 1];
+    // Find the next table boundary after the last relevant table
+    // Stop at FAQ, Related Pages, AUTHOR, CTA, or Article tables
+    let boundary = faqStart;
+    for (const table of tables) {
+      const tablePos = getTablePosition(html, table);
+      if (!tablePos || tablePos.start <= lastTable.pos.end) continue;
+      const text = stripHtml(table);
+      if (/Related Pages/i.test(text) || /AUTHOR/i.test(text) ||
+          /Free Consultation|Get a Free|Book a|clickmasterssoftwaredevelopmentcompany\.co\.uk\/contact/i.test(text) ||
+          /Article\s*[+|]/i.test(text) || /JSON-LD/i.test(text)) {
+        boundary = tablePos.start;
+        break;
+      }
+    }
+    if (lastTable.pos.end < boundary) {
+      const trailingChunk = html.substring(lastTable.pos.end, boundary);
+      const trailingParagraphs = extractParagraphsFromHtml(trailingChunk);
+      if (trailingParagraphs.length > 0 && sections.length > 0) {
+        sections[sections.length - 1].paragraphs.push(...trailingParagraphs);
+      }
+    }
+  }
 
   // Extract intro text (paragraphs between DA and first content table)
   if (relevantTables.length > 0 && sections.length > 0) {

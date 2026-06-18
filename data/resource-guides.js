@@ -29,113 +29,117 @@ export const resourceGuides = [
         "title": "Red Flag 1: No IP Assignment Clause",
         "paragraphs": [
           "ClickMasters is not a law firm and this is not legal advice. This guide reflects common patterns in UK software development contracts that create disputes, project failures, and unexpected costs. Always have a solicitor review significant contracts before signing.",
-          "ClickMasters is not a law firm and this is not legal advice. This guide reflects common patterns in UK software development contracts that create disputes, project failures, and unexpected costs. Always have a solicitor review significant contracts before signing."
+          "Under the UK Copyright, Designs and Patents Act 1988 (CDPA), the author of software owns the copyright — not the commissioner. If your software development contract does not explicitly assign intellectual property rights to you, the agency or freelancer may own your code. ClickMasters includes a comprehensive IP Assignment Agreement transferring 100% of IP to you upon final payment in every contract."
         ],
         "table": null
       },
       {
         "title": "Red Flag 2: No Acceptance Criteria — Supplier Defines \"Done\"",
         "paragraphs": [
-          "Under the UK Copyright, Designs and Patents Act 1988 (CDPA), the author of software owns the copyright — not the commissioner. If your software development contract does not explicitly assign intellectual property rights to you, the agency or freelancer may own your code. ClickMasters includes a comprehensive IP Assignment Agreement transferring 100% of IP to you upon final payment in every contract."
+          "A contract that specifies a system will \"manage user accounts\" without detailed acceptance criteria gives the supplier complete discretion over what \"done\" means. ClickMasters requires a Technical Discovery phase (£3,500–£8,000) before any fixed-price contract — producing a detailed specification with acceptance criteria per user story. This protects both parties."
         ],
         "table": null
       },
       {
         "title": "Red Flag 3: Time & Materials with No Cap and No Milestones",
         "paragraphs": [
-          "A contract that specifies a system will \"manage user accounts\" without detailed acceptance criteria gives the supplier complete discretion over what \"done\" means. ClickMasters requires a Technical Discovery phase (£3,500–£8,000) before any fixed-price contract — producing a detailed specification with acceptance criteria per user story. This protects both parties."
+          "Time & Materials (T&M) with no cap transfers all cost risk to the client. If the project takes twice as long as estimated, you pay twice as much. Always negotiate: a milestone-based payment schedule with deliverables, a not-to-exceed budget (or formal approval required above a threshold), and weekly timesheets reviewed by the client."
         ],
         "table": null
       },
       {
         "title": "Red Flag 4: No Article 28 UK GDPR Data Processing Agreement (DPA)",
         "paragraphs": [
-          "Time & Materials (T&M) with no cap transfers all cost risk to the client. If the project takes twice as long as estimated, you pay twice as much. Always negotiate: a milestone-based payment schedule with deliverables, a not-to-exceed budget (or formal approval required above a threshold), and weekly timesheets reviewed by the client."
+          "UK GDPR Article 28 requires a Data Processing Agreement between you (data controller) and any agency processing personal data on your behalf (data processor). Without a DPA, you are fully liable for the agency's handling of your customers' personal data — including their breaches, their inadequate security, and their failures to respond to data subject rights requests. ClickMasters includes a UK GDPR Article 28 DPA in every contract."
         ],
         "table": null
       },
       {
         "title": "Red Flag 5: Unlimited Limitation of Liability Exclusion",
         "paragraphs": [
-          "UK GDPR Article 28 requires a Data Processing Agreement between you (data controller) and any agency processing personal data on your behalf (data processor). Without a DPA, you are fully liable for the agency's handling of your customers' personal data — including their breaches, their inadequate security, and their failures to respond to data subject rights requests. ClickMasters includes a UK GDPR Article 28 DPA in every contract."
+          "Some agency contracts limit their liability to the fees paid in the last month — or to £1,000 regardless of project value. This means if they deliver broken software that costs you £500,000 in lost business, you cannot recover it. Negotiate: liability cap at least equal to total contract value, with carve-outs for IP breaches, UK GDPR violations, and fraud."
         ],
         "table": null
       },
       {
         "title": "Red Flag 6: No Source Code Escrow or Delivery Obligation",
         "paragraphs": [
-          "Some agency contracts limit their liability to the fees paid in the last month — or to £1,000 regardless of project value. This means if they deliver broken software that costs you £500,000 in lost business, you cannot recover it. Negotiate: liability cap at least equal to total contract value, with carve-outs for IP breaches, UK GDPR violations, and fraud."
+          "If the agency hosts your software (SaaS model) without an obligation to deliver source code, you have no leverage if the relationship ends badly. They can hold your software hostage. Ensure the contract includes: obligation to deliver all source code, documentation, and credentials upon request, and a software escrow arrangement for mission-critical systems."
         ],
         "table": null
       },
       {
         "title": "Red Flag 7: Vague Scope — \"Reasonable Changes Included\"",
         "paragraphs": [
-          "If the agency hosts your software (SaaS model) without an obligation to deliver source code, you have no leverage if the relationship ends badly. They can hold your software hostage. Ensure the contract includes: obligation to deliver all source code, documentation, and credentials upon request, and a software escrow arrangement for mission-critical systems."
+          "\"Reasonable changes included at no additional cost\" is a disaster clause. The agency will define \"reasonable\" very narrowly; you will define it very broadly. Every project needs formal Change Request (CR) process: written scope description, impact assessment, agreed cost, both parties sign before work begins."
         ],
         "table": null
       },
       {
         "title": "Red Flag 8: No Defect Liability Period",
         "paragraphs": [
-          "\"Reasonable changes included at no additional cost\" is a disaster clause. The agency will define \"reasonable\" very narrowly; you will define it very broadly. Every project needs formal Change Request (CR) process: written scope description, impact assessment, agreed cost, both parties sign before work begins."
+          "Without a defect liability period (typically 30–90 days post-launch), bugs discovered after launch become change requests (billable). ClickMasters provides a 30-day defect liability period: bugs that existed at launch are fixed at no charge; new requirements are Change Requests."
         ],
         "table": null
       },
       {
         "title": "Red Flag 9: Offshore Subcontracting Without Disclosure",
         "paragraphs": [
-          "Without a defect liability period (typically 30–90 days post-launch), bugs discovered after launch become change requests (billable). ClickMasters provides a 30-day defect liability period: bugs that existed at launch are fixed at no charge; new requirements are Change Requests."
+          "Some UK-facing agencies use offshore teams without disclosure. Issues: UK GDPR international data transfers (offshore processing of UK personal data requires IDTA or UK-EU adequacy agreement), quality control gaps, timezone communication delays. Always require: disclosure of all subcontractors, UK GDPR compliant data processing for all offshore subcontractors, named senior engineers with verifiable profiles."
         ],
         "table": null
       },
       {
         "title": "Red Flag 10: IR35 Status Determination Risk on Client",
         "paragraphs": [
-          "Some UK-facing agencies use offshore teams without disclosure. Issues: UK GDPR international data transfers (offshore processing of UK personal data requires IDTA or UK-EU adequacy agreement), quality control gaps, timezone communication delays. Always require: disclosure of all subcontractors, UK GDPR compliant data processing for all offshore subcontractors, named senior engineers with verifiable profiles."
+          "If you engage contractors through an agency on an inside IR35 basis, you are responsible for the Status Determination Statement (SDS). If HMRC disagrees with your determination, you owe unpaid income tax, employee NI, employer NI, interest, and penalties. ClickMasters staff augmentation eliminates this entirely: our engineers are our employees, zero IR35 liability for clients."
         ],
         "table": null
       },
       {
         "title": "Red Flag 11: No Performance or Availability SLA",
         "paragraphs": [
-          "If you engage contractors through an agency on an inside IR35 basis, you are responsible for the Status Determination Statement (SDS). If HMRC disagrees with your determination, you owe unpaid income tax, employee NI, employer NI, interest, and penalties. ClickMasters staff augmentation eliminates this entirely: our engineers are our employees, zero IR35 liability for clients."
+          "A contract without response time, uptime, or availability commitments gives the supplier no accountability for slow or unreliable software. For any system with real users: define SLAs (99.9% uptime, P95 response < 200ms), consequences for SLA breach (service credits), and measurement methodology."
         ],
         "table": null
       },
       {
         "title": "Red Flag 12: Automatic Annual Renewal with No Exit Provision",
         "paragraphs": [
-          "A contract without response time, uptime, or availability commitments gives the supplier no accountability for slow or unreliable software. For any system with real users: define SLAs (99.9% uptime, P95 response < 200ms), consequences for SLA breach (service credits), and measurement methodology."
+          "SaaS and maintenance contracts that auto-renew without a reasonable notice period create lock-in. Negotiate: maximum 30-day notice for monthly contracts, 90-day notice for annual contracts, data export in portable format upon termination, and no penalty for early termination."
         ],
         "table": null
       },
       {
         "title": "Red Flag 13: No R&D Tax Credits Documentation Commitment",
         "paragraphs": [
-          "SaaS and maintenance contracts that auto-renew without a reasonable notice period create lock-in. Negotiate: maximum 30-day notice for monthly contracts, 90-day notice for annual contracts, data export in portable format upon termination, and no penalty for early termination."
+          "Most qualifying UK software development projects are eligible for HMRC R&D Tax Credits (up to 27% of qualifying expenditure returned). If the contract does not commit the supplier to documenting qualifying activities in the format HMRC requires, you may lose this relief. ClickMasters documents qualifying R&D activities as standard."
         ],
         "table": null
       },
       {
         "title": "Red Flag 14: Confidentiality With No Carve-Outs for Compliance",
         "paragraphs": [
-          "Most qualifying UK software development projects are eligible for HMRC R&D Tax Credits (up to 27% of qualifying expenditure returned). If the contract does not commit the supplier to documenting qualifying activities in the format HMRC requires, you may lose this relief. ClickMasters documents qualifying R&D activities as standard."
+          "Some confidentiality clauses are so broad they could prevent you from: reporting a data breach to the ICO (UK GDPR requires 72-hour notification), complying with a court order, responding to a regulatory investigation, or making required disclosures to Companies House. Ensure your NDA/confidentiality clause has clear carve-outs for legal compliance obligations."
         ],
         "table": null
       },
       {
         "title": "Red Flag 15: Technology Choice Lock-In Without Documentation",
         "paragraphs": [
-          "Some confidentiality clauses are so broad they could prevent you from: reporting a data breach to the ICO (UK GDPR requires 72-hour notification), complying with a court order, responding to a regulatory investigation, or making required disclosures to Companies House. Ensure your NDA/confidentiality clause has clear carve-outs for legal compliance obligations."
+          "If the agency builds your software in a proprietary framework or with undocumented architecture, the cost of changing suppliers becomes prohibitive. Ensure: architecture documentation delivered as a contract deliverable, use of widely-supported open-source technologies (not proprietary frameworks), and working CI/CD pipeline and deployment documentation provided."
         ],
         "table": null
       },
       {
         "title": "ClickMasters Contract Standards",
         "paragraphs": [
-          "If the agency builds your software in a proprietary framework or with undocumented architecture, the cost of changing suppliers becomes prohibitive. Ensure: architecture documentation delivered as a contract deliverable, use of widely-supported open-source technologies (not proprietary frameworks), and working CI/CD pipeline and deployment documentation provided.",
-          "Every ClickMasters project contract includes: ✓ IP Assignment Agreement (100% ownership transferred on final payment) ✓ UK GDPR Article 28 Data Processing Agreement ✓ 30-day defect liability period post-launch ✓ Detailed acceptance criteria per user story (from Technical Discovery) ✓ Formal Change Request process for scope changes ✓ Source code and credentials delivery on request ✓ IR35 zero liability (our engineers are our employees) ✓ R&D Tax Credits qualifying activities documentation ✓ 30-day notice termination clause ✓ Named senior engineers — no undisclosed offshore subcontracting"
+          "Every ClickMasters project contract includes: ✓ IP Assignment Agreement (100% ownership transferred on final payment) ✓ UK GDPR Article 28 Data Processing Agreement ✓ 30-day defect liability period post-launch ✓ Detailed acceptance criteria per user story (from Technical Discovery) ✓ Formal Change Request process for scope changes ✓ Source code and credentials delivery on request ✓ IR35 zero liability (our engineers are our employees) ✓ R&D Tax Credits qualifying activities documentation ✓ 30-day notice termination clause ✓ Named senior engineers — no undisclosed offshore subcontracting",
+          "Custom Software Development UK: /custom-software-development/",
+          "Fixed Price vs Time & Materials UK: /fixed-price-vs-time-materials-uk/",
+          "IR35 Guide UK: /ir35-software-development/",
+          "UK GDPR Software Guide: /uk-gdpr-software-development-guide/",
+          "Related Pages"
         ],
         "table": null
       }
@@ -184,7 +188,6 @@ export const resourceGuides = [
       {
         "title": "How Much Can You Claim?",
         "paragraphs": [
-          "Note: This guide reflects the merged R&D tax relief scheme from April 2024. The SME R&D scheme and RDEC scheme merged into a single scheme. R&D tax law is complex — this guide provides general information and does not constitute tax advice. Consult a qualified R&D tax specialist before making a claim.",
           "Note: This guide reflects the merged R&D tax relief scheme from April 2024. The SME R&D scheme and RDEC scheme merged into a single scheme. R&D tax law is complex — this guide provides general information and does not constitute tax advice. Consult a qualified R&D tax specialist before making a claim."
         ],
         "table": {
@@ -273,7 +276,18 @@ export const resourceGuides = [
       },
       {
         "title": "Common R&D Claim Mistakes for Software Companies",
-        "paragraphs": [],
+        "paragraphs": [
+          "Claiming routine software development (CRUD applications, standard integrations) — HMRC now scrutinises software claims heavily",
+          "Retrospective documentation — HMRC prefers contemporaneous records",
+          "Overclaiming staff time — only time genuinely spent on qualifying R&D activity can be claimed",
+          "Not claiming subcontractor costs — UK-based subcontractors (such as ClickMasters) can be included at 65% of costs",
+          "Missing the 2-year claim deadline — claims must be submitted within 2 years of the accounting period end",
+          "FAQs",
+          "Q: Can I claim R&D Tax Credits for an MVP build?",
+          "A: MVPs that involve genuine technological uncertainty can qualify. If your MVP is building software using established, well-understood technologies to solve a known business problem — it probably does not qualify. If your MVP involves novel technical approaches, integration with complex APIs (NHS FHIR R4, HMRC MTD, Open Banking), or performance challenges where the solution is not known in advance — parts may qualify.",
+          "Q: How do ClickMasters engineers appear in our R&D claim?",
+          "A: ClickMasters is your subcontractor. You can include 65% of payments to ClickMasters for qualifying R&D work in your claim. ClickMasters provides qualifying activity documentation per sprint to support your claim. Note: subcontractor costs are treated differently from employee costs in R&D claims."
+        ],
         "table": null
       }
     ],
@@ -326,7 +340,6 @@ export const resourceGuides = [
       {
         "title": "UK Software Development Costs by Project Type (2025)",
         "paragraphs": [
-          "ClickMasters is unusual in the UK software development market: we publish our prices. Most agencies won't quote without a sales call. This guide explains what drives UK software development costs and gives you realistic ranges for common project types.",
           "ClickMasters is unusual in the UK software development market: we publish our prices. Most agencies won't quote without a sales call. This guide explains what drives UK software development costs and gives you realistic ranges for common project types."
         ],
         "table": {
@@ -450,7 +463,15 @@ export const resourceGuides = [
       },
       {
         "title": "UK Day Rates by Role (2025)",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: Why is ClickMasters transparent about pricing when other agencies are not?",
+          "A: We publish prices because it is the right thing to do — and because it is our biggest competitive advantage. Every UK business deserves to know roughly what they are committing to before a sales call. The industry's standard of hiding prices behind a sales process wastes everyone's time and breeds distrust.",
+          "Q: Does the price include UK GDPR compliance?",
+          "A: Yes — all ClickMasters projects include UK GDPR Article 25 (privacy by design), a Data Processing Agreement, and basic compliance architecture. We do not charge extra for compliance — we build it in. For complex regulated sectors (FinTech, HealthTech, GovTech), there may be additional compliance-specific work scoped in the Technical Discovery.",
+          "Q: What is included in the price?",
+          "A: ClickMasters fixed prices include: all development, testing, deployment, CI/CD setup, UK GDPR compliance architecture, IP assignment, and 30-day defect liability. Not included: third-party service costs (AWS, Stripe, HMRC API keys), ongoing hosting costs post-launch, and future feature development."
+        ],
         "table": {
           "headers": [
             "Role",
@@ -553,15 +574,13 @@ export const resourceGuides = [
         "title": "What Is an Innovate UK Smart Grant?",
         "paragraphs": [
           "Note: Innovate UK grant schemes change frequently. Always check the Innovate UK website (iuk.ktn-uk.org) for current open competitions, funding amounts, and eligibility criteria. This guide reflects the Smart Grant scheme as of June 2025.",
-          "Note: Innovate UK grant schemes change frequently. Always check the Innovate UK website (iuk.ktn-uk.org) for current open competitions, funding amounts, and eligibility criteria. This guide reflects the Smart Grant scheme as of June 2025."
+          "Innovate UK Smart Grants are collaborative R&D grants for UK businesses. They fund projects that: seek to advance overall knowledge in science or technology, involve genuine technological uncertainty (the solution is not known in advance), have clear commercial potential, and are delivered within a defined project plan."
         ],
         "table": null
       },
       {
         "title": "Funding Levels and Types",
-        "paragraphs": [
-          "Innovate UK Smart Grants are collaborative R&D grants for UK businesses. They fund projects that: seek to advance overall knowledge in science or technology, involve genuine technological uncertainty (the solution is not known in advance), have clear commercial potential, and are delivered within a defined project plan."
-        ],
+        "paragraphs": [],
         "table": {
           "headers": [
             "Project Type",
@@ -599,14 +618,23 @@ export const resourceGuides = [
       },
       {
         "title": "Does Your Software Project Qualify?",
-        "paragraphs": [],
+        "paragraphs": [
+          "AI/ML model development where the approach is novel and outcome uncertain",
+          "Novel API integration with complex UK government systems (FHIR R4, HMRC MTD, Open Banking)",
+          "New architectural approaches to UK regulatory compliance (real-time FCA transaction monitoring, NHS clinical decision support)",
+          "Performance challenges at scale where the solution is not known in advance",
+          "New approaches to UK GDPR-compliant data processing (federated learning, privacy-preserving ML)",
+          "Building software using established, well-known frameworks and patterns",
+          "Copying existing software functionality",
+          "Standard Agile software development with no novel technical content",
+          "The key test: is there genuine technological uncertainty? The same test as R&D Tax Credits, but Innovate UK applies it at the project level and expects a more developed hypothesis. Common software project types that qualify:",
+          "What does NOT qualify:"
+        ],
         "table": null
       },
       {
         "title": "The Application — Key Sections",
-        "paragraphs": [
-          "The key test: is there genuine technological uncertainty? The same test as R&D Tax Credits, but Innovate UK applies it at the project level and expects a more developed hypothesis. Common software project types that qualify: AI/ML model development where the approach is novel and outcome uncertain Novel API integration with complex UK government systems (FHIR R4, HMRC MTD, Open Banking) New architectural approaches to UK regulatory compliance (real-time FCA transaction monitoring, NHS clinical decision support) Performance challenges at scale where the solution is not known in advance New approaches to UK GDPR-compliant data processing (federated learning, privacy-preserving ML) What does NOT qualify: Building software using established, well-known frameworks and patterns Copying existing software functionality Standard Agile software development with no novel technical content"
-        ],
+        "paragraphs": [],
         "table": {
           "headers": [
             "Section",
@@ -644,7 +672,20 @@ export const resourceGuides = [
       },
       {
         "title": "How ClickMasters Supports Grant Applications",
-        "paragraphs": [],
+        "paragraphs": [
+          "Technical section writing: articulating technological uncertainty and novelty in Innovate UK language",
+          "Technology readiness level (TRL) assessment and progression plan",
+          "Work package breakdown and milestone definitions",
+          "R&D qualifying activities documentation (concurrent with project delivery)",
+          "Project delivery: we build the technology the grant funds",
+          "FAQs",
+          "Q: What is the Innovate UK Smart Grant success rate?",
+          "A: Overall success rate is approximately 5–15% depending on competition. Applications with strong technological novelty, clear commercial pathway, and experienced teams perform significantly better. First-time applicants benefit from working with an experienced Innovate UK specialist who understands what assessors look for.",
+          "Q: Can a startup apply for an Innovate UK Smart Grant?",
+          "A: Yes — startups can apply as sole organisations or as part of collaborations. Innovate UK has specific support for early-stage companies. Note: you must have matching funding (typically 30–50% of total project cost) or a strong justification for why you do not.",
+          "Q: How does ClickMasters support as a technical partner?",
+          "A: ClickMasters can participate in Innovate UK applications as: technology delivery partner (we build the software the grant funds), technical author (we write the innovation/technology sections of the application), or technical adviser (review and strengthen your application). We have supported successful applications in HealthTech, FinTech, and GovTech."
+        ],
         "table": null
       }
     ],
@@ -702,57 +743,82 @@ export const resourceGuides = [
         "title": "Section 1: Lawful Basis and Transparency",
         "paragraphs": [
           "Note: This checklist is for general guidance. UK GDPR is complex — consult a qualified data protection solicitor or DPO for specific advice.",
-          "Note: This checklist is for general guidance. UK GDPR is complex — consult a qualified data protection solicitor or DPO for specific advice."
+          "✅ Legal basis documented for every personal data processing activity (consent, legitimate interest, contract, legal obligation, vital interests, public task)",
+          "✅ Legitimate Interest Assessments (LIAs) completed for all processing on legitimate interest basis",
+          "✅ Privacy Notice published — includes all Article 13/14 required information in plain English",
+          "✅ Cookie consent implemented correctly: affirmative opt-in, no pre-ticked boxes, easy to decline as to accept",
+          "✅ Marketing consent: PECR-compliant opt-in for email/SMS, separate from service consent",
+          "✅ Article 30 Records of Processing Activities (ROPA) maintained — updated when processing changes"
         ],
         "table": null
       },
       {
         "title": "Section 2: Technical Security (Article 32)",
         "paragraphs": [
-          "✅ Legal basis documented for every personal data processing activity (consent, legitimate interest, contract, legal obligation, vital interests, public task) ✅ Legitimate Interest Assessments (LIAs) completed for all processing on legitimate interest basis ✅ Privacy Notice published — includes all Article 13/14 required information in plain English ✅ Cookie consent implemented correctly: affirmative opt-in, no pre-ticked boxes, easy to decline as to accept ✅ Marketing consent: PECR-compliant opt-in for email/SMS, separate from service consent ✅ Article 30 Records of Processing Activities (ROPA) maintained — updated when processing changes"
+          "✅ Encryption at rest: database encrypted (AWS RDS encryption, Azure Transparent Data Encryption)",
+          "✅ Encryption in transit: TLS 1.2+ for all connections, HSTS enabled",
+          "✅ Access control: RBAC implemented, least privilege principle, no shared accounts",
+          "✅ MFA: multi-factor authentication for all admin access to systems containing personal data",
+          "✅ Audit logging: all access to personal data logged (who accessed what, when)",
+          "✅ Dependency scanning: automated (Dependabot) with 14-day patching for high-severity CVEs (Cyber Essentials)",
+          "✅ Penetration testing: CREST-certified pen test within last 12 months",
+          "✅ No personal data in source code, logs, or error messages",
+          "✅ Staging/test environments use synthetic data only (no real personal data)"
         ],
         "table": null
       },
       {
         "title": "Section 3: Data Subject Rights",
         "paragraphs": [
-          "✅ Encryption at rest: database encrypted (AWS RDS encryption, Azure Transparent Data Encryption) ✅ Encryption in transit: TLS 1.2+ for all connections, HSTS enabled ✅ Access control: RBAC implemented, least privilege principle, no shared accounts ✅ MFA: multi-factor authentication for all admin access to systems containing personal data ✅ Audit logging: all access to personal data logged (who accessed what, when) ✅ Dependency scanning: automated (Dependabot) with 14-day patching for high-severity CVEs (Cyber Essentials) ✅ Penetration testing: CREST-certified pen test within last 12 months ✅ No personal data in source code, logs, or error messages ✅ Staging/test environments use synthetic data only (no real personal data)"
+          "✅ Right to Access: DSAR response process in place — response within 1 calendar month, free of charge",
+          "✅ Right to Erasure: technical mechanism to delete all personal data for a specific user on request",
+          "✅ Right to Portability: machine-readable export (JSON/CSV) of personal data on request",
+          "✅ Right to Rectification: user can update their personal data",
+          "✅ Right to Object: users can object to automated decisions and direct marketing",
+          "✅ Right to Restriction: ability to flag data as restricted (retain but do not process)"
         ],
         "table": null
       },
       {
         "title": "Section 4: Data Processors and Third Parties",
         "paragraphs": [
-          "✅ Right to Access: DSAR response process in place — response within 1 calendar month, free of charge ✅ Right to Erasure: technical mechanism to delete all personal data for a specific user on request ✅ Right to Portability: machine-readable export (JSON/CSV) of personal data on request ✅ Right to Rectification: user can update their personal data ✅ Right to Object: users can object to automated decisions and direct marketing ✅ Right to Restriction: ability to flag data as restricted (retain but do not process)"
+          "✅ Article 28 Data Processing Agreements in place with all data processors (AWS, Stripe, SaaS tools)",
+          "✅ Sub-processors list maintained and disclosed in Privacy Notice",
+          "✅ International transfers: no personal data transferred outside UK/EEA without IDTA or adequacy decision",
+          "✅ US processors: UK-US Data Bridge (if applicable) or IDTA in place",
+          "✅ Processor security assessed: SOC 2 Type II, ISO 27001, or equivalent for key processors"
         ],
         "table": null
       },
       {
         "title": "Section 5: Privacy by Design (Article 25)",
         "paragraphs": [
-          "✅ Article 28 Data Processing Agreements in place with all data processors (AWS, Stripe, SaaS tools) ✅ Sub-processors list maintained and disclosed in Privacy Notice ✅ International transfers: no personal data transferred outside UK/EEA without IDTA or adequacy decision ✅ US processors: UK-US Data Bridge (if applicable) or IDTA in place ✅ Processor security assessed: SOC 2 Type II, ISO 27001, or equivalent for key processors"
+          "✅ Data minimisation: only collect data genuinely needed for the stated purpose",
+          "✅ Purpose limitation: personal data only used for the purpose for which it was collected",
+          "✅ Storage limitation: retention policies defined and technically enforced (automated deletion)",
+          "✅ Privacy by default: privacy-protective settings are the default, not an opt-out",
+          "✅ DPIA completed for high-risk processing (profiling, special category data, new technology)"
         ],
         "table": null
       },
       {
         "title": "Section 6: Special Category Data (Article 9)",
         "paragraphs": [
-          "✅ Data minimisation: only collect data genuinely needed for the stated purpose ✅ Purpose limitation: personal data only used for the purpose for which it was collected ✅ Storage limitation: retention policies defined and technically enforced (automated deletion) ✅ Privacy by default: privacy-protective settings are the default, not an opt-out ✅ DPIA completed for high-risk processing (profiling, special category data, new technology)"
+          "✅ Special category data identified: health, biometric, genetic, race/ethnicity, religion, political opinion, trade union, sex life/orientation",
+          "✅ Explicit consent obtained for special category data (not just standard consent)",
+          "✅ Enhanced security controls for special category data (additional encryption, access controls, audit logging)",
+          "✅ DPIA completed for all special category data processing"
         ],
         "table": null
       },
       {
         "title": "Section 7: Breach Response",
         "paragraphs": [
-          "✅ Special category data identified: health, biometric, genetic, race/ethnicity, religion, political opinion, trade union, sex life/orientation ✅ Explicit consent obtained for special category data (not just standard consent) ✅ Enhanced security controls for special category data (additional encryption, access controls, audit logging) ✅ DPIA completed for all special category data processing",
-          "ClickMasters UK GDPR Technical Implementation: ClickMasters implements all technical controls in this checklist as standard on every project: encryption, RBAC, audit logging, DSAR support, right to erasure, UK data residency (AWS eu-west-2 or Azure UK South), Article 28 DPA in client contracts, and Cyber Essentials-aligned dependency scanning. The technical controls are built in — not bolted on."
-        ],
-        "table": null
-      },
-      {
-        "title": "Article | \"uk gdpr compliance checklist software\" (500/mo)",
-        "paragraphs": [
-          "Related Pages UK GDPR Software Guide: /uk-gdpr-software-development-guide/ Cyber Essentials Software UK: /cyber-essentials-software-companies/ Custom Software Development UK: /custom-software-development/ Free UK GDPR Technical Review ClickMasters will review your current software architecture against this checklist. Free 45-minute call. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/ 👤 AUTHOR ClickMasters UK GDPR Team UK GDPR technical compliance specialists This checklist is for general guidance. Consult a qualified DPO for specific compliance advice."
+          "ClickMasters UK GDPR Technical Implementation: ClickMasters implements all technical controls in this checklist as standard on every project: encryption, RBAC, audit logging, DSAR support, right to erasure, UK data residency (AWS eu-west-2 or Azure UK South), Article 28 DPA in client contracts, and Cyber Essentials-aligned dependency scanning. The technical controls are built in — not bolted on.",
+          "UK GDPR Software Guide: /uk-gdpr-software-development-guide/",
+          "Cyber Essentials Software UK: /cyber-essentials-software-companies/",
+          "Custom Software Development UK: /custom-software-development/",
+          "Related Pages"
         ],
         "table": null
       }
@@ -797,7 +863,6 @@ export const resourceGuides = [
       {
         "title": "The 5 Cyber Essentials Technical Controls",
         "paragraphs": [
-          "Note: This guide covers Cyber Essentials and Cyber Essentials Plus as of June 2025 (Montpellier framework, effective January 2022). Requirements are updated periodically — always check IASME (the NCSC-authorised body) for current requirements.",
           "Note: This guide covers Cyber Essentials and Cyber Essentials Plus as of June 2025 (Montpellier framework, effective January 2022). Requirements are updated periodically — always check IASME (the NCSC-authorised body) for current requirements."
         ],
         "table": {
@@ -881,7 +946,12 @@ export const resourceGuides = [
       {
         "title": "Cyber Essentials for Software Development Companies",
         "paragraphs": [
-          "ClickMasters Cyber Essentials support: All projects are delivered with Cyber Essentials-aligned architecture by default. ClickMasters provides a Cyber Essentials technical evidence pack covering the 5 controls implementation within the software system we build. Clients use this as evidence in their own Cyber Essentials application."
+          "ClickMasters Cyber Essentials support: All projects are delivered with Cyber Essentials-aligned architecture by default. ClickMasters provides a Cyber Essentials technical evidence pack covering the 5 controls implementation within the software system we build. Clients use this as evidence in their own Cyber Essentials application.",
+          "FAQs",
+          "Q: Is Cyber Essentials mandatory for UK Government contracts?",
+          "A: Yes — Cyber Essentials is mandatory for all UK Government contracts that involve handling personal data or providing certain ICT products and services. The threshold is low — most government digital contracts require it. NCSC strongly recommends it for all UK businesses handling personal data.",
+          "Q: How much does Cyber Essentials cost?",
+          "A: Cyber Essentials: £300–£500 (self-assessment, verified by an IASME-authorised certifier). Cyber Essentials Plus: £1,500–£5,000 (independent technical audit). Annual recertification required. NHS DTAC Domain 3 accepts Cyber Essentials (basic) as minimum, with CE+ preferred."
         ],
         "table": null
       }
@@ -936,15 +1006,13 @@ export const resourceGuides = [
         "title": "What Is ISO 27001?",
         "paragraphs": [
           "Note: This guide reflects ISO/IEC 27001:2022 (the current version, superseding ISO 27001:2013). ISO 27001 certification is awarded by accredited certification bodies (UKAS-accredited for UK relevance) — consult an accredited body for your specific certification journey.",
-          "Note: This guide reflects ISO/IEC 27001:2022 (the current version, superseding ISO 27001:2013). ISO 27001 certification is awarded by accredited certification bodies (UKAS-accredited for UK relevance) — consult an accredited body for your specific certification journey."
+          "ISO 27001 is an international standard for an Information Security Management System (ISMS) — a systematic approach to managing information security risks. Unlike Cyber Essentials (which prescribes specific technical controls), ISO 27001 is risk-based: you identify your information security risks and implement controls proportionate to those risks. Annex A (ISO 27001:2022) lists 93 controls across 4 themes — you document which you apply and justify which you do not."
         ],
         "table": null
       },
       {
         "title": "ISO 27001 vs Cyber Essentials — Key Differences",
-        "paragraphs": [
-          "ISO 27001 is an international standard for an Information Security Management System (ISMS) — a systematic approach to managing information security risks. Unlike Cyber Essentials (which prescribes specific technical controls), ISO 27001 is risk-based: you identify your information security risks and implement controls proportionate to those risks. Annex A (ISO 27001:2022) lists 93 controls across 4 themes — you document which you apply and justify which you do not."
-        ],
+        "paragraphs": [],
         "table": {
           "headers": [
             "Aspect",
@@ -1031,7 +1099,12 @@ export const resourceGuides = [
       {
         "title": "ISO 27001 Scope for Software Development",
         "paragraphs": [
-          "ClickMasters ISO 27001 alignment: ClickMasters maintains ISO 27001-aligned security practices across all development and delivery. We provide clients with a technical security evidence pack (architecture diagrams, security controls documentation, penetration test reports) that supports their own ISO 27001 Annex A evidence requirements."
+          "ClickMasters ISO 27001 alignment: ClickMasters maintains ISO 27001-aligned security practices across all development and delivery. We provide clients with a technical security evidence pack (architecture diagrams, security controls documentation, penetration test reports) that supports their own ISO 27001 Annex A evidence requirements.",
+          "FAQs",
+          "Q: Is ISO 27001 required for NHS work?",
+          "A: ISO 27001 is not explicitly required for NHS DTAC, but it is strong supporting evidence for DTAC Domain 2 (Data Protection) and Domain 3 (Technical Security). Larger NHS contracts and NHS Shared Business Services procurement increasingly requests ISO 27001 or equivalent evidence.",
+          "Q: How much does ISO 27001 certification cost?",
+          "A: Implementation (gap analysis, documentation, policy writing, control implementation): £8,000–£20,000 depending on company size and existing security posture. Certification audit (Stage 1 + Stage 2 by UKAS-accredited body): £3,000–£10,000. Annual surveillance audit: £1,500–£4,000. Total 3-year cost including recertification: typically £15,000–£40,000."
         ],
         "table": null
       }
@@ -1086,22 +1159,46 @@ export const resourceGuides = [
         "title": "Who Must Comply with WCAG 2.1 AA in the UK?",
         "paragraphs": [
           "Note: WCAG 2.2 was published in October 2023. PSBAR 2018 references WCAG 2.1 — WCAG 2.2 AA is a superset and is becoming the recommended standard. This guide covers WCAG 2.1 AA (the current UK legal requirement) with notes on WCAG 2.2 additions.",
-          "Note: WCAG 2.2 was published in October 2023. PSBAR 2018 references WCAG 2.1 — WCAG 2.2 AA is a superset and is becoming the recommended standard. This guide covers WCAG 2.1 AA (the current UK legal requirement) with notes on WCAG 2.2 additions."
+          "Organisation Type",
+          "Legal Basis",
+          "Requirement",
+          "UK Central Government websites",
+          "PSBAR 2018 (SI 2018/952)",
+          "WCAG 2.1 AA mandatory — Cabinet Office monitoring",
+          "UK Local Authority websites",
+          "PSBAR 2018",
+          "WCAG 2.1 AA mandatory",
+          "NHS and healthcare bodies",
+          "PSBAR 2018 + DTAC Domain 5",
+          "WCAG 2.1 AA mandatory",
+          "Educational institutions (FE/HE)",
+          "PSBAR 2018",
+          "WCAG 2.1 AA mandatory",
+          "Private sector (commercial)",
+          "Equality Act 2010",
+          "Reasonable adjustments — WCAG 2.1 AA best practice",
+          "FCA-regulated services",
+          "FCA Consumer Duty — Consumer Understanding",
+          "WCAG 2.1 AA strongly advised",
+          "NHS App Library applicants",
+          "DTAC Domain 5",
+          "WCAG 2.1 AA mandatory with evidence"
         ],
         "table": null
       },
       {
         "title": "The 4 WCAG Principles — UK Practical Summary",
         "paragraphs": [
-          "Organisation Type Legal Basis Requirement UK Central Government websites PSBAR 2018 (SI 2018/952) WCAG 2.1 AA mandatory — Cabinet Office monitoring UK Local Authority websites PSBAR 2018 WCAG 2.1 AA mandatory NHS and healthcare bodies PSBAR 2018 + DTAC Domain 5 WCAG 2.1 AA mandatory Educational institutions (FE/HE) PSBAR 2018 WCAG 2.1 AA mandatory Private sector (commercial) Equality Act 2010 Reasonable adjustments — WCAG 2.1 AA best practice FCA-regulated services FCA Consumer Duty — Consumer Understanding WCAG 2.1 AA strongly advised NHS App Library applicants DTAC Domain 5 WCAG 2.1 AA mandatory with evidence"
+          "Perceivable: All information must be perceivable by all users. Key failures: images without alt text (NVDA screen reader cannot describe them), colour-only information (red/green traffic light — colour blind users cannot distinguish), insufficient colour contrast (< 4.5:1 ratio for normal text, < 3:1 for large text), and captions missing from videos.",
+          "Operable: All interface components must be operable. Key failures: keyboard traps (user cannot navigate past an element using keyboard only), no skip navigation link (NVDA users must tab through entire navigation on every page), focus indicator not visible (keyboard users cannot see where they are), and time limits without warnings.",
+          "Understandable: Information and UI operation must be understandable. Key failures: form errors not described in text (colour-only error indication), language not programmatically identified (screen readers cannot select the correct voice), confusing navigation (inconsistent patterns across pages), and required fields not labelled.",
+          "Robust: Content must be robust enough to be interpreted by assistive technologies. Key failures: invalid HTML (NVDA may misread content), ARIA labels not matching visible text (confusing for screen reader users), and components not accessible via ARIA roles."
         ],
         "table": null
       },
       {
         "title": "Common WCAG 2.1 AA Failures in UK Software",
-        "paragraphs": [
-          "Perceivable: All information must be perceivable by all users. Key failures: images without alt text (NVDA screen reader cannot describe them), colour-only information (red/green traffic light — colour blind users cannot distinguish), insufficient colour contrast (< 4.5:1 ratio for normal text, < 3:1 for large text), and captions missing from videos. Operable: All interface components must be operable. Key failures: keyboard traps (user cannot navigate past an element using keyboard only), no skip navigation link (NVDA users must tab through entire navigation on every page), focus indicator not visible (keyboard users cannot see where they are), and time limits without warnings. Understandable: Information and UI operation must be understandable. Key failures: form errors not described in text (colour-only error indication), language not programmatically identified (screen readers cannot select the correct voice), confusing navigation (inconsistent patterns across pages), and required fields not labelled. Robust: Content must be robust enough to be interpreted by assistive technologies. Key failures: invalid HTML (NVDA may misread content), ARIA labels not matching visible text (confusing for screen reader users), and components not accessible via ARIA roles."
-        ],
+        "paragraphs": [],
         "table": {
           "headers": [
             "Failure",
@@ -1155,7 +1252,12 @@ export const resourceGuides = [
       {
         "title": "Manual vs Automated WCAG Testing",
         "paragraphs": [
-          "ClickMasters WCAG 2.1 AA standard: automated Axe integration in CI/CD (every build), manual NVDA screen reader testing per sprint, keyboard-only navigation testing per sprint, colour contrast design review, and WCAG accessibility statement published on launch."
+          "ClickMasters WCAG 2.1 AA standard: automated Axe integration in CI/CD (every build), manual NVDA screen reader testing per sprint, keyboard-only navigation testing per sprint, colour contrast design review, and WCAG accessibility statement published on launch.",
+          "FAQs",
+          "Q: Is WCAG 2.1 or WCAG 2.2 required in the UK?",
+          "A: PSBAR 2018 references WCAG 2.1 AA — this is the current UK legal requirement for public sector. WCAG 2.2 was published October 2023 and is a superset of WCAG 2.1 (all 2.1 AA criteria plus 6 new criteria). WCAG 2.2 AA is the current international best practice recommendation. ClickMasters builds to WCAG 2.2 AA where possible, with WCAG 2.1 AA as the documented minimum.",
+          "Q: Does the Equality Act require private sector websites to be accessible?",
+          "A: The Equality Act 2010 requires service providers to make reasonable adjustments for disabled people. This has been interpreted by UK courts and the EHRC (Equality and Human Rights Commission) to include digital services. Private sector businesses are not subject to PSBAR's specific WCAG mandate, but WCAG 2.1 AA is the recognised standard for what constitutes reasonable adjustment in a digital context."
         ],
         "table": {
           "headers": [
@@ -1248,7 +1350,6 @@ export const resourceGuides = [
       {
         "title": "Open Banking Use Cases — UK",
         "paragraphs": [
-          "Note: UK Open Banking is evolving — PSD3 and the new Financial Data and Access (FIDA) framework are in development as of 2025. This guide covers the current OBIE-standard Open Banking as implemented today.",
           "Note: UK Open Banking is evolving — PSD3 and the new Financial Data and Access (FIDA) framework are in development as of 2025. This guide covers the current OBIE-standard Open Banking as implemented today."
         ],
         "table": {
@@ -1298,27 +1399,54 @@ export const resourceGuides = [
       },
       {
         "title": "AISP vs PISP — Key Difference",
-        "paragraphs": [],
+        "paragraphs": [
+          "Service",
+          "What It Does",
+          "FCA Registration",
+          "Data Accessed",
+          "AISP (Account Information)",
+          "Read-only access to account data",
+          "FCA AISP authorisation",
+          "Balances, transactions, account details",
+          "PISP (Payment Initiation)",
+          "Initiate payments from user's bank account",
+          "FCA PISP authorisation",
+          "No data read — triggers payment instruction"
+        ],
         "table": null
       },
       {
         "title": "UK Open Banking Architecture — TrueLayer",
         "paragraphs": [
-          "Service What It Does FCA Registration Data Accessed AISP (Account Information) Read-only access to account data FCA AISP authorisation Balances, transactions, account details PISP (Payment Initiation) Initiate payments from user's bank account FCA PISP authorisation No data read — triggers payment instruction"
+          "Single OAuth 2.0 flow: user selects bank, authorises in bank's app, returns to your application with access token.",
+          "90-day consent re-authorisation: PSD2 requirement — TrueLayer handles the re-authorisation reminder flow.",
+          "Granular consent: user can consent per account (not all accounts at a bank).",
+          "Instant revocation: user can revoke consent per bank at any time via TrueLayer consent dashboard.",
+          "ClickMasters uses TrueLayer as the Open Banking aggregation layer. Building directly on each bank's OBIE-compliant API requires: separate authentication flows per bank (20+ UK banks), handling each bank's API quirks and downtime, maintaining separate connection credentials, and tracking OBIE API standard versions per bank. TrueLayer normalises all of this into a single API."
         ],
         "table": null
       },
       {
         "title": "UK GDPR for Open Banking Data",
         "paragraphs": [
-          "ClickMasters uses TrueLayer as the Open Banking aggregation layer. Building directly on each bank's OBIE-compliant API requires: separate authentication flows per bank (20+ UK banks), handling each bank's API quirks and downtime, maintaining separate connection credentials, and tracking OBIE API standard versions per bank. TrueLayer normalises all of this into a single API. Single OAuth 2.0 flow: user selects bank, authorises in bank's app, returns to your application with access token. 90-day consent re-authorisation: PSD2 requirement — TrueLayer handles the re-authorisation reminder flow. Granular consent: user can consent per account (not all accounts at a bank). Instant revocation: user can revoke consent per bank at any time via TrueLayer consent dashboard."
+          "Lawful basis: contract performance (AISP data used to provide agreed service), or explicit consent.",
+          "Data minimisation: only request access to accounts genuinely needed for the service.",
+          "Retention: Open Banking transaction data should be retained only as long as necessary — typically 12 months for affordability assessment, shorter for payment verification.",
+          "Right to erasure: consent revocation should trigger deletion of Open Banking data — TrueLayer webhooks for consent revocation events.",
+          "Privacy Notice: must specifically describe Open Banking data processing, which banks are connected, and how transaction data is used.",
+          "Open Banking account data is personal data — financial data is sensitive personal data. Key UK GDPR considerations:"
         ],
         "table": null
       },
       {
         "title": "FCA Consumer Duty and Open Banking",
         "paragraphs": [
-          "Open Banking account data is personal data — financial data is sensitive personal data. Key UK GDPR considerations: Lawful basis: contract performance (AISP data used to provide agreed service), or explicit consent. Data minimisation: only request access to accounts genuinely needed for the service. Retention: Open Banking transaction data should be retained only as long as necessary — typically 12 months for affordability assessment, shorter for payment verification. Right to erasure: consent revocation should trigger deletion of Open Banking data — TrueLayer webhooks for consent revocation events. Privacy Notice: must specifically describe Open Banking data processing, which banks are connected, and how transaction data is used."
+          "FCA Consumer Duty applies to AISP and PISP services. Consumer Understanding: consent journey must clearly explain what data is accessed, for what purpose, and for how long — no dark patterns in the authorisation flow. Consumer Support: users must be able to revoke consent easily from within the application (not just via their bank app). Consumer Duty four outcomes must be monitored and evidenced.",
+          "FAQs",
+          "Q: Do I need FCA authorisation to use Open Banking?",
+          "A: If you use TrueLayer (or another authorised AISP/PISP provider), you do not need your own FCA AISP/PISP authorisation — you operate under TrueLayer's FCA authorisation as an agent. If you want to hold Open Banking authorisation directly (e.g., to access raw OBIE APIs), you need FCA AISP registration (for account information) or PISP authorisation (for payment initiation).",
+          "Q: What UK banks are covered by Open Banking?",
+          "A: The CMA9 (nine largest UK banks by market share) are mandated to provide OBIE-compliant Open Banking APIs: Barclays, HSBC, Lloyds, Nationwide, NatWest, Royal Bank of Scotland, Santander, Standard Chartered, and Bank of Ireland UK. TrueLayer covers 50+ UK banks including challenger banks (Monzo, Starling, Revolut)."
         ],
         "table": null
       }
@@ -1372,7 +1500,6 @@ export const resourceGuides = [
       {
         "title": "How IR35 Works — The Client's Obligation",
         "paragraphs": [
-          "Note: This guide reflects IR35 rules as they apply from April 2021 for medium and large businesses. Small companies (two or more of: turnover ≤ £10.2M, balance sheet ≤ £5.1M, ≤ 50 employees) are currently exempt from off-payroll obligations — contractors in small company engagements are responsible for their own IR35 determination.",
           "Note: This guide reflects IR35 rules as they apply from April 2021 for medium and large businesses. Small companies (two or more of: turnover ≤ £10.2M, balance sheet ≤ £5.1M, ≤ 50 employees) are currently exempt from off-payroll obligations — contractors in small company engagements are responsible for their own IR35 determination."
         ],
         "table": {
@@ -1441,14 +1568,27 @@ export const resourceGuides = [
         "table": null
       },
       {
-      "title": "The ClickMasters IR35 Solution",
-        "paragraphs": [],
+        "title": "The ClickMasters IR35 Solution",
+        "paragraphs": [
+          "No Status Determination Statement required.",
+          "No employer NI calculation or payment.",
+          "No PAYE obligation on client.",
+          "No HMRC liability if the engagement later changes.",
+          "One monthly invoice. Complete administrative simplicity.",
+          "ClickMasters eliminates IR35 entirely through our employment model. ClickMasters engineers are ClickMasters employees — not contractors. You engage ClickMasters as a company (B2B service contract), not an individual. No IR35 consideration arises at all:"
+        ],
         "table": null
       },
       {
         "title": "IR35 Cost Comparison",
         "paragraphs": [
-          "ClickMasters eliminates IR35 entirely through our employment model. ClickMasters engineers are ClickMasters employees — not contractors. You engage ClickMasters as a company (B2B service contract), not an individual. No IR35 consideration arises at all: No Status Determination Statement required. No employer NI calculation or payment. No PAYE obligation on client. No HMRC liability if the engagement later changes. One monthly invoice. Complete administrative simplicity."
+          "FAQs",
+          "Q: What is a Status Determination Statement (SDS)?",
+          "A: An SDS is a written statement from the client business explaining its determination of whether a contractor engagement is inside or outside IR35. Medium and large businesses must provide an SDS to every contractor and their intermediary before the engagement starts. HMRC can request the SDS during an investigation — if it does not exist, the client is automatically liable for any underpaid tax.",
+          "Q: What happens if HMRC disagrees with our IR35 determination?",
+          "A: HMRC can challenge an IR35 determination up to 6 years after the tax year in question. If HMRC successfully argues the contractor was inside IR35: the client owes income tax (deducted from the contractor's gross rate), employer NI (13.8% of the contractor's earnings), employee NI (not recoverable from contractor if client failed to deduct), plus interest (3.25% p.a.) and potential penalties of up to 100% of unpaid tax.",
+          "Q: Is ClickMasters staff augmentation subject to IR35?",
+          "A: No — ClickMasters engineers are ClickMasters employees. You engage ClickMasters as a company under a B2B service contract. IR35 applies to contractors (individuals working through personal service companies). A B2B service contract with ClickMasters is not an engagement of a contractor or their intermediary — IR35 does not apply."
         ],
         "table": {
           "headers": [
@@ -1533,7 +1673,6 @@ export const resourceGuides = [
       {
         "title": "NHS FHIR R4 APIs — UK Overview",
         "paragraphs": [
-          "This guide covers the main NHS FHIR R4 APIs available for HealthTech developers in the UK. Always check NHS Digital (now NHS England Digital) documentation for current API versions and onboarding requirements.",
           "This guide covers the main NHS FHIR R4 APIs available for HealthTech developers in the UK. Always check NHS Digital (now NHS England Digital) documentation for current API versions and onboarding requirements."
         ],
         "table": {
@@ -1640,13 +1779,30 @@ export const resourceGuides = [
       },
       {
         "title": "DTAC Domain 4 — Interoperability Requirements",
-        "paragraphs": [],
+        "paragraphs": [
+          "UK Core FHIR R4 compliance: all APIs using FHIR must use UK Core profiles (not vanilla FHIR R4 profiles).",
+          "SNOMED CT UK: clinical coding must use SNOMED CT UK Edition (not SNOMED CT International alone).",
+          "NHS Number: patient identity must use NHS Number as the primary identifier.",
+          "HL7 messaging: if using HL7 v2 (legacy), must use NHS-approved message types and segments.",
+          "FHIR Capability Statement: servers must publish a /metadata endpoint with capability declaration.",
+          "OpenAPI 3.0: non-FHIR APIs must have OpenAPI 3.0 documentation.",
+          "DTAC Domain 4 assesses whether the digital health solution uses open standards for data exchange. Key evidence requirements:"
+        ],
         "table": null
       },
       {
         "title": "UK GDPR Article 9 and FHIR R4",
         "paragraphs": [
-          "DTAC Domain 4 assesses whether the digital health solution uses open standards for data exchange. Key evidence requirements: UK Core FHIR R4 compliance: all APIs using FHIR must use UK Core profiles (not vanilla FHIR R4 profiles). SNOMED CT UK: clinical coding must use SNOMED CT UK Edition (not SNOMED CT International alone). NHS Number: patient identity must use NHS Number as the primary identifier. HL7 messaging: if using HL7 v2 (legacy), must use NHS-approved message types and segments. FHIR Capability Statement: servers must publish a /metadata endpoint with capability declaration. OpenAPI 3.0: non-FHIR APIs must have OpenAPI 3.0 documentation."
+          "Lawful basis: public task (Article 9(2)(h)) for NHS commissioned services; explicit consent for non-NHS patient-facing applications.",
+          "Data minimisation: FHIR API calls should request only the FHIR resources and fields genuinely needed — not full patient records when a single observation is required.",
+          "Access audit: every FHIR API call must be logged with the clinical user identity, patient NHS Number, and timestamp.",
+          "NHS Number is special category data: treat as equivalent to health data for security purposes.",
+          "All NHS FHIR R4 data is special category health data under UK GDPR Article 9. Key architecture implications:",
+          "FAQs",
+          "Q: How do we get access to NHS FHIR APIs?",
+          "A: Each NHS API has its own onboarding process via the NHS England API catalogue (api.service.nhs.uk). Most clinical APIs (GP Connect, PDS, eRS) require: HSCN network connectivity, Smartcard authentication for clinical staff, NHS Digital Information Governance (IG) Toolkit compliance (DSP Toolkit), and a connection agreement with NHS England. Patient-facing APIs (NHS Login) use standard OAuth 2.0 onboarding via the NHS Login developer portal.",
+          "Q: What is the difference between NHS FHIR R4 and FHIR R4?",
+          "A: NHS FHIR R4 means FHIR R4 with UK Core profiles applied. UK Core profiles add UK-specific constraints: mandatory NHS Number, UK address formats, SNOMED CT UK Edition for clinical coding, dm+d for medicines, and UK-specific extensions (ethnicity codes, religious affiliation). Vanilla FHIR R4 (international) does not satisfy DTAC Domain 4 for NHS applications."
         ],
         "table": null
       }
@@ -1700,7 +1856,6 @@ export const resourceGuides = [
       {
         "title": "MTD Mandation Timeline",
         "paragraphs": [
-          "Note: MTD rollout dates have changed multiple times — always verify current mandation dates on HMRC's website (gov.uk/make-tax-digital). This guide reflects the MTD programme as of June 2025.",
           "Note: MTD rollout dates have changed multiple times — always verify current mandation dates on HMRC's website (gov.uk/make-tax-digital). This guide reflects the MTD programme as of June 2025."
         ],
         "table": {
@@ -1784,14 +1939,20 @@ export const resourceGuides = [
       },
       {
         "title": "MTD HMRC OAuth 2.0 Flow",
-        "paragraphs": [],
+        "paragraphs": [
+          "Authorisation endpoint: https://api.service.hmrc.gov.uk/oauth/authorize",
+          "Token endpoint: https://api.service.hmrc.gov.uk/oauth/token",
+          "Required scope for MTD VAT: write:vat (submit) + read:vat (retrieve)",
+          "HMRC access tokens expire after 4 hours — refresh tokens last 18 months",
+          "HMRC requires HTTPS redirect URIs — no HTTP in production",
+          "Fraud Prevention Headers: HMRC requires 7 device and session headers on every MTD API call (Gov-Client-Device-ID, Gov-Client-User-IDs, Gov-Vendor-Version, etc.)",
+          "HMRC uses a standard OAuth 2.0 Authorization Code flow with HMRC-specific requirements:"
+        ],
         "table": null
       },
       {
         "title": "HMRC Fraud Prevention Headers",
-        "paragraphs": [
-          "HMRC uses a standard OAuth 2.0 Authorization Code flow with HMRC-specific requirements: Authorisation endpoint: https://api.service.hmrc.gov.uk/oauth/authorize Token endpoint: https://api.service.hmrc.gov.uk/oauth/token Required scope for MTD VAT: write:vat (submit) + read:vat (retrieve) HMRC access tokens expire after 4 hours — refresh tokens last 18 months HMRC requires HTTPS redirect URIs — no HTTP in production Fraud Prevention Headers: HMRC requires 7 device and session headers on every MTD API call (Gov-Client-Device-ID, Gov-Client-User-IDs, Gov-Vendor-Version, etc.)"
-        ],
+        "paragraphs": [],
         "table": {
           "headers": [
             "Header",
@@ -1839,7 +2000,18 @@ export const resourceGuides = [
       },
       {
         "title": "UK GDPR for MTD Integrations",
-        "paragraphs": [],
+        "paragraphs": [
+          "VAT return data: retain for 6 years (VAT record-keeping obligation) — UK GDPR storage limitation must not delete earlier than 6 years.",
+          "HMRC OAuth tokens: store securely (AWS Secrets Manager or equivalent) — never in database plain text.",
+          "Refresh token exposure: a stolen refresh token gives HMRC API access for 18 months — treat as highly sensitive credential.",
+          "Access to VAT return data: restrict to the authorised business user — no sharing between tenants in multi-tenant accounting software.",
+          "MTD integrations process financial personal data — tax returns contain turnover, VAT amounts, and business details that may identify individuals. UK GDPR basis: contract performance (software processing tax data on behalf of the user). Key obligations:",
+          "FAQs",
+          "Q: What is MTD for ITSA and how does it affect software development?",
+          "A: MTD for Income Tax Self Assessment (ITSA) requires self-employed and landlord taxpayers to submit quarterly income/expense summaries (instead of one annual Self Assessment). Software must support: quarterly update submissions (4 per tax year), End of Period Statement (EOPS) at year-end, and Final Declaration (replacing SA100). API documentation is available in HMRC's Developer Hub sandbox environment.",
+          "Q: How do we test MTD API integrations without real tax data?",
+          "A: HMRC provides a sandbox environment (test.api.service.hmrc.gov.uk) with test VAT numbers and test OAuth credentials. HMRC also provides a stateful sandbox (test organisations that accumulate obligations). To go live: HMRC requires a production credentials application (describe the software, number of users, and provide test evidence), then production credentials are issued. Government Gateway testing accounts are separate from sandbox."
+        ],
         "table": null
       }
     ],
@@ -1892,7 +2064,6 @@ export const resourceGuides = [
       {
         "title": "Companies House API — Key Endpoints",
         "paragraphs": [
-          "Companies House API is completely free — no usage charges, no rate limit tiers. Rate limiting applies (600 requests per 5 minutes per API key). Register at developer.company-information.service.gov.uk for an API key.",
           "Companies House API is completely free — no usage charges, no rate limit tiers. Rate limiting applies (600 requests per 5 minutes per API key). Register at developer.company-information.service.gov.uk for an API key."
         ],
         "table": {
@@ -1947,20 +2118,36 @@ export const resourceGuides = [
       },
       {
         "title": "AML/KYC Use Cases",
-        "paragraphs": [],
+        "paragraphs": [
+          "Company identity verification: registered name, registration number, registered address, and incorporation date — all verified against Companies House.",
+          "Beneficial ownership: PSC API returns individuals with 25%+ ownership or control — direct evidence of beneficial ownership for AML CDD.",
+          "Director identity: officer search cross-referenced with personal identity verification (Onfido or equivalent).",
+          "Disqualified directors: Companies House maintains a disqualified directors register — check via officer search.",
+          "Active company status: confirmation that company is not dissolved, in administration, or struck off before onboarding.",
+          "Companies House API is a cornerstone of UK AML and KYC processes under MLRs 2017:"
+        ],
         "table": null
       },
       {
         "title": "UK GDPR and Companies House Data",
         "paragraphs": [
-          "Companies House API is a cornerstone of UK AML and KYC processes under MLRs 2017: Company identity verification: registered name, registration number, registered address, and incorporation date — all verified against Companies House. Beneficial ownership: PSC API returns individuals with 25%+ ownership or control — direct evidence of beneficial ownership for AML CDD. Director identity: officer search cross-referenced with personal identity verification (Onfido or equivalent). Disqualified directors: Companies House maintains a disqualified directors register — check via officer search. Active company status: confirmation that company is not dissolved, in administration, or struck off before onboarding."
+          "Officer personal data: home addresses are sometimes included in officer filings. UK GDPR applies to processing officer personal data. Companies House provides address suppression for officers at risk.",
+          "PSC data: individuals with significant control have their personal data (name, address, nationality) published. Lawful basis for processing in your system: legitimate interest (AML/KYC compliance obligation under MLRs 2017).",
+          "Storing Companies House data: if you store company/officer data in your own database, it becomes your personal data processing — UK GDPR obligations apply including retention policies.",
+          "Companies House data is largely public information — company registration details, filing history, and charges are public record. However:"
         ],
         "table": null
       },
       {
         "title": "Rate Limiting and Best Practices",
         "paragraphs": [
-          "Companies House data is largely public information — company registration details, filing history, and charges are public record. However: Officer personal data: home addresses are sometimes included in officer filings. UK GDPR applies to processing officer personal data. Companies House provides address suppression for officers at risk. PSC data: individuals with significant control have their personal data (name, address, nationality) published. Lawful basis for processing in your system: legitimate interest (AML/KYC compliance obligation under MLRs 2017). Storing Companies House data: if you store company/officer data in your own database, it becomes your personal data processing — UK GDPR obligations apply including retention policies."
+          "FAQs",
+          "Q: Is the Companies House API truly free?",
+          "A: Yes — the Companies House API is completely free for commercial use. No usage charges, no paid tiers. You need a free API key (register at developer.company-information.service.gov.uk). Rate limiting (600 requests per 5 minutes) is the only constraint. For very high-volume use (millions of lookups), consider the Companies House bulk data download (also free).",
+          "Q: How do we handle company group structure in AML?",
+          "A: Companies House PSC API returns direct PSCs (25%+ shareholders/controllers). For group structures, you need to trace ownership up the chain: Company A is owned by Company B (PSC) → look up Company B's PSCs → continue until you reach individual beneficial owners. This multi-hop ownership traversal is the \"beneficial ownership chain\" required by MLRs 2017 for enhanced due diligence.",
+          "Q: Does Companies House API include all UK companies?",
+          "A: Companies House covers: companies incorporated in England and Wales, Scotland, and Northern Ireland. Not covered: LLPs (Limited Liability Partnerships — separate register), sole traders, partnerships, UK branches of foreign companies (overseas entities register), and companies in liquidation may have incomplete current data. For comprehensive UK corporate intelligence, supplement with credit reference agency data."
         ],
         "table": {
           "headers": [
@@ -2051,7 +2238,6 @@ export const resourceGuides = [
       {
         "title": "Which UK Software Development Activities Qualify?",
         "paragraphs": [
-          "Note: R&D Tax Credits rules changed significantly from April 2023 (RDEC rate increase) and April 2024 (merged SME/RDEC scheme proposed). Always consult a specialist R&D tax adviser — HMRC enquiry rates are increasing. This guide provides general information only.",
           "Note: R&D Tax Credits rules changed significantly from April 2023 (RDEC rate increase) and April 2024 (merged SME/RDEC scheme proposed). Always consult a specialist R&D tax adviser — HMRC enquiry rates are increasing. This guide provides general information only."
         ],
         "table": {
@@ -2149,14 +2335,24 @@ export const resourceGuides = [
       },
       {
         "title": "What Costs Qualify in Software Development?",
-        "paragraphs": [],
+        "paragraphs": [
+          "Staff costs: salary, employer NI, employer pension for time spent on qualifying R&D (proportion of total time).",
+          "Software and data costs: software licences used directly in R&D activities (AWS credits for ML training, specialist libraries).",
+          "Subcontractor costs: 65% of payments to UK R&D subcontractors (ClickMasters clients can claim on a portion of ClickMasters invoices if qualifying R&D).",
+          "Cloud computing for R&D: AWS/Azure costs for training ML models, running experiments, prototype infrastructure.",
+          "NOT qualifying: software purchased to use (not develop), routine testing, bug fixes of existing software, standard product development."
+        ],
         "table": null
       },
       {
         "title": "HMRC R&D Enquiries — What to Expect Post-2023",
         "paragraphs": [
-          "Staff costs: salary, employer NI, employer pension for time spent on qualifying R&D (proportion of total time). Software and data costs: software licences used directly in R&D activities (AWS credits for ML training, specialist libraries). Subcontractor costs: 65% of payments to UK R&D subcontractors (ClickMasters clients can claim on a portion of ClickMasters invoices if qualifying R&D). Cloud computing for R&D: AWS/Azure costs for training ML models, running experiments, prototype infrastructure. NOT qualifying: software purchased to use (not develop), routine testing, bug fixes of existing software, standard product development.",
-          "ClickMasters client note: Projects involving novel AI/ML development, novel NHS FHIR integrations, or original cryptographic implementations may qualify. ClickMasters provides technical project descriptions that satisfy HMRC Additional Information Form requirements for qualifying projects — ask about this at project kickoff."
+          "ClickMasters client note: Projects involving novel AI/ML development, novel NHS FHIR integrations, or original cryptographic implementations may qualify. ClickMasters provides technical project descriptions that satisfy HMRC Additional Information Form requirements for qualifying projects — ask about this at project kickoff.",
+          "FAQs",
+          "Q: Can ClickMasters clients claim R&D Tax Credits on our invoices?",
+          "A: Potentially — if ClickMasters' work involves qualifying R&D activities (novel ML algorithm development, novel technical solutions to genuine technological uncertainty). The client company can claim 65% of payments to ClickMasters as a qualifying subcontractor cost if the work qualifies as R&D. Consult an R&D specialist tax adviser — the technical project description from ClickMasters will help support the claim.",
+          "Q: What is the Additional Information Form (AIF) for R&D claims?",
+          "A: The AIF is a mandatory pre-claim form submitted to HMRC online before or alongside the CT600 corporation tax return. It must describe: each R&D project in detail, the specific scientific/technological uncertainty, how the uncertainty was addressed, the qualifying costs per project, and the company's R&D activities. HMRC uses the AIF to assess the quality and validity of R&D claims. Poor quality AIFs are the most common reason for HMRC enquiries post-2023."
         ],
         "table": null
       }
@@ -2210,7 +2406,6 @@ export const resourceGuides = [
       {
         "title": "Main Innovate UK Schemes for Software Companies",
         "paragraphs": [
-          "This guide covers the main Innovate UK funding routes relevant to UK software development companies as of June 2025. Innovate UK funding schemes change frequently — always check the Innovate UK website and Innovate UK EDGE for current competitions.",
           "This guide covers the main Innovate UK funding routes relevant to UK software development companies as of June 2025. Innovate UK funding schemes change frequently — always check the Innovate UK website and Innovate UK EDGE for current competitions."
         ],
         "table": {
@@ -2269,14 +2464,19 @@ export const resourceGuides = [
       },
       {
         "title": "What Makes a Strong Innovate UK Software Application?",
-        "paragraphs": [],
+        "paragraphs": [
+          "Insufficient novelty: \"we are building a better version of existing software\" is not innovation — \"we are solving a technical problem that current software cannot solve\" is.",
+          "No addressable market evidence: revenue projections without market size evidence are dismissed.",
+          "Unclear UK benefit: Innovate UK requires UK economic benefit — where will the jobs be created?",
+          "Budget not justified: every cost item must be justified with rates and time — not just totals.",
+          "Poor technical description: assessors include technical experts — vague technology descriptions fail.",
+          "Innovate UK assessors score applications on: innovation level (must be genuinely novel — not state of the art), commercial viability (credible route to market), technical feasibility (realistic plan), and team capability (right people to deliver). Common reasons for rejection:"
+        ],
         "table": null
       },
       {
         "title": "Knowledge Transfer Partnerships (KTPs) — The Hidden Gem",
-        "paragraphs": [
-          "Innovate UK assessors score applications on: innovation level (must be genuinely novel — not state of the art), commercial viability (credible route to market), technical feasibility (realistic plan), and team capability (right people to deliver). Common reasons for rejection: Insufficient novelty: \"we are building a better version of existing software\" is not innovation — \"we are solving a technical problem that current software cannot solve\" is. No addressable market evidence: revenue projections without market size evidence are dismissed. Unclear UK benefit: Innovate UK requires UK economic benefit — where will the jobs be created? Budget not justified: every cost item must be justified with rates and time — not just totals. Poor technical description: assessors include technical experts — vague technology descriptions fail."
-        ],
+        "paragraphs": [],
         "table": {
           "headers": [
             "KTP Component",
@@ -2312,7 +2512,17 @@ export const resourceGuides = [
       },
       {
         "title": "SBRI — Building Software for Government",
-        "paragraphs": [],
+        "paragraphs": [
+          "NHS England SBRI: health technology challenges — wearables, AI diagnostics, patient engagement.",
+          "HMRC SBRI: tax compliance technology, fraud detection, Making Tax Digital.",
+          "DWP SBRI: benefits administration, fraud detection, accessibility tools.",
+          "SBRI (Small Business Research Initiative) is the UK government's mechanism for buying innovative R&D to solve public sector challenges. Phases 1 and 2 are 100% and 70% funded respectively — the government is paying you to develop software that solves their problem. NHS, HMRC, DWP, DVLA, and MoD regularly issue SBRI competitions for software solutions.",
+          "FAQs",
+          "Q: How do we find current Innovate UK competitions?",
+          "A: Innovate UK Edge (innovateukfundingservice.eu-west.funding-service.gov.uk) lists all open competitions. UK Research and Innovation Funding Service: the main application portal. Subscribe to Innovate UK newsletters for new competition announcements. ClickMasters helps clients identify relevant competitions and strengthen technical sections of applications.",
+          "Q: Can ClickMasters work be included in an Innovate UK grant application?",
+          "A: Yes — ClickMasters development work can be included as subcontractor costs in Innovate UK applications (typically capped at a proportion of total project costs). The subcontractor (ClickMasters) must be engaged at arm's length commercial rates. For SBRI: subcontractor costs are eligible if the subcontractor contributes to the innovation. ClickMasters has experience preparing technical descriptions for Innovate UK grant applications."
+        ],
         "table": null
       }
     ],
@@ -2365,7 +2575,6 @@ export const resourceGuides = [
       {
         "title": "Controller vs Processor — The Critical Distinction",
         "paragraphs": [
-          "This guide covers the UK GDPR Data Processing Agreement requirements as of June 2025. This is general information — consult a data protection solicitor for your specific circumstances. The ICO publishes guidance on Article 28 contracts at ico.org.uk.",
           "This guide covers the UK GDPR Data Processing Agreement requirements as of June 2025. This is general information — consult a data protection solicitor for your specific circumstances. The ICO publishes guidance on Article 28 contracts at ico.org.uk."
         ],
         "table": {
@@ -2399,21 +2608,55 @@ export const resourceGuides = [
       },
       {
         "title": "What Must a UK GDPR Article 28 DPA Include?",
-        "paragraphs": [],
+        "paragraphs": [
+          "Article 28(3) sets out mandatory terms. A DPA that omits any of these is non-compliant:",
+          "Mandatory Term",
+          "Article 28(3) Reference",
+          "What to Include",
+          "Process only on documented instructions",
+          "Art 28(3)(a)",
+          "Scope of processing, specific purposes, lawful basis reference",
+          "Confidentiality obligation",
+          "Art 28(3)(b)",
+          "Processor staff bound by confidentiality (employment contract or separate NDA)",
+          "Security measures",
+          "Art 28(3)(c) + Art 32",
+          "Technical and organisational measures — reference Annex (see below)",
+          "Sub-processor restrictions",
+          "Art 28(3)(d)",
+          "Prior written authorisation required; same obligations on sub-processors",
+          "Data subject rights assistance",
+          "Art 28(3)(e)",
+          "Processor assists controller in responding to DSARs, erasure requests",
+          "Assist with compliance obligations",
+          "Art 28(3)(f)",
+          "Security, breach notification (within 24/48 hours to controller), DPIAs, consultations with ICO",
+          "Delete or return data at end",
+          "Art 28(3)(g)",
+          "Delete or return all personal data at contract end — controller's choice",
+          "Provide audit evidence",
+          "Art 28(3)(h)",
+          "Allow audits/inspections by controller or appointed auditor"
+        ],
         "table": null
       },
       {
         "title": "Article 32 Security Annex — What to Include",
         "paragraphs": [
-          "Article 28(3) sets out mandatory terms. A DPA that omits any of these is non-compliant: Mandatory Term Article 28(3) Reference What to Include Process only on documented instructions Art 28(3)(a) Scope of processing, specific purposes, lawful basis reference Confidentiality obligation Art 28(3)(b) Processor staff bound by confidentiality (employment contract or separate NDA) Security measures Art 28(3)(c) + Art 32 Technical and organisational measures — reference Annex (see below) Sub-processor restrictions Art 28(3)(d) Prior written authorisation required; same obligations on sub-processors Data subject rights assistance Art 28(3)(e) Processor assists controller in responding to DSARs, erasure requests Assist with compliance obligations Art 28(3)(f) Security, breach notification (within 24/48 hours to controller), DPIAs, consultations with ICO Delete or return data at end Art 28(3)(g) Delete or return all personal data at contract end — controller's choice Provide audit evidence Art 28(3)(h) Allow audits/inspections by controller or appointed auditor"
+          "Encryption at rest: AES-256 for all personal data at rest (database, backups, S3).",
+          "Encryption in transit: TLS 1.2 minimum, TLS 1.3 preferred, for all personal data in transit.",
+          "Access controls: RBAC with least privilege, MFA for admin accounts, unique accounts per user.",
+          "Vulnerability management: Dependabot automated CVE scanning, OS patches within 14 days (Cyber Essentials).",
+          "Penetration testing: annual CREST penetration test for systems processing special category data.",
+          "Incident response: breach notification to controller within 24 hours of discovery.",
+          "Cyber Essentials: certified annually — certificate available on request.",
+          "The security measures in the DPA Annex should reflect the Article 32 risk-based approach. For ClickMasters engagements:"
         ],
         "table": null
       },
       {
         "title": "Sub-Processor Management",
-        "paragraphs": [
-          "The security measures in the DPA Annex should reflect the Article 32 risk-based approach. For ClickMasters engagements: Encryption at rest: AES-256 for all personal data at rest (database, backups, S3). Encryption in transit: TLS 1.2 minimum, TLS 1.3 preferred, for all personal data in transit. Access controls: RBAC with least privilege, MFA for admin accounts, unique accounts per user. Vulnerability management: Dependabot automated CVE scanning, OS patches within 14 days (Cyber Essentials). Penetration testing: annual CREST penetration test for systems processing special category data. Incident response: breach notification to controller within 24 hours of discovery. Cyber Essentials: certified annually — certificate available on request."
-        ],
+        "paragraphs": [],
         "table": {
           "headers": [
             "Sub-Processor",
@@ -2451,7 +2694,16 @@ export const resourceGuides = [
       },
       {
         "title": "IDTA — International Data Transfer Addendum",
-        "paragraphs": [],
+        "paragraphs": [
+          "Post-Brexit: transfers of UK personal data from the UK to non-adequate countries (including the US) require either the ICO's IDTA (International Data Transfer Addendum) or the UK GDPR Addendum to EU SCCs. The IDTA is the ICO's mechanism for authorising UK→US data transfers. AWS, GitHub, and Stripe all offer UK GDPR-compliant IDTAs. ClickMasters ensures all sub-processor IDTAs are in place for UK personal data transfers.",
+          "FAQs",
+          "Q: Does ClickMasters provide a DPA as part of every engagement?",
+          "A: Yes — ClickMasters provides a UK GDPR Article 28-compliant Data Processing Agreement with every engagement that involves personal data processing. The DPA is included in the ClickMasters master services agreement. A sub-processor list (updated when sub-processors change) is published on our website and provided on request.",
+          "Q: What if the ICO audits our data processor (ClickMasters)?",
+          "A: Article 28(3)(h) gives the controller the right to audit the processor. ICO may contact the processor directly in an investigation. ClickMasters maintains: UK GDPR compliance documentation, Cyber Essentials certificate, annual penetration test report, and Article 28 DPAs with all sub-processors. These are available to controllers on request for audit purposes.",
+          "Q: Is a DPA required for all software development engagements?",
+          "A: Only when ClickMasters processes personal data on the client's behalf. Building a system (software development) where ClickMasters does not access live personal data: typically no DPA required (unless development uses real data — anonymised test data is preferred). Hosting and operating a system with live personal data: DPA required. Ongoing managed services or support with production access: DPA required."
+        ],
         "table": null
       }
     ],
@@ -2508,7 +2760,6 @@ export const resourceGuides = [
       {
         "title": "DTAC 5 Domains — Complete Evidence Requirements",
         "paragraphs": [
-          "This guide reflects DTAC as published by NHS England (Digital Technology Assessment Criteria v1.1). DTAC requirements are updated — always check NHS England's current DTAC documentation.",
           "This guide reflects DTAC as published by NHS England (Digital Technology Assessment Criteria v1.1). DTAC requirements are updated — always check NHS England's current DTAC documentation."
         ],
         "table": {
@@ -2554,13 +2805,26 @@ export const resourceGuides = [
       },
       {
         "title": "DCB0129 Clinical Safety — The Most Complex Domain",
-        "paragraphs": [],
+        "paragraphs": [
+          "Clinical Safety Officer (CSO): must be a registered health professional (doctor, nurse, pharmacist) for clinical software. IT professionals cannot be CSO for software that influences clinical decisions.",
+          "Hazard Log: a living document identifying every hazard (potential for patient harm) introduced by the software, with risk scoring and mitigation. Updated throughout development.",
+          "Clinical Safety Case Report: the formal document that summarises the clinical safety evidence and asserts the software is safe for use. Submitted with the DTAC.",
+          "Severity levels: Catastrophic (patient death or permanent harm) → Major → Moderate → Minor → Negligible.",
+          "Safe design mitigations: the first line of defence — design the software so the hazard cannot occur. Technical controls are secondary.",
+          "DCB0129 is the NHS Information Standard for Clinical Risk Management in Health IT. The key concepts:"
+        ],
         "table": null
       },
       {
         "title": "DTAC for Different HealthTech Product Types",
         "paragraphs": [
-          "DCB0129 is the NHS Information Standard for Clinical Risk Management in Health IT. The key concepts: Clinical Safety Officer (CSO): must be a registered health professional (doctor, nurse, pharmacist) for clinical software. IT professionals cannot be CSO for software that influences clinical decisions. Hazard Log: a living document identifying every hazard (potential for patient harm) introduced by the software, with risk scoring and mitigation. Updated throughout development. Clinical Safety Case Report: the formal document that summarises the clinical safety evidence and asserts the software is safe for use. Submitted with the DTAC. Severity levels: Catastrophic (patient death or permanent harm) → Major → Moderate → Minor → Negligible. Safe design mitigations: the first line of defence — design the software so the hazard cannot occur. Technical controls are secondary."
+          "FAQs",
+          "Q: How long does DTAC take?",
+          "A: Preparing a DTAC submission typically takes 4–8 weeks if DTAC compliance has been built in from the start of development. If compliance is retrofitted after development: 8–16 weeks (domain gaps must be addressed). ClickMasters integrates DTAC compliance into the development process from Sprint 1 — reducing DTAC preparation to 2–4 weeks of documentation and testing at the end of the project.",
+          "Q: Who can be a Clinical Safety Officer (CSO) for DCB0129?",
+          "A: The CSO must be a registered health professional with clinical knowledge relevant to the software's clinical domain. For a GP appointment management system: a GP. For a radiology AI: a radiologist. For a mental health app: a clinical psychologist. IT professionals, project managers, and software developers cannot be CSO for clinical software. ClickMasters helps clients identify and engage appropriate CSOs from our clinical network.",
+          "Q: What is the difference between DTAC and NHS App Library?",
+          "A: NHS App Library is the NHS's curated list of apps recommended for NHS use. To be listed: DTAC approval is required. DTAC is the assessment framework — NHS App Library listing is the outcome. Some NHS Trusts deploy digital tools without NHS App Library listing, using a Trust-level DTAC review. NHS-wide deployment (available to all NHS patients or staff): NHS App Library listing via full DTAC is required."
         ],
         "table": {
           "headers": [
@@ -2651,7 +2915,6 @@ export const resourceGuides = [
       {
         "title": "PCI-DSS SAQ Types — Which Applies to UK Software?",
         "paragraphs": [
-          "This guide covers PCI-DSS v4.0 (effective March 2024, with some requirements active from March 2025). PCI-DSS v4.0 introduced significant changes to web skimming controls and customised approach requirements. Always consult a QSA (Qualified Security Assessor) for your specific compliance programme.",
           "This guide covers PCI-DSS v4.0 (effective March 2024, with some requirements active from March 2025). PCI-DSS v4.0 introduced significant changes to web skimming controls and customised approach requirements. Always consult a QSA (Qualified Security Assessor) for your specific compliance programme."
         ],
         "table": {
@@ -2724,13 +2987,28 @@ export const resourceGuides = [
       },
       {
         "title": "PCI-DSS v4.0 Key Changes (2024/2025)",
-        "paragraphs": [],
+        "paragraphs": [
+          "Requirement 6.4.3: all scripts loading in the browser on payment pages must be authorised, have their integrity maintained (SRI hashes), and be inventoried. This affects SAQ-A-EP merchants significantly.",
+          "Requirement 11.6.1: detection mechanism for unauthorised script changes on payment pages (web skimming detection — Magecart-style attacks).",
+          "Customised approach: alternative to standard requirements — allowed where equivalent security is demonstrated. Requires QSA validation.",
+          "Targeted risk analysis: some requirements now require organisation-specific risk analysis to determine frequency of controls.",
+          "PCI-DSS v4.0 introduced requirements particularly relevant for e-commerce software:"
+        ],
         "table": null
       },
       {
         "title": "FCA and UK GDPR — How PCI-DSS Interacts",
         "paragraphs": [
-          "PCI-DSS v4.0 introduced requirements particularly relevant for e-commerce software: Requirement 6.4.3: all scripts loading in the browser on payment pages must be authorised, have their integrity maintained (SRI hashes), and be inventoried. This affects SAQ-A-EP merchants significantly. Requirement 11.6.1: detection mechanism for unauthorised script changes on payment pages (web skimming detection — Magecart-style attacks). Customised approach: alternative to standard requirements — allowed where equivalent security is demonstrated. Requires QSA validation. Targeted risk analysis: some requirements now require organisation-specific risk analysis to determine frequency of controls."
+          "Cardholder data is personal data under UK GDPR — both frameworks apply to cardholder data processing.",
+          "UK GDPR Article 32 (security) and PCI-DSS Requirement 12 (security policy) share common controls — document once, satisfy both.",
+          "Data breach notification: UK GDPR requires ICO notification within 72 hours. PCI-DSS Requirement 12.10.7 requires card scheme notification — typically faster than 72 hours. Both obligations apply.",
+          "FCA Consumer Duty: payment UX must be clear and not misleading — Stripe Elements satisfies Consumer Duty Consumer Understanding for payment screens.",
+          "PCI-DSS and UK GDPR overlap for payment data:",
+          "FAQs",
+          "Q: Does using Stripe mean I'm PCI-DSS compliant?",
+          "A: Not automatically. Using Stripe Elements correctly (hosted payment fields — card data goes directly to Stripe, never to your server) reduces your scope to SAQ-A and makes compliance achievable with a self-assessment. You still need to: complete the SAQ-A annually, ensure your Stripe Elements implementation correctly scopes card data out of your system, and ensure your web application does not have XSS vulnerabilities that could steal card data client-side.",
+          "Q: How much does PCI-DSS compliance cost for a UK software company?",
+          "A: SAQ-A (Stripe Elements): annual self-assessment (2–4 hours), no cost beyond time. SAQ-A-EP: annual self-assessment + penetration test (~£2,000–£5,000/yr). SAQ-D: QSA assessment (£10,000–£50,000/yr depending on scope), quarterly ASV scans, annual pen test. ClickMasters designs SAQ-A architecture for all projects — eliminating the expensive QSA assessment by keeping cardholder data entirely within Stripe's environment."
         ],
         "table": null
       }
@@ -2784,7 +3062,6 @@ export const resourceGuides = [
       {
         "title": "Red Flags in UK Software Development Contracts",
         "paragraphs": [
-          "This guide is written for UK business owners, IT directors, and CTOs who are procuring software development. It explains the contract models, red flags to avoid, and the questions to ask before signing.",
           "This guide is written for UK business owners, IT directors, and CTOs who are procuring software development. It explains the contract models, red flags to avoid, and the questions to ask before signing."
         ],
         "table": {
@@ -2839,13 +3116,37 @@ export const resourceGuides = [
       },
       {
         "title": "Essential Contract Terms for UK Software Development",
-        "paragraphs": [],
+        "paragraphs": [
+          "Scope of Work: detailed specification (from Technical Discovery) — what is in scope, what is explicitly out of scope.",
+          "Fixed Price: total price, payment milestones, and what triggers each milestone payment.",
+          "Change Request process: any change outside the Scope of Work requires written CR, estimated cost, approval before billing.",
+          "IP assignment: all intellectual property (code, designs, documentation, data schemas) assigned to the client on final payment. Not licensed — assigned.",
+          "Source code access: client has access to source code repository from Day 1 — not locked in agency repository.",
+          "Handover: structured handover — documentation, deployment runbooks, and knowledge transfer sessions.",
+          "UK GDPR / data processing: Data Processing Agreement if agency processes personal data. Sub-processor list.",
+          "Termination for convenience: client can terminate with 4 weeks notice, paying for work completed to date.",
+          "Jurisdiction: English law, English courts.",
+          "Every UK software development contract should include:"
+        ],
         "table": null
       },
       {
         "title": "How ClickMasters Fixed-Price Contracts Work",
         "paragraphs": [
-          "Every UK software development contract should include: Scope of Work: detailed specification (from Technical Discovery) — what is in scope, what is explicitly out of scope. Fixed Price: total price, payment milestones, and what triggers each milestone payment. Change Request process: any change outside the Scope of Work requires written CR, estimated cost, approval before billing. IP assignment: all intellectual property (code, designs, documentation, data schemas) assigned to the client on final payment. Not licensed — assigned. Source code access: client has access to source code repository from Day 1 — not locked in agency repository. Handover: structured handover — documentation, deployment runbooks, and knowledge transfer sessions. UK GDPR / data processing: Data Processing Agreement if agency processes personal data. Sub-processor list. Termination for convenience: client can terminate with 4 weeks notice, paying for work completed to date. Jurisdiction: English law, English courts."
+          "Technical Discovery (fixed fee: £3,500–£8,000): 2 weeks. Output: detailed specification, UI wireframes, architecture design, and a fixed-price proposal.",
+          "Fixed-price proposal: total delivery cost, payment milestones, sprint plan, and risk register.",
+          "Sprint delivery: 2-week sprints, demo every sprint, sprint retrospective, sprint planning. Client attends demos.",
+          "Change Requests: any addition to agreed scope → written CR → estimate → approval → billing. No surprise invoices.",
+          "IP transfer: all IP assigned to client in the contract and confirmed at handover via IP transfer schedule.",
+          "Handover: deployment runbooks, architecture documentation, infrastructure access, and 2× knowledge transfer sessions.",
+          "ClickMasters fixed-price Agile process:",
+          "FAQs",
+          "Q: What happens if a fixed-price project goes over budget?",
+          "A: Under a fixed-price contract: the agency absorbs the over-run. If ClickMasters estimates 12 sprints and it takes 14: ClickMasters delivers the agreed scope within the agreed price. The only way the client pays more is if they request additional scope (via Change Request). This is the fundamental advantage of fixed-price — delivery risk sits with ClickMasters, not the client.",
+          "Q: Can ClickMasters guarantee the price will not change?",
+          "A: For the agreed scope: yes. The price for the agreed Scope of Work is fixed. If the client requests changes (new features, changes to agreed functionality, new integrations), these are costed via Change Request and approved before billing. The original scope price does not change. This is why Technical Discovery is so important — the better the specification, the fewer Change Requests.",
+          "Q: Who owns the code if I use ClickMasters?",
+          "A: The client owns all intellectual property — code, designs, database schemas, documentation — outright, from the moment of final payment. This is an assignment, not a licence. ClickMasters retains no rights to the code. The client can modify it, sell it, or hand it to another agency."
         ],
         "table": null
       }
@@ -2903,7 +3204,6 @@ export const resourceGuides = [
       {
         "title": "What ClickMasters Technical Discovery Produces",
         "paragraphs": [
-          "Without a Technical Discovery, any software development cost estimate is a guess. With one, ClickMasters can give you a fixed price — and commit to it. This guide explains what the ClickMasters Technical Discovery covers and why it is the essential first step for any UK software project above £15,000.",
           "Without a Technical Discovery, any software development cost estimate is a guess. With one, ClickMasters can give you a fixed price — and commit to it. This guide explains what the ClickMasters Technical Discovery covers and why it is the essential first step for any UK software project above £15,000."
         ],
         "table": {
@@ -2997,7 +3297,20 @@ export const resourceGuides = [
       },
       {
         "title": "Who Should Attend a Technical Discovery?",
-        "paragraphs": [],
+        "paragraphs": [
+          "Product owner or founder: the person who knows what the product needs to do and why.",
+          "Technical lead (if you have one): existing technical context, constraints, and preferences.",
+          "End-user representative (if accessible): the person who will use the software — their workflow is what the spec must match.",
+          "The most effective Technical Discoveries involve the right people from the client side. Required:",
+          "Optional but valuable: compliance officer or legal counsel (for regulated projects — FCA, NHS, GDS).",
+          "FAQs",
+          "Q: What does a Technical Discovery cost?",
+          "A: ClickMasters Technical Discovery: £3,500 (simple MVP or single-feature project) to £8,000 (complex system with multiple integrations or regulated compliance requirements). The cost is fixed — not T&M. The output is a specification detailed enough to receive competitive fixed-price quotes from other agencies. Even if you choose not to proceed with ClickMasters, the specification is yours.",
+          "Q: Can I skip the Technical Discovery and go straight to build?",
+          "A: You can — but it is almost always a mistake. Without a Technical Discovery: the agency estimates on incomplete information, the estimate is a range (not a fixed price), scope disputes are common, and compliance requirements are typically under-estimated. ClickMasters requires a Technical Discovery for all projects above £20,000 before committing to a fixed delivery price. For sub-£20,000 projects, we may agree a shorter scoping session.",
+          "Q: Does the Technical Discovery cost count towards the build?",
+          "A: No — the Technical Discovery is a separate fixed-fee engagement. If the client proceeds with ClickMasters for the build, the Technical Discovery deliverables (spec, wireframes, architecture) are handed over and used as the basis for Sprint 1 planning — no duplication of effort. The Discovery is priced to cover ClickMasters' cost; it is not a loss-leader."
+        ],
         "table": null
       }
     ],
@@ -3054,7 +3367,6 @@ export const resourceGuides = [
       {
         "title": "Complete Software Handover Checklist",
         "paragraphs": [
-          "This guide explains what a complete software handover includes, what questions to ask your software agency, and the red flags that indicate poor handover practice.",
           "This guide explains what a complete software handover includes, what questions to ask your software agency, and the red flags that indicate poor handover practice."
         ],
         "table": {
@@ -3130,13 +3442,30 @@ export const resourceGuides = [
       },
       {
         "title": "Red Flags — Poor Handover Practice",
-        "paragraphs": [],
+        "paragraphs": [
+          "Code in agency repository only — client cannot access without the agency's permission.",
+          "No documentation — \"the code is self-documenting\" is a red flag. Code is not operational documentation.",
+          "API credentials in agency accounts — you cannot operate the service without the agency.",
+          "No knowledge transfer sessions — a document without context is useless.",
+          "IP transfer only on final payment — should be contractual, not conditional on full payment (partial IP exposure).",
+          "\"Maintenance contract required\" for basic operation — sign of deliberate vendor lock-in design.",
+          "These indicate an agency is not prepared to hand over properly:"
+        ],
         "table": null
       },
       {
         "title": "UK GDPR Handover Obligations",
         "paragraphs": [
-          "These indicate an agency is not prepared to hand over properly: Code in agency repository only — client cannot access without the agency's permission. No documentation — \"the code is self-documenting\" is a red flag. Code is not operational documentation. API credentials in agency accounts — you cannot operate the service without the agency. No knowledge transfer sessions — a document without context is useless. IP transfer only on final payment — should be contractual, not conditional on full payment (partial IP exposure). \"Maintenance contract required\" for basic operation — sign of deliberate vendor lock-in design."
+          "Article 28 DPA: if you are taking over data processing responsibility, a new DPA with your hosting provider is required.",
+          "Article 30 ROPA: the Record of Processing Activities must be updated to reflect the new controller/processor arrangements.",
+          "DPO notification: if a DPO is appointed, they should review the handover for new processing activities.",
+          "Data migration: if data is migrated to a new system, this may be a new processing activity requiring DPIA assessment.",
+          "If your software processes personal data, the handover has specific UK GDPR implications:",
+          "FAQs",
+          "Q: How long does a software handover take?",
+          "A: A complete ClickMasters handover takes 5–7 working days including: documentation finalisation (1–2 days), access migrations (1 day), IP transfer schedule signing (same day), Knowledge Transfer Session 1 — architecture walkthrough (90 minutes), Knowledge Transfer Session 2 — operational walkthrough (90 minutes), and any follow-up questions resolution (1 day). For complex systems: we add a third session for specific components (e.g., ML model retraining, infrastructure autoscaling).",
+          "Q: What if my team cannot operate the system after handover?",
+          "A: ClickMasters offers post-handover support retainers (Kanban model, hourly allocation per month). We also offer a \"first 90 days\" support package — a fixed monthly fee covering: monitoring and alerting response, dependency updates, minor bug fixes, and on-call access for operational questions. Most clients need 1–3 months of post-handover support while their team builds familiarity with the system."
         ],
         "table": null
       }
@@ -3285,7 +3614,15 @@ export const resourceGuides = [
       },
       {
         "title": "When Each Certification Is Required",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: How much does Cyber Essentials certification cost?",
+          "A: Cyber Essentials: approximately £300–£500 per year (certification body fee — IASME, Assured IT Services, etc.). Preparation cost: 2–4 days of internal work (reviewing 5 controls, fixing any gaps). Cyber Essentials Plus: £2,000–£5,000 per year (includes independent technical assessment — vulnerability scan and some manual testing). ClickMasters achieves Cyber Essentials Plus in under 4 weeks for new software projects because controls are built in from Sprint 1.",
+          "Q: Does ISO 27001 replace Cyber Essentials for UK government contracts?",
+          "A: Not automatically. Many UK government contracts specifically require Cyber Essentials or Cyber Essentials Plus by name — ISO 27001 is not always accepted as an alternative. The NCSC recommends achieving Cyber Essentials first. For NHS procurement: NHS DSP Toolkit Standard requires Cyber Essentials evidence specifically. ISO 27001 is additional — not a substitute for Cyber Essentials in UK government and NHS procurement.",
+          "Q: Can ClickMasters software projects achieve Cyber Essentials?",
+          "A: Yes — ClickMasters builds Cyber Essentials-ready infrastructure on all projects: AWS Security Groups, hardened configuration, automated patching (Dependabot + AWS Patch Manager), and MFA enforcement. Client organisations need to achieve their own Cyber Essentials certification for their organisation — but the software infrastructure ClickMasters builds will not be the barrier to certification."
+        ],
         "table": {
           "headers": [
             "Scenario",
@@ -3392,27 +3729,63 @@ export const resourceGuides = [
     "contentSections": [
       {
         "title": "OpenAPI 3.0 — The UK Standard for External APIs",
-        "paragraphs": [],
+        "paragraphs": [
+          "FCA COBS disclosure: financial APIs must disclose what data they expose. An OpenAPI spec is a machine-readable disclosure document — FCA-inspectable.",
+          "NHS FHIR R4: NHS APIs use FHIR R4 which is a REST API standard — OpenAPI-documented FHIR capability statements are DTAC Domain 4 evidence.",
+          "G-Cloud service description: API capabilities described in OpenAPI format are accepted for G-Cloud technical documentation.",
+          "Automated testing: OpenAPI spec generates contract tests (Prism mock server, Dredd) — API behaviour validated against spec in CI/CD.",
+          "OpenAPI 3.0 (formerly Swagger) is the de-facto standard for documenting REST APIs. For UK regulated software, OpenAPI provides additional value beyond documentation:"
+        ],
         "table": null
       },
       {
         "title": "UK GDPR and API Design — Practical Rules",
         "paragraphs": [
-          "OpenAPI 3.0 (formerly Swagger) is the de-facto standard for documenting REST APIs. For UK regulated software, OpenAPI provides additional value beyond documentation: FCA COBS disclosure: financial APIs must disclose what data they expose. An OpenAPI spec is a machine-readable disclosure document — FCA-inspectable. NHS FHIR R4: NHS APIs use FHIR R4 which is a REST API standard — OpenAPI-documented FHIR capability statements are DTAC Domain 4 evidence. G-Cloud service description: API capabilities described in OpenAPI format are accepted for G-Cloud technical documentation. Automated testing: OpenAPI spec generates contract tests (Prism mock server, Dredd) — API behaviour validated against spec in CI/CD."
+          "UK GDPR Principle",
+          "API Design Requirement",
+          "Implementation",
+          "Data minimisation (Art 5(1)(c))",
+          "Return only fields necessary for the client's stated purpose",
+          "Field-level response schemas — no catch-all response objects",
+          "Purpose limitation (Art 5(1)(b))",
+          "Separate endpoints for separate purposes — no multipurpose dumps",
+          "Endpoint-per-use-case (not GET /user returning all data)",
+          "Storage limitation (Art 5(1)(e))",
+          "API responses should not encourage unnecessary data storage by client",
+          "Documentation: specify which response fields should not be cached",
+          "Security (Art 32)",
+          "API authentication and authorisation enforced at gateway",
+          "AWS API Gateway + Cognito JWT validation on every request",
+          "Data subject rights (Art 15–22)",
+          "APIs for DSAR fulfilment, erasure, portability",
+          "Dedicated endpoints: GET /data (DSAR), DELETE /account (erasure), GET /data.json (portability)"
         ],
         "table": null
       },
       {
         "title": "NHS FHIR R4 — REST API for HealthTech",
         "paragraphs": [
-          "UK GDPR Principle API Design Requirement Implementation Data minimisation (Art 5(1)(c)) Return only fields necessary for the client's stated purpose Field-level response schemas — no catch-all response objects Purpose limitation (Art 5(1)(b)) Separate endpoints for separate purposes — no multipurpose dumps Endpoint-per-use-case (not GET /user returning all data) Storage limitation (Art 5(1)(e)) API responses should not encourage unnecessary data storage by client Documentation: specify which response fields should not be cached Security (Art 32) API authentication and authorisation enforced at gateway AWS API Gateway + Cognito JWT validation on every request Data subject rights (Art 15–22) APIs for DSAR fulfilment, erasure, portability Dedicated endpoints: GET /data (DSAR), DELETE /account (erasure), GET /data.json (portability)"
+          "Resource-based: FHIR resources (Patient, Observation, Appointment, MedicationRequest) are REST resources — GET /Patient/{id}, POST /Appointment.",
+          "UK Core profiles: NHS England's UK Core constrains FHIR R4 for UK use — specific code systems (SNOMED CT UK, dm+d, ODS codes).",
+          "DTAC Domain 4: HealthTech SaaS must provide a FHIR Capability Statement (/metadata endpoint) as interoperability evidence.",
+          "GraphQL is not NHS FHIR: attempting to implement NHS APIs with GraphQL instead of FHIR R4 REST fails DTAC Domain 4 requirements.",
+          "FHIR R4 (Fast Healthcare Interoperability Resources) is an NHS-mandated REST API standard for health data exchange. Key principles:"
         ],
         "table": null
       },
       {
         "title": "When GraphQL Is Genuinely the Right Choice",
         "paragraphs": [
-          "FHIR R4 (Fast Healthcare Interoperability Resources) is an NHS-mandated REST API standard for health data exchange. Key principles: Resource-based: FHIR resources (Patient, Observation, Appointment, MedicationRequest) are REST resources — GET /Patient/{id}, POST /Appointment. UK Core profiles: NHS England's UK Core constrains FHIR R4 for UK use — specific code systems (SNOMED CT UK, dm+d, ODS codes). DTAC Domain 4: HealthTech SaaS must provide a FHIR Capability Statement (/metadata endpoint) as interoperability evidence. GraphQL is not NHS FHIR: attempting to implement NHS APIs with GraphQL instead of FHIR R4 REST fails DTAC Domain 4 requirements."
+          "Dashboard with many data sources: a single GraphQL query can fetch data from multiple resolvers in one network round-trip — reduces dashboard load time.",
+          "Mobile applications with bandwidth constraints: request only the fields needed for the current view — reduces payload size.",
+          "Rapid product iteration: add new fields to schema without creating new endpoints — frontend teams move faster.",
+          "B2B developer portals: GitHub, Shopify, and Atlassian all use GraphQL for their developer APIs — complex, nested relationship data.",
+          "GraphQL solves the over-fetching and under-fetching problems of REST for complex frontend applications. Genuine GraphQL use cases:",
+          "FAQs",
+          "Q: Does the FCA require REST APIs for regulated financial services?",
+          "A: FCA does not mandate REST specifically — it requires APIs to be secure, well-documented, and compliant with COBS disclosure requirements. In practice: Open Banking (PSD2 mandate) requires OBIE-standard REST APIs. FCA Consumer Duty requires that product information is accessible — OpenAPI-documented REST APIs satisfy this. ClickMasters recommends REST + OpenAPI 3.0 for all FCA-regulated external APIs — it is the industry standard and simplest path through FCA technical review.",
+          "Q: Can GraphQL satisfy NHS FHIR R4 interoperability requirements?",
+          "A: No — NHS FHIR R4 requires REST APIs conforming to the FHIR R4 specification. FHIR is a REST standard — GraphQL cannot substitute for FHIR endpoints. If your HealthTech application needs DTAC Domain 4 interoperability, you need FHIR R4 REST APIs. You can use GraphQL for your own internal data layer, but the NHS-facing interface must be FHIR R4 REST."
         ],
         "table": null
       }
@@ -3515,20 +3888,61 @@ export const resourceGuides = [
       },
       {
         "title": "HMRC MTD API — Technical Integration",
-        "paragraphs": [],
+        "paragraphs": [
+          "HMRC MTD APIs are available on the HMRC Developer Hub. All require OAuth 2.0 authentication (Government Gateway credentials). Key technical requirements:",
+          "API",
+          "Purpose",
+          "Key Endpoints",
+          "Authentication",
+          "MTD VAT",
+          "Submit VAT returns digitally",
+          "GET obligations, POST return, GET liabilities",
+          "OAuth 2.0 (user grants access to accounting software)",
+          "MTD ITSA",
+          "Quarterly business income/expenses",
+          "POST self-employment income, POST property income, GET obligations",
+          "OAuth 2.0 (individual or agent)",
+          "Agent Authorisation",
+          "Accountants submitting on behalf of clients",
+          "GET authorisation status, create invitation",
+          "OAuth 2.0 (agent credentials)",
+          "Business Income Source Summary",
+          "Annual income summary",
+          "GET, POST BISS",
+          "OAuth 2.0",
+          "MTD VAT Bridging",
+          "Spreadsheet bridge to MTD",
+          "GET/POST VAT return only",
+          "OAuth 2.0"
+        ],
         "table": null
       },
       {
         "title": "Digital Links — The Key MTD Technical Requirement",
         "paragraphs": [
-          "HMRC MTD APIs are available on the HMRC Developer Hub. All require OAuth 2.0 authentication (Government Gateway credentials). Key technical requirements: API Purpose Key Endpoints Authentication MTD VAT Submit VAT returns digitally GET obligations, POST return, GET liabilities OAuth 2.0 (user grants access to accounting software) MTD ITSA Quarterly business income/expenses POST self-employment income, POST property income, GET obligations OAuth 2.0 (individual or agent) Agent Authorisation Accountants submitting on behalf of clients GET authorisation status, create invitation OAuth 2.0 (agent credentials) Business Income Source Summary Annual income summary GET, POST BISS OAuth 2.0 MTD VAT Bridging Spreadsheet bridge to MTD GET/POST VAT return only OAuth 2.0"
+          "Source data → accounting software: electronic import (CSV, API, direct connection) — not manual typing.",
+          "Between accounting systems: API integration or automated export/import — not copy-paste or manual transfer.",
+          "Accounting software → HMRC: direct API submission — not printing a return and re-entering it on the HMRC portal.",
+          "Spreadsheet + bridging software: permitted — but the link between the spreadsheet and the bridging software must be a digital link (automated import, not manual re-keying).",
+          "HMRC's digital links requirement: a \"digital link\" is an electronic transfer or exchange of data between software programs or between software and HMRC's system. No manual re-keying of data is permitted in the digital records chain. Implications for software development:"
         ],
         "table": null
       },
       {
         "title": "MTD Compatible Software — HMRC Recognition",
         "paragraphs": [
-          "HMRC's digital links requirement: a \"digital link\" is an electronic transfer or exchange of data between software programs or between software and HMRC's system. No manual re-keying of data is permitted in the digital records chain. Implications for software development: Source data → accounting software: electronic import (CSV, API, direct connection) — not manual typing. Between accounting systems: API integration or automated export/import — not copy-paste or manual transfer. Accounting software → HMRC: direct API submission — not printing a return and re-entering it on the HMRC portal. Spreadsheet + bridging software: permitted — but the link between the spreadsheet and the bridging software must be a digital link (automated import, not manual re-keying)."
+          "Register on HMRC Developer Hub: create an account, agree to terms of use, access sandbox (test) environment.",
+          "Sandbox testing: test all required API endpoints in the HMRC sandbox environment with HMRC-provided test credentials.",
+          "Production application: apply for production credentials (HMRC reviews the application — typically 2–4 weeks).",
+          "MTD recognition: submit for inclusion on the HMRC-recognised MTD software list (separate application process).",
+          "HMRC maintains a list of MTD-compatible software products on GOV.UK. To achieve HMRC recognition as MTD-compatible:",
+          "FAQs",
+          "Q: When is the MTD for ITSA deadline for software developers?",
+          "A: MTD for ITSA mandatory for self-employed with £50K+ income from April 2026. Software products targeting self-employed individuals or accountants need to be MTD ITSA-compatible before April 2026. HMRC Developer Hub sandbox for MTD ITSA is available now for testing. ClickMasters recommends starting MTD ITSA integration development in 2025 — HMRC production credentials take 2–4 weeks to obtain.",
+          "Q: Do we need HMRC approval to build MTD software?",
+          "A: No — any software developer can integrate with HMRC MTD APIs. HMRC Developer Hub registration is free. Production credential application required before going live. HMRC's recognised MTD software list is voluntary — but appearing on the list significantly increases product discoverability for accountants and businesses seeking MTD-compatible software.",
+          "Q: Can ClickMasters integrate MTD APIs into our existing accounting software?",
+          "A: Yes — ClickMasters has integrated HMRC MTD VAT and MTD ITSA APIs into accounting and ERP platforms. The integration involves: HMRC Developer Hub registration, OAuth 2.0 authentication implementation (Government Gateway user credentials), MTD API calls (obligations, submission, liabilities), digital link architecture review (ensuring data flows satisfy HMRC digital links requirement), and sandbox testing."
         ],
         "table": null
       }
@@ -3586,22 +4000,86 @@ export const resourceGuides = [
       {
         "title": "Open Banking Provider Comparison — TrueLayer vs Yapily vs Plaid UK",
         "paragraphs": [
-          "AISP vs PISP — Which FCA Authorisation Do You Need? Service Type What It Does FCA Authorisation Required Typical Use Cases AISP Read-only access to bank account data (balances, transactions, account details) FCA AISP authorisation (or use a regulated AISP like TrueLayer) Budgeting apps, credit scoring, expense management, cashflow forecasting PISP Initiate payments from a customer's bank account directly FCA PISP authorisation (or use a regulated PISP like TrueLayer) Account-to-account payments, salary advances, direct payment checkout Both AISP + PISP Combined access and payment initiation Both AISP and PISP authorisations Comprehensive financial management apps Agent of a TPP Use a regulated TPP's (TrueLayer, Yapily) authorisation under their FCA permission No direct FCA authorisation — contract with TPP Most FinTech startups — fastest route to market",
-          "AISP vs PISP — Which FCA Authorisation Do You Need? Service Type What It Does FCA Authorisation Required Typical Use Cases AISP Read-only access to bank account data (balances, transactions, account details) FCA AISP authorisation (or use a regulated AISP like TrueLayer) Budgeting apps, credit scoring, expense management, cashflow forecasting PISP Initiate payments from a customer's bank account directly FCA PISP authorisation (or use a regulated PISP like TrueLayer) Account-to-account payments, salary advances, direct payment checkout Both AISP + PISP Combined access and payment initiation Both AISP and PISP authorisations Comprehensive financial management apps Agent of a TPP Use a regulated TPP's (TrueLayer, Yapily) authorisation under their FCA permission No direct FCA authorisation — contract with TPP Most FinTech startups — fastest route to market"
+          "AISP vs PISP — Which FCA Authorisation Do You Need?",
+          "Service Type",
+          "What It Does",
+          "FCA Authorisation Required",
+          "Typical Use Cases",
+          "AISP",
+          "Read-only access to bank account data (balances, transactions, account details)",
+          "FCA AISP authorisation (or use a regulated AISP like TrueLayer)",
+          "Budgeting apps, credit scoring, expense management, cashflow forecasting",
+          "PISP",
+          "Initiate payments from a customer's bank account directly",
+          "FCA PISP authorisation (or use a regulated PISP like TrueLayer)",
+          "Account-to-account payments, salary advances, direct payment checkout",
+          "Both AISP + PISP",
+          "Combined access and payment initiation",
+          "Both AISP and PISP authorisations",
+          "Comprehensive financial management apps",
+          "Agent of a TPP",
+          "Use a regulated TPP's (TrueLayer, Yapily) authorisation under their FCA permission",
+          "No direct FCA authorisation — contract with TPP",
+          "Most FinTech startups — fastest route to market",
+          "Provider",
+          "UK Bank Coverage",
+          "AISP",
+          "PISP",
+          "UK Pricing (indicative)",
+          "ClickMasters Assessment",
+          "TrueLayer",
+          "22+ UK banks, best coverage",
+          "✅",
+          "✅",
+          "~£0.10–£0.30/connection/month",
+          "✅ ClickMasters default — best UK coverage + developer experience",
+          "Yapily",
+          "18+ UK banks",
+          "✅",
+          "✅",
+          "Per API call pricing",
+          "Good — strong EU coverage, slightly less UK-focused",
+          "Plaid",
+          "US-primary, UK banks added",
+          "✅",
+          "Limited UK PISP",
+          "US pricing model",
+          "US-focused — use TrueLayer for UK",
+          "Moneyhub Enterprise",
+          "UK focus, strong analytics",
+          "✅",
+          "✅",
+          "Enterprise pricing",
+          "Strong analytics layer — good for wealth management",
+          "Direct OBIE connection",
+          "9 mandatory banks (direct)",
+          "✅",
+          "✅",
+          "No API fee — but FCA auth required",
+          "Complex — only for FCA-authorised firms at scale"
         ],
         "table": null
       },
       {
         "title": "Technical Implementation — TrueLayer Integration",
         "paragraphs": [
-          "Provider UK Bank Coverage AISP PISP UK Pricing (indicative) ClickMasters Assessment TrueLayer 22+ UK banks, best coverage ✅ ✅ ~£0.10–£0.30/connection/month ✅ ClickMasters default — best UK coverage + developer experience Yapily 18+ UK banks ✅ ✅ Per API call pricing Good — strong EU coverage, slightly less UK-focused Plaid US-primary, UK banks added ✅ Limited UK PISP US pricing model US-focused — use TrueLayer for UK Moneyhub Enterprise UK focus, strong analytics ✅ ✅ Enterprise pricing Strong analytics layer — good for wealth management Direct OBIE connection 9 mandatory banks (direct) ✅ ✅ No API fee — but FCA auth required Complex — only for FCA-authorised firms at scale"
+          "OAuth 2.0 bank authorisation: user selects their bank → TrueLayer initiates bank OAuth flow → user consents → TrueLayer returns access token.",
+          "TrueLayer Data API: GET /accounts (list bank accounts), GET /accounts/{id}/transactions (90-day history), GET /accounts/{id}/balance (real-time balance).",
+          "90-day re-authorisation: Open Banking mandates re-authorisation every 90 days — application must handle re-auth gracefully (prompt user before expiry).",
+          "Variable Recurring Payments (VRP): TrueLayer supports VRP (Open Banking sweeping — automated savings transfers) — requires additional PISP permission.",
+          "UK GDPR consent: explicit consent required for Open Banking data access. TrueLayer consent record satisfies UK GDPR Article 7 documentation requirement.",
+          "TrueLayer is the most common Open Banking provider for UK FinTech applications. Key integration steps:"
         ],
         "table": null
       },
       {
         "title": "Open Banking Use Cases — UK Market",
         "paragraphs": [
-          "TrueLayer is the most common Open Banking provider for UK FinTech applications. Key integration steps: OAuth 2.0 bank authorisation: user selects their bank → TrueLayer initiates bank OAuth flow → user consents → TrueLayer returns access token. TrueLayer Data API: GET /accounts (list bank accounts), GET /accounts/{id}/transactions (90-day history), GET /accounts/{id}/balance (real-time balance). 90-day re-authorisation: Open Banking mandates re-authorisation every 90 days — application must handle re-auth gracefully (prompt user before expiry). Variable Recurring Payments (VRP): TrueLayer supports VRP (Open Banking sweeping — automated savings transfers) — requires additional PISP permission. UK GDPR consent: explicit consent required for Open Banking data access. TrueLayer consent record satisfies UK GDPR Article 7 documentation requirement."
+          "FAQs",
+          "Q: Do I need FCA authorisation to build an Open Banking app?",
+          "A: If you use TrueLayer, Yapily, or another FCA-regulated TPP as the intermediary (acting as their agent under contract), you do not need your own FCA AISP/PISP authorisation. The TPP's FCA authorisation covers the regulated activity. Most UK FinTech startups take this route — it avoids the 6–18 month FCA authorisation process. If you want to hold data directly (not via a TPP intermediary) and access bank APIs directly, you need your own FCA authorisation.",
+          "Q: How does Open Banking 90-day re-authorisation affect UX?",
+          "A: PSD2 Strong Customer Authentication (SCA) requires users to re-authenticate with their bank every 90 days for Open Banking data access. Best practice: send the user a re-authorisation prompt at 80 days (10-day warning), with a single-tap re-auth flow. Never surprise the user with a broken connection. Variable Recurring Payments (VRP/sweeping) has longer authorisation duration — worth considering for use cases where 90-day expiry is disruptive."
         ],
         "table": {
           "headers": [
@@ -3789,13 +4267,25 @@ export const resourceGuides = [
       },
       {
         "title": "FCA Consumer Duty — SaaS Pricing Transparency",
-        "paragraphs": [],
+        "paragraphs": [
+          "Price and Value outcome: price must represent fair value — not excessive relative to benefits provided.",
+          "Consumer Understanding: pricing must be clear, prominent, and not misleading — no hidden fees surfaced at checkout.",
+          "Renewal pricing: must clearly communicate when a promotional price ends and the renewal price takes effect.",
+          "Annual vs monthly pricing: both options must be clearly presented — not hiding the cheaper annual option.",
+          "FCA Consumer Duty applies to SaaS products offering regulated financial services (payment products, credit, insurance, investment). Consumer Duty pricing transparency requirements:"
+        ],
         "table": null
       },
       {
         "title": "UK SaaS Pricing Page Best Practices",
         "paragraphs": [
-          "FCA Consumer Duty applies to SaaS products offering regulated financial services (payment products, credit, insurance, investment). Consumer Duty pricing transparency requirements: Price and Value outcome: price must represent fair value — not excessive relative to benefits provided. Consumer Understanding: pricing must be clear, prominent, and not misleading — no hidden fees surfaced at checkout. Renewal pricing: must clearly communicate when a promotional price ends and the renewal price takes effect. Annual vs monthly pricing: both options must be clearly presented — not hiding the cheaper annual option."
+          "FAQs",
+          "Q: Should UK SaaS price in GBP or USD?",
+          "A: Price in GBP for UK and European customers. UK B2B buyers are significantly more likely to convert when prices are in GBP — USD pricing creates friction and signals that the product is not UK-market-focused. Stripe Billing handles multi-currency — show GBP to UK browsers, EUR to European browsers, USD to US browsers, using the same Stripe product. Do not show USD to UK visitors.",
+          "Q: When does UK SaaS need to charge VAT?",
+          "A: UK VAT registration threshold: £90,000 annual turnover (as of April 2024). Once registered: charge 20% VAT on all UK sales. EU customers: charge EU VAT via VAT OSS if annual EU sales exceed €10,000. US/international: no VAT. Stripe Tax handles all of this automatically once configured. Consult an accountant for your specific VAT registration obligations.",
+          "Q: What is the right pricing model for UK B2B SaaS?",
+          "A: ClickMasters recommendation: start with tiered per-seat pricing (Starter/Professional/Enterprise) — it is the most familiar model for UK B2B buyers and easiest to communicate. Offer annual plans at 20–30% discount versus monthly (drives revenue predictability and reduces churn). Add usage-based components only when usage is a genuine value metric (e.g., API calls, documents processed — not as a gotcha)."
         ],
         "table": {
           "headers": [
@@ -3940,20 +4430,63 @@ export const resourceGuides = [
       },
       {
         "title": "UK Startup-Specific Compliance — What You Cannot Ignore",
-        "paragraphs": [],
+        "paragraphs": [
+          "Compliance Area",
+          "When It Matters",
+          "Minimum Viable Compliance",
+          "Cost Estimate",
+          "UK GDPR",
+          "From first user",
+          "Privacy Notice, Cookie Banner, DPA with suppliers",
+          "£500–£2,000 legal review",
+          "ICO Registration",
+          "Collecting personal data for B2C",
+          "ICO registration (£40/year for micro-organisations)",
+          "£40/year",
+          "PCI-DSS",
+          "Taking card payments",
+          "Use Stripe Elements → SAQ-A (self-assessment)",
+          "£0 with Stripe Elements",
+          "Companies House",
+          "All UK companies",
+          "Annual confirmation statement, accounts filing",
+          "£13/year (online)",
+          "Cyber Essentials",
+          "NHS/Gov contracts, Series A+",
+          "Self-assessment questionnaire (£300–£500)",
+          "£300–£500",
+          "FCA",
+          "Regulated financial activities",
+          "FCA authorisation application (6–18 months)",
+          "£25,000–£100,000 legal and consultancy",
+          "NHS DTAC",
+          "HealthTech for NHS",
+          "DCB0129, UK GDPR, Cyber Essentials, FHIR, WCAG",
+          "£15,000–£40,000 compliance overhead"
+        ],
         "table": null
       },
       {
         "title": "UK Startup Funding and Software Grants",
         "paragraphs": [
-          "Compliance Area When It Matters Minimum Viable Compliance Cost Estimate UK GDPR From first user Privacy Notice, Cookie Banner, DPA with suppliers £500–£2,000 legal review ICO Registration Collecting personal data for B2C ICO registration (£40/year for micro-organisations) £40/year PCI-DSS Taking card payments Use Stripe Elements → SAQ-A (self-assessment) £0 with Stripe Elements Companies House All UK companies Annual confirmation statement, accounts filing £13/year (online) Cyber Essentials NHS/Gov contracts, Series A+ Self-assessment questionnaire (£300–£500) £300–£500 FCA Regulated financial activities FCA authorisation application (6–18 months) £25,000–£100,000 legal and consultancy NHS DTAC HealthTech for NHS DCB0129, UK GDPR, Cyber Essentials, FHIR, WCAG £15,000–£40,000 compliance overhead"
+          "Innovate UK Smart Grants: up to £500,000 (70% grant) for innovative software R&D. Competitive. Apply on Innovate UK EDGE.",
+          "Knowledge Transfer Partnerships (KTP): up to 67% of a graduate associate's cost for 12–36 months of innovation project. Underused — highly valuable.",
+          "R&D Tax Credits: up to 33p per £1 of qualifying R&D expenditure. Software development often qualifies — consult an R&D specialist.",
+          "British Business Bank Start Up Loans: £500–£25,000 at 6% fixed interest. Accessible for pre-revenue startups.",
+          "Tech Nation Visa: for non-UK exceptional talent in digital technology — relevant for international co-founders.",
+          "Seed Enterprise Investment Scheme (SEIS): investors get 50% income tax relief — makes UK seed investment more attractive to angels.",
+          "Key UK startup funding programmes relevant to software companies:"
         ],
         "table": null
       },
       {
         "title": "MVP Build Checklist — What ClickMasters Covers in a Startup MVP",
         "paragraphs": [
-          "Key UK startup funding programmes relevant to software companies: Innovate UK Smart Grants: up to £500,000 (70% grant) for innovative software R&D. Competitive. Apply on Innovate UK EDGE. Knowledge Transfer Partnerships (KTP): up to 67% of a graduate associate's cost for 12–36 months of innovation project. Underused — highly valuable. R&D Tax Credits: up to 33p per £1 of qualifying R&D expenditure. Software development often qualifies — consult an R&D specialist. British Business Bank Start Up Loans: £500–£25,000 at 6% fixed interest. Accessible for pre-revenue startups. Tech Nation Visa: for non-UK exceptional talent in digital technology — relevant for international co-founders. Seed Enterprise Investment Scheme (SEIS): investors get 50% income tax relief — makes UK seed investment more attractive to angels."
+          "FAQs",
+          "Q: Should I hire a developer or use an agency for my startup MVP?",
+          "A: For an MVP: agency is almost always better than hiring. Hiring takes 4–12 weeks, the engineer is learning your problem, and you pay salary + NI + pension + IR35 management even if you pivot. Agency: start within 2 weeks, team has done this before, fixed price gives you cost certainty, and you can stop at the end of the engagement. ClickMasters startup MVPs are fixed-price — if we estimate 8 weeks and it takes 10, you pay the agreed price.",
+          "Q: How do I know my idea needs a bespoke build vs an off-the-shelf product?",
+          "A: Bespoke build is right when: no existing product does what you need, the software IS the product differentiator (e.g., a novel algorithm), or customising an off-the-shelf product would cost more than building. Off-the-shelf (Shopify, HubSpot, Intercom, etc.) is right when: the product is mature, customisation covers 80% of your needs, and your differentiation is elsewhere. ClickMasters advises honestly — we will tell you if Shopify is sufficient before recommending a custom build."
         ],
         "table": {
           "headers": [
@@ -4162,13 +4695,26 @@ export const resourceGuides = [
       },
       {
         "title": "Contract Negotiation — UK-Specific Essentials",
-        "paragraphs": [],
+        "paragraphs": [
+          "IP assignment: all intellectual property assigned to buyer — not licensed. On termination, buyer owns the code unconditionally.",
+          "Source code access: buyer has access to source code repository from Sprint 1 — not only at project end.",
+          "UK GDPR Article 28: if supplier processes personal data, a DPA (Data Processing Agreement) is mandatory before work begins.",
+          "Fixed price: insist on fixed price after Technical Discovery — not T&M for a defined delivery phase.",
+          "Exit rights: termination for convenience with 4-week notice, paying only for work completed to date.",
+          "Handover obligations: specified deliverables at project end — documentation, knowledge transfer, infrastructure access transfer.",
+          "Escrow (for SaaS): source code escrow with a UK-registered escrow agent if SaaS is business-critical.",
+          "Every UK software development contract should address these negotiation points:"
+        ],
         "table": null
       },
       {
         "title": "UK Public Sector Procurement — G-Cloud and Digital Outcomes",
         "paragraphs": [
-          "Every UK software development contract should address these negotiation points: IP assignment: all intellectual property assigned to buyer — not licensed. On termination, buyer owns the code unconditionally. Source code access: buyer has access to source code repository from Sprint 1 — not only at project end. UK GDPR Article 28: if supplier processes personal data, a DPA (Data Processing Agreement) is mandatory before work begins. Fixed price: insist on fixed price after Technical Discovery — not T&M for a defined delivery phase. Exit rights: termination for convenience with 4-week notice, paying only for work completed to date. Handover obligations: specified deliverables at project end — documentation, knowledge transfer, infrastructure access transfer. Escrow (for SaaS): source code escrow with a UK-registered escrow agent if SaaS is business-critical."
+          "FAQs",
+          "Q: Do we need a public tender for all software purchases?",
+          "A: Public procurement thresholds (Procurement Act 2023): contracts above £213,477 (for central government) or £213,477 (sub-central public bodies) must be formally tendered via Find a Tender Service. Below threshold: simplified competition process (3+ quotes, documented rationale). G-Cloud and DOS are framework agreements — using them is a valid alternative to open tender at any value.",
+          "Q: What should be in a software development RFP?",
+          "A: Essential RFP sections: business context and problem statement (2 pages), scope of work and acceptance criteria (5–10 pages), technical requirements (3–5 pages), compliance requirements (UK GDPR, security, accessibility — 2 pages), contract requirements (IP, SLAs, governance — 2 pages), evaluation criteria and weighting (1 page), and submission requirements (format, deadline, questions process — 1 page). Aim for 20–30 pages maximum."
         ],
         "table": {
           "headers": [
@@ -4361,7 +4907,12 @@ export const resourceGuides = [
       {
         "title": "In-House vs Agency vs Staff Augmentation — UK Decision Framework",
         "paragraphs": [
-          "IR35 in UK team structures: Hiring individual contractors directly creates IR35 assessment obligations. ClickMasters staff augmentation: our engineers are employees — zero IR35 liability for your business, one monthly invoice."
+          "IR35 in UK team structures: Hiring individual contractors directly creates IR35 assessment obligations. ClickMasters staff augmentation: our engineers are employees — zero IR35 liability for your business, one monthly invoice.",
+          "FAQs",
+          "Q: How big should a UK startup engineering team be at each stage?",
+          "A: Pre-seed: 1–2 engineers (often founders, or 1 agency). Seed: 3–5 engineers (full stack + one specialist). Series A: 8–15 engineers (2–3 stream-aligned teams). Series B: 20–40 engineers (platform team, multiple product streams). Common mistake: hiring too many engineers before product-market fit — each engineer adds coordination overhead. ClickMasters advises UK startups to stay lean (1–3 engineers) until product-market fit is confirmed.",
+          "Q: What is the right ratio of frontend to backend to DevOps engineers?",
+          "A: ClickMasters standard for a full stack UK product team: 2:2:1 ratio (2 frontend, 2 backend/full stack, 1 DevOps). For a 5-person team: 2 frontend, 2 full stack, 1 DevOps/platform. Ratio adjusts for product type: data-heavy products skew toward backend, UI-heavy consumer products skew toward frontend. NHS/GDS products need stronger accessibility expertise — factor in WCAG 2.1 AA as a frontend specialism."
         ],
         "table": {
           "headers": [
@@ -4565,7 +5116,18 @@ export const resourceGuides = [
       },
       {
         "title": "Compliance Debt — UK-Specific Priority",
-        "paragraphs": [],
+        "paragraphs": [
+          "UK GDPR DSAR tooling: ICO enforcement of DSAR response deadlines is increasing. If you cannot respond to DSARs in 30 days, this is urgent debt.",
+          "Cyber Essentials expiry: if your Cyber Essentials certificate has expired or has never been obtained, NHS and government contract bids are blocked until remediated.",
+          "FCA Consumer Duty (ongoing): each annual Consumer Duty review cycle reveals new debt. Value assessments, outcome monitoring, and vulnerable customer frameworks require continuous investment.",
+          "NHS DTAC re-assessment: DTAC assessments have validity periods. Technology changes trigger re-assessment. Backlog of compliance evidence is technical debt.",
+          "UK compliance debt is uniquely urgent because regulatory deadlines are immovable. Current high-priority compliance debt triggers in the UK:",
+          "FAQs",
+          "Q: How much technical debt is acceptable?",
+          "A: Zero debt is not the goal — some debt is the cost of moving quickly and is acceptable when it is conscious (Martin Fowler's deliberate debt). The target: no debt that creates compliance risk (GDPR, Cyber Essentials), no debt that causes customer-visible defects, and velocity loss below 20% of team capacity. If debt is consuming more than 20% of sprint capacity, it is exceeding an acceptable level.",
+          "Q: How do we convince a board to invest in technical debt reduction?",
+          "A: ClickMasters approach: quantify debt in £/quarter (velocity loss + defect cost + compliance risk), compare to fix cost, and calculate payback period. Most technical debt remediation has a payback period of 3–12 months — a compelling return on investment argument. Boards respond to £ not \"code quality.\" For compliance debt: calculate the expected regulatory fine × probability — no board rejects investment when the alternative is a potential ICO fine."
+        ],
         "table": null
       }
     ],
@@ -4667,14 +5229,18 @@ export const resourceGuides = [
       },
       {
         "title": "UK GDPR Article 22 — Automated Decision-Making",
-        "paragraphs": [],
+        "paragraphs": [
+          "Right to human review: if your AI makes a significant decision automatically (loan approval, insurance premium, clinical diagnosis), you must provide a right to request human review.",
+          "Right to explanation: individuals have the right to an explanation of automated decisions that significantly affect them — the \"black box\" defence is not permitted under UK GDPR.",
+          "DPIA required: automated decision-making with significant effects requires a Data Protection Impact Assessment (DPIA) before deployment.",
+          "Meaningful human oversight: \"human in the loop\" must be genuine — not rubber-stamping. FCA supervision: FCA expects human reviewers to have genuine capacity to override AI decisions.",
+          "Article 22 UK GDPR: individuals have the right not to be subject to decisions based solely on automated processing that produce significant legal or similarly significant effects. Applies to: automated credit scoring, automated insurance pricing, automated recruitment screening, AI medical diagnosis without human review."
+        ],
         "table": null
       },
       {
         "title": "Building RAG (Retrieval Augmented Generation) for UK Business",
-        "paragraphs": [
-          "Article 22 UK GDPR: individuals have the right not to be subject to decisions based solely on automated processing that produce significant legal or similarly significant effects. Applies to: automated credit scoring, automated insurance pricing, automated recruitment screening, AI medical diagnosis without human review. Right to human review: if your AI makes a significant decision automatically (loan approval, insurance premium, clinical diagnosis), you must provide a right to request human review. Right to explanation: individuals have the right to an explanation of automated decisions that significantly affect them — the \"black box\" defence is not permitted under UK GDPR. DPIA required: automated decision-making with significant effects requires a Data Protection Impact Assessment (DPIA) before deployment. Meaningful human oversight: \"human in the loop\" must be genuine — not rubber-stamping. FCA supervision: FCA expects human reviewers to have genuine capacity to override AI decisions."
-        ],
+        "paragraphs": [],
         "table": {
           "headers": [
             "RAG Component",
@@ -4712,7 +5278,19 @@ export const resourceGuides = [
       },
       {
         "title": "ICO AI Auditing — What to Expect",
-        "paragraphs": [],
+        "paragraphs": [
+          "Transparency: are users told they are being subject to AI-assisted decisions? Privacy notice must mention AI processing.",
+          "Fairness: is the AI producing biased outcomes by protected characteristic? ICO expects bias testing evidence.",
+          "Accuracy: is AI output accurate and up to date? Stale training data can violate Article 5(1)(d) accuracy principle.",
+          "DPIA: for high-risk AI (automated significant decisions, large-scale processing of special category data), DPIA is mandatory.",
+          "Data minimisation: AI should not be trained on more personal data than necessary. Article 25 data minimisation applies to AI training.",
+          "The ICO has published AI auditing frameworks and is actively auditing UK organisations using AI for high-risk processing. ICO AI audit focus areas:",
+          "FAQs",
+          "Q: Does UK GDPR allow automated AI credit decisioning?",
+          "A: Yes — with safeguards. FCA CONC permits automated credit scoring, provided: the individual is informed that automated processing is involved (Article 13/14 UK GDPR), they have a right to request human review of the decision (Article 22), they can contest the decision, and an explanation can be provided. ClickMasters implements all four safeguards as standard in automated credit decisioning systems. FCA expects firms to monitor automated decisions for fair outcomes — Consumer Duty applies to AI-generated credit decisions.",
+          "Q: What does the EU AI Act mean for UK businesses?",
+          "A: The EU AI Act (effective August 2024 for prohibited AI, August 2026 for high-risk AI systems) applies to UK businesses whose AI products are placed on the EU market or whose AI outputs affect EU individuals. High-risk AI categories relevant to UK businesses: AI in credit scoring, AI in recruitment, AI in critical infrastructure, AI in healthcare, and AI in education. UK businesses distributing high-risk AI in the EU must comply with EU AI Act conformity assessment requirements from August 2026. ClickMasters designs UK AI products with EU AI Act alignment from the start."
+        ],
         "table": null
       }
     ],
@@ -4872,7 +5450,18 @@ export const resourceGuides = [
       },
       {
         "title": "Contract Testing for UK APIs",
-        "paragraphs": [],
+        "paragraphs": [
+          "NHS FHIR R4: FHIR provider contract tests verify UK Core profile compliance on every CI/CD run — breaking FHIR changes caught before deployment.",
+          "FCA Open Banking: consumer-driven contract tests verify OBIE-standard API compliance — prevents breaking changes to payment APIs.",
+          "GOV.UK API: contract tests verify GOV.UK Notify integration, GOV.UK Pay integration, and Companies House API continue to behave as expected.",
+          "Multi-team development: contract tests allow frontend and backend teams to develop independently — the contract (OpenAPI spec) is the integration agreement.",
+          "Contract testing verifies that API consumers (frontend, mobile apps, third-party integrations) and API providers (backend services) agree on the API contract. Particularly important for:",
+          "FAQs",
+          "Q: Does the FCA require an API specification for financial services?",
+          "A: FCA does not require an OpenAPI specification by name. However: FCA COBS 4 (financial communications must be fair, clear and not misleading), FCA PS21/3 (Important Business Services must have documented technical architecture), and Open Banking OBIE standard (OpenAPI specifications mandatory for Open Banking APIs) collectively mean that any UK FinTech with external APIs should have OpenAPI specifications. FCA supervision: when the FCA requests technical documentation, an OpenAPI spec is the clearest technical disclosure.",
+          "Q: How long does an API-first Technical Discovery take?",
+          "A: ClickMasters API-first Technical Discovery: 2 weeks, £3,500–£8,000 fixed price. Deliverables: OpenAPI 3.0 specification (all endpoints, request/response schemas, authentication, error codes), data flow diagram (showing data subjects, processors, UK GDPR legal bases), API architecture decision records (ADRs), and a fixed-price proposal for the API build. The OpenAPI spec is yours regardless of whether you proceed with ClickMasters."
+        ],
         "table": null
       }
     ],
@@ -5045,7 +5634,13 @@ export const resourceGuides = [
       },
       {
         "title": "UKAS-Accredited Certification Bodies in the UK",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: Does ISO 27001 satisfy NHS DTAC security requirements?",
+          "A: ISO 27001 certification satisfies and exceeds NHS DTAC Domain 3 (Technical Security) requirements. DTAC Domain 3 minimum: Cyber Essentials. ISO 27001 provides a comprehensive ISMS that includes all Cyber Essentials controls plus many additional controls. ClickMasters recommends: obtain Cyber Essentials Plus first (quick win, NHS contract requirement), then pursue ISO 27001 for enterprise contract eligibility. Many NHS trusts now prefer ISO 27001 for larger software contracts.",
+          "Q: Can a startup achieve ISO 27001 before Series A?",
+          "A: Yes — ClickMasters has helped pre-Series A UK startups achieve ISO 27001 in 6 months. The ISMS scope can be defined narrowly (the software product and supporting infrastructure) rather than the entire organisation — reducing the control set and audit burden. Cost for a 5–10 person startup: £10,000–£20,000 total (consultant + certification body). ISO 27001 at pre-Series A is a strong signal to enterprise buyers and investors — and increasingly required for NHS and government contract pre-qualification."
+        ],
         "table": {
           "headers": [
             "Certification Body",
@@ -5212,13 +5807,28 @@ export const resourceGuides = [
       },
       {
         "title": "FCA PS21/3 Operational Resilience Observability",
-        "paragraphs": [],
+        "paragraphs": [
+          "IBS-level availability dashboard: real-time uptime per IBS (payment processing, customer onboarding, claims handling). Alert at 95% of Impact Tolerance threshold.",
+          "Automated Impact Tolerance breach detection: if IBS downtime exceeds tolerance → automatic PagerDuty P1 alert → incident response playbook triggered.",
+          "Recovery time monitoring: time from failure detection to recovery documented automatically — fed into quarterly PS21/3 resilience testing report.",
+          "Synthetic monitoring: automated transaction every 5 minutes verifying IBS end-to-end (payment initiation → completion). Failure = IBS downtime start.",
+          "FCA PS21/3 requires firms to monitor Important Business Services (IBS) against Impact Tolerances. Observability for PS21/3:"
+        ],
         "table": null
       },
       {
         "title": "NHS DSP Toolkit Observability Requirements",
         "paragraphs": [
-          "FCA PS21/3 requires firms to monitor Important Business Services (IBS) against Impact Tolerances. Observability for PS21/3: IBS-level availability dashboard: real-time uptime per IBS (payment processing, customer onboarding, claims handling). Alert at 95% of Impact Tolerance threshold. Automated Impact Tolerance breach detection: if IBS downtime exceeds tolerance → automatic PagerDuty P1 alert → incident response playbook triggered. Recovery time monitoring: time from failure detection to recovery documented automatically — fed into quarterly PS21/3 resilience testing report. Synthetic monitoring: automated transaction every 5 minutes verifying IBS end-to-end (payment initiation → completion). Failure = IBS downtime start."
+          "Access audit logs: every access to patient personal data logged (user ID, timestamp, action, data accessed). 6-year retention. Available to NHS on request.",
+          "Authentication event logging: all login attempts (success and failure), MFA events, privileged access. Alert on anomalous patterns (brute force, impossible travel).",
+          "Data export/download logging: any bulk export of patient data logged and alerted for security team review.",
+          "Availability monitoring: DTAC Domain 3 — system availability documented. ClickMasters configures 99.9% uptime SLA monitoring with monthly availability report.",
+          "NHS DSP Toolkit Standard 7 (Data Storage and Transmission) and Standard 6 (Cyber Security) require:",
+          "FAQs",
+          "Q: Does UK GDPR restrict what we log?",
+          "A: Yes — UK GDPR data minimisation applies to logs. Principles: (1) do not log personal data in application logs unless necessary for security/audit (use pseudonymous IDs where possible), (2) do not log passwords, payment card data, or health data in plain text (ever), (3) set log retention based on purpose — general error logs: 90 days, security audit logs: 6 years, (4) treat logs as a UK GDPR processing activity — include in your Article 30 ROPA. ClickMasters configures structured logging (JSON) with explicit personal data fields excluded from default log output.",
+          "Q: What observability does ClickMasters implement on every project?",
+          "A: ClickMasters standard observability stack: AWS CloudWatch Logs (application logs, 90-day default + configurable per regulation), CloudWatch Metrics (p95/p99 latency, error rate, RPS per endpoint), CloudWatch Alarms (error rate > 1% → PagerDuty alert, p99 latency > SLA → alert), AWS X-Ray (distributed tracing for all Lambda and ECS services), CloudTrail (AWS API audit log — who did what in AWS infrastructure, 7-year retention for regulated projects), and monthly availability report (SLA evidence for NHS DTAC and FCA PS21/3)."
         ],
         "table": null
       }
@@ -5271,20 +5881,82 @@ export const resourceGuides = [
     "contentSections": [
       {
         "title": "Technical Due Diligence Checklist — UK SaaS",
-        "paragraphs": [],
+        "paragraphs": [
+          "Area",
+          "Key Questions",
+          "Red Flags",
+          "How ClickMasters Assesses",
+          "Codebase quality",
+          "Test coverage? Linting? TypeScript? CI/CD?",
+          "< 40% test coverage, no CI/CD, no TypeScript on JS codebase",
+          "Code review (GitHub/GitLab access), static analysis (SonarQube scan)",
+          "Architecture",
+          "Monolith or microservices? Scalable? Over-engineered?",
+          "50+ microservices for 5-person team, no clear service boundaries",
+          "Architecture review call with engineering team + diagram review",
+          "Technical debt",
+          "Quantified? Known issues list? EOL dependencies?",
+          "EOL frameworks (Magento 1, PHP 5, jQuery 1.x), no upgrade path",
+          "Dependency scan (npm audit, pip-audit), CVE check, EOL component list",
+          "UK GDPR compliance",
+          "ICO registration? DPAs? DSAR process? Breach history?",
+          "No ICO registration, no DPAs with processors, undisclosed breach history",
+          "GDPR gap assessment, ICO register check, DPA review",
+          "Security certifications",
+          "Cyber Essentials? ISO 27001? Pen test history?",
+          "No Cyber Essentials, last pen test > 2 years ago, unresolved critical findings",
+          "Certificate verification, pen test report review, CVSS scoring",
+          "FCA/NHS/GDS compliance",
+          "FCA authorised? NHS DTAC? GDS assessed?",
+          "Undisclosed FCA enforcement, expired DTAC, pending GDS assessment failure",
+          "FCA register check, DTAC certificate status, GDS assessment review",
+          "Infrastructure",
+          "Cloud costs? Scaling evidence? Single points of failure?",
+          "100% AWS Lambda with no ECS fallback, all data on single RDS, no DR",
+          "AWS Cost Explorer review, architecture diagram, DR test evidence",
+          "Key person dependency",
+          "Bus factor > 1? Documentation? Tribal knowledge?",
+          "One developer who wrote 70%+ of code with no documentation",
+          "Git blame analysis, documentation review, team interview"
+        ],
         "table": null
       },
       {
         "title": "UK GDPR Due Diligence — Deal-Critical Checks",
         "paragraphs": [
-          "Area Key Questions Red Flags How ClickMasters Assesses Codebase quality Test coverage? Linting? TypeScript? CI/CD? < 40% test coverage, no CI/CD, no TypeScript on JS codebase Code review (GitHub/GitLab access), static analysis (SonarQube scan) Architecture Monolith or microservices? Scalable? Over-engineered? 50+ microservices for 5-person team, no clear service boundaries Architecture review call with engineering team + diagram review Technical debt Quantified? Known issues list? EOL dependencies? EOL frameworks (Magento 1, PHP 5, jQuery 1.x), no upgrade path Dependency scan (npm audit, pip-audit), CVE check, EOL component list UK GDPR compliance ICO registration? DPAs? DSAR process? Breach history? No ICO registration, no DPAs with processors, undisclosed breach history GDPR gap assessment, ICO register check, DPA review Security certifications Cyber Essentials? ISO 27001? Pen test history? No Cyber Essentials, last pen test > 2 years ago, unresolved critical findings Certificate verification, pen test report review, CVSS scoring FCA/NHS/GDS compliance FCA authorised? NHS DTAC? GDS assessed? Undisclosed FCA enforcement, expired DTAC, pending GDS assessment failure FCA register check, DTAC certificate status, GDS assessment review Infrastructure Cloud costs? Scaling evidence? Single points of failure? 100% AWS Lambda with no ECS fallback, all data on single RDS, no DR AWS Cost Explorer review, architecture diagram, DR test evidence Key person dependency Bus factor > 1? Documentation? Tribal knowledge? One developer who wrote 70%+ of code with no documentation Git blame analysis, documentation review, team interview",
           "UK GDPR acquisition risk: if a data breach occurred pre-acquisition but is reported post-acquisition, the acquiring company is liable for the ICO fine. Contractual protection: price reduction, escrow, or warranty & indemnity insurance covering GDPR breaches."
         ],
         "table": null
       },
       {
         "title": "Regulated UK SaaS — FCA, NHS, GDS Specific Checks",
-        "paragraphs": [],
+        "paragraphs": [
+          "Regulated Sector",
+          "Key DD Checks",
+          "Deal-Critical Issues",
+          "Remediation Cost",
+          "FCA-regulated FinTech",
+          "FCA register status, enforcement history, SYSC controls, Consumer Duty compliance",
+          "Undisclosed enforcement action, expired FCA authorisation",
+          "£25,000–£200,000+ if FCA remediation required",
+          "NHS HealthTech (DTAC)",
+          "DTAC certificate status (expiry, domains passed), DCB0129 clinical safety file, MHRA registration",
+          "Expired DTAC, missing DCB0129 file, unregistered SaMD",
+          "£15,000–£60,000 DTAC re-assessment plus remediation",
+          "GovTech (GDS)",
+          "Beta/Live assessment status, PSBAR accessibility compliance, GOV.UK Service Manual adherence",
+          "Assessment failure pending, PSBAR accessibility statement non-compliant",
+          "£10,000–£40,000 accessibility remediation",
+          "NHS supplier (not DTAC)",
+          "DSP Toolkit submission status, Data Security and Protection standards",
+          "Overdue DSP Toolkit submission, critical standards not met",
+          "£5,000–£20,000 DSP Toolkit remediation",
+          "FAQs",
+          "Q: How long does UK SaaS technical due diligence take?",
+          "A: ClickMasters technical DD timeline: 2–3 weeks for a standalone SaaS product (1 codebase, 1 team, no regulated sector complexity). 4–6 weeks for complex regulated SaaS (FCA-regulated FinTech or NHS DTAC platform — regulatory compliance assessment adds time). Fast-track: 5–7 working days for a preliminary red flag review (codebase, UK GDPR, security certifications — not full review but surfaces deal-critical issues). ClickMasters charges £5,000–£20,000 for technical DD depending on complexity.",
+          "Q: What is the most common UK SaaS technical DD finding?",
+          "A: In ClickMasters' experience of 30+ UK SaaS technical DD reviews, the most common findings: (1) undisclosed security vulnerabilities (missing Cyber Essentials, unpatched CVEs in dependencies — found in 60% of reviews), (2) UK GDPR DPA gaps (sub-processors without Article 28 DPAs — found in 70% of reviews), (3) technical debt significantly underestimated by seller (found in 80% of reviews), and (4) key person dependency (one developer with 60%+ commits and no documentation — found in 40% of reviews)."
+        ],
         "table": null
       }
     ],
@@ -5431,7 +6103,12 @@ export const resourceGuides = [
       {
         "title": "Software Carbon Intensity (SCI) — Green Software Foundation",
         "paragraphs": [
-          "Example: an API processing 1,000 requests/day consuming 0.5 kWh at 200 gCO2eq/kWh = 100g CO2eq/day = 36.5 kg CO2eq/year. SCI: 36.5 kg CO2eq per 365,000 requests = 100 mg CO2eq/request."
+          "Example: an API processing 1,000 requests/day consuming 0.5 kWh at 200 gCO2eq/kWh = 100g CO2eq/day = 36.5 kg CO2eq/year. SCI: 36.5 kg CO2eq per 365,000 requests = 100 mg CO2eq/request.",
+          "FAQs",
+          "Q: Does SECR require UK companies to measure cloud computing emissions?",
+          "A: Yes — SECR requires large UK companies to report Scope 3 emissions. Cloud computing is a Scope 3 Category 8 (upstream — purchased goods and services) emission. AWS provides a Customer Carbon Footprint Tool (CCFT) in the AWS Billing console — this reports your estimated carbon emissions from AWS services. For SECR reporting: AWS CCFT figures can be used as Scope 3 cloud emissions. ClickMasters helps clients integrate AWS CCFT data into annual carbon reporting.",
+          "Q: What is the carbon footprint of running a typical UK SaaS on AWS?",
+          "A: A typical UK SaaS (ECS Fargate, PostgreSQL RDS, CloudFront) processing 100,000 users/day: approximately 200–800 kg CO2eq/month depending on instance sizing. AWS eu-west-2 renewable energy commitment: AWS purchases RECs (Renewable Energy Certificates) to match their consumption — AWS reports zero market-based Scope 2 emissions for AWS infrastructure. However: location-based Scope 2 uses UK grid emission factor (approximately 200 gCO2eq/kWh in 2025 — improving annually). SECR: most UK tech companies will report location-based Scope 2 cloud emissions."
         ],
         "table": null
       }
@@ -5592,7 +6269,19 @@ export const resourceGuides = [
       },
       {
         "title": "Security Testing — UK Compliance Requirements",
-        "paragraphs": [],
+        "paragraphs": [
+          "OWASP ZAP Dynamic Application Security Testing (DAST): automated scan in CI/CD on every release — OWASP Top 10. ClickMasters: ZAP configured to scan all authenticated pages (ZAP with API key context). Critical findings block deployment.",
+          "Semgrep SAST (Static Application Security Testing): scans code for hardcoded secrets, SQL injection patterns, and insecure dependencies in CI/CD. Runs on every pull request.",
+          "Dependabot: automated dependency CVE monitoring — critical vulnerabilities create PRs automatically. Cyber Essentials: critical CVEs patched within 14 days.",
+          "CREST penetration test: annual external pen test by CREST-certified assessor. Required for: PCI-DSS, NHS DSP Toolkit, FCA operational resilience, ISO 27001. Cost: £3,000–£15,000 depending on scope.",
+          "Trivy container image scanning: scan Docker images for CVEs in OS packages and application dependencies. Runs in CI/CD on every Docker build. Blocks deployment if critical CVEs present.",
+          "Security testing for UK regulated software must be structured around specific compliance requirements:",
+          "FAQs",
+          "Q: What test coverage percentage does NHS DTAC require?",
+          "A: DTAC Domain 3 does not mandate a specific test coverage percentage. However: DTAC assessors expect evidence of a quality assurance process including automated testing. ClickMasters target: 80% line coverage for NHS applications (above the healthcare industry benchmark of 70%). Coverage evidence: Istanbul coverage report archived as CI/CD artefact — shows coverage percentage per file and the coverage trend over time. DTAC assessors are satisfied with 70%+ coverage and a CI/CD pipeline that blocks merges below the threshold.",
+          "Q: How much does software testing cost for a UK regulated project?",
+          "A: ClickMasters testing investment as a percentage of total project cost: 15–25% for regulated UK software (NHS DTAC, FCA, GDS). Breakdown: automated test suite build (Vitest + Playwright + axe-core + k6 + ZAP configuration) — £5,000–£15,000 for a new project. Annual CREST pen test — £3,000–£15,000. Ongoing test maintenance — approximately 20% of new feature development cost. Total for a £100,000 NHS DTAC project: testing costs £15,000–£25,000 (15–25% of project). This is non-negotiable for regulated UK software — the alternative is a failed DTAC assessment."
+        ],
         "table": null
       }
     ],
@@ -5744,7 +6433,18 @@ export const resourceGuides = [
       },
       {
         "title": "Cyber Essentials DevOps Requirements",
-        "paragraphs": [],
+        "paragraphs": [
+          "Patch management: all software must be patched within 14 days of critical patches being released. ECS Fargate and RDS: AWS patches the OS — ClickMasters patches application dependencies (Dependabot). EC2: OS patching is your responsibility — ClickMasters eliminates EC2 from all production deployments.",
+          "Malware protection: Docker images scanned for malware with Trivy (every CI/CD build). AWS GuardDuty enabled in all production accounts.",
+          "Access control: IAM roles with least privilege for all CI/CD pipelines. No IAM access keys in GitHub repos (Dependabot monitors). OpenID Connect (OIDC) for GitHub Actions → AWS authentication (no long-lived credentials).",
+          "Firewall: AWS Security Groups restrict traffic to necessary ports only. All services in private subnets — only Load Balancer in public subnet. AWS WAF on Application Load Balancers for NHS and FCA applications.",
+          "Cyber Essentials has specific implications for UK DevOps practices:",
+          "FAQs",
+          "Q: How do we achieve FCA PS21/3 compliance in our CI/CD pipeline?",
+          "A: FCA PS21/3 CI/CD requirements: (1) all production deployments via automated pipeline — no manual production deployments (change management control). (2) Pull request required for all infrastructure and application changes — two reviewers for production changes. (3) Test suite must pass before deployment — failed tests block production deployment. (4) Deployment records archived (GitHub Actions run history — who deployed, when, what changed). (5) Rollback tested quarterly — automated rollback procedure documented in runbook. ClickMasters configures all of these as standard in GitHub Actions.",
+          "Q: What does a typical ClickMasters CI/CD pipeline cost per month?",
+          "A: ClickMasters CI/CD infrastructure costs for a typical UK regulated application (GitHub Actions + AWS ECS Fargate + RDS PostgreSQL Multi-AZ in eu-west-2): GitHub Actions: £0–£21/month (free tier generous — most projects do not exceed free minutes). AWS ECS Fargate: £80–£400/month (depends on task size and count). RDS PostgreSQL Multi-AZ (db.t3.medium): £60–£120/month. AWS CloudWatch, Secrets Manager, S3 state bucket: £20–£50/month. Total: £160–£600/month. For comparison: a single mid-level DevOps engineer costs £5,000+/month — ClickMasters DevOps-as-a-standard-practice delivers far more value."
+        ],
         "table": null
       }
     ],
@@ -5859,7 +6559,13 @@ export const resourceGuides = [
       },
       {
         "title": "Microservices Operational Requirements — UK Cost Implications",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: How many microservices should a UK FinTech have?",
+          "A: ClickMasters guideline for UK FinTech microservices: 5–8 services for a payment platform. Account Service, Transaction Service, Payment Initiation Service, Notification Service, Reporting Service, and an FCA Audit Service (immutable audit log for FCA compliance). Anti-pattern: 40+ microservices for a 15-engineer team — ClickMasters has never seen a sub-50-engineer team that could operate 40+ microservices effectively. Start with 5–8, extract additional services only when a genuine IBS boundary or scaling need arises.",
+          "Q: Can a UK startup afford microservices?",
+          "A: UK startups should not build microservices at inception. Operational cost (£400–£2,000/month for a basic microservices infrastructure vs £80–£200/month for a monolith), engineering overhead (platform engineering skills needed), and delivery velocity reduction (microservices take 30–50% longer to build initially vs equivalent monolith) combine to make microservices economically wrong for pre-Series A. ClickMasters has migrated many monoliths to microservices post-Series B — the pattern works. Microservices from Day 1: almost always wrong."
+        ],
         "table": {
           "headers": [
             "Operational Requirement",
@@ -6069,7 +6775,12 @@ export const resourceGuides = [
       {
         "title": "UK GDPR — Non-Negotiable MVP Requirements",
         "paragraphs": [
-          "UK GDPR MVP shortcut: ClickMasters includes UK GDPR basic compliance (ICO registration guidance, cookie consent, privacy notice template, DSAR workflow) in every MVP build. Cost: zero additional cost. Not optional."
+          "UK GDPR MVP shortcut: ClickMasters includes UK GDPR basic compliance (ICO registration guidance, cookie consent, privacy notice template, DSAR workflow) in every MVP build. Cost: zero additional cost. Not optional.",
+          "FAQs",
+          "Q: How long does a UK SaaS MVP take?",
+          "A: ClickMasters UK SaaS MVP timeline: Week 1–2: Technical Discovery (requirements, architecture, UK GDPR assessment). Week 3–10: Build (core feature development, Stripe integration, basic admin). Week 11–12: QA, performance testing, security scan (Semgrep + Dependabot). Week 13: Soft launch (beta users). Total: 12–14 weeks for a solid SaaS MVP. Warning: \"8-week MVPs\" are real but typically involve cutting UK GDPR compliance, test coverage, and security — ClickMasters does not cut these. A 12-week MVP is fast; a 12-week MVP with no security or GDPR compliance is a liability.",
+          "Q: Should a UK startup get FCA or NHS compliance in their MVP?",
+          "A: ClickMasters answer: build compliance in from Sprint 1, but only the compliance actually needed for your MVP scope. For FCA: if your MVP involves regulated financial activities (investment, credit, payment services), FCA compliance is mandatory before going live — you cannot get customer traction without it. For NHS HealthTech: if your MVP accesses NHS systems or patient data, DTAC basics are required before any NHS Trust will use it. ClickMasters builds FCA/NHS compliance architecture from day 1 — retrofitting compliance to a non-compliant codebase costs 2–3× what building it in costs."
         ],
         "table": null
       }
@@ -6222,7 +6933,19 @@ export const resourceGuides = [
       },
       {
         "title": "UK SaaS Subscription Billing — Stripe Patterns",
-        "paragraphs": [],
+        "paragraphs": [
+          "UK VAT: Stripe Tax (£20/month flat rate) calculates UK VAT automatically — 20% standard rate, 0% for zero-rated services. Stripe Tax is cheaper and more reliable than manual VAT calculation.",
+          "B2B invoices: Stripe Invoicing (PDF invoices with UK company registration number, VAT number) — UK businesses require invoices, not just receipts.",
+          "Annual vs monthly: Stripe subscriptions support both. UK SaaS: offer monthly (lower commitment) and annual with 2-month discount — annual improves cash flow and reduces churn.",
+          "Trial periods: Stripe trial handling — 14-day trial then card charge. UK GDPR: explicit consent to charging after trial required (not hidden small print).",
+          "UK Companies House integration: B2B onboarding — verify company number at signup via Companies House API (prevents fake signups, confirms VAT registration).",
+          "UK SaaS billing requires UK VAT automation, B2B invoice generation, and GBP settlement. ClickMasters Stripe patterns:",
+          "FAQs",
+          "Q: How do we implement UK GDPR Right to Erasure in a multi-tenant SaaS?",
+          "A: UK GDPR Article 17 Right to Erasure: tenant (data controller) can request erasure of their customer personal data. SaaS provider (data processor) must implement erasure within your contractual SLA. Implementation: (1) tenant-initiated erasure endpoint (admin dashboard → 'Delete Account' → triggers erasure workflow), (2) erasure workflow deletes personal data fields (name, email, address — retain pseudonymous business records for HMRC 6-year requirement), (3) audit log: every erasure action logged with timestamp, actor, and confirmation. ClickMasters builds erasure workflows into every UK SaaS as standard.",
+          "Q: What is the cheapest viable UK SaaS infrastructure on AWS?",
+          "A: ClickMasters minimum viable UK SaaS infrastructure (AWS eu-west-2): ECS Fargate (1 task, 0.5 vCPU, 1GB RAM): £25/month. RDS PostgreSQL (db.t3.micro, single-AZ): £15/month. S3 + CloudFront: £5/month. CloudWatch: £10/month. Secrets Manager: £5/month. Clerk (free tier): £0. Total: £60/month for a production-ready UK SaaS with UK GDPR compliance built in. Upgrade to Multi-AZ and larger instances when you have paying customers — start lean, scale when revenue justifies it."
+        ],
         "table": null
       }
     ],
@@ -6274,14 +6997,41 @@ export const resourceGuides = [
     "contentSections": [
       {
         "title": "UK API Pricing Guide 2025",
-        "paragraphs": [],
+        "paragraphs": [
+          "API Type",
+          "Typical Scope",
+          "Timeline",
+          "ClickMasters Fixed Price",
+          "Simple REST API",
+          "5–15 endpoints, PostgreSQL, auth, OpenAPI",
+          "4–6 weeks",
+          "£6,000–£15,000",
+          "Complex REST API",
+          "20–50 endpoints, complex business logic, integrations",
+          "8–14 weeks",
+          "£15,000–£35,000",
+          "NHS FHIR R4 API",
+          "UK Core profiles, NHS SDS auth, PDS/EPS integration",
+          "10–16 weeks",
+          "£18,000–£40,000",
+          "FCA-regulated API",
+          "OpenAPI + FCA compliance, COBS disclosures, CASS",
+          "8–14 weeks",
+          "£18,000–£40,000",
+          "GDS public API",
+          "GOV.UK API standards, NCSC security, accessibility",
+          "8–12 weeks",
+          "£15,000–£35,000",
+          "Open Banking AISP/PISP",
+          "PSD2/PSRs AISP or PISP API, FCA authorisation",
+          "12–18 weeks",
+          "£25,000–£55,000"
+        ],
         "table": null
       },
       {
         "title": "UK API Design Standards",
-        "paragraphs": [
-          "API Type Typical Scope Timeline ClickMasters Fixed Price Simple REST API 5–15 endpoints, PostgreSQL, auth, OpenAPI 4–6 weeks £6,000–£15,000 Complex REST API 20–50 endpoints, complex business logic, integrations 8–14 weeks £15,000–£35,000 NHS FHIR R4 API UK Core profiles, NHS SDS auth, PDS/EPS integration 10–16 weeks £18,000–£40,000 FCA-regulated API OpenAPI + FCA compliance, COBS disclosures, CASS 8–14 weeks £18,000–£40,000 GDS public API GOV.UK API standards, NCSC security, accessibility 8–12 weeks £15,000–£35,000 Open Banking AISP/PISP PSD2/PSRs AISP or PISP API, FCA authorisation 12–18 weeks £25,000–£55,000"
-        ],
+        "paragraphs": [],
         "table": {
           "headers": [
             "Standard",
@@ -6326,7 +7076,12 @@ export const resourceGuides = [
       {
         "title": "API Versioning Strategy for UK Regulated APIs",
         "paragraphs": [
-          "FCA consideration: if your API serves client-facing data (account information, product information), FCA COBS requires that information is clear, fair, and not misleading. API response fields must have OpenAPI descriptions that are human-readable and FCA-compliant."
+          "FCA consideration: if your API serves client-facing data (account information, product information), FCA COBS requires that information is clear, fair, and not misleading. API response fields must have OpenAPI descriptions that are human-readable and FCA-compliant.",
+          "FAQs",
+          "Q: How much does NHS FHIR R4 API development cost?",
+          "A: ClickMasters NHS FHIR R4 API development: £18,000–£40,000 depending on scope. Cost drivers: (1) UK Core profile validation (HAPI FHIR server setup — £3,000–£5,000 configuration), (2) NHS SDS authentication (NHS Care Identity Service RBAC — £2,000–£4,000 integration), (3) NHS system integrations (PDS, EPS, eRS — each integration £3,000–£8,000), (4) DTAC evidence production (FHIR compliance documentation for DTAC Domain 4 — £2,000–£4,000). Timeline: 10–16 weeks. ClickMasters provides a fixed-price NHS FHIR R4 API build — no time-and-materials uncertainty.",
+          "Q: What is API rate limiting and does it affect FCA compliance?",
+          "A: API rate limiting: restricting the number of API calls a client can make in a time period (e.g., 100 requests per minute). FCA compliance: FCA PS21/3 requires that IBSs are available within Impact Tolerance. Rate limiting can inadvertently block legitimate customer requests — FCA supervised firms must set rate limits high enough that legitimate customer use is never blocked during normal operation. ClickMasters implements tiered rate limiting: authenticated API clients (registered partners) have higher limits than anonymous requests. FCA audit trail: all rate limit hits are logged with client identifier — reviewed in quarterly PS21/3 operational resilience review."
         ],
         "table": null
       }
@@ -6474,7 +7229,12 @@ export const resourceGuides = [
       {
         "title": "The Technical Discovery — Why It Is Non-Negotiable",
         "paragraphs": [
-          "ClickMasters rule: no legacy modernisation contract without Technical Discovery. If a supplier offers a legacy modernisation fixed-price quote without a Discovery phase, they have not understood your system. The Discovery (£3,500–£8,000) always pays for itself — typically by preventing £20,000–£100,000 of rework."
+          "ClickMasters rule: no legacy modernisation contract without Technical Discovery. If a supplier offers a legacy modernisation fixed-price quote without a Discovery phase, they have not understood your system. The Discovery (£3,500–£8,000) always pays for itself — typically by preventing £20,000–£100,000 of rework.",
+          "FAQs",
+          "Q: How long does NHS legacy system modernisation take?",
+          "A: NHS legacy modernisation: Technical Discovery (6–8 weeks), IEC 62304 retrospective documentation (4–6 weeks — overlaps with Discovery), FHIR R4 Facade (12–18 weeks), DTAC assessment (4–8 weeks — can overlap with build), clinical data migration and validation (8–12 weeks), and parallel running (4–8 weeks). Total: 40–56 weeks for a full NHS clinical system modernisation. Strangler Fig (incremental replacement) can reduce operational risk but extends timeline to 52–80 weeks. ClickMasters recommendation: FHIR Facade first (12–18 weeks, achieves NHS interoperability mandate), full replacement as separate project.",
+          "Q: Can we modernise a COBOL system for FCA compliance?",
+          "A: Yes — ClickMasters has modernised COBOL-based UK financial services systems for FCA PS21/3 compliance. COBOL modernisation: (1) document COBOL business logic (COBOL parser tools — Micro Focus, IBM z/OS — extract business rules from COBOL programs), (2) rewrite in TypeScript/Node.js (rule-for-rule migration), (3) parallel run for FCA IBSs (COBOL system and new system run simultaneously for 90 days — outputs compared on every transaction), (4) FCA PS21/3 Impact Tolerance testing during parallel run. Cost: £60,000–£180,000 depending on COBOL complexity. Timeline: 24–52 weeks."
         ],
         "table": null
       }
@@ -6584,7 +7344,13 @@ export const resourceGuides = [
       },
       {
         "title": "UK Technical Due Diligence — What Investors and Acquirers Want",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: How long does a Technical Discovery take?",
+          "A: ClickMasters Technical Discovery: 4–6 weeks from kick-off. Week 1: stakeholder interviews and requirements workshops (product, technical, compliance). Week 2–3: architecture design and technical spikes (test specific technical approaches that are uncertain). Week 4: compliance assessment and risk register. Week 5: documentation and recommendation report. Week 6 (if needed): presentation to Board and iteration on recommendations. Deliverable: Technical Discovery Report (typically 25–40 pages), architecture diagrams, compliance gap analysis, risk register, and optional fixed-price build proposal.",
+          "Q: Is a Technical Discovery worth the cost?",
+          "A: In ClickMasters' experience: every Technical Discovery that identified a significant architectural error, compliance gap, or direction change paid for itself within the first 4 weeks of build. Examples: Discovery identified that a HealthTech platform needed DTAC Domain 2 compliance — adding this before build cost £4,000 additional. Retrofitting DTAC Domain 2 after the first failed assessment cost the next client £18,000. Discovery identified that a FinTech platform needed FCA PS21/3 multi-AZ architecture — designing this in cost £6,000 in Discovery. The comparable client who did not do Discovery spent £35,000 retrofitting resilience after their first FCA operational resilience review."
+        ],
         "table": {
           "headers": [
             "Area",
@@ -6782,7 +7548,18 @@ export const resourceGuides = [
       },
       {
         "title": "UK Compliance in Staff Augmentation",
-        "paragraphs": [],
+        "paragraphs": [
+          "NHS HealthTech: DTAC Domain overview, UK GDPR Article 9, DCB0129 basics, NHS FHIR R4 primer — 2-day induction for all NHS projects.",
+          "FCA FinTech: FCA PS21/3 overview, Consumer Duty, COBS basics — 1-day induction for all FCA projects.",
+          "GDS Government: GDS Service Standard overview, GOV.UK Design System, WCAG 2.1 AA — 1-day induction for all GDS projects.",
+          "General: UK GDPR data minimisation, Cyber Essentials Annex A controls, OWASP Top 10 — standard induction for all projects.",
+          "ClickMasters engineers complete compliance training as part of onboarding. For regulated sectors:",
+          "FAQs",
+          "Q: How quickly can ClickMasters start a staff augmentation engagement?",
+          "A: ClickMasters staff augmentation start time: for standard profiles (mid/senior Full Stack TypeScript), ClickMasters can typically start within 2 weeks of contract signature. For specialist profiles (NHS DTAC-experienced, FCA PS21/3-experienced, SC-cleared), start time is 2–4 weeks depending on availability. For urgent engagements: ClickMasters maintains a bench of immediately available engineers for clients with shorter lead times — contact us to check bench availability. Onboarding after start: 1–2 weeks to full productivity (codebase familiarisation, compliance induction, sprint process).",
+          "Q: What is the minimum engagement period for staff augmentation?",
+          "A: ClickMasters minimum staff augmentation engagement: 3 months. Most UK staff augmentation engagements run 6–18 months (the engineer becomes a genuine part of the team — 3-month minimum allows meaningful contribution). Notice period: 1 month on either side after initial 3-month commitment. Rate stability: rates fixed for the first 12 months of engagement — no mid-engagement rate increases. Annual review: rates reviewed annually in January with 30 days notice of any change."
+        ],
         "table": null
       }
     ],
@@ -6834,14 +7611,38 @@ export const resourceGuides = [
     "contentSections": [
       {
         "title": "UK Open Banking Architecture Options",
-        "paragraphs": [],
+        "paragraphs": [
+          "Option",
+          "How It Works",
+          "FCA Authorisation",
+          "Timeline",
+          "Cost",
+          "Aggregator AISP",
+          "Use TrueLayer or Yapily as licensed AISP — they handle bank connections",
+          "None needed (use aggregator's FCA licence)",
+          "2–4 weeks integration",
+          "£0 FCA cost + aggregator fees",
+          "Aggregator PISP",
+          "Use TrueLayer or Yapily for payment initiation",
+          "None needed (use aggregator's FCA licence)",
+          "2–4 weeks integration",
+          "£0 FCA cost + aggregator fees",
+          "Direct AISP (own FCA licence)",
+          "Connect directly to banks' Open Banking APIs",
+          "FCA AISP authorisation (12–18 months)",
+          "12–18 months (incl. FCA)",
+          "£10,000–£50,000 FCA costs + legal",
+          "Direct PISP (own FCA licence)",
+          "Initiate payments directly from bank accounts",
+          "FCA PISP authorisation (12–18 months)",
+          "12–18 months (incl. FCA)",
+          "£15,000–£60,000 FCA costs + legal"
+        ],
         "table": null
       },
       {
         "title": "Open Banking Use Cases — UK Commercial Applications",
-        "paragraphs": [
-          "Option How It Works FCA Authorisation Timeline Cost Aggregator AISP Use TrueLayer or Yapily as licensed AISP — they handle bank connections None needed (use aggregator's FCA licence) 2–4 weeks integration £0 FCA cost + aggregator fees Aggregator PISP Use TrueLayer or Yapily for payment initiation None needed (use aggregator's FCA licence) 2–4 weeks integration £0 FCA cost + aggregator fees Direct AISP (own FCA licence) Connect directly to banks' Open Banking APIs FCA AISP authorisation (12–18 months) 12–18 months (incl. FCA) £10,000–£50,000 FCA costs + legal Direct PISP (own FCA licence) Initiate payments directly from bank accounts FCA PISP authorisation (12–18 months) 12–18 months (incl. FCA) £15,000–£60,000 FCA costs + legal"
-        ],
+        "paragraphs": [],
         "table": {
           "headers": [
             "Use Case",
@@ -6897,7 +7698,13 @@ export const resourceGuides = [
       },
       {
         "title": "TrueLayer vs Yapily — UK Open Banking Aggregator Comparison",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: How much does Open Banking integration cost in the UK?",
+          "A: ClickMasters Open Banking integration costs: (1) TrueLayer AISP integration (bank data — income verification, 3-month statements): £6,000–£12,000 (3–5 weeks). (2) TrueLayer PISP integration (payment initiation — account-to-account): £8,000–£16,000 (4–6 weeks). (3) CMA9 direct bank API integration (if own FCA licence): £15,000–£40,000 per bank (8–14 weeks per bank + FCA authorisation cost). For most UK FinTech: TrueLayer or Yapily aggregator integration is the right choice — 2–4 weeks vs 12–18 months for direct FCA authorisation. Own FCA AISP/PISP licence only makes commercial sense above ~50,000 monthly API calls.",
+          "Q: What FCA authorisation is needed to use Open Banking data?",
+          "A: If you use an aggregator (TrueLayer or Yapily): no FCA authorisation needed — you use their regulated infrastructure. If you want to access bank APIs directly (own FCA authorisation): (1) AISP (Account Information Service Provider) — FCA Part 4A permission for account information services. (2) PISP (Payment Initiation Service Provider) — FCA Part 4A permission for payment initiation services. FCA AISP authorisation: typically £10,000–£50,000 in legal and FCA fees, 12–18 months. FCA PISP: £15,000–£60,000, 12–18 months. ClickMasters builds the Open Banking technical architecture — we work with specialist FCA authorisation lawyers (Harrison Clark Rickerbys, Addleshaw Goddard FinTech team) for the regulatory application."
+        ],
         "table": {
           "headers": [
             "Factor",
@@ -7061,7 +7868,13 @@ export const resourceGuides = [
       },
       {
         "title": "AWS Cost Dashboard — What ClickMasters Monitors",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: How much does a ClickMasters AWS cost review cost?",
+          "A: ClickMasters AWS cost review: £1,500–£3,000 fixed price (2–3 days). Deliverable: AWS Cost Optimisation Report (prioritised list of savings opportunities, estimated saving per item, implementation complexity). Average savings identified: £24,000–£80,000/year for UK SME software companies spending £8,000–£40,000/month on AWS. ROI on the review: typically 10–20× within the first year. Free preliminary check: ClickMasters will review your AWS Cost Explorer data in a 30-minute call and give a rough savings estimate before committing to a full review.",
+          "Q: What are Reserved Instances and when should UK companies buy them?",
+          "A: Reserved Instances (RIs) and Savings Plans: commit to a 1 or 3-year term in exchange for 30–40% discount vs on-demand pricing. When to buy: when a workload runs stably 24/7 and is unlikely to be significantly resized or migrated for 1+ year. UK regulated software: production RDS (always on — RI makes sense), stable ECS Fargate tasks (Compute Savings Plan). When NOT to buy: development/staging environments, variable workloads (Aurora Serverless v2 is better), or workloads under active architectural review. ClickMasters recommendation: buy 1-year No Upfront RIs/Savings Plans only — 3-year commits are risky for fast-changing UK software companies."
+        ],
         "table": {
           "headers": [
             "Metric",
@@ -7221,7 +8034,12 @@ export const resourceGuides = [
       {
         "title": "NHS Health Data Engineering — UK Specifics",
         "paragraphs": [
-          "NHS DTAC Domain 4 (Interoperability) data engineering evidence: ClickMasters provides dbt DAG as data lineage documentation, data quality test results from dbt tests, and AWS Glue job history as ingestion audit trail — all three submitted as DTAC Domain 4 evidence."
+          "NHS DTAC Domain 4 (Interoperability) data engineering evidence: ClickMasters provides dbt DAG as data lineage documentation, data quality test results from dbt tests, and AWS Glue job history as ingestion audit trail — all three submitted as DTAC Domain 4 evidence.",
+          "FAQs",
+          "Q: How much does data engineering cost for a UK NHS project?",
+          "A: ClickMasters NHS data engineering costs: (1) Single-source NHS data pipeline (e.g., FHIR R4 from PAS to Redshift with dbt transforms): £12,000–£25,000 (6–10 weeks). (2) Multi-source NHS analytics platform (PAS + FHIR + SUS + RTT + waiting list data): £35,000–£80,000 (16–28 weeks). (3) ICB population health analytics platform (combining data from multiple NHS Trusts — FHIR, SUS, primary care data): £80,000–£160,000 (28–48 weeks). All pricing includes UK GDPR Article 9 data protection, SNOMED CT coding, DTAC Domain 4 evidence production, and dbt data lineage documentation.",
+          "Q: What is the UK GDPR requirement for data engineering pipelines?",
+          "A: UK GDPR data engineering requirements: (1) Article 30 (Records of Processing Activities — ROPA): document every data flow (source, transformation, destination, purpose, legal basis, retention period). dbt DAG + Glue job documentation satisfies ROPA for data pipeline flows. (2) Article 25 (Privacy by Design): build data minimisation into pipeline design — extract only fields needed for the specific analytics purpose, pseudonymise at ingestion where possible. (3) Article 5(1)(e) (Storage limitation): implement retention schedules in data lake (S3 lifecycle policies — delete or archive after retention period). (4) Article 32 (Security): encryption at rest (S3 SSE-KMS, Redshift encryption), in transit (TLS), and access control (IAM + column-level security for sensitive fields)."
         ],
         "table": null
       }
@@ -7387,7 +8205,12 @@ export const resourceGuides = [
       {
         "title": "NHS Mobile App Development — Additional Requirements",
         "paragraphs": [
-          "NHS mobile app certification: ClickMasters has achieved NHS App store listings for 3 HealthTech clients. The NHS England Digital review takes 6–12 weeks and requires DCB0129 sign-off, DTAC evidence, and active NHS Login integration in a staging environment."
+          "NHS mobile app certification: ClickMasters has achieved NHS App store listings for 3 HealthTech clients. The NHS England Digital review takes 6–12 weeks and requires DCB0129 sign-off, DTAC evidence, and active NHS Login integration in a staging environment.",
+          "FAQs",
+          "Q: How long does UK mobile app development take?",
+          "A: ClickMasters UK mobile app development timeline: (1) Discovery and design (2–3 weeks — user journey mapping, wireframes, technical architecture), (2) Sprint 1–2: core features and authentication (4–6 weeks), (3) Sprint 3–6: feature development and integrations (8–12 weeks), (4) Testing and App Store submission (2–4 weeks — including App Store review time 2–5 days). Total: 16–25 weeks for a professional iOS + Android app. NHS apps: add 6–12 weeks for NHS England Digital App Store review. ClickMasters builds iOS and Android simultaneously (Expo) — not sequentially.",
+          "Q: Does Apple App Store review accept NHS-regulated apps?",
+          "A: Apple App Store review for NHS apps: standard App Store review process (2–5 days). NHS-specific: no special treatment in App Store review, but NHS Login requires deep-link configuration (universal links — app receives NHS Login callback). Apple Health integration (HealthKit): if app writes to Apple Health (e.g., blood glucose readings), additional Apple entitlement required (HealthKit write — separate review). UK GDPR compliance is assessed by ICO, not Apple — but App Privacy Label must accurately represent data collection. ClickMasters App Store submission process: metadata review before submission (privacy label accuracy check, screenshot compliance, age rating appropriate for under-18 NHS patient users)."
         ],
         "table": null
       }
@@ -7551,7 +8374,12 @@ export const resourceGuides = [
       {
         "title": "UK SaaS Pricing and FCA Consumer Duty",
         "paragraphs": [
-          "UK Consumer Rights Act 2015 (B2C digital subscriptions): customers have 14 days to cancel a digital subscription from the start date and receive a full refund if no content has been consumed. For SaaS with immediate access: customer loses 14-day right once they access the service AND acknowledges this in the sign-up flow. ClickMasters implements CRA-compliant sign-up flows for all B2C SaaS."
+          "UK Consumer Rights Act 2015 (B2C digital subscriptions): customers have 14 days to cancel a digital subscription from the start date and receive a full refund if no content has been consumed. For SaaS with immediate access: customer loses 14-day right once they access the service AND acknowledges this in the sign-up flow. ClickMasters implements CRA-compliant sign-up flows for all B2C SaaS.",
+          "FAQs",
+          "Q: Do UK SaaS companies need to charge VAT?",
+          "A: UK SaaS VAT: if your UK SaaS company's taxable turnover exceeds £90,000/year (2026 threshold), VAT registration is mandatory. Digital services: SaaS is a digital service — VAT at 20% standard rate (UK B2B: reverse charge applies, UK B2C: you collect VAT). For UK B2C SaaS: display price inc-VAT (e.g., \"£9.99 per month inc. VAT\"). For EU customers post-Brexit: B2C digital services VAT — UK SaaS companies selling to EU consumers must register for EU VAT in at least one EU country (or use OSS — One Stop Shop). ClickMasters recommendation: Paddle as Merchant of Record eliminates EU VAT complexity for UK SaaS selling to EU consumers.",
+          "Q: What is usage-based pricing and how do we implement it in Stripe?",
+          "A: Usage-based pricing: charge customers based on what they consume (API calls, GB stored, transactions processed, active users). Stripe Billing implementation: (1) create a metered price (Stripe Price object with billing_scheme: per_unit, usage_type: metered), (2) record usage via Stripe Billing Meter API (stripe.billing.meterEvents.create — report usage in real-time or daily batch), (3) invoice generated at period end (Stripe sums usage × unit price for invoice). ClickMasters Stripe Billing: we build Stripe Billing integrations with usage meters, proration (upgrading/downgrading mid-cycle), and dunning (smart retries + email sequences for failed payments). Webhook events: customer.subscription.updated, invoice.payment_failed, invoice.paid — all handled in ClickMasters standard Stripe integration."
         ],
         "table": null
       }
@@ -7604,14 +8432,49 @@ export const resourceGuides = [
     "contentSections": [
       {
         "title": "UK Software Security — NCSC and OWASP Controls by Layer",
-        "paragraphs": [],
+        "paragraphs": [
+          "Security Layer",
+          "NCSC / OWASP Control",
+          "UK Regulatory Driver",
+          "ClickMasters Implementation",
+          "Authentication",
+          "MFA mandatory (TOTP minimum), password policy (NIST 800-63B — no complexity rules, length minimum 12)",
+          "Cyber Essentials A2.3, NHS DTAC Domain 3",
+          "AWS Cognito MFA, react-hook-form password validation",
+          "Authorisation",
+          "Least privilege (RBAC/ABAC), no hardcoded credentials, secrets in AWS Secrets Manager",
+          "Cyber Essentials A3, ISO 27001 A.9",
+          "IAM roles per ECS task, Secrets Manager rotation",
+          "Transport security",
+          "TLS 1.2+ only (TLS 1.0/1.1 disabled), HSTS header, no mixed content",
+          "Cyber Essentials A5, NHS DTAC Domain 3",
+          "AWS ALB TLS policy, HSTS via CloudFront response headers",
+          "Input validation",
+          "OWASP A03 Injection — parameterised queries only, input sanitisation (DOMPurify), output encoding",
+          "NHS DTAC Domain 3, FCA PS21/3",
+          "Zod server-side validation, parameterised SQL, DOMPurify",
+          "Dependency security",
+          "CVE scanning (Trivy, Snyk), Dependabot PRs for critical CVEs within 14 days",
+          "Cyber Essentials A2 (14-day critical patch), ISO 27001 A.12.6",
+          "Dependabot + Trivy in CI/CD — blocks merge on critical CVE",
+          "Container security",
+          "Non-root container user, read-only root filesystem, no privileged containers",
+          "Cyber Essentials Plus A2.2, NHS DTAC Domain 3",
+          "ECS task definition — user: 1000, readonlyRootFilesystem: true",
+          "API security",
+          "Rate limiting, WAF (OWASP ruleset), API key rotation, OpenAPI schema validation",
+          "FCA PS21/3 IBS availability, NHS DTAC Domain 3",
+          "AWS WAF OWASP managed ruleset, API Gateway usage plans",
+          "Logging and monitoring",
+          "Audit log (immutable CloudWatch), anomaly detection (GuardDuty), SIEM (Security Hub)",
+          "ISO 27001 A.12.4, FCA PS21/3, NHS DSP Toolkit Annex B",
+          "CloudTrail + CloudWatch + GuardDuty + Security Hub"
+        ],
         "table": null
       },
       {
         "title": "UK OWASP Top 10 — Most Common Vulnerabilities in UK Software (2026)",
-        "paragraphs": [
-          "Security Layer NCSC / OWASP Control UK Regulatory Driver ClickMasters Implementation Authentication MFA mandatory (TOTP minimum), password policy (NIST 800-63B — no complexity rules, length minimum 12) Cyber Essentials A2.3, NHS DTAC Domain 3 AWS Cognito MFA, react-hook-form password validation Authorisation Least privilege (RBAC/ABAC), no hardcoded credentials, secrets in AWS Secrets Manager Cyber Essentials A3, ISO 27001 A.9 IAM roles per ECS task, Secrets Manager rotation Transport security TLS 1.2+ only (TLS 1.0/1.1 disabled), HSTS header, no mixed content Cyber Essentials A5, NHS DTAC Domain 3 AWS ALB TLS policy, HSTS via CloudFront response headers Input validation OWASP A03 Injection — parameterised queries only, input sanitisation (DOMPurify), output encoding NHS DTAC Domain 3, FCA PS21/3 Zod server-side validation, parameterised SQL, DOMPurify Dependency security CVE scanning (Trivy, Snyk), Dependabot PRs for critical CVEs within 14 days Cyber Essentials A2 (14-day critical patch), ISO 27001 A.12.6 Dependabot + Trivy in CI/CD — blocks merge on critical CVE Container security Non-root container user, read-only root filesystem, no privileged containers Cyber Essentials Plus A2.2, NHS DTAC Domain 3 ECS task definition — user: 1000, readonlyRootFilesystem: true API security Rate limiting, WAF (OWASP ruleset), API key rotation, OpenAPI schema validation FCA PS21/3 IBS availability, NHS DTAC Domain 3 AWS WAF OWASP managed ruleset, API Gateway usage plans Logging and monitoring Audit log (immutable CloudWatch), anomaly detection (GuardDuty), SIEM (Security Hub) ISO 27001 A.12.4, FCA PS21/3, NHS DSP Toolkit Annex B CloudTrail + CloudWatch + GuardDuty + Security Hub"
-        ],
+        "paragraphs": [],
         "table": {
           "headers": [
             "OWASP Rank",
@@ -7673,7 +8536,19 @@ export const resourceGuides = [
       },
       {
         "title": "Cyber Essentials Annex A — Technical Requirements Summary",
-        "paragraphs": [],
+        "paragraphs": [
+          "A1 Firewalls: AWS Security Groups (default deny, allow only required ports) + Network ACLs. No inbound internet access to private subnets (database, internal services). FCA note: Cyber Essentials firewall controls align with FCA PS21/3 network security requirements.",
+          "A2 Secure Configuration: no default credentials, MFA enabled, unused services disabled, AWS Systems Manager (no SSH — no exposed SSH ports). Critical CVE patch within 14 days (Dependabot + Trivy automated). Cyber Essentials Plus: evidenced by on-site assessment.",
+          "A3 User Access Control: MFA mandatory for all admin users, least privilege IAM roles, no shared accounts, Cognito User Pool for application users. Joiners/movers/leavers process (IAM access keys revoked within 24 hours of departure).",
+          "A4 Malware Protection: Amazon Inspector (container and EC2 vulnerability scanning), AWS GuardDuty (malware detection in S3, EC2 network traffic analysis), WAF (blocks malicious requests). Endpoint protection for developer laptops (mandatory as part of Cyber Essentials Plus assessment).",
+          "A5 Patch Management: Fargate/Lambda (AWS manages OS patching — zero obligation), application dependencies (Dependabot — 14-day critical CVE resolution SLA), and custom AMIs (AWS Systems Manager Patch Manager for any EC2 instances).",
+          "Cyber Essentials (and Cyber Essentials Plus) has 5 technical control categories. ClickMasters configures all 5 as standard:",
+          "FAQs",
+          "Q: How do we achieve Cyber Essentials Plus certification for a UK software company?",
+          "A: Cyber Essentials Plus timeline: (1) self-assessment (Cyber Essentials basic — online questionnaire, 2–4 weeks preparation, ~£300–£600), (2) gap remediation (address any Annex A control gaps — ClickMasters typical gap: MFA on all admin accounts, patching process documentation), (3) Plus assessment (IASME-accredited assessor visits — tests technical controls against Annex A, 1 day on-site, ~£1,500–£3,000). Total: 4–8 weeks, £2,000–£4,000. ClickMasters Cyber Essentials Plus tip: the most common Plus failure is MFA not enabled on all administrator accounts — check every AWS IAM user, Microsoft 365 admin, and cloud console access before assessment.",
+          "Q: Does Cyber Essentials satisfy NHS DTAC Domain 2?",
+          "A: Cyber Essentials Plus is a significant contribution to NHS DTAC Domain 2 (Data Protection and Information Governance) but does not satisfy it alone. DTAC Domain 2 additionally requires: (1) UK GDPR compliance documentation (Article 30 ROPA, DPIAs, DSARs), (2) ICO registration, (3) NHS-specific data sharing agreements (DSPT — Data Security and Protection Toolkit alignment), (4) clinical data governance (for NHS Article 9 health data — enhanced safeguards beyond Cyber Essentials). ClickMasters approach: achieve Cyber Essentials Plus first (it provides strong evidence for DTAC D2 technical security), then produce DTAC D2-specific documentation (ROPA, DPIA, ICO registration confirmation, NHS DSPT alignment statement)."
+        ],
         "table": null
       }
     ],
@@ -7770,7 +8645,12 @@ export const resourceGuides = [
       {
         "title": "UK GDPR and AI — Key Article 22 Requirements",
         "paragraphs": [
-          "UK AI Act: the UK Government has explicitly chosen NOT to adopt the EU AI Act — instead maintaining a sector-led approach (FCA for FinTech AI, NHS for clinical AI, ICO for data protection aspects of AI). This may change — ClickMasters monitors DSIT AI regulatory guidance for UK AI Act developments."
+          "UK AI Act: the UK Government has explicitly chosen NOT to adopt the EU AI Act — instead maintaining a sector-led approach (FCA for FinTech AI, NHS for clinical AI, ICO for data protection aspects of AI). This may change — ClickMasters monitors DSIT AI regulatory guidance for UK AI Act developments.",
+          "FAQs",
+          "Q: Does FCA Consumer Duty apply to AI-generated advice or recommendations?",
+          "A: Yes — FCA Consumer Duty PS22/9 applies to all consumer outcomes including those generated or influenced by AI. FCA expectations for consumer-facing AI: (1) AI must not produce outcomes that are unfair to consumers (e.g., AI that charges higher prices to certain demographics without justification), (2) AI recommendations must be suitable for the customer's circumstances (COBS suitability — AI cannot remove the suitability obligation), (3) consumers must be able to understand AI decisions (Consumer Duty \"consumer understanding\" outcome), (4) consumers must be able to challenge AI decisions (right to human review — Consumer Duty \"consumer support\" outcome). ClickMasters Consumer Duty AI checklist: human oversight mechanism, explainability, bias testing, complaint process.",
+          "Q: Does MHRA SaMD classification apply to AI features in non-medical software?",
+          "A: MHRA SaMD classification applies to software (including AI features) that meets the definition of a medical device under the UK MDR 2002: software intended to be used for a medical purpose (diagnosis, prevention, monitoring, treatment of disease). Context matters: (1) general health app with step counter — not SaMD (wellness, not medical purpose), (2) app that recommends a specific medication dose — SaMD Class IIa or IIb (treatment of disease), (3) AI that screens radiology images for cancer — SaMD Class IIa or IIb (diagnosis). FCA FinTech AI: not SaMD unless it has a medical purpose. NHS administrative AI (appointment booking, waiting list management): not SaMD unless it makes clinical decisions. ClickMasters conducts MHRA SaMD classification assessment for all NHS and MedTech AI features."
         ],
         "table": null
       }
@@ -7886,7 +8766,13 @@ export const resourceGuides = [
       },
       {
         "title": "UK PLG Activation Metrics — What to Measure",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: How do we build a PLG free tier without giving away the product?",
+          "A: UK PLG free tier design: the free tier must create value (users experience the product and want more) without replacing the paid tier. Effective free tier limits: (1) usage limit (100 API calls/month free, 10,000 paid — user hits limit, naturally upgrades), (2) seat limit (1 user free, team requires paid), (3) feature gate (core feature free, advanced features paid — the free tier demonstrates value, paid features create the conversion incentive), (4) data retention limit (30 days free, 12 months paid — analytics products use this). Anti-pattern: free tier so limited it provides no value (users leave instead of upgrading). Free tier must create the \"aha moment\" — the moment the user realises the product solves their problem. The upgrade conversation happens naturally when they want more of that.",
+          "Q: Does FCA Consumer Duty apply to free trial conversion emails?",
+          "A: FCA Consumer Duty applies to financial services products — not to non-financial SaaS B2B products. For UK FinTech PLG: yes, FCA Consumer Duty applies to free trial conversion for financial products. Key requirements: (1) trial expiry must be clearly communicated (not buried in small print — Consumer Duty consumer understanding outcome), (2) automatic trial-to-paid conversion must include 24-hour advance notice (FCA Consumer Duty — no surprises), (3) cancellation process must be at least as easy as sign-up process (FCA Consumer Duty — no dark patterns in offboarding), (4) trial pricing and post-trial pricing must be clearly disclosed at sign-up (no teaser rates that escalate without clear notice). For non-financial SaaS: Consumer Rights Act 2015 applies (14-day cancellation right for digital subscriptions)."
+        ],
         "table": {
           "headers": [
             "Metric",
@@ -8052,7 +8938,13 @@ export const resourceGuides = [
       },
       {
         "title": "UK API Rate Limiting — NHS and FCA Context",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: How much does API development cost for NHS FHIR R4 integration?",
+          "A: ClickMasters NHS FHIR R4 API integration costs: (1) PDS (Personal Demographics Service — patient NHS number lookup): £6,000–£12,000 (3–5 weeks including NHS sandbox testing and onboarding). (2) GP Connect (structured patient record): £15,000–£28,000 (6–10 weeks including GPSoC clinical assurance). (3) EPS (Electronic Prescription Service R3): £20,000–£40,000 (8–14 weeks). (4) NHS e-Referral Service (eRS FHIR R4): £14,000–£25,000 (6–10 weeks). All prices include NHS Digital onboarding, DTAC evidence generation, and IEC 62304 API documentation. NHS API onboarding adds 2–4 weeks regardless of development complexity — ClickMasters has established relationships with NHS Digital onboarding team.",
+          "Q: What is the difference between FCA Open Banking AISP and PISP?",
+          "A: AISP (Account Information Service Provider): access customer bank account information (balance, transactions, standing orders, direct debits) with customer consent. Use cases: affordability assessment for lending, personal finance management, account aggregation. PISP (Payment Initiation Service Provider): initiate a payment from customer's bank account with customer consent (account-to-account payment — no card needed). Use cases: e-commerce payment alternative to card, instant bank transfer. Regulatory difference: AISP requires FCA registration (Article 33 PSD2 exemption or full authorisation), PISP requires full FCA authorisation (higher bar — PISP can move money). UK implementation: TrueLayer (AISP + PISP), GoCardless (PISP — Variable Recurring Payments). ClickMasters has implemented both AISP and PISP for UK FinTech clients."
+        ],
         "table": {
           "headers": [
             "API",
@@ -8218,7 +9110,13 @@ export const resourceGuides = [
       },
       {
         "title": "UK GDPR Data Architecture — Privacy by Design",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: How much does software architecture review cost?",
+          "A: ClickMasters software architecture review: (1) sprint 1 architecture design (included in all ClickMasters projects — not billed separately — 2–5 days), (2) standalone architecture review of existing system (assessment of existing architecture for FCA PS21/3, NHS DTAC, or UK GDPR compliance): £3,500–£8,000 (2–4 weeks). Deliverables: architecture decision records (ADRs), IBS map (if FCA regulated), data flow diagram (DTAC/GDPR), identified risks and remediation roadmap. Architecture review ROI: typical UK software delivery failure involves £100,000–£500,000 wasted on wrong architecture choices. £5,000 architecture review prevents £200,000 rework — the most leveraged investment in a software project.",
+          "Q: What is a Modular Monolith and why does ClickMasters recommend it?",
+          "A: Modular Monolith: a single deployable application with clear internal module boundaries (enforced by code — not just convention). Module boundaries: (1) each module has its own folder (src/modules/payments/, src/modules/accounts/), (2) modules communicate via well-defined interfaces (exported service classes — not direct database access across module boundaries), (3) PostgreSQL schemas per module (payments schema, accounts schema — each module owns its tables), (4) no cross-module direct database queries (module A cannot query module B's tables — must call B's service interface). Why ClickMasters recommends it: (1) operational simplicity (one deployment, one CI/CD pipeline, one monitoring dashboard), (2) future-proof (module boundaries defined upfront — extract any module to microservice when justified, not before), (3) NHS DTAC simplicity (one DTAC evidence pack, one penetration test scope), (4) FCA PS21/3 simplicity (IBS boundaries enforced in code — same as microservices but without operational overhead)."
+        ],
         "table": {
           "headers": [
             "GDPR Requirement",
@@ -8384,7 +9282,13 @@ export const resourceGuides = [
       },
       {
         "title": "AML/KYC Software Implementation",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: How long does FCA authorisation take for a UK FinTech?",
+          "A: FCA authorisation timeline: (1) Full FCA authorisation (e.g., payment institution, credit broker, investment firm): 12–18 months from application submission. (2) FCA Sandbox (Regulatory Sandbox): 3–6 months (faster — restricted authorisation for testing). (3) AISP registration (for Open Banking AISP — no money movement): 4–8 weeks. (4) Credit Broker registration (introducing customers to lenders): 2–4 months. Software preparation for FCA application: ClickMasters builds compliance-ready systems before FCA submission — FCA technical review (IT questionnaire) covers PS21/3 architecture, DTAC-equivalent security controls, and AML system documentation. Poorly prepared IT systems are a top reason for FCA application delays. ClickMasters IT questionnaire preparation: 2–4 weeks, included in project scope for FCA-regulated clients.",
+          "Q: What is the difference between FCA COBS and Consumer Duty?",
+          "A: FCA COBS (Conduct of Business Sourcebook): detailed prescriptive rules for specific business areas (COBS 4 — financial promotions, COBS 6 — advised services disclosure, COBS 9 — suitability, COBS 14 — information to clients). Consumer Duty PS22/9: overarching outcome-based standard — requires firms to deliver good outcomes across all four outcomes (products/services, price/value, understanding, support). Relationship: Consumer Duty is additional to, not a replacement for, COBS. A firm must comply with both. Software implication: (1) COBS generates specific functional requirements (suitability report field, disclosure timing, information document format), (2) Consumer Duty generates design principles (readability, accessibility, cancellation ease) that apply across the entire product. ClickMasters builds both into software design — COBS requirements as acceptance criteria, Consumer Duty as design principles."
+        ],
         "table": {
           "headers": [
             "AML Component",
@@ -8575,7 +9479,13 @@ export const resourceGuides = [
       },
       {
         "title": "NHS FHIR R4 UK Core — Most Used APIs and Resources",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: How long does NHS DTAC assessment take?",
+          "A: NHS DTAC timeline: (1) evidence preparation (ClickMasters produces DTAC evidence pack across all 5 domains): 4–8 weeks depending on project complexity. (2) NHSX DTAC review (assessor reviews submitted evidence): 4–8 weeks. (3) Clarification questions (assessor may request additional evidence): 2–4 weeks. Total: 10–20 weeks from evidence pack submission to DTAC approval. ClickMasters has achieved DTAC approval on first submission for 14 of 18 projects (78% first-submission success rate — industry average: approximately 40%). Keys to first-submission success: complete data flow diagram (most common rejection cause), WCAG 2.1 AA zero critical violations (most common Domain 5 failure), and CREST penetration test for Domain 3 (required for higher assurance products).",
+          "Q: What is the difference between DTAC and DCB0129?",
+          "A: DTAC (Digital Technology Assessment Criteria) and DCB0129 are different NHS frameworks that often apply simultaneously. DTAC: procurement assessment — NHS organisations are required to assess all digital products against DTAC before procurement. Assesses the product across 5 domains (data protection, security, interoperability, usability — not clinical safety specifically). DCB0129 (Clinical Safety Standard): requires clinical software to have a documented clinical risk management process — hazard log, clinical safety case, Clinical Safety Officer sign-off. When both apply: almost all NHS clinical software needs both DTAC AND DCB0129 — DTAC Domain 2 includes some safety-adjacent questions, but DCB0129 is the separate and more rigorous clinical safety framework. ClickMasters produces both simultaneously — DTAC evidence pack and DCB0129 clinical safety case — as part of every NHS clinical project."
+        ],
         "table": {
           "headers": [
             "NHS API",
@@ -8785,7 +9695,12 @@ export const resourceGuides = [
       {
         "title": "GDS Service Assessment — Alpha/Beta/Live Evidence Checklist",
         "paragraphs": [
-          "ClickMasters GDS assessment track record: 12 GDS Live assessments passed on first submission. Most common first-submission failure elsewhere: insufficient user research evidence (Point 1) and WCAG violations (Point 5). ClickMasters builds both into delivery from Sprint 1 — not as preparation for assessment, but as standard practice."
+          "ClickMasters GDS assessment track record: 12 GDS Live assessments passed on first submission. Most common first-submission failure elsewhere: insufficient user research evidence (Point 1) and WCAG violations (Point 5). ClickMasters builds both into delivery from Sprint 1 — not as preparation for assessment, but as standard practice.",
+          "FAQs",
+          "Q: How long does GDS service assessment take?",
+          "A: GDS service assessment timeline: (1) Alpha assessment (typically 4–6 months into delivery): panel of 3–5 GDS assessors, 4-hour assessment, evidence reviewed against 17 points. Pass/fail/conditional pass. (2) Beta assessment (6–12 months into delivery): same format, higher evidence bar. (3) Live assessment (at launch): most rigorous — must demonstrate all 17 points in production. ClickMasters assessment preparation: 2-week evidence pack preparation sprint before each assessment. Assessment evidence pack includes: user research synthesis, accessibility audit, security evidence, architecture decision records, performance analytics. GDS assessment is a quality gate — not a hurdle. Services that fail are usually genuinely not ready.",
+          "Q: Is G-Cloud 14 or DOS 6 better for UK government software procurement?",
+          "A: G-Cloud 14 (RM1557.14): used for cloud software and hosting services (SaaS platforms, infrastructure). ClickMasters G-Cloud services: custom software development (cloud-hosted), managed DevOps, software consultancy. DOS 6 (RM1043.8 — Digital Outcomes and Specialists 6): used for digital outcomes (bespoke digital projects — \"I need a team to build X\") and specialists (individual contractors). ClickMasters DOS 6 services: digital outcomes (custom government software delivery), digital specialists (individual GDS engineers, user researchers, delivery managers). Which to use: for a defined project → DOS 6 Digital Outcomes. For ongoing SaaS or cloud services → G-Cloud 14. For individual specialists → DOS 6 Digital Specialists. ClickMasters is registered on both frameworks — client chooses the appropriate procurement route."
         ],
         "table": null
       }
@@ -8907,7 +9822,13 @@ export const resourceGuides = [
       },
       {
         "title": "UK GDPR Data Migration Requirements",
-        "paragraphs": [],
+        "paragraphs": [
+          "FAQs",
+          "Q: How long does UK legacy software modernisation take?",
+          "A: ClickMasters legacy modernisation timelines: (1) Single module Strangler Fig (replace one module of a legacy system — e.g., customer portal only): 8–16 weeks. (2) Full application modernisation (PHP 5/7 → Node.js/React, same feature set): 24–48 weeks. (3) NHS HealthTech FHIR R3→R4 migration (all NHS integrations): 14–22 weeks. (4) FCA Consumer Duty legacy UX remediation (journey fixes, readability, cancellation): 8–14 weeks. (5) HMRC CDS migration from CHIEF: 8–16 weeks. Strangler Fig allows partial value delivery — the first module is live in 8–16 weeks even if the full modernisation takes 2 years. ClickMasters always delivers the highest regulatory pressure module first.",
+          "Q: What is the biggest risk in UK legacy software modernisation?",
+          "A: The biggest UK legacy modernisation risk is data loss during migration — particularly for NHS health records (Article 9 special category) and FCA financial records (5-year retention). ClickMasters data migration approach: (1) never delete from source until destination is verified (source and destination compared record-by-record before source decommission), (2) migration validation (every migrated record has a checksum — destination checksum must match source), (3) 30-day parallel period (both systems contain the data for 30 days after migration — any discrepancy discovered and reconciled before source deleted), (4) point-in-time restore (destination database snapshot before migration — can restore to pre-migration state within 5 minutes if catastrophic data issue discovered). Data migration risk is engineering risk, not business risk — ClickMasters engineering controls eliminate it."
+        ],
         "table": {
           "headers": [
             "GDPR Requirement",
@@ -9029,14 +9950,40 @@ export const resourceGuides = [
       },
       {
         "title": "FCA AISP vs PISP Registration",
-        "paragraphs": [],
+        "paragraphs": [
+          "Aspect",
+          "AISP Registration",
+          "PISP Authorisation",
+          "What you can do",
+          "Read account data (balance, transactions, direct debits) with customer consent",
+          "Initiate payments from customer account with consent",
+          "FCA process",
+          "Register as AISP -- 4-8 weeks",
+          "Full FCA authorisation as PISP -- 12-18 months",
+          "Capital requirement",
+          "Nominal -- no minimum",
+          "GBP50,000 minimum capital (FCA EMD/PI requirement)",
+          "Consumer Duty",
+          "FCA Consumer Duty applies -- data used fairly",
+          "Full Consumer Duty -- direct financial impact",
+          "AML/KYC",
+          "Minimal -- not moving money",
+          "Full AML MLRs 2017 -- PISP moves money",
+          "ClickMasters built",
+          "PFM apps, lending affordability, accounting software",
+          "Recurring payments, e-commerce bank transfer, salary advance"
+        ],
         "table": null
       },
       {
         "title": "Variable Recurring Payments (VRP) -- 2026",
         "paragraphs": [
-          "Aspect AISP Registration PISP Authorisation What you can do Read account data (balance, transactions, direct debits) with customer consent Initiate payments from customer account with consent FCA process Register as AISP -- 4-8 weeks Full FCA authorisation as PISP -- 12-18 months Capital requirement Nominal -- no minimum GBP50,000 minimum capital (FCA EMD/PI requirement) Consumer Duty FCA Consumer Duty applies -- data used fairly Full Consumer Duty -- direct financial impact AML/KYC Minimal -- not moving money Full AML MLRs 2017 -- PISP moves money ClickMasters built PFM apps, lending affordability, accounting software Recurring payments, e-commerce bank transfer, salary advance",
-          "ClickMasters VRP: 6 UK projects using GoCardless VRP (4 BNPL repayments, 1 lending repayment, 1 subscription billing). GoCardless VRP charges: 1% + 20p per transaction vs Stripe card 1.4% + 20p."
+          "ClickMasters VRP: 6 UK projects using GoCardless VRP (4 BNPL repayments, 1 lending repayment, 1 subscription billing). GoCardless VRP charges: 1% + 20p per transaction vs Stripe card 1.4% + 20p.",
+          "FAQs",
+          "Q: How long does TrueLayer integration take?",
+          "A: Timeline: (1) TrueLayer account and API key (same day), (2) sandbox integration (1-2 weeks -- OAuth 2.0 PKCE, data API, consent management), (3) production onboarding (TrueLayer review -- 1-2 weeks), (4) FCA AISP registration if needed (4-8 weeks, can run parallel). Total: 4-8 weeks typical. ClickMasters: established TrueLayer partner -- production onboarding typically faster.",
+          "Q: UK GDPR consent for Open Banking?",
+          "A: UK GDPR for Open Banking: (1) lawful basis (legitimate interest for affordability, contract for PFM -- depends on use case), (2) purpose limitation (Open Banking data only for stated purpose -- not for marketing), (3) data minimisation (request only bank API scopes needed), (4) retention (delete raw transaction data after analysis -- retain derived insights only), (5) right to erasure (revoke consent to delete all data within 30 days). ClickMasters: pre-built DPIA and privacy notice addendum for Open Banking."
         ],
         "table": null
       }
@@ -9089,7 +10036,15 @@ export const resourceGuides = [
     "contentSections": [
       {
         "title": "UK Startup Funding 2026",
-        "paragraphs": [],
+        "paragraphs": [
+          "Qualifying: resolving technological uncertainty. NHS AI, FinTech infrastructure, novel algorithms frequently qualify.",
+          "RDEC 2024/25: 20% rate. Loss-making: 16.2% payable cash. Profitable: 20% off corporation tax. GBP500,000 qualifying spend = GBP100,000 RDEC. R&D credits are the most impactful government support for UK software startups.",
+          "FAQs",
+          "Q: How much does an MVP cost UK?",
+          "A: (1) Consumer mobile app GBP12,000-GBP28,000 (2) SaaS GBP18,000-GBP40,000 (3) NHS HealthTech GBP35,000-GBP65,000 (4) FCA FinTech GBP40,000-GBP80,000 (5) AI SaaS GBP25,000-GBP55,000. NHS and FCA MVPs cost more due to regulatory evidence requirements.",
+          "Q: FCA authorisation for FinTech?",
+          "A: AISP: registration 4-8 weeks. PISP: full authorisation 12-18 months GBP50,000 capital. Credit broker: 2-4 months. EMI: 12-18 months GBP350,000 capital. FCA Sandbox: 3-6 months. Identify minimum viable FCA permission -- not all FinTech requires authorisation."
+        ],
         "table": {
           "headers": [
             "Stage",
@@ -9231,7 +10186,12 @@ export const resourceGuides = [
       {
         "title": "Event-Driven Architecture for UK Regulated Systems",
         "paragraphs": [
-          "ClickMasters EDA rule: async for background, sync for clinical and payment. The temptation to make everything event-driven is strong. The FCA PS21/3 and NHS DTAC compliance complexity of async IBS processing is not worth it."
+          "ClickMasters EDA rule: async for background, sync for clinical and payment. The temptation to make everything event-driven is strong. The FCA PS21/3 and NHS DTAC compliance complexity of async IBS processing is not worth it.",
+          "FAQs",
+          "Q: What is CQRS and does UK regulated software need it?",
+          "A: CQRS (Command Query Responsibility Segregation): separate read and write models. For UK regulated software: (1) NHS patient record (writes: every clinical action -- PostgreSQL ACID, reads: patient dashboard -- Redis cache + read replica), (2) FCA payment ledger (writes: every payment transaction -- ACID PostgreSQL, reads: account balance dashboard -- read replica), (3) GDS benefit claims (writes: claim submission -- ACID, reads: case worker dashboard -- eventually consistent read model). CQRS is not needed for most UK regulated products. It adds significant complexity (two data models, eventual consistency handling, read model synchronisation). ClickMasters uses CQRS only when: (a) read patterns are significantly different from write patterns (high-read GDS dashboards with high-write NHS telemetry), (b) write model requires ACID guarantees but read model can tolerate eventual consistency, (c) read scaling needs differ from write scaling. ClickMasters CQRS projects: 8 of 120+ projects use CQRS -- mostly NHS population health platforms with high-read analytics.",
+          "Q: What is data mesh and should a UK HealthTech company adopt it?",
+          "A: Data mesh for UK HealthTech: data mesh (Zhamak Dehghani -- decentralised data ownership, domain-oriented data products) is a large-organisation pattern. For UK HealthTech: (1) applicable for NHS organisations with 20+ data domains (NHS Digital, NHS England -- at scale they are adopting data mesh principles), (2) not applicable for UK HealthTech startups or scaleups (< GBP50M ARR -- premature architectural complexity), (3) data mesh for NHS: NHS FHIR R4 UK Core is the semantic layer for NHS data products -- FHIR is NHS data mesh in practice. ClickMasters: for UK HealthTech startups, a well-structured PostgreSQL schema with domain-separated schemas (patients, appointments, prescriptions, billing as separate schemas) achieves 80% of data mesh benefits with 5% of the complexity. When to consider data mesh: NHS organisation with multiple product teams each owning NHS data domains and needing to share data between teams without creating data silos."
         ],
         "table": null
       }
@@ -9335,7 +10295,12 @@ export const resourceGuides = [
       {
         "title": "UK GDPR Article 9 -- Special Category Data",
         "paragraphs": [
-          "ICO enforcement 2026: ICO issued 14 enforcement notices in H1 2026, the highest since UK GDPR came into force. Top violations: (1) insufficient data residency documentation, (2) missing DPAs with processors, (3) DPIA not completed before high-risk processing. ClickMasters includes UK GDPR architecture review in all client engagements -- GDPR compliance is built in, not bolted on."
+          "ICO enforcement 2026: ICO issued 14 enforcement notices in H1 2026, the highest since UK GDPR came into force. Top violations: (1) insufficient data residency documentation, (2) missing DPAs with processors, (3) DPIA not completed before high-risk processing. ClickMasters includes UK GDPR architecture review in all client engagements -- GDPR compliance is built in, not bolted on.",
+          "FAQs",
+          "Q: Do UK software companies need to appoint a Data Protection Officer?",
+          "A: DPO requirement under UK GDPR: a DPO must be appointed if: (1) public authority or body, (2) large-scale systematic monitoring of individuals, (3) large-scale processing of special category data. For most UK software companies: (a) B2B SaaS (processing employee data of clients -- B2B -- no DPO required unless large scale), (b) NHS HealthTech (processing patient health data at scale -- DPO typically required), (c) FCA FinTech (processing financial behaviour data at scale -- borderline -- ICO guidance suggests DPO recommended for systematic financial profiling), (d) consumer app with location tracking (systematic monitoring of individuals -- DPO likely required). ICO guidance: even if not legally required, a DPO or equivalent privacy lead is good practice. ClickMasters: all NHS and FinTech clients advised to appoint DPO or privacy lead. GBP5,000-GBP15,000/year for external DPO service.",
+          "Q: How does UK GDPR right to erasure work in a relational database?",
+          "A: UK GDPR right to erasure (Article 17) in PostgreSQL: (1) CASCADE DELETE (set up foreign key constraints with ON DELETE CASCADE -- deleting the primary user record cascades to all related tables), (2) soft delete consideration (GDPR erasure is not soft delete -- anonymise or hard delete), (3) audit log retention (GDPR allows retaining anonymised audit logs even after erasure -- replace personal identifiers with anonymised reference), (4) backup retention (personal data in backups must also be erased within 30 days -- AWS Backup retention policy), (5) third-party processors (notify all processors of erasure -- they must also delete). ClickMasters erasure pattern: PostgreSQL CASCADE + audit trail (anonymised) + TanStack Query cache invalidation + third-party processor notification (Stripe delete customer, Onfido delete identity verification) + backup TTL (30 days). Erasure confirmation: automated email to data subject confirming erasure with reference number."
         ],
         "table": null
       }
