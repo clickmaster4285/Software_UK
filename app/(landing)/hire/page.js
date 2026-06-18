@@ -100,7 +100,7 @@ export default function HirePage() {
             {stats.map((stat) => (
               <div
                 key={stat.label}
-                className="text-center px-6 py-5 rounded-xl bg-white/[0.07] border border-white/[0.1] backdrop-blur-sm"
+                className="text-center px-6 py-5 rounded-xl bg-white/[0.07] border border-white/10 backdrop-blur-sm"
               >
                 <p className="font-heading text-2xl md:text-3xl font-bold text-white">
                   {stat.number}
