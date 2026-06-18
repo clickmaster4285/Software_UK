@@ -262,7 +262,9 @@ function isStandaloneParagraph(tableHtml, tableText) {
  * Handles: <p>text</p> → one paragraph per <p>
  *          <ul><li>...</li></ul> → one paragraph per <li>
  *          Mixed content → each block element becomes a paragraph.
- *          Checklist items (✅) in a single block → split into individual items.
+ *          Checklist items (✅/✓) in a single block → split into individual items.
+ * Filters out: FAQ Q:/A: lines, header artifacts ("FAQs", "Related Pages"),
+ *              related page link lines ("Title: /slug/").
  */
 function extractParagraphsFromHtml(rawHtml) {
   const trimmed = rawHtml.trim();
@@ -298,19 +300,30 @@ function extractParagraphsFromHtml(rawHtml) {
     if (text.length > 0) paragraphs.push(text);
   }
 
-  // Split paragraphs that contain multiple ✅ checklist items into individual items
+  // Split paragraphs that contain multiple checklist items (✅ or ✓) into individual items
   const splitParagraphs = [];
   for (const para of paragraphs) {
-    if (para.includes('✅')) {
-      // Split on ✅ boundary — each ✅ starts a new item
-      const parts = para.split(/(?=✅)/).map(s => s.trim()).filter(s => s.length > 0);
+    if (para.includes('✅') || para.includes('✓')) {
+      // Split on checkmark boundary — each checkmark starts a new item
+      const parts = para.split(/(?=[✅✓])/).map(s => s.trim()).filter(s => s.length > 0);
       splitParagraphs.push(...parts);
     } else {
       splitParagraphs.push(para);
     }
   }
 
-  return splitParagraphs;
+  // Filter out structural artifacts, FAQ lines, and related page links
+  return splitParagraphs.filter(p => {
+    const t = p.trim();
+    // Remove header artifacts
+    if (t === 'FAQs' || t === 'FAQ' || t === 'Related Pages' || t === 'Related Pages:') return false;
+    // Remove FAQ Q:/A: lines (handled by extractFaqs())
+    if (/^Q:\s*.+/i.test(t)) return false;
+    if (/^A:\s*.+/i.test(t)) return false;
+    // Remove related page link lines (e.g. "Custom Software Development UK: /custom-software-development/")
+    if (/^[A-Z][^:]+:\s*\/[a-z0-9\-]+\/?$/.test(t)) return false;
+    return true;
+  });
 }
 
 function extractContentSections(html, tables) {
@@ -420,16 +433,16 @@ function extractContentSections(html, tables) {
       }
     } else if (isStandaloneParagraph(table, text)) {
       // Standalone paragraph table — add as paragraph to current section or create new
+      // Split checklist items (✅ or ✓) into individual paragraphs
+      const paras = (text.includes('✅') || text.includes('✓'))
+        ? text.split(/(?=[✅✓])/).map(s => s.trim()).filter(s => s.length > 0)
+        : [text];
       if (currentSection) {
-        // Split checklist items if present
-        const paras = text.includes('✅')
-          ? text.split(/(?=✅)/).map(s => s.trim()).filter(s => s.length > 0)
-          : [text];
         currentSection.paragraphs.push(...paras);
       } else {
         currentSection = {
           title: '',
-          paragraphs: [text],
+          paragraphs: [...paras],
           table: null
         };
       }
