@@ -29,7 +29,7 @@ export default function DynamicSections({ sections, serviceName }) {
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute -top-20 right-0 h-64 w-64 rounded-full bg-accent/10 blur-[100px]"
+        className="pointer-events-none absolute -top-20 right-0 h-64 w-64 rounded-full bg-accent/10 blur-25"
         aria-hidden
       />
       <div
@@ -41,7 +41,7 @@ export default function DynamicSections({ sections, serviceName }) {
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-primary/[0.06] to-transparent"
+        className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-linear-to-b from-primary/[0.06] to-transparent"
         aria-hidden
       />
 

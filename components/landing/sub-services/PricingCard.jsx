@@ -85,7 +85,7 @@ export function PricingCard({
 
             <div className="mt-10 lg:mt-8">
               <Button
-                className="w-full bg-gradient-to-r from-accent to-accent-hover text-white font-bold py-7 rounded-xl shadow-lg shadow-accent/20 transition-all hover:scale-[1.02] active:scale-[0.98] border-0"
+                className="w-full bg-linear-to-r from-accent to-accent-hover text-white font-bold py-7 rounded-xl shadow-lg shadow-accent/20 transition-all hover:scale-[1.02] active:scale-[0.98] border-0"
                 size="lg"
                 onClick={onButtonClick}
               >

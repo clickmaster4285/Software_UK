@@ -87,7 +87,7 @@ export function CeoVision() {
           variants={fadeInUp}
           className="relative w-full max-w-6xl overflow-hidden border border-border/50 rounded-3xl bg-white shadow-[0_20px_50px_rgba(0,0,0,0.05)]"
         >
-          <div className="flex flex-col md:flex-row min-h-[500px]">
+          <div className="flex flex-col md:flex-row min-h-125">
             {/* Left Image Section */}
             <div className="relative h-72 sm:h-96 md:h-auto md:w-1/2 overflow-hidden">
               <motion.div
@@ -106,8 +106,8 @@ export function CeoVision() {
                 />
               </motion.div>
               {/* Overlays */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/10 hidden md:block" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent md:hidden" />
+              <div className="absolute inset-0 bg-linear-to-r from-transparent to-black/10 hidden md:block" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent md:hidden" />
             </div>
 
             {/* Right Text Content Section */}

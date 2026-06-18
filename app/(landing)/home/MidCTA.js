@@ -25,8 +25,8 @@ export default function MidCTA() {
                className="relative rounded-[4rem] bg-primary p-12 md:p-24 text-center overflow-hidden shadow-2xl shadow-primary/30"
             >
                {/* Background Decorative Glows */}
-               <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-[100px] -mr-32 -mt-32 pointer-events-none" />
-               <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-[100px] -ml-32 -mb-32 pointer-events-none" />
+               <div className="absolute top-0 right-0 w-96 h-96 bg-accent/20 rounded-full blur-25 -mr-32 -mt-32 pointer-events-none" />
+               <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-25 -ml-32 -mb-32 pointer-events-none" />
 
                {/* Floating Elements (Dark Mode Optimized) */}
                <motion.div

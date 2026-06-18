@@ -251,7 +251,7 @@ export function ServiceHero({ page }) {
           className="object-cover"
         />
         {/* Dark Overlay for better text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/95 via-primary-mid/90 to-primary/95" />
+        <div className="absolute inset-0 bg-linear-to-b from-primary/95 via-primary-mid/90 to-primary/95" />
       </div>
 
       {/* Breadcrumb */}
@@ -406,7 +406,7 @@ export function ServiceHero({ page }) {
                   <Button
                     asChild
                     size="lg"
-                    className="rounded-lg px-7 bg-gradient-to-r from-accent to-accent-hover text-white font-semibold shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer border-0"
+                    className="rounded-lg px-7 bg-linear-to-r from-accent to-accent-hover text-white font-semibold shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer border-0"
                   >
                     <Link href="/contact-us">
                       Get your free strategy call

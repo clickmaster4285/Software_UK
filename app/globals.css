@@ -305,7 +305,7 @@
   }
 
   .cta-section p {
-    @apply text-white/80 mb-8 max-w-[500px] mx-auto;
+    @apply text-white/80 mb-8 max-w-125 mx-auto;
   }
 
   .cta-section h3 {

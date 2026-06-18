@@ -89,11 +89,11 @@ const TechStackSection = dynamic(
 );
 const SolutionCTA = dynamic(() => import("@/app/(landing)/home/SolutionCTA"));
 const Services = dynamic(() => import("@/app/(landing)/home/Services"), {
-  loading: () => <div className="h-[600px] bg-surface animate-pulse" />,
+  loading: () => <div className="h-150 bg-surface animate-pulse" />,
 });
 const MidCTA = dynamic(() => import("@/app/(landing)/home/MidCTA"));
 const Pricing = dynamic(() => import("@/app/(landing)/home/Pricing"), {
-  loading: () => <div className="h-[500px] bg-surface animate-pulse" />,
+  loading: () => <div className="h-125 bg-surface animate-pulse" />,
 });
 const Benefits = dynamic(() => import("@/app/(landing)/home/Benefits"));
 const Testimonials = dynamic(() => import("@/app/(landing)/home/Testimonials"));

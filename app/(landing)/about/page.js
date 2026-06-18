@@ -131,7 +131,7 @@ function Milestone({ milestone, index }) {
           {milestone.year.slice(-2)}
         </div>
         {index < milestones.length - 1 && (
-          <div className="w-px h-24 bg-gradient-to-b from-accent/50 to-transparent mt-2" />
+          <div className="w-px h-24 bg-linear-to-b from-accent/50 to-transparent mt-2" />
         )}
       </div>
       <div className="pb-12">
@@ -234,8 +234,8 @@ export default function AboutPage() {
       {/* ── Stats Section ── */}
       <section className="py-20 bg-surface relative">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-[100px]" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-[100px]" />
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-25" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-25" />
         </div>
 
         <div className="container mx-auto max-w-7xl px-6 relative z-10">
@@ -255,7 +255,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 pointer-events-none z-0" aria-hidden="true">
 
           {/* Drifting blobs */}
-          <div className="blob-drift absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full opacity-30"
+          <div className="blob-drift absolute -top-32 -left-32 w-125 h-125 rounded-full opacity-30"
             style={{ background: 'radial-gradient(circle, oklch(0.5675 0.2072 318.97 / 0.18) 0%, transparent 70%)' }} />
           <div className="blob-drift absolute -bottom-32 -right-32 w-[450px] h-[450px] rounded-full opacity-25"
             style={{ background: 'radial-gradient(circle, oklch(0.5675 0.2072 318.97 / 0.14) 0%, transparent 70%)', animationDelay: '-6s' }} />
@@ -464,8 +464,8 @@ export default function AboutPage() {
       {/* ── Values Section ── */}
       <section className="py-20 bg-surface relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-[100px]" />
-          <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-[100px]" />
+          <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-25" />
+          <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-25" />
         </div>
 
         <div className="container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 relative z-10">

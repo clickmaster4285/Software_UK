@@ -62,7 +62,7 @@ export const FAQSection = ({ faqs }) => {
       className="group relative overflow-hidden rounded-2xl border border-border bg-white transition-all duration-300 hover:border-accent/40 hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)]"
       style={{ height: 'fit-content' }}
     >
-      <div className="absolute top-0 left-0 h-1 w-0 bg-gradient-to-r from-accent to-accent-hover transition-all duration-500 group-hover:w-full" />
+      <div className="absolute top-0 left-0 h-1 w-0 bg-linear-to-r from-accent to-accent-hover transition-all duration-500 group-hover:w-full" />
       <button
         onClick={() => toggleFAQ(actualIndex)}
         className="flex w-full items-center justify-between p-6 text-left transition-colors"
@@ -99,8 +99,8 @@ export const FAQSection = ({ faqs }) => {
     <section id="faq" className="relative scroll-mt-24 py-16 md:py-24 mx-auto max-w-[96vw] lg:max-w-[90vw] overflow-hidden">
       {/* Background Decorations */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
-        <div className="absolute top-1/4 -right-16 h-72 w-72 rounded-full bg-accent/5 blur-[100px]" />
-        <div className="absolute bottom-1/4 -left-16 h-72 w-72 rounded-full bg-primary/5 blur-[100px]" />
+        <div className="absolute top-1/4 -right-16 h-72 w-72 rounded-full bg-accent/5 blur-25" />
+        <div className="absolute bottom-1/4 -left-16 h-72 w-72 rounded-full bg-primary/5 blur-25" />
         <div
           className="absolute inset-0 opacity-[0.015]"
           style={{
@@ -144,7 +144,7 @@ export const FAQSection = ({ faqs }) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="mt-12 md:mt-16 rounded-3xl border border-border bg-gradient-to-br from-surface to-white p-8 md:p-10 text-center shadow-[0_2px_16px_rgba(0,0,0,0.06)]"
+        className="mt-12 md:mt-16 rounded-3xl border border-border bg-linear-to-br from-surface to-white p-8 md:p-10 text-center shadow-[0_2px_16px_rgba(0,0,0,0.06)]"
       >
         <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/10 text-accent">
           <MessageCircle className="h-6 w-6" />
