@@ -1,7 +1,7 @@
 /**
  * International City Pages Data
  * Generated from 179 DOCX files
- * Unique entries: 98
+ * Unique entries: 96
  */
 
 export const cities = [
@@ -9,6 +9,7 @@ export const cities = [
     "id": "P27",
     "slug": "custom-software-development-london",
     "city": "london",
+    "focus": "",
     "title": "Custom Software Development London — Bespoke Software Built for Your Business",
     "metaTitle": "Custom Software Development London | ClickMasters UK",
     "metaDesc": "Custom Software Development in London from ClickMasters. Bespoke software built for your specific needs. £12,000–£200,000+. UK GDPR compliant. IR35-safe team. Free consultation for London businesses.",
@@ -24,12 +25,12 @@ export const cities = [
       "⚖️ Zero IR35 Risk",
       "⏱️ 8 Week Start"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in London and across London. When off-the-shelf software forces you into workarounds, custom software gives you complete control. ClickMasters builds bespoke software for businesses across London. We deliver transparent GBP pricing, UK GDPR architecture from day one, and full IP ownership transferred to you. R&amp;D Tax Credits may reduce your effective cost by up to 27%. Projects start from £12,000 and are delivered with transparent GBP pricing — no hidden costs.",
+    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in London and across London. When off-the-shelf software forces you into workarounds, custom software gives you complete control. ClickMasters builds bespoke software for businesses across London. We deliver transparent GBP pricing, UK GDPR architecture from day one, and full IP ownership transferred to you. R&D Tax Credits may reduce your effective cost by up to 27%. Projects start from £12,000 and are delivered with transparent GBP pricing — no hidden costs.",
     "benefits": [
       "Transparent GBP Pricing: We publish our prices. No other UK custom software development company does this. You know what it will cost before you call us.",
       "UK GDPR by Design: Every project built with Article 25 privacy-by-design. UK data residency guaranteed on AWS eu-west-2 or Azure UK South.",
       "Zero IR35 Risk: Our engineers are ClickMasters employees — not contractors. No SDS, no liability, one monthly invoice.",
-      "R&amp;D Tax Credits: We document qualifying R&amp;D activities as standard. Your London business may recover up to 27% of qualifying spend via HMRC relief.",
+      "R&D Tax Credits: We document qualifying R&D activities as standard. Your London business may recover up to 27% of qualifying spend via HMRC relief.",
       "Full IP Ownership: You own all code, designs, and IP on delivery. No licensing, no restrictions.",
       "90-Day Defect Warranty: All builds include a 90-day warranty. Bugs found post-delivery are fixed at no extra charge."
     ],
@@ -110,28 +111,28 @@ export const cities = [
     "processSteps": [
       {
         "step": 1,
-        "title": "Free London Consultation (Week 1) 45-minute video or in-person consultation with a senior ClickMasters engineer. We review your requirements, ask the right questions, and give you an honest initial assessment of scope, timeline, and cost — at no charge.",
+        "title": "Free London Consultation (Week 1)",
         "description": "Free London Consultation (Week 1) 45-minute video or in-person consultation with a senior ClickMasters engineer. We review your requirements, ask the right questions, and give you an honest initial assessment of scope, timeline, and cost — at no charge."
       },
       {
         "step": 2,
-        "title": "Technical Discovery &amp; Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns.",
-        "description": "Technical Discovery &amp; Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns."
+        "title": "Technical Discovery & Fixed-Price Proposal (Weeks 1–2)",
+        "description": "Technical Discovery & Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns."
       },
       {
         "step": 3,
-        "title": "Agile Build — 2-Week Sprints Development in 2-week sprints. Working software at the end of every sprint. Staging environment accessible throughout. Regular video demos with your London-based team.",
+        "title": "Agile Build — 2-Week Sprints",
         "description": "Agile Build — 2-Week Sprints Development in 2-week sprints. Working software at the end of every sprint. Staging environment accessible throughout. Regular video demos with your London-based team."
       },
       {
         "step": 4,
-        "title": "Security &amp; GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. London-specific compliance context applied.",
-        "description": "Security &amp; GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. London-specific compliance context applied."
+        "title": "Security & GDPR Review",
+        "description": "Security & GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. London-specific compliance context applied."
       },
       {
         "step": 5,
-        "title": "Launch, IP Transfer &amp; Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month.",
-        "description": "Launch, IP Transfer &amp; Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month."
+        "title": "Launch, IP Transfer & Support",
+        "description": "Launch, IP Transfer & Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month."
       }
     ],
     "faqs": [
@@ -186,13 +187,14 @@ export const cities = [
         "slug": "ir35-software-development"
       }
     ],
-    "cta": "Service Type Description GBP Pricing Consultation / Discovery Initial project scoping session Free Project Start Typical smallest engagement £12,000 Full Build Bespoke software built for your specific needs £12,000–£200,000+ Staff Augmentation Senior developer, monthly rate from £5,000/mo Maintenance Retainer Ongoing post-launch support from £1,500/mo",
-    "author": ""
+    "cta": "Get a Free Custom Software Development Consultation in London Book a 45-minute consultation with a senior engineer. We'll scope your London project, give you a transparent GBP cost estimate, and answer your compliance questions — at no charge. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Custom Software Development Team — London"
   },
   {
     "id": "P39",
     "slug": "custom-software-development-manchester",
     "city": "manchester",
+    "focus": "",
     "title": "Custom Software Development Manchester — Bespoke Software Built for Your Business",
     "metaTitle": "Custom Software Development Manchester | ClickMasters UK",
     "metaDesc": "Custom Software Development in Manchester from ClickMasters. Bespoke software built for your specific needs. £12,000–£200,000+. UK GDPR compliant. IR35-safe team. Free consultation for Manchester businesses.",
@@ -208,12 +210,12 @@ export const cities = [
       "⚖️ Zero IR35 Risk",
       "⏱️ 8 Week Start"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Manchester and across North West England. When off-the-shelf software forces you into workarounds, custom software gives you complete control. ClickMasters builds bespoke software for businesses across Manchester. We deliver transparent GBP pricing, UK GDPR architecture from day one, and full IP ownership transferred to you. R&amp;D Tax Credits may reduce your effective cost by up to 27%. Projects start from £12,000 and are delivered with transparent GBP pricing — no hidden costs.",
+    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Manchester and across North West England. When off-the-shelf software forces you into workarounds, custom software gives you complete control. ClickMasters builds bespoke software for businesses across Manchester. We deliver transparent GBP pricing, UK GDPR architecture from day one, and full IP ownership transferred to you. R&D Tax Credits may reduce your effective cost by up to 27%. Projects start from £12,000 and are delivered with transparent GBP pricing — no hidden costs.",
     "benefits": [
       "Transparent GBP Pricing: We publish our prices. No other UK custom software development company does this. You know what it will cost before you call us.",
       "UK GDPR by Design: Every project built with Article 25 privacy-by-design. UK data residency guaranteed on AWS eu-west-2 or Azure UK South.",
       "Zero IR35 Risk: Our engineers are ClickMasters employees — not contractors. No SDS, no liability, one monthly invoice.",
-      "R&amp;D Tax Credits: We document qualifying R&amp;D activities as standard. Your Manchester business may recover up to 27% of qualifying spend via HMRC relief.",
+      "R&D Tax Credits: We document qualifying R&D activities as standard. Your Manchester business may recover up to 27% of qualifying spend via HMRC relief.",
       "Full IP Ownership: You own all code, designs, and IP on delivery. No licensing, no restrictions.",
       "90-Day Defect Warranty: All builds include a 90-day warranty. Bugs found post-delivery are fixed at no extra charge."
     ],
@@ -294,28 +296,28 @@ export const cities = [
     "processSteps": [
       {
         "step": 1,
-        "title": "Free Manchester Consultation (Week 1) 45-minute video or in-person consultation with a senior ClickMasters engineer. We review your requirements, ask the right questions, and give you an honest initial assessment of scope, timeline, and cost — at no charge.",
+        "title": "Free Manchester Consultation (Week 1)",
         "description": "Free Manchester Consultation (Week 1) 45-minute video or in-person consultation with a senior ClickMasters engineer. We review your requirements, ask the right questions, and give you an honest initial assessment of scope, timeline, and cost — at no charge."
       },
       {
         "step": 2,
-        "title": "Technical Discovery &amp; Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns.",
-        "description": "Technical Discovery &amp; Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns."
+        "title": "Technical Discovery & Fixed-Price Proposal (Weeks 1–2)",
+        "description": "Technical Discovery & Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns."
       },
       {
         "step": 3,
-        "title": "Agile Build — 2-Week Sprints Development in 2-week sprints. Working software at the end of every sprint. Staging environment accessible throughout. Regular video demos with your Manchester-based team.",
+        "title": "Agile Build — 2-Week Sprints",
         "description": "Agile Build — 2-Week Sprints Development in 2-week sprints. Working software at the end of every sprint. Staging environment accessible throughout. Regular video demos with your Manchester-based team."
       },
       {
         "step": 4,
-        "title": "Security &amp; GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Manchester-specific compliance context applied.",
-        "description": "Security &amp; GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Manchester-specific compliance context applied."
+        "title": "Security & GDPR Review",
+        "description": "Security & GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Manchester-specific compliance context applied."
       },
       {
         "step": 5,
-        "title": "Launch, IP Transfer &amp; Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month.",
-        "description": "Launch, IP Transfer &amp; Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month."
+        "title": "Launch, IP Transfer & Support",
+        "description": "Launch, IP Transfer & Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month."
       }
     ],
     "faqs": [
@@ -370,13 +372,14 @@ export const cities = [
         "slug": "ir35-software-development"
       }
     ],
-    "cta": "Service Type Description GBP Pricing Consultation / Discovery Initial project scoping session Free Project Start Typical smallest engagement £12,000 Full Build Bespoke software built for your specific needs £12,000–£200,000+ Staff Augmentation Senior developer, monthly rate from £5,000/mo Maintenance Retainer Ongoing post-launch support from £1,500/mo",
-    "author": ""
+    "cta": "Get a Free Custom Software Development Consultation in Manchester Book a 45-minute consultation with a senior engineer. We'll scope your Manchester project, give you a transparent GBP cost estimate, and answer your compliance questions — at no charge. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Custom Software Development Team — Manchester"
   },
   {
     "id": "P43",
     "slug": "custom-software-development-birmingham",
     "city": "birmingham",
+    "focus": "",
     "title": "Custom Software Development Birmingham — Bespoke Software Built for Your Business",
     "metaTitle": "Custom Software Development Birmingham | ClickMasters UK",
     "metaDesc": "Custom Software Development in Birmingham from ClickMasters. Bespoke software built for your specific needs. £12,000–£200,000+. UK GDPR compliant. IR35-safe team. Free consultation for Birmingham businesses.",
@@ -392,12 +395,12 @@ export const cities = [
       "⚖️ Zero IR35 Risk",
       "⏱️ 8 Week Start"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Birmingham and across West Midlands. When off-the-shelf software forces you into workarounds, custom software gives you complete control. ClickMasters builds bespoke software for businesses across Birmingham. We deliver transparent GBP pricing, UK GDPR architecture from day one, and full IP ownership transferred to you. R&amp;D Tax Credits may reduce your effective cost by up to 27%. Projects start from £12,000 and are delivered with transparent GBP pricing — no hidden costs.",
+    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Birmingham and across West Midlands. When off-the-shelf software forces you into workarounds, custom software gives you complete control. ClickMasters builds bespoke software for businesses across Birmingham. We deliver transparent GBP pricing, UK GDPR architecture from day one, and full IP ownership transferred to you. R&D Tax Credits may reduce your effective cost by up to 27%. Projects start from £12,000 and are delivered with transparent GBP pricing — no hidden costs.",
     "benefits": [
       "Transparent GBP Pricing: We publish our prices. No other UK custom software development company does this. You know what it will cost before you call us.",
       "UK GDPR by Design: Every project built with Article 25 privacy-by-design. UK data residency guaranteed on AWS eu-west-2 or Azure UK South.",
       "Zero IR35 Risk: Our engineers are ClickMasters employees — not contractors. No SDS, no liability, one monthly invoice.",
-      "R&amp;D Tax Credits: We document qualifying R&amp;D activities as standard. Your Birmingham business may recover up to 27% of qualifying spend via HMRC relief.",
+      "R&D Tax Credits: We document qualifying R&D activities as standard. Your Birmingham business may recover up to 27% of qualifying spend via HMRC relief.",
       "Full IP Ownership: You own all code, designs, and IP on delivery. No licensing, no restrictions.",
       "90-Day Defect Warranty: All builds include a 90-day warranty. Bugs found post-delivery are fixed at no extra charge."
     ],
@@ -478,28 +481,28 @@ export const cities = [
     "processSteps": [
       {
         "step": 1,
-        "title": "Free Birmingham Consultation (Week 1) 45-minute video or in-person consultation with a senior ClickMasters engineer. We review your requirements, ask the right questions, and give you an honest initial assessment of scope, timeline, and cost — at no charge.",
+        "title": "Free Birmingham Consultation (Week 1)",
         "description": "Free Birmingham Consultation (Week 1) 45-minute video or in-person consultation with a senior ClickMasters engineer. We review your requirements, ask the right questions, and give you an honest initial assessment of scope, timeline, and cost — at no charge."
       },
       {
         "step": 2,
-        "title": "Technical Discovery &amp; Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns.",
-        "description": "Technical Discovery &amp; Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns."
+        "title": "Technical Discovery & Fixed-Price Proposal (Weeks 1–2)",
+        "description": "Technical Discovery & Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns."
       },
       {
         "step": 3,
-        "title": "Agile Build — 2-Week Sprints Development in 2-week sprints. Working software at the end of every sprint. Staging environment accessible throughout. Regular video demos with your Birmingham-based team.",
+        "title": "Agile Build — 2-Week Sprints",
         "description": "Agile Build — 2-Week Sprints Development in 2-week sprints. Working software at the end of every sprint. Staging environment accessible throughout. Regular video demos with your Birmingham-based team."
       },
       {
         "step": 4,
-        "title": "Security &amp; GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Birmingham-specific compliance context applied.",
-        "description": "Security &amp; GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Birmingham-specific compliance context applied."
+        "title": "Security & GDPR Review",
+        "description": "Security & GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Birmingham-specific compliance context applied."
       },
       {
         "step": 5,
-        "title": "Launch, IP Transfer &amp; Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month.",
-        "description": "Launch, IP Transfer &amp; Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month."
+        "title": "Launch, IP Transfer & Support",
+        "description": "Launch, IP Transfer & Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month."
       }
     ],
     "faqs": [
@@ -554,13 +557,14 @@ export const cities = [
         "slug": "ir35-software-development"
       }
     ],
-    "cta": "Service Type Description GBP Pricing Consultation / Discovery Initial project scoping session Free Project Start Typical smallest engagement £12,000 Full Build Bespoke software built for your specific needs £12,000–£200,000+ Staff Augmentation Senior developer, monthly rate from £5,000/mo Maintenance Retainer Ongoing post-launch support from £1,500/mo",
-    "author": ""
+    "cta": "Get a Free Custom Software Development Consultation in Birmingham Book a 45-minute consultation with a senior engineer. We'll scope your Birmingham project, give you a transparent GBP cost estimate, and answer your compliance questions — at no charge. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Custom Software Development Team — Birmingham"
   },
   {
     "id": "P47",
     "slug": "custom-software-development-edinburgh",
     "city": "edinburgh",
+    "focus": "",
     "title": "Custom Software Development Edinburgh — Bespoke Software Built for Your Business",
     "metaTitle": "Custom Software Development Edinburgh | ClickMasters UK",
     "metaDesc": "Custom Software Development in Edinburgh from ClickMasters. Bespoke software built for your specific needs. £12,000–£200,000+. UK GDPR compliant. IR35-safe team. Free consultation for Edinburgh businesses.",
@@ -576,12 +580,12 @@ export const cities = [
       "⚖️ Zero IR35 Risk",
       "⏱️ 8 Week Start"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Edinburgh and across Scotland. When off-the-shelf software forces you into workarounds, custom software gives you complete control. ClickMasters builds bespoke software for businesses across Edinburgh. We deliver transparent GBP pricing, UK GDPR architecture from day one, and full IP ownership transferred to you. R&amp;D Tax Credits may reduce your effective cost by up to 27%. Projects start from £12,000 and are delivered with transparent GBP pricing — no hidden costs.",
+    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Edinburgh and across Scotland. When off-the-shelf software forces you into workarounds, custom software gives you complete control. ClickMasters builds bespoke software for businesses across Edinburgh. We deliver transparent GBP pricing, UK GDPR architecture from day one, and full IP ownership transferred to you. R&D Tax Credits may reduce your effective cost by up to 27%. Projects start from £12,000 and are delivered with transparent GBP pricing — no hidden costs.",
     "benefits": [
       "Transparent GBP Pricing: We publish our prices. No other UK custom software development company does this. You know what it will cost before you call us.",
       "UK GDPR by Design: Every project built with Article 25 privacy-by-design. UK data residency guaranteed on AWS eu-west-2 or Azure UK South.",
       "Zero IR35 Risk: Our engineers are ClickMasters employees — not contractors. No SDS, no liability, one monthly invoice.",
-      "R&amp;D Tax Credits: We document qualifying R&amp;D activities as standard. Your Edinburgh business may recover up to 27% of qualifying spend via HMRC relief.",
+      "R&D Tax Credits: We document qualifying R&D activities as standard. Your Edinburgh business may recover up to 27% of qualifying spend via HMRC relief.",
       "Full IP Ownership: You own all code, designs, and IP on delivery. No licensing, no restrictions.",
       "90-Day Defect Warranty: All builds include a 90-day warranty. Bugs found post-delivery are fixed at no extra charge."
     ],
@@ -662,28 +666,28 @@ export const cities = [
     "processSteps": [
       {
         "step": 1,
-        "title": "Free Edinburgh Consultation (Week 1) 45-minute video or in-person consultation with a senior ClickMasters engineer. We review your requirements, ask the right questions, and give you an honest initial assessment of scope, timeline, and cost — at no charge.",
+        "title": "Free Edinburgh Consultation (Week 1)",
         "description": "Free Edinburgh Consultation (Week 1) 45-minute video or in-person consultation with a senior ClickMasters engineer. We review your requirements, ask the right questions, and give you an honest initial assessment of scope, timeline, and cost — at no charge."
       },
       {
         "step": 2,
-        "title": "Technical Discovery &amp; Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns.",
-        "description": "Technical Discovery &amp; Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns."
+        "title": "Technical Discovery & Fixed-Price Proposal (Weeks 1–2)",
+        "description": "Technical Discovery & Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns."
       },
       {
         "step": 3,
-        "title": "Agile Build — 2-Week Sprints Development in 2-week sprints. Working software at the end of every sprint. Staging environment accessible throughout. Regular video demos with your Edinburgh-based team.",
+        "title": "Agile Build — 2-Week Sprints",
         "description": "Agile Build — 2-Week Sprints Development in 2-week sprints. Working software at the end of every sprint. Staging environment accessible throughout. Regular video demos with your Edinburgh-based team."
       },
       {
         "step": 4,
-        "title": "Security &amp; GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Edinburgh-specific compliance context applied.",
-        "description": "Security &amp; GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Edinburgh-specific compliance context applied."
+        "title": "Security & GDPR Review",
+        "description": "Security & GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Edinburgh-specific compliance context applied."
       },
       {
         "step": 5,
-        "title": "Launch, IP Transfer &amp; Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month.",
-        "description": "Launch, IP Transfer &amp; Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month."
+        "title": "Launch, IP Transfer & Support",
+        "description": "Launch, IP Transfer & Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month."
       }
     ],
     "faqs": [
@@ -738,13 +742,14 @@ export const cities = [
         "slug": "ir35-software-development"
       }
     ],
-    "cta": "Service Type Description GBP Pricing Consultation / Discovery Initial project scoping session Free Project Start Typical smallest engagement £12,000 Full Build Bespoke software built for your specific needs £12,000–£200,000+ Staff Augmentation Senior developer, monthly rate from £5,000/mo Maintenance Retainer Ongoing post-launch support from £1,500/mo",
-    "author": ""
+    "cta": "Get a Free Custom Software Development Consultation in Edinburgh Book a 45-minute consultation with a senior engineer. We'll scope your Edinburgh project, give you a transparent GBP cost estimate, and answer your compliance questions — at no charge. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Custom Software Development Team — Edinburgh"
   },
   {
     "id": "P50",
     "slug": "custom-software-development-leeds",
     "city": "leeds",
+    "focus": "",
     "title": "Custom Software Development Leeds — Bespoke Software Built for Your Business",
     "metaTitle": "Custom Software Development Leeds | ClickMasters UK",
     "metaDesc": "Custom Software Development in Leeds from ClickMasters. Bespoke software built for your specific needs. £12,000–£200,000+. UK GDPR compliant. IR35-safe team. Free consultation for Leeds businesses.",
@@ -760,16 +765,16 @@ export const cities = [
       "⚖️ Zero IR35 Risk",
       "⏱️ 8 Week Start"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Leeds and across Yorkshire. When off-the-shelf software forces you into workarounds, custom software gives you complete control. ClickMasters builds bespoke software for businesses across Leeds. We deliver transparent GBP pricing, UK GDPR architecture from day one, and full IP ownership transferred to you. R&amp;D Tax Credits may reduce your effective cost by up to 27%. Projects start from £12,000 and are delivered with transparent GBP pricing — no hidden costs.",
+    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Leeds and across Yorkshire. When off-the-shelf software forces you into workarounds, custom software gives you complete control. ClickMasters builds bespoke software for businesses across Leeds. We deliver transparent GBP pricing, UK GDPR architecture from day one, and full IP ownership transferred to you. R&D Tax Credits may reduce your effective cost by up to 27%. Projects start from £12,000 and are delivered with transparent GBP pricing — no hidden costs.",
     "benefits": [
       "Transparent GBP Pricing: We publish our prices. No other UK custom software development company does this. You know what it will cost before you call us.",
       "UK GDPR by Design: Every project built with Article 25 privacy-by-design. UK data residency guaranteed on AWS eu-west-2 or Azure UK South.",
       "Zero IR35 Risk: Our engineers are ClickMasters employees — not contractors. No SDS, no liability, one monthly invoice.",
-      "R&amp;D Tax Credits: We document qualifying R&amp;D activities as standard. Your Leeds business may recover up to 27% of qualifying spend via HMRC relief.",
+      "R&D Tax Credits: We document qualifying R&D activities as standard. Your Leeds business may recover up to 27% of qualifying spend via HMRC relief.",
       "Full IP Ownership: You own all code, designs, and IP on delivery. No licensing, no restrictions.",
       "90-Day Defect Warranty: All builds include a 90-day warranty. Bugs found post-delivery are fixed at no extra charge."
     ],
-    "ecosystem": "Leeds is rapidly establishing itself as one of the UK's leading FinTech and financial services technology hubs — anchored by the Leeds City Region Enterprise Partnership and Yorkshire &amp; Humber Digital Economy Strategy. The city hosts a growing cluster of RegTech and InsurTech businesses and benefits from lower operating costs than London while maintaining strong connectivity.\n\nNotable technology organisations in Leeds: Sky Betting &amp; Gaming, Virgin Money Technology, First Direct digital, HSBC Leeds digital, Channel 4 (relocation)\n\nLeeds compliance context: Leeds Teaching Hospitals NHS Trust. West Yorkshire Combined Authority digital. FCA-regulated financial services cluster. G-Cloud suppliers in the Yorkshire region.",
+    "ecosystem": "Leeds is rapidly establishing itself as one of the UK's leading FinTech and financial services technology hubs — anchored by the Leeds City Region Enterprise Partnership and Yorkshire & Humber Digital Economy Strategy. The city hosts a growing cluster of RegTech and InsurTech businesses and benefits from lower operating costs than London while maintaining strong connectivity.\n\nNotable technology organisations in Leeds: Sky Betting & Gaming, Virgin Money Technology, First Direct digital, HSBC Leeds digital, Channel 4 (relocation)\n\nLeeds compliance context: Leeds Teaching Hospitals NHS Trust. West Yorkshire Combined Authority digital. FCA-regulated financial services cluster. G-Cloud suppliers in the Yorkshire region.",
     "pricingTable": {
       "headers": [
         "Service Type",
@@ -846,28 +851,28 @@ export const cities = [
     "processSteps": [
       {
         "step": 1,
-        "title": "Free Leeds Consultation (Week 1) 45-minute video or in-person consultation with a senior ClickMasters engineer. We review your requirements, ask the right questions, and give you an honest initial assessment of scope, timeline, and cost — at no charge.",
+        "title": "Free Leeds Consultation (Week 1)",
         "description": "Free Leeds Consultation (Week 1) 45-minute video or in-person consultation with a senior ClickMasters engineer. We review your requirements, ask the right questions, and give you an honest initial assessment of scope, timeline, and cost — at no charge."
       },
       {
         "step": 2,
-        "title": "Technical Discovery &amp; Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns.",
-        "description": "Technical Discovery &amp; Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns."
+        "title": "Technical Discovery & Fixed-Price Proposal (Weeks 1–2)",
+        "description": "Technical Discovery & Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns."
       },
       {
         "step": 3,
-        "title": "Agile Build — 2-Week Sprints Development in 2-week sprints. Working software at the end of every sprint. Staging environment accessible throughout. Regular video demos with your Leeds-based team.",
+        "title": "Agile Build — 2-Week Sprints",
         "description": "Agile Build — 2-Week Sprints Development in 2-week sprints. Working software at the end of every sprint. Staging environment accessible throughout. Regular video demos with your Leeds-based team."
       },
       {
         "step": 4,
-        "title": "Security &amp; GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Leeds-specific compliance context applied.",
-        "description": "Security &amp; GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Leeds-specific compliance context applied."
+        "title": "Security & GDPR Review",
+        "description": "Security & GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Leeds-specific compliance context applied."
       },
       {
         "step": 5,
-        "title": "Launch, IP Transfer &amp; Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month.",
-        "description": "Launch, IP Transfer &amp; Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month."
+        "title": "Launch, IP Transfer & Support",
+        "description": "Launch, IP Transfer & Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month."
       }
     ],
     "faqs": [
@@ -922,13 +927,14 @@ export const cities = [
         "slug": "ir35-software-development"
       }
     ],
-    "cta": "Service Type Description GBP Pricing Consultation / Discovery Initial project scoping session Free Project Start Typical smallest engagement £12,000 Full Build Bespoke software built for your specific needs £12,000–£200,000+ Staff Augmentation Senior developer, monthly rate from £5,000/mo Maintenance Retainer Ongoing post-launch support from £1,500/mo",
-    "author": ""
+    "cta": "Get a Free Custom Software Development Consultation in Leeds Book a 45-minute consultation with a senior engineer. We'll scope your Leeds project, give you a transparent GBP cost estimate, and answer your compliance questions — at no charge. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Custom Software Development Team — Leeds"
   },
   {
     "id": "P51",
     "slug": "custom-software-development-bristol",
     "city": "bristol",
+    "focus": "",
     "title": "Custom Software Development Bristol — Bespoke Software Built for Your Business",
     "metaTitle": "Custom Software Development Bristol | ClickMasters UK",
     "metaDesc": "Custom Software Development in Bristol from ClickMasters. Bespoke software built for your specific needs. £12,000–£200,000+. UK GDPR compliant. IR35-safe team. Free consultation for Bristol businesses.",
@@ -944,16 +950,16 @@ export const cities = [
       "⚖️ Zero IR35 Risk",
       "⏱️ 8 Week Start"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Bristol and across South West England. When off-the-shelf software forces you into workarounds, custom software gives you complete control. ClickMasters builds bespoke software for businesses across Bristol. We deliver transparent GBP pricing, UK GDPR architecture from day one, and full IP ownership transferred to you. R&amp;D Tax Credits may reduce your effective cost by up to 27%. Projects start from £12,000 and are delivered with transparent GBP pricing — no hidden costs.",
+    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Bristol and across South West England. When off-the-shelf software forces you into workarounds, custom software gives you complete control. ClickMasters builds bespoke software for businesses across Bristol. We deliver transparent GBP pricing, UK GDPR architecture from day one, and full IP ownership transferred to you. R&D Tax Credits may reduce your effective cost by up to 27%. Projects start from £12,000 and are delivered with transparent GBP pricing — no hidden costs.",
     "benefits": [
       "Transparent GBP Pricing: We publish our prices. No other UK custom software development company does this. You know what it will cost before you call us.",
       "UK GDPR by Design: Every project built with Article 25 privacy-by-design. UK data residency guaranteed on AWS eu-west-2 or Azure UK South.",
       "Zero IR35 Risk: Our engineers are ClickMasters employees — not contractors. No SDS, no liability, one monthly invoice.",
-      "R&amp;D Tax Credits: We document qualifying R&amp;D activities as standard. Your Bristol business may recover up to 27% of qualifying spend via HMRC relief.",
+      "R&D Tax Credits: We document qualifying R&D activities as standard. Your Bristol business may recover up to 27% of qualifying spend via HMRC relief.",
       "Full IP Ownership: You own all code, designs, and IP on delivery. No licensing, no restrictions.",
       "90-Day Defect Warranty: All builds include a 90-day warranty. Bugs found post-delivery are fixed at no extra charge."
     ],
-    "ecosystem": "Bristol — sometimes called Silicon Gorge — is one of the UK's most established technology clusters, with particular strength in aerospace &amp; defence technology (Airbus, Rolls-Royce), robotics, and advanced engineering software. The University of Bristol and University of the West of England feed a strong local talent pipeline.\n\nNotable technology organisations in Bristol: Airbus Bristol digital, Rolls-Royce Digital, Hargreaves Lansdown digital, HPE Bristol, 2to3D, Graphcore\n\nBristol compliance context: University Hospitals Bristol &amp; Weston NHS FT. BANES and North Somerset NHS. Defence and aerospace sector compliance (ITAR, MOD Cyber Essentials requirements). FCA-regulated financial services (Hargreaves Lansdown).",
+    "ecosystem": "Bristol — sometimes called Silicon Gorge — is one of the UK's most established technology clusters, with particular strength in aerospace & defence technology (Airbus, Rolls-Royce), robotics, and advanced engineering software. The University of Bristol and University of the West of England feed a strong local talent pipeline.\n\nNotable technology organisations in Bristol: Airbus Bristol digital, Rolls-Royce Digital, Hargreaves Lansdown digital, HPE Bristol, 2to3D, Graphcore\n\nBristol compliance context: University Hospitals Bristol & Weston NHS FT. BANES and North Somerset NHS. Defence and aerospace sector compliance (ITAR, MOD Cyber Essentials requirements). FCA-regulated financial services (Hargreaves Lansdown).",
     "pricingTable": {
       "headers": [
         "Service Type",
@@ -1030,28 +1036,28 @@ export const cities = [
     "processSteps": [
       {
         "step": 1,
-        "title": "Free Bristol Consultation (Week 1) 45-minute video or in-person consultation with a senior ClickMasters engineer. We review your requirements, ask the right questions, and give you an honest initial assessment of scope, timeline, and cost — at no charge.",
+        "title": "Free Bristol Consultation (Week 1)",
         "description": "Free Bristol Consultation (Week 1) 45-minute video or in-person consultation with a senior ClickMasters engineer. We review your requirements, ask the right questions, and give you an honest initial assessment of scope, timeline, and cost — at no charge."
       },
       {
         "step": 2,
-        "title": "Technical Discovery &amp; Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns.",
-        "description": "Technical Discovery &amp; Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns."
+        "title": "Technical Discovery & Fixed-Price Proposal (Weeks 1–2)",
+        "description": "Technical Discovery & Fixed-Price Proposal (Weeks 1–2) For projects above £15,000, we recommend a paid Technical Discovery phase (£3,500–£8,000, credited against the project). Output: a detailed technical specification and a fixed-price proposal. This eliminates the most common source of budget overruns."
       },
       {
         "step": 3,
-        "title": "Agile Build — 2-Week Sprints Development in 2-week sprints. Working software at the end of every sprint. Staging environment accessible throughout. Regular video demos with your Bristol-based team.",
+        "title": "Agile Build — 2-Week Sprints",
         "description": "Agile Build — 2-Week Sprints Development in 2-week sprints. Working software at the end of every sprint. Staging environment accessible throughout. Regular video demos with your Bristol-based team."
       },
       {
         "step": 4,
-        "title": "Security &amp; GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Bristol-specific compliance context applied.",
-        "description": "Security &amp; GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Bristol-specific compliance context applied."
+        "title": "Security & GDPR Review",
+        "description": "Security & GDPR Review OWASP Top 10 security review. UK GDPR data flow audit. UK GDPR compliance verified. Bristol-specific compliance context applied."
       },
       {
         "step": 5,
-        "title": "Launch, IP Transfer &amp; Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month.",
-        "description": "Launch, IP Transfer &amp; Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month."
+        "title": "Launch, IP Transfer & Support",
+        "description": "Launch, IP Transfer & Support Production deployment. Full source code and IP transferred. Documentation completed. Optional: monthly maintenance retainer from £1,500/month."
       }
     ],
     "faqs": [
@@ -1106,13 +1112,14 @@ export const cities = [
         "slug": "ir35-software-development"
       }
     ],
-    "cta": "Service Type Description GBP Pricing Consultation / Discovery Initial project scoping session Free Project Start Typical smallest engagement £12,000 Full Build Bespoke software built for your specific needs £12,000–£200,000+ Staff Augmentation Senior developer, monthly rate from £5,000/mo Maintenance Retainer Ongoing post-launch support from £1,500/mo",
-    "author": ""
+    "cta": "Get a Free Custom Software Development Consultation in Bristol Book a 45-minute consultation with a senior engineer. We'll scope your Bristol project, give you a transparent GBP cost estimate, and answer your compliance questions — at no charge. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Custom Software Development Team — Bristol"
   },
   {
     "id": "P75",
     "slug": "custom-software-development-glasgow",
     "city": "glasgow",
+    "focus": "",
     "title": "Custom Software Development Glasgow — Bespoke Software",
     "metaTitle": "Custom Software Development Glasgow | ClickMasters UK",
     "metaDesc": "Custom Software Development in Glasgow from ClickMasters. Bespoke software built for your specific needs. £12,000–£200,000+. UK GDPR compliant. IR35-safe. Free consultation for Glasgow businesses.",
@@ -1128,14 +1135,14 @@ export const cities = [
       "⚖️ Zero IR35",
       "⏱️ 8wk Start"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Glasgow and across Scotland. When off-the-shelf software forces workarounds, custom software gives you full control. ClickMasters builds bespoke software for businesses in Glasgow. Transparent GBP pricing. UK GDPR by design. R&amp;D Tax Credits eligible. Full IP ownership on delivery. Starting from £12,000.",
+    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Glasgow and across Scotland. When off-the-shelf software forces workarounds, custom software gives you full control. ClickMasters builds bespoke software for businesses in Glasgow. Transparent GBP pricing. UK GDPR by design. R&D Tax Credits eligible. Full IP ownership on delivery. Starting from £12,000.",
     "benefits": [
       "UK GDPR: Article 25 privacy by design on every project. AWS eu-west-2 or Azure UK South for data residency.",
       "Cyber Essentials: 5 controls implemented. Patch management SLA for ongoing maintenance.",
       "IR35: Our engineers are ClickMasters employees — zero IR35 liability for your Glasgow business.",
       "UK GDPR, ICO, Cyber Essentials: Sector-specific compliance built into project architecture."
     ],
-    "ecosystem": "Glasgow is Scotland's largest city and has a growing technology sector anchored by major financial services firms, a strong academic base (University of Glasgow, Strathclyde), and increasing FinTech investment. The city benefits from Scotland's lower operating costs relative to London while maintaining strong talent quality.\n\nKey organisations: JP Morgan Glasgow, Morgan Stanley Glasgow, Barclays Eagle Labs Glasgow, Skyscanner (Edinburgh-rooted but Glasgow presence)\n\nGlasgow compliance context: NHS Greater Glasgow &amp; Clyde (largest NHS board in Scotland). Scottish Government digital services. G-Cloud suppliers in the Scottish market.",
+    "ecosystem": "Glasgow is Scotland's largest city and has a growing technology sector anchored by major financial services firms, a strong academic base (University of Glasgow, Strathclyde), and increasing FinTech investment. The city benefits from Scotland's lower operating costs relative to London while maintaining strong talent quality.\n\nKey organisations: JP Morgan Glasgow, Morgan Stanley Glasgow, Barclays Eagle Labs Glasgow, Skyscanner (Edinburgh-rooted but Glasgow presence)\n\nGlasgow compliance context: NHS Greater Glasgow & Clyde (largest NHS board in Scotland). Scottish Government digital services. G-Cloud suppliers in the Scottish market.",
     "pricingTable": {
       "headers": [
         "Service Type",
@@ -1203,13 +1210,14 @@ export const cities = [
         "slug": "uk-gdpr-software-development-guide"
       }
     ],
-    "cta": "Service Type Description GBP Pricing Free Consultation Initial scoping and requirements review Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Project Build Bespoke software built for your specific needs £12,000–£200,000+ Monthly Support Post-launch maintenance retainer from £1,500/mo",
-    "author": ""
+    "cta": "Free Custom Software Development Consultation in Glasgow 45 minutes with a senior engineer. Scope your project, get transparent GBP pricing, confirm UK GDPR compliance — free. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Custom Software Development Team — Glasgow"
   },
   {
     "id": "P76",
     "slug": "custom-software-development-liverpool",
     "city": "liverpool",
+    "focus": "",
     "title": "Custom Software Development Liverpool — Bespoke Software",
     "metaTitle": "Custom Software Development Liverpool | ClickMasters UK",
     "metaDesc": "Custom Software Development in Liverpool from ClickMasters. Bespoke software built for your specific needs. £12,000–£200,000+. UK GDPR compliant. IR35-safe. Free consultation for Liverpool businesses.",
@@ -1225,14 +1233,14 @@ export const cities = [
       "⚖️ Zero IR35",
       "⏱️ 8wk Start"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Liverpool and across North West. When off-the-shelf software forces workarounds, custom software gives you full control. ClickMasters builds bespoke software for businesses in Liverpool. Transparent GBP pricing. UK GDPR by design. R&amp;D Tax Credits eligible. Full IP ownership on delivery. Starting from £12,000.",
+    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Liverpool and across North West. When off-the-shelf software forces workarounds, custom software gives you full control. ClickMasters builds bespoke software for businesses in Liverpool. Transparent GBP pricing. UK GDPR by design. R&D Tax Credits eligible. Full IP ownership on delivery. Starting from £12,000.",
     "benefits": [
       "UK GDPR: Article 25 privacy by design on every project. AWS eu-west-2 or Azure UK South for data residency.",
       "Cyber Essentials: 5 controls implemented. Patch management SLA for ongoing maintenance.",
       "IR35: Our engineers are ClickMasters employees — zero IR35 liability for your Liverpool business.",
       "UK GDPR, ICO, Cyber Essentials: Sector-specific compliance built into project architecture."
     ],
-    "ecosystem": "Liverpool's tech sector is growing rapidly, driven by the Liverpool City Region Combined Authority's digital investment programmes, the Baltic Triangle tech cluster, and a strong creative and eCommerce sector. The city benefits from lower operating costs than London and Manchester.\n\nKey organisations: Liverpool City Region digital cluster, Baltic Triangle tech companies, Matalan digital, Princes Foods digital\n\nLiverpool compliance context: Liverpool University Hospitals NHS FT. Mersey and West Lancashire NHS Trust. Liverpool City Council digital programmes. G-Cloud procurement for NHS Cheshire &amp; Merseyside ICS.",
+    "ecosystem": "Liverpool's tech sector is growing rapidly, driven by the Liverpool City Region Combined Authority's digital investment programmes, the Baltic Triangle tech cluster, and a strong creative and eCommerce sector. The city benefits from lower operating costs than London and Manchester.\n\nKey organisations: Liverpool City Region digital cluster, Baltic Triangle tech companies, Matalan digital, Princes Foods digital\n\nLiverpool compliance context: Liverpool University Hospitals NHS FT. Mersey and West Lancashire NHS Trust. Liverpool City Council digital programmes. G-Cloud procurement for NHS Cheshire & Merseyside ICS.",
     "pricingTable": {
       "headers": [
         "Service Type",
@@ -1300,13 +1308,14 @@ export const cities = [
         "slug": "uk-gdpr-software-development-guide"
       }
     ],
-    "cta": "Service Type Description GBP Pricing Free Consultation Initial scoping and requirements review Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Project Build Bespoke software built for your specific needs £12,000–£200,000+ Monthly Support Post-launch maintenance retainer from £1,500/mo",
-    "author": ""
+    "cta": "Free Custom Software Development Consultation in Liverpool 45 minutes with a senior engineer. Scope your project, get transparent GBP pricing, confirm UK GDPR compliance — free. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Custom Software Development Team — Liverpool"
   },
   {
     "id": "P77",
     "slug": "custom-software-development-nottingham",
     "city": "nottingham",
+    "focus": "",
     "title": "Custom Software Development Nottingham — Bespoke Software",
     "metaTitle": "Custom Software Development Nottingham | ClickMasters UK",
     "metaDesc": "Custom Software Development in Nottingham from ClickMasters. Bespoke software built for your specific needs. £12,000–£200,000+. UK GDPR compliant. IR35-safe. Free consultation for Nottingham businesses.",
@@ -1322,14 +1331,14 @@ export const cities = [
       "⚖️ Zero IR35",
       "⏱️ 8wk Start"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Nottingham and across East Midlands. When off-the-shelf software forces workarounds, custom software gives you full control. ClickMasters builds bespoke software for businesses in Nottingham. Transparent GBP pricing. UK GDPR by design. R&amp;D Tax Credits eligible. Full IP ownership on delivery. Starting from £12,000.",
+    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Nottingham and across East Midlands. When off-the-shelf software forces workarounds, custom software gives you full control. ClickMasters builds bespoke software for businesses in Nottingham. Transparent GBP pricing. UK GDPR by design. R&D Tax Credits eligible. Full IP ownership on delivery. Starting from £12,000.",
     "benefits": [
       "UK GDPR: Article 25 privacy by design on every project. AWS eu-west-2 or Azure UK South for data residency.",
       "Cyber Essentials: 5 controls implemented. Patch management SLA for ongoing maintenance.",
       "IR35: Our engineers are ClickMasters employees — zero IR35 liability for your Nottingham business.",
       "UK GDPR, ICO, Cyber Essentials: Sector-specific compliance built into project architecture."
     ],
-    "ecosystem": "Nottingham has a growing digital sector supported by the University of Nottingham, Nottingham Trent University, and the Nottingham Digital Cluster initiative. Particular strength in FinTech (Experian UK HQ), gaming technology, and healthcare technology (NHS Nottingham).\n\nKey organisations: Experian UK HQ, Capita Nottingham, NHS Nottingham, University of Nottingham digital, Vision Express digital\n\nNottingham compliance context: Nottingham University Hospitals NHS Trust. NHS Nottingham &amp; Nottinghamshire ICS. East Midlands NHS Procurement Portal.",
+    "ecosystem": "Nottingham has a growing digital sector supported by the University of Nottingham, Nottingham Trent University, and the Nottingham Digital Cluster initiative. Particular strength in FinTech (Experian UK HQ), gaming technology, and healthcare technology (NHS Nottingham).\n\nKey organisations: Experian UK HQ, Capita Nottingham, NHS Nottingham, University of Nottingham digital, Vision Express digital\n\nNottingham compliance context: Nottingham University Hospitals NHS Trust. NHS Nottingham & Nottinghamshire ICS. East Midlands NHS Procurement Portal.",
     "pricingTable": {
       "headers": [
         "Service Type",
@@ -1397,13 +1406,14 @@ export const cities = [
         "slug": "uk-gdpr-software-development-guide"
       }
     ],
-    "cta": "Service Type Description GBP Pricing Free Consultation Initial scoping and requirements review Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Project Build Bespoke software built for your specific needs £12,000–£200,000+ Monthly Support Post-launch maintenance retainer from £1,500/mo",
-    "author": ""
+    "cta": "Free Custom Software Development Consultation in Nottingham 45 minutes with a senior engineer. Scope your project, get transparent GBP pricing, confirm UK GDPR compliance — free. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Custom Software Development Team — Nottingham"
   },
   {
     "id": "P78",
     "slug": "custom-software-development-sheffield",
     "city": "sheffield",
+    "focus": "",
     "title": "Custom Software Development Sheffield — Bespoke Software",
     "metaTitle": "Custom Software Development Sheffield | ClickMasters UK",
     "metaDesc": "Custom Software Development in Sheffield from ClickMasters. Bespoke software built for your specific needs. £12,000–£200,000+. UK GDPR compliant. IR35-safe. Free consultation for Sheffield businesses.",
@@ -1419,7 +1429,7 @@ export const cities = [
       "⚖️ Zero IR35",
       "⏱️ 8wk Start"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Sheffield and across Yorkshire. When off-the-shelf software forces workarounds, custom software gives you full control. ClickMasters builds bespoke software for businesses in Sheffield. Transparent GBP pricing. UK GDPR by design. R&amp;D Tax Credits eligible. Full IP ownership on delivery. Starting from £12,000.",
+    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Sheffield and across Yorkshire. When off-the-shelf software forces workarounds, custom software gives you full control. ClickMasters builds bespoke software for businesses in Sheffield. Transparent GBP pricing. UK GDPR by design. R&D Tax Credits eligible. Full IP ownership on delivery. Starting from £12,000.",
     "benefits": [
       "UK GDPR: Article 25 privacy by design on every project. AWS eu-west-2 or Azure UK South for data residency.",
       "Cyber Essentials: 5 controls implemented. Patch management SLA for ongoing maintenance.",
@@ -1494,13 +1504,14 @@ export const cities = [
         "slug": "uk-gdpr-software-development-guide"
       }
     ],
-    "cta": "Service Type Description GBP Pricing Free Consultation Initial scoping and requirements review Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Project Build Bespoke software built for your specific needs £12,000–£200,000+ Monthly Support Post-launch maintenance retainer from £1,500/mo",
-    "author": ""
+    "cta": "Free Custom Software Development Consultation in Sheffield 45 minutes with a senior engineer. Scope your project, get transparent GBP pricing, confirm UK GDPR compliance — free. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Custom Software Development Team — Sheffield"
   },
   {
     "id": "P79",
     "slug": "custom-software-development-cardiff",
     "city": "cardiff",
+    "focus": "",
     "title": "Custom Software Development Cardiff — Bespoke Software",
     "metaTitle": "Custom Software Development Cardiff | ClickMasters UK",
     "metaDesc": "Custom Software Development in Cardiff from ClickMasters. Bespoke software built for your specific needs. £12,000–£200,000+. UK GDPR compliant. IR35-safe. Free consultation for Cardiff businesses.",
@@ -1516,14 +1527,14 @@ export const cities = [
       "⚖️ Zero IR35",
       "⏱️ 8wk Start"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Cardiff and across Wales. When off-the-shelf software forces workarounds, custom software gives you full control. ClickMasters builds bespoke software for businesses in Cardiff. Transparent GBP pricing. UK GDPR by design. R&amp;D Tax Credits eligible. Full IP ownership on delivery. Starting from £12,000.",
+    "directAnswer": "ClickMasters provides Custom Software Development services to businesses in Cardiff and across Wales. When off-the-shelf software forces workarounds, custom software gives you full control. ClickMasters builds bespoke software for businesses in Cardiff. Transparent GBP pricing. UK GDPR by design. R&D Tax Credits eligible. Full IP ownership on delivery. Starting from £12,000.",
     "benefits": [
       "UK GDPR: Article 25 privacy by design on every project. AWS eu-west-2 or Azure UK South for data residency.",
       "Cyber Essentials: 5 controls implemented. Patch management SLA for ongoing maintenance.",
       "IR35: Our engineers are ClickMasters employees — zero IR35 liability for your Cardiff business.",
       "UK GDPR, ICO, Cyber Essentials: Sector-specific compliance built into project architecture."
     ],
-    "ecosystem": "Cardiff is the capital of Wales and has a growing technology sector supported by Cardiff University, the Welsh Government's Tech sector support programmes, and a significant digital media cluster (BBC Wales, S4C). The city offers notably lower operating costs than English cities of equivalent tech maturity.\n\nKey organisations: BBC Wales Cardiff, Admiral Group digital, Legal &amp; General Cardiff, WNS Wales, Tramshed Tech cluster\n\nCardiff compliance context: Cardiff and Vale University Health Board (NHS Wales). Welsh NHS digital standards. Welsh Government ICT procurement. Cyber Essentials mandatory for Welsh public sector suppliers.",
+    "ecosystem": "Cardiff is the capital of Wales and has a growing technology sector supported by Cardiff University, the Welsh Government's Tech sector support programmes, and a significant digital media cluster (BBC Wales, S4C). The city offers notably lower operating costs than English cities of equivalent tech maturity.\n\nKey organisations: BBC Wales Cardiff, Admiral Group digital, Legal & General Cardiff, WNS Wales, Tramshed Tech cluster\n\nCardiff compliance context: Cardiff and Vale University Health Board (NHS Wales). Welsh NHS digital standards. Welsh Government ICT procurement. Cyber Essentials mandatory for Welsh public sector suppliers.",
     "pricingTable": {
       "headers": [
         "Service Type",
@@ -1591,13 +1602,14 @@ export const cities = [
         "slug": "uk-gdpr-software-development-guide"
       }
     ],
-    "cta": "Service Type Description GBP Pricing Free Consultation Initial scoping and requirements review Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Project Build Bespoke software built for your specific needs £12,000–£200,000+ Monthly Support Post-launch maintenance retainer from £1,500/mo",
-    "author": ""
+    "cta": "Free Custom Software Development Consultation in Cardiff 45 minutes with a senior engineer. Scope your project, get transparent GBP pricing, confirm UK GDPR compliance — free. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Custom Software Development Team — Cardiff"
   },
   {
     "id": "P195",
     "slug": "custom-software-development-berlin",
     "city": "berlin",
+    "focus": "",
     "title": "Custom Software Development Berlin — UK Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Berlin | UK Agency Serving Europe | ClickMasters",
     "metaDesc": "ClickMasters provides Custom Software Development for Berlin-based businesses. UK-based team, EU GDPR dual compliance, GBP/EUR pricing. Free consultation.",
@@ -1619,7 +1631,7 @@ export const cities = [
       "Dual UK GDPR + EU GDPR compliance architecture as standard — critical for businesses with UK and EU customers.",
       "EUR (€) invoicing available. GBP or EUR. No currency risk hidden in rates.",
       "Zero IR35 risk — our engineers are ClickMasters employees. No complex contractor law in either jurisdiction.",
-      "R&amp;D Tax Credits: UK businesses commissioning development can still claim HMRC R&amp;D Tax Credits even for EU market products — qualifying work is in the UK.",
+      "R&D Tax Credits: UK businesses commissioning development can still claim HMRC R&D Tax Credits even for EU market products — qualifying work is in the UK.",
       "Transparent GBP pricing published — £12,000–£200,000+ starting price for Custom Software Development."
     ],
     "ecosystem": "Berlin is Germany's tech capital and one of Europe's most innovative startup ecosystems — home to Zalando, HelloFresh, Delivery Hero, and N26. Germany's industrial heritage drives significant demand for manufacturing software (Industrie 4.0), automotive technology, and B2B enterprise software. Germany is the UK's largest European trading partner.\n\nKey organisations: Zalando, HelloFresh, Delivery Hero, N26, Personio, Flixbus, AUTO1 Group, SAP (Walldorf nearby)\n\nBerlin regulatory context: EU GDPR — German Federal Commissioner for Data Protection (BfDI) plus 16 state-level DPAs. Germany has historically strict privacy culture — cookie consent requirements go beyond baseline GDPR. Bundesdatenschutzgesetz (BDSG) adds German-specific requirements. Employment law is significantly more protective than UK.\n\nUK GDPR / EU GDPR dual compliance note: EU GDPR + BDSG. Germany has multiple supervisory authorities — the relevant DPA depends on where the controller's establishment is. German courts have been particularly active on cookie consent. Consider German-language privacy notices and explicit German GDPR documentation.",
@@ -1659,12 +1671,13 @@ export const cities = [
       }
     ],
     "cta": "Service Description Starting Price (GBP) Starting Price (EUR) Free Consultation Initial scoping call Free Free Custom Software Development Full Custom Software Development with EU GDPR compliance £12,000–£200,000+ €12,000–£200,000+ Technical Discovery Spec + fixed-price proposal £3,500–£8,000 €4,000–€9,200 Monthly Support Post-launch maintenance retainer from £1,500/mo from €1,700/mo",
-    "author": ""
+    "author": "ClickMasters EU Delivery Team"
   },
   {
     "id": "P196",
     "slug": "custom-software-development-paris",
     "city": "paris",
+    "focus": "",
     "title": "Custom Software Development Paris — UK Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Paris | UK Agency Serving Europe | ClickMasters",
     "metaDesc": "ClickMasters provides Custom Software Development for Paris-based businesses. UK-based team, EU GDPR dual compliance, GBP/EUR pricing. Free consultation.",
@@ -1686,7 +1699,7 @@ export const cities = [
       "Dual UK GDPR + EU GDPR compliance architecture as standard — critical for businesses with UK and EU customers.",
       "EUR (€) invoicing available. GBP or EUR. No currency risk hidden in rates.",
       "Zero IR35 risk — our engineers are ClickMasters employees. No complex contractor law in either jurisdiction.",
-      "R&amp;D Tax Credits: UK businesses commissioning development can still claim HMRC R&amp;D Tax Credits even for EU market products — qualifying work is in the UK.",
+      "R&D Tax Credits: UK businesses commissioning development can still claim HMRC R&D Tax Credits even for EU market products — qualifying work is in the UK.",
       "Transparent GBP pricing published — £12,000–£200,000+ starting price for Custom Software Development."
     ],
     "ecosystem": "Paris is France's technology hub and the fourth-largest European tech ecosystem. The Station F startup campus, BPI France funding programmes, and La French Tech initiative have driven significant growth. Particular strength in luxury tech, retail technology, and enterprise software.\n\nKey organisations: Doctolib, Blablacar, Criteo, Deezer, Veolia Digital, Capgemini, Atos, Thales Digital\n\nParis regulatory context: EU GDPR — CNIL (Commission Nationale de l'Informatique et des Libertés) is France's data protection authority. French ePrivacy law (Loi Informatique et Libertés) adds specific requirements. French government digital services have unique requirements (DNUM, ANSSI cybersecurity agency).\n\nUK GDPR / EU GDPR dual compliance note: EU GDPR + French Loi Informatique et Libertés. CNIL is one of Europe's most active data protection enforcers — known for Google, Apple, and LinkedIn enforcement actions. French cookie consent requirements require affirmative consent for non-essential cookies.",
@@ -1726,12 +1739,13 @@ export const cities = [
       }
     ],
     "cta": "Service Description Starting Price (GBP) Starting Price (EUR) Free Consultation Initial scoping call Free Free Custom Software Development Full Custom Software Development with EU GDPR compliance £12,000–£200,000+ €12,000–£200,000+ Technical Discovery Spec + fixed-price proposal £3,500–£8,000 €4,000–€9,200 Monthly Support Post-launch maintenance retainer from £1,500/mo from €1,700/mo",
-    "author": ""
+    "author": "ClickMasters EU Delivery Team"
   },
   {
     "id": "P310",
     "slug": "custom-software-development-southampton",
     "city": "southampton",
+    "focus": "",
     "title": "Custom Software Development Southampton — UK-Based, IR35-Safe, Transparent Pricing",
     "metaTitle": "Custom Software Development Southampton | ClickMasters UK",
     "metaDesc": "Custom Software Development in Southampton. £12,000–£200,000+. UK GDPR. IR35-safe. Free consultation.",
@@ -1752,7 +1766,7 @@ export const cities = [
       "Transparent GBP pricing — £12,000–£200,000+ — published upfront, unlike most UK agencies.",
       "UK GDPR Article 25 privacy by design on every project. AWS eu-west-2 or Azure UK South.",
       "Zero IR35 liability — our engineers are our employees. One monthly invoice.",
-      "R&amp;D Tax Credits documented as standard — up to 27% of qualifying spend returned.",
+      "R&D Tax Credits documented as standard — up to 27% of qualifying spend returned.",
       "Full IP ownership transferred to you on delivery."
     ],
     "ecosystem": "Southampton has a growing technology sector anchored by the University of Southampton (strong computer science and electronics), a significant maritime technology cluster, and proximity to London (1 hour by rail). The city has particular strength in maritime tech, aerospace (BAE Systems), and increasingly in financial services technology.\n\nTop sectors: Maritime Tech, Aerospace Software, FinTech, University Spinouts\n\nWhy Southampton Businesses Choose ClickMasters",
@@ -1792,12 +1806,13 @@ export const cities = [
       }
     ],
     "cta": "Service Description Starting Price Free Consultation Initial scoping and requirements Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Custom Software Development Full build with UK GDPR compliance £12,000–£200,000+ Monthly Support Post-launch maintenance retainer from £1,500/mo",
-    "author": ""
+    "author": "ClickMasters Southampton Team"
   },
   {
     "id": "P313",
     "slug": "custom-software-development-brighton",
     "city": "brighton",
+    "focus": "",
     "title": "Custom Software Development Brighton — UK-Based, IR35-Safe, Transparent Pricing",
     "metaTitle": "Custom Software Development Brighton | ClickMasters UK",
     "metaDesc": "Custom Software Development in Brighton. £12,000–£200,000+. UK GDPR. IR35-safe. Free consultation.",
@@ -1818,7 +1833,7 @@ export const cities = [
       "Transparent GBP pricing — £12,000–£200,000+ — published upfront, unlike most UK agencies.",
       "UK GDPR Article 25 privacy by design on every project. AWS eu-west-2 or Azure UK South.",
       "Zero IR35 liability — our engineers are our employees. One monthly invoice.",
-      "R&amp;D Tax Credits documented as standard — up to 27% of qualifying spend returned.",
+      "R&D Tax Credits documented as standard — up to 27% of qualifying spend returned.",
       "Full IP ownership transferred to you on delivery."
     ],
     "ecosystem": "Brighton (and Hove) is one of the UK's most vibrant independent tech ecosystems — with a disproportionate number of startups, digital agencies, and creative technology businesses per capita. Strong in eCommerce, digital marketing technology, and creative tech. Proximity to London (50 mins by train) enables London client work while maintaining lower operating costs.\n\nTop sectors: eCommerce, Creative Tech, Digital Agency, EdTech\n\nWhy Brighton Businesses Choose ClickMasters",
@@ -1858,12 +1873,13 @@ export const cities = [
       }
     ],
     "cta": "Service Description Starting Price Free Consultation Initial scoping and requirements Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Custom Software Development Full build with UK GDPR compliance £12,000–£200,000+ Monthly Support Post-launch maintenance retainer from £1,500/mo",
-    "author": ""
+    "author": "ClickMasters Brighton Team"
   },
   {
     "id": "P316",
     "slug": "custom-software-development-leicester",
     "city": "leicester",
+    "focus": "",
     "title": "Custom Software Development Leicester — UK-Based, IR35-Safe, Transparent Pricing",
     "metaTitle": "Custom Software Development Leicester | ClickMasters UK",
     "metaDesc": "Custom Software Development in Leicester. £12,000–£200,000+. UK GDPR. IR35-safe. Free consultation.",
@@ -1884,7 +1900,7 @@ export const cities = [
       "Transparent GBP pricing — £12,000–£200,000+ — published upfront, unlike most UK agencies.",
       "UK GDPR Article 25 privacy by design on every project. AWS eu-west-2 or Azure UK South.",
       "Zero IR35 liability — our engineers are our employees. One monthly invoice.",
-      "R&amp;D Tax Credits documented as standard — up to 27% of qualifying spend returned.",
+      "R&D Tax Credits documented as standard — up to 27% of qualifying spend returned.",
       "Full IP ownership transferred to you on delivery."
     ],
     "ecosystem": "Leicester has a growing technology sector supported by De Montfort University and the University of Leicester. The city has significant textile and manufacturing heritage creating strong demand for industry 4.0 and supply chain technology. Leicester's diverse business community creates demand across multiple verticals.\n\nTop sectors: Manufacturing Tech, Supply Chain, eCommerce, HealthTech\n\nWhy Leicester Businesses Choose ClickMasters",
@@ -1924,12 +1940,13 @@ export const cities = [
       }
     ],
     "cta": "Service Description Starting Price Free Consultation Initial scoping and requirements Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Custom Software Development Full build with UK GDPR compliance £12,000–£200,000+ Monthly Support Post-launch maintenance retainer from £1,500/mo",
-    "author": ""
+    "author": "ClickMasters Leicester Team"
   },
   {
     "id": "P319",
     "slug": "custom-software-development-coventry",
     "city": "coventry",
+    "focus": "",
     "title": "Custom Software Development Coventry — UK-Based, IR35-Safe, Transparent Pricing",
     "metaTitle": "Custom Software Development Coventry | ClickMasters UK",
     "metaDesc": "Custom Software Development in Coventry. £12,000–£200,000+. UK GDPR. IR35-safe. Free consultation.",
@@ -1950,7 +1967,7 @@ export const cities = [
       "Transparent GBP pricing — £12,000–£200,000+ — published upfront, unlike most UK agencies.",
       "UK GDPR Article 25 privacy by design on every project. AWS eu-west-2 or Azure UK South.",
       "Zero IR35 liability — our engineers are our employees. One monthly invoice.",
-      "R&amp;D Tax Credits documented as standard — up to 27% of qualifying spend returned.",
+      "R&D Tax Credits documented as standard — up to 27% of qualifying spend returned.",
       "Full IP ownership transferred to you on delivery."
     ],
     "ecosystem": "Coventry — UK City of Culture 2021 — has a growing technology sector underpinned by Coventry University and Warwick University. Particular strength in automotive technology (Jaguar Land Rover, MIRA Technology Park), advanced manufacturing, and increasingly in mobility tech and autonomous vehicles.\n\nTop sectors: Automotive Tech, Manufacturing, Mobility Tech, EdTech\n\nWhy Coventry Businesses Choose ClickMasters",
@@ -1990,12 +2007,13 @@ export const cities = [
       }
     ],
     "cta": "Service Description Starting Price Free Consultation Initial scoping and requirements Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Custom Software Development Full build with UK GDPR compliance £12,000–£200,000+ Monthly Support Post-launch maintenance retainer from £1,500/mo",
-    "author": ""
+    "author": "ClickMasters Coventry Team"
   },
   {
     "id": "P363",
     "slug": "custom-software-development-exeter",
     "city": "exeter",
+    "focus": "",
     "title": "Custom Software Development Exeter — UK-Based, IR35-Safe, Transparent Pricing",
     "metaTitle": "Custom Software Development Exeter | ClickMasters UK",
     "metaDesc": "Custom Software Development in Exeter. £12,000–£200,000+. UK GDPR. IR35-safe. Free consultation.",
@@ -2016,7 +2034,7 @@ export const cities = [
       "Transparent GBP pricing — £12,000–£200,000+ — published upfront.",
       "UK GDPR Article 25 privacy by design. AWS eu-west-2 or Azure UK South.",
       "Zero IR35 liability — our engineers are ClickMasters employees.",
-      "R&amp;D Tax Credits documented — up to 27% of qualifying spend returned.",
+      "R&D Tax Credits documented — up to 27% of qualifying spend returned.",
       "Full IP ownership transferred on delivery."
     ],
     "ecosystem": "Exeter has a growing technology sector supported by the University of Exeter (strong computer science and business school) and the Met Office (one of the world's leading climate and weather science organisations). The city has a thriving independent tech and digital agency scene, with particular strength in tourism technology, public sector digital, and environmental science software.\n\nTop sectors: Environmental Tech, Tourism Tech, Public Sector, University Spinouts\n\nWhy Exeter Businesses Choose ClickMasters",
@@ -2048,12 +2066,13 @@ export const cities = [
       }
     ],
     "cta": "Service Description Starting Price Free Consultation Initial scoping Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Custom Software Development Full build with UK GDPR compliance £12,000–£200,000+ Monthly Support Post-launch maintenance from £1,500/mo",
-    "author": ""
+    "author": "ClickMasters Exeter Team"
   },
   {
     "id": "P366",
     "slug": "custom-software-development-york",
     "city": "york",
+    "focus": "",
     "title": "Custom Software Development York — UK-Based, IR35-Safe, Transparent Pricing",
     "metaTitle": "Custom Software Development York | ClickMasters UK",
     "metaDesc": "Custom Software Development in York. £12,000–£200,000+. UK GDPR. IR35-safe. Free consultation.",
@@ -2074,7 +2093,7 @@ export const cities = [
       "Transparent GBP pricing — £12,000–£200,000+ — published upfront.",
       "UK GDPR Article 25 privacy by design. AWS eu-west-2 or Azure UK South.",
       "Zero IR35 liability — our engineers are ClickMasters employees.",
-      "R&amp;D Tax Credits documented — up to 27% of qualifying spend returned.",
+      "R&D Tax Credits documented — up to 27% of qualifying spend returned.",
       "Full IP ownership transferred on delivery."
     ],
     "ecosystem": "York is a historic city with a modern technology sector anchored by the University of York (particularly strong in computer science and AI) and a growing cluster of technology businesses. The city benefits from proximity to Leeds (30 minutes by train) while maintaining lower operating costs and a high quality of life that attracts senior tech talent.\n\nTop sectors: FinTech, Public Sector, EdTech, Creative Tech\n\nWhy York Businesses Choose ClickMasters",
@@ -2106,12 +2125,13 @@ export const cities = [
       }
     ],
     "cta": "Service Description Starting Price Free Consultation Initial scoping Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Custom Software Development Full build with UK GDPR compliance £12,000–£200,000+ Monthly Support Post-launch maintenance from £1,500/mo",
-    "author": ""
+    "author": "ClickMasters York Team"
   },
   {
     "id": "P369",
     "slug": "custom-software-development-derby",
     "city": "derby",
+    "focus": "",
     "title": "Custom Software Development Derby — UK-Based, IR35-Safe, Transparent Pricing",
     "metaTitle": "Custom Software Development Derby | ClickMasters UK",
     "metaDesc": "Custom Software Development in Derby. £12,000–£200,000+. UK GDPR. IR35-safe. Free consultation.",
@@ -2132,7 +2152,7 @@ export const cities = [
       "Transparent GBP pricing — £12,000–£200,000+ — published upfront.",
       "UK GDPR Article 25 privacy by design. AWS eu-west-2 or Azure UK South.",
       "Zero IR35 liability — our engineers are ClickMasters employees.",
-      "R&amp;D Tax Credits documented — up to 27% of qualifying spend returned.",
+      "R&D Tax Credits documented — up to 27% of qualifying spend returned.",
       "Full IP ownership transferred on delivery."
     ],
     "ecosystem": "Derby is a major engineering and manufacturing hub with significant demand for industrial software, supply chain technology, and automation systems. Home to Rolls-Royce Defence (one of the UK's most sophisticated engineering organisations), the city has a strong industrial software ecosystem and a growing digital sector.\n\nTop sectors: Manufacturing Tech, Aerospace Software, Supply Chain, Engineering Systems\n\nWhy Derby Businesses Choose ClickMasters",
@@ -2164,12 +2184,13 @@ export const cities = [
       }
     ],
     "cta": "Service Description Starting Price Free Consultation Initial scoping Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Custom Software Development Full build with UK GDPR compliance £12,000–£200,000+ Monthly Support Post-launch maintenance from £1,500/mo",
-    "author": ""
+    "author": "ClickMasters Derby Team"
   },
   {
     "id": "P372",
     "slug": "custom-software-development-hull",
     "city": "hull",
+    "focus": "",
     "title": "Custom Software Development Hull — UK-Based, IR35-Safe, Transparent Pricing",
     "metaTitle": "Custom Software Development Hull | ClickMasters UK",
     "metaDesc": "Custom Software Development in Hull. £12,000–£200,000+. UK GDPR. IR35-safe. Free consultation.",
@@ -2185,12 +2206,12 @@ export const cities = [
       "⚖️ Zero IR35",
       "📋 Fixed Price"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development for businesses in Hull and Yorkshire &amp; Humber. Transparent GBP pricing from £12,000. UK GDPR Article 25 built in. Zero IR35 risk — our engineers are ClickMasters employees.",
+    "directAnswer": "ClickMasters provides Custom Software Development for businesses in Hull and Yorkshire & Humber. Transparent GBP pricing from £12,000. UK GDPR Article 25 built in. Zero IR35 risk — our engineers are ClickMasters employees.",
     "benefits": [
       "Transparent GBP pricing — £12,000–£200,000+ — published upfront.",
       "UK GDPR Article 25 privacy by design. AWS eu-west-2 or Azure UK South.",
       "Zero IR35 liability — our engineers are ClickMasters employees.",
-      "R&amp;D Tax Credits documented — up to 27% of qualifying spend returned.",
+      "R&D Tax Credits documented — up to 27% of qualifying spend returned.",
       "Full IP ownership transferred on delivery."
     ],
     "ecosystem": "Kingston upon Hull has a growing technology sector supported by the University of Hull and Humber Enterprise Partnership digital investment. The city has particular strength in renewable energy technology (Siemens Gamesa offshore wind turbine manufacturing is nearby), logistics technology, and public sector digital. Hull became UK City of Culture in 2017, driving cultural tech investment.\n\nTop sectors: Renewable Energy Tech, Logistics Software, Public Sector, eCommerce\n\nWhy Hull Businesses Choose ClickMasters",
@@ -2222,12 +2243,13 @@ export const cities = [
       }
     ],
     "cta": "Service Description Starting Price Free Consultation Initial scoping Free Technical Discovery Spec + fixed-price proposal £3,500–£8,000 Custom Software Development Full build with UK GDPR compliance £12,000–£200,000+ Monthly Support Post-launch maintenance from £1,500/mo",
-    "author": ""
+    "author": "ClickMasters Hull Team"
   },
   {
     "id": "P611",
     "slug": "custom-software-development-barcelona",
     "city": "barcelona",
+    "focus": "",
     "title": "Custom Software Development Barcelona — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Barcelona | UK Agency | ClickMasters",
     "metaDesc": "Custom software development for Barcelona businesses. EU GDPR. UK-based team.",
@@ -2270,12 +2292,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Barcelona EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P612",
     "slug": "custom-software-development-bratislava",
     "city": "bratislava",
+    "focus": "",
     "title": "Custom Software Development Bratislava — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Bratislava | UK Agency | ClickMasters",
     "metaDesc": "Custom software development for Bratislava businesses. EU GDPR. UK-based team.",
@@ -2318,12 +2341,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Bratislava EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P624",
     "slug": "custom-software-development-milan",
     "city": "milan",
+    "focus": "",
     "title": "Custom Software Development Milan — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Milan | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Milan businesses. EU GDPR. UK-based team.",
@@ -2366,12 +2390,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Milan EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P625",
     "slug": "custom-software-development-brussels",
     "city": "brussels",
+    "focus": "",
     "title": "Custom Software Development Brussels — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Brussels | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Brussels businesses. EU GDPR. UK-based team.",
@@ -2414,12 +2439,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Brussels EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P639",
     "slug": "custom-software-development-bucharest",
     "city": "bucharest",
+    "focus": "",
     "title": "Custom Software Development Bucharest — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Bucharest | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Bucharest. EU GDPR. UK-based.",
@@ -2462,12 +2488,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Bucharest EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P640",
     "slug": "custom-software-development-ljubljana",
     "city": "ljubljana",
+    "focus": "",
     "title": "Custom Software Development Ljubljana — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Ljubljana | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Ljubljana. EU GDPR. UK-based.",
@@ -2510,12 +2537,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Ljubljana EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P654",
     "slug": "custom-software-development-belgrade",
     "city": "belgrade",
+    "focus": "",
     "title": "Custom Software Development Belgrade — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Belgrade | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Belgrade. EU GDPR. UK-based.",
@@ -2558,12 +2586,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Belgrade EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P655",
     "slug": "custom-software-development-skopje",
     "city": "skopje",
+    "focus": "",
     "title": "Custom Software Development Skopje — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Skopje | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Skopje. EU GDPR. UK-based.",
@@ -2606,12 +2635,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Skopje EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P669",
     "slug": "custom-software-development-sofia",
     "city": "sofia",
+    "focus": "",
     "title": "Custom Software Development Sofia — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Sofia | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Sofia. EU GDPR. UK-based.",
@@ -2629,7 +2659,7 @@ export const cities = [
     ],
     "directAnswer": "ClickMasters serves Sofia and Bulgaria with EU GDPR compliance. Bulgarian CPDP requirements satisfied. EUR invoicing available.",
     "benefits": [],
-    "ecosystem": "Sofia is Bulgaria's capital and one of Eastern Europe's most significant technology hubs. Bulgaria has very competitive rates, strong engineering universities (Technical University of Sofia, Sofia University), and a growing nearshore development sector for Western European clients. Sofia is particularly strong in embedded systems, telecommunications technology, and enterprise software.\n\nKey organisations: VMware Sofia (largest VMware R&amp;D centre outside the US), Progress Software (Bulgarian origin), Chaos Group (3D rendering software), Telerik (acquired by Progress), Sofia Tech Park, Limelight Networks\n\nEU GDPR — Bulgarian DPA (Commission for Personal Data Protection, CPDP) enforces GDPR. Bulgaria is EU — UK GDPR transfers to Bulgaria require an IDTA unless Bulgaria gets UK adequacy designation. Bulgaria's GDPR compliance infrastructure is developing. For UK businesses: IDTA recommended for personal data transfers to Bulgarian processors.",
+    "ecosystem": "Sofia is Bulgaria's capital and one of Eastern Europe's most significant technology hubs. Bulgaria has very competitive rates, strong engineering universities (Technical University of Sofia, Sofia University), and a growing nearshore development sector for Western European clients. Sofia is particularly strong in embedded systems, telecommunications technology, and enterprise software.\n\nKey organisations: VMware Sofia (largest VMware R&D centre outside the US), Progress Software (Bulgarian origin), Chaos Group (3D rendering software), Telerik (acquired by Progress), Sofia Tech Park, Limelight Networks\n\nEU GDPR — Bulgarian DPA (Commission for Personal Data Protection, CPDP) enforces GDPR. Bulgaria is EU — UK GDPR transfers to Bulgaria require an IDTA unless Bulgaria gets UK adequacy designation. Bulgaria's GDPR compliance infrastructure is developing. For UK businesses: IDTA recommended for personal data transfers to Bulgarian processors.",
     "pricingTable": null,
     "complianceTable": null,
     "processSteps": [],
@@ -2654,12 +2684,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Sofia EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P670",
     "slug": "custom-software-development-zagreb",
     "city": "zagreb",
+    "focus": "",
     "title": "Custom Software Development Zagreb — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Zagreb | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Zagreb. EU GDPR. UK-based.",
@@ -2702,12 +2733,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Zagreb EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P684",
     "slug": "custom-software-development-vilnius",
     "city": "vilnius",
+    "focus": "",
     "title": "Custom Software Development Vilnius — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Vilnius | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Vilnius. EU GDPR. UK-based.",
@@ -2750,12 +2782,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Vilnius EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P685",
     "slug": "custom-software-development-riga",
     "city": "riga",
+    "focus": "",
     "title": "Custom Software Development Riga — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Riga | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Riga. EU GDPR. UK-based.",
@@ -2798,12 +2831,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Riga EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P699",
     "slug": "custom-software-development-krakow",
     "city": "krakow",
+    "focus": "",
     "title": "Custom Software Development Krakow — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Krakow | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Krakow. EU GDPR. UK-based.",
@@ -2846,12 +2880,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Krakow EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P700",
-    "slug": "custom-software-development-helsinki finland",
-    "city": "helsinki finland",
+    "slug": "custom-software-development-helsinki-finland",
+    "city": "helsinki-finland",
+    "focus": "",
     "title": "Custom Software Development Helsinki (Finland) — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Helsinki (Finland) | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Helsinki (Finland). EU GDPR. UK-based.",
@@ -2894,12 +2929,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Helsinki (Finland) EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P714",
     "slug": "custom-software-development-budapest",
     "city": "budapest",
+    "focus": "",
     "title": "Custom Software Development Budapest — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Budapest | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Budapest. EU GDPR. UK-based.",
@@ -2917,7 +2953,7 @@ export const cities = [
     ],
     "directAnswer": "ClickMasters serves Budapest and Hungary with EU GDPR compliance. Hungarian NAIH (Nemzeti Adatvedelmi es Informacioszabadsag Hatosag) requirements satisfied. EUR invoicing available.",
     "benefits": [],
-    "ecosystem": "Budapest is Hungary's capital and a significant Central European technology hub. Hungary is an EU member — UK GDPR transfers covered by UK-EU adequacy. Budapest has a strong technology ecosystem with particular strength in enterprise software, cybersecurity, and financial technology. Budapest is notable for its international community and high English proficiency at the professional level.\n\nKey organisations: Prezi HQ (presentation software unicorn), LogMeIn Budapest, Ericsson Budapest R&amp;D, Siemens Digital Industries Budapest, Tresorit (encrypted cloud storage), EPAM Systems Budapest, KPMG Tech Budapest\n\nEU GDPR — Hungarian DPA (Nemzeti Adatvedelmi es Informacioszabadsag Hatosag, NAIH) enforces GDPR. Hungary is EU — UK GDPR transfers covered by UK-EU adequacy decision. Hungarian data protection law has national additions. Budapest has a growing awareness of GDPR compliance obligations.",
+    "ecosystem": "Budapest is Hungary's capital and a significant Central European technology hub. Hungary is an EU member — UK GDPR transfers covered by UK-EU adequacy. Budapest has a strong technology ecosystem with particular strength in enterprise software, cybersecurity, and financial technology. Budapest is notable for its international community and high English proficiency at the professional level.\n\nKey organisations: Prezi HQ (presentation software unicorn), LogMeIn Budapest, Ericsson Budapest R&D, Siemens Digital Industries Budapest, Tresorit (encrypted cloud storage), EPAM Systems Budapest, KPMG Tech Budapest\n\nEU GDPR — Hungarian DPA (Nemzeti Adatvedelmi es Informacioszabadsag Hatosag, NAIH) enforces GDPR. Hungary is EU — UK GDPR transfers covered by UK-EU adequacy decision. Hungarian data protection law has national additions. Budapest has a growing awareness of GDPR compliance obligations.",
     "pricingTable": null,
     "complianceTable": null,
     "processSteps": [],
@@ -2942,12 +2978,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Budapest EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P715",
-    "slug": "custom-software-development-tallinn saas",
-    "city": "tallinn saas",
+    "slug": "custom-software-development-tallinn",
+    "city": "tallinn",
+    "focus": "saas",
     "title": "Custom Software Development Tallinn (SaaS) — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Tallinn (SaaS) | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Tallinn (SaaS). EU GDPR. UK-based.",
@@ -2990,12 +3027,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Tallinn (SaaS) EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P729",
     "slug": "custom-software-development-cluj-napoca",
-    "city": "cluj napoca",
+    "city": "cluj-napoca",
+    "focus": "",
     "title": "Custom Software Development Cluj-Napoca — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Cluj-Napoca | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Cluj-Napoca. EU GDPR. UK-based.",
@@ -3013,7 +3051,7 @@ export const cities = [
     ],
     "directAnswer": "ClickMasters serves Cluj-Napoca and Romania with EU GDPR compliance. Romanian ANSPDCP requirements satisfied. EUR invoicing available.",
     "benefits": [],
-    "ecosystem": "Cluj-Napoca (Cluj) is Romania's second largest city and one of Europe's fastest-growing technology hubs — the \"Silicon Valley of Romania.\" Cluj has exceptional engineering universities (Babes-Bolyai University, Technical University of Cluj-Napoca) and a thriving startup and nearshore ecosystem. Cluj-based technology companies include major development centres for global technology companies.\n\nKey organisations: Betfair (UK FinTech/GamblingTech) Romania R&amp;D, Endava (UK-listed IT services) Cluj, Bosch Cluj Engineering, Cognizant Cluj, Tema Energy, Cluj IT Cluster (100+ member companies), Fortech\n\nEU GDPR — Romanian DPA (ANSPDCP) enforces GDPR. Cluj is EU — UK GDPR transfers to Cluj covered by UK-EU adequacy. Cluj has a maturing GDPR compliance culture driven by proximity to UK clients. Cluj-Napoca is particularly strong for UK client relationships due to significant UK investment in the city.",
+    "ecosystem": "Cluj-Napoca (Cluj) is Romania's second largest city and one of Europe's fastest-growing technology hubs — the \"Silicon Valley of Romania.\" Cluj has exceptional engineering universities (Babes-Bolyai University, Technical University of Cluj-Napoca) and a thriving startup and nearshore ecosystem. Cluj-based technology companies include major development centres for global technology companies.\n\nKey organisations: Betfair (UK FinTech/GamblingTech) Romania R&D, Endava (UK-listed IT services) Cluj, Bosch Cluj Engineering, Cognizant Cluj, Tema Energy, Cluj IT Cluster (100+ member companies), Fortech\n\nEU GDPR — Romanian DPA (ANSPDCP) enforces GDPR. Cluj is EU — UK GDPR transfers to Cluj covered by UK-EU adequacy. Cluj has a maturing GDPR compliance culture driven by proximity to UK clients. Cluj-Napoca is particularly strong for UK client relationships due to significant UK investment in the city.",
     "pricingTable": null,
     "complianceTable": null,
     "processSteps": [],
@@ -3038,12 +3076,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Cluj-Napoca EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P730",
     "slug": "custom-software-development-porto",
     "city": "porto",
+    "focus": "",
     "title": "Custom Software Development Porto — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Porto | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Porto. EU GDPR. UK-based.",
@@ -3061,7 +3100,7 @@ export const cities = [
     ],
     "directAnswer": "ClickMasters serves Porto and Portugal with EU GDPR compliance. Portuguese CNPD (Comissao Nacional de Protecao de Dados) requirements satisfied. EUR invoicing available.",
     "benefits": [],
-    "ecosystem": "Porto is Portugal's second largest city and a rapidly growing technology hub — known as Portugal's Silicon Valley. Porto has strong engineering universities (University of Porto, FEUP), an active startup ecosystem, and increasing investment from international technology companies. Porto has particular strength in enterprise software, FinTech, and R&amp;D technology.\n\nKey organisations: Critical TechWorks (BMW and Critical Software JV, Porto), Farfetch Porto (global fashion eCommerce), Prozis (eCommerce), NOS Innovation, Blip.pt (betting technology, Porto HQ), Altar.io, Devoteam Portugal\n\nEU GDPR — Portuguese DPA (CNPD) enforces GDPR. Porto is EU — UK GDPR transfers to Porto covered by UK-EU adequacy decision. Portugal has NHR tax regime attracting international talent. Porto has strong English proficiency and growing GDPR compliance expertise.",
+    "ecosystem": "Porto is Portugal's second largest city and a rapidly growing technology hub — known as Portugal's Silicon Valley. Porto has strong engineering universities (University of Porto, FEUP), an active startup ecosystem, and increasing investment from international technology companies. Porto has particular strength in enterprise software, FinTech, and R&D technology.\n\nKey organisations: Critical TechWorks (BMW and Critical Software JV, Porto), Farfetch Porto (global fashion eCommerce), Prozis (eCommerce), NOS Innovation, Blip.pt (betting technology, Porto HQ), Altar.io, Devoteam Portugal\n\nEU GDPR — Portuguese DPA (CNPD) enforces GDPR. Porto is EU — UK GDPR transfers to Porto covered by UK-EU adequacy decision. Portugal has NHR tax regime attracting international talent. Porto has strong English proficiency and growing GDPR compliance expertise.",
     "pricingTable": null,
     "complianceTable": null,
     "processSteps": [],
@@ -3086,12 +3125,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Porto EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P744",
     "slug": "custom-software-development-lisbon",
     "city": "lisbon",
+    "focus": "",
     "title": "Custom Software Development Lisbon — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Lisbon | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Lisbon. EU GDPR. UK-based.",
@@ -3134,12 +3174,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Lisbon EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P745",
     "slug": "custom-software-development-vienna",
     "city": "vienna",
+    "focus": "",
     "title": "Custom Software Development Vienna — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Vienna | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Vienna. EU GDPR. UK-based.",
@@ -3182,12 +3223,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Vienna EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P759",
     "slug": "custom-software-development-prague",
     "city": "prague",
+    "focus": "",
     "title": "Custom Software Development Prague — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Prague | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Prague. EU GDPR. UK-based.",
@@ -3205,7 +3247,7 @@ export const cities = [
     ],
     "directAnswer": "ClickMasters serves Prague and Czech Republic with EU GDPR compliance. Czech UOOU (Urad pro ochranu osobnich udaju) requirements satisfied. EUR invoicing available.",
     "benefits": [],
-    "ecosystem": "Prague is the Czech Republic's capital and one of Central Europe's most mature and sophisticated technology hubs. Prague has exceptional engineering talent (Czech Technical University, Charles University), strong English proficiency, and a well-established software outsourcing ecosystem with many UK and German clients. Prague's technology sector is characterised by quality and reliability.\n\nKey organisations: Avast HQ (cybersecurity, now NortonLifeLock), Kiwi.com HQ (travel tech), Productboard HQ (product management SaaS), JetBrains Prague (developer tools), SAP Prague R&amp;D, Oracle Prague, Accenture Prague, Cleverlance\n\nEU GDPR — Czech DPA (UOOU) enforces GDPR. Czech Republic is EU — UK GDPR transfers covered by UK-EU adequacy decision. Prague has a mature GDPR compliance culture with strong legal expertise. Czech Republic has a strong privacy law tradition.",
+    "ecosystem": "Prague is the Czech Republic's capital and one of Central Europe's most mature and sophisticated technology hubs. Prague has exceptional engineering talent (Czech Technical University, Charles University), strong English proficiency, and a well-established software outsourcing ecosystem with many UK and German clients. Prague's technology sector is characterised by quality and reliability.\n\nKey organisations: Avast HQ (cybersecurity, now NortonLifeLock), Kiwi.com HQ (travel tech), Productboard HQ (product management SaaS), JetBrains Prague (developer tools), SAP Prague R&D, Oracle Prague, Accenture Prague, Cleverlance\n\nEU GDPR — Czech DPA (UOOU) enforces GDPR. Czech Republic is EU — UK GDPR transfers covered by UK-EU adequacy decision. Prague has a mature GDPR compliance culture with strong legal expertise. Czech Republic has a strong privacy law tradition.",
     "pricingTable": null,
     "complianceTable": null,
     "processSteps": [],
@@ -3230,12 +3272,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Prague EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P760",
     "slug": "custom-software-development-gdansk",
     "city": "gdansk",
+    "focus": "",
     "title": "Custom Software Development Gdansk — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Gdansk | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Gdansk. EU GDPR. UK-based.",
@@ -3278,12 +3321,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Gdansk EU GDPR built in. EUR invoicing available. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P774",
     "slug": "custom-software-development-rotterdam",
     "city": "rotterdam",
+    "focus": "",
     "title": "Custom Software Development Rotterdam — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Rotterdam | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Rotterdam. EU GDPR. UK-based.",
@@ -3326,12 +3370,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Rotterdam EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P775",
     "slug": "custom-software-development-antwerp",
     "city": "antwerp",
+    "focus": "",
     "title": "Custom Software Development Antwerp — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Antwerp | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Antwerp. EU GDPR. UK-based.",
@@ -3374,12 +3419,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Antwerp EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P789",
     "slug": "custom-software-development-madrid",
     "city": "madrid",
+    "focus": "",
     "title": "Custom Software Development Madrid — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Madrid | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Madrid. EU GDPR. UK-based.",
@@ -3422,12 +3468,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Madrid EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P790",
     "slug": "custom-software-development-copenhagen",
     "city": "copenhagen",
+    "focus": "",
     "title": "Custom Software Development Copenhagen — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Copenhagen | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Copenhagen. EU GDPR. UK-based.",
@@ -3470,12 +3517,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Copenhagen EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P804",
     "slug": "custom-software-development-stockholm",
     "city": "stockholm",
+    "focus": "",
     "title": "Custom Software Development Stockholm — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Stockholm | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Stockholm. EU GDPR. UK-based.",
@@ -3493,7 +3541,7 @@ export const cities = [
     ],
     "directAnswer": "ClickMasters serves Stockholm and Sweden with EU GDPR compliance. Swedish IMY (Integritetsskyddsmyndigheten) requirements satisfied. EUR invoicing available.",
     "benefits": [],
-    "ecosystem": "Stockholm is Sweden's capital and one of Europe's most prolific technology hubs — home to Spotify, Klarna, Mojang (Minecraft), King (Candy Crush), and Northvolt (battery technology). Stockholm has produced more billion-dollar tech companies per capita than any city outside Silicon Valley. The city has exceptional engineering universities (KTH Royal Institute of Technology), outstanding English proficiency, and a strong startup ecosystem.\n\nKey organisations: Spotify HQ, Klarna HQ (BNPL FinTech), Mojang (Microsoft/Minecraft), King HQ (gaming), Northvolt HQ (battery tech), iZettle (acquired by PayPal), Truecaller HQ, H&amp;M Technology Stockholm\n\nEU GDPR — Swedish DPA (Integritetsskyddsmyndigheten, IMY) enforces GDPR. Sweden has strong data protection culture and IMY is active in enforcement. Stockholm is EU — UK GDPR transfers covered by UK-EU adequacy. Sweden has one of Europe's most digital-first economies.",
+    "ecosystem": "Stockholm is Sweden's capital and one of Europe's most prolific technology hubs — home to Spotify, Klarna, Mojang (Minecraft), King (Candy Crush), and Northvolt (battery technology). Stockholm has produced more billion-dollar tech companies per capita than any city outside Silicon Valley. The city has exceptional engineering universities (KTH Royal Institute of Technology), outstanding English proficiency, and a strong startup ecosystem.\n\nKey organisations: Spotify HQ, Klarna HQ (BNPL FinTech), Mojang (Microsoft/Minecraft), King HQ (gaming), Northvolt HQ (battery tech), iZettle (acquired by PayPal), Truecaller HQ, H&M Technology Stockholm\n\nEU GDPR — Swedish DPA (Integritetsskyddsmyndigheten, IMY) enforces GDPR. Sweden has strong data protection culture and IMY is active in enforcement. Stockholm is EU — UK GDPR transfers covered by UK-EU adequacy. Sweden has one of Europe's most digital-first economies.",
     "pricingTable": null,
     "complianceTable": null,
     "processSteps": [],
@@ -3518,12 +3566,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Stockholm EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P805",
     "slug": "custom-software-development-oslo",
     "city": "oslo",
+    "focus": "",
     "title": "Custom Software Development Oslo — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Oslo | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Oslo. EU GDPR. UK-based.",
@@ -3566,12 +3615,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Oslo EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P819",
     "slug": "custom-software-development-athens",
     "city": "athens",
+    "focus": "",
     "title": "Custom Software Development Athens — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Athens | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Athens. EU GDPR. UK-based.",
@@ -3589,7 +3639,7 @@ export const cities = [
     ],
     "directAnswer": "ClickMasters serves Athens and Greece with EU GDPR compliance. Greek HDPA (Hellenic Data Protection Authority) requirements satisfied. EUR invoicing available.",
     "benefits": [],
-    "ecosystem": "Athens is Greece's capital and a growing technology hub — one of Southern and Eastern Europe's most exciting emerging technology ecosystems. Greece has produced a number of successful technology companies and has strong engineering universities (NTUA — National Technical University of Athens). Athens has excellent English proficiency, competitive rates, and a growing startup ecosystem supported by Elevate Greece and the Greek government's Rebuild programme.\n\nKey organisations: Workable HQ (HR SaaS, Greek unicorn), Epignosis HQ (eLearning SaaS), Upstream HQ (mobile marketing), Netinfo (media tech), Greek National Bank Digital, Eurobank Technology, Citrix Athens R&amp;D, Microsoft Athens\n\nEU GDPR — Greek DPA (Hellenic Data Protection Authority, HDPA) enforces GDPR. Greece is EU — UK GDPR transfers covered by UK-EU adequacy. HDPA has been increasingly active in enforcement. Greece has a growing GDPR compliance ecosystem. Athens has strong proximity to Middle East and Eastern Mediterranean markets.",
+    "ecosystem": "Athens is Greece's capital and a growing technology hub — one of Southern and Eastern Europe's most exciting emerging technology ecosystems. Greece has produced a number of successful technology companies and has strong engineering universities (NTUA — National Technical University of Athens). Athens has excellent English proficiency, competitive rates, and a growing startup ecosystem supported by Elevate Greece and the Greek government's Rebuild programme.\n\nKey organisations: Workable HQ (HR SaaS, Greek unicorn), Epignosis HQ (eLearning SaaS), Upstream HQ (mobile marketing), Netinfo (media tech), Greek National Bank Digital, Eurobank Technology, Citrix Athens R&D, Microsoft Athens\n\nEU GDPR — Greek DPA (Hellenic Data Protection Authority, HDPA) enforces GDPR. Greece is EU — UK GDPR transfers covered by UK-EU adequacy. HDPA has been increasingly active in enforcement. Greece has a growing GDPR compliance ecosystem. Athens has strong proximity to Middle East and Eastern Mediterranean markets.",
     "pricingTable": null,
     "complianceTable": null,
     "processSteps": [],
@@ -3614,12 +3664,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Athens EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P820",
     "slug": "custom-software-development-warsaw",
     "city": "warsaw",
+    "focus": "",
     "title": "Custom Software Development Warsaw — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Warsaw | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Warsaw. EU GDPR. UK-based.",
@@ -3637,7 +3688,7 @@ export const cities = [
     ],
     "directAnswer": "ClickMasters serves Warsaw and Poland with EU GDPR compliance. Polish UODO (Urzad Ochrony Danych Osobowych) requirements satisfied. EUR invoicing available.",
     "benefits": [],
-    "ecosystem": "Warsaw is Poland's capital and its largest technology hub — one of Central Europe's most significant. Warsaw has exceptional engineering talent (Warsaw University of Technology, University of Warsaw), a mature software outsourcing ecosystem, and strong FinTech and enterprise software sectors. Warsaw is Poland's financial capital — home to major Polish and international bank technology centres.\n\nKey organisations: ING Hubs Poland Warsaw, Credit Suisse Technology Warsaw, Goldman Sachs Engineering Warsaw, Google Warsaw, Microsoft Warsaw, Samsung R&amp;D Warsaw, Allegro HQ (Poland's Amazon equivalent), Naspers/OLX Warsaw\n\nEU GDPR — Polish DPA (UODO) enforces GDPR. Warsaw is EU — UK GDPR transfers covered by UK-EU adequacy. Poland has strong GDPR compliance infrastructure. Warsaw is Poland's FinTech and banking technology hub — significant UK investment in Warsaw engineering centres.",
+    "ecosystem": "Warsaw is Poland's capital and its largest technology hub — one of Central Europe's most significant. Warsaw has exceptional engineering talent (Warsaw University of Technology, University of Warsaw), a mature software outsourcing ecosystem, and strong FinTech and enterprise software sectors. Warsaw is Poland's financial capital — home to major Polish and international bank technology centres.\n\nKey organisations: ING Hubs Poland Warsaw, Credit Suisse Technology Warsaw, Goldman Sachs Engineering Warsaw, Google Warsaw, Microsoft Warsaw, Samsung R&D Warsaw, Allegro HQ (Poland's Amazon equivalent), Naspers/OLX Warsaw\n\nEU GDPR — Polish DPA (UODO) enforces GDPR. Warsaw is EU — UK GDPR transfers covered by UK-EU adequacy. Poland has strong GDPR compliance infrastructure. Warsaw is Poland's FinTech and banking technology hub — significant UK investment in Warsaw engineering centres.",
     "pricingTable": null,
     "complianceTable": null,
     "processSteps": [],
@@ -3662,12 +3713,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Warsaw EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P834",
     "slug": "custom-software-development-zurich",
     "city": "zurich",
+    "focus": "",
     "title": "Custom Software Development Zurich — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Zurich | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Zurich. EU GDPR. UK-based.",
@@ -3710,12 +3762,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Zurich EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P835",
     "slug": "custom-software-development-geneva",
     "city": "geneva",
+    "focus": "",
     "title": "Custom Software Development Geneva — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Geneva | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Geneva. EU GDPR. UK-based.",
@@ -3758,12 +3811,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Geneva EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P849",
     "slug": "custom-software-development-munich",
     "city": "munich",
+    "focus": "",
     "title": "Custom Software Development Munich — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Munich | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Munich. EU GDPR. UK-based.",
@@ -3806,12 +3860,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Munich EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P850",
     "slug": "custom-software-development-lyon",
     "city": "lyon",
+    "focus": "",
     "title": "Custom Software Development Lyon — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Lyon | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Lyon. EU GDPR. UK-based.",
@@ -3854,60 +3909,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Lyon EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
-  },
-  {
-    "id": "P865",
-    "slug": "custom-software-development-tallinn fintech",
-    "city": "tallinn fintech",
-    "title": "Custom Software Development Tallinn (FinTech) — UK-Based Agency, EU GDPR Compliant",
-    "metaTitle": "Custom Software Development Tallinn (FinTech) | UK Agency | ClickMasters",
-    "metaDesc": "Custom software for Tallinn (FinTech). EU GDPR. UK-based.",
-    "lastUpdated": "June 2025",
-    "readingTime": 7,
-    "writtenBy": "ClickMasters EU Team",
-    "reviewedBy": "James Whitmore, CTO",
-    "badges": [
-      "🌍 Tallinn (FinTech)",
-      "🇬🇧 UK-Based",
-      "💷 £35,000–£200,000+",
-      "🔒 EU GDPR",
-      "⚖️ Zero IR35",
-      "✈️ Estonia"
-    ],
-    "directAnswer": "ClickMasters serves Tallinn (FinTech) and Estonia with EU GDPR compliance. Estonian AKI (Andmekaitse Inspektsioon) requirements satisfied. EUR invoicing available.",
-    "benefits": [],
-    "ecosystem": "Tallinn has a uniquely digital government infrastructure (e-Estonia, X-Road, digital identity) and a thriving FinTech ecosystem. Post-Brexit, Tallinn became even more important for UK FinTechs seeking EU access — Wise (formerly TransferWise), founded in Tallinn, is one of the UK's most successful FinTech companies. This page focuses specifically on Tallinn's FinTech and financial technology sector.\n\nKey organisations: Wise HQ (global FinTech, UK-founded, Estonian roots), LHV Bank Technology (Estonian digital bank), TransferGo (remittances FinTech), Modularbank HQ (Banking-as-a-Service SaaS), Tuum HQ (core banking SaaS), Salv (AML technology), Funderbeam\n\nEU GDPR — Estonian AKI enforces GDPR. Tallinn is EU — UK GDPR transfers covered by UK-EU adequacy. Estonia's e-Residency and X-Road infrastructure create uniquely digital-friendly business environment. AKI has mature, sophisticated GDPR enforcement culture. Tallinn FinTechs understand UK compliance requirements particularly well due to strong UK market orientation.",
-    "pricingTable": null,
-    "complianceTable": null,
-    "processSteps": [],
-    "faqs": [
-      {
-        "question": "Do you work with Tallinn (FinTech) businesses?",
-        "answer": "Yes — remote delivery with on-site visits."
-      },
-      {
-        "question": "EU GDPR compliant?",
-        "answer": "Yes — EU data residency, EUR invoicing, Article 28 DPAs."
-      }
-    ],
-    "relatedPages": [
-      {
-        "title": "Custom Software Development UK",
-        "slug": "custom-software-development"
-      },
-      {
-        "title": "EU GDPR vs UK GDPR",
-        "slug": "uk-gdpr-vs-eu-gdpr"
-      }
-    ],
-    "cta": "Free Consultation — Tallinn (FinTech) EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P894",
     "slug": "custom-software-development-dublin",
     "city": "dublin",
+    "focus": "",
     "title": "Custom Software Development Dublin — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Dublin | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Dublin. EU GDPR. UK-based.",
@@ -3950,12 +3958,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Dublin EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P910",
     "slug": "custom-software-development-helsinki",
     "city": "helsinki",
+    "focus": "",
     "title": "Custom Software Development Helsinki — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Helsinki | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Helsinki. EU GDPR. UK-based.",
@@ -3998,12 +4007,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Helsinki EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P970",
     "slug": "custom-software-development-tallinn-ehealth",
-    "city": "tallinn ehealth",
+    "city": "tallinn",
+    "focus": "ehealth",
     "title": "Custom Software Development Tallinn (eHealth) — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Tallinn (eHealth) | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Tallinn (eHealth). EU GDPR. UK-based.",
@@ -4046,12 +4056,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Tallinn (eHealth) EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P984",
     "slug": "custom-software-development-nicosia",
     "city": "nicosia",
+    "focus": "",
     "title": "Custom Software Development Nicosia — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Nicosia | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Nicosia. EU GDPR. UK-based.",
@@ -4094,12 +4105,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Nicosia EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P985",
     "slug": "custom-software-development-luxembourg",
     "city": "luxembourg",
+    "focus": "",
     "title": "Custom Software Development Luxembourg — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Luxembourg | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Luxembourg. EU GDPR. UK-based.",
@@ -4142,12 +4154,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Luxembourg EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1059",
     "slug": "custom-software-development-amsterdam",
     "city": "amsterdam",
+    "focus": "",
     "title": "Custom Software Development Amsterdam — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Amsterdam | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Amsterdam. EU GDPR. UK-based.",
@@ -4190,12 +4203,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Amsterdam EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1090",
     "slug": "custom-software-development-helsinki-healthtech-focus",
-    "city": "helsinki healthtech focus",
+    "city": "helsinki",
+    "focus": "healthtech",
     "title": "Custom Software Development Helsinki (HealthTech focus) — UK-Based Agency",
     "metaTitle": "Custom Software Development Helsinki (HealthTech focus) | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Helsinki (HealthTech focus). EU GDPR/Swiss nDSG. UK-based.",
@@ -4238,12 +4252,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Helsinki (HealthTech focus) Data protection built in. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1119",
     "slug": "custom-software-development-tallinn-fintech-focus",
-    "city": "tallinn fintech focus",
+    "city": "tallinn",
+    "focus": "fintech",
     "title": "Custom Software Development Tallinn (FinTech focus) — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Tallinn (FinTech focus) | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Tallinn (FinTech focus). EU GDPR. UK-based.",
@@ -4286,12 +4301,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Tallinn (FinTech focus) EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1120",
     "slug": "custom-software-development-vilnius-cyber-focus",
-    "city": "vilnius cyber focus",
+    "city": "vilnius",
+    "focus": "cyber",
     "title": "Custom Software Development Vilnius (Cyber focus) — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Vilnius (Cyber focus) | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Vilnius (Cyber focus). EU GDPR. UK-based.",
@@ -4334,12 +4350,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Vilnius (Cyber focus) EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1195",
     "slug": "custom-software-development-reykjavik",
     "city": "reykjavik",
+    "focus": "",
     "title": "Custom Software Development Reykjavik — UK-Based Agency",
     "metaTitle": "Custom Software Development Reykjavik | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Reykjavik. EU GDPR / UK-Ireland. UK-based.",
@@ -4382,12 +4399,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Reykjavik Data protection built in. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters International Team"
   },
   {
     "id": "P1209",
     "slug": "custom-software-development-helsinki-digital-government",
-    "city": "helsinki digital government",
+    "city": "helsinki",
+    "focus": "digital-government",
     "title": "Custom Software Development Helsinki (Digital Government) — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Helsinki (Digital Government) | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Helsinki (Digital Government). EU GDPR. UK-based.",
@@ -4430,12 +4448,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Helsinki (Digital Government) EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1225",
     "slug": "custom-software-development-tallinn-govtech",
-    "city": "tallinn govtech",
+    "city": "tallinn",
+    "focus": "govtech",
     "title": "Custom Software Development Tallinn (GovTech) — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Tallinn (GovTech) | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Tallinn (GovTech). EU GDPR. UK-based.",
@@ -4478,12 +4497,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Tallinn (GovTech) EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1240",
     "slug": "custom-software-development-thessaloniki",
     "city": "thessaloniki",
+    "focus": "",
     "title": "Custom Software Development Thessaloniki — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Thessaloniki | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Thessaloniki. EU GDPR. UK-based.",
@@ -4526,12 +4546,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Thessaloniki EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1255",
     "slug": "custom-software-development-valencia",
     "city": "valencia",
+    "focus": "",
     "title": "Custom Software Development Valencia — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Valencia | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Valencia. EU GDPR. UK-based.",
@@ -4574,12 +4595,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Valencia EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1270",
     "slug": "custom-software-development-minsk",
     "city": "minsk",
+    "focus": "",
     "title": "Custom Software Development Minsk — UK-Based Agency",
     "metaTitle": "Custom Software Development Minsk | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Minsk. UK-based agency. GDPR compliant.",
@@ -4622,12 +4644,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Minsk Data protection built in. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters International Team"
   },
   {
     "id": "P1299",
     "slug": "custom-software-development-kosice",
     "city": "kosice",
+    "focus": "",
     "title": "Custom Software Development Kosice — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Kosice | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Kosice. EU GDPR. UK-based.",
@@ -4670,12 +4693,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Kosice EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1300",
     "slug": "custom-software-development-tbilisi",
     "city": "tbilisi",
+    "focus": "",
     "title": "Custom Software Development Tbilisi — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Tbilisi | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Tbilisi. EU GDPR. UK-based.",
@@ -4718,12 +4742,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Tbilisi EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1314",
     "slug": "custom-software-development-almaty",
     "city": "almaty",
+    "focus": "",
     "title": "Custom Software Development Almaty — UK-Based Agency",
     "metaTitle": "Custom Software Development Almaty | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Almaty. UK-based agency. Data protection compliant.",
@@ -4766,12 +4791,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Almaty Data protection built in. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters International Team"
   },
   {
     "id": "P1315",
     "slug": "custom-software-development-yerevan",
     "city": "yerevan",
+    "focus": "",
     "title": "Custom Software Development Yerevan — UK-Based Agency",
     "metaTitle": "Custom Software Development Yerevan | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Yerevan. UK-based agency. Data protection compliant.",
@@ -4814,12 +4840,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Yerevan Data protection built in. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters International Team"
   },
   {
     "id": "P1329",
     "slug": "custom-software-development-lodz",
     "city": "lodz",
+    "focus": "",
     "title": "Custom Software Development Lodz — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Lodz | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Lodz. EU GDPR. UK-based.",
@@ -4862,12 +4889,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Lodz EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1330",
     "slug": "custom-software-development-malaga",
     "city": "malaga",
+    "focus": "",
     "title": "Custom Software Development Malaga — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Malaga | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Malaga. EU GDPR. UK-based.",
@@ -4885,7 +4913,7 @@ export const cities = [
     ],
     "directAnswer": "ClickMasters serves Malaga and Spain with EU GDPR compliance. Spanish AEPD (Agencia Espanola de Proteccion de Datos) requirements satisfied. EUR invoicing available.",
     "benefits": [],
-    "ecosystem": "Malaga is one of Europe's fastest-growing technology hubs — the \"Silicon Coast\" of Spain. Google has established a major cybersecurity centre in Malaga (opening 2024), and the city has attracted significant technology investment due to its quality of life, international connectivity, and the Malaga Technology Park (PTA — Parque Tecnologico de Andalucia). Malaga has particular strength in cybersecurity, digital media, and tourism technology.\n\nKey organisations: Google Cybersecurity Centre Malaga (Google's major European cybersecurity hub — opened 2024), Vodafone Technology Malaga (significant R&amp;D centre), Accenture Malaga, Deloitte Digital Malaga, Telefonica Tech Malaga, Fujitsu Malaga, NTT Data Malaga, Indra Malaga, PTA (Parque Tecnologico de Andalucia — 600+ companies)\n\nEU GDPR — Spanish DPA (AEPD) enforces GDPR. Malaga is EU — UK GDPR transfers covered by UK-EU adequacy. AEPD is one of Europe's most active DPAs. Google's Cybersecurity Centre in Malaga (Google's strategic European cybersecurity investment) makes the city a growing centre for European cybersecurity engineering talent. PTA hosts 600+ technology companies. Competitive rates vs Barcelona/Madrid (20–30% below) and well below UK London rates (35–45% below).",
+    "ecosystem": "Malaga is one of Europe's fastest-growing technology hubs — the \"Silicon Coast\" of Spain. Google has established a major cybersecurity centre in Malaga (opening 2024), and the city has attracted significant technology investment due to its quality of life, international connectivity, and the Malaga Technology Park (PTA — Parque Tecnologico de Andalucia). Malaga has particular strength in cybersecurity, digital media, and tourism technology.\n\nKey organisations: Google Cybersecurity Centre Malaga (Google's major European cybersecurity hub — opened 2024), Vodafone Technology Malaga (significant R&D centre), Accenture Malaga, Deloitte Digital Malaga, Telefonica Tech Malaga, Fujitsu Malaga, NTT Data Malaga, Indra Malaga, PTA (Parque Tecnologico de Andalucia — 600+ companies)\n\nEU GDPR — Spanish DPA (AEPD) enforces GDPR. Malaga is EU — UK GDPR transfers covered by UK-EU adequacy. AEPD is one of Europe's most active DPAs. Google's Cybersecurity Centre in Malaga (Google's strategic European cybersecurity investment) makes the city a growing centre for European cybersecurity engineering talent. PTA hosts 600+ technology companies. Competitive rates vs Barcelona/Madrid (20–30% below) and well below UK London rates (35–45% below).",
     "pricingTable": null,
     "complianceTable": null,
     "processSteps": [],
@@ -4910,12 +4938,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Malaga EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1375",
     "slug": "custom-software-development-nizhny-novgorod",
-    "city": "nizhny novgorod",
+    "city": "nizhny-novgorod",
+    "focus": "",
     "title": "Custom Software Development Nizhny Novgorod — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Nizhny Novgorod | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Nizhny Novgorod. EU GDPR. UK-based.",
@@ -4958,12 +4987,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Nizhny Novgorod EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1389",
     "slug": "custom-software-development-thessaloniki-medtech",
-    "city": "thessaloniki medtech",
+    "city": "thessaloniki",
+    "focus": "medtech",
     "title": "Custom Software Development Thessaloniki (MedTech) — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Thessaloniki (MedTech) | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Thessaloniki (MedTech). EU GDPR. UK-based.",
@@ -5006,12 +5036,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Thessaloniki (MedTech) EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1405",
     "slug": "custom-software-development-poznan",
     "city": "poznan",
+    "focus": "",
     "title": "Custom Software Development Poznan — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Poznan | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Poznan. EU GDPR. UK-based.",
@@ -5029,7 +5060,7 @@ export const cities = [
     ],
     "directAnswer": "ClickMasters serves Poznan and Poland with EU GDPR compliance. Polish UODO (Urzad Ochrony Danych Osobowych) requirements satisfied. EUR invoicing available.",
     "benefits": [],
-    "ecosystem": "Poznan is Poland's fifth-largest city and a growing technology hub — with strong universities (Poznan University of Technology — PUT, Adam Mickiewicz University), a well-developed IT services sector, and competitive rates. Poznan has particular strength in automotive technology, enterprise software, and telecommunications technology from its proximity to the German border (Berlin 3 hours) and its role as the gateway to the German market.\n\nKey organisations: Amazon Development Centre Poznan (large engineering team), Samsung R&amp;D Poznan, Volkswagen Group IT Poznan, Nokia Poznan Technology, GlobalLogic Poznan, Capgemini Poznan, Deloitte Digital Poznan, MAN Truck Technology Poznan, Roche Poznan Technology\n\nEU GDPR — Polish DPA (UODO) enforces GDPR. Poznan is EU — UK GDPR transfers covered by UK-EU adequacy. Amazon Development Centre Poznan and Samsung R&amp;D make Poznan one of Poland's most important enterprise technology centres. Poznan's proximity to the German border (Volkswagen Group IT, MAN Truck Technology) makes it a significant centre for automotive software engineering. Competitive rates (40–55% below Western Europe), and Berlin proximity creates strong Central European technology corridor.",
+    "ecosystem": "Poznan is Poland's fifth-largest city and a growing technology hub — with strong universities (Poznan University of Technology — PUT, Adam Mickiewicz University), a well-developed IT services sector, and competitive rates. Poznan has particular strength in automotive technology, enterprise software, and telecommunications technology from its proximity to the German border (Berlin 3 hours) and its role as the gateway to the German market.\n\nKey organisations: Amazon Development Centre Poznan (large engineering team), Samsung R&D Poznan, Volkswagen Group IT Poznan, Nokia Poznan Technology, GlobalLogic Poznan, Capgemini Poznan, Deloitte Digital Poznan, MAN Truck Technology Poznan, Roche Poznan Technology\n\nEU GDPR — Polish DPA (UODO) enforces GDPR. Poznan is EU — UK GDPR transfers covered by UK-EU adequacy. Amazon Development Centre Poznan and Samsung R&D make Poznan one of Poland's most important enterprise technology centres. Poznan's proximity to the German border (Volkswagen Group IT, MAN Truck Technology) makes it a significant centre for automotive software engineering. Competitive rates (40–55% below Western Europe), and Berlin proximity creates strong Central European technology corridor.",
     "pricingTable": null,
     "complianceTable": null,
     "processSteps": [],
@@ -5054,12 +5085,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Poznan EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1419",
     "slug": "custom-software-development-gdynia",
     "city": "gdynia",
+    "focus": "",
     "title": "Custom Software Development Gdynia — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Gdynia | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Gdynia. EU GDPR. UK-based.",
@@ -5102,12 +5134,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Gdynia EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1420",
     "slug": "custom-software-development-brno",
     "city": "brno",
+    "focus": "",
     "title": "Custom Software Development Brno — UK-Based Agency, EU GDPR Compliant",
     "metaTitle": "Custom Software Development Brno | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Brno. EU GDPR. UK-based.",
@@ -5150,12 +5183,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Brno EU GDPR built in. EUR invoicing. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters EU Team"
   },
   {
     "id": "P1449",
     "slug": "custom-software-development-osaka",
     "city": "osaka",
+    "focus": "",
     "title": "Custom Software Development Osaka — UK-Based Agency",
     "metaTitle": "Custom Software Development Osaka | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Osaka. UK GDPR international transfer: Japan has a UK adequacy decision (UK adopted Japan's adequacy under UK GDPR). UK-based.",
@@ -5173,7 +5207,7 @@ export const cities = [
     ],
     "directAnswer": "ClickMasters serves Osaka and Japan / Asia Pacific businesses. UK GDPR transfer requirements apply. £12,000–£200,000+.",
     "benefits": [],
-    "ecosystem": "Osaka is Japan's second-largest city and a major engineering and manufacturing hub — home to significant technology R&amp;D operations from global companies. Japan has some of the world's best engineers in embedded systems, robotics, and manufacturing automation. ClickMasters serves Japanese businesses with UK digital transformation expertise, particularly UK and EU market-entry software for Japanese companies.\n\nKey organisations: Panasonic HQ Osaka (consumer electronics, B2B technology), Sharp HQ Osaka, Hitachi Osaka, Fujitsu Osaka, Nintendo HQ Kyoto (near Osaka — game technology), Softbank Osaka, Nomura Securities Technology Osaka, Daikin Technology Osaka (HVAC, IoT)\n\nUK GDPR international transfer: Japan has a UK adequacy decision (UK adopted Japan's adequacy under UK GDPR). UK-Japan data transfers are permitted without SCCs or additional safeguards — Japan's Act on Protection of Personal Information (APPI) is considered adequate. Invoicing in JPY or GBP available. Time zone: GMT+9 — ClickMasters uses asynchronous delivery with overlap hours for Japan-based clients.",
+    "ecosystem": "Osaka is Japan's second-largest city and a major engineering and manufacturing hub — home to significant technology R&D operations from global companies. Japan has some of the world's best engineers in embedded systems, robotics, and manufacturing automation. ClickMasters serves Japanese businesses with UK digital transformation expertise, particularly UK and EU market-entry software for Japanese companies.\n\nKey organisations: Panasonic HQ Osaka (consumer electronics, B2B technology), Sharp HQ Osaka, Hitachi Osaka, Fujitsu Osaka, Nintendo HQ Kyoto (near Osaka — game technology), Softbank Osaka, Nomura Securities Technology Osaka, Daikin Technology Osaka (HVAC, IoT)\n\nUK GDPR international transfer: Japan has a UK adequacy decision (UK adopted Japan's adequacy under UK GDPR). UK-Japan data transfers are permitted without SCCs or additional safeguards — Japan's Act on Protection of Personal Information (APPI) is considered adequate. Invoicing in JPY or GBP available. Time zone: GMT+9 — ClickMasters uses asynchronous delivery with overlap hours for Japan-based clients.",
     "pricingTable": null,
     "complianceTable": null,
     "processSteps": [],
@@ -5198,12 +5232,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Osaka UK GDPR international transfer requirements addressed. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1450",
     "slug": "custom-software-development-nairobi",
     "city": "nairobi",
+    "focus": "",
     "title": "Custom Software Development Nairobi — UK-Based Agency",
     "metaTitle": "Custom Software Development Nairobi | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Nairobi. UK GDPR international transfer: Kenya does not have UK adequacy. UK-based.",
@@ -5246,12 +5281,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Nairobi UK GDPR international transfer requirements addressed. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1464",
     "slug": "custom-software-development-tallinn-fintech",
-    "city": "tallinn fintech",
+    "city": "tallinn",
+    "focus": "fintech",
     "title": "Custom Software Development Tallinn (FinTech) — UK-Based Agency",
     "metaTitle": "Custom Software Development Tallinn (FinTech) | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Tallinn (FinTech). UK-based agency. £12,000–£200,000+.",
@@ -5294,12 +5330,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Tallinn (FinTech) Data protection addressed from day one. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1465",
     "slug": "custom-software-development-sarajevo",
     "city": "sarajevo",
+    "focus": "",
     "title": "Custom Software Development Sarajevo — UK-Based Agency",
     "metaTitle": "Custom Software Development Sarajevo | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Sarajevo. UK-based agency. £12,000–£200,000+.",
@@ -5342,12 +5379,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Sarajevo Data protection addressed from day one. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1480",
     "slug": "custom-software-development-casablanca",
     "city": "casablanca",
+    "focus": "",
     "title": "Custom Software Development Casablanca — UK-Based Agency",
     "metaTitle": "Custom Software Development Casablanca | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Casablanca. UK-based agency. UK GDPR addressed.",
@@ -5390,12 +5428,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Casablanca UK GDPR handled upfront. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1494",
     "slug": "custom-software-development-seoul",
     "city": "seoul",
+    "focus": "",
     "title": "Custom Software Development Seoul — UK-Based Agency",
     "metaTitle": "Custom Software Development Seoul | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Seoul. UK-based agency. UK GDPR addressed.",
@@ -5438,12 +5477,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Seoul Data protection handled from day one. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1495",
     "slug": "custom-software-development-lagos",
     "city": "lagos",
+    "focus": "",
     "title": "Custom Software Development Lagos — UK-Based Agency",
     "metaTitle": "Custom Software Development Lagos | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Lagos. UK-based agency. UK GDPR addressed.",
@@ -5486,12 +5526,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Lagos Data protection handled from day one. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1509",
     "slug": "custom-software-development-singapore",
     "city": "singapore",
+    "focus": "",
     "title": "Custom Software Development Singapore — UK-Based Agency",
     "metaTitle": "Custom Software Development Singapore | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Singapore. UK-based agency.",
@@ -5534,12 +5575,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Singapore Data protection addressed from day one. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1510",
     "slug": "custom-software-development-dubai",
     "city": "dubai",
+    "focus": "",
     "title": "Custom Software Development Dubai — UK-Based Agency",
     "metaTitle": "Custom Software Development Dubai | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Dubai. UK-based agency.",
@@ -5582,12 +5624,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Dubai Data protection addressed from day one. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1524",
     "slug": "custom-software-development-toronto",
     "city": "toronto",
+    "focus": "",
     "title": "Custom Software Development Toronto — UK-Based Agency",
     "metaTitle": "Custom Software Development Toronto | UK Agency | ClickMasters",
     "metaDesc": "Custom software development for Toronto businesses. UK-based agency.",
@@ -5630,12 +5673,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Toronto Data protection handled from day one. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1525",
     "slug": "custom-software-development-johannesburg",
     "city": "johannesburg",
+    "focus": "",
     "title": "Custom Software Development Johannesburg — UK-Based Agency",
     "metaTitle": "Custom Software Development Johannesburg | UK Agency | ClickMasters",
     "metaDesc": "Custom software development for Johannesburg businesses. UK-based agency.",
@@ -5678,12 +5722,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Johannesburg Data protection handled from day one. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1539",
     "slug": "custom-software-development-melbourne",
     "city": "melbourne",
+    "focus": "",
     "title": "Custom Software Development Melbourne — UK-Based Agency",
     "metaTitle": "Custom Software Development Melbourne | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Melbourne. UK-based agency.",
@@ -5726,12 +5771,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Melbourne Data protection from day one. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1540",
     "slug": "custom-software-development-cape-town",
-    "city": "cape town",
+    "city": "cape-town",
+    "focus": "",
     "title": "Custom Software Development Cape Town — UK-Based Agency",
     "metaTitle": "Custom Software Development Cape Town | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Cape Town. UK-based agency.",
@@ -5774,12 +5820,13 @@ export const cities = [
       }
     ],
     "cta": "Free Consultation — Cape Town Data protection from day one. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1704",
     "slug": "custom-software-development-kuala-lumpur",
-    "city": "kuala lumpur",
+    "city": "kuala-lumpur",
+    "focus": "",
     "title": "Custom Software Development Kuala Lumpur -- UK-Based Agency",
     "metaTitle": "Custom Software Development Kuala Lumpur | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Kuala Lumpur. UK-based agency.",
@@ -5821,13 +5868,14 @@ export const cities = [
         "slug": "uk-gdpr-international-transfers"
       }
     ],
-    "cta": "Free Consultation -- Kuala Lumpur Data protection from day one. -&gt; clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "cta": "Free Consultation -- Kuala Lumpur Data protection from day one. -> clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Global Team"
   },
   {
     "id": "P1705",
     "slug": "custom-software-development-buenos-aires",
-    "city": "buenos aires",
+    "city": "buenos-aires",
+    "focus": "",
     "title": "Custom Software Development Buenos Aires -- UK-Based Agency",
     "metaTitle": "Custom Software Development Buenos Aires | UK Agency | ClickMasters",
     "metaDesc": "Custom software for Buenos Aires. UK-based agency.",
@@ -5869,62 +5917,14 @@ export const cities = [
         "slug": "uk-gdpr-international-transfers"
       }
     ],
-    "cta": "Free Consultation -- Buenos Aires Data protection from day one. -&gt; clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
-  },
-  {
-    "id": "P1779",
-    "slug": "custom-software-development-tallinn",
-    "city": "tallinn",
-    "title": "Custom Software Development Tallinn -- UK-Based Agency",
-    "metaTitle": "Custom Software Development Tallinn | UK Agency | ClickMasters",
-    "metaDesc": "Custom software for Tallinn. UK-based agency.",
-    "lastUpdated": "June 2026",
-    "readingTime": 7,
-    "writtenBy": "ClickMasters Global Team",
-    "reviewedBy": "James Whitmore, CTO",
-    "badges": [
-      "Tallinn",
-      "UK-Based",
-      "GBP12,000--GBP200,000+",
-      "GDPR",
-      "Zero IR35",
-      "Estonia / Baltic"
-    ],
-    "directAnswer": "ClickMasters serves Tallinn businesses. Data protection addressed upfront. GBP12,000--GBP200,000+.",
-    "benefits": [],
-    "ecosystem": "Tallinn is Estonia's capital and one of Europe's most digitally advanced cities -- home to Skype, TransferWise (Wise), and Bolt. Estonia has pioneered e-governance (e-Residency, digital voting, X-Road data exchange platform). EU member with full UK GDPR adequacy. World-class engineering from Tallinn University of Technology (TalTech). Competitive rates and excellent English proficiency.\n\nKey organisations: Wise HQ London/Tallinn (international money transfers -- NYSE listed, GBP8B+ market cap), Bolt HQ Tallinn (ride hailing and food delivery -- unicorn, GBP7B+ valuation), Pipedrive HQ Tallinn (CRM SaaS -- Vista acquired for USD 1.5B), Starship Technologies HQ Tallinn (autonomous delivery robots), Veriff HQ Tallinn (identity verification -- unicorn), Skeleton Technologies Tallinn (energy storage), TransferGo Tallinn (FinTech)\n\nUK GDPR: Estonia is EU member -- EU adequacy applies. No SCCs needed. AKI (Andmekaitse Inspektsioon) enforces GDPR. EUR or GBP. EET/EEST (UTC+2/+3) -- 2 hours ahead of UK. Outstanding English proficiency. Rates 25-35% below London. Wise, Bolt, Pipedrive, and Veriff make Tallinn the highest-unicorn-density city in the Baltic states. X-Road digital infrastructure makes Estonia distinctive for GovTech and digital identity.",
-    "pricingTable": null,
-    "complianceTable": null,
-    "processSteps": [],
-    "faqs": [
-      {
-        "question": "Do you serve Tallinn?",
-        "answer": "Yes -- remote delivery with on-site visits."
-      },
-      {
-        "question": "Data protection?",
-        "answer": "Transfer mechanism confirmed before personal data processing."
-      }
-    ],
-    "relatedPages": [
-      {
-        "title": "Custom Software UK",
-        "slug": "custom-software-development"
-      },
-      {
-        "title": "UK GDPR Transfers",
-        "slug": "uk-gdpr-international-transfers"
-      }
-    ],
-    "cta": "Free Consultation -- Tallinn Data protection from day one. -&gt; clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": ""
+    "cta": "Free Consultation -- Buenos Aires Data protection from day one. -> clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Global Team"
   }
 ];
 
 // Lightweight listing data for cards/listings
 export const cityListings = cities.map(
-  ({ id, slug, city, title, metaDesc, badges }) => ({ id, slug, city, title, metaDesc, badges: badges.slice(0, 3) })
+  ({ id, slug, city, focus, title, metaDesc, badges }) => ({ id, slug, city, focus, title, metaDesc, badges: badges.slice(0, 3) })
 );
 
 // Get single city page by slug

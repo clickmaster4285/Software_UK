@@ -15,7 +15,16 @@ const CITIES_DIR = path.join(__dirname, '..', 'Clickmasterssoftwaredevelopmentco
 const OUTPUT_FILE = path.join(__dirname, '..', 'data', 'cities.js');
 
 function stripHtml(html) {
-  return html.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+  return html
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function parseFilename(filename) {
@@ -27,13 +36,62 @@ function parseFilename(filename) {
 
   const parts = rest.split('_');
 
-  const prefix = 'custom_software_development';
   const prefixIdx = parts.indexOf('custom');
-  if (prefixIdx === -1) return { id, city: rest, focus: '' };
+  if (prefixIdx === -1) return { id, city: rest.replace(/_/g, '-'), focus: '' };
 
-  const cityParts = parts.slice(prefixIdx + 3);
-  const city = cityParts.join(' ').replace(/_/g, '-');
+  // Everything after "custom_software_development" (3 parts)
+  const afterPrefix = parts.slice(prefixIdx + 3);
 
+  // Known multi-word city names that use underscores in filename
+  const multiWordCities = [
+    'cape_town', 'kuala_lumpur', 'buenos_aires', 'nizhny_novgorod',
+    'cluj_napoca', 'thessaloniki', 'nicosia'
+  ];
+
+  // Try to match multi-word city names first
+  const remaining = afterPrefix.join('_');
+  for (const mw of multiWordCities) {
+    if (remaining === mw || remaining.startsWith(mw + '_')) {
+      const afterCity = remaining.substring(mw.length).replace(/^_/, '');
+      // Check for focus suffix (e.g., healthtech_focus, fintech, saas, govtech, ehealth, cyber_focus)
+      let focus = '';
+      if (afterCity) {
+        // Normalize: "healthtech_focus" -> "healthtech", "fintech" -> "fintech", "cyber_focus" -> "cyber"
+        focus = afterCity.replace(/_focus$/, '').replace(/_/g, '-');
+      }
+      return { id, city: mw.replace(/_/g, '-'), focus };
+    }
+  }
+
+  // Single-word city: check for focus suffix like "tallinn_fintech" or "helsinki_healthtech_focus"
+  if (afterPrefix.length >= 2) {
+    // Check for compound focus like "healthtech_focus" (last part is literally "focus")
+    const hasCompoundFocus = afterPrefix[afterPrefix.length - 1] === 'focus';
+    if (hasCompoundFocus && afterPrefix.length >= 2) {
+      const focus = afterPrefix.slice(0, afterPrefix.length - 1).slice(1).join('-').replace(/_/g, '-');
+      // City is the first part, everything between city and "_focus" is the focus
+      // e.g., ["helsinki", "healthtech", "focus"] -> city="helsinki", focus="healthtech"
+      // e.g., ["tallinn", "fintech", "focus"] -> city="tallinn", focus="fintech"
+      const city = afterPrefix[0];
+      return { id, city, focus };
+    }
+
+    // Check for multi-word focus like "digital_government" (last part is "government")
+    const lastPart = afterPrefix[afterPrefix.length - 1];
+    const focusIndicators = ['saas', 'fintech', 'govtech', 'ehealth', 'healthtech', 'cyber', 'medtech', 'government'];
+    const isLastFocus = focusIndicators.some(f => lastPart === f || lastPart.startsWith(f));
+
+    if (isLastFocus) {
+      // Everything after the city name is the focus
+      const city = afterPrefix[0];
+      const focusParts = afterPrefix.slice(1);
+      const focus = focusParts.join('-').replace(/_/g, '-');
+      return { id, city, focus };
+    }
+  }
+
+  // No focus detected — entire remainder is the city
+  const city = afterPrefix.join('-');
   return { id, city, focus: '' };
 }
 
@@ -186,11 +244,29 @@ function extractProcessSteps(html) {
       const rows = parseHtmlTableToArrays(table);
       if (rows.length > 0 && rows[0].length >= 2) {
         const stepNum = parseInt(stepMatch[1]);
-        const cells = rows[0];
+        const cellText = stripHtml(rows[0][1] || '');
+
+        // Extract title: text before the first parenthetical or first sentence
+        // e.g., "Free London Consultation (Week 1)" from "Free London Consultation (Week 1) 45-minute video..."
+        let title = cellText;
+        // Try to extract just the step name: everything before " 45-minute" or " For " or " Output:"
+        const titleEnd = cellText.search(/\s+(?:\d+[\s-]minute|For projects|Output:|Development in|Production deployment|OWASP|Staging environment)/i);
+        if (titleEnd > 10) {
+          title = cellText.substring(0, titleEnd).trim();
+        } else {
+          // Fallback: take text up to first period or first 80 chars
+          const periodIdx = cellText.indexOf('. ');
+          if (periodIdx > 10 && periodIdx < 100) {
+            title = cellText.substring(0, periodIdx).trim();
+          } else {
+            title = cellText.substring(0, Math.min(80, cellText.length)).trim();
+          }
+        }
+
         steps.push({
           step: stepNum,
-          title: stripHtml((cells[1] || '').split(/<\/?p>/).filter(Boolean)[0] || cells[1] || ''),
-          description: stripHtml(cells[1] || '').substring(0, 500)
+          title,
+          description: cellText.substring(0, 500)
         });
       }
     }
@@ -249,12 +325,30 @@ function extractRelatedPages(html) {
 }
 
 function extractAuthor(html) {
+  // Find the AUTHOR table — it contains "AUTHOR" in a cell, and the author name in the next cell
   const authorMatch = html.match(/\bAUTHOR\b[\s\S]*?<\/table>/i);
-  if (authorMatch) {
-    const cells = authorMatch[0].match(/<td[^>]*>([\s\S]*?)<\/td>/gi) || [];
-    if (cells.length >= 2) {
-      return stripHtml(cells[cells.length - 1]).split('\n')[0].trim();
+  if (!authorMatch) return '';
+
+  // The authorMatch starts from "AUTHOR" mid-table, so the first <td> found
+  // is actually the cell containing the author name (the label cell was before "AUTHOR")
+  const cells = [];
+  const tdRegex = /<td[^>]*>([\s\S]*?)<\/td>/gi;
+  let tdMatch;
+  while ((tdMatch = tdRegex.exec(authorMatch[0])) !== null) {
+    cells.push(tdMatch[0]);
+  }
+
+  if (cells.length >= 1) {
+    // cells[0] is the author name cell (the "AUTHOR" label is in a preceding <td> outside the match)
+    const cellHtml = cells[0];
+    const pMatches = cellHtml.match(/<p[^>]*>([\s\S]*?)<\/p>/gi) || [];
+    if (pMatches.length > 0) {
+      const firstP = stripHtml(pMatches[0]).trim();
+      if (firstP && firstP.length > 3) return firstP;
     }
+    const cellText = stripHtml(cellHtml);
+    const firstChunk = cellText.split(/\s{2,}/)[0].trim();
+    if (firstChunk && firstChunk.length > 3) return firstChunk;
   }
   return '';
 }
@@ -263,9 +357,23 @@ function extractCta(html) {
   const tables = html.match(/<table[\s\S]*?<\/table>/gi) || [];
   for (const table of tables) {
     const text = stripHtml(table);
+
+    // Skip pricing tables (have "Service Type" / "GBP Pricing" / "Description" headers)
+    if (text.includes('Service Type') && (text.includes('GBP Pricing') || text.includes('Description'))) continue;
+
+    // Skip process step tables (start with a number followed by text like "Free ... Consultation")
+    if (/^\d+\s+(Free|Technical|Agile|Security|Launch)\b/.test(text)) continue;
+
+    // Skip compliance tables
+    if (text.includes('Compliance Area') || text.includes('ClickMasters Implementation')) continue;
+
+    // Actual CTA: contains "Free" + "Consultation" or "Book Free" or "Get started"
+    // and is relatively short (under 400 chars — pricing tables are longer)
     if ((text.includes('Free') && (text.includes('Consultation') || text.includes('Quote') || text.includes('Assessment'))) ||
         text.includes('Book Free') || text.includes('Get started')) {
-      return text.substring(0, 500);
+      if (text.length < 400) {
+        return text.substring(0, 500);
+      }
     }
   }
   return '';
@@ -285,7 +393,7 @@ async function convertCities() {
     const filePath = path.join(CITIES_DIR, file);
 
     try {
-      const { id, city } = parseFilename(file);
+      const { id, city, focus } = parseFilename(file);
       const result = await mammoth.convertToHtml({ path: filePath });
       const html = result.value;
 
@@ -328,6 +436,7 @@ async function convertCities() {
         id,
         slug: meta.slug || `custom-software-development-${city}`,
         city,
+        focus,
         title: title || meta.metaTitle || '',
         metaTitle: meta.metaTitle || '',
         metaDesc: meta.metaDesc || '',
@@ -418,7 +527,7 @@ export const cities = ${JSON.stringify(uniqueCities, null, 2)};
 
 // Lightweight listing data for cards/listings
 export const cityListings = cities.map(
-  ({ id, slug, city, title, metaDesc, badges }) => ({ id, slug, city, title, metaDesc, badges: badges.slice(0, 3) })
+  ({ id, slug, city, focus, title, metaDesc, badges }) => ({ id, slug, city, focus, title, metaDesc, badges: badges.slice(0, 3) })
 );
 
 // Get single city page by slug
