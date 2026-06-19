@@ -277,7 +277,40 @@ return splitParagraphs.filter(p => {
 });
 ```
 
-### 10. Empty/Debug Files in Project Root
+### 10. Slug Field Contains Folder Prefix
+
+**Symptom:** All slugs in the generated data file have a folder-name prefix, e.g., `"slug": "glossary/ir35-definition"` instead of `"slug": "ir35-definition"`.
+
+**Root Cause:** The DOCX meta table's SLUG field contains the full path including the folder/section name (e.g., `glossary/ir35-definition` instead of just `ir35-definition`). The extraction regex captures it as-is.
+
+**Fix:** Strip the prefix in the conversion script's slug extraction:
+
+```js
+// After extracting raw slug from DOCX
+let slug = rawSlug.trim();
+// Remove known folder prefixes
+slug = slug.replace(/^(glossary|resource-guide|how-to|tech|cost|city)\//i, '');
+// Also handle double-slash from URL-style slugs
+slug = slug.replace(/^\//, '');
+```
+
+**Or fix after generation** with a Node.js script:
+```js
+const fs = require('fs');
+let content = fs.readFileSync('data/glossary.js', 'utf8');
+const before = (content.match(/"slug": "glossary\//g) || []).length;
+content = content.replace(/"slug": "glossary\//g, '"slug": "');
+fs.writeFileSync('data/glossary.js', content);
+console.log('Fixed', before, 'slugs');
+```
+
+**IMPORTANT:** When verifying, clear Node.js require cache:
+```js
+delete require.cache[require.resolve('./data/glossary')]
+const { glossaryListings } = require('./data/glossary');
+```
+
+### 11. Empty/Debug Files in Project Root
 
 During conversion script development, these scratch files get created in the project root:
 

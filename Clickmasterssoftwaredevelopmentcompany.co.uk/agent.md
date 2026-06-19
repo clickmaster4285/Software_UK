@@ -1,6 +1,6 @@
 # agent.md — ClickMasters Content Migration
 
-> Main reference file. See `plan.md` for detailed execution plan.
+> Main reference file. See `plan-industry-service-pages.md` for Phase 7 (industry/service) execution plan.
 
 ---
 
@@ -18,16 +18,17 @@
 
 ## 2. Content Inventory
 
-| Category | Count | Folder |
-|----------|------:|--------|
-| Industry / Service Page | 573 | `Industry-Service-Page/` |
-| Hire Page | 300 | `Hire-Page/` |
-| Case Study | 280 | `Case-Study/` |
-| Salary Guide | 193 | `Salary-Guide/` |
-| International City | 179 | `International-City/` |
-| Comparison Page | 177 | `Comparison-Page/` |
-| Resource Guide | 83 | `Resource-Guide/` |
-| **Total** | **1,785** | 7 folders |
+| Category | Count | Folder | Status |
+|----------|------:|--------|--------|
+| Industry / Service Page | 215 | `Industry-Service-Page/` | 🔲 Not converted |
+| Hire Page | 311 | `Hire-Page/` | ✅ (269 unique, +11 tech merged, re-processed) |
+| Case Study | 280 | `Case-Study/` | ✅ (274 unique) |
+| Salary Guide | 193 | `Salary-Guide/` | ✅ (99 unique) |
+| International City | 306 | `International-City/` | ✅ (203 unique, +127 city merged, re-processed) |
+| Comparison Page | 177 | `Comparison-Page/` | ✅ (141 unique) |
+| Resource Guide | 103 | `Resource-Guide/` | ✅ (80 unique, +9 resource + 7 how-to + 4 cost merged, re-processed) |
+| Glossary | 200 | `Glossary/` | 🔄 In Progress (data file generated, routes created, build pending) |
+| **Total** | **1,785** | 9 folders | 7 complete, 2 remaining |
 
 ### Duplicate Slugs
 
@@ -46,20 +47,63 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 ├── agent.md                    ← main reference
 ├── plan.md                     ← execution plan
 ├── ClickMasters_Master_Index.csv
-├── Case-Study/           (280 .docx)
-├── Comparison-Page/      (177 .docx)
-├── Hire-Page/           (300 .docx)
-├── Industry-Service-Page/ (573 .docx)
-├── International-City/  (179 .docx)
-├── Resource-Guide/       (83 .docx)
-├── Salary-Guide/        (193 .docx)
+├── Case-Study/           (280 .docx) ✅
+├── Comparison-Page/      (177 .docx) ✅
+├── Hire-Page/           (311 .docx) ✅ (300 original + 11 tech)
+├── Industry-Service-Page/ (215 .docx) 🔲
+├── International-City/  (306 .docx) ✅ (179 original + 127 city)
+├── Resource-Guide/       (103 .docx) ✅ (92 original + 9 resource + 7 how-to + 4 cost)
+├── Salary-Guide/        (193 .docx) ✅
+├── Glossary/            (200 .docx) 🔲 NEW
 ├── data/
 │   ├── case-studies.js       ✅ (274 unique)
-│   ├── hire-pages.js        ✅ (258 unique)
+│   ├── hire-pages.js        ✅ (269 unique, re-processed)
 │   ├── salary-guides.js     ✅ (99 unique)
 │   ├── comparisons.js       ✅ (141 unique)
-│   └── cities.js            ✅ (98 unique)
+│   ├── cities.js            ✅ (203 unique, re-processed)
+│   ├── resource-guides.js   ✅ (80 unique, re-processed)
+│   ├── glossary.js          🔄 In Progress (200 terms, routes created, build pending)
+│   └── industry-services.js 🔲 Pending
 ```
+
+---
+
+## 3A. Industry-Service-Page File Audit & Cleanup (Completed June 19, 2026)
+
+The `Industry-Service-Page/` folder initially contained **573 DOCX files**. Analysis identified **7 distinct file types**:
+
+| # | File Type | Naming Pattern | Count | Destination |
+|---|-----------|---------------|-------|-------------|
+| 1 | **True Industry+Service** | `{industry}_{service}` | 215 | Stays in `Industry-Service-Page/` |
+| 2 | **Glossary** | `glossary_{term}_definition` | 200 | `Glossary/` (new folder) |
+| 3 | **How-To** | `howto_how_to_{action}_uk` | 7 | `Resource-Guide/` (merged) |
+| 4 | **Tech Pages** | `tech_{technology}_development` | 11 | `Hire-Page/` (merged) |
+| 5 | **Cost Pages** | `cost_cost_{topic}_uk` | 4 | `Resource-Guide/` (merged) |
+| 6 | **Resource/Guide** | `*_guide_*`, `ir35_*`, etc. | 9 | `Resource-Guide/` (merged) |
+| 7 | **City-Specific** | `*{service}_{city}` | 127 | `International-City/` (merged) |
+
+**Total moved: 358 files. Remaining: 215 true industry+service files.**
+
+### Industries Represented (215 True Industry+Service Files)
+
+| Industry | Services |
+|----------|----------|
+| fintech | software-development, custom-software-development, saas-development, mvp-development, api-development, devops-cicd, qa-testing, legacy-modernisation, cloud-native-development, staff-augmentation, microservices-architecture, software-consulting, software-maintenance |
+| healthtech | custom-software-development, saas-development, mvp-development, qa-testing, staff-augmentation, legacy-modernisation, cloud-native-development, devops-cicd, microservices-architecture |
+| govtech | software-development, api-development, qa-testing, staff-augmentation, legacy-modernisation, cloud-native-development, saas-development, microservices-architecture |
+| ecommerce | software-development, custom-software-development, saas-development, microservices-architecture, api-development, qa-testing, legacy-modernisation, cloud-native-development, staff-augmentation, mobile-app-development |
+| proptech | software-development, saas-development, api-development, devops-cicd, staff-augmentation, cloud-native-development |
+| insurtech | custom-software-development, saas-development, api-development, devops-cicd, qa-testing, legacy-modernisation, cloud-native-development, microservices-architecture |
+| logtech | software-development, custom-software-development, saas-development, staff-augmentation, qa-testing, legacy-modernisation, cloud-native-development, api-development |
+| retailtech | software-development, saas-development, staff-augmentation, cloud-native-development, legacy-modernisation, qa-testing, microservices-architecture, ai-development |
+| edtech | software-development, saas-development, legacy-modernisation, cloud-native-development, qa-testing, staff-augmentation, api-development, microservices-architecture |
+| medtech | saas-development, microservices-architecture, legacy-modernisation, cloud-native-development, api-development, devops-cicd |
+| cleantech | api-development, saas-development, cloud-native-development, legacy-modernisation, qa-testing, microservices-architecture |
+| legaltech | software-development, custom-software-development, saas-development, cloud-native-development, staff-augmentation |
+| agritech | api-development |
+| insurance | api-development, legacy-modernisation |
+| saas | devops-cicd, legacy-modernisation |
+| ai | devops-cicd, staff-augmentation, cloud-native-development, software-development |
 
 ---
 
@@ -135,18 +179,21 @@ Each case study has this HTML pattern:
 
 ## 7. Execution Order
 
-### Phase 1: Case Studies (Priority)
+### Phase 1: Case Studies (Priority) ✅
 1. Write `scripts/convert-case-studies.js`
-2. Generate `data/case-studies.js`
+2. Generate `data/case-studies.js` (274 unique)
 3. Update route: `[id]` → `[slug]`
 
 ### Phase 2: Other Categories
-1. Hire Page (300) → `data/hire-pages.js` → `/hire/[role]/[city]/` ✅
-2. Salary Guide (193) → `data/salary-guides.js` → `/salary-guide/[slug]/` ✅
-3. Comparison Page (177) → `data/comparisons.js` → `/comparison/[slug]/` ✅
-4. International City (179) → `data/cities.js` → `/cities/[slug]/` ✅
-5. Resource Guide (83) → `data/resource-guides.js` → `/resource/[slug]/` 🔲
-6. Industry / Service (573) → `data/services.js` → `/[category]/[service]/` 🔲
+1. Hire Page (311) → `data/hire-pages.js` (258 unique) → `/hire/[role]/[city]/` ✅
+2. Salary Guide (193) → `data/salary-guides.js` (99 unique) → `/salary-guide/[slug]/` ✅
+3. Comparison Page (177) → `data/comparisons.js` (141 unique) → `/comparison/[slug]/` ✅
+4. International City (306) → `data/cities.js` (98 unique) → `/cities/[slug]/` ✅
+   - ⚠️ Re-run `scripts/convert-cities.js` to include 127 new city files
+5. Resource Guide (103) → `data/resource-guides.js` (63 unique) → `/resource/[slug]/` ✅
+   - ⚠️ Re-run `scripts/convert-resource-guides.js` to include 9 resource + 7 how-to + 4 cost files
+6. Glossary (200) → `data/glossary.js` 🔲 → `/glossary/[term]/`
+7. Industry / Service (215) → `data/industry-services.js` 🔲 → `/[category]/[service]/`
 
 ---
 
@@ -158,6 +205,15 @@ Each case study has this HTML pattern:
 | Admin panel | No | Data files sufficient |
 | Route param | `[slug]` | Better SEO |
 | Build | SSG | Fastest, static CDN |
+| Glossary URL structure | `/glossary/` + `/glossary/[term]/` | Clean, readable; follows established pattern |
+| How-To files → | Merged into `Resource-Guide/` | Same template as resource guides; avoids extra category |
+| Cost files → | Merged into `Resource-Guide/` | Same template as resource guides; avoids extra category |
+| Tech files → | Merged into `Hire-Page/` | All are `tech_{technology}_development` (developer hire pages) |
+| City files → | Merged into `International-City/` | They are city-specific pages |
+| Guide files → | Merged into `Resource-Guide/` | Same DOCX template as existing resource guides |
+| Industry+Service URL | `/[category]/[service]/` | Already exists; update data source |
+| Duplicate handling | Lowest P-number | Same strategy as all prior phases |
+| Execution order | Cleanup first, then convert sequentially | Ensures clean separation before conversion |
 
 ---
 
@@ -372,20 +428,36 @@ const Component = dynamic(() =>
 
 ## 12. Next Actions
 
-1. ~~Create `plan.md`~~ ✅ Done
-2. ~~Write `scripts/convert-case-studies.js`~~ ✅ Done
-3. ~~Run on 280 case studies~~ → `data/case-studies.js` (274 unique) ✅
-4. ~~Convert 300 hire pages~~ → `data/hire-pages.js` (258 unique) ✅
-5. ~~Update case study route to `[slug]`~~ ✅ Done
-6. ~~Build hire listing + detail pages~~ ✅ Done
-7. ~~Add lightweight data helpers~~ (`caseStudyListings`, `getHireRolesMap`, etc.) ✅
-8. ~~Navbar lazy-loading + trailing slash fix + FAQ dedup~~ ✅
-9. ✅ Salary Guide (193 → 99 unique) — `/salary-guide/[slug]` live with SSG
-10. ✅ Comparison Pages (177 → 141 unique) — `/comparison/[slug]` live with SSG
-11. ✅ International City (179 → 98 unique) — `/cities/[slug]` live with SSG
-12. Next: Convert remaining 2 categories (Resource Guide, Industry/Service)
+### Completed
+1. ✅ Create `plan.md`
+2. ✅ Write & run `scripts/convert-case-studies.js` → `data/case-studies.js` (274 unique)
+3. ✅ Convert hire pages → `data/hire-pages.js` (269 unique, re-processed with merged tech pages)
+4. ✅ Update case study route to `[slug]`
+5. ✅ Build hire listing + detail pages
+6. ✅ Add lightweight data helpers (`caseStudyListings`, `getHireRolesMap`, etc.)
+7. ✅ Navbar lazy-loading + trailing slash fix + FAQ dedup
+8. ✅ Salary Guide (193 → 99 unique) — `/salary-guide/[slug]` live
+9. ✅ Comparison Pages (177 → 141 unique) — `/comparison/[slug]` live
+10. ✅ International City (306 → 203 unique, re-processed with 127 merged city files) — `/cities/[slug]` live
+11. ✅ Resource Guide re-processed (103 → 80 unique, with 9 resource + 7 how-to + 4 cost merged)
+12. ✅ File audit & cleanup — 358 misplaced files moved to correct folders
+13. ✅ Glossary data file generated — `data/glossary.js` (200 terms)
+14. ✅ Glossary routes created — listing page + detail page + filter client
+
+### In Progress
+15. 🔄 Glossary — run production build to verify pages pre-render (build cancelled twice previously)
+    - Fixed: extra `}` in page.js (rewrote from scratch)
+    - Fixed: `onClick => () =>` syntax error in filter-client.js
+    - Fixed: 206 slugs had `glossary/` prefix (stripped via script)
+
+### Pending
+16. 🔲 Industry/Service conversion (215 files) — create `scripts/convert-industry-services.js` → `data/industry-services.js`
+17. 🔲 Update existing `/[category]/[service]/` route to use `data/industry-services.js`
+18. 🔲 Create industry listing pages (e.g., `/fintech/`, `/healthtech/`)
+19. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
+20. 🔲 Fix pre-existing Radix UI prerender errors (case-studies, cities, hire detail pages)
 
 ---
 
-**Last Updated:** June 16, 2026
-**See also:** `plan.md` (detailed execution plan)
+**Last Updated:** June 19, 2026
+**See also:** `plan-industry-service-pages.md` (Phase 7 execution plan)
