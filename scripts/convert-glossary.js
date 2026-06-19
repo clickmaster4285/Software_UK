@@ -90,8 +90,8 @@ function getTablePosition(html, tableHtml) {
 function parseFilename(filename) {
   const pNumberMatch = filename.match(/P(\d+)/);
   const id = pNumberMatch ? `P${pNumberMatch[1]}` : '';
-  // Term is between 'glossary_' and '_definition'
-  const termMatch = filename.match(/glossary_(.+?)_definition/i);
+  // Term is between 'glossary_' and '_definition' or '-definition'
+  const termMatch = filename.match(/glossary_(.+?)[-_]definition/i);
   const term = termMatch ? termMatch[1] : '';
   // Convert underscores to hyphens for slug
   const slug = term.toLowerCase().replace(/_/g, '-');
@@ -151,12 +151,26 @@ function extractDirectAnswer(tables) {
 }
 
 /**
+ * Check if a table is a badge/table-of-contains table (contains multiple section keywords).
+ * Badge tables have cells like "Definition", "UK Context", "Related Terms", "Commercial Relevance".
+ */
+function isBadgeTable(tableHtml) {
+  const text = getTableText(tableHtml);
+  const badgeKeywords = [/Definition/i, /UK Context/i, /Related Terms/i, /Commercial Relevance/i, /JSON-LD/i];
+  let matchCount = 0;
+  for (const kw of badgeKeywords) {
+    if (kw.test(text)) matchCount++;
+  }
+  return matchCount >= 2;
+}
+
+/**
  * Extract UK Context paragraph(s).
  * The UK Context section title appears as a single-cell or 2-cell table
  * containing ONLY "UK Context" or "{Term} — UK Context".
  * Must NOT match the badge table (T2) which also contains "UK Context".
- * Strategy: find tables matching /UK Context/i, skip the badge table (5 cells),
- * use the first match that looks like a section title (1-2 cells, short text).
+ * Strategy: find tables matching /UK Context/i, skip badge tables,
+ * use the first match that looks like a section title (short text, no other section keywords).
  */
 function extractUkContext(html, tables) {
   // Find the UK Context section title table (not the badge table)
@@ -164,12 +178,10 @@ function extractUkContext(html, tables) {
   for (const table of tables) {
     const text = getTableText(table);
     if (!/UK Context/i.test(text)) continue;
-    // Skip the badge table — it has 5 cells with emoji badges
-    const rows = parseHtmlTable(table);
-    const cellCount = rows.length > 0 ? rows[0].length : 0;
-    if (cellCount >= 5) continue; // badge table
-    // This is the UK Context title table (1-2 cells, short text)
-    if (text.length < 100) {
+    // Skip the badge table — it contains multiple section keywords
+    if (isBadgeTable(table)) continue;
+    // This is the UK Context title table (short text, 1-2 cells)
+    if (text.length < 120) {
       ukTitleTable = table;
       break;
     }
@@ -203,11 +215,9 @@ function findSectionTable(html, tables, keyword) {
   for (const table of tables) {
     const text = getTableText(table);
     if (!keyword.test(text)) continue;
-    // Skip badge table (5 cells with emojis)
-    const rows = parseHtmlTable(table);
-    const cellCount = rows.length > 0 ? rows[0].length : 0;
-    if (cellCount >= 5) continue;
-    // Section title tables are short (1-2 cells, <120 chars)
+    // Skip badge table (contains multiple section keywords)
+    if (isBadgeTable(table)) continue;
+    // Section title tables are short (<120 chars)
     if (text.length < 120) {
       const pos = getTablePosition(html, table);
       if (pos) return { table, pos };
@@ -311,20 +321,20 @@ function extractSchema(tables) {
   const schemaMatch = t.text.match(/(DefinedTerm\s*\+?\s*FAQPage|FAQPage|DefinedTerm|Article|HowTo)/i);
   if (schemaMatch) result.schemaType = schemaMatch[1].trim();
 
-  // Target keywords: "Target KW: "kw1" (N/mo), "kw2" (N/mo)"
+  // Target keywords: may appear as 'Target KW: "kw1" (N/mo)' or just '"kw1" (N/mo)' after '|'
+  // First try "Target KW:" prefix format
   const kwMatch = t.text.match(/Target KW:\s*([\s\S]+)/i);
-  if (kwMatch) {
-    const kwString = kwMatch[1];
-    // Extract individual keywords in quotes
-    const kwPattern = /"([^"]+)"/g;
-    let m;
-    while ((m = kwPattern.exec(kwString)) !== null) {
-      result.targetKeywords.push(m[1]);
-    }
-    // If no quoted keywords, try comma-separated
-    if (result.targetKeywords.length === 0) {
-      result.targetKeywords = kwString.split(',').map(k => k.trim().replace(/["()0-9\/mo]/gi, '').trim()).filter(k => k.length > 2);
-    }
+  const kwSource = kwMatch ? kwMatch[1] : t.text;
+  // Extract all quoted strings as keywords
+  const kwPattern = /"([^"]+)"/g;
+  let m;
+  while ((m = kwPattern.exec(kwSource)) !== null) {
+    result.targetKeywords.push(m[1]);
+  }
+  // If no quoted keywords found, try comma-separated bare words
+  if (result.targetKeywords.length === 0) {
+    const bareKw = (kwMatch ? kwMatch[1] : t.text).split(',').map(k => k.trim().replace(/["()0-9\/mo|]/gi, '').trim()).filter(k => k.length > 2 && !/DefinedTerm|FAQPage/i.test(k));
+    result.targetKeywords = bareKw;
   }
 
   return result;
