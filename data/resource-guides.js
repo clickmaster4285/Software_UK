@@ -1,7 +1,7 @@
 /**
  * Resource Guides Data
- * Generated from 103 DOCX files
- * Unique entries: 80
+ * Generated from 105 DOCX files
+ * Unique entries: 81
  * Extraction: content-based (dynamic table structures)
  */
 
@@ -314,6 +314,197 @@ export const resourceGuides = [
     "relatedPages": [],
     "cta": "Get a Transparent, Fixed-Price Quote Book a free 45-minute Technical Discovery call. We'll scope your project and give you a realistic GBP cost estimate — at no charge. No commitment. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
     "author": "Written by the ClickMasters Engineering & Pricing Team Reviewed by James Whitmore — CTO, ClickMasters Software Development This guide reflects real project costs from 50+ UK software development projects delivered by ClickMasters. All pricing is based on current 2025 market rates and our own project data. R&D Tax Credit calculations use current HMRC SME scheme rates. Prices are updated annually."
+  },
+  {
+    "id": "P7",
+    "slug": "rd-tax-credits-software-development",
+    "title": "R&D Tax Credits for Software Development UK — Reduce Your Build Cost by Up to 27%",
+    "metaTitle": "R&D Tax Credits for Software Development UK 2025 | ClickMasters",
+    "metaDesc": "HMRC R&D Tax Credits explained for UK software companies. SME vs RDEC, qualifying activities, how to claim, how to document. Up to 27% of qualifying spend returned. Free guide.",
+    "lastUpdated": "June 2025",
+    "readingTime": 14,
+    "writtenBy": "ClickMasters Finance Team",
+    "reviewedBy": "HMRC R&D compliance reviewed by chartered accountant",
+    "badges": [
+      "💡 HMRC R&D Relief",
+      "📅 2025 Rates",
+      "🇬🇧 UK-Specific Guide",
+      "💷 SME + RDEC Schemes",
+      "🆓 Free Guide"
+    ],
+    "directAnswer": "UK businesses that commission or build custom software may be able to claim HMRC R&D Tax Credits on qualifying development spend. Under the current SME scheme (post-April 2023), companies can deduct 186% of qualifying R&D expenditure from taxable profits, or — if loss-making — claim a 14.5% payable tax credit. The effective benefit is approximately 18.6–27% of qualifying spend, depending on your tax position. Most bespoke software projects qualify. ZERO UK software agencies mention this to clients. ClickMasters documents qualifying R&D activities as a standard part of our project delivery.",
+    "contentSections": [
+      {
+        "title": "",
+        "paragraphs": [
+          "Important: This guide provides general information about HMRC R&D Tax Credits. It is not tax advice. You should consult a qualified R&D tax specialist or chartered accountant before making a claim. ClickMasters can introduce you to our specialist R&D tax partners if required."
+        ],
+        "table": null
+      },
+      {
+        "title": "Does My Software Project Qualify for R&D Tax Credits?",
+        "paragraphs": [
+          "Real-World Example: A UK fintech company builds a custom KYC identity verification system. Standard identity check APIs (Onfido, Jumio) are available, but the company develops a novel approach to combining multiple data sources with custom risk-scoring logic to reduce false positives by 60%. The custom algorithm development qualifies as R&D. The standard API integration work does not."
+        ],
+        "table": null
+      },
+      {
+        "title": "R&D Tax Credit Rates — SME Scheme vs RDEC (2025)",
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Aspect",
+            "SME Scheme",
+            "RDEC (Large Company)"
+          ],
+          "rows": [
+            [
+              "Eligible companies",
+              "SMEs: <500 employees, <€100M turnover or <€86M balance sheet",
+              "Large companies + SMEs on subsidised projects"
+            ],
+            [
+              "Enhancement rate (post-Apr 2023)",
+              "186% deduction (uplift of 86%)",
+              "Merged scheme: 186% deduction from April 2024"
+            ],
+            [
+              "Loss-making: payable credit",
+              "14.5% of \"surrenderable loss\" (R&D intensive: 27%)",
+              "Merged scheme: 16.2% above-the-line credit"
+            ],
+            [
+              "Profitable company (approx effective rate)",
+              "~21.5% of qualifying spend",
+              "~16.2% of qualifying spend"
+            ],
+            [
+              "R&D intensive SME rate",
+              "27% credit if R&D spend >30% of total spend",
+              "N/A — use merged scheme"
+            ],
+            [
+              "Connected companies",
+              "Must aggregate group R&D",
+              "Part of group relief calculations"
+            ],
+            [
+              "Subcontracted R&D",
+              "Can claim on staff costs + 65% of subcontractor cost",
+              "Claim on staff costs, some subcontractor costs"
+            ],
+            [
+              "Claim deadline",
+              "2 years after end of accounting period",
+              "2 years after end of accounting period"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "",
+        "paragraphs": [
+          "Note: R&D tax legislation changed significantly in April 2023 (SME rates reduced from previous levels) and again in April 2024 (merged scheme introduced). Always verify current rates with an R&D specialist before making a claim."
+        ],
+        "table": null
+      },
+      {
+        "title": "What Costs Can You Claim?",
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Cost Category",
+            "What's Included",
+            "ClickMasters relevance"
+          ],
+          "rows": [
+            [
+              "Staff costs",
+              "Salaries, NI, pension contributions for employees directly engaged in R&D",
+              "Core ClickMasters developer time on qualifying work"
+            ],
+            [
+              "Externally Provided Workers",
+              "Agency/contractor costs at 65% of invoice value (SME scheme)",
+              "Applicable where ClickMasters is subcontractor to your R&D project"
+            ],
+            [
+              "Software & consumables",
+              "Licences and software directly used in R&D (not general office software)",
+              "AWS/Azure infrastructure costs, specialised tools"
+            ],
+            [
+              "Cloud computing (from April 2023)",
+              "Cloud compute, storage, and data used for R&D",
+              "AWS/Azure costs for development environments, ML training"
+            ],
+            [
+              "Subcontractor costs",
+              "65% of payments to subcontractors for qualifying R&D (SME scheme only)",
+              "If you commission ClickMasters to perform R&D activities"
+            ],
+            [
+              "Prototype costs",
+              "Materials consumed in R&D prototyping",
+              "Less common for software but may apply to IoT/embedded projects"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "How to Document Your R&D — The Records HMRC Requires",
+        "paragraphs": [
+          "ClickMasters' Approach: We include R&D documentation as a standard deliverable on all qualifying projects. This includes: a technical narrative covering qualifying uncertainties and approaches, sprint-level records of R&D activities, and a summary formatted to support your tax claim. This is unique in the UK software agency market — no other agency we know of does this as standard."
+        ],
+        "table": null
+      },
+      {
+        "title": "Step-by-Step: How to Make an R&D Tax Credit Claim",
+        "paragraphs": [
+          "Step 1: Step 1: Assess Eligibility",
+          "Review your software projects for qualifying activities. If you've been building anything involving genuine technical uncertainty, you likely have a claim. Go back up to 2 years (to the end of your last two completed accounting periods).",
+          "Step 2: Step 2: Identify and Quantify Qualifying Costs",
+          "Work with your finance team to identify all costs attributable to qualifying R&D activities: staff time, subcontractor invoices (65%), software licences, cloud costs. This step requires the technical narrative to apportion costs correctly.",
+          "Step 3: Step 3: Prepare the Technical Narrative",
+          "This is the hardest part. Describe each R&D project: the advance sought, the uncertainties, the approaches tried, the outcome. ClickMasters' project documentation is your starting point — we can provide a technical summary formatted for this purpose.",
+          "Step 4: Step 4: Complete the CT600 R&D Supplementary Pages",
+          "Your accountant or R&D tax specialist completes the R&D section of your Corporation Tax return (CT600). First-time claimants must also file an online claim notification through HMRC's R&D service within 6 months of the end of the accounting period.",
+          "Step 5: Step 5: Submit and Respond to Any HMRC Queries",
+          "HMRC may accept your claim, request further information, or open an enquiry. Strong contemporaneous documentation significantly reduces the risk of an enquiry. Most straightforward claims are processed within 28–40 days."
+        ],
+        "table": null
+      },
+      {
+        "title": "Frequently Asked Questions — R&D Tax Credits for Software",
+        "paragraphs": [],
+        "table": null
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much can I get back from HMRC for software R&amp;D?",
+        "answer": "Under the current (post-April 2023) SME scheme, the effective benefit is approximately 18.6–27% of qualifying spend. For a £100,000 qualifying project: a profitable SME would save approximately £21,500 in corporation tax; a loss-making SME could receive approximately £14,500–£27,000 as a cash credit (the higher rate applies to R&amp;D-intensive companies where R&amp;D spend exceeds 30% of total expenditure)."
+      },
+      {
+        "question": "Does building a SaaS product qualify for R&amp;D tax credits?",
+        "answer": "Often yes — if the development involved solving genuine technical challenges rather than implementing known solutions. Building a multi-tenant SaaS platform using established frameworks (React, Node.js, PostgreSQL) without novel technical problem-solving typically does NOT qualify. Adding novel technical elements — a custom recommendation algorithm, innovative data architecture, new approach to real-time processing — can create qualifying R&amp;D within the project."
+      },
+      {
+        "question": "Can I claim R&amp;D tax credits on outsourced software development?",
+        "answer": "Yes, subject to rules. Under the SME scheme, you can claim 65% of payments to subcontractors for qualifying R&amp;D activities. The subcontractor must be providing R&amp;D services — not just standard development. The R&amp;D must be related to your trade. You cannot claim if the subcontractor is a connected company (same group). ClickMasters can be positioned as a qualifying subcontractor on your R&amp;D projects with appropriate documentation."
+      },
+      {
+        "question": "Can I make a retrospective R&amp;D tax credit claim?",
+        "answer": "Yes — you can claim for the last 2 completed accounting periods. If you've been building custom software for 2 years and haven't claimed, you may have a retrospective claim available. Claims must be made within 2 years of the end of the accounting period. Act quickly if you think you've missed claims."
+      },
+      {
+        "question": "Do I need a specialist R&amp;D tax advisor?",
+        "answer": "For straightforward claims, a good accountant can handle the submission. For larger or more complex claims (over £50,000 qualifying spend), an R&amp;D specialist adds value by: identifying the maximum qualifying costs, writing strong technical narratives, and defending claims in HMRC enquiries. HMRC enquiry rates have increased significantly since 2022 — specialist support significantly reduces enquiry risk. ClickMasters can introduce you to our trusted R&amp;D tax partners."
+      }
+    ],
+    "relatedPages": [],
+    "cta": "Book a Free R&D Tax Credits Consultation Talk to our team about whether your software project qualifies. We document R&D activities as standard — giving you the best possible starting point for your claim. → Get Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "author": "ClickMasters Finance & Compliance Team R&D Tax Credits documentation specialists — reviewed by chartered accountant ClickMasters has supported clients with R&D documentation across 30+ qualifying projects, including a case study where our technical narrative supported a £85,000 R&D tax credit claim on a £240,000 software project. This guide reflects HMRC guidance current as of June 2025. Tax legislation changes frequently — always verify current rates with a qualified R&D specialist."
   },
   {
     "id": "P18",
@@ -1200,6 +1391,140 @@ export const resourceGuides = [
     "relatedPages": [],
     "cta": "Build Your Open Banking Integration ClickMasters has integrated TrueLayer and direct OBIE APIs for UK FinTech clients. Free consultation to scope your Open Banking development. → Book Free FinTech Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
     "author": "ClickMasters Open Banking Team OBIE API and FCA-regulated FinTech specialists ClickMasters has built Open Banking integrations for UK FinTech startups — from TrueLayer-based MVP builds to direct OBIE API connections. Our team understands both the technical and regulatory aspects of Open Banking development."
+  },
+  {
+    "id": "P26",
+    "slug": "qualifying-rd-software-activities",
+    "title": "What Qualifies as R&D for Software Development? HMRC Tax Credits Guide 2025",
+    "metaTitle": "What Qualifies as R&D for Software Development UK? HMRC Guide | ClickMasters",
+    "metaDesc": "What activities qualify for HMRC R&D Tax Credits in software development? Technological uncertainty, qualifying costs, what does NOT qualify. 2025 guide with examples.",
+    "lastUpdated": "June 2025",
+    "readingTime": 11,
+    "writtenBy": "ClickMasters Finance Team",
+    "reviewedBy": "Chartered accountant reviewed",
+    "badges": [
+      "💡 HMRC R&D Relief",
+      "📅 2025 Rates",
+      "🇬🇧 UK SME & RDEC Schemes",
+      "🔬 Technological Uncertainty Test",
+      "💷 Up to 27% Relief"
+    ],
+    "directAnswer": "For HMRC R&D Tax Credits purposes, software development qualifies when it involves \"technological uncertainty\" — work where a competent professional could not readily deduce how to achieve the technical goal at the start of the project. This is different from implementing known techniques: using React and Node.js to build a standard web application does not qualify. Developing a novel algorithm, building a system that attempts something not previously done in your industry, or solving technical problems without obvious solutions — these qualify. The key test is uncertainty, not complexity.",
+    "contentSections": [
+      {
+        "title": "The HMRC Technological Uncertainty Test — Explained",
+        "paragraphs": [],
+        "table": null
+      },
+      {
+        "title": "Software R&D — Qualifying vs Non-Qualifying: Real Examples",
+        "paragraphs": [],
+        "table": {
+          "headers": [
+            "Activity",
+            "Qualifies?",
+            "Why"
+          ],
+          "rows": [
+            [
+              "Building a new web app with React and Node.js following established patterns",
+              "❌ No",
+              "Using known frameworks and established patterns. No technological uncertainty."
+            ],
+            [
+              "Developing a custom machine learning algorithm to detect financial fraud with novel approach",
+              "✅ Yes",
+              "Novel algorithm — competent professional cannot readily know if approach will work."
+            ],
+            [
+              "Integrating Stripe payment processing using their documented API",
+              "❌ No",
+              "Standard integration following documented procedures. No uncertainty."
+            ],
+            [
+              "Building a new approach to real-time multi-player state synchronisation not documented elsewhere",
+              "✅ Yes",
+              "Novel technical problem without established solution. Experimental work required."
+            ],
+            [
+              "Implementing OAuth2 authentication following the RFC specification",
+              "❌ No",
+              "Standard protocol implementation. Documented, known approach."
+            ],
+            [
+              "Developing a new approach to privacy-preserving machine learning compliant with GDPR Article 22",
+              "✅ Yes",
+              "Novel combination of ML technique and regulatory constraint not previously solved in documented way."
+            ],
+            [
+              "Rewriting a legacy PHP application in Python",
+              "❌ No (usually)",
+              "Usually: known techniques, no uncertainty. Exception: if the migration involves solving novel technical problems."
+            ],
+            [
+              "Building an NHS FHIR R4 integration using documented NHS Digital APIs",
+              "❌ No (usually)",
+              "Following documented standards. Exception: novel approaches to mapping clinical data models."
+            ],
+            [
+              "Developing a novel approach to reducing p50/p99 latency in a distributed system by 80%",
+              "✅ Yes",
+              "If novel techniques beyond industry standard are used to achieve unusual performance targets."
+            ],
+            [
+              "Training a custom LLM fine-tuned on proprietary domain data with novel training methodology",
+              "✅ Yes",
+              "Novel training approach, uncertain outcomes. Well-documented experimentation required."
+            ]
+          ]
+        }
+      },
+      {
+        "title": "How ClickMasters Documents R&D Activities",
+        "paragraphs": [
+          "Sprint-level technical narrative: at the end of each sprint, we document the specific technological uncertainties we addressed, the approaches we tried (including those that failed), and how uncertainties were resolved.",
+          "Architecture Decision Records (ADRs): formal documentation of every significant technical decision — including the alternatives considered and why they were rejected. This demonstrates systematic investigation.",
+          "Developer time tracking: granular records of time spent on qualifying R&D activities vs standard implementation work.",
+          "Technical narrative summary: at project completion, a summary document formatted to support your R&D tax claim — written by a technical team member, not the finance team.",
+          "ClickMasters includes R&D documentation as a standard deliverable on all qualifying projects. This is unique in the UK market — no other agency we know of does this as standard practice. Our approach:"
+        ],
+        "table": null
+      },
+      {
+        "title": "Frequently Asked Questions — Qualifying R&D for Software UK",
+        "paragraphs": [],
+        "table": null
+      },
+      {
+        "title": "Related Guides & Services",
+        "paragraphs": [
+          "Qualify Your Project for R&D Tax Credits Book a free consultation to assess whether your software project has qualifying R&D activities. ClickMasters documents R&D as standard — giving you the best possible starting point for your claim. → Book Free R&D Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+          "👤",
+          "AUTHOR",
+          "ClickMasters R&D Documentation Team",
+          "HMRC R&D qualifying activities specialists — chartered accountant reviewed",
+          "This guide reflects ClickMasters' direct experience documenting qualifying R&D activities for HMRC claims across 30+ software projects. Always consult a qualified R&D tax specialist for advice specific to your situation."
+        ],
+        "table": null
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does our SaaS product development qualify for R&amp;D Tax Credits?",
+        "answer": "It depends on what specific activities within the SaaS build involved technological uncertainty. The standard multi-tenancy database design, Stripe billing integration, and user authentication — probably not. A novel algorithm for personalisation, a custom approach to real-time data synchronisation across tenants, or a new method for privacy-preserving analytics — these elements may qualify. A good R&amp;D tax claim identifies the specific qualifying sub-activities within a larger non-qualifying project."
+      },
+      {
+        "question": "Can we claim R&amp;D credits on a project that was ultimately unsuccessful?",
+        "answer": "Yes — failed experiments often qualify for R&amp;D Tax Credits. The fact that your approach didn't work is evidence of genuine technological uncertainty. HMRC explicitly recognises that R&amp;D includes work that doesn't achieve its intended outcome. Documenting the approaches you tried, why you tried them, and how you determined they didn't work strengthens a claim based on unsuccessful R&amp;D."
+      },
+      {
+        "question": "How do we apportion costs between qualifying and non-qualifying activities?",
+        "answer": "You allocate costs to qualifying activities using staff time records. A developer who spends 60% of their time on qualifying R&amp;D activities can allocate 60% of their salary costs to the claim. For activities that mix qualifying and non-qualifying work (common in software projects), time tracking with task-level granularity is essential. ClickMasters' standard time tracking separates R&amp;D activities from standard implementation work."
+      }
+    ],
+    "relatedPages": [],
+    "cta": "",
+    "author": "ClickMasters R&D Documentation Team HMRC R&D qualifying activities specialists — chartered accountant reviewed This guide reflects ClickMasters' direct experience documenting qualifying R&D activities for HMRC claims across 30+ software projects. Always consult a qualified R&D tax specialist for advice specific to your situation."
   },
   {
     "id": "P104",
@@ -2563,153 +2888,6 @@ export const resourceGuides = [
     ],
     "cta": "Free Contract Review Consultation Book a free 45-minute call. We will review your existing software contract and highlight risks. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
     "author": "ClickMasters Legal Team UK software contract specialists This guide is for information purposes only and is not legal advice. Consult a solicitor for significant contracts."
-  },
-  {
-    "id": "P548",
-    "slug": "rd-tax-credits-software-development",
-    "title": "R&D Tax Credits for Software Development UK — Complete Guide 2025",
-    "metaTitle": "R&D Tax Credits for Software Development UK — Complete Guide 2025 | ClickMasters",
-    "metaDesc": "Claim R&D Tax Credits for software development. Up to 27% of qualifying expenditure returned by HMRC. SME and RDEC schemes. ClickMasters documents qualifying activities.",
-    "lastUpdated": "June 2025",
-    "readingTime": 12,
-    "writtenBy": "ClickMasters R&D Tax Team",
-    "reviewedBy": "Reviewed by R&D Tax Specialist",
-    "badges": [
-      "💷 Up to 27% Back",
-      "🇬🇧 HMRC SME + RDEC",
-      "📋 Qualifying Activities",
-      "⚠️ HMRC Merging Schemes",
-      "🆓 Free Assessment"
-    ],
-    "directAnswer": "UK software development companies can claim R&D Tax Credits for qualifying software projects — recovering up to 27% of qualifying expenditure from HMRC. The April 2024 scheme merger (SME + RDEC) created a new merged R&D scheme. ClickMasters documents qualifying activities on all client projects as standard. This guide is for information purposes only — always consult a qualified R&D tax specialist for claims.",
-    "contentSections": [
-      {
-        "title": "How Much Can You Claim?",
-        "paragraphs": [
-          "Note: This guide reflects the merged R&D tax relief scheme from April 2024. The SME R&D scheme and RDEC scheme merged into a single scheme. R&D tax law is complex — this guide provides general information and does not constitute tax advice. Consult a qualified R&D tax specialist before making a claim."
-        ],
-        "table": {
-          "headers": [
-            "Scheme",
-            "Who it applies to",
-            "Relief rate",
-            "Effective cash benefit"
-          ],
-          "rows": [
-            [
-              "Merged R&D Scheme (from April 2024)",
-              "Most companies — SME and large company",
-              "20% expenditure credit (taxable)",
-              "Up to 16.2% for profitable / up to 27% in some cases"
-            ],
-            [
-              "Enhanced R&D Intensive Support (ERIS)",
-              "Loss-making SMEs with R&D intensity above 30%",
-              "45% enhanced deduction + credit",
-              "Up to ~27% cash back for loss-makers"
-            ],
-            [
-              "R&D Expenditure Credit (RDEC legacy)",
-              "Large companies pre-April 2024",
-              "13% taxable credit",
-              "~10% effective benefit"
-            ]
-          ]
-        }
-      },
-      {
-        "title": "What Software Development Qualifies?",
-        "paragraphs": [],
-        "table": {
-          "headers": [
-            "Activity",
-            "Likely Qualifies?",
-            "HMRC Rationale"
-          ],
-          "rows": [
-            [
-              "Building a new algorithm solving a known hard problem",
-              "✅ Yes",
-              "Technological uncertainty — outcome not known in advance"
-            ],
-            [
-              "Building software using established frameworks",
-              "⚠️ Partially",
-              "Only the genuinely uncertain parts qualify"
-            ],
-            [
-              "Integrating novel APIs (NHS FHIR R4, Open Banking)",
-              "✅ Likely",
-              "Significant technical uncertainty in novel integration"
-            ],
-            [
-              "Implementing new AI/ML model architectures",
-              "✅ Yes",
-              "Active area of technological advance"
-            ],
-            [
-              "Replicating existing software functionality",
-              "❌ No",
-              "Applying known techniques — no technological advance"
-            ],
-            [
-              "Resolving technical scalability challenges",
-              "✅ Likely",
-              "System behaviour at scale creates genuine uncertainty"
-            ],
-            [
-              "Developing novel security architecture",
-              "✅ Likely",
-              "Advance in security methodology may qualify"
-            ]
-          ]
-        }
-      },
-      {
-        "title": "ClickMasters R&D Documentation",
-        "paragraphs": [
-          "ClickMasters standard deliverable on every project: Technical Discovery document, Architecture Decision Records (ADRs), sprint challenge logs, and R&D qualifying activities summary. All in a format acceptable to HMRC R&D tax specialists."
-        ],
-        "table": null
-      },
-      {
-        "title": "Common R&D Claim Mistakes for Software Companies",
-        "paragraphs": [
-          "Claiming routine software development (CRUD applications, standard integrations) — HMRC now scrutinises software claims heavily",
-          "Retrospective documentation — HMRC prefers contemporaneous records",
-          "Overclaiming staff time — only time genuinely spent on qualifying R&D activity can be claimed",
-          "Not claiming subcontractor costs — UK-based subcontractors (such as ClickMasters) can be included at 65% of costs",
-          "Missing the 2-year claim deadline — claims must be submitted within 2 years of the accounting period end"
-        ],
-        "table": null
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Can I claim R&amp;D Tax Credits for an MVP build?",
-        "answer": "MVPs that involve genuine technological uncertainty can qualify. If your MVP is building software using established, well-understood technologies to solve a known business problem — it probably does not qualify. If your MVP involves novel technical approaches, integration with complex APIs (NHS FHIR R4, HMRC MTD, Open Banking), or performance challenges where the solution is not known in advance — parts may qualify."
-      },
-      {
-        "question": "How do ClickMasters engineers appear in our R&amp;D claim?",
-        "answer": "ClickMasters is your subcontractor. You can include 65% of payments to ClickMasters for qualifying R&amp;D work in your claim. ClickMasters provides qualifying activity documentation per sprint to support your claim. Note: subcontractor costs are treated differently from employee costs in R&amp;D claims."
-      }
-    ],
-    "relatedPages": [
-      {
-        "title": "Innovate UK Smart Grants Guide",
-        "slug": "innovate-uk-smart-grants-guide"
-      },
-      {
-        "title": "MVP Development UK",
-        "slug": "mvp-development"
-      },
-      {
-        "title": "Custom Software Development UK",
-        "slug": "custom-software-development"
-      }
-    ],
-    "cta": "Free R&D Tax Credits Assessment ClickMasters will identify qualifying activities in your planned project. Free 30-minute call. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
-    "author": "ClickMasters R&D Tax Team R&D qualifying activities specialists This guide is for general information only. Consult a qualified R&D tax specialist for claims advice."
   },
   {
     "id": "P549",

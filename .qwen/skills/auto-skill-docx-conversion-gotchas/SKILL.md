@@ -1,8 +1,8 @@
 ---
 name: docx-conversion-gotchas
-description: Fix docx-to-data extraction failures — variable table counts, dedup bugs, mammoth quirks, checklist splitting (✓/✅), FAQ/header filtering, gap paragraphs
+description: Fix docx-to-data extraction failures — variable table counts, dedup bugs, mammoth quirks, checklist splitting (✓/✅), FAQ/header filtering, gap paragraphs, H1 duplication, component data shape mismatches
 source: auto-skill
-extracted_at: '2026-06-18T08:54:24.228Z'
+extracted_at: '2026-06-20T10:44:45.236Z'
 ---
 
 # DOCX Conversion Gotchas — Resource Guides & Beyond
@@ -309,6 +309,126 @@ console.log('Fixed', before, 'slugs');
 delete require.cache[require.resolve('./data/glossary')]
 const { glossaryListings } = require('./data/glossary');
 ```
+
+### 11. Service & Industries DOCX — H1 Title Duplication
+
+**Symptom:** Extracted `title` field contains duplicated text like `"MVP Development UK MVP Development UK — Launch Your Minimum Viable Product in 8–12 Weeks"`.
+
+**Root Cause:** Service and Industries DOCX files have a breadcrumb `<p>` and a separate `<h1>` in the same text-between-tables block:
+```html
+<p>Home › Services › <strong>DevOps &amp; CI/CD UK</strong></p>
+<h1><strong>DevOps &amp; CI/CD Services UK — AWS, Azure &amp; Kubernetes Pipeline Specialists</strong></h1>
+```
+When extracting from stripped text, both the breadcrumb text and H1 text get concatenated into one string.
+
+**Fix:** Parse the `<h1>` tag from raw HTML, don't rely on stripped text:
+```js
+function extractH1FromHtml(html) {
+  const h1Match = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+  if (h1Match) return stripHtml(h1Match[1]).trim();
+  // Fallback: stripped text
+  const text = stripHtml(html);
+  const lines = text.split(/\n/).map(l => l.trim()).filter(Boolean);
+  for (const line of lines) {
+    if (line.includes('—') || line.includes('–')) {
+      return line.replace(/^\s*Home\s*[›>]\s*Services\s*[›>]\s*/i, '').trim();
+    }
+  }
+  return lines[lines.length - 1] || '';
+}
+```
+
+### 12. Service & Industries DOCX — Meta DESC Leaks SLUG
+
+**Symptom:** `metaDesc` field contains `"...SLUG: /api-development/"` at the end.
+
+**Root Cause:** The META DESC regex `META DESC:\s*(.+)` is greedy and captures everything including the `SLUG:` line that follows in the same table cell.
+
+**Fix:** Stop the regex at `SLUG:` boundary:
+```js
+// ❌ Captures SLUG line too
+const metaDescMatch = text.match(/META DESC:\s*(.+)/i);
+
+// ✅ Stops before SLUG:
+const metaDescMatch = text.match(/META DESC:\s*(.+?)(?:\s+SLUG:|$)/i);
+```
+
+### 13. Service & Industries DOCX — Structural Differences from Resource Guides
+
+Service and Industries DOCX files have a different structure than Resource Guides:
+
+| Feature | Resource Guides | Service/Industries |
+|---------|----------------|-------------------|
+| Body text location | Between tables (gap HTML) | Between tables (same) |
+| Heading tables | `td=1`, 1 `<p>` with `<strong>` | `td=2`, 1 `<p>` with `<strong>` |
+| H1 format | In first content text | `<h1>` tag in gap after header table |
+| Breadcrumb | `<p>Home › ...` | Same `<p>` tag |
+| Pricing table | Simple thead/tbody | Large thead (30+ rows, multi-column) |
+| FAQ text | Q:/A: in gap HTML | Q:/A: in gap HTML (same) |
+| Author table | Present at end | Present at end, `td=2`, 5 `<p>` |
+| JSON-LD table | Present at end | Present at end |
+
+Key extraction functions that work for both:
+- `splitByTables(html)` — splits HTML into alternating table/text parts
+- `isHeadingTable()` — check `pCount === 1 && hasStrong && !hasThead` (works for both td=1 and td=2)
+- `isPricingTable()` — check `hasThead && hasPrice` (works for both)
+- `extractFaqsFromText()` — split on `Q:/A:` markers (works for both)
+
+### 14. Data-to-Component Shape Mismatch — DynamicSections
+
+**Symptom:** Sections render with no body text and no items, even though `paragraphs` array has content.
+
+**Root Cause:** Extracted data has shape `{ heading, paragraphs: [{bold, text}] }` but `DynamicSections` component expects `{ heading: string, body: string, items: string[] }`.
+
+**Fix:** Transform sections before passing to `DynamicSections`:
+```js
+<DynamicSections
+  sections={sections.map((sec) => ({
+    heading: sec.heading,
+    body: sec.paragraphs
+      .filter((p) => !p.bold && p.text)
+      .map((p) => p.text)
+      .join('\n\n'),
+    items: sec.paragraphs
+      .filter((p) => p.bold && p.text)
+      .map((p) => `${p.bold}: ${p.text}`),
+  }))}
+  serviceName={title}
+/>
+```
+
+### 15. Data-to-Component Shape Mismatch — PricingSection
+
+**Symptom:** Pricing cards show no price, no timeline, or blank "Best For" text.
+
+**Root Cause:** Extracted pricing data has shape `{ type, scope, timeline, price }` but `PricingSection` component expects `{ type, investment, timeline, bestFor }`.
+
+**Fix:** Transform pricing tiers before passing to `PricingSection`:
+```js
+<PricingSection
+  serviceName={title}
+  pricingTiers={pricingTiers.map((t) => ({
+    type: t.type,
+    investment: t.price,    // ← map price → investment
+    timeline: t.timeline,
+    bestFor: t.scope,       // ← map scope → bestFor
+  }))}
+/>
+```
+
+### 16. Debug/Temp Files in Project Root and scripts/
+
+During development, these scratch files accumulate:
+
+| File | Location | Action |
+|------|----------|--------|
+| `debug-service-structure.js` | `scripts/` | Delete after finalizing |
+| `_temp-debug.js` | `scripts/` | Delete after finalizing |
+| `docx-inspect.html` | Project root | Delete — debugging artifact |
+| `docx-tables.txt` | Project root | Delete — debugging artifact |
+| `inspect-docx.js` | Project root | Delete — debugging artifact |
+
+**Always clean up after finalizing the conversion script.**
 
 ### 11. Empty/Debug Files in Project Root
 

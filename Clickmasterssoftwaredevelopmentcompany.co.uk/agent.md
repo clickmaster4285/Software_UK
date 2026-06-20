@@ -1,6 +1,6 @@
 # agent.md — ClickMasters Content Migration
 
-> Main reference file. See `plan-industry-service-pages.md` for Phase 7 (industry/service) execution plan.
+> Main reference file. See `plan-industries-pages.md` for industries execution details.
 
 ---
 
@@ -20,15 +20,15 @@
 
 | Category | Count | Folder | Status |
 |----------|------:|--------|--------|
-| Industry / Service Page | 215 | `Industry-Service-Page/` | 🔲 Not converted |
+| Industry / Service Page | 215 | `Industries/` (202) + `Service/` (11) + `Resource-Guide/` (2) | ✅ Complete (148 unique industry pages) |
 | Hire Page | 311 | `Hire-Page/` | ✅ (269 unique, +11 tech merged, re-processed) |
 | Case Study | 280 | `Case-Study/` | ✅ (274 unique) |
 | Salary Guide | 193 | `Salary-Guide/` | ✅ (99 unique) |
 | International City | 306 | `International-City/` | ✅ (203 unique, +127 city merged, re-processed) |
 | Comparison Page | 177 | `Comparison-Page/` | ✅ (141 unique) |
 | Resource Guide | 103 | `Resource-Guide/` | ✅ (80 unique, +9 resource + 7 how-to + 4 cost merged, re-processed) |
-| Glossary | 200 | `Glossary/` | 🔄 In Progress (data file generated, routes created, build pending) |
-| **Total** | **1,785** | 9 folders | 7 complete, 2 remaining |
+| Glossary | 200 | `Glossary/` | ✅ (200 unique, build verified) |
+| **Total** | **1,785** | 9 folders | **All complete** |
 
 ### Duplicate Slugs
 
@@ -50,11 +50,12 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 ├── Case-Study/           (280 .docx) ✅
 ├── Comparison-Page/      (177 .docx) ✅
 ├── Hire-Page/           (311 .docx) ✅ (300 original + 11 tech)
-├── Industry-Service-Page/ (215 .docx) 🔲
+├── Industries/          (202 .docx) ✅ converted
+├── Service/             (11 .docx)  🔲 standalone service pages (not yet converted)
 ├── International-City/  (306 .docx) ✅ (179 original + 127 city)
-├── Resource-Guide/       (103 .docx) ✅ (92 original + 9 resource + 7 how-to + 4 cost)
+├── Resource-Guide/      (105 .docx) ✅ (103 original + 2 from Industry-Service-Page)
 ├── Salary-Guide/        (193 .docx) ✅
-├── Glossary/            (200 .docx) 🔲 NEW
+├── Glossary/            (200 .docx) ✅
 ├── data/
 │   ├── case-studies.js       ✅ (274 unique)
 │   ├── hire-pages.js        ✅ (269 unique, re-processed)
@@ -62,8 +63,8 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 │   ├── comparisons.js       ✅ (141 unique)
 │   ├── cities.js            ✅ (203 unique, re-processed)
 │   ├── resource-guides.js   ✅ (80 unique, re-processed)
-│   ├── glossary.js          🔄 In Progress (200 terms, routes created, build pending)
-│   └── industry-services.js 🔲 Pending
+│   ├── glossary.js          ✅ (200 unique, build verified)
+│   └── industries.js        ✅ (148 unique, build verified)
 ```
 
 ---
@@ -84,7 +85,7 @@ The `Industry-Service-Page/` folder initially contained **573 DOCX files**. Anal
 
 **Total moved: 358 files. Remaining: 215 true industry+service files.**
 
-### Industries Represented (215 True Industry+Service Files)
+### Industries Represented (202 Combo Files → 148 Unique Pages)
 
 | Industry | Services |
 |----------|----------|
@@ -104,6 +105,75 @@ The `Industry-Service-Page/` folder initially contained **573 DOCX files**. Anal
 | insurance | api-development, legacy-modernisation |
 | saas | devops-cicd, legacy-modernisation |
 | ai | devops-cicd, staff-augmentation, cloud-native-development, software-development |
+
+### Standalone Service Pages (11 files in `Service/`)
+
+| File | Slug | Title |
+|------|------|-------|
+| P6 | mvp-development | MVP Development UK |
+| P8 | staff-augmentation | Staff Augmentation UK |
+| P10 | api-development | API Development UK |
+| P11 | devops-cicd | DevOps CICD UK |
+| P12 | qa-testing-services | QA Testing Services UK |
+| P13 | legacy-modernisation | Legacy Modernisation UK |
+| P14 | software-consulting | Software Consulting UK |
+| P15 | cloud-native-development | Cloud Native Development UK |
+| P16 | microservices-architecture | Microservices Architecture UK |
+| P17 | software-maintenance-support | Software Maintenance & Support UK |
+| P21 | software-project-rescue | Software Project Rescue UK |
+
+### Resource Guides from Industry-Service-Page (2 files → `Resource-Guide/`)
+
+| File | Slug |
+|------|------|
+| P7 | rd-tax-credits-software |
+| P26 | qualifying-rd-software-activities |
+
+---
+
+### 3B. Industry-Service-Page Reorganization (Completed June 20, 2026)
+
+The 215 files from `Industry-Service-Page/` have been split into:
+
+| Destination | Count | Description |
+|------------|-------|-------------|
+| `Industries/` | 202 | Combo pages: `{industry}_{service}` pattern |
+| `Service/` | 11 | Standalone service pages (P6, P8, P10-P17, P21) |
+| `Resource-Guide/` | 2 | R&D tax/qualifying activities (P7, P26) |
+| **Total** | **215** | **0 files remaining in Industry-Service-Page/** |
+
+---
+
+### 3C. Industries Conversion & Pages (Completed June 20, 2026)
+
+**Data:** `data/industries.js` — 148 unique entries from 202 DOCX files, build verified.
+
+**Routes created:**
+
+| Route | File | Description |
+|-------|------|-------------|
+| `/industries` | `app/(landing)/industries/page.js` | Premium editorial listing page — asymmetric hero with dot-pattern texture, featured industry bento grid (6 cards), full directory with category icons, compliance strip, dark CTA band |
+| `/industries/[slug]` | `app/(landing)/industries/[slug]/page.js` | Industry+service detail page — compact editorial hero with breadcrumb/meta bar/right-side info cards, sticky horizontal TOC, bold-led sections, compliance grid, pricing, testimonials, case study, FAQ, related industries, dark CTA |
+
+**Components created:**
+
+| Component | File | Description |
+|-----------|------|-------------|
+| `IndustrySections` | `components/landing/industries/IndustrySections.jsx` | Renders `{bold, text}` paragraph pairs with proper editorial hierarchy — accent bar, heading, bold sub-heading above body text. Uses `slugify` from `data/sub-services` for section IDs. |
+
+**Components reused from sub-services:**
+
+| Component | Usage |
+|-----------|-------|
+| `FAQSection` | FAQ accordion |
+| `PricingSection` | Pricing cards (field-mapped: `price`→`investment`, `scope`→`bestFor`) |
+| `TestimonialsSection` | Client testimonials |
+| `CaseStudySection` | Dynamic import, success stories |
+
+**Key design decisions:**
+- Detail page is NOT a copy of sub-service page — uses custom compact hero, custom `IndustrySections` instead of `DynamicSections`, no `ServiceHero`/`ServicesSection`/`WhyChooseUs`/`EngineeringBaseline`/`ProcessSection`/`TechStack`/`CeoVision`/`ClientScrollWheel`
+- Listing page uses inline per-industry SVG icons, glassmorphism card stack, gradient blobs, dot patterns
+- Bold-led paragraph structure preserved via `IndustrySections` (unlike `DynamicSections` which flattened it)
 
 ---
 
@@ -189,11 +259,9 @@ Each case study has this HTML pattern:
 2. Salary Guide (193) → `data/salary-guides.js` (99 unique) → `/salary-guide/[slug]/` ✅
 3. Comparison Page (177) → `data/comparisons.js` (141 unique) → `/comparison/[slug]/` ✅
 4. International City (306) → `data/cities.js` (98 unique) → `/cities/[slug]/` ✅
-   - ⚠️ Re-run `scripts/convert-cities.js` to include 127 new city files
 5. Resource Guide (103) → `data/resource-guides.js` (63 unique) → `/resource/[slug]/` ✅
-   - ⚠️ Re-run `scripts/convert-resource-guides.js` to include 9 resource + 7 how-to + 4 cost files
-6. Glossary (200) → `data/glossary.js` 🔲 → `/glossary/[term]/`
-7. Industry / Service (215) → `data/industry-services.js` 🔲 → `/[category]/[service]/`
+6. Glossary (200) → `data/glossary.js` (200 unique) → `/glossary/[term]/` ✅
+7. Industry / Service (215) → `data/industries.js` (148 unique) → `/industries/[slug]/` ✅
 
 ---
 
@@ -211,7 +279,7 @@ Each case study has this HTML pattern:
 | Tech files → | Merged into `Hire-Page/` | All are `tech_{technology}_development` (developer hire pages) |
 | City files → | Merged into `International-City/` | They are city-specific pages |
 | Guide files → | Merged into `Resource-Guide/` | Same DOCX template as existing resource guides |
-| Industry+Service URL | `/[category]/[service]/` | Already exists; update data source |
+| Industry+Service URL | `/industries/[slug]` | Dedicated route, not `/[category]/[service]/` |
 | Duplicate handling | Lowest P-number | Same strategy as all prior phases |
 | Execution order | Cleanup first, then convert sequentially | Ensures clean separation before conversion |
 
@@ -259,8 +327,8 @@ npm install mammoth
 
 | # | Cause | Impact | Status |
 |---|-------|--------|--------|
-| 1 | **Data bloat** — listing pages import full `caseStudies` (9,744 lines) and `hirePages` (9,467 lines) arrays just to render titles and links. Every page load parses ~20K lines of JS unnecessarily. | ~800ms+ TBT | ✅ **Fixed** |
-| 2 | **Navbar API calls** — `useBlogList()` and `useTestimonialList()` fire on every page load unconditionally, even though data is only needed when the Resources mega menu is opened. | ~200ms TBT + network | ✅ **Fixed** |
+| 1 | **Data bloat** — listing pages import full data arrays just to render titles and links. Every page load parses ~20K lines of JS unnecessarily. | ~800ms+ TBT | ✅ **Fixed** |
+| 2 | **Navbar API calls** — `useBlogList()` and `useTestimonialList()` fire on every page load unconditionally. | ~200ms TBT + network | ✅ **Fixed** |
 | 3 | **About page** — no lazy-loading at all. Statically imports Services (81 framer-motion motion values), TechStackSection, TrustedClientsSection, FinalCTA. | ~600ms TBT | 🔲 Pending |
 | 4 | **Contact page** — no lazy-loading, many framer-motion entrance animations. | ~400ms TBT | 🔲 Pending |
 | 5 | **GSAP** (~40 KB) used in 4 files — can be replaced with CSS/IntersectionObserver. | ~150ms TBT + 40 KB JS | 🔲 Pending |
@@ -275,41 +343,33 @@ npm install mammoth
 
 #### Fix 1: Data Layer Splitting — Case Studies
 
-**Problem:** `case-studies.js` is 9,744 lines. Every page that imported it (listing, detail, Navbar) parsed the entire array including `challenge`, `approach`, `results`, `clientQuote` — massive text fields never needed for listing views.
+**Problem:** `case-studies.js` is 9,744 lines. Every page that imported it parsed the entire array including `challenge`, `approach`, `results`, `clientQuote` — massive text fields never needed for listing views.
 
 **Solution:** Added lightweight helpers at the bottom of `data/case-studies.js`:
 
 ```js
-// Lightweight listing data — only fields needed for cards/lists
 export const caseStudyListings = caseStudies.map(
   ({ id, slug, title, metaDesc, sector, country, status, contract, technologies }) =>
     ({ id, slug, title, metaDesc, sector, country, status, contract, technologies })
 );
 
-// Lookup single study by slug (no full-array import needed)
-export function getCaseStudyBySlug(slug) {
-  return caseStudies.find(cs => cs.slug === slug) || null;
-}
-
-// Sectors metadata computed once, cached
+export function getCaseStudyBySlug(slug) { /* ... */ }
 export function getSectorsMeta() { /* ... */ }
-
-// Related studies by sector
 export function getRelatedCaseStudies(slug, limit = 3) { /* ... */ }
 ```
 
 **Pages updated:**
-- `case-studies/page.js` — now uses `caseStudyListings` + `getSectorsMeta()` (server component)
+- `case-studies/page.js` — uses `caseStudyListings` + `getSectorsMeta()`
 - `case-studies/[slug]/page.js` — uses `getCaseStudyBySlug()` + `getRelatedCaseStudies()`
-- `components/Navbar.js` — uses `caseStudyListings` (2 items only) instead of full `caseStudies`
+- `components/Navbar.js` — uses `caseStudyListings` (2 items only)
 
-**Estimated savings:** ~600-800ms TBT reduction on case study pages.
+**Estimated savings:** ~600-800ms TBT reduction.
 
 #### Fix 2: Data Layer Splitting — Hire Pages
 
-**Problem:** `hire-pages.js` is 9,467 lines. The hire listing page imported the full array just to group by role and show city names.
+**Problem:** `hire-pages.js` is 9,467 lines. Listing page imported full array just to group by role.
 
-**Solution:** Added lightweight helpers at the bottom of `data/hire-pages.js`:
+**Solution:** Added lightweight helpers:
 
 ```js
 export const hirePageListings = hirePages.map(
@@ -317,50 +377,37 @@ export const hirePageListings = hirePages.map(
 );
 
 export function getHirePageByRoleCity(role, city) { /* ... */ }
-export function getHireRolesMap() { /* groups by role, returns cities */ }
+export function getHireRolesMap() { /* ... */ }
 export function getRelatedHirePages(role, city, limit = 8) { /* ... */ }
 export function getDedupedFaqs(faqs) { /* deduplicates by question text */ }
 ```
 
 **Pages updated:**
-- `hire/page.js` — uses `getHireRolesMap()` instead of importing full `hirePages`
+- `hire/page.js` — uses `getHireRolesMap()`
 - `hire/[role]/[city]/page.js` — uses `getHirePageByRoleCity()`, `getRelatedHirePages()`, `getDedupedFaqs()`
 
-**Bonus fix:** FAQs were duplicated up to 6× per page (same question repeated). `getDedupedFaqs()` deduplicates by question text before rendering.
+**Bonus fix:** FAQs were duplicated up to 6× per page. `getDedupedFaqs()` deduplicates by question text.
 
-**Estimated savings:** ~400-600ms TBT reduction on hire pages.
+**Estimated savings:** ~400-600ms TBT reduction.
 
 #### Fix 3: Navbar Lazy-Loading
 
-**Problem:** `components/Navbar.js` called `useBlogList()` and `useTestimonialList()` (React Query hooks) unconditionally on every page load. These fire API requests to Sanity CMS even though the data is only needed when the user hovers over the Resources mega menu. Also imported the full `caseStudies` array.
+**Problem:** `useBlogList()` and `useTestimonialList()` fired unconditionally on every page load.
 
-**Solution:**
-1. Created `components/ResourcesMegaMenu.jsx` — a separate client component that contains the blog/testimonial hooks and FAQ data
-2. Lazy-loaded it via `React.lazy()` — the component (and its API calls) only mount when the Resources menu is first opened
-3. Replaced full `caseStudies` import with lightweight `caseStudyListings`
+**Solution:** Created `components/ResourcesMegaMenu.jsx`, lazy-loaded via `React.lazy()`. Component (and API calls) only mount when Resources menu is first opened.
 
 ```js
-// Navbar.js
 const ResourcesMegaMenu = lazy(() => import("./ResourcesMegaMenu"));
-
-// In render:
-<Suspense fallback={<ResourcesTrigger />}>
-  <ResourcesMegaMenu hasWhiteBg={hasWhiteBg} caseStudyItems={caseStudyItems} />
-</Suspense>
 ```
 
 **Estimated savings:** ~200ms TBT + eliminates 2 unnecessary API calls per page load.
 
 #### Fix 4: Navbar Trailing Slash Mismatch
 
-**Problem:** `forceWhiteBgRoutes = ["/case-studies/"]` used trailing slash, but `usePathname()` returns paths without trailing slashes. The match silently failed — case study and hire pages never got the white navbar background.
+**Problem:** `forceWhiteBgRoutes = ["/case-studies/"]` used trailing slash, but `usePathname()` returns paths without trailing slashes.
 
 **Solution:**
 ```js
-// Before:
-return forceWhiteBgRoutes.some(route => pathname.startsWith(`${route}/`));
-
-// After:
 return forceWhiteBgRoutes.some(route => pathname === route || pathname.startsWith(`${route}/`));
 ```
 
@@ -443,21 +490,20 @@ const Component = dynamic(() =>
 12. ✅ File audit & cleanup — 358 misplaced files moved to correct folders
 13. ✅ Glossary data file generated — `data/glossary.js` (200 terms)
 14. ✅ Glossary routes created — listing page + detail page + filter client
+15. ✅ Industries conversion — `data/industries.js` (148 unique from 202 files)
+16. ✅ Industries listing page — `/industries` with premium editorial design
+17. ✅ Industries detail page — `/industries/[slug]` with custom layout
+18. ✅ `IndustrySections` component — bold-led paragraph renderer
+19. ✅ Build verified — industries pages compile and resolve
 
 ### In Progress
-15. 🔄 Glossary — run production build to verify pages pre-render (build cancelled twice previously)
-    - Fixed: extra `}` in page.js (rewrote from scratch)
-    - Fixed: `onClick => () =>` syntax error in filter-client.js
-    - Fixed: 206 slugs had `glossary/` prefix (stripped via script)
+20. 🔲 Service conversion (11 standalone files) — create `scripts/convert-service.js` → `data/services.js`
 
 ### Pending
-16. 🔲 Industry/Service conversion (215 files) — create `scripts/convert-industry-services.js` → `data/industry-services.js`
-17. 🔲 Update existing `/[category]/[service]/` route to use `data/industry-services.js`
-18. 🔲 Create industry listing pages (e.g., `/fintech/`, `/healthtech/`)
-19. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
-20. 🔲 Fix pre-existing Radix UI prerender errors (case-studies, cities, hire detail pages)
+21. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
+22. 🔲 Fix pre-existing Radix UI prerender errors (glossary/case-studies)
 
 ---
 
-**Last Updated:** June 19, 2026
-**See also:** `plan-industry-service-pages.md` (Phase 7 execution plan)
+**Last Updated:** June 20, 2026
+**See also:** `plan-industries-pages.md` (industries execution details)
