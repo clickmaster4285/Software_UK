@@ -20,15 +20,15 @@
 
 | Category | Count | Folder | Status |
 |----------|------:|--------|--------|
-| Industry / Service Page | 215 | `Industry-Service-Page/` | 🔲 Not converted |
+| Industry / Service Page | 215 | `Industries/` (202) + `Service/` (11) + `Resource-Guide/` (2) | 🔲 Not converted |
 | Hire Page | 311 | `Hire-Page/` | ✅ (269 unique, +11 tech merged, re-processed) |
 | Case Study | 280 | `Case-Study/` | ✅ (274 unique) |
 | Salary Guide | 193 | `Salary-Guide/` | ✅ (99 unique) |
 | International City | 306 | `International-City/` | ✅ (203 unique, +127 city merged, re-processed) |
 | Comparison Page | 177 | `Comparison-Page/` | ✅ (141 unique) |
 | Resource Guide | 103 | `Resource-Guide/` | ✅ (80 unique, +9 resource + 7 how-to + 4 cost merged, re-processed) |
-| Glossary | 200 | `Glossary/` | 🔄 In Progress (data file generated, routes created, build pending) |
-| **Total** | **1,785** | 9 folders | 7 complete, 2 remaining |
+| Glossary | 200 | `Glossary/` | ✅ (200 unique, build verified) |
+| **Total** | **1,785** | 9 folders | 8 complete, 1 remaining |
 
 ### Duplicate Slugs
 
@@ -50,9 +50,10 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 ├── Case-Study/           (280 .docx) ✅
 ├── Comparison-Page/      (177 .docx) ✅
 ├── Hire-Page/           (311 .docx) ✅ (300 original + 11 tech)
-├── Industry-Service-Page/ (215 .docx) 🔲
+├── Industries/          (202 .docx) 🔲 industry+service combo pages
+├── Service/             (11 .docx)  🔲 standalone service pages
 ├── International-City/  (306 .docx) ✅ (179 original + 127 city)
-├── Resource-Guide/       (103 .docx) ✅ (92 original + 9 resource + 7 how-to + 4 cost)
+├── Resource-Guide/      (105 .docx) ✅ (103 original + 2 from Industry-Service-Page)
 ├── Salary-Guide/        (193 .docx) ✅
 ├── Glossary/            (200 .docx) 🔲 NEW
 ├── data/
@@ -62,7 +63,7 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 │   ├── comparisons.js       ✅ (141 unique)
 │   ├── cities.js            ✅ (203 unique, re-processed)
 │   ├── resource-guides.js   ✅ (80 unique, re-processed)
-│   ├── glossary.js          🔄 In Progress (200 terms, routes created, build pending)
+│   ├── glossary.js          ✅ (200 unique, build verified)
 │   └── industry-services.js 🔲 Pending
 ```
 
@@ -84,7 +85,7 @@ The `Industry-Service-Page/` folder initially contained **573 DOCX files**. Anal
 
 **Total moved: 358 files. Remaining: 215 true industry+service files.**
 
-### Industries Represented (215 True Industry+Service Files)
+### Industries Represented (202 Combo Files in `Industries/`)
 
 | Industry | Services |
 |----------|----------|
@@ -104,6 +105,42 @@ The `Industry-Service-Page/` folder initially contained **573 DOCX files**. Anal
 | insurance | api-development, legacy-modernisation |
 | saas | devops-cicd, legacy-modernisation |
 | ai | devops-cicd, staff-augmentation, cloud-native-development, software-development |
+
+### Standalone Service Pages (11 files in `Service/`)
+
+| File | Slug | Title |
+|------|------|-------|
+| P6 | mvp-development | MVP Development UK |
+| P8 | staff-augmentation | Staff Augmentation UK |
+| P10 | api-development | API Development UK |
+| P11 | devops-cicd | DevOps CICD UK |
+| P12 | qa-testing-services | QA Testing Services UK |
+| P13 | legacy-modernisation | Legacy Modernisation UK |
+| P14 | software-consulting | Software Consulting UK |
+| P15 | cloud-native-development | Cloud Native Development UK |
+| P16 | microservices-architecture | Microservices Architecture UK |
+| P17 | software-maintenance-support | Software Maintenance & Support UK |
+| P21 | software-project-rescue | Software Project Rescue UK |
+
+### Resource Guides from Industry-Service-Page (2 files → `Resource-Guide/`)
+
+| File | Slug |
+|------|------|
+| P7 | rd-tax-credits-software |
+| P26 | qualifying-rd-software-activities |
+
+---
+
+### 3B. Industry-Service-Page Reorganization (Completed June 20, 2026)
+
+The 215 files from `Industry-Service-Page/` have been split into:
+
+| Destination | Count | Description |
+|------------|-------|-------------|
+| `Industries/` | 202 | Combo pages: `{industry}_{service}` pattern |
+| `Service/` | 11 | Standalone service pages (P6, P8, P10-P17, P21) |
+| `Resource-Guide/` | 2 | R&D tax/qualifying activities (P7, P26) |
+| **Total** | **215** | **0 files remaining in Industry-Service-Page/** |
 
 ---
 
@@ -192,7 +229,7 @@ Each case study has this HTML pattern:
    - ⚠️ Re-run `scripts/convert-cities.js` to include 127 new city files
 5. Resource Guide (103) → `data/resource-guides.js` (63 unique) → `/resource/[slug]/` ✅
    - ⚠️ Re-run `scripts/convert-resource-guides.js` to include 9 resource + 7 how-to + 4 cost files
-6. Glossary (200) → `data/glossary.js` 🔲 → `/glossary/[term]/`
+6. Glossary (200) → `data/glossary.js` (200 unique) → `/glossary/[term]/` ✅
 7. Industry / Service (215) → `data/industry-services.js` 🔲 → `/[category]/[service]/`
 
 ---
@@ -445,19 +482,17 @@ const Component = dynamic(() =>
 14. ✅ Glossary routes created — listing page + detail page + filter client
 
 ### In Progress
-15. 🔄 Glossary — run production build to verify pages pre-render (build cancelled twice previously)
-    - Fixed: extra `}` in page.js (rewrote from scratch)
-    - Fixed: `onClick => () =>` syntax error in filter-client.js
-    - Fixed: 206 slugs had `glossary/` prefix (stripped via script)
+15. 🔲 Re-run resource guide conversion (now 105 files with 2 new from Industry-Service-Page)
+16. 🔲 Industries conversion (202 combo files) — create `scripts/convert-industries.js` → `data/industries.js`
+17. 🔲 Service conversion (11 standalone files) — create `scripts/convert-service.js` → `data/services.js`
+18. 🔲 Update existing `/[category]/[service]/` route to use new data files
+19. 🔲 Create industry listing pages (e.g., `/fintech/`, `/healthtech/`)
 
 ### Pending
-16. 🔲 Industry/Service conversion (215 files) — create `scripts/convert-industry-services.js` → `data/industry-services.js`
-17. 🔲 Update existing `/[category]/[service]/` route to use `data/industry-services.js`
-18. 🔲 Create industry listing pages (e.g., `/fintech/`, `/healthtech/`)
-19. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
-20. 🔲 Fix pre-existing Radix UI prerender errors (case-studies, cities, hire detail pages)
+20. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
+21. 🔲 Fix pre-existing Radix UI prerender errors (case-studies, cities, hire detail pages)
 
 ---
 
-**Last Updated:** June 19, 2026
+**Last Updated:** June 20, 2026
 **See also:** `plan-industry-service-pages.md` (Phase 7 execution plan)

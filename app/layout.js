@@ -24,6 +24,9 @@ export const metadata = {
     description: "Creating the future of business. We’re a Software development Company delivering bespoke web, mobile, SaaS, and AI-powered systems including AI monitoring solutions powering a global market",
     type: "website",
   },
+  verification: {
+    google: "nUmOnlPBAytESz6YJ7CTqD9MsdE_Zx9hi0zzw6PrDt8",
+  },
 };
 
 export default function RootLayout({ children }) {
