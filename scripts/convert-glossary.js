@@ -373,7 +373,7 @@ async function convertGlossary() {
 
       const glossaryTerm = {
         id,
-        slug: meta.slug ? meta.slug.replace(/^\//, '').replace(/\/$/, '') : filenameSlug,
+        slug: meta.slug ? meta.slug.replace(/^\//, '').replace(/\/$/, '').replace(/^glossary\//, '') : filenameSlug,
         term,
         termDisplay,
         title: title || meta.metaTitle || '',

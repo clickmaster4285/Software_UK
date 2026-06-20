@@ -7,7 +7,7 @@
 export const glossaryTerms = [
   {
     "id": "P105",
-    "slug": "glossary/ir35-definition",
+    "slug": "ir35-definition",
     "term": "ir35",
     "termDisplay": "IR35",
     "title": "What is IR35? — UK Software Development Guide",
@@ -64,7 +64,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P106",
-    "slug": "glossary/api-definition",
+    "slug": "api-definition",
     "term": "api",
     "termDisplay": "API",
     "title": "What is API? — UK Software Development Guide",
@@ -121,7 +121,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P107",
-    "slug": "glossary/uk-gdpr-definition",
+    "slug": "uk-gdpr-definition",
     "term": "uk_gdpr",
     "termDisplay": "UK GDPR",
     "title": "What is UK GDPR? — UK Software Development Guide",
@@ -178,7 +178,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P108",
-    "slug": "glossary/mvp-definition",
+    "slug": "mvp-definition",
     "term": "mvp",
     "termDisplay": "MVP",
     "title": "What is MVP? — UK Software Development Guide",
@@ -235,7 +235,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P109",
-    "slug": "glossary/saas-definition",
+    "slug": "saas-definition",
     "term": "saas",
     "termDisplay": "SAAS",
     "title": "What is SaaS? — UK Software Development Guide",
@@ -292,7 +292,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P110",
-    "slug": "glossary/cyber-essentials-definition",
+    "slug": "cyber-essentials-definition",
     "term": "cyber_essentials",
     "termDisplay": "Cyber Essentials",
     "title": "What is Cyber Essentials? — UK Software Development Guide",
@@ -349,7 +349,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P111",
-    "slug": "glossary/dtac-definition",
+    "slug": "dtac-definition",
     "term": "dtac",
     "termDisplay": "Dtac",
     "title": "What is DTAC? — UK Software Development Guide",
@@ -406,7 +406,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P112",
-    "slug": "glossary/devops-definition",
+    "slug": "devops-definition",
     "term": "devops",
     "termDisplay": "DEVOPS",
     "title": "What is DevOps? — UK Software Development Guide",
@@ -463,7 +463,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P113",
-    "slug": "glossary/microservices-definition",
+    "slug": "microservices-definition",
     "term": "microservices",
     "termDisplay": "Microservices",
     "title": "What is Microservices? — UK Software Development Guide",
@@ -520,7 +520,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P114",
-    "slug": "glossary/open-banking-definition",
+    "slug": "open-banking-definition",
     "term": "open_banking",
     "termDisplay": "Open Banking",
     "title": "What is Open Banking? — UK Software Development Guide",
@@ -577,7 +577,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P134",
-    "slug": "glossary/react-definition",
+    "slug": "react-definition",
     "term": "react",
     "termDisplay": "React",
     "title": "What is React.js? — UK Software Development Guide",
@@ -629,7 +629,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P135",
-    "slug": "glossary/postgresql-definition",
+    "slug": "postgresql-definition",
     "term": "postgresql",
     "termDisplay": "Postgresql",
     "title": "What is PostgreSQL? — UK Software Development Guide",
@@ -681,7 +681,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P136",
-    "slug": "glossary/technical-debt-definition",
+    "slug": "technical-debt-definition",
     "term": "technical-debt",
     "termDisplay": "Technical-debt",
     "title": "What is Technical Debt? — UK Software Development Guide",
@@ -733,7 +733,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P137",
-    "slug": "glossary/fhir-r4-definition",
+    "slug": "fhir-r4-definition",
     "term": "fhir-r4",
     "termDisplay": "Fhir-r4",
     "title": "What is FHIR R4? — UK Software Development Guide",
@@ -785,7 +785,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P138",
-    "slug": "glossary/penetration-testing-definition",
+    "slug": "penetration-testing-definition",
     "term": "penetration-testing",
     "termDisplay": "Penetration-testing",
     "title": "What is Penetration Testing? — UK Software Development Guide",
@@ -837,7 +837,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P139",
-    "slug": "glossary/kubernetes-definition",
+    "slug": "kubernetes-definition",
     "term": "kubernetes",
     "termDisplay": "Kubernetes",
     "title": "What is Kubernetes? — UK Software Development Guide",
@@ -889,7 +889,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P140",
-    "slug": "glossary/graphql-definition",
+    "slug": "graphql-definition",
     "term": "graphql",
     "termDisplay": "GRAPHQL",
     "title": "What is GraphQL? — UK Software Development Guide",
@@ -941,7 +941,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P141",
-    "slug": "glossary/typescript-definition",
+    "slug": "typescript-definition",
     "term": "typescript",
     "termDisplay": "Typescript",
     "title": "What is TypeScript? — UK Software Development Guide",
@@ -993,7 +993,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P142",
-    "slug": "glossary/wcag-definition",
+    "slug": "wcag-definition",
     "term": "wcag",
     "termDisplay": "Wcag",
     "title": "What is WCAG 2.1? — UK Software Development Guide",
@@ -1045,7 +1045,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P143",
-    "slug": "glossary/legacy-system-definition",
+    "slug": "legacy-system-definition",
     "term": "legacy-system",
     "termDisplay": "Legacy-system",
     "title": "What is Legacy System? — UK Software Development Guide",
@@ -1097,7 +1097,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P167",
-    "slug": "glossary/oauth-definition",
+    "slug": "oauth-definition",
     "term": "oauth",
     "termDisplay": "OAUTH",
     "title": "What is OAuth 2.0? — UK Software Development Guide",
@@ -1149,7 +1149,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P168",
-    "slug": "glossary/docker-definition",
+    "slug": "docker-definition",
     "term": "docker",
     "termDisplay": "Docker",
     "title": "What is Docker? — UK Software Development Guide",
@@ -1197,7 +1197,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P169",
-    "slug": "glossary/terraform-definition",
+    "slug": "terraform-definition",
     "term": "terraform",
     "termDisplay": "Terraform",
     "title": "What is Terraform? — UK Software Development Guide",
@@ -1249,7 +1249,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P170",
-    "slug": "glossary/nodejs-definition",
+    "slug": "nodejs-definition",
     "term": "nodejs",
     "termDisplay": "Nodejs",
     "title": "What is Node.js? — UK Software Development Guide",
@@ -1301,7 +1301,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P171",
-    "slug": "glossary/python-definition",
+    "slug": "python-definition",
     "term": "python",
     "termDisplay": "Python",
     "title": "What is Python? — UK Software Development Guide",
@@ -1353,7 +1353,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P172",
-    "slug": "glossary/aws-lambda-definition",
+    "slug": "aws-lambda-definition",
     "term": "aws-lambda",
     "termDisplay": "Aws-lambda",
     "title": "What is AWS Lambda? — UK Software Development Guide",
@@ -1405,7 +1405,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P173",
-    "slug": "glossary/redis-definition",
+    "slug": "redis-definition",
     "term": "redis",
     "termDisplay": "Redis",
     "title": "What is Redis? — UK Software Development Guide",
@@ -1453,7 +1453,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P174",
-    "slug": "glossary/agile-definition",
+    "slug": "agile-definition",
     "term": "agile",
     "termDisplay": "Agile",
     "title": "What is Agile? — UK Software Development Guide",
@@ -1505,7 +1505,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P175",
-    "slug": "glossary/scrum-definition",
+    "slug": "scrum-definition",
     "term": "scrum",
     "termDisplay": "Scrum",
     "title": "What is Scrum? — UK Software Development Guide",
@@ -1557,7 +1557,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P176",
-    "slug": "glossary/cicd-definition",
+    "slug": "cicd-definition",
     "term": "cicd",
     "termDisplay": "Cicd",
     "title": "What is CI/CD? — UK Software Development Guide",
@@ -1609,7 +1609,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P177",
-    "slug": "glossary/saas-metrics-definition",
+    "slug": "saas-metrics-definition",
     "term": "saas-metrics",
     "termDisplay": "Saas-metrics",
     "title": "What is SaaS Metrics? — UK Software Development Guide",
@@ -1661,7 +1661,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P178",
-    "slug": "glossary/api-gateway-definition",
+    "slug": "api-gateway-definition",
     "term": "api-gateway",
     "termDisplay": "Api-gateway",
     "title": "What is API Gateway? — UK Software Development Guide",
@@ -1713,7 +1713,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P179",
-    "slug": "glossary/message-queue-definition",
+    "slug": "message-queue-definition",
     "term": "message-queue",
     "termDisplay": "Message-queue",
     "title": "What is Message Queue? — UK Software Development Guide",
@@ -1765,7 +1765,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P180",
-    "slug": "glossary/ddd-definition",
+    "slug": "ddd-definition",
     "term": "ddd",
     "termDisplay": "Ddd",
     "title": "What is Domain-Driven Design? — UK Software Development Guide",
@@ -1817,7 +1817,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P181",
-    "slug": "glossary/zero-trust-definition",
+    "slug": "zero-trust-definition",
     "term": "zero-trust",
     "termDisplay": "Zero-trust",
     "title": "What is Zero Trust Security? — UK Software Development Guide",
@@ -1869,7 +1869,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P182",
-    "slug": "glossary/rest-api-definition",
+    "slug": "rest-api-definition",
     "term": "rest-api",
     "termDisplay": "Rest-api",
     "title": "What is REST API? — UK Software Development Guide",
@@ -1921,7 +1921,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P183",
-    "slug": "glossary/webhook-definition",
+    "slug": "webhook-definition",
     "term": "webhook",
     "termDisplay": "Webhook",
     "title": "What is Webhook? — UK Software Development Guide",
@@ -1973,7 +1973,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P184",
-    "slug": "glossary/sla-definition",
+    "slug": "sla-definition",
     "term": "sla",
     "termDisplay": "Sla",
     "title": "What is SLA? — UK Software Development Guide",
@@ -2021,7 +2021,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P185",
-    "slug": "glossary/poc-definition",
+    "slug": "poc-definition",
     "term": "poc",
     "termDisplay": "POC",
     "title": "What is Proof of Concept? — UK Software Development Guide",
@@ -2073,7 +2073,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P186",
-    "slug": "glossary/serverless-definition",
+    "slug": "serverless-definition",
     "term": "serverless",
     "termDisplay": "Serverless",
     "title": "What is Serverless? — UK Software Development Guide",
@@ -2125,7 +2125,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P202",
-    "slug": "glossary/blockchain-definition",
+    "slug": "blockchain-definition",
     "term": "blockchain",
     "termDisplay": "Blockchain",
     "title": "What is Blockchain? — UK Software Development Guide",
@@ -2173,7 +2173,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P203",
-    "slug": "glossary/cloud-computing-definition",
+    "slug": "cloud-computing-definition",
     "term": "cloud-computing",
     "termDisplay": "Cloud-computing",
     "title": "What is Cloud Computing? — UK Software Development Guide",
@@ -2225,7 +2225,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P204",
-    "slug": "glossary/technical-discovery-definition",
+    "slug": "technical-discovery-definition",
     "term": "technical-discovery",
     "termDisplay": "Technical-discovery",
     "title": "What is Technical Discovery? — UK Software Development Guide",
@@ -2277,7 +2277,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P205",
-    "slug": "glossary/application-security-definition",
+    "slug": "application-security-definition",
     "term": "application-security",
     "termDisplay": "Application-security",
     "title": "What is Application Security? — UK Software Development Guide",
@@ -2329,7 +2329,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P206",
-    "slug": "glossary/software-architecture-definition",
+    "slug": "software-architecture-definition",
     "term": "software-architecture",
     "termDisplay": "Software-architecture",
     "title": "What is Software Architecture? — UK Software Development Guide",
@@ -2381,7 +2381,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P207",
-    "slug": "glossary/data-engineering-definition",
+    "slug": "data-engineering-definition",
     "term": "data-engineering",
     "termDisplay": "Data-engineering",
     "title": "What is Data Engineering? — UK Software Development Guide",
@@ -2433,7 +2433,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P208",
-    "slug": "glossary/ux-design-definition",
+    "slug": "ux-design-definition",
     "term": "ux-design",
     "termDisplay": "Ux-design",
     "title": "What is UX Design? — UK Software Development Guide",
@@ -2485,7 +2485,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P209",
-    "slug": "glossary/integration-testing-definition",
+    "slug": "integration-testing-definition",
     "term": "integration-testing",
     "termDisplay": "Integration-testing",
     "title": "What is Integration Testing? — UK Software Development Guide",
@@ -2537,7 +2537,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P210",
-    "slug": "glossary/headless-cms-definition",
+    "slug": "headless-cms-definition",
     "term": "headless-cms",
     "termDisplay": "Headless-cms",
     "title": "What is Headless CMS? — UK Software Development Guide",
@@ -2589,7 +2589,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P211",
-    "slug": "glossary/event-driven-architecture-definition",
+    "slug": "event-driven-architecture-definition",
     "term": "event-driven-architecture",
     "termDisplay": "Event-driven-architecture",
     "title": "What is Event-Driven Architecture? — UK Software Development Guide",
@@ -2641,7 +2641,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P212",
-    "slug": "glossary/software-escrow-definition",
+    "slug": "software-escrow-definition",
     "term": "software-escrow",
     "termDisplay": "Software-escrow",
     "title": "What is Software Escrow? — UK Software Development Guide",
@@ -2693,7 +2693,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P213",
-    "slug": "glossary/database-migration-definition",
+    "slug": "database-migration-definition",
     "term": "database-migration",
     "termDisplay": "Database-migration",
     "title": "What is Database Migration? — UK Software Development Guide",
@@ -2745,7 +2745,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P214",
-    "slug": "glossary/api-rate-limiting-definition",
+    "slug": "api-rate-limiting-definition",
     "term": "api-rate-limiting",
     "termDisplay": "Api-rate-limiting",
     "title": "What is API Rate Limiting? — UK Software Development Guide",
@@ -2797,7 +2797,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P215",
-    "slug": "glossary/multi-tenancy-definition",
+    "slug": "multi-tenancy-definition",
     "term": "multi-tenancy",
     "termDisplay": "Multi-tenancy",
     "title": "What is Multi-tenancy? — UK Software Development Guide",
@@ -2849,7 +2849,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P216",
-    "slug": "glossary/load-testing-definition",
+    "slug": "load-testing-definition",
     "term": "load-testing",
     "termDisplay": "Load-testing",
     "title": "What is Load Testing? — UK Software Development Guide",
@@ -2901,7 +2901,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P217",
-    "slug": "glossary/solid-principles-definition",
+    "slug": "solid-principles-definition",
     "term": "solid-principles",
     "termDisplay": "Solid-principles",
     "title": "What is SOLID Principles? — UK Software Development Guide",
@@ -2953,7 +2953,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P218",
-    "slug": "glossary/continuous-integration-definition",
+    "slug": "continuous-integration-definition",
     "term": "continuous-integration",
     "termDisplay": "Continuous-integration",
     "title": "What is Continuous Integration? — UK Software Development Guide",
@@ -3001,7 +3001,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P219",
-    "slug": "glossary/encryption-definition",
+    "slug": "encryption-definition",
     "term": "encryption",
     "termDisplay": "Encryption",
     "title": "What is Encryption? — UK Software Development Guide",
@@ -3053,7 +3053,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P220",
-    "slug": "glossary/cloud-migration-definition",
+    "slug": "cloud-migration-definition",
     "term": "cloud-migration",
     "termDisplay": "Cloud-migration",
     "title": "What is Cloud Migration? — UK Software Development Guide",
@@ -3109,7 +3109,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P232",
-    "slug": "glossary/monolith-definition",
+    "slug": "monolith-definition",
     "term": "monolith",
     "termDisplay": "Monolith",
     "title": "What is Monolith? — UK Software Development Guide",
@@ -3161,7 +3161,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P233",
-    "slug": "glossary/nearshore-development-definition",
+    "slug": "nearshore-development-definition",
     "term": "nearshore-development",
     "termDisplay": "Nearshore-development",
     "title": "What is Nearshore Development? — UK Software Development Guide",
@@ -3213,7 +3213,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P234",
-    "slug": "glossary/dependency-injection-definition",
+    "slug": "dependency-injection-definition",
     "term": "dependency-injection",
     "termDisplay": "Dependency-injection",
     "title": "What is Dependency Injection? — UK Software Development Guide",
@@ -3261,7 +3261,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P235",
-    "slug": "glossary/cdn-definition",
+    "slug": "cdn-definition",
     "term": "cdn",
     "termDisplay": "Cdn",
     "title": "What is Content Delivery Network? — UK Software Development Guide",
@@ -3313,7 +3313,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P236",
-    "slug": "glossary/api-documentation-definition",
+    "slug": "api-documentation-definition",
     "term": "api-documentation",
     "termDisplay": "Api-documentation",
     "title": "What is API Documentation? — UK Software Development Guide",
@@ -3361,7 +3361,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P237",
-    "slug": "glossary/software-testing-definition",
+    "slug": "software-testing-definition",
     "term": "software-testing",
     "termDisplay": "Software-testing",
     "title": "What is Software Testing? — UK Software Development Guide",
@@ -3413,7 +3413,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P238",
-    "slug": "glossary/b2b-saas-definition",
+    "slug": "b2b-saas-definition",
     "term": "b2b-saas",
     "termDisplay": "B2b-saas",
     "title": "What is B2B SaaS? — UK Software Development Guide",
@@ -3465,7 +3465,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P239",
-    "slug": "glossary/scrum-master-definition",
+    "slug": "scrum-master-definition",
     "term": "scrum-master",
     "termDisplay": "Scrum-master",
     "title": "What is Scrum Master? — UK Software Development Guide",
@@ -3517,7 +3517,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P240",
-    "slug": "glossary/user-story-definition",
+    "slug": "user-story-definition",
     "term": "user-story",
     "termDisplay": "User-story",
     "title": "What is User Story? — UK Software Development Guide",
@@ -3565,7 +3565,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P241",
-    "slug": "glossary/sprint-definition",
+    "slug": "sprint-definition",
     "term": "sprint",
     "termDisplay": "Sprint",
     "title": "What is Sprint? — UK Software Development Guide",
@@ -3613,7 +3613,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P242",
-    "slug": "glossary/product-owner-definition",
+    "slug": "product-owner-definition",
     "term": "product-owner",
     "termDisplay": "Product-owner",
     "title": "What is Product Owner? — UK Software Development Guide",
@@ -3661,7 +3661,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P243",
-    "slug": "glossary/technical-lead-definition",
+    "slug": "technical-lead-definition",
     "term": "technical-lead",
     "termDisplay": "Technical-lead",
     "title": "What is Technical Lead? — UK Software Development Guide",
@@ -3713,7 +3713,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P244",
-    "slug": "glossary/agile-manifesto-definition",
+    "slug": "agile-manifesto-definition",
     "term": "agile-manifesto",
     "termDisplay": "Agile-manifesto",
     "title": "What is Agile Manifesto? — UK Software Development Guide",
@@ -3761,7 +3761,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P245",
-    "slug": "glossary/pair-programming-definition",
+    "slug": "pair-programming-definition",
     "term": "pair-programming",
     "termDisplay": "Pair-programming",
     "title": "What is Pair Programming? — UK Software Development Guide",
@@ -3809,7 +3809,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P246",
-    "slug": "glossary/disaster-recovery-definition",
+    "slug": "disaster-recovery-definition",
     "term": "disaster-recovery",
     "termDisplay": "Disaster-recovery",
     "title": "What is Disaster Recovery? — UK Software Development Guide",
@@ -3861,7 +3861,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P247",
-    "slug": "glossary/feature-flag-definition",
+    "slug": "feature-flag-definition",
     "term": "feature-flag",
     "termDisplay": "Feature-flag",
     "title": "What is Feature Flag? — UK Software Development Guide",
@@ -3909,7 +3909,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P248",
-    "slug": "glossary/caching-definition",
+    "slug": "caching-definition",
     "term": "caching",
     "termDisplay": "Caching",
     "title": "What is Caching? — UK Software Development Guide",
@@ -3957,7 +3957,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P249",
-    "slug": "glossary/code-review-definition",
+    "slug": "code-review-definition",
     "term": "code-review",
     "termDisplay": "Code-review",
     "title": "What is Code Review? — UK Software Development Guide",
@@ -4009,7 +4009,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P250",
-    "slug": "glossary/technical-specification-definition",
+    "slug": "technical-specification-definition",
     "term": "technical-specification",
     "termDisplay": "Technical-specification",
     "title": "What is Technical Specification? — UK Software Development Guide",
@@ -4061,7 +4061,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P262",
-    "slug": "glossary/product-backlog-definition",
+    "slug": "product-backlog-definition",
     "term": "product-backlog",
     "termDisplay": "Product-backlog",
     "title": "What is Product Backlog? — UK Software Development Guide",
@@ -4109,7 +4109,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P263",
-    "slug": "glossary/api-key-definition",
+    "slug": "api-key-definition",
     "term": "api-key",
     "termDisplay": "Api-key",
     "title": "What is API Key? — UK Software Development Guide",
@@ -4157,7 +4157,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P264",
-    "slug": "glossary/deployment-pipeline-definition",
+    "slug": "deployment-pipeline-definition",
     "term": "deployment-pipeline",
     "termDisplay": "Deployment-pipeline",
     "title": "What is Deployment Pipeline? — UK Software Development Guide",
@@ -4205,7 +4205,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P265",
-    "slug": "glossary/sql-definition",
+    "slug": "sql-definition",
     "term": "sql",
     "termDisplay": "Sql",
     "title": "What is SQL? — UK Software Development Guide",
@@ -4257,7 +4257,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P266",
-    "slug": "glossary/latency-definition",
+    "slug": "latency-definition",
     "term": "latency",
     "termDisplay": "Latency",
     "title": "What is Latency? — UK Software Development Guide",
@@ -4309,7 +4309,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P267",
-    "slug": "glossary/ip-ownership-definition",
+    "slug": "ip-ownership-definition",
     "term": "ip-ownership",
     "termDisplay": "Ip-ownership",
     "title": "What is IP Ownership? — UK Software Development Guide",
@@ -4361,7 +4361,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P268",
-    "slug": "glossary/uptime-definition",
+    "slug": "uptime-definition",
     "term": "uptime",
     "termDisplay": "Uptime",
     "title": "What is Uptime? — UK Software Development Guide",
@@ -4413,7 +4413,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P269",
-    "slug": "glossary/continuous-delivery-definition",
+    "slug": "continuous-delivery-definition",
     "term": "continuous-delivery",
     "termDisplay": "Continuous-delivery",
     "title": "What is Continuous Delivery? — UK Software Development Guide",
@@ -4461,7 +4461,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P270",
-    "slug": "glossary/incident-management-definition",
+    "slug": "incident-management-definition",
     "term": "incident-management",
     "termDisplay": "Incident-management",
     "title": "What is Incident Management? — UK Software Development Guide",
@@ -4513,7 +4513,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P271",
-    "slug": "glossary/git-definition",
+    "slug": "git-definition",
     "term": "git",
     "termDisplay": "Git",
     "title": "What is Git? — UK Software Development Guide",
@@ -4561,7 +4561,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P272",
-    "slug": "glossary/tdd-definition",
+    "slug": "tdd-definition",
     "term": "tdd",
     "termDisplay": "Tdd",
     "title": "What is Test-Driven Development? — UK Software Development Guide",
@@ -4609,7 +4609,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P273",
-    "slug": "glossary/api-versioning-definition",
+    "slug": "api-versioning-definition",
     "term": "api-versioning",
     "termDisplay": "Api-versioning",
     "title": "What is API Versioning? — UK Software Development Guide",
@@ -4657,7 +4657,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P274",
-    "slug": "glossary/technical-debt-interest-definition",
+    "slug": "technical-debt-interest-definition",
     "term": "technical-debt-interest",
     "termDisplay": "Technical-debt-interest",
     "title": "What is Technical Debt Interest? — UK Software Development Guide",
@@ -4709,7 +4709,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P275",
-    "slug": "glossary/headless-architecture-definition",
+    "slug": "headless-architecture-definition",
     "term": "headless-architecture",
     "termDisplay": "Headless-architecture",
     "title": "What is Headless Architecture? — UK Software Development Guide",
@@ -4761,7 +4761,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P276",
-    "slug": "glossary/devsecops-definition",
+    "slug": "devsecops-definition",
     "term": "devsecops",
     "termDisplay": "Devsecops",
     "title": "What is DevSecOps? — UK Software Development Guide",
@@ -4813,7 +4813,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P277",
-    "slug": "glossary/blue-green-deployment-definition",
+    "slug": "blue-green-deployment-definition",
     "term": "blue-green-deployment",
     "termDisplay": "Blue-green-deployment",
     "title": "What is Blue-Green Deployment? — UK Software Development Guide",
@@ -4861,7 +4861,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P278",
-    "slug": "glossary/soc2-definition",
+    "slug": "soc2-definition",
     "term": "soc2",
     "termDisplay": "Soc2",
     "title": "What is SOC 2? — UK Software Development Guide",
@@ -4913,7 +4913,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P279",
-    "slug": "glossary/retrospective-definition",
+    "slug": "retrospective-definition",
     "term": "retrospective",
     "termDisplay": "Retrospective",
     "title": "What is Retrospective? — UK Software Development Guide",
@@ -4961,7 +4961,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P290",
-    "slug": "glossary/minimum-viable-product-definition",
+    "slug": "minimum-viable-product-definition",
     "term": "minimum-viable-product",
     "termDisplay": "Minimum-viable-product",
     "title": "What is Minimum Viable Product? — UK Software Development Guide",
@@ -5013,7 +5013,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P291",
-    "slug": "glossary/refactoring-definition",
+    "slug": "refactoring-definition",
     "term": "refactoring",
     "termDisplay": "Refactoring",
     "title": "What is Refactoring? — UK Software Development Guide",
@@ -5061,7 +5061,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P292",
-    "slug": "glossary/version-control-definition",
+    "slug": "version-control-definition",
     "term": "version-control",
     "termDisplay": "Version-control",
     "title": "What is Version Control? — UK Software Development Guide",
@@ -5109,7 +5109,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P293",
-    "slug": "glossary/penetration-test-definition",
+    "slug": "penetration-test-definition",
     "term": "penetration-test",
     "termDisplay": "Penetration-test",
     "title": "What is Penetration Test? — UK Software Development Guide",
@@ -5161,7 +5161,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P294",
-    "slug": "glossary/acid-definition",
+    "slug": "acid-definition",
     "term": "acid",
     "termDisplay": "Acid",
     "title": "What is ACID? — UK Software Development Guide",
@@ -5213,7 +5213,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P295",
-    "slug": "glossary/monorepo-definition",
+    "slug": "monorepo-definition",
     "term": "monorepo",
     "termDisplay": "Monorepo",
     "title": "What is Monorepo? — UK Software Development Guide",
@@ -5265,7 +5265,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P296",
-    "slug": "glossary/sprint-review-definition",
+    "slug": "sprint-review-definition",
     "term": "sprint-review",
     "termDisplay": "Sprint-review",
     "title": "What is Sprint Review? — UK Software Development Guide",
@@ -5313,7 +5313,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P297",
-    "slug": "glossary/api-contract-definition",
+    "slug": "api-contract-definition",
     "term": "api-contract",
     "termDisplay": "Api-contract",
     "title": "What is API Contract? — UK Software Development Guide",
@@ -5361,7 +5361,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P298",
-    "slug": "glossary/microservice-definition",
+    "slug": "microservice-definition",
     "term": "microservice",
     "termDisplay": "Microservice",
     "title": "What is Microservice? — UK Software Development Guide",
@@ -5409,7 +5409,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P299",
-    "slug": "glossary/acceptance-testing-definition",
+    "slug": "acceptance-testing-definition",
     "term": "acceptance-testing",
     "termDisplay": "Acceptance-testing",
     "title": "What is Acceptance Testing? — UK Software Development Guide",
@@ -5457,7 +5457,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P300",
-    "slug": "glossary/boilerplate-definition",
+    "slug": "boilerplate-definition",
     "term": "boilerplate",
     "termDisplay": "Boilerplate",
     "title": "What is Boilerplate? — UK Software Development Guide",
@@ -5505,7 +5505,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P301",
-    "slug": "glossary/mock-testing-definition",
+    "slug": "mock-testing-definition",
     "term": "mock-testing",
     "termDisplay": "Mock-testing",
     "title": "What is Mock (Testing)? — UK Software Development Guide",
@@ -5553,7 +5553,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P302",
-    "slug": "glossary/code-smell-definition",
+    "slug": "code-smell-definition",
     "term": "code-smell",
     "termDisplay": "Code-smell",
     "title": "What is Code Smell? — UK Software Development Guide",
@@ -5601,7 +5601,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P303",
-    "slug": "glossary/continuous-deployment-definition",
+    "slug": "continuous-deployment-definition",
     "term": "continuous-deployment",
     "termDisplay": "Continuous-deployment",
     "title": "What is Continuous Deployment? — UK Software Development Guide",
@@ -5649,7 +5649,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P304",
-    "slug": "glossary/rate-of-change-definition",
+    "slug": "rate-of-change-definition",
     "term": "rate-of-change",
     "termDisplay": "Rate-of-change",
     "title": "What is Rate of Change? — UK Software Development Guide",
@@ -5697,7 +5697,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P305",
-    "slug": "glossary/software-licence-definition",
+    "slug": "software-licence-definition",
     "term": "software-licence",
     "termDisplay": "Software-licence",
     "title": "What is Software Licence? — UK Software Development Guide",
@@ -5745,7 +5745,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P306",
-    "slug": "glossary/non-functional-requirements-definition",
+    "slug": "non-functional-requirements-definition",
     "term": "non-functional-requirements",
     "termDisplay": "Non-functional-requirements",
     "title": "What is Non-Functional Requirements? — UK Software Development Guide",
@@ -5793,7 +5793,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P307",
-    "slug": "glossary/dependency-definition",
+    "slug": "dependency-definition",
     "term": "dependency",
     "termDisplay": "Dependency",
     "title": "What is Dependency? — UK Software Development Guide",
@@ -5845,7 +5845,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P308",
-    "slug": "glossary/technical-interview-definition",
+    "slug": "technical-interview-definition",
     "term": "technical-interview",
     "termDisplay": "Technical-interview",
     "title": "What is Technical Interview? — UK Software Development Guide",
@@ -5897,7 +5897,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P337",
-    "slug": "glossary/sprint-backlog-definition",
+    "slug": "sprint-backlog-definition",
     "term": "sprint-backlog",
     "termDisplay": "Sprint-backlog",
     "title": "What is Sprint Backlog? — UK Software Development Guide",
@@ -5945,7 +5945,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P338",
-    "slug": "glossary/definition-of-done-definition",
+    "slug": "definition-of-done-definition",
     "term": "definition-of-done",
     "termDisplay": "Definition-of-done",
     "title": "What is Definition of Done? — UK Software Development Guide",
@@ -5993,7 +5993,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P339",
-    "slug": "glossary/kanban-definition",
+    "slug": "kanban-definition",
     "term": "kanban",
     "termDisplay": "Kanban",
     "title": "What is Kanban? — UK Software Development Guide",
@@ -6041,7 +6041,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P340",
-    "slug": "glossary/burn-down-chart-definition",
+    "slug": "burn-down-chart-definition",
     "term": "burn-down-chart",
     "termDisplay": "Burn-down-chart",
     "title": "What is Burn-Down Chart? — UK Software Development Guide",
@@ -6085,7 +6085,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P341",
-    "slug": "glossary/story-points-definition",
+    "slug": "story-points-definition",
     "term": "story-points",
     "termDisplay": "Story-points",
     "title": "What is Story Points? — UK Software Development Guide",
@@ -6129,7 +6129,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P342",
-    "slug": "glossary/velocity-definition",
+    "slug": "velocity-definition",
     "term": "velocity",
     "termDisplay": "Velocity",
     "title": "What is Velocity? — UK Software Development Guide",
@@ -6173,7 +6173,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P343",
-    "slug": "glossary/api-first-definition",
+    "slug": "api-first-definition",
     "term": "api-first",
     "termDisplay": "Api-first",
     "title": "What is API-First? — UK Software Development Guide",
@@ -6221,7 +6221,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P344",
-    "slug": "glossary/infrastructure-as-code-definition",
+    "slug": "infrastructure-as-code-definition",
     "term": "infrastructure-as-code",
     "termDisplay": "Infrastructure-as-code",
     "title": "What is Infrastructure as Code? — UK Software Development Guide",
@@ -6269,7 +6269,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P345",
-    "slug": "glossary/sre-definition",
+    "slug": "sre-definition",
     "term": "sre",
     "termDisplay": "Sre",
     "title": "What is SRE? — UK Software Development Guide",
@@ -6321,7 +6321,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P346",
-    "slug": "glossary/feature-branch-definition",
+    "slug": "feature-branch-definition",
     "term": "feature-branch",
     "termDisplay": "Feature-branch",
     "title": "What is Feature Branch? — UK Software Development Guide",
@@ -6369,7 +6369,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P347",
-    "slug": "glossary/microservice-architecture-definition",
+    "slug": "microservice-architecture-definition",
     "term": "microservice-architecture",
     "termDisplay": "Microservice-architecture",
     "title": "What is Microservice Architecture? — UK Software Development Guide",
@@ -6417,7 +6417,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P348",
-    "slug": "glossary/continuous-testing-definition",
+    "slug": "continuous-testing-definition",
     "term": "continuous-testing",
     "termDisplay": "Continuous-testing",
     "title": "What is Continuous Testing? — UK Software Development Guide",
@@ -6465,7 +6465,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P349",
-    "slug": "glossary/technical-roadmap-definition",
+    "slug": "technical-roadmap-definition",
     "term": "technical-roadmap",
     "termDisplay": "Technical-roadmap",
     "title": "What is Technical Roadmap? — UK Software Development Guide",
@@ -6513,7 +6513,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P350",
-    "slug": "glossary/observability-definition",
+    "slug": "observability-definition",
     "term": "observability",
     "termDisplay": "Observability",
     "title": "What is Observability? — UK Software Development Guide",
@@ -6565,7 +6565,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P351",
-    "slug": "glossary/pair-testing-definition",
+    "slug": "pair-testing-definition",
     "term": "pair-testing",
     "termDisplay": "Pair-testing",
     "title": "What is Pair Testing? — UK Software Development Guide",
@@ -6613,7 +6613,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P352",
-    "slug": "glossary/regression-testing-definition",
+    "slug": "regression-testing-definition",
     "term": "regression-testing",
     "termDisplay": "Regression-testing",
     "title": "What is Regression Testing? — UK Software Development Guide",
@@ -6665,7 +6665,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P353",
-    "slug": "glossary/mvp-vs-mmp-definition",
+    "slug": "mvp-vs-mmp-definition",
     "term": "mvp-vs-mmp",
     "termDisplay": "Mvp-vs-mmp",
     "title": "What is MVP vs MMP? — UK Software Development Guide",
@@ -6717,7 +6717,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P354",
-    "slug": "glossary/dark-pattern-definition",
+    "slug": "dark-pattern-definition",
     "term": "dark-pattern",
     "termDisplay": "Dark-pattern",
     "title": "What is Dark Pattern? — UK Software Development Guide",
@@ -6765,7 +6765,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P355",
-    "slug": "glossary/trunk-based-development-definition",
+    "slug": "trunk-based-development-definition",
     "term": "trunk-based-development",
     "termDisplay": "Trunk-based-development",
     "title": "What is Trunk-Based Development? — UK Software Development Guide",
@@ -6813,7 +6813,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P356",
-    "slug": "glossary/spa-definition",
+    "slug": "spa-definition",
     "term": "spa",
     "termDisplay": "Spa",
     "title": "What is Single Page Application? — UK Software Development Guide",
@@ -6865,7 +6865,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P385",
-    "slug": "glossary/mvp-scope-definition",
+    "slug": "mvp-scope-definition",
     "term": "mvp-scope",
     "termDisplay": "Mvp-scope",
     "title": "What is MVP Scope? — UK Software Development Guide",
@@ -6917,7 +6917,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P386",
-    "slug": "glossary/functional-requirements-definition",
+    "slug": "functional-requirements-definition",
     "term": "functional-requirements",
     "termDisplay": "Functional-requirements",
     "title": "What is Functional Requirements? — UK Software Development Guide",
@@ -6965,7 +6965,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P387",
-    "slug": "glossary/oauth-flows-definition",
+    "slug": "oauth-flows-definition",
     "term": "oauth-flows",
     "termDisplay": "Oauth-flows",
     "title": "What is OAuth 2.0 Flows? — UK Software Development Guide",
@@ -7017,7 +7017,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P388",
-    "slug": "glossary/dpa-definition",
+    "slug": "dpa-definition",
     "term": "dpa",
     "termDisplay": "Dpa",
     "title": "What is Data Processing Agreement? — UK Software Development Guide",
@@ -7065,7 +7065,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P389",
-    "slug": "glossary/graphql-mutation-definition",
+    "slug": "graphql-mutation-definition",
     "term": "graphql-mutation",
     "termDisplay": "Graphql-mutation",
     "title": "What is GraphQL Mutation? — UK Software Development Guide",
@@ -7113,7 +7113,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P390",
-    "slug": "glossary/containerisation-definition",
+    "slug": "containerisation-definition",
     "term": "containerisation",
     "termDisplay": "Containerisation",
     "title": "What is Containerisation? — UK Software Development Guide",
@@ -7165,7 +7165,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P391",
-    "slug": "glossary/dns-definition",
+    "slug": "dns-definition",
     "term": "dns",
     "termDisplay": "Dns",
     "title": "What is DNS? — UK Software Development Guide",
@@ -7213,7 +7213,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P392",
-    "slug": "glossary/staging-environment-definition",
+    "slug": "staging-environment-definition",
     "term": "staging-environment",
     "termDisplay": "Staging-environment",
     "title": "What is Staging Environment? — UK Software Development Guide",
@@ -7261,7 +7261,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P393",
-    "slug": "glossary/rbac-definition",
+    "slug": "rbac-definition",
     "term": "rbac",
     "termDisplay": "RBAC",
     "title": "What is Role-Based Access Control? — UK Software Development Guide",
@@ -7313,7 +7313,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P394",
-    "slug": "glossary/data-minimisation-definition",
+    "slug": "data-minimisation-definition",
     "term": "data-minimisation",
     "termDisplay": "Data-minimisation",
     "title": "What is Data Minimisation? — UK Software Development Guide",
@@ -7361,7 +7361,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P395",
-    "slug": "glossary/slo-definition",
+    "slug": "slo-definition",
     "term": "slo",
     "termDisplay": "Slo",
     "title": "What is Service Level Objective? — UK Software Development Guide",
@@ -7413,7 +7413,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P396",
-    "slug": "glossary/linting-definition",
+    "slug": "linting-definition",
     "term": "linting",
     "termDisplay": "Linting",
     "title": "What is Linting? — UK Software Development Guide",
@@ -7461,7 +7461,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P397",
-    "slug": "glossary/database-index-definition",
+    "slug": "database-index-definition",
     "term": "database-index",
     "termDisplay": "Database-index",
     "title": "What is Database Index? — UK Software Development Guide",
@@ -7509,7 +7509,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P398",
-    "slug": "glossary/webhook-vs-polling-definition",
+    "slug": "webhook-vs-polling-definition",
     "term": "webhook-vs-polling",
     "termDisplay": "Webhook-vs-polling",
     "title": "What is Webhook vs Polling? — UK Software Development Guide",
@@ -7557,7 +7557,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P399",
-    "slug": "glossary/hotfix-definition",
+    "slug": "hotfix-definition",
     "term": "hotfix",
     "termDisplay": "Hotfix",
     "title": "What is Hotfix? — UK Software Development Guide",
@@ -7605,7 +7605,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P400",
-    "slug": "glossary/e2ee-definition",
+    "slug": "e2ee-definition",
     "term": "e2ee",
     "termDisplay": "E2ee",
     "title": "What is End-to-End Encryption? — UK Software Development Guide",
@@ -7653,7 +7653,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P401",
-    "slug": "glossary/accessibility-statement-definition",
+    "slug": "accessibility-statement-definition",
     "term": "accessibility-statement",
     "termDisplay": "Accessibility-statement",
     "title": "What is Accessibility Statement? — UK Software Development Guide",
@@ -7705,7 +7705,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P402",
-    "slug": "glossary/csp-definition",
+    "slug": "csp-definition",
     "term": "csp",
     "termDisplay": "Csp",
     "title": "What is Content Security Policy? — UK Software Development Guide",
@@ -7753,7 +7753,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P403",
-    "slug": "glossary/throttling-definition",
+    "slug": "throttling-definition",
     "term": "throttling",
     "termDisplay": "Throttling",
     "title": "What is Throttling? — UK Software Development Guide",
@@ -7801,7 +7801,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P404",
-    "slug": "glossary/service-worker-definition",
+    "slug": "service-worker-definition",
     "term": "service-worker",
     "termDisplay": "Service-worker",
     "title": "What is Service Worker? — UK Software Development Guide",
@@ -7849,7 +7849,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P422",
-    "slug": "glossary/build-vs-buy-definition",
+    "slug": "build-vs-buy-definition",
     "term": "build-vs-buy",
     "termDisplay": "Build-vs-buy",
     "title": "What is Build vs Buy? — UK Software Development Guide",
@@ -7901,7 +7901,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P423",
-    "slug": "glossary/scrum-of-scrums-definition",
+    "slug": "scrum-of-scrums-definition",
     "term": "scrum-of-scrums",
     "termDisplay": "Scrum-of-scrums",
     "title": "What is Scrum of Scrums? — UK Software Development Guide",
@@ -7945,7 +7945,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P424",
-    "slug": "glossary/jwt-definition",
+    "slug": "jwt-definition",
     "term": "jwt",
     "termDisplay": "JWT",
     "title": "What is JWT? — UK Software Development Guide",
@@ -7993,7 +7993,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P425",
-    "slug": "glossary/continuous-improvement-definition",
+    "slug": "continuous-improvement-definition",
     "term": "continuous-improvement",
     "termDisplay": "Continuous-improvement",
     "title": "What is Continuous Improvement? — UK Software Development Guide",
@@ -8041,7 +8041,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P426",
-    "slug": "glossary/dsar-definition",
+    "slug": "dsar-definition",
     "term": "dsar",
     "termDisplay": "DSAR",
     "title": "What is Data Subject Access Request? — UK Software Development Guide",
@@ -8089,7 +8089,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P427",
-    "slug": "glossary/technical-assessment-definition",
+    "slug": "technical-assessment-definition",
     "term": "technical-assessment",
     "termDisplay": "Technical-assessment",
     "title": "What is Technical Assessment? — UK Software Development Guide",
@@ -8137,7 +8137,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P428",
-    "slug": "glossary/eventual-consistency-definition",
+    "slug": "eventual-consistency-definition",
     "term": "eventual-consistency",
     "termDisplay": "Eventual-consistency",
     "title": "What is Eventual Consistency? — UK Software Development Guide",
@@ -8185,7 +8185,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P429",
-    "slug": "glossary/failover-definition",
+    "slug": "failover-definition",
     "term": "failover",
     "termDisplay": "Failover",
     "title": "What is Failover? — UK Software Development Guide",
@@ -8233,7 +8233,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P430",
-    "slug": "glossary/pen-test-report-definition",
+    "slug": "pen-test-report-definition",
     "term": "pen-test-report",
     "termDisplay": "Pen-test-report",
     "title": "What is Penetration Test Report? — UK Software Development Guide",
@@ -8285,7 +8285,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P431",
-    "slug": "glossary/api-mocking-definition",
+    "slug": "api-mocking-definition",
     "term": "api-mocking",
     "termDisplay": "Api-mocking",
     "title": "What is API Mocking? — UK Software Development Guide",
@@ -8333,7 +8333,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P432",
-    "slug": "glossary/sdlc-definition",
+    "slug": "sdlc-definition",
     "term": "sdlc",
     "termDisplay": "Sdlc",
     "title": "What is Software Development Life Cycle? — UK Software Development Guide",
@@ -8381,7 +8381,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P433",
-    "slug": "glossary/low-code-definition",
+    "slug": "low-code-definition",
     "term": "low-code",
     "termDisplay": "Low-code",
     "title": "What is Low Code? — UK Software Development Guide",
@@ -8429,7 +8429,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P434",
-    "slug": "glossary/product-market-fit-definition",
+    "slug": "product-market-fit-definition",
     "term": "product-market-fit",
     "termDisplay": "Product-market-fit",
     "title": "What is Product-Market Fit? — UK Software Development Guide",
@@ -8477,7 +8477,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P435",
-    "slug": "glossary/acceptance-criteria-definition",
+    "slug": "acceptance-criteria-definition",
     "term": "acceptance-criteria",
     "termDisplay": "Acceptance-criteria",
     "title": "What is Acceptance Criteria? — UK Software Development Guide",
@@ -8525,7 +8525,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P436",
-    "slug": "glossary/ab-testing-definition",
+    "slug": "ab-testing-definition",
     "term": "ab-testing",
     "termDisplay": "Ab-testing",
     "title": "What is A/B Testing? — UK Software Development Guide",
@@ -8573,7 +8573,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P437",
-    "slug": "glossary/event-sourcing-definition",
+    "slug": "event-sourcing-definition",
     "term": "event-sourcing",
     "termDisplay": "Event-sourcing",
     "title": "What is Event Sourcing? — UK Software Development Guide",
@@ -8621,7 +8621,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P438",
-    "slug": "glossary/canary-deployment-definition",
+    "slug": "canary-deployment-definition",
     "term": "canary-deployment",
     "termDisplay": "Canary-deployment",
     "title": "What is Canary Deployment? — UK Software Development Guide",
@@ -8669,7 +8669,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P439",
-    "slug": "glossary/owasp-definition",
+    "slug": "owasp-definition",
     "term": "owasp",
     "termDisplay": "Owasp",
     "title": "What is OWASP? — UK Software Development Guide",
@@ -8721,7 +8721,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P440",
-    "slug": "glossary/software-estimation-definition",
+    "slug": "software-estimation-definition",
     "term": "software-estimation",
     "termDisplay": "Software-estimation",
     "title": "What is Software Estimation? — UK Software Development Guide",
@@ -8769,7 +8769,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P453",
-    "slug": "glossary/refactoring-vs-rewriting-definition",
+    "slug": "refactoring-vs-rewriting-definition",
     "term": "refactoring-vs-rewriting",
     "termDisplay": "Refactoring-vs-rewriting",
     "title": "What is Refactoring vs Rewriting? — UK Software Development Guide",
@@ -8817,7 +8817,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P454",
-    "slug": "glossary/pull-request-definition",
+    "slug": "pull-request-definition",
     "term": "pull-request",
     "termDisplay": "Pull-request",
     "title": "What is Pull Request? — UK Software Development Guide",
@@ -8865,7 +8865,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P455",
-    "slug": "glossary/smoke-test-definition",
+    "slug": "smoke-test-definition",
     "term": "smoke-test",
     "termDisplay": "Smoke-test",
     "title": "What is Smoke Test? — UK Software Development Guide",
@@ -8913,7 +8913,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P456",
-    "slug": "glossary/technical-spike-definition",
+    "slug": "technical-spike-definition",
     "term": "technical-spike",
     "termDisplay": "Technical-spike",
     "title": "What is Technical Spike? — UK Software Development Guide",
@@ -8961,7 +8961,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P457",
-    "slug": "glossary/domain-name-definition",
+    "slug": "domain-name-definition",
     "term": "domain-name",
     "termDisplay": "Domain-name",
     "title": "What is Domain Name? — UK Software Development Guide",
@@ -9005,7 +9005,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P458",
-    "slug": "glossary/responsive-design-definition",
+    "slug": "responsive-design-definition",
     "term": "responsive-design",
     "termDisplay": "Responsive-design",
     "title": "What is Responsive Design? — UK Software Development Guide",
@@ -9053,7 +9053,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P459",
-    "slug": "glossary/data-lake-definition",
+    "slug": "data-lake-definition",
     "term": "data-lake",
     "termDisplay": "Data-lake",
     "title": "What is Data Lake? — UK Software Development Guide",
@@ -9101,7 +9101,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P460",
-    "slug": "glossary/pair-review-definition",
+    "slug": "pair-review-definition",
     "term": "pair-review",
     "termDisplay": "Pair-review",
     "title": "What is Pair Review? — UK Software Development Guide",
@@ -9149,7 +9149,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P461",
-    "slug": "glossary/hotspot-definition",
+    "slug": "hotspot-definition",
     "term": "hotspot",
     "termDisplay": "Hotspot",
     "title": "What is Hotspot? — UK Software Development Guide",
@@ -9197,7 +9197,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P462",
-    "slug": "glossary/bdd-definition",
+    "slug": "bdd-definition",
     "term": "bdd",
     "termDisplay": "Bdd",
     "title": "What is Behaviour-Driven Development? — UK Software Development Guide",
@@ -9245,7 +9245,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P463",
-    "slug": "glossary/shadow-it-definition",
+    "slug": "shadow-it-definition",
     "term": "shadow-it",
     "termDisplay": "Shadow-it",
     "title": "What is Shadow IT? — UK Software Development Guide",
@@ -9293,7 +9293,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P464",
-    "slug": "glossary/serverless-vs-containers-definition",
+    "slug": "serverless-vs-containers-definition",
     "term": "serverless-vs-containers",
     "termDisplay": "Serverless-vs-containers",
     "title": "What is Serverless vs Containers? — UK Software Development Guide",
@@ -9341,7 +9341,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P465",
-    "slug": "glossary/hmrc-making-tax-digital-definition",
+    "slug": "hmrc-making-tax-digital-definition",
     "term": "hmrc-making-tax-digital",
     "termDisplay": "Hmrc-making-tax-digital",
     "title": "What is HMRC Making Tax Digital? — UK Software Development Guide",
@@ -9393,7 +9393,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P466",
-    "slug": "glossary/privacy-notice-definition",
+    "slug": "privacy-notice-definition",
     "term": "privacy-notice",
     "termDisplay": "Privacy-notice",
     "title": "What is Privacy Notice? — UK Software Development Guide",
@@ -9437,7 +9437,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P467",
-    "slug": "glossary/test-coverage-definition",
+    "slug": "test-coverage-definition",
     "term": "test-coverage",
     "termDisplay": "Test-coverage",
     "title": "What is Test Coverage? — UK Software Development Guide",
@@ -9485,7 +9485,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P468",
-    "slug": "glossary/idempotency-definition",
+    "slug": "idempotency-definition",
     "term": "idempotency",
     "termDisplay": "Idempotency",
     "title": "What is Idempotency? — UK Software Development Guide",
@@ -9533,7 +9533,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P469",
-    "slug": "glossary/monorepo-vs-polyrepo-definition",
+    "slug": "monorepo-vs-polyrepo-definition",
     "term": "monorepo-vs-polyrepo",
     "termDisplay": "Monorepo-vs-polyrepo",
     "title": "What is Monorepo vs Polyrepo? — UK Software Development Guide",
@@ -9581,7 +9581,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P470",
-    "slug": "glossary/brownfield-vs-greenfield-definition",
+    "slug": "brownfield-vs-greenfield-definition",
     "term": "brownfield-vs-greenfield",
     "termDisplay": "Brownfield-vs-greenfield",
     "title": "What is Brownfield vs Greenfield? — UK Software Development Guide",
@@ -9629,7 +9629,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P471",
-    "slug": "glossary/feature-toggle-definition",
+    "slug": "feature-toggle-definition",
     "term": "feature-toggle",
     "termDisplay": "Feature-toggle",
     "title": "What is Feature Toggle? — UK Software Development Guide",
@@ -9677,7 +9677,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P482",
-    "slug": "glossary/failfast-definition",
+    "slug": "failfast-definition",
     "term": "failfast",
     "termDisplay": "Failfast",
     "title": "What is Failfast? — UK Software Development Guide",
@@ -9725,7 +9725,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P483",
-    "slug": "glossary/graceful-degradation-definition",
+    "slug": "graceful-degradation-definition",
     "term": "graceful-degradation",
     "termDisplay": "Graceful-degradation",
     "title": "What is Graceful Degradation? — UK Software Development Guide",
@@ -9773,7 +9773,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P484",
-    "slug": "glossary/ico-definition",
+    "slug": "ico-definition",
     "term": "ico",
     "termDisplay": "ICO",
     "title": "What is ICO? — UK Software Development Guide",
@@ -9821,7 +9821,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P485",
-    "slug": "glossary/ncsc-definition",
+    "slug": "ncsc-definition",
     "term": "ncsc",
     "termDisplay": "Ncsc",
     "title": "What is NCSC? — UK Software Development Guide",
@@ -9873,7 +9873,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P486",
-    "slug": "glossary/pen-test-methodology-definition",
+    "slug": "pen-test-methodology-definition",
     "term": "pen-test-methodology",
     "termDisplay": "Pen-test-methodology",
     "title": "What is Penetration Testing Methodology? — UK Software Development Guide",
@@ -9921,7 +9921,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P487",
-    "slug": "glossary/cap-theorem-definition",
+    "slug": "cap-theorem-definition",
     "term": "cap-theorem",
     "termDisplay": "Cap-theorem",
     "title": "What is CAP Theorem? — UK Software Development Guide",
@@ -9969,7 +9969,7 @@ export const glossaryTerms = [
   },
   {
     "id": "P488",
-    "slug": "glossary/technical-writer-definition",
+    "slug": "technical-writer-definition",
     "term": "technical-writer",
     "termDisplay": "Technical-writer",
     "title": "What is Technical Writer? — UK Software Development Guide",

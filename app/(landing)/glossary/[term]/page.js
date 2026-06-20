@@ -33,10 +33,10 @@ export default async function GlossaryTermDetailPage({ params }) {
 
   const relatedTerms = getRelatedTerms(term, 6);
 
-  // Build JSON-LD structured data for DefinedTerm
+  // Build JSON-LD structured data
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'DefinedTerm',
+    '@type': glossaryTerm.schemaType?.includes('FAQPage') ? ['DefinedTerm', 'FAQPage'] : 'DefinedTerm',
     name: glossaryTerm.termDisplay,
     description: glossaryTerm.directAnswer || glossaryTerm.metaDesc || '',
     inDefinedTermSet: {
