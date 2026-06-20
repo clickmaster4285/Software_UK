@@ -171,8 +171,8 @@ export default async function ResourceGuidesPage({ searchParams }) {
   return (
     <main>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-primary via-primary-mid to-primary py-20 lg:py-28">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent" />
+      <section className="relative bg-linear-to-br from-primary via-primary-mid to-primary py-20 lg:py-28">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent" />
         <div className="relative max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 text-center">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-white/10 border border-white/20 text-white/80 mb-6">
             <BookOpen className="w-3.5 h-3.5" />

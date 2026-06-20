@@ -1,7 +1,7 @@
 /**
  * Hire Pages Data
- * Generated from 300 DOCX files
- * Unique entries: 258
+ * Generated from 311 DOCX files
+ * Unique entries: 269
  * Extraction: content-based (hire-page specific)
  */
 
@@ -2328,6 +2328,436 @@ export const hirePages = [
     "lastUpdated": "June 2025",
     "readingTime": 7,
     "writtenBy": "ClickMasters Hiring Team",
+    "reviewedBy": "James Whitmore, CTO"
+  },
+  {
+    "id": "P224",
+    "slug": "/react-development",
+    "role": "",
+    "city": "",
+    "title": "React Development UK — Expert React Engineers, Transparent Pricing",
+    "metaTitle": "React Development Company UK — Expert React Developers | ClickMasters",
+    "metaDesc": "ClickMasters React development specialists. UK-based React experts. Transparent GBP pricing. UK GDPR compliant. Free consultation.",
+    "cityDisplay": "",
+    "rate": "",
+    "rates": {
+      "mid": "",
+      "senior": "",
+      "lead": ""
+    },
+    "ir35Status": "",
+    "vettingStages": "",
+    "contract": "",
+    "rightToWork": "",
+    "directAnswer": "ClickMasters is a UK React development company with 50+ React-powered applications delivered for UK businesses. We build React and Next.js web applications, React Native mobile apps, and React-based SaaS platforms — all with TypeScript, UK GDPR compliance, WCAG 2.1 AA accessibility, and transparent GBP pricing.",
+    "benefits": [],
+    "skills": [],
+    "vettingProcess": [],
+    "ir35Comparison": {
+      "contractorAgency": [],
+      "clickMasters": []
+    },
+    "faqs": [
+      {
+        "question": ": Why choose React over Angular or Vue for UK projects?",
+        "answer": ": React's dominance in the UK is driven by: the largest UK developer talent pool (easier to hire and maintain), the most active ecosystem (Next.js, Remix, React Native), strong corporate backing (Meta maintains React, Vercel maintains Next.js), and the TypeScript integration is mature and widely used. Angular is more opinionated and has strong enterprise adoption; Vue has a smaller UK community. For most UK projects, React/Next.js offers the best combination of capability, ecosystem, and talent availability."
+      },
+      {
+        "question": ": What is the difference between React and Next.js?",
+        "answer": ": React is a UI library — it handles the rendering of UI components. Next.js is a full-stack React framework that adds: server-side rendering (SSR), static site generation (SSG), App Router with server components, API routes, built-in image optimisation, and full-stack deployment on Vercel or AWS/Azure. For most production UK applications, Next.js is the right choice — it handles routing, rendering strategy, and deployment concerns that you'd otherwise build yourself."
+      },
+      {
+        "question": ": What is the difference between React and Next.js?",
+        "answer": ": React is a UI library — it handles the rendering of UI components. Next.js is a full-stack React framework that adds: server-side rendering (SSR), static site generation (SSG), App Router with server components, API routes, built-in image optimisation, and full-stack deployment on Vercel or AWS/Azure. For most production UK applications, Next.js is the right choice — it handles routing, rendering strategy, and deployment concerns that you'd otherwise build yourself."
+      }
+    ],
+    "lastUpdated": "June 2025",
+    "readingTime": 10,
+    "writtenBy": "ClickMasters React Team",
+    "reviewedBy": "James Whitmore, CTO"
+  },
+  {
+    "id": "P225",
+    "slug": "/python-development",
+    "role": "",
+    "city": "",
+    "title": "Python Development UK — Expert Python Engineers, Transparent Pricing",
+    "metaTitle": "Python Development Company UK — Expert Python Developers | ClickMasters",
+    "metaDesc": "ClickMasters Python development specialists. UK-based Python experts. Transparent GBP pricing. UK GDPR compliant. Free consultation.",
+    "cityDisplay": "",
+    "rate": "",
+    "rates": {
+      "mid": "",
+      "senior": "",
+      "lead": ""
+    },
+    "ir35Status": "",
+    "vettingStages": "",
+    "contract": "",
+    "rightToWork": "",
+    "directAnswer": "ClickMasters is a UK Python development company specialising in Django web applications, FastAPI backends, AI/ML integrations, and data engineering pipelines. Python is our primary language for backend API development, AI-powered applications, and data processing systems — all with UK GDPR compliance and transparent GBP pricing.",
+    "benefits": [],
+    "skills": [],
+    "vettingProcess": [],
+    "ir35Comparison": {
+      "contractorAgency": [],
+      "clickMasters": []
+    },
+    "faqs": [
+      {
+        "question": ": When should I use Django vs FastAPI for a UK project?",
+        "answer": ": Django: use when you need a full-featured web framework with built-in admin, ORM, authentication, and a large ecosystem of plugins. Best for content-heavy applications, eCommerce backends with complex business logic, and teams who value \"batteries included.\" FastAPI: use when you're building a pure API service that prioritises performance (async request handling), clean OpenAPI documentation, and type safety via Pydantic. Best for microservices, AI/ML API layers, and performance-critical API backends. ClickMasters uses FastAPI for new API builds and Django for full-stack web applications."
+      },
+      {
+        "question": ": How is Python used in UK AI development?",
+        "answer": ": Python is the primary language for UK AI/ML development. Common UK applications: FinTech fraud detection (scikit-learn, XGBoost), HealthTech clinical decision support (carefully designed for DCB0129 clinical safety), NLP for legal document analysis (LegalTech), LLM-powered customer service (retail, FinTech), and demand forecasting (eCommerce, logistics). UK GDPR Article 22 requires explainability for automated decisions — Python's ML ecosystem (LIME, SHAP) supports model explanation."
+      }
+    ],
+    "lastUpdated": "June 2025",
+    "readingTime": 10,
+    "writtenBy": "ClickMasters Python Team",
+    "reviewedBy": "James Whitmore, CTO"
+  },
+  {
+    "id": "P226",
+    "slug": "/aws-development",
+    "role": "",
+    "city": "",
+    "title": "AWS Development UK — Expert AWS Engineers, Transparent Pricing",
+    "metaTitle": "AWS Development Company UK — Expert AWS Developers | ClickMasters",
+    "metaDesc": "ClickMasters AWS development specialists. UK-based AWS experts. Transparent GBP pricing. UK GDPR compliant. Free consultation.",
+    "cityDisplay": "",
+    "rate": "",
+    "rates": {
+      "mid": "",
+      "senior": "",
+      "lead": ""
+    },
+    "ir35Status": "",
+    "vettingStages": "",
+    "contract": "",
+    "rightToWork": "",
+    "directAnswer": "ClickMasters is a UK AWS development company with certified engineers on the AWS eu-west-2 (London) region — ensuring UK GDPR data residency for all client projects. We build cloud-native applications, design AWS architectures, manage infrastructure as code with Terraform, and migrate UK businesses to AWS with full Cyber Essentials compliance.",
+    "benefits": [],
+    "skills": [],
+    "vettingProcess": [],
+    "ir35Comparison": {
+      "contractorAgency": [],
+      "clickMasters": []
+    },
+    "faqs": [
+      {
+        "question": ": Why use AWS eu-west-2 specifically for UK projects?",
+        "answer": ": AWS eu-west-2 (London) is the UK data centre region. Personal data stored in eu-west-2 remains within the UK — satisfying UK GDPR data residency requirements without international transfer safeguards. Using eu-west-1 (Ireland) or any US region for UK personal data constitutes an international transfer requiring an IDTA or equivalent safeguard."
+      },
+      {
+        "question": ": Is AWS more expensive than Azure for UK businesses?",
+        "answer": ": At startup scale (under £2,000/month), the difference is negligible. AWS tends to win for compute-heavy workloads at scale; Azure tends to be more cost-effective for organisations with existing Microsoft licensing. Both offer startup credit programmes (AWS Activate, Microsoft for Startups) worth pursuing for early-stage companies. ClickMasters can model the cost for your specific architecture on both platforms."
+      }
+    ],
+    "lastUpdated": "June 2025",
+    "readingTime": 10,
+    "writtenBy": "ClickMasters AWS Team",
+    "reviewedBy": "James Whitmore, CTO"
+  },
+  {
+    "id": "P251",
+    "slug": "/azure-development",
+    "role": "",
+    "city": "",
+    "title": "Azure Development UK — Expert Engineers, UK GDPR Compliant",
+    "metaTitle": "Azure Development Company UK | ClickMasters",
+    "metaDesc": "ClickMasters Azure development specialists. UK-based experts. Transparent GBP pricing. UK GDPR compliant. Free consultation.",
+    "cityDisplay": "",
+    "rate": "",
+    "rates": {
+      "mid": "",
+      "senior": "",
+      "lead": ""
+    },
+    "ir35Status": "",
+    "vettingStages": "",
+    "contract": "",
+    "rightToWork": "",
+    "directAnswer": "ClickMasters is a UK Microsoft Azure development company with certified engineers specialising in Azure UK South and UK West regions for UK GDPR data residency. We build Azure-native applications, migrate UK businesses to Azure, and integrate with Microsoft 365 — the natural choice for NHS, government, and enterprise organisations already using Microsoft's ecosystem.",
+    "benefits": [],
+    "skills": [],
+    "vettingProcess": [],
+    "ir35Comparison": {
+      "contractorAgency": [],
+      "clickMasters": []
+    },
+    "faqs": [
+      {
+        "question": ": Is Azure better for NHS and government work in the UK?",
+        "answer": ": For NHS and government workloads: generally yes. NHS England has standardised on Azure Landing Zones. Azure Active Directory/Entra ID integrates with NHS smartcard authentication. Microsoft 365 is the productivity platform for most NHS Trusts. Azure Government compliance documentation is well-established for UK public sector."
+      },
+      {
+        "question": ": Does Azure UK South satisfy UK GDPR data residency?",
+        "answer": ": Yes — Azure UK South (London) and UK West (Cardiff) both satisfy UK GDPR data residency requirements. Personal data stored in these regions remains within the UK. Be careful with Azure CDN edge nodes (distribute globally — never cache personal data) and check region availability for AI/ML services."
+      }
+    ],
+    "lastUpdated": "June 2025",
+    "readingTime": 10,
+    "writtenBy": "ClickMasters Azure Team",
+    "reviewedBy": "James Whitmore, CTO"
+  },
+  {
+    "id": "P252",
+    "slug": "/nodejs-development",
+    "role": "",
+    "city": "",
+    "title": "Node.js Development UK — Expert Engineers, UK GDPR Compliant",
+    "metaTitle": "Node.js Development Company UK | ClickMasters",
+    "metaDesc": "ClickMasters Node.js development specialists. UK-based experts. Transparent GBP pricing. UK GDPR compliant. Free consultation.",
+    "cityDisplay": "",
+    "rate": "",
+    "rates": {
+      "mid": "",
+      "senior": "",
+      "lead": ""
+    },
+    "ir35Status": "",
+    "vettingStages": "",
+    "contract": "",
+    "rightToWork": "",
+    "directAnswer": "ClickMasters is a UK Node.js development company with senior engineers specialising in REST APIs, microservices, and event-driven architectures built with Node.js and TypeScript. We build production-grade Node.js backends for UK FinTech, SaaS, and eCommerce businesses — with UK GDPR compliance, OWASP security, and transparent GBP pricing.",
+    "benefits": [],
+    "skills": [],
+    "vettingProcess": [],
+    "ir35Comparison": {
+      "contractorAgency": [],
+      "clickMasters": []
+    },
+    "faqs": [
+      {
+        "question": ": Should I use Express.js or Fastify for a new Node.js project?",
+        "answer": ": Express.js: use for established patterns, large ecosystem of middleware, team familiarity. It's the most widely known Node.js framework in the UK market. Fastify: use for performance-critical APIs (2–3x faster than Express), TypeScript-first design, and built-in JSON schema validation. ClickMasters defaults to Fastify for new API projects due to performance and TypeScript advantages."
+      },
+      {
+        "question": ": How do I keep Node.js dependencies secure for Cyber Essentials?",
+        "answer": ": Cyber Essentials requires patching high-risk vulnerabilities within 14 days. For Node.js: enable Dependabot on your GitHub repository (automatic PRs for vulnerable dependencies), configure npm audit in your CI/CD pipeline as a quality gate (failed audit fails the build), and stay on Node.js LTS versions (End-of-Life versions stop receiving security patches). ClickMasters implements all of these on every Node.js project."
+      }
+    ],
+    "lastUpdated": "June 2025",
+    "readingTime": 10,
+    "writtenBy": "ClickMasters Node.js Team",
+    "reviewedBy": "James Whitmore, CTO"
+  },
+  {
+    "id": "P253",
+    "slug": "/nextjs-development",
+    "role": "",
+    "city": "",
+    "title": "Next.js Development UK — Expert Engineers, UK GDPR Compliant",
+    "metaTitle": "Next.js Development Company UK | ClickMasters",
+    "metaDesc": "ClickMasters Next.js development specialists. UK-based experts. Transparent GBP pricing. UK GDPR compliant. Free consultation.",
+    "cityDisplay": "",
+    "rate": "",
+    "rates": {
+      "mid": "",
+      "senior": "",
+      "lead": ""
+    },
+    "ir35Status": "",
+    "vettingStages": "",
+    "contract": "",
+    "rightToWork": "",
+    "directAnswer": "ClickMasters is a UK Next.js development company specialising in Next.js 14 with App Router, Server Components, and TypeScript. We build full-stack Next.js web applications, SaaS platforms, and headless eCommerce frontends — with Core Web Vitals optimisation, WCAG 2.1 AA accessibility, and UK GDPR compliance built in.",
+    "benefits": [],
+    "skills": [],
+    "vettingProcess": [],
+    "ir35Comparison": {
+      "contractorAgency": [],
+      "clickMasters": []
+    },
+    "faqs": [
+      {
+        "question": ": What is the difference between Next.js App Router and Pages Router?",
+        "answer": ": Next.js 13 introduced the App Router (stable in Next.js 14) which uses React Server Components by default — components that render on the server, reducing JavaScript sent to the browser and improving performance. The Pages Router (original Next.js routing) is still supported but is not receiving new features. ClickMasters uses App Router for all new Next.js projects — Server Components are particularly useful for UK GDPR compliance (personal data processing stays server-side)."
+      },
+      {
+        "question": ": Should I host Next.js on Vercel or self-hosted on AWS/Azure?",
+        "answer": ": Vercel: fastest to deploy, excellent developer experience, automatic preview deployments, built-in analytics. UK GDPR: Vercel is a US company — review their DPA for UK GDPR compliance. Self-hosted (AWS/Azure UK): more control, UK data residency guaranteed, potentially lower cost at scale. ClickMasters recommends: Vercel for early-stage projects where development speed matters most; self-hosted on AWS eu-west-2 or Azure UK South for regulated sectors or when UK GDPR data residency is critical."
+      }
+    ],
+    "lastUpdated": "June 2025",
+    "readingTime": 10,
+    "writtenBy": "ClickMasters Next.js Team",
+    "reviewedBy": "James Whitmore, CTO"
+  },
+  {
+    "id": "P254",
+    "slug": "/postgresql-development",
+    "role": "",
+    "city": "",
+    "title": "PostgreSQL Development UK — Expert Engineers, UK GDPR Compliant",
+    "metaTitle": "PostgreSQL Development Company UK | ClickMasters",
+    "metaDesc": "ClickMasters PostgreSQL development specialists. UK-based experts. Transparent GBP pricing. UK GDPR compliant. Free consultation.",
+    "cityDisplay": "",
+    "rate": "",
+    "rates": {
+      "mid": "",
+      "senior": "",
+      "lead": ""
+    },
+    "ir35Status": "",
+    "vettingStages": "",
+    "contract": "",
+    "rightToWork": "",
+    "directAnswer": "ClickMasters uses PostgreSQL as the default database for all UK software projects. PostgreSQL is the most capable open-source relational database, with native support for UK GDPR compliance (Row-Level Security for multi-tenant data isolation, CASCADE DELETE for right to erasure), ACID transactions (critical for FinTech and healthcare), and excellent managed service support on AWS RDS eu-west-2 (London) and Azure Database for PostgreSQL UK South.",
+    "benefits": [],
+    "skills": [],
+    "vettingProcess": [],
+    "ir35Comparison": {
+      "contractorAgency": [],
+      "clickMasters": []
+    },
+    "faqs": [
+      {
+        "question": ": Why does ClickMasters default to PostgreSQL over MySQL?",
+        "answer": ": PostgreSQL vs MySQL: PostgreSQL has more advanced features (window functions, CTEs, full-text search, JSONB, RLS), better ACID compliance (stronger transaction isolation by default), more advanced indexing (partial indexes, expression indexes), and a more permissive licence. MySQL is simpler and has marginally better write performance at very high scale. For UK software development requirements — particularly UK GDPR compliance features and FinTech/HealthTech ACID requirements — PostgreSQL is consistently the better choice."
+      },
+      {
+        "question": ": How do I implement UK GDPR right to erasure in PostgreSQL?",
+        "answer": ": The simplest approach: CASCADE DELETE on foreign key relationships. When you delete a user record, CASCADE DELETE propagates the deletion to all related tables. PostgreSQL enforces this at the database level — no risk of application code forgetting to delete from a related table. For audit trails you must retain: use pseudonymisation rather than hard delete (replace personal identifiers with a hash), or set up conditional cascades that retain anonymised records while deleting identifiable data."
+      }
+    ],
+    "lastUpdated": "June 2025",
+    "readingTime": 10,
+    "writtenBy": "ClickMasters PostgreSQL Team",
+    "reviewedBy": "James Whitmore, CTO"
+  },
+  {
+    "id": "P280",
+    "slug": "/kubernetes-development",
+    "role": "",
+    "city": "",
+    "title": "Kubernetes Development UK — Expert Engineers, Transparent Pricing",
+    "metaTitle": "Kubernetes Development UK | ClickMasters",
+    "metaDesc": "ClickMasters Kubernetes experts. UK-based. Transparent GBP pricing. UK GDPR compliant.",
+    "cityDisplay": "",
+    "rate": "",
+    "rates": {
+      "mid": "",
+      "senior": "",
+      "lead": ""
+    },
+    "ir35Status": "",
+    "vettingStages": "",
+    "contract": "",
+    "rightToWork": "",
+    "directAnswer": "ClickMasters is a UK Kubernetes engineering company with certified engineers specialising in AWS EKS (eu-west-2 London) and Azure AKS (UK South) deployments. We design, build, and manage Kubernetes clusters for UK FinTech, HealthTech, and SaaS businesses — all with UK GDPR data residency compliance and Cyber Essentials alignment.",
+    "benefits": [],
+    "skills": [],
+    "vettingProcess": [],
+    "ir35Comparison": {
+      "contractorAgency": [],
+      "clickMasters": []
+    },
+    "faqs": [],
+    "lastUpdated": "June 2025",
+    "readingTime": 10,
+    "writtenBy": "ClickMasters Kubernetes Team",
+    "reviewedBy": "James Whitmore, CTO"
+  },
+  {
+    "id": "P281",
+    "slug": "/django-development",
+    "role": "",
+    "city": "",
+    "title": "Django Development UK — Expert Engineers, Transparent Pricing",
+    "metaTitle": "Django Development UK | ClickMasters",
+    "metaDesc": "ClickMasters Django experts. UK-based. Transparent GBP pricing. UK GDPR compliant.",
+    "cityDisplay": "",
+    "rate": "",
+    "rates": {
+      "mid": "",
+      "senior": "",
+      "lead": ""
+    },
+    "ir35Status": "",
+    "vettingStages": "",
+    "contract": "",
+    "rightToWork": "",
+    "directAnswer": "ClickMasters is a UK Django development company with senior engineers specialising in Django 5.x, Django REST Framework, and Django ORM-powered applications. We build complex web applications, B2B SaaS platforms, and internal tooling with Django — leveraging its \"batteries included\" philosophy for rapid delivery of UK-compliant, production-grade software.",
+    "benefits": [],
+    "skills": [],
+    "vettingProcess": [],
+    "ir35Comparison": {
+      "contractorAgency": [],
+      "clickMasters": []
+    },
+    "faqs": [],
+    "lastUpdated": "June 2025",
+    "readingTime": 10,
+    "writtenBy": "ClickMasters Django Team",
+    "reviewedBy": "James Whitmore, CTO"
+  },
+  {
+    "id": "P282",
+    "slug": "/fastapi-development",
+    "role": "",
+    "city": "",
+    "title": "FastAPI Development UK — Expert Engineers, Transparent Pricing",
+    "metaTitle": "FastAPI Development UK | ClickMasters",
+    "metaDesc": "ClickMasters FastAPI experts. UK-based. Transparent GBP pricing. UK GDPR compliant.",
+    "cityDisplay": "",
+    "rate": "",
+    "rates": {
+      "mid": "",
+      "senior": "",
+      "lead": ""
+    },
+    "ir35Status": "",
+    "vettingStages": "",
+    "contract": "",
+    "rightToWork": "",
+    "directAnswer": "ClickMasters is a UK FastAPI development company building high-performance Python APIs with automatic OpenAPI 3.0 documentation, async request handling, and Pydantic data validation. FastAPI is our default framework for new Python API services — particularly AI/ML APIs, microservice backends, and performance-critical data APIs.",
+    "benefits": [],
+    "skills": [],
+    "vettingProcess": [],
+    "ir35Comparison": {
+      "contractorAgency": [],
+      "clickMasters": []
+    },
+    "faqs": [],
+    "lastUpdated": "June 2025",
+    "readingTime": 10,
+    "writtenBy": "ClickMasters FastAPI Team",
+    "reviewedBy": "James Whitmore, CTO"
+  },
+  {
+    "id": "P283",
+    "slug": "/typescript-development",
+    "role": "",
+    "city": "",
+    "title": "TypeScript Development UK — Expert Engineers, Transparent Pricing",
+    "metaTitle": "TypeScript Development UK | ClickMasters",
+    "metaDesc": "ClickMasters TypeScript experts. UK-based. Transparent GBP pricing. UK GDPR compliant.",
+    "cityDisplay": "",
+    "rate": "",
+    "rates": {
+      "mid": "",
+      "senior": "",
+      "lead": ""
+    },
+    "ir35Status": "",
+    "vettingStages": "",
+    "contract": "",
+    "rightToWork": "",
+    "directAnswer": "ClickMasters uses TypeScript as the default language for all JavaScript-based UK projects — both React frontends and Node.js/Fastify backends. TypeScript's static type system catches errors before they reach production, reduces the debugging time that consumes UK engineering budgets, and makes codebases significantly more maintainable over time.",
+    "benefits": [],
+    "skills": [],
+    "vettingProcess": [],
+    "ir35Comparison": {
+      "contractorAgency": [],
+      "clickMasters": []
+    },
+    "faqs": [],
+    "lastUpdated": "June 2025",
+    "readingTime": 10,
+    "writtenBy": "ClickMasters TypeScript Team",
     "reviewedBy": "James Whitmore, CTO"
   },
   {
