@@ -148,7 +148,7 @@ export function SalaryGuideDetailClient({ guide, relatedGuides }) {
                   </h3>
                 </div>
                 <div className="rounded-2xl border border-border bg-white overflow-hidden shadow-xs overflow-x-auto">
-                  <div className="min-w-[800px]">
+                  <div className="min-w-200">
                     <div className="grid grid-cols-5 bg-primary text-white font-heading font-semibold text-sm">
                       <div className="p-5">Role</div>
                       <div className="p-5 text-center">Junior (0–2 yrs)</div>
@@ -265,7 +265,7 @@ export function SalaryGuideDetailClient({ guide, relatedGuides }) {
                   </h3>
                 </div>
                 <div className="rounded-2xl border border-border bg-white overflow-hidden shadow-xs overflow-x-auto">
-                  <div className="min-w-[800px]">
+                  <div className="min-w-200">
                     <div className="grid grid-cols-5 bg-primary text-white font-heading font-semibold text-sm">
                       <div className="p-5">Role</div>
                       <div className="p-5 text-center">Day Rate (Outside IR35)</div>

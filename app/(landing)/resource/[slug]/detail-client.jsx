@@ -168,7 +168,7 @@ export default function ResourceGuideDetailClient({ guide, relatedGuides }) {
                   {/* Section Table */}
                   {section.table && section.table.headers && section.table.headers.length > 0 && (
                     <div className="rounded-2xl border border-border bg-white overflow-hidden shadow-xs overflow-x-auto">
-                      <table className="w-full min-w-[600px] border-collapse">
+                      <table className="w-full min-w-150 border-collapse">
                         <thead>
                           <tr className="bg-primary text-white font-heading font-semibold text-sm">
                             {section.table.headers.map((header, hIdx) => (
@@ -182,18 +182,16 @@ export default function ResourceGuideDetailClient({ guide, relatedGuides }) {
                           {section.table.rows.map((row, rIdx) => (
                             <tr
                               key={rIdx}
-                              className={`border-b border-border text-sm font-body ${
-                                rIdx % 2 === 1 ? 'bg-surface/50' : ''
-                              }`}
+                              className={`border-b border-border text-sm font-body ${rIdx % 2 === 1 ? 'bg-surface/50' : ''
+                                }`}
                             >
                               {row.map((cell, cIdx) => (
                                 <td
                                   key={cIdx}
-                                  className={`p-4 ${
-                                    cIdx === 0
+                                  className={`p-4 ${cIdx === 0
                                       ? 'font-semibold text-text-primary'
                                       : 'text-text-body text-center'
-                                  }`}
+                                    }`}
                                 >
                                   {cell}
                                 </td>
@@ -259,11 +257,10 @@ export default function ResourceGuideDetailClient({ guide, relatedGuides }) {
                   return (
                     <div
                       key={index}
-                      className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
-                        isOpen
+                      className={`rounded-2xl border transition-all duration-300 overflow-hidden ${isOpen
                           ? 'border-accent/30 bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)]'
                           : 'border-border bg-white hover:border-accent/20'
-                      }`}
+                        }`}
                     >
                       <button
                         onClick={() => toggleFaq(index)}
