@@ -53,7 +53,7 @@ export async function generateMetadata({ params }) {
 // ═══════════════════════════════════════════════════════════
 
 // Industry-specific FAQ Accordion
-function IndustryFAQ({ faqs }) {
+function IndustryFAQ({ faqs, industryName }) {
   if (!faqs?.length) return null;
 
   return (
@@ -67,7 +67,7 @@ function IndustryFAQ({ faqs }) {
             </h2>
           </div>
           <p className="text-slate-500 leading-relaxed mb-10">
-            Common questions about {industry?.industry || 'this industry'} software development.
+            Common questions about {industryName || 'this industry'} software development.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ function IndustryFAQ({ faqs }) {
 }
 
 // Industry-specific Pricing Cards
-function IndustryPricing({ serviceName, pricingTiers }) {
+function IndustryPricing({ serviceName, pricingTiers, industryName }) {
   if (!pricingTiers?.length) return null;
 
   return (
@@ -112,7 +112,7 @@ function IndustryPricing({ serviceName, pricingTiers }) {
             </h2>
           </div>
           <p className="text-slate-500 leading-relaxed">
-            Flexible engagement models tailored to your {industry?.industry || 'industry'} project requirements.
+            Flexible engagement models tailored to your {industryName || 'industry'} project requirements.
           </p>
         </div>
 
@@ -178,7 +178,7 @@ function IndustryPricing({ serviceName, pricingTiers }) {
 }
 
 // Industry-specific Testimonials
-function IndustryTestimonials() {
+function IndustryTestimonials({ industryName }) {
   return (
     <section id="testimonials" className="scroll-mt-20 py-16 md:py-24 bg-white">
       <div className="mx-auto max-w-[96vw] lg:max-w-[90vw] px-5 md:px-8">
@@ -190,7 +190,7 @@ function IndustryTestimonials() {
             </h2>
           </div>
           <p className="text-slate-500 leading-relaxed">
-            Success stories from clients in {industry?.industry || 'this'} industry.
+            Success stories from clients in {industryName || 'this'} industry.
           </p>
         </div>
 
@@ -251,80 +251,6 @@ function IndustryTestimonials() {
                 </div>
               </div>
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// Industry-specific Case Studies
-function IndustryCaseStudies({ serviceName }) {
-  return (
-    <section id="case-study" className="scroll-mt-20 bg-surface py-16 md:py-24">
-      <div className="mx-auto max-w-[96vw] lg:max-w-[90vw] px-5 md:px-8">
-        <div className="max-w-3xl mb-12">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="h-10 w-1 rounded-full bg-accent" />
-            <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
-              Success Stories
-            </h2>
-          </div>
-          <p className="text-slate-500 leading-relaxed">
-            See how we've helped {industry?.industry || 'similar'} companies achieve their goals.
-          </p>
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-2">
-          {[
-            {
-              title: `Enterprise ${serviceName?.split(' ')[0] || 'Platform'} Development`,
-              challenge: "Client needed a scalable solution with strict compliance requirements.",
-              result: "Delivered a fully compliant platform serving 50,000+ users.",
-              industry: industry?.industry || 'Tech'
-            },
-            {
-              title: `Digital Transformation for ${industry?.industry || 'Tech'} Sector`,
-              challenge: "Legacy systems needed modernising with minimal downtime.",
-              result: "Zero-downtime migration to cloud-native architecture.",
-              industry: industry?.industry || 'Tech'
-            }
-          ].map((study, idx) => (
-            <Link
-              key={idx}
-              href="/case-studies"
-              className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all hover:shadow-xl hover:-translate-y-1"
-            >
-              <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-accent to-accent-hover" />
-
-              <div className="p-6">
-                <span className="inline-block rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-semibold text-accent mb-3">
-                  {study.industry}
-                </span>
-
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-accent transition-colors mb-3">
-                  {study.title}
-                </h3>
-
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Challenge</p>
-                    <p className="text-sm text-slate-600 mt-1">{study.challenge}</p>
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Result</p>
-                    <p className="text-sm text-slate-600 mt-1">{study.result}</p>
-                  </div>
-                </div>
-
-                <div className="mt-5 flex items-center gap-2 text-sm font-semibold text-accent">
-                  <span>View Case Study</span>
-                  <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            </Link>
           ))}
         </div>
       </div>
@@ -660,6 +586,7 @@ export default async function IndustryDetailPage({ params }) {
         {pricingTiers.length > 0 && (
           <IndustryPricing
             serviceName={industry.title}
+            industryName={industry.industry}
             pricingTiers={pricingTiers.map((t) => ({
               type: t.type,
               investment: t.price,
@@ -672,17 +599,12 @@ export default async function IndustryDetailPage({ params }) {
         {/* ═══════════════════════════════════════════════════════════
             TESTIMONIALS — Industry-specific component
             ═══════════════════════════════════════════════════════════ */}
-        <IndustryTestimonials />
-
-        {/* ═══════════════════════════════════════════════════════════
-            CASE STUDY — Industry-specific component
-            ═══════════════════════════════════════════════════════════ */}
-        <IndustryCaseStudies serviceName={industry.title} />
+        <IndustryTestimonials industryName={industry.industry} />
 
         {/* ═══════════════════════════════════════════════════════════
             FAQ — Industry-specific component
             ═══════════════════════════════════════════════════════════ */}
-        {faqs.length > 0 && <IndustryFAQ faqs={faqs} />}
+        {faqs.length > 0 && <IndustryFAQ faqs={faqs} industryName={industry.industry} />}
 
         {/* ═══════════════════════════════════════════════════════════
             RELATED INDUSTRIES

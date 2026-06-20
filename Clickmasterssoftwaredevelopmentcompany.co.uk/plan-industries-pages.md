@@ -156,18 +156,24 @@ const industries = [
 ### Detail Page: `app/(landing)/industries/[slug]/page.js`
 - **Route:** `/industries/[slug]` (e.g., `/industries/insurtech-saas-development`)
 - **Purpose:** Unique industry+service combo page — NOT a copy of sub-service page
-- **Sections:**
-  1. **Industry Hero** — Compact dark hero with breadcrumb, title, direct answer, meta bar (updated/reading time/author), CTA buttons, right sidebar with badges/compliance quick-view/pricing quick-view cards
-  2. **Sticky TOC** — Horizontal scrollable table of contents that sticks to top
-  3. **Industry Sections** — Custom `IndustrySections` component rendering bold-led paragraphs with proper editorial hierarchy
-  4. **Compliance** — Full section with shield icons, card grid, descriptions
-  5. **Pricing** — Reuses `PricingSection` with field mapping (`price`→`investment`, `scope`→`bestFor`)
-  6. **Testimonials** — Reuses `TestimonialsSection`
-  7. **Case Study** — Reuses `CaseStudySection` (dynamic import)
-  8. **FAQ** — Reuses `FAQSection`
-  9. **Related Industries** — Shows same-industry services using `getRelatedIndustries()`
-  10. **CTA** — Dark band with industry-specific copy
-- **Key difference from sub-service page:** No `ServiceHero` (uses custom compact hero), no `DynamicSections` (uses `IndustrySections` for bold-led paragraphs), no `ServicesSection`/`WhyChooseUs`/`EngineeringBaseline`/`ProcessSection`/`TechStack`/`CeoVision`/`ClientScrollWheel`, has compliance section, has related industries section
+- **Detail Page Layout & Section Sources:**
+
+| Section | Source | Design & Implementation Details |
+| :--- | :--- | :--- |
+| **Industry Hero** | Dynamic (`data/industries.js`) | Compact dark background with breadcrumb, title, direct answer, and meta info bar (updated, reading time, author). Features dual-column layout with right-hand compliance/pricing badges card stack. |
+| **Sticky TOC** | Dynamic | Horizontal scrollable Table of Contents bar sticking to the top of the viewport for easy section navigation. |
+| **Industry Sections** | Dynamic (`data/industries.js`) | Custom `IndustrySections` component rendering bold-led paragraphs (preserving the original `{bold, text}` format) with an editorial feel. |
+| **Compliance** | Dynamic (`data/industries.js`) | Card grid with shield/regulation icons, dynamically mapped per-industry standards (e.g., FCA ICOBS, UK GDPR). |
+| **Pricing** | Dynamic (`data/industries.js`) | Three-tier structure with custom field mapping (`price` -> `investment`, `scope` -> `bestFor`). |
+| **Testimonials** | ⚠️ Hard-coded (Inline component) | 3 static testimonials rendered via `IndustryTestimonials` component, with the industry name dynamically injected (e.g., "...success stories in fintech"). |
+| **FAQs** | Dynamic (`data/industries.js`) | Accordion container displaying question/answer pairs. |
+| **Related Industries** | Dynamic (`data/industries.js`) | Sidebar/grid displaying other services in the same industry using `getRelatedIndustries()`. |
+| **CTA** | Static | Editorial dark band section with contact consultation links. |
+
+> [!NOTE]
+> The **Case Studies** section has been successfully removed from the detail page layout as per design requirements.
+
+- **Key difference from sub-service page:** No `ServiceHero` (uses custom compact hero), no `DynamicSections` (uses `IndustrySections` for bold-led paragraphs), no `ServicesSection`/`WhyChooseUs`/`EngineeringBaseline`/`ProcessSection`/`TechStack`/`CeoVision`/`ClientScrollWheel`, has compliance section, has related industries section, and does not render Case Studies.
 
 ### Custom Component: `components/landing/industries/IndustrySections.jsx`
 - Renders industry content sections with proper bold-led paragraph formatting
@@ -207,6 +213,8 @@ const industries = [
 - **Compliance section** with shield icons and card grid
 - **Related industries** section at bottom for same-industry cross-linking
 - **Field mapping** for PricingSection: `price`→`investment`, `scope`→`bestFor`
+- **Section removal**: Case Studies section was completely removed from the page to streamline the design.
+- **Inline Testimonials**: Employs a custom `IndustryTestimonials` component with 3 hard-coded industry-neutral quotes, dynamically inserting the current industry name to personalize the context.
 
 ---
 
