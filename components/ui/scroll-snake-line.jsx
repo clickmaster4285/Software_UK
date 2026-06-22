@@ -35,7 +35,10 @@ export const ScrollSnakeLine = ({ targetRef }) => {
   const secondaryOpacity = useTransform(opacity, (v) => v * 0.5);
 
   useEffect(() => {
-    setIsClient(true);
+    const handle = requestAnimationFrame(() => {
+      setIsClient(true);
+    });
+    return () => cancelAnimationFrame(handle);
   }, []);
 
   if (!isClient) return null;

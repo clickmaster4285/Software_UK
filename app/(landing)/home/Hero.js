@@ -34,7 +34,7 @@ export default function Hero() {
                      Software Development Company <span className="italic font-semibold "> whose mission is  <span /> </span><span className="text-accent">We Build. You Grow</span>
                   </h1>
                   <p className="text-gray-200 font-body text-lg md:text-xl mb-10 max-w-3xl">
-                     Creating the future of business. We're a Software development Company delivering bespoke web, mobile, SaaS, and AI-powered systems including AI monitoring solutions powering a global market
+                     Creating the future of business. We&apos;re a Software development Company delivering bespoke web, mobile, SaaS, and AI-powered systems including AI monitoring solutions powering a global market
                   </p>
                   <div className="flex flex-wrap gap-4 mb-10">
                      <StrategyCallModal

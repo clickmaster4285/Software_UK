@@ -184,7 +184,7 @@ function FluidHPipe({ progress, reverse = false, reducedMotion }) {
           style={{ opacity: arrowOpacity, scale: arrowOpacity }}
           className="order-last -ml-3 shrink-0"
         >
-          <div className="h-0 w-0 border-y-[12px] border-y-transparent border-l-[20px] border-l-accent" />
+          <div className="h-0 w-0 border-y-12 border-y-transparent border-l-20 border-l-accent" />
         </motion.div>
       )}
 
@@ -222,7 +222,7 @@ function FluidHPipe({ progress, reverse = false, reducedMotion }) {
           style={{ opacity: arrowOpacity, scale: arrowOpacity }}
           className="order-first -mr-3 shrink-0"
         >
-          <div className="h-0 w-0 border-y-[12px] border-y-transparent border-r-[20px] border-r-primary" />
+          <div className="h-0 w-0 border-y-12 border-y-transparent border-r-20 border-r-primary" />
         </motion.div>
       )}
     </div>
@@ -261,7 +261,7 @@ function FluidVPipe({ progress, align = "end", reducedMotion }) {
         )}
       </div>
       <motion.div style={{ opacity: arrowOpacity, scale: arrowOpacity }} className="-mt-2 hidden lg:block">
-        <div className="h-0 w-0 border-x-[10px] border-x-transparent border-t-[16px] border-t-accent" />
+        <div className="h-0 w-0 border-x-10 border-x-transparent border-t-16 border-t-accent" />
       </motion.div>
     </div>
   );
@@ -288,7 +288,7 @@ function ProcessDevWidget({ widget, side, index, visible, reducedMotion }) {
         x: visible ? 0 : side === "left" ? -10 : 10,
       }}
       transition={{ duration: 0.35, ease: EASE_OUT }}
-      className="w-44 rounded-xl border border-border bg-white/95 p-3 shadow-[0_8px_28px_rgba(0,0,0,0.07)] backdrop-blur-sm ring-1 ring-black/[0.03] xl:w-48"
+      className="w-44 rounded-xl border border-border bg-white/95 p-3 shadow-[0_8px_28px_rgba(0,0,0,0.07)] backdrop-blur-sm ring-1 ring-black/3 xl:w-48"
     >
       <motion.div
         animate={reducedMotion || !visible ? undefined : { y: [0, -4, 0] }}

@@ -167,7 +167,7 @@ export default function IndustriesListingPage() {
           {/* Gradient orbs */}
           <div className="absolute -top-60 -right-60 w-150 h-150 rounded-full bg-accent/20 blur-[180px] animate-pulse" />
           <div className="absolute -bottom-40 -left-40 w-125 h-125 rounded-full bg-accent/70 blur-[140px]" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 rounded-full bg-accent/5 blur-[200px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 rounded-full bg-accent/5 blur-50" />
         </div>
 
         <div className="relative mx-auto max-w-[96vw] lg:max-w-[90vw] px-5 py-28 md:py-36 lg:py-44">
@@ -242,7 +242,7 @@ export default function IndustriesListingPage() {
               <div className="absolute -inset-6 rounded-3xl bg-accent/5 blur-3xl" aria-hidden />
               <div className="absolute top-4 right-4 w-20 h-20 rounded-full bg-accent/10 blur-2xl" aria-hidden />
 
-              <div className="relative rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-xl shadow-2xl shadow-black/20">
+              <div className="relative rounded-2xl border border-white/10 bg-white/3 p-6 backdrop-blur-xl shadow-2xl shadow-black/20">
                 <div className="flex items-center justify-between mb-5">
                   <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-white/50">
                     Featured Industries
@@ -262,9 +262,9 @@ export default function IndustriesListingPage() {
                       <Link
                         key={cat}
                         href={`/industries/${grouped[cat][0].slug}`}
-                        className="group flex items-center gap-3.5 rounded-xl border border-white/5 bg-white/[0.02] px-4 py-3 transition-all hover:border-accent/40 hover:bg-white/[0.08] hover:translate-x-1"
+                        className="group flex items-center gap-3.5 rounded-xl border border-white/5 bg-white/2 px-4 py-3 transition-all hover:border-accent/40 hover:bg-white/8 hover:translate-x-1"
                       >
-                        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-accent/20 to-accent/5 text-accent group-hover:from-accent group-hover:to-accent-hover group-hover:text-white transition-all">
+                        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-linear-to-br from-accent/20 to-accent/5 text-accent group-hover:from-accent group-hover:to-accent-hover group-hover:text-white transition-all">
                           {industryIcons[cat] || (
                             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6Z" />
@@ -353,7 +353,7 @@ export default function IndustriesListingPage() {
                   <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-accent/5 opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-150" />
 
                   <div className="relative flex items-start justify-between">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent/10 to-accent/5 text-accent transition-all group-hover:bg-gradient-to-br group-hover:from-accent group-hover:to-accent-hover group-hover:text-white">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-br from-accent/10 to-accent/5 text-accent transition-all group-hover:bg-linear-to-br group-hover:from-accent group-hover:to-accent-hover group-hover:text-white">
                       {industryIcons[cat] || (
                         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6Z" />
@@ -429,7 +429,7 @@ export default function IndustriesListingPage() {
                 <div key={cat} className="group relative border-b border-accent/30 last:border-b-0">
                   {/* Category header */}
                   <div className="mb-8 flex items-start gap-5">
-                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-accent/80 text-white shadow-lg shadow-primary/25">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-linear-to-br from-accent to-accent/80 text-white shadow-lg shadow-primary/25">
                       {industryIcons[cat] || (
                         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6Z" />
@@ -454,7 +454,7 @@ export default function IndustriesListingPage() {
                   </div>
 
                   {/* Service cards */}
-                  <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ml-[4.5rem]">
+                  <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ml-18">
                     {items.map((ind) => (
                       <Link
                         key={ind.slug}
@@ -548,7 +548,7 @@ export default function IndustriesListingPage() {
             }}
           />
           <div className="absolute -top-40 right-0 h-125 w-125 rounded-full bg-accent/15 blur-[140px]" />
-          <div className="absolute -bottom-40 left-0 h-[400px] w-[400px] rounded-full bg-blue-500/10 blur-[120px]" />
+          <div className="absolute -bottom-40 left-0 h-100 w-100 rounded-full bg-blue-500/10 blur-[120px]" />
         </div>
 
         <div className="relative mx-auto max-w-[96vw] lg:max-w-[90vw] px-5 md:px-8">

@@ -25,11 +25,11 @@ const CHECKLIST_ICONS = [
   { match: /security|compliance|audit|owasp/i, Icon: Shield },
 ];
 
-function getChecklistIcon(text) {
+function renderChecklistIcon(text, className, strokeWidth = 2) {
   for (const { match, Icon } of CHECKLIST_ICONS) {
-    if (match.test(text)) return Icon;
+    if (match.test(text)) return <Icon className={className} strokeWidth={strokeWidth} aria-hidden />;
   }
-  return CheckCircle2;
+  return <CheckCircle2 className={className} strokeWidth={strokeWidth} aria-hidden />;
 }
 
 const cardVariants = {
@@ -42,7 +42,6 @@ const cardVariants = {
 };
 
 function BaselineCard({ item, index, showStandardBadge }) {
-  const Icon = getChecklistIcon(item.item);
   const number = String(index + 1).padStart(2, "0");
 
   return (
@@ -65,7 +64,7 @@ function BaselineCard({ item, index, showStandardBadge }) {
             "transition-colors group-hover:bg-accent group-hover:text-white group-hover:ring-accent/30"
           )}
         >
-          <Icon className="h-5 w-5" strokeWidth={2} aria-hidden />
+          {renderChecklistIcon(item.item, "h-5 w-5")}
         </div>
         <span className="font-heading text-sm font-bold tabular-nums text-text-muted/40 transition-colors group-hover:text-accent/30">
           {number}

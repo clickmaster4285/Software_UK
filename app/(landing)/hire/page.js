@@ -274,7 +274,7 @@ export default function HirePage() {
                 Build Your Team Today
               </h2>
               <p className="text-white/70 max-w-xl mx-auto mb-10 text-lg">
-                Free consultation. Tell us what you need — we'll give you timeline,
+                Free consultation. Tell us what you need — we&apos;ll give you timeline,
                 pricing, and IR35 clarity within 24 hours.
               </p>
               <Link

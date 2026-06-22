@@ -96,7 +96,7 @@ export const IndustriesSection = ({ industryUseCases }) => {
                 <div className="flex flex-col h-full items-start">
                   {/* Animated Background Gradient on Hover - Industry specific color */}
                   <motion.div
-                    className="absolute inset-0 bg-accent/[0.02] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                    className="absolute inset-0 bg-accent/2 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   />
 
                   {/* Icon Container with Industry Specific Color - Centered */}

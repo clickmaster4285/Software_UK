@@ -27,7 +27,7 @@ const getUnsplashImage = (type, title, index) => {
   // Select category based on title keywords
   let selectedCategory = categories.tech;
   const lowerTitle = title.toLowerCase();
-  
+
   if (lowerTitle.includes("fintech") || lowerTitle.includes("finance") || lowerTitle.includes("banking")) {
     selectedCategory = categories.fintech;
   } else if (lowerTitle.includes("ecommerce") || lowerTitle.includes("shop") || lowerTitle.includes("retail")) {
@@ -46,11 +46,11 @@ const getUnsplashImage = (type, title, index) => {
 
   // Pick a keyword from the category
   const keyword = selectedCategory[index % selectedCategory.length];
-  
+
   // Unsplash image URL with specific dimensions (800x600 for landscape, 800x1000 for portrait)
   const width = 800;
   const height = type === "Case Study" && index === 0 ? 1000 : 600;
-  
+
   return `https://source.unsplash.com/featured/${width}x${height}/?${keyword}&sig=${index}`;
 };
 
@@ -90,7 +90,7 @@ const InsightCardItem = ({ card, tall = false }) => {
   useEffect(() => {
     const el = ref.current;
     if (!el || hasAnimated) return;
-    
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated) {
@@ -103,12 +103,12 @@ const InsightCardItem = ({ card, tall = false }) => {
           observer.disconnect();
         }
       },
-      { 
+      {
         threshold: 0.15,
         rootMargin: "0px 0px -50px 0px" // Triggers slightly before card enters viewport
       }
     );
-    
+
     observer.observe(el);
     return () => observer.disconnect();
   }, [card.index, hasAnimated]);
@@ -150,7 +150,7 @@ const InsightCardItem = ({ card, tall = false }) => {
         <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/60 to-transparent" />
 
         {/* subtle glass blur ONLY at bottom */}
-        <div className="absolute inset-0 backdrop-blur-[3px]" />
+        <div className="absolute inset-0 backdrop-blur-0.75" />
 
         {/* content always above */}
         <div className="relative z-10">
@@ -190,7 +190,7 @@ const InsightsHeader = () => {
   useEffect(() => {
     const el = headerRef.current;
     if (!el) return;
-    
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -200,13 +200,13 @@ const InsightsHeader = () => {
       },
       { threshold: 0.1 }
     );
-    
+
     observer.observe(el);
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div 
+    <div
       ref={headerRef}
       className={[
         "flex flex-col gap-5 lg:sticky lg:top-24 transition-all duration-700 ease-out",
@@ -226,14 +226,14 @@ const InsightsHeader = () => {
           across Services and Industries
         </span>
       </h2>
-    
+
       <p className="text-base text-gray-800" >
-       From Concept to Completion. We deliver enterprise-grade solutions for modern
-  businesses, combining innovative technology with strategic execution. With a
-  proven track record of successful deliveries across industries worldwide, we
-  transform ideas into impactful digital experiences that drive real growth.
+        From Concept to Completion. We deliver enterprise-grade solutions for modern
+        businesses, combining innovative technology with strategic execution. With a
+        proven track record of successful deliveries across industries worldwide, we
+        transform ideas into impactful digital experiences that drive real growth.
       </p>
-     
+
 
       <Link
         href="/blog"
@@ -248,7 +248,7 @@ const InsightsHeader = () => {
 // ─── Cards Section Component ───────────────────────────────────────────────────
 
 const InsightsCards = ({ cards, isLoading }) => {
-  
+
   const col1Cards = cards.slice(0, 2);
   const col2Cards = cards.slice(2, 5);
   const col3Cards = cards.slice(5, 8);
@@ -351,7 +351,7 @@ export default function FeaturedInsights() {
   return (
     <section
       className="w-full px-4 sm:px-6 lg:px-8 xl:px-22 py-16 overflow-hidden bg-linear-to-b from-white to-slate-50 "
-     
+
     >
       {/* Mobile layout: 2 columns grid */}
       <div className="lg:hidden">

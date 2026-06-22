@@ -257,7 +257,7 @@ export default function AboutPage() {
           {/* Drifting blobs */}
           <div className="blob-drift absolute -top-32 -left-32 w-125 h-125 rounded-full opacity-30"
             style={{ background: 'radial-gradient(circle, oklch(0.5675 0.2072 318.97 / 0.18) 0%, transparent 70%)' }} />
-          <div className="blob-drift absolute -bottom-32 -right-32 w-[450px] h-[450px] rounded-full opacity-25"
+          <div className="blob-drift absolute -bottom-32 -right-32 w-112.5 h-112.5 rounded-full opacity-25"
             style={{ background: 'radial-gradient(circle, oklch(0.5675 0.2072 318.97 / 0.14) 0%, transparent 70%)', animationDelay: '-6s' }} />
 
           {/* Wave 1 — slow, accent tint */}

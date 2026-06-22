@@ -89,7 +89,7 @@ export default function GlossaryDetailClient({ term, relatedTerms }) {
   return (
     <div className="min-h-screen bg-background" ref={mainRef}>
       {/* ── Reading Progress Bar ── */}
-      <div className="fixed top-0 left-0 right-0 z-50 h-[3px] bg-transparent">
+      <div className="fixed top-0 left-0 right-0 z-50 h-0.75 bg-transparent">
         <div
           className="h-full bg-accent transition-all duration-150 ease-out"
           style={{ width: `${scrollProgress}%` }}
@@ -99,8 +99,8 @@ export default function GlossaryDetailClient({ term, relatedTerms }) {
       {/* ── Hero ── */}
       <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20">
         <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
-        <div className="absolute top-10 right-[5%] w-[350px] h-[350px] rounded-full bg-accent/8 blur-3xl" />
-        <div className="absolute bottom-0 left-[10%] w-[300px] h-[300px] rounded-full bg-accent/5 blur-3xl" />
+        <div className="absolute top-10 right-[5%] w-88 h-88 rounded-full bg-accent/8 blur-3xl" />
+        <div className="absolute bottom-0 left-[10%] w-75 h-75 rounded-full bg-accent/5 blur-3xl" />
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
 
         <div className="relative max-w-[96vw] lg:max-w-[90vw] mx-auto px-6">
@@ -185,11 +185,10 @@ export default function GlossaryDetailClient({ term, relatedTerms }) {
                     <button
                       key={s.id}
                       onClick={() => scrollToSection(s.id)}
-                      className={`block w-full text-left text-sm py-1.5 pl-3 border-l-2 transition-all ${
-                        activeSection === s.id
-                          ? 'border-accent text-accent font-medium'
-                          : 'border-transparent text-text-muted hover:text-text-body hover:border-border'
-                      }`}
+                      className={`block w-full text-left text-sm py-1.5 pl-3 border-l-2 transition-all ${activeSection === s.id
+                        ? 'border-accent text-accent font-medium'
+                        : 'border-transparent text-text-muted hover:text-text-body hover:border-border'
+                        }`}
                     >
                       {s.label}
                     </button>

@@ -120,11 +120,10 @@ function IndustryPricing({ serviceName, pricingTiers, industryName }) {
           {pricingTiers.map((tier, idx) => (
             <div
               key={idx}
-              className={`relative rounded-2xl border bg-white p-6 transition-all hover:shadow-xl hover:-translate-y-1 ${
-                idx === 1
-                  ? 'border-accent shadow-lg shadow-accent/10'
-                  : 'border-slate-200 shadow-md'
-              }`}
+              className={`relative rounded-2xl border bg-white p-6 transition-all hover:shadow-xl hover:-translate-y-1 ${idx === 1
+                ? 'border-accent shadow-lg shadow-accent/10'
+                : 'border-slate-200 shadow-md'
+                }`}
             >
               {idx === 1 && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-3 py-1 text-xs font-semibold text-white">
@@ -224,7 +223,7 @@ function IndustryTestimonials({ industryName }) {
             >
               {/* Quote icon */}
               <div className="absolute top-5 right-5 text-6xl font-serif text-accent/10 leading-none">
-                "
+                &ldquo;
               </div>
 
               <div className="relative">
@@ -237,11 +236,11 @@ function IndustryTestimonials({ industryName }) {
                 </div>
 
                 <p className="text-slate-600 leading-relaxed mb-6">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </p>
 
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-accent to-accent-hover text-white font-bold">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-linear-to-br from-accent to-accent-hover text-white font-bold">
                     {testimonial.author[0]}
                   </div>
                   <div>
@@ -410,7 +409,7 @@ export default async function IndustryDetailPage({ params }) {
               <div className="space-y-4">
                 {/* Badges card */}
                 {industry.badges && industry.badges.length > 0 && (
-                  <div className="rounded-xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm">
+                  <div className="rounded-xl border border-white/10 bg-white/4 p-5 backdrop-blur-sm">
                     <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-white/35">
                       Key Highlights
                     </p>
@@ -429,7 +428,7 @@ export default async function IndustryDetailPage({ params }) {
 
                 {/* Compliance quick-view */}
                 {compliance.length > 0 && (
-                  <div className="rounded-xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm">
+                  <div className="rounded-xl border border-white/10 bg-white/4 p-5 backdrop-blur-sm">
                     <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-white/35">
                       Compliance
                     </p>
@@ -453,7 +452,7 @@ export default async function IndustryDetailPage({ params }) {
 
                 {/* Pricing quick-view */}
                 {pricingTiers.length > 0 && (
-                  <div className="rounded-xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm">
+                  <div className="rounded-xl border border-white/10 bg-white/4 p-5 backdrop-blur-sm">
                     <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-white/35">
                       Pricing
                     </p>
