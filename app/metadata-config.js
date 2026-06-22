@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: 'ClickMasters',
-  url: 'https://clickmasters.co',
+  url: 'https://clickmasterssoftwaredevelopmentcompany.co.uk',
   description: 'ClickMasters - Software Development Company, AI solutions, and digital transformation for B2B companies.',
 };
 

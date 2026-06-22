@@ -5,6 +5,7 @@ import { ArrowRight, Shield, CheckCircle, Clock, Users, MapPin, Sparkles, Chevro
 export const metadata = {
   title: 'Hire Developers | ClickMasters — Vetted UK Engineers',
   description: 'Hire vetted software developers across the UK. IR35-compliant, 3-stage vetting, 30-day rolling contracts. React, Python, .NET, mobile & more.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/hire' },
 };
 
 const stats = [

@@ -2,6 +2,12 @@ import Link from 'next/link';
 import { cityListings } from '@/data/cities';
 import { ArrowRight, MapPin, BookOpen, Building2 } from 'lucide-react';
 
+export const metadata = {
+  title: 'Software Development by City | ClickMasters UK',
+  description: 'ClickMasters provides custom software development services across UK cities. Find local expertise in London, Manchester, Birmingham, and more.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/cities' },
+};
+
 const ITEMS_PER_PAGE = 24;
 
 function CityCard({ city }) {

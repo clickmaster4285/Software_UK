@@ -20,6 +20,9 @@ export async function generateMetadata({ params }) {
   return {
     title: guide.metaTitle || guide.title,
     description: guide.metaDesc || `Find standard UK software developer salaries and day rates for ${guide.role.replace(/-/g, ' ')} roles in ${guide.year}.`,
+    alternates: {
+      canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/salary-guide/${slug}`,
+    },
   };
 }
 

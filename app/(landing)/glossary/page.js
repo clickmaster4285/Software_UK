@@ -9,6 +9,7 @@ const ITEMS_PER_PAGE = 24;
 export const metadata = {
   title: 'Glossary \u2014 UK Software Development Terms | ClickMasters',
   description: 'Comprehensive glossary of UK software development terms, technologies, and business concepts. Definitions covering APIs, MVPs, SaaS, GDPR, IR35, and more.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/glossary' },
 };
 
 function GlossaryCard({ term }) {

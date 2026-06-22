@@ -21,6 +21,9 @@ export async function generateMetadata({ params }) {
   return {
     title: study.metaTitle || study.title,
     description: study.metaDesc || study.challenge?.substring(0, 160),
+    alternates: {
+      canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/case-studies/${slug}`,
+    },
   };
 }
 

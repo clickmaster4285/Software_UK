@@ -18,6 +18,9 @@ export async function generateMetadata({ params }) {
   return {
     title: comparison.metaTitle || comparison.title,
     description: comparison.metaDesc || `Compare ${comparison.topic.replace(/_/g, ' ')} for UK software development.`,
+    alternates: {
+      canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/comparison/${slug}`,
+    },
   };
 }
 

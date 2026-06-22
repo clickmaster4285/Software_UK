@@ -20,6 +20,9 @@ export async function generateMetadata({ params }) {
   return {
     title: guide.metaTitle || guide.title,
     description: guide.metaDesc || `UK software development resource guide: ${guide.title}.`,
+    alternates: {
+      canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/resource/${slug}`,
+    },
   };
 }
 
