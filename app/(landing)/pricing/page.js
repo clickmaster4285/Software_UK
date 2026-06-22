@@ -1,6 +1,7 @@
 export const metadata = {
-  title: 'Pricing - Clickmasters',
-  description: 'Flexible pricing plans for your business needs',
+  title: 'Pricing | ClickMasters Software Development',
+  description: 'Flexible pricing plans for custom software development, web apps, mobile apps, and AI solutions. Transparent pricing for UK businesses.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/pricing' },
 };
 
 const plans = [

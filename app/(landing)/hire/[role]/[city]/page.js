@@ -22,6 +22,9 @@ export async function generateMetadata({ params }) {
   return {
     title: hirePage.metaTitle || hirePage.title,
     description: hirePage.metaDesc || `Hire a ${role} in ${city}. IR35-compliant, vetted developers.`,
+    alternates: {
+      canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/hire/${role}/${city}`,
+    },
   };
 }
 

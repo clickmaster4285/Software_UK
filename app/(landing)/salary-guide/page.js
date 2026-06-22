@@ -4,6 +4,12 @@ import { salaryGuideListings } from '@/data/salary-guides';
 import { ArrowRight, Sparkles, BookOpen } from 'lucide-react';
 import SalaryGuideFilterClient from './filter-client';
 
+export const metadata = {
+  title: 'UK Software Developer Salary Guides | ClickMasters',
+  description: 'Comprehensive salary benchmarks for UK software developers by role, technology, and experience level. Day rates and permanent salaries.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/salary-guide' },
+};
+
 const ITEMS_PER_PAGE = 12;
 
 const categoryEmoji = {

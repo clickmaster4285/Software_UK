@@ -5,6 +5,12 @@ import { caseStudyListings, getSectorsMeta } from '@/data/case-studies';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import CaseStudiesFilterClient from './filter-client';
 
+export const metadata = {
+  title: 'Case Studies | ClickMasters Software Development',
+  description: 'Explore our portfolio of successful software development projects across FinTech, HealthTech, GovTech, EdTech, and more UK industries.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/case-studies' },
+};
+
 const ITEMS_PER_PAGE = 12;
 
 const sectorEmoji = {

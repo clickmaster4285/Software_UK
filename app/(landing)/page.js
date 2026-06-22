@@ -14,6 +14,7 @@ const MidCTA = dynamic(() => import("@/app/(landing)/home/MidCTA"), { ssr: true 
 const Pricing = dynamic(() => import("@/app/(landing)/home/Pricing"), { ssr: true });
 const Benefits = dynamic(() => import("@/app/(landing)/home/Benefits"), { ssr: true });
 const Testimonials = dynamic(() => import("@/app/(landing)/home/Testimonials"), { ssr: true });
+
 const FAQ = dynamic(() => import("@/app/(landing)/home/FAQ"), { ssr: true });
 const FinalCTA = dynamic(() => import("@/app/(landing)/home/FinalCTA"), { ssr: true });
 

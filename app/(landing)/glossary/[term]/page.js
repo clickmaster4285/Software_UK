@@ -20,6 +20,9 @@ export async function generateMetadata({ params }) {
   return {
     title: glossaryTerm.metaTitle || `What is ${glossaryTerm.termDisplay}? UK Definition | ClickMasters`,
     description: glossaryTerm.metaDesc || `Definition of ${glossaryTerm.termDisplay} in UK software development context.`,
+    alternates: {
+      canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/glossary/${term}`,
+    },
   };
 }
 

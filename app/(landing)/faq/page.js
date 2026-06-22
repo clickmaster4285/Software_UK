@@ -1,8 +1,9 @@
 import FAQAccordion from './FAQAccordion';
 
 export const metadata = {
-  title: 'FAQ - Softflow',
-  description: 'Frequently asked questions about Softflow',
+  title: 'FAQ | ClickMasters Software Development',
+  description: 'Frequently asked questions about ClickMasters software development services, pricing, process, and support.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/faq' },
 };
 
 export default function FAQPage() {

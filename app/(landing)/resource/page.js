@@ -5,6 +5,12 @@ import { ArrowRight, BookOpen } from 'lucide-react';
 import ResourceGuideFilterClient from './filter-client';
 import ResourceCategoryPills from './category-pills';
 
+export const metadata = {
+  title: 'Resource Guides | ClickMasters Software Development',
+  description: 'In-depth resource guides covering software development best practices, technologies, and industry insights for UK businesses.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/resource' },
+};
+
 const ITEMS_PER_PAGE = 12;
 
 const categoryLabels = {

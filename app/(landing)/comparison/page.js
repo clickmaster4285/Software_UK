@@ -2,6 +2,12 @@ import Link from 'next/link';
 import { comparisonListings } from '@/data/comparisons';
 import { ArrowRight, BookOpen, GitCompare } from 'lucide-react';
 
+export const metadata = {
+  title: 'Technology Comparisons | ClickMasters UK',
+  description: 'Side-by-side comparisons of software development technologies, frameworks, and tools for UK businesses. Make informed tech stack decisions.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/comparison' },
+};
+
 const ITEMS_PER_PAGE = 24;
 
 const categoryLabels = {

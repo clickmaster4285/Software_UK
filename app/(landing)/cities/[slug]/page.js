@@ -18,6 +18,9 @@ export async function generateMetadata({ params }) {
   return {
     title: city.metaTitle || city.title,
     description: city.metaDesc || `Custom software development services in ${city.city.replace(/-/g, ' ')}.`,
+    alternates: {
+      canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/cities/${slug}`,
+    },
   };
 }
 
