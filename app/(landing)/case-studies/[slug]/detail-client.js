@@ -6,7 +6,7 @@ import {
   ChevronRight, Share2, Printer, Target, Lightbulb,
   CheckCircle2, Quote, Clock, Calendar, Shield, Globe, Lock,
   FileText, Users, Cpu, Award, BookOpen, ChevronUp, ArrowRight,
-  Sparkles, MapPin, Zap,
+  Sparkles, TrendingUp, Zap, BarChart3,
 } from 'lucide-react';
 
 const sectorEmojiMap = {
@@ -28,6 +28,47 @@ function getSectorEmoji(sector) {
   return key ? (sectorEmojiMap[key] || '📁') : '📁';
 }
 
+// ─── Content Parsing Helpers ────────────────────────────────────────
+
+function parseApproachSubsections(text) {
+  if (!text) return [];
+  const subsectionRegex = /([A-Z][A-Za-z0-9\s/&]+?):\s/g;
+  const indices = [];
+  let match;
+  while ((match = subsectionRegex.exec(text)) !== null) {
+    indices.push({ label: match[1].trim(), start: match.index + match[0].length, labelStart: match.index });
+  }
+  const sections = [];
+  for (let i = 0; i < indices.length; i++) {
+    const end = i + 1 < indices.length ? indices[i + 1].labelStart : text.length;
+    const content = text.substring(indices[i].start, end).trim();
+    if (content) sections.push({ label: indices[i].label, content });
+  }
+  return sections;
+}
+
+function splitApproachBullets(content) {
+  if (/^\(\d+\)/.test(content.trim())) {
+    return content.split(/(?=\(\d+\)\s)/).map(b => b.trim()).filter(b => b.length > 0);
+  }
+  return content.split(/(?<=\.)\s+(?=[A-Z])|;\s*/).map(b => b.trim()).filter(b => b.length > 0);
+}
+
+function splitResultsSentences(text) {
+  if (!text) return [];
+  return text.split(/(?<=\.)\s+(?=[A-Z])/).map(s => s.trim()).filter(s => s.length > 0);
+}
+
+function highlightMetrics(text) {
+  const parts = text.split(/(£[\d,.]+%?|\d[\d,.]*%|\d[\d,.]*\s*(?:weeks?|months?|days?|hours?|minutes?|seconds?|years?|x\b)?)/gi);
+  return parts.map((part, i) => {
+    if (/^(£[\d,.]+%?|\d[\d,.]*%|\d[\d,.]*\s*(?:weeks?|months?|days?|hours?|minutes?|seconds?|years?|x\b)?)$/i.test(part)) {
+      return <strong key={i} className="text-emerald-700 font-bold">{part}</strong>;
+    }
+    return part;
+  });
+}
+
 // ─── Reading Progress Bar ──────────────────────────────────────────
 function ReadingProgress() {
   const [progress, setProgress] = useState(0);
@@ -36,16 +77,14 @@ function ReadingProgress() {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (docHeight > 0) {
-        setProgress(Math.min(100, (scrollTop / docHeight) * 100));
-      }
+      if (docHeight > 0) setProgress(Math.min(100, (scrollTop / docHeight) * 100));
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] h-1">
+    <div className="fixed top-0 left-0 right-0 z-60 h-1">
       <div
         className="h-full bg-linear-to-r from-accent to-accent-light transition-all duration-150 ease-out"
         style={{ width: `${progress}%` }}
@@ -56,6 +95,8 @@ function ReadingProgress() {
 
 // ─── Table of Contents ─────────────────────────────────────────────
 function TableOfContents({ study }) {
+  const [activeId, setActiveId] = useState('');
+
   const sections = useMemo(() => {
     const s = [];
     s.push({ id: 'overview', label: 'Overview', icon: BookOpen });
@@ -67,6 +108,35 @@ function TableOfContents({ study }) {
     return s;
   }, [study]);
 
+  // Track active section on scroll using IntersectionObserver
+  useEffect(() => {
+    const sectionIds = sections.map(s => s.id);
+    const elements = sectionIds
+      .map(id => document.getElementById(id))
+      .filter(Boolean);
+
+    if (elements.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // Find the topmost visible element
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (visible.length > 0) {
+          setActiveId(visible[0].target.id);
+        }
+      },
+      {
+        rootMargin: '-10% 0px -60% 0px',
+        threshold: 0,
+      }
+    );
+
+    elements.forEach(el => observer.observe(el));
+    return () => observer.disconnect();
+  }, [sections]);
+
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
@@ -75,19 +145,41 @@ function TableOfContents({ study }) {
     <nav className="hidden xl:block sticky top-28 w-56 shrink-0 self-start">
       <div className="bg-white rounded-2xl border border-border p-5 shadow-[0_2px_16px_rgba(0,0,0,0.05)]">
         <h4 className="text-[10px] font-bold text-text-muted uppercase tracking-[0.15em] mb-4 font-heading">Contents</h4>
-        <ul className="space-y-0.5">
-          {sections.map(({ id, label, icon: Icon }) => (
-            <li key={id}>
-              <button
-                onClick={() => scrollTo(id)}
-                className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-text-muted hover:text-primary hover:bg-surface transition-all text-left"
-              >
-                <Icon className="w-3.5 h-3.5 shrink-0" />
-                {label}
-              </button>
-            </li>
-          ))}
-        </ul>
+
+        {/* Active indicator line */}
+        <div className="relative">
+          <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-border rounded-full" />
+          <div
+            className="absolute left-0 w-[2px] bg-accent rounded-full transition-all duration-300 ease-out"
+            style={{
+              height: `${100 / sections.length}%`,
+              top: `${sections.findIndex(s => s.id === activeId) * (100 / sections.length)}%`,
+              opacity: activeId ? 1 : 0,
+            }}
+          />
+
+          <ul className="space-y-0.5 relative">
+            {sections.map(({ id, label, icon: Icon }) => {
+              const isActive = activeId === id;
+              return (
+                <li key={id}>
+                  <button
+                    onClick={() => scrollTo(id)}
+                    className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm transition-all text-left ${
+                      isActive
+                        ? 'text-accent font-semibold bg-accent/5'
+                        : 'text-text-muted hover:text-primary hover:bg-surface'
+                    }`}
+                  >
+                    <Icon className={`w-3.5 h-3.5 shrink-0 transition-colors ${isActive ? 'text-accent' : ''}`} />
+                    {label}
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+
         <div className="mt-5 pt-4 border-t border-border">
           <Link
             href="/contact"
@@ -103,13 +195,135 @@ function TableOfContents({ study }) {
 }
 
 // ─── Section Heading ────────────────────────────────────────────────
-function SectionHeading({ icon: Icon, title, color = 'bg-primary/10 text-primary' }) {
+function SectionHeading({ icon: Icon, step, stepColor, title }) {
   return (
     <div className="flex items-center gap-3 mb-6">
-      <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${color}`}>
-        <Icon className="w-5 h-5" />
+      <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center">
+        <Icon className="w-5 h-5 text-primary" />
       </div>
-      <h2 className="font-heading text-2xl font-bold text-text-primary">{title}</h2>
+      {step && (
+        <span className={`text-[10px] font-bold uppercase tracking-[0.16em] font-heading ${stepColor || 'text-text-muted'}`}>
+          {step}
+        </span>
+      )}
+      {title && <h2 className="font-heading text-xl md:text-2xl font-bold text-text-primary">{title}</h2>}
+    </div>
+  );
+}
+
+// ─── Approach Section ──────────────────────────────────────────────
+function ApproachSection({ approach }) {
+  const sections = useMemo(() => parseApproachSubsections(approach), [approach]);
+
+  if (sections.length === 0) {
+    return (
+      <div className="bg-white rounded-2xl border border-blue-100/80 p-6 md:p-8 shadow-[0_2px_16px_rgba(0,0,0,0.03)]">
+        <p className="text-sm md:text-[15px] text-text-body leading-[1.8]">{approach}</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-4">
+      {sections.map((sec, idx) => {
+        const bullets = splitApproachBullets(sec.content);
+        const hasNumberedList = /^\(\d+\)/.test(sec.content.trim());
+        return (
+          <div
+            key={idx}
+            className="bg-white rounded-2xl border border-blue-100/80 p-6 md:p-7 shadow-[0_2px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] transition-shadow duration-300"
+          >
+            <h4 className="font-heading text-sm font-bold text-blue-600 mb-3 flex items-center gap-2.5">
+              <span className="w-2 h-2 rounded-full bg-blue-400 ring-4 ring-blue-100" />
+              {sec.label}
+            </h4>
+            {bullets.length > 1 ? (
+              <ul className="space-y-2.5">
+                {bullets.map((b, bIdx) => (
+                  <li key={bIdx} className="flex items-start gap-2.5 text-sm text-text-body leading-relaxed">
+                    {hasNumberedList ? (
+                      <span className="w-5 h-5 rounded-md bg-blue-50 text-blue-500 text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">
+                        {b.match(/^\((\d+)\)/)?.[1] || '•'}
+                      </span>
+                    ) : (
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-400/60 mt-1.5 shrink-0" />
+                    )}
+                    <span>{b.replace(/^\(\d+\)\s*/, '')}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm text-text-body leading-relaxed">{sec.content}</p>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─── Results Section ───────────────────────────────────────────────
+function ResultsSection({ results }) {
+  const sentences = useMemo(() => splitResultsSentences(results), [results]);
+
+  if (sentences.length === 0) return null;
+
+  return (
+    <div className="grid sm:grid-cols-2 gap-4">
+      {sentences.map((sentence, idx) => (
+        <div
+          key={idx}
+          className="group bg-white rounded-2xl border border-emerald-100/80 p-5 md:p-6 shadow-[0_2px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(16,185,129,0.12)] hover:border-emerald-200 transition-all duration-300"
+        >
+          <div className="flex items-start gap-3">
+            <div className="w-7 h-7 rounded-lg bg-emerald-100 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-emerald-200 transition-colors">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+            </div>
+            <p className="text-sm text-text-body leading-relaxed">
+              {highlightMetrics(sentence)}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ─── Client Testimonial ────────────────────────────────────────────
+function ClientTestimonial({ quote, writtenBy, reviewedBy }) {
+  if (!quote) return null;
+
+  return (
+    <div className="relative bg-linear-to-br from-primary via-primary-mid to-primary-light rounded-3xl p-8 md:p-12 lg:p-14 overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-4 left-6 text-[120px] text-white/[0.04] font-serif leading-none select-none">&ldquo;</div>
+      <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-accent/8 blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-accent/5 blur-2xl" />
+
+      <div className="relative z-10">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">
+            <Quote className="w-5 h-5 text-accent" />
+          </div>
+          <span className="text-[11px] font-bold text-white/50 uppercase tracking-[0.2em] font-heading">Client Testimonial</span>
+        </div>
+
+        <blockquote className="text-xl md:text-2xl lg:text-3xl font-medium text-white leading-relaxed mb-8 font-heading">
+          &ldquo;{quote}&rdquo;
+        </blockquote>
+
+        <div className="flex items-center gap-4">
+          <div className="w-11 h-11 bg-accent/20 rounded-full flex items-center justify-center ring-2 ring-accent/20">
+            <Users className="w-5 h-5 text-accent" />
+          </div>
+          <div>
+            <div className="text-sm font-bold text-white">{writtenBy || 'Client'}</div>
+            {reviewedBy && (
+              <div className="text-xs text-white/50 mt-0.5">Reviewed by {reviewedBy}</div>
+            )}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -154,10 +368,13 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
                 {emoji} {extractSectorKey(study.sector) || 'Success Story'}
               </span>
               {study.status && (
-                <span className={`px-3 py-1.5 text-xs font-semibold rounded-full ${study.status.toLowerCase().includes('time')
-                  ? 'bg-emerald-500/20 text-emerald-200 border border-emerald-400/20'
-                  : 'bg-blue-500/20 text-blue-200 border border-blue-400/20'
-                  }`}>
+                <span className={`px-3 py-1.5 text-xs font-semibold rounded-full ${
+                  study.status.toLowerCase().includes('time')
+                    ? 'bg-emerald-500/20 text-emerald-200 border border-emerald-400/20'
+                    : study.status.toLowerCase().includes('delayed')
+                    ? 'bg-amber-500/20 text-amber-200 border border-amber-400/20'
+                    : 'bg-blue-500/20 text-blue-200 border border-blue-400/20'
+                }`}>
                   {study.status}
                 </span>
               )}
@@ -211,7 +428,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
         <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 py-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {study.country && (
-              <div className="bg-surface rounded-xl p-4 border border-border">
+              <div className="bg-surface rounded-xl p-4 border border-border hover:border-accent/15 transition-colors">
                 <div className="flex items-center gap-2 text-text-muted mb-1">
                   <Globe className="w-3.5 h-3.5" />
                   <span className="text-[10px] font-bold uppercase tracking-wider font-heading">Region</span>
@@ -220,7 +437,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
               </div>
             )}
             {study.contract && (
-              <div className="bg-surface rounded-xl p-4 border border-border">
+              <div className="bg-surface rounded-xl p-4 border border-border hover:border-accent/15 transition-colors">
                 <div className="flex items-center gap-2 text-text-muted mb-1">
                   <FileText className="w-3.5 h-3.5" />
                   <span className="text-[10px] font-bold uppercase tracking-wider font-heading">Contract</span>
@@ -228,7 +445,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
                 <div className="text-sm font-bold text-text-primary">{study.contract}</div>
               </div>
             )}
-            <div className="bg-surface rounded-xl p-4 border border-border">
+            <div className="bg-surface rounded-xl p-4 border border-border hover:border-accent/15 transition-colors">
               <div className="flex items-center gap-2 text-text-muted mb-1">
                 <Cpu className="w-3.5 h-3.5" />
                 <span className="text-[10px] font-bold uppercase tracking-wider font-heading">Tech Stack</span>
@@ -236,7 +453,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
               <div className="text-sm font-bold text-text-primary">{study.technologies?.length || 0} Technologies</div>
             </div>
             {study.ipOwnership && (
-              <div className="bg-surface rounded-xl p-4 border border-border">
+              <div className="bg-surface rounded-xl p-4 border border-border hover:border-accent/15 transition-colors">
                 <div className="flex items-center gap-2 text-text-muted mb-1">
                   <Lock className="w-3.5 h-3.5" />
                   <span className="text-[10px] font-bold uppercase tracking-wider font-heading">IP</span>
@@ -276,7 +493,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
                         className="inline-flex items-center gap-1.5 px-3.5 py-2 bg-surface text-text-body rounded-lg text-sm font-medium border border-border hover:border-accent/25 hover:bg-accent/5 hover:text-accent transition-all cursor-default"
                       >
                         <Cpu className="w-3 h-3" />
-                        {tech.replace(/^Used\s/i, '')}
+                        {tech}
                       </span>
                     ))}
                   </div>
@@ -306,79 +523,64 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
             </section>
           )}
 
-          {/* ── Challenge / Approach / Results — Bento Grid ── */}
-          {(study.challenge || study.approach || study.results) && (
-            <section className="mb-16">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {study.challenge && (
-                  <div id="challenge" className="scroll-mt-28 rounded-2xl bg-linear-to-br from-red-50 via-white to-white border border-red-100 p-7 flex flex-col hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-shadow duration-300">
-                    <div className="flex items-center gap-3 mb-5">
-                      <div className="w-11 h-11 bg-red-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-red-200">
-                        <Target className="w-5 h-5" />
-                      </div>
-                      <h3 className="font-heading text-xl font-bold text-text-primary">The Challenge</h3>
-                    </div>
-                    <p className="text-sm text-text-body leading-relaxed flex-1">{study.challenge}</p>
-                  </div>
-                )}
-
-                {study.approach && (
-                  <div id="approach" className="scroll-mt-28 rounded-2xl bg-linear-to-br from-blue-50 via-white to-white border border-blue-100 p-7 flex flex-col hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-shadow duration-300">
-                    <div className="flex items-center gap-3 mb-5">
-                      <div className="w-11 h-11 bg-blue-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-blue-200">
-                        <Lightbulb className="w-5 h-5" />
-                      </div>
-                      <h3 className="font-heading text-xl font-bold text-text-primary">Our Approach</h3>
-                    </div>
-                    <p className="text-sm text-text-body leading-relaxed flex-1">{study.approach}</p>
-                  </div>
-                )}
-
-                {study.results && (
-                  <div id="results" className="scroll-mt-28 rounded-2xl bg-linear-to-br from-emerald-50 via-white to-white border border-emerald-100 p-7 flex flex-col md:col-span-2 lg:col-span-1 hover:shadow-[0_8px_32px_rgba(0,0,0,0.08)] transition-shadow duration-300">
-                    <div className="flex items-center gap-3 mb-5">
-                      <div className="w-11 h-11 bg-emerald-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-emerald-200">
-                        <CheckCircle2 className="w-5 h-5" />
-                      </div>
-                      <h3 className="font-heading text-xl font-bold text-text-primary">The Results</h3>
-                    </div>
-                    <p className="text-sm text-text-body leading-relaxed flex-1">{study.results}</p>
-                  </div>
-                )}
-              </div>
-            </section>
-          )}
-
-          {/* ── Client Quote ── */}
-          {study.clientQuote && (
-            <section id="testimonial" className="mb-16 scroll-mt-28">
-              <div className="relative bg-linear-to-br from-primary via-primary-mid to-primary-light rounded-3xl p-10 md:p-14 overflow-hidden">
-                <div className="absolute top-6 left-8 text-8xl text-white/5 font-serif leading-none select-none">&ldquo;</div>
-                <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent/10 blur-25" />
-
-                <div className="relative z-10">
-                  <div className="flex items-center gap-3 mb-8">
-                    <Quote className="w-6 h-6 text-accent" />
-                    <span className="text-[11px] font-bold text-white/50 uppercase tracking-[0.2em] font-heading">Client Testimonial</span>
-                  </div>
-                  <blockquote className="text-xl md:text-2xl lg:text-3xl font-medium text-white leading-relaxed mb-8 font-heading">
-                    &ldquo;{study.clientQuote}&rdquo;
-                  </blockquote>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
-                      <Users className="w-5 h-5 text-accent" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-bold text-white">{study.writtenBy}</div>
-                      {study.reviewedBy && (
-                        <div className="text-xs text-white/50">Reviewed by {study.reviewedBy}</div>
-                      )}
-                    </div>
-                  </div>
+          {/* ── Challenge ── */}
+          {study.challenge && (
+            <section id="challenge" className="mb-14 scroll-mt-28">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-xl bg-red-50 flex items-center justify-center">
+                  <Target className="w-5 h-5 text-red-500" />
+                </div>
+                <div>
+                  <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-red-400 font-heading">Step 01</span>
+                  <h2 className="font-heading text-xl md:text-2xl font-bold text-text-primary">The Challenge</h2>
                 </div>
               </div>
+              <div className="bg-white rounded-2xl border border-red-100/80 p-6 md:p-8 shadow-[0_2px_16px_rgba(0,0,0,0.03)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-shadow duration-300">
+                <p className="text-sm md:text-[15px] text-text-body leading-[1.8]">{study.challenge}</p>
+              </div>
             </section>
           )}
+
+          {/* ── Approach ── */}
+          {study.approach && (
+            <section id="approach" className="mb-14 scroll-mt-28">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center">
+                  <Lightbulb className="w-5 h-5 text-blue-500" />
+                </div>
+                <div>
+                  <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-blue-400 font-heading">Step 02</span>
+                  <h2 className="font-heading text-xl md:text-2xl font-bold text-text-primary">Our Approach</h2>
+                </div>
+              </div>
+              <ApproachSection approach={study.approach} />
+            </section>
+          )}
+
+          {/* ── Results ── */}
+          {study.results && (
+            <section id="results" className="mb-16 scroll-mt-28">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center">
+                  <TrendingUp className="w-5 h-5 text-emerald-500" />
+                </div>
+                <div>
+                  <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-emerald-500 font-heading">Step 03</span>
+                  <h2 className="font-heading text-xl md:text-2xl font-bold text-text-primary">The Results</h2>
+                </div>
+              </div>
+              <ResultsSection results={study.results} />
+            </section>
+          )}
+
+          {/* ── Client Testimonial ── */}
+          <section id="testimonial" className="mb-16 scroll-mt-28">
+            <ClientTestimonial
+              quote={study.clientQuote}
+              writtenBy={study.writtenBy}
+              reviewedBy={study.reviewedBy}
+            />
+          </section>
 
           {/* ── Project Details ── */}
           <section id="details" className="mb-16 scroll-mt-28">
@@ -388,7 +590,7 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
               {[
                 { icon: Award, label: 'Sector', value: extractSectorKey(study.sector) },
                 { icon: Globe, label: 'Country', value: study.country },
-                { icon: undefined, label: 'Status', value: study.status },
+                { icon: Zap, label: 'Status', value: study.status },
                 { icon: FileText, label: 'Contract', value: study.contract },
                 { icon: Cpu, label: 'Tech Stack', value: `${study.technologies?.length || 0} Technologies` },
                 { icon: Clock, label: 'Reading Time', value: study.readingTime > 0 ? `${study.readingTime} min` : null },
@@ -480,12 +682,11 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
         </article>
       </div>
 
-      {/* Scroll to top */}
+      {/* ── Scroll to Top ── */}
       {showScrollTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-primary text-white rounded-full shadow-lg shadow-primary/30 flex items-center justify-center hover:scale-110 transition-all"
-          aria-label="Scroll to top"
+          className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-accent text-white rounded-full shadow-lg hover:bg-accent-hover transition-all flex items-center justify-center"
         >
           <ChevronUp className="w-5 h-5" />
         </button>

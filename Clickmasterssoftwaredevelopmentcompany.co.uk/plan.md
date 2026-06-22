@@ -1,6 +1,6 @@
 # Plan: ClickMasters Content Migration — Case Study First
 
-**Generated:** June 13, 2026 | **Last Updated:** June 15, 2026  
+**Generated:** June 13, 2026 | **Last Updated:** June 22, 2026  
 **Purpose:** Comprehensive execution plan for converting 1,785 Word documents into Next.js data files
 
 ---
@@ -303,6 +303,56 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 - [x] Lazy-load Navbar Resources mega menu (`ResourcesMegaMenu.jsx`)
 - [x] Fix Navbar trailing slash mismatch in `forceWhiteBgRoutes`
 - [x] Deduplicate FAQ data in hire pages
+
+### Step 7.5: Case Study Detail Page — Challenge/Approach/Results Redesign
+
+**File:** `app/(landing)/case-studies/[slug]/detail-client.js`
+
+**Problem:** The Challenge, Approach, and Results sections rendered long, dense paragraphs as single `<p>` tags — unreadable walls of text with no visual structure.
+
+**Solution — Structured Editorial Layout:**
+
+| Section | Before | After |
+|---------|--------|-------|
+| **Challenge** | Single `<p>` with full paragraph | Clean card with icon heading, improved typography (`leading-[1.8]`), red accent border |
+| **Approach** | Single `<p>` with all subsections merged | **Parsed into subsections** — regex splits on `Label:` patterns (e.g., "Architecture:", "Delivery:", "Performance:"). Each subsection renders as a separate card with a blue dot label + bullet points |
+| **Results** | Single `<p>` with all outcomes merged | **Parsed into individual outcome cards** — split on sentence boundaries. Each outcome gets its own card in a 2-column grid with a green check icon. **Metrics auto-highlighted** in bold (`£`, `%`, numbers with units like "weeks", "months", "hours") |
+
+**Approach Parsing Logic:**
+```javascript
+// Regex: split on "Word:" patterns at start of subsection
+const subsectionRegex = /([A-Z][A-Za-z0-9\s/&]+?):\s/g;
+
+// Two bullet-splitting patterns detected in data:
+// Pattern A (~70%): sentence-based — split on period-space or semicolons
+const bullets = content.split(/(?<=\.)\s+(?=[A-Z])|;\s*/);
+
+// Pattern B (~30%): numbered list "(1) item (2) item (3) item"
+// Detected via /^\(\d+\)/, split on lookahead (?=\(\d+\)\s)
+// Each item rendered with numbered badge instead of dot
+```
+
+**Results Metric Highlighting:**
+```javascript
+// Regex: match £ amounts, percentages, numbers with time units
+/(£[\d,.]+%?|\d+%|\d+\s*(?:weeks?|months?|days?|hours?|minutes?|seconds?|years?|x\b)?)/gi
+// Matched values render as <strong className="text-emerald-700 font-bold">
+```
+
+**Visual Design:**
+- Each section (Challenge/Approach/Results) is a separate standalone section with its own icon, step badge, and heading — no longer a connected timeline
+- Color-coded: red (Challenge), blue (Approach), emerald (Results)
+- Approach subsections use white cards with blue-600 label + blue-400 dot indicator
+- Results use 2-column grid of outcome cards with emerald check icons
+- Hover shadows on all cards for interactivity
+
+**Completed:** June 22, 2026
+
+**June 22, 2026 — Follow-up:**
+- Extracted inline IIFE parsing into proper helper functions: `parseApproachSubsections()`, `splitApproachBullets()`, `splitResultsSentences()`, `highlightMetrics()`
+- Created dedicated components: `ApproachSection`, `ResultsSection`, `TableOfContents`, `SectionHeading`, `ClientTestimonial`
+- Added missing data exports to `data/case-studies.js`: `caseStudyListings` (lightweight), `getCaseStudyBySlug()`, `getRelatedCaseStudies()`, `getSectorsMeta()`
+- Cleaned up 7 temporary diagnostic scripts
 
 ### Step 8: Repeat for Remaining Categories
 - [ ] Salary Guide (193) → `data/salary-guides.js`
