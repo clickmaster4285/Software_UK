@@ -51,7 +51,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
         {/* Background */}
         <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
         <div className="absolute top-10 right-[5%] w-150 h-150 rounded-full bg-accent/8 blur-3xl" />
-        <div className="absolute bottom-0 left-[10%] w-[350px] h-[350px] rounded-full bg-accent/5 blur-3xl" />
+        <div className="absolute bottom-0 left-[10%] w-88 h-88 rounded-full bg-accent/5 blur-3xl" />
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
 
         <div className="relative max-w-[96vw] lg:max-w-[90vw] mx-auto px-6">
@@ -77,20 +77,20 @@ export function HireDetailClient({ hirePage, relatedPages }) {
             {/* Quick info badges */}
             <div className="flex flex-wrap gap-3 mb-8">
               {rate && (
-                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.1] border border-white/[0.15] text-white text-sm backdrop-blur-sm">
+                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/15 text-white text-sm backdrop-blur-sm">
                   <Zap className="w-4 h-4 text-accent" />
                   From {rate}
                 </span>
               )}
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.1] border border-white/[0.15] text-white text-sm backdrop-blur-sm">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/15 text-white text-sm backdrop-blur-sm">
                 <Shield className="w-4 h-4 text-accent" />
                 Zero IR35 Risk
               </span>
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.1] border border-white/[0.15] text-white text-sm backdrop-blur-sm">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/15 text-white text-sm backdrop-blur-sm">
                 <CheckCircle className="w-4 h-4 text-accent" />
                 3-Stage Vetting
               </span>
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.1] border border-white/[0.15] text-white text-sm backdrop-blur-sm">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/15 text-white text-sm backdrop-blur-sm">
                 <Clock className="w-4 h-4 text-accent" />
                 30-Day Rolling
               </span>
@@ -270,8 +270,8 @@ export function HireDetailClient({ hirePage, relatedPages }) {
                 Every Developer. Three Stages. No Exceptions.
               </h2>
               <p className="text-text-muted mb-10 max-w-2xl">
-                We don't just check CVs. Every developer goes through our rigorous 3-stage process
-                before they're presented to you.
+                We don&apos;t just check CVs. Every developer goes through our rigorous 3-stage process
+                before they&apos;re presented to you.
               </p>
 
               <div className="space-y-5">
@@ -288,7 +288,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
                         </span>
                       </div>
                       {index < vettingProcess.length - 1 && (
-                        <div className="absolute left-[2.15rem] top-[4.5rem] bottom-[-1.25rem] w-px bg-border" />
+                        <div className="absolute left-[2.15rem] top-18 -bottom-5 w-px bg-border" />
                       )}
                     </div>
 
@@ -405,30 +405,30 @@ export function HireDetailClient({ hirePage, relatedPages }) {
       {/* ── CTA ── */}
       <section className="py-20 px-6">
         <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
-            <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-primary via-primary-mid to-primary-light px-8 py-14 md:px-14 md:py-18 text-center">
-              <div className="absolute top-0 right-0 w-63 h-63 rounded-full bg-accent/10 blur-3xl" />
-              <div className="absolute bottom-0 left-0 w-50 h-50 rounded-full bg-accent/5 blur-3xl" />
+          <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-primary via-primary-mid to-primary-light px-8 py-14 md:px-14 md:py-18 text-center">
+            <div className="absolute top-0 right-0 w-63 h-63 rounded-full bg-accent/10 blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-50 h-50 rounded-full bg-accent/5 blur-3xl" />
 
-              <div className="relative">
-                <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">
-                  <Sparkles className="w-3 h-3 mr-1.5 inline -mt-0.5" />
-                  Ready to Hire?
-                </span>
-                <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
-                  Hire a Developer in {cityName}
-                </h2>
-                <p className="text-white/70 max-w-lg mx-auto mb-10 text-lg">
-                  30-minute team-planning call. Tell us the role, we give you timeline,
-                  rates, and IR35 clarity.
-                </p>
-                <Link
-                  href="/contact"
-                  className="btn-primary inline-flex items-center justify-center gap-2 text-base px-10 py-4"
-                >
-                  Start Hiring
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
+            <div className="relative">
+              <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">
+                <Sparkles className="w-3 h-3 mr-1.5 inline -mt-0.5" />
+                Ready to Hire?
+              </span>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
+                Hire a Developer in {cityName}
+              </h2>
+              <p className="text-white/70 max-w-lg mx-auto mb-10 text-lg">
+                30-minute team-planning call. Tell us the role, we give you timeline,
+                rates, and IR35 clarity.
+              </p>
+              <Link
+                href="/contact"
+                className="btn-primary inline-flex items-center justify-center gap-2 text-base px-10 py-4"
+              >
+                Start Hiring
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

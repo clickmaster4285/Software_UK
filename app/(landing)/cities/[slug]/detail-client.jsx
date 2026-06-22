@@ -53,7 +53,7 @@ export function CityDetailClient({ city, relatedCities }) {
       <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20">
         <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
         <div className="absolute top-10 right-[5%] w-150 h-150 rounded-full bg-accent/8 blur-3xl" />
-        <div className="absolute bottom-0 left-[10%] w-[350px] h-[350px] rounded-full bg-accent/5 blur-3xl" />
+        <div className="absolute bottom-0 left-[10%] w-88 h-88 rounded-full bg-accent/5 blur-3xl" />
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
 
         <div className="relative max-w-[96vw] lg:max-w-[90vw] mx-auto px-6">
@@ -63,7 +63,7 @@ export function CityDetailClient({ city, relatedCities }) {
             <ChevronRight className="w-3.5 h-3.5" />
             <Link href="/cities" className="hover:text-white transition-colors">City Guides</Link>
             <ChevronRight className="w-3.5 h-3.5" />
-            <span className="text-white/90 truncate max-w-[200px] md:max-w-[none]">
+            <span className="text-white/90 truncate max-w-50 md:max-w-none">
               {cityDisplay}
             </span>
           </nav>
@@ -387,7 +387,7 @@ export function CityDetailClient({ city, relatedCities }) {
             <div className="relative">
               <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">Start Your Project</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">Ready to Build in {cityDisplay}?</h2>
-              <p className="text-white/60 max-w-xl mx-auto mb-10 text-lg">Book a free consultation with a senior engineer. We'll scope your project, give you transparent pricing, and answer your compliance questions.</p>
+              <p className="text-white/60 max-w-xl mx-auto mb-10 text-lg">Book a free consultation with a senior engineer. We&apos;ll scope your project, give you transparent pricing, and answer your compliance questions.</p>
               <Link href="/contact" className="btn-primary inline-flex items-center justify-center gap-2 text-base px-10 py-4">
                 Book Free Consultation <ArrowRight className="w-4 h-4" />
               </Link>

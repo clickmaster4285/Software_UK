@@ -44,7 +44,7 @@ export default function ResourceGuideDetailClient({ guide, relatedGuides }) {
       <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20">
         <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
         <div className="absolute top-10 right-[5%] w-150 h-150 rounded-full bg-accent/8 blur-3xl" />
-        <div className="absolute bottom-0 left-[10%] w-[350px] h-[350px] rounded-full bg-accent/5 blur-3xl" />
+        <div className="absolute bottom-0 left-[10%] w-88 h-88 rounded-full bg-accent/5 blur-3xl" />
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
 
         <div className="relative max-w-[96vw] lg:max-w-[90vw] mx-auto px-6">
@@ -54,7 +54,7 @@ export default function ResourceGuideDetailClient({ guide, relatedGuides }) {
             <ChevronRight className="w-3.5 h-3.5" />
             <Link href="/resource" className="hover:text-white transition-colors">Resource Guides</Link>
             <ChevronRight className="w-3.5 h-3.5" />
-            <span className="text-white/90 truncate max-w-[200px] md:max-w-[none]">
+            <span className="text-white/90 truncate max-w-50 md:max-w-none">
               {title.length > 50 ? title.substring(0, 47) + '...' : title}
             </span>
           </nav>
@@ -73,7 +73,7 @@ export default function ResourceGuideDetailClient({ guide, relatedGuides }) {
             {badges.length > 0 && (
               <div className="flex flex-wrap gap-3 mb-8">
                 {badges.map((badge, idx) => (
-                  <span key={idx} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.1] border border-white/[0.15] text-white text-sm backdrop-blur-sm">
+                  <span key={idx} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/15 text-white text-sm backdrop-blur-sm">
                     {badge}
                   </span>
                 ))}
@@ -189,8 +189,8 @@ export default function ResourceGuideDetailClient({ guide, relatedGuides }) {
                                 <td
                                   key={cIdx}
                                   className={`p-4 ${cIdx === 0
-                                      ? 'font-semibold text-text-primary'
-                                      : 'text-text-body text-center'
+                                    ? 'font-semibold text-text-primary'
+                                    : 'text-text-body text-center'
                                     }`}
                                 >
                                   {cell}
@@ -258,8 +258,8 @@ export default function ResourceGuideDetailClient({ guide, relatedGuides }) {
                     <div
                       key={index}
                       className={`rounded-2xl border transition-all duration-300 overflow-hidden ${isOpen
-                          ? 'border-accent/30 bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)]'
-                          : 'border-border bg-white hover:border-accent/20'
+                        ? 'border-accent/30 bg-white shadow-[0_4px_24px_rgba(0,0,0,0.06)]'
+                        : 'border-border bg-white hover:border-accent/20'
                         }`}
                     >
                       <button

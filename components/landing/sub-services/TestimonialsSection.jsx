@@ -39,8 +39,14 @@ export function TestimonialsSection({ featuredOnly = true, limit = 9 }) {
   const blob2Y = useTransform(scrollYProgress, [0, 1], [100, -100]);
 
   const [currentGroup, setCurrentGroup] = useState(0);
+  const [prevLength, setPrevLength] = useState(testimonials.length);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const autoPlayRef = useRef(null);
+
+  if (testimonials.length !== prevLength) {
+    setPrevLength(testimonials.length);
+    setCurrentGroup(0);
+  }
 
   const groupedTestimonials = useMemo(() => {
     const groups = [];
@@ -49,10 +55,6 @@ export function TestimonialsSection({ featuredOnly = true, limit = 9 }) {
     }
     return groups;
   }, [testimonials]);
-
-  useEffect(() => {
-    setCurrentGroup(0);
-  }, [testimonials.length]);
 
   // Auto-play
   useEffect(() => {

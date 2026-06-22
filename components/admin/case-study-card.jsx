@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Target, Award, Globe, Cpu } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -25,10 +26,12 @@ export function CaseStudyCard({
       {/* Image / Emoji Section */}
       <div className="relative h-44 overflow-hidden bg-linear-to-br from-surface to-surface-2 border-b border-border">
         {thumbnail ? (
-          <img
+          <Image
             src={thumbnail}
             alt={title || 'Thumbnail'}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center relative">

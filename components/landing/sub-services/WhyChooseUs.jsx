@@ -46,11 +46,11 @@ const FEATURE_ICONS = [
   { match: /ownership|cycle/i, Icon: Rocket },
 ];
 
-function getFeatureIcon(feature) {
+function renderFeatureIcon(feature, className, strokeWidth = 2) {
   for (const { match, Icon } of FEATURE_ICONS) {
-    if (match.test(feature)) return Icon;
+    if (match.test(feature)) return <Icon className={className} strokeWidth={strokeWidth} aria-hidden />;
   }
-  return Sparkles;
+  return <Sparkles className={className} strokeWidth={strokeWidth} aria-hidden />;
 }
 
 function parseDescription(description) {
@@ -174,7 +174,6 @@ function ComparisonRow({ feature, parts, columns, index }) {
 }
 
 function BenefitCard({ feature, description, index }) {
-  const Icon = getFeatureIcon(feature);
   const number = String(index + 1).padStart(2, "0");
 
   return (
@@ -191,7 +190,7 @@ function BenefitCard({ feature, description, index }) {
 
       <div className="flex items-start justify-between gap-3">
         <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent ring-1 ring-accent/15 transition-colors group-hover:bg-accent group-hover:text-white group-hover:ring-accent/30">
-          <Icon className="h-5 w-5" strokeWidth={2} aria-hidden />
+          {renderFeatureIcon(feature, "h-5 w-5")}
         </div>
         <span className="font-heading text-sm font-bold tabular-nums text-text-muted/40 transition-colors group-hover:text-accent/30">
           {number}

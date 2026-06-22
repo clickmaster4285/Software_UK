@@ -31,7 +31,7 @@ export function CeoVision() {
     <section ref={containerRef} className="relative mx-auto max-w-[96vw] lg:max-w-[90vw] overflow-hidden px-4 py-20">
       {/* Decorative Background Waves */}
       <div className="absolute inset-0 -z-10 pointer-events-none" aria-hidden="true">
-        <svg className="h-full w-full opacity-[0.1]" viewBox="0 0 1440 800" fill="none" preserveAspectRatio="none">
+        <svg className="h-full w-full opacity-10" viewBox="0 0 1440 800" fill="none" preserveAspectRatio="none">
           <motion.path
             d="M-100 300 C 300 500 500 100 800 300 C 1100 500 1300 100 1600 300"
             stroke="#D8B4FE"
