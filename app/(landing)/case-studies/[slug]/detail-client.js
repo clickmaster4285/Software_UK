@@ -127,11 +127,11 @@ export function CaseStudyDetailClient({ study, relatedStudies }) {
   const emoji = getSectorEmoji(study.sector);
 
   return (
-    <div className="pt-16">
+    <div className="min-h-screen bg-background">
       <ReadingProgress />
 
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden pt-16 pb-14 md:pt-20 md:pb-18">
+      <section className="relative overflow-hidden pt-28 pb-14 md:pt-36 md:pb-18">
         <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
         <div className="absolute top-10 right-[8%] w-125 h-125 rounded-full bg-accent/8 blur-3xl" />
         <div className="absolute bottom-0 left-[5%] w-100 h-100 rounded-full bg-accent/5 blur-3xl" />
