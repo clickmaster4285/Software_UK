@@ -5,14 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "build:analyze": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
-    "lint:fix": "next lint --fix",
-    "seed:admin": "node scripts/seed-admin.mjs",
-    "seed:case-studies": "node scripts/convert-case-studies.js",
-    "seed:hire": "node scripts/convert-hire-pages.js",
-    "seed:pages": "node scripts/convert-case-studies.js && node scripts/convert-hire-pages.js"
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^16.2.7",
