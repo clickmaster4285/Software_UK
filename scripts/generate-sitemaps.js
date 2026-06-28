@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://software.clickmasters.pk';
+const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk';
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const PUBLIC_DIR = path.join(__dirname, '..', 'public');
 
