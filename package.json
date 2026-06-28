@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap",
+    "postbuild": "node scripts/generate-sitemaps.js",
     "build:analyze": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
