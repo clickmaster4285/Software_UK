@@ -134,7 +134,7 @@ export default async function CitiesPage({ searchParams }) {
   return (
     <div className="min-h-screen bg-background">
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20">
+      <section className="relative overflow-hidden py-28 md:py-36">
         <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
         <div className="absolute top-10 right-[8%] w-125 h-125 rounded-full bg-accent/8 blur-3xl" />
         <div className="absolute bottom-0 left-[5%] w-100 h-100 rounded-full bg-accent/5 blur-3xl" />
