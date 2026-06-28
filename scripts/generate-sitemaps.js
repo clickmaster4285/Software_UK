@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk';
+const BASE_URL = 'https://software.clickmasters.pk';
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const PUBLIC_DIR = path.join(__dirname, '..', 'public');
 
@@ -47,6 +47,43 @@ function extractData(filePath, arrayName) {
 }
 
 /**
+ * Extract object data from a JS file.
+ */
+function extractObject(filePath, objectName) {
+  if (!fs.existsSync(filePath)) return {};
+  const content = fs.readFileSync(filePath, 'utf-8');
+
+  let marker = `export const ${objectName}`;
+  let start = content.indexOf(marker);
+  if (start === -1) {
+    marker = `const ${objectName}`;
+    start = content.indexOf(marker);
+  }
+  if (start === -1) return {};
+
+  const objectStart = content.indexOf('{', start);
+  if (objectStart === -1) return {};
+
+  let depth = 0;
+  let i = objectStart;
+  for (; i < content.length; i++) {
+    if (content[i] === '{') depth++;
+    else if (content[i] === '}') {
+      depth--;
+      if (depth === 0) break;
+    }
+  }
+
+  const objectStr = content.slice(objectStart, i + 1);
+  try {
+    return new Function(`"use strict"; return (${objectStr})`)();
+  } catch (e) {
+    console.error(`  ⚠ Could not parse object ${objectName} in ${filePath}: ${e.message}`);
+    return {};
+  }
+}
+
+/**
  * Helper to build XML templates for sitemaps.
  */
 function generateSitemapXml(urls) {
@@ -88,8 +125,8 @@ const CATEGORIES = [
     routeBuilder: (entry) => `/${entry.slug}`,
   },
   {
-    key: 'cities',
-    mainPath: '/cities',
+    key: 'locations',
+    mainPath: '/locations',
     filePath: 'cities.js',
     arrayName: 'cities',
     routeBuilder: (entry) => `/${entry.slug}`,
@@ -136,13 +173,6 @@ const CATEGORIES = [
     arrayName: 'salaryGuides',
     routeBuilder: (entry) => `/${entry.slug}`,
   },
-  {
-    key: 'services',
-    mainPath: '/services',
-    filePath: 'services.js',
-    arrayName: 'services',
-    routeBuilder: (entry) => `/${entry.slug}`,
-  },
 ];
 
 const STATIC_PAGES = [
@@ -158,9 +188,24 @@ const STATIC_PAGES = [
 
 function run() {
   console.log('🤖 Starting programmatic sitemap splitting by category...');
+  
+  // Clean up any old sitemap files first to prevent obsolete sitemaps
+  if (fs.existsSync(PUBLIC_DIR)) {
+    const files = fs.readdirSync(PUBLIC_DIR);
+    for (const file of files) {
+      if (file.startsWith('sitemap-') && file.endsWith('.xml')) {
+        try {
+          fs.unlinkSync(path.join(PUBLIC_DIR, file));
+        } catch (e) {
+          // ignore
+        }
+      }
+    }
+  }
+
   const activeSitemaps = [];
 
-  // 1. Generate Static/Main Sitemap
+  // 1. Generate Static/Main Sitemap (1st Position)
   const mainUrls = STATIC_PAGES.map(p => ({
     loc: p.loc,
     changefreq: p.changefreq,
@@ -172,7 +217,60 @@ function run() {
   activeSitemaps.push(`${BASE_URL}/${mainFilename}`);
   console.log(`✅ Generated ${mainFilename} with ${mainUrls.length} static urls.`);
 
-  // 2. Generate Category Sitemaps
+  // 2. Generate Services Sitemap (2nd Position)
+  const serviceUrls = [];
+
+  // A. Add Category & Sub-Service pages from data/main-services.js
+  const mainServicesPath = path.join(DATA_DIR, 'main-services.js');
+  if (fs.existsSync(mainServicesPath)) {
+    const mainServicesData = extractObject(mainServicesPath, 'mainServicesData');
+    for (const categoryKey of Object.keys(mainServicesData)) {
+      const categoryData = mainServicesData[categoryKey];
+      
+      // Add Category Page: /[category]/
+      serviceUrls.push({
+        loc: `${BASE_URL}/${categoryKey}`,
+        changefreq: 'daily',
+        priority: 0.8,
+        lastmod: new Date().toISOString()
+      });
+
+      // Add Sub-Service Pages: /[category]/[service]/
+      if (categoryData.subServices) {
+        for (const subService of categoryData.subServices) {
+          serviceUrls.push({
+            loc: `${BASE_URL}/${categoryKey}/${subService.slug}`,
+            changefreq: 'weekly',
+            priority: 0.7,
+            lastmod: new Date().toISOString()
+          });
+        }
+      }
+    }
+  }
+
+  // B. Add Standalone Services from data/services.js (if any exist)
+  const standaloneServicesPath = path.join(DATA_DIR, 'services.js');
+  if (fs.existsSync(standaloneServicesPath)) {
+    const standaloneServices = extractData(standaloneServicesPath, 'services');
+    for (const service of standaloneServices) {
+      serviceUrls.push({
+        loc: `${BASE_URL}/service/${service.slug}`,
+        changefreq: 'weekly',
+        priority: 0.7,
+        lastmod: new Date().toISOString()
+      });
+    }
+  }
+
+  if (serviceUrls.length > 0) {
+    const servicesFilename = 'sitemap-services.xml';
+    fs.writeFileSync(path.join(PUBLIC_DIR, servicesFilename), generateSitemapXml(serviceUrls));
+    activeSitemaps.push(`${BASE_URL}/${servicesFilename}`);
+    console.log(`✅ Generated ${servicesFilename} with ${serviceUrls.length} service urls.`);
+  }
+
+  // 3. Generate Category Sitemaps (Other categories follow)
   for (const cat of CATEGORIES) {
     const filePath = path.join(DATA_DIR, cat.filePath);
     if (!fs.existsSync(filePath)) {
@@ -218,7 +316,7 @@ function run() {
     console.log(`✅ Generated ${catFilename} with ${urls.length} urls.`);
   }
 
-  // 3. Generate Sitemap Index (sitemap.xml)
+  // 4. Generate Sitemap Index (sitemap.xml)
   const indexXml = generateSitemapIndexXml(activeSitemaps);
   fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap.xml'), indexXml);
   console.log(`✅ Generated main sitemap index: sitemap.xml listing ${activeSitemaps.length} categories.`);
