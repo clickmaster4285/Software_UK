@@ -1,0 +1,118 @@
+name: Merge to Master & Deploy
+
+on:
+  push:
+    branches-ignore:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  merge-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch master
+        run: git fetch origin master
+
+      - name: Attempt merge to master
+        id: merge
+        run: |
+          git checkout master
+          git pull origin master
+          echo "MERGE_BASE=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+          if git merge --no-ff "origin/${{ github.ref_name }}" --no-edit; then
+            echo "merge_status=success" >> $GITHUB_OUTPUT
+          else
+            echo "merge_status=failed" >> $GITHUB_OUTPUT
+            echo "::error::Merge conflict detected on branch '${{ github.ref_name }}'. Fix conflicts locally and push again."
+            git merge --abort
+            exit 1
+          fi
+
+      - name: Push merged master
+        if: steps.merge.outputs.merge_status == 'success'
+        run: |
+          git push origin master
+          echo "PUSHED_COMMIT=$(git rev-parse HEAD)" >> $GITHUB_ENV
+
+      - name: SSH — Pull & Build on Server
+        if: steps.merge.outputs.merge_status == 'success'
+        id: deploy
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script_stop: true
+          script: |
+            set -e
+            cd /var/www/Clickmastersoftware
+            git fetch origin master
+            git checkout master
+            git pull origin master
+            echo "📦 Installing dependencies..."
+            npm ci
+            echo "🔨 Building..."
+            if npm run build; then
+              echo "✅ Build successful"
+              pm2 restart clickmastersoftwareuk
+              echo "DEPLOY_STATUS=success" >> $GITHUB_ENV
+            else
+              echo "❌ Build failed — rolling back"
+              echo "DEPLOY_STATUS=failed" >> $GITHUB_ENV
+              exit 1
+            fi
+
+      - name: Notify — Success
+        if: steps.deploy.outputs.DEPLOY_STATUS == 'success' || (steps.merge.outputs.merge_status == 'success' && success())
+        uses: dawidd6/action-telegram@v3
+        with:
+          bot_token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          chat_id: ${{ secrets.TELEGRAM_CHAT_ID }}
+          message: |
+            ✅ ClickMasters Deploy SUCCESS
+            Branch: ${{ github.ref_name }}
+            Commit: ${{ github.sha }}
+            Server build passed. PM2 restarted.
+
+      - name: Notify — Merge Conflict
+        if: steps.merge.outputs.merge_status == 'failed'
+        uses: dawidd6/action-telegram@v3
+        with:
+          bot_token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          chat_id: ${{ secrets.TELEGRAM_CHAT_ID }}
+          message: |
+            ❌ ClickMasters MERGE FAILED
+            Branch: ${{ github.ref_name }}
+            Merge conflict with master. Fix locally and re-push.
+
+      - name: Notify — Build Failed
+        if: failure() && steps.merge.outputs.merge_status == 'success'
+        uses: dawidd6/action-telegram@v3
+        with:
+          bot_token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          chat_id: ${{ secrets.TELEGRAM_CHAT_ID }}
+          message: |
+            ❌ ClickMasters BUILD FAILED
+            Branch: ${{ github.ref_name }}
+            Merge succeeded but build failed on server. Rollback initiated.
+
+      - name: Rollback — Revert merge on master
+        if: failure() && steps.merge.outputs.merge_status == 'success'
+        run: |
+          echo "⏪ Reverting merge on master..."
+          git revert -m 1 ${{ github.sha }} --no-edit
+          git push origin master
+          echo "::warning::Merge was reverted on master due to build failure."
