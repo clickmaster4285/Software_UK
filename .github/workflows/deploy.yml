@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  workflows: write
 
 jobs:
   merge-and-deploy:
@@ -50,13 +49,20 @@ jobs:
           git push origin master
           echo "MERGE_COMMIT=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
 
+      - name: Resolve SSH port
+        id: ssh_config
+        run: |
+          PORT="${{ secrets.SERVER_PORT }}"
+          if [[ -z "$PORT" ]]; then PORT=22; fi
+          echo "port=$PORT" >> $GITHUB_OUTPUT
+
       - name: SSH — Pull, Build & Deploy
         if: steps.merge.outputs.merge_status == 'success'
         id: deploy
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.SERVER_HOST }}
-          port: ${{ secrets.SERVER_PORT || '22' }}
+          port: ${{ steps.ssh_config.outputs.port }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           command_timeout: 300s
