@@ -11,6 +11,7 @@ permissions:
 jobs:
   merge-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -31,7 +32,7 @@ jobs:
         run: |
           git checkout master
           git pull origin master
-          echo "MERGE_BASE=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+          echo "BASE_COMMIT=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
           if git merge --no-ff "origin/${{ github.ref_name }}" --no-edit; then
             echo "merge_status=success" >> $GITHUB_OUTPUT
           else
@@ -43,9 +44,10 @@ jobs:
 
       - name: Push merged master
         if: steps.merge.outputs.merge_status == 'success'
+        id: push
         run: |
           git push origin master
-          echo "PUSHED_COMMIT=$(git rev-parse HEAD)" >> $GITHUB_ENV
+          echo "MERGE_COMMIT=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
 
       - name: SSH — Pull & Build on Server
         if: steps.merge.outputs.merge_status == 'success'
@@ -56,63 +58,61 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script_stop: true
+          envs: BASE_COMMIT=${{ steps.merge.outputs.BASE_COMMIT }}
           script: |
-            set -e
-            cd /var/www/Clickmastersoftware
+            set -euo pipefail
+
+            DEPLOY_DIR="/var/www/Clickmastersoftware"
+            PM2_PROCESS="clickmastersoftwareuk"
+            PREV_COMMIT=$(cd "$DEPLOY_DIR" && git rev-parse HEAD)
+
+            echo "═══════════════════════════════════════"
+            echo "🚀 Starting deployment"
+            echo "Previous server commit: ${PREV_COMMIT:0:8}"
+            echo "═══════════════════════════════════════"
+
+            cd "$DEPLOY_DIR"
+
             git fetch origin master
             git checkout master
             git pull origin master
+
+            NEW_COMMIT=$(git rev-parse HEAD)
+            echo "New commit: ${NEW_COMMIT:0:8}"
+
+            if [[ "$PREV_COMMIT" == "$NEW_COMMIT" ]]; then
+              echo "⚠ No new changes. Skipping build."
+              exit 0
+            fi
+
             echo "📦 Installing dependencies..."
             npm ci
+
             echo "🔨 Building..."
             if npm run build; then
               echo "✅ Build successful"
-              pm2 restart clickmastersoftwareuk
-              echo "DEPLOY_STATUS=success" >> $GITHUB_ENV
+              pm2 restart "$PM2_PROCESS"
+              sleep 3
+              if pm2 pid "$PM2_PROCESS" > /dev/null 2>&1; then
+                echo "✅ PM2 restarted successfully"
+              else
+                echo "❌ PM2 process not running after restart"
+                exit 1
+              fi
             else
-              echo "❌ Build failed — rolling back"
-              echo "DEPLOY_STATUS=failed" >> $GITHUB_ENV
+              echo "❌ Build failed — rolling back server to previous commit"
+              git reset --hard "$PREV_COMMIT"
+              npm ci --silent
+              npm run build
+              pm2 restart "$PM2_PROCESS"
+              echo "� Server rolled back to ${PREV_COMMIT:0:8}"
               exit 1
             fi
 
-      - name: Notify — Success
-        if: steps.deploy.outputs.DEPLOY_STATUS == 'success' || (steps.merge.outputs.merge_status == 'success' && success())
-        uses: dawidd6/action-telegram@v3
-        with:
-          bot_token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          chat_id: ${{ secrets.TELEGRAM_CHAT_ID }}
-          message: |
-            ✅ ClickMasters Deploy SUCCESS
-            Branch: ${{ github.ref_name }}
-            Commit: ${{ github.sha }}
-            Server build passed. PM2 restarted.
-
-      - name: Notify — Merge Conflict
-        if: steps.merge.outputs.merge_status == 'failed'
-        uses: dawidd6/action-telegram@v3
-        with:
-          bot_token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          chat_id: ${{ secrets.TELEGRAM_CHAT_ID }}
-          message: |
-            ❌ ClickMasters MERGE FAILED
-            Branch: ${{ github.ref_name }}
-            Merge conflict with master. Fix locally and re-push.
-
-      - name: Notify — Build Failed
-        if: failure() && steps.merge.outputs.merge_status == 'success'
-        uses: dawidd6/action-telegram@v3
-        with:
-          bot_token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          chat_id: ${{ secrets.TELEGRAM_CHAT_ID }}
-          message: |
-            ❌ ClickMasters BUILD FAILED
-            Branch: ${{ github.ref_name }}
-            Merge succeeded but build failed on server. Rollback initiated.
-
-      - name: Rollback — Revert merge on master
-        if: failure() && steps.merge.outputs.merge_status == 'success'
+      - name: Rollback — Revert merge on GitHub
+        if: failure() && steps.merge.outputs.merge_status == 'success' && steps.push.outcome == 'success'
         run: |
-          echo "⏪ Reverting merge on master..."
-          git revert -m 1 ${{ github.sha }} --no-edit
+          echo "� Reverting merge commit on GitHub..."
+          git revert -m 1 ${{ steps.push.outputs.MERGE_COMMIT }} --no-edit
           git push origin master
           echo "::warning::Merge was reverted on master due to build failure."
