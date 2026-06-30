@@ -37,7 +37,7 @@ jobs:
             echo "merge_status=success" >> $GITHUB_OUTPUT
           else
             echo "merge_status=failed" >> $GITHUB_OUTPUT
-            echo "::error::Merge conflict detected on branch '${{ github.ref_name }}'. Fix conflicts locally and push again."
+            echo "::error::Merge conflict on branch '${{ github.ref_name }}'. Fix locally and re-push."
             git merge --abort
             exit 1
           fi
@@ -49,70 +49,84 @@ jobs:
           git push origin master
           echo "MERGE_COMMIT=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
 
-      - name: SSH — Pull & Build on Server
+      - name: Resolve SSH port
+        id: ssh_config
+        run: |
+          PORT="${{ secrets.SERVER_PORT }}"
+          if [[ -z "$PORT" ]]; then PORT=22; fi
+          echo "port=$PORT" >> $GITHUB_OUTPUT
+
+      - name: SSH — Pull, Build & Deploy
         if: steps.merge.outputs.merge_status == 'success'
         id: deploy
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.SERVER_HOST }}
+          port: ${{ steps.ssh_config.outputs.port }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
-          script_stop: true
-          envs: BASE_COMMIT=${{ steps.merge.outputs.BASE_COMMIT }}
+          command_timeout: 300s
           script: |
-            set -euo pipefail
+            set -uo pipefail
 
             DEPLOY_DIR="/var/www/Clickmastersoftware"
             PM2_PROCESS="clickmastersoftwareuk"
-            PREV_COMMIT=$(cd "$DEPLOY_DIR" && git rev-parse HEAD)
-
-            echo "═══════════════════════════════════════"
-            echo "🚀 Starting deployment"
-            echo "Previous server commit: ${PREV_COMMIT:0:8}"
-            echo "═══════════════════════════════════════"
 
             cd "$DEPLOY_DIR"
+            PREV_COMMIT=$(git rev-parse HEAD)
+
+            echo "═══════════════════════════════════════"
+            echo "� Deploy starting"
+            echo "Current: ${PREV_COMMIT:0:8}"
+            echo "═══════════════════════════════════════"
 
             git fetch origin master
             git checkout master
             git pull origin master
 
             NEW_COMMIT=$(git rev-parse HEAD)
-            echo "New commit: ${NEW_COMMIT:0:8}"
+            echo "Pulled:  ${NEW_COMMIT:0:8}"
 
             if [[ "$PREV_COMMIT" == "$NEW_COMMIT" ]]; then
-              echo "⚠ No new changes. Skipping build."
+              echo "No changes. Skipping."
               exit 0
             fi
 
-            echo "📦 Installing dependencies..."
+            echo "📦 npm ci..."
             npm ci
 
             echo "🔨 Building..."
             if npm run build; then
-              echo "✅ Build successful"
+              echo "✅ Build OK"
               pm2 restart "$PM2_PROCESS"
               sleep 3
               if pm2 pid "$PM2_PROCESS" > /dev/null 2>&1; then
-                echo "✅ PM2 restarted successfully"
+                echo "✅ PM2 online"
               else
-                echo "❌ PM2 process not running after restart"
+                echo "❌ PM2 not running"
                 exit 1
               fi
             else
-              echo "❌ Build failed — rolling back server to previous commit"
+              echo "❌ Build failed — rolling back"
               git reset --hard "$PREV_COMMIT"
               npm ci --silent
               npm run build
               pm2 restart "$PM2_PROCESS"
-              echo "� Server rolled back to ${PREV_COMMIT:0:8}"
+              echo "Server restored to ${PREV_COMMIT:0:8}"
               exit 1
             fi
 
-      - name: Rollback — Revert merge on GitHub
-        if: failure() && steps.merge.outputs.merge_status == 'success' && steps.push.outcome == 'success'
+      - name: Notify — Deploy Success
+        if: steps.merge.outputs.merge_status == 'success' && success() && steps.deploy.outcome == 'success'
         run: |
-          echo "� Reverting merge commit on GitHub..."
-          git revert -m 1 ${{ steps.push.outputs.MERGE_COMMIT }} --no-edit
+          echo "::notice::✅ Deploy succeeded! Branch '${{ github.ref_name }}' merged, built, and restarted on server."
+
+      - name: Rollback — Revert merge on GitHub
+        if: failure() && steps.merge.outputs.merge_status == 'success' && steps.push.outcome == 'success' && steps.push.outputs.MERGE_COMMIT
+        run: |
+          echo "Reverting merge commit: ${{ steps.push.outputs.MERGE_COMMIT }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git revert -m 1 "${{ steps.push.outputs.MERGE_COMMIT }}" --no-edit
           git push origin master
-          echo "::warning::Merge was reverted on master due to build failure."
+          echo "::warning::Merge reverted due to deploy failure."
