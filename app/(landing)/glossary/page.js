@@ -6,11 +6,25 @@ import GlossaryFilterClient from './filter-client';
 
 const ITEMS_PER_PAGE = 24;
 
-export const metadata = {
-  title: 'Glossary \u2014 UK Software Development Terms | ClickMasters',
-  description: 'Comprehensive glossary of UK software development terms, technologies, and business concepts. Definitions covering APIs, MVPs, SaaS, GDPR, IR35, and more.',
-  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/glossary' },
-};
+const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk/glossary';
+
+export async function generateMetadata({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const page = parseInt(resolvedSearchParams?.page || '1', 10);
+  const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
+
+  const metadata = {
+    title: 'Glossary \u2014 UK Software Development Terms | ClickMasters',
+    description: 'Comprehensive glossary of UK software development terms, technologies, and business concepts. Definitions covering APIs, MVPs, SaaS, GDPR, IR35, and more.',
+    alternates: { canonical },
+  };
+
+  if (page > 1) {
+    metadata.other = { 'link:prev': page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` };
+  }
+
+  return metadata;
+}
 
 function GlossaryCard({ term }) {
   return (

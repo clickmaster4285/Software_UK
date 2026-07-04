@@ -5,11 +5,25 @@ import { caseStudyListings, getSectorsMeta } from '@/data/case-studies';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import CaseStudiesFilterClient from './filter-client';
 
-export const metadata = {
-  title: 'Case Studies | ClickMasters Software Development',
-  description: 'Explore our portfolio of successful software development projects across FinTech, HealthTech, GovTech, EdTech, and more UK industries.',
-  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/case-studies' },
-};
+const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk/case-studies';
+
+export async function generateMetadata({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const page = parseInt(resolvedSearchParams?.page || '1', 10);
+  const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
+
+  const metadata = {
+    title: 'Case Studies | ClickMasters Software Development',
+    description: 'Explore our portfolio of successful software development projects across FinTech, HealthTech, GovTech, EdTech, and more UK industries.',
+    alternates: { canonical },
+  };
+
+  if (page > 1) {
+    metadata.other = { 'link:prev': page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` };
+  }
+
+  return metadata;
+}
 
 const ITEMS_PER_PAGE = 12;
 
@@ -68,11 +82,11 @@ function CaseStudiesFilter({ sectors, sectorCounts, activeSector }) {
   );
 }
 
-export default function CaseStudiesPage({ searchParams }) {
-  // Read search params on server (no 'use client' needed)
-  const currentPage = parseInt(searchParams?.page || '1', 10);
-  const activeSector = searchParams?.sector || '';
-  const searchQuery = searchParams?.q || '';
+export default async function CaseStudiesPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const currentPage = parseInt(resolvedSearchParams?.page || '1', 10);
+  const activeSector = resolvedSearchParams?.sector || '';
+  const searchQuery = resolvedSearchParams?.q || '';
 
   // Compute sectors from lightweight data
   const { sectors, sectorCounts } = getSectorsMeta();
