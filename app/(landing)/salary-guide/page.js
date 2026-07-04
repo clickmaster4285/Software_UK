@@ -9,6 +9,8 @@ const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk/salary-gu
 export async function generateMetadata({ searchParams }) {
   const resolvedSearchParams = await searchParams;
   const page = parseInt(resolvedSearchParams?.page || '1', 10);
+  const activeCategory = resolvedSearchParams?.category || '';
+  const searchQuery = resolvedSearchParams?.q || '';
   const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
 
   const metadata = {
@@ -17,8 +19,30 @@ export async function generateMetadata({ searchParams }) {
     alternates: { canonical },
   };
 
+  // Compute total pages for SEO pagination links
+  let filtered = [...salaryGuideListings];
+  if (activeCategory) {
+    filtered = filtered.filter(s => getRoleCategory(s.role) === activeCategory);
+  }
+  if (searchQuery.trim()) {
+    const q = searchQuery.toLowerCase();
+    filtered = filtered.filter(s =>
+      s.title?.toLowerCase().includes(q) ||
+      s.metaDesc?.toLowerCase().includes(q) ||
+      s.role?.toLowerCase().includes(q)
+    );
+  }
+  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+
+  const links = [];
   if (page > 1) {
-    metadata.other = { 'link:prev': page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` };
+    links.push({ rel: 'prev', href: page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` });
+  }
+  if (page < totalPages) {
+    links.push({ rel: 'next', href: `${BASE_URL}?page=${page + 1}` });
+  }
+  if (links.length > 0) {
+    metadata.other = { 'link': links };
   }
 
   return metadata;

@@ -15,8 +15,18 @@ export async function generateMetadata({ searchParams }) {
     alternates: { canonical },
   };
 
+  // Compute total pages for SEO pagination links
+  const totalPages = Math.ceil(comparisonListings.length / ITEMS_PER_PAGE);
+
+  const links = [];
   if (page > 1) {
-    metadata.other = { 'link:prev': page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` };
+    links.push({ rel: 'prev', href: page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` });
+  }
+  if (page < totalPages) {
+    links.push({ rel: 'next', href: `${BASE_URL}?page=${page + 1}` });
+  }
+  if (links.length > 0) {
+    metadata.other = { 'link': links };
   }
 
   return metadata;
