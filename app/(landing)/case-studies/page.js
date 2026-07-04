@@ -44,7 +44,7 @@ export async function generateMetadata({ searchParams }) {
     links.push({ rel: 'next', href: `${BASE_URL}?page=${page + 1}` });
   }
   if (links.length > 0) {
-    metadata.other = { 'link': links };
+    metadata.link = links;
   }
 
   return metadata;
