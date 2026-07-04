@@ -107,11 +107,12 @@ function CaseStudiesFilter({ sectors, sectorCounts, activeSector }) {
   );
 }
 
-export default function CaseStudiesPage({ searchParams }) {
+export default async function CaseStudiesPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
   // Read search params on server (no 'use client' needed)
-  const currentPage = parseInt(searchParams?.page || '1', 10);
-  const activeSector = searchParams?.sector || '';
-  const searchQuery = searchParams?.q || '';
+  const currentPage = parseInt(resolvedSearchParams?.page || '1', 10);
+  const activeSector = resolvedSearchParams?.sector || '';
+  const searchQuery = resolvedSearchParams?.q || '';
 
   // Compute sectors from lightweight data
   const { sectors, sectorCounts } = getSectorsMeta();
