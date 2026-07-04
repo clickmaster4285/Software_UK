@@ -18,15 +18,15 @@ export async function generateMetadata({ searchParams }) {
   // Compute total pages for SEO pagination links
   const totalPages = Math.ceil(comparisonListings.length / ITEMS_PER_PAGE);
 
-  const links = [];
+  const other = {};
   if (page > 1) {
-    links.push({ rel: 'prev', href: page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` });
+    other['link:prev'] = page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}`;
   }
   if (page < totalPages) {
-    links.push({ rel: 'next', href: `${BASE_URL}?page=${page + 1}` });
+    other['link:next'] = `${BASE_URL}?page=${page + 1}`;
   }
-  if (links.length > 0) {
-    metadata.link = links;
+  if (Object.keys(other).length > 0) {
+    metadata.other = other;
   }
 
   return metadata;
