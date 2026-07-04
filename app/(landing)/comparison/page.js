@@ -2,35 +2,11 @@ import Link from 'next/link';
 import { comparisonListings } from '@/data/comparisons';
 import { ArrowRight, BookOpen, GitCompare } from 'lucide-react';
 
-const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk/comparison';
-
-export async function generateMetadata({ searchParams }) {
-  const resolvedSearchParams = await searchParams;
-  const page = parseInt(resolvedSearchParams?.page || '1', 10);
-  const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
-
-  const metadata = {
-    title: 'Technology Comparisons | ClickMasters UK',
-    description: 'Side-by-side comparisons of software development technologies, frameworks, and tools for UK businesses. Make informed tech stack decisions.',
-    alternates: { canonical },
-  };
-
-  // Compute total pages for SEO pagination links
-  const totalPages = Math.ceil(comparisonListings.length / ITEMS_PER_PAGE);
-
-  const links = [];
-  if (page > 1) {
-    links.push({ rel: 'prev', href: page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` });
-  }
-  if (page < totalPages) {
-    links.push({ rel: 'next', href: `${BASE_URL}?page=${page + 1}` });
-  }
-  if (links.length > 0) {
-    metadata.other = { 'link': links };
-  }
-
-  return metadata;
-}
+export const metadata = {
+  title: 'Technology Comparisons | ClickMasters UK',
+  description: 'Side-by-side comparisons of software development technologies, frameworks, and tools for UK businesses. Make informed tech stack decisions.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/comparison' },
+};
 
 const ITEMS_PER_PAGE = 24;
 
