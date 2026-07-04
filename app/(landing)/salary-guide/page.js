@@ -34,15 +34,15 @@ export async function generateMetadata({ searchParams }) {
   }
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
 
-  const other = {};
+  const links = [];
   if (page > 1) {
-    other['link:prev'] = page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}`;
+    links.push({ rel: 'prev', href: page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` });
   }
   if (page < totalPages) {
-    other['link:next'] = `${BASE_URL}?page=${page + 1}`;
+    links.push({ rel: 'next', href: `${BASE_URL}?page=${page + 1}` });
   }
-  if (Object.keys(other).length > 0) {
-    metadata.other = other;
+  if (links.length > 0) {
+    metadata.other = { 'link': links };
   }
 
   return metadata;
