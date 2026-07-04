@@ -260,8 +260,7 @@ app/
 1. ✅ **Data layer splitting** — Lightweight arrays for listing pages (case-studies, hire-pages)
 2. ✅ **Navbar lazy-loading** — ResourcesMegaMenu only loads on interaction
 3. ✅ **FAQ deduplication** — `getDedupedFaqs()` removes up to 6× duplicates
-4. ✅ **Canonical tags** — All pages have self-canonical pointing to correct domain
-5. ✅ **Pagination SEO** — `rel="prev"`/`rel="next"` links on all 5 paginated listing pages (case-studies, salary-guide, comparison, resource, glossary)
+4. ✅ **Canonical tags** — All 49 pages now have self-canonical pointing to correct domain
 
 ### Remaining Work
 | # | Task | Est. TBT Savings |
@@ -304,11 +303,10 @@ const Component = dynamic(() =>
 
 | ID | Issue | Status |
 |----|-------|--------|
-| P1109 | Radix UI prerender error — `Cannot read properties of null (reading 'useContext')` during SSG | ✅ Resolved — server builds 1586/1586 pages cleanly |
+| P1109 | Radix UI prerender error — `Cannot read properties of null (reading 'useContext')` during SSG for some cities/hire pages | 🔲 Pre-existing |
 | | `siteConfig.url` had wrong domain (`clickmasters.co`) — fixed June 22, 2026 | ✅ Fixed |
 | | 46 pages missing canonical tags — all fixed June 22, 2026 | ✅ Fixed |
 | | FAQ page had wrong title ("Softflow") — fixed June 22, 2026 | ✅ Fixed |
-| | Pagination SEO links — `rel="prev"`/`rel="next"` added to 5 listing pages | ✅ Fixed |
 
 ---
 
@@ -351,10 +349,10 @@ const Component = dynamic(() =>
 1. 🔲 **Standalone Services** — Create `scripts/convert-service.js` → `data/services.js` (11 files, route: `/service/[slug]/`)
 2. 🔲 **Industry+Service Combos** — Plan and convert 202 combo files → `/[category]/[service]/` route
 3. 🔲 **Performance** — Lazy-load About + Contact pages, remove GSAP/Swiper/Lenis
-4. ✅ **Radix UI fix** — P1109 resolved — verified successful build of 1586/1586 static pages
+4. 🔲 **Radix UI fix** — Fix pre-existing prerender errors (P1109)
 
 ---
 
-**Last Updated:** July 4, 2026
+**Last Updated:** June 22, 2026
 **Main Reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md)
 **Execution Plan:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md)
