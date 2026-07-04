@@ -36,15 +36,15 @@ export async function generateMetadata({ searchParams }) {
   }
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
 
-  const links = [];
+  const other = {};
   if (page > 1) {
-    links.push({ rel: 'prev', href: page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` });
+    other['link:prev'] = page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}`;
   }
   if (page < totalPages) {
-    links.push({ rel: 'next', href: `${BASE_URL}?page=${page + 1}` });
+    other['link:next'] = `${BASE_URL}?page=${page + 1}`;
   }
-  if (links.length > 0) {
-    metadata.other = { 'link': links };
+  if (Object.keys(other).length > 0) {
+    metadata.other = other;
   }
 
   return metadata;
@@ -107,11 +107,12 @@ function CaseStudiesFilter({ sectors, sectorCounts, activeSector }) {
   );
 }
 
-export default function CaseStudiesPage({ searchParams }) {
+export default async function CaseStudiesPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
   // Read search params on server (no 'use client' needed)
-  const currentPage = parseInt(searchParams?.page || '1', 10);
-  const activeSector = searchParams?.sector || '';
-  const searchQuery = searchParams?.q || '';
+  const currentPage = parseInt(resolvedSearchParams?.page || '1', 10);
+  const activeSector = resolvedSearchParams?.sector || '';
+  const searchQuery = resolvedSearchParams?.q || '';
 
   // Compute sectors from lightweight data
   const { sectors, sectorCounts } = getSectorsMeta();
