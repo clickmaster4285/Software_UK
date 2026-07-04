@@ -5,11 +5,49 @@ import { ArrowRight, BookOpen } from 'lucide-react';
 import ResourceGuideFilterClient from './filter-client';
 import ResourceCategoryPills from './category-pills';
 
-export const metadata = {
-  title: 'Resource Guides | ClickMasters Software Development',
-  description: 'In-depth resource guides covering software development best practices, technologies, and industry insights for UK businesses.',
-  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/resource' },
-};
+const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk/resource';
+
+export async function generateMetadata({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const page = parseInt(resolvedSearchParams?.page || '1', 10);
+  const activeCategory = resolvedSearchParams?.category || '';
+  const searchQuery = resolvedSearchParams?.q || '';
+  const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
+
+  const metadata = {
+    title: 'Resource Guides | ClickMasters Software Development',
+    description: 'In-depth resource guides covering software development best practices, technologies, and industry insights for UK businesses.',
+    alternates: { canonical },
+  };
+
+  // Compute total pages for SEO pagination links
+  let filtered = [...resourceGuideListings];
+  if (activeCategory) {
+    filtered = filtered.filter(guide => getCategory(guide.slug, guide.title) === activeCategory);
+  }
+  if (searchQuery.trim()) {
+    const q = searchQuery.toLowerCase();
+    filtered = filtered.filter(g =>
+      g.title?.toLowerCase().includes(q) ||
+      g.metaDesc?.toLowerCase().includes(q) ||
+      g.slug?.toLowerCase().includes(q)
+    );
+  }
+  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+
+  const links = [];
+  if (page > 1) {
+    links.push({ rel: 'prev', href: page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` });
+  }
+  if (page < totalPages) {
+    links.push({ rel: 'next', href: `${BASE_URL}?page=${page + 1}` });
+  }
+  if (links.length > 0) {
+    metadata.other = { 'link': links };
+  }
+
+  return metadata;
+}
 
 const ITEMS_PER_PAGE = 12;
 
