@@ -2,11 +2,25 @@ import Link from 'next/link';
 import { comparisonListings } from '@/data/comparisons';
 import { ArrowRight, BookOpen, GitCompare } from 'lucide-react';
 
-export const metadata = {
-  title: 'Technology Comparisons | ClickMasters UK',
-  description: 'Side-by-side comparisons of software development technologies, frameworks, and tools for UK businesses. Make informed tech stack decisions.',
-  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/comparison' },
-};
+const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk/comparison';
+
+export async function generateMetadata({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const page = parseInt(resolvedSearchParams?.page || '1', 10);
+  const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
+
+  const metadata = {
+    title: 'Technology Comparisons | ClickMasters UK',
+    description: 'Side-by-side comparisons of software development technologies, frameworks, and tools for UK businesses. Make informed tech stack decisions.',
+    alternates: { canonical },
+  };
+
+  if (page > 1) {
+    metadata.other = { 'link:prev': page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` };
+  }
+
+  return metadata;
+}
 
 const ITEMS_PER_PAGE = 24;
 
