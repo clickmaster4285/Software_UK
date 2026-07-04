@@ -6,11 +6,50 @@ import GlossaryFilterClient from './filter-client';
 
 const ITEMS_PER_PAGE = 24;
 
-export const metadata = {
-  title: 'Glossary \u2014 UK Software Development Terms | ClickMasters',
-  description: 'Comprehensive glossary of UK software development terms, technologies, and business concepts. Definitions covering APIs, MVPs, SaaS, GDPR, IR35, and more.',
-  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/glossary' },
-};
+const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk/glossary';
+
+export async function generateMetadata({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const page = parseInt(resolvedSearchParams?.page || '1', 10);
+  const activeLetter = resolvedSearchParams?.letter || '';
+  const searchQuery = resolvedSearchParams?.q || '';
+  const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
+
+  const metadata = {
+    title: 'Glossary \u2014 UK Software Development Terms | ClickMasters',
+    description: 'Comprehensive glossary of UK software development terms, technologies, and business concepts. Definitions covering APIs, MVPs, SaaS, GDPR, IR35, and more.',
+    alternates: { canonical },
+  };
+
+  // Compute total pages for SEO pagination links
+  let filtered = [...glossaryListings];
+  if (activeLetter) {
+    const upper = activeLetter.toUpperCase();
+    filtered = filtered.filter(t => t.termDisplay.charAt(0).toUpperCase() === upper);
+  }
+  if (searchQuery.trim()) {
+    const q = searchQuery.toLowerCase();
+    filtered = filtered.filter(t =>
+      t.termDisplay?.toLowerCase().includes(q) ||
+      t.metaDesc?.toLowerCase().includes(q) ||
+      t.slug?.toLowerCase().includes(q)
+    );
+  }
+  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+
+  const links = [];
+  if (page > 1) {
+    links.push({ rel: 'prev', href: page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` });
+  }
+  if (page < totalPages) {
+    links.push({ rel: 'next', href: `${BASE_URL}?page=${page + 1}` });
+  }
+  if (links.length > 0) {
+    metadata.other = { 'link': links };
+  }
+
+  return metadata;
+}
 
 function GlossaryCard({ term }) {
   return (
