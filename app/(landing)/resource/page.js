@@ -5,25 +5,11 @@ import { ArrowRight, BookOpen } from 'lucide-react';
 import ResourceGuideFilterClient from './filter-client';
 import ResourceCategoryPills from './category-pills';
 
-const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk/resource';
-
-export async function generateMetadata({ searchParams }) {
-  const resolvedSearchParams = await searchParams;
-  const page = parseInt(resolvedSearchParams?.page || '1', 10);
-  const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
-
-  const metadata = {
-    title: 'Resource Guides | ClickMasters Software Development',
-    description: 'In-depth resource guides covering software development best practices, technologies, and industry insights for UK businesses.',
-    alternates: { canonical },
-  };
-
-  if (page > 1) {
-    metadata.other = { 'link:prev': page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` };
-  }
-
-  return metadata;
-}
+export const metadata = {
+  title: 'Resource Guides | ClickMasters Software Development',
+  description: 'In-depth resource guides covering software development best practices, technologies, and industry insights for UK businesses.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/resource' },
+};
 
 const ITEMS_PER_PAGE = 12;
 

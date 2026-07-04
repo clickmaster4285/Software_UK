@@ -4,25 +4,11 @@ import { salaryGuideListings } from '@/data/salary-guides';
 import { ArrowRight, Sparkles, BookOpen } from 'lucide-react';
 import SalaryGuideFilterClient from './filter-client';
 
-const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk/salary-guide';
-
-export async function generateMetadata({ searchParams }) {
-  const resolvedSearchParams = await searchParams;
-  const page = parseInt(resolvedSearchParams?.page || '1', 10);
-  const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
-
-  const metadata = {
-    title: 'UK Software Developer Salary Guides | ClickMasters',
-    description: 'Comprehensive salary benchmarks for UK software developers by role, technology, and experience level. Day rates and permanent salaries.',
-    alternates: { canonical },
-  };
-
-  if (page > 1) {
-    metadata.other = { 'link:prev': page === 2 ? BASE_URL : `${BASE_URL}?page=${page - 1}` };
-  }
-
-  return metadata;
-}
+export const metadata = {
+  title: 'UK Software Developer Salary Guides | ClickMasters',
+  description: 'Comprehensive salary benchmarks for UK software developers by role, technology, and experience level. Day rates and permanent salaries.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/salary-guide' },
+};
 
 const ITEMS_PER_PAGE = 12;
 
