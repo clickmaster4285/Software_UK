@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import JsonLd from '@/components/JsonLd';
+import Script from 'next/script';
 import {
   getIndustryBySlug,
   getAllIndustrySlugs,
@@ -277,13 +277,29 @@ export default async function IndustryDetailPage({ params }) {
 
   return (
     <>
-      <JsonLd schema={serviceJsonLd} />
-      {faqs.length > 0 && <JsonLd schema={faqJsonLd} />}
-      <JsonLd schema={breadcrumbSchema([
-        { name: 'Home', url: '/' },
-        { name: 'Industries', url: '/industries' },
-        { name: industry.title, url: canonicalPath },
-      ])} />
+      <Script
+        id={`service-schema-${industry.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <Script
+        id={`faq-schema-${industry.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <Script
+        id={`breadcrumb-${industry.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([
+              { name: 'Home', url: '/' },
+              { name: 'Industries', url: '/industries' },
+              { name: industry.title, url: canonicalPath },
+            ])
+          ),
+        }}
+      />
 
       <div className="min-h-screen text-primary relative overflow-x-hidden">
         {/* ═══════════════════════════════════════════════════════════

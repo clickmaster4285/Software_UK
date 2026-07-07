@@ -1,6 +1,4 @@
-import FAQAccordion, { faqs } from './FAQAccordion';
-import JsonLd from '@/components/JsonLd';
-import { faqSchema } from '@/app/metadata-config';
+import FAQAccordion from './FAQAccordion';
 
 export const metadata = {
   title: 'FAQ | ClickMasters Software Development',
@@ -11,8 +9,7 @@ export const metadata = {
 export default function FAQPage() {
   return (
     <>
-      <JsonLd schema={faqSchema(faqs, '/faq')} />
-      <main>
+    <main>
         <section className="faq-hero">
           <div className="container">
             <h1>Your questions, answered instantly</h1>

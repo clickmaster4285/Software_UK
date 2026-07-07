@@ -1,8 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getResourceGuideBySlug, getRelatedResourceGuides, getDedupedFaqs } from '@/data/resource-guides';
 import ResourceGuideDetailClient from './detail-client';
-import JsonLd from '@/components/JsonLd';
-import { articleSchema, breadcrumbSchema, faqSchema } from '@/app/metadata-config';
 
 // Generate static params for all resource guide pages
 export async function generateStaticParams() {
@@ -39,31 +37,56 @@ export default async function ResourceGuideDetailPage({ params }) {
   const relatedGuides = getRelatedResourceGuides(slug, 4);
   const dedupedFaqs = getDedupedFaqs(guide.faqs);
 
-  // Build JSON-LD structured data for Article using central helpers
-  const articleJsonLd = articleSchema({
-    title: guide.title,
+  // Build JSON-LD structured data for Article
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: guide.title,
     description: guide.metaDesc || `UK software development resource guide: ${guide.title}.`,
-    url: `/resource/${slug}`,
-    author: guide.writtenBy || guide.author || 'ClickMasters',
+    author: {
+      '@type': 'Organization',
+      name: guide.writtenBy || guide.author || 'ClickMasters',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'ClickMasters Software Development Company',
+      url: 'https://clickmasterssoftwaredevelopmentcompany.co.uk',
+    },
     dateModified: guide.lastUpdated || undefined,
-  });
-
-  const breadcrumbsLd = breadcrumbSchema([
-    { name: 'Home', url: '/' },
-    { name: 'Resource Guides', url: '/resource' },
-    { name: guide.title, url: `/resource/${slug}` }
-  ]);
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://clickmasterssoftwaredevelopmentcompany.co.uk/resource/${slug}`,
+    },
+  };
 
   // Build FAQ structured data (deduplicated)
   const faqJsonLd = dedupedFaqs.length > 0
-    ? faqSchema(dedupedFaqs)
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: dedupedFaqs.map(faq => ({
+          '@type': 'Question',
+          name: faq.question.trim(),
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer.trim(),
+          },
+        })),
+      }
     : null;
 
   return (
     <>
-      <JsonLd schema={articleJsonLd} />
-      <JsonLd schema={breadcrumbsLd} />
-      {faqJsonLd && <JsonLd schema={faqJsonLd} />}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <ResourceGuideDetailClient guide={{ ...guide, faqs: dedupedFaqs }} relatedGuides={relatedGuides} />
     </>
   );

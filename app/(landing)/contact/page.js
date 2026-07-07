@@ -5,8 +5,6 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ChevronRight, ArrowRight, Mail, Phone, MapPin, Clock, MessageSquare, Users, Zap, Shield } from 'lucide-react';
 import { Suspense } from 'react';
-import JsonLd from '@/components/JsonLd';
-import { contactPageSchema } from '@/app/metadata-config';
 
 // Import reusable components from main-service
 import { FinalCTA } from '@/components/landing/main-service/finalCta';
@@ -155,7 +153,6 @@ function TeamCard({ member, index }) {
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-background relative overflow-x-hidden">
-      <JsonLd schema={contactPageSchema()} />
 
       {/* ── Hero Section with Background Image ── */}
       <section className="relative min-h-[75vh] flex items-center justify-center">
