@@ -55,7 +55,7 @@ export const TechStack = ({ techStack }) => {
 
       <section id="tech-stack" className="scroll-mt-24 mx-auto max-w-[96vw] lg:max-w-[90vw]">
         <div className="flex items-center gap-3 mb-3 sm:mb-4">
-          <div className="h-8 sm:h-10 w-1 rounded-full bg-primary" />
+          <div className="h-8 sm:h-10 w-1 rounded-full bg-accent" />
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-slate-900">
             Technology Stack
           </h2>

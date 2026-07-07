@@ -1,9 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/image';
+
 import dynamic from 'next/dynamic';
 import { notFound, redirect } from 'next/navigation';
 import Script from 'next/script';
-import { cn } from '@/lib/utils';
 import { breadcrumbSchema, faqSchema, homepageFaqSchema, serviceSchema, siteConfig } from '@/app/metadata-config';
 import { getSectionId } from '@/lib/subservice-utils';
 import {
@@ -234,7 +232,7 @@ export default async function ServiceByCategoryPage({ params }) {
             </div>
 
             <div id="tech-stack" className="scroll-mt-20">
-              <div style={{ maxWidth: '1460px' }} className="mx-auto">
+              <div className='mx-auto max-w-[96vw] lg:max-w-[90vw]'>
                 {techStack.length > 0 && <TechStack techStack={techStack} />}
               </div>
             </div>
