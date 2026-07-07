@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
 import { getCaseStudyBySlug, getRelatedCaseStudies } from '@/data/case-studies';
 import { CaseStudyDetailClient } from './detail-client';
+import JsonLd from '@/components/JsonLd';
+import { articleSchema, breadcrumbSchema, siteConfig } from '@/app/metadata-config';
 
 // Generate static params for all case study pages
 export async function generateStaticParams() {
@@ -38,27 +40,20 @@ export default async function CaseStudyDetailPage({ params }) {
   // Related studies: same sector, excluding current
   const relatedStudies = getRelatedCaseStudies(slug, 3);
 
-  // Build JSON-LD structured data
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: study.title,
+  // Build JSON-LD structured data using central helpers
+  const articleJsonLd = articleSchema({
+    title: study.title,
     description: study.metaDesc || study.challenge?.substring(0, 200),
-    author: {
-      '@type': 'Organization',
-      name: study.writtenBy || 'ClickMasters',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'ClickMasters Software Development Company',
-      url: 'https://clickmasterssoftwaredevelopmentcompany.co.uk',
-    },
+    url: `/case-studies/${slug}`,
+    author: study.writtenBy || 'ClickMasters',
     dateModified: study.lastUpdated || undefined,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `https://clickmasterssoftwaredevelopmentcompany.co.uk/case-studies/${slug}`,
-    },
-  };
+  });
+
+  const breadcrumbsLd = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Case Studies', url: '/case-studies' },
+    { name: study.title, url: `/case-studies/${slug}` }
+  ]);
 
   // Add review structured data if client quote exists
   const reviewJsonLd = study.clientQuote
@@ -67,7 +62,7 @@ export default async function CaseStudyDetailPage({ params }) {
         '@type': 'Review',
         itemReviewed: {
           '@type': 'Organization',
-          name: 'ClickMasters Software Development Company',
+          name: siteConfig.legalName || siteConfig.name,
         },
         author: {
           '@type': 'Person',
@@ -84,16 +79,9 @@ export default async function CaseStudyDetailPage({ params }) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      {reviewJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
-        />
-      )}
+      <JsonLd schema={articleJsonLd} />
+      <JsonLd schema={breadcrumbsLd} />
+      {reviewJsonLd && <JsonLd schema={reviewJsonLd} />}
       <CaseStudyDetailClient study={study} relatedStudies={relatedStudies} />
     </>
   );

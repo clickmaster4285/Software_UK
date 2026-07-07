@@ -448,6 +448,22 @@ Also added `/hire` to the routes array.
 
 ---
 
+### 11.7 SEO & Structured Data (Completed July 7, 2026)
+
+**JSON-LD implementation across the App Router:**
+- Created reusable `@/components/JsonLd.jsx` to inject schemas safely without hydration mismatches.
+- Centralized schema generator functions in `@/app/metadata-config.js` (`webSiteSchema`, `organizationSchema`, `faqSchema`, `breadcrumbSchema`, `articleSchema`, `serviceSchema`, `contactPageSchema`, `aboutPageSchema`).
+- Injected global `Organization` and `WebSite` schemas into `app/layout.js`.
+- Injected page-specific schemas into `/`, `/about`, `/contact`, `/faq`.
+- Refactored dynamic pages to use the new `JsonLd` component:
+  - `/case-studies/[slug]` → `Article`, `BreadcrumbList`, and dynamic `Review` (if client quotes exist).
+  - `/resource/[slug]` → `Article`, `BreadcrumbList`, and `FAQPage` (with deduplicated FAQs).
+  - `/industries/[slug]` → `Service`, `BreadcrumbList`, and `FAQPage`.
+  - `/hire/[role]/[city]` → custom `Service` (with pricing offers based on city rates), `BreadcrumbList`, and `FAQPage`.
+- Validated via full Turbopack SSG build (`npm run build`), confirming 0 rendering/syntax errors on all 1,586 static routes.
+
+---
+
 ### 11.6 Lazy-Loading Patterns (Established Conventions)
 
 **Default export:**
@@ -495,15 +511,16 @@ const Component = dynamic(() =>
 17. ✅ Industries detail page — `/industries/[slug]` with custom layout
 18. ✅ `IndustrySections` component — bold-led paragraph renderer
 19. ✅ Build verified — industries pages compile and resolve
+20. ✅ SEO Structured Data — Full JSON-LD schema implementation (Organization, FAQPage, Article, Service, BreadcrumbList) on all static/dynamic routes safely injected via centralized `JsonLd` component.
 
 ### In Progress
-20. 🔲 Service conversion (11 standalone files) — create `scripts/convert-service.js` → `data/services.js`
+21. 🔲 Service conversion (11 standalone files) — create `scripts/convert-service.js` → `data/services.js`
 
 ### Pending
-21. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
-22. 🔲 Fix pre-existing Radix UI prerender errors (glossary/case-studies)
+22. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
+23. 🔲 Fix pre-existing Radix UI prerender errors (glossary/case-studies)
 
 ---
 
-**Last Updated:** June 20, 2026
+**Last Updated:** July 7, 2026
 **See also:** `plan-industries-pages.md` (industries execution details)

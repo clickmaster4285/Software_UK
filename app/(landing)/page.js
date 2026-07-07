@@ -2,6 +2,8 @@
 
 import dynamic from 'next/dynamic';
 import Hero from "@/app/(landing)/home/Hero";
+import JsonLd from "@/components/JsonLd";
+import { webPageSchema, serviceSchema, homepageFaqSchema } from "@/app/metadata-config";
 
 // Lazy-load all sections below the fold (all have default exports)
 const TrustedBy = dynamic(() => import("@/app/(landing)/home/TrustedBy"), { ssr: true });
@@ -32,6 +34,9 @@ const TechStackSection = dynamic(() =>
 export default function Home() {
   return (
     <>
+      <JsonLd schema={webPageSchema('ClickMasters — Software Development Company in UK', 'ClickMasters is a UK software development company delivering bespoke web, mobile, SaaS, and AI-powered systems. Custom software that drives business growth.', '/')} />
+      <JsonLd schema={serviceSchema('Custom Software Development', 'We build bespoke web, mobile, SaaS, and AI-powered systems to drive business growth.', '/')} />
+      <JsonLd schema={homepageFaqSchema} />
       <Hero />
       <TrustedBy />
       <Portfolio />
