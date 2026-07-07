@@ -21,6 +21,11 @@ export default function Hero() {
                <source src="/vedios/bg-video.webm" type="video/webm" />
                <source src="/vedios/bg-video-final.mp4" type="video/mp4" />
             </video>
+
+
+
+
+            777777777777777777777777777777777777777777777777777777777777777
             {/* Overlay for readability */}
             <div className="absolute inset-0 bg-black/60 z-10" />
          </div>
