@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
 import { hirePageListings, getHirePageByRoleCity, getRelatedHirePages, getDedupedFaqs } from '@/data/hire-pages';
 import { HireDetailClient } from './detail-client';
+import JsonLd from '@/components/JsonLd';
+import { breadcrumbSchema, faqSchema, siteConfig } from '@/app/metadata-config';
 
 // Generate static params for all hire pages
 export async function generateStaticParams() {
@@ -75,33 +77,24 @@ export default async function HireDetailPage({ params }) {
 
   // Build FAQ structured data (deduplicated)
   const dedupedFaqs = getDedupedFaqs(hirePage.faqs);
-  const faqJsonLd = dedupedFaqs.length > 0
-    ? {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: dedupedFaqs.map(faq => ({
-          '@type': 'Question',
-          name: faq.question.replace(/^:\s*/, ''),
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.answer.replace(/^:\s*/, ''),
-          },
-        })),
-      }
-    : null;
+  const formattedFaqs = dedupedFaqs.map(faq => ({
+    question: faq.question.replace(/^:\s*/, ''),
+    answer: faq.answer.replace(/^:\s*/, ''),
+  }));
+  const faqJsonLd = formattedFaqs.length > 0 ? faqSchema(formattedFaqs) : null;
+
+  const breadcrumbsLd = breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Hire', url: '/hire' },
+    { name: roleName, url: `/hire#${role}` },
+    { name: cityName, url: `/hire/${role}/${city}` }
+  ]);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
+      <JsonLd schema={jsonLd} />
+      <JsonLd schema={breadcrumbsLd} />
+      {faqJsonLd && <JsonLd schema={faqJsonLd} />}
       <HireDetailClient hirePage={{ ...hirePage, faqs: dedupedFaqs }} relatedPages={relatedPages} />
     </>
   );

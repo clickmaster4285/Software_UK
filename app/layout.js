@@ -2,6 +2,8 @@ import { Sora, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
 import { ToasterProvider } from "@/components/ToasterProvider";
+import JsonLd from "@/components/JsonLd";
+import { organizationSchema, webSiteSchema } from "@/app/metadata-config";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -40,6 +42,8 @@ export default function RootLayout({ children }) {
     >
 
       <body className="min-h-full flex flex-col font-sans">
+        <JsonLd schema={organizationSchema()} />
+        <JsonLd schema={webSiteSchema()} />
         <ToasterProvider />
         <Providers>
           {children}

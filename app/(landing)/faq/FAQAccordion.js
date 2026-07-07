@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-const faqs = [
+export const faqs = [
   {
     question: 'How do I create a new account?',
     answer: 'Creating a new account is simple. Click the "Get Started" button on our homepage, enter your email address and create a password. You\'ll receive a verification email to confirm your account.'

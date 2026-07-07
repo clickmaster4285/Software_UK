@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ChevronRight, ArrowRight, CheckCircle, Sparkles } from 'lucide-react';
 import { Suspense } from 'react';
+import JsonLd from '@/components/JsonLd';
+import { aboutPageSchema } from '@/app/metadata-config';
 
 // Import reusable components from main-service
 import { TechStackSection } from '@/components/landing/main-service/TechStackSection';
@@ -145,6 +147,7 @@ function Milestone({ milestone, index }) {
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background relative overflow-x-hidden">
+      <JsonLd schema={aboutPageSchema()} />
 
       {/* ── Hero Section with Background Image ── */}
       <section className="relative min-h-[80vh] flex items-center justify-center">
