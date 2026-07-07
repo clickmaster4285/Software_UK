@@ -263,52 +263,17 @@ export function ProcessPage({ serviceData }) {
 
     const prefersReduced = reducedMotion === true;
 
-    const leftPanel = leftPanelRef.current;
-
     if (prefersReduced) {
       gsap.set(lineProgress, { scaleY: 1 });
       cardRefs.current.forEach((card) => {
         if (card) gsap.set(card, { opacity: 1, y: 0 });
       });
-      if (leftPanel) gsap.set(leftPanel, { top: PIN_CONFIG.topStart });
       return;
     }
 
     const ctx = gsap.context(() => {
       gsap.set(lineProgress, { scaleY: 0, transformOrigin: "top center" });
 
-      const mm = gsap.matchMedia();
-      mm.add(PIN_CONFIG.minWidth, () => {
-        if (!leftPanel) return;
-
-        gsap.set(leftPanel, { top: PIN_CONFIG.topStart });
-
-        ScrollTrigger.create({
-          trigger: track,
-          start: PIN_CONFIG.scrollStart,
-          end: PIN_CONFIG.scrollEnd,
-          pin: leftPanel,
-          pinSpacing: false,
-          anticipatePin: 1,
-          invalidateOnRefresh: true,
-        });
-
-        gsap.fromTo(
-          leftPanel,
-          { top: PIN_CONFIG.topStart },
-          {
-            top: PIN_CONFIG.topEnd,
-            ease: "none",
-            scrollTrigger: {
-              trigger: track,
-              start: PIN_CONFIG.scrollStart,
-              end: PIN_CONFIG.scrollEnd,
-              scrub: PIN_CONFIG.scrub,
-              invalidateOnRefresh: true,
-            },
-          }
-        );
-      });
 
       gsap.to(lineProgress, {
         scaleY: 1,
@@ -391,7 +356,7 @@ export function ProcessPage({ serviceData }) {
   return (
     <section
       ref={sectionRef}
-      className="relative py-20 overflow-hidden bg-transparent font-sans"
+      className="relative py-20 bg-transparent font-sans"
       aria-labelledby="process-heading"
     >
       {/* Premium Background Elements */}
@@ -462,7 +427,10 @@ export function ProcessPage({ serviceData }) {
         {/* Two-column layout: left = pinned step card, right = scrolling timeline */}
         <div className="max-w-7xl mx-auto lg:flex lg:items-start lg:gap-14">
           {/* leftPanelRef — scrolls 30vh → 60vh while pinned (PIN_CONFIG) */}
-          <aside className="hidden lg:block lg:w-[34%] lg:shrink-0">
+          <aside
+            className="hidden lg:block lg:w-[34%] lg:shrink-0 lg:sticky"
+            style={{ top: PIN_CONFIG.topStart }}
+          >
             <div ref={leftPanelRef} className="w-full">
               <motion.div
                 initial={{ opacity: 0, x: -16 }}

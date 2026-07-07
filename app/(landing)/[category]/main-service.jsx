@@ -76,7 +76,7 @@ export default function ServiceClient({ serviceData }) {
     })) || [];
 
   return (
-    <main className="min-h-screen bg-background pt-18 relative overflow-x-hidden">
+    <main className="min-h-screen bg-background pt-18 relative overflow-x-clip">
 
       {/* Premium Breadcrumb */}
       <div className="relative z-20 border-b border-border/40 bg-background/80 backdrop-blur-md">
