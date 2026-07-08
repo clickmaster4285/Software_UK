@@ -38,7 +38,6 @@ export default function RootLayout({ children }) {
       lang="en" data-scroll-behavior="smooth"
       className={`${sora.variable} ${dmSans.variable} antialiased`}
     >
-
       <body className="min-h-full flex flex-col font-sans">
         <ToasterProvider />
         <Providers>
