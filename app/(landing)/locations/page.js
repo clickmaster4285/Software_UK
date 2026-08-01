@@ -5,14 +5,14 @@ import { ArrowRight, MapPin, BookOpen, Building2 } from 'lucide-react';
 export const metadata = {
   title: 'Software Development by City | ClickMasters UK',
   description: 'ClickMasters provides custom software development services across UK cities. Find local expertise in London, Manchester, Birmingham, and more.',
-  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/cities' },
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/locations' },
 };
 
 const ITEMS_PER_PAGE = 24;
 
 function CityCard({ city }) {
   return (
-    <Link href={`/cities/${city.slug}`} className="group block h-full bg-white rounded-xl border border-border hover:border-accent hover:-translate-y-1 transition-all duration-250 shadow-xs hover:shadow-md">
+    <Link href={`/locations/${city.slug}`} className="group block h-full bg-white rounded-xl border border-border hover:border-accent hover:-translate-y-1 transition-all duration-250 shadow-xs hover:shadow-md">
       <div className="p-6 flex flex-col h-full justify-between">
         <div>
           <div className="flex items-center gap-2 mb-4">
