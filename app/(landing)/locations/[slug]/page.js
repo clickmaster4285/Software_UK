@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
     title: city.metaTitle || city.title,
     description: city.metaDesc || `Custom software development services in ${city.city.replace(/-/g, ' ')}.`,
     alternates: {
-      canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/cities/${slug}`,
+      canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/locations/${slug}`,
     },
   };
 }
@@ -51,7 +51,7 @@ export default async function CityDetailPage({ params }) {
     dateModified: city.lastUpdated || undefined,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://clickmasterssoftwaredevelopmentcompany.co.uk/cities/${slug}`,
+      '@id': `https://clickmasterssoftwaredevelopmentcompany.co.uk/locations/${slug}`,
     },
   };
 
