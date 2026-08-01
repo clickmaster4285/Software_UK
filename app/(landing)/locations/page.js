@@ -75,7 +75,7 @@ function PaginationBar({ currentPage, totalPages }) {
     const params = new URLSearchParams();
     if (page > 1) params.set('page', String(page));
     const qs = params.toString();
-    return `/cities${qs ? `?${qs}` : ''}`;
+    return `/locations${qs ? `?${qs}` : ''}`;
   };
 
   return (
