@@ -61,7 +61,7 @@ export function CityDetailClient({ city, relatedCities }) {
           <nav className="flex items-center gap-2 text-sm text-white/50 mb-8">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight className="w-3.5 h-3.5" />
-            <Link href="/cities" className="hover:text-white transition-colors">City Guides</Link>
+            <Link href="/locations" className="hover:text-white transition-colors">Location Guides</Link>
             <ChevronRight className="w-3.5 h-3.5" />
             <span className="text-white/90 truncate max-w-50 md:max-w-none">
               {cityDisplay}
@@ -351,7 +351,7 @@ export function CityDetailClient({ city, relatedCities }) {
                   Explore Other City Guides
                 </h2>
               </div>
-              <Link href="/cities" className="hidden md:flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all">
+              <Link href="/locations" className="hidden md:flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all">
                 View All <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -360,7 +360,7 @@ export function CityDetailClient({ city, relatedCities }) {
               {relatedCities.map((rc, idx) => (
                 <Link
                   key={rc.id}
-                  href={`/cities/${rc.slug}`}
+                  href={`/locations/${rc.slug}`}
                   className="group bg-white rounded-xl border border-border hover:border-accent hover:-translate-y-1 transition-all duration-250 shadow-xs hover:shadow-md p-6"
                 >
                   <div className="flex items-center gap-2 mb-3">
