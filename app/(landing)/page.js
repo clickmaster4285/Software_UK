@@ -10,8 +10,8 @@ const TrustedBy = dynamic(() => import("@/app/(landing)/home/TrustedBy"), { ssr:
 const Portfolio = dynamic(() => import("@/app/(landing)/home/Portfolio"), { ssr: true });
 const StatsBanner = dynamic(() => import("@/components/StatsBanner"), { ssr: true });
 const About = dynamic(() => import("@/app/(landing)/home/About"), { ssr: true });
-const SolutionCTA = dynamic(() => import("@/app/(landing)/home/SolutionCTA"), { ssr: true });
 const Services = dynamic(() => import("@/app/(landing)/home/Services"), { ssr: true });
+const SolutionCTA = dynamic(() => import("@/app/(landing)/home/SolutionCTA"), { ssr: true });
 const MidCTA = dynamic(() => import("@/app/(landing)/home/MidCTA"), { ssr: true });
 const Pricing = dynamic(() => import("@/app/(landing)/home/Pricing"), { ssr: true });
 const Benefits = dynamic(() => import("@/app/(landing)/home/Benefits"), { ssr: true });
@@ -34,7 +34,7 @@ const TechStackSection = dynamic(() =>
 export default function Home() {
   return (
     <>
-      <JsonLd schema={webPageSchema('ClickMasters — Software Development Company in UK', 'ClickMasters is a UK software development company delivering bespoke web, mobile, SaaS, and AI-powered systems. Custom software that drives business growth.', '/')} />
+      <JsonLd schema={webPageSchema('Software Development Company UK - ClickMasters', 'ClickMasters delivers software development services for businesses needing custom software, web and mobile apps, SaaS, AI and scalable digital solutions.', '/')} />
       <JsonLd schema={serviceSchema('Custom Software Development', 'We build bespoke web, mobile, SaaS, and AI-powered systems to drive business growth.', '/')} />
       <JsonLd schema={homepageFaqSchema} />
       <Hero />
@@ -43,8 +43,8 @@ export default function Home() {
       <StatsBanner />
       <About />
       <TechStackSection />
-      <SolutionCTA />
       <Services />
+      <SolutionCTA />
       <MidCTA />
       <Pricing />
       <Benefits />

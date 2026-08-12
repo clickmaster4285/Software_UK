@@ -56,15 +56,52 @@ export default function MidCTA() {
                   </motion.div>
 
                   <h2 className="font-heading font-bold text-4xl md:text-7xl text-white mb-8 tracking-tighter leading-[1.05]">
-                     Building the Future of <br />
-                     <span className="text-accent italic font-serif">Digital Innovation.</span>
+                     Software Development That Drives <br />
+                     <span className="text-accent italic font-serif">Digital Growth.</span>
                   </h2>
 
-                  <p className="text-white/60 font-body text-lg md:text-xl mb-14 max-w-2xl mx-auto leading-relaxed">
-                     Don&apos;t just launch software. Deploy a competitive advantage.
-                     Our high-performance systems are built to scale with your ambition.
+                  <p className="text-white/60 font-body text-lg md:text-xl max-w-6xl mb-4 mx-auto leading-relaxed">
+                     Effective software development should create more than another piece of technology. It should help your business achieve something better.
+                     That might mean creating a new digital revenue opportunity, improving the customer experience, making operations more efficient or giving an existing product room to grow.
                   </p>
 
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-4 gap-6">
+                     <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
+                        <h3 className="text-xl font-bold text-white mb-4">Launch new digital products</h3>
+                        <p className="text-white/60 font-body text-lg">Create a new digital revenue opportunity</p>
+                     </div>
+                     <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
+                        <h3 className="text-xl font-bold text-white mb-4">Improve customer and user experiences</h3>
+                        <p className="text-white/60 font-body text-lg">Make your products more user-friendly</p>
+                     </div>
+                     <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
+                        <h3 className="text-xl font-bold text-white mb-4">Automate repetitive processes</h3>
+                        <p className="text-white/60 font-body text-lg">Save time and resources</p>
+                     </div>
+                     <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
+                        <h3 className="text-xl font-bold text-white mb-4">Increase operational efficiency</h3>
+                        <p className="text-white/60 font-body text-lg">Streamline your workflows</p>
+                     </div>
+                     <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
+                        <h3 className="text-xl font-bold text-white mb-4">Connect systems and information</h3>
+                        <p className="text-white/60 font-body text-lg">Integrate your tools and platforms</p>
+                     </div>
+                     <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
+                        <h3 className="text-xl font-bold text-white mb-4">Introduce AI-powered capabilities</h3>
+                        <p className="text-white/60 font-body text-lg">Leverage the power of AI</p>
+                     </div>
+                     <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
+                        <h3 className="text-xl font-bold text-white mb-4">Improve existing digital platforms</h3>
+                        <p className="text-white/60 font-body text-lg">Upgrade your current software</p>
+                     </div>
+                     <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
+                        <h3 className="text-xl font-bold text-white mb-4">Build technology that can scale with demand</h3>
+                        <p className="text-white/60 font-body text-lg">Create scalable solutions</p>
+                     </div>
+                  </div>
+                  <p className="text-white/60 font-body text-lg md:text-xl my-4  max-w-4xl mx-auto leading-relaxed"> 
+                      The technology may change from project to project. The objective stays the same: create software that delivers useful, lasting value.
+                  </p>
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                      <Link
                         href="/contact"

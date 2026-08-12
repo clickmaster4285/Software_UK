@@ -41,7 +41,7 @@ const serviceRoutes = {
 const services = [
   {
     title: 'Software Development',
-    description: 'Custom software solutions tailored to your business needs.',
+    description: 'Build software around the way your business actually works. We create custom solutions for unique processes, workflows, users and functionality where off-the-shelf software is not the right fit.',
     Icon: ShieldCheck,
     AltIcon: Globe2,
     image: softwareimg,
@@ -51,7 +51,7 @@ const services = [
   },
   {
     title: 'Web Development',
-    description: 'Modern web applications with responsive design and seamless user experience.',
+    description: 'Create modern websites and digital experiences designed around your brand, users, performance and commercial goals.',
     Icon: Globe2,
     AltIcon: Server,
     image: webdevelopment,
@@ -243,15 +243,15 @@ export default function Services() {
 
       <div className="relative w-full px-6 xl:px-12 max-w-[96vw] lg:max-w-[90vw] mx-auto">
         {/* Heading */}
-        <div className="text-center mb-24 services-heading-fade">
+        <div className="text-center flex flex-col items-center mb-24 services-heading-fade">
           <h2 className="mt-6 text-3xl md:text-5xl font-bold text-foreground tracking-tight">
-            Innovating your{' '}
+            Software Development Services {' '}
             <span className="text-accent">
-              digital future
+              Built for What&apos;s Next
             </span>
           </h2>
-          <p className="mt-6 text-lg text-muted-foreground/80 font-medium">
-            We blend cutting-edge technology with world-class design to build products that define industries.
+          <p className="mt-6 text-lg max-w-5xl text-muted-foreground/80 font-medium">
+            Our software development services help businesses create new digital products, improve existing platforms and build technology around specific commercial and operational requirements.
           </p>
         </div>
 

@@ -16,20 +16,20 @@ export default function About() {
                >
                   <span className="section-label mb-6">Our Philosophy</span>
                   <h2 className="font-heading font-bold text-3xl md:text-5xl text-primary mb-6 leading-tight">
-                     About ClickMasters
+                     Software Development Firm Built Around Partnership
                   </h2>
                   <h3 className="font-heading font-semibold text-xl md:text-2xl text-accent mb-6">
                      We Do not Just Build Software - We Build Revenue Systems
                   </h3>
                   <div className="space-y-4 text-text-body font-body text-lg leading-relaxed">
                      <p>
-                        A results-driven software house building custom web apps, mobile apps, and enterprise software that powers real business growth.
+                        The right software development firm should bring more than technical knowledge to a project. It should understand what you are trying to achieve and why it matters.
                      </p>
                      <p>
-                        Our team of experienced software developers works as a seamless extension of your business - translating complex requirements into reliable, scalable digital products that perform under real-world conditions.
+                        Your team brings the knowledge of your business, customers and market. ClickMasters brings software strategy, product thinking and technical expertise.
                      </p>
                      <p>
-                        As a full-service software house, we handle everything from discovery and UI/UX design to backend development, QA testing, cloud deployment, and long-term maintenance.
+                        Working together allows us to make better decisions about what should be built, what matters most and how the product should develop over time.
                      </p>
                   </div>
 

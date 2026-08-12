@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import { StrategyCallModal } from "@/components/StrategyCallModal";
+import Image from "next/image";  
 
 export default function Hero() {
    return (
@@ -27,28 +26,27 @@ export default function Hero() {
 
          <div className="relative z-20 max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 py-24 w-full">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_0.8fr] gap-10 items-center">
-               <div
-                  className="text-left hero-fade-in"
-               >
+               <div className="text-left hero-fade-in" >
                   <h1 className="font-heading font-bold text-3xl md:text-4xl lg:text-6xl text-white mb-6 leading-tight">
-                     Software Development Company <span className="italic font-semibold "> whose mission is  <span /> </span><span className="text-accent">We Build. You Grow</span>
+                     Software Development Company UK -<span className="text-accent">We Build. You Grow</span>
                   </h1>
+                  <p className="text-gray-200 font-body text-lg md:text-xl max-w-3xl mb-2">
+                     Clickmasters is a software development company UK businesses can rely on to turn ideas, requirements and growth opportunities into practical digital products. We deliver software development services across custom software, websites, applications, SaaS platforms, enterprise systems and AI-powered solutions, all built around real users, business needs and long-term digital growth.
+                  </p>
                   <p className="text-gray-200 font-body text-lg md:text-xl mb-10 max-w-3xl">
-                     Creating the future of business. We&apos;re a Software development Company delivering bespoke web, mobile, SaaS, and AI-powered systems including AI monitoring solutions powering a global market
+                     Whether you have a clear product idea, an existing system that needs improving or an opportunity to work smarter with technology, we bring strategy, design and development together to turn your requirements into working software.
                   </p>
                   <div className="flex flex-wrap gap-4 mb-10">
-                     <StrategyCallModal
-                        trigger={
-                           <button className="px-8 py-4 bg-accent text-white font-body font-bold text-lg rounded-lg hover:bg-accent-hover transition-all transform hover:scale-105 shadow-xl">
-                              Get Free Strategy Call
-                           </button>
-                        }
-                     />
+                     <Link
+                        href="/contact"
+                        className="px-8 py-4 bg-accent text-white font-body font-bold text-lg rounded-lg hover:bg-accent-hover transition-all transform hover:scale-105 shadow-xl">
+                        Start Your Software Project
+                     </Link>
                      <Link
                         href="/contact"
                         className="px-8 py-4 border-2 border-white text-white font-body font-bold text-lg rounded-lg hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-xl"
                      >
-                        Request Proposal
+                        View Our Work
                      </Link>
                   </div>
                   <div className="flex items-center gap-4">

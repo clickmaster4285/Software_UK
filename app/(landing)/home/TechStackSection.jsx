@@ -78,10 +78,10 @@ export function TechStackSection() {
             <span className="section-label">Technology Stack</span>
           </div>
           <h3 className="text-3xl lg:text-5xl font-bold text-text-light mb-6 tracking-tight">
-            Modern Tech Stack for <span className="text-accent">Future-Ready</span> Solutions
+            Technology Chosen With  <span className="text-accent">Purpose</span> 
           </h3>
-          <p className="text-text-muted max-w-2xl mx-auto">
-             A comprehensive ecosystem of 35+ cutting-edge technologies powering scalable, high-performance digital products.
+          <p className="text-gray-300 max-w-4xl mx-auto">
+             Technology should support the product rather than define it. We work with modern frontend, backend, mobile, cloud, database, AI and machine learning technologies, including React, Next.js, Node.js, Python, .NET, Java, Flutter, React Native, AWS and Microsoft Azure. The final technology stack depends on what the software needs to achieve, how people will use it, what systems it needs to connect with and how it may need to scale.
           </p>
         </motion.div>
       </div>
