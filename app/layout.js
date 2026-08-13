@@ -20,7 +20,7 @@ const dmSans = DM_Sans({
 export const metadata = {
   title: "Software Development Company UK - ClickMasters",
   description: "ClickMasters delivers software development services for businesses needing custom software, web and mobile apps, SaaS, AI and scalable digital solutions.",
-  keywords: ["software development UK", "custom software development", "web application development", "mobile app development", "SaaS development", "AI software development"],
+  keywords: ["Software Development", "Software Development Company", "Software Development Company UK", "Software Development Agency", "Software Development Firm", "software development services"],
   openGraph: {
     title: "Software Development Company UK - ClickMasters",
     description: "ClickMasters delivers software development services for businesses needing custom software, web and mobile apps, SaaS, AI and scalable digital solutions.",
@@ -37,7 +37,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en" data-scroll-behavior="smooth"
+      lang="en-gb" data-scroll-behavior="smooth"
       className={`${sora.variable} ${dmSans.variable} antialiased`}
     >
 
