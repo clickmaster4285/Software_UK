@@ -29,7 +29,7 @@ export default function AboutPage() {
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-primary/50 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-black/80 mix-blend-multiply" />
         </div>
 
         <div className="relative z-10 container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 py-20 text-center">
@@ -288,17 +288,20 @@ export default function AboutPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
+            {[
+              { image: '/contact/support-women.webp', name: 'Team Member Name', role: 'Leadership Role' },
+              { image: '/contact/support-person.webp', name: 'Team Member Name', role: 'Leadership Role' },
+              { image: '/contact/support-team.webp', name: 'Team Member Name', role: 'Leadership Role' }
+            ].map((member, i) => (
               <div key={i} className="bg-white rounded-3xl p-6 border border-black/10 shadow-sm text-center hover:-translate-y-1 transition-transform duration-300">
-                <div className="w-32 h-32 mx-auto bg-surface rounded-full mb-6 border-4 border-white shadow-md flex items-center justify-center overflow-hidden">
-                   <div className="w-full h-full bg-gray-100" />
+                <div className="w-32 h-32 mx-auto bg-surface rounded-full mb-6 border-4 border-white shadow-md relative overflow-hidden">
+                   <Image src={member.image} alt={member.name} fill className="object-cover" />
                 </div>
-                <h4 className="font-bold text-lg mb-1">Team Member Name</h4>
-                <p className="text-accent text-sm mb-4">Leadership Role</p>
+                <h4 className="font-bold text-lg mb-1">{member.name}</h4>
+                <p className="text-accent text-sm mb-4">{member.role}</p>
                 <p className="text-sm text-muted-foreground mb-6 line-clamp-3">
-                  Implementation note: Add your real leadership/team members here with name, role, photograph, 2–3 line professional biography and LinkedIn profile where available.
+                  Implementation note: Add your real leadership/team members here with name, role, photograph, 2–3 line professional biography.
                 </p>
-                <Link href="#" className="text-blue-600 hover:underline text-sm font-medium">LinkedIn Profile</Link>
               </div>
             ))}
           </div>

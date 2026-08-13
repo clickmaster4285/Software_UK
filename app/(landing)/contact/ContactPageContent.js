@@ -149,7 +149,7 @@ export default function ContactPageContent() {
     <main className="min-h-screen bg-background relative overflow-x-hidden">
       <JsonLd schema={contactPageSchema()} />
 
-      <section className="relative min-h-[75vh] flex items-center justify-center">
+      <section className="relative min-h-[80vh] flex items-end justify-center">
         <div className="absolute inset-0 z-0">
           <Image
             src="/contact/contact-bg.webp"
@@ -166,27 +166,25 @@ export default function ContactPageContent() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto text-center"
+            className="max-w-4xl mx-auto text-left"
           >
-            <nav className="flex items-center justify-center gap-2 text-sm text-white/80 mb-8">
-              <Link href="/" className="hover:text-accent transition-colors">Home</Link>
-              <ChevronRight className="w-4 h-4" />
-              <span className="font-medium text-white">Contact Us</span>
-            </nav>
-
             <h1 className="text-5xl xl:text-[4.7rem] font-bold mb-6 tracking-tight font-heading">
-              <span className="text-white">Let&apos;s Build Something</span>
-              <span className="text-accent block mt-2">Great Together</span>
+              <span className="text-white">Let&apos;s Talk About Your</span>
+              <span className="text-accent block mt-2">Software Project</span>
             </h1>
 
-            <p className="text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
-              Ready to transform your business? Share your details — we&apos;ll respond within one business day with a personalized roadmap.
+            <p className="text-xl text-white/90 max-w-7xl mx-auto mb-10 leading-relaxed">
+              Have an idea you want to build, an existing product you want to improve or a digital opportunity you are ready to explore?
+              <br />
+              Tell ClickMasters what you are working on.
+              <br />
+              You do not need a complete technical specification before contacting us. Share the idea, requirement or problem you have today, and we can start by understanding what you want to achieve.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="#contact-form">
                 <Button className="px-8 py-5 bg-accent text-white font-medium rounded-xl hover:bg-accent-hover transition-colors flex items-center gap-2">
-                  Send us a Message
+                  Discuss Your Project
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
