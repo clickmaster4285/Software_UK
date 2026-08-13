@@ -11,28 +11,32 @@ import { HelpCircle, MessageCircle } from 'lucide-react';
 
 const faqs = [
   {
-    question: "How much does custom software development cost?",
-    answer: "The cost varies based on project scope, complexity, and timeline. We provide detailed quotes after understanding your requirements and conducting a thorough discovery phase.",
+    question: "What does a software development company do?",
+    answer: "A software development company helps businesses plan, design, build, test and improve digital products such as custom software, websites, applications, SaaS platforms and AI-powered systems.",
   },
   {
-    question: "How long does it take to build a custom application?",
-    answer: "Timeline depends on project size. Simple apps take 2-3 months, while enterprise solutions can take 6-12 months. We use agile methodology to deliver value iteratively.",
+    question: "What software development services does ClickMasters provide?",
+    answer: "Our software development services include custom software development, website development, application development, AI software development, SaaS development, enterprise software development and cloud development.",
   },
   {
-    question: "What technologies does ClickMasters use?",
-    answer: "We use modern technologies including React, Next.js, Node.js, Python, TypeScript, and cloud platforms like AWS and Azure to ensure scalability and performance.",
+    question: "Why work with a software development agency?",
+    answer: "A software development agency gives businesses access to product planning, design and engineering expertise for building or improving digital products without developing every capability internally.",
   },
   {
-    question: "Do you provide post-launch support?",
-    answer: "Yes, we offer ongoing support, security updates, and maintenance services. We ensure your software stays up-to-date and scales with your business needs.",
+    question: "Can you develop software around our requirements?",
+    answer: "Yes. Software can be designed around specific users, workflows, processes, integrations and functionality rather than relying entirely on standard software.",
   },
   {
-    question: "Can you work with international clients?",
-    answer: "Yes, we serve clients globally. We use remote collaboration tools and async workflows to ensure seamless communication across all time zones.",
+    question: "Can you develop AI-powered software?",
+    answer: "Yes. AI capabilities can include AI agents, chatbots, LLM-powered functionality, intelligent automation and integrations where they provide genuine value.",
   },
   {
-    question: "Do you offer white-label development?",
-    answer: "Yes, we partner with agencies and consulting firms to provide white-label software development services with strict NDA compliance.",
+    question: "Can you improve existing software?",
+    answer: "Yes. Existing software can be enhanced, extended, integrated or modernised depending on its technology, limitations and future requirements.",
+  },
+  {
+    question: "Do you provide ongoing software support?",
+    answer: "Yes. Ongoing development can include maintenance, updates, optimisation, new functionality and further improvements as the product evolves.",
   },
 ];
 

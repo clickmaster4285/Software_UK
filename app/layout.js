@@ -18,12 +18,12 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-  title: "ClickMasters — Software Development Company in UK",
-  description: "ClickMasters is a UK software development company delivering bespoke web, mobile, SaaS, and AI-powered systems. Custom software that drives business growth.",
-  keywords: ["software development", "web apps", "mobile apps", "enterprise software", "SaaS", "AI solutions"],
+  title: "Software Development Company UK - ClickMasters",
+  description: "ClickMasters delivers software development services for businesses needing custom software, web and mobile apps, SaaS, AI and scalable digital solutions.",
+  keywords: ["software development UK", "custom software development", "web application development", "mobile app development", "SaaS development", "AI software development"],
   openGraph: {
-    title: "Best Software Development Company in UK",
-    description: "Creating the future of business. We’re a Software development Company delivering bespoke web, mobile, SaaS, and AI-powered systems including AI monitoring solutions powering a global market",
+    title: "Software Development Company UK - ClickMasters",
+    description: "ClickMasters delivers software development services for businesses needing custom software, web and mobile apps, SaaS, AI and scalable digital solutions.",
     type: "website",
   },
   alternates: {

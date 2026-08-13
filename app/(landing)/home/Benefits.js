@@ -16,48 +16,48 @@ const benefits = [
   {
     stat: "1,860+",
     label: "Projects Delivered",
-    title: "Custom Software",
-    description: "Tailored software built for your business. Web apps, desktop applications, and backend systems that scale.",
+    title: "Business-First Thinking",
+    description: "We start with what the software needs to achieve before deciding how it should be built.",
     icon: BarChart3,
     size: "large"
   },
   {
     stat: "3,500+",
     label: "Happy Clients",
-    title: "Web Applications",
-    description: "Modern web apps with React, Next.js, and cloud hosting. Responsive, fast, and secure.",
+    title: "Built Around Your Requirements",
+    description: "Every project has different users, objectives and technical needs. We shape the solution around them.",
     icon: Users,
     size: "small"
   },
   {
-    stat: "75+",
-    label: "Industry Awards",
-    title: "Mobile Solutions",
-    description: "Native and cross-platform mobile apps for iOS and Android. From MVP to enterprise.",
+    stat: "",
+    label: "",
+    title: "AI-Ready Expertise",
+    description: "We combine traditional software engineering with modern AI capabilities where intelligent technology creates genuine value.",
     icon: Trophy,
     size: "small"
   },
   {
     stat: "5+",
     label: "Years Experience",
-    title: "ERP & Automation",
-    description: "ERP, CRM, and workflow automation. Integrate with your existing systems and processes.",
+    title: "Clear Collaboration",
+    description: "We keep priorities, requirements and development stages understandable so you remain connected to the project.",
     icon: Calendar,
     size: "small"
   },
   {
-    stat: "API",
+    stat: "",
     label: "Expertise",
-    title: "API & Integrations",
-    description: "REST APIs and legacy system modernization. Connect your software ecosystem seamlessly.",
+    title: "Designed to Evolve",
+    description: "We consider how your software may need to support more users, functionality, integrations and opportunities over time.",
     icon: Cpu,
     size: "large"
   },
   {
     stat: "24/7",
     label: "Reliability",
-    title: "Maintenance & Support",
-    description: "Ongoing updates and security patches. Keep your software running smoothly at all times.",
+    title: "Support Beyond Launch",
+    description: "Software can continue to evolve through maintenance, optimisation, new features and further development.",
     icon: ShieldCheck,
     size: "small"
   },
@@ -76,10 +76,12 @@ export default function Benefits() {
             <span>Why ClickMasters</span>
           </div>
           <h2 className="font-heading font-bold text-3xl md:text-5xl text-primary mb-4 tracking-tight">
-            High-Performance <span className="text-accent">Software Solutions</span>
+            Why Choose{" "}
+            <span className="text-accent">ClickMasters </span>as Your{" "}
+            <span className="text-accent">Software Development Company?</span>
           </h2>
-          <p className="text-text-body font-body max-w-2xl mx-auto text-lg leading-relaxed">
-            We combine technical excellence with strategic thinking to deliver software that drives real business growth.
+          <p className="text-text-body font-body max-w-4xl mx-auto text-lg leading-relaxed">
+            Choosing a software development company means choosing the team behind your product.
           </p>
         </div>
 
