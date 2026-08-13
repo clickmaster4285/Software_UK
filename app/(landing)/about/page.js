@@ -3,155 +3,24 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ChevronRight, ArrowRight, CheckCircle, Sparkles } from 'lucide-react';
-import { Suspense } from 'react';
+import { ArrowRight, Target, Users, Lightbulb, Zap, Rocket, MessageSquare, Cpu, Briefcase, Compass } from 'lucide-react';
 import JsonLd from '@/components/JsonLd';
 import { aboutPageSchema } from '@/app/metadata-config';
+import { Button } from '@/components/ui/button';
+import { Suspense } from 'react';
 
 // Import reusable components from main-service
 import { TechStackSection } from '@/components/landing/main-service/TechStackSection';
 import { TrustedClientsSection } from '@/components/landing/main-service/TrustedClientsSection';
 import { FinalCTA } from '@/components/landing/main-service/finalCta';
 
-// Import Services component (the clickable cards)
-import Services from '@/app/(landing)/home/Services';
-import { Button } from '@/components/ui/button';
-
-// About page specific data
-const stats = [
-  { value: '200+', label: 'Projects Delivered' },
-  { value: '50+', label: 'Enterprise Clients' },
-  { value: '10+', label: 'Years Experience' },
-  { value: '24/7', label: 'Support' },
-  { value: '99.9%', label: 'Uptime Guarantee' },
-];
-
-const milestones = [
-  { year: '2015', title: 'Founded', desc: 'Started with a vision to transform businesses through technology' },
-  { year: '2018', title: 'First Enterprise Client', desc: 'Land our first Fortune 500 partnership' },
-  { year: '2020', title: 'Global Expansion', desc: 'Opened offices in Europe and Asia' },
-  { year: '2022', title: '100+ Projects', desc: 'Reached milestone of 100 successful projects' },
-  { year: '2024', title: 'AI Innovation Award', desc: 'Recognized for excellence in AI solutions' },
-  { year: '2025', title: '200+ Clients', desc: 'Serving over 200 clients worldwide' },
-];
-
-const values = [
-  {
-    icon: (
-      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
-    ),
-    title: "Agile Development",
-    desc: "Sprint-based delivery with full transparency. We ship faster, iterate smarter, and keep you in control.",
-    color: '#3b82f6',
-  },
-  {
-    icon: (
-      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-      </svg>
-    ),
-    title: "Scalable Architecture",
-    desc: "Built on proven stacks — React, Node.js, and cloud-native infrastructure — engineered to scale without rewrites.",
-    color: '#8b5cf6',
-  },
-  {
-    icon: (
-      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-      </svg>
-    ),
-    title: "Enterprise Security",
-    desc: "Every product follows OWASP standards, GDPR best practices, and rigorous QA for your protection.",
-    color: '#10b981',
-  },
-  {
-    icon: (
-      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-      </svg>
-    ),
-    title: "24/7 Dedicated Support",
-    desc: "We stay with you post-launch — monitoring performance, deploying updates, resolving issues around the clock.",
-    color: '#f59e0b',
-  },
-];
-
-// Animated counter component
-function StatCounter({ value, label, index }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      viewport={{ once: true }}
-      className="text-center"
-    >
-      <div className="text-4xl md:text-5xl font-bold text-foreground mb-2 font-heading">
-        {value}
-      </div>
-      <div className="text-sm text-muted-foreground font-medium">{label}</div>
-    </motion.div>
-  );
-}
-
-// Value card component
-function ValueCard({ value, index }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
-      viewport={{ once: true }}
-      className="group p-8 rounded-3xl bg-white/40 backdrop-blur-xl border border-black/20 hover:border-accent/30 transition-all duration-500 hover:bg-white/60"
-    >
-      <div
-        className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110"
-        style={{ background: `linear-gradient(135deg, ${value.color}20, ${value.color}40)` }}
-      >
-        <div style={{ color: value.color }}>{value.icon}</div>
-      </div>
-      <h3 className="text-xl font-bold text-foreground mb-3 font-heading">{value.title}</h3>
-      <p className="text-muted-foreground leading-relaxed">{value.desc}</p>
-    </motion.div>
-  );
-}
-
-// Milestone component
-function Milestone({ milestone, index }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, x: -20 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      viewport={{ once: true }}
-      className="flex gap-6"
-    >
-      <div className="flex flex-col items-center">
-        <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center text-accent font-bold text-lg">
-          {milestone.year.slice(-2)}
-        </div>
-        {index < milestones.length - 1 && (
-          <div className="w-px h-24 bg-linear-to-b from-accent/50 to-transparent mt-2" />
-        )}
-      </div>
-      <div className="pb-12">
-        <h4 className="text-lg font-bold text-foreground mb-1">{milestone.title}</h4>
-        <p className="text-muted-foreground text-sm">{milestone.desc}</p>
-      </div>
-    </motion.div>
-  );
-}
-
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background relative overflow-x-hidden">
       <JsonLd schema={aboutPageSchema()} />
 
-      {/* ── Hero Section with Background Image ── */}
+      {/* ── Hero Section ── */}
       <section className="relative min-h-[80vh] flex items-center justify-center">
-        {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/assets/aboutus.webp"
@@ -160,72 +29,30 @@ export default function AboutPage() {
             priority
             className="object-cover"
           />
+          <div className="absolute inset-0 bg-black/80 mix-blend-multiply" />
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 py-20">
+        <div className="relative z-10 container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 py-20 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-[96vw] lg:max-w-[90vw] mx-auto text-center"
+            className="max-w-4xl mx-auto"
           >
-            {/* Breadcrumb */}
-            <nav className="flex items-center justify-center gap-2 text-sm text-white mb-8">
-              <Link href="/" className="hover:text-accent transition-colors">Home</Link>
-              <ChevronRight className="w-4 h-4" />
-              <span className="font-medium">About Us</span>
-            </nav>
-
-            <h1 className="text-5xl xl:text-[4.7rem] font-bold mb-6 tracking-tight font-heading">
-
-              {/* "Building the Future of" — crayon texture through the letters */}
-              <span className="text-white block"
-              // style={{
-              //   backgroundImage: 'url(/assets/white-crayon-removebg-preview.webp)',
-              //   backgroundSize: 'contain',
-              //   backgroundPosition: 'right',
-              //   WebkitBackgroundClip: 'text',
-              //   WebkitTextFillColor: 'transparent',
-              //   backgroundClip: 'text',
-              //   color: 'transparent',
-              //   display: 'block',
-              // }}
-              >
-                Building the Future of
-              </span>
-
-              {/* "Digital Innovation" — crayon image as solid background behind text */}
-              <span className="text-accent"
-                style={{
-                  backgroundImage: 'url(/assets/white-crayon-removebg-preview.webp)',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  display: 'inline-block',
-                  padding: '0.1em 0.4em',
-                  borderRadius: '12px',
-                  marginTop: '0.15em',
-                }}
-              >
-                Digital Innovation
-              </span>
-
+            <h1 className="text-5xl xl:text-7xl font-bold mb-6 tracking-tight font-heading text-white">
+              About Clickmasters
             </h1>
-
-            <p className="text-xl text-white max-w-4xl mx-auto mb-10 leading-relaxed">
-              We craft powerful software solutions that help companies work smarter, scale faster, and achieve more — everywhere.
+            <p className="text-xl text-white/90 mb-10 leading-relaxed">
+              ClickMasters brings software strategy, product thinking and engineering together to turn ideas into useful digital products. We work with businesses that need more than code. They need a development partner capable of understanding what they want to achieve, shaping the right technical direction and building software around real users and practical requirements.
             </p>
-
+            <p className="text-lg text-white/80 mb-10">
+              From new digital products to existing systems ready for their next stage, our focus is simple: build technology with a clear purpose.
+            </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact-us">
-                <Button className="px-8 py-5 bg-accent text-white font-medium rounded-xl hover:bg-accent-hover transition-colors flex items-center gap-2">
-                  Get Started
-                  <ArrowRight className="w-5 h-5" />
-                </Button>
-              </Link>
-              <Link href="/case-studies">
-                <Button size="lg" variant="outline">
-                  View Our Work
+                <Button className="btn-primary px-8 py-6 text-lg rounded-xl">
+                  Discuss Your Project
+                  <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
             </div>
@@ -233,278 +60,388 @@ export default function AboutPage() {
         </div>
       </section>
 
-
-      {/* ── Stats Section ── */}
-      <section className="py-20 bg-surface relative">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-25" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-25" />
+      {/* ── We Build Software With Purpose & Thinking ── */}
+      <section className="py-24 relative overflow-hidden bg-background">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-accent/10 rounded-full blur-[120px]" />
+          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-[120px]" />
         </div>
+        
+        <div className="container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-medium text-sm mb-6 border border-accent/20 shadow-[0_0_15px_rgba(var(--accent-rgb),0.2)]">
+                 <Target className="w-4 h-4" /> Our Philosophy
+              </div>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-8 leading-tight">
+                We Build Software With <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-600">Purpose</span>
+              </h2>
+              <div className="space-y-6">
+                <p className="text-muted-foreground leading-relaxed text-lg flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-accent shrink-0" />
+                  <span>Technology works best when it solves a real problem. That is why we do not begin a project by deciding which framework, platform or trend to use.</span>
+                </p>
+                <p className="text-muted-foreground leading-relaxed text-lg flex items-start gap-3">
+                  <span className="w-2 h-2 mt-2 rounded-full bg-accent shrink-0" />
+                  <span>We begin by understanding the business, the people who will use the software and the outcome the project needs to achieve.</span>
+                </p>
+                <div className="p-6 rounded-2xl bg-surface border border-border mt-8 border-l-4 border-l-accent shadow-sm">
+                  <p className="text-foreground font-medium text-lg italic">
+                    "Once the goal is clear, we shape the software around it. Your requirement comes first. Technology follows."
+                  </p>
+                </div>
+              </div>
+            </motion.div>
 
-        <div className="container mx-auto max-w-7xl px-6 relative z-10">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-            {stats.map((stat, i) => (
-              <StatCounter key={stat.label} value={stat.value} label={stat.label} index={i} />
-            ))}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="relative group"
+            >
+              <div className="absolute -inset-1 bg-gradient-to-r from-accent to-purple-600 rounded-[2rem] blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative bg-white/60 backdrop-blur-2xl border border-white/40 p-10 lg:p-14 rounded-[2rem] shadow-xl transition-all duration-500">
+                <h3 className="text-3xl font-bold font-heading mb-8 text-foreground">
+                  The Thinking Behind <br/><span className="text-accent">ClickMasters</span>
+                </h3>
+                <div className="space-y-6 text-muted-foreground">
+                  <p className="leading-relaxed">
+                    ClickMasters was built around a straightforward idea: software development should connect technical expertise with business understanding.
+                  </p>
+                  <p className="leading-relaxed">
+                    Building functionality is only part of a successful software project. The bigger challenge is deciding what should be built, why it matters and how the product should continue to develop as requirements change.
+                  </p>
+                  <p className="leading-relaxed font-medium text-foreground bg-accent/5 p-4 rounded-xl border border-accent/10">
+                    We combine software engineering, product thinking, design and emerging technologies such as artificial intelligence to create solutions that are useful now and capable of evolving later.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-
-      {/* ── Our Journey Section ── */}
-      <section className="py-20 relative overflow-hidden" style={{ background: 'oklch(0.99 0.005 250)' }}>
-
-        {/* ── Animated wave background ── */}
-        <div className="absolute inset-0 pointer-events-none z-0" aria-hidden="true">
-
-          {/* Drifting blobs */}
-          <div className="blob-drift absolute -top-32 -left-32 w-125 h-125 rounded-full opacity-30"
-            style={{ background: 'radial-gradient(circle, oklch(0.5675 0.2072 318.97 / 0.18) 0%, transparent 70%)' }} />
-          <div className="blob-drift absolute -bottom-32 -right-32 w-112.5 h-112.5 rounded-full opacity-25"
-            style={{ background: 'radial-gradient(circle, oklch(0.5675 0.2072 318.97 / 0.14) 0%, transparent 70%)', animationDelay: '-6s' }} />
-
-          {/* Wave 1 — slow, accent tint */}
-          <svg className="wave-slow absolute bottom-0 left-0 w-full" style={{ height: '220px' }}
-            viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0,120 C240,180 480,60 720,120 C960,180 1200,60 1440,120 L1440,220 L0,220 Z"
-              fill="oklch(0.5675 0.2072 318.97 / 0.06)"
-            />
-          </svg>
-
-          {/* Wave 2 — mid speed, offset phase */}
-          <svg className="wave-mid absolute bottom-0 left-0 w-full" style={{ height: '180px' }}
-            viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0,90 C360,150 720,30 1080,90 C1260,120 1380,60 1440,90 L1440,180 L0,180 Z"
-              fill="oklch(0.5675 0.2072 318.97 / 0.05)"
-            />
-          </svg>
-
-          {/* Wave 3 — fast, top accent sweep */}
-          <svg className="wave-fast absolute top-0 left-0 w-full" style={{ height: '160px' }}
-            viewBox="0 0 1440 160" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M0,60 C180,100 360,20 540,60 C720,100 900,20 1080,60 C1260,100 1380,30 1440,60 L1440,0 L0,0 Z"
-              fill="oklch(0.28 0.02 250 / 0.04)"
-            />
-          </svg>
+      {/* ── Mission ── */}
+      <section className="py-32 bg-primary relative overflow-hidden flex items-center justify-center">
+        {/* Abstract Background Elements */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[url('/assets/grid.svg')] opacity-10 mix-blend-overlay" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/20 rounded-full blur-[150px]" />
+          {/* Big background text */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] font-bold font-heading text-white/[0.03] select-none pointer-events-none whitespace-nowrap">
+            MISSION
+          </div>
         </div>
-
-        <div className="container mx-auto max-w-7xl px-6 relative z-10">
+        
+        <div className="container mx-auto max-w-[85vw] md:max-w-[75vw]  px-6 text-center relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0, scale: 0.95, y: 30 }}
+            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="p-12 md:p-16 rounded-[3rem] bg-white/5 backdrop-blur-3xl border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)]"
           >
-            <span className="inline-flex items-center gap-2 text-accent text-xl font-medium mb-4">
-              Our Journey
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-heading">
-              From Vision to <span className="text-accent">Industry Leader</span>
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              A decade of innovation, growth, and transformative partnerships
+            <h2 className="text-4xl  md:text-5xl lg:text-6xl font-bold font-heading mb-8 text-white leading-tight">
+              Build Better <br/>
+              <span className="text-accent">Digital Possibilities</span>
+            </h2> 
+            <p className="text-xl md:text-2xl text-white/90  leading-relaxed font-medium">
+              Our mission is to help businesses use software as a practical driver of digital growth.
+            </p>
+            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-accent to-transparent mx-auto mb-8 opacity-50" />
+            <p className="text-lg text-white/70 mb-6 leading-relaxed max-w-2xl mx-auto">
+              We aim to make the journey from idea to working software clearer, more collaborative and more closely connected to the outcome the business wants to achieve.
+            </p>
+            <p className="text-lg text-white/70 leading-relaxed max-w-2xl mx-auto">
+              Whether the project starts with a fully defined specification or simply a problem that needs solving, we help turn the requirement into a clear development direction.
             </p>
           </motion.div>
-
-          {/* 3-column grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-10 items-start">
-
-            {/* ── LEFT COLUMN ── */}
-            <div className="flex flex-col gap-6">
-
-              {/* Why We Started */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="rounded-2xl border border-border bg-white/60 backdrop-blur-sm p-6 shadow-sm"
-              >
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-9 h-9 rounded-xl bg-accent/10 flex items-center justify-center">
-                    <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} className="text-accent"><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-                  </div>
-                  <h3 className="font-bold text-foreground font-heading">Why We Started</h3>
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Founded on a simple belief — every business deserves software that actually works for them. We started to bridge the gap between enterprise-grade tech and growing businesses.
-                </p>
-              </motion.div>
-
-              {/* Quick Facts */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="rounded-2xl border border-border bg-white/60 backdrop-blur-sm p-6 shadow-sm"
-              >
-                <h3 className="font-bold text-foreground font-heading mb-4">Quick Facts</h3>
-                <ul className="space-y-3">
-                  {[
-                    { label: 'Headquarters', value: 'Islamabad, Pakistan' },
-                    { label: 'Team Size', value: '50+ Engineers' },
-                    { label: 'Avg. Project Duration', value: '3–6 Months' },
-                    { label: 'Client Retention', value: '94%' },
-                  ].map(f => (
-                    <li key={f.label} className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">{f.label}</span>
-                      <span className="font-semibold text-foreground">{f.value}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-
-              {/* Industries Served */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="rounded-2xl border border-border bg-accent/5 p-6 shadow-sm"
-              >
-                <h3 className="font-bold text-foreground font-heading mb-4">Industries We Serve</h3>
-                <div className="flex flex-wrap gap-2">
-                  {['FinTech', 'Healthcare', 'Retail', 'Manufacturing', 'Education', 'Real Estate', 'Logistics', 'SaaS'].map(ind => (
-                    <span key={ind} className="px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-medium border border-accent/20">
-                      {ind}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
-            </div>
-
-            {/* ── CENTRE — Timeline ── */}
-            <div className="max-w-sm w-full mx-auto">
-              {milestones.map((milestone, i) => (
-                <Milestone key={milestone.year} milestone={milestone} index={i} />
-              ))}
-            </div>
-
-            {/* ── RIGHT COLUMN ── */}
-            <div className="flex flex-col gap-6">
-
-              {/* Live Metrics */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="rounded-2xl border border-border bg-white/60 backdrop-blur-sm p-6 shadow-sm"
-              >
-                <h3 className="font-bold text-foreground font-heading mb-4">At a Glance</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  {[
-                    { value: '200+', label: 'Projects', color: '#3b82f6' },
-                    { value: '50+', label: 'Clients', color: '#8b5cf6' },
-                    { value: '10+', label: 'Years', color: '#10b981' },
-                    { value: '99.9%', label: 'Uptime', color: '#f59e0b' },
-                  ].map(m => (
-                    <div key={m.label} className="rounded-xl p-4 text-center" style={{ background: `${m.color}12`, border: `1px solid ${m.color}30` }}>
-                      <div className="text-2xl font-bold font-heading" style={{ color: m.color }}>{m.value}</div>
-                      <div className="text-xs text-muted-foreground mt-1">{m.label}</div>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-
-              {/* Awards & Recognition */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="rounded-2xl border border-border bg-white/60 backdrop-blur-sm p-6 shadow-sm"
-              >
-                <h3 className="font-bold text-foreground font-heading mb-4">Recognition</h3>
-                <ul className="space-y-3">
-                  {[
-                    { title: 'AI Innovation Award 2024', body: 'Excellence in enterprise AI solutions' },
-                    { title: 'Top UK Software Dev 2023', body: 'Clutch Global Leaders ranking' },
-                    { title: 'ISO 27001 Certified', body: 'Enterprise-grade security standards' },
-                  ].map(a => (
-                    <li key={a.title} className="flex gap-3 items-start">
-                      <div className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0" />
-                      <div>
-                        <p className="text-sm font-semibold text-foreground">{a.title}</p>
-                        <p className="text-xs text-muted-foreground">{a.body}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-
-              {/* What's Next */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="rounded-2xl p-6 shadow-sm text-white"
-                style={{ background: 'linear-gradient(135deg, var(--accent) 0%, var(--accent) 100%' }}
-              >
-                <h3 className="font-bold font-heading mb-2">What&apos;s Next?</h3>
-                <p className="text-sm opacity-90 leading-relaxed mb-4">
-                  Expanding into AI-driven ERP solutions and opening new delivery hubs across Europe by 2026.
-                </p>
-                <div className="flex items-center gap-2 text-sm font-medium">
-                  <CheckCircle className="w-4 h-4" />
-                  <span>Join us on the journey</span>
-                </div>
-              </motion.div>
-
-            </div>
-          </div>
         </div>
       </section>
 
-      <Services />
+      {/* ── How We Think (Wave & Blobs Design with Bento Grid) ── */}
+      <section className="py-32 relative overflow-hidden" style={{ background: 'oklch(0.99 0.005 250)' }}>
+        {/* Animated wave background */}
+        <div className="absolute inset-0 pointer-events-none z-0" aria-hidden="true">
+          {/* Drifting blobs */}
+          <div className="blob-drift absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full opacity-40"
+            style={{ background: 'radial-gradient(circle, oklch(0.5675 0.2072 318.97 / 0.18) 0%, transparent 70%)' }} />
+          <div className="blob-drift absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full opacity-30"
+            style={{ background: 'radial-gradient(circle, oklch(0.5675 0.2072 318.97 / 0.14) 0%, transparent 70%)', animationDelay: '-6s' }} />
 
-      {/* ── Values Section ── */}
-      <section className="py-20 bg-surface relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-25" />
-          <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-25" />
+          {/* Wave 1 — slow */}
+          <svg className="wave-slow absolute bottom-0 left-0 w-full opacity-70" style={{ height: '220px' }}
+            viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,120 C240,180 480,60 720,120 C960,180 1200,60 1440,120 L1440,220 L0,220 Z" fill="oklch(0.5675 0.2072 318.97 / 0.08)" />
+          </svg>
+          {/* Wave 2 — mid */}
+          <svg className="wave-mid absolute bottom-0 left-0 w-full opacity-70" style={{ height: '180px' }}
+            viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,90 C360,150 720,30 1080,90 C1260,120 1380,60 1440,90 L1440,180 L0,180 Z" fill="oklch(0.5675 0.2072 318.97 / 0.06)" />
+          </svg>
+          {/* Wave 3 — fast */}
+          <svg className="wave-fast absolute top-0 left-0 w-full opacity-70" style={{ height: '160px' }}
+            viewBox="0 0 1440 160" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,60 C180,100 360,20 540,60 C720,100 900,20 1080,60 C1260,100 1380,30 1440,60 L1440,0 L0,0 Z" fill="oklch(0.28 0.02 250 / 0.05)" />
+          </svg>
         </div>
 
         <div className="container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="inline-flex items-center gap-2 text-accent text-lg font-medium mb-4">
-              Why Choose Us
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground font-heading">
-              Values That Drive <span className="text-accent">Excellence</span>
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide every project we deliver
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, i) => (
-              <ValueCard key={value.title} value={value} index={i} />
+          <div className="text-center mb-20">
+            <motion.div
+               initial={{ opacity: 0, y: 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.5 }}
+               viewport={{ once: true }}
+            >
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur-sm text-accent font-semibold text-sm mb-6 border border-accent/20 shadow-sm">
+                Methodology
+              </span>
+              <h2 className="text-4xl md:text-6xl font-bold font-heading mb-6 tracking-tight">
+                How We Think About <br/><span className="text-accent ">Software Development</span>
+              </h2>
+            </motion.div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(250px,auto)]">
+            {[
+              {
+                title: 'Business Before Technology',
+                desc: 'The technical solution should support the objective, not distract from it. We first understand what success should look like and then determine how software can help achieve it.',
+                icon: <Briefcase className="w-8 h-8 text-accent " />,
+                span: 'lg:col-span-2',
+                gradient: 'from-blue-500 to-accent'
+              },
+              {
+                title: 'Build Around Real Users',
+                desc: 'Good software should make something easier, faster, clearer or more valuable for the people using it. User needs remain part of the conversation throughout development.',
+                icon: <Users className="w-8 h-8 text-accent " />,
+                span: 'lg:col-span-1',
+                gradient: 'from-purple-500 to-pink-500'
+              },
+              {
+                title: 'Use Technology With Purpose',
+                desc: 'Modern technologies such as AI, cloud platforms and automation can create significant opportunities, but only when they solve a genuine requirement.',
+                icon: <Target className="w-8 h-8 text-accent " />,
+                span: 'lg:col-span-1',
+                gradient: 'from-orange-500 to-red-500'
+              },
+              {
+                title: 'Keep Development Collaborative',
+                desc: 'Better products come from combining business knowledge with technical expertise. We keep clients involved in important decisions throughout the project.',
+                icon: <MessageSquare className="w-8 h-8 text-accent " />,
+                span: 'lg:col-span-2',
+                gradient: 'from-emerald-400 to-teal-500'
+              },
+              {
+                title: 'Design for What Comes Next',
+                desc: 'Software rarely stays exactly the same. Users grow, features change and new opportunities appear. We consider that future from the beginning.',
+                icon: <Compass className="w-8 h-8 text-accent " />,
+                span: 'lg:col-span-3',
+                gradient: 'from-accent to-purple-600',
+                horizontal: true
+              }
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className={`group p-8 rounded-[2rem] bg-white/60 backdrop-blur-xl border border-accent/20 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover:bg-white/80 transition-all duration-500 relative overflow-hidden ${item.span} ${item.horizontal ? 'flex flex-col md:flex-row items-center gap-8' : ''}`}
+              >
+                {/* Hover gradient background effect */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
+                
+                <div className={`mb-6 shrink-0 rounded-2xl flex items-center justify-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-lg relative ${item.horizontal ? 'w-20 h-20 md:w-24 md:h-24 md:rounded-3xl' : 'w-16 h-16'}`}>
+                  <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} rounded-inherit`} />
+                  <div className="relative z-10">{item.icon}</div>
+                </div>
+                
+                <div>
+                  <h3 className={`font-bold font-heading mb-4 text-foreground ${item.horizontal ? 'text-2xl md:text-3xl' : 'text-xl'}`}>{item.title}</h3>
+                  <p className={`text-muted-foreground leading-relaxed ${item.horizontal ? 'text-lg max-w-3xl' : ''}`}>{item.desc}</p>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── Tech Stack Section ── */}
-      <section className="border-t border-2">
+      {/* ── Team Section Placeholder ── */}
+      <section className="py-24 bg-background border-y border-border/50">
+        <div className="container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold font-heading mb-6">The People Behind the Software</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+              Great digital products are created by people who understand both the technology and the purpose behind it.
+              The ClickMasters team brings together skills across software strategy, development, product design, applications, artificial intelligence, cloud technology and digital delivery.
+              We believe strong projects are built through collaboration — between developers, designers, project teams and the people who understand the business best.
+            </p>
+            <p className="text-xl font-bold mt-8">Your team understands the opportunity.<br/><span className="text-accent">Our team helps turn it into software.</span></p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { image: '/contact/support-women.webp', name: 'Team Member Name', role: 'Leadership Role' },
+              { image: '/contact/support-person.webp', name: 'Team Member Name', role: 'Leadership Role' },
+              { image: '/contact/support-team.webp', name: 'Team Member Name', role: 'Leadership Role' }
+            ].map((member, i) => (
+              <div key={i} className="bg-white rounded-3xl p-6 border border-black/10 shadow-sm text-center hover:-translate-y-1 transition-transform duration-300">
+                <div className="w-32 h-32 mx-auto bg-surface rounded-full mb-6 border-4 border-white shadow-md relative overflow-hidden">
+                   <Image src={member.image} alt={member.name} fill className="object-cover" />
+                </div>
+                <h4 className="font-bold text-lg mb-1">{member.name}</h4>
+                <p className="text-accent text-sm mb-4">{member.role}</p>
+                <p className="text-sm text-muted-foreground mb-6 line-clamp-3">
+                  Implementation note: Add your real leadership/team members here with name, role, photograph, 2–3 line professional biography.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── What Makes Us Different ── */}
+      <section className="py-24 bg-surface relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-[100px]" />
+          <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-[100px]" />
+        </div>
+
+        <div className="container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 relative z-10">
+          <div className="text-center mb-16">
+            <span className="inline-flex items-center gap-2 text-accent text-xl font-medium mb-4">
+              Our Differentiator
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4">What Makes ClickMasters Different?</h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'We Ask Why Before How',
+                desc: 'Before deciding how to build something, we understand why it needs to exist.',
+                icon: <Lightbulb className="w-6 h-6 text-accent" />
+              },
+              {
+                title: 'We Connect Strategy and Engineering',
+                desc: 'Business thinking, product decisions and software development remain connected instead of operating as separate stages.',
+                icon: <Zap className="w-6 h-6 text-accent" />
+              },
+              {
+                title: 'We Build Around Requirements',
+                desc: 'Every project has different users, workflows and technical needs. We avoid forcing projects into a standard template.',
+                icon: <Target className="w-6 h-6 text-accent" />
+              },
+              {
+                title: 'We Are AI-Ready',
+                desc: 'We combine established software engineering practices with modern AI capabilities where intelligent technology can add meaningful value.',
+                icon: <Cpu className="w-6 h-6 text-accent" />
+              },
+              {
+                title: 'We Keep Communication Clear',
+                desc: 'Complex technology does not require unnecessarily complicated communication. We keep requirements, priorities and project stages understandable.',
+                icon: <MessageSquare className="w-6 h-6 text-accent" />
+              },
+              {
+                title: 'We Think Beyond Launch',
+                desc: 'Software can continue to improve through optimisation, new functionality, integrations and ongoing development.',
+                icon: <Rocket className="w-6 h-6 text-accent" />
+              }
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className="flex gap-4 p-8 rounded-3xl bg-white/50 backdrop-blur-sm border border-black/5 hover:border-accent/20 transition-colors shadow-xs"
+              >
+                <div className="mt-1 shrink-0 w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
+                  {item.icon}
+                </div>
+                <div>
+                  <h3 className="font-bold font-heading mb-2 text-lg">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Our Work ── */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto max-w-6xl px-6 text-center">
+          <motion.div
+             initial={{ opacity: 0, y: 30 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.6 }}
+             viewport={{ once: true }}
+          >
+            <h2 className="text-4xl font-bold font-heading mb-6">Our Work Is the Best Introduction</h2>
+            <p className="text-lg text-muted-foreground mb-4">
+              What we build says more about ClickMasters than a long list of claims.
+            </p>
+            <p className="text-lg text-muted-foreground mb-4">
+              Our case studies show how ideas and requirements are turned into practical software through strategy, design and engineering.
+            </p>
+            <div className="mb-12">
+              <p className="text-lg text-muted-foreground mb-8">
+                Each project starts differently, but the journey connects the same key elements:
+              </p>
+              
+              <div className="mt-8 flex flex-col md:flex-row flex-wrap justify-center items-center gap-3">
+                 {[
+                   { label: 'Challenge', icon: <Target className="w-4 h-4" /> },
+                   { label: 'Requirements', icon: <Compass className="w-4 h-4" /> },
+                   { label: 'Strategy', icon: <Lightbulb className="w-4 h-4" /> },
+                   { label: 'Software', icon: <Cpu className="w-4 h-4" /> },
+                   { label: 'Outcome', icon: <Rocket className="w-4 h-4" /> },
+                 ].map((step, idx, arr) => (
+                   <div key={step.label} className="flex flex-col md:flex-row items-center gap-3 group">
+                     <div className="flex items-center gap-3 px-5 py-3 bg-white border border-accent/20 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_20px_rgba(var(--accent-rgb),0.15)] hover:border-accent/40 hover:-translate-y-1 transition-all duration-300 text-sm md:text-base font-semibold text-foreground">
+                       <span className="p-1.5 rounded-xl bg-accent/10 text-accent">{step.icon}</span>
+                       {step.label}
+                     </div>
+                     {idx < arr.length - 1 && (
+                        <div className="hidden md:flex text-accent/30 group-hover:text-accent transition-colors">
+                           <ArrowRight className="w-5 h-5" />
+                        </div>
+                     )}
+                     {idx < arr.length - 1 && (
+                        <div className="md:hidden text-accent/30 group-hover:text-accent transition-colors my-1">
+                           <ArrowRight className="w-5 h-5 rotate-90" />
+                        </div>
+                     )}
+                   </div>
+                 ))}
+              </div>
+            </div>
+            
+            <Link href="/case-studies">
+              <Button className="btn-primary px-8 py-6 text-lg rounded-xl">
+                Explore Our Case Studies
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── Tech Stack Section (Optional/Previous Component) ── */}
+      <section className="border-t border-border">
         <TechStackSection />
       </section>
 
-
-      {/* ── Trusted Clients Section ── */}
+      {/* ── Trusted Clients Section (Optional/Previous Component) ── */}
       <Suspense fallback={<div className="h-64 animate-pulse bg-surface" />}>
         <TrustedClientsSection
           title="Trusted by Industry Leaders"
@@ -512,8 +449,7 @@ export default function AboutPage() {
         />
       </Suspense>
 
-
-      {/* ── CTA Section ── */}
+      {/* ── CTA ── */}
       <FinalCTA />
 
     </main>
