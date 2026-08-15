@@ -2,8 +2,8 @@ export const siteConfig = {
   name: 'ClickMasters',
   legalName: 'ClickMasters Software Development Company',
   url: 'https://clickmasterssoftwaredevelopmentcompany.co.uk',
-  description: 'ClickMasters - Software Development Company, AI solutions, and digital transformation for B2B companies.',
-  logo: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/cm-logos/clickmasters-logo.png', // Fallback URL
+  description: 'ClickMasters is a software development company providing software development services that build digital products, improve systems and drive digital growth.',
+  logo: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/cm-logos/logo.webp',
   email: 'sale@clickmasterssoftwaredevelopmentcompany.co.uk',
   telephone: '+44798856086',
   address: {
@@ -42,7 +42,7 @@ function toAbsoluteUrl(url) {
   if (!url) return siteConfig.url;
   if (/^https?:\/\//i.test(url)) return url;
   const normalizedPath = url.startsWith('/') ? url : `/${url}`;
-  return `${siteConfig.url}${normalizedPath}`;
+  return `${siteConfig.url}${normalizedPath}`.replace(/\/+$/, '');
 }
 
 // 1. Organization Schema
@@ -82,7 +82,7 @@ export function webSiteSchema() {
     publisher: {
       '@id': `${siteConfig.url}/#organization`,
     },
-    inLanguage: 'en',
+    inLanguage: 'en-GB',
   };
 }
 
@@ -98,9 +98,13 @@ export function webPageSchema(name, description, url) {
     isPartOf: {
       '@id': `${siteConfig.url}/#website`,
     },
-    primaryImageOfPage: {
-      '@id': `${siteConfig.url}/#primaryimage`,
+    about: {
+      '@id': `${siteConfig.url}/#organization`,
     },
+    mainEntity: {
+      '@id': `${siteConfig.url}/#software-development-service`,
+    },
+    inLanguage: 'en-GB',
   };
 }
 
@@ -111,6 +115,7 @@ export function faqSchema(items, url) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    inLanguage: 'en-GB',
     mainEntity: items.map((item) => ({
       '@type': 'Question',
       name: item.question,
@@ -120,30 +125,33 @@ export function faqSchema(items, url) {
   
   if (url) {
     schema['@id'] = `${toAbsoluteUrl(url)}/#faq`;
-    schema.mainEntityOfPage = toAbsoluteUrl(url);
+    schema.url = `${toAbsoluteUrl(url)}/#faq`;
   }
   
   return schema;
 }
 
 // 5. Service Schema
-export function serviceSchema(name, description, url, areaServed = null) {
+export function serviceSchema(name, description, url, areaServed = null, fragmentId = 'service') {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': `${toAbsoluteUrl(url)}/#service`,
+    '@id': `${toAbsoluteUrl(url)}/#${fragmentId}`,
+    name,
     serviceType: name,
     provider: {
       '@id': `${siteConfig.url}/#organization`,
     },
     description,
     url: toAbsoluteUrl(url),
-    mainEntityOfPage: toAbsoluteUrl(url),
+    mainEntityOfPage: {
+      '@id': `${toAbsoluteUrl(url)}/#webpage`,
+    },
   };
   
   if (areaServed) {
     schema.areaServed = {
-      '@type': 'Place',
+      '@type': 'Country',
       name: areaServed,
     };
   }
@@ -220,7 +228,6 @@ export function contactPageSchema() {
     name: 'Contact ClickMasters',
     description: 'Get in touch with ClickMasters for your next software development project.',
     mainEntity: {
-      '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
       '@id': `${siteConfig.url}/#localbusiness`,
       name: siteConfig.legalName,
@@ -229,6 +236,9 @@ export function contactPageSchema() {
       email: siteConfig.email,
       address: siteConfig.address,
       url: siteConfig.url,
+      parentOrganization: {
+        '@id': `${siteConfig.url}/#organization`,
+      },
     }
   };
 }
@@ -251,23 +261,31 @@ export function aboutPageSchema() {
 // Homepage static FAQ for backward compatibility
 export const homepageFaqSchema = faqSchema([
   {
-    question: 'How much does custom software development cost?',
-    answer: 'Custom software development costs vary based on complexity, features, and timeline. A basic web application typically starts from $5,000–$15,000, while enterprise systems range from $30,000–$200,000+. We provide free consultations to give accurate project estimates.',
+    question: 'What does a software development company do?',
+    answer: 'A software development company helps businesses plan, design, build, test and improve digital products such as custom software, websites, applications, SaaS platforms and AI-powered systems.',
   },
   {
-    question: 'How long does it take to build a custom software application?',
-    answer: 'Development timelines depend on the project scope. An MVP takes 6–12 weeks, a full web or mobile application takes 3–6 months, and enterprise systems can take 6–18 months. We use agile sprints to deliver working software every 2 weeks.',
+    question: 'What software development services does ClickMasters provide?',
+    answer: 'Our software development services include custom software development, website development, application development, AI software development, SaaS development, enterprise software development and cloud development.',
   },
   {
-    question: 'What technologies does ClickMasters use?',
-    answer: "We use modern, proven technologies including React, Next.js, Node.js, Python, Flutter, React Native, PostgreSQL, MongoDB, AWS, Google Cloud, and Azure. We choose the best stack for each project's specific needs.",
+    question: 'Why work with a software development agency?',
+    answer: 'A software development agency gives businesses access to product planning, design and engineering expertise for building or improving digital products without developing every capability internally.',
   },
   {
-    question: 'Do you provide post-launch support and maintenance?',
-    answer: 'Yes. ClickMasters provides 24/7 post-launch support, security updates, performance monitoring, and feature development. We offer monthly maintenance plans to keep your software running smoothly.',
+    question: 'Can you develop software around our requirements?',
+    answer: 'Yes. Software can be designed around specific users, workflows, processes, integrations and functionality rather than relying entirely on standard software.',
   },
   {
-    question: 'Can ClickMasters work with international clients?',
-    answer: 'Yes. We work with clients across the USA, Europe, Middle East, and worldwide. Our team operates across time zones and uses agile project management tools to ensure seamless collaboration regardless of location.',
+    question: 'Can you develop AI-powered software?',
+    answer: 'Yes. AI capabilities can include AI agents, chatbots, LLM-powered functionality, intelligent automation and integrations where they provide genuine value.',
+  },
+  {
+    question: 'Can you improve existing software?',
+    answer: 'Yes. Existing software can be enhanced, extended, integrated or modernised depending on its technology, limitations and future requirements.',
+  },
+  {
+    question: 'Do you provide ongoing software support?',
+    answer: 'Yes. Ongoing development can include maintenance, updates, optimisation, new functionality and further improvements as the product evolves.',
   },
 ], '/');
