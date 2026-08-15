@@ -45,7 +45,7 @@
 | Hire Pages | 311 | 269 | `/hire/` + `/hire/[role]/[city]/` | `data/hire-pages.js` | ✅ |
 | Salary Guides | 193 | 99 | `/salary-guide/` + `/salary-guide/[slug]/` | `data/salary-guides.js` | ✅ |
 | Comparisons | 177 | 141 | `/comparison/` + `/comparison/[slug]/` | `data/comparisons.js` | ✅ |
-| Cities | 306 | 203 | `/cities/` + `/cities/[slug]/` | `data/cities.js` | ✅ |
+| Cities | 306 | 203 | `/locations/` + `/locations/[slug]/` | `data/cities.js` | ✅ |
 | Resource Guides | 105 | 80 | `/resource/` + `/resource/[slug]/` | `data/resource-guides.js` | ✅ |
 | Glossary | 200 | 200 | `/glossary/` + `/glossary/[term]/` | `data/glossary.js` | ✅ |
 | Industries | 202 | 148 | `/industries/` + `/industries/[slug]/` | `data/industries.js` | ✅ |
@@ -69,13 +69,13 @@
 ### Category-Specific Plans
 | Plan File | Category | Route | Status |
 |-----------|----------|-------|--------|
-| [`plan-cities-page.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-cities-page.md) | International Cities | `/cities/[slug]/` | ✅ |
+| [`plan-cities-page.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-cities-page.md) | International Cities | `/locations/[slug]/` | ✅ |
 | [`plan-comparison-page.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-comparison-page.md) | Comparisons | `/comparison/[slug]/` | ✅ |
 | [`plan-glossary.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-glossary.md) | Glossary | `/glossary/[term]/` | ✅ |
 | [`plan-hire-page.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-hire-page.md) | Hire Pages | `/hire/[role]/[city]/` | ✅ |
 | [`plan-industries-pages.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-industries-pages.md) | Industries | `/industries/[slug]/` | ✅ |
 | [`plan-industry-service-pages.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-industry-service-pages.md) | Industry+Service Combos | `/[category]/[service]/` | 🔲 |
-| [`plan-international-city.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-international-city.md) | International Cities (alt) | `/cities/[slug]/` | ✅ |
+| [`plan-international-city.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-international-city.md) | International Cities (alt) | `/locations/[slug]/` | ✅ |
 | [`plan-resource.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-resource.md) | Resource Guides | `/resource/[slug]/` | ✅ |
 | [`plan-salary-guide.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-salary-guide.md) | Salary Guides | `/salary-guide/[slug]/` | ✅ |
 | [`plan-service-pages.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-service-pages.md) | Standalone Services | `/service/[slug]/` | 🔲 |
@@ -123,7 +123,7 @@ app/
 │   │   ├── page.js                    ← Listing page (metadata + canonical)
 │   │   └── [slug]/
 │   │       └── page.js                ← Detail page (generateMetadata with canonical)
-│   ├── cities/
+│   ├── locations/
 │   │   ├── page.js                    ← Listing page (metadata + canonical)
 │   │   └── [slug]/
 │   │       └── page.js                ← Detail page (generateMetadata with canonical)
@@ -355,6 +355,6 @@ const Component = dynamic(() =>
 
 ---
 
-**Last Updated:** July 4, 2026
+**Last Updated:** August 15, 2026
 **Main Reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md)
 **Execution Plan:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md)

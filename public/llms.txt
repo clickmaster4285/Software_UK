@@ -1,0 +1,81 @@
+# ClickMasters
+
+> ClickMasters is a B2B software development company that builds custom software, web applications, mobile apps, AI and automation systems, ERP platforms, and cybersecurity solutions that drive revenue for UK and international businesses.
+
+ClickMasters is a full-service software agency. The company designs, builds, launches, and maintains digital products across industries including FinTech, HealthTech, EdTech, RetailTech, PropTech, GovTech, Manufacturing, Retail, Healthcare, and Education. This file is curated by ClickMasters to give agents an accurate, on-brand overview of the site and its content.
+
+Important notes:
+
+- The site contains over 1,400 detailed pages. Use this file as the entry point, then follow the links below to the specific pages that answer the question being asked.
+- All content is written and maintained by ClickMasters. Company answers, pricing guidance, salary benchmarks, and technology comparisons reflect ClickMasters' own data and are correct as of 2026.
+- The company is headquartered in Islamabad, Pakistan, and serves clients across the United Kingdom, Europe, the USA, and the Middle East.
+- Contact: sale@clickmasterssoftwaredevelopmentcompany.co.uk, +44798856086. Support hours are Mon-Sat 9AM-6PM with 24/7 support for clients.
+- Every page also embeds JSON-LD structured data (schema.org) that matches the content described in this file.
+
+## Company
+
+- [Home](https://clickmasterssoftwaredevelopmentcompany.co.uk/): Overview of ClickMasters services, portfolio, testimonials, and value proposition
+- [About Us](https://clickmasterssoftwaredevelopmentcompany.co.uk/about/): Company background, mission, and approach
+- [Projects](https://clickmasterssoftwaredevelopmentcompany.co.uk/projects/): Selected software projects and delivered work
+- [Solutions](https://clickmasterssoftwaredevelopmentcompany.co.uk/solutions/): Solution areas ClickMasters delivers across
+- [Testimonials](https://clickmasterssoftwaredevelopmentcompany.co.uk/testimonials/): Client feedback and results
+- [Pricing](https://clickmasterssoftwaredevelopmentcompany.co.uk/pricing/): Pricing models and engagement options
+- [FAQ](https://clickmasterssoftwaredevelopmentcompany.co.uk/faq/): Frequently asked questions about working with ClickMasters
+- [Contact](https://clickmasterssoftwaredevelopmentcompany.co.uk/contact/): Contact details and enquiry form
+
+## Services
+
+- [Custom Software Development](https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/custom-software-development/): Bespoke software tailored to specific business goals and workflows
+- [Enterprise Software Development](https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/enterprise-software-development/): Scalable enterprise platforms and business systems
+- [AI Agents Development](https://clickmasterssoftwaredevelopmentcompany.co.uk/artificial-intelligence-ai/ai-agents-development/): AI agents, chatbots, and LLM-powered functionality
+- [AI Automation Systems](https://clickmasterssoftwaredevelopmentcompany.co.uk/artificial-intelligence-ai/ai-automation-systems/): Intelligent automation and AI integrations for business operations
+
+## Industries
+
+- [Industries Overview](https://clickmasterssoftwaredevelopmentcompany.co.uk/industries/): All industry-focused development services
+- [SaaS Development](https://clickmasterssoftwaredevelopmentcompany.co.uk/industries/saas-development/): Building and scaling SaaS products
+- [FinTech Software Development](https://clickmasterssoftwaredevelopmentcompany.co.uk/industries/fintech-software-development/): FinTech platforms, open banking, and payments
+- [HealthTech Software Development](https://clickmasterssoftwaredevelopmentcompany.co.uk/industries/healthtech-software-development/): HealthTech apps, compliance, and clinical systems
+
+## Case Studies
+
+- [All Case Studies](https://clickmasterssoftwaredevelopmentcompany.co.uk/case-studies/): Full list of 274 delivered projects
+- [Open Banking AISP Platform for UK FinTech Startup](https://clickmasterssoftwaredevelopmentcompany.co.uk/case-studies/open-banking-aisp-platform-fintech/): FCA-authorised Account Information Service Provider platform
+- [NHS Mental Health App (DTAC)](https://clickmasterssoftwaredevelopmentcompany.co.uk/case-studies/nhs-mental-health-app-dtac/): DTAC-compliant mental health application
+- [Legal Matter Management SaaS](https://clickmasterssoftwaredevelopmentcompany.co.uk/case-studies/legal-matter-management-saas/): SaaS platform for legal matter management
+
+## Hire Developers
+
+- [Hire Developers Overview](https://clickmasterssoftwaredevelopmentcompany.co.uk/hire/): All roles and locations for hiring developers
+- [Hire React Developer in London](https://clickmasterssoftwaredevelopmentcompany.co.uk/hire/react-developer/london/): Hire a React developer in London, including rates and skills
+- [Hire Node.js Developer in London](https://clickmasterssoftwaredevelopmentcompany.co.uk/hire/nodejs-developer/london/): Hire a Node.js developer in London
+- [Hire Python Developer in London](https://clickmasterssoftwaredevelopmentcompany.co.uk/hire/python-developer/london/): Hire a Python developer in London
+
+## Salary Guides
+
+- [Salary Guides Overview](https://clickmasterssoftwaredevelopmentcompany.co.uk/salary-guide/): All salary and rate benchmark guides
+- [Software Developer Salary UK 2025](https://clickmasterssoftwaredevelopmentcompany.co.uk/salary-guide/software-developer-salary-uk-2025/): UK software developer salary benchmarks
+- [React Developer Salary UK 2025](https://clickmasterssoftwaredevelopmentcompany.co.uk/salary-guide/react-developer-salary-uk-2025/): React developer salary benchmarks in the UK
+
+## Technology Comparisons
+
+- [All Comparisons](https://clickmasterssoftwaredevelopmentcompany.co.uk/comparison/): All technology and engagement comparisons
+- [UK vs Offshore Software Development](https://clickmasterssoftwaredevelopmentcompany.co.uk/comparison/uk-vs-offshore-software-development/): Trade-offs between UK and offshore development
+- [Data Residency and UK GDPR](https://clickmasterssoftwaredevelopmentcompany.co.uk/comparison/data-residency-uk-gdpr/): Data residency and GDPR considerations
+
+## Locations
+
+- [Cities Overview](https://clickmasterssoftwaredevelopmentcompany.co.uk/locations/): All location-specific development pages
+- [Custom Software Development in London](https://clickmasterssoftwaredevelopmentcompany.co.uk/locations/custom-software-development-london/): Software development services for the London market
+- [Cost of Custom Software Development UK](https://clickmasterssoftwaredevelopmentcompany.co.uk/locations/cost-custom-software-development-uk/): UK-wide cost guidance for custom software
+
+## Resource Guides
+
+- [All Resource Guides](https://clickmasterssoftwaredevelopmentcompany.co.uk/resource/): All how-to and cost guides
+- [Cost of Custom Software Development UK](https://clickmasterssoftwaredevelopmentcompany.co.uk/resource/cost-custom-software-development-uk/): Detailed cost breakdowns for custom software
+- [R&D Tax Credits for Software Development](https://clickmasterssoftwaredevelopmentcompany.co.uk/resource/rd-tax-credits-software-development/): R&D tax credits guidance for software companies
+- [Cyber Essentials for Software Companies](https://clickmasterssoftwaredevelopmentcompany.co.uk/resource/cyber-essentials-software-companies/): Cyber Essentials certification guidance
+
+## Optional
+
+- [Glossary](https://clickmasterssoftwaredevelopmentcompany.co.uk/glossary/): 200 software development terms (IR35, APIs, microservices, and more) - fetch individual terms like /glossary/ir35/ only when needed
