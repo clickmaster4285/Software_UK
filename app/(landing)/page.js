@@ -34,8 +34,8 @@ const TechStackSection = dynamic(() =>
 export default function Home() {
   return (
     <>
-      <JsonLd schema={webPageSchema('Software Development Company UK - ClickMasters', 'ClickMasters delivers software development services for businesses needing custom software, web and mobile apps, SaaS, AI and scalable digital solutions.', '/')} />
-      <JsonLd schema={serviceSchema('Custom Software Development', 'We build bespoke web, mobile, SaaS, and AI-powered systems to drive business growth.', '/')} />
+      <JsonLd schema={webPageSchema('Software Development Company UK | ClickMasters', 'ClickMasters is a software development company providing software development services that build digital products, improve systems and drive digital growth.', '/')} />
+      <JsonLd schema={serviceSchema('Software Development Services', 'ClickMasters provides software development services that help businesses build digital products, improve software systems and support digital growth.', '/', 'United Kingdom', 'software-development-service')} />
       <JsonLd schema={homepageFaqSchema} />
       <Hero />
       <TrustedBy />
