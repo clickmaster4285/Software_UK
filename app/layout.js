@@ -28,7 +28,14 @@ export const metadata = {
   },
   alternates: {
     canonical: "https://clickmasterssoftwaredevelopmentcompany.co.uk",
-  },  
+  },
+  robots: {
+    index: true,
+    follow: true,
+    maxImagePreview: "large",
+    maxSnippet: -1,
+    maxVideoPreview: -1,
+  },
   verification: {
     google: "nUmOnlPBAytESz6YJ7CTqD9MsdE_Zx9hi0zzw6PrDt8",
   },
