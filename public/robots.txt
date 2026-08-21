@@ -1,11 +1,31 @@
-# *
 User-agent: *
+
+# Allow important website pages and rendering resources
 Allow: /
+Allow: /_next/static/
+Allow: /_next/image
+Allow: /_next/static/media/
+
+# Block private/system URLs
 Disallow: /admin
+Disallow: /admin/
 Disallow: /api
+Disallow: /api/
 Disallow: /login
+Disallow: /login/
 
+# Block Next.js RSC duplicate crawl URLs
+Disallow: /*?_rsc=
+Disallow: /*&_rsc=
 
+# Block unnecessary query/filter URLs
+Disallow: /*?page=
+Disallow: /*&page=
+Disallow: /*?sort=
+Disallow: /*&sort=
+Disallow: /*?filter=
+Disallow: /*&filter=
+Disallow: /*?utm_
+Disallow: /*&utm_
 
-# Sitemaps
 Sitemap: https://clickmasterssoftwaredevelopmentcompany.co.uk/sitemap.xml
