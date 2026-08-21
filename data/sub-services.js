@@ -265,23 +265,19 @@ const customSoftwareDevelopmentOverride = {
   categorySlug: "software-development",
   sectionId: "custom-software-development",
   category: "Software Development",
-  title: "Custom Software Development Company That Delivers Software Built to Scale Your Business",
+  title: "Custom Software Development Company for Business-Focused Software Solutions",
   serviceName: "Custom Software Development",
   heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-  metaTitle: "Custom Software Development Company | USA, Europe, Canada | ClickMasters",
-  metaDescription: "ClickMasters builds custom software solutions - web apps, SaaS platforms, enterprise systems, and APIs - for B2B companies in the USA, Europe, Canada & Australia. Get a free strategy call.",
-  lead: "ClickMasters delivers end-to-end custom software development for B2B companies in the USA, Europe, Canada, and Australia. From SaaS platforms to enterprise systems, we build software that solves real business problems and compounds in value over time.",
+  metaTitle: "Custom Software Development Company UK - Clickmasters",
+  metaDescription: "ClickMasters provides custom software development services for businesses that need secure, scalable, and bespoke software solutions built around their workflows, operations, and growth.",
+  lead: "ClickMasters provides custom software development services for businesses that need software built around their real workflows, operations, and growth goals. We design and develop secure, scalable, and easy-to-use software solutions that help companies reduce manual work, connect systems, and improve business performance.",
   highlights: [
-    "MVP to Enterprise",
-    "Fixed + Agile Engagements",
-    "Post-Launch Support"
+    "Business-Focused Planning",
+    "Secure & Scalable",
+    "Clean UI/UX Design",
+    "API & Third-Party Integrations",
+    "Ongoing Support After Launch"
   ],
-  // marketStats: [
-  //   { label: 'Enterprises increasing custom software spend', value: '60%' },
-  //   { label: 'Avg productivity gain from custom automation', value: '35%' },
-  //   { label: 'Projects delivered on time & budget', value: '95%' },
-  //   { label: 'Avg time to market for production MVP', value: '10 Weeks' },
-  // ],
   checklist: [
     { item: "Clean architecture with clear separation of concerns", standard: "Mandatory engineering baseline" },
     { item: "Full unit and integration test coverage for core logic", standard: "Mandatory engineering baseline" },
@@ -290,32 +286,34 @@ const customSoftwareDevelopmentOverride = {
     { item: "Scalable infrastructure configured as code (Terraform)", standard: "Mandatory engineering baseline" }
   ],
   servicesCards: [
-    { title: "SaaS Product Development", description: "We build multi-tenant SaaS platforms from the ground up including billing, subscription management, role-based access control, and scalable API architecture. Ideal for technology companies launching new products and operators digitizing service delivery." },
-    { title: "Enterprise Software Development", description: "For large organizations with complex operational requirements: custom ERP systems, internal workflow automation, multi-system integrations, compliance-grade data pipelines, and executive dashboards. We architect for 10x scale from day one." },
-    { title: "Web Application Development", description: "Full-stack web application development using React, Next.js, Node.js, and Python. From customer-facing portals to internal tools, we build performant applications with clean UI and maintainable code." },
-    { title: "API Development & Systems Integration", description: "We design and build RESTful and GraphQL APIs, middleware layers, and integration pipelines that connect your custom software to existing systems Salesforce, HubSpot, SAP, Stripe, AWS services, and more." },
-    { title: "MVP Development", description: "For startups and product teams going to market fast: we compress discovery, design, and build into a 6-12 week sprint. You get a production-ready MVP with real users, real data, and a clear path to scale." },
-    { title: "Database Design & Data Architecture", description: "We design SQL and NoSQL database schemas built for performance, scalability, and reporting. PostgreSQL, MongoDB, Redis, MySQL selected and structured to match your data patterns, not convenience." },
-    { title: "Cloud-Native Software Development", description: "We build cloud-native applications on AWS, Google Cloud, and Azure containerized with Docker and Kubernetes, deployed with CI/CD pipelines, and monitored for uptime and performance from day one." },
-    { title: "Mobile App Development", description: "Cross-platform mobile applications in React Native and Flutter, and native development in Swift (iOS) and Kotlin (Android). Designed for performance, offline capability, and seamless integration with your web systems." }
+    { title: "Custom Business Software Development", description: "Tailored software built around your business process, team workflow, and long-term growth goals." },
+    { title: "Internal Software Development", description: "Private internal tools that help your team manage tasks, data, approvals, and daily operations more efficiently." },
+    { title: "Workflow Management Software", description: "Custom workflow systems that reduce manual work, improve visibility, and help teams move tasks through each stage faster." },
+    { title: "Custom Dashboard Development", description: "Business dashboards that bring important data, reports, users, and activity into one easy-to-manage view." },
+    { title: "Custom Admin Panel Development", description: "Secure admin panels for managing users, content, products, orders, reports, approvals, and business operations." },
+    { title: "Custom Portal Development", description: "Customer, employee, vendor, or partner portals designed around your access, communication, and service delivery needs." },
+    { title: "Database-Driven Software Development", description: "Custom software powered by structured databases for storing, managing, and using business data properly." },
+    { title: "Third-Party Software Integration", description: "Integration with CRMs, ERPs, payment systems, accounting tools, booking platforms, APIs, and other business software." },
+    { title: "Legacy Software Modernisation", description: "Upgrade old, slow, or outdated software into a modern system with better performance, security, and usability." },
+    { title: "Custom Reporting Software", description: "Reporting tools that help teams track performance, monitor KPIs, and make better decisions from business data." }
   ],
   differentiators: [
-    { feature: "Full-Cycle Ownership", description: "From requirements to deployment to post-launch support, we own the entire product lifecycle not just the code handoff." },
-    { feature: "Architecture-First", description: "Every engagement starts with an architecture review. We don't write code until we've designed a system that scales and stays maintainable." },
-    { feature: "Business-Aligned KPIs", description: "We measure success by your metrics: load time, user conversion, operational cost savings, and system uptime not lines of code." },
-    { feature: "Dedicated Teams", description: "You get assigned engineers who know your codebase, not a rotating pool of contractors. Continuity reduces bugs and re-onboarding cost." },
-    { feature: "Transparent Process", description: "Weekly sprint demos, GitHub access, Jira boards, and staging environments. You always know what was built and why." },
-    { feature: "B2B Industry Depth", description: "We've shipped software for manufacturing, healthcare, logistics, fintech, and real estate industries with complex data and compliance requirements." },
-    { feature: "Timezone-Flexible", description: "We serve clients across the USA, UK, Europe, Canada, and Australia with overlap hours and async-first communication protocols." },
-    { feature: "Security Built-In", description: "OWASP ASVS compliance, GDPR-aligned data handling, penetration testing, and application security reviews built into every project." }
+    { feature: "Business-Focused Software Planning", description: "We start with your workflow, users, and goals before writing any code." },
+    { feature: "Custom Solutions Built Around Your Workflow", description: "Software designed to match the way your business works, not generic templates." },
+    { feature: "Secure & Scalable Development", description: "Clean architecture, secure access, database protection, and performance from day one." },
+    { feature: "Clean UI/UX & Practical User Experience", description: "Interfaces your team or customers can actually use easily." },
+    { feature: "API & Third-Party Software Integrations", description: "Connect your software with CRMs, ERPs, payment systems, and other tools." },
+    { feature: "Transparent Project Scope & Communication", description: "Clear planning, regular updates, and honest timelines throughout the project." },
+    { feature: "Ongoing Support After Launch", description: "Updates, improvements, bug fixes, performance optimisation, and new features after launch." }
   ],
   processPhases: [
-    { phase: "Phase 1", title: "Discovery & Technical Requirements", timeline: "Week 1-2", text: "We run structured discovery sessions with your stakeholders to document functional requirements, technical constraints, integration dependencies, and success metrics. Output: a detailed Technical Requirements Document (TRD) and project scope." },
-    { phase: "Phase 2", title: "Architecture Design & Prototyping", timeline: "Week 2-3", text: "Our architects design the system architecture data models, API contracts, infrastructure topology, and security model. We build interactive prototypes to validate user flows before a single line of production code is written." },
-    { phase: "Phase 3", title: "Agile Development Sprints", timeline: "Week 3 onward", text: "2-week sprint cycles. Each sprint delivers working, tested software features not partial components. You see the product evolve in real-time through sprint demos and staging environment access." },
-    { phase: "Phase 4", title: "QA, Security & Performance Testing", timeline: "Ongoing", text: "Automated testing pipelines (unit, integration, E2E), manual QA, load testing, and security review run in parallel with development not as a final gate. This eliminates last-minute release risk." },
-    { phase: "Phase 5", title: "Deployment & Go-Live", timeline: "Per Milestone", text: "CI/CD pipelines handle deployment to staging and production. We manage infrastructure provisioning, DNS, SSL, monitoring setup, and launch communications. Zero-downtime deployments as standard." },
-    { phase: "Phase 6", title: "Maintenance, Support & Iteration", timeline: "Post-Launch", text: "Our post-launch engagement includes SLA-backed support, security patches, performance monitoring, and a dedicated channel for feature requests and bug reports. We stay in the product not just the repository." }
+    { phase: "Phase 1", title: "Discovery & Planning", timeline: "Week 1-2", text: "We start by understanding your business goals, users, workflows, current tools, and the problem your software needs to solve." },
+    { phase: "Phase 2", title: "Solution Design", timeline: "Week 2-3", text: "We map the user journey, system structure, main features, data flow, and technical requirements before development begins." },
+    { phase: "Phase 3", title: "UI/UX Design", timeline: "Week 3-4", text: "We design clear, practical, and user-friendly interfaces so your team or customers can use the software easily." },
+    { phase: "Phase 4", title: "Software Development", timeline: "Week 4 onward", text: "Our developers build the software using secure, scalable, and maintainable code based on the agreed project scope." },
+    { phase: "Phase 5", title: "Testing & QA", timeline: "Ongoing", text: "We test functionality, performance, usability, integrations, and security before launch." },
+    { phase: "Phase 6", title: "Deployment", timeline: "Per Milestone", text: "We launch your software in the right environment with proper setup, configuration, and handover." },
+    { phase: "Phase 7", title: "Support & Improvement", timeline: "Post-Launch", text: "After launch, we can help with updates, improvements, bug fixes, performance optimisation, and new features." }
   ],
   techStackCategories: [
     { layer: "Frontend", technologies: "React.js, Next.js, Vue.js, Angular, TypeScript, Tailwind CSS" },
@@ -335,62 +333,106 @@ const customSoftwareDevelopmentOverride = {
     { type: "Dedicated Team", investment: "$8,000 - $25,000/mo", timeline: "Ongoing", bestFor: "Companies needing long-term embedded development capacity" }
   ],
   industryUseCases: [
-    { name: "Manufacturing & Industrial Operations", description: "Custom ERP modules, production scheduling systems, quality control dashboards, IoT-integrated machine monitoring platforms, and supply chain visibility portals. Built to replace expensive SAP/Oracle modules that don't fit the operation." },
-    { name: "Healthcare & MedTech", description: "HIPAA-compliant patient management platforms, clinical data pipelines, telehealth scheduling systems, lab result portals, and medical device data dashboards. GDPR and HL7 FHIR compliance where required." },
-    { name: "Logistics & Supply Chain", description: "Fleet management systems, shipment tracking platforms, warehouse management software, driver dispatch portals, and last-mile delivery optimization engines. Real-time data at scale." },
-    { name: "Fintech & Financial Services", description: "Transaction processing systems, KYC/AML workflow automation, financial reporting dashboards, portfolio management platforms, and payment gateway integrations. Built to SOC 2 and PCI-DSS standards where applicable." },
-    { name: "Real Estate & PropTech", description: "Property listing platforms, CRM integrations for brokerages, tenant management portals, lease lifecycle automation, and investment portfolio analytics dashboards." },
-    { name: "SaaS & Technology Companies", description: "Core product engineering, API platform builds, multi-tenant architecture, billing and subscription system integration, and developer portal development for SaaS companies scaling beyond their initial codebase." }
+    { name: "Healthcare", description: "Custom healthcare software including patient management, appointment scheduling, telehealth platforms, and clinical workflow systems." },
+    { name: "Retail & Ecommerce", description: "Ecommerce platforms, inventory management, order processing systems, and customer management tools." },
+    { name: "Real Estate", description: "Property management, tenant portals, listing platforms, and lease lifecycle automation." },
+    { name: "Logistics", description: "Fleet management, shipment tracking, warehouse systems, and delivery optimisation." },
+    { name: "Education", description: "Learning management systems, student portals, course management, and EdTech platforms." },
+    { name: "Professional Services", description: "Client portals, project management, time tracking, and billing systems." },
+    { name: "Finance", description: "Financial dashboards, reporting tools, payment systems, and compliance platforms." },
+    { name: "Construction", description: "Project tracking, resource management, scheduling, and site management systems." },
+    { name: "Startups & SaaS", description: "MVP development, SaaS platforms, subscription systems, and scalable product architecture." }
   ],
   sections: [
     {
-      heading: "What Is Custom Software Development?",
-      body: "Custom software development is the process of designing, building, testing, and deploying software applications specifically built to meet the unique requirements of a single organization. Unlike commercial off-the-shelf (COTS) software, custom software is architected around your specific workflows, data models, integration requirements, and business logic.\n\nFor B2B companies, custom software typically delivers competitive advantages that cannot be replicated with generic tools: proprietary automation, industry-specific compliance, deep ERP/CRM integration, and scalable architecture that grows without costly re-engineering.",
+      heading: "Custom Software Development Services We Provide",
+      body: "ClickMasters provides professional software development services for startups, small businesses, and growing companies that need secure, scalable, and reliable digital solutions. Our team helps businesses plan, design, and develop custom software that improves operations, supports customers, and solves real business problems.",
+      items: []
+    },
+    {
+      heading: "Problems Our Custom Software Solves",
+      body: "Many businesses outgrow spreadsheets, disconnected tools, manual reporting, and off-the-shelf systems that no longer match the way they work. Custom software gives your team a system built around your process, instead of forcing your business to adjust around generic tools.",
       items: [
-        `"Our current software can't handle our volume we need something custom-built."`,
-        `"We've been burned by offshore developers who disappeared mid-project."`,
-        '"We have complex workflows that no SaaS product will ever support out of the box."',
-        '"We need a development team we can trust long-term, not just to build once."',
-        '"Our data is siloed across five systems we need a unified platform."'
+        "Manual data entry and repeated admin work",
+        "Disconnected systems that do not share data",
+        "Slow reporting and limited visibility",
+        "Outdated internal tools",
+        "Poor customer or staff portal experience",
+        "Workflow delays between teams",
+        "Security and permission issues",
+        "Software that cannot scale with business growth"
       ]
+    },
+    {
+      heading: "What Type of Software Can We Build?",
+      body: "ClickMasters builds custom software for business operations, customer service, team management, reporting, and digital transformation. Every project starts with your business process, then we design the right solution around your users, data, and goals.",
+      items: [
+        "Internal business systems",
+        "Customer portals",
+        "Staff portals",
+        "Admin dashboards",
+        "Workflow management systems",
+        "Booking and scheduling systems",
+        "Inventory and order systems",
+        "Reporting and analytics tools",
+        "Custom CRM-style systems",
+        "Custom ERP-style systems",
+        "API-connected business platforms"
+      ]
+    },
+    {
+      heading: "Custom Software vs Off-the-Shelf Software",
+      body: "Off-the-shelf software can work well when your business needs are simple and the ready-made tool already fits your process. But when your workflows are unique, your data is complex, or your teams rely on too many disconnected tools, custom software becomes a better long-term option.\n\nCustom software gives you more control over features, integrations, permissions, reporting, scalability, and ownership. It is built for the way your business works today and can evolve as your business grows.",
+      items: []
+    },
+    {
+      heading: "How Long Does Custom Software Development Take?",
+      body: "Custom software timelines depend on the size and complexity of the project. A small internal tool or MVP may take a few weeks, while a larger business system with integrations, dashboards, and user roles can take several months.\n\nWe normally recommend a phased approach so you can launch the most important features first, test them with real users, and improve the software over time.",
+      items: []
+    },
+    {
+      heading: "Security, Scalability & Code Quality",
+      body: "Custom software should not only look good. It should be secure, reliable, and ready to grow with your business. ClickMasters focuses on clean architecture, secure access, database protection, performance, and scalable development practices.\n\nWe build software with long-term use in mind, so your system can support more users, more data, more features, and future integrations.",
+      items: []
+    },
+    {
+      heading: "Why Choose ClickMasters as Your Custom Software Development Agency?",
+      body: "ClickMasters helps businesses move from scattered tools and manual processes to reliable software systems built around real business needs. Our team focuses on understanding your workflow first, then building the right solution with clear communication, practical planning, and long-term support.",
+      items: []
     }
   ],
   faqs: [
     {
-      question: "What does a custom software development company do?",
-      answer: "A custom software development company designs, builds, tests, and maintains software applications built specifically for one organization's requirements. Unlike SaaS or off-the-shelf products, custom software is architected around your workflows, data structures, and integration ecosystem. Services typically include requirement analysis, system architecture, UI/UX design, frontend and backend engineering, API development, database design, cloud deployment, and long-term maintenance."
+      question: "What are custom software development services?",
+      answer: "Custom software development services involve planning, designing, building, testing, and supporting software made specifically for a business's workflow, users, and goals."
     },
     {
-      question: "How much does it cost to develop custom software?",
-      answer: "Custom software development costs range from $8,000 for a simple MVP to $250,000+ for a full enterprise system. The primary cost drivers are scope complexity, number of integrations, team size, compliance requirements, and timeline compression. ClickMasters provides fixed-price proposals based on a scoped discovery session, so you know your total investment before development begins."
+      question: "What is a custom software development company?",
+      answer: "A custom software development company builds software solutions tailored to a business instead of selling ready-made software products."
+    },
+    {
+      question: "What is the difference between custom software and off-the-shelf software?",
+      answer: "Custom software is built around your exact needs, while off-the-shelf software is a ready-made product designed for many businesses."
+    },
+    {
+      question: "How much does custom software development cost?",
+      answer: "The cost depends on features, integrations, design, user roles, data structure, security, and project complexity."
     },
     {
       question: "How long does custom software development take?",
-      answer: "A production-ready MVP takes 6-12 weeks. A full web or mobile application takes 3-6 months. Enterprise software systems take 6-18 months depending on scope. ClickMasters uses 2-week agile sprints, so you see working software every two weeks not just at the end of the project."
+      answer: "A small internal tool can take a few weeks, while a larger business platform may take several months depending on scope."
     },
     {
-      question: "What is the difference between custom software and SaaS?",
-      answer: "SaaS is pre-built software delivered via subscription that serves the general needs of many users. Custom software is built specifically for one organization, incorporating proprietary business logic, unique data models, and specific integration requirements. Companies choose custom software when SaaS tools cannot support their operational complexity, data ownership requirements, or strategic differentiation strategy."
+      question: "Can you integrate custom software with our existing tools?",
+      answer: "Yes, custom software can be integrated with CRMs, ERPs, payment systems, databases, APIs, accounting tools, and other business platforms."
     },
     {
-      question: "Do you work with companies in the USA, UK, Europe, Canada, and Australia?",
-      answer: "Yes. ClickMasters delivers custom software development services to B2B clients across North America, Europe, and Australia. We support timezone overlap, async-first communication, and have delivered projects for clients in the USA, UK, Germany, Canada, and Australia. All contracts are in USD or GBP and include NDA and IP assignment as standard."
+      question: "Do we own the software after development?",
+      answer: "Ownership depends on the contract and project terms. ClickMasters can define code ownership, usage rights, and handover details before development starts."
     },
     {
-      question: "What happens after the software is launched?",
-      answer: "ClickMasters provides post-launch maintenance and support as a standard part of all engagements. This includes a 30-day warranty period, SLA-backed bug resolution, security updates, performance monitoring, and a dedicated channel for feature requests and bug reports. We also offer ongoing development retainers for companies who need continuous feature development and infrastructure management."
-    },
-    {
-      question: "Who owns the code and intellectual property?",
-      answer: "You do 100%. ClickMasters executes a full IP assignment agreement as part of every project contract. All code, documentation, assets, and infrastructure configurations produced during the engagement are transferred to the client upon project completion or the final payment milestone."
-    },
-    {
-      question: "How do you handle security and compliance?",
-      answer: "Security is built into every phase of development not added at the end. We follow OWASP Application Security Verification Standard (ASVS), run automated SAST/DAST security scans in our CI/CD pipeline, conduct penetration testing before launch, and implement GDPR-aligned data handling by default. For regulated industries (healthcare, fintech), we align to HIPAA, PCI-DSS, or relevant compliance frameworks."
-    },
-    {
-      question: "Can you take over an existing software project?",
-      answer: "Yes. We have a structured onboarding process for inheriting existing codebases including architecture review, code quality audit, documentation of undocumented systems, and a technical debt assessment. We can transition from a previous vendor without disrupting ongoing operations."
+      question: "Do you provide support after launch?",
+      answer: "Yes, we can provide ongoing support, updates, bug fixing, performance improvements, and new feature development after launch."
     }
   ]
 };
@@ -399,24 +441,19 @@ const enterpriseSoftwareDevelopmentOverride = {
   categorySlug: "software-development",
   sectionId: "enterprise-software-development",
   category: "Software Development",
-  title: "Enterprise Software Development Company for B2B Organizations in USA, Europe and Canada",
+  title: "Enterprise Software Development Services",
   serviceName: "Enterprise Software Development",
   heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
-  metaTitle: "Enterprise Software Development Company | Custom ERP & B2B Systems | ClickMasters",
-  metaDescription: "ClickMasters builds enterprise software for complex B2B operations - custom ERP, workflow automation, SaaS platforms, and system integrations. Serving USA, Europe, Canada & Australia.",
-  lead: "ClickMasters engineers enterprise software solutions for B2B organizations whose operational complexity has outgrown off the shelf tools. Custom ERP systems, enterprise workflow automation, multi system integrations, and scalable SaaS platforms built to your exact business logic, compliance requirements, and scale targets.",
+  metaTitle: "Enterprise Software Development Services | ClickMasters",
+  metaDescription: "ClickMasters provides enterprise software development services for businesses that need secure, scalable, and custom-built systems to manage operations, teams, workflows, and growth.",
+  lead: "ClickMasters provides enterprise software development services for businesses that need secure, scalable, and custom-built software systems. We help companies build enterprise platforms that improve operations, connect departments, manage data, and support long-term business growth.",
   highlights: [
-    "ERP & CRM Systems",
-    "Legacy Modernization",
-    "Enterprise Integrations",
-    "Compliance Grade Security"
+    "Internal Business Management",
+    "Department Workflow Systems",
+    "CRM & ERP-Style Platforms",
+    "Reporting & Dashboard Systems",
+    "Secure Data Management"
   ],
-  // marketStats: [
-  //   { label: 'Enterprises moving from legacy to cloud', value: '70%' },
-  //   { label: 'Reduction in operational cost with custom ERP', value: '25%' },
-  //   { label: 'Large scale projects delivered successfully', value: '92%' },
-  //   { label: 'Avg ROI period for enterprise software', value: '18 Months' },
-  // ],
   checklist: [
     { item: "High-availability infrastructure with automated failover", standard: "Enterprise baseline" },
     { item: "Role-based access control (RBAC) & SSO integration", standard: "Enterprise baseline" },
@@ -425,34 +462,28 @@ const enterpriseSoftwareDevelopmentOverride = {
     { item: "Disaster recovery & business continuity planning", standard: "Enterprise baseline" }
   ],
   servicesCards: [
-    { title: "Custom ERP Development", description: "We build modular, custom ERP systems designed around your actual operational workflows, not generic industry templates. Modules include inventory and procurement, production planning, financial management, HR and payroll, sales order management, and executive reporting dashboards. Deployed on premise, cloud, or hybrid. Integrates with existing accounting systems including QuickBooks, Xero, and SAP via API." },
-    { title: "Enterprise CRM Development", description: "Custom CRM platforms built for complex B2B sales cycles: multi stage pipeline management, territory and quota management, CPQ (Configure Price Quote) workflows, contract lifecycle management, and customer health scoring. We build on your data model, not Salesforce's limitations, and integrate with your existing marketing, billing, and support stack." },
-    { title: "Legacy System Modernization", description: "We migrate legacy on premise applications to modern cloud native architectures without operational disruption. This includes re platforming (lift and shift), re architecting (decomposing monoliths into microservices), and rebuilding (greenfield replacement with data migration). We produce full architecture documentation and provide parallel run validation before cutover." },
-    { title: "Enterprise Systems Integration", description: "We design and build middleware, API gateways, and event driven integration pipelines that connect your enterprise systems into a unified data layer. Salesforce to ERP, ERP to 3PL, CRM to billing, HRIS to SSO we handle the full integration lifecycle including data mapping, error handling, monitoring, and reconciliation reporting." },
-    { title: "Business Intelligence & Enterprise Reporting", description: "Custom BI platforms and executive dashboards built on your operational data: real time KPI dashboards, cross system data warehouses, automated P&L reporting, operational analytics, and self service reporting tools for non technical stakeholders. Stack includes PostgreSQL, Elasticsearch, Grafana, Metabase, or fully custom React dashboards." },
-    { title: "Compliance & Audit Software", description: "Workflow driven compliance platforms for regulated industries: SOC 2, ISO 27001, HIPAA, GDPR, PCI DSS, and industry specific regulatory frameworks. Automated audit trail generation, policy acknowledgement workflows, evidence collection systems, and regulatory reporting exports." },
-    { title: "Enterprise SaaS Platform Development", description: "For organizations productizing internal software or building new vertical SaaS products: multi tenant architecture, role based access control, billing and subscription management via Stripe and Chargebee, usage based pricing engines, and developer API and SDK delivery. Built to scale to 100,000+ users without re architecture." },
-    { title: "Workflow & Process Automation", description: "Custom automation platforms that replace manual approval chains, data entry workflows, and cross department coordination with code: approval routing engines, document generation pipelines, automated notification systems, and integration triggered workflow execution. Reduces operational headcount cost and eliminates process bottlenecks." }
+    { title: "CRM Software", description: "Custom CRM software helps businesses manage leads, customers, sales pipelines, follow-ups, communication, and customer data in one place." },
+    { title: "ERP Software", description: "ERP software connects departments such as sales, finance, inventory, HR, operations, and reporting into one central business system." },
+    { title: "Employee Portals", description: "Employee portals help teams manage tasks, documents, requests, approvals, announcements, and internal communication." },
+    { title: "Customer Portals", description: "Customer portals allow users to log in, manage accounts, submit requests, track progress, access documents, and communicate with your business." },
+    { title: "Admin Dashboards", description: "Admin dashboards give business owners and managers control over users, data, reports, activity, and important business functions." },
+    { title: "Workflow Management Systems", description: "Workflow systems help companies reduce manual work, automate approvals, assign tasks, and track business processes more clearly." }
   ],
   differentiators: [
-    { feature: "Fit to your workflows", description: "Built exactly for you | SAP: You adapt to SAP | Generic SaaS: Limited configurability" },
-    { feature: "Total cost (5 year TCO)", description: "Mid: high initial, low ongoing | SAP: Very high license + SI + maintenance | Generic SaaS: Low initial, high at scale" },
-    { feature: "Implementation time", description: "3 to 12 months | SAP: 12 to 36 months | Generic SaaS: Weeks, but rework adds months" },
-    { feature: "Customization depth", description: "Unlimited | SAP: Expensive customizations | Generic SaaS: Low: API/Zapier workarounds" },
-    { feature: "Data ownership", description: "Full control | SAP: Vendor lock in | Generic SaaS: Vendor controlled data layer" },
-    { feature: "Integration flexibility", description: "Built to your API needs | SAP: Complex middleware required | Generic SaaS: Limited native integrations" },
-    { feature: "Compliance control", description: "Engineered to your rules | SAP: Module based, expensive | Generic SaaS: Varies widely by vendor" },
-    { feature: "Ongoing innovation", description: "You direct the roadmap | SAP: Vendor roadmap only | Generic SaaS: Vendor roadmap only" },
-    { feature: "Scalability", description: "Architected for your scale | SAP: Scales but at cost | Generic SaaS: Can hit walls at enterprise scale" }
+    { feature: "User Role Management", description: "Secure access control for different users and departments." },
+    { feature: "Workflow Automation", description: "Automate approvals, assignments, and repetitive tasks." },
+    { feature: "Department-Level Dashboards", description: "Clear visibility across teams and operations." },
+    { feature: "Data Reporting", description: "Centralised reporting and analytics for better decisions." },
+    { feature: "API Integrations", description: "Connect enterprise systems and eliminate data silos." },
+    { feature: "Scalable Architecture", description: "Software that grows as your business grows." }
   ],
   processPhases: [
-    { phase: "Phase 1", title: "Enterprise Discovery & Requirements Engineering", timeline: "Week 1-4", text: "We run structured requirements engineering workshops with your stakeholders: operations, finance, IT, compliance, and executive leadership. We produce a Business Requirements Document (BRD), Technical Requirements Document (TRD), and a Risk Register. No architecture begins until requirements are signed off." },
-    { phase: "Phase 2", title: "Architecture Design & Security Modeling", timeline: "Week 3-6", text: "Our enterprise architects design the full system: data models, API contracts, integration topology, authentication architecture (SSO, RBAC, MFA), infrastructure design (multi region, HA, DR), and security threat model. We present an Architecture Design Review (ADR) document before any code is written." },
-    { phase: "Phase 3", title: "Proof of Concept / Prototype", timeline: "Week 5-8", text: "For high risk or novel systems, we build a technical proof of concept validating the most complex architectural components before full development begins. This surfaces integration risks and performance edge cases early, not during UAT." },
-    { phase: "Phase 4", title: "Phased Agile Development", timeline: "Week 8+", text: "2 week sprint cycles with sprint demos, working staging environment access, and weekly executive status reports. We deliver working, tested modules progressively, not a big bang launch after 12 months of invisible development. Each sprint includes code review, automated testing, and security scanning." },
-    { phase: "Phase 5", title: "Enterprise QA, UAT & Performance Testing", timeline: "Ongoing", text: "Dedicated QA phase including automated regression testing, user acceptance testing (UAT) with your team, load and stress testing to defined SLAs, security penetration testing, and data migration validation. We do not go to production until all UAT sign off criteria are met." },
-    { phase: "Phase 6", title: "Parallel Run & Cutover", timeline: "Per Milestone", text: "For systems replacing critical operational software, we run both old and new systems in parallel for a defined period. This eliminates go live risk. Cutover is managed as a change controlled event with a documented rollback procedure." },
-    { phase: "Phase 7", title: "Hypercare, Stabilization & Handoff", timeline: "30-90 Days", text: "The first 30 to 90 days post launch are managed under hypercare: daily standups, rapid response bug resolution, performance monitoring, and user feedback integration. Post hypercare, we transition to an SLA backed maintenance and support engagement." }
+    { phase: "Phase 1", title: "Discovery and Planning", timeline: "Week 1-2", text: "We understand your business, users, workflow, software goals, and technical requirements." },
+    { phase: "Phase 2", title: "Software Architecture", timeline: "Week 2-3", text: "We plan the structure of your enterprise software, including database, modules, user roles, integrations, and scalability." },
+    { phase: "Phase 3", title: "UI/UX Design", timeline: "Week 3-4", text: "We design clean, user-friendly software screens for admins, teams, customers, or department users." },
+    { phase: "Phase 4", title: "Custom Development", timeline: "Week 4 onward", text: "Our developers build the system with secure code, reliable backend logic, user dashboards, APIs, and business features." },
+    { phase: "Phase 5", title: "Testing and QA", timeline: "Ongoing", text: "We test the software for performance, usability, security, bugs, and workflow accuracy." },
+    { phase: "Phase 6", title: "Launch and Support", timeline: "Post-Launch", text: "After launch, we support updates, improvements, maintenance, and future feature development." }
   ],
   techStackCategories: [
     { layer: "Backend / Services", technologies: "Node.js, Python (Django/FastAPI), Java (Spring Boot), Go, .NET Core" },
@@ -478,64 +509,63 @@ const enterpriseSoftwareDevelopmentOverride = {
     { type: "Dedicated Engineering Team", investment: "$15,000 to $40,000/mo", timeline: "Ongoing", bestFor: "4 to 10 FTE engineers, PM, QA embedded in your product org" }
   ],
   industryUseCases: [
-    { name: "Manufacturing & Industrial Operations", description: "Custom ERP modules for production scheduling, quality management (ISO 9001 audit trails), supply chain visibility, MES (Manufacturing Execution System) integration, IoT connected equipment monitoring, and multi facility operational dashboards. We have replaced SAP modules at mid market manufacturers at 30% of the SAP implementation cost." },
-    { name: "Healthcare & Life Sciences", description: "HIPAA compliant clinical workflow software, patient data management platforms, clinical trial data collection systems, FHIR/HL7 integration layers, lab information management systems (LIMS), and regulatory submission pipelines. Deployed on AWS GovCloud and Azure for healthcare where required." },
-    { name: "Financial Services & Fintech", description: "Custom transaction processing systems, KYC/AML workflow automation, investment portfolio management platforms, financial reporting and consolidation systems, treasury management software, and SOC 2 Type II compliant data infrastructure." },
-    { name: "Logistics & Supply Chain", description: "Warehouse management systems (WMS), transportation management systems (TMS), freight broker platforms, last mile delivery optimization, carrier integration hubs (EDI, API), and multi modal shipment tracking platforms." },
-    { name: "Professional Services & Consulting", description: "Project and resource management platforms, client portal systems, billable time and utilization tracking, contract lifecycle management, knowledge management systems, and automated client reporting platforms." },
-    { name: "Retail & Distribution", description: "Multi channel order management systems (OMS), custom POS integrations, loyalty and promotions engines, vendor portal development, demand forecasting platforms, and B2B e commerce systems for wholesale distribution." }
+    { name: "Healthcare", description: "Patient management platforms, clinical workflow software, telehealth systems, and compliance-grade data management." },
+    { name: "Finance", description: "Financial reporting dashboards, transaction processing, compliance platforms, and portfolio management systems." },
+    { name: "Logistics", description: "Warehouse management, fleet tracking, shipment platforms, and supply chain visibility systems." },
+    { name: "Retail", description: "Multi-channel order management, inventory systems, CRM integrations, and B2B ecommerce platforms." },
+    { name: "Professional Services", description: "Project management, resource planning, client portals, and billing systems." },
+    { name: "Manufacturing", description: "Production scheduling, quality management, supply chain systems, and IoT monitoring platforms." }
   ],
   sections: [
     {
-      heading: "What Is Enterprise Software Development?",
-      body: "Enterprise software development is the process of designing, engineering, testing, and deploying large scale software systems that support the core operational, financial, compliance, or customer facing functions of a mid market or enterprise organization. Unlike SMB software, enterprise systems are characterized by multi user concurrency, role based access control, complex data models, high availability requirements, audit logging, and integration with multiple existing systems.\n\nEnterprise software development projects typically include custom ERP systems, CRM platforms, business intelligence and reporting systems, supply chain management software, compliance and audit platforms, HR and workforce management systems, and custom SaaS platforms serving large user bases.\n\nThe primary distinction between enterprise software development and standard web application development is the scope of system architecture, the criticality of uptime requirements, the depth of integration with existing infrastructure, and the regulatory compliance considerations that govern data handling and access control."
+      heading: "Custom Enterprise Software Built Around Your Business",
+      body: "Every enterprise has different processes, teams, approvals, data flows, and operational needs. Ready-made software often forces teams to adjust their workflow around the tool.\n\nWith custom enterprise software development, your system is built around your actual business structure. This helps your team work faster, reduce manual tasks, improve visibility, and manage operations from one central platform.",
+      items: []
     },
     {
-      heading: "The Enterprise Software Problem Nobody Talks About Honestly",
-      body: "Every large B2B organization reaches the same inflection point. The tools that worked at $5M in revenue are visibly breaking at $50M. Data is siloed across five platforms that do not talk to each other. Reporting takes three people and a spreadsheet. Compliance processes are manual. And the two ERP vendors you evaluated will take 18 months to implement and still will not support your actual workflows.\n\nThe real cost is not the software license. It is the operational drag, the headcount cost of working around system limitations, the decisions made on stale or incomplete data, and the competitive ground lost to organizations who built what they needed.",
+      heading: "Enterprise Software Development for Complex Workflows",
+      body: "Enterprise software is not just about building features. It needs proper planning, strong architecture, user roles, data security, integrations, and long-term scalability.\n\nClickMasters helps businesses plan and build enterprise systems that support complex workflows. We focus on clean structure, reliable performance, and software that can grow as your business grows.",
+      items: []
+    },
+    {
+      heading: "Why Businesses Choose Enterprise Software",
+      body: "Enterprise software is useful when your business has outgrown spreadsheets, disconnected tools, or basic software systems.",
       items: [
-        "Your operations team maintains shadow systems in Excel because your ERP does not support your actual process",
-        "A simple report requires pulling data from 3 to 4 systems and reconciling it manually",
-        "You have been through two failed ERP implementations in the last five years",
-        "Your compliance team is manually filling audit trails that software should be generating automatically",
-        "You are paying for 6 different SaaS tools that overlap in 40% of their functionality",
-        "Customer facing systems are slow, unintuitive, and generating support tickets that should not exist",
-        "Your development team is spending 60% of their time on technical debt and integrations instead of product"
+        "Your team uses too many separate tools",
+        "Manual work is slowing down operations",
+        "You need better reporting and visibility",
+        "Your current software cannot scale",
+        "Your departments are not properly connected",
+        "You need secure access control for different users",
+        "You want a system built around your business process"
       ]
+    },
+    {
+      heading: "Enterprise Software That Grows With Your Business",
+      body: "A good enterprise software system should not only solve today's problem. It should support future growth.\n\nClickMasters builds scalable enterprise software that can be improved over time with new features, integrations, user roles, dashboards, and automation. This helps your business avoid rebuilding from scratch as your needs grow.",
+      items: []
     }
   ],
   faqs: [
     {
       question: "What is enterprise software development?",
-      answer: "Enterprise software development is the process of designing and building large scale software systems for complex organizational needs, typically including custom ERP, CRM, workflow automation, compliance systems, and multi system integrations. Enterprise systems are characterized by multi user access, role based permissions, high availability requirements, audit logging, and deep integration with existing infrastructure. They are purpose built for organizations where off the shelf software cannot support the operational, compliance, or data requirements of the business."
+      answer: "Enterprise software development is the process of building custom software systems for businesses with larger teams, complex workflows, multiple departments, and advanced operational needs."
     },
     {
-      question: "How much does enterprise software development cost?",
-      answer: "Enterprise software development costs range from $40,000 for targeted platforms to $200,000+ for full ERP systems. Key cost drivers include scope and number of modules, integration complexity, compliance requirements, team size, and timeline. ClickMasters provides fixed price proposals for clearly scoped phases following a free discovery session, so organizations have full investment visibility before development begins."
+      question: "Is enterprise software different from normal software?",
+      answer: "Yes. Enterprise software usually needs stronger architecture, better security, role-based access, reporting, integrations, scalability, and workflow management."
+    },
+    {
+      question: "Can you build custom ERP or CRM software?",
+      answer: "Yes. We can build custom CRM, ERP-style systems, employee portals, customer portals, dashboards, and workflow platforms based on your business needs."
     },
     {
       question: "How long does enterprise software development take?",
-      answer: "Enterprise software development typically takes 6 to 18 months depending on scope. A focused enterprise platform or integration hub takes 4 to 8 months. A full custom ERP system takes 10 to 18 months. ClickMasters uses phased agile delivery, so organizations see working software every 2 weeks and can launch early modules before the full system is complete."
+      answer: "The timeline depends on the size and complexity of the project. A smaller enterprise system may take a few months, while a larger platform can take longer."
     },
     {
-      question: "When should a company choose custom enterprise software over SAP or Oracle?",
-      answer: "Custom enterprise software development is the better choice when your operational workflows are non standard and would require expensive SAP customization, the 5 year TCO of a commercial ERP implementation exceeds the cost of a custom build, you require full data ownership and cannot accept vendor lock in, or you need rapid iteration on your system as the business evolves. Custom development is typically more cost effective for mid market organizations ($10M to $200M revenue) with complex but unique operational requirements."
-    },
-    {
-      question: "What is the difference between enterprise software development and custom software development?",
-      answer: "Custom software development broadly refers to building any software to a specific organization's requirements. Enterprise software development is a subcategory focused on the specific characteristics of large scale organizational systems: high availability, multi user concurrency, RBAC, audit trails, compliance alignment, and deep integration with existing enterprise systems such as ERP, HRIS, CRM, and billing. All enterprise software is custom software, but not all custom software is enterprise grade."
-    },
-    {
-      question: "How do you handle security in enterprise software development?",
-      answer: "ClickMasters applies OWASP Application Security Verification Standard (ASVS) Level 2 as a baseline for all enterprise projects, with Level 3 available for high assurance systems. Every enterprise engagement includes security threat modeling during architecture design, static application security testing (SAST) in the CI/CD pipeline, dynamic application security testing (DAST) before launch, and a full penetration test against the production environment before go live. For regulated industries, we align to HIPAA, PCI DSS, ISO 27001, or SOC 2 as applicable."
-    },
-    {
-      question: "Can you modernize or replace our existing legacy enterprise software?",
-      answer: "Yes. ClickMasters has a structured legacy modernization methodology covering three paths: re platforming (moving to cloud without code changes), re architecting (decomposing a monolith into scalable microservices), and rebuilding (greenfield replacement with data migration). We begin with a legacy assessment that produces an Architecture Risk Report and a recommended migration path, phased to minimize operational disruption."
-    },
-    {
-      question: "Do you offer dedicated enterprise development teams?",
-      answer: "Yes. Our dedicated team model provides 4 to 10 embedded engineers, a technical lead, QA, and a project manager operating as an extension of your internal product or IT organization. Teams are fixed, not rotated, have full context on your systems, and operate on monthly contracts with a 30 day exit clause. Pricing ranges from $15,000 to $40,000 per month depending on team composition and seniority."
+      question: "Do you provide support after launch?",
+      answer: "Yes. We can support maintenance, bug fixes, feature updates, performance improvements, and long-term software improvements after launch."
     }
   ]
 };
@@ -1804,163 +1834,112 @@ const saasProductDevelopmentOverride = {
   categorySlug: "software-development",
   sectionId: "saas-product-development",
   category: "Software Development",
-  title: "SaaS Product Development Company for Founders and B2B Teams in USA, Europe and Canada",
+  title: "SaaS Product Development Services",
   serviceName: "SaaS Product Development",
-  heroImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
-  metaTitle: "SaaS Product Development Company | Build & Launch Your SaaS Platform | ClickMasters",
-  metaDescription: "ClickMasters builds production-ready SaaS platforms - multi-tenant architecture, billing, auth, and API layer - for startups and B2B companies in the USA, Europe, Canada & Australia.",
-  lead: "ClickMasters designs, engineers, and launches SaaS platforms for founders, operators, and B2B product teams. Multi tenant architecture, subscription billing, SSO authentication, usage based pricing, developer APIs built production ready from day one. We serve clients across the USA, Europe, Canada, and Australia.",
+  heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
+  metaTitle: "SaaS Product Development Services | ClickMasters",
+  metaDescription: "ClickMasters provides SaaS product development services for startups and businesses that want to build secure, scalable, subscription-based software products.",
+  lead: "ClickMasters provides SaaS product development services for startups, founders, and businesses that want to build scalable subscription-based software products. We help you plan, design, develop, and launch SaaS platforms that are built for users, business goals, and long-term growth.",
   highlights: [
-    "Multi Tenant Architecture",
-    "Stripe / Billing Integration",
-    "SSO & Auth",
-    "API First Design",
-    "MVP in 8 to 12 Weeks",
-    "Full Platform in 4 to 9 Months",
-    "Post Launch Growth Support"
-  ],
-  // marketStats: [
-  //   { label: 'Global SaaS market by 2030', value: '$908B' },
-  //   { label: 'Annual SaaS market growth rate', value: '18.7%' },
-  //   { label: 'B2B buyers preferring SaaS', value: '72%' },
-  //   { label: 'Avg ROI for B2B SaaS adoption', value: '4x' },
-  // ],
-  servicesCards: [
-    { title: "SaaS MVP Development", description: "For founders and operators validating a SaaS idea with real customers. 8-14 week sprint delivering a production-ready MVP with real auth, working billing, and core paid features. Architected to scale so you do not rebuild for full launch." },
-    { title: "Full SaaS Platform Development", description: "For teams building complete market-ready products. Covers multi-tier pricing, enterprise SSO, team management, analytics, developer APIs, webhooks, and full operational infrastructure for 10x scale." },
-    { title: "White Label SaaS Development", description: "Resellable products under multiple brand identities. Multi-tenant systems with brand theming, subdomain routing, per-tenant flag control, and reseller-aligned billing reconciliation." },
-    { title: "SaaS Platform Rebuild / Modernization", description: "Migration of existing SaaS products hitting architectural limits. Monolith to microservices, legacy frontend rewrites, custom auth to Auth0/Okta, and billing migrations to Stripe." },
-    { title: "SaaS API & Integration Layer", description: "Public API design, developer portals, webhooks, and marketplaces. Deep integrations with Salesforce, HubSpot, Slack, Zapier, and Microsoft 365 to expand distribution." },
-    { title: "Vertical SaaS Development", description: "Deep domain builds for Proptech, Legaltech, Healthtech, Fintech, and Logistics. Includes regulatory alignment (HIPAA, GDPR, SOC 2) and domain-specific data models from day one." }
-  ],
-  differentiators: [
-    { feature: "Time to first hire", description: "3 to 6 months to recruit + onboard a senior team | Start architecture in week 1" },
-    { feature: "Full team cost (Year 1)", description: "$600K to $1.2M (4 engineers + benefits + equity) | $60K to $180K for equivalent delivery" },
-    { feature: "Architecture expertise", description: "Depends on individual hire quality | Senior architects with SaaS delivery track record" },
-    { feature: "Ramp up time", description: "3 to 6 months to full productivity | Full productivity from sprint 1" },
-    { feature: "Billing / auth specialists", description: "Usually a gap engineers figure it out | Implemented from Stripe/Auth0 production experience" },
-    { feature: "Flexibility at scale", description: "Hard to scale down in lean periods | Team size scales with product phase" },
-    { feature: "IP ownership", description: "Full ownership (employees) | Full ownership transferred at completion" },
-    { feature: "Long term maintenance", description: "Dependent on retention | SLA backed support contracts available" },
-    { feature: "Time to production MVP", description: "6 to 12 months (with ideal hiring outcomes) | 8 to 14 weeks" }
-  ],
-  processPhases: [
-    { phase: "Phase 1", title: "SaaS Product Discovery", timeline: "Week 1-2", text: "Workshop covering target customer profile, jobs-to-be-done, pricing model, integrations, and compliance. Output: PRD, technical blueprint, and phased delivery roadmap." },
-    { phase: "Phase 2", title: "Architecture & Data Model Design", timeline: "Week 2-3", text: "Design tenancy model, database schema, API contracts (OpenAPI), auth flow mapping, and billing architecture. Documented and reviewed before code." },
-    { phase: "Phase 3", title: "UI/UX Product Design", timeline: "Week 2-5", text: "Parallel high-fidelity Figma designs for onboarding, core workflow, billing, and team management. Validated through review cycles before engineering handoff." },
-    { phase: "Phase 4", title: "Sprint Based Development", timeline: "Week 4+", text: "2-week sprints shipping working features to staging. Priorities: auth, tenancy, billing, and core workflow. Production MVP typically in 8-14 weeks." },
-    { phase: "Phase 5", title: "Beta Launch & Feedback Integration", timeline: "Week 10-14", text: "Managed onboarding with feature flags, error monitoring, and user feedback loops. Rapid iteration to address highest priority findings before public launch." },
-    { phase: "Phase 6", title: "Public Launch & Growth Engineering", timeline: "Ongoing", text: "Launch with full observability (Sentry, Datadog). Post-launch retainer for A/B testing infrastructure, integrations, and performance optimization at scale." }
-  ],
-  techStackCategories: [
-    { layer: "Frontend Framework", technologies: "Next.js (React) SSR/SSG/CSR hybrid for SEO and app performance. TypeScript for enterprise-grade type safety." },
-    { layer: "Backend / API", technologies: "Node.js (Fastify) for concurrency; Python (FastAPI) for data-heavy backends. Both with OpenAPI 3.0 specs." },
-    { layer: "Database (Primary)", technologies: "PostgreSQL RLS for multi-tenancy, JSON columns for flexibility, and ACID compliance for billing reliability." },
-    { layer: "Billing & Payments", technologies: "Stripe Billing (default) for subscriptions, tax, and dunning. Chargebee for complex enterprise logic." },
-    { layer: "Auth & Identity", technologies: "Auth0 or Clerk for SAML, MFA, and RBAC speed. Custom JWT implementations for specialized control." },
-    { layer: "Cloud & DevOps", technologies: "AWS ECS Fargate, RDS, ElastiCache. GitHub Actions for automated CI/CD pipelines and environment parity." },
-    { layer: "Observability", technologies: "Sentry (errors), Datadog/Grafana (metrics), Hotjar/FullStory (UX), Mixpanel/Segment (product analytics)." },
-    { layer: "Search & Data", technologies: "Redis for rate limiting/caching. Typesense or Elasticsearch for complex faceted search requirements." }
-  ],
-  pricingTiers: [
-    { type: "SaaS MVP", investment: "$12,000 to $30,000", timeline: "8 to 14 weeks", bestFor: "Discovery, architecture, design, core feature build, Stripe billing, auth, CI/CD, launch support" },
-    { type: "B2B SaaS Platform", investment: "$40,000 to $120,000", timeline: "4 to 8 months", bestFor: "Full feature set, multi tenant architecture, SSO, API, admin panel, onboarding, monitoring" },
-    { type: "Enterprise SaaS", investment: "$80,000 to $200,000", timeline: "6 to 12 months", bestFor: "All above + SAML SSO, audit logs, compliance alignment, dedicated infra per enterprise tenant" },
-    { type: "White Label SaaS", investment: "$35,000 to $90,000", timeline: "4 to 7 months", bestFor: "Multi brand theming, subdomain routing, reseller billing, tenant management portal" },
-    { type: "SaaS Rebuild", investment: "$30,000 to $100,000", timeline: "3 to 8 months", bestFor: "Architecture assessment, migration plan, phased rebuild, data migration, parallel run" },
-    { type: "Growth Retainer", investment: "$6,000 to $20,000/mo", timeline: "Ongoing", bestFor: "Feature development, A/B testing, integration builds, performance optimization, monitoring" }
-  ],
-  industryUseCases: [
-    { name: "B2B Operations & Workflow SaaS", description: "Highly configurable workflow logic for project management and resource planning without sacrificing maintainability." },
-    { name: "HR Tech & Workforce Management", description: "GDPR/SOC 2 compliant employee onboarding, shift scheduling, and payroll integrations with ADP/BambooHR." },
-    { name: "Fintech & Payments SaaS", description: "Spend analytics, payment reconciliation, and embedded finance products aligned with PCI DSS and SOC 2 Type II." },
-    { name: "Proptech & Real Estate SaaS", description: "Lease lifecycle automation, tenant portals, and investment analytics integrated with DocuSign and Plaid." },
-    { name: "Healthtech & Wellness SaaS", description: "HIPAA compliant telehealth and practice management platforms with PHI handling and BAA documentation." },
-    { name: "Logistics & Supply Chain SaaS", description: "Real-time freight broker platforms and shipment visibility tools using WebSocket and event-driven architecture." }
+    "SaaS MVP Development",
+    "Subscription & Billing Systems",
+    "User Dashboards & Admin Panels",
+    "Scalable Cloud Architecture"
   ],
   checklist: [
-    { item: "Multi tenant architecture customer data isolated by design", standard: "Included tenancy model selected and implemented in architecture phase" },
-    { item: "Subscription billing Stripe/Chargebee live with your pricing tiers", standard: "Included full billing flow: checkout, upgrades, cancellations, dunning" },
-    { item: "Authentication email, OAuth, MFA, RBAC implemented", standard: "Included Auth0 or custom auth with enterprise SSO readiness" },
-    { item: "SSL certificates + HTTPS enforced everywhere", standard: "Included automated cert management via Let's Encrypt or ACM" },
-    { item: "Error monitoring Sentry or equivalent live", standard: "Included production error alerting from day one" },
-    { item: "Uptime monitoring alerting on downtime", standard: "Included monitoring configured before launch, not after an incident" },
-    { item: "Database backups automated, tested, and recoverable", standard: "Included daily automated backups with documented restore procedure" },
-    { item: "GDPR / Privacy policy cookie consent, data deletion workflow", standard: "Included for EU facing products GDPR consent flow and DPA template" },
-    { item: "Onboarding flow new user can reach value in under 5 minutes", standard: "Included onboarding design is a dedicated sprint workstream" },
-    { item: "Transactional email welcome, billing receipts, password reset", standard: "Included SendGrid/Postmark configured with templates" },
-    { item: "Admin panel internal tooling for customer management", standard: "Included internal admin for your CS and ops team" },
-    { item: "API documentation if API is public facing", standard: "Included OpenAPI 3.0 spec + developer portal if API is in scope" },
-    { item: "Load testing system validated for expected launch volume", standard: "Included load tested before every production launch" },
-    { item: "Penetration test security validated by automated scan", standard: "Included OWASP ZAP DAST scan + critical issue remediation pre launch" },
-    { item: "CI/CD pipeline code deploys automatically on merge", standard: "Included GitHub Actions pipeline from sprint 1" }
+    { item: "Multi-tenant architecture with data isolation", standard: "SaaS engineering baseline" },
+    { item: "Subscription billing and usage-based pricing integration", standard: "SaaS engineering baseline" },
+    { item: "Role-based access control and SSO support", standard: "SaaS engineering baseline" },
+    { item: "Automated CI/CD pipelines with security scanning", standard: "SaaS engineering baseline" },
+    { item: "Scalable infrastructure with auto-scaling configured", standard: "SaaS engineering baseline" }
+  ],
+  servicesCards: [
+    { title: "SaaS MVP Development", description: "We build focused SaaS MVPs that help founders test ideas, launch faster, and collect real user feedback before investing in a full platform." },
+    { title: "B2B SaaS Platforms", description: "We develop B2B SaaS platforms for businesses that sell software to other companies, teams, or professional users." },
+    { title: "SaaS Dashboards", description: "We build dashboards that help users manage data, tasks, reports, accounts, projects, or business activities inside your SaaS product." },
+    { title: "Admin Panels", description: "A strong admin panel helps your team manage users, subscriptions, content, payments, plans, reports, and platform activity." },
+    { title: "Subscription-Based Software", description: "We can develop SaaS products with subscription plans, user accounts, recurring access, billing logic, and customer management features." },
+    { title: "Customer Portals", description: "Customer portals allow your SaaS users to log in, manage accounts, view data, submit requests, and use your product features securely." }
+  ],
+  differentiators: [
+    { feature: "SaaS-Focused Architecture", description: "Built for multi-tenancy, scalability, and subscription management from day one." },
+    { feature: "MVP to Full Product Path", description: "Start with a focused MVP and scale into a complete SaaS platform." },
+    { feature: "Subscription & Billing Integration", description: "Stripe, Chargebee, and custom billing logic built into your product." },
+    { feature: "Clean UI/UX for SaaS Users", description: "User-friendly dashboards, onboarding flows, and admin panels." },
+    { feature: "Scalable Cloud Infrastructure", description: "AWS, GCP, or Azure with auto-scaling and monitoring." },
+    { feature: "Post-Launch Product Support", description: "Bug fixes, feature updates, performance improvements, and new modules." }
+  ],
+  processPhases: [
+    { phase: "Phase 1", title: "Product Discovery", timeline: "Week 1-2", text: "We understand your SaaS idea, target users, business model, features, and launch goals." },
+    { phase: "Phase 2", title: "Feature Planning", timeline: "Week 2-3", text: "We define the main features needed for the first version and separate must-have features from future improvements." },
+    { phase: "Phase 3", title: "UI/UX Design", timeline: "Week 3-4", text: "We design user-friendly screens for customers, admins, dashboards, sign-up flows, and product features." },
+    { phase: "Phase 4", title: "SaaS Architecture", timeline: "Week 4-5", text: "We plan the technical structure, database, user roles, subscriptions, integrations, and scalability." },
+    { phase: "Phase 5", title: "SaaS Development", timeline: "Week 5 onward", text: "Our team builds the frontend, backend, database, APIs, dashboards, and SaaS product features." },
+    { phase: "Phase 6", title: "Testing and Launch", timeline: "Per Milestone", text: "We test the SaaS platform for bugs, performance, usability, security, and user flow before launch." },
+    { phase: "Phase 7", title: "Support and Improvements", timeline: "Post-Launch", text: "After launch, we can support new features, bug fixes, performance improvements, and product updates." }
+  ],
+  techStackCategories: [
+    { layer: "Frontend", technologies: "React.js, Next.js, Vue.js, TypeScript, Tailwind CSS" },
+    { layer: "Backend", technologies: "Node.js, Python (Django/FastAPI), Laravel (PHP), Go, Java (Spring Boot)" },
+    { layer: "Mobile", technologies: "React Native, Flutter, Swift (iOS), Kotlin (Android)" },
+    { layer: "Database", technologies: "PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch" },
+    { layer: "Cloud", technologies: "AWS (EC2, RDS, S3, Lambda), Google Cloud Platform, Microsoft Azure" },
+    { layer: "DevOps", technologies: "Docker, Kubernetes, GitHub Actions, Jenkins, Terraform" },
+    { layer: "Billing", technologies: "Stripe, Chargebee, Paddle, Recurly, custom billing engines" },
+    { layer: "Security", technologies: "OWASP ASVS, SAST/DAST scanning, Vault (secrets), OAuth 2.0, SSO" }
+  ],
+  pricingTiers: [
+    { type: "SaaS MVP", investment: "$10,000 - $30,000", timeline: "6 - 12 weeks", bestFor: "Founders validating a SaaS idea with real users" },
+    { type: "SaaS Web App", investment: "$20,000 - $80,000", timeline: "3 - 6 months", bestFor: "B2B SaaS with dashboards, billing, and admin panel" },
+    { type: "Full SaaS Platform", investment: "$40,000 - $150,000", timeline: "5 - 10 months", bestFor: "Multi-tenant SaaS with subscriptions, API, and scaling" },
+    { type: "Enterprise SaaS", investment: "$80,000 - $250,000+", timeline: "8 - 14 months", bestFor: "Complex SaaS with compliance, integrations, and dedicated support" },
+    { type: "Dedicated Team", investment: "$10,000 - $30,000/mo", timeline: "Ongoing", bestFor: "SaaS companies needing ongoing product development capacity" }
+  ],
+  industryUseCases: [
+    { name: "Healthcare SaaS", description: "Patient management, telehealth platforms, clinical workflow tools, and HIPAA-compliant SaaS products." },
+    { name: "FinTech SaaS", description: "Payment processing, financial dashboards, KYC/AML platforms, and compliance-grade SaaS systems." },
+    { name: "EdTech SaaS", description: "Learning management systems, course platforms, student portals, and education automation tools." },
+    { name: "HR & Recruitment SaaS", description: "Applicant tracking, onboarding platforms, payroll systems, and workforce management tools." },
+    { name: "Real Estate SaaS", description: "Property management, listing platforms, tenant portals, and lease automation systems." },
+    { name: "Logistics SaaS", description: "Fleet management, shipment tracking, warehouse systems, and delivery optimization platforms." }
   ],
   sections: [
     {
-      heading: "What Is SaaS Product Development?",
-      body: "SaaS (Software as a Service) product development is the process of designing and building a cloud hosted software application delivered to customers via subscription over the internet. SaaS products are characterized by multi tenant architecture, subscription based billing, browser or API based access, automatic updates, and usage based scalability.\n\nA SaaS product development engagement encompasses the full product lifecycle: product strategy and architecture design, UI/UX product design, frontend and backend engineering, subscription billing integration, authentication and authorization systems, API development, cloud infrastructure setup, CI/CD pipeline configuration, and post launch growth engineering.\n\nSaaS product development differs from standard web application development in three critical dimensions: multi tenancy, billing complexity, and enterprise readiness requirements (SSO, RBAC, audit logs)."
+      heading: "Custom SaaS Development for Startups and Businesses",
+      body: "A SaaS product needs more than basic software development. It needs user accounts, subscriptions, dashboards, billing, secure data management, onboarding, product flows, and a scalable technical structure.\n\nClickMasters builds SaaS products around your business model, target users, features, and future growth plan. We focus on creating software that is easy to use, reliable, and ready to improve over time.",
+      items: []
     },
     {
-      heading: "Why Most SaaS Builds Fail Before They Launch",
-      body: "The SaaS market is brutally competitive. For every SaaS product that reaches $1M ARR, dozens stall at the architecture stage, burn their budget on a platform that cannot scale, or build features the market doesn't want. The problem is rarely the idea. It is the execution architecture.",
-      items: [
-        "Single tenant architecture requiring a full rebuild at scale",
-        "No billing abstraction layer, blocking pricing model evolution",
-        "Authentication built ad-hoc without SSO/MFA, blocking enterprise sales",
-        "No API-first design, limiting distribution channels and partner integrations",
-        "Frontend built before data models, causing cascading schema migrations",
-        "Performance not validated until production, causing launch-day failures",
-        "No observability layer, leaving the team blind to production issues"
-      ]
+      heading: "SaaS Platforms Built for Users and Growth",
+      body: "A successful SaaS product should be easy for users to understand and simple for your team to manage.\n\nWe build SaaS platforms with clean user journeys, clear dashboards, secure login systems, admin controls, and scalable backend systems. This helps your product support more users, more features, and more business growth over time.",
+      items: []
     },
     {
-      heading: "SaaS Architecture Decisions: What We Get Right From Day One",
-      body: "Critical decisions made in week one determine long-term velocity and cost. We guide you through tenancy model selection, billing stack architecture, and enterprise readiness planning."
-    }
-  ],
-  tables: [
-    {
-      title: "Multi Tenancy Model Selection",
-      headers: ["Tenancy Model", "Best For", "Data Isolation", "Cost Profile"],
-      rows: [
-        ["Shared Database (Row Level)", "High volume SMB SaaS, cost sensitive startups", "Row level tenant ID", "Lowest infrastructure cost"],
-        ["Schema Per Tenant", "Mid market B2B SaaS, moderate compliance needs", "Schema isolation", "Moderate, scales well"],
-        ["Database Per Tenant", "Enterprise SaaS, regulated industries (HIPAA)", "Full DB isolation", "Higher, best for premium tiers"]
-      ]
+      heading: "Why SaaS Products Need Strong Technical Planning",
+      body: "SaaS products are built to grow. That means the technical foundation must support more users, more data, more features, and more integrations.\n\nPoor planning can lead to slow performance, difficult updates, security issues, and expensive rebuilds later.\n\nClickMasters focuses on building SaaS products with a clean structure from the start, so your product can improve over time without becoming difficult to manage.",
+      items: []
     }
   ],
   faqs: [
     {
       question: "What is SaaS product development?",
-      answer: "SaaS product development is the process of designing, building, and launching cloud-hosted subscription software with multi-tenant architecture, billing, auth, APIs, and infrastructure automation."
+      answer: "SaaS product development is the process of building cloud-based software that users can access online, usually through subscriptions or recurring plans."
     },
     {
-      question: "How much does it cost to build a SaaS product?",
-      answer: "Building a SaaS product costs between $12,000 for a focused MVP and $200,000+ for an enterprise-grade platform. Costs are driven by feature scope, billing complexity, auth requirements, and compliance needs."
+      question: "Can you build a SaaS MVP first?",
+      answer: "Yes. We can build a focused SaaS MVP with the core features needed to launch, test the idea, and collect user feedback."
     },
     {
-      question: "How long does it take to build a SaaS product?",
-      answer: "A SaaS MVP takes 8 to 14 weeks. A full B2B platform takes 4 to 8 months, and enterprise platforms with compliance alignment take 6 to 12 months. We deliver working software every 2 weeks."
+      question: "Do SaaS products need custom development?",
+      answer: "Many SaaS products need custom development because they require unique features, user flows, dashboards, subscriptions, integrations, and business logic."
     },
     {
-      question: "What is multi tenant SaaS architecture?",
-      answer: "Multi-tenant architecture allows a single application instance to serve multiple customers (tenants) while keeping their data isolated. We support shared database, schema-per-tenant, and database-per-tenant models."
+      question: "Can you add payment or subscription features?",
+      answer: "Yes. We can build payment gateway integrations, subscription plans, account management, billing logic, and admin controls."
     },
     {
-      question: "Do you build SaaS products with Stripe billing?",
-      answer: "Yes. Stripe Billing is our default stack. We implement the full lifecycle: subscriptions, trials, usage-based metering, invoicing, dunning, and Stripe Tax for automated compliance."
-    },
-    {
-      question: "What is the difference between SaaS MVP development and full SaaS platform development?",
-      answer: "An MVP validates core value with paying customers via one primary workflow. A full build adds multi-tier pricing, enterprise SSO, team management, public APIs, and advanced admin tooling."
-    },
-    {
-      question: "Can you take over a SaaS product that was built by another team?",
-      answer: "Yes. We start with an architecture review and Technical Debt Report to scope either a modernization engagement or a phased rebuild if debt exceeds rebuilding costs."
-    },
-    {
-      question: "Do you provide post launch SaaS maintenance and growth engineering?",
-      answer: "Yes. We offer growth retainers from $6,000/mo covering feature development, A/B testing, integration builds, performance optimization, and infrastructure scaling."
+      question: "Do you provide SaaS product support after launch?",
+      answer: "Yes. We can help with bug fixes, feature updates, performance improvements, maintenance, and future product development."
     }
   ]
 };
@@ -2287,451 +2266,455 @@ const mvpDevelopmentOverride = {
   categorySlug: "software-development",
   sectionId: "mvp-development",
   category: "Software Development",
-  title: "MVP Development Company That Builds Production Ready Products for Startups in USA, Europe and Canada",
+  title: "MVP Development Services",
   serviceName: "MVP Development",
-  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-  metaTitle: "MVP Development Company | Build Production-Ready MVPs | ClickMasters",
-  metaDescription: "ClickMasters builds production-ready MVPs for startups in USA, Europe & Canada. 8-12 week delivery, scalable architecture, working auth & payments. Fixed price.",
-  lead: "ClickMasters builds production ready MVPs for startup founders and B2B operators across the USA, Europe, Canada, and Australia. Not a prototype. Not a demo. A live, deployed product with real users, real data, working authentication, payment processing, and the architectural foundation to scale to 100,000 users without a rebuild.",
+  heroImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
+  metaTitle: "MVP Development Services UK | ClickMasters",
+  metaDescription: "ClickMasters provides MVP development services for startups and businesses that want to validate ideas, launch faster, reduce risk, and build scalable software products.",
+  lead: "ClickMasters provides MVP development services for startups, founders, and businesses that want to turn an idea into a working software product. We help you plan, design, build, test, and launch a minimum viable product with the core features needed to validate your idea with real users.",
   highlights: [
-    "Live in 8 to 12 Weeks",
-    "Architecture That Scales",
-    "Working Billing & Auth",
-    "Investor Ready Codebase",
-    "Fixed Price",
-    "Post Launch Support"
+    "Idea to Working Product",
+    "Feature Prioritisation",
+    "Scalable Foundation",
+    "Launch Support & Iteration"
   ],
-  // marketStats: [
-  //   { label: 'Of startups fail due to building the wrong thing', value: '90%' },
-  //   { label: 'Average wasted on over-built first versions', value: '$50K' },
-  //   { label: 'Average MVP delivery timeline', value: '8 Weeks' },
-  //   { label: 'Faster time to first paying customer', value: '3x' },
-  // ],
+  checklist: [
+    { item: "Clear MVP scope with prioritised features", standard: "MVP engineering baseline" },
+    { item: "User flows validated before development begins", standard: "MVP engineering baseline" },
+    { item: "Clean, maintainable codebase ready for scaling", standard: "MVP engineering baseline" },
+    { item: "Core functionality tested and documented", standard: "MVP engineering baseline" },
+    { item: "Deployment ready with CI/CD and monitoring", standard: "MVP engineering baseline" }
+  ],
   servicesCards: [
-    { title: "SaaS MVP", description: "Web-based subscription products with multi-tenant data isolation, Stripe billing, OAuth, and a scalable architecture. Built on Next.js + Node.js + PostgreSQL. Live in 8 to 12 weeks." },
-    { title: "Marketplace MVP", description: "Two-sided marketplaces connecting supply and demand with matching logic, transaction handling via Stripe Connect, and reputation systems. Focused on supply bootstrapping." },
-    { title: "B2B Internal Tool MVP", description: "Digitizing manual business processes into reliable software for daily operational use. Structured to generate data that drives future product decisions." },
-    { title: "Mobile App MVP", description: "Cross-platform apps in React Native or Flutter. Focus on the primary user flow, including auth, onboarding, push notifications, and store submission. 10 to 14 weeks." },
-    { title: "API / Platform MVP", description: "For developer-facing products: the API itself with documentation, auth (API keys + OAuth), rate limiting, and integration examples. Validates developer adoption." },
-    { title: "AI Powered Product MVP", description: "MVPs where AI is the core value. Includes LLM integration with streaming, RAG pipelines for domain accuracy, and cost monitoring. 10 to 14 weeks." }
+    { title: "MVP Discovery & Product Strategy", description: "We start by understanding your idea, target users, business model, goals, and competition. This helps us define the right MVP scope before development begins." },
+    { title: "Feature Prioritisation", description: "Not every feature belongs in the first version. We help you separate must-have features from future features so your MVP stays focused, lean, and easier to launch." },
+    { title: "UI/UX Design", description: "We design clean user flows, wireframes, and product screens so your MVP is simple to use and easy to understand for early users." },
+    { title: "MVP Web Application Development", description: "We build browser-based MVPs such as dashboards, portals, SaaS platforms, marketplaces, booking systems, and business software." },
+    { title: "MVP Mobile App Development", description: "We develop MVP mobile apps for Android, iOS, or cross-platform use, depending on your users, budget, and launch goals." },
+    { title: "SaaS MVP Development", description: "We build SaaS MVPs with user accounts, dashboards, subscriptions, admin panels, billing flows, and scalable product architecture." },
+    { title: "AI MVP Development", description: "We can build AI-powered MVPs with chatbots, AI agents, document processing, LLM features, automation, and AI integrations where required." },
+    { title: "MVP Testing & QA", description: "Before launch, we test your MVP for usability, bugs, performance, security, and key user flows to make sure it works properly." },
+    { title: "MVP Launch Support", description: "We help prepare your MVP for launch so you can start collecting real feedback, tracking users, and improving the product." }
+  ],
+  differentiators: [
+    { feature: "Clear MVP Planning", description: "We define the right scope so you do not overbuild or waste budget." },
+    { feature: "Practical Feature Prioritisation", description: "Must-have features first, improvements after launch." },
+    { feature: "User-Friendly Design", description: "Clean, intuitive interfaces that early users can understand quickly." },
+    { feature: "Scalable Architecture", description: "Built to grow into a full product without rewriting from scratch." },
+    { feature: "Fast Time to Market", description: "Focused development cycles to get your MVP live sooner." },
+    { feature: "Post-Launch Support", description: "Iteration, improvements, and new features based on real user feedback." }
   ],
   processPhases: [
-    { phase: "Phase 1", title: "Discovery", timeline: "Week 1", text: "PRD, technical blueprint, data model design, API contract spec, and UI wireframes for all primary flows." },
-    { phase: "Phase 2", title: "Design", timeline: "Week 2-3", text: "High-fidelity Figma designs, component library, and responsive layouts. Stakeholder sign-off before development." },
-    { phase: "Phase 3", title: "Sprint 1", timeline: "Week 3-4", text: "Authentication (sign up, login, OAuth), database schema, CI/CD pipeline, and staging environment live." },
-    { phase: "Phase 4", title: "Sprint 2", timeline: "Week 5-6", text: "Core user workflow #1 complete end-to-end on staging. Users can perform primary actions with real data persisted." },
-    { phase: "Phase 5", title: "Sprint 3", timeline: "Week 7-8", text: "Billing integration (Stripe), onboarding flow, basic admin panel, and error handling across all flows." },
-    { phase: "Phase 6", title: "Sprint 4", timeline: "Week 9-10", text: "Internal analytics, performance testing, cross-browser QA, and launch checklist completion." },
-    { phase: "Phase 7", title: "Launch", timeline: "Week 10-11", text: "Production deployment, DNS cutover, monitoring live (Sentry, uptime). 30-day hypercare period begins." }
+    { phase: "Phase 1", title: "Idea Review", timeline: "Week 1", text: "We discuss your idea, target audience, product goals, business model, and expected outcome." },
+    { phase: "Phase 2", title: "Research and Planning", timeline: "Week 1-2", text: "We review the market, competitors, users, main features, and technical requirements." },
+    { phase: "Phase 3", title: "MVP Scope Definition", timeline: "Week 2", text: "We define the essential features needed for the first version and remove unnecessary complexity." },
+    { phase: "Phase 4", title: "Wireframing and UI/UX Design", timeline: "Week 2-3", text: "We create user journeys, screens, and clickable prototypes so the MVP structure is clear before coding." },
+    { phase: "Phase 5", title: "Software Development", timeline: "Week 3 onward", text: "Our team builds the MVP using the right frontend, backend, database, API, and integration setup." },
+    { phase: "Phase 6", title: "Testing and Quality Assurance", timeline: "Ongoing", text: "We test the product to make sure the main features work smoothly across users, devices, and workflows." },
+    { phase: "Phase 7", title: "Launch and Feedback", timeline: "Per Milestone", text: "After launch, your MVP can be tested with real users. Feedback, analytics, and user behaviour can guide the next version." },
+    { phase: "Phase 8", title: "Iteration and Scaling", timeline: "Post-Launch", text: "Once the MVP is validated, we help improve features, add new modules, optimise performance, and scale the product." }
   ],
   techStackCategories: [
-    { layer: "Frontend", technologies: "Next.js + React + TypeScript, Tailwind CSS. SSR for marketing, CSR for application." },
-    { layer: "Backend API", technologies: "Node.js (Fastify/Express) or Python (FastAPI) for AI-heavy MVPs. OpenAPI specs." },
-    { layer: "Database", technologies: "PostgreSQL: ACID compliance, RLS for multi-tenancy, JSON support. Best-in-class reliability." },
-    { layer: "Authentication", technologies: "Clerk or NextAuth. Built-in OAuth, MFA, and secure session management." },
-    { layer: "Billing", technologies: "Stripe: Checkout, subscriptions, Portal, Tax, and webhooks. Configured for scale." },
-    { layer: "Infrastructure", technologies: "AWS ECS Fargate + RDS + CloudFront. Terraform for IaC from day 1." },
-    { layer: "CI/CD & Monitoring", technologies: "GitHub Actions, Sentry, UptimeRobot, Mixpanel or PostHog." }
+    { layer: "Frontend", technologies: "React.js, Next.js, Vue.js, Angular, TypeScript, Tailwind CSS" },
+    { layer: "Backend", technologies: "Node.js, Python (Django/FastAPI), Laravel (PHP), Ruby on Rails, Go, Java (Spring Boot)" },
+    { layer: "Mobile", technologies: "React Native, Flutter, Swift (iOS), Kotlin (Android), Ionic" },
+    { layer: "Database", technologies: "PostgreSQL, MySQL, MongoDB, Redis, Firebase" },
+    { layer: "Cloud", technologies: "AWS (EC2, RDS, S3, Lambda), Google Cloud Platform, Microsoft Azure" },
+    { layer: "DevOps", technologies: "Docker, GitHub Actions, Jenkins, Terraform" },
+    { layer: "AI/ML", technologies: "OpenAI API, LangChain, Hugging Face, TensorFlow, PyTorch" },
+    { layer: "Security", technologies: "OWASP ASVS, SAST/DAST scanning, OAuth 2.0, JWT" }
   ],
   pricingTiers: [
-    { type: "Web App / SaaS MVP", investment: "$12,000 - $30,000", timeline: "8 - 12 weeks", bestFor: "Auth, billing, core workflow, basic admin, CI/CD, monitoring, 30-day support" },
-    { type: "Marketplace MVP", investment: "$20,000 - $50,000", timeline: "10 - 16 weeks", bestFor: "Buyer + seller sides, Stripe Connect, matching logic, listings, ratings" },
-    { type: "Mobile App MVP", investment: "$20,000 - $45,000", timeline: "10 - 14 weeks", bestFor: "iOS + Android, auth, core workflow, push notifications, store submission" },
-    { type: "AI Powered MVP", investment: "$18,000 - $45,000", timeline: "10 - 14 weeks", bestFor: "LLM integration, RAG pipeline, streaming UI, feedback, cost monitoring" },
-    { type: "Prototype / PoC", investment: "$5,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "Clickable Figma prototype or thin technical proof of concept" }
+    { type: "Simple MVP", investment: "$5,000 - $15,000", timeline: "4 - 8 weeks", bestFor: "Validating a single-feature idea quickly" },
+    { type: "Web App MVP", investment: "$10,000 - $30,000", timeline: "6 - 12 weeks", bestFor: "Browser-based MVP with dashboards and user accounts" },
+    { type: "Mobile App MVP", investment: "$15,000 - $40,000", timeline: "8 - 14 weeks", bestFor: "Cross-platform or native mobile MVP" },
+    { type: "SaaS MVP", investment: "$15,000 - $50,000", timeline: "8 - 16 weeks", bestFor: "SaaS with subscriptions, billing, and admin panel" },
+    { type: "AI MVP", investment: "$20,000 - $60,000", timeline: "10 - 18 weeks", bestFor: "AI-powered product with chatbots, LLM features, or automation" }
   ],
   industryUseCases: [
-    { name: "SaaS & B2B Workflow Tools", description: "Project management, approval platforms, field service, and niche CRMs. Focus on configurable workflow logic." },
-    { name: "HR Tech & Workforce", description: "Employee onboarding, scheduling, LMS, and compliance. GDPR and SOC 2 architecture included." },
-    { name: "Fintech & Payments", description: "Expense management, reconciliation, and embedded finance. PCI DSS and SOC 2 alignment from day one." },
-    { name: "Proptech & Real Estate", description: "Property management, tenant portals, and investment analytics. DocuSign and Plaid integrations." },
-    { name: "Healthtech & Wellness", description: "Telehealth scheduling, practice management, and patient tools. HIPAA compliance and PHI handling." },
-    { name: "Logistics & Supply Chain", description: "Freight broker MVPs, shipment visibility, and carrier portals. Real-time data and event-driven design." },
-    { name: "AI Powered Products", description: "RAG pipelines, LLM streaming, feedback collection, and cost monitoring for domain-specific AI apps." },
-    { name: "Marketplaces", description: "Matching logic, Stripe Connect, ratings, and supply bootstrapping for two-sided platforms." }
+    { name: "Healthcare MVPs", description: "Patient management, appointment booking, telehealth platforms, and clinical workflow MVPs." },
+    { name: "FinTech MVPs", description: "Payment processing, financial dashboards, budgeting tools, and compliance-grade MVPs." },
+    { name: "EdTech MVPs", description: "Learning platforms, course management, student portals, and education automation MVPs." },
+    { name: "Ecommerce MVPs", description: "Online stores, marketplace platforms, inventory management, and order processing MVPs." },
+    { name: "Real Estate MVPs", description: "Property listing, tenant management, lease automation, and property search MVPs." },
+    { name: "Logistics MVPs", description: "Fleet tracking, shipment management, warehouse systems, and delivery optimization MVPs." }
   ],
   sections: [
     {
-      heading: "What Is an MVP and What Are You Actually Buying?",
-      body: "A Minimum Viable Product (MVP) is the smallest version of a product that delivers enough value for real users to use it and pay for it, and that generates enough learning data to inform the next development decisions. An MVP is not a prototype, not a proof of concept, and not a full product.\n\nThe defining characteristic of a production ready MVP is that it works: real users can create accounts, use the core feature, and for commercial products, pay for it, on an infrastructure that will support growth without requiring a rewrite.",
+      heading: "MVP Development Services for Startups and Businesses",
+      body: "Building a full software product without validation can be risky and expensive. An MVP gives you a focused first version of your product, built around the most important features your users need.\n\nClickMasters helps businesses build MVPs for web applications, mobile apps, SaaS platforms, marketplaces, internal tools, customer portals, and AI-powered software products. Our approach focuses on clear scope, practical features, clean design, reliable development, and a scalable foundation for future growth.",
+      items: []
+    },
+    {
+      heading: "What Is MVP Development?",
+      body: "MVP development is the process of building a minimum viable product with only the essential features needed to test a business idea, solve a real user problem, and gather feedback from early users.\n\nAn MVP is not an unfinished or low-quality product. It is a carefully planned first version that helps you validate your concept before building a complete product.\n\nA strong MVP should help you answer important questions:",
       items: [
-        "Solves one specific, validated customer problem in a way customers will pay for",
-        "Is live on your domain with a real URL that users can access",
-        "Has working authentication, onboarding, and payment processing",
-        "Is built on a scalable architecture that does not require a rebuild before your Series A",
-        "Generates real usage data that informs every subsequent product decision"
+        "Do users understand the product?",
+        "Does the product solve a real problem?",
+        "Which features are actually needed?",
+        "Are users willing to sign up, use, or pay?",
+        "What should be improved before scaling?"
       ]
     },
     {
-      heading: "The Two Ways Founders Waste Their Build Budget",
-      body: "The first mistake is building too much: spending 9 to 12 months and $150,000 to $300,000 building a feature complete product before a single paying customer has validated the core value proposition. The second mistake is building too little, but in the wrong way: a prototype disguised as an MVP that collapses under real usage."
-    },
-    {
-      heading: "Architecture That Scales Why It Matters for MVPs",
-      body: "The most expensive mistake in MVP development is building on an architecture that has to be replaced when the product grows. A codebase that works fine at 100 users but requires a full rewrite at 10,000 is not an MVP it is a prototype with a deployment."
-    },
-    {
-      heading: "What Belongs in Your MVP and What Definitely Does Not",
-      body: "MVP scope decisions are the highest leverage work ClickMasters does with every founding team. Every feature added to the MVP adds 3 to 8 weeks to the timeline and proportional cost. The goal is to learn as fast as possible whether the core value proposition is real."
-    }
-  ],
-  tables: [
-    {
-      title: "Prototype vs MVP vs Production App",
-      headers: ["Dimension", "Prototype / PoC", "MVP (Production Ready)", "Full Product"],
-      rows: [
-        ["What it is", "Interactive mockup or PoC", "Minimal production deployed product", "Full featured product"],
-        ["Users can pay", "No", "Yes, Stripe integrated", "Yes, full billing features"],
-        ["Real database", "No or mock data", "Yes, with production data", "Yes, full data architecture"],
-        ["Authentication", "Often none or fake", "Working auth: email, OAuth", "Full auth: MFA, SSO, RBAC"],
-        ["Scales to 10K users", "No", "Yes, architected for scale", "Yes"],
-        ["Typical cost", "$5,000 to $15,000", "$12,000 to $50,000", "$50,000 to $200,000+"],
-        ["Typical timeline", "2 to 4 weeks", "8 to 12 weeks", "5 to 12 months"]
+      heading: "What Features Should an MVP Include?",
+      body: "An MVP should include only the features needed to deliver the core value of the product. The goal is not to build everything at once. The goal is to prove that the product idea works.\n\nThe right feature set depends on your idea, target users, product type, and validation goal.",
+      items: [
+        "User registration and login",
+        "Core product feature",
+        "User dashboard",
+        "Admin dashboard",
+        "Basic reporting",
+        "Payment or subscription flow",
+        "Notifications",
+        "Search or filtering",
+        "User profile",
+        "Database management",
+        "API integrations",
+        "Feedback collection",
+        "Analytics setup"
       ]
     },
     {
-      title: "Architecture Decision Comparison",
-      headers: ["Decision", "Prototype Approach", "ClickMasters MVP"],
-      rows: [
-        ["Database design", "Ad hoc tables, no schema", "Extensible, normalized, indexed"],
-        ["Authentication", "Basic tokens, no OAuth", "JWT, bcrypt, OAuth, secure"],
-        ["API design", "No API, mixed logic", "REST API from day 1"],
-        ["Multi tenancy", "Single tenant", "Row level multi tenancy from day 1"],
-        ["Infrastructure", "Single server, no backups", "AWS ECS Fargate, auto-backups"]
-      ]
+      heading: "Build an MVP Before Building the Full Product",
+      body: "An MVP helps you make better product decisions before investing in a full software platform. Instead of guessing what users want, you can launch a focused version, collect feedback, measure usage, and improve the product with real evidence.\n\nClickMasters builds MVPs that help startups and businesses validate ideas, reduce risk, and move towards a stronger full product.",
+      items: []
     }
   ],
   faqs: [
     {
-      question: "What is an MVP (Minimum Viable Product)?",
-      answer: "A Minimum Viable Product (MVP) is the smallest version of a product that delivers enough value for real users to use it and pay for it, and that generates enough learning data to inform the next development decisions. It is a production-ready application, not a prototype."
+      question: "What are MVP development services?",
+      answer: "MVP development services include planning, designing, building, testing, and launching a minimum viable product with the essential features needed to validate a product idea."
+    },
+    {
+      question: "What does MVP mean in software development?",
+      answer: "MVP stands for Minimum Viable Product. It is the first usable version of a software product built with core features for early users."
+    },
+    {
+      question: "Who needs MVP development?",
+      answer: "MVP development is useful for startups, founders, small businesses, and companies that want to test a software idea before investing in full product development."
+    },
+    {
+      question: "Can you build a SaaS MVP?",
+      answer: "Yes. We can build SaaS MVPs with user accounts, dashboards, subscriptions, admin panels, billing features, and scalable architecture."
+    },
+    {
+      question: "Can you build a mobile app MVP?",
+      answer: "Yes. We can build Android, iOS, and cross-platform mobile app MVPs based on your product goals and target users."
     },
     {
       question: "How much does MVP development cost?",
-      answer: "MVP development costs range from $12,000 for a focused web or SaaS MVP to $50,000 for a marketplace or complex mobile MVP. We provide fixed-price proposals after a free scoping session."
+      answer: "The cost depends on features, design, platform, integrations, user roles, and complexity. A focused MVP with fewer features costs less than a complex SaaS or mobile product."
     },
     {
       question: "How long does it take to build an MVP?",
-      answer: "A production-ready MVP takes 8 to 12 weeks for a focused web or SaaS product. A marketplace MVP takes 10 to 16 weeks. We deliver a working build to staging after the first 2-week sprint."
+      answer: "The timeline depends on scope and complexity. A simple MVP can be completed faster, while a complex product with multiple features, dashboards, and integrations needs more time."
     },
     {
-      question: "What features should I include in my MVP?",
-      answer: "Include only what is necessary for users to experience the core value proposition. This typically includes auth, the primary workflow, billing, basic onboarding, and internal analytics."
-    },
-    {
-      question: "Will the MVP architecture scale as my product grows?",
-      answer: "Yes. We build MVPs on architectures designed to scale (PostgreSQL, REST API, Row-level multi-tenancy, AWS Fargate) to avoid the need for a rewrite as you grow."
-    },
-    {
-      question: "Do you help with product strategy and feature prioritization?",
-      answer: "Yes. We operate as a product partner, challenging your feature list against the minimum viable definition to protect your timeline and budget."
-    },
-    {
-      question: "Is the MVP code investor ready and auditable?",
-      answer: "Yes. The codebase is fully documented, tested, and follows clean architecture patterns that pass technical due diligence at Seed and Series A stages."
-    },
-    {
-      question: "What happens after the MVP launches?",
-      answer: "The first 30 to 90 days post launch are managed under hypercare. We also offer growth retainers for continued feature development and transition support if you hire an internal team."
+      question: "Can an MVP become a full product later?",
+      answer: "Yes. A well-planned MVP can be improved and scaled into a complete software product after validation, user feedback, and product roadmap planning."
     }
-  ],
-  testimonial: {
-    quote: "We launched in 10 weeks, raised a seed round 3 months later, and the codebase passed our lead investor's technical due diligence without a single comment. ClickMasters scoped us ruthlessly in week one and we are grateful they did.",
-    author: "Founder & CEO",
-    role: "B2B SaaS, USA, Seed Funded"
-  },
-  caseStudy: {
-    title: "MVP Built and Funded",
-    description: "Production MVP delivered in 9 weeks. First 25 paying customers onboarded within 6 weeks of launch. $350,000 seed round closed 4 months later.",
-    slug: "mvp-built-and-funded",
-    badge: "SaaS MVP"
-  }
+  ]
 };
 const desktopApplicationDevelopmentOverride = {
   slug: "desktop-application-development",
   categorySlug: "software-development",
   sectionId: "desktop-application-development",
   category: "Software Development",
-  title: "Desktop Application Development Company for B2B Enterprises in USA, Europe and Canada",
+  title: "Desktop Application Development Services",
   serviceName: "Desktop Application Development",
-  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-  metaTitle: "Desktop Application Development Company | Electron, Tauri & Native | ClickMasters",
-  metaDescription: "ClickMasters builds production-grade desktop applications using Electron, Tauri, WPF, and Swift for B2B enterprises in the USA, Europe & Canada. OS-level integration.",
-  lead: "ClickMasters builds production grade desktop applications for B2B enterprises across the USA, Europe, Canada, and Australia. Electron and Tauri for cross platform (Windows + macOS + Linux) from web technologies. WPF and WinUI 3 for Windows enterprise. Native macOS in Swift. Professional tools that access the file system, integrate with hardware, appear in the system tray, and work offline capabilities the browser cannot deliver.",
+  heroImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1332&auto=format&fit=crop",
+  metaTitle: "Desktop Application Development Services | ClickMasters",
+  metaDescription: "ClickMasters provides desktop application development services for businesses that need secure, custom desktop software for Windows, macOS, Linux, and internal operations.",
+  lead: "ClickMasters provides desktop application development services for businesses that need secure, reliable, and custom-built desktop software. We build desktop applications for Windows, macOS, and cross-platform environments, helping companies manage internal operations, data, workflows, reporting, and business processes from powerful desktop systems.",
   highlights: [
-    "Electron & Tauri",
-    "WPF & WinUI 3",
-    "Native macOS (Swift)",
-    "Cross Platform (Win + Mac + Linux)",
-    "Auto Update & Distribution",
-    "OS Integration & Hardware Access"
+    "Windows, macOS & Cross-Platform",
+    "Offline & Hardware-Connected",
+    "Legacy Software Modernisation",
+    "Secure Internal Systems"
   ],
-  // marketStats: [
-  //   { label: 'Of enterprise software still delivered as desktop apps', value: '77%' },
-  //   { label: 'Major apps built on Electron (VS Code, Slack, Notion)', value: 'VS Code' },
-  //   { label: 'Faster startup time of Tauri apps vs Electron', value: '10x' },
-  //   { label: 'App Store fees for direct desktop distribution', value: '$0' },
-  // ],
+  checklist: [
+    { item: "Platform-specific performance and compatibility testing", standard: "Desktop engineering baseline" },
+    { item: "Offline functionality with data sync when reconnected", standard: "Desktop engineering baseline" },
+    { item: "Secure local data storage and access controls", standard: "Desktop engineering baseline" },
+    { item: "Clean installer and update mechanism", standard: "Desktop engineering baseline" },
+    { item: "Hardware integration tested with target devices", standard: "Desktop engineering baseline" }
+  ],
   servicesCards: [
-    { title: "Electron Application Development", description: "Cross-platform apps using Chromium + Node.js. React or Vue.js frontend with full npm ecosystem. Secure contextBridge IPC architecture and SQLite persistence." },
-    { title: "Tauri Desktop Development", description: "Lightweight cross-platform apps using Rust + OS native WebView. 2-10MB installers, low memory usage, and high-performance Rust backend logic." },
-    { title: "Windows Enterprise (WPF/WinUI)", description: "Windows-first LOB apps with .NET 8, Fluent Design, and MSIX packaging. Deep integration with Active Directory and enterprise group policies." },
-    { title: "Native macOS Development", description: "Native Swift/SwiftUI apps with deepest Apple ecosystem integration. Menu Bar extras, Services, Spotlight, and Apple Silicon optimization." },
-    { title: "Cross-Platform with Flutter", description: "Building desktop targets from a shared Flutter/Dart codebase. Ideal for organizations wanting one team across mobile and desktop platforms." },
-    { title: "Desktop Modernization", description: "Migrating legacy VB6, WinForms, or MFC apps to modern .NET or Tauri. Incremental migration paths to maintain business continuity." }
+    { title: "Business Desktop Software", description: "Custom desktop software for daily business tasks, internal workflows, data management, reporting, and team operations." },
+    { title: "Enterprise Desktop Applications", description: "Secure desktop applications for companies that need advanced workflows, role-based access, integrations, and business control." },
+    { title: "Offline Desktop Applications", description: "Desktop software that can work without constant internet access, using local storage and syncing data when connection is available." },
+    { title: "Desktop Admin Tools", description: "Admin tools for managing records, users, inventory, reports, internal processes, and business activity." },
+    { title: "Desktop Reporting Systems", description: "Reporting software that helps teams manage business data, export reports, track performance, and analyse operational information." },
+    { title: "Hardware-Connected Desktop Software", description: "Desktop applications that connect with devices such as printers, scanners, POS systems, local machines, equipment, or internal hardware where required." },
+    { title: "Legacy Desktop Application Modernisation", description: "Many businesses still depend on old desktop software that is slow, difficult to update, or no longer suitable for modern needs." }
   ],
   differentiators: [
-    { feature: "Framework Selection", description: "Right-fit framework for your constraints | Basic: One-size-fits-all approach" },
-    { feature: "OS Integration", description: "Deep hardware, tray & shortcut access | Basic: Limited web-wrapped shells" },
-    { feature: "Distribution Expertise", description: "EV Code Signing & SCCM/Intune ready | None: Manual installs only" },
-    { feature: "Auto-Update Infra", description: "Differential silent background updates | None: Manual manual updates" },
-    { feature: "Security Standards", description: "ContextIsolation & Rust-level safety | Basic: Insecure IPC patterns" }
+    { feature: "Windows, macOS & Cross-Platform", description: "Build for one platform or all, depending on your users and budget." },
+    { feature: "Offline & Hardware-Connected", description: "Software that works without internet and connects with local devices." },
+    { feature: "Legacy Software Modernisation", description: "Improve old desktop software with better UI, performance, and security." },
+    { feature: "Clean UI/UX Design", description: "User-friendly desktop screens that help your team work faster." },
+    { feature: "Secure Database Structure", description: "Local and cloud database architecture built for your data needs." },
+    { feature: "API & System Integrations", description: "Connect desktop software with CRM, ERP, accounting, and other tools." },
+    { feature: "Maintenance & Support", description: "Updates, bug fixes, security patches, and feature improvements after launch." }
   ],
   processPhases: [
-    { phase: "Phase 1", title: "Framework Selection", timeline: "Week 1", text: "Validating desktop vs web, platform targets, and OS capability audit to drive the optimal framework choice." },
-    { phase: "Phase 2", title: "UI Architecture", timeline: "Week 2-4", text: "Designing IPC contracts, main/renderer boundaries, and pixel-perfect OS-compliant interfaces (Fluent/HIG)." },
-    { phase: "Phase 3", title: "Core Development", timeline: "Week 3-10", text: "Implementation of features, IPC layer, local SQLite persistence, and auto-update integration." },
-    { phase: "Phase 4", title: "OS & Hardware", timeline: "Week 7-11", text: "Integration with file system, USB/Serial devices, Bluetooth LE, and custom protocol handlers." },
-    { phase: "Phase 5", title: "QA & Profiling", timeline: "Week 9-12", text: "Rigorous testing on real hardware, memory profiling, and Electron/Tauri security audits." },
-    { phase: "Phase 6", title: "Packaging", timeline: "Week 11-13", text: "EV Code Signing, notarization, and distribution packaging (MSIX, PKG, DMG, AppImage)." }
+    { phase: "Phase 1", title: "Requirement Discussion", timeline: "Week 1-2", text: "We understand your business problem, users, operating systems, workflows, and desktop software goals." },
+    { phase: "Phase 2", title: "Technical Planning", timeline: "Week 2-3", text: "We define the best platform, architecture, technology stack, database structure, integrations, and security needs." },
+    { phase: "Phase 3", title: "UI/UX Design", timeline: "Week 3-4", text: "We design clean and easy-to-use desktop screens so your team can work faster and avoid confusion." },
+    { phase: "Phase 4", title: "Desktop Application Development", timeline: "Week 4 onward", text: "Our team builds the desktop software with the required features, business logic, database setup, integrations, and user controls." },
+    { phase: "Phase 5", title: "Testing and QA", timeline: "Ongoing", text: "We test the application for performance, usability, bugs, security, platform compatibility, and workflow accuracy." },
+    { phase: "Phase 6", title: "Deployment", timeline: "Per Milestone", text: "We prepare the desktop application for installation, release, updates, and user access." },
+    { phase: "Phase 7", title: "Maintenance and Support", timeline: "Post-Launch", text: "After launch, we can support updates, bug fixes, improvements, security patches, and future feature development." }
   ],
   techStackCategories: [
-    { layer: "Electron", technologies: "Electron, React + TypeScript, Vite, electron-builder, contextBridge" },
-    { layer: "Tauri", technologies: "Tauri 2.0, Rust, React/Vue/Svelte, rusqlite, diesel" },
-    { layer: "Windows (.NET)", technologies: "WPF (.NET 8), WinUI 3, .NET MAUI, EF Core, MSIX" },
-    { layer: "macOS Native", technologies: "Swift 5.9+, SwiftUI, Core Data, Sparkle, Notarization" },
-    { layer: "Shared", technologies: "GitHub Actions, EV Code Signing, Sentry (Desktop SDK), PostHog" }
+    { layer: "Windows", technologies: "C#, .NET, WPF, WinUI, Win32" },
+    { layer: "macOS", technologies: "Swift, Objective-C, SwiftUI, AppKit" },
+    { layer: "Cross-Platform", technologies: "Electron, Tauri, Qt, Flutter, .NET MAUI" },
+    { layer: "Database", technologies: "SQLite, PostgreSQL, MySQL, SQL Server, Realm" },
+    { layer: "Backend/API", technologies: "Node.js, Python, .NET, REST APIs, GraphQL" },
+    { layer: "Cloud/Integration", technologies: "AWS, Azure, GCP, REST APIs, SOAP, WebSocket" },
+    { layer: "Security", technologies: "Data encryption, local keychain, secure storage, role-based access" },
+    { layer: "DevOps", technologies: "ClickOnce, MSI installers, auto-update, CI/CD pipelines" }
   ],
   pricingTiers: [
-    { type: "Desktop Scoping", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "Architecture, framework selection, and distribution plan" },
-    { type: "Cross-Platform App", investment: "$15,000 - $55,000", timeline: "7 - 14 weeks", bestFor: "Electron/Tauri apps for Win + Mac + Linux with auto-updates" },
-    { type: "Windows Enterprise", investment: "$15,000 - $50,000", timeline: "7 - 13 weeks", bestFor: "LOB apps, AD integration, and managed IT deployment" },
-    { type: "Hardware Module", investment: "$8,000 - $25,000", timeline: "3 - 6 weeks", bestFor: "Serial/USB/BLE device bridge and driver integration" }
+    { type: "Simple Desktop Tool", investment: "$5,000 - $15,000", timeline: "4 - 8 weeks", bestFor: "Basic internal tool with limited features" },
+    { type: "Business Desktop App", investment: "$12,000 - $40,000", timeline: "6 - 12 weeks", bestFor: "Multi-feature business application with database" },
+    { type: "Enterprise Desktop System", investment: "$30,000 - $80,000", timeline: "3 - 6 months", bestFor: "Complex desktop software with integrations and roles" },
+    { type: "Cross-Platform App", investment: "$20,000 - $60,000", timeline: "2 - 5 months", bestFor: "Application needed on Windows, macOS, and Linux" },
+    { type: "Legacy Modernisation", investment: "$15,000 - $50,000", timeline: "2 - 5 months", bestFor: "Upgrading old desktop software to modern standards" }
   ],
   industryUseCases: [
-    { name: "Industrial Operations", description: "Factory floor apps with serial/USB sensor monitoring, offline inspection forms, and air-gapped deployment." },
-    { name: "Healthcare Devices", description: "HIPAA-compliant lab instrument interfaces and EMR clients with local SQLite persistence." },
-    { name: "Finance & Trading", description: "Sub-millisecond UI responsiveness for trading terminals and air-gapped compliance tools." },
-    { name: "Field Logistics", description: "Warehouse terminals and device management for telematics hardware with offline-first design." },
-    { name: "Professional Tools", description: "Developer tooling, database managers, and creative apps needing GPU acceleration and tray access." }
+    { name: "Healthcare", description: "Patient management, clinical workflow, appointment scheduling, and compliance-grade desktop systems." },
+    { name: "Finance", description: "Financial reporting, transaction processing, portfolio management, and compliance platforms." },
+    { name: "Manufacturing", description: "Production tracking, quality management, inventory control, and equipment monitoring systems." },
+    { name: "Logistics", description: "Fleet management, shipment tracking, warehouse systems, and delivery optimization tools." },
+    { name: "Retail", description: "Point-of-sale systems, inventory management, customer management, and order processing." },
+    { name: "Education", description: "Student management, course administration, assessment tools, and education platforms." }
   ],
   sections: [
     {
-      heading: "What Is Desktop Application Development?",
-      body: "Desktop application development is the creation of software that installs and runs directly on a user's computer operating system Windows, macOS, or Linux rather than running in a web browser. Desktop applications have direct access to the operating system's APIs, file system, hardware devices, and background processing capabilities that browser-based web applications cannot access.\n\nThey run offline without internet connectivity, can integrate with OS features like the system tray, global keyboard shortcuts, and native notifications, and can interface with local hardware without browser security sandbox restrictions."
+      heading: "Custom Desktop Application Development",
+      body: "Desktop applications are still important for businesses that need strong performance, offline access, local system control, hardware connectivity, or secure internal software.\n\nClickMasters builds custom desktop applications around your business needs. Instead of forcing your team to use generic software, we develop desktop systems that match your workflows, users, data, and operational requirements.",
+      items: []
     },
     {
-      heading: "When a Web App Is the Better Choice",
-      body: "Build a web app (not a desktop app) when users need to access the application from multiple devices or browsers without installation, the application content is primarily informational with no offline or hardware requirements, you need SEO discoverability, or the user base is geographically distributed and cannot be asked to install software. ClickMasters will recommend the correct architecture for your specific requirements."
-    }
-  ],
-  tables: [
-    {
-      title: "Desktop Application vs Web Application",
-      headers: ["Requirement", "Desktop App Advantage", "Web App Limitation"],
-      rows: [
-        ["Offline-first", "Full functionality with local SQLite", "Limited Service Worker caching"],
-        ["File system access", "Full read/write & watching", "Limited browser File System API"],
-        ["Hardware integration", "Direct driver access (Serial/USB)", "Blocked in many enterprise environments"],
-        ["System tray", "Persistent background presence", "Cannot live in the tray"],
-        ["Global shortcuts", "Register OS-wide hotkeys", "Focus required in browser"],
-        ["Performance", "Native GPU rendering (60/120fps)", "Browser rendering overhead"],
-        ["Security", "Suitable for air-gapped/classified", "Inherently requires network"]
-      ]
+      heading: "Desktop Software Development for Windows, macOS and Cross-Platform Use",
+      body: "Every desktop software project needs the right platform decision. Some businesses need a Windows-only application, while others need software that can run on Windows, macOS, or Linux.\n\nWe help you choose the right development approach based on performance, budget, users, integrations, and long-term maintenance.",
+      items: []
     },
     {
-      title: "Framework Decision Guide",
-      headers: ["Factor", "Electron", "Tauri", "Native (macOS/WPF)"],
-      rows: [
-        ["Bundle size", "150 to 300MB", "2 to 10MB", "10 to 50MB"],
-        ["Memory usage", "High (Chromium + Node)", "Low (OS WebView + Rust)", "Lowest (Native)"],
-        ["Platform support", "Win, Mac, Linux", "Win, Mac, Linux", "Single OS only"],
-        ["Language", "JS / TS + Node.js", "Rust + JS Frontend", "Swift or C#"]
-      ]
+      heading: "Legacy Desktop Application Modernisation",
+      body: "Many businesses still depend on old desktop software that is slow, difficult to update, or no longer suitable for modern needs.\n\nClickMasters helps businesses modernise legacy desktop applications by improving the interface, performance, security, architecture, and usability of existing systems.\n\nLegacy modernisation helps you keep important business functionality while making the software easier to use, maintain, and scale.",
+      items: []
     },
     {
-      title: "OS Integration Capabilities",
-      headers: ["Capability", "Electron / Tauri Support", "Business Use Case"],
-      rows: [
-        ["System tray", "Full: icon, menu, badge", "Monitoring & quick access tools"],
-        ["Global hotkeys", "Full: registered app-wide", "Productivity & recording tools"],
-        ["File system watch", "Full: watch directory changes", "Document sync & log monitoring"],
-        ["Serial / USB", "Node/Rust serialport support", "Industrial devices & POS hardware"],
-        ["Bluetooth (BLE)", "Full support via libraries", "IoT & wearable management"],
-        ["Theming", "Deep dark/light mode matching", "Enterprise native-feel tools"]
-      ]
+      heading: "Desktop vs Web Application",
+      body: "Desktop applications and web applications both have different strengths. A desktop application is usually better when your team needs offline functionality, hardware connectivity, stronger local performance, or secure internal use on company devices.",
+      items: []
     }
   ],
   faqs: [
     {
       question: "What is desktop application development?",
-      answer: "Desktop application development is the creation of software that installs and runs directly on a user's OS (Windows, macOS, or Linux). It provides direct access to system APIs, hardware, and file systems that browsers cannot access."
+      answer: "Desktop application development is the process of designing, building, testing, and maintaining software that runs directly on desktop operating systems such as Windows, macOS, or Linux."
     },
     {
-      question: "What is the difference between Electron and Tauri?",
-      answer: "Electron bundles Chromium and Node.js (150MB+ size), while Tauri uses the OS's native WebView and a Rust backend (2-10MB size). Tauri is more memory-efficient, while Electron is more mature for web-heavy teams."
+      question: "Can you build custom desktop software?",
+      answer: "Yes. ClickMasters builds custom desktop software for business workflows, internal operations, reporting systems, admin tools, offline use, and enterprise needs."
+    },
+    {
+      question: "Can desktop applications work offline?",
+      answer: "Yes. Desktop applications can be built with offline functionality, local storage, and data syncing when internet access becomes available."
+    },
+    {
+      question: "Can one desktop app work on Windows, macOS, and Linux?",
+      answer: "Yes. Cross-platform desktop development can allow one application to work across multiple operating systems, depending on the technology and project requirements."
+    },
+    {
+      question: "What technologies are used for desktop application development?",
+      answer: "Desktop applications can be built using technologies such as C#, .NET, WPF, WinUI, Electron, Tauri, Qt, Flutter, .NET MAUI, Swift, and database technologies."
+    },
+    {
+      question: "Can you modernise an old desktop application?",
+      answer: "Yes. We can improve old desktop software through UI redesign, performance optimisation, security updates, database migration, feature upgrades, and technology modernisation."
     },
     {
       question: "How much does desktop application development cost?",
-      answer: "Costs range from $15,000 for standard cross-platform apps to $55,000+ for complex systems with deep hardware integration and auto-update infrastructure."
+      answer: "The cost depends on platform, features, complexity, integrations, offline support, hardware connectivity, design, testing, and maintenance needs."
     },
     {
-      question: "Should I build a desktop application or a web application?",
-      answer: "Choose desktop if you need offline-first operation, deep hardware access (Serial/USB/BLE), persistent system tray presence, or must run in air-gapped environments."
-    },
-    {
-      question: "Can Electron apps be deployed in enterprise environments?",
-      answer: "Yes. We provide Windows EV Code Signing for SmartScreen bypass and package apps as MSI/MSIX for SCCM, Intune, or Jamf deployment."
-    },
-    {
-      question: "How do desktop app auto-updates work?",
-      answer: "We configure silent differential background updates using Sparkle (macOS), electron-updater, or Tauri's built-in updater, hosted on S3 or GitHub."
-    },
-    {
-      question: "Can desktop apps access USB and serial devices?",
-      answer: "Yes. We use Node.js serialport or Rust crates to bridge app logic to industrial equipment, POS hardware, medical devices, and laboratory instruments."
-    },
-    {
-      question: "Can you modernize a legacy desktop application?",
-      answer: "Yes. We migrate legacy VB6, WinForms, or MFC apps to modern .NET (WPF/WinUI) or cross-platform Tauri with a phased business-continuity approach."
+      question: "Do you provide support after launch?",
+      answer: "Yes. We can provide maintenance, updates, bug fixes, performance improvements, security patches, and future feature development after launch."
     }
-  ],
-  testimonial: {
-    quote: "ClickMasters built our cross-platform Electron application in 11 weeks. The code signing and SCCM deployment package worked first time across our managed enterprise estate. Silent updates have been running perfectly for 8 months.",
-    author: "IT Director",
-    role: "Industrial Manufacturing Company, USA"
-  },
-  caseStudy: {
-    title: "Desktop Application Delivered in Production",
-    description: "Replaced a legacy VB6 application with a cross-platform Electron app deployed to 400 managed warehouse terminals via SCCM with zero manual installation.",
-    slug: "logistics-terminal-modernization",
-    badge: "Electron / Enterprise"
-  }
+  ]
 };
 const apiDevelopmentIntegrationOverride = {
   slug: "api-development-integration",
   categorySlug: "software-development",
   sectionId: "api-development-integration",
   category: "Software Development",
-  title: "API Development & Integration Services Connecting Enterprise Systems",
+  title: "API Development & Integration Services",
   serviceName: "API Development & Integration",
-  heroImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1332&auto=format&fit=crop",
-  metaTitle: "API Development & Integration Services | REST, GraphQL & Webhooks",
-  metaDescription: "ClickMasters builds production-grade APIs and enterprise integrations. REST, GraphQL, Webhooks, and deep system connectivity for B2B companies.",
-  lead: "ClickMasters designs and builds production-grade APIs and enterprise integrations for B2B companies across the USA, Europe, Canada, and Australia. REST APIs that developers love using. GraphQL APIs that eliminate over-fetching. Enterprise integrations that connect Salesforce, SAP, HubSpot, Stripe, and your custom systems into a unified data layer.",
+  heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1332&auto=format&fit=crop",
+  metaTitle: "API Development & Integration Services | ClickMasters",
+  metaDescription: "ClickMasters provides API development and integration services to connect software, automate workflows, exchange data, and build secure business systems.",
+  lead: "ClickMasters provides API development and integration services for businesses that need connected software systems, secure data exchange, and automated workflows. We design, build, integrate, test, and maintain APIs that help your applications, databases, SaaS platforms, CRM, ERP, websites, mobile apps, and internal systems work together.",
   highlights: [
-    "REST & GraphQL APIs",
-    "Webhook Architecture",
-    "Enterprise Integrations",
-    "OpenAPI 3.0 Documentation",
-    "API Security (OAuth 2.0, JWT)",
-    "Developer Portals"
+    "Custom API Development",
+    "Third-Party API Integration",
+    "CRM & ERP Connectivity",
+    "Secure & Scalable Architecture"
   ],
-  // marketStats: [
-  //   { label: 'Developers saying APIs are critical to strategy', value: '83%' },
-  //   { label: 'Value of B2B data accessible via APIs by 2027', value: '$14.2T' },
-  //   { label: 'Avg hrs/week devs deal with poor APIs', value: '9 hrs' },
-  //   { label: 'Demand for integrations vs 2020', value: '5x' },
-  // ],
+  checklist: [
+    { item: "Secure authentication (OAuth 2.0, API keys, JWT)", standard: "API engineering baseline" },
+    { item: "Comprehensive API documentation with examples", standard: "API engineering baseline" },
+    { item: "Automated testing for all endpoints", standard: "API engineering baseline" },
+    { item: "Rate limiting and error handling", standard: "API engineering baseline" },
+    { item: "Versioning and backward compatibility", standard: "API engineering baseline" }
+  ],
   servicesCards: [
-    { title: "Custom REST API Development", description: "Production-grade RESTful APIs following OpenAPI 3.0. Resource modeling, HTTP verb discipline, error handling (RFC 7807), and cursor-based pagination." },
-    { title: "GraphQL API Development", description: "Schema-first design using Apollo or Strawberry. Field-level authorization, query complexity analysis, and real-time subscriptions." },
-    { title: "Webhook & Event Streaming", description: "Eliminate polling with exponential backoff delivery, dead-letter queues, HMAC signing, and consumer self-service portals." },
-    { title: "API Gateway & Management", description: "Unified API surface with rate limiting, authentication centralization, circuit breakers, and usage analytics using AWS or Kong." },
-    { title: "Enterprise System Integration", description: "Deep connectivity with Salesforce, SAP, HubSpot, and Stripe. Data model translation, conflict resolution, and sync lag monitoring." },
-    { title: "Developer Portal & Docs", description: "Full portals with interactive Swagger/Redoc, quickstart guides, multi-language code samples, and sandbox environments." },
-    { title: "API Security Engineering", description: "OAuth 2.0, JWT, and mTLS implementation. Scope-based authorization and OWASP API Security Top 10 hardening." },
-    { title: "API Migration & Versioning", description: "Structured modernization paths with URL versioning, backward compatibility analysis, and partner migration support." }
+    { title: "Custom API Development", description: "We build custom APIs that allow your software to share data, expose features, support integrations, and connect with internal or external systems." },
+    { title: "REST API Development", description: "We develop REST APIs for web applications, mobile apps, SaaS platforms, dashboards, portals, and business software." },
+    { title: "API Architecture and Design", description: "We plan API structure, endpoints, request/response formats, authentication, access levels, versioning, and long-term scalability." },
+    { title: "API Documentation", description: "Clear API documentation helps developers understand how the API works, what endpoints are available, and how to connect with it properly." },
+    { title: "API Testing", description: "We test APIs for functionality, performance, security, error handling, data accuracy, and reliability before deployment." },
+    { title: "API Modernisation", description: "If your existing API is outdated, slow, insecure, or difficult to maintain, we can improve its structure, security, performance, and documentation." },
+    { title: "Third-Party API Integration", description: "We connect your software with third-party platforms such as payment gateways, CRMs, ERPs, marketing tools, booking systems, messaging platforms, and cloud services." },
+    { title: "CRM API Integration", description: "We integrate CRM systems with websites, sales platforms, dashboards, forms, ecommerce stores, and internal business tools." },
+    { title: "ERP API Integration", description: "We connect ERP systems with inventory, orders, finance, warehouse, reporting, customer data, and other operational systems." },
+    { title: "Payment API Integration", description: "We integrate payment gateways and billing systems for ecommerce websites, SaaS platforms, marketplaces, booking systems, and customer portals." },
+    { title: "SaaS API Integration", description: "We connect SaaS products with other tools, data sources, third-party APIs, user dashboards, and business platforms." },
+    { title: "Legacy System Integration", description: "We help businesses connect older software systems with modern applications, APIs, dashboards, cloud platforms, and reporting tools." }
   ],
   differentiators: [
-    { feature: "Versioning Strategy", description: "12-month deprecation timeline | Basic: Breaking changes without notice" },
-    { feature: "Error Standards", description: "RFC 7807 Problem Details | Basic: Inconsistent error envelopes" },
-    { feature: "Pagination Design", description: "Cursor-based for large sets | Basic: Simple offset only" },
-    { feature: "Security Depth", description: "mTLS & OAuth 2.0 Flows | Basic: API keys in query strings" },
-    { feature: "Spec-First Design", description: "OpenAPI before code | Basic: Docs as an afterthought" }
+    { feature: "Custom API Development", description: "APIs built around your software, data, and business needs." },
+    { feature: "Third-Party API Integration", description: "Connect payment, CRM, ERP, SaaS, and other platforms." },
+    { feature: "Secure API Architecture", description: "Authentication, authorisation, encryption, and access control from the start." },
+    { feature: "Clear API Documentation", description: "Developer-friendly docs with examples and endpoint references." },
+    { feature: "Automated API Testing", description: "Functionality, performance, and security testing before deployment." },
+    { feature: "Ongoing API Maintenance", description: "Monitoring, updates, version handling, and long-term support." }
   ],
   processPhases: [
-    { phase: "Phase 1", title: "API Strategy", timeline: "Week 1", text: "Defining consumers, data requirements, security patterns, and SLA targets (latency/availability)." },
-    { phase: "Phase 2", title: "Schema-First Design", timeline: "Week 1-2", text: "Full OpenAPI 3.0 contract design covering all endpoints, request/response models, and error catalogs." },
-    { phase: "Phase 3", title: "Implementation", timeline: "Week 2-6", text: "Test-driven development with contract testing (Pact), rate limiting middleware, and correlation ID tracing." },
-    { phase: "Phase 4", title: "Security Review", timeline: "Week 5-6", text: "OWASP API Security Top 10 audit, automated DAST scanning, and authentication penetration testing." },
-    { phase: "Phase 5", title: "Developer Experience", timeline: "Week 5-7", text: "Deploying interactive docs, code samples in 5 languages, Postman collections, and developer portals." },
-    { phase: "Phase 6", title: "SLA Validation", timeline: "Week 6-8", text: "Load testing against P95 latency targets, spike testing, and setting up observability dashboards." }
+    { phase: "Phase 1", title: "Discovery and Requirements", timeline: "Week 1-2", text: "We understand your systems, data flow, business process, integration goals, users, and technical requirements." },
+    { phase: "Phase 2", title: "API and System Mapping", timeline: "Week 2-3", text: "We identify which systems need to connect, what data needs to move, how often it should sync, and what rules are required." },
+    { phase: "Phase 3", title: "Architecture and Security Planning", timeline: "Week 3-4", text: "We plan API structure, authentication, authorisation, data validation, error handling, rate limits, and secure access control." },
+    { phase: "Phase 4", title: "Development and Integration", timeline: "Week 4 onward", text: "Our developers build APIs, connect third-party systems, create endpoints, configure data exchange, and implement business logic." },
+    { phase: "Phase 5", title: "Testing and Deployment", timeline: "Per Milestone", text: "We test the integration for accuracy, reliability, performance, security, and real-world workflow behaviour before launch." },
+    { phase: "Phase 6", title: "Monitoring and Maintenance", timeline: "Post-Launch", text: "After launch, we can monitor integrations, fix errors, update APIs, manage version changes, and support long-term reliability." }
   ],
   techStackCategories: [
-    { layer: "REST Frameworks", technologies: "Node.js (Fastify/Express), Python (FastAPI), Java (Spring Boot), Go (Gin)" },
-    { layer: "GraphQL", technologies: "Apollo Server, Strawberry, Hasura, Apollo Federation" },
-    { layer: "Gateways", technologies: "AWS API Gateway, Kong, Nginx, Envoy" },
-    { layer: "Security", technologies: "OAuth 2.0, JWT, Auth0, AWS Cognito, mTLS" },
-    { layer: "Webhook Engine", technologies: "Custom SQS/BullMQ, HMAC Signing, Svix" },
-    { layer: "Monitoring", technologies: "Datadog APM, Prometheus, Grafana, Sentry" }
+    { layer: "API Types", technologies: "REST, GraphQL, gRPC, SOAP, WebSocket, Webhooks" },
+    { layer: "Backend", technologies: "Node.js, Python (Django/FastAPI), Go, Java (Spring Boot), .NET Core, Laravel (PHP)" },
+    { layer: "Authentication", technologies: "OAuth 2.0, JWT, API Keys, SAML, OpenID Connect" },
+    { layer: "API Management", technologies: "Kong, AWS API Gateway, Apigee, Tyk, Custom middleware" },
+    { layer: "Integration", technologies: "Apache Kafka, RabbitMQ, AWS SQS/SNS, MuleSoft, custom ETL" },
+    { layer: "Database", technologies: "PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch" },
+    { layer: "Cloud", technologies: "AWS (API Gateway, Lambda, SQS), Google Cloud, Azure" },
+    { layer: "Security", technologies: "OWASP ASVS, rate limiting, data encryption, SSL/TLS, WAF" }
   ],
   pricingTiers: [
-    { type: "API Architecture Review", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "Design audit, security review, and improvement roadmap" },
-    { type: "Simple REST API", investment: "$6,000 - $18,000", timeline: "3 - 5 weeks", bestFor: "Up to 20 endpoints, OpenAPI spec, and Postman collection" },
-    { type: "Full-scale API Platform", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "OAuth 2.0, webhooks, developer docs, and load testing" },
-    { type: "Enterprise Integration", investment: "$5,000 - $18,000", timeline: "2 - 5 weeks", bestFor: "Single system (Salesforce, SAP) bidirectional sync" }
+    { type: "Simple API Integration", investment: "$3,000 - $10,000", timeline: "2 - 4 weeks", bestFor: "Connecting two systems with basic data flow" },
+    { type: "Custom API Development", investment: "$8,000 - $25,000", timeline: "4 - 8 weeks", bestFor: "Building a custom API for your software platform" },
+    { type: "Multi-System Integration", investment: "$15,000 - $50,000", timeline: "6 - 12 weeks", bestFor: "Connecting multiple business systems with middleware" },
+    { type: "Enterprise Integration Hub", investment: "$30,000 - $80,000", timeline: "3 - 6 months", bestFor: "Complex integration layer with multiple systems and rules" },
+    { type: "Ongoing API Support", investment: "$3,000 - $10,000/mo", timeline: "Ongoing", bestFor: "Monitoring, maintenance, versioning, and new integrations" }
   ],
   industryUseCases: [
-    { name: "Salesforce & CRM", description: "Bulk API sync, SOQL integration, and custom object CRUD with OAuth 2.0." },
-    { name: "SAP & ERP Connectivity", description: "OData services, RFC/BAPI integration, and master data synchronization." },
-    { name: "Stripe & Billing", description: "Subscription management, webhook processing, and idempotency key handling." },
-    { name: "Microsoft 365 & Azure", description: "Graph API integration for Teams, SharePoint, and User/Group management." },
-    { name: "Custom Legacy Systems", description: "Modern REST wrappers for SOAP/XML, EDI, and database-level integrations." }
+    { name: "Healthcare", description: "EHR/EMR integrations, HL7 FHIR APIs, patient portal connectivity, and clinical data exchange." },
+    { name: "Finance", description: "Payment gateway integrations, banking API connections, KYC/AML data flows, and financial reporting." },
+    { name: "Ecommerce", description: "Payment processing, inventory sync, order management, shipping, and marketplace integrations." },
+    { name: "SaaS", description: "Multi-platform integrations, webhook systems, third-party API connections, and data synchronisation." },
+    { name: "Enterprise", description: "CRM/ERP connectivity, legacy system modernisation, data warehouse feeds, and internal tool integrations." },
+    { name: "Logistics", description: "Fleet tracking APIs, shipment monitoring, warehouse system connectivity, and delivery optimisation." }
   ],
   sections: [
     {
-      heading: "What is API Development & Integration?",
-      body: "API development is the process of designing, building, testing, documenting, and deploying a software interface that enables two systems to communicate. In B2B software, APIs are a distribution channel and a partnership enabler.\n\nThe most valuable SaaS companies treat their API as a product with its own roadmap, documentation, and success metrics. This shift separates companies with 50 integration partners from those with 500."
+      heading: "Custom API Development and Integration for Businesses",
+      body: "Many businesses use different tools for sales, operations, finance, customer management, reporting, and communication. When these systems do not connect properly, teams waste time moving data manually, fixing errors, and repeating the same tasks.\n\nAPI development and integration helps your software systems communicate with each other. This allows data to move securely between platforms, reduces manual work, improves accuracy, and creates smoother business processes.",
+      items: []
     },
     {
-      heading: "Signs Your API Has a Quality Problem",
-      body: "Enterprise buyers routinely eliminate vendors whose APIs are poorly documented or unreliable. If you see these signs, it is time for a modernization strategy:",
-      items: [
-        'Partners ask for "the old way" because you have no versioning strategy',
-        "Developer documentation hasn't been updated since launch",
-        "Rate limiting was added reactively after production outages",
-        "Authentication is API keys only, blocking OAuth 2.0 requirements",
-        "No webhook system exists, forcing partners to poll for changes"
-      ]
-    }
-  ],
-  tables: [
+      heading: "What Are API Development and Integration Services?",
+      body: "API development means creating an application programming interface that allows software systems to share data and functionality. API integration means connecting that API with another system, application, database, or third-party platform.\n\nIn simple words, API development creates the connection point, and API integration uses that connection point to make systems work together.\n\nFor example, if a customer places an order on your website, an API integration can send that order to your CRM, update your inventory, create an invoice in your accounting system, and notify your team automatically.",
+      items: []
+    },
     {
-      title: "REST vs GraphQL vs gRPC",
-      headers: ["Factor", "REST", "GraphQL", "gRPC"],
-      rows: [
-        ["Data fetching", "Fixed endpoints", "Client specifies needs", "Binary protocol"],
-        ["Caching", "Excellent native HTTP", "Harder (single endpoint)", "Application-level only"],
-        ["Real-time", "SSE or WebSockets", "Native subscriptions", "Bidirectional streaming"],
-        ["Best for", "Public / Partner APIs", "Data-rich frontends", "Internal microservices"]
+      heading: "Benefits of API Development and Integration",
+      body: "API development and integration can help your business:",
+      items: [
+        "Connect disconnected software systems",
+        "Reduce manual data entry",
+        "Improve data accuracy",
+        "Automate repetitive workflows",
+        "Create real-time data exchange",
+        "Improve reporting and visibility",
+        "Connect CRM, ERP, SaaS, and databases",
+        "Improve customer experience",
+        "Support scalable software growth",
+        "Reduce operational delays",
+        "Improve internal productivity"
+      ]
+    },
+    {
+      heading: "Secure and Scalable API Development",
+      body: "APIs often handle important business data, customer information, payments, user accounts, and operational records. That is why security should be planned from the start.\n\nA secure API helps protect your data while allowing your systems to communicate effectively.",
+      items: [
+        "Secure authentication",
+        "API keys",
+        "OAuth where required",
+        "Role-based access",
+        "Data validation",
+        "Encrypted data transfer",
+        "Error handling",
+        "Logging and monitoring",
+        "Rate limiting",
+        "Version control",
+        "Secure API documentation",
+        "Testing before deployment"
       ]
     }
   ],
   faqs: [
     {
-      question: "What is the difference between REST and GraphQL?",
-      answer: "REST uses fixed endpoints returning predetermined data. GraphQL uses a single endpoint where clients specify exactly what fields they need. REST is better for public APIs; GraphQL is optimal for complex frontends."
+      question: "What are API integration services?",
+      answer: "API integration services connect different software systems through APIs so they can exchange data, automate workflows, and work together without manual data transfer."
     },
     {
-      question: "How much does API development cost?",
-      answer: "Costs range from $6,000 for a simple REST API to $45,000 for a full platform with OAuth, webhooks, and load testing. Enterprise integrations typically cost $5k-$18k per system."
+      question: "What is API development service?",
+      answer: "API development service means designing, building, testing, documenting, and deploying APIs that allow software applications to share data or functionality securely."
     },
     {
-      question: "What is OpenAPI and why does it matter?",
-      answer: "OpenAPI is the industry standard for describing REST APIs. It enables automatic doc generation, client SDKs, and contract testing. We use a spec-first design process."
+      question: "What is the difference between API development and API integration?",
+      answer: "API development creates the API. API integration connects that API with other systems, platforms, databases, or third-party tools."
     },
     {
-      question: "How do you handle API versioning?",
-      answer: "We use URL-based versioning (/api/v1/) with a 12-month deprecation timeline and clear migration guides to ensure partner stability."
+      question: "What are the stages of API integration?",
+      answer: "The main stages are discovery, system mapping, architecture planning, development, testing, deployment, and ongoing maintenance."
     },
     {
-      question: "What authentication method should my API use?",
-      answer: "API keys for trusted server-to-server; OAuth 2.0 for enterprise and machine-to-machine; JWT for stateless internal auth; and mTLS for high-security services."
+      question: "Can you integrate third-party APIs?",
+      answer: "Yes. We can integrate third-party APIs for payments, CRM, ERP, ecommerce, booking systems, marketing platforms, SaaS tools, and business software."
     },
     {
-      question: "Can you integrate with Salesforce or SAP?",
-      answer: "Yes. We have production experience with Salesforce, SAP (OData/BTP), HubSpot, Stripe, and Microsoft 365, including bidirectional sync and error handling."
+      question: "Can APIs connect CRM and ERP systems?",
+      answer: "Yes. APIs can connect CRM and ERP systems so customer data, orders, invoices, inventory, and business records can move between both systems."
+    },
+    {
+      question: "Is API integration secure?",
+      answer: "API integration can be secure when proper authentication, authorisation, encryption, validation, access control, and testing are used."
+    },
+    {
+      question: "How much does API integration cost?",
+      answer: "The cost depends on API complexity, number of systems, data flow, security needs, custom development, testing, and ongoing support."
+    },
+    {
+      question: "Do API integrations need maintenance?",
+      answer: "Yes. APIs can change over time, so integrations may need monitoring, updates, bug fixes, version handling, and security maintenance."
+    },
+    {
+      question: "Can you connect legacy software with modern applications?",
+      answer: "Yes. We can help connect legacy systems with modern applications, APIs, cloud platforms, dashboards, databases, and business tools."
     }
   ]
 };
