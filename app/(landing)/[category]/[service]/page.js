@@ -54,6 +54,7 @@ export async function generateMetadata({ params }) {
   return {
     title: page.metaTitle ?? `${page.title} Services | ClickMasters`,
     description,
+    keywords: page.metaKeywords || undefined,
     alternates: { canonical },
     openGraph: {
       title: `${page.title} | ClickMasters`,
