@@ -1,4 +1,4 @@
-# Plan: ClickMasters Content Migration — Industry+Service Combo Pages
+# Plan: Clickmasters Content Migration — Industry+Service Combo Pages
 
 **Generated:** June 20, 2026
 **Last Updated:** June 20, 2026
@@ -47,14 +47,14 @@
 | `industry` | `string` | First badge or filename | `"insurtech"` |
 | `service` | `string` | Second segment of filename | `"saas-development"` |
 | `title` | `string` | H1 heading | `"SaaS Development for UK InsurTech — FCA ICOBS Built In"` |
-| `metaTitle` | `string` | META TITLE | `"SaaS Development for InsurTech UK \| ClickMasters"` |
+| `metaTitle` | `string` | META TITLE | `"SaaS Development for InsurTech UK \| Clickmasters"` |
 | `metaDesc` | `string` | META DESC | `"SaaS Development for UK InsurTech. FCA ICOBS..."` |
 | `lastUpdated` | `string` | Header table | `"August 2025"` |
 | `readingTime` | `number` | Header table | `9` |
-| `writtenBy` | `string` | Header table | `"ClickMasters InsurTech Team"` |
+| `writtenBy` | `string` | Header table | `"Clickmasters InsurTech Team"` |
 | `reviewedBy` | `string` | Header table | `"James Whitmore, CTO"` |
 | `badges` | `array` | Badge table | `["InsurTech", "FCA ICOBS", "💷 £35,000–£180,000", "🔒 UK GDPR", "⚖️ IR35-Safe", "🇬🇧 UK"]` |
-| `directAnswer` | `string` | Direct Answer table | `"ClickMasters provides..."` |
+| `directAnswer` | `string` | Direct Answer table | `"Clickmasters provides..."` |
 | `sections` | `array` | Content sections | `[{ heading: "UK Specifics", paragraphs: [{ bold: "Lloyd's...", text: "..." }] }]` |
 | `compliance` | `array` | Compliance table | `["FCA ICOBS", "Consumer Duty", "UK GDPR"]` |
 | `pricingTiers` | `array` | Pricing table | `[{ type: "InsurTech SaaS Development", scope: "Full engagement", price: "£35,000–£180,000" }]` |
@@ -97,14 +97,14 @@ const industries = [
     industry: "insurtech",
     service: "saas-development",
     title: "SaaS Development for UK InsurTech — FCA ICOBS Built In",
-    metaTitle: "SaaS Development for InsurTech UK | ClickMasters",
+    metaTitle: "SaaS Development for InsurTech UK | Clickmasters",
     metaDesc: "SaaS Development for UK InsurTech. FCA ICOBS. £35,000–£180,000.",
     lastUpdated: "August 2025",
     readingTime: 9,
-    writtenBy: "ClickMasters InsurTech Team",
+    writtenBy: "Clickmasters InsurTech Team",
     reviewedBy: "James Whitmore, CTO",
     badges: ["InsurTech", "FCA ICOBS", "💷 £35,000–£180,000", "🔒 UK GDPR", "⚖️ IR35-Safe", "🇬🇧 UK"],
-    directAnswer: "ClickMasters provides SaaS Development...",
+    directAnswer: "Clickmasters provides SaaS Development...",
     sections: [
       {
         heading: "SaaS Development for InsurTech — UK Specifics",

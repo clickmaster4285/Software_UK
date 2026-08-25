@@ -11,11 +11,11 @@ const industries = [
     "industry": "saas",
     "service": "development-uk",
     "title": "SaaS Development UK — Build Your Multi-Tenant Software as a Service Platform",
-    "metaTitle": "SaaS Development UK — Build Your Software as a Service Platform | ClickMasters",
+    "metaTitle": "SaaS Development UK — Build Your Software as a Service Platform | Clickmasters",
     "metaDesc": "UK SaaS development specialists. Multi-tenant platforms from £35,000. UK GDPR data processing compliance built in. B2B and B2C SaaS. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 11,
-    "writtenBy": "ClickMasters SaaS Team",
+    "writtenBy": "Clickmasters SaaS Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK-Based Team",
@@ -25,7 +25,7 @@ const industries = [
       "📋 Cyber Essentials",
       "💡 R&D Tax Credits Eligible"
     ],
-    "directAnswer": "SaaS (Software as a Service) development in the UK costs between £35,000 and £200,000+ depending on platform complexity, billing model, and compliance requirements. A SaaS product is software you build once and sell to many customers — typically via subscription. ClickMasters builds multi-tenant SaaS platforms where each customer's data is logically isolated under UK GDPR, with integrated billing (Stripe or GoCardless), user management, and the ability to scale to thousands of customers without rebuilding the core.",
+    "directAnswer": "SaaS (Software as a Service) development in the UK costs between £35,000 and £200,000+ depending on platform complexity, billing model, and compliance requirements. A SaaS product is software you build once and sell to many customers — typically via subscription. Clickmasters builds multi-tenant SaaS platforms where each customer's data is logically isolated under UK GDPR, with integrated billing (Stripe or GoCardless), user management, and the ability to scale to thousands of customers without rebuilding the core.",
     "sections": [
       {
         "heading": "What Is SaaS Development? (And When Is It Right for You?)",
@@ -147,7 +147,7 @@ const industries = [
       },
       {
         "question": "How do you handle UK GDPR compliance in a SaaS product?",
-        "answer": "ClickMasters builds UK GDPR compliance into SaaS architecture from the outset. This includes: multi-tenant data isolation, data export capabilities (right to access), data deletion capabilities (right to erasure), an Article 28 Data Processing Agreement template for your customers, appropriate encryption and access controls, and audit logging. We also advise on data residency — using AWS eu-west-2 or Azure UK South to keep all customer data in the UK."
+        "answer": "Clickmasters builds UK GDPR compliance into SaaS architecture from the outset. This includes: multi-tenant data isolation, data export capabilities (right to access), data deletion capabilities (right to erasure), an Article 28 Data Processing Agreement template for your customers, appropriate encryption and access controls, and audit logging. We also advise on data residency — using AWS eu-west-2 or Azure UK South to keep all customer data in the UK."
       },
       {
         "question": "What billing model should I choose for my SaaS?",
@@ -155,11 +155,11 @@ const industries = [
       },
       {
         "question": "Can I get Innovate UK funding for SaaS development?",
-        "answer": "Yes, if your SaaS involves genuine technological innovation rather than implementing standard patterns. Innovate UK Smart Grants (£25,000–£500,000) and Edge funding (up to £1.5M) are available for innovative technology projects. The key is demonstrating a clear technological advance. ClickMasters can advise on whether your SaaS concept has a strong innovation case for an Innovate UK application."
+        "answer": "Yes, if your SaaS involves genuine technological innovation rather than implementing standard patterns. Innovate UK Smart Grants (£25,000–£500,000) and Edge funding (up to £1.5M) are available for innovative technology projects. The key is demonstrating a clear technological advance. Clickmasters can advise on whether your SaaS concept has a strong innovation case for an Innovate UK application."
       },
       {
         "question": "What does it cost to maintain a SaaS platform after launch?",
-        "answer": "Budget 18–22% of build cost per year for maintenance: dependency updates, security patches, infrastructure management, bug fixes, and minor feature development. A £70,000 SaaS build typically costs £12,600–£15,400/year to maintain well. ClickMasters offers monthly SaaS support retainers from £2,500/month for active products."
+        "answer": "Budget 18–22% of build cost per year for maintenance: dependency updates, security patches, infrastructure management, bug fixes, and minor feature development. A £70,000 SaaS build typically costs £12,600–£15,400/year to maintain well. Clickmasters offers monthly SaaS support retainers from £2,500/month for active products."
       }
     ]
   },
@@ -169,11 +169,11 @@ const industries = [
     "industry": "fintech",
     "service": "software-development-uk",
     "title": "FinTech Software Development UK — FCA, Open Banking & Regulated FinTech Builds",
-    "metaTitle": "FinTech Software Development UK — FCA, Open Banking & Regulated FinTech Builds | ClickMasters",
-    "metaDesc": "ClickMasters FinTech software development specialists. FCA. From £35,000. Free consultation for UK FinTech businesses.",
+    "metaTitle": "FinTech Software Development UK — FCA, Open Banking & Regulated FinTech Builds | Clickmasters",
+    "metaDesc": "Clickmasters FinTech software development specialists. FCA. From £35,000. Free consultation for UK FinTech businesses.",
     "lastUpdated": "June 2025",
     "readingTime": 14,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO — FinTech sector reviewed",
     "badges": [
       "🏦 FCA-Aware Architecture",
@@ -183,14 +183,14 @@ const industries = [
       "🔒 UK GDPR",
       "🏙️ City of London Specialists"
     ],
-    "directAnswer": "FinTech software development in the UK requires FCA-aware architecture from day one — not compliance bolted on afterwards. Whether you're building an FCA-authorised payment service, an AISP/PISP Open Banking product, a lending platform, or a consumer investment app, ClickMasters designs the regulatory architecture alongside the technical architecture. Key requirements: FCA Consumer Duty (July 2023 UX obligations), PSD2 Strong Customer Authentication, OBIE Open Banking API standards, AML/KYC workflow, PCI-DSS scope management, and UK GDPR dual compliance. City of London focus with direct FinTech sector experience.",
+    "directAnswer": "FinTech software development in the UK requires FCA-aware architecture from day one — not compliance bolted on afterwards. Whether you're building an FCA-authorised payment service, an AISP/PISP Open Banking product, a lending platform, or a consumer investment app, Clickmasters designs the regulatory architecture alongside the technical architecture. Key requirements: FCA Consumer Duty (July 2023 UX obligations), PSD2 Strong Customer Authentication, OBIE Open Banking API standards, AML/KYC workflow, PCI-DSS scope management, and UK GDPR dual compliance. City of London focus with direct FinTech sector experience.",
     "sections": [
       {
         "heading": "The UK FinTech Market — Why Compliance Matters",
         "paragraphs": [
           {
             "bold": "",
-            "text": "The UK FinTech sector is the largest in Europe — generating over £11bn in annual revenues and home to more FinTech unicorns than any other European country. Building regulated FinTech software in the UK means navigating FCA authorisation requirements, PSD2 SCA obligations, Open Banking standards, and Consumer Duty — while building a product that actually works for users. ClickMasters architects FinTech software with regulatory compliance as a first-class concern."
+            "text": "The UK FinTech sector is the largest in Europe — generating over £11bn in annual revenues and home to more FinTech unicorns than any other European country. Building regulated FinTech software in the UK means navigating FCA authorisation requirements, PSD2 SCA obligations, Open Banking standards, and Consumer Duty — while building a product that actually works for users. Clickmasters architects FinTech software with regulatory compliance as a first-class concern."
           }
         ]
       },
@@ -199,15 +199,15 @@ const industries = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "Every ClickMasters project for the UK FinTech sector addresses these regulatory and technical requirements:"
+            "text": "Every Clickmasters project for the UK FinTech sector addresses these regulatory and technical requirements:"
           },
           {
             "bold": "FCA Authorisation Architecture",
-            "text": "Whether your product requires FCA authorisation (AISP, PISP, e-money, consumer credit, investment) or sits within an existing authorised firm, the technical architecture must support the regulated activity. ClickMasters designs software around the authorisation model — audit trails for FCA reporting, consumer protection mechanisms for Consumer Duty, and the operational resilience mapping required by PS21/3."
+            "text": "Whether your product requires FCA authorisation (AISP, PISP, e-money, consumer credit, investment) or sits within an existing authorised firm, the technical architecture must support the regulated activity. Clickmasters designs software around the authorisation model — audit trails for FCA reporting, consumer protection mechanisms for Consumer Duty, and the operational resilience mapping required by PS21/3."
           },
           {
             "bold": "Open Banking — OBIE Standards",
-            "text": "UK Open Banking mandates OBIE Read/Write API standards for the nine major banks. Building an AISP or PISP product requires: OAuth2 authorisation code flow with PKCE, dynamic client registration with OBIE Directory, consent management (detailed, revocable, time-limited), and token lifecycle management. ClickMasters has integrated TrueLayer and direct OBIE connections for UK FinTech clients."
+            "text": "UK Open Banking mandates OBIE Read/Write API standards for the nine major banks. Building an AISP or PISP product requires: OAuth2 authorisation code flow with PKCE, dynamic client registration with OBIE Directory, consent management (detailed, revocable, time-limited), and token lifecycle management. Clickmasters has integrated TrueLayer and direct OBIE connections for UK FinTech clients."
           },
           {
             "bold": "AML and KYC Workflows",
@@ -219,12 +219,12 @@ const industries = [
           },
           {
             "bold": "PCI-DSS Scope Management",
-            "text": "Payment Card Industry Data Security Standard applies to any software storing, processing, or transmitting cardholder data. Scope reduction via tokenisation (Stripe Elements, Braintree) means most FinTech products can achieve SAQ-A or SAQ-A-EP rather than full SAQ-D. ClickMasters scopes PCI-DSS compliance during architecture design — not as a retrofit."
+            "text": "Payment Card Industry Data Security Standard applies to any software storing, processing, or transmitting cardholder data. Scope reduction via tokenisation (Stripe Elements, Braintree) means most FinTech products can achieve SAQ-A or SAQ-A-EP rather than full SAQ-D. Clickmasters scopes PCI-DSS compliance during architecture design — not as a retrofit."
           }
         ]
       },
       {
-        "heading": "FinTech Software Compliance — What ClickMasters Implements",
+        "heading": "FinTech Software Compliance — What Clickmasters Implements",
         "paragraphs": [
           {
             "bold": "",
@@ -241,7 +241,7 @@ const industries = [
       "The UK FinTech sector is the largest in Europe — generating over £11bn in annual revenues and home to more FinTech unicorns than any other European country. Building regulated FinTech software in the UK means navigating FCA authorisation requirements",
       "PSD2 SCA obligations",
       "Open Banking standards",
-      "and Consumer Duty — while building a product that actually works for users. ClickMasters architects FinTech software with regulatory compliance as a first-class concern."
+      "and Consumer Duty — while building a product that actually works for users. Clickmasters architects FinTech software with regulatory compliance as a first-class concern."
     ],
     "pricingTiers": [
       {
@@ -278,11 +278,11 @@ const industries = [
     "industry": "healthtech",
     "service": "software-development-uk",
     "title": "HealthTech Software Development UK — NHS-Connected, DTAC & FHIR R4",
-    "metaTitle": "HealthTech Software Development UK — NHS-Connected, DTAC & FHIR R4 | ClickMasters",
-    "metaDesc": "ClickMasters HealthTech software development specialists. DTAC. From £25,000. Free consultation for UK HealthTech businesses.",
+    "metaTitle": "HealthTech Software Development UK — NHS-Connected, DTAC & FHIR R4 | Clickmasters",
+    "metaDesc": "Clickmasters HealthTech software development specialists. DTAC. From £25,000. Free consultation for UK HealthTech businesses.",
     "lastUpdated": "June 2025",
     "readingTime": 14,
-    "writtenBy": "ClickMasters HealthTech Team",
+    "writtenBy": "Clickmasters HealthTech Team",
     "reviewedBy": "James Whitmore, CTO — HealthTech sector reviewed",
     "badges": [
       "🏥 DTAC Compliant",
@@ -292,14 +292,14 @@ const industries = [
       "🔒 UK GDPR Art.9",
       "⚕️ DCB0129 Clinical Safety"
     ],
-    "directAnswer": "HealthTech software development in the UK requires navigating the most complex regulatory landscape of any UK software sector. NHS-connected products must achieve DTAC (5 domains: clinical safety, data protection, technical security, interoperability, accessibility). All patient data is \"special category data\" under UK GDPR Article 9. NHS APIs (NHS Login, GP Connect, FHIR R4) require NHS Digital supplier agreements. Clinical safety officers, DSP Toolkit completion, Cyber Essentials Plus, and WCAG 2.1 AA accessibility are non-negotiable for most NHS pathways. ClickMasters has delivered NHS-connected digital health applications and supported DTAC remediation for failed submissions.",
+    "directAnswer": "HealthTech software development in the UK requires navigating the most complex regulatory landscape of any UK software sector. NHS-connected products must achieve DTAC (5 domains: clinical safety, data protection, technical security, interoperability, accessibility). All patient data is \"special category data\" under UK GDPR Article 9. NHS APIs (NHS Login, GP Connect, FHIR R4) require NHS Digital supplier agreements. Clinical safety officers, DSP Toolkit completion, Cyber Essentials Plus, and WCAG 2.1 AA accessibility are non-negotiable for most NHS pathways. Clickmasters has delivered NHS-connected digital health applications and supported DTAC remediation for failed submissions.",
     "sections": [
       {
         "heading": "The UK HealthTech Market — Why Compliance Matters",
         "paragraphs": [
           {
             "bold": "",
-            "text": "The UK HealthTech market is one of the most significant in the world — driven by NHS transformation programmes, the HealthTech Hub, and a deep pool of clinical expertise. But building software that connects to the NHS is harder than most founders expect. The regulatory pathway from idea to NHS App Library listing typically takes 6–18 months. ClickMasters specialises in the technical and compliance aspects of that journey."
+            "text": "The UK HealthTech market is one of the most significant in the world — driven by NHS transformation programmes, the HealthTech Hub, and a deep pool of clinical expertise. But building software that connects to the NHS is harder than most founders expect. The regulatory pathway from idea to NHS App Library listing typically takes 6–18 months. Clickmasters specialises in the technical and compliance aspects of that journey."
           }
         ]
       },
@@ -308,11 +308,11 @@ const industries = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "Every ClickMasters project for the UK HealthTech sector addresses these regulatory and technical requirements:"
+            "text": "Every Clickmasters project for the UK HealthTech sector addresses these regulatory and technical requirements:"
           },
           {
             "bold": "DTAC — The NHS Gateway",
-            "text": "DTAC (Digital Technology Assessment Criteria) is mandatory for NHS App Library listing. Five domains: Clinical Safety (DCB0129), Data Protection (UK GDPR + DSP Toolkit), Technical Security (Cyber Essentials Plus + CREST pen test), Interoperability (FHIR R4 UK Core), and Usability & Accessibility (WCAG 2.1 AA). Expect 3–6 months for a well-prepared first submission. ClickMasters has remediated products that failed DTAC Domains 2, 3, and 5."
+            "text": "DTAC (Digital Technology Assessment Criteria) is mandatory for NHS App Library listing. Five domains: Clinical Safety (DCB0129), Data Protection (UK GDPR + DSP Toolkit), Technical Security (Cyber Essentials Plus + CREST pen test), Interoperability (FHIR R4 UK Core), and Usability & Accessibility (WCAG 2.1 AA). Expect 3–6 months for a well-prepared first submission. Clickmasters has remediated products that failed DTAC Domains 2, 3, and 5."
           },
           {
             "bold": "UK GDPR Article 9 — Special Category Health Data",
@@ -324,16 +324,16 @@ const industries = [
           },
           {
             "bold": "DSP Toolkit — Annual Compliance Cycle",
-            "text": "The NHS Data Security and Protection Toolkit requires annual self-assessment to \"Standards Met\" level. 10 data security standards covering: leadership, training, data handling, supplier assurance, incident management. NHS-connected software suppliers must complete the DSP Toolkit to supply NHS organisations. ClickMasters supports DSP Toolkit completion as part of NHS-connected project delivery."
+            "text": "The NHS Data Security and Protection Toolkit requires annual self-assessment to \"Standards Met\" level. 10 data security standards covering: leadership, training, data handling, supplier assurance, incident management. NHS-connected software suppliers must complete the DSP Toolkit to supply NHS organisations. Clickmasters supports DSP Toolkit completion as part of NHS-connected project delivery."
           },
           {
             "bold": "Clinical Safety — DCB0129",
-            "text": "If your technology could influence clinical decision-making, you need a Clinical Safety Officer (CSO), a Clinical Risk Management System, and a Hazard Log. DCB0129 applies to manufacturers of health IT — including most HealthTech startups. The CSO must hold a relevant clinical qualification. ClickMasters supports the technical aspects of DCB0129 compliance but recommends specialist clinical safety consultancies for the clinical risk management elements."
+            "text": "If your technology could influence clinical decision-making, you need a Clinical Safety Officer (CSO), a Clinical Risk Management System, and a Hazard Log. DCB0129 applies to manufacturers of health IT — including most HealthTech startups. The CSO must hold a relevant clinical qualification. Clickmasters supports the technical aspects of DCB0129 compliance but recommends specialist clinical safety consultancies for the clinical risk management elements."
           }
         ]
       },
       {
-        "heading": "HealthTech Software Compliance — What ClickMasters Implements",
+        "heading": "HealthTech Software Compliance — What Clickmasters Implements",
         "paragraphs": [
           {
             "bold": "",
@@ -349,7 +349,7 @@ const industries = [
     "compliance": [
       "The UK HealthTech market is one of the most significant in the world — driven by NHS transformation programmes",
       "the HealthTech Hub",
-      "and a deep pool of clinical expertise. But building software that connects to the NHS is harder than most founders expect. The regulatory pathway from idea to NHS App Library listing typically takes 6–18 months. ClickMasters specialises in the technical and compliance aspects of that journey."
+      "and a deep pool of clinical expertise. But building software that connects to the NHS is harder than most founders expect. The regulatory pathway from idea to NHS App Library listing typically takes 6–18 months. Clickmasters specialises in the technical and compliance aspects of that journey."
     ],
     "pricingTiers": [
       {
@@ -393,7 +393,7 @@ const industries = [
       },
       {
         "question": "What is the DSP Toolkit and who needs to complete it?",
-        "answer": "The NHS Data Security and Protection Toolkit is an annual self-assessment of 10 data security standards. NHS-connected software suppliers are required to complete it to supply NHS organisations directly. The 10 standards cover leadership accountability, staff training, data quality, supplier assurance, incident reporting, and business continuity. ClickMasters supports DSP Toolkit completion as part of project delivery for NHS-connected clients."
+        "answer": "The NHS Data Security and Protection Toolkit is an annual self-assessment of 10 data security standards. NHS-connected software suppliers are required to complete it to supply NHS organisations directly. The 10 standards cover leadership accountability, staff training, data quality, supplier assurance, incident reporting, and business continuity. Clickmasters supports DSP Toolkit completion as part of project delivery for NHS-connected clients."
       }
     ]
   },
@@ -403,11 +403,11 @@ const industries = [
     "industry": "govtech",
     "service": "software-development-uk",
     "title": "GovTech Software Development UK — GDS Standard, G-Cloud & Public Sector Digital",
-    "metaTitle": "GovTech Software Development UK — GDS Standard, G-Cloud & Public Sector Digital | ClickMasters",
-    "metaDesc": "ClickMasters GovTech software development specialists. GDS Service Standard. From £30,000. Free consultation for UK GovTech businesses.",
+    "metaTitle": "GovTech Software Development UK — GDS Standard, G-Cloud & Public Sector Digital | Clickmasters",
+    "metaDesc": "Clickmasters GovTech software development specialists. GDS Service Standard. From £30,000. Free consultation for UK GovTech businesses.",
     "lastUpdated": "June 2025",
     "readingTime": 14,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO — GovTech sector reviewed",
     "badges": [
       "🏛️ GDS 18-Point Standard",
@@ -417,7 +417,7 @@ const industries = [
       "📋 GOV.UK Design System",
       "🇬🇧 UK Public Sector"
     ],
-    "directAnswer": "GovTech software for the UK public sector must meet the GDS 18-point Service Standard, WCAG 2.1 AA accessibility (mandatory under PSBAR 2018 and Equality Act 2010), and Cyber Essentials certification (mandatory for government contracts). Government services must use the GOV.UK Design System and pass a GDS Service Assessment. ClickMasters builds GDS-compliant public sector software — for both central government via G-Cloud procurement and local authorities via direct commissioning.",
+    "directAnswer": "GovTech software for the UK public sector must meet the GDS 18-point Service Standard, WCAG 2.1 AA accessibility (mandatory under PSBAR 2018 and Equality Act 2010), and Cyber Essentials certification (mandatory for government contracts). Government services must use the GOV.UK Design System and pass a GDS Service Assessment. Clickmasters builds GDS-compliant public sector software — for both central government via G-Cloud procurement and local authorities via direct commissioning.",
     "sections": [
       {
         "heading": "The UK GovTech Market — Why Compliance Matters",
@@ -433,7 +433,7 @@ const industries = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "Every ClickMasters project for the UK GovTech sector addresses these regulatory and technical requirements:"
+            "text": "Every Clickmasters project for the UK GovTech sector addresses these regulatory and technical requirements:"
           },
           {
             "bold": "GDS 18-Point Service Standard",
@@ -441,24 +441,24 @@ const industries = [
           },
           {
             "bold": "WCAG 2.1 AA — Legal Requirement",
-            "text": "For UK public sector bodies, WCAG 2.1 AA compliance is legally required under the Public Sector Bodies Accessibility Regulations 2018 (PSBAR). The Cabinet Office monitors compliance. Non-compliant services must publish an accessibility statement. ClickMasters includes WCAG 2.1 AA testing (automated + manual screen reader testing) as standard on all public sector projects."
+            "text": "For UK public sector bodies, WCAG 2.1 AA compliance is legally required under the Public Sector Bodies Accessibility Regulations 2018 (PSBAR). The Cabinet Office monitors compliance. Non-compliant services must publish an accessibility statement. Clickmasters includes WCAG 2.1 AA testing (automated + manual screen reader testing) as standard on all public sector projects."
           },
           {
             "bold": "Cyber Essentials — Mandatory for Gov Contracts",
-            "text": "Cyber Essentials Basic certification is mandatory for all UK central government contracts involving personal information or sensitive data. Many local authorities now require it for all technology procurement above £25,000. ClickMasters builds all software to meet the 5 Cyber Essentials controls by default."
+            "text": "Cyber Essentials Basic certification is mandatory for all UK central government contracts involving personal information or sensitive data. Many local authorities now require it for all technology procurement above £25,000. Clickmasters builds all software to meet the 5 Cyber Essentials controls by default."
           },
           {
             "bold": "G-Cloud Procurement",
-            "text": "G-Cloud is the UK government's technology procurement framework managed by Crown Commercial Service. Software companies list their services on Digital Marketplace (G-Cloud 14) enabling government buyers to procure without a full tender process. ClickMasters can advise on G-Cloud listing and procurement processes."
+            "text": "G-Cloud is the UK government's technology procurement framework managed by Crown Commercial Service. Software companies list their services on Digital Marketplace (G-Cloud 14) enabling government buyers to procure without a full tender process. Clickmasters can advise on G-Cloud listing and procurement processes."
           },
           {
             "bold": "GOV.UK Design System",
-            "text": "Public sector digital services must use the GOV.UK Design System — an open-source component library that implements WCAG 2.1 AA, meets the GDS Service Standard, and provides a consistent user experience. ClickMasters implements GOV.UK Design System components in React and as server-rendered HTML."
+            "text": "Public sector digital services must use the GOV.UK Design System — an open-source component library that implements WCAG 2.1 AA, meets the GDS Service Standard, and provides a consistent user experience. Clickmasters implements GOV.UK Design System components in React and as server-rendered HTML."
           }
         ]
       },
       {
-        "heading": "GovTech Software Compliance — What ClickMasters Implements",
+        "heading": "GovTech Software Compliance — What Clickmasters Implements",
         "paragraphs": [
           {
             "bold": "",
@@ -507,11 +507,11 @@ const industries = [
     "industry": "legaltech",
     "service": "software-development-uk",
     "title": "LegalTech Software Development UK — SRA Compliant Matter Management & Legal AI",
-    "metaTitle": "LegalTech Software Development UK — SRA Compliant Matter Management & Legal AI | ClickMasters",
-    "metaDesc": "ClickMasters LegalTech software development specialists. SRA Compliance. From £30,000. Free consultation for UK LegalTech businesses.",
+    "metaTitle": "LegalTech Software Development UK — SRA Compliant Matter Management & Legal AI | Clickmasters",
+    "metaDesc": "Clickmasters LegalTech software development specialists. SRA Compliance. From £30,000. Free consultation for UK LegalTech businesses.",
     "lastUpdated": "June 2025",
     "readingTime": 14,
-    "writtenBy": "ClickMasters LegalTech Team",
+    "writtenBy": "Clickmasters LegalTech Team",
     "reviewedBy": "James Whitmore, CTO — LegalTech sector reviewed",
     "badges": [
       "⚖️ SRA Compliance Aware",
@@ -521,7 +521,7 @@ const industries = [
       "💳 Client Money (CASS-aware)",
       "🇬🇧 City of London Law Cluster"
     ],
-    "directAnswer": "LegalTech software in the UK must be built with awareness of Solicitors Regulation Authority (SRA) obligations, legal professional privilege (which affects data architecture), AML requirements for law firms under POCA 2002 and the MLRs 2017, and the Law Society's guidance on AI in legal services. Software holding client data must meet the SRA's data protection requirements, and any software handling client money must understand CASS-style client fund segregation. ClickMasters builds LegalTech software for UK law firms, barristers' chambers, and legal technology startups.",
+    "directAnswer": "LegalTech software in the UK must be built with awareness of Solicitors Regulation Authority (SRA) obligations, legal professional privilege (which affects data architecture), AML requirements for law firms under POCA 2002 and the MLRs 2017, and the Law Society's guidance on AI in legal services. Software holding client data must meet the SRA's data protection requirements, and any software handling client money must understand CASS-style client fund segregation. Clickmasters builds LegalTech software for UK law firms, barristers' chambers, and legal technology startups.",
     "sections": [
       {
         "heading": "The UK LegalTech Market — Why Compliance Matters",
@@ -537,7 +537,7 @@ const industries = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "Every ClickMasters project for the UK LegalTech sector addresses these regulatory and technical requirements:"
+            "text": "Every Clickmasters project for the UK LegalTech sector addresses these regulatory and technical requirements:"
           },
           {
             "bold": "SRA Compliance Awareness",
@@ -562,7 +562,7 @@ const industries = [
         ]
       },
       {
-        "heading": "LegalTech Software Compliance — What ClickMasters Implements",
+        "heading": "LegalTech Software Compliance — What Clickmasters Implements",
         "paragraphs": [
           {
             "bold": "",
@@ -618,11 +618,11 @@ const industries = [
     "industry": "ecommerce",
     "service": "software-development-uk",
     "title": "eCommerce Development UK — Custom Platforms, Shopify & Marketplace Builds",
-    "metaTitle": "eCommerce Development UK — Custom Platforms, Shopify & Marketplace Builds | ClickMasters",
-    "metaDesc": "ClickMasters eCommerce software development specialists. UK GDPR. From £3,500. Free consultation for UK eCommerce businesses.",
+    "metaTitle": "eCommerce Development UK — Custom Platforms, Shopify & Marketplace Builds | Clickmasters",
+    "metaDesc": "Clickmasters eCommerce software development specialists. UK GDPR. From £3,500. Free consultation for UK eCommerce businesses.",
     "lastUpdated": "June 2025",
     "readingTime": 14,
-    "writtenBy": "ClickMasters eCommerce Team",
+    "writtenBy": "Clickmasters eCommerce Team",
     "reviewedBy": "James Whitmore, CTO — eCommerce sector reviewed",
     "badges": [
       "🛒 Shopify & WooCommerce",
@@ -632,14 +632,14 @@ const industries = [
       "📱 Mobile-First",
       "💷 Transparent Pricing"
     ],
-    "directAnswer": "eCommerce software development in the UK costs from £3,500 for a Shopify customisation to £150,000+ for a custom marketplace platform. UK eCommerce software must comply with: the Consumer Rights Act 2015, UK Distance Selling Regulations, UK GDPR and ICO guidance on customer data, and PCI-DSS for card payment handling. ClickMasters builds eCommerce platforms on Shopify (including Shopify Plus), WooCommerce, custom headless architecture, and bespoke marketplace platforms — all with UK compliance built in.",
+    "directAnswer": "eCommerce software development in the UK costs from £3,500 for a Shopify customisation to £150,000+ for a custom marketplace platform. UK eCommerce software must comply with: the Consumer Rights Act 2015, UK Distance Selling Regulations, UK GDPR and ICO guidance on customer data, and PCI-DSS for card payment handling. Clickmasters builds eCommerce platforms on Shopify (including Shopify Plus), WooCommerce, custom headless architecture, and bespoke marketplace platforms — all with UK compliance built in.",
     "sections": [
       {
         "heading": "The UK eCommerce Market — Why Compliance Matters",
         "paragraphs": [
           {
             "bold": "",
-            "text": "UK eCommerce is a £200bn+ market — the largest in Europe per capita. Building a successful eCommerce platform requires more than a working checkout: performance at peak demand (Black Friday), mobile-first UX, payment method diversity (including BNPL and Open Banking), and compliance with UK consumer protection law. ClickMasters builds eCommerce platforms that scale, convert, and comply."
+            "text": "UK eCommerce is a £200bn+ market — the largest in Europe per capita. Building a successful eCommerce platform requires more than a working checkout: performance at peak demand (Black Friday), mobile-first UX, payment method diversity (including BNPL and Open Banking), and compliance with UK consumer protection law. Clickmasters builds eCommerce platforms that scale, convert, and comply."
           }
         ]
       },
@@ -648,7 +648,7 @@ const industries = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "Every ClickMasters project for the UK eCommerce sector addresses these regulatory and technical requirements:"
+            "text": "Every Clickmasters project for the UK eCommerce sector addresses these regulatory and technical requirements:"
           },
           {
             "bold": "UK Consumer Rights Act 2015 & Distance Selling",
@@ -660,20 +660,20 @@ const industries = [
           },
           {
             "bold": "PCI-DSS Scope Management",
-            "text": "PCI-DSS applies to any system storing, processing, or transmitting cardholder data. For eCommerce, scope reduction via hosted payment forms (Stripe Elements, Braintree Drop-in UI) means most merchants can achieve SAQ-A (the simplest certification level) — dramatically reducing compliance cost. ClickMasters designs eCommerce platforms to minimise PCI-DSS scope by default."
+            "text": "PCI-DSS applies to any system storing, processing, or transmitting cardholder data. For eCommerce, scope reduction via hosted payment forms (Stripe Elements, Braintree Drop-in UI) means most merchants can achieve SAQ-A (the simplest certification level) — dramatically reducing compliance cost. Clickmasters designs eCommerce platforms to minimise PCI-DSS scope by default."
           },
           {
             "bold": "Performance Engineering for Black Friday",
-            "text": "eCommerce platforms must handle significant traffic peaks — typically 5–15x normal volume on Black Friday and peak season. ClickMasters engineers eCommerce platforms for peak performance: CDN configuration, database read replicas, Redis caching, load testing with k6, auto-scaling on AWS or Azure, and queue-based order processing to handle burst traffic."
+            "text": "eCommerce platforms must handle significant traffic peaks — typically 5–15x normal volume on Black Friday and peak season. Clickmasters engineers eCommerce platforms for peak performance: CDN configuration, database read replicas, Redis caching, load testing with k6, auto-scaling on AWS or Azure, and queue-based order processing to handle burst traffic."
           },
           {
             "bold": "WCAG 2.1 Accessibility",
-            "text": "The Equality Act 2010 requires that online retailers do not discriminate against disabled users. An inaccessible checkout or product page potentially violates this. WCAG 2.1 AA is the standard. For public sector suppliers and businesses with accessibility obligations, PSBAR compliance is also required. ClickMasters includes WCAG 2.1 AA testing on all eCommerce builds."
+            "text": "The Equality Act 2010 requires that online retailers do not discriminate against disabled users. An inaccessible checkout or product page potentially violates this. WCAG 2.1 AA is the standard. For public sector suppliers and businesses with accessibility obligations, PSBAR compliance is also required. Clickmasters includes WCAG 2.1 AA testing on all eCommerce builds."
           }
         ]
       },
       {
-        "heading": "eCommerce Software Compliance — What ClickMasters Implements",
+        "heading": "eCommerce Software Compliance — What Clickmasters Implements",
         "paragraphs": [
           {
             "bold": "",
@@ -690,7 +690,7 @@ const industries = [
       "UK eCommerce is a £200bn+ market — the largest in Europe per capita. Building a successful eCommerce platform requires more than a working checkout: performance at peak demand (Black Friday)",
       "mobile-first UX",
       "payment method diversity (including BNPL and Open Banking)",
-      "and compliance with UK consumer protection law. ClickMasters builds eCommerce platforms that scale",
+      "and compliance with UK consumer protection law. Clickmasters builds eCommerce platforms that scale",
       "convert",
       "and comply."
     ],
@@ -724,7 +724,7 @@ const industries = [
     "faqs": [
       {
         "question": "When should I choose a custom eCommerce platform over Shopify or WooCommerce?",
-        "answer": "Choose custom when: your B2B workflow is too complex for Shopify (custom approval flows, complex pricing tiers, multi-warehouse), you're building a marketplace with seller and buyer accounts that Shopify can't support, or the 3-year cost of Shopify Plus licensing significantly exceeds the build cost. For most B2C retail launches, Shopify is the faster and more cost-effective choice. ClickMasters will tell you honestly if Shopify or WooCommerce is the right answer for your situation."
+        "answer": "Choose custom when: your B2B workflow is too complex for Shopify (custom approval flows, complex pricing tiers, multi-warehouse), you're building a marketplace with seller and buyer accounts that Shopify can't support, or the 3-year cost of Shopify Plus licensing significantly exceeds the build cost. For most B2C retail launches, Shopify is the faster and more cost-effective choice. Clickmasters will tell you honestly if Shopify or WooCommerce is the right answer for your situation."
       },
       {
         "question": "What UK legal requirements apply to my eCommerce website?",
@@ -732,7 +732,7 @@ const industries = [
       },
       {
         "question": "How do you optimise for Black Friday traffic peaks?",
-        "answer": "ClickMasters Black Friday engineering: load testing with k6 or JMeter at 10x normal traffic, CDN configuration for static assets and product images, Redis caching for product catalogue and session data, database read replicas for product queries, queue-based order processing (SQS/RabbitMQ) to decouple payment processing from inventory updates, auto-scaling configuration on AWS or Azure, and a real-time monitoring dashboard with alerting thresholds set at 50% and 80% capacity."
+        "answer": "Clickmasters Black Friday engineering: load testing with k6 or JMeter at 10x normal traffic, CDN configuration for static assets and product images, Redis caching for product catalogue and session data, database read replicas for product queries, queue-based order processing (SQS/RabbitMQ) to decouple payment processing from inventory updates, auto-scaling configuration on AWS or Azure, and a real-time monitoring dashboard with alerting thresholds set at 50% and 80% capacity."
       }
     ]
   },
@@ -742,11 +742,11 @@ const industries = [
     "industry": "proptech",
     "service": "software-development-uk",
     "title": "PropTech Software Development UK — Property Technology, RICS & Land Registry",
-    "metaTitle": "PropTech Software Development UK — Property Technology, RICS & Land Registry | ClickMasters",
-    "metaDesc": "ClickMasters PropTech software development specialists. MLRs 2017 (AML for estate agents). From £25,000. Free consultation for UK PropTech businesses.",
+    "metaTitle": "PropTech Software Development UK — Property Technology, RICS & Land Registry | Clickmasters",
+    "metaDesc": "Clickmasters PropTech software development specialists. MLRs 2017 (AML for estate agents). From £25,000. Free consultation for UK PropTech businesses.",
     "lastUpdated": "June 2025",
     "readingTime": 14,
-    "writtenBy": "ClickMasters PropTech Team",
+    "writtenBy": "Clickmasters PropTech Team",
     "reviewedBy": "James Whitmore, CTO — PropTech sector reviewed",
     "badges": [
       "🏠 Land Registry API",
@@ -756,7 +756,7 @@ const industries = [
       "💳 Rental Payments",
       "🏙️ UK Property Market Specialists"
     ],
-    "directAnswer": "PropTech software in the UK operates in a highly regulated property market — with specific requirements for AML compliance (estate agents are regulated under the MLRs 2017), Land Registry API integration, RICS data standards, and UK GDPR for sensitive tenancy and ownership data. Whether you're building a rental management platform, an automated valuation model, a property marketplace, or a conveyancing tool, ClickMasters architects PropTech software with the UK regulatory context built in from day one.",
+    "directAnswer": "PropTech software in the UK operates in a highly regulated property market — with specific requirements for AML compliance (estate agents are regulated under the MLRs 2017), Land Registry API integration, RICS data standards, and UK GDPR for sensitive tenancy and ownership data. Whether you're building a rental management platform, an automated valuation model, a property marketplace, or a conveyancing tool, Clickmasters architects PropTech software with the UK regulatory context built in from day one.",
     "sections": [
       {
         "heading": "The UK PropTech Market — Why Compliance Matters",
@@ -772,7 +772,7 @@ const industries = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "Every ClickMasters project for the UK PropTech sector addresses these regulatory and technical requirements:"
+            "text": "Every Clickmasters project for the UK PropTech sector addresses these regulatory and technical requirements:"
           },
           {
             "bold": "AML for Estate Agents (MLRs 2017)",
@@ -797,7 +797,7 @@ const industries = [
         ]
       },
       {
-        "heading": "PropTech Software Compliance — What ClickMasters Implements",
+        "heading": "PropTech Software Compliance — What Clickmasters Implements",
         "paragraphs": [
           {
             "bold": "",
@@ -864,11 +864,11 @@ const industries = [
     "industry": "insurtech",
     "service": "software-development-uk",
     "title": "InsurTech Software Development UK — Specialist Builds for UK InsurTech Businesses",
-    "metaTitle": "InsurTech Software Development UK — FCA Regulated | ClickMasters",
-    "metaDesc": "ClickMasters InsurTech software development specialists. FCA. From £35,000. Free consultation.",
+    "metaTitle": "InsurTech Software Development UK — FCA Regulated | Clickmasters",
+    "metaDesc": "Clickmasters InsurTech software development specialists. FCA. From £35,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 13,
-    "writtenBy": "ClickMasters InsurTech Team",
+    "writtenBy": "Clickmasters InsurTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🏦 FCA Regulated",
@@ -878,7 +878,7 @@ const industries = [
       "🚗 Telematics",
       "💷 Solvency II (UK)"
     ],
-    "directAnswer": "InsurTech software in the UK is regulated by the FCA as an insurance distribution activity. Software platforms enabling insurance distribution, claims management, or underwriting must support Consumer Duty obligations, FCA authorisation requirements, Solvency II (UK) technical standards for insurers, and Lloyd's Market technology requirements for Lloyds-based businesses. ClickMasters builds InsurTech platforms with FCA Consumer Duty compliance and the technical architecture required for regulated insurance software in the UK.",
+    "directAnswer": "InsurTech software in the UK is regulated by the FCA as an insurance distribution activity. Software platforms enabling insurance distribution, claims management, or underwriting must support Consumer Duty obligations, FCA authorisation requirements, Solvency II (UK) technical standards for insurers, and Lloyd's Market technology requirements for Lloyds-based businesses. Clickmasters builds InsurTech platforms with FCA Consumer Duty compliance and the technical architecture required for regulated insurance software in the UK.",
     "sections": [
       {
         "heading": "The UK InsurTech Market",
@@ -902,7 +902,7 @@ const industries = [
           },
           {
             "bold": "Lloyd's Market Technology Requirements",
-            "text": "Software interoperating with Lloyd's of London must connect to Lloyd's Core Infrastructure — including PPL (Placing Platform Limited) for electronic placing, claims systems, and bureau market data. Lloyd's Blueprint Two programme is driving significant technology change across the market. ClickMasters has experience with Lloyd's market technology requirements."
+            "text": "Software interoperating with Lloyd's of London must connect to Lloyd's Core Infrastructure — including PPL (Placing Platform Limited) for electronic placing, claims systems, and bureau market data. Lloyd's Blueprint Two programme is driving significant technology change across the market. Clickmasters has experience with Lloyd's market technology requirements."
           },
           {
             "bold": "Telematics and IoT Insurance",
@@ -919,7 +919,7 @@ const industries = [
         ]
       },
       {
-        "heading": "InsurTech Software Services — What ClickMasters Builds",
+        "heading": "InsurTech Software Services — What Clickmasters Builds",
         "paragraphs": []
       }
     ],
@@ -933,11 +933,11 @@ const industries = [
     "industry": "logtech",
     "service": "software-development-uk",
     "title": "LogTech Software Development UK — Specialist Builds for UK LogTech Businesses",
-    "metaTitle": "LogTech Software Development UK — Fleet Management | ClickMasters",
-    "metaDesc": "ClickMasters LogTech software development specialists. UK GDPR (driver data). From £25,000. Free consultation.",
+    "metaTitle": "LogTech Software Development UK — Fleet Management | Clickmasters",
+    "metaDesc": "Clickmasters LogTech software development specialists. UK GDPR (driver data). From £25,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 13,
-    "writtenBy": "ClickMasters LogTech Team",
+    "writtenBy": "Clickmasters LogTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🚛 Fleet Management",
@@ -947,7 +947,7 @@ const industries = [
       "📍 Real-Time Tracking",
       "🏭 Warehouse Management"
     ],
-    "directAnswer": "Logistics technology software in the UK requires integration with UK regulatory systems (DVSA digital tachograph, HMRC Customs Declaration Service post-Brexit), real-time tracking infrastructure (GPS, IoT), and compliance with UK data protection requirements for driver and vehicle data. ClickMasters builds fleet management systems, warehouse management software, supply chain platforms, and last-mile delivery technology for UK logistics businesses.",
+    "directAnswer": "Logistics technology software in the UK requires integration with UK regulatory systems (DVSA digital tachograph, HMRC Customs Declaration Service post-Brexit), real-time tracking infrastructure (GPS, IoT), and compliance with UK data protection requirements for driver and vehicle data. Clickmasters builds fleet management systems, warehouse management software, supply chain platforms, and last-mile delivery technology for UK logistics businesses.",
     "sections": [
       {
         "heading": "The UK LogTech Market",
@@ -963,7 +963,7 @@ const industries = [
         "paragraphs": [
           {
             "bold": "DVSA Digital Tachograph Integration",
-            "text": "The DVSA (Driver and Vehicle Standards Agency) mandates digital tachographs in HGVs and PSVs. Tachograph data must be downloaded at defined intervals and retained for 12 months minimum. ClickMasters integrates with tachograph hardware (Stoneridge, Continental VDO, Siemens) and the DVSA's digital services to automate compliance monitoring."
+            "text": "The DVSA (Driver and Vehicle Standards Agency) mandates digital tachographs in HGVs and PSVs. Tachograph data must be downloaded at defined intervals and retained for 12 months minimum. Clickmasters integrates with tachograph hardware (Stoneridge, Continental VDO, Siemens) and the DVSA's digital services to automate compliance monitoring."
           },
           {
             "bold": "UK GDPR for Driver and Vehicle Data",
@@ -988,7 +988,7 @@ const industries = [
         ]
       },
       {
-        "heading": "LogTech Software Services — What ClickMasters Builds",
+        "heading": "LogTech Software Services — What Clickmasters Builds",
         "paragraphs": []
       }
     ],
@@ -997,7 +997,7 @@ const industries = [
     "faqs": [
       {
         "question": "Can you integrate with our existing fleet tracking hardware?",
-        "answer": "Yes — ClickMasters integrates with major fleet tracking hardware providers including Microlise, Webfleet, Samsara, and custom IoT devices. Integration typically uses REST APIs (for cloud-based tracking platforms) or direct MQTT/CAN bus protocols (for custom IoT devices). The integration architecture depends on your specific hardware and whether you need real-time or batch data processing."
+        "answer": "Yes — Clickmasters integrates with major fleet tracking hardware providers including Microlise, Webfleet, Samsara, and custom IoT devices. Integration typically uses REST APIs (for cloud-based tracking platforms) or direct MQTT/CAN bus protocols (for custom IoT devices). The integration architecture depends on your specific hardware and whether you need real-time or batch data processing."
       },
       {
         "question": "How do we handle UK GDPR for employee GPS tracking?",
@@ -1005,7 +1005,7 @@ const industries = [
       },
       {
         "question": "What is the DVSA digital tachograph requirement and how does software help?",
-        "answer": "UK HGVs and coaches must have digital tachographs recording driver hours and vehicle speed. Operators must download tachograph data every 28 days from the unit (and every 90 days from driver smart card). Tachograph data must be retained for 12 months minimum. Software automates: download reminders, infringement detection (EU drivers' hours regulations), analysis reports, and DVSA compliance documentation. ClickMasters integrates with tachograph hardware APIs and DVSA digital services."
+        "answer": "UK HGVs and coaches must have digital tachographs recording driver hours and vehicle speed. Operators must download tachograph data every 28 days from the unit (and every 90 days from driver smart card). Tachograph data must be retained for 12 months minimum. Software automates: download reminders, infringement detection (EU drivers' hours regulations), analysis reports, and DVSA compliance documentation. Clickmasters integrates with tachograph hardware APIs and DVSA digital services."
       }
     ]
   },
@@ -1015,11 +1015,11 @@ const industries = [
     "industry": "edtech",
     "service": "software-development-uk",
     "title": "EdTech Software Development UK — Specialist Builds for UK EdTech Businesses",
-    "metaTitle": "EdTech Software Development UK — KCSIE Safeguarding | ClickMasters",
-    "metaDesc": "ClickMasters EdTech software development specialists. KCSIE. From £20,000. Free consultation.",
+    "metaTitle": "EdTech Software Development UK — KCSIE Safeguarding | Clickmasters",
+    "metaDesc": "Clickmasters EdTech software development specialists. KCSIE. From £20,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 13,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "📚 KCSIE Safeguarding",
@@ -1029,7 +1029,7 @@ const industries = [
       "📱 Mobile Learning",
       "🏫 Schools & HE"
     ],
-    "directAnswer": "EdTech software development in the UK operates under strict safeguarding obligations — Keeping Children Safe in Education (KCSIE) applies to any technology used in schools. UK GDPR with specific protections for children's data (ICO Age Appropriate Design Code), MIS integrations (SIMS, Arbor, Bromcom), and the DfE's digital standards framework all apply. ClickMasters builds education technology for UK primary schools, secondary schools, further education, and higher education institutions.",
+    "directAnswer": "EdTech software development in the UK operates under strict safeguarding obligations — Keeping Children Safe in Education (KCSIE) applies to any technology used in schools. UK GDPR with specific protections for children's data (ICO Age Appropriate Design Code), MIS integrations (SIMS, Arbor, Bromcom), and the DfE's digital standards framework all apply. Clickmasters builds education technology for UK primary schools, secondary schools, further education, and higher education institutions.",
     "sections": [
       {
         "heading": "The UK EdTech Market",
@@ -1070,7 +1070,7 @@ const industries = [
         ]
       },
       {
-        "heading": "EdTech Software Services — What ClickMasters Builds",
+        "heading": "EdTech Software Services — What Clickmasters Builds",
         "paragraphs": []
       }
     ],
@@ -1084,11 +1084,11 @@ const industries = [
     "industry": "retailtech",
     "service": "software-development-uk",
     "title": "RetailTech Software Development UK — Specialist Builds for UK RetailTech Businesses",
-    "metaTitle": "RetailTech Software Development UK — POS EPOS Systems | ClickMasters",
-    "metaDesc": "ClickMasters RetailTech software development specialists. UK GDPR. From £15,000. Free consultation.",
+    "metaTitle": "RetailTech Software Development UK — POS EPOS Systems | Clickmasters",
+    "metaDesc": "Clickmasters RetailTech software development specialists. UK GDPR. From £15,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 13,
-    "writtenBy": "ClickMasters RetailTech Team",
+    "writtenBy": "Clickmasters RetailTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🏪 POS & EPOS Systems",
@@ -1098,7 +1098,7 @@ const industries = [
       "📱 Omnichannel",
       "🛒 eCommerce Integration"
     ],
-    "directAnswer": "Retail technology software in the UK spans EPOS systems, inventory management, CRM and loyalty platforms, and omnichannel commerce. UK retail software must comply with: UK GDPR and ICO guidance for customer data, PCI-DSS for card payment handling, the Consumer Rights Act 2015 for digital and physical retail, and GDPR marketing consent requirements (PECR for email/SMS). ClickMasters builds retail technology platforms for UK retailers — from independent retailers to multi-site chains.",
+    "directAnswer": "Retail technology software in the UK spans EPOS systems, inventory management, CRM and loyalty platforms, and omnichannel commerce. UK retail software must comply with: UK GDPR and ICO guidance for customer data, PCI-DSS for card payment handling, the Consumer Rights Act 2015 for digital and physical retail, and GDPR marketing consent requirements (PECR for email/SMS). Clickmasters builds retail technology platforms for UK retailers — from independent retailers to multi-site chains.",
     "sections": [
       {
         "heading": "The UK RetailTech Market",
@@ -1139,7 +1139,7 @@ const industries = [
         ]
       },
       {
-        "heading": "RetailTech Software Services — What ClickMasters Builds",
+        "heading": "RetailTech Software Services — What Clickmasters Builds",
         "paragraphs": []
       }
     ],
@@ -1148,7 +1148,7 @@ const industries = [
     "faqs": [
       {
         "question": "What retail software should I build custom vs buy off-the-shelf?",
-        "answer": "Shopify and WooCommerce handle standard B2C eCommerce well. EPOS systems (Lightspeed, Square, Shopify POS) handle standard in-store retail. Build custom when: your loyalty or membership model is too complex for standard platforms, you need deep integration between physical and digital that off-the-shelf can't provide, your inventory management has complex multi-location rules, or the 3-year licence cost exceeds the custom build cost. ClickMasters will give you an honest build vs buy assessment."
+        "answer": "Shopify and WooCommerce handle standard B2C eCommerce well. EPOS systems (Lightspeed, Square, Shopify POS) handle standard in-store retail. Build custom when: your loyalty or membership model is too complex for standard platforms, you need deep integration between physical and digital that off-the-shelf can't provide, your inventory management has complex multi-location rules, or the 3-year licence cost exceeds the custom build cost. Clickmasters will give you an honest build vs buy assessment."
       },
       {
         "question": "How do I handle UK GDPR for customer loyalty data?",
@@ -1156,7 +1156,7 @@ const industries = [
       },
       {
         "question": "Does my retail app need PCI-DSS compliance?",
-        "answer": "If your retail app processes, stores, or transmits cardholder data, PCI-DSS applies. The simplest approach: use a hosted payment form (Stripe, Adyen) so cardholder data never touches your systems — this typically qualifies for SAQ-A (the simplest self-assessment level). If you need in-app payments, use the payment provider's native SDK. Avoid storing card data in your own systems entirely. ClickMasters designs retail payment flows to minimise PCI-DSS scope."
+        "answer": "If your retail app processes, stores, or transmits cardholder data, PCI-DSS applies. The simplest approach: use a hosted payment form (Stripe, Adyen) so cardholder data never touches your systems — this typically qualifies for SAQ-A (the simplest self-assessment level). If you need in-app payments, use the payment provider's native SDK. Avoid storing card data in your own systems entirely. Clickmasters designs retail payment flows to minimise PCI-DSS scope."
       }
     ]
   },
@@ -1166,11 +1166,11 @@ const industries = [
     "industry": "fintech",
     "service": "custom-software-development",
     "title": "Custom Software Development for UK FinTech Companies — FCA Compliant",
-    "metaTitle": "Custom Software Development for FinTech Companies UK | ClickMasters",
+    "metaTitle": "Custom Software Development for FinTech Companies UK | Clickmasters",
     "metaDesc": "Custom Software Development specialists for UK FinTech businesses. FCA. £35,000–£250,000+. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters FinTech & Custom Software Development Team",
+    "writtenBy": "Clickmasters FinTech & Custom Software Development Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🏦 FinTech Specialists",
@@ -1180,14 +1180,14 @@ const industries = [
       "⚖️ Zero IR35",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development specifically for UK FinTech businesses — with FCA, PSD2 compliance built into every project from the architecture phase. Unlike generic software agencies, our FinTech specialist team understands the regulatory requirements, the data architecture constraints, and the specific integration needs of UK FinTech software.",
+    "directAnswer": "Clickmasters provides Custom Software Development specifically for UK FinTech businesses — with FCA, PSD2 compliance built into every project from the architecture phase. Unlike generic software agencies, our FinTech specialist team understands the regulatory requirements, the data architecture constraints, and the specific integration needs of UK FinTech software.",
     "sections": [
       {
         "heading": "What Custom Software Development for FinTech Means in the UK",
         "paragraphs": [
           {
             "bold": "",
-            "text": "FinTech Custom Software Development in the UK has specific requirements beyond standard Custom Software Development. Here is what ClickMasters builds into every FinTech Custom Software Development engagement:"
+            "text": "FinTech Custom Software Development in the UK has specific requirements beyond standard Custom Software Development. Here is what Clickmasters builds into every FinTech Custom Software Development engagement:"
           },
           {
             "bold": "FCA-Aware Architecture",
@@ -1242,11 +1242,11 @@ const industries = [
     "industry": "fintech",
     "service": "mvp-development",
     "title": "MVP Development for UK FinTech Companies — FCA Sandbox Compliant",
-    "metaTitle": "MVP Development for FinTech Companies UK | ClickMasters",
+    "metaTitle": "MVP Development for FinTech Companies UK | Clickmasters",
     "metaDesc": "MVP Development specialists for UK FinTech businesses. FCA Sandbox. £35,000–£80,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters FinTech & MVP Development Team",
+    "writtenBy": "Clickmasters FinTech & MVP Development Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🏦 FinTech Specialists",
@@ -1256,14 +1256,14 @@ const industries = [
       "⚖️ Zero IR35",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides MVP Development specifically for UK FinTech businesses — with FCA Sandbox, AML/KYC compliance built into every project from the architecture phase. Unlike generic software agencies, our FinTech specialist team understands the regulatory requirements, the data architecture constraints, and the specific integration needs of UK FinTech software.",
+    "directAnswer": "Clickmasters provides MVP Development specifically for UK FinTech businesses — with FCA Sandbox, AML/KYC compliance built into every project from the architecture phase. Unlike generic software agencies, our FinTech specialist team understands the regulatory requirements, the data architecture constraints, and the specific integration needs of UK FinTech software.",
     "sections": [
       {
         "heading": "What MVP Development for FinTech Means in the UK",
         "paragraphs": [
           {
             "bold": "",
-            "text": "FinTech MVP Development in the UK has specific requirements beyond standard MVP Development. Here is what ClickMasters builds into every FinTech MVP Development engagement:"
+            "text": "FinTech MVP Development in the UK has specific requirements beyond standard MVP Development. Here is what Clickmasters builds into every FinTech MVP Development engagement:"
           },
           {
             "bold": "FCA Sandbox Awareness",
@@ -1313,7 +1313,7 @@ const industries = [
     "faqs": [
       {
         "question": "Can a FinTech MVP qualify for FCA Regulatory Sandbox?",
-        "answer": "Yes — if your product involves genuine innovation in regulated financial services. Sandbox applications require: working software (or advanced prototype), evidence of consumer benefit, regulatory compliance plans, and a defined test scope. ClickMasters supports the technical appendix of Sandbox applications."
+        "answer": "Yes — if your product involves genuine innovation in regulated financial services. Sandbox applications require: working software (or advanced prototype), evidence of consumer benefit, regulatory compliance plans, and a defined test scope. Clickmasters supports the technical appendix of Sandbox applications."
       },
       {
         "question": "How long does a FinTech MVP take?",
@@ -1327,11 +1327,11 @@ const industries = [
     "industry": "healthtech",
     "service": "mvp-development",
     "title": "MVP Development for UK HealthTech Companies — DTAC-aware Compliant",
-    "metaTitle": "MVP Development for HealthTech Companies UK | ClickMasters",
+    "metaTitle": "MVP Development for HealthTech Companies UK | Clickmasters",
     "metaDesc": "MVP Development specialists for UK HealthTech businesses. DTAC-aware. £35,000–£80,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters HealthTech & MVP Development Team",
+    "writtenBy": "Clickmasters HealthTech & MVP Development Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🏦 HealthTech Specialists",
@@ -1341,14 +1341,14 @@ const industries = [
       "⚖️ Zero IR35",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides MVP Development specifically for UK HealthTech businesses — with DTAC-aware, NHS Digital compliance built into every project from the architecture phase. Unlike generic software agencies, our HealthTech specialist team understands the regulatory requirements, the data architecture constraints, and the specific integration needs of UK HealthTech software.",
+    "directAnswer": "Clickmasters provides MVP Development specifically for UK HealthTech businesses — with DTAC-aware, NHS Digital compliance built into every project from the architecture phase. Unlike generic software agencies, our HealthTech specialist team understands the regulatory requirements, the data architecture constraints, and the specific integration needs of UK HealthTech software.",
     "sections": [
       {
         "heading": "What MVP Development for HealthTech Means in the UK",
         "paragraphs": [
           {
             "bold": "",
-            "text": "HealthTech MVP Development in the UK has specific requirements beyond standard MVP Development. Here is what ClickMasters builds into every HealthTech MVP Development engagement:"
+            "text": "HealthTech MVP Development in the UK has specific requirements beyond standard MVP Development. Here is what Clickmasters builds into every HealthTech MVP Development engagement:"
           },
           {
             "bold": "DTAC-Aware Architecture",
@@ -1412,11 +1412,11 @@ const industries = [
     "industry": "govtech",
     "service": "api-development",
     "title": "API Development for UK GovTech Companies — GDS API design guide Compliant",
-    "metaTitle": "API Development for GovTech Companies UK | ClickMasters",
+    "metaTitle": "API Development for GovTech Companies UK | Clickmasters",
     "metaDesc": "API Development specialists for UK GovTech businesses. GDS API design guide. £10,000–£50,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters GovTech & API Development Team",
+    "writtenBy": "Clickmasters GovTech & API Development Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🏦 GovTech Specialists",
@@ -1426,14 +1426,14 @@ const industries = [
       "⚖️ Zero IR35",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides API Development specifically for UK GovTech businesses — with GDS API design guide, GOV.UK Notify/Pay compliance built into every project from the architecture phase. Unlike generic software agencies, our GovTech specialist team understands the regulatory requirements, the data architecture constraints, and the specific integration needs of UK GovTech software.",
+    "directAnswer": "Clickmasters provides API Development specifically for UK GovTech businesses — with GDS API design guide, GOV.UK Notify/Pay compliance built into every project from the architecture phase. Unlike generic software agencies, our GovTech specialist team understands the regulatory requirements, the data architecture constraints, and the specific integration needs of UK GovTech software.",
     "sections": [
       {
         "heading": "What API Development for GovTech Means in the UK",
         "paragraphs": [
           {
             "bold": "",
-            "text": "GovTech API Development in the UK has specific requirements beyond standard API Development. Here is what ClickMasters builds into every GovTech API Development engagement:"
+            "text": "GovTech API Development in the UK has specific requirements beyond standard API Development. Here is what Clickmasters builds into every GovTech API Development engagement:"
           },
           {
             "bold": "GDS API Design Principles",
@@ -1441,7 +1441,7 @@ const industries = [
           },
           {
             "bold": "GOV.UK Notify Integration",
-            "text": "Government notification service — free for public sector. Email, SMS, and letters via API. UK GDPR compliant. ClickMasters has integrated GOV.UK Notify for multiple public sector clients."
+            "text": "Government notification service — free for public sector. Email, SMS, and letters via API. UK GDPR compliant. Clickmasters has integrated GOV.UK Notify for multiple public sector clients."
           },
           {
             "bold": "GOV.UK Pay Integration",
@@ -1488,11 +1488,11 @@ const industries = [
     "industry": "healthtech",
     "service": "custom-software-development",
     "title": "Custom Software Development for UK HealthTech Companies — DTAC Compliant",
-    "metaTitle": "Custom Software Development for HealthTech Companies UK | ClickMasters",
+    "metaTitle": "Custom Software Development for HealthTech Companies UK | Clickmasters",
     "metaDesc": "Custom Software Development for UK HealthTech businesses. DTAC. £35,000–£200,000+. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters HealthTech & Custom Software Development Team",
+    "writtenBy": "Clickmasters HealthTech & Custom Software Development Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🏭 HealthTech Specialists",
@@ -1502,7 +1502,7 @@ const industries = [
       "⚖️ Zero IR35",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development specifically for UK HealthTech businesses — with DTAC, DSP Toolkit compliance built into every project from the architecture phase. Our HealthTech team understands the regulatory requirements, data architecture constraints, and sector-specific integration needs of UK HealthTech software.",
+    "directAnswer": "Clickmasters provides Custom Software Development specifically for UK HealthTech businesses — with DTAC, DSP Toolkit compliance built into every project from the architecture phase. Our HealthTech team understands the regulatory requirements, data architecture constraints, and sector-specific integration needs of UK HealthTech software.",
     "sections": [
       {
         "heading": "What Custom Software Development for HealthTech Means in the UK",
@@ -1517,11 +1517,11 @@ const industries = [
           },
           {
             "bold": "NHS Digital Supplier Pathway",
-            "text": "NHS Login OIDC integration, DSP Toolkit completion, NHS API onboarding support. ClickMasters manages the NHS Digital supplier onboarding process alongside development."
+            "text": "NHS Login OIDC integration, DSP Toolkit completion, NHS API onboarding support. Clickmasters manages the NHS Digital supplier onboarding process alongside development."
           },
           {
             "bold": "DCB0129 Clinical Safety",
-            "text": "Clinical Safety Officer engagement from Discovery. Hazard log maintained throughout development. Clinical risk management plan. ClickMasters supports the technical aspects."
+            "text": "Clinical Safety Officer engagement from Discovery. Hazard log maintained throughout development. Clinical risk management plan. Clickmasters supports the technical aspects."
           },
           {
             "bold": "",
@@ -1569,11 +1569,11 @@ const industries = [
     "industry": "healthtech",
     "service": "saas-development",
     "title": "SaaS Development for UK HealthTech Companies — DTAC Compliant",
-    "metaTitle": "SaaS Development for HealthTech Companies UK | ClickMasters",
+    "metaTitle": "SaaS Development for HealthTech Companies UK | Clickmasters",
     "metaDesc": "SaaS Development for UK HealthTech businesses. DTAC. £50,000–£200,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters HealthTech & SaaS Development Team",
+    "writtenBy": "Clickmasters HealthTech & SaaS Development Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🏭 HealthTech Specialists",
@@ -1583,7 +1583,7 @@ const industries = [
       "⚖️ Zero IR35",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development specifically for UK HealthTech businesses — with DTAC, DSP Toolkit compliance built into every project from the architecture phase. Our HealthTech team understands the regulatory requirements, data architecture constraints, and sector-specific integration needs of UK HealthTech software.",
+    "directAnswer": "Clickmasters provides SaaS Development specifically for UK HealthTech businesses — with DTAC, DSP Toolkit compliance built into every project from the architecture phase. Our HealthTech team understands the regulatory requirements, data architecture constraints, and sector-specific integration needs of UK HealthTech software.",
     "sections": [
       {
         "heading": "What SaaS Development for HealthTech Means in the UK",
@@ -1650,11 +1650,11 @@ const industries = [
     "industry": "legaltech",
     "service": "custom-software-development",
     "title": "Custom Software Development for UK LegalTech Companies — SRA Compliance Compliant",
-    "metaTitle": "Custom Software Development for LegalTech Companies UK | ClickMasters",
+    "metaTitle": "Custom Software Development for LegalTech Companies UK | Clickmasters",
     "metaDesc": "Custom Software Development for UK LegalTech businesses. SRA Compliance. £30,000–£180,000+. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters LegalTech & Custom Software Development Team",
+    "writtenBy": "Clickmasters LegalTech & Custom Software Development Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🏭 LegalTech Specialists",
@@ -1664,7 +1664,7 @@ const industries = [
       "⚖️ Zero IR35",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development specifically for UK LegalTech businesses — with SRA Compliance, Legal Professional Privilege compliance built into every project from the architecture phase. Our LegalTech team understands the regulatory requirements, data architecture constraints, and sector-specific integration needs of UK LegalTech software.",
+    "directAnswer": "Clickmasters provides Custom Software Development specifically for UK LegalTech businesses — with SRA Compliance, Legal Professional Privilege compliance built into every project from the architecture phase. Our LegalTech team understands the regulatory requirements, data architecture constraints, and sector-specific integration needs of UK LegalTech software.",
     "sections": [
       {
         "heading": "What Custom Software Development for LegalTech Means in the UK",
@@ -1722,11 +1722,11 @@ const industries = [
     "industry": "ecommerce",
     "service": "custom-software-development",
     "title": "Custom Software Development for UK eCommerce Companies — UK GDPR Compliant",
-    "metaTitle": "Custom Software Development for eCommerce Companies UK | ClickMasters",
+    "metaTitle": "Custom Software Development for eCommerce Companies UK | Clickmasters",
     "metaDesc": "Custom Software Development for UK eCommerce businesses. UK GDPR. £20,000–£150,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters eCommerce & Custom Software Development Team",
+    "writtenBy": "Clickmasters eCommerce & Custom Software Development Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🏭 eCommerce Specialists",
@@ -1736,7 +1736,7 @@ const industries = [
       "⚖️ Zero IR35",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development specifically for UK eCommerce businesses — with UK GDPR, PCI-DSS compliance built into every project from the architecture phase. Our eCommerce team understands the regulatory requirements, data architecture constraints, and sector-specific integration needs of UK eCommerce software.",
+    "directAnswer": "Clickmasters provides Custom Software Development specifically for UK eCommerce businesses — with UK GDPR, PCI-DSS compliance built into every project from the architecture phase. Our eCommerce team understands the regulatory requirements, data architecture constraints, and sector-specific integration needs of UK eCommerce software.",
     "sections": [
       {
         "heading": "What Custom Software Development for eCommerce Means in the UK",
@@ -1747,7 +1747,7 @@ const industries = [
           },
           {
             "bold": "PCI-DSS Scope Minimisation",
-            "text": "Custom eCommerce architecture should minimise PCI-DSS scope by default: hosted payment forms (Stripe Elements, Adyen Drop-in) mean cardholder data never touches your servers, achieving SAQ-A rather than full SAQ-D. ClickMasters designs for minimum PCI-DSS scope in every eCommerce architecture decision."
+            "text": "Custom eCommerce architecture should minimise PCI-DSS scope by default: hosted payment forms (Stripe Elements, Adyen Drop-in) mean cardholder data never touches your servers, achieving SAQ-A rather than full SAQ-D. Clickmasters designs for minimum PCI-DSS scope in every eCommerce architecture decision."
           },
           {
             "bold": "UK GDPR for Customer Data",
@@ -1793,7 +1793,7 @@ const industries = [
       },
       {
         "question": "How do you handle GDPR for abandoned cart emails?",
-        "answer": "Abandoned cart emails require valid marketing consent under PECR and UK GDPR. You cannot send abandoned cart emails to users who haven't explicitly consented to marketing communications, even if they provided their email for checkout purposes. The ICO has been clear on this. ClickMasters implements granular consent management in eCommerce builds — distinguishing between transactional emails (order confirmation, dispatch) and marketing (abandoned cart, promotional)."
+        "answer": "Abandoned cart emails require valid marketing consent under PECR and UK GDPR. You cannot send abandoned cart emails to users who haven't explicitly consented to marketing communications, even if they provided their email for checkout purposes. The ICO has been clear on this. Clickmasters implements granular consent management in eCommerce builds — distinguishing between transactional emails (order confirmation, dispatch) and marketing (abandoned cart, promotional)."
       }
     ]
   },
@@ -1803,11 +1803,11 @@ const industries = [
     "industry": "insurtech",
     "service": "custom-software-development",
     "title": "Custom Software Development for UK InsurTech Companies — FCA Built In",
-    "metaTitle": "Custom Software Development for InsurTech UK | ClickMasters",
+    "metaTitle": "Custom Software Development for InsurTech UK | Clickmasters",
     "metaDesc": "Custom Software Development for UK InsurTech businesses. FCA. £35,000–£200,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters InsurTech Team",
+    "writtenBy": "Clickmasters InsurTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "InsurTech Specialists",
@@ -1817,7 +1817,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development for UK InsurTech businesses with FCA, Consumer Duty compliance built in from the architecture phase. Our InsurTech team understands the UK regulatory requirements and sector-specific technical needs.",
+    "directAnswer": "Clickmasters provides Custom Software Development for UK InsurTech businesses with FCA, Consumer Duty compliance built in from the architecture phase. Our InsurTech team understands the UK regulatory requirements and sector-specific technical needs.",
     "sections": [
       {
         "heading": "What Custom Software Development for InsurTech Means in the UK",
@@ -1898,11 +1898,11 @@ const industries = [
     "industry": "logtech",
     "service": "custom-software-development",
     "title": "Custom Software Development for UK LogTech Companies — UK GDPR (driver data) Built In",
-    "metaTitle": "Custom Software Development for LogTech UK | ClickMasters",
+    "metaTitle": "Custom Software Development for LogTech UK | Clickmasters",
     "metaDesc": "Custom Software Development for UK LogTech businesses. UK GDPR (driver data). £25,000–£150,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LogTech Team",
+    "writtenBy": "Clickmasters LogTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LogTech Specialists",
@@ -1912,7 +1912,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development for UK LogTech businesses with UK GDPR (driver data), DVSA compliance built in from the architecture phase. Our LogTech team understands the UK regulatory requirements and sector-specific technical needs.",
+    "directAnswer": "Clickmasters provides Custom Software Development for UK LogTech businesses with UK GDPR (driver data), DVSA compliance built in from the architecture phase. Our LogTech team understands the UK regulatory requirements and sector-specific technical needs.",
     "sections": [
       {
         "heading": "What Custom Software Development for LogTech Means in the UK",
@@ -1987,7 +1987,7 @@ const industries = [
       },
       {
         "question": "Can you integrate with our existing DVSA tachograph hardware?",
-        "answer": "Yes — ClickMasters integrates with major tachograph hardware via REST APIs (cloud platforms) or direct hardware protocols. Common integrations: Microlise, Webfleet, Samsara, Stoneridge Fleet. Contact us with your specific hardware details."
+        "answer": "Yes — Clickmasters integrates with major tachograph hardware via REST APIs (cloud platforms) or direct hardware protocols. Common integrations: Microlise, Webfleet, Samsara, Stoneridge Fleet. Contact us with your specific hardware details."
       }
     ]
   },
@@ -1997,11 +1997,11 @@ const industries = [
     "industry": "edtech",
     "service": "saas-development",
     "title": "SaaS Development for UK EdTech Companies — KCSIE Built In",
-    "metaTitle": "SaaS Development for EdTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for EdTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK EdTech businesses. KCSIE. £35,000–£150,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "EdTech Specialists",
@@ -2011,7 +2011,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK EdTech businesses with KCSIE, ICO Children's Code compliance built in from the architecture phase. Our EdTech team understands the UK regulatory requirements and sector-specific technical needs.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK EdTech businesses with KCSIE, ICO Children's Code compliance built in from the architecture phase. Our EdTech team understands the UK regulatory requirements and sector-specific technical needs.",
     "sections": [
       {
         "heading": "What SaaS Development for EdTech Means in the UK",
@@ -2087,11 +2087,11 @@ const industries = [
     "industry": "fintech",
     "service": "devops-cicd",
     "title": "DevOps & CI/CD for UK FinTech Companies — FCA PS21/3 Built In",
-    "metaTitle": "DevOps & CI/CD for FinTech UK | ClickMasters",
+    "metaTitle": "DevOps & CI/CD for FinTech UK | Clickmasters",
     "metaDesc": "DevOps & CI/CD for UK FinTech businesses. FCA PS21/3. £8,000–£80,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech Specialists",
@@ -2101,7 +2101,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides DevOps & CI/CD for UK FinTech businesses with FCA PS21/3, Cyber Essentials compliance built in from the architecture phase.",
+    "directAnswer": "Clickmasters provides DevOps & CI/CD for UK FinTech businesses with FCA PS21/3, Cyber Essentials compliance built in from the architecture phase.",
     "sections": [
       {
         "heading": "What DevOps & CI/CD for FinTech Means in the UK",
@@ -2116,7 +2116,7 @@ const industries = [
           },
           {
             "bold": "Cyber Essentials Patch Management via CI/CD",
-            "text": "The Cyber Essentials patch management control requires high-risk vulnerabilities to be patched within 14 days. ClickMasters implements: Dependabot for automated dependency update PRs, SAST scanning (Semgrep, ESLint security rules) in every PR, container image scanning (Trivy) on every Docker build, and rapid deployment pipeline enabling patch deployment within hours of merge."
+            "text": "The Cyber Essentials patch management control requires high-risk vulnerabilities to be patched within 14 days. Clickmasters implements: Dependabot for automated dependency update PRs, SAST scanning (Semgrep, ESLint security rules) in every PR, container image scanning (Trivy) on every Docker build, and rapid deployment pipeline enabling patch deployment within hours of merge."
           },
           {
             "bold": "Audit Logging for FCA Compliance",
@@ -2177,11 +2177,11 @@ const industries = [
     "industry": "ecommerce",
     "service": "saas-development",
     "title": "SaaS Development for UK eCommerce Companies — UK GDPR Built In",
-    "metaTitle": "SaaS Development for eCommerce UK | ClickMasters",
+    "metaTitle": "SaaS Development for eCommerce UK | Clickmasters",
     "metaDesc": "SaaS Development for UK eCommerce businesses. UK GDPR. £35,000–£200,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters eCommerce Team",
+    "writtenBy": "Clickmasters eCommerce Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "eCommerce Specialists",
@@ -2191,7 +2191,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK eCommerce businesses with UK GDPR, PCI-DSS compliance built in from the architecture phase.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK eCommerce businesses with UK GDPR, PCI-DSS compliance built in from the architecture phase.",
     "sections": [
       {
         "heading": "What SaaS Development for eCommerce Means in the UK",
@@ -2281,11 +2281,11 @@ const industries = [
     "industry": "proptech",
     "service": "staff-augmentation",
     "title": "Staff Augmentation for UK PropTech Companies — IR35 Built In",
-    "metaTitle": "Staff Augmentation for PropTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for PropTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK PropTech businesses. IR35. from £5,000/month. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters PropTech Team",
+    "writtenBy": "Clickmasters PropTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "PropTech Specialists",
@@ -2295,14 +2295,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK PropTech businesses with IR35, UK GDPR compliance built in from the architecture phase.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK PropTech businesses with IR35, UK GDPR compliance built in from the architecture phase.",
     "sections": [
       {
         "heading": "What Staff Augmentation for PropTech Means in the UK",
         "paragraphs": [
           {
             "bold": "PropTech-Experienced Engineers",
-            "text": "PropTech staff augmentation requires developers with specific experience: Land Registry API integration, GoCardless direct debit payment flows, AML/KYC workflows for estate agents, and RICS data standards awareness. ClickMasters vets PropTech augmentation engineers against these specific requirements."
+            "text": "PropTech staff augmentation requires developers with specific experience: Land Registry API integration, GoCardless direct debit payment flows, AML/KYC workflows for estate agents, and RICS data standards awareness. Clickmasters vets PropTech augmentation engineers against these specific requirements."
           },
           {
             "bold": "AML Awareness in Technical Vetting",
@@ -2310,11 +2310,11 @@ const industries = [
           },
           {
             "bold": "IR35 — Zero Liability for PropTech Clients",
-            "text": "PropTech companies as medium/large businesses are responsible for IR35 determinations. ClickMasters employment model eliminates this entirely — our engineers are our employees, zero IR35 liability for PropTech clients. One monthly invoice. No SDS required."
+            "text": "PropTech companies as medium/large businesses are responsible for IR35 determinations. Clickmasters employment model eliminates this entirely — our engineers are our employees, zero IR35 liability for PropTech clients. One monthly invoice. No SDS required."
           },
           {
             "bold": "Rightmove/Zoopla API Knowledge",
-            "text": "PropTech developers must understand data feed licensing for Rightmove and Zoopla. ClickMasters vets PropTech augmentation engineers on: data feed agreement requirements, what the data can and cannot be used for (AI training restrictions), rate limiting, and the commercial agreement requirements for high-volume access."
+            "text": "PropTech developers must understand data feed licensing for Rightmove and Zoopla. Clickmasters vets PropTech augmentation engineers on: data feed agreement requirements, what the data can and cannot be used for (AI training restrictions), rate limiting, and the commercial agreement requirements for high-volume access."
           }
         ]
       },
@@ -2371,11 +2371,11 @@ const industries = [
     "faqs": [
       {
         "question": "What PropTech experience do your developers have?",
-        "answer": "ClickMasters PropTech developers have experience with: Land Registry HMLR API, GoCardless direct debit integration, Rightmove/Zoopla data feeds, AML/KYC for estate agents, multi-tenant property management platforms, and RICS-aware valuation data handling."
+        "answer": "Clickmasters PropTech developers have experience with: Land Registry HMLR API, GoCardless direct debit integration, Rightmove/Zoopla data feeds, AML/KYC for estate agents, multi-tenant property management platforms, and RICS-aware valuation data handling."
       },
       {
         "question": "Are your PropTech developers familiar with AML requirements?",
-        "answer": "Yes — ClickMasters vets PropTech augmentation engineers on AML/KYC requirements for estate agents under the MLRs 2017. This includes CDD workflow knowledge, 5-year retention requirements, MLRO escalation processes, and HMRC supervision context."
+        "answer": "Yes — Clickmasters vets PropTech augmentation engineers on AML/KYC requirements for estate agents under the MLRs 2017. This includes CDD workflow knowledge, 5-year retention requirements, MLRO escalation processes, and HMRC supervision context."
       }
     ]
   },
@@ -2385,11 +2385,11 @@ const industries = [
     "industry": "govtech",
     "service": "custom-software-development",
     "title": "Custom Software Development for UK GovTech Companies — GDS Service Standard Built In",
-    "metaTitle": "Custom Software Development for GovTech UK | ClickMasters",
+    "metaTitle": "Custom Software Development for GovTech UK | Clickmasters",
     "metaDesc": "Custom Software Development for UK GovTech. GDS Service Standard. £30,000–£500,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "GovTech Specialists",
@@ -2399,7 +2399,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides Custom Software Development for UK GovTech businesses with GDS Service Standard, WCAG 2.1 AA (PSBAR) compliance built in from the architecture phase.",
+    "directAnswer": "Clickmasters provides Custom Software Development for UK GovTech businesses with GDS Service Standard, WCAG 2.1 AA (PSBAR) compliance built in from the architecture phase.",
     "sections": [
       {
         "heading": "What Custom Software Development for GovTech Means in the UK",
@@ -2475,11 +2475,11 @@ const industries = [
     "faqs": [
       {
         "question": "Can a small software agency bid for government contracts?",
-        "answer": "Yes — G-Cloud procurement removes many barriers for SME software suppliers. Small agencies can list services on Digital Marketplace and compete for government contracts on equal terms. However: Cyber Essentials certification is mandatory, GDS Service Standard knowledge is essential, and WCAG 2.1 AA expertise is non-negotiable. ClickMasters has delivered G-Cloud listed services and can support smaller agencies preparing for government procurement."
+        "answer": "Yes — G-Cloud procurement removes many barriers for SME software suppliers. Small agencies can list services on Digital Marketplace and compete for government contracts on equal terms. However: Cyber Essentials certification is mandatory, GDS Service Standard knowledge is essential, and WCAG 2.1 AA expertise is non-negotiable. Clickmasters has delivered G-Cloud listed services and can support smaller agencies preparing for government procurement."
       },
       {
         "question": "What is the GDS Alpha/Beta/Live assessment process?",
-        "answer": "GDS assessments are conducted by a panel of independent assessors at three stages: Alpha (prototype testing against user research), Beta (live service with real users, typically in private beta), Live (full public service). Each assessment reviews all 18 Service Standard points. A failed assessment results in \"not met\" status — the service cannot progress until remediation. ClickMasters supports the technical preparation for all three stages."
+        "answer": "GDS assessments are conducted by a panel of independent assessors at three stages: Alpha (prototype testing against user research), Beta (live service with real users, typically in private beta), Live (full public service). Each assessment reviews all 18 Service Standard points. A failed assessment results in \"not met\" status — the service cannot progress until remediation. Clickmasters supports the technical preparation for all three stages."
       }
     ]
   },
@@ -2489,11 +2489,11 @@ const industries = [
     "industry": "legaltech",
     "service": "saas-development",
     "title": "SaaS Development for UK LegalTech Companies — SRA compliance Built In",
-    "metaTitle": "SaaS Development for LegalTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for LegalTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK LegalTech. SRA compliance. £45,000–£180,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LegalTech Team",
+    "writtenBy": "Clickmasters LegalTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LegalTech Specialists",
@@ -2503,7 +2503,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK LegalTech businesses with SRA compliance, Legal Professional Privilege compliance built in from the architecture phase.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK LegalTech businesses with SRA compliance, Legal Professional Privilege compliance built in from the architecture phase.",
     "sections": [
       {
         "heading": "What SaaS Development for LegalTech Means in the UK",
@@ -2579,11 +2579,11 @@ const industries = [
     "industry": "retailtech",
     "service": "saas-development",
     "title": "SaaS Development for UK RetailTech Companies — UK GDPR Built In",
-    "metaTitle": "SaaS Development for RetailTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for RetailTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK RetailTech. UK GDPR. £40,000–£200,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters RetailTech Team",
+    "writtenBy": "Clickmasters RetailTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "RetailTech",
@@ -2593,7 +2593,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK RetailTech businesses with UK GDPR, PCI-DSS compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK RetailTech businesses with UK GDPR, PCI-DSS compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for RetailTech — UK Specifics",
@@ -2683,11 +2683,11 @@ const industries = [
     "industry": "ai",
     "service": "devops-cicd",
     "title": "DevOps & CI/CD for UK AI — ICO AI guidance 2023 Built In",
-    "metaTitle": "DevOps & CI/CD for AI UK | ClickMasters",
+    "metaTitle": "DevOps & CI/CD for AI UK | Clickmasters",
     "metaDesc": "DevOps & CI/CD for UK AI. ICO AI guidance 2023. £10,000–£80,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters AI Team",
+    "writtenBy": "Clickmasters AI Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "AI",
@@ -2697,7 +2697,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides DevOps & CI/CD for UK AI businesses with ICO AI guidance 2023, UK GDPR Article 22 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides DevOps & CI/CD for UK AI businesses with ICO AI guidance 2023, UK GDPR Article 22 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "DevOps & CI/CD for AI — UK Specifics",
@@ -2772,7 +2772,7 @@ const industries = [
       },
       {
         "question": "How do we monitor AI model drift in production?",
-        "answer": "ClickMasters implements model drift monitoring using: Evidently AI (open source — statistical drift tests, data quality monitoring, dashboard), custom CloudWatch/Azure Monitor metrics for model performance KPIs, and automated retraining pipelines (AWS Step Functions or Airflow) triggered by drift threshold breaches. ICO AI auditing guidance recommends ongoing monitoring — drift monitoring is direct evidence of compliance."
+        "answer": "Clickmasters implements model drift monitoring using: Evidently AI (open source — statistical drift tests, data quality monitoring, dashboard), custom CloudWatch/Azure Monitor metrics for model performance KPIs, and automated retraining pipelines (AWS Step Functions or Airflow) triggered by drift threshold breaches. ICO AI auditing guidance recommends ongoing monitoring — drift monitoring is direct evidence of compliance."
       }
     ]
   },
@@ -2782,11 +2782,11 @@ const industries = [
     "industry": "healthtech",
     "service": "legacy-modernisation",
     "title": "Legacy Modernisation for UK HealthTech — DTAC Built In",
-    "metaTitle": "Legacy Modernisation for HealthTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for HealthTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK HealthTech. DTAC. £25,000–£150,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters HealthTech Team",
+    "writtenBy": "Clickmasters HealthTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "HealthTech",
@@ -2796,7 +2796,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK-Based"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK HealthTech businesses with DTAC, UK GDPR Article 9 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK HealthTech businesses with DTAC, UK GDPR Article 9 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for HealthTech — UK Specifics",
@@ -2872,7 +2872,7 @@ const industries = [
     "faqs": [
       {
         "question": "What are the clinical safety requirements for NHS system modernisation?",
-        "answer": "DCB0129 applies to any clinical software — including modernisation of existing clinical software. Requirements: Clinical Risk Management System documentation, Hazard Log maintained throughout, Clinical Safety Officer oversight, and a Clinical Safety Case Report before go-live. ClickMasters works with qualified Clinical Safety Officers as part of HealthTech modernisation projects."
+        "answer": "DCB0129 applies to any clinical software — including modernisation of existing clinical software. Requirements: Clinical Risk Management System documentation, Hazard Log maintained throughout, Clinical Safety Officer oversight, and a Clinical Safety Case Report before go-live. Clickmasters works with qualified Clinical Safety Officers as part of HealthTech modernisation projects."
       },
       {
         "question": "How long does NHS legacy modernisation take?",
@@ -2886,11 +2886,11 @@ const industries = [
     "industry": "ecommerce",
     "service": "mobile-app-development",
     "title": "Mobile App Development for UK eCommerce — UK GDPR Built In",
-    "metaTitle": "Mobile App Development for eCommerce UK | ClickMasters",
+    "metaTitle": "Mobile App Development for eCommerce UK | Clickmasters",
     "metaDesc": "Mobile App Development for UK eCommerce. UK GDPR. £20,000–£80,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters eCommerce Team",
+    "writtenBy": "Clickmasters eCommerce Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "eCommerce",
@@ -2900,14 +2900,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Mobile App Development for UK eCommerce businesses with UK GDPR, PCI-DSS compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Mobile App Development for UK eCommerce businesses with UK GDPR, PCI-DSS compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Mobile App Development for eCommerce — UK Specifics",
         "paragraphs": [
           {
             "bold": "React Native for eCommerce Apps",
-            "text": "React Native is the dominant UK eCommerce mobile app framework — Shopify Mobile SDK integration, Apple Pay and Google Pay via Stripe, and a single codebase for iOS + Android. ClickMasters builds eCommerce mobile apps with: Shopify Storefront API (headless), custom cart and checkout flows, push notifications (FCM/APNs) with PECR consent, and UK GDPR-compliant customer account management."
+            "text": "React Native is the dominant UK eCommerce mobile app framework — Shopify Mobile SDK integration, Apple Pay and Google Pay via Stripe, and a single codebase for iOS + Android. Clickmasters builds eCommerce mobile apps with: Shopify Storefront API (headless), custom cart and checkout flows, push notifications (FCM/APNs) with PECR consent, and UK GDPR-compliant customer account management."
           },
           {
             "bold": "Apple App Store Privacy Labels and UK GDPR",
@@ -2990,11 +2990,11 @@ const industries = [
     "industry": "legaltech",
     "service": "staff-augmentation",
     "title": "Staff Augmentation for UK LegalTech — IR35 Built In",
-    "metaTitle": "Staff Augmentation for LegalTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for LegalTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK LegalTech. IR35. from £5,500/month.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LegalTech Team",
+    "writtenBy": "Clickmasters LegalTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LegalTech",
@@ -3004,14 +3004,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK LegalTech businesses with IR35, SRA compliance compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK LegalTech businesses with IR35, SRA compliance compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for LegalTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "LegalTech-Specific Engineer Vetting",
-            "text": "LegalTech staff augmentation requires developers with specific awareness: Legal Professional Privilege (LPP) data architecture (privilege tags, SAR screening, access controls), AML for law firms (MLRs 2017, POCA 2002 tipping-off awareness), SRA accounts rules (client money handling), and document management systems (iManage, NetDocuments). ClickMasters vets LegalTech augmentation engineers against these specific requirements."
+            "text": "LegalTech staff augmentation requires developers with specific awareness: Legal Professional Privilege (LPP) data architecture (privilege tags, SAR screening, access controls), AML for law firms (MLRs 2017, POCA 2002 tipping-off awareness), SRA accounts rules (client money handling), and document management systems (iManage, NetDocuments). Clickmasters vets LegalTech augmentation engineers against these specific requirements."
           },
           {
             "bold": "LPP Security Architecture Knowledge",
@@ -3023,7 +3023,7 @@ const industries = [
           },
           {
             "bold": "IR35 Zero Liability for Law Firm Clients",
-            "text": "Law firms as medium/large businesses are responsible for IR35 determinations. ClickMasters employment model eliminates this entirely — our engineers are our employees, zero IR35 liability for law firm clients. One monthly invoice. No Status Determination Statement (SDS) required — particularly valuable for law firms' professional liability environment."
+            "text": "Law firms as medium/large businesses are responsible for IR35 determinations. Clickmasters employment model eliminates this entirely — our engineers are our employees, zero IR35 liability for law firm clients. One monthly invoice. No Status Determination Statement (SDS) required — particularly valuable for law firms' professional liability environment."
           }
         ]
       },
@@ -3080,11 +3080,11 @@ const industries = [
     "faqs": [
       {
         "question": "What LegalTech experience do your staff augmentation engineers have?",
-        "answer": "ClickMasters LegalTech engineers have experience with: document management systems (iManage, NetDocuments), Legal Professional Privilege data architecture, case management system integration, AML/KYC workflows for law firms, HMLR/HMRC API integration for conveyancing, and time recording/billing integration."
+        "answer": "Clickmasters LegalTech engineers have experience with: document management systems (iManage, NetDocuments), Legal Professional Privilege data architecture, case management system integration, AML/KYC workflows for law firms, HMLR/HMRC API integration for conveyancing, and time recording/billing integration."
       },
       {
         "question": "Can your LegalTech engineers work on-site at law firms?",
-        "answer": "Yes — ClickMasters engineers can work on-site at law firm offices. Law firm on-site requirements (security badges, background checks, data handling protocols) can be accommodated. Our engineers are ClickMasters employees — no IR35 complications for law firm clients."
+        "answer": "Yes — Clickmasters engineers can work on-site at law firm offices. Law firm on-site requirements (security badges, background checks, data handling protocols) can be accommodated. Our engineers are Clickmasters employees — no IR35 complications for law firm clients."
       }
     ]
   },
@@ -3094,11 +3094,11 @@ const industries = [
     "industry": "fintech",
     "service": "software-maintenance",
     "title": "Software Maintenance for UK FinTech — FCA PS21/3 operational resilience Built In",
-    "metaTitle": "Software Maintenance for FinTech UK | ClickMasters",
+    "metaTitle": "Software Maintenance for FinTech UK | Clickmasters",
     "metaDesc": "Software Maintenance for UK FinTech. FCA PS21/3 operational resilience. from £1,500/month.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -3108,26 +3108,26 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Software Maintenance for UK FinTech businesses with FCA PS21/3 operational resilience, Cyber Essentials patch management compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Software Maintenance for UK FinTech businesses with FCA PS21/3 operational resilience, Cyber Essentials patch management compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Software Maintenance for FinTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "FCA Operational Resilience SLA Requirements",
-            "text": "FCA PS21/3 requires regulated firms to define impact tolerances for important business services. ClickMasters FinTech maintenance retainers include: P1 critical issues (payment processing down, data breach) — 2-hour response, 4-hour resolution target. P2 significant degradation — 4-hour response, 8-hour resolution. P3 non-critical — next business day. Documented SLA directly evidences FCA operational resilience compliance."
+            "text": "FCA PS21/3 requires regulated firms to define impact tolerances for important business services. Clickmasters FinTech maintenance retainers include: P1 critical issues (payment processing down, data breach) — 2-hour response, 4-hour resolution target. P2 significant degradation — 4-hour response, 8-hour resolution. P3 non-critical — next business day. Documented SLA directly evidences FCA operational resilience compliance."
           },
           {
             "bold": "Cyber Essentials 14-Day Patch Management",
-            "text": "Cyber Essentials patch management: high-severity vulnerabilities must be patched within 14 days. ClickMasters FinTech maintenance retainers include: automated Dependabot dependency scanning (PRs raised automatically), weekly security patch review, and emergency patch deployment capability within 4 hours of confirmed high-risk CVE for client-specific dependencies."
+            "text": "Cyber Essentials patch management: high-severity vulnerabilities must be patched within 14 days. Clickmasters FinTech maintenance retainers include: automated Dependabot dependency scanning (PRs raised automatically), weekly security patch review, and emergency patch deployment capability within 4 hours of confirmed high-risk CVE for client-specific dependencies."
           },
           {
             "bold": "PCI-DSS Change Management for FinTech Maintenance",
-            "text": "PCI-DSS Requirement 6 (secure systems and software) requires documented change management for production changes. ClickMasters maintenance retainer documentation: every deployment has a change record, pre-deployment security review, post-deployment verification, and rollback plan. This change management evidence satisfies PCI-DSS R6 requirements."
+            "text": "PCI-DSS Requirement 6 (secure systems and software) requires documented change management for production changes. Clickmasters maintenance retainer documentation: every deployment has a change record, pre-deployment security review, post-deployment verification, and rollback plan. This change management evidence satisfies PCI-DSS R6 requirements."
           },
           {
             "bold": "GDPR Ongoing Compliance in Maintenance",
-            "text": "UK GDPR obligations continue after launch: data subject requests must be fulfilled within 1 month, retention policies must be enforced technically (automated deletion), and privacy notices must be updated when processing changes. ClickMasters maintenance retainers include monthly GDPR compliance review: outstanding DSARs, retention policy enforcement, and privacy notice currency."
+            "text": "UK GDPR obligations continue after launch: data subject requests must be fulfilled within 1 month, retention policies must be enforced technically (automated deletion), and privacy notices must be updated when processing changes. Clickmasters maintenance retainers include monthly GDPR compliance review: outstanding DSARs, retention policy enforcement, and privacy notice currency."
           }
         ]
       },
@@ -3179,11 +3179,11 @@ const industries = [
     "faqs": [
       {
         "question": "What SLA should I expect for FinTech software maintenance?",
-        "answer": "For FCA-regulated FinTechs: P1 (business-critical — payment processing, compliance reporting down) should be 2-hour response, 4-hour resolution. P2 (significant degradation) should be 4-hour response, 8-hour resolution. P3 (non-critical) next business day. ClickMasters maintenance retainers include these SLAs with monthly SLA performance reports."
+        "answer": "For FCA-regulated FinTechs: P1 (business-critical — payment processing, compliance reporting down) should be 2-hour response, 4-hour resolution. P2 (significant degradation) should be 4-hour response, 8-hour resolution. P3 (non-critical) next business day. Clickmasters maintenance retainers include these SLAs with monthly SLA performance reports."
       },
       {
         "question": "How does Cyber Essentials patch management work in a maintenance retainer?",
-        "answer": "ClickMasters maintenance retainers include: automated Dependabot scanning (new PRs raised within 24 hours of vulnerability disclosure), weekly security review of pending patches, emergency deployment process for critical CVEs, and monthly patch management report documenting compliance with the 14-day Cyber Essentials requirement."
+        "answer": "Clickmasters maintenance retainers include: automated Dependabot scanning (new PRs raised within 24 hours of vulnerability disclosure), weekly security review of pending patches, emergency deployment process for critical CVEs, and monthly patch management report documenting compliance with the 14-day Cyber Essentials requirement."
       }
     ]
   },
@@ -3193,11 +3193,11 @@ const industries = [
     "industry": "proptech",
     "service": "cloud-native-development",
     "title": "Cloud-Native Development for UK PropTech — UK GDPR Built In",
-    "metaTitle": "Cloud-Native Development for PropTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for PropTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK PropTech. UK GDPR. £25,000–£150,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters PropTech Team",
+    "writtenBy": "Clickmasters PropTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "PropTech",
@@ -3207,7 +3207,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK PropTech businesses with UK GDPR, ICO compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK PropTech businesses with UK GDPR, ICO compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for PropTech — UK Specifics",
@@ -3302,11 +3302,11 @@ const industries = [
     "industry": "edtech",
     "service": "api-development",
     "title": "API Development for UK EdTech — ICO AADC Built In",
-    "metaTitle": "API Development for EdTech UK | ClickMasters",
+    "metaTitle": "API Development for EdTech UK | Clickmasters",
     "metaDesc": "API Development for UK EdTech. ICO AADC. £8,000–£50,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "EdTech",
@@ -3316,14 +3316,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides API Development for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides API Development for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "API Development for EdTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "MIS API Integration Standards",
-            "text": "UK EdTech APIs must integrate with school Management Information Systems (MIS). Key MIS systems: SIMS (Capita, ~50% UK market share — requires Capita Developer Programme enrolment), Arbor (REST API, open), Bromcom (REST API, open), SchoolBase (SOAP API). DfE's ambition: a common interoperability framework for EdTech APIs. ClickMasters builds to DfE's published interoperability guidance."
+            "text": "UK EdTech APIs must integrate with school Management Information Systems (MIS). Key MIS systems: SIMS (Capita, ~50% UK market share — requires Capita Developer Programme enrolment), Arbor (REST API, open), Bromcom (REST API, open), SchoolBase (SOAP API). DfE's ambition: a common interoperability framework for EdTech APIs. Clickmasters builds to DfE's published interoperability guidance."
           },
           {
             "bold": "UK GDPR for EdTech API Data Flows",
@@ -3397,11 +3397,11 @@ const industries = [
     "industry": "govtech",
     "service": "microservices-architecture",
     "title": "Microservices Architecture for UK GovTech — GDS Service Standard Built In",
-    "metaTitle": "Microservices Architecture for GovTech UK | ClickMasters",
+    "metaTitle": "Microservices Architecture for GovTech UK | Clickmasters",
     "metaDesc": "Microservices Architecture for UK GovTech. GDS Service Standard. £30,000–£150,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "GovTech",
@@ -3411,14 +3411,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices Architecture for UK GovTech businesses with GDS Service Standard, GOV.UK API guide compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices Architecture for UK GovTech businesses with GDS Service Standard, GOV.UK API guide compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices Architecture for GovTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "GDS Strangler Fig for Legacy Government Systems",
-            "text": "UK government digital transformation frequently requires replacing legacy monolithic systems (Socitm/NEC Housing, Agresso ERP, Civica systems) without big-bang replacement. GDS recommends the Strangler Fig pattern: gradually route traffic from the legacy system to new microservices, one capability at a time, maintaining parallel operation until the legacy can be decommissioned. ClickMasters has delivered GovTech strangler figs for local authority benefits systems and housing management."
+            "text": "UK government digital transformation frequently requires replacing legacy monolithic systems (Socitm/NEC Housing, Agresso ERP, Civica systems) without big-bang replacement. GDS recommends the Strangler Fig pattern: gradually route traffic from the legacy system to new microservices, one capability at a time, maintaining parallel operation until the legacy can be decommissioned. Clickmasters has delivered GovTech strangler figs for local authority benefits systems and housing management."
           },
           {
             "bold": "Event-Driven Government Data Sharing",
@@ -3506,11 +3506,11 @@ const industries = [
     "industry": "ecommerce",
     "service": "legacy-modernisation",
     "title": "Legacy Modernisation for UK eCommerce — UK GDPR Built In",
-    "metaTitle": "Legacy Modernisation for eCommerce UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for eCommerce UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK eCommerce. UK GDPR. £25,000–£150,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters eCommerce Team",
+    "writtenBy": "Clickmasters eCommerce Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "eCommerce",
@@ -3520,7 +3520,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK eCommerce businesses with UK GDPR, PCI-DSS compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK eCommerce businesses with UK GDPR, PCI-DSS compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for eCommerce — UK Specifics",
@@ -3596,7 +3596,7 @@ const industries = [
     "faqs": [
       {
         "question": "How long does eCommerce legacy modernisation take?",
-        "answer": "eCommerce legacy modernisation typically takes 12–26 weeks depending on: platform complexity, number of third-party integrations (payment gateways, carriers, ERP), catalogue size (100 products vs 100,000 products), and custom functionality. ClickMasters uses a discovery phase (£3,500–£8,000) to scope accurately before committing to a fixed price."
+        "answer": "eCommerce legacy modernisation typically takes 12–26 weeks depending on: platform complexity, number of third-party integrations (payment gateways, carriers, ERP), catalogue size (100 products vs 100,000 products), and custom functionality. Clickmasters uses a discovery phase (£3,500–£8,000) to scope accurately before committing to a fixed price."
       },
       {
         "question": "How do we migrate customer data without UK GDPR violations?",
@@ -3610,11 +3610,11 @@ const industries = [
     "industry": "ai",
     "service": "staff-augmentation",
     "title": "Staff Augmentation for UK AI — IR35 Built In",
-    "metaTitle": "Staff Augmentation for AI UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for AI UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK AI. IR35. from £6,500/month.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters AI Team",
+    "writtenBy": "Clickmasters AI Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "AI",
@@ -3624,26 +3624,26 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK AI businesses with IR35, UK GDPR Article 22 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK AI businesses with IR35, UK GDPR Article 22 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for AI — UK Specifics",
         "paragraphs": [
           {
             "bold": "AI Engineer Vetting for UK Projects",
-            "text": "AI/ML staff augmentation requires specialised vetting beyond standard engineering assessments. ClickMasters AI engineer assessment covers: Python proficiency (PyTorch/TensorFlow/scikit-learn), LLM API integration (OpenAI, Anthropic, Google Gemini APIs), prompt engineering and evaluation methodology, RAG (Retrieval Augmented Generation) architecture, ML model deployment (FastAPI inference serving, model versioning with MLflow), and UK GDPR Article 22 automated decision-making awareness."
+            "text": "AI/ML staff augmentation requires specialised vetting beyond standard engineering assessments. Clickmasters AI engineer assessment covers: Python proficiency (PyTorch/TensorFlow/scikit-learn), LLM API integration (OpenAI, Anthropic, Google Gemini APIs), prompt engineering and evaluation methodology, RAG (Retrieval Augmented Generation) architecture, ML model deployment (FastAPI inference serving, model versioning with MLflow), and UK GDPR Article 22 automated decision-making awareness."
           },
           {
             "bold": "UK GDPR Article 22 Engineer Awareness",
-            "text": "AI engineers augmenting UK teams must understand Article 22 implications in their code. Key requirements: automated decisions with significant effects on individuals require disclosure, human oversight capability, right to explanation, and audit trail. Engineers who are not Article 22-aware can inadvertently build fully automated decision systems that violate UK GDPR. ClickMasters vets this understanding in all AI staff augmentation engineers."
+            "text": "AI engineers augmenting UK teams must understand Article 22 implications in their code. Key requirements: automated decisions with significant effects on individuals require disclosure, human oversight capability, right to explanation, and audit trail. Engineers who are not Article 22-aware can inadvertently build fully automated decision systems that violate UK GDPR. Clickmasters vets this understanding in all AI staff augmentation engineers."
           },
           {
             "bold": "LLM Integration Specialism",
-            "text": "LLM integration is the fastest-growing AI specialism in UK software development in 2025. ClickMasters AI engineers are assessed on: RAG pipeline architecture (LangChain/LlamaIndex), vector store selection (Chroma, Pinecone, pgvector), prompt engineering and evaluation (LLM-as-judge), context window management, and LLM API cost optimisation strategies."
+            "text": "LLM integration is the fastest-growing AI specialism in UK software development in 2025. Clickmasters AI engineers are assessed on: RAG pipeline architecture (LangChain/LlamaIndex), vector store selection (Chroma, Pinecone, pgvector), prompt engineering and evaluation (LLM-as-judge), context window management, and LLM API cost optimisation strategies."
           },
           {
             "bold": "IR35 Zero Liability for AI Staff Augmentation",
-            "text": "AI engineers engaged as contractors through personal service companies create IR35 liability for medium/large UK businesses. ClickMasters AI staff augmentation is IR35-safe by design — our engineers are ClickMasters employees. One monthly invoice per engineer, no SDS required, no HMRC liability. At AI engineer day rates of £680–£950/day, the IR35 savings alone can be significant."
+            "text": "AI engineers engaged as contractors through personal service companies create IR35 liability for medium/large UK businesses. Clickmasters AI staff augmentation is IR35-safe by design — our engineers are Clickmasters employees. One monthly invoice per engineer, no SDS required, no HMRC liability. At AI engineer day rates of £680–£950/day, the IR35 savings alone can be significant."
           }
         ]
       },
@@ -3695,11 +3695,11 @@ const industries = [
     "faqs": [
       {
         "question": "How do you vet AI engineers for UK projects?",
-        "answer": "ClickMasters AI engineer vetting covers: Python assessment (2-hour practical — FastAPI, PyTorch/scikit-learn, data pipeline design), LLM integration assessment (RAG pipeline build, prompt engineering, evaluation methodology), UK GDPR Article 22 awareness quiz (can they identify when automated decision disclosure is required?), and ML deployment assessment (model serving, versioning, monitoring)."
+        "answer": "Clickmasters AI engineer vetting covers: Python assessment (2-hour practical — FastAPI, PyTorch/scikit-learn, data pipeline design), LLM integration assessment (RAG pipeline build, prompt engineering, evaluation methodology), UK GDPR Article 22 awareness quiz (can they identify when automated decision disclosure is required?), and ML deployment assessment (model serving, versioning, monitoring)."
       },
       {
         "question": "What AI engineer specialisms do you have available?",
-        "answer": "ClickMasters AI engineers cover: LLM integration and RAG (Python + LangChain/LlamaIndex), computer vision (PyTorch + OpenCV), data engineering for AI (pandas, PySpark, dbt, Airflow), MLOps (MLflow, Kubeflow, SageMaker), and NLP (text classification, named entity recognition, embeddings). Availability varies — book a consultation to confirm current bench."
+        "answer": "Clickmasters AI engineers cover: LLM integration and RAG (Python + LangChain/LlamaIndex), computer vision (PyTorch + OpenCV), data engineering for AI (pandas, PySpark, dbt, Airflow), MLOps (MLflow, Kubeflow, SageMaker), and NLP (text classification, named entity recognition, embeddings). Availability varies — book a consultation to confirm current bench."
       }
     ]
   },
@@ -3709,11 +3709,11 @@ const industries = [
     "industry": "fintech",
     "service": "microservices-architecture",
     "title": "Microservices Architecture for UK FinTech — FCA PS21/3 Built In",
-    "metaTitle": "Microservices Architecture for FinTech UK | ClickMasters",
+    "metaTitle": "Microservices Architecture for FinTech UK | Clickmasters",
     "metaDesc": "Microservices Architecture for UK FinTech. FCA PS21/3. £40,000–£200,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -3723,7 +3723,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices Architecture for UK FinTech businesses with FCA PS21/3, FCA Consumer Duty compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices Architecture for UK FinTech businesses with FCA PS21/3, FCA Consumer Duty compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices Architecture for FinTech — UK Specifics",
@@ -3738,7 +3738,7 @@ const industries = [
           },
           {
             "bold": "Distributed Transactions in FinTech Microservices",
-            "text": "FinTech microservices frequently need distributed transactions: debit from account A AND credit to account B must both succeed or both fail. Options: Saga pattern (choreography or orchestration) — each service publishes events and compensating transactions roll back on failure. Two-phase commit (2PC) — avoid for microservices (too slow). ClickMasters uses Saga orchestration for FinTech payment flows — the orchestrator has the full audit trail required for FCA transaction reporting."
+            "text": "FinTech microservices frequently need distributed transactions: debit from account A AND credit to account B must both succeed or both fail. Options: Saga pattern (choreography or orchestration) — each service publishes events and compensating transactions roll back on failure. Two-phase commit (2PC) — avoid for microservices (too slow). Clickmasters uses Saga orchestration for FinTech payment flows — the orchestrator has the full audit trail required for FCA transaction reporting."
           },
           {
             "bold": "PCI-DSS Scope in FinTech Microservices",
@@ -3818,11 +3818,11 @@ const industries = [
     "industry": "govtech",
     "service": "saas-development",
     "title": "SaaS Development for UK GovTech — GDS 18-Point Service Standard Built In",
-    "metaTitle": "SaaS Development for GovTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for GovTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK GovTech. GDS 18-Point Service Standard. £40,000–£200,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "GovTech",
@@ -3832,7 +3832,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK GovTech businesses with GDS 18-Point Service Standard, G-Cloud 14 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK GovTech businesses with GDS 18-Point Service Standard, G-Cloud 14 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for GovTech — UK Specifics",
@@ -3922,11 +3922,11 @@ const industries = [
     "industry": "govtech",
     "service": "legacy-modernisation",
     "title": "Legacy Modernisation for UK GovTech — GDS Service Standard Built In",
-    "metaTitle": "Legacy Modernisation for GovTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for GovTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK GovTech. GDS Service Standard. £25,000–£150,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "GovTech",
@@ -3936,7 +3936,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK GovTech businesses with GDS Service Standard, WCAG 2.1 AA compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK GovTech businesses with GDS Service Standard, WCAG 2.1 AA compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for GovTech — UK Specifics",
@@ -3955,7 +3955,7 @@ const industries = [
           },
           {
             "bold": "WCAG 2.1 AA for Legacy System Replacement",
-            "text": "PSBAR 2018 requires WCAG 2.1 AA for all public sector websites — legacy systems exempt from PSBAR while they pre-date it may need remediation when rebuilt. Approach: GDS Service Standard assessment requires user research and accessibility testing, so legacy replacement is the natural point to build WCAG 2.1 AA compliance. ClickMasters uses GOV.UK Design System components as the WCAG-compliant baseline for all GovTech projects."
+            "text": "PSBAR 2018 requires WCAG 2.1 AA for all public sector websites — legacy systems exempt from PSBAR while they pre-date it may need remediation when rebuilt. Approach: GDS Service Standard assessment requires user research and accessibility testing, so legacy replacement is the natural point to build WCAG 2.1 AA compliance. Clickmasters uses GOV.UK Design System components as the WCAG-compliant baseline for all GovTech projects."
           }
         ]
       },
@@ -4022,11 +4022,11 @@ const industries = [
     "industry": "insurtech",
     "service": "mobile-app-development",
     "title": "Mobile App Development for UK InsurTech — FCA Built In",
-    "metaTitle": "Mobile App Development for InsurTech UK | ClickMasters",
+    "metaTitle": "Mobile App Development for InsurTech UK | Clickmasters",
     "metaDesc": "Mobile App Development for UK InsurTech. FCA. £20,000–£80,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters InsurTech Team",
+    "writtenBy": "Clickmasters InsurTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "InsurTech",
@@ -4036,7 +4036,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Mobile App Development for UK InsurTech businesses with FCA, Consumer Duty compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Mobile App Development for UK InsurTech businesses with FCA, Consumer Duty compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Mobile App Development for InsurTech — UK Specifics",
@@ -4131,11 +4131,11 @@ const industries = [
     "industry": "edtech",
     "service": "microservices-architecture",
     "title": "Microservices Architecture for UK EdTech — ICO AADC Built In",
-    "metaTitle": "Microservices Architecture for EdTech UK | ClickMasters",
+    "metaTitle": "Microservices Architecture for EdTech UK | Clickmasters",
     "metaDesc": "Microservices Architecture for UK EdTech. ICO AADC. £35,000–£150,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "EdTech",
@@ -4145,7 +4145,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices Architecture for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices Architecture for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices Architecture for EdTech — UK Specifics",
@@ -4235,11 +4235,11 @@ const industries = [
     "industry": "healthtech",
     "service": "cloud-native-development",
     "title": "Cloud-Native Development for UK HealthTech — DTAC Built In",
-    "metaTitle": "Cloud-Native Development for HealthTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for HealthTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK HealthTech. DTAC. £25,000–£200,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters HealthTech Team",
+    "writtenBy": "Clickmasters HealthTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "HealthTech",
@@ -4249,7 +4249,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK HealthTech businesses with DTAC, NHS DSP Toolkit compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK HealthTech businesses with DTAC, NHS DSP Toolkit compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for HealthTech — UK Specifics",
@@ -4264,7 +4264,7 @@ const industries = [
           },
           {
             "bold": "Cyber Essentials Plus for NHS Cloud",
-            "text": "NHS DSP Toolkit Standard 10 requires Cyber Essentials Plus for NHS digital services accessing patient data. CE+ for cloud-native: AWS Security Hub (automated security standards compliance), GuardDuty (threat detection), Config (configuration compliance), and Inspector (vulnerability scanning). Evidence pack: ClickMasters produces CE+ technical evidence documentation for NHS client DSP Toolkit submissions."
+            "text": "NHS DSP Toolkit Standard 10 requires Cyber Essentials Plus for NHS digital services accessing patient data. CE+ for cloud-native: AWS Security Hub (automated security standards compliance), GuardDuty (threat detection), Config (configuration compliance), and Inspector (vulnerability scanning). Evidence pack: Clickmasters produces CE+ technical evidence documentation for NHS client DSP Toolkit submissions."
           },
           {
             "bold": "NHS Spine Connectivity on Cloud",
@@ -4325,11 +4325,11 @@ const industries = [
     "faqs": [
       {
         "question": "What cloud platform should NHS HealthTech use — AWS or Azure?",
-        "answer": "For NHS HealthTech: Azure UK South has NHS Landing Zone (recommended configuration for NHS) and native Microsoft 365 integration (NHS uses Microsoft Teams/O365). AWS eu-west-2 is also NHS DSP Toolkit compliant. Both satisfy UK data residency. ClickMasters recommendation: Azure for NHS applications needing Microsoft 365 integration (Teams, SharePoint, Azure AD); AWS for standalone NHS applications or those needing more mature managed services."
+        "answer": "For NHS HealthTech: Azure UK South has NHS Landing Zone (recommended configuration for NHS) and native Microsoft 365 integration (NHS uses Microsoft Teams/O365). AWS eu-west-2 is also NHS DSP Toolkit compliant. Both satisfy UK data residency. Clickmasters recommendation: Azure for NHS applications needing Microsoft 365 integration (Teams, SharePoint, Azure AD); AWS for standalone NHS applications or those needing more mature managed services."
       },
       {
         "question": "How do we get NHS HSCN connectivity for cloud-native apps?",
-        "answer": "HSCN (Health and Social Care Network) is the NHS network. Cloud-native access options: AWS Direct Connect to an HSCN-connected colocation facility, or using an approved HSCN Access Provider. The key requirement is that NHS Spine API calls (PDS, GP Connect, Smartcard authentication) originate from HSCN-connected IP addresses. ClickMasters works with NHS-approved HSCN connectivity providers."
+        "answer": "HSCN (Health and Social Care Network) is the NHS network. Cloud-native access options: AWS Direct Connect to an HSCN-connected colocation facility, or using an approved HSCN Access Provider. The key requirement is that NHS Spine API calls (PDS, GP Connect, Smartcard authentication) originate from HSCN-connected IP addresses. Clickmasters works with NHS-approved HSCN connectivity providers."
       }
     ]
   },
@@ -4339,11 +4339,11 @@ const industries = [
     "industry": "saas",
     "service": "devops-cicd",
     "title": "DevOps & CI/CD for UK SaaS — Cyber Essentials Built In",
-    "metaTitle": "DevOps & CI/CD for SaaS UK | ClickMasters",
+    "metaTitle": "DevOps & CI/CD for SaaS UK | Clickmasters",
     "metaDesc": "DevOps & CI/CD for UK SaaS. Cyber Essentials. £8,000–£80,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters SaaS Team",
+    "writtenBy": "Clickmasters SaaS Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "SaaS",
@@ -4353,14 +4353,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides DevOps & CI/CD for UK SaaS businesses with Cyber Essentials, FCA PS21/3 (for regulated SaaS) compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides DevOps & CI/CD for UK SaaS businesses with Cyber Essentials, FCA PS21/3 (for regulated SaaS) compliance from Sprint 1.",
     "sections": [
       {
         "heading": "DevOps & CI/CD for SaaS — UK Specifics",
         "paragraphs": [
           {
             "bold": "Multi-Tenant CI/CD Pipeline Architecture",
-            "text": "SaaS CI/CD is more complex than single-tenant: deployments must not affect live tenants, database migrations must handle multiple tenant schemas simultaneously, feature flags enable per-tenant feature rollout, and smoke tests must verify representative tenant environments post-deployment. ClickMasters SaaS CI/CD: GitHub Actions with tenant-aware deployment stages, migration validation across tenant schemas, and canary deployment to a subset of tenants before full rollout."
+            "text": "SaaS CI/CD is more complex than single-tenant: deployments must not affect live tenants, database migrations must handle multiple tenant schemas simultaneously, feature flags enable per-tenant feature rollout, and smoke tests must verify representative tenant environments post-deployment. Clickmasters SaaS CI/CD: GitHub Actions with tenant-aware deployment stages, migration validation across tenant schemas, and canary deployment to a subset of tenants before full rollout."
           },
           {
             "bold": "Zero-Downtime SaaS Deployments",
@@ -4368,7 +4368,7 @@ const industries = [
           },
           {
             "bold": "SaaS Observability Stack",
-            "text": "SaaS DevOps requires per-tenant observability: error rate per tenant (a bug affecting one tenant should not be masked by healthy traffic from other tenants), latency per tenant (a slow tenant should be identifiable), and usage dashboards per tenant (for billing and capacity planning). ClickMasters SaaS observability: Datadog or CloudWatch with tenant_id dimension on all metrics, structured logging with tenant_id, and alerting thresholds per tenant tier."
+            "text": "SaaS DevOps requires per-tenant observability: error rate per tenant (a bug affecting one tenant should not be masked by healthy traffic from other tenants), latency per tenant (a slow tenant should be identifiable), and usage dashboards per tenant (for billing and capacity planning). Clickmasters SaaS observability: Datadog or CloudWatch with tenant_id dimension on all metrics, structured logging with tenant_id, and alerting thresholds per tenant tier."
           },
           {
             "bold": "FCA PS21/3 SaaS Deployment Governance",
@@ -4428,7 +4428,7 @@ const industries = [
       },
       {
         "question": "What observability does a UK SaaS product need for FCA or enterprise clients?",
-        "answer": "Enterprise and FCA clients will ask for: uptime SLA evidence (monthly report from monitoring), incident response time metrics (mean time to acknowledge, mean time to resolve), change frequency and failure rate (DORA metrics), and data residency confirmation. ClickMasters SaaS DevOps includes: StatusPage or equivalent for SLA reporting, PagerDuty for incident management, and DORA metrics dashboard."
+        "answer": "Enterprise and FCA clients will ask for: uptime SLA evidence (monthly report from monitoring), incident response time metrics (mean time to acknowledge, mean time to resolve), change frequency and failure rate (DORA metrics), and data residency confirmation. Clickmasters SaaS DevOps includes: StatusPage or equivalent for SLA reporting, PagerDuty for incident management, and DORA metrics dashboard."
       }
     ]
   },
@@ -4438,11 +4438,11 @@ const industries = [
     "industry": "healthtech",
     "service": "microservices-architecture",
     "title": "Microservices Architecture for UK HealthTech — DTAC Built In",
-    "metaTitle": "Microservices Architecture for HealthTech UK | ClickMasters",
+    "metaTitle": "Microservices Architecture for HealthTech UK | Clickmasters",
     "metaDesc": "Microservices Architecture for UK HealthTech. DTAC. £35,000–£200,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters HealthTech Team",
+    "writtenBy": "Clickmasters HealthTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "HealthTech",
@@ -4452,7 +4452,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices Architecture for UK HealthTech businesses with DTAC, UK GDPR Article 9 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices Architecture for UK HealthTech businesses with DTAC, UK GDPR Article 9 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices Architecture for HealthTech — UK Specifics",
@@ -4532,7 +4532,7 @@ const industries = [
       },
       {
         "question": "How many microservices is too many for an NHS HealthTech application?",
-        "answer": "There is no absolute limit, but over-decomposition creates operational complexity that can compromise patient safety. ClickMasters guideline: start with service boundaries aligned to NHS clinical domains (patient demographics, clinical records, appointments, prescribing, referrals). Each domain becomes one microservice. Add decomposition only when a domain has genuinely different scaling, team, or compliance requirements."
+        "answer": "There is no absolute limit, but over-decomposition creates operational complexity that can compromise patient safety. Clickmasters guideline: start with service boundaries aligned to NHS clinical domains (patient demographics, clinical records, appointments, prescribing, referrals). Each domain becomes one microservice. Add decomposition only when a domain has genuinely different scaling, team, or compliance requirements."
       }
     ]
   },
@@ -4542,11 +4542,11 @@ const industries = [
     "industry": "ecommerce",
     "service": "cloud-native-development",
     "title": "Cloud-Native Development for UK eCommerce — UK GDPR Built In",
-    "metaTitle": "Cloud-Native Development for eCommerce UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for eCommerce UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK eCommerce. UK GDPR. £30,000–£180,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters eCommerce Team",
+    "writtenBy": "Clickmasters eCommerce Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "eCommerce",
@@ -4556,7 +4556,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK eCommerce businesses with UK GDPR, PCI-DSS compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK eCommerce businesses with UK GDPR, PCI-DSS compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for eCommerce — UK Specifics",
@@ -4646,11 +4646,11 @@ const industries = [
     "industry": "saas",
     "service": "legacy-modernisation",
     "title": "Legacy Modernisation for UK SaaS — UK GDPR Built In",
-    "metaTitle": "Legacy Modernisation for SaaS UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for SaaS UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK SaaS. UK GDPR. £35,000–£180,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters SaaS Team",
+    "writtenBy": "Clickmasters SaaS Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "SaaS",
@@ -4660,7 +4660,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK SaaS businesses with UK GDPR, data migration compliance compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK SaaS businesses with UK GDPR, data migration compliance compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for SaaS — UK Specifics",
@@ -4731,11 +4731,11 @@ const industries = [
     "faqs": [
       {
         "question": "How long does converting a legacy application to SaaS take?",
-        "answer": "Legacy-to-SaaS conversion timeline depends on: codebase complexity, number of client-specific customisations, database architecture, and current test coverage. Typical range: 12–26 weeks for a well-structured legacy application. ClickMasters starts with a Technical Discovery (£3,500–£8,000, 2 weeks) to assess complexity and provide a fixed-price estimate."
+        "answer": "Legacy-to-SaaS conversion timeline depends on: codebase complexity, number of client-specific customisations, database architecture, and current test coverage. Typical range: 12–26 weeks for a well-structured legacy application. Clickmasters starts with a Technical Discovery (£3,500–£8,000, 2 weeks) to assess complexity and provide a fixed-price estimate."
       },
       {
         "question": "Do existing clients need to be notified about a SaaS architecture change?",
-        "answer": "Yes — UK GDPR requires notification if the processing of personal data changes materially. A change from dedicated single-tenant to shared multi-tenant infrastructure is a material change. Article 13/14 privacy notice update required. If a new DPA is required (new sub-processors in shared infrastructure), existing contract updates may be needed. ClickMasters produces the required UK GDPR documentation as part of SaaS conversion projects."
+        "answer": "Yes — UK GDPR requires notification if the processing of personal data changes materially. A change from dedicated single-tenant to shared multi-tenant infrastructure is a material change. Article 13/14 privacy notice update required. If a new DPA is required (new sub-processors in shared infrastructure), existing contract updates may be needed. Clickmasters produces the required UK GDPR documentation as part of SaaS conversion projects."
       }
     ]
   },
@@ -4745,11 +4745,11 @@ const industries = [
     "industry": "logtech",
     "service": "api-development",
     "title": "API Development for UK LogTech — UK GDPR Built In",
-    "metaTitle": "API Development for LogTech UK | ClickMasters",
+    "metaTitle": "API Development for LogTech UK | Clickmasters",
     "metaDesc": "API Development for UK LogTech. UK GDPR. £8,000–£60,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LogTech Team",
+    "writtenBy": "Clickmasters LogTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LogTech",
@@ -4759,7 +4759,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides API Development for UK LogTech businesses with UK GDPR, DVSA compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides API Development for UK LogTech businesses with UK GDPR, DVSA compliance from Sprint 1.",
     "sections": [
       {
         "heading": "API Development for LogTech — UK Specifics",
@@ -4845,11 +4845,11 @@ const industries = [
     "industry": "edtech",
     "service": "devops-cicd",
     "title": "DevOps & CI/CD for UK EdTech — ICO AADC Built In",
-    "metaTitle": "DevOps & CI/CD for EdTech UK | ClickMasters",
+    "metaTitle": "DevOps & CI/CD for EdTech UK | Clickmasters",
     "metaDesc": "DevOps & CI/CD for UK EdTech. ICO AADC. £8,000–£60,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "EdTech",
@@ -4859,18 +4859,18 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides DevOps & CI/CD for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides DevOps & CI/CD for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "DevOps & CI/CD for EdTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "ICO AADC in EdTech CI/CD Pipelines",
-            "text": "ICO Age Appropriate Design Code compliance must be validated in CI/CD, not just at launch. ClickMasters EdTech CI/CD pipeline includes: automated ICO AADC data minimisation tests (assert that no under-18 user profile data is sent to analytics without consent), cookie consent automated testing (Playwright + axe-core verifying no tracking before consent), and privacy settings regression tests (assert that default settings are always maximum privacy). These run on every PR — a failing privacy test blocks merge."
+            "text": "ICO Age Appropriate Design Code compliance must be validated in CI/CD, not just at launch. Clickmasters EdTech CI/CD pipeline includes: automated ICO AADC data minimisation tests (assert that no under-18 user profile data is sent to analytics without consent), cookie consent automated testing (Playwright + axe-core verifying no tracking before consent), and privacy settings regression tests (assert that default settings are always maximum privacy). These run on every PR — a failing privacy test blocks merge."
           },
           {
             "bold": "MIS Integration Test Environments",
-            "text": "EdTech CI/CD requires MIS (Management Information System) test environments. Challenge: real SIMS/Arbor/Bromcom instances cannot be used in CI/CD without school data. Solution: mock MIS API servers (maintained as fixtures in the CI/CD pipeline) that return anonymised test data matching real MIS API schemas. ClickMasters maintains SIMS, Arbor, and Bromcom mock servers for EdTech CI/CD pipelines — no real pupil data in any test environment."
+            "text": "EdTech CI/CD requires MIS (Management Information System) test environments. Challenge: real SIMS/Arbor/Bromcom instances cannot be used in CI/CD without school data. Solution: mock MIS API servers (maintained as fixtures in the CI/CD pipeline) that return anonymised test data matching real MIS API schemas. Clickmasters maintains SIMS, Arbor, and Bromcom mock servers for EdTech CI/CD pipelines — no real pupil data in any test environment."
           },
           {
             "bold": "UK GDPR Data in Test Environments",
@@ -4878,7 +4878,7 @@ const industries = [
           },
           {
             "bold": "WCAG 2.1 AA in EdTech CI/CD",
-            "text": "PSBAR 2018 applies to publicly funded EdTech used in schools. Axe-core automated accessibility testing in CI/CD: every PR that changes UI components triggers an axe-core scan — new WCAG violations block merge. NVDA screen reader regression tests: ClickMasters maintains a set of NVDA screen reader journey tests run weekly (not on every PR — too slow) for key EdTech user flows (pupil login, assignment submission, teacher marking)."
+            "text": "PSBAR 2018 applies to publicly funded EdTech used in schools. Axe-core automated accessibility testing in CI/CD: every PR that changes UI components triggers an axe-core scan — new WCAG violations block merge. NVDA screen reader regression tests: Clickmasters maintains a set of NVDA screen reader journey tests run weekly (not on every PR — too slow) for key EdTech user flows (pupil login, assignment submission, teacher marking)."
           }
         ]
       },
@@ -4935,11 +4935,11 @@ const industries = [
     "faqs": [
       {
         "question": "How do we test MIS integrations without real pupil data?",
-        "answer": "ClickMasters approach: maintain mock MIS API servers (SIMS/Arbor/Bromcom) in CI/CD pipeline with anonymised representative data. The mock servers implement the MIS API contracts (OpenAPI specifications or reverse-engineered from real API behaviour) and return consistent, deterministic anonymised responses. Integration tests assert the correct API calls are made and responses are correctly handled — without touching real school data."
+        "answer": "Clickmasters approach: maintain mock MIS API servers (SIMS/Arbor/Bromcom) in CI/CD pipeline with anonymised representative data. The mock servers implement the MIS API contracts (OpenAPI specifications or reverse-engineered from real API behaviour) and return consistent, deterministic anonymised responses. Integration tests assert the correct API calls are made and responses are correctly handled — without touching real school data."
       },
       {
         "question": "What CI/CD pipeline should EdTech companies use for DTAC compliance?",
-        "answer": "DTAC Domain 3 (Technical Security) requires evidence of automated security testing. ClickMasters EdTech CI/CD for DTAC: GitHub Actions → ESLint (static analysis) → Jest unit tests → Playwright E2E + axe-core accessibility → OWASP ZAP DAST scan → Dependabot (dependency CVEs) → Docker image build → Trivy container scan → deploy to staging → smoke tests. The pipeline generates DTAC Domain 3 evidence automatically."
+        "answer": "DTAC Domain 3 (Technical Security) requires evidence of automated security testing. Clickmasters EdTech CI/CD for DTAC: GitHub Actions → ESLint (static analysis) → Jest unit tests → Playwright E2E + axe-core accessibility → OWASP ZAP DAST scan → Dependabot (dependency CVEs) → Docker image build → Trivy container scan → deploy to staging → smoke tests. The pipeline generates DTAC Domain 3 evidence automatically."
       }
     ]
   },
@@ -4949,11 +4949,11 @@ const industries = [
     "industry": "fintech",
     "service": "api-development",
     "title": "API Development for UK FinTech — FCA Built In",
-    "metaTitle": "API Development for FinTech UK | ClickMasters",
+    "metaTitle": "API Development for FinTech UK | Clickmasters",
     "metaDesc": "API Development for UK FinTech. FCA. £8,000–£50,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -4963,7 +4963,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides API Development for UK FinTech businesses with FCA, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides API Development for UK FinTech businesses with FCA, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "API Development for FinTech — UK Specifics",
@@ -4974,7 +4974,7 @@ const industries = [
           },
           {
             "bold": "Open Banking API Standards",
-            "text": "UK Open Banking API: OBIE (Open Banking Implementation Entity) defines the UK Open Banking API standard (current version 3.1.11). PSD2 mandate: all UK banks with 10,000+ payment accounts must implement OBIE-compliant APIs. ClickMasters builds OBIE-compliant APIs for firms seeking authorisation as AISP or PISP, including the mandatory OBIE discovery endpoint, OAuth 2.0 dynamic client registration, and OBIE consent management."
+            "text": "UK Open Banking API: OBIE (Open Banking Implementation Entity) defines the UK Open Banking API standard (current version 3.1.11). PSD2 mandate: all UK banks with 10,000+ payment accounts must implement OBIE-compliant APIs. Clickmasters builds OBIE-compliant APIs for firms seeking authorisation as AISP or PISP, including the mandatory OBIE discovery endpoint, OAuth 2.0 dynamic client registration, and OBIE consent management."
           },
           {
             "bold": "PCI-DSS API Scope Management",
@@ -5049,11 +5049,11 @@ const industries = [
     "industry": "insurance",
     "service": "api-development",
     "title": "API Development for UK Insurance — FCA ICOBS Built In",
-    "metaTitle": "API Development for Insurance UK | ClickMasters",
+    "metaTitle": "API Development for Insurance UK | Clickmasters",
     "metaDesc": "API Development for UK Insurance. FCA ICOBS. £10,000–£60,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Insurance Team",
+    "writtenBy": "Clickmasters Insurance Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "Insurance",
@@ -5063,7 +5063,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides API Development for UK Insurance businesses with FCA ICOBS, Consumer Duty compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides API Development for UK Insurance businesses with FCA ICOBS, Consumer Duty compliance from Sprint 1.",
     "sections": [
       {
         "heading": "API Development for Insurance — UK Specifics",
@@ -5078,7 +5078,7 @@ const industries = [
           },
           {
             "bold": "Lloyd's Placing Platform API",
-            "text": "Lloyd's PPL (Placing Platform Limited) API: electronic placement of Lloyd's risks. API capabilities: risk submission, capacity negotiation, quote binding, endorsements, and cancellations. Lloyd's Marketplace API: capacity allocation from Lloyd's syndicates, premium calculation, and settlement via ECF (Electronic Claims File). ClickMasters has Lloyd's PPL API integration experience — requires Lloyd's Market Association (LMA) technical standards compliance."
+            "text": "Lloyd's PPL (Placing Platform Limited) API: electronic placement of Lloyd's risks. API capabilities: risk submission, capacity negotiation, quote binding, endorsements, and cancellations. Lloyd's Marketplace API: capacity allocation from Lloyd's syndicates, premium calculation, and settlement via ECF (Electronic Claims File). Clickmasters has Lloyd's PPL API integration experience — requires Lloyd's Market Association (LMA) technical standards compliance."
           },
           {
             "bold": "Solvency II UK Reporting API Architecture",
@@ -5149,11 +5149,11 @@ const industries = [
     "industry": "ai",
     "service": "cloud-native-development",
     "title": "Cloud-Native Development for UK AI — UK GDPR Article 22 Built In",
-    "metaTitle": "Cloud-Native Development for AI UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for AI UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK AI. UK GDPR Article 22. £25,000–£200,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters AI Team",
+    "writtenBy": "Clickmasters AI Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "AI",
@@ -5163,7 +5163,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK AI businesses with UK GDPR Article 22, ICO AI guidance compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK AI businesses with UK GDPR Article 22, ICO AI guidance compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for AI — UK Specifics",
@@ -5234,11 +5234,11 @@ const industries = [
     "faqs": [
       {
         "question": "What AWS architecture should I use for a production LLM application?",
-        "answer": "Production LLM on AWS: API Gateway + Lambda for synchronous LLM calls (simple, low traffic), or SQS + Lambda + WebSocket API Gateway for async streaming (better for high latency LLM responses). Model hosting: Bedrock (managed, supports Anthropic Claude, Amazon Titan, Meta Llama), SageMaker Endpoints (your own fine-tuned models), or Lambda calling external APIs (OpenAI, Anthropic). ClickMasters recommends Bedrock + Lambda + SQS for most UK production LLM applications."
+        "answer": "Production LLM on AWS: API Gateway + Lambda for synchronous LLM calls (simple, low traffic), or SQS + Lambda + WebSocket API Gateway for async streaming (better for high latency LLM responses). Model hosting: Bedrock (managed, supports Anthropic Claude, Amazon Titan, Meta Llama), SageMaker Endpoints (your own fine-tuned models), or Lambda calling external APIs (OpenAI, Anthropic). Clickmasters recommends Bedrock + Lambda + SQS for most UK production LLM applications."
       },
       {
         "question": "How do we handle UK GDPR Article 22 in an AI application?",
-        "answer": "Article 22 applies when AI makes decisions with significant effects — credit decisions, insurance pricing, medical triage, benefits eligibility. Required: human review interface (caseworker can override AI decision), explanation endpoint (what factors drove the decision, in plain English), audit log (every AI decision logged with input features, model version, output, timestamp), and opt-out mechanism (user can request human decision). ClickMasters builds Article 22 compliance into all production AI systems by default."
+        "answer": "Article 22 applies when AI makes decisions with significant effects — credit decisions, insurance pricing, medical triage, benefits eligibility. Required: human review interface (caseworker can override AI decision), explanation endpoint (what factors drove the decision, in plain English), audit log (every AI decision logged with input features, model version, output, timestamp), and opt-out mechanism (user can request human decision). Clickmasters builds Article 22 compliance into all production AI systems by default."
       }
     ]
   },
@@ -5248,11 +5248,11 @@ const industries = [
     "industry": "ecommerce",
     "service": "qa-testing",
     "title": "QA & Testing for UK eCommerce — UK GDPR Built In",
-    "metaTitle": "QA & Testing for eCommerce UK | ClickMasters",
+    "metaTitle": "QA & Testing for eCommerce UK | Clickmasters",
     "metaDesc": "QA & Testing for UK eCommerce. UK GDPR. £8,000–£50,000.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters eCommerce Team",
+    "writtenBy": "Clickmasters eCommerce Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "eCommerce",
@@ -5262,7 +5262,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides QA & Testing for UK eCommerce businesses with UK GDPR, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides QA & Testing for UK eCommerce businesses with UK GDPR, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "QA & Testing for eCommerce — UK Specifics",
@@ -5338,11 +5338,11 @@ const industries = [
     "faqs": [
       {
         "question": "What performance benchmarks should UK eCommerce target?",
-        "answer": "Google Core Web Vitals targets: LCP < 2.5 seconds (Largest Contentful Paint — main content loaded), CLS < 0.1 (Cumulative Layout Shift — no jumping elements), INP < 200 milliseconds (Interaction to Next Paint — UI responsive). Google uses these in search ranking. UK eCommerce conversion rate correlation: LCP 1–2 seconds correlates with significantly higher conversion than 3–4 seconds. ClickMasters monitors Core Web Vitals in CI/CD on every deployment."
+        "answer": "Google Core Web Vitals targets: LCP < 2.5 seconds (Largest Contentful Paint — main content loaded), CLS < 0.1 (Cumulative Layout Shift — no jumping elements), INP < 200 milliseconds (Interaction to Next Paint — UI responsive). Google uses these in search ranking. UK eCommerce conversion rate correlation: LCP 1–2 seconds correlates with significantly higher conversion than 3–4 seconds. Clickmasters monitors Core Web Vitals in CI/CD on every deployment."
       },
       {
         "question": "How do we test PECR cookie consent compliance?",
-        "answer": "PECR cookie testing checklist: 1) Load page in incognito — verify no non-essential cookies set before consent. 2) Decline all cookies — verify analytics/advertising cookies blocked. 3) Accept all — verify all declared cookies set. 4) Change preferences — verify preferences honoured immediately. 5) Clear cookies and reload — verify consent banner appears again. ClickMasters automates steps 1–4 with Playwright in CI/CD."
+        "answer": "PECR cookie testing checklist: 1) Load page in incognito — verify no non-essential cookies set before consent. 2) Decline all cookies — verify analytics/advertising cookies blocked. 3) Accept all — verify all declared cookies set. 4) Change preferences — verify preferences honoured immediately. 5) Clear cookies and reload — verify consent banner appears again. Clickmasters automates steps 1–4 with Playwright in CI/CD."
       }
     ]
   },
@@ -5352,11 +5352,11 @@ const industries = [
     "industry": "agritech",
     "service": "api-development",
     "title": "API Development for UK AgriTech — DEFRA Built In",
-    "metaTitle": "API Development for AgriTech UK | ClickMasters",
+    "metaTitle": "API Development for AgriTech UK | Clickmasters",
     "metaDesc": "API Development for UK AgriTech. DEFRA. £8,000–£55,000.",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters AgriTech Team",
+    "writtenBy": "Clickmasters AgriTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "AgriTech",
@@ -5366,7 +5366,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides API Development for UK AgriTech businesses with DEFRA, RPA (Rural Payments Agency) compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides API Development for UK AgriTech businesses with DEFRA, RPA (Rural Payments Agency) compliance from Sprint 1.",
     "sections": [
       {
         "heading": "API Development for AgriTech — UK Specifics",
@@ -5461,11 +5461,11 @@ const industries = [
     "industry": "medtech",
     "service": "devops-cicd",
     "title": "DevOps & CI/CD for UK MedTech — MHRA Built In",
-    "metaTitle": "DevOps & CI/CD for MedTech UK | ClickMasters",
+    "metaTitle": "DevOps & CI/CD for MedTech UK | Clickmasters",
     "metaDesc": "DevOps & CI/CD for UK MedTech. MHRA. £8,000–£55,000.",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters MedTech Team",
+    "writtenBy": "Clickmasters MedTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "MedTech",
@@ -5475,7 +5475,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides DevOps & CI/CD for UK MedTech businesses with MHRA, DTAC Domain 3 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides DevOps & CI/CD for UK MedTech businesses with MHRA, DTAC Domain 3 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "DevOps & CI/CD for MedTech — UK Specifics",
@@ -5490,7 +5490,7 @@ const industries = [
           },
           {
             "bold": "NHS DTAC Domain 3 CI/CD Evidence Pack",
-            "text": "DTAC Domain 3 (Technical Security) requires evidence of security controls in the development process. CI/CD produces DTAC-ready evidence automatically: GitHub Actions run log (evidence of automated security testing), OWASP ZAP DAST scan report (integrated in CI/CD), Dependabot CVE scan results, Trivy container image scan, and Cyber Essentials Plus certificate (covering cloud infrastructure). ClickMasters produces DTAC Domain 3 evidence packs as standard CI/CD output."
+            "text": "DTAC Domain 3 (Technical Security) requires evidence of security controls in the development process. CI/CD produces DTAC-ready evidence automatically: GitHub Actions run log (evidence of automated security testing), OWASP ZAP DAST scan report (integrated in CI/CD), Dependabot CVE scan results, Trivy container image scan, and Cyber Essentials Plus certificate (covering cloud infrastructure). Clickmasters produces DTAC Domain 3 evidence packs as standard CI/CD output."
           },
           {
             "bold": "Regulated Change Management in MedTech CI/CD",
@@ -5556,11 +5556,11 @@ const industries = [
     "faqs": [
       {
         "question": "What CI/CD pipeline should UK MedTech companies use?",
-        "answer": "IEC 62304-compliant CI/CD pipeline: GitHub Actions (audit trail) → ESLint + TypeScript strict (static analysis) → Jest unit tests (coverage report — 80%+ for Class C software) → Playwright E2E + axe-core accessibility → OWASP ZAP DAST → Dependabot + OWASP Dependency Check (SOUP) → Docker build → Trivy container scan → staging deploy → smoke tests → production deploy (with named approver gate). ClickMasters builds this pipeline into all MedTech projects."
+        "answer": "IEC 62304-compliant CI/CD pipeline: GitHub Actions (audit trail) → ESLint + TypeScript strict (static analysis) → Jest unit tests (coverage report — 80%+ for Class C software) → Playwright E2E + axe-core accessibility → OWASP ZAP DAST → Dependabot + OWASP Dependency Check (SOUP) → Docker build → Trivy container scan → staging deploy → smoke tests → production deploy (with named approver gate). Clickmasters builds this pipeline into all MedTech projects."
       },
       {
         "question": "Does MHRA require penetration testing for medical device software?",
-        "answer": "MHRA does not specifically mandate penetration testing, but Cyber Essentials (DTAC Domain 3 minimum) and the general duty to implement appropriate cybersecurity (MHRA guidance on medical device cybersecurity, 2021) effectively require it for networked medical devices. NHS DTAC Domain 3 preferred: Cyber Essentials Plus (includes vulnerability scan). ClickMasters recommends annual CREST pen test for all MedTech SaaS deployed in NHS settings."
+        "answer": "MHRA does not specifically mandate penetration testing, but Cyber Essentials (DTAC Domain 3 minimum) and the general duty to implement appropriate cybersecurity (MHRA guidance on medical device cybersecurity, 2021) effectively require it for networked medical devices. NHS DTAC Domain 3 preferred: Cyber Essentials Plus (includes vulnerability scan). Clickmasters recommends annual CREST pen test for all MedTech SaaS deployed in NHS settings."
       }
     ]
   },
@@ -5570,11 +5570,11 @@ const industries = [
     "industry": "logtech",
     "service": "cloud-native-development",
     "title": "Cloud-Native Development for UK LogTech — UK GDPR Built In",
-    "metaTitle": "Cloud-Native Development for LogTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for LogTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK LogTech. UK GDPR. £30,000–£180,000.",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LogTech Team",
+    "writtenBy": "Clickmasters LogTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LogTech",
@@ -5584,7 +5584,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for LogTech — UK Specifics",
@@ -5670,11 +5670,11 @@ const industries = [
     "industry": "insurance",
     "service": "legacy-modernisation",
     "title": "Legacy Modernisation for UK Insurance — FCA ICOBS Built In",
-    "metaTitle": "Legacy Modernisation for Insurance UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for Insurance UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK Insurance. FCA ICOBS. £35,000–£180,000.",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Insurance Team",
+    "writtenBy": "Clickmasters Insurance Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "Insurance",
@@ -5684,7 +5684,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK Insurance businesses with FCA ICOBS, Consumer Duty compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK Insurance businesses with FCA ICOBS, Consumer Duty compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for Insurance — UK Specifics",
@@ -5765,7 +5765,7 @@ const industries = [
     "faqs": [
       {
         "question": "How long does an insurance legacy system modernisation take?",
-        "answer": "Legacy insurance PAS migration: 18–36 months for a mid-size insurer (50,000–500,000 policies). Complexity drivers: number of product lines, number of years of policy data, complexity of claims data, and integration with Lloyd's/IFoA/CUE. ClickMasters conducts a Technical Discovery (£3,500–£8,000) to assess the specific legacy system and provide a realistic fixed-price proposal with phased delivery."
+        "answer": "Legacy insurance PAS migration: 18–36 months for a mid-size insurer (50,000–500,000 policies). Complexity drivers: number of product lines, number of years of policy data, complexity of claims data, and integration with Lloyd's/IFoA/CUE. Clickmasters conducts a Technical Discovery (£3,500–£8,000) to assess the specific legacy system and provide a realistic fixed-price proposal with phased delivery."
       },
       {
         "question": "What is the biggest FCA risk in insurance legacy modernisation?",
@@ -5779,11 +5779,11 @@ const industries = [
     "industry": "fintech",
     "service": "saas-development",
     "title": "SaaS Development for UK FinTech — FCA Consumer Duty Built In",
-    "metaTitle": "SaaS Development for FinTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for FinTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK FinTech. FCA Consumer Duty. £40,000–£200,000.",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -5793,7 +5793,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK FinTech businesses with FCA Consumer Duty, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK FinTech businesses with FCA Consumer Duty, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for FinTech — UK Specifics",
@@ -5812,7 +5812,7 @@ const industries = [
           },
           {
             "bold": "FinTech SaaS Data Portability and Switching",
-            "text": "FCA Consumer Duty (fair value) and UK GDPR (Article 20 data portability): FinTech SaaS must allow regulated firm clients to export their data in machine-readable format. Data portability: all firm data downloadable as CSV/JSON at any time. Switching: 30-day notice with data export assistance. Lock-in avoidance: ClickMasters designs FinTech SaaS with standard data export formats — no proprietary format lock-in that would restrict client switching rights."
+            "text": "FCA Consumer Duty (fair value) and UK GDPR (Article 20 data portability): FinTech SaaS must allow regulated firm clients to export their data in machine-readable format. Data portability: all firm data downloadable as CSV/JSON at any time. Switching: 30-day notice with data export assistance. Lock-in avoidance: Clickmasters designs FinTech SaaS with standard data export formats — no proprietary format lock-in that would restrict client switching rights."
           }
         ]
       },
@@ -5888,11 +5888,11 @@ const industries = [
     "industry": "cleantech",
     "service": "qa-testing",
     "title": "QA & Testing for UK CleanTech — UK GDPR Built In",
-    "metaTitle": "QA & Testing for CleanTech UK | ClickMasters",
+    "metaTitle": "QA & Testing for CleanTech UK | Clickmasters",
     "metaDesc": "QA & Testing for UK CleanTech. UK GDPR. £8,000–£50,000.",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters CleanTech Team",
+    "writtenBy": "Clickmasters CleanTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "CleanTech",
@@ -5902,7 +5902,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides QA & Testing for UK CleanTech businesses with UK GDPR, Ofgem compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides QA & Testing for UK CleanTech businesses with UK GDPR, Ofgem compliance from Sprint 1.",
     "sections": [
       {
         "heading": "QA & Testing for CleanTech — UK Specifics",
@@ -5997,11 +5997,11 @@ const industries = [
     "industry": "insurtech",
     "service": "saas-development",
     "title": "SaaS Development for UK InsurTech — FCA ICOBS Built In",
-    "metaTitle": "SaaS Development for InsurTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for InsurTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK InsurTech. FCA ICOBS. £35,000–£180,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters InsurTech Team",
+    "writtenBy": "Clickmasters InsurTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "InsurTech",
@@ -6011,7 +6011,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK InsurTech businesses with FCA ICOBS, Consumer Duty compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK InsurTech businesses with FCA ICOBS, Consumer Duty compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for InsurTech — UK Specifics",
@@ -6022,7 +6022,7 @@ const industries = [
           },
           {
             "bold": "FCA ICOBS and SaaS Insurance Products",
-            "text": "FCA ICOBS (Insurance Conduct of Business Sourcebook): applies to firms that distribute or arrange non-investment insurance. InsurTech SaaS enabling insurance distribution requires: fair, clear and not misleading communication (ICOBS 2), product information (ICOBS 6 — key information about cover), and complaint handling (ICOBS 8). Consumer Duty (PS22/9): value assessments required for insurance products — ClickMasters builds value assessment reporting dashboards into InsurTech SaaS."
+            "text": "FCA ICOBS (Insurance Conduct of Business Sourcebook): applies to firms that distribute or arrange non-investment insurance. InsurTech SaaS enabling insurance distribution requires: fair, clear and not misleading communication (ICOBS 2), product information (ICOBS 6 — key information about cover), and complaint handling (ICOBS 8). Consumer Duty (PS22/9): value assessments required for insurance products — Clickmasters builds value assessment reporting dashboards into InsurTech SaaS."
           },
           {
             "bold": "Parametric Insurance SaaS Architecture",
@@ -6102,11 +6102,11 @@ const industries = [
     "industry": "healthtech",
     "service": "qa-testing",
     "title": "QA & Testing for UK HealthTech — DTAC Built In",
-    "metaTitle": "QA & Testing for HealthTech UK | ClickMasters",
+    "metaTitle": "QA & Testing for HealthTech UK | Clickmasters",
     "metaDesc": "QA & Testing for UK HealthTech. DTAC. £8,000–£55,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters HealthTech Team",
+    "writtenBy": "Clickmasters HealthTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "HealthTech",
@@ -6116,18 +6116,18 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides QA & Testing for UK HealthTech businesses with DTAC, NHS DSP Toolkit compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides QA & Testing for UK HealthTech businesses with DTAC, NHS DSP Toolkit compliance from Sprint 1.",
     "sections": [
       {
         "heading": "QA & Testing for HealthTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "IEC 62304 Automated Testing Requirements",
-            "text": "IEC 62304 Medical Device Software Lifecycle requires test documentation as part of the Design History File (DHF). Software of Unknown Provenance (SOUP) testing: third-party libraries must be tested to confirm they behave as expected in the medical device context. Unit testing coverage: IEC 62304 Class C software (highest safety classification) requires statement coverage evidence. ClickMasters implements: Jest unit tests with Istanbul coverage reporting (PDF evidence), SOUP library test suite, and automated test run report in CI/CD."
+            "text": "IEC 62304 Medical Device Software Lifecycle requires test documentation as part of the Design History File (DHF). Software of Unknown Provenance (SOUP) testing: third-party libraries must be tested to confirm they behave as expected in the medical device context. Unit testing coverage: IEC 62304 Class C software (highest safety classification) requires statement coverage evidence. Clickmasters implements: Jest unit tests with Istanbul coverage reporting (PDF evidence), SOUP library test suite, and automated test run report in CI/CD."
           },
           {
             "bold": "NHS DTAC Domain 5 Usability Testing",
-            "text": "DTAC Domain 5 (Usability and Accessibility): user research evidence required, not just WCAG 2.1 AA automated testing. ClickMasters DTAC usability testing: axe-core automated testing (integrated in CI/CD — zero accessibility failures gate production deployment), NVDA screen reader manual testing (representative clinical scenarios), cognitive walkthrough (clinical staff task completion testing — not UX designers), and Mobile accessibility (NHS clinicians use tablets and phones extensively)."
+            "text": "DTAC Domain 5 (Usability and Accessibility): user research evidence required, not just WCAG 2.1 AA automated testing. Clickmasters DTAC usability testing: axe-core automated testing (integrated in CI/CD — zero accessibility failures gate production deployment), NVDA screen reader manual testing (representative clinical scenarios), cognitive walkthrough (clinical staff task completion testing — not UX designers), and Mobile accessibility (NHS clinicians use tablets and phones extensively)."
           },
           {
             "bold": "NHS FHIR R4 Contract Testing",
@@ -6202,11 +6202,11 @@ const industries = [
     "faqs": [
       {
         "question": "How do we generate IEC 62304 test evidence in CI/CD?",
-        "answer": "IEC 62304 test evidence from CI/CD: GitHub Actions run log (timestamped, immutable) = evidence of automated test execution. Jest unit test report (JSON/HTML) with Istanbul coverage metrics = statement coverage evidence. HAPI FHIR validator report = UK Core profile compliance evidence. OWASP Dependency Check + Dependabot report = SOUP CVE evidence. Playwright E2E test report with screenshots = functional verification evidence. ClickMasters packages all CI/CD test artefacts into a DHF evidence bundle per release."
+        "answer": "IEC 62304 test evidence from CI/CD: GitHub Actions run log (timestamped, immutable) = evidence of automated test execution. Jest unit test report (JSON/HTML) with Istanbul coverage metrics = statement coverage evidence. HAPI FHIR validator report = UK Core profile compliance evidence. OWASP Dependency Check + Dependabot report = SOUP CVE evidence. Playwright E2E test report with screenshots = functional verification evidence. Clickmasters packages all CI/CD test artefacts into a DHF evidence bundle per release."
       },
       {
         "question": "What accessibility testing is needed for NHS DTAC?",
-        "answer": "DTAC Domain 5 minimum: WCAG 2.1 AA automated testing (axe-core — zero critical or serious failures). Recommended for NHS App Library: manual screen reader testing (NVDA on Windows, VoiceOver on iOS), keyboard navigation testing (all clinical workflows completable without mouse), and colour contrast manual verification (automated tools miss some contrast failures). ClickMasters runs full DTAC accessibility test suite before any DTAC submission — zero failures is a requirement."
+        "answer": "DTAC Domain 5 minimum: WCAG 2.1 AA automated testing (axe-core — zero critical or serious failures). Recommended for NHS App Library: manual screen reader testing (NVDA on Windows, VoiceOver on iOS), keyboard navigation testing (all clinical workflows completable without mouse), and colour contrast manual verification (automated tools miss some contrast failures). Clickmasters runs full DTAC accessibility test suite before any DTAC submission — zero failures is a requirement."
       }
     ]
   },
@@ -6216,11 +6216,11 @@ const industries = [
     "industry": "logtech",
     "service": "staff-augmentation",
     "title": "Staff Augmentation for UK LogTech — UK GDPR Built In",
-    "metaTitle": "Staff Augmentation for LogTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for LogTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK LogTech. UK GDPR. from £5,000/month.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LogTech Team",
+    "writtenBy": "Clickmasters LogTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LogTech",
@@ -6230,7 +6230,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for LogTech — UK Specifics",
@@ -6245,7 +6245,7 @@ const industries = [
           },
           {
             "bold": "HMRC CDS and Post-Brexit Customs — Staff Augmentation Skill Requirements",
-            "text": "UK logistics businesses post-Brexit need engineers who understand customs software. HMRC CDS (Customs Declaration Service) API knowledge: import declaration (IM01), export declaration (EX01), Simplified Customs Declaration. NCTS (New Computerised Transit System): transit declarations for goods moving through multiple countries. Tariff classification: UK Global Tariff API — commodity code lookup. These are niche skills — ClickMasters maintains a pool of engineers with CDS integration backgrounds."
+            "text": "UK logistics businesses post-Brexit need engineers who understand customs software. HMRC CDS (Customs Declaration Service) API knowledge: import declaration (IM01), export declaration (EX01), Simplified Customs Declaration. NCTS (New Computerised Transit System): transit declarations for goods moving through multiple countries. Tariff classification: UK Global Tariff API — commodity code lookup. These are niche skills — Clickmasters maintains a pool of engineers with CDS integration backgrounds."
           },
           {
             "bold": "Last-Mile Optimisation Engineering",
@@ -6311,11 +6311,11 @@ const industries = [
     "faqs": [
       {
         "question": "What LogTech engineering skills are hardest to find in the UK?",
-        "answer": "HMRC CDS integration experience is rare — most engineers have not worked on customs declaration software. Real-time telematics pipeline experience (AWS IoT Core + Kinesis at scale) is uncommon. Route optimisation algorithm implementation (VRP solvers, not just Google Maps routing) is a genuine specialism. ClickMasters maintains a pool of engineers with each of these backgrounds — LogTech staff augmentation is one of our strongest verticals."
+        "answer": "HMRC CDS integration experience is rare — most engineers have not worked on customs declaration software. Real-time telematics pipeline experience (AWS IoT Core + Kinesis at scale) is uncommon. Route optimisation algorithm implementation (VRP solvers, not just Google Maps routing) is a genuine specialism. Clickmasters maintains a pool of engineers with each of these backgrounds — LogTech staff augmentation is one of our strongest verticals."
       },
       {
         "question": "How do we scale a LogTech engineering team for peak season (Q4)?",
-        "answer": "ClickMasters recommendation: start staff augmentation onboarding 10–12 weeks before peak (late September for November/December peak). Week 1–2: engineer selection and contract. Week 3–6: codebase onboarding and carrier API familiarisation. Week 7–10: delivery of peak-readiness improvements (load testing, carrier failover, monitoring). Post-peak: scale down in January with 4-week notice."
+        "answer": "Clickmasters recommendation: start staff augmentation onboarding 10–12 weeks before peak (late September for November/December peak). Week 1–2: engineer selection and contract. Week 3–6: codebase onboarding and carrier API familiarisation. Week 7–10: delivery of peak-readiness improvements (load testing, carrier failover, monitoring). Post-peak: scale down in January with 4-week notice."
       }
     ]
   },
@@ -6325,11 +6325,11 @@ const industries = [
     "industry": "retailtech",
     "service": "cloud-native-development",
     "title": "Cloud-Native Development for UK RetailTech — UK GDPR Built In",
-    "metaTitle": "Cloud-Native Development for RetailTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for RetailTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK RetailTech. UK GDPR. £25,000–£120,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters RetailTech Team",
+    "writtenBy": "Clickmasters RetailTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "RetailTech",
@@ -6339,7 +6339,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK RetailTech businesses with UK GDPR, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK RetailTech businesses with UK GDPR, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for RetailTech — UK Specifics",
@@ -6424,7 +6424,7 @@ const industries = [
       },
       {
         "question": "How do we handle UK GDPR consent for retail marketing?",
-        "answer": "UK retail GDPR/PECR: marketing consent must be explicit opt-in (not pre-ticked boxes). Consent management: OneTrust or CookieYes (IAB TCF v2.2 compliant) for cookie consent, separate email marketing consent (MailChimp / Klaviyo — double opt-in recommended). PECR soft opt-in: email marketing to existing customers for similar products is permitted without fresh consent — but opt-out must be easy. ClickMasters implements consent management as standard in all retail cloud-native builds."
+        "answer": "UK retail GDPR/PECR: marketing consent must be explicit opt-in (not pre-ticked boxes). Consent management: OneTrust or CookieYes (IAB TCF v2.2 compliant) for cookie consent, separate email marketing consent (MailChimp / Klaviyo — double opt-in recommended). PECR soft opt-in: email marketing to existing customers for similar products is permitted without fresh consent — but opt-out must be easy. Clickmasters implements consent management as standard in all retail cloud-native builds."
       }
     ]
   },
@@ -6434,11 +6434,11 @@ const industries = [
     "industry": "fintech",
     "service": "legacy-modernisation",
     "title": "Legacy Modernisation for UK FinTech — FCA COBS Built In",
-    "metaTitle": "Legacy Modernisation for FinTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for FinTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK FinTech. FCA COBS. £35,000–£200,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -6448,7 +6448,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK FinTech businesses with FCA COBS, FCA PS21/3 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK FinTech businesses with FCA COBS, FCA PS21/3 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for FinTech — UK Specifics",
@@ -6459,7 +6459,7 @@ const industries = [
           },
           {
             "bold": "COBOL and Legacy Mainframe to Cloud Migration",
-            "text": "UK banking legacy: IBM zSeries mainframes running COBOL are common in the largest UK banks. ClickMasters approach: Strangler Fig for mainframe migration — new cloud services receive new traffic, legacy mainframe serves existing accounts, gradual account migration to cloud platform. COBOL knowledge transfer: document COBOL business logic (often 30+ years of encoded business rules) before migration. Never migrate COBOL without a comprehensive business logic inventory — the code is the documentation."
+            "text": "UK banking legacy: IBM zSeries mainframes running COBOL are common in the largest UK banks. Clickmasters approach: Strangler Fig for mainframe migration — new cloud services receive new traffic, legacy mainframe serves existing accounts, gradual account migration to cloud platform. COBOL knowledge transfer: document COBOL business logic (often 30+ years of encoded business rules) before migration. Never migrate COBOL without a comprehensive business logic inventory — the code is the documentation."
           },
           {
             "bold": "PCI-DSS Scope Reduction Through Legacy Migration",
@@ -6534,11 +6534,11 @@ const industries = [
     "faqs": [
       {
         "question": "How do we prioritise FinTech legacy modernisation for FCA compliance?",
-        "answer": "FCA priority order for UK FinTech legacy modernisation: (1) Operational resilience (PS21/3): systems supporting Important Business Services with Impact Tolerance risk. (2) Consumer Duty: systems that cannot produce Consumer Duty outcome data — regulatory reporting risk. (3) PCI-DSS scope: systems with unnecessary PCI scope — annual compliance cost reduction. (4) Technical debt: systems slowing feature velocity. ClickMasters scopes FinTech legacy modernisation with FCA compliance as the primary driver."
+        "answer": "FCA priority order for UK FinTech legacy modernisation: (1) Operational resilience (PS21/3): systems supporting Important Business Services with Impact Tolerance risk. (2) Consumer Duty: systems that cannot produce Consumer Duty outcome data — regulatory reporting risk. (3) PCI-DSS scope: systems with unnecessary PCI scope — annual compliance cost reduction. (4) Technical debt: systems slowing feature velocity. Clickmasters scopes FinTech legacy modernisation with FCA compliance as the primary driver."
       },
       {
         "question": "Can FinTech legacy modernisation be done without downtime?",
-        "answer": "Yes — for most FinTech legacy systems. ClickMasters Strangler Fig approach: new system receives new traffic from Day 1, legacy system serves existing customers (no migration needed initially), gradual migration of existing customers to new system, legacy decommissioned when last customer migrated. Payment systems: blue-green deployment with traffic shifting — zero-downtime migration. The legacy system runs until it is not needed, then decommissioned safely."
+        "answer": "Yes — for most FinTech legacy systems. Clickmasters Strangler Fig approach: new system receives new traffic from Day 1, legacy system serves existing customers (no migration needed initially), gradual migration of existing customers to new system, legacy decommissioned when last customer migrated. Payment systems: blue-green deployment with traffic shifting — zero-downtime migration. The legacy system runs until it is not needed, then decommissioned safely."
       }
     ]
   },
@@ -6548,11 +6548,11 @@ const industries = [
     "industry": "govtech",
     "service": "qa-testing",
     "title": "QA & Testing for UK GovTech — GDS Service Standard Built In",
-    "metaTitle": "QA & Testing for GovTech UK | ClickMasters",
+    "metaTitle": "QA & Testing for GovTech UK | Clickmasters",
     "metaDesc": "QA & Testing for UK GovTech. GDS Service Standard. £8,000–£60,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "GovTech",
@@ -6562,18 +6562,18 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides QA & Testing for UK GovTech businesses with GDS Service Standard, WCAG 2.1 AA compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides QA & Testing for UK GovTech businesses with GDS Service Standard, WCAG 2.1 AA compliance from Sprint 1.",
     "sections": [
       {
         "heading": "QA & Testing for GovTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "GDS Service Assessment QA Evidence",
-            "text": "GDS Service Standard assessments (Alpha, Beta, Live) require evidence of: accessibility testing (WCAG 2.1 AA automated + manual), user research with real users, performance testing (GDS performance standard: < 3s page load), and security assessment. QA evidence for GDS Beta pass: axe-core accessibility audit report (zero critical failures), Lighthouse performance audit (all green), OWASP ZAP security scan report, and user research synthesis showing the service meets user needs. ClickMasters produces a GDS evidence pack automatically from CI/CD artefacts."
+            "text": "GDS Service Standard assessments (Alpha, Beta, Live) require evidence of: accessibility testing (WCAG 2.1 AA automated + manual), user research with real users, performance testing (GDS performance standard: < 3s page load), and security assessment. QA evidence for GDS Beta pass: axe-core accessibility audit report (zero critical failures), Lighthouse performance audit (all green), OWASP ZAP security scan report, and user research synthesis showing the service meets user needs. Clickmasters produces a GDS evidence pack automatically from CI/CD artefacts."
           },
           {
             "bold": "GOV.UK Design System Accessibility Testing",
-            "text": "GOV.UK Design System components are WCAG 2.1 AA compliant — but custom components and compositions of GDS components may not be. Common accessibility failures in GDS services: custom form fields with missing label associations, error messages not announced by screen reader, focus management issues in complex workflows (e.g., returning focus to correct element after modal), and colour contrast issues in custom branded elements. ClickMasters runs NVDA (Windows) and VoiceOver (iOS) testing on all GDS service user journeys before assessment."
+            "text": "GOV.UK Design System components are WCAG 2.1 AA compliant — but custom components and compositions of GDS components may not be. Common accessibility failures in GDS services: custom form fields with missing label associations, error messages not announced by screen reader, focus management issues in complex workflows (e.g., returning focus to correct element after modal), and colour contrast issues in custom branded elements. Clickmasters runs NVDA (Windows) and VoiceOver (iOS) testing on all GDS service user journeys before assessment."
           },
           {
             "bold": "Public Sector Performance Testing Standards",
@@ -6643,11 +6643,11 @@ const industries = [
     "faqs": [
       {
         "question": "What testing does a GDS service need for Beta assessment?",
-        "answer": "GDS Beta assessment testing requirements: (1) accessibility — automated (axe-core CI) + manual (screen reader, keyboard navigation), (2) performance — < 3 seconds on 3G (Lighthouse CI), (3) security — OWASP ZAP scan + NCSC penetration test, (4) browser compatibility — Chrome, Firefox, Safari, Edge + mobile (iOS Safari, Android Chrome), (5) user research evidence — iterative testing with real users showing service meets needs. ClickMasters produces the GDS evidence pack as standard output from CI/CD."
+        "answer": "GDS Beta assessment testing requirements: (1) accessibility — automated (axe-core CI) + manual (screen reader, keyboard navigation), (2) performance — < 3 seconds on 3G (Lighthouse CI), (3) security — OWASP ZAP scan + NCSC penetration test, (4) browser compatibility — Chrome, Firefox, Safari, Edge + mobile (iOS Safari, Android Chrome), (5) user research evidence — iterative testing with real users showing service meets needs. Clickmasters produces the GDS evidence pack as standard output from CI/CD."
       },
       {
         "question": "Does GOV.UK require WCAG 2.1 or 2.2?",
-        "answer": "PSBAR (Public Sector Bodies Accessibility Regulations 2018) requires WCAG 2.1 AA as the minimum standard for all public sector websites and mobile apps. WCAG 2.2 (published September 2023) is not yet mandatory under PSBAR but GDS recommends working toward WCAG 2.2. ClickMasters implements WCAG 2.2 AA as standard for all government digital services — the additional WCAG 2.2 criteria (focus appearance, dragging movements, authentication) are not burdensome to implement and future-proof the service."
+        "answer": "PSBAR (Public Sector Bodies Accessibility Regulations 2018) requires WCAG 2.1 AA as the minimum standard for all public sector websites and mobile apps. WCAG 2.2 (published September 2023) is not yet mandatory under PSBAR but GDS recommends working toward WCAG 2.2. Clickmasters implements WCAG 2.2 AA as standard for all government digital services — the additional WCAG 2.2 criteria (focus appearance, dragging movements, authentication) are not burdensome to implement and future-proof the service."
       }
     ]
   },
@@ -6657,11 +6657,11 @@ const industries = [
     "industry": "edtech",
     "service": "legacy-modernisation",
     "title": "Legacy Modernisation for UK EdTech — ICO AADC Built In",
-    "metaTitle": "Legacy Modernisation for EdTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for EdTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK EdTech. ICO AADC. £25,000–£120,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "EdTech",
@@ -6671,7 +6671,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for EdTech — UK Specifics",
@@ -6690,7 +6690,7 @@ const industries = [
           },
           {
             "bold": "PSBAR Accessibility Remediation in EdTech Migration",
-            "text": "PSBAR (Public Sector Bodies Accessibility Regulations 2018): applies to all EdTech used by publicly funded schools. Legacy EdTech systems are frequently WCAG 2.1 A non-compliant (not even AA). Migration approach: build new EdTech platform to WCAG 2.1 AA from Sprint 1 — do not attempt to fix legacy PSBAR compliance (rarely worth the effort vs rebuild). Accessibility statement: mandatory under PSBAR — ClickMasters produces PSBAR-compliant accessibility statement as part of every EdTech migration."
+            "text": "PSBAR (Public Sector Bodies Accessibility Regulations 2018): applies to all EdTech used by publicly funded schools. Legacy EdTech systems are frequently WCAG 2.1 A non-compliant (not even AA). Migration approach: build new EdTech platform to WCAG 2.1 AA from Sprint 1 — do not attempt to fix legacy PSBAR compliance (rarely worth the effort vs rebuild). Accessibility statement: mandatory under PSBAR — Clickmasters produces PSBAR-compliant accessibility statement as part of every EdTech migration."
           }
         ]
       },
@@ -6756,7 +6756,7 @@ const industries = [
       },
       {
         "question": "How long does an EdTech legacy platform migration take?",
-        "answer": "EdTech legacy migration timeline: discovery and AADC compliance audit (2–3 weeks), architecture design and MIS API strategy (1–2 weeks), build new platform (8–16 weeks depending on scope), data migration testing (2–3 weeks), PSBAR accessibility testing and remediation (1–2 weeks), school acceptance testing and soft launch (2–3 weeks). Total: 16–26 weeks. ClickMasters conducts Technical Discovery (£3,500–£8,000) before any commitment to timeline."
+        "answer": "EdTech legacy migration timeline: discovery and AADC compliance audit (2–3 weeks), architecture design and MIS API strategy (1–2 weeks), build new platform (8–16 weeks depending on scope), data migration testing (2–3 weeks), PSBAR accessibility testing and remediation (1–2 weeks), school acceptance testing and soft launch (2–3 weeks). Total: 16–26 weeks. Clickmasters conducts Technical Discovery (£3,500–£8,000) before any commitment to timeline."
       }
     ]
   },
@@ -6766,11 +6766,11 @@ const industries = [
     "industry": "medtech",
     "service": "microservices-architecture",
     "title": "Microservices Architecture for UK MedTech — MHRA Built In",
-    "metaTitle": "Microservices Architecture for MedTech UK | ClickMasters",
+    "metaTitle": "Microservices Architecture for MedTech UK | Clickmasters",
     "metaDesc": "Microservices Architecture for UK MedTech. MHRA. £40,000–£200,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters MedTech Team",
+    "writtenBy": "Clickmasters MedTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "MedTech",
@@ -6780,7 +6780,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices Architecture for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices Architecture for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices Architecture for MedTech — UK Specifics",
@@ -6880,11 +6880,11 @@ const industries = [
     "industry": "proptech",
     "service": "api-development",
     "title": "API Development for UK PropTech — UK GDPR Built In",
-    "metaTitle": "API Development for PropTech UK | ClickMasters",
+    "metaTitle": "API Development for PropTech UK | Clickmasters",
     "metaDesc": "API Development for UK PropTech. UK GDPR. £8,000–£50,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters PropTech Team",
+    "writtenBy": "Clickmasters PropTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "PropTech",
@@ -6894,7 +6894,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides API Development for UK PropTech businesses with UK GDPR, HMLR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides API Development for UK PropTech businesses with UK GDPR, HMLR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "API Development for PropTech — UK Specifics",
@@ -6905,7 +6905,7 @@ const industries = [
           },
           {
             "bold": "HMLR API Integration for PropTech",
-            "text": "HMLR Business Gateway: REST API providing property title, ownership, charges, and price paid data. Authentication: HMLR subscriber account (free registration — HMLR charges per request after free tier). Key endpoints: Title Register (ownership, charges, covenants), Title Plan (boundary map), Price Paid (historical sale prices by postcode). HMLR Use Case Restriction: data use is restricted per HMLR licence — commercial use requires HM Land Registry Open Data licence. PropTech product APIs: ClickMasters ensures HMLR licence compliance in all PropTech integrations."
+            "text": "HMLR Business Gateway: REST API providing property title, ownership, charges, and price paid data. Authentication: HMLR subscriber account (free registration — HMLR charges per request after free tier). Key endpoints: Title Register (ownership, charges, covenants), Title Plan (boundary map), Price Paid (historical sale prices by postcode). HMLR Use Case Restriction: data use is restricted per HMLR licence — commercial use requires HM Land Registry Open Data licence. PropTech product APIs: Clickmasters ensures HMLR licence compliance in all PropTech integrations."
           },
           {
             "bold": "Open Banking for Property Transactions",
@@ -6913,7 +6913,7 @@ const industries = [
           },
           {
             "bold": "OS Places API Integration for PropTech",
-            "text": "OS Places API: address validation (UK PAF — Postcode Address File), UPRN (Unique Property Reference Number — links all datasets about a property), property classification (residential, commercial, industrial), and building polygon (property boundary from OS MasterMap). UPRN as master identifier: all UK PropTech APIs can be linked via UPRN — OS Places UPRN links to HMLR title, EPC certificate, Ordnance Survey building data, and council tax band (VOA). ClickMasters uses UPRN as the primary key for all property records in PropTech systems."
+            "text": "OS Places API: address validation (UK PAF — Postcode Address File), UPRN (Unique Property Reference Number — links all datasets about a property), property classification (residential, commercial, industrial), and building polygon (property boundary from OS MasterMap). UPRN as master identifier: all UK PropTech APIs can be linked via UPRN — OS Places UPRN links to HMLR title, EPC certificate, Ordnance Survey building data, and council tax band (VOA). Clickmasters uses UPRN as the primary key for all property records in PropTech systems."
           }
         ]
       },
@@ -6980,7 +6980,7 @@ const industries = [
     "faqs": [
       {
         "question": "Which property APIs are free for UK PropTech?",
-        "answer": "Free UK PropTech APIs: HMLR Price Paid Data (commercial licence required for product use — check HMLR OS licensing), HMLR Title Register (subscription-based, cost per request), Companies House API (free, unlimited), EPC Register API (free), DVLA KADOE (licensed per use case), Environment Agency flood risk API (free), OS Names API (free tier — 250,000 requests/year). Most OS data: requires OS data partner agreement. ClickMasters manages all PropTech API licences as part of Technical Discovery."
+        "answer": "Free UK PropTech APIs: HMLR Price Paid Data (commercial licence required for product use — check HMLR OS licensing), HMLR Title Register (subscription-based, cost per request), Companies House API (free, unlimited), EPC Register API (free), DVLA KADOE (licensed per use case), Environment Agency flood risk API (free), OS Names API (free tier — 250,000 requests/year). Most OS data: requires OS data partner agreement. Clickmasters manages all PropTech API licences as part of Technical Discovery."
       },
       {
         "question": "What is a UPRN and why is it important for PropTech?",
@@ -6994,11 +6994,11 @@ const industries = [
     "industry": "insurtech",
     "service": "devops-cicd",
     "title": "DevOps & CI/CD for UK InsurTech — FCA ICOBS Built In",
-    "metaTitle": "DevOps & CI/CD for InsurTech UK | ClickMasters",
+    "metaTitle": "DevOps & CI/CD for InsurTech UK | Clickmasters",
     "metaDesc": "DevOps & CI/CD for UK InsurTech. FCA ICOBS. £8,000–£55,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters InsurTech Team",
+    "writtenBy": "Clickmasters InsurTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "InsurTech",
@@ -7008,7 +7008,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides DevOps & CI/CD for UK InsurTech businesses with FCA ICOBS, FCA PS21/3 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides DevOps & CI/CD for UK InsurTech businesses with FCA ICOBS, FCA PS21/3 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "DevOps & CI/CD for InsurTech — UK Specifics",
@@ -7027,7 +7027,7 @@ const industries = [
           },
           {
             "bold": "Lloyd's Blueprint Digital Integration Testing",
-            "text": "Lloyd's Market Association Digital Blueprint: Core Data Record (CDR) — structured placement data format. InsurTech platforms connecting to Lloyd's electronic placing must: validate CDR schema (JSON schema validation in CI/CD), test Lloyd's Risk Exchange API integration in Lloyd's sandbox environment (separate from production), and verify CDR completeness (all mandatory fields populated) before Lloyd's submission. ClickMasters maintains Lloyd's CDR schema validation as an automated CI/CD gate."
+            "text": "Lloyd's Market Association Digital Blueprint: Core Data Record (CDR) — structured placement data format. InsurTech platforms connecting to Lloyd's electronic placing must: validate CDR schema (JSON schema validation in CI/CD), test Lloyd's Risk Exchange API integration in Lloyd's sandbox environment (separate from production), and verify CDR completeness (all mandatory fields populated) before Lloyd's submission. Clickmasters maintains Lloyd's CDR schema validation as an automated CI/CD gate."
           }
         ]
       },
@@ -7098,7 +7098,7 @@ const industries = [
       },
       {
         "question": "How do we include Lloyd's CDR validation in our CI/CD pipeline?",
-        "answer": "Lloyd's CDR validation in CI/CD: JSON schema validation against published CDR schema (Lloyd's publishes CDR JSON Schema on their developer portal), required field completeness check, and Lloyd's sandbox API submission test (verify CDR accepted by Lloyd's ecosystem before production). ClickMasters writes CDR validation as a custom GitHub Actions step — failures block the pull request merge until CDR compliance is confirmed."
+        "answer": "Lloyd's CDR validation in CI/CD: JSON schema validation against published CDR schema (Lloyd's publishes CDR JSON Schema on their developer portal), required field completeness check, and Lloyd's sandbox API submission test (verify CDR accepted by Lloyd's ecosystem before production). Clickmasters writes CDR validation as a custom GitHub Actions step — failures block the pull request merge until CDR compliance is confirmed."
       }
     ]
   },
@@ -7108,11 +7108,11 @@ const industries = [
     "industry": "cleantech",
     "service": "api-development",
     "title": "API Development for UK CleanTech — UK GDPR Built In",
-    "metaTitle": "API Development for CleanTech UK | ClickMasters",
+    "metaTitle": "API Development for CleanTech UK | Clickmasters",
     "metaDesc": "API Development for UK CleanTech. UK GDPR. £8,000–£60,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters CleanTech Team",
+    "writtenBy": "Clickmasters CleanTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "CleanTech",
@@ -7122,14 +7122,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides API Development for UK CleanTech businesses with UK GDPR, Ofgem compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides API Development for UK CleanTech businesses with UK GDPR, Ofgem compliance from Sprint 1.",
     "sections": [
       {
         "heading": "API Development for CleanTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "Ofgem DCC Smart Meter API Integration",
-            "text": "Ofgem Data Communications Company (DCC) is the UK's smart meter data network operator. DCC API: energy consumption data retrieval (half-hourly readings from SMETS2 smart meters), demand flexibility commands (turning on/off connected appliances via smart meter), and meter registration data (MPAN — Meter Point Administration Number lookup). DCC access: organisations must register as a DCC Data User (application to Ofgem, minimum 6 weeks). ClickMasters manages DCC registration as part of CleanTech API development."
+            "text": "Ofgem Data Communications Company (DCC) is the UK's smart meter data network operator. DCC API: energy consumption data retrieval (half-hourly readings from SMETS2 smart meters), demand flexibility commands (turning on/off connected appliances via smart meter), and meter registration data (MPAN — Meter Point Administration Number lookup). DCC access: organisations must register as a DCC Data User (application to Ofgem, minimum 6 weeks). Clickmasters manages DCC registration as part of CleanTech API development."
           },
           {
             "bold": "National Grid ESO APIs for Flexibility Services",
@@ -7141,7 +7141,7 @@ const industries = [
           },
           {
             "bold": "Octopus Energy Agile API for CleanTech Integration",
-            "text": "Octopus Energy Agile tariff API: half-hourly electricity prices based on wholesale market (cheapest overnight and at solar peak, most expensive at peak demand). CleanTech platforms: schedule EV charging and heat pump operation at cheapest price slots, export solar/battery energy at peak price slots. Octopus Kraken API: customer account data, meter readings, tariff information. ClickMasters has integrated Octopus Agile API into EV fleet management, home energy management, and virtual power plant platforms."
+            "text": "Octopus Energy Agile tariff API: half-hourly electricity prices based on wholesale market (cheapest overnight and at solar peak, most expensive at peak demand). CleanTech platforms: schedule EV charging and heat pump operation at cheapest price slots, export solar/battery energy at peak price slots. Octopus Kraken API: customer account data, meter readings, tariff information. Clickmasters has integrated Octopus Agile API into EV fleet management, home energy management, and virtual power plant platforms."
           }
         ]
       },
@@ -7208,11 +7208,11 @@ const industries = [
     "faqs": [
       {
         "question": "What APIs does UK National Grid provide for CleanTech developers?",
-        "answer": "National Grid ESO provides several free APIs: Carbon Intensity API (uk-forecast.carbonintensity.org.uk — regional carbon intensity, generation mix, forecast), Balancing Mechanism Reporting Service (BMRS) API (generation, demand, interconnector, ancillary services data), and DFS event API (Demand Flexibility Service — commercial registration required to participate). National Grid ESO has an active developer community and API documentation. ClickMasters integrates National Grid ESO APIs into all demand flexibility and carbon tracking platforms."
+        "answer": "National Grid ESO provides several free APIs: Carbon Intensity API (uk-forecast.carbonintensity.org.uk — regional carbon intensity, generation mix, forecast), Balancing Mechanism Reporting Service (BMRS) API (generation, demand, interconnector, ancillary services data), and DFS event API (Demand Flexibility Service — commercial registration required to participate). National Grid ESO has an active developer community and API documentation. Clickmasters integrates National Grid ESO APIs into all demand flexibility and carbon tracking platforms."
       },
       {
         "question": "Do I need Ofgem registration to access smart meter data via DCC?",
-        "answer": "Yes — DCC Data User registration is required to access SMETS2 smart meter data. Registration process: submit Data User application to DCC (administered by Ofgem), demonstrate legitimate reason for access (energy service, demand flexibility, energy efficiency), agree to DCC Data Access and Privacy (DAP) framework (UK GDPR-aligned), pass DCC security assessment, and obtain DCC User Licence. Timeline: minimum 6 weeks, typically 3–6 months for full access. ClickMasters advises on DCC registration as part of CleanTech Technical Discovery."
+        "answer": "Yes — DCC Data User registration is required to access SMETS2 smart meter data. Registration process: submit Data User application to DCC (administered by Ofgem), demonstrate legitimate reason for access (energy service, demand flexibility, energy efficiency), agree to DCC Data Access and Privacy (DAP) framework (UK GDPR-aligned), pass DCC security assessment, and obtain DCC User Licence. Timeline: minimum 6 weeks, typically 3–6 months for full access. Clickmasters advises on DCC registration as part of CleanTech Technical Discovery."
       }
     ]
   },
@@ -7222,11 +7222,11 @@ const industries = [
     "industry": "legaltech",
     "service": "cloud-native-development",
     "title": "Cloud-Native Development for UK LegalTech — SRA Code of Conduct Built In",
-    "metaTitle": "Cloud-Native Development for LegalTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for LegalTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK LegalTech. SRA Code of Conduct. £25,000–£130,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LegalTech Team",
+    "writtenBy": "Clickmasters LegalTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LegalTech",
@@ -7236,7 +7236,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK LegalTech businesses with SRA Code of Conduct, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK LegalTech businesses with SRA Code of Conduct, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for LegalTech — UK Specifics",
@@ -7255,7 +7255,7 @@ const industries = [
           },
           {
             "bold": "Court Filing System Integrations",
-            "text": "UK court system digital integrations: HMCTS Common Platform API (case management, hearing listings), MyHMCTS (court filing portal for legal professionals), CE File (Court Electronic Filing — commercial court), and Land Registry portal (property dispute filings). ClickMasters has integrated LegalTech platforms with HMCTS Common Platform for automated case status monitoring and hearing date alerts. HMCTS API access: application to HMCTS Digital and Technology via the HMCTS developer portal."
+            "text": "UK court system digital integrations: HMCTS Common Platform API (case management, hearing listings), MyHMCTS (court filing portal for legal professionals), CE File (Court Electronic Filing — commercial court), and Land Registry portal (property dispute filings). Clickmasters has integrated LegalTech platforms with HMCTS Common Platform for automated case status monitoring and hearing date alerts. HMCTS API access: application to HMCTS Digital and Technology via the HMCTS developer portal."
           }
         ]
       },
@@ -7312,7 +7312,7 @@ const industries = [
     "faqs": [
       {
         "question": "Does LegalTech SaaS need ISO 27001?",
-        "answer": "ISO 27001 is increasingly required by UK law firms purchasing LegalTech SaaS — particularly for platforms handling sensitive client data. SRA guidance on outsourcing: law firms must conduct due diligence on technology suppliers handling client data (SRA Outcome 7.10). ISO 27001 provides the strongest evidence of information security management. ClickMasters recommends LegalTech SaaS companies obtain ISO 27001 before targeting top-50 UK law firm clients — they will require it."
+        "answer": "ISO 27001 is increasingly required by UK law firms purchasing LegalTech SaaS — particularly for platforms handling sensitive client data. SRA guidance on outsourcing: law firms must conduct due diligence on technology suppliers handling client data (SRA Outcome 7.10). ISO 27001 provides the strongest evidence of information security management. Clickmasters recommends LegalTech SaaS companies obtain ISO 27001 before targeting top-50 UK law firm clients — they will require it."
       },
       {
         "question": "How do we handle GDPR Right to Erasure for law firm client data?",
@@ -7326,11 +7326,11 @@ const industries = [
     "industry": "ecommerce",
     "service": "microservices-architecture",
     "title": "Microservices Architecture for UK eCommerce — UK GDPR Built In",
-    "metaTitle": "Microservices Architecture for eCommerce UK | ClickMasters",
+    "metaTitle": "Microservices Architecture for eCommerce UK | Clickmasters",
     "metaDesc": "Microservices Architecture for UK eCommerce. UK GDPR. £35,000–£180,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters eCommerce Team",
+    "writtenBy": "Clickmasters eCommerce Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "eCommerce",
@@ -7340,7 +7340,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices Architecture for UK eCommerce businesses with UK GDPR, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices Architecture for UK eCommerce businesses with UK GDPR, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices Architecture for eCommerce — UK Specifics",
@@ -7421,11 +7421,11 @@ const industries = [
     "faqs": [
       {
         "question": "How many microservices should a UK eCommerce platform have?",
-        "answer": "ClickMasters guideline for UK eCommerce microservices: 6–8 services for a mid-size platform (£5M–£50M GMV). More services = more operational complexity = more DevOps cost. Common mistake: creating a separate service for every database table (User Service, Address Service, Phone Service) — these belong in one Customer Service. Service boundary principle: each service should be independently deployable AND have a single, clear business capability."
+        "answer": "Clickmasters guideline for UK eCommerce microservices: 6–8 services for a mid-size platform (£5M–£50M GMV). More services = more operational complexity = more DevOps cost. Common mistake: creating a separate service for every database table (User Service, Address Service, Phone Service) — these belong in one Customer Service. Service boundary principle: each service should be independently deployable AND have a single, clear business capability."
       },
       {
         "question": "Should UK eCommerce use microservices or a modular monolith?",
-        "answer": "Modular monolith for most UK eCommerce platforms under Series A: Next.js + Node.js monolith with clear module boundaries (product, cart, order, payment modules). Extract microservices when: team size exceeds 8 engineers (need independent deployment), a specific service needs to scale independently (e.g., product search at 100× normal traffic during flash sales), or PCI-DSS isolation requires Payment Service separation. ClickMasters has built both architectures for UK eCommerce — monolith for startups, microservices for established platforms."
+        "answer": "Modular monolith for most UK eCommerce platforms under Series A: Next.js + Node.js monolith with clear module boundaries (product, cart, order, payment modules). Extract microservices when: team size exceeds 8 engineers (need independent deployment), a specific service needs to scale independently (e.g., product search at 100× normal traffic during flash sales), or PCI-DSS isolation requires Payment Service separation. Clickmasters has built both architectures for UK eCommerce — monolith for startups, microservices for established platforms."
       }
     ]
   },
@@ -7435,11 +7435,11 @@ const industries = [
     "industry": "fintech",
     "service": "qa-testing",
     "title": "QA & Testing for UK FinTech — FCA PS21/3 Built In",
-    "metaTitle": "QA & Testing for FinTech UK | ClickMasters",
+    "metaTitle": "QA & Testing for FinTech UK | Clickmasters",
     "metaDesc": "QA & Testing for UK FinTech. FCA PS21/3. £8,000–£55,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -7449,14 +7449,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides QA & Testing for UK FinTech businesses with FCA PS21/3, FCA Consumer Duty compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides QA & Testing for UK FinTech businesses with FCA PS21/3, FCA Consumer Duty compliance from Sprint 1.",
     "sections": [
       {
         "heading": "QA & Testing for FinTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "FCA PS21/3 Operational Resilience Testing",
-            "text": "FCA PS21/3 requires firms to test their ability to remain within Impact Tolerances. ClickMasters FinTech QA: chaos engineering tests (simulate AWS availability zone failure — does payment processing continue within tolerance?), load testing at 3× normal peak (FCA expects systems to handle stress), DR failover test (automated quarterly — switch from primary to DR region and verify IBS continuity), and recovery time measurement (document and compare against Impact Tolerance)."
+            "text": "FCA PS21/3 requires firms to test their ability to remain within Impact Tolerances. Clickmasters FinTech QA: chaos engineering tests (simulate AWS availability zone failure — does payment processing continue within tolerance?), load testing at 3× normal peak (FCA expects systems to handle stress), DR failover test (automated quarterly — switch from primary to DR region and verify IBS continuity), and recovery time measurement (document and compare against Impact Tolerance)."
           },
           {
             "bold": "PCI-DSS QA Requirements for FinTech",
@@ -7530,7 +7530,7 @@ const industries = [
     "faqs": [
       {
         "question": "What penetration testing frequency does the FCA require?",
-        "answer": "FCA does not mandate specific pen test frequency for all firms. However: PCI-DSS mandates annual pen test (for firms processing card payments — most FinTechs). FCA SYSC 7 (operational resilience): firms must have appropriate security testing as part of operational risk management — in practice, FCA expects at minimum annual CREST pen test. NHS DTAC Domain 3: annual pen test explicitly required. ClickMasters recommends annual CREST pen test for all UK FinTech platforms plus automated DAST (OWASP ZAP) on every release."
+        "answer": "FCA does not mandate specific pen test frequency for all firms. However: PCI-DSS mandates annual pen test (for firms processing card payments — most FinTechs). FCA SYSC 7 (operational resilience): firms must have appropriate security testing as part of operational risk management — in practice, FCA expects at minimum annual CREST pen test. NHS DTAC Domain 3: annual pen test explicitly required. Clickmasters recommends annual CREST pen test for all UK FinTech platforms plus automated DAST (OWASP ZAP) on every release."
       },
       {
         "question": "How does FCA Consumer Duty affect FinTech QA?",
@@ -7544,11 +7544,11 @@ const industries = [
     "industry": "retailtech",
     "service": "legacy-modernisation",
     "title": "Legacy Modernisation for UK RetailTech — UK GDPR Built In",
-    "metaTitle": "Legacy Modernisation for RetailTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for RetailTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK RetailTech. UK GDPR. £30,000–£150,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters RetailTech Team",
+    "writtenBy": "Clickmasters RetailTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "RetailTech",
@@ -7558,14 +7558,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK RetailTech businesses with UK GDPR, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK RetailTech businesses with UK GDPR, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for RetailTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "UK Retail Legacy Platform Landscape",
-            "text": "UK retail legacy platforms: Magento 1 (end-of-life January 2020 — no security patches for 5+ years, PCI-DSS non-compliant), Magento 2 (supported but increasingly dated for headless-first commerce), Salesforce Commerce Cloud (high licence cost — many UK mid-market retailers migrating out), Hybris SAP Commerce (enterprise, complex, expensive), and bespoke LAMP stack (PHP 5/7, jQuery — common in UK regional retailers built 2008–2015). ClickMasters has migrated all these to modern React/Next.js stacks."
+            "text": "UK retail legacy platforms: Magento 1 (end-of-life January 2020 — no security patches for 5+ years, PCI-DSS non-compliant), Magento 2 (supported but increasingly dated for headless-first commerce), Salesforce Commerce Cloud (high licence cost — many UK mid-market retailers migrating out), Hybris SAP Commerce (enterprise, complex, expensive), and bespoke LAMP stack (PHP 5/7, jQuery — common in UK regional retailers built 2008–2015). Clickmasters has migrated all these to modern React/Next.js stacks."
           },
           {
             "bold": "PCI-DSS Compliance in Retail Legacy Migration",
@@ -7639,11 +7639,11 @@ const industries = [
     "faqs": [
       {
         "question": "How long does a UK retail replatforming project take?",
-        "answer": "UK retail replatforming timeline: Technical Discovery (2–3 weeks), platform build (12–20 weeks), data migration (2–4 weeks), UAT and performance testing (2–3 weeks), go-live preparation (1 week). Total: 18–28 weeks for a mid-size UK retailer. SEO migration critical path: URL structure, canonical tags, XML sitemap — redirect mapping must be complete before go-live. ClickMasters has zero-downtime retail replatformings with immediate organic search ranking preservation."
+        "answer": "UK retail replatforming timeline: Technical Discovery (2–3 weeks), platform build (12–20 weeks), data migration (2–4 weeks), UAT and performance testing (2–3 weeks), go-live preparation (1 week). Total: 18–28 weeks for a mid-size UK retailer. SEO migration critical path: URL structure, canonical tags, XML sitemap — redirect mapping must be complete before go-live. Clickmasters has zero-downtime retail replatformings with immediate organic search ranking preservation."
       },
       {
         "question": "What is the SEO risk of UK retail replatforming?",
-        "answer": "Retail replatforming is high SEO risk — botched migrations can destroy years of organic search equity. Key risks: broken redirects (Google loses link equity), URL structure changes without 301 redirects, XML sitemap not updated, canonical tag errors, and Core Web Vitals regression (new platform slower than old). ClickMasters mitigation: pre-migration URL audit (every indexed URL mapped to redirect), SEO technical checklist (schema markup, canonical, hreflang), and post-migration monitoring (Search Console errors checked daily for 30 days)."
+        "answer": "Retail replatforming is high SEO risk — botched migrations can destroy years of organic search equity. Key risks: broken redirects (Google loses link equity), URL structure changes without 301 redirects, XML sitemap not updated, canonical tag errors, and Core Web Vitals regression (new platform slower than old). Clickmasters mitigation: pre-migration URL audit (every indexed URL mapped to redirect), SEO technical checklist (schema markup, canonical, hreflang), and post-migration monitoring (Search Console errors checked daily for 30 days)."
       }
     ]
   },
@@ -7653,11 +7653,11 @@ const industries = [
     "industry": "insurtech",
     "service": "microservices-architecture",
     "title": "Microservices Architecture for UK InsurTech — FCA ICOBS Built In",
-    "metaTitle": "Microservices Architecture for InsurTech UK | ClickMasters",
+    "metaTitle": "Microservices Architecture for InsurTech UK | Clickmasters",
     "metaDesc": "Microservices Architecture for UK InsurTech. FCA ICOBS. £40,000–£200,000.",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters InsurTech Team",
+    "writtenBy": "Clickmasters InsurTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "InsurTech",
@@ -7667,7 +7667,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices Architecture for UK InsurTech businesses with FCA ICOBS, FCA PS21/3 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices Architecture for UK InsurTech businesses with FCA ICOBS, FCA PS21/3 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices Architecture for InsurTech — UK Specifics",
@@ -7682,7 +7682,7 @@ const industries = [
           },
           {
             "bold": "Solvency II UK Reporting from Microservices",
-            "text": "Solvency II UK (retained post-Brexit): quarterly Quantitative Reporting Templates (QRTs) to PRA. InsurTech microservices data for Solvency II: premium data from Policy Administration Service, claims data from Claims Service, investment data from Finance Service. Solvency II reporting pipeline: event-driven data collection (services publish premium/claims events) → Solvency II reporting database (aggregated from events) → QRT generation (automated from reporting DB). PRA reporting API: ClickMasters integrates with PRA Gabriel for automated QRT submission."
+            "text": "Solvency II UK (retained post-Brexit): quarterly Quantitative Reporting Templates (QRTs) to PRA. InsurTech microservices data for Solvency II: premium data from Policy Administration Service, claims data from Claims Service, investment data from Finance Service. Solvency II reporting pipeline: event-driven data collection (services publish premium/claims events) → Solvency II reporting database (aggregated from events) → QRT generation (automated from reporting DB). PRA reporting API: Clickmasters integrates with PRA Gabriel for automated QRT submission."
           },
           {
             "bold": "Lloyd's Blueprint CDR in Microservices Architecture",
@@ -7748,11 +7748,11 @@ const industries = [
     "faqs": [
       {
         "question": "How does FCA PS21/3 affect InsurTech microservices design?",
-        "answer": "FCA PS21/3 directly influences InsurTech microservices design: (1) IBS boundaries map to service boundaries — Policy Administration, Claims, and Payment are natural microservices because they correspond to FCA-defined business services. (2) Each IBS must have its own resilience — independent deployment, independent database, independent monitoring. (3) Impact Tolerance testing must be automated — ClickMasters builds quarterly DR tests as automated scripts. (4) Service catalogue: every service has a runbook, SLA, and named service owner for FCA PS21/3 documentation."
+        "answer": "FCA PS21/3 directly influences InsurTech microservices design: (1) IBS boundaries map to service boundaries — Policy Administration, Claims, and Payment are natural microservices because they correspond to FCA-defined business services. (2) Each IBS must have its own resilience — independent deployment, independent database, independent monitoring. (3) Impact Tolerance testing must be automated — Clickmasters builds quarterly DR tests as automated scripts. (4) Service catalogue: every service has a runbook, SLA, and named service owner for FCA PS21/3 documentation."
       },
       {
         "question": "What is the right number of microservices for a UK InsurTech?",
-        "answer": "ClickMasters guideline for UK InsurTech: 7–10 services for a full insurance platform (Policy Administration, Claims, Pricing, Document, Payment, Distribution, Lloyd's Integration, Notification, Reporting). Each service should be independently deployable by a 2–3 person team. Anti-pattern: 30+ services for an InsurTech with 15 engineers — the operational overhead dominates delivery time. Start with 7–10, extract additional services only when a genuine independent deployment or scaling need arises."
+        "answer": "Clickmasters guideline for UK InsurTech: 7–10 services for a full insurance platform (Policy Administration, Claims, Pricing, Document, Payment, Distribution, Lloyd's Integration, Notification, Reporting). Each service should be independently deployable by a 2–3 person team. Anti-pattern: 30+ services for an InsurTech with 15 engineers — the operational overhead dominates delivery time. Start with 7–10, extract additional services only when a genuine independent deployment or scaling need arises."
       }
     ]
   },
@@ -7762,11 +7762,11 @@ const industries = [
     "industry": "logtech",
     "service": "qa-testing",
     "title": "QA & Testing for UK LogTech — UK GDPR Built In",
-    "metaTitle": "QA & Testing for LogTech UK | ClickMasters",
+    "metaTitle": "QA & Testing for LogTech UK | Clickmasters",
     "metaDesc": "QA & Testing for UK LogTech. UK GDPR. £8,000–£55,000.",
     "lastUpdated": "September 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LogTech Team",
+    "writtenBy": "Clickmasters LogTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LogTech",
@@ -7776,22 +7776,22 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides QA & Testing for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides QA & Testing for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
     "sections": [
       {
         "heading": "QA & Testing for LogTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "Carrier Integration Testing for Logistics Platforms",
-            "text": "UK logistics platforms integrate with 10–30 carriers (Royal Mail, DPD, DHL, FedEx, UPS, Evri, Yodel). Each carrier API has unique quirks: Royal Mail API (OAuth 2.0, specific manifest format), DPD API (SOAP XML — legacy format), DHL API (REST + JSON), FedEx API (REST, test environment available). ClickMasters maintains VCR-recorded carrier API responses for all 30 major UK carriers — integration tests run against recorded responses (fast, deterministic) rather than live carrier sandboxes (slow, unreliable)."
+            "text": "UK logistics platforms integrate with 10–30 carriers (Royal Mail, DPD, DHL, FedEx, UPS, Evri, Yodel). Each carrier API has unique quirks: Royal Mail API (OAuth 2.0, specific manifest format), DPD API (SOAP XML — legacy format), DHL API (REST + JSON), FedEx API (REST, test environment available). Clickmasters maintains VCR-recorded carrier API responses for all 30 major UK carriers — integration tests run against recorded responses (fast, deterministic) rather than live carrier sandboxes (slow, unreliable)."
           },
           {
             "bold": "HMRC CDS Post-Brexit Customs Testing",
-            "text": "HMRC CDS (Customs Declaration Service) sandbox testing: HMRC provides a test environment with test commodity codes, test EORI numbers, and test responses. CDS test scenarios: successful import declaration, declaration with valuation error, rejected declaration (incorrect commodity code), transit declaration. ClickMasters runs CDS sandbox regression tests on every release — 28 test scenarios covering all declaration types and error conditions."
+            "text": "HMRC CDS (Customs Declaration Service) sandbox testing: HMRC provides a test environment with test commodity codes, test EORI numbers, and test responses. CDS test scenarios: successful import declaration, declaration with valuation error, rejected declaration (incorrect commodity code), transit declaration. Clickmasters runs CDS sandbox regression tests on every release — 28 test scenarios covering all declaration types and error conditions."
           },
           {
             "bold": "Route Optimisation Algorithm Testing",
-            "text": "Logistics route optimisation: test coverage for VRP (Vehicle Routing Problem) solver is challenging — no single \"correct\" answer. ClickMasters approach: property-based testing (generate random delivery scenarios → verify algorithm constraints satisfied: all deliveries completed, time window constraints met, vehicle capacity not exceeded), performance testing (100-stop route solved within 5 seconds), and regression testing (known routes not degraded by algorithm changes)."
+            "text": "Logistics route optimisation: test coverage for VRP (Vehicle Routing Problem) solver is challenging — no single \"correct\" answer. Clickmasters approach: property-based testing (generate random delivery scenarios → verify algorithm constraints satisfied: all deliveries completed, time window constraints met, vehicle capacity not exceeded), performance testing (100-stop route solved within 5 seconds), and regression testing (known routes not degraded by algorithm changes)."
           },
           {
             "bold": "GPS Tracking and Geofence Testing",
@@ -7857,11 +7857,11 @@ const industries = [
     "faqs": [
       {
         "question": "What QA approach should UK logistics platforms use for carrier integrations?",
-        "answer": "ClickMasters LogTech QA stack: VCR-recorded carrier API responses (mock all carrier APIs in test), contract tests (Pact — verify platform sends correctly-formatted requests to each carrier), mutation testing (PiTest for Java, Stryker for JavaScript — verify tests catch logic errors), and HMRC CDS sandbox regression suite (28 scenarios). Integration tests against live carrier sandboxes: only in staging environment (not CI — too slow and unreliable). Monthly live carrier API compatibility check against production carrier API."
+        "answer": "Clickmasters LogTech QA stack: VCR-recorded carrier API responses (mock all carrier APIs in test), contract tests (Pact — verify platform sends correctly-formatted requests to each carrier), mutation testing (PiTest for Java, Stryker for JavaScript — verify tests catch logic errors), and HMRC CDS sandbox regression suite (28 scenarios). Integration tests against live carrier sandboxes: only in staging environment (not CI — too slow and unreliable). Monthly live carrier API compatibility check against production carrier API."
       },
       {
         "question": "How do we test logistics software for HMRC CDS compliance post-Brexit?",
-        "answer": "HMRC CDS testing: HMRC Developer Hub sandbox provides test EORI numbers, test commodity codes (use UK Global Tariff), and mock responses. Required test scenarios: standard import declaration (all mandatory fields), reduced dataset declaration (Entry in Declarant's Records — EIDR), declaration with customs warehouse (Customs Procedure Code), and arrivals notification. ClickMasters runs automated CDS regression suite on every release — any change to declaration generation is immediately tested against all 28 HMRC CDS scenarios."
+        "answer": "HMRC CDS testing: HMRC Developer Hub sandbox provides test EORI numbers, test commodity codes (use UK Global Tariff), and mock responses. Required test scenarios: standard import declaration (all mandatory fields), reduced dataset declaration (Entry in Declarant's Records — EIDR), declaration with customs warehouse (Customs Procedure Code), and arrivals notification. Clickmasters runs automated CDS regression suite on every release — any change to declaration generation is immediately tested against all 28 HMRC CDS scenarios."
       }
     ]
   },
@@ -7871,11 +7871,11 @@ const industries = [
     "industry": "medtech",
     "service": "saas-development",
     "title": "SaaS Development for UK MedTech — MHRA Built In",
-    "metaTitle": "SaaS Development for MedTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for MedTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK MedTech. MHRA. £40,000–£200,000.",
     "lastUpdated": "September 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters MedTech Team",
+    "writtenBy": "Clickmasters MedTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "MedTech",
@@ -7885,7 +7885,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for MedTech — UK Specifics",
@@ -7900,11 +7900,11 @@ const industries = [
           },
           {
             "bold": "IEC 62304 Software Lifecycle for SaaS",
-            "text": "IEC 62304 for SaaS: continuous delivery creates a challenge for traditional waterfall-style medical device software lifecycle. ClickMasters IEC 62304-compliant agile: sprint as a software item release cycle, sprint planning = requirements for next software item version, sprint review = software item verification, and sprint retrospective = problem resolution. Design History File: maintained as a living document — each sprint adds artefacts (requirements, architecture, test reports) to the DHF. Immutable sprint artefacts: GitHub commit hashes reference specific DHF artefacts."
+            "text": "IEC 62304 for SaaS: continuous delivery creates a challenge for traditional waterfall-style medical device software lifecycle. Clickmasters IEC 62304-compliant agile: sprint as a software item release cycle, sprint planning = requirements for next software item version, sprint review = software item verification, and sprint retrospective = problem resolution. Design History File: maintained as a living document — each sprint adds artefacts (requirements, architecture, test reports) to the DHF. Immutable sprint artefacts: GitHub commit hashes reference specific DHF artefacts."
           },
           {
             "bold": "CQC Registration for MedTech SaaS Providers",
-            "text": "Care Quality Commission (CQC): software-as-a-service providing regulated health services (not just providing software tools to health services) may require CQC registration. CQC regulated activities: diagnostic and screening procedures, treatment of disease, disorder or injury. SaaS providing patient-facing diagnostic output (e.g., AI symptom checker providing triage output directly to patients) may be a CQC regulated activity. ClickMasters advises on CQC scope as part of MedTech SaaS Technical Discovery — many clients are unaware of the CQC registration requirement."
+            "text": "Care Quality Commission (CQC): software-as-a-service providing regulated health services (not just providing software tools to health services) may require CQC registration. CQC regulated activities: diagnostic and screening procedures, treatment of disease, disorder or injury. SaaS providing patient-facing diagnostic output (e.g., AI symptom checker providing triage output directly to patients) may be a CQC regulated activity. Clickmasters advises on CQC scope as part of MedTech SaaS Technical Discovery — many clients are unaware of the CQC registration requirement."
           }
         ]
       },
@@ -7971,11 +7971,11 @@ const industries = [
     "faqs": [
       {
         "question": "Does NHS multi-tenant SaaS need separate DTAC per NHS Trust?",
-        "answer": "DTAC assessment can cover a platform (the SaaS product) or a deployment (a specific NHS Trust's use of the SaaS). Platform-level DTAC: the SaaS vendor obtains DTAC for the platform — applies to all NHS Trusts using the platform without re-assessment. Trust-level DTAC: each Trust assesses independently (common for bespoke or highly customised deployments). ClickMasters recommends platform-level DTAC for NHS SaaS — one assessment covers all NHS customers, reducing sales friction significantly."
+        "answer": "DTAC assessment can cover a platform (the SaaS product) or a deployment (a specific NHS Trust's use of the SaaS). Platform-level DTAC: the SaaS vendor obtains DTAC for the platform — applies to all NHS Trusts using the platform without re-assessment. Trust-level DTAC: each Trust assesses independently (common for bespoke or highly customised deployments). Clickmasters recommends platform-level DTAC for NHS SaaS — one assessment covers all NHS customers, reducing sales friction significantly."
       },
       {
         "question": "What MHRA registration does NHS SaaS require?",
-        "answer": "MHRA SaMD registration requirements for NHS SaaS: (1) Is the software a Medical Device? (meets IVD, SaMD, or general medical device definition) — many NHS productivity tools are NOT medical devices. (2) If SaMD: what class? (Class I → MHRA registration + basic technical documentation; Class IIa+ → full conformity assessment). (3) UK market: UKCA marking required. ClickMasters produces a MHRA classification justification document as part of all NHS SaaS Technical Discovery — clarifying whether MHRA registration is required before any build commitment."
+        "answer": "MHRA SaMD registration requirements for NHS SaaS: (1) Is the software a Medical Device? (meets IVD, SaMD, or general medical device definition) — many NHS productivity tools are NOT medical devices. (2) If SaMD: what class? (Class I → MHRA registration + basic technical documentation; Class IIa+ → full conformity assessment). (3) UK market: UKCA marking required. Clickmasters produces a MHRA classification justification document as part of all NHS SaaS Technical Discovery — clarifying whether MHRA registration is required before any build commitment."
       }
     ]
   },
@@ -7985,11 +7985,11 @@ const industries = [
     "industry": "healthtech",
     "service": "staff-augmentation",
     "title": "Staff Augmentation for UK HealthTech — MHRA Built In",
-    "metaTitle": "Staff Augmentation for HealthTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for HealthTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK HealthTech. MHRA. from £5,000/month.",
     "lastUpdated": "September 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters HealthTech Team",
+    "writtenBy": "Clickmasters HealthTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "HealthTech",
@@ -7999,7 +7999,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK HealthTech businesses with MHRA, NHS DTAC compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK HealthTech businesses with MHRA, NHS DTAC compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for HealthTech — UK Specifics",
@@ -8010,15 +8010,15 @@ const industries = [
           },
           {
             "bold": "Scaling HealthTech Teams for DTAC Assessment Deadlines",
-            "text": "DTAC assessment deadlines are fixed by NHS procurement schedules — NHS procurement is inflexible about timelines. ClickMasters HealthTech staff augmentation process for DTAC deadlines: (1) 12+ weeks before assessment: start engineer onboarding (HealthTech compliance ramp-up is 3–4 weeks for engineers new to NHS context). (2) 8 weeks before: all five DTAC domain gaps identified and remediation assigned. (3) 4 weeks before: evidence pack drafted (Domain 1: data protection, Domain 2: technical security, Domain 3: interoperability, Domain 4: clinical safety, Domain 5: usability). (4) 2 weeks before: internal mock assessment. Zero exceptions."
+            "text": "DTAC assessment deadlines are fixed by NHS procurement schedules — NHS procurement is inflexible about timelines. Clickmasters HealthTech staff augmentation process for DTAC deadlines: (1) 12+ weeks before assessment: start engineer onboarding (HealthTech compliance ramp-up is 3–4 weeks for engineers new to NHS context). (2) 8 weeks before: all five DTAC domain gaps identified and remediation assigned. (3) 4 weeks before: evidence pack drafted (Domain 1: data protection, Domain 2: technical security, Domain 3: interoperability, Domain 4: clinical safety, Domain 5: usability). (4) 2 weeks before: internal mock assessment. Zero exceptions."
           },
           {
             "bold": "NHS SDS Authentication Staff Augmentation",
-            "text": "NHS Login (OIDC) and NHS Care Identity Service (NHS SDS / Smartcard authentication): engineers integrating NHS authentication need experience with both NHS Login (patient-facing, OIDC) and NHS CIS (clinical staff smartcard, RBAC). NHS Login experience is increasingly common; NHS CIS integration is rare and commands significant premium. ClickMasters maintains a pool of engineers with NHS CIS smartcard integration experience — always in demand for clinical system staff augmentation."
+            "text": "NHS Login (OIDC) and NHS Care Identity Service (NHS SDS / Smartcard authentication): engineers integrating NHS authentication need experience with both NHS Login (patient-facing, OIDC) and NHS CIS (clinical staff smartcard, RBAC). NHS Login experience is increasingly common; NHS CIS integration is rare and commands significant premium. Clickmasters maintains a pool of engineers with NHS CIS smartcard integration experience — always in demand for clinical system staff augmentation."
           },
           {
             "bold": "HealthTech AI Staff Augmentation — Regulated Sector Profile",
-            "text": "NHS AI staff augmentation: engineers must understand MHRA SaMD classification (is the AI a medical device?), NHS DSPT Standard 4 (AI governance), ICO AI guidance (Article 22 automated decisions), and bias testing (demographic parity required). ClickMasters AI engineers for NHS HealthTech must have: Python/FastAPI ML model deployment experience, UK GDPR Article 9 processing legal bases, and NHS DSP Toolkit Standard 4 assessment experience. Generic LLM/ML experience is not sufficient for NHS regulated AI staff augmentation."
+            "text": "NHS AI staff augmentation: engineers must understand MHRA SaMD classification (is the AI a medical device?), NHS DSPT Standard 4 (AI governance), ICO AI guidance (Article 22 automated decisions), and bias testing (demographic parity required). Clickmasters AI engineers for NHS HealthTech must have: Python/FastAPI ML model deployment experience, UK GDPR Article 9 processing legal bases, and NHS DSP Toolkit Standard 4 assessment experience. Generic LLM/ML experience is not sufficient for NHS regulated AI staff augmentation."
           }
         ]
       },
@@ -8085,11 +8085,11 @@ const industries = [
     "faqs": [
       {
         "question": "What HealthTech skills are hardest to find for NHS staff augmentation?",
-        "answer": "The rarest and most valuable skills for NHS HealthTech staff augmentation: (1) NHS CIS Smartcard integration (clinical authentication) — fewer than 50 engineers in the UK have recent production experience. (2) DCB0129 clinical safety software engineering — most engineers have never worked on a clinical safety case. (3) NHS DTAC Domain 5 usability evidence production — combining WCAG audit, screen reader testing, and user research with clinical staff. (4) MHRA SaMD classification expertise for AI/ML features. ClickMasters maintains a pre-vetted pool across all four."
+        "answer": "The rarest and most valuable skills for NHS HealthTech staff augmentation: (1) NHS CIS Smartcard integration (clinical authentication) — fewer than 50 engineers in the UK have recent production experience. (2) DCB0129 clinical safety software engineering — most engineers have never worked on a clinical safety case. (3) NHS DTAC Domain 5 usability evidence production — combining WCAG audit, screen reader testing, and user research with clinical staff. (4) MHRA SaMD classification expertise for AI/ML features. Clickmasters maintains a pre-vetted pool across all four."
       },
       {
         "question": "How do we ramp up a HealthTech staff augmentation team for NHS deployment?",
-        "answer": "NHS HealthTech staff augmentation onboarding: Week 1–2: NHS compliance induction (DTAC overview, DCB0129, UK GDPR Article 9, NHS FHIR R4 primer), codebase onboarding. Week 3–4: first sprint with NHS-specific tasks (FHIR endpoint implementation, DTAC evidence contribution). Week 5–6: independent delivery of NHS-compliant features with clinical safety sign-off. Total ramp-up: 6 weeks for experienced software engineers (3–4 weeks for engineers with prior NHS experience). ClickMasters charges a one-week discovery rate before staff augmentation commences."
+        "answer": "NHS HealthTech staff augmentation onboarding: Week 1–2: NHS compliance induction (DTAC overview, DCB0129, UK GDPR Article 9, NHS FHIR R4 primer), codebase onboarding. Week 3–4: first sprint with NHS-specific tasks (FHIR endpoint implementation, DTAC evidence contribution). Week 5–6: independent delivery of NHS-compliant features with clinical safety sign-off. Total ramp-up: 6 weeks for experienced software engineers (3–4 weeks for engineers with prior NHS experience). Clickmasters charges a one-week discovery rate before staff augmentation commences."
       }
     ]
   },
@@ -8099,11 +8099,11 @@ const industries = [
     "industry": "edtech",
     "service": "qa-testing",
     "title": "QA & Testing for UK EdTech — ICO AADC Built In",
-    "metaTitle": "QA & Testing for EdTech UK | ClickMasters",
+    "metaTitle": "QA & Testing for EdTech UK | Clickmasters",
     "metaDesc": "QA & Testing for UK EdTech. ICO AADC. £8,000–£50,000.",
     "lastUpdated": "September 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "EdTech",
@@ -8113,7 +8113,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides QA & Testing for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides QA & Testing for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "QA & Testing for EdTech — UK Specifics",
@@ -8124,7 +8124,7 @@ const industries = [
           },
           {
             "bold": "School MIS Integration Testing",
-            "text": "UK school MIS systems: Bromcom, Arbor, Sims (legacy, migrating), iSAMS, and SchoolCloud. MIS API testing: student data import (new students, leavers, class changes), attendance data sync (SIMS attendance XML format), and timetable data (lesson schedule for learning platform personalisation). ClickMasters maintains test fixtures for all major UK MIS APIs — integration tests run against recorded MIS responses. Consent testing: parent and pupil consent records sync correctly from MIS to EdTech platform (consent flag accurately reflected in feature availability)."
+            "text": "UK school MIS systems: Bromcom, Arbor, Sims (legacy, migrating), iSAMS, and SchoolCloud. MIS API testing: student data import (new students, leavers, class changes), attendance data sync (SIMS attendance XML format), and timetable data (lesson schedule for learning platform personalisation). Clickmasters maintains test fixtures for all major UK MIS APIs — integration tests run against recorded MIS responses. Consent testing: parent and pupil consent records sync correctly from MIS to EdTech platform (consent flag accurately reflected in feature availability)."
           },
           {
             "bold": "PSBAR Accessibility Testing for EdTech",
@@ -8194,11 +8194,11 @@ const industries = [
     "faqs": [
       {
         "question": "What does EdTech AADC compliance testing involve?",
-        "answer": "AADC compliance testing covers: (1) age estimation accuracy (test with under-age and over-age test accounts), (2) data minimisation — audit all data collection against necessity (ClickMasters produces an AADC data map — each data field justified against AADC standard), (3) profiling off by default (test new account has profiling disabled), (4) nudge techniques absent (QA review for countdown timers, social proof pressure, excessive notifications — all prohibited for likely child users), (5) transparency (privacy notice in age-appropriate language tested with representative young users)."
+        "answer": "AADC compliance testing covers: (1) age estimation accuracy (test with under-age and over-age test accounts), (2) data minimisation — audit all data collection against necessity (Clickmasters produces an AADC data map — each data field justified against AADC standard), (3) profiling off by default (test new account has profiling disabled), (4) nudge techniques absent (QA review for countdown timers, social proof pressure, excessive notifications — all prohibited for likely child users), (5) transparency (privacy notice in age-appropriate language tested with representative young users)."
       },
       {
         "question": "How do we test EdTech school MIS integrations without production data?",
-        "answer": "EdTech MIS integration testing without production pupil data: (1) generate synthetic school data (realistic but fictional school — 1,200 pupils, 80 teachers, 50 classes) using Faker.js or equivalent. (2) VCR-record real MIS API responses from the MIS sandbox environment (Bromcom/Arbor both provide sandboxes) against synthetic data. (3) run integration tests against VCR recordings — fast, deterministic, no real pupil data. (4) UK GDPR: never use production pupil data in test environments — Article 25 data protection by design. ClickMasters maintains VCR fixtures for all major UK school MIS APIs."
+        "answer": "EdTech MIS integration testing without production pupil data: (1) generate synthetic school data (realistic but fictional school — 1,200 pupils, 80 teachers, 50 classes) using Faker.js or equivalent. (2) VCR-record real MIS API responses from the MIS sandbox environment (Bromcom/Arbor both provide sandboxes) against synthetic data. (3) run integration tests against VCR recordings — fast, deterministic, no real pupil data. (4) UK GDPR: never use production pupil data in test environments — Article 25 data protection by design. Clickmasters maintains VCR fixtures for all major UK school MIS APIs."
       }
     ]
   },
@@ -8208,11 +8208,11 @@ const industries = [
     "industry": "govtech",
     "service": "staff-augmentation",
     "title": "Staff Augmentation for UK GovTech — GDS Service Standard Built In",
-    "metaTitle": "Staff Augmentation for GovTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for GovTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK GovTech. GDS Service Standard. from £5,200/month.",
     "lastUpdated": "September 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "GovTech",
@@ -8222,26 +8222,26 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK GovTech businesses with GDS Service Standard, PSBAR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK GovTech businesses with GDS Service Standard, PSBAR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for GovTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "GovTech Security Clearance for Staff Augmentation",
-            "text": "UK government digital services frequently require security-cleared engineers. Baseline Personnel Security Standard (BPSS): minimum for all government contractors — ClickMasters all engineers hold BPSS. Security Check (SC): required for access to SECRET information — ClickMasters maintains a pool of SC-cleared engineers. Developed Vetting (DV): required for TOP SECRET — rare, long process (6–12 months), significant premium. ClickMasters can accelerate SC clearance sponsorship for UK government staff augmentation — most engineers obtain SC in 4–6 weeks with ClickMasters sponsorship."
+            "text": "UK government digital services frequently require security-cleared engineers. Baseline Personnel Security Standard (BPSS): minimum for all government contractors — Clickmasters all engineers hold BPSS. Security Check (SC): required for access to SECRET information — Clickmasters maintains a pool of SC-cleared engineers. Developed Vetting (DV): required for TOP SECRET — rare, long process (6–12 months), significant premium. Clickmasters can accelerate SC clearance sponsorship for UK government staff augmentation — most engineers obtain SC in 4–6 weeks with Clickmasters sponsorship."
           },
           {
             "bold": "GDS Service Standard Delivery Team Profiles",
-            "text": "GDS Service Standard requires specific team roles: Service Designer (maps current and future state user journeys), User Researcher (conducts research with real users — not UX design), Content Designer (GOV.UK plain language), Interaction Designer (GOV.UK Design System implementation), and Delivery Manager (agile delivery, sprint management). ClickMasters maintains pre-vetted GDS-experienced practitioners in all five roles. GDS assessors specifically look for evidence that the team has dedicated User Research and Content Design capability — not just a UX designer doubling up."
+            "text": "GDS Service Standard requires specific team roles: Service Designer (maps current and future state user journeys), User Researcher (conducts research with real users — not UX design), Content Designer (GOV.UK plain language), Interaction Designer (GOV.UK Design System implementation), and Delivery Manager (agile delivery, sprint management). Clickmasters maintains pre-vetted GDS-experienced practitioners in all five roles. GDS assessors specifically look for evidence that the team has dedicated User Research and Content Design capability — not just a UX designer doubling up."
           },
           {
             "bold": "G-Cloud and Crown Commercial Service Framework Compliance",
-            "text": "G-Cloud 14 (Crown Commercial Service): ClickMasters is registered on G-Cloud for Cloud Support services and Cloud Software. G-Cloud registration is required for direct-award contracts up to £616,575 without competitive tendering — significant procurement friction reduction for government clients. CCS Digital Outcomes and Specialists (DOS): ClickMasters is registered on DOS for digital specialists — staff augmentation for government digital projects can be procured directly via DOS."
+            "text": "G-Cloud 14 (Crown Commercial Service): Clickmasters is registered on G-Cloud for Cloud Support services and Cloud Software. G-Cloud registration is required for direct-award contracts up to £616,575 without competitive tendering — significant procurement friction reduction for government clients. CCS Digital Outcomes and Specialists (DOS): Clickmasters is registered on DOS for digital specialists — staff augmentation for government digital projects can be procured directly via DOS."
           },
           {
             "bold": "NCSC Security Design Principles for GovTech Staff Augmentation",
-            "text": "NCSC 10 Security Design Principles: engineers working on government digital services must implement. Key principles: (1) establish the context first (understand the security threats before designing controls), (2) make compromise difficult (authentication, authorisation, least privilege), (3) make disruption difficult (availability, resilience), (4) make compromise detection easier (logging, monitoring, alerting). ClickMasters GovTech engineers are trained on NCSC principles and implement them as standard on all government projects."
+            "text": "NCSC 10 Security Design Principles: engineers working on government digital services must implement. Key principles: (1) establish the context first (understand the security threats before designing controls), (2) make compromise difficult (authentication, authorisation, least privilege), (3) make disruption difficult (availability, resilience), (4) make compromise detection easier (logging, monitoring, alerting). Clickmasters GovTech engineers are trained on NCSC principles and implement them as standard on all government projects."
           }
         ]
       },
@@ -8307,12 +8307,12 @@ const industries = [
     ],
     "faqs": [
       {
-        "question": "Can ClickMasters provide G-Cloud procured staff augmentation for UK government?",
-        "answer": "Yes — ClickMasters is registered on G-Cloud 14 and DOS frameworks. Government clients can procure staff augmentation directly via G-Cloud or DOS without a competitive tender process (up to the framework thresholds). G-Cloud: cloud support services including staff augmentation for cloud-native government digital services. DOS: digital specialists for specific roles (developer, tester, delivery manager, designer, user researcher). ClickMasters G-Cloud and DOS service descriptions and pricing are on the Crown Commercial Service portal."
+        "question": "Can Clickmasters provide G-Cloud procured staff augmentation for UK government?",
+        "answer": "Yes — Clickmasters is registered on G-Cloud 14 and DOS frameworks. Government clients can procure staff augmentation directly via G-Cloud or DOS without a competitive tender process (up to the framework thresholds). G-Cloud: cloud support services including staff augmentation for cloud-native government digital services. DOS: digital specialists for specific roles (developer, tester, delivery manager, designer, user researcher). Clickmasters G-Cloud and DOS service descriptions and pricing are on the Crown Commercial Service portal."
       },
       {
-        "question": "What security clearance do ClickMasters engineers hold?",
-        "answer": "All ClickMasters engineers hold BPSS (Baseline Personnel Security Standard) — the minimum requirement for government contractor work. ClickMasters maintains a pool of 12 SC-cleared engineers available immediately for SECRET-level projects. For DV-cleared work: ClickMasters can sponsor DV clearance applications — typical timeline 6–12 months. SC clearance sponsorship: ClickMasters sponsors new SC applications for government projects — approximately 4–6 weeks for most candidates."
+        "question": "What security clearance do Clickmasters engineers hold?",
+        "answer": "All Clickmasters engineers hold BPSS (Baseline Personnel Security Standard) — the minimum requirement for government contractor work. Clickmasters maintains a pool of 12 SC-cleared engineers available immediately for SECRET-level projects. For DV-cleared work: Clickmasters can sponsor DV clearance applications — typical timeline 6–12 months. SC clearance sponsorship: Clickmasters sponsors new SC applications for government projects — approximately 4–6 weeks for most candidates."
       }
     ]
   },
@@ -8322,11 +8322,11 @@ const industries = [
     "industry": "proptech",
     "service": "saas-development",
     "title": "SaaS Development for UK PropTech — UK GDPR Built In",
-    "metaTitle": "SaaS Development for PropTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for PropTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK PropTech. UK GDPR. £40,000–£180,000.",
     "lastUpdated": "September 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters PropTech Team",
+    "writtenBy": "Clickmasters PropTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "PropTech",
@@ -8336,7 +8336,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK PropTech businesses with UK GDPR, HMLR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK PropTech businesses with UK GDPR, HMLR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for PropTech — UK Specifics",
@@ -8355,7 +8355,7 @@ const industries = [
           },
           {
             "bold": "Rightmove and Zoopla API in PropTech SaaS",
-            "text": "Portal integration is the most important differentiator for UK estate agency PropTech SaaS. Rightmove RTDF (Real Time Data Feed): XML-based listing submission — property details, photos (up to 50 photos), floorplans, EPC certificates. Zoopla Property Feed: similar XML format. ClickMasters integrates both portals as standard in all UK estate agency PropTech SaaS — portal submission within 15 minutes of instruction, automatic price change updates (triggers 'Just Reduced' badge on Rightmove), and portal analytics (Rightmove Analytics API — views, saves, contact rate per listing)."
+            "text": "Portal integration is the most important differentiator for UK estate agency PropTech SaaS. Rightmove RTDF (Real Time Data Feed): XML-based listing submission — property details, photos (up to 50 photos), floorplans, EPC certificates. Zoopla Property Feed: similar XML format. Clickmasters integrates both portals as standard in all UK estate agency PropTech SaaS — portal submission within 15 minutes of instruction, automatic price change updates (triggers 'Just Reduced' badge on Rightmove), and portal analytics (Rightmove Analytics API — views, saves, contact rate per listing)."
           }
         ]
       },
@@ -8422,11 +8422,11 @@ const industries = [
     "faqs": [
       {
         "question": "What PropTech SaaS features are UK estate agents willing to pay for?",
-        "answer": "ClickMasters market experience from 12+ UK estate agency PropTech builds: the three features with the highest willingness to pay: (1) automated portal integration (Rightmove + Zoopla submission in < 15 minutes — saves 2–4 hours per property instruction), (2) digital AML/KYC (automated identity verification replaces manual paper checks — reduces compliance risk and admin time), (3) WhatsApp Business integration (98% open rate vs 22% for email — estate agents who switch to WhatsApp-first communication report significant client engagement improvement). All three are standard in ClickMasters PropTech SaaS builds."
+        "answer": "Clickmasters market experience from 12+ UK estate agency PropTech builds: the three features with the highest willingness to pay: (1) automated portal integration (Rightmove + Zoopla submission in < 15 minutes — saves 2–4 hours per property instruction), (2) digital AML/KYC (automated identity verification replaces manual paper checks — reduces compliance risk and admin time), (3) WhatsApp Business integration (98% open rate vs 22% for email — estate agents who switch to WhatsApp-first communication report significant client engagement improvement). All three are standard in Clickmasters PropTech SaaS builds."
       },
       {
         "question": "How do we price UK PropTech SaaS for estate agencies?",
-        "answer": "UK estate agency SaaS pricing models: (1) per-branch pricing (£50–£200/branch/month for smaller agencies), (2) per-user pricing (£20–£60/negotiator/month), (3) percentage of GMV (for transaction platforms — 0.1–0.3% of transaction value), (4) flat-rate enterprise (£2,000–£10,000/month for large national chains). ClickMasters recommendation: per-branch pricing is most common and easiest to quote. Price anchoring: quote against the cost of a per-branch PropTech platform that charges £150/branch/month — ClickMasters builds at that price point but with better compliance and integration."
+        "answer": "UK estate agency SaaS pricing models: (1) per-branch pricing (£50–£200/branch/month for smaller agencies), (2) per-user pricing (£20–£60/negotiator/month), (3) percentage of GMV (for transaction platforms — 0.1–0.3% of transaction value), (4) flat-rate enterprise (£2,000–£10,000/month for large national chains). Clickmasters recommendation: per-branch pricing is most common and easiest to quote. Price anchoring: quote against the cost of a per-branch PropTech platform that charges £150/branch/month — Clickmasters builds at that price point but with better compliance and integration."
       }
     ]
   },
@@ -8436,11 +8436,11 @@ const industries = [
     "industry": "fintech",
     "service": "cloud-native-development",
     "title": "Cloud-Native Development for UK FinTech — FCA COBS Built In",
-    "metaTitle": "Cloud-Native Development for FinTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for FinTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK FinTech. FCA COBS. £25,000–£150,000.",
     "lastUpdated": "September 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -8450,7 +8450,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK FinTech businesses with FCA COBS, FCA PS21/3 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK FinTech businesses with FCA COBS, FCA PS21/3 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for FinTech — UK Specifics",
@@ -8540,7 +8540,7 @@ const industries = [
       },
       {
         "question": "How do we implement the FCA Consumer Duty technical requirements in cloud-native architecture?",
-        "answer": "FCA Consumer Duty technical architecture: (1) Event sourcing for all customer interactions (every product view, purchase, complaint, cancellation is an immutable event in Kinesis/SQS). (2) S3 data lake: all customer events in S3 — queryable via Athena for Consumer Duty analysis. (3) Outcome monitoring: automated weekly query calculating % of customers achieving product outcome (e.g., % of investors achieving target returns, % of borrowers completing repayment). (4) Consumer Duty Board dashboard: AWS QuickSight (refreshed daily — Board can interrogate Consumer Duty data). ClickMasters implements Consumer Duty technical architecture as standard for all FCA-regulated cloud-native builds."
+        "answer": "FCA Consumer Duty technical architecture: (1) Event sourcing for all customer interactions (every product view, purchase, complaint, cancellation is an immutable event in Kinesis/SQS). (2) S3 data lake: all customer events in S3 — queryable via Athena for Consumer Duty analysis. (3) Outcome monitoring: automated weekly query calculating % of customers achieving product outcome (e.g., % of investors achieving target returns, % of borrowers completing repayment). (4) Consumer Duty Board dashboard: AWS QuickSight (refreshed daily — Board can interrogate Consumer Duty data). Clickmasters implements Consumer Duty technical architecture as standard for all FCA-regulated cloud-native builds."
       }
     ]
   },
@@ -8550,11 +8550,11 @@ const industries = [
     "industry": "logtech",
     "service": "saas-development",
     "title": "SaaS Development for UK LogTech — UK GDPR Built In",
-    "metaTitle": "SaaS Development for LogTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for LogTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK LogTech. UK GDPR. £40,000–£180,000.",
     "lastUpdated": "September 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LogTech Team",
+    "writtenBy": "Clickmasters LogTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LogTech",
@@ -8564,18 +8564,18 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for LogTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "LogTech SaaS Multi-Carrier Architecture",
-            "text": "UK logistics SaaS serving multiple carriers: platform must abstract carrier-specific APIs into a unified interface. Carrier integration patterns: Webhook gateway (receive carrier events — tracking updates, POD, exception alerts), normalisation layer (transform carrier-specific formats into common schema), and retry logic (carrier APIs are unreliable — exponential backoff, dead letter queue for failed events). Royal Mail API, DPD API, DHL Express API, Hermes/Evri API, Yodel API: each has different authentication, event formats, and reliability characteristics. ClickMasters maintains a carrier integration library for all major UK carriers."
+            "text": "UK logistics SaaS serving multiple carriers: platform must abstract carrier-specific APIs into a unified interface. Carrier integration patterns: Webhook gateway (receive carrier events — tracking updates, POD, exception alerts), normalisation layer (transform carrier-specific formats into common schema), and retry logic (carrier APIs are unreliable — exponential backoff, dead letter queue for failed events). Royal Mail API, DPD API, DHL Express API, Hermes/Evri API, Yodel API: each has different authentication, event formats, and reliability characteristics. Clickmasters maintains a carrier integration library for all major UK carriers."
           },
           {
             "bold": "DVSA Vehicle Operator Licensing in LogTech SaaS",
-            "text": "DVSA (Driver and Vehicle Standards Agency): UK logistics operators with more than 3.5 tonnes vehicles require an Operator Licence. LogTech SaaS fleet management: operator licence compliance monitoring (licence expiry alerts, vehicle authorisation checks, driver CPC (Certificate of Professional Competence) expiry tracking). DVSA API: ClickMasters integrates DVSA Vehicle Enquiry Service (VES) API — MOT status, tax status, and SORN status for fleet vehicles. Operator licence compliance: dashboard showing licence capacity (authorised vehicles vs actual fleet size)."
+            "text": "DVSA (Driver and Vehicle Standards Agency): UK logistics operators with more than 3.5 tonnes vehicles require an Operator Licence. LogTech SaaS fleet management: operator licence compliance monitoring (licence expiry alerts, vehicle authorisation checks, driver CPC (Certificate of Professional Competence) expiry tracking). DVSA API: Clickmasters integrates DVSA Vehicle Enquiry Service (VES) API — MOT status, tax status, and SORN status for fleet vehicles. Operator licence compliance: dashboard showing licence capacity (authorised vehicles vs actual fleet size)."
           },
           {
             "bold": "Real-Time Tracking and ETA Prediction in LogTech SaaS",
@@ -8583,7 +8583,7 @@ const industries = [
           },
           {
             "bold": "HMRC CDS Integration for Cross-Border LogTech SaaS",
-            "text": "UK post-Brexit logistics: HMRC Customs Declaration Service (CDS) is mandatory for UK imports and exports. LogTech SaaS for freight forwarding: CDS declaration generation (import declaration IM01, export declaration EX01, transit declaration NCTS), tariff code lookup (UK Global Tariff API — commodity code search), and duty calculation. CDS sandbox: HMRC provides a full sandbox environment for pre-production testing. ClickMasters LogTech SaaS includes CDS integration as standard for any platform serving freight forwarding customers."
+            "text": "UK post-Brexit logistics: HMRC Customs Declaration Service (CDS) is mandatory for UK imports and exports. LogTech SaaS for freight forwarding: CDS declaration generation (import declaration IM01, export declaration EX01, transit declaration NCTS), tariff code lookup (UK Global Tariff API — commodity code search), and duty calculation. CDS sandbox: HMRC provides a full sandbox environment for pre-production testing. Clickmasters LogTech SaaS includes CDS integration as standard for any platform serving freight forwarding customers."
           }
         ]
       },
@@ -8650,11 +8650,11 @@ const industries = [
     "faqs": [
       {
         "question": "What are the key integrations in a UK logistics SaaS platform?",
-        "answer": "Essential UK logistics SaaS integrations: (1) Carrier APIs (Royal Mail, DPD, DHL, Evri — parcel tracking and manifesting), (2) HMRC CDS (customs declarations for cross-border freight), (3) DVSA VES (vehicle compliance — MOT, tax, SORN), (4) Google Maps Platform (routing, ETA, ULEZ zone checking), (5) AWS IoT Core + MQTT (GPS fleet tracking), (6) HERE Maps / TfL (London traffic and ULEZ routing), (7) Stripe (payment for freight costs), (8) GOV.UK Notify (shipment status SMS/email). ClickMasters builds all 8 as standard in UK logistics SaaS — no one-at-a-time API builds."
+        "answer": "Essential UK logistics SaaS integrations: (1) Carrier APIs (Royal Mail, DPD, DHL, Evri — parcel tracking and manifesting), (2) HMRC CDS (customs declarations for cross-border freight), (3) DVSA VES (vehicle compliance — MOT, tax, SORN), (4) Google Maps Platform (routing, ETA, ULEZ zone checking), (5) AWS IoT Core + MQTT (GPS fleet tracking), (6) HERE Maps / TfL (London traffic and ULEZ routing), (7) Stripe (payment for freight costs), (8) GOV.UK Notify (shipment status SMS/email). Clickmasters builds all 8 as standard in UK logistics SaaS — no one-at-a-time API builds."
       },
       {
         "question": "How do we price UK logistics SaaS for freight forwarders?",
-        "answer": "UK logistics SaaS pricing for freight forwarders: (1) per shipment (£0.10–£0.50 per shipment processed — scales with client volume), (2) per user (£30–£80/user/month for operational staff), (3) per vehicle (£15–£40/vehicle/month for fleet management), (4) flat-rate enterprise (£3,000–£15,000/month for large freight forwarding networks). ClickMasters recommendation: per-shipment pricing aligns the platform's revenue with client success — as the client grows, revenue scales automatically. For small freight forwarders (< 500 shipments/month): minimum monthly fee (£200–£500) with per-shipment pricing above threshold."
+        "answer": "UK logistics SaaS pricing for freight forwarders: (1) per shipment (£0.10–£0.50 per shipment processed — scales with client volume), (2) per user (£30–£80/user/month for operational staff), (3) per vehicle (£15–£40/vehicle/month for fleet management), (4) flat-rate enterprise (£3,000–£15,000/month for large freight forwarding networks). Clickmasters recommendation: per-shipment pricing aligns the platform's revenue with client success — as the client grows, revenue scales automatically. For small freight forwarders (< 500 shipments/month): minimum monthly fee (£200–£500) with per-shipment pricing above threshold."
       }
     ]
   },
@@ -8664,11 +8664,11 @@ const industries = [
     "industry": "insurtech",
     "service": "legacy-modernisation",
     "title": "Legacy Modernisation for UK InsurTech — FCA ICOBS Built In",
-    "metaTitle": "Legacy Modernisation for InsurTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for InsurTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK InsurTech. FCA ICOBS. £35,000–£200,000.",
     "lastUpdated": "October 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters InsurTech Team",
+    "writtenBy": "Clickmasters InsurTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "InsurTech",
@@ -8678,7 +8678,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK InsurTech businesses with FCA ICOBS, FCA PS21/3 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK InsurTech businesses with FCA ICOBS, FCA PS21/3 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for InsurTech — UK Specifics",
@@ -8764,7 +8764,7 @@ const industries = [
     "faqs": [
       {
         "question": "How long does InsurTech legacy modernisation take?",
-        "answer": "InsurTech legacy modernisation timeline: Technical Discovery and FCA PS21/3 mapping (4–6 weeks), architecture design (2–4 weeks), phased build — core policy administration module (12–20 weeks), claims module (8–14 weeks), Lloyd's CDR integration (4–8 weeks), Solvency II reporting (4–6 weeks), parallel running and cutover (4–8 weeks). Total: 36–60 weeks for a full InsurTech legacy modernisation. ClickMasters always conducts Technical Discovery (£3,500–£8,000 fixed price) before any commitment to timeline."
+        "answer": "InsurTech legacy modernisation timeline: Technical Discovery and FCA PS21/3 mapping (4–6 weeks), architecture design (2–4 weeks), phased build — core policy administration module (12–20 weeks), claims module (8–14 weeks), Lloyd's CDR integration (4–8 weeks), Solvency II reporting (4–6 weeks), parallel running and cutover (4–8 weeks). Total: 36–60 weeks for a full InsurTech legacy modernisation. Clickmasters always conducts Technical Discovery (£3,500–£8,000 fixed price) before any commitment to timeline."
       },
       {
         "question": "Can we modernise InsurTech systems without business disruption?",
@@ -8778,11 +8778,11 @@ const industries = [
     "industry": "edtech",
     "service": "cloud-native-development",
     "title": "Cloud-Native Development for UK EdTech — ICO AADC Built In",
-    "metaTitle": "Cloud-Native Development for EdTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for EdTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK EdTech. ICO AADC. £25,000–£120,000.",
     "lastUpdated": "October 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "EdTech",
@@ -8792,7 +8792,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for EdTech — UK Specifics",
@@ -8873,7 +8873,7 @@ const industries = [
     "faqs": [
       {
         "question": "Does AADC require EdTech to be fully cloud-hosted in the UK?",
-        "answer": "AADC does not specify data residency — it is a UK GDPR-based standard (UK GDPR requirements apply, including UK data protection standards). UK GDPR: personal data about UK children can be processed in AWS eu-west-2 (London) or AWS eu-west-1 (Ireland — UK adequacy) without additional transfer mechanisms. ClickMasters uses AWS eu-west-2 for all EdTech applications — UK data residency for all child personal data as a stronger compliance position than required."
+        "answer": "AADC does not specify data residency — it is a UK GDPR-based standard (UK GDPR requirements apply, including UK data protection standards). UK GDPR: personal data about UK children can be processed in AWS eu-west-2 (London) or AWS eu-west-1 (Ireland — UK adequacy) without additional transfer mechanisms. Clickmasters uses AWS eu-west-2 for all EdTech applications — UK data residency for all child personal data as a stronger compliance position than required."
       },
       {
         "question": "What EdTech cloud-native architecture achieves AADC Standard 5 (Data Sharing)?",
@@ -8887,11 +8887,11 @@ const industries = [
     "industry": "govtech",
     "service": "cloud-native-development",
     "title": "Cloud-Native Development for UK GovTech — GDS Service Standard Built In",
-    "metaTitle": "Cloud-Native Development for GovTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for GovTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK GovTech. GDS Service Standard. £25,000–£140,000.",
     "lastUpdated": "October 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "GovTech",
@@ -8901,14 +8901,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK GovTech businesses with GDS Service Standard, PSBAR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK GovTech businesses with GDS Service Standard, PSBAR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for GovTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "NCSC Cloud Security Principles for Government",
-            "text": "NCSC 14 Cloud Security Principles: UK government digital services must satisfy these when using public cloud. Key principles for cloud-native GovTech: (1) Data in transit protection (TLS 1.2+ on all communications — AWS ALB enforces), (2) Asset protection (AWS eu-west-2 — NCSC recommended region for UK government data), (3) Identity and authentication (IAM roles, MFA for all government staff), (4) Operational security (CloudTrail audit logs, GuardDuty threat detection), (5) Incident management (runbooks, CloudWatch alarms, PagerDuty integration). ClickMasters produces an NCSC 14 Principles compliance statement for every GovTech cloud-native build."
+            "text": "NCSC 14 Cloud Security Principles: UK government digital services must satisfy these when using public cloud. Key principles for cloud-native GovTech: (1) Data in transit protection (TLS 1.2+ on all communications — AWS ALB enforces), (2) Asset protection (AWS eu-west-2 — NCSC recommended region for UK government data), (3) Identity and authentication (IAM roles, MFA for all government staff), (4) Operational security (CloudTrail audit logs, GuardDuty threat detection), (5) Incident management (runbooks, CloudWatch alarms, PagerDuty integration). Clickmasters produces an NCSC 14 Principles compliance statement for every GovTech cloud-native build."
           },
           {
             "bold": "GOV.UK Pay and GOV.UK Notify Integration Architecture",
@@ -8920,7 +8920,7 @@ const industries = [
           },
           {
             "bold": "Government Data Classification in Cloud Architecture",
-            "text": "UK government data classification: OFFICIAL (most government data), OFFICIAL-SENSITIVE, SECRET, TOP SECRET. OFFICIAL data in public cloud: acceptable — NCSC guidelines permit OFFICIAL data in AWS eu-west-2 with appropriate controls. OFFICIAL-SENSITIVE: additional access controls, restricted sharing, audit logging. SECRET: typically requires private cloud or specific government cloud (PSN). GovTech cloud-native: all ClickMasters government projects default to OFFICIAL-SENSITIVE controls — provides OFFICIAL compliance plus appropriate additional controls for sensitive services."
+            "text": "UK government data classification: OFFICIAL (most government data), OFFICIAL-SENSITIVE, SECRET, TOP SECRET. OFFICIAL data in public cloud: acceptable — NCSC guidelines permit OFFICIAL data in AWS eu-west-2 with appropriate controls. OFFICIAL-SENSITIVE: additional access controls, restricted sharing, audit logging. SECRET: typically requires private cloud or specific government cloud (PSN). GovTech cloud-native: all Clickmasters government projects default to OFFICIAL-SENSITIVE controls — provides OFFICIAL compliance plus appropriate additional controls for sensitive services."
           }
         ]
       },
@@ -8987,11 +8987,11 @@ const industries = [
     "faqs": [
       {
         "question": "Does GDS recommend AWS eu-west-2 for cloud-native government services?",
-        "answer": "NCSC recommends UK-region cloud for government services handling personal data. AWS eu-west-2 (London) is the NCSC-recommended AWS region for UK government data. GDS Service Standard does not mandate a specific cloud provider — but NCSC guidance and PSBAR requirements effectively mean UK data residency (AWS eu-west-2 or Azure UK South) for services handling citizen personal data. ClickMasters uses AWS eu-west-2 as default for all GovTech builds and documents NCSC 14 Principles compliance for each service."
+        "answer": "NCSC recommends UK-region cloud for government services handling personal data. AWS eu-west-2 (London) is the NCSC-recommended AWS region for UK government data. GDS Service Standard does not mandate a specific cloud provider — but NCSC guidance and PSBAR requirements effectively mean UK data residency (AWS eu-west-2 or Azure UK South) for services handling citizen personal data. Clickmasters uses AWS eu-west-2 as default for all GovTech builds and documents NCSC 14 Principles compliance for each service."
       },
       {
         "question": "What is the cost of a GDS-compliant cloud-native government service?",
-        "answer": "ClickMasters GovTech cloud-native infrastructure costs (AWS eu-west-2): ECS Fargate (2 tasks, 3 AZs): £80–£200/month. RDS PostgreSQL Multi-AZ (db.t3.small): £60–£100/month. CloudFront CDN: £5–£30/month. AWS WAF: £15–£30/month. CloudWatch + CloudTrail: £20–£40/month. Total: £180–£400/month for a typical government digital service. For context: a government digital service with 50,000 users/month on GOV.UK costs less per month in cloud infrastructure than a single day of a senior GDS contractor. GovTech cloud costs are rarely the budget constraint — development and procurement are."
+        "answer": "Clickmasters GovTech cloud-native infrastructure costs (AWS eu-west-2): ECS Fargate (2 tasks, 3 AZs): £80–£200/month. RDS PostgreSQL Multi-AZ (db.t3.small): £60–£100/month. CloudFront CDN: £5–£30/month. AWS WAF: £15–£30/month. CloudWatch + CloudTrail: £20–£40/month. Total: £180–£400/month for a typical government digital service. For context: a government digital service with 50,000 users/month on GOV.UK costs less per month in cloud infrastructure than a single day of a senior GDS contractor. GovTech cloud costs are rarely the budget constraint — development and procurement are."
       }
     ]
   },
@@ -9001,11 +9001,11 @@ const industries = [
     "industry": "retailtech",
     "service": "staff-augmentation",
     "title": "Staff Augmentation for UK RetailTech — UK GDPR Built In",
-    "metaTitle": "Staff Augmentation for RetailTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for RetailTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK RetailTech. UK GDPR. from £5,000/month.",
     "lastUpdated": "October 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters RetailTech Team",
+    "writtenBy": "Clickmasters RetailTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "RetailTech",
@@ -9015,7 +9015,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK RetailTech businesses with UK GDPR, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK RetailTech businesses with UK GDPR, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for RetailTech — UK Specifics",
@@ -9026,15 +9026,15 @@ const industries = [
           },
           {
             "bold": "Shopify Plus Partner Staff Augmentation",
-            "text": "Shopify Plus staff augmentation: engineers who have worked with Shopify Partner accounts (Shopify Plus agency model). Key Shopify Plus skills: Storefront API GraphQL (headless commerce — product catalogue, cart, checkout), Shopify Functions (custom discounts, order validation — replacing Shopify Scripts), Checkout Extensions (customisation without Shopify Liquid), Metafields (extended product/customer data), and Admin API (bulk operations, product management). ClickMasters maintains Shopify Plus engineers for headless commerce builds — demand is highest November–February (peak trading season planning and post-peak build cycles)."
+            "text": "Shopify Plus staff augmentation: engineers who have worked with Shopify Partner accounts (Shopify Plus agency model). Key Shopify Plus skills: Storefront API GraphQL (headless commerce — product catalogue, cart, checkout), Shopify Functions (custom discounts, order validation — replacing Shopify Scripts), Checkout Extensions (customisation without Shopify Liquid), Metafields (extended product/customer data), and Admin API (bulk operations, product management). Clickmasters maintains Shopify Plus engineers for headless commerce builds — demand is highest November–February (peak trading season planning and post-peak build cycles)."
           },
           {
             "bold": "Peak Season Staff Augmentation Planning for UK Retail",
-            "text": "UK retail peak seasons: Black Friday/Cyber Monday (late November — 10× normal traffic for 4 days), Christmas (December — 2–3× for 4 weeks), Boxing Day sale (December 26 — 6× for 24 hours), and January sale (4× for 2 weeks). Staff augmentation for peak readiness: start 12–14 weeks before peak (early September for Black Friday). Week 1–4: load testing and performance optimisation. Week 5–8: peak traffic architecture review and scaling plan. Week 9–12: runbook preparation, alert thresholds, and on-call schedule. Week 12+: peak standby (engineers available 8am–midnight during peak trading). ClickMasters charges peak standby at 1.5× standard rate."
+            "text": "UK retail peak seasons: Black Friday/Cyber Monday (late November — 10× normal traffic for 4 days), Christmas (December — 2–3× for 4 weeks), Boxing Day sale (December 26 — 6× for 24 hours), and January sale (4× for 2 weeks). Staff augmentation for peak readiness: start 12–14 weeks before peak (early September for Black Friday). Week 1–4: load testing and performance optimisation. Week 5–8: peak traffic architecture review and scaling plan. Week 9–12: runbook preparation, alert thresholds, and on-call schedule. Week 12+: peak standby (engineers available 8am–midnight during peak trading). Clickmasters charges peak standby at 1.5× standard rate."
           },
           {
             "bold": "PCI-DSS Expertise in RetailTech Staff Augmentation",
-            "text": "PCI-DSS SAQ-A is the standard for UK eCommerce using Stripe Elements or Adyen Drop-In. Staff augmentation: engineers must understand SAQ-A scope (22 requirements — application and infrastructure), Content Security Policy (CSP headers — prevent payment form injection), SRI (Sub-Resource Integrity — prevent third-party script tampering), and quarterly Dependabot/CVE patching (PCI-DSS Requirement 6 — 14-day critical patch window). ClickMasters PCI-SAQ-A checklist — 22 requirements verified on every retail build before go-live."
+            "text": "PCI-DSS SAQ-A is the standard for UK eCommerce using Stripe Elements or Adyen Drop-In. Staff augmentation: engineers must understand SAQ-A scope (22 requirements — application and infrastructure), Content Security Policy (CSP headers — prevent payment form injection), SRI (Sub-Resource Integrity — prevent third-party script tampering), and quarterly Dependabot/CVE patching (PCI-DSS Requirement 6 — 14-day critical patch window). Clickmasters PCI-SAQ-A checklist — 22 requirements verified on every retail build before go-live."
           }
         ]
       },
@@ -9096,11 +9096,11 @@ const industries = [
     "faqs": [
       {
         "question": "What RetailTech skills are hardest to find for UK staff augmentation?",
-        "answer": "The rarest retail staff augmentation skills: (1) Black Friday load testing engineers who have actually stress-tested at scale (not just written k6 scripts — experienced the 10× traffic pattern and tuned auto-scaling). (2) Shopify Plus headless checkout extension engineers (Checkout UI Extensions replace Scripts from 2024 — new API, few UK engineers have production experience). (3) OMS engineers with multi-warehouse inventory management experience (complex allocation logic, BOPIS, last-mile carrier selection). ClickMasters maintains a pool of engineers with real Black Friday experience across major UK retail brands."
+        "answer": "The rarest retail staff augmentation skills: (1) Black Friday load testing engineers who have actually stress-tested at scale (not just written k6 scripts — experienced the 10× traffic pattern and tuned auto-scaling). (2) Shopify Plus headless checkout extension engineers (Checkout UI Extensions replace Scripts from 2024 — new API, few UK engineers have production experience). (3) OMS engineers with multi-warehouse inventory management experience (complex allocation logic, BOPIS, last-mile carrier selection). Clickmasters maintains a pool of engineers with real Black Friday experience across major UK retail brands."
       },
       {
         "question": "How do we scale a RetailTech team for a headless commerce replatform?",
-        "answer": "Headless commerce replatform staff augmentation: Week 1–2: Technical Discovery (current platform audit, integration map, SEO risk assessment). Week 3–4: Team assembly (2–3 React/Next.js engineers, 1 Node.js backend, 1 DevOps). Week 5–16: Core build (product catalogue, checkout, payment, order management). Week 17–20: Migration (data migration, SEO redirect mapping, UAT). Week 21–22: Performance testing (Core Web Vitals, Black Friday simulation). Week 23: Cutover (blue-green, no-downtime). ClickMasters project manages the entire replatform — engineers and PM included in fixed-price quote."
+        "answer": "Headless commerce replatform staff augmentation: Week 1–2: Technical Discovery (current platform audit, integration map, SEO risk assessment). Week 3–4: Team assembly (2–3 React/Next.js engineers, 1 Node.js backend, 1 DevOps). Week 5–16: Core build (product catalogue, checkout, payment, order management). Week 17–20: Migration (data migration, SEO redirect mapping, UAT). Week 21–22: Performance testing (Core Web Vitals, Black Friday simulation). Week 23: Cutover (blue-green, no-downtime). Clickmasters project manages the entire replatform — engineers and PM included in fixed-price quote."
       }
     ]
   },
@@ -9110,11 +9110,11 @@ const industries = [
     "industry": "healthtech",
     "service": "devops-cicd",
     "title": "DevOps & CI/CD for UK HealthTech — MHRA Built In",
-    "metaTitle": "DevOps & CI/CD for HealthTech UK | ClickMasters",
+    "metaTitle": "DevOps & CI/CD for HealthTech UK | Clickmasters",
     "metaDesc": "DevOps & CI/CD for UK HealthTech. MHRA. £8,000–£55,000.",
     "lastUpdated": "October 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters HealthTech Team",
+    "writtenBy": "Clickmasters HealthTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "HealthTech",
@@ -9124,7 +9124,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides DevOps & CI/CD for UK HealthTech businesses with MHRA, NHS DTAC Domain 3 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides DevOps & CI/CD for UK HealthTech businesses with MHRA, NHS DTAC Domain 3 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "DevOps & CI/CD for HealthTech — UK Specifics",
@@ -9135,7 +9135,7 @@ const industries = [
           },
           {
             "bold": "NHS DSP Toolkit Standard 7 — DevOps Logging",
-            "text": "NHS DSP Toolkit Standard 7 (Data Storage and Transmission): all access to patient personal data must be logged and retained for 6 years. DevOps implementation: CloudWatch Logs with 7-year retention configured (slightly above DSPT minimum for all-regulation compliance), CloudTrail for all AWS API activity, application-level audit log (user ID, action, patient record accessed, timestamp), and GuardDuty for anomalous access detection. ClickMasters configures DSPT Standard 7-compliant logging as standard in all NHS DevOps builds."
+            "text": "NHS DSP Toolkit Standard 7 (Data Storage and Transmission): all access to patient personal data must be logged and retained for 6 years. DevOps implementation: CloudWatch Logs with 7-year retention configured (slightly above DSPT minimum for all-regulation compliance), CloudTrail for all AWS API activity, application-level audit log (user ID, action, patient record accessed, timestamp), and GuardDuty for anomalous access detection. Clickmasters configures DSPT Standard 7-compliant logging as standard in all NHS DevOps builds."
           },
           {
             "bold": "DCB0129 Change Management in NHS CI/CD",
@@ -9143,7 +9143,7 @@ const industries = [
           },
           {
             "bold": "IEC 62304 Software Maintenance and CI/CD",
-            "text": "IEC 62304 software maintenance: changes to medical device software must go through the software change control process. CI/CD for IEC 62304: each sprint creates a new software version (IEC 62304 version increment), sprint artefacts (requirements, test reports, architecture updates) stored in Design History File (DHF). GitHub release tags link CI/CD run artefacts to DHF entries. ClickMasters configures IEC 62304-compliant CI/CD for all MHRA SaMD applications — DHF automation reduces documentation overhead by 60%."
+            "text": "IEC 62304 software maintenance: changes to medical device software must go through the software change control process. CI/CD for IEC 62304: each sprint creates a new software version (IEC 62304 version increment), sprint artefacts (requirements, test reports, architecture updates) stored in Design History File (DHF). GitHub release tags link CI/CD run artefacts to DHF entries. Clickmasters configures IEC 62304-compliant CI/CD for all MHRA SaMD applications — DHF automation reduces documentation overhead by 60%."
           }
         ]
       },
@@ -9210,11 +9210,11 @@ const industries = [
     "faqs": [
       {
         "question": "What CI/CD configuration does NHS DTAC Domain 3 require?",
-        "answer": "DTAC Domain 3 CI/CD minimum requirements: automated test suite (run on every PR), security scanning (OWASP ZAP + Dependabot), branch protection (required reviews), deployment audit trail (immutable CI/CD run logs), and rollback procedure (documented and tested quarterly). ClickMasters standard GitHub Actions configuration satisfies all DTAC Domain 3 requirements and produces an evidence pack (test reports, security scan results, deployment logs) as CI/CD artefacts — ready for DTAC assessment."
+        "answer": "DTAC Domain 3 CI/CD minimum requirements: automated test suite (run on every PR), security scanning (OWASP ZAP + Dependabot), branch protection (required reviews), deployment audit trail (immutable CI/CD run logs), and rollback procedure (documented and tested quarterly). Clickmasters standard GitHub Actions configuration satisfies all DTAC Domain 3 requirements and produces an evidence pack (test reports, security scan results, deployment logs) as CI/CD artefacts — ready for DTAC assessment."
       },
       {
         "question": "Does IEC 62304 allow continuous delivery for medical device software?",
-        "answer": "Yes — IEC 62304 is compatible with agile and continuous delivery. The key: each deployment is a new software version with documented change control, clinical safety impact assessment, and test evidence. IEC 62304 does not require sequential waterfall releases — it requires that the software lifecycle process is followed for each change. ClickMasters has achieved DTAC approval and MHRA Class IIa registration for medical device software using two-week sprint cycles with continuous delivery."
+        "answer": "Yes — IEC 62304 is compatible with agile and continuous delivery. The key: each deployment is a new software version with documented change control, clinical safety impact assessment, and test evidence. IEC 62304 does not require sequential waterfall releases — it requires that the software lifecycle process is followed for each change. Clickmasters has achieved DTAC approval and MHRA Class IIa registration for medical device software using two-week sprint cycles with continuous delivery."
       }
     ]
   },
@@ -9224,11 +9224,11 @@ const industries = [
     "industry": "cleantech",
     "service": "saas-development",
     "title": "SaaS Development for UK CleanTech — UK GDPR Built In",
-    "metaTitle": "SaaS Development for CleanTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for CleanTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK CleanTech. UK GDPR. £40,000–£180,000.",
     "lastUpdated": "October 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters CleanTech Team",
+    "writtenBy": "Clickmasters CleanTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "CleanTech",
@@ -9238,7 +9238,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK CleanTech businesses with UK GDPR, Ofgem compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK CleanTech businesses with UK GDPR, Ofgem compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for CleanTech — UK Specifics",
@@ -9249,7 +9249,7 @@ const industries = [
           },
           {
             "bold": "Ofgem Smart Meter Data for CleanTech SaaS",
-            "text": "Ofgem DCC smart meter data integration for CleanTech SaaS: organisation registers as DCC Data User → receives half-hourly electricity consumption for all metered premises → Scope 2 electricity emissions calculated automatically (consumption kWh × DEFRA grid emission factor). Benefit: replaces manual billing-based data entry — 12× more granular data, zero manual entry. DEFRA Grid Carbon Intensity API: real-time UK grid carbon intensity → allocates Scope 2 emissions to actual generation mix (location-based method). ClickMasters integrates DCC smart meter data as standard in UK CleanTech carbon accounting SaaS."
+            "text": "Ofgem DCC smart meter data integration for CleanTech SaaS: organisation registers as DCC Data User → receives half-hourly electricity consumption for all metered premises → Scope 2 electricity emissions calculated automatically (consumption kWh × DEFRA grid emission factor). Benefit: replaces manual billing-based data entry — 12× more granular data, zero manual entry. DEFRA Grid Carbon Intensity API: real-time UK grid carbon intensity → allocates Scope 2 emissions to actual generation mix (location-based method). Clickmasters integrates DCC smart meter data as standard in UK CleanTech carbon accounting SaaS."
           },
           {
             "bold": "TCFD Reporting in CleanTech SaaS",
@@ -9324,11 +9324,11 @@ const industries = [
     "faqs": [
       {
         "question": "What CleanTech SaaS features do UK businesses pay for?",
-        "answer": "ClickMasters experience from UK CleanTech SaaS builds: highest willingness to pay: (1) SECR automated compliance reporting (large UK companies face SECR fines for non-disclosure — value is clear), (2) Scope 3 supply chain emissions data collection (hardest part of carbon accounting — automating supplier questionnaires is a premium feature), (3) TCFD climate scenario analysis (mandatory for premium listed companies — specialist tool), (4) Carbon reduction pathway planning (science-based targets calculation). Basic carbon calculators are commoditised — UK businesses pay for compliance automation and verified reporting."
+        "answer": "Clickmasters experience from UK CleanTech SaaS builds: highest willingness to pay: (1) SECR automated compliance reporting (large UK companies face SECR fines for non-disclosure — value is clear), (2) Scope 3 supply chain emissions data collection (hardest part of carbon accounting — automating supplier questionnaires is a premium feature), (3) TCFD climate scenario analysis (mandatory for premium listed companies — specialist tool), (4) Carbon reduction pathway planning (science-based targets calculation). Basic carbon calculators are commoditised — UK businesses pay for compliance automation and verified reporting."
       },
       {
         "question": "Does UK CleanTech SaaS need DEFRA approval?",
-        "answer": "DEFRA does not approve carbon accounting software. However: (1) emission factors must use DEFRA/BEIS published UK GHG conversion factors (published annually — SaaS must update annually), (2) SECR-compliant reports must follow DEFRA guidance on boundary setting and methodology, (3) for CRC-equivalent schemes: DEFRA or Environment Agency may audit emission calculations. ClickMasters CleanTech SaaS uses current DEFRA/BEIS conversion factors and builds automatic annual update mechanism into all carbon accounting platforms."
+        "answer": "DEFRA does not approve carbon accounting software. However: (1) emission factors must use DEFRA/BEIS published UK GHG conversion factors (published annually — SaaS must update annually), (2) SECR-compliant reports must follow DEFRA guidance on boundary setting and methodology, (3) for CRC-equivalent schemes: DEFRA or Environment Agency may audit emission calculations. Clickmasters CleanTech SaaS uses current DEFRA/BEIS conversion factors and builds automatic annual update mechanism into all carbon accounting platforms."
       }
     ]
   },
@@ -9338,11 +9338,11 @@ const industries = [
     "industry": "insurtech",
     "service": "cloud-native-development",
     "title": "Cloud-Native Development for UK InsurTech — FCA ICOBS Built In",
-    "metaTitle": "Cloud-Native Development for InsurTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for InsurTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK InsurTech. FCA ICOBS. £30,000–£160,000.",
     "lastUpdated": "November 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters InsurTech Team",
+    "writtenBy": "Clickmasters InsurTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "InsurTech",
@@ -9352,7 +9352,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK InsurTech businesses with FCA ICOBS, FCA PS21/3 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK InsurTech businesses with FCA ICOBS, FCA PS21/3 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for InsurTech — UK Specifics",
@@ -9438,7 +9438,7 @@ const industries = [
     "faqs": [
       {
         "question": "Can InsurTech cloud-native architecture satisfy Solvency II UK QRT requirements?",
-        "answer": "Yes — ClickMasters has built Solvency II QRT data pipelines for UK Lloyd's syndicates and general insurers. Cloud-native Solvency II: Kinesis Data Streams captures all premium and claims transactions in real time, S3 data lake stores all transaction history, and Athena executes QRT queries against S3. QRT XML generated automatically from S3 data using Lambda and submitted to FCA Gabriel via API. Benefits: QRT generation from 5 days to 4 hours, data quality automated (reconciliation checks before generation), and full audit trail of all QRT submissions."
+        "answer": "Yes — Clickmasters has built Solvency II QRT data pipelines for UK Lloyd's syndicates and general insurers. Cloud-native Solvency II: Kinesis Data Streams captures all premium and claims transactions in real time, S3 data lake stores all transaction history, and Athena executes QRT queries against S3. QRT XML generated automatically from S3 data using Lambda and submitted to FCA Gabriel via API. Benefits: QRT generation from 5 days to 4 hours, data quality automated (reconciliation checks before generation), and full audit trail of all QRT submissions."
       },
       {
         "question": "How does FCA PS21/3 apply to InsurTech cloud-native architecture?",
@@ -9452,11 +9452,11 @@ const industries = [
     "industry": "retailtech",
     "service": "qa-testing",
     "title": "QA & Testing for UK RetailTech — UK GDPR Built In",
-    "metaTitle": "QA & Testing for RetailTech UK | ClickMasters",
+    "metaTitle": "QA & Testing for RetailTech UK | Clickmasters",
     "metaDesc": "QA & Testing for UK RetailTech. UK GDPR. £8,000–£55,000.",
     "lastUpdated": "November 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters RetailTech Team",
+    "writtenBy": "Clickmasters RetailTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "RetailTech",
@@ -9466,14 +9466,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides QA & Testing for UK RetailTech businesses with UK GDPR, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides QA & Testing for UK RetailTech businesses with UK GDPR, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "QA & Testing for RetailTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "Core Web Vitals Testing for UK eCommerce",
-            "text": "Core Web Vitals directly affect Google Search ranking for UK eCommerce — LCP (Largest Contentful Paint), INP (Interaction to Next Paint), and CLS (Cumulative Layout Shift). QA for Core Web Vitals: (1) Lighthouse CI in GitHub Actions — LCP, INP, CLS measured on every PR against thresholds (LCP < 2.5s, INP < 200ms, CLS < 0.1). (2) WebPageTest from UK location (London Lighthouse agent) — real network conditions. (3) PageSpeed Insights API — mobile and desktop scores. (4) Chrome User Experience Report (CrUX) — real user Core Web Vitals vs UK competitors. ClickMasters configures Lighthouse CI on every retail build — Core Web Vitals regression blocks deployment."
+            "text": "Core Web Vitals directly affect Google Search ranking for UK eCommerce — LCP (Largest Contentful Paint), INP (Interaction to Next Paint), and CLS (Cumulative Layout Shift). QA for Core Web Vitals: (1) Lighthouse CI in GitHub Actions — LCP, INP, CLS measured on every PR against thresholds (LCP < 2.5s, INP < 200ms, CLS < 0.1). (2) WebPageTest from UK location (London Lighthouse agent) — real network conditions. (3) PageSpeed Insights API — mobile and desktop scores. (4) Chrome User Experience Report (CrUX) — real user Core Web Vitals vs UK competitors. Clickmasters configures Lighthouse CI on every retail build — Core Web Vitals regression blocks deployment."
           },
           {
             "bold": "Checkout Journey QA for UK eCommerce",
@@ -9547,7 +9547,7 @@ const industries = [
     "faqs": [
       {
         "question": "What QA tests should UK eCommerce run before Black Friday?",
-        "answer": "ClickMasters Black Friday QA checklist (run 4 weeks before): (1) k6 load test at 10× peak traffic — verify auto-scaling works, p95 response time < 3 seconds. (2) Stripe test checkout at 10× normal transaction rate — verify no rate limiting or webhook delays. (3) Lighthouse CI — verify LCP < 2.5s on all product and category pages. (4) Checkout journey E2E — Playwright tests covering add to cart, checkout, Stripe 3DS2, order confirmation. (5) Google Tag Manager and analytics — verify conversion tracking works correctly. (6) Mobile checkout — physical device testing on iOS Safari (most common UK mobile browser for retail)."
+        "answer": "Clickmasters Black Friday QA checklist (run 4 weeks before): (1) k6 load test at 10× peak traffic — verify auto-scaling works, p95 response time < 3 seconds. (2) Stripe test checkout at 10× normal transaction rate — verify no rate limiting or webhook delays. (3) Lighthouse CI — verify LCP < 2.5s on all product and category pages. (4) Checkout journey E2E — Playwright tests covering add to cart, checkout, Stripe 3DS2, order confirmation. (5) Google Tag Manager and analytics — verify conversion tracking works correctly. (6) Mobile checkout — physical device testing on iOS Safari (most common UK mobile browser for retail)."
       },
       {
         "question": "How do we test UK eCommerce product pages for SEO quality?",
@@ -9561,11 +9561,11 @@ const industries = [
     "industry": "proptech",
     "service": "devops-cicd",
     "title": "DevOps & CI/CD for UK PropTech — UK GDPR Built In",
-    "metaTitle": "DevOps & CI/CD for PropTech UK | ClickMasters",
+    "metaTitle": "DevOps & CI/CD for PropTech UK | Clickmasters",
     "metaDesc": "DevOps & CI/CD for UK PropTech. UK GDPR. £8,000–£50,000.",
     "lastUpdated": "November 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters PropTech Team",
+    "writtenBy": "Clickmasters PropTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "PropTech",
@@ -9575,7 +9575,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides DevOps & CI/CD for UK PropTech businesses with UK GDPR, HMLR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides DevOps & CI/CD for UK PropTech businesses with UK GDPR, HMLR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "DevOps & CI/CD for PropTech — UK Specifics",
@@ -9661,11 +9661,11 @@ const industries = [
     "faqs": [
       {
         "question": "How do we test PropTech portal integrations without disrupting live Rightmove listings?",
-        "answer": "PropTech portal integration testing without live disruption: (1) Rightmove RTDF: use Rightmove's branch ID 999999 (test branch) in development and staging — listings submitted to test branch never appear on rightmove.co.uk. (2) VCR recordings: ClickMasters records all Rightmove RTDF API responses in sandbox mode — CI/CD runs against recordings, never against live Rightmove. (3) Post-deployment smoke test: test property listing submitted to Rightmove sandbox test branch only — confirms integration working without creating real listings. Never submit test data to live Rightmove branch IDs."
+        "answer": "PropTech portal integration testing without live disruption: (1) Rightmove RTDF: use Rightmove's branch ID 999999 (test branch) in development and staging — listings submitted to test branch never appear on rightmove.co.uk. (2) VCR recordings: Clickmasters records all Rightmove RTDF API responses in sandbox mode — CI/CD runs against recordings, never against live Rightmove. (3) Post-deployment smoke test: test property listing submitted to Rightmove sandbox test branch only — confirms integration working without creating real listings. Never submit test data to live Rightmove branch IDs."
       },
       {
         "question": "What DevOps automation should PropTech platforms implement for UK GDPR?",
-        "answer": "PropTech UK GDPR DevOps automation: (1) Data retention Lambda (scheduled weekly — identifies data past retention period and deletes). (2) Anonymisation job (when property transaction completes — anonymise buyer/seller personal details, retain only transaction data). (3) DSAR pipeline (triggered from admin panel — queries all databases and S3 for specified email address, generates ZIP containing all personal data). (4) Breach detection (CloudWatch anomaly detection on personal data access patterns — unusual bulk access triggers SNS alert to DPO). All four implemented as standard in ClickMasters PropTech builds."
+        "answer": "PropTech UK GDPR DevOps automation: (1) Data retention Lambda (scheduled weekly — identifies data past retention period and deletes). (2) Anonymisation job (when property transaction completes — anonymise buyer/seller personal details, retain only transaction data). (3) DSAR pipeline (triggered from admin panel — queries all databases and S3 for specified email address, generates ZIP containing all personal data). (4) Breach detection (CloudWatch anomaly detection on personal data access patterns — unusual bulk access triggers SNS alert to DPO). All four implemented as standard in Clickmasters PropTech builds."
       }
     ]
   },
@@ -9675,11 +9675,11 @@ const industries = [
     "industry": "medtech",
     "service": "legacy-modernisation",
     "title": "Legacy Modernisation for UK MedTech — MHRA Built In",
-    "metaTitle": "Legacy Modernisation for MedTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for MedTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK MedTech. MHRA. £35,000–£200,000.",
     "lastUpdated": "November 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters MedTech Team",
+    "writtenBy": "Clickmasters MedTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "MedTech",
@@ -9689,7 +9689,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for MedTech — UK Specifics",
@@ -9700,7 +9700,7 @@ const industries = [
           },
           {
             "bold": "IEC 62304 Software Modification for Legacy MedTech",
-            "text": "IEC 62304 software modifications: every change to a medical device software system must be assessed for clinical safety impact and managed through the software change control process. Legacy modernisation challenge: legacy code often lacks IEC 62304 artefacts (no hazard log, no design specification, no test coverage). Modernisation approach: (1) retrospective IEC 62304 documentation (create hazard log from clinical risk review of legacy system), (2) test coverage establishment (write unit and integration tests for existing functionality before any modification), (3) software item identification (decompose legacy system into software items per IEC 62304 hierarchy). ClickMasters produces a Legacy Software Safety Assessment as part of all MedTech legacy modernisation Technical Discovery."
+            "text": "IEC 62304 software modifications: every change to a medical device software system must be assessed for clinical safety impact and managed through the software change control process. Legacy modernisation challenge: legacy code often lacks IEC 62304 artefacts (no hazard log, no design specification, no test coverage). Modernisation approach: (1) retrospective IEC 62304 documentation (create hazard log from clinical risk review of legacy system), (2) test coverage establishment (write unit and integration tests for existing functionality before any modification), (3) software item identification (decompose legacy system into software items per IEC 62304 hierarchy). Clickmasters produces a Legacy Software Safety Assessment as part of all MedTech legacy modernisation Technical Discovery."
           },
           {
             "bold": "FHIR R4 Migration from HL7 v2 Legacy",
@@ -9780,11 +9780,11 @@ const industries = [
     "faqs": [
       {
         "question": "How long does NHS legacy system modernisation take?",
-        "answer": "NHS legacy modernisation timeline: Technical Discovery and IEC 62304 retrospective documentation (6–8 weeks), FHIR R4 Facade implementation (12–18 weeks), DTAC assessment preparation and submission (4–8 weeks), clinical data migration and validation (8–12 weeks), parallel running and cutover (4–8 weeks). Total: 36–56 weeks for a full NHS clinical system modernisation. ClickMasters always conducts Technical Discovery (£3,500–£8,000) before any commitment to legacy modernisation timeline — legacy systems always contain surprises. Discovery uncovers surprises before budget is committed."
+        "answer": "NHS legacy modernisation timeline: Technical Discovery and IEC 62304 retrospective documentation (6–8 weeks), FHIR R4 Facade implementation (12–18 weeks), DTAC assessment preparation and submission (4–8 weeks), clinical data migration and validation (8–12 weeks), parallel running and cutover (4–8 weeks). Total: 36–56 weeks for a full NHS clinical system modernisation. Clickmasters always conducts Technical Discovery (£3,500–£8,000) before any commitment to legacy modernisation timeline — legacy systems always contain surprises. Discovery uncovers surprises before budget is committed."
       },
       {
         "question": "What is the cheapest approach to NHS legacy system FHIR R4 compliance?",
-        "answer": "The cheapest path to NHS FHIR R4 compliance for a legacy system: FHIR R4 Facade (not full replacement). Cost: £18,000–£40,000 for a FHIR R4 Facade over an existing legacy system. This allows the legacy system to receive and respond to FHIR R4 requests without replacing the underlying system. Full legacy replacement: £80,000–£200,000. ClickMasters recommendation: start with FHIR Facade (achieves NHS interoperability mandate compliance), plan full replacement as a separate project when budget allows. The Facade buys time without the operational risk of immediate full replacement."
+        "answer": "The cheapest path to NHS FHIR R4 compliance for a legacy system: FHIR R4 Facade (not full replacement). Cost: £18,000–£40,000 for a FHIR R4 Facade over an existing legacy system. This allows the legacy system to receive and respond to FHIR R4 requests without replacing the underlying system. Full legacy replacement: £80,000–£200,000. Clickmasters recommendation: start with FHIR Facade (achieves NHS interoperability mandate compliance), plan full replacement as a separate project when budget allows. The Facade buys time without the operational risk of immediate full replacement."
       }
     ]
   },
@@ -9794,11 +9794,11 @@ const industries = [
     "industry": "edtech",
     "service": "staff-augmentation",
     "title": "Staff Augmentation for UK EdTech — ICO AADC Built In",
-    "metaTitle": "Staff Augmentation for EdTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for EdTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK EdTech. ICO AADC. from £5,000/month.",
     "lastUpdated": "November 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "EdTech",
@@ -9808,7 +9808,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for EdTech — UK Specifics",
@@ -9819,15 +9819,15 @@ const industries = [
           },
           {
             "bold": "UK Exam Board and Awarding Organisation Integrations",
-            "text": "UK awarding organisations: AQA, OCR, Pearson Edexcel, WJEC, SQA (Scotland), CCEA (Northern Ireland). EdTech platforms integrating with awarding organisations: (1) candidate registration (submitting candidate entries for examinations — AQA EDI format), (2) results ingestion (receiving examination results in A2C format — A-levels, GCSEs), (3) certificate verification (Ofqual register lookup). ClickMasters staff augmentation: engineers with AQA/OCR EDI and A2C format experience are very rare — most EdTech engineers have never worked with UK exam board data feeds. ClickMasters maintains a pool of engineers with A2C and EDI experience for EdTech staff augmentation."
+            "text": "UK awarding organisations: AQA, OCR, Pearson Edexcel, WJEC, SQA (Scotland), CCEA (Northern Ireland). EdTech platforms integrating with awarding organisations: (1) candidate registration (submitting candidate entries for examinations — AQA EDI format), (2) results ingestion (receiving examination results in A2C format — A-levels, GCSEs), (3) certificate verification (Ofqual register lookup). Clickmasters staff augmentation: engineers with AQA/OCR EDI and A2C format experience are very rare — most EdTech engineers have never worked with UK exam board data feeds. Clickmasters maintains a pool of engineers with A2C and EDI experience for EdTech staff augmentation."
           },
           {
             "bold": "DfE Data Standards for EdTech Staff Augmentation",
-            "text": "DfE (Department for Education) data standards affect all UK EdTech: (1) UPN (Unique Pupil Number) — every state school pupil has a UPN, used for data matching across systems. (2) ULN (Unique Learner Number) — post-16 learners, further education. (3) UKPRN (UK Provider Reference Number) — every education provider registered with UKRLP. (4) ILR (Individualised Learner Record) — further education and apprenticeship data return. Engineers without DfE data standards familiarity cannot build EdTech integrations with the education data infrastructure. ClickMasters EdTech engineers are DfE data standards-trained as standard."
+            "text": "DfE (Department for Education) data standards affect all UK EdTech: (1) UPN (Unique Pupil Number) — every state school pupil has a UPN, used for data matching across systems. (2) ULN (Unique Learner Number) — post-16 learners, further education. (3) UKPRN (UK Provider Reference Number) — every education provider registered with UKRLP. (4) ILR (Individualised Learner Record) — further education and apprenticeship data return. Engineers without DfE data standards familiarity cannot build EdTech integrations with the education data infrastructure. Clickmasters EdTech engineers are DfE data standards-trained as standard."
           },
           {
             "bold": "Safeguarding and Prevent in EdTech Staff Augmentation",
-            "text": "UK safeguarding in EdTech: (1) Prevent duty (Counter-Terrorism and Security Act 2015): schools must prevent radicalisation — EdTech platforms accessible in schools must have content filtering and monitoring. (2) UK online safety: KCSIE (Keeping Children Safe in Education) guidance — schools must ensure EdTech suppliers have appropriate safeguarding policies. (3) DBS check: staff augmentation engineers working on EdTech platforms with access to child data may require enhanced DBS (Disclosure and Barring Service) clearance. ClickMasters can arrange DBS clearance for EdTech staff augmentation if required by client."
+            "text": "UK safeguarding in EdTech: (1) Prevent duty (Counter-Terrorism and Security Act 2015): schools must prevent radicalisation — EdTech platforms accessible in schools must have content filtering and monitoring. (2) UK online safety: KCSIE (Keeping Children Safe in Education) guidance — schools must ensure EdTech suppliers have appropriate safeguarding policies. (3) DBS check: staff augmentation engineers working on EdTech platforms with access to child data may require enhanced DBS (Disclosure and Barring Service) clearance. Clickmasters can arrange DBS clearance for EdTech staff augmentation if required by client."
           }
         ]
       },
@@ -9889,11 +9889,11 @@ const industries = [
     "faqs": [
       {
         "question": "What EdTech integrations require specialist UK knowledge?",
-        "answer": "UK-specific EdTech integrations requiring specialist knowledge: (1) School MIS APIs (Bromcom, Arbor, SIMS) — used by 99% of UK state schools, unique to UK, (2) Awarding Organisation data feeds (AQA/OCR A2C, EDI format — UK exam results delivery), (3) DfE data standards (UPN, ULN, UKPRN, ILR) — UK education data infrastructure, (4) GOV.UK Notify for school communications, (5) OFSTED data feeds (school performance data). ClickMasters maintains pre-vetted engineers with all 5 UK-specific EdTech integration skills — very few EdTech engineers in the UK market have experience across all five."
+        "answer": "UK-specific EdTech integrations requiring specialist knowledge: (1) School MIS APIs (Bromcom, Arbor, SIMS) — used by 99% of UK state schools, unique to UK, (2) Awarding Organisation data feeds (AQA/OCR A2C, EDI format — UK exam results delivery), (3) DfE data standards (UPN, ULN, UKPRN, ILR) — UK education data infrastructure, (4) GOV.UK Notify for school communications, (5) OFSTED data feeds (school performance data). Clickmasters maintains pre-vetted engineers with all 5 UK-specific EdTech integration skills — very few EdTech engineers in the UK market have experience across all five."
       },
       {
         "question": "How long does EdTech staff augmentation onboarding take?",
-        "answer": "EdTech staff augmentation onboarding: Week 1: education sector orientation (DfE data standards, AADC, safeguarding), codebase onboarding. Week 2: first sprint with EdTech-specific tasks (MIS integration, SCORM player, accessibility audit). Week 3–4: independent delivery of EdTech features. For engineers with prior EdTech experience: 1–2 week ramp-up. For experienced engineers new to EdTech: 3–4 week ramp-up. ClickMasters EdTech staff augmentation: we prefer engineers with prior EdTech experience for direct engagements, but will onboard experienced engineers for longer-term augmentations."
+        "answer": "EdTech staff augmentation onboarding: Week 1: education sector orientation (DfE data standards, AADC, safeguarding), codebase onboarding. Week 2: first sprint with EdTech-specific tasks (MIS integration, SCORM player, accessibility audit). Week 3–4: independent delivery of EdTech features. For engineers with prior EdTech experience: 1–2 week ramp-up. For experienced engineers new to EdTech: 3–4 week ramp-up. Clickmasters EdTech staff augmentation: we prefer engineers with prior EdTech experience for direct engagements, but will onboard experienced engineers for longer-term augmentations."
       }
     ]
   },
@@ -9903,11 +9903,11 @@ const industries = [
     "industry": "logtech",
     "service": "legacy-modernisation",
     "title": "Legacy Modernisation for UK LogTech — UK GDPR Built In",
-    "metaTitle": "Legacy Modernisation for LogTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for LogTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK LogTech. UK GDPR. £35,000–£160,000.",
     "lastUpdated": "December 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LogTech Team",
+    "writtenBy": "Clickmasters LogTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LogTech",
@@ -9917,7 +9917,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for LogTech — UK Specifics",
@@ -9928,7 +9928,7 @@ const industries = [
           },
           {
             "bold": "HMRC CDS Migration for Legacy Freight Systems",
-            "text": "HMRC Customs Declaration Service migration from legacy: (1) legacy freight system produces manual customs entries (Customs Procedure Code, commodity codes, EORI numbers entered manually) — high error rate, high cost. (2) CDS migration: map legacy freight data to CDS XML schema, build automated CDS submission API, test against HMRC CDS sandbox (28 test scenarios). (3) HMRC CHIEF to CDS transition (CHIEF was decommissioned in 2023 — freight forwarders still on CHIEF-based legacy systems face urgent migration). ClickMasters LogTech legacy modernisation always includes HMRC CDS as a primary migration deliverable."
+            "text": "HMRC Customs Declaration Service migration from legacy: (1) legacy freight system produces manual customs entries (Customs Procedure Code, commodity codes, EORI numbers entered manually) — high error rate, high cost. (2) CDS migration: map legacy freight data to CDS XML schema, build automated CDS submission API, test against HMRC CDS sandbox (28 test scenarios). (3) HMRC CHIEF to CDS transition (CHIEF was decommissioned in 2023 — freight forwarders still on CHIEF-based legacy systems face urgent migration). Clickmasters LogTech legacy modernisation always includes HMRC CDS as a primary migration deliverable."
           },
           {
             "bold": "Strangler Fig for UK Logistics SaaS Transition",
@@ -9998,11 +9998,11 @@ const industries = [
     "faqs": [
       {
         "question": "How long does LogTech TMS legacy modernisation take?",
-        "answer": "LogTech TMS legacy modernisation: Technical Discovery (4–6 weeks — including HMRC CDS gap analysis and DVSA integration review), HMRC CDS migration (8–12 weeks), real-time tracking layer (6–8 weeks), customer portal (8–12 weeks), carrier API integrations (4–8 weeks per carrier), and Strangler Fig migration of existing customers (12–24 weeks depending on customer count). Total: 36–60 weeks for a full LogTech TMS modernisation. ClickMasters recommendation: prioritise HMRC CDS migration (regulatory urgency — CHIEF decommissioned), then tracking (commercial urgency — customer expectation), then full TMS replacement."
+        "answer": "LogTech TMS legacy modernisation: Technical Discovery (4–6 weeks — including HMRC CDS gap analysis and DVSA integration review), HMRC CDS migration (8–12 weeks), real-time tracking layer (6–8 weeks), customer portal (8–12 weeks), carrier API integrations (4–8 weeks per carrier), and Strangler Fig migration of existing customers (12–24 weeks depending on customer count). Total: 36–60 weeks for a full LogTech TMS modernisation. Clickmasters recommendation: prioritise HMRC CDS migration (regulatory urgency — CHIEF decommissioned), then tracking (commercial urgency — customer expectation), then full TMS replacement."
       },
       {
         "question": "Can we replace a LogTech legacy system without disrupting live deliveries?",
-        "answer": "Yes — Strangler Fig pattern. ClickMasters has completed 6 UK logistics TMS modernisations without operational disruption. Key principle: new system runs alongside legacy (not instead of) until every customer and carrier is migrated. Real-time tracking can be added without touching legacy TMS at all. HMRC CDS migration: parallel run (both legacy and new system submit to HMRC CDS for 4 weeks) before legacy CDS submission decommissioned. No single overnight cutover for operational systems — zero risk approach."
+        "answer": "Yes — Strangler Fig pattern. Clickmasters has completed 6 UK logistics TMS modernisations without operational disruption. Key principle: new system runs alongside legacy (not instead of) until every customer and carrier is migrated. Real-time tracking can be added without touching legacy TMS at all. HMRC CDS migration: parallel run (both legacy and new system submit to HMRC CDS for 4 weeks) before legacy CDS submission decommissioned. No single overnight cutover for operational systems — zero risk approach."
       }
     ]
   },
@@ -10012,11 +10012,11 @@ const industries = [
     "industry": "cleantech",
     "service": "legacy-modernisation",
     "title": "Legacy Modernisation for UK CleanTech — Ofgem Built In",
-    "metaTitle": "Legacy Modernisation for CleanTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for CleanTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK CleanTech. Ofgem. £35,000–£180,000.",
     "lastUpdated": "December 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters CleanTech Team",
+    "writtenBy": "Clickmasters CleanTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "CleanTech",
@@ -10026,7 +10026,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK CleanTech businesses with Ofgem, DEFRA compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK CleanTech businesses with Ofgem, DEFRA compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for CleanTech — UK Specifics",
@@ -10041,7 +10041,7 @@ const industries = [
           },
           {
             "bold": "Ofgem DCC Integration for Legacy Energy Systems",
-            "text": "Legacy energy management systems often cannot integrate with Ofgem DCC (Smart Meter Data Communications Company) natively. Modernisation approach: DCC middleware (new API layer) wraps legacy energy system — provides DCC API interface without replacing legacy. DCC Data User registration: 6-week process, ClickMasters manages on behalf of client. Half-hourly smart meter data: automatically populates legacy energy management system via middleware → eliminates manual meter reading. SECR benefit: smart meter data provides accurate Scope 2 energy data for SECR reporting without manual input."
+            "text": "Legacy energy management systems often cannot integrate with Ofgem DCC (Smart Meter Data Communications Company) natively. Modernisation approach: DCC middleware (new API layer) wraps legacy energy system — provides DCC API interface without replacing legacy. DCC Data User registration: 6-week process, Clickmasters manages on behalf of client. Half-hourly smart meter data: automatically populates legacy energy management system via middleware → eliminates manual meter reading. SECR benefit: smart meter data provides accurate Scope 2 energy data for SECR reporting without manual input."
           },
           {
             "bold": "EPC MEES Compliance Platform Migration",
@@ -10117,11 +10117,11 @@ const industries = [
     "faqs": [
       {
         "question": "How do we modernise a legacy building management system to the cloud?",
-        "answer": "ClickMasters CleanTech BMS modernisation: Technical Discovery (4–6 weeks — map existing BMS, identify integration protocols, assess DCC requirements), OPC-UA enablement (2–4 weeks — configure OPC-UA on existing BMS if supported), AWS IoT Greengrass edge deployment (4–6 weeks — edge compute at each building), cloud data pipeline (6–8 weeks — Kinesis, S3, Athena), cloud dashboard (8–12 weeks — React + Recharts + Mapbox for multi-site portfolio view). Total: 24–36 weeks. Legacy BMS control systems remain unchanged — modernisation adds a cloud data layer without touching operational control systems (critical for safety and operational continuity)."
+        "answer": "Clickmasters CleanTech BMS modernisation: Technical Discovery (4–6 weeks — map existing BMS, identify integration protocols, assess DCC requirements), OPC-UA enablement (2–4 weeks — configure OPC-UA on existing BMS if supported), AWS IoT Greengrass edge deployment (4–6 weeks — edge compute at each building), cloud data pipeline (6–8 weeks — Kinesis, S3, Athena), cloud dashboard (8–12 weeks — React + Recharts + Mapbox for multi-site portfolio view). Total: 24–36 weeks. Legacy BMS control systems remain unchanged — modernisation adds a cloud data layer without touching operational control systems (critical for safety and operational continuity)."
       },
       {
         "question": "What is the ROI case for CleanTech legacy modernisation?",
-        "answer": "ClickMasters CleanTech legacy modernisation ROI: (1) SECR compliance automation — £50,000–£200,000 annual manual reporting cost elimination for large portfolios. (2) ESOS evidence automation — £20,000–£80,000 every 4 years for manual ESOS audit preparation eliminated. (3) Energy waste reduction — AI HVAC optimisation typically 15–30% energy reduction (£50,000–£500,000 annual saving for large portfolios). (4) MEES compliance risk reduction — EPC F/G properties cannot be let from 2023 (commercial) — tracking and managing remediation prevents void properties. Total 3-year ROI: typically 5–10× the modernisation investment for large commercial property portfolios."
+        "answer": "Clickmasters CleanTech legacy modernisation ROI: (1) SECR compliance automation — £50,000–£200,000 annual manual reporting cost elimination for large portfolios. (2) ESOS evidence automation — £20,000–£80,000 every 4 years for manual ESOS audit preparation eliminated. (3) Energy waste reduction — AI HVAC optimisation typically 15–30% energy reduction (£50,000–£500,000 annual saving for large portfolios). (4) MEES compliance risk reduction — EPC F/G properties cannot be let from 2023 (commercial) — tracking and managing remediation prevents void properties. Total 3-year ROI: typically 5–10× the modernisation investment for large commercial property portfolios."
       }
     ]
   },
@@ -10131,11 +10131,11 @@ const industries = [
     "industry": "medtech",
     "service": "saas-development-advanced",
     "title": "SaaS Development for UK MedTech — MHRA Built In",
-    "metaTitle": "SaaS Development for MedTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for MedTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK MedTech. MHRA. £45,000–£200,000.",
     "lastUpdated": "December 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters MedTech Team",
+    "writtenBy": "Clickmasters MedTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "MedTech",
@@ -10145,26 +10145,26 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for MedTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "NHS Shared Care Record (ShCR) Integration",
-            "text": "NHS Shared Care Records: all NHS integrated care systems are implementing Shared Care Records (ShCR) — single patient record shared across GP, hospital, community, and mental health services. ShCR FHIR R4 API: ClickMasters integrates MedTech SaaS with regional ShCR platforms (Orion Health, Graphnet, ICS Digital) via FHIR R4. ShCR query: patient demographic query (NHS Number via PDS), summary record (conditions, medications, allergies, recent encounters), and write-back (new encounters added to ShCR after clinical interaction). DTAC Domain 4 (Interoperability): ShCR integration is increasingly a DTAC pre-requisite for patient-facing clinical software."
+            "text": "NHS Shared Care Records: all NHS integrated care systems are implementing Shared Care Records (ShCR) — single patient record shared across GP, hospital, community, and mental health services. ShCR FHIR R4 API: Clickmasters integrates MedTech SaaS with regional ShCR platforms (Orion Health, Graphnet, ICS Digital) via FHIR R4. ShCR query: patient demographic query (NHS Number via PDS), summary record (conditions, medications, allergies, recent encounters), and write-back (new encounters added to ShCR after clinical interaction). DTAC Domain 4 (Interoperability): ShCR integration is increasingly a DTAC pre-requisite for patient-facing clinical software."
           },
           {
             "bold": "NHS App Integration for Patient-Facing MedTech",
-            "text": "NHS App (8M+ registered users): patient-facing MedTech SaaS can integrate directly with the NHS App. NHS App features: health record (View your GP record), services (book appointments, order prescriptions), and third-party app integration (NHS App API — third-party apps displayed within NHS App). NHS App onboarding: NHS App store application (NHS England Digital review), NHS Login integration (OIDC — NHS App handles patient identity), and NHS App API (embed MedTech SaaS features within NHS App shell). ClickMasters has achieved NHS App store listings for HealthTech clients — the review process takes 6–12 weeks."
+            "text": "NHS App (8M+ registered users): patient-facing MedTech SaaS can integrate directly with the NHS App. NHS App features: health record (View your GP record), services (book appointments, order prescriptions), and third-party app integration (NHS App API — third-party apps displayed within NHS App). NHS App onboarding: NHS App store application (NHS England Digital review), NHS Login integration (OIDC — NHS App handles patient identity), and NHS App API (embed MedTech SaaS features within NHS App shell). Clickmasters has achieved NHS App store listings for HealthTech clients — the review process takes 6–12 weeks."
           },
           {
             "bold": "NHSX AI Award and NHS AI Lab Integration",
-            "text": "NHS AI Lab (NHSX): NHS-funded AI innovation programme. NHS AI in Health and Care Award: competitive funding for AI-enabled MedTech (£1M+ awards). ClickMasters supports AI MedTech clients through: (1) MHRA SaMD AI classification (Class I, IIa, IIb depending on AI intended purpose), (2) DCB0129 AI hazard assessment (AI-specific hazards: false positive, false negative, bias — demographic parity testing), (3) NHS AI Lab Evidence Standards Framework (14 standards — model transparency, bias testing, deployment safety). ClickMasters has supported 3 successful NHS AI Lab award applications."
+            "text": "NHS AI Lab (NHSX): NHS-funded AI innovation programme. NHS AI in Health and Care Award: competitive funding for AI-enabled MedTech (£1M+ awards). Clickmasters supports AI MedTech clients through: (1) MHRA SaMD AI classification (Class I, IIa, IIb depending on AI intended purpose), (2) DCB0129 AI hazard assessment (AI-specific hazards: false positive, false negative, bias — demographic parity testing), (3) NHS AI Lab Evidence Standards Framework (14 standards — model transparency, bias testing, deployment safety). Clickmasters has supported 3 successful NHS AI Lab award applications."
           },
           {
             "bold": "Multi-Trust SaaS Contracting for NHS Enterprise Sales",
-            "text": "NHS Enterprise SaaS: selling to multiple NHS Trusts requires navigating NHS procurement frameworks. G-Cloud: ClickMasters MedTech SaaS clients listed on G-Cloud — NHS Trusts can procure directly. NHS SBS (Shared Business Services) — framework contract. Procurement complexity: each NHS Trust may require separate DTAC assessment (or platform-level DTAC), separate Data Processing Agreement (Article 28 DPA), and separate NHS Information Governance review. ClickMasters produces a Trust Onboarding Pack (DPA template, DTAC evidence pack, IG review responses) — reduces each Trust onboarding from 12 weeks to 4–6 weeks."
+            "text": "NHS Enterprise SaaS: selling to multiple NHS Trusts requires navigating NHS procurement frameworks. G-Cloud: Clickmasters MedTech SaaS clients listed on G-Cloud — NHS Trusts can procure directly. NHS SBS (Shared Business Services) — framework contract. Procurement complexity: each NHS Trust may require separate DTAC assessment (or platform-level DTAC), separate Data Processing Agreement (Article 28 DPA), and separate NHS Information Governance review. Clickmasters produces a Trust Onboarding Pack (DPA template, DTAC evidence pack, IG review responses) — reduces each Trust onboarding from 12 weeks to 4–6 weeks."
           }
         ]
       },
@@ -10236,11 +10236,11 @@ const industries = [
     "faqs": [
       {
         "question": "What is the fastest route to NHS Enterprise SaaS procurement?",
-        "answer": "Fastest NHS Enterprise SaaS procurement route: (1) G-Cloud listing (£0 cost, 4 weeks — enables direct award up to £616,575 without competitive tender). (2) Platform-level DTAC (covers all NHS Trust deployments — 8–16 weeks including build + assessment). (3) Trust Onboarding Pack (DPA template, IG response templates, technical documentation — reduces per-Trust onboarding from 12 weeks to 4–6 weeks). (4) Reference Trust (first Trust deployment as a reference — subsequent Trusts adopt faster with reference evidence). ClickMasters manages G-Cloud listing and DTAC for MedTech SaaS clients as part of go-to-market support."
+        "answer": "Fastest NHS Enterprise SaaS procurement route: (1) G-Cloud listing (£0 cost, 4 weeks — enables direct award up to £616,575 without competitive tender). (2) Platform-level DTAC (covers all NHS Trust deployments — 8–16 weeks including build + assessment). (3) Trust Onboarding Pack (DPA template, IG response templates, technical documentation — reduces per-Trust onboarding from 12 weeks to 4–6 weeks). (4) Reference Trust (first Trust deployment as a reference — subsequent Trusts adopt faster with reference evidence). Clickmasters manages G-Cloud listing and DTAC for MedTech SaaS clients as part of go-to-market support."
       },
       {
         "question": "What does NHS App store listing require for MedTech SaaS?",
-        "answer": "NHS App store listing requirements: (1) NHS Login integration (OIDC — patient authentication via NHS number and date of birth verification), (2) NHS App API compliance (UI/UX meets NHS Design System standards), (3) clinical safety (DCB0129 Clinical Safety Officer sign-off), (4) NHS England Digital review (privacy, security, clinical safety, evidence review — 6–12 weeks), (5) technical review (penetration test, accessibility WCAG 2.1 AA). ClickMasters has achieved NHS App store listing for HealthTech clients in as few as 14 weeks total — starting from Technical Discovery."
+        "answer": "NHS App store listing requirements: (1) NHS Login integration (OIDC — patient authentication via NHS number and date of birth verification), (2) NHS App API compliance (UI/UX meets NHS Design System standards), (3) clinical safety (DCB0129 Clinical Safety Officer sign-off), (4) NHS England Digital review (privacy, security, clinical safety, evidence review — 6–12 weeks), (5) technical review (penetration test, accessibility WCAG 2.1 AA). Clickmasters has achieved NHS App store listing for HealthTech clients in as few as 14 weeks total — starting from Technical Discovery."
       }
     ]
   },
@@ -10250,11 +10250,11 @@ const industries = [
     "industry": "fintech",
     "service": "staff-augmentation-fintech",
     "title": "Staff Augmentation for UK FinTech — FCA COBS Built In",
-    "metaTitle": "Staff Augmentation for FinTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for FinTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK FinTech. FCA COBS. from £5,200/month.",
     "lastUpdated": "December 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -10264,7 +10264,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK FinTech businesses with FCA COBS, FCA PS21/3 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK FinTech businesses with FCA COBS, FCA PS21/3 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for FinTech — UK Specifics",
@@ -10275,15 +10275,15 @@ const industries = [
           },
           {
             "bold": "FCA Operational Resilience Team Augmentation",
-            "text": "FCA PS21/3 operational resilience programme: most UK FinTechs are running a multi-year PS21/3 programme (first reporting period completed March 2025 — ongoing annual review). Staff augmentation for PS21/3 programmes: (1) IBS mapping engineers (identify Important Business Services — requires system architecture knowledge and FCA regulatory understanding combined), (2) resilience testing engineers (AWS FIS chaos testing, quarterly Impact Tolerance test execution), (3) runbook engineers (operational documentation for IBS recovery procedures), (4) monitoring engineers (CloudWatch dashboards for IBS availability metrics, PagerDuty alerting). ClickMasters maintains a pool of engineers with live PS21/3 programme experience."
+            "text": "FCA PS21/3 operational resilience programme: most UK FinTechs are running a multi-year PS21/3 programme (first reporting period completed March 2025 — ongoing annual review). Staff augmentation for PS21/3 programmes: (1) IBS mapping engineers (identify Important Business Services — requires system architecture knowledge and FCA regulatory understanding combined), (2) resilience testing engineers (AWS FIS chaos testing, quarterly Impact Tolerance test execution), (3) runbook engineers (operational documentation for IBS recovery procedures), (4) monitoring engineers (CloudWatch dashboards for IBS availability metrics, PagerDuty alerting). Clickmasters maintains a pool of engineers with live PS21/3 programme experience."
           },
           {
             "bold": "CASS Client Money Platform Engineers",
-            "text": "CASS (Client Assets Sourcebook): client money and custody specialists are the rarest FinTech profiles in the UK market. CASS 5 (client money — investment firms), CASS 7 (client money — insurance intermediaries), CASS 7 (custody — securities). Daily reconciliation: engineers who have built CASS daily reconciliation systems (client money account balance vs sum of client entitlements) are extremely rare. ClickMasters has built CASS-compliant systems for 8 FCA-regulated firms — we maintain a pool of engineers with CASS reconciliation engineering experience."
+            "text": "CASS (Client Assets Sourcebook): client money and custody specialists are the rarest FinTech profiles in the UK market. CASS 5 (client money — investment firms), CASS 7 (client money — insurance intermediaries), CASS 7 (custody — securities). Daily reconciliation: engineers who have built CASS daily reconciliation systems (client money account balance vs sum of client entitlements) are extremely rare. Clickmasters has built CASS-compliant systems for 8 FCA-regulated firms — we maintain a pool of engineers with CASS reconciliation engineering experience."
           },
           {
             "bold": "FCA Financial Promotions Technology",
-            "text": "FCA Financial Promotions (FSMA s.21): all financial promotions must be fair, clear, and not misleading. Post-January 2024 crypto promotions rules: specific wording requirements (\"Don't invest unless you're prepared to lose all the money you invest\"), 24-hour cooling-off. ClickMasters staff augmentation: engineers who have implemented compliant financial promotions systems (automated disclosure checking, risk warning display, cooling-off period enforcement) are in very high demand following the January 2024 crypto rules and FCA Consumer Duty promotions requirements. Financial promotions engineers rarely available on the open market."
+            "text": "FCA Financial Promotions (FSMA s.21): all financial promotions must be fair, clear, and not misleading. Post-January 2024 crypto promotions rules: specific wording requirements (\"Don't invest unless you're prepared to lose all the money you invest\"), 24-hour cooling-off. Clickmasters staff augmentation: engineers who have implemented compliant financial promotions systems (automated disclosure checking, risk warning display, cooling-off period enforcement) are in very high demand following the January 2024 crypto rules and FCA Consumer Duty promotions requirements. Financial promotions engineers rarely available on the open market."
           }
         ]
       },
@@ -10355,11 +10355,11 @@ const industries = [
     "faqs": [
       {
         "question": "What FCA FinTech skills are hardest to find for staff augmentation?",
-        "answer": "Rarest FCA FinTech staff augmentation profiles (roughly in order of scarcity): (1) CASS daily reconciliation engineers (< 30 engineers in UK with production CASS reconciliation experience), (2) FCA PS21/3 Impact Tolerance resilience engineers (few PS21/3 programmes built from scratch — most PS21/3 work is BAU now), (3) Open Banking PISP engineers with live payment initiation production experience, (4) FCA financial promotions compliance engineers (post-January 2024 crypto and Consumer Duty rules created new demand). ClickMasters maintains a pre-vetted pool across all four — available within 2–4 weeks."
+        "answer": "Rarest FCA FinTech staff augmentation profiles (roughly in order of scarcity): (1) CASS daily reconciliation engineers (< 30 engineers in UK with production CASS reconciliation experience), (2) FCA PS21/3 Impact Tolerance resilience engineers (few PS21/3 programmes built from scratch — most PS21/3 work is BAU now), (3) Open Banking PISP engineers with live payment initiation production experience, (4) FCA financial promotions compliance engineers (post-January 2024 crypto and Consumer Duty rules created new demand). Clickmasters maintains a pre-vetted pool across all four — available within 2–4 weeks."
       },
       {
         "question": "How do we ensure FCA compliance during FinTech staff augmentation onboarding?",
-        "answer": "ClickMasters FCA FinTech staff augmentation onboarding: Day 1–2: FCA regulatory context induction (PS21/3 overview, Consumer Duty, COBS applicable to the specific platform, AML obligations). Week 1: codebase walkthrough with focus on FCA-relevant components (IBS architecture, Consumer Duty data pipelines, CASS reconciliation if applicable). Week 2: first sprint with FCA-context tasks (adding Consumer Duty monitoring metrics, contributing to resilience testing runbooks). Full FCA context productivity: 3–4 weeks for engineers with prior FinTech experience, 5–6 weeks for engineers new to regulated FinTech. ClickMasters charges a 1-week discovery rate before augmentation commences."
+        "answer": "Clickmasters FCA FinTech staff augmentation onboarding: Day 1–2: FCA regulatory context induction (PS21/3 overview, Consumer Duty, COBS applicable to the specific platform, AML obligations). Week 1: codebase walkthrough with focus on FCA-relevant components (IBS architecture, Consumer Duty data pipelines, CASS reconciliation if applicable). Week 2: first sprint with FCA-context tasks (adding Consumer Duty monitoring metrics, contributing to resilience testing runbooks). Full FCA context productivity: 3–4 weeks for engineers with prior FinTech experience, 5–6 weeks for engineers new to regulated FinTech. Clickmasters charges a 1-week discovery rate before augmentation commences."
       }
     ]
   },
@@ -10369,11 +10369,11 @@ const industries = [
     "industry": "govtech",
     "service": "legacy-modernisation-gov",
     "title": "Legacy Modernisation for UK GovTech — GDS Service Standard Built In",
-    "metaTitle": "Legacy Modernisation for GovTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for GovTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK GovTech. GDS Service Standard. £40,000–£200,000.",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "GovTech",
@@ -10383,22 +10383,22 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK GovTech businesses with GDS Service Standard, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK GovTech businesses with GDS Service Standard, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for GovTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "UK Government Legacy Platform Landscape",
-            "text": "UK government digital legacy: HMRC's PAYE and Self Assessment systems (COBOL-based — some dating from 1960s), DWP Universal Credit legacy benefits (COBOL + Java mixed), MOD legacy defence systems (classified architectures), NHS National Infrastructure (multiple legacy NHAIS — NHS Administrative Information Systems), and Local Government legacy platforms (Northgate Revenues, Capita Academy, CGI Govconnect). GDS Service Standard driving legacy modernisation: government's goal is \"digital by default\" — legacy systems that cannot provide digital-first services are being replaced. ClickMasters has modernised 12 UK government digital services."
+            "text": "UK government digital legacy: HMRC's PAYE and Self Assessment systems (COBOL-based — some dating from 1960s), DWP Universal Credit legacy benefits (COBOL + Java mixed), MOD legacy defence systems (classified architectures), NHS National Infrastructure (multiple legacy NHAIS — NHS Administrative Information Systems), and Local Government legacy platforms (Northgate Revenues, Capita Academy, CGI Govconnect). GDS Service Standard driving legacy modernisation: government's goal is \"digital by default\" — legacy systems that cannot provide digital-first services are being replaced. Clickmasters has modernised 12 UK government digital services."
           },
           {
             "bold": "GDS Assessment for Legacy-Replacement Services",
-            "text": "When a government digital service replaces a legacy system, it must undergo GDS service assessment (Alpha, Beta, Live). Legacy data migration: GDS assessors specifically look for evidence that legacy data migration has been planned and tested. GDS service standard Point 17: identify and understand technical, legal, and organisational constraints — legacy technical debt and data quality issues must be documented. ClickMasters GDS legacy modernisation approach: (1) Discovery includes legacy system documentation, (2) Alpha includes data migration proof of concept, (3) Beta includes parallel running (legacy + new), (4) Live includes legacy decommission plan."
+            "text": "When a government digital service replaces a legacy system, it must undergo GDS service assessment (Alpha, Beta, Live). Legacy data migration: GDS assessors specifically look for evidence that legacy data migration has been planned and tested. GDS service standard Point 17: identify and understand technical, legal, and organisational constraints — legacy technical debt and data quality issues must be documented. Clickmasters GDS legacy modernisation approach: (1) Discovery includes legacy system documentation, (2) Alpha includes data migration proof of concept, (3) Beta includes parallel running (legacy + new), (4) Live includes legacy decommission plan."
           },
           {
             "bold": "GDPR Data Migration for Government Legacy",
-            "text": "UK government legacy data migration: most legacy systems contain personal data that pre-dates UK GDPR (GDPR-compliant basis may not have been documented). Data migration approach: (1) legacy data audit (what personal data exists, legal basis for processing, retention period), (2) GDPR-compliant migration (migrate only data with valid legal basis, delete excess), (3) data minimisation (new system collects only what is needed), (4) privacy notice update (new digital service privacy notice), (5) retention schedule (automated deletion in new system). ICO: government organisations migrating legacy systems should conduct a DPIA (Data Protection Impact Assessment) — ClickMasters produces DPIA as part of GDS Discovery."
+            "text": "UK government legacy data migration: most legacy systems contain personal data that pre-dates UK GDPR (GDPR-compliant basis may not have been documented). Data migration approach: (1) legacy data audit (what personal data exists, legal basis for processing, retention period), (2) GDPR-compliant migration (migrate only data with valid legal basis, delete excess), (3) data minimisation (new system collects only what is needed), (4) privacy notice update (new digital service privacy notice), (5) retention schedule (automated deletion in new system). ICO: government organisations migrating legacy systems should conduct a DPIA (Data Protection Impact Assessment) — Clickmasters produces DPIA as part of GDS Discovery."
           },
           {
             "bold": "GOV.UK One Login Migration for Legacy Government Services",
@@ -10469,11 +10469,11 @@ const industries = [
     "faqs": [
       {
         "question": "How long does government legacy modernisation take?",
-        "answer": "UK government legacy modernisation with GDS assessment: Discovery (12 weeks — GDS Alpha pre-work, legacy audit, data migration proof of concept), Alpha (12–16 weeks — prototype, user research, GDS Alpha assessment), Beta (20–30 weeks — build, parallel running with legacy, Beta assessment), and Live (Legacy decommission after 3–6 months Live). Total: 48–64 weeks from Discovery to Legacy decommission. Budget: £40,000–£200,000 depending on legacy complexity. ClickMasters: fixed-price for each phase — Discovery price first, build price after Discovery findings confirm scope."
+        "answer": "UK government legacy modernisation with GDS assessment: Discovery (12 weeks — GDS Alpha pre-work, legacy audit, data migration proof of concept), Alpha (12–16 weeks — prototype, user research, GDS Alpha assessment), Beta (20–30 weeks — build, parallel running with legacy, Beta assessment), and Live (Legacy decommission after 3–6 months Live). Total: 48–64 weeks from Discovery to Legacy decommission. Budget: £40,000–£200,000 depending on legacy complexity. Clickmasters: fixed-price for each phase — Discovery price first, build price after Discovery findings confirm scope."
       },
       {
         "question": "Can we get GDS Beta assessment passed first time?",
-        "answer": "ClickMasters GDS Beta first-attempt pass record: 8 out of 10 government services assessed at Beta have passed first attempt. Key factors for first-attempt pass: (1) User Research — minimum 5 participant rounds with real users including those with access needs. (2) Accessibility — WCAG 2.1 AA with published Accessibility Statement. (3) Performance — Lighthouse CI LCP < 3s on 3G. (4) Security — NCSC 14 Principles compliance statement. (5) Data protection — DPIA completed and ICO registration confirmed. ClickMasters prepares a GDS Assessment Evidence Pack before every assessment — no surprises."
+        "answer": "Clickmasters GDS Beta first-attempt pass record: 8 out of 10 government services assessed at Beta have passed first attempt. Key factors for first-attempt pass: (1) User Research — minimum 5 participant rounds with real users including those with access needs. (2) Accessibility — WCAG 2.1 AA with published Accessibility Statement. (3) Performance — Lighthouse CI LCP < 3s on 3G. (4) Security — NCSC 14 Principles compliance statement. (5) Data protection — DPIA completed and ICO registration confirmed. Clickmasters prepares a GDS Assessment Evidence Pack before every assessment — no surprises."
       }
     ]
   },
@@ -10483,11 +10483,11 @@ const industries = [
     "industry": "medtech",
     "service": "cloud-native-medtech",
     "title": "Cloud-Native Development for UK MedTech — MHRA Built In",
-    "metaTitle": "Cloud-Native Development for MedTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for MedTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK MedTech. MHRA. £30,000–£160,000.",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters MedTech Team",
+    "writtenBy": "Clickmasters MedTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "MedTech",
@@ -10497,18 +10497,18 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for MedTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "NHSE Cloud Security Standards for Clinical Software",
-            "text": "NHS England Cloud Security Standards: NHS clinical software deployed on cloud must satisfy NHS Cloud Security Standards (aligned with NCSC 14 Principles). Key standards: (1) data at rest encryption (AES-256 — AWS S3 server-side encryption, RDS encryption), (2) data in transit encryption (TLS 1.2+ — AWS ALB enforces, HTTP redirected to HTTPS), (3) UK data residency (eu-west-2 — not cross-border without NHS IG approval), (4) access control (IAM roles, MFA for all clinical staff, NHS SDS for clinical authentication), (5) audit logging (CloudWatch — 7 years retention for NHS DSP Toolkit). ClickMasters configures all 5 as standard on NHS cloud-native builds."
+            "text": "NHS England Cloud Security Standards: NHS clinical software deployed on cloud must satisfy NHS Cloud Security Standards (aligned with NCSC 14 Principles). Key standards: (1) data at rest encryption (AES-256 — AWS S3 server-side encryption, RDS encryption), (2) data in transit encryption (TLS 1.2+ — AWS ALB enforces, HTTP redirected to HTTPS), (3) UK data residency (eu-west-2 — not cross-border without NHS IG approval), (4) access control (IAM roles, MFA for all clinical staff, NHS SDS for clinical authentication), (5) audit logging (CloudWatch — 7 years retention for NHS DSP Toolkit). Clickmasters configures all 5 as standard on NHS cloud-native builds."
           },
           {
             "bold": "AWS NHS Landing Zone Architecture",
-            "text": "NHS Landing Zone (NLZ): NHS-specific AWS architecture for clinical workloads. NLZ components: (1) NHS Trust AWS account structure (Organizational Units — Production, Non-Production, Sandbox), (2) Service Control Policies (SCPs — prevent resources being created outside eu-west-2), (3) CloudTrail (immutable audit log of all AWS API calls — required for NHS DSP Toolkit), (4) Security Hub (NHS DTAC security benchmarks — CIS Level 2), (5) Config (compliance rules — S3 public access blocked, CloudTrail enabled, MFA on root). ClickMasters configures NLZ-compatible architecture — even when client does not have formal NLZ, the security controls match."
+            "text": "NHS Landing Zone (NLZ): NHS-specific AWS architecture for clinical workloads. NLZ components: (1) NHS Trust AWS account structure (Organizational Units — Production, Non-Production, Sandbox), (2) Service Control Policies (SCPs — prevent resources being created outside eu-west-2), (3) CloudTrail (immutable audit log of all AWS API calls — required for NHS DSP Toolkit), (4) Security Hub (NHS DTAC security benchmarks — CIS Level 2), (5) Config (compliance rules — S3 public access blocked, CloudTrail enabled, MFA on root). Clickmasters configures NLZ-compatible architecture — even when client does not have formal NLZ, the security controls match."
           },
           {
             "bold": "NHS FHIR Bulk Data Access for MedTech Analytics",
@@ -10516,7 +10516,7 @@ const industries = [
           },
           {
             "bold": "NHS Digital Health Technology Catalogue",
-            "text": "NHS DHSC Digital Health Technology Catalogue (DHTC): replaces NHS App Library. MedTech products listed on DHTC must: (1) pass DTAC assessment, (2) provide CE/UKCA marking evidence (if medical device), (3) provide peer-reviewed clinical evidence (if clinical effectiveness claims made), (4) comply with NHS Information Standards. DHTC listing: enables NHS trusts to procure listed products under national framework. ClickMasters produces DHTC application pack for MedTech SaaS clients — DTAC evidence, regulatory certificates, and clinical evidence summary."
+            "text": "NHS DHSC Digital Health Technology Catalogue (DHTC): replaces NHS App Library. MedTech products listed on DHTC must: (1) pass DTAC assessment, (2) provide CE/UKCA marking evidence (if medical device), (3) provide peer-reviewed clinical evidence (if clinical effectiveness claims made), (4) comply with NHS Information Standards. DHTC listing: enables NHS trusts to procure listed products under national framework. Clickmasters produces DHTC application pack for MedTech SaaS clients — DTAC evidence, regulatory certificates, and clinical evidence summary."
           }
         ]
       },
@@ -10588,11 +10588,11 @@ const industries = [
     "faqs": [
       {
         "question": "What AWS architecture does NHS DTAC require for clinical cloud-native software?",
-        "answer": "NHS DTAC Domain 2 (Data Protection) cloud-native requirements: (1) AWS eu-west-2 (UK data residency — confirmed in DPA), (2) encryption at rest and in transit (AES-256 S3, RDS — standard AWS defaults), (3) access control (IAM least privilege, MFA mandatory, no long-lived credentials), (4) audit logging (CloudTrail — all AWS API calls logged, 7-year retention), (5) vulnerability management (Dependabot + Trivy + Amazon Inspector — patching within 14 days of critical CVE). ClickMasters configures all 5 as standard on every NHS clinical cloud-native build — DTAC Domain 2 evidence pack generated from AWS Config compliance reports."
+        "answer": "NHS DTAC Domain 2 (Data Protection) cloud-native requirements: (1) AWS eu-west-2 (UK data residency — confirmed in DPA), (2) encryption at rest and in transit (AES-256 S3, RDS — standard AWS defaults), (3) access control (IAM least privilege, MFA mandatory, no long-lived credentials), (4) audit logging (CloudTrail — all AWS API calls logged, 7-year retention), (5) vulnerability management (Dependabot + Trivy + Amazon Inspector — patching within 14 days of critical CVE). Clickmasters configures all 5 as standard on every NHS clinical cloud-native build — DTAC Domain 2 evidence pack generated from AWS Config compliance reports."
       },
       {
         "question": "How does NHS cloud-native architecture differ from standard cloud-native?",
-        "answer": "NHS cloud-native vs standard cloud-native: (1) Data residency: NHS requires eu-west-2 explicitly — cannot use eu-west-1 (Ireland) without NHS IG approval. (2) Authentication: NHS SDS (Smartcard RBAC) or NHS Login (patient-facing) required — cannot use standard Cognito/Clerk without NHS-specific configuration. (3) Audit logging: 7-year retention required — standard CloudWatch default is 30 days. (4) FHIR R4: NHS systems communicate via FHIR R4 — NHS cloud-native must include HAPI FHIR server or FHIR Facade. (5) DTAC evidence: every sprint produces DTAC evidence artefacts (test reports, security scan results) — not standard practice outside NHS. ClickMasters builds all 5 differences as standard on NHS cloud-native projects."
+        "answer": "NHS cloud-native vs standard cloud-native: (1) Data residency: NHS requires eu-west-2 explicitly — cannot use eu-west-1 (Ireland) without NHS IG approval. (2) Authentication: NHS SDS (Smartcard RBAC) or NHS Login (patient-facing) required — cannot use standard Cognito/Clerk without NHS-specific configuration. (3) Audit logging: 7-year retention required — standard CloudWatch default is 30 days. (4) FHIR R4: NHS systems communicate via FHIR R4 — NHS cloud-native must include HAPI FHIR server or FHIR Facade. (5) DTAC evidence: every sprint produces DTAC evidence artefacts (test reports, security scan results) — not standard practice outside NHS. Clickmasters builds all 5 differences as standard on NHS cloud-native projects."
       }
     ]
   },
@@ -10602,11 +10602,11 @@ const industries = [
     "industry": "healthtech",
     "service": "qa-testing-healthtech",
     "title": "QA & Testing for UK HealthTech — MHRA Built In",
-    "metaTitle": "QA & Testing for HealthTech UK | ClickMasters",
+    "metaTitle": "QA & Testing for HealthTech UK | Clickmasters",
     "metaDesc": "QA & Testing for UK HealthTech. MHRA. £8,000–£55,000.",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters HealthTech Team",
+    "writtenBy": "Clickmasters HealthTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "HealthTech",
@@ -10616,14 +10616,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides QA & Testing for UK HealthTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides QA & Testing for UK HealthTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "QA & Testing for HealthTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "IEC 62304 Test Documentation for MHRA",
-            "text": "IEC 62304 V&V (Verification and Validation): all medical device software must have documented V&V activities. IEC 62304 test documentation: (1) Software Verification Plan (SVP — defines what will be tested and how), (2) Software Verification Report (SVR — records test results), (3) Unit test evidence (code coverage report — minimum 80% for IEC 62304 Class B software), (4) Integration test evidence (API integration tests — NHS FHIR R4, medical device sensor data), (5) System test evidence (end-to-end user journey tests), (6) User Acceptance Test (UAT — clinical user testing with real clinical scenarios). ClickMasters generates IEC 62304-compliant V&V documentation from CI/CD test artefacts automatically."
+            "text": "IEC 62304 V&V (Verification and Validation): all medical device software must have documented V&V activities. IEC 62304 test documentation: (1) Software Verification Plan (SVP — defines what will be tested and how), (2) Software Verification Report (SVR — records test results), (3) Unit test evidence (code coverage report — minimum 80% for IEC 62304 Class B software), (4) Integration test evidence (API integration tests — NHS FHIR R4, medical device sensor data), (5) System test evidence (end-to-end user journey tests), (6) User Acceptance Test (UAT — clinical user testing with real clinical scenarios). Clickmasters generates IEC 62304-compliant V&V documentation from CI/CD test artefacts automatically."
           },
           {
             "bold": "DCB0129 Clinical Risk Testing",
@@ -10635,7 +10635,7 @@ const industries = [
           },
           {
             "bold": "NHS DTAC Domain 3 Security Testing Evidence",
-            "text": "DTAC Domain 3 (Technical Security): evidence required for DTAC assessment. Security testing artefacts: (1) OWASP ZAP scan (automated DAST — run against staging environment, report generated), (2) Semgrep SAST scan (static analysis — run in CI/CD, zero high-severity findings required), (3) Trivy container scan (Docker image CVE scan — zero critical CVEs required), (4) Dependabot CVE alerts (zero unresolved critical CVEs in production), (5) annual penetration test (CREST-approved pen tester — for DTAC Domain 3 higher assurance). ClickMasters generates DTAC Domain 3 security evidence pack from CI/CD artefacts — submitted to DTAC assessor alongside DTAC questionnaire."
+            "text": "DTAC Domain 3 (Technical Security): evidence required for DTAC assessment. Security testing artefacts: (1) OWASP ZAP scan (automated DAST — run against staging environment, report generated), (2) Semgrep SAST scan (static analysis — run in CI/CD, zero high-severity findings required), (3) Trivy container scan (Docker image CVE scan — zero critical CVEs required), (4) Dependabot CVE alerts (zero unresolved critical CVEs in production), (5) annual penetration test (CREST-approved pen tester — for DTAC Domain 3 higher assurance). Clickmasters generates DTAC Domain 3 security evidence pack from CI/CD artefacts — submitted to DTAC assessor alongside DTAC questionnaire."
           }
         ]
       },
@@ -10707,11 +10707,11 @@ const industries = [
     "faqs": [
       {
         "question": "What QA evidence is required for NHS DTAC assessment?",
-        "answer": "NHS DTAC Domain-by-domain QA evidence: Domain 1 (Data Flow): data flow diagram showing where patient data goes. Domain 2 (Data Protection): UK GDPR compliance evidence, ISO 27001 or equivalent security controls. Domain 3 (Technical Security): penetration test report (CREST), OWASP ZAP scan, dependency CVE report, IEC 62304 unit test coverage report. Domain 4 (Interoperability): FHIR R4 conformance statement, NHS integration test evidence (PDS, eRS sandbox). Domain 5 (Usability): WCAG 2.1 AA axe-core report, NVDA screen reader test report, user research evidence (3+ clinical participants). ClickMasters produces a complete DTAC Evidence Pack for each domain — typically 40–80 pages across all 5 domains."
+        "answer": "NHS DTAC Domain-by-domain QA evidence: Domain 1 (Data Flow): data flow diagram showing where patient data goes. Domain 2 (Data Protection): UK GDPR compliance evidence, ISO 27001 or equivalent security controls. Domain 3 (Technical Security): penetration test report (CREST), OWASP ZAP scan, dependency CVE report, IEC 62304 unit test coverage report. Domain 4 (Interoperability): FHIR R4 conformance statement, NHS integration test evidence (PDS, eRS sandbox). Domain 5 (Usability): WCAG 2.1 AA axe-core report, NVDA screen reader test report, user research evidence (3+ clinical participants). Clickmasters produces a complete DTAC Evidence Pack for each domain — typically 40–80 pages across all 5 domains."
       },
       {
         "question": "How do we test NHS software with real clinical scenarios?",
-        "answer": "NHS clinical scenario testing: ClickMasters works with the client's Clinical Safety Officer (CSO) to design test scenarios from the DCB0129 hazard log. Process: (1) CSO provides hazard log (all clinical hazards and mitigations), (2) ClickMasters maps each mitigation to one or more test cases, (3) clinical scenarios designed with CSO (realistic, based on actual clinical workflows — not generic user stories), (4) clinical user testing (3+ clinical staff test critical scenarios — UAT), (5) clinical safety test report signed by CSO (confirms all mitigations verified). Test environment: synthetic patient data only (UK GDPR Article 25 — never real patient data in test environments). Synthetic data generated using NHS Faker (Python library generating realistic NHS data — UPNs, NHS numbers, SNOMED codes)."
+        "answer": "NHS clinical scenario testing: Clickmasters works with the client's Clinical Safety Officer (CSO) to design test scenarios from the DCB0129 hazard log. Process: (1) CSO provides hazard log (all clinical hazards and mitigations), (2) Clickmasters maps each mitigation to one or more test cases, (3) clinical scenarios designed with CSO (realistic, based on actual clinical workflows — not generic user stories), (4) clinical user testing (3+ clinical staff test critical scenarios — UAT), (5) clinical safety test report signed by CSO (confirms all mitigations verified). Test environment: synthetic patient data only (UK GDPR Article 25 — never real patient data in test environments). Synthetic data generated using NHS Faker (Python library generating realistic NHS data — UPNs, NHS numbers, SNOMED codes)."
       }
     ]
   },
@@ -10721,11 +10721,11 @@ const industries = [
     "industry": "logtech",
     "service": "cloud-native-logtech",
     "title": "Cloud-Native Development for UK LogTech — UK GDPR Built In",
-    "metaTitle": "Cloud-Native Development for LogTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for LogTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK LogTech. UK GDPR. £30,000–£150,000.",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LogTech Team",
+    "writtenBy": "Clickmasters LogTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LogTech",
@@ -10735,7 +10735,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for LogTech — UK Specifics",
@@ -10750,7 +10750,7 @@ const industries = [
           },
           {
             "bold": "Cross-Border HMRC CDS Cloud-Native",
-            "text": "HMRC CDS (Customs Declaration Service) cloud-native architecture: goods imported/exported → CDS import/export declaration generated → HMRC CDS API submission → customs clearance status polling (CDS notification when goods cleared). Multi-jurisdiction: EU customs post-Brexit — EXS (Exit Summary Declaration) for exports to EU, ICS (Import Control System) for EU imports. CDS rate matrix: commodity code × country of origin × preference agreement → duty rate calculation. CDS risk management: ICS2 (EU advance cargo information — required for all air and maritime imports from non-EU countries). ClickMasters CDS integration: tariff database (UK Global Tariff — 14,000+ commodity codes) integrated for automated duty calculation."
+            "text": "HMRC CDS (Customs Declaration Service) cloud-native architecture: goods imported/exported → CDS import/export declaration generated → HMRC CDS API submission → customs clearance status polling (CDS notification when goods cleared). Multi-jurisdiction: EU customs post-Brexit — EXS (Exit Summary Declaration) for exports to EU, ICS (Import Control System) for EU imports. CDS rate matrix: commodity code × country of origin × preference agreement → duty rate calculation. CDS risk management: ICS2 (EU advance cargo information — required for all air and maritime imports from non-EU countries). Clickmasters CDS integration: tariff database (UK Global Tariff — 14,000+ commodity codes) integrated for automated duty calculation."
           },
           {
             "bold": "Last-Mile Delivery Optimisation Cloud",
@@ -10821,11 +10821,11 @@ const industries = [
     "faqs": [
       {
         "question": "What cloud architecture handles real-time tracking for 10,000 daily shipments?",
-        "answer": "ClickMasters real-time tracking for 10,000 daily shipments (UK logistics scale): (1) AWS IoT Core (GPS MQTT ingestion — handles 10,000+ concurrent devices without scaling config), (2) Kinesis Data Streams (1 shard per 1,000 GPS events/second — auto-scaling), (3) Lambda ETA calculator (10ms per calculation, runs concurrently — not sequential), (4) DynamoDB (shipment status — single-digit millisecond reads for 10,000 concurrent shipper portal users), (5) CloudFront + API Gateway WebSocket (real-time push — no polling). AWS eu-west-2 estimated cost for 10,000 shipments/day: approximately £800–£1,500/month depending on GPS update frequency."
+        "answer": "Clickmasters real-time tracking for 10,000 daily shipments (UK logistics scale): (1) AWS IoT Core (GPS MQTT ingestion — handles 10,000+ concurrent devices without scaling config), (2) Kinesis Data Streams (1 shard per 1,000 GPS events/second — auto-scaling), (3) Lambda ETA calculator (10ms per calculation, runs concurrently — not sequential), (4) DynamoDB (shipment status — single-digit millisecond reads for 10,000 concurrent shipper portal users), (5) CloudFront + API Gateway WebSocket (real-time push — no polling). AWS eu-west-2 estimated cost for 10,000 shipments/day: approximately £800–£1,500/month depending on GPS update frequency."
       },
       {
         "question": "How do we integrate with Royal Mail, Evri, and DPD APIs?",
-        "answer": "UK carrier API integration: (1) Royal Mail Click and Drop API (label generation, tracking — free with Royal Mail account), (2) Evri Carrier Integration API (requires Evri business account and API credentials — 2–4 weeks onboarding), (3) DPD API (DPDgroup API — label, tracking, collection booking — DPD UK partner account required). Multi-carrier integration approach: ClickMasters builds a carrier abstraction layer — single internal API for label generation and tracking, carrier-specific adapters behind it. Switching carriers or adding new carriers: add new adapter, no changes to calling code. Rate shopping: all carrier APIs queried for price before label selection — cheapest qualifying carrier selected automatically."
+        "answer": "UK carrier API integration: (1) Royal Mail Click and Drop API (label generation, tracking — free with Royal Mail account), (2) Evri Carrier Integration API (requires Evri business account and API credentials — 2–4 weeks onboarding), (3) DPD API (DPDgroup API — label, tracking, collection booking — DPD UK partner account required). Multi-carrier integration approach: Clickmasters builds a carrier abstraction layer — single internal API for label generation and tracking, carrier-specific adapters behind it. Switching carriers or adding new carriers: add new adapter, no changes to calling code. Rate shopping: all carrier APIs queried for price before label selection — cheapest qualifying carrier selected automatically."
       }
     ]
   },
@@ -10835,11 +10835,11 @@ const industries = [
     "industry": "fintech",
     "service": "microservices-fintech",
     "title": "Microservices Architecture for UK FinTech — FCA COBS Built In",
-    "metaTitle": "Microservices Architecture for FinTech UK | ClickMasters",
+    "metaTitle": "Microservices Architecture for FinTech UK | Clickmasters",
     "metaDesc": "Microservices Architecture for UK FinTech. FCA COBS. £50,000–£200,000.",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -10849,7 +10849,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices Architecture for UK FinTech businesses with FCA COBS, FCA PS21/3 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices Architecture for UK FinTech businesses with FCA COBS, FCA PS21/3 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices Architecture for FinTech — UK Specifics",
@@ -10940,11 +10940,11 @@ const industries = [
     "faqs": [
       {
         "question": "How many microservices should a UK FinTech have?",
-        "answer": "ClickMasters FinTech microservices sizing: the right number of microservices is the number of FCA Important Business Services, plus a small number of supporting services. For a typical UK FinTech: 4–8 IBS-mapped microservices (e.g., Account Service, Payment Service, Customer Service, Notification Service, Consumer Duty Monitoring Service, Fraud Service) plus shared services (API Gateway, Auth Service, Audit Service). Anti-pattern: 50-microservice FinTech built by a 10-person team — operational complexity exceeds team capacity. ClickMasters rule: one microservice per IBS plus shared services. Start with modular monolith, extract microservices as IBS complexity demands."
+        "answer": "Clickmasters FinTech microservices sizing: the right number of microservices is the number of FCA Important Business Services, plus a small number of supporting services. For a typical UK FinTech: 4–8 IBS-mapped microservices (e.g., Account Service, Payment Service, Customer Service, Notification Service, Consumer Duty Monitoring Service, Fraud Service) plus shared services (API Gateway, Auth Service, Audit Service). Anti-pattern: 50-microservice FinTech built by a 10-person team — operational complexity exceeds team capacity. Clickmasters rule: one microservice per IBS plus shared services. Start with modular monolith, extract microservices as IBS complexity demands."
       },
       {
         "question": "What is the FCA PS21/3 implication of microservices architecture?",
-        "answer": "FCA PS21/3 and microservices: PS21/3 requires each Important Business Service to meet its Impact Tolerance independently. Microservices designed per-IBS naturally provide this: (1) Payment Processing Service has its own Multi-AZ database — payment IBS availability not affected by Account Information Service failure, (2) AWS FIS chaos testing can target individual IBS services — Impact Tolerance tested per-IBS (FCA requires this), (3) CloudWatch IBS availability metric: measure from API Gateway (customer entry point) through to IBS service response — measure what the customer experiences. Microservices gotcha: if IBS depends on a shared database or shared cache, a single point of failure across IBSs — ClickMasters design principle: each IBS owns its data."
+        "answer": "FCA PS21/3 and microservices: PS21/3 requires each Important Business Service to meet its Impact Tolerance independently. Microservices designed per-IBS naturally provide this: (1) Payment Processing Service has its own Multi-AZ database — payment IBS availability not affected by Account Information Service failure, (2) AWS FIS chaos testing can target individual IBS services — Impact Tolerance tested per-IBS (FCA requires this), (3) CloudWatch IBS availability metric: measure from API Gateway (customer entry point) through to IBS service response — measure what the customer experiences. Microservices gotcha: if IBS depends on a shared database or shared cache, a single point of failure across IBSs — Clickmasters design principle: each IBS owns its data."
       }
     ]
   },
@@ -10954,11 +10954,11 @@ const industries = [
     "industry": "retailtech",
     "service": "staff-augmentation-retail",
     "title": "Staff Augmentation for UK RetailTech — UK GDPR Built In",
-    "metaTitle": "Staff Augmentation for RetailTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for RetailTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK RetailTech. UK GDPR. from £5,000/month.",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters RetailTech Team",
+    "writtenBy": "Clickmasters RetailTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "RetailTech",
@@ -10968,7 +10968,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK RetailTech businesses with UK GDPR, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK RetailTech businesses with UK GDPR, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for RetailTech — UK Specifics",
@@ -10979,11 +10979,11 @@ const industries = [
           },
           {
             "bold": "Shopify Plus UK — Specific Retail Compliance Knowledge",
-            "text": "UK-specific Shopify Plus knowledge: (1) UK VAT on Shopify (VAT calculated at checkout using UK tax rates — 20% standard, 5% reduced, 0% zero-rated — correct product tax codes essential), (2) Consumer Rights Act returns (14-day right to withdraw — Shopify return window settings, refund policy legally required text), (3) UK cookie consent for Shopify (PECR — OneTrust or Cookiebot integration with Shopify pixels), (4) UK address format in Shopify (county field vs postcode — UK-specific checkout configuration), (5) Royal Mail Tracked integration (Shopify Shipping UK — rates and label generation). ClickMasters staff augmentation: engineers trained on all 5 UK Shopify Plus specifics before going live on retail client work."
+            "text": "UK-specific Shopify Plus knowledge: (1) UK VAT on Shopify (VAT calculated at checkout using UK tax rates — 20% standard, 5% reduced, 0% zero-rated — correct product tax codes essential), (2) Consumer Rights Act returns (14-day right to withdraw — Shopify return window settings, refund policy legally required text), (3) UK cookie consent for Shopify (PECR — OneTrust or Cookiebot integration with Shopify pixels), (4) UK address format in Shopify (county field vs postcode — UK-specific checkout configuration), (5) Royal Mail Tracked integration (Shopify Shipping UK — rates and label generation). Clickmasters staff augmentation: engineers trained on all 5 UK Shopify Plus specifics before going live on retail client work."
           },
           {
             "bold": "UK Peak Trading — Staff Augmentation for Black Friday Sprint",
-            "text": "UK retail peak trading: Black Friday (late November — 10× normal traffic), Boxing Day (26 December — 6× normal), and January sale (first week of January — 4× normal). Staff augmentation for peak trading sprints: (1) performance sprint (4–6 weeks pre-Black Friday — Core Web Vitals optimisation, load testing, caching, CDN configuration), (2) feature sprint (new promotional functionality — countdown timers, flash sale components, tier-based discount logic), (3) monitoring sprint (real-time CloudWatch dashboards — transaction rate, error rate, p95 response time — for Black Friday war room). ClickMasters maintains a pool of retail engineers available for peak trading augmentation from September."
+            "text": "UK retail peak trading: Black Friday (late November — 10× normal traffic), Boxing Day (26 December — 6× normal), and January sale (first week of January — 4× normal). Staff augmentation for peak trading sprints: (1) performance sprint (4–6 weeks pre-Black Friday — Core Web Vitals optimisation, load testing, caching, CDN configuration), (2) feature sprint (new promotional functionality — countdown timers, flash sale components, tier-based discount logic), (3) monitoring sprint (real-time CloudWatch dashboards — transaction rate, error rate, p95 response time — for Black Friday war room). Clickmasters maintains a pool of retail engineers available for peak trading augmentation from September."
           },
           {
             "bold": "UK Omnichannel Retail Architecture",
@@ -11049,11 +11049,11 @@ const industries = [
     "faqs": [
       {
         "question": "What RetailTech skills are hardest to find for UK staff augmentation?",
-        "answer": "Rarest UK RetailTech staff augmentation profiles: (1) Shopify Plus engineer with Shopify Functions experience (Shopify Functions is Rust/WebAssembly — very few engineers have production Shopify Functions experience), (2) OMS engineer (Fluent Commerce, Kibo — proprietary platforms requiring training), (3) personalisation engineer (Nosto, Dynamic Yield, or custom ML recommendations), (4) retail data engineer with demand forecasting ML (Prophet, LightGBM for inventory optimisation), (5) loyalty platform engineer (points accounting, tier rules, partner API integrations). ClickMasters maintains a pool of engineers with 1–3 of these rare retail profiles available for augmentation."
+        "answer": "Rarest UK RetailTech staff augmentation profiles: (1) Shopify Plus engineer with Shopify Functions experience (Shopify Functions is Rust/WebAssembly — very few engineers have production Shopify Functions experience), (2) OMS engineer (Fluent Commerce, Kibo — proprietary platforms requiring training), (3) personalisation engineer (Nosto, Dynamic Yield, or custom ML recommendations), (4) retail data engineer with demand forecasting ML (Prophet, LightGBM for inventory optimisation), (5) loyalty platform engineer (points accounting, tier rules, partner API integrations). Clickmasters maintains a pool of engineers with 1–3 of these rare retail profiles available for augmentation."
       },
       {
         "question": "How long does RetailTech staff augmentation onboarding take?",
-        "answer": "RetailTech staff augmentation onboarding: Week 1: platform familiarisation (Shopify Admin, Shopify CLI, Shopify Partners account access), PECR and Consumer Rights Act compliance induction. Week 2: first sprint with retail-specific tasks (product page component, promotional pricing logic, checkout extension). Week 3–4: independent delivery. For engineers with prior Shopify/retail experience: 1–2 week ramp-up. For experienced engineers new to retail: 3–4 weeks. Black Friday season: ClickMasters requests 6-week minimum for peak trading augmentation — 2 weeks onboarding + 4 weeks peak delivery."
+        "answer": "RetailTech staff augmentation onboarding: Week 1: platform familiarisation (Shopify Admin, Shopify CLI, Shopify Partners account access), PECR and Consumer Rights Act compliance induction. Week 2: first sprint with retail-specific tasks (product page component, promotional pricing logic, checkout extension). Week 3–4: independent delivery. For engineers with prior Shopify/retail experience: 1–2 week ramp-up. For experienced engineers new to retail: 3–4 weeks. Black Friday season: Clickmasters requests 6-week minimum for peak trading augmentation — 2 weeks onboarding + 4 weeks peak delivery."
       }
     ]
   },
@@ -11063,11 +11063,11 @@ const industries = [
     "industry": "cleantech",
     "service": "qa-testing-cleantech",
     "title": "QA & Testing for UK CleanTech — Ofgem Built In",
-    "metaTitle": "QA & Testing for CleanTech UK | ClickMasters",
+    "metaTitle": "QA & Testing for CleanTech UK | Clickmasters",
     "metaDesc": "QA & Testing for UK CleanTech. Ofgem. £8,000–£45,000.",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters CleanTech Team",
+    "writtenBy": "Clickmasters CleanTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "CleanTech",
@@ -11077,7 +11077,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides QA & Testing for UK CleanTech businesses with Ofgem, DEFRA compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides QA & Testing for UK CleanTech businesses with Ofgem, DEFRA compliance from Sprint 1.",
     "sections": [
       {
         "heading": "QA & Testing for CleanTech — UK Specifics",
@@ -11096,7 +11096,7 @@ const industries = [
           },
           {
             "bold": "Smart Meter and DCC Integration Testing",
-            "text": "Ofgem DCC (Data Communications Company) integration testing for UK smart meter platforms. DCC sandbox: DCC provides a developer sandbox with test MPANs (Meter Point Administration Numbers) and test smart meters (simulated). DCC test scenarios: (1) HAN (Home Area Network) join — new smart meter joins the DCC network, (2) half-hourly data retrieval (SMETS2 — retrieve HH data for test MPAN), (3) prepayment top-up (test PAYG credit command), (4) tariff switch (test tariff change command → verify meter reflects new tariff), (5) data quality error handling (partial read — missing intervals, estimated reads). ClickMasters DCC integration: all 5 DCC test scenarios passing in sandbox before production connection."
+            "text": "Ofgem DCC (Data Communications Company) integration testing for UK smart meter platforms. DCC sandbox: DCC provides a developer sandbox with test MPANs (Meter Point Administration Numbers) and test smart meters (simulated). DCC test scenarios: (1) HAN (Home Area Network) join — new smart meter joins the DCC network, (2) half-hourly data retrieval (SMETS2 — retrieve HH data for test MPAN), (3) prepayment top-up (test PAYG credit command), (4) tariff switch (test tariff change command → verify meter reflects new tariff), (5) data quality error handling (partial read — missing intervals, estimated reads). Clickmasters DCC integration: all 5 DCC test scenarios passing in sandbox before production connection."
           }
         ]
       },
@@ -11163,11 +11163,11 @@ const industries = [
     "faqs": [
       {
         "question": "What QA is required before connecting to Ofgem DCC in production?",
-        "answer": "Ofgem DCC production connectivity: DCC requires Data User registration (6-week process) before production access. Pre-production QA: (1) all DCC sandbox test scenarios passing (SMETS2 — 5 core scenarios), (2) load test (DCC rate limiting — cannot send more than 100 requests/second per MPAN group), (3) error handling (DCC returns rejection codes — all rejection scenarios handled gracefully in application), (4) data reconciliation (test that smart meter data retrieved from DCC matches test MPAN's known data), (5) reconnect handling (DCC connection drops → retry with exponential backoff → reconcile missed readings). ClickMasters submits DCC test evidence pack as part of Data User registration — DCC reviewers assess test coverage before approving production access."
+        "answer": "Ofgem DCC production connectivity: DCC requires Data User registration (6-week process) before production access. Pre-production QA: (1) all DCC sandbox test scenarios passing (SMETS2 — 5 core scenarios), (2) load test (DCC rate limiting — cannot send more than 100 requests/second per MPAN group), (3) error handling (DCC returns rejection codes — all rejection scenarios handled gracefully in application), (4) data reconciliation (test that smart meter data retrieved from DCC matches test MPAN's known data), (5) reconnect handling (DCC connection drops → retry with exponential backoff → reconcile missed readings). Clickmasters submits DCC test evidence pack as part of Data User registration — DCC reviewers assess test coverage before approving production access."
       },
       {
         "question": "How do we test solar panel output calculations against DEFRA standards?",
-        "answer": "Solar generation calculation testing: (1) unit tests for peak power calculation (kWp × irradiance × system efficiency — parameterised with PVGIS known reference values for UK locations), (2) DEFRA emission factor application (Scope 2 — generation offset against grid emission factor: consumed kWh × (grid emission factor − solar offset)), (3) SAP (Standard Assessment Procedure) calculation verification (for EPC-linked solar — ClickMasters validates SAP energy calculations against BRE SAP 10.2 reference outputs), (4) seasonal variation testing (UK solar irradiance January vs July — test that seasonal adjustment is correctly applied). DEFRA emission factors: updated annually in March — automated test checks platform is using current year's DEFRA emission factors."
+        "answer": "Solar generation calculation testing: (1) unit tests for peak power calculation (kWp × irradiance × system efficiency — parameterised with PVGIS known reference values for UK locations), (2) DEFRA emission factor application (Scope 2 — generation offset against grid emission factor: consumed kWh × (grid emission factor − solar offset)), (3) SAP (Standard Assessment Procedure) calculation verification (for EPC-linked solar — Clickmasters validates SAP energy calculations against BRE SAP 10.2 reference outputs), (4) seasonal variation testing (UK solar irradiance January vs July — test that seasonal adjustment is correctly applied). DEFRA emission factors: updated annually in March — automated test checks platform is using current year's DEFRA emission factors."
       }
     ]
   },
@@ -11177,11 +11177,11 @@ const industries = [
     "industry": "medtech",
     "service": "api-development-medtech",
     "title": "API Development for UK MedTech — MHRA Built In",
-    "metaTitle": "API Development for MedTech UK | ClickMasters",
+    "metaTitle": "API Development for MedTech UK | Clickmasters",
     "metaDesc": "API Development for UK MedTech. MHRA. £10,000–£50,000.",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters MedTech Team",
+    "writtenBy": "Clickmasters MedTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "MedTech",
@@ -11191,26 +11191,26 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides API Development for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides API Development for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "API Development for MedTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "NHS SMART on FHIR Application API",
-            "text": "SMART on FHIR (Substitutable Medical Applications, Reusable Technologies): open standard for launching clinical apps from within EHR systems. SMART app launch: (1) clinical user opens SMART-enabled EHR (Epic, Cerner, System One — all support SMART on FHIR), (2) launches ClickMasters MedTech SMART app (iframe within EHR), (3) SMART app receives patient context (NHS number, encounter ID) via FHIR R4 launch context, (4) SMART app queries FHIR server for relevant clinical data (SMART app makes FHIR API calls with OAuth 2.0 token), (5) clinical decision support displayed in EHR context. NHS benefits: no separate login for MedTech app (uses NHS SDS credentials from EHR), patient context automatically available."
+            "text": "SMART on FHIR (Substitutable Medical Applications, Reusable Technologies): open standard for launching clinical apps from within EHR systems. SMART app launch: (1) clinical user opens SMART-enabled EHR (Epic, Cerner, System One — all support SMART on FHIR), (2) launches Clickmasters MedTech SMART app (iframe within EHR), (3) SMART app receives patient context (NHS number, encounter ID) via FHIR R4 launch context, (4) SMART app queries FHIR server for relevant clinical data (SMART app makes FHIR API calls with OAuth 2.0 token), (5) clinical decision support displayed in EHR context. NHS benefits: no separate login for MedTech app (uses NHS SDS credentials from EHR), patient context automatically available."
           },
           {
             "bold": "Wearable Device API Integration for MedTech",
-            "text": "Wearable and remote monitoring device APIs: (1) Apple HealthKit API (iOS — heart rate, activity, blood glucose from Apple Watch and connected devices), (2) Google Fit API (Android — activity, heart rate, sleep), (3) NHS-approved remote monitoring devices (Bluetooth LE — custom SDK or react-native-ble-plx), (4) Fitbit API (heart rate, sleep quality, activity level — OAuth 2.0, 150 API calls/hour rate limit). UK GDPR Article 9: wearable health data is special category — explicit consent required for processing, purpose limitation strictly enforced. DTAC Domain 2: wearable data processing requires NHS DTAC data protection assessment — ClickMasters includes wearable device data flows in all DTAC Domain 1 data flow diagrams."
+            "text": "Wearable and remote monitoring device APIs: (1) Apple HealthKit API (iOS — heart rate, activity, blood glucose from Apple Watch and connected devices), (2) Google Fit API (Android — activity, heart rate, sleep), (3) NHS-approved remote monitoring devices (Bluetooth LE — custom SDK or react-native-ble-plx), (4) Fitbit API (heart rate, sleep quality, activity level — OAuth 2.0, 150 API calls/hour rate limit). UK GDPR Article 9: wearable health data is special category — explicit consent required for processing, purpose limitation strictly enforced. DTAC Domain 2: wearable data processing requires NHS DTAC data protection assessment — Clickmasters includes wearable device data flows in all DTAC Domain 1 data flow diagrams."
           },
           {
             "bold": "NHS Spine and GP Connect API Integration",
-            "text": "NHS Spine: NHS national infrastructure for clinical data exchange. GP Connect API: access GP records from any NHS system. GP Connect access record (structured): medications (FHIR MedicationStatement), allergies (FHIR AllergyIntolerance), conditions (FHIR Condition), appointments (FHIR Appointment). GP Connect send document: MedTech app can write clinical documents back to GP record (FHIR DocumentReference). NHS Spine integration: Personal Demographics Service (PDS) for NHS number lookup, Organisational Data Service (ODS) for NHS organisation codes, Spine Directory Service (SDS) for staff authentication (RBAC). ClickMasters has completed GP Connect integration for 6 NHS MedTech clients — integration patterns well-understood."
+            "text": "NHS Spine: NHS national infrastructure for clinical data exchange. GP Connect API: access GP records from any NHS system. GP Connect access record (structured): medications (FHIR MedicationStatement), allergies (FHIR AllergyIntolerance), conditions (FHIR Condition), appointments (FHIR Appointment). GP Connect send document: MedTech app can write clinical documents back to GP record (FHIR DocumentReference). NHS Spine integration: Personal Demographics Service (PDS) for NHS number lookup, Organisational Data Service (ODS) for NHS organisation codes, Spine Directory Service (SDS) for staff authentication (RBAC). Clickmasters has completed GP Connect integration for 6 NHS MedTech clients — integration patterns well-understood."
           },
           {
             "bold": "Medical Device API Regulatory Context",
-            "text": "MHRA post-market surveillance APIs: IEC 62304 requires post-market surveillance — APIs for real-world performance monitoring. Incident reporting: MHRA Yellow Card API (adverse event reporting for medical devices — mandatory for Class IIa+ devices). Vigilance API: EU EUDAMED API (European database for medical devices — post-Brexit, UK devices reported to MHRA). Device registration: MHRA device registration API (DESH — Device Equipment and Software Hub — required for UK marketed medical devices). ClickMasters MedTech API integration: all 4 MHRA regulatory APIs implemented as standard for Class IIa+ medical device software."
+            "text": "MHRA post-market surveillance APIs: IEC 62304 requires post-market surveillance — APIs for real-world performance monitoring. Incident reporting: MHRA Yellow Card API (adverse event reporting for medical devices — mandatory for Class IIa+ devices). Vigilance API: EU EUDAMED API (European database for medical devices — post-Brexit, UK devices reported to MHRA). Device registration: MHRA device registration API (DESH — Device Equipment and Software Hub — required for UK marketed medical devices). Clickmasters MedTech API integration: all 4 MHRA regulatory APIs implemented as standard for Class IIa+ medical device software."
           }
         ]
       },
@@ -11277,11 +11277,11 @@ const industries = [
     "faqs": [
       {
         "question": "What NHS APIs does MedTech software need to integrate?",
-        "answer": "Core NHS MedTech API integrations: (1) PDS FHIR R4 (patient demographics — NHS number lookup and demographics), (2) GP Connect (GP record access — medications, allergies, conditions), (3) NHS SDS / NHS Login (staff and patient authentication), (4) eRS FHIR R4 (electronic referrals — create, view, manage referrals), (5) NHS FHIR Bulk Data (population analytics — $export for large-scale data access). Secondary: SMSP (Spine Mini Service Provider — for simpler FHIR queries), NRL (National Record Locator — find patient records across NHS systems), Pathology Results API (ARDS — laboratory results). ClickMasters has integrated all 7 NHS APIs across our MedTech portfolio — ready-made integration modules for each."
+        "answer": "Core NHS MedTech API integrations: (1) PDS FHIR R4 (patient demographics — NHS number lookup and demographics), (2) GP Connect (GP record access — medications, allergies, conditions), (3) NHS SDS / NHS Login (staff and patient authentication), (4) eRS FHIR R4 (electronic referrals — create, view, manage referrals), (5) NHS FHIR Bulk Data (population analytics — $export for large-scale data access). Secondary: SMSP (Spine Mini Service Provider — for simpler FHIR queries), NRL (National Record Locator — find patient records across NHS systems), Pathology Results API (ARDS — laboratory results). Clickmasters has integrated all 7 NHS APIs across our MedTech portfolio — ready-made integration modules for each."
       },
       {
         "question": "How long does NHS FHIR R4 API integration take?",
-        "answer": "NHS FHIR R4 API integration timelines: (1) PDS (patient demographics — simplest): 2–3 weeks including NHS sandbox testing. (2) GP Connect (structured record access): 6–10 weeks including GPSoC clinical assurance and NHS Digital onboarding. (3) NHS Login: 3–4 weeks for patient-facing apps, 4–6 weeks for NHS App integration. (4) eRS (referral management): 4–8 weeks including NHS Digital onboarding. (5) FHIR Bulk Data ($export): 4–6 weeks. Each NHS API requires NHS Digital API onboarding (separate process per API — allow 2–4 additional weeks for approval). ClickMasters maintains established relationships with NHS Digital API onboarding team — reduces approval time."
+        "answer": "NHS FHIR R4 API integration timelines: (1) PDS (patient demographics — simplest): 2–3 weeks including NHS sandbox testing. (2) GP Connect (structured record access): 6–10 weeks including GPSoC clinical assurance and NHS Digital onboarding. (3) NHS Login: 3–4 weeks for patient-facing apps, 4–6 weeks for NHS App integration. (4) eRS (referral management): 4–8 weeks including NHS Digital onboarding. (5) FHIR Bulk Data ($export): 4–6 weeks. Each NHS API requires NHS Digital API onboarding (separate process per API — allow 2–4 additional weeks for approval). Clickmasters maintains established relationships with NHS Digital API onboarding team — reduces approval time."
       }
     ]
   },
@@ -11291,11 +11291,11 @@ const industries = [
     "industry": "govtech",
     "service": "microservices-govtech",
     "title": "Microservices Architecture for UK GovTech — GDS Service Standard Built In",
-    "metaTitle": "Microservices Architecture for GovTech UK | ClickMasters",
+    "metaTitle": "Microservices Architecture for GovTech UK | Clickmasters",
     "metaDesc": "Microservices Architecture for UK GovTech. GDS Service Standard. £40,000–£180,000.",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "GovTech",
@@ -11305,14 +11305,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices Architecture for UK GovTech businesses with GDS Service Standard, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices Architecture for UK GovTech businesses with GDS Service Standard, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices Architecture for GovTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "GDS Service Standard and Microservices Design",
-            "text": "GDS Service Standard Point 16 (Make your technology choices): government microservices must use technologies with large talent pools (Node.js, Python — not niche), be deployable on GOV.UK PaaS or AWS (GDS-preferred platforms), and have a documented run-book for each service. GDS architectural principles: loosely coupled services (each microservice independently deployable), event-driven communication (SNS/SQS — no synchronous service-to-service calls for non-critical paths), and common platform components (GOV.UK Pay, GOV.UK Notify, GOV.UK One Login — reuse rather than rebuild). ClickMasters GovTech microservices: each service is independently deployable, has its own CI/CD pipeline, and publishes to GOV.UK One Login or GOV.UK Pay rather than implementing authentication or payments from scratch."
+            "text": "GDS Service Standard Point 16 (Make your technology choices): government microservices must use technologies with large talent pools (Node.js, Python — not niche), be deployable on GOV.UK PaaS or AWS (GDS-preferred platforms), and have a documented run-book for each service. GDS architectural principles: loosely coupled services (each microservice independently deployable), event-driven communication (SNS/SQS — no synchronous service-to-service calls for non-critical paths), and common platform components (GOV.UK Pay, GOV.UK Notify, GOV.UK One Login — reuse rather than rebuild). Clickmasters GovTech microservices: each service is independently deployable, has its own CI/CD pipeline, and publishes to GOV.UK One Login or GOV.UK Pay rather than implementing authentication or payments from scratch."
           },
           {
             "bold": "GDPR Data Minimisation in Government Microservices",
@@ -11324,7 +11324,7 @@ const industries = [
           },
           {
             "bold": "NCSC Cloud Security Principles for GovTech Microservices",
-            "text": "NCSC 14 Cloud Security Principles: government microservices must demonstrate compliance with NCSC Principles 1–14. Key principles for microservices: Principle 3 (Separation between users — each microservice has its own IAM role, no shared credentials), Principle 6 (Personnel security — access to each microservices production environment requires separate IAM permission grant), Principle 8 (Audit trail — CloudTrail per microservice), Principle 10 (Incident management — each microservice has an incident runbook referencing GOV.UK incident management process), Principle 13 (Audit information provision — each microservice exports CloudWatch logs to central SIEM for NCSC-required audit trail). ClickMasters produces NCSC Principle compliance statement for each GovTech microservice."
+            "text": "NCSC 14 Cloud Security Principles: government microservices must demonstrate compliance with NCSC Principles 1–14. Key principles for microservices: Principle 3 (Separation between users — each microservice has its own IAM role, no shared credentials), Principle 6 (Personnel security — access to each microservices production environment requires separate IAM permission grant), Principle 8 (Audit trail — CloudTrail per microservice), Principle 10 (Incident management — each microservice has an incident runbook referencing GOV.UK incident management process), Principle 13 (Audit information provision — each microservice exports CloudWatch logs to central SIEM for NCSC-required audit trail). Clickmasters produces NCSC Principle compliance statement for each GovTech microservice."
           }
         ]
       },
@@ -11391,11 +11391,11 @@ const industries = [
     "faqs": [
       {
         "question": "How many microservices should a UK government digital service have?",
-        "answer": "GDS guidance on microservices: start with a simple service architecture — avoid premature decomposition. GDS-recommended approach: (1) start as a monolith (single deployment, focus on user needs), (2) extract a microservice when a specific service grows to need independent deployment cadence or a separate team. GDS Spend Controls caution: complex microservices architectures in small government teams often create more problems than they solve (each service needs its own CI/CD, monitoring, on-call rotation). ClickMasters GovTech architecture recommendation: 3–6 microservices max for government services with < 10 engineering team members, plus GOV.UK common components. Avoid 20+ microservice government architectures — they are unmaintainable with typical government team sizes."
+        "answer": "GDS guidance on microservices: start with a simple service architecture — avoid premature decomposition. GDS-recommended approach: (1) start as a monolith (single deployment, focus on user needs), (2) extract a microservice when a specific service grows to need independent deployment cadence or a separate team. GDS Spend Controls caution: complex microservices architectures in small government teams often create more problems than they solve (each service needs its own CI/CD, monitoring, on-call rotation). Clickmasters GovTech architecture recommendation: 3–6 microservices max for government services with < 10 engineering team members, plus GOV.UK common components. Avoid 20+ microservice government architectures — they are unmaintainable with typical government team sizes."
       },
       {
         "question": "Does a GovTech microservices architecture need a separate DPIA?",
-        "answer": "Each new microservice that processes personal data requires its own Article 35 DPIA assessment if the processing is high risk. Practical approach for government microservices: (1) master DPIA for the service as a whole (describes all processing across all microservices), (2) per-microservice addendum (describes specific personal data processed, legal basis, retention period) — reviewed by DPO. GDS service assessment: DPIA must be complete before Beta assessment. ICO guidance: government organisations should have a DPO review the architecture before build (DPIA at design stage — Article 25 Privacy by Design). ClickMasters produces DPIA for each GovTech service as part of the GDS Assessment Evidence Pack."
+        "answer": "Each new microservice that processes personal data requires its own Article 35 DPIA assessment if the processing is high risk. Practical approach for government microservices: (1) master DPIA for the service as a whole (describes all processing across all microservices), (2) per-microservice addendum (describes specific personal data processed, legal basis, retention period) — reviewed by DPO. GDS service assessment: DPIA must be complete before Beta assessment. ICO guidance: government organisations should have a DPO review the architecture before build (DPIA at design stage — Article 25 Privacy by Design). Clickmasters produces DPIA for each GovTech service as part of the GDS Assessment Evidence Pack."
       }
     ]
   },
@@ -11405,11 +11405,11 @@ const industries = [
     "industry": "fintech",
     "service": "mvp-development-fintech",
     "title": "MVP Development for UK FinTech — FCA COBS Built In",
-    "metaTitle": "MVP Development for FinTech UK | ClickMasters",
+    "metaTitle": "MVP Development for FinTech UK | Clickmasters",
     "metaDesc": "MVP Development for UK FinTech. FCA COBS. £12,000–£65,000.",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -11419,22 +11419,22 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides MVP Development for UK FinTech businesses with FCA COBS, FCA sandbox (FCA Innovate) compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides MVP Development for UK FinTech businesses with FCA COBS, FCA sandbox (FCA Innovate) compliance from Sprint 1.",
     "sections": [
       {
         "heading": "MVP Development for FinTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "FCA Regulatory Sandbox for FinTech MVPs",
-            "text": "FCA Innovate (FCA Innovation Hub): FCA's programme to support innovative FinTech products. FCA Regulatory Sandbox: allows FinTech MVPs to test regulated products with real customers under a restricted FCA authorisation. Sandbox benefits: (1) test regulated financial product before full FCA authorisation (6–12 months faster than direct authorisation), (2) FCA direct engagement (FCA sandbox advisor guides through compliance requirements), (3) restricted authorisation (limited customer numbers while testing), (4) no enforcement action during sandbox testing (if sandbox conditions met). Eligibility: product must be genuinely innovative, serve consumer interest, and benefit from real-world testing. ClickMasters has supported 8 UK FinTech sandbox applications — 6 approved."
+            "text": "FCA Innovate (FCA Innovation Hub): FCA's programme to support innovative FinTech products. FCA Regulatory Sandbox: allows FinTech MVPs to test regulated products with real customers under a restricted FCA authorisation. Sandbox benefits: (1) test regulated financial product before full FCA authorisation (6–12 months faster than direct authorisation), (2) FCA direct engagement (FCA sandbox advisor guides through compliance requirements), (3) restricted authorisation (limited customer numbers while testing), (4) no enforcement action during sandbox testing (if sandbox conditions met). Eligibility: product must be genuinely innovative, serve consumer interest, and benefit from real-world testing. Clickmasters has supported 8 UK FinTech sandbox applications — 6 approved."
           },
           {
             "bold": "UK FinTech MVP — What to Build in 12 Weeks",
-            "text": "FinTech MVP priorities: build what validates the business model, defer everything else. Priority 1 — core transaction: if lending, build the loan application and decision. If payments, build the payment initiation. If investment, build the portfolio creation. Priority 2 — FCA compliance minimum: what is the absolute minimum FCA requirement to go live? (typically: KYC, AML screening, risk disclosure). Priority 3 — product analytics: PostHog — understand how users navigate the core transaction (conversion funnel). What NOT to build in MVP: referral programme, advanced reporting, mobile app, API documentation, admin panel. ClickMasters FinTech MVP principle: one core transaction, FCA minimum, analytics. Everything else is Sprint 2."
+            "text": "FinTech MVP priorities: build what validates the business model, defer everything else. Priority 1 — core transaction: if lending, build the loan application and decision. If payments, build the payment initiation. If investment, build the portfolio creation. Priority 2 — FCA compliance minimum: what is the absolute minimum FCA requirement to go live? (typically: KYC, AML screening, risk disclosure). Priority 3 — product analytics: PostHog — understand how users navigate the core transaction (conversion funnel). What NOT to build in MVP: referral programme, advanced reporting, mobile app, API documentation, admin panel. Clickmasters FinTech MVP principle: one core transaction, FCA minimum, analytics. Everything else is Sprint 2."
           },
           {
             "bold": "UK FinTech MVP Technical Stack",
-            "text": "ClickMasters UK FinTech MVP stack (opinionated — optimised for speed and regulatory compliance): (1) Next.js 14 App Router (full-stack TypeScript — frontend and API routes in one repo), (2) PostgreSQL on Neon.tech (serverless PostgreSQL — zero ops, free tier, scale to production), (3) AWS Cognito (authentication — MFA, FCA PS21/3 compliant), (4) Stripe (payments — PCI-DSS SAQ-A from day 1), (5) Onfido (KYC — identity verification, AML screening), (6) Vercel (deployment — zero ops, fast CI/CD). Why Neon.tech not RDS? For MVP: Neon.tech is zero ops, free tier, branches for development (like Git for your database). Migrate to RDS when FCA requires NHS-grade data residency or when Neon.tech pricing at scale becomes expensive."
+            "text": "Clickmasters UK FinTech MVP stack (opinionated — optimised for speed and regulatory compliance): (1) Next.js 14 App Router (full-stack TypeScript — frontend and API routes in one repo), (2) PostgreSQL on Neon.tech (serverless PostgreSQL — zero ops, free tier, scale to production), (3) AWS Cognito (authentication — MFA, FCA PS21/3 compliant), (4) Stripe (payments — PCI-DSS SAQ-A from day 1), (5) Onfido (KYC — identity verification, AML screening), (6) Vercel (deployment — zero ops, fast CI/CD). Why Neon.tech not RDS? For MVP: Neon.tech is zero ops, free tier, branches for development (like Git for your database). Migrate to RDS when FCA requires NHS-grade data residency or when Neon.tech pricing at scale becomes expensive."
           },
           {
             "bold": "Open Banking in FinTech MVPs — When to Add It",
@@ -11500,11 +11500,11 @@ const industries = [
     "industry": "edtech",
     "service": "legacy-modernisation-edtech",
     "title": "Legacy Modernisation for UK EdTech — ICO AADC Built In",
-    "metaTitle": "Legacy Modernisation for EdTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for EdTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK EdTech. ICO AADC. £25,000–£120,000.",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "EdTech",
@@ -11514,7 +11514,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for EdTech — UK Specifics",
@@ -11525,11 +11525,11 @@ const industries = [
           },
           {
             "bold": "SIMS to Bromcom/Arbor Migration for UK Schools",
-            "text": "SIMS (School Information Management System — Capita): legacy MIS used by majority of UK state schools. Bromcom and Arbor are modern cloud-native alternatives replacing SIMS. SIMS migration technical complexity: (1) SIMS data export (CTF — Common Transfer File format for pupil data, B2B XML), (2) data mapping (SIMS data structures mapped to Bromcom/Arbor schema — UPN as primary key), (3) historical data migration (attendance records, assessment data, behaviour logs — 3–5 years history), (4) integration re-wiring (EdTech platforms connected to SIMS need reconnecting to new MIS). ClickMasters role: the custom EdTech platforms that integrated with SIMS need re-platforming to Bromcom/Arbor APIs — ClickMasters rebuilds the integration layer without replacing the EdTech application itself."
+            "text": "SIMS (School Information Management System — Capita): legacy MIS used by majority of UK state schools. Bromcom and Arbor are modern cloud-native alternatives replacing SIMS. SIMS migration technical complexity: (1) SIMS data export (CTF — Common Transfer File format for pupil data, B2B XML), (2) data mapping (SIMS data structures mapped to Bromcom/Arbor schema — UPN as primary key), (3) historical data migration (attendance records, assessment data, behaviour logs — 3–5 years history), (4) integration re-wiring (EdTech platforms connected to SIMS need reconnecting to new MIS). Clickmasters role: the custom EdTech platforms that integrated with SIMS need re-platforming to Bromcom/Arbor APIs — Clickmasters rebuilds the integration layer without replacing the EdTech application itself."
           },
           {
             "bold": "Moodle to Custom LMS Migration",
-            "text": "Moodle → Custom LMS migration: Moodle is PHP-based, complex to host securely, and increasingly difficult to maintain and extend. Migration approach: (1) content export (Moodle backup format — courses, quizzes, SCORM packages exported), (2) content import (SCORM packages work in any LTI 1.3-compatible platform), (3) user migration (username + hashed password export — force password reset on first login), (4) historical results migration (Gradebook data — Moodle export to CSV, imported to new platform). ICO AADC migration: learner data migration requires legal basis review (new platform, new purposes — consent refresh may be required for under-18 learner data). ClickMasters Moodle migration: data mapping tool converts Moodle export format to new LMS import format — automated migration for 50,000+ learners."
+            "text": "Moodle → Custom LMS migration: Moodle is PHP-based, complex to host securely, and increasingly difficult to maintain and extend. Migration approach: (1) content export (Moodle backup format — courses, quizzes, SCORM packages exported), (2) content import (SCORM packages work in any LTI 1.3-compatible platform), (3) user migration (username + hashed password export — force password reset on first login), (4) historical results migration (Gradebook data — Moodle export to CSV, imported to new platform). ICO AADC migration: learner data migration requires legal basis review (new platform, new purposes — consent refresh may be required for under-18 learner data). Clickmasters Moodle migration: data mapping tool converts Moodle export format to new LMS import format — automated migration for 50,000+ learners."
           },
           {
             "bold": "PSBAR Accessibility Retrofit for EdTech Legacy",
@@ -11595,7 +11595,7 @@ const industries = [
     "faqs": [
       {
         "question": "How long does EdTech legacy migration take?",
-        "answer": "EdTech legacy migration timelines: (1) SIMS to Bromcom/Arbor API re-wiring (custom EdTech integration migration — not replacing Bromcom itself): 4–8 weeks per integration. (2) Moodle 3.x to custom LMS (content + user migration, 50,000 learners): 10–16 weeks. (3) Blackboard Learn to custom VLE (42,000 students — full migration): 24 weeks (batch 72 case study above). (4) Legacy PHP EdTech platform to modern React/Node.js (complete rebuild): 20–40 weeks. ClickMasters recommendation: always conduct Technical Discovery before EdTech legacy migration — SIMS/Bromcom data schemas and Moodle export format contain surprises that add 4–8 weeks if discovered after migration starts."
+        "answer": "EdTech legacy migration timelines: (1) SIMS to Bromcom/Arbor API re-wiring (custom EdTech integration migration — not replacing Bromcom itself): 4–8 weeks per integration. (2) Moodle 3.x to custom LMS (content + user migration, 50,000 learners): 10–16 weeks. (3) Blackboard Learn to custom VLE (42,000 students — full migration): 24 weeks (batch 72 case study above). (4) Legacy PHP EdTech platform to modern React/Node.js (complete rebuild): 20–40 weeks. Clickmasters recommendation: always conduct Technical Discovery before EdTech legacy migration — SIMS/Bromcom data schemas and Moodle export format contain surprises that add 4–8 weeks if discovered after migration starts."
       },
       {
         "question": "What happens to AADC compliance during EdTech legacy migration?",
@@ -11609,11 +11609,11 @@ const industries = [
     "industry": "proptech",
     "service": "staff-augmentation-proptech",
     "title": "Staff Augmentation for UK PropTech — UK GDPR Built In",
-    "metaTitle": "Staff Augmentation for PropTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for PropTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK PropTech. UK GDPR. from £5,000/month.",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters PropTech Team",
+    "writtenBy": "Clickmasters PropTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "PropTech",
@@ -11623,7 +11623,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK PropTech businesses with UK GDPR, HMLR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK PropTech businesses with UK GDPR, HMLR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for PropTech — UK Specifics",
@@ -11634,7 +11634,7 @@ const industries = [
           },
           {
             "bold": "UK Estate Agency Specific Compliance Knowledge",
-            "text": "UK estate agency technology requires very specific regulatory knowledge: (1) CMP (Client Money Protection) — estate agents must belong to an approved CMP scheme (ARLA, NAEA, TPO, RICS). CMP scheme membership API verification before disbursements. (2) TPO (The Property Ombudsman) membership — automated verification. (3) AML (Anti-Money Laundering) — estate agents are Supervised Persons under the MLRs 2017 — property purchase client identity verification (Onfido, GB Group). (4) EPC display — estate agents must display valid EPC in property listings (automated EPC Register API check at listing creation). (5) Tenure check — freehold/leasehold/commonhold identification at listing (HMLR title register query). ClickMasters maintains pre-vetted PropTech engineers who understand all 5 UK-specific estate agency requirements."
+            "text": "UK estate agency technology requires very specific regulatory knowledge: (1) CMP (Client Money Protection) — estate agents must belong to an approved CMP scheme (ARLA, NAEA, TPO, RICS). CMP scheme membership API verification before disbursements. (2) TPO (The Property Ombudsman) membership — automated verification. (3) AML (Anti-Money Laundering) — estate agents are Supervised Persons under the MLRs 2017 — property purchase client identity verification (Onfido, GB Group). (4) EPC display — estate agents must display valid EPC in property listings (automated EPC Register API check at listing creation). (5) Tenure check — freehold/leasehold/commonhold identification at listing (HMLR title register query). Clickmasters maintains pre-vetted PropTech engineers who understand all 5 UK-specific estate agency requirements."
           },
           {
             "bold": "Proptech Data Standards — RICS, HMLR, OS",
@@ -11642,7 +11642,7 @@ const industries = [
           },
           {
             "bold": "PropTech for Institutional Investors — ESG and Carbon Reporting",
-            "text": "UK institutional real estate ESG: (1) GRESB (Global Real Estate Sustainability Benchmark) — annual ESG assessment of real estate portfolios, (2) TCFD (Task Force on Climate-related Financial Disclosures) — mandatory for large UK companies from 2022, (3) SECR (Streamlined Energy and Carbon Reporting) — annual carbon report, (4) CRREM (Carbon Risk Real Estate Monitor) — pathway analysis for portfolio decarbonisation, (5) EPC improvement tracking (MEES — minimum EPC E for commercial lettings from 2023, EPC B expected by 2030). ClickMasters PropTech staff augmentation: engineers with GRESB data structure and CRREM pathway calculation experience are rare and highly valued by institutional real estate clients."
+            "text": "UK institutional real estate ESG: (1) GRESB (Global Real Estate Sustainability Benchmark) — annual ESG assessment of real estate portfolios, (2) TCFD (Task Force on Climate-related Financial Disclosures) — mandatory for large UK companies from 2022, (3) SECR (Streamlined Energy and Carbon Reporting) — annual carbon report, (4) CRREM (Carbon Risk Real Estate Monitor) — pathway analysis for portfolio decarbonisation, (5) EPC improvement tracking (MEES — minimum EPC E for commercial lettings from 2023, EPC B expected by 2030). Clickmasters PropTech staff augmentation: engineers with GRESB data structure and CRREM pathway calculation experience are rare and highly valued by institutional real estate clients."
           }
         ]
       },
@@ -11714,11 +11714,11 @@ const industries = [
     "faqs": [
       {
         "question": "What PropTech skills are hardest to find for UK staff augmentation?",
-        "answer": "Rarest UK PropTech staff augmentation profiles: (1) Institutional real estate ESG engineer (GRESB data integration, CRREM pathway calculations, TCFD scenario analysis — very few engineers have institutional real estate ESG experience), (2) RICS Red Book compliance engine developer (RICS valuation rules as code — requires RICS regulatory understanding), (3) PropTech geospatial engineer with UPRN + OS Data Hub + INSPIRE Polygons expertise, (4) Smart building IoT engineer with Salto/Klevio smart lock API + BMS integration + CCTV compliance (ICO surveillance guidance). ClickMasters maintains a pool of engineers across all 4 rare PropTech profiles — available for staff augmentation with 2–4 week onboarding."
+        "answer": "Rarest UK PropTech staff augmentation profiles: (1) Institutional real estate ESG engineer (GRESB data integration, CRREM pathway calculations, TCFD scenario analysis — very few engineers have institutional real estate ESG experience), (2) RICS Red Book compliance engine developer (RICS valuation rules as code — requires RICS regulatory understanding), (3) PropTech geospatial engineer with UPRN + OS Data Hub + INSPIRE Polygons expertise, (4) Smart building IoT engineer with Salto/Klevio smart lock API + BMS integration + CCTV compliance (ICO surveillance guidance). Clickmasters maintains a pool of engineers across all 4 rare PropTech profiles — available for staff augmentation with 2–4 week onboarding."
       },
       {
         "question": "How quickly can PropTech staff augmentation engineers onboard?",
-        "answer": "PropTech staff augmentation onboarding: Week 1: UK property sector orientation (HMLR Digital Street, EPC Register, Rightmove/Zoopla portal integration primers), UK GDPR property data requirements (UPRN as personal data), Homes Act and Tenant Fees Act compliance overview. Week 2: codebase onboarding (portal integration patterns, UPRN data model). Week 3–4: first sprint delivery (Rightmove RTDF integration, HMLR API integration, or MEES compliance dashboard). For PropTech engineers with prior portal integration experience: 1–2 week ramp-up. Most ClickMasters PropTech engineers have prior UK portal integration (Rightmove, Zoopla) experience — onboarding is fast."
+        "answer": "PropTech staff augmentation onboarding: Week 1: UK property sector orientation (HMLR Digital Street, EPC Register, Rightmove/Zoopla portal integration primers), UK GDPR property data requirements (UPRN as personal data), Homes Act and Tenant Fees Act compliance overview. Week 2: codebase onboarding (portal integration patterns, UPRN data model). Week 3–4: first sprint delivery (Rightmove RTDF integration, HMLR API integration, or MEES compliance dashboard). For PropTech engineers with prior portal integration experience: 1–2 week ramp-up. Most Clickmasters PropTech engineers have prior UK portal integration (Rightmove, Zoopla) experience — onboarding is fast."
       }
     ]
   },
@@ -11728,11 +11728,11 @@ const industries = [
     "industry": "cleantech",
     "service": "saas-development-cleantech",
     "title": "SaaS Development for UK CleanTech — Ofgem Built In",
-    "metaTitle": "SaaS Development for CleanTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for CleanTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK CleanTech. Ofgem. £35,000–£180,000.",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters CleanTech Team",
+    "writtenBy": "Clickmasters CleanTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "CleanTech",
@@ -11742,7 +11742,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK CleanTech businesses with Ofgem, DEFRA compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK CleanTech businesses with Ofgem, DEFRA compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for CleanTech — UK Specifics",
@@ -11828,11 +11828,11 @@ const industries = [
     "faqs": [
       {
         "question": "How much does CleanTech SaaS development cost in the UK?",
-        "answer": "ClickMasters CleanTech SaaS costs: (1) SECR automation SaaS (Scope 1+2 emissions tracking, DEFRA factors, annual SECR report): £25,000–£55,000 (14–20 weeks). (2) Full Net Zero management platform (Scope 1-2-3, SBTi target setting, offset management, TCFD reporting): £55,000–£120,000 (24–36 weeks). (3) Ofgem regulatory submission SaaS (REGO + RO + FIT for multiple licensed entities, multi-tenancy): £45,000–£100,000 (20–32 weeks). (4) EV fleet management SaaS (OCPP charging, HMRC BiK, fleet Scope 1 displacement): £35,000–£80,000 (18–26 weeks). UK CleanTech SaaS market context: SECR affects approximately 12,000 UK companies annually — each needs a solution, and most are still using spreadsheets."
+        "answer": "Clickmasters CleanTech SaaS costs: (1) SECR automation SaaS (Scope 1+2 emissions tracking, DEFRA factors, annual SECR report): £25,000–£55,000 (14–20 weeks). (2) Full Net Zero management platform (Scope 1-2-3, SBTi target setting, offset management, TCFD reporting): £55,000–£120,000 (24–36 weeks). (3) Ofgem regulatory submission SaaS (REGO + RO + FIT for multiple licensed entities, multi-tenancy): £45,000–£100,000 (20–32 weeks). (4) EV fleet management SaaS (OCPP charging, HMRC BiK, fleet Scope 1 displacement): £35,000–£80,000 (18–26 weeks). UK CleanTech SaaS market context: SECR affects approximately 12,000 UK companies annually — each needs a solution, and most are still using spreadsheets."
       },
       {
         "question": "What carbon accounting standards should UK CleanTech SaaS support?",
-        "answer": "UK CleanTech SaaS carbon accounting standards: (1) GHG Protocol (primary — Scope 1, 2, 3 definitions — used by SECR), (2) ISO 14064 (carbon accounting standard — often required for ESOS and large enterprises), (3) DEFRA environmental reporting guidelines (UK-specific Scope 2 location-based factors — updated annually in March), (4) SBTi (Science Based Targets — Scope 1-2-3 trajectory aligned with 1.5°C or well-below 2°C), (5) TCFD (climate risk disclosure framework — mandatory for large UK companies from 2022). ClickMasters CleanTech SaaS: implements all 5 standards as switchable modules — different reporting frameworks produce different numbers from the same underlying data (Scope 2 market-based vs location-based, for example)."
+        "answer": "UK CleanTech SaaS carbon accounting standards: (1) GHG Protocol (primary — Scope 1, 2, 3 definitions — used by SECR), (2) ISO 14064 (carbon accounting standard — often required for ESOS and large enterprises), (3) DEFRA environmental reporting guidelines (UK-specific Scope 2 location-based factors — updated annually in March), (4) SBTi (Science Based Targets — Scope 1-2-3 trajectory aligned with 1.5°C or well-below 2°C), (5) TCFD (climate risk disclosure framework — mandatory for large UK companies from 2022). Clickmasters CleanTech SaaS: implements all 5 standards as switchable modules — different reporting frameworks produce different numbers from the same underlying data (Scope 2 market-based vs location-based, for example)."
       }
     ]
   },
@@ -11842,11 +11842,11 @@ const industries = [
     "industry": "insurtech",
     "service": "legacy-modernisation-insurtech",
     "title": "Legacy Modernisation for UK InsurTech — FCA ICOBS Built In",
-    "metaTitle": "Legacy Modernisation for InsurTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for InsurTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK InsurTech. FCA ICOBS. £30,000–£150,000.",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters InsurTech Team",
+    "writtenBy": "Clickmasters InsurTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "InsurTech",
@@ -11856,7 +11856,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK InsurTech businesses with FCA ICOBS, FCA Consumer Duty compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK InsurTech businesses with FCA ICOBS, FCA Consumer Duty compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for InsurTech — UK Specifics",
@@ -11867,11 +11867,11 @@ const industries = [
           },
           {
             "bold": "FCA Consumer Duty Legacy Assessment",
-            "text": "FCA Consumer Duty PS22/9 requires insurers to assess whether legacy systems produce fair customer outcomes. Legacy Consumer Duty failure modes: (1) renewal pricing — legacy systems that increase premium at renewal without fair pricing justification (FCA PS21/11 renewal pricing rules), (2) claims journey — legacy claims portals that make claiming harder than it should be (Consumer Duty consumer support outcome), (3) cancellation — legacy systems that charge excessive cancellation fees or make cancellation difficult (Consumer Duty — cancellation must be no harder than purchase), (4) product information — legacy systems that display unclear product information (Consumer Duty consumer understanding outcome). ClickMasters legacy assessment: audits legacy InsurTech UX journeys against Consumer Duty outcomes before modernisation scope is agreed."
+            "text": "FCA Consumer Duty PS22/9 requires insurers to assess whether legacy systems produce fair customer outcomes. Legacy Consumer Duty failure modes: (1) renewal pricing — legacy systems that increase premium at renewal without fair pricing justification (FCA PS21/11 renewal pricing rules), (2) claims journey — legacy claims portals that make claiming harder than it should be (Consumer Duty consumer support outcome), (3) cancellation — legacy systems that charge excessive cancellation fees or make cancellation difficult (Consumer Duty — cancellation must be no harder than purchase), (4) product information — legacy systems that display unclear product information (Consumer Duty consumer understanding outcome). Clickmasters legacy assessment: audits legacy InsurTech UX journeys against Consumer Duty outcomes before modernisation scope is agreed."
           },
           {
             "bold": "Lloyd's Market Legacy Modernisation",
-            "text": "Lloyd's of London digital transformation: Lloyd's Blueprint Two programme — Core Data Record (CDR) mandatory for all new business. Legacy Lloyd's systems: ACORD (Association for Cooperative Operations Research and Development) messaging (ACORD 2.x → ACORD 3.x migration), IMR (Insurers' Market Repository), and LBS (Lloyd's Back-office Settlement). CDR migration: (1) ACORD 3.x structured data adoption, (2) risk code harmonisation (LOB codes → CDR taxonomy), (3) Lloyd's API connectivity (Lloyd's Atlas API — policy submission via API, not PDF). ClickMasters CDR migration: 28 CDR test scenarios (Lloyd's CDR sandbox) all passed before production submission."
+            "text": "Lloyd's of London digital transformation: Lloyd's Blueprint Two programme — Core Data Record (CDR) mandatory for all new business. Legacy Lloyd's systems: ACORD (Association for Cooperative Operations Research and Development) messaging (ACORD 2.x → ACORD 3.x migration), IMR (Insurers' Market Repository), and LBS (Lloyd's Back-office Settlement). CDR migration: (1) ACORD 3.x structured data adoption, (2) risk code harmonisation (LOB codes → CDR taxonomy), (3) Lloyd's API connectivity (Lloyd's Atlas API — policy submission via API, not PDF). Clickmasters CDR migration: 28 CDR test scenarios (Lloyd's CDR sandbox) all passed before production submission."
           },
           {
             "bold": "Claims Automation in Legacy Modernisation",
@@ -11937,11 +11937,11 @@ const industries = [
     "faqs": [
       {
         "question": "How long does InsurTech legacy modernisation take?",
-        "answer": "InsurTech legacy modernisation timelines: (1) Consumer Duty UX remediation (legacy portal Consumer Duty compliance fixes — new renewal journey, simpler cancellation): 8–14 weeks. (2) Legacy policy administration system API wrapping (REST API layer over COBOL/legacy system — modern digital frontend consuming legacy backend): 12–20 weeks. (3) Full Guidewire PolicyCenter on-prem to Guidewire Cloud migration: 24–48 weeks (large programme — ClickMasters supports API layer and digital channel, not core Guidewire implementation). (4) New cloud-native policy administration system replacing legacy: 32–60 weeks. ClickMasters recommendation: start with Consumer Duty remediation (fastest ROI, regulatory deadline driven) before full platform migration."
+        "answer": "InsurTech legacy modernisation timelines: (1) Consumer Duty UX remediation (legacy portal Consumer Duty compliance fixes — new renewal journey, simpler cancellation): 8–14 weeks. (2) Legacy policy administration system API wrapping (REST API layer over COBOL/legacy system — modern digital frontend consuming legacy backend): 12–20 weeks. (3) Full Guidewire PolicyCenter on-prem to Guidewire Cloud migration: 24–48 weeks (large programme — Clickmasters supports API layer and digital channel, not core Guidewire implementation). (4) New cloud-native policy administration system replacing legacy: 32–60 weeks. Clickmasters recommendation: start with Consumer Duty remediation (fastest ROI, regulatory deadline driven) before full platform migration."
       },
       {
         "question": "What is CDR and why does it require legacy modernisation?",
-        "answer": "Lloyd's CDR (Core Data Record): Lloyd's Blueprint Two programme — all Lloyd's business must be submitted as structured digital data (CDR) rather than PDF documents. CDR mandatory from 2024 for new business. Legacy impact: (1) in-house ACORD 1.x/2.x systems cannot generate CDR-compliant ACORD 3.x structured data without significant engineering, (2) spreadsheet-based risk submission (common in Lloyd's coverholders) must be replaced with CDR API integration, (3) 28 CDR test scenarios in Lloyd's CDR sandbox must all pass before production. ClickMasters CDR timeline: 8–14 weeks for a coverholder or MGA with existing digital data to achieve CDR compliance — longer for paper-based processes requiring digitisation first."
+        "answer": "Lloyd's CDR (Core Data Record): Lloyd's Blueprint Two programme — all Lloyd's business must be submitted as structured digital data (CDR) rather than PDF documents. CDR mandatory from 2024 for new business. Legacy impact: (1) in-house ACORD 1.x/2.x systems cannot generate CDR-compliant ACORD 3.x structured data without significant engineering, (2) spreadsheet-based risk submission (common in Lloyd's coverholders) must be replaced with CDR API integration, (3) 28 CDR test scenarios in Lloyd's CDR sandbox must all pass before production. Clickmasters CDR timeline: 8–14 weeks for a coverholder or MGA with existing digital data to achieve CDR compliance — longer for paper-based processes requiring digitisation first."
       }
     ]
   },
@@ -11951,11 +11951,11 @@ const industries = [
     "industry": "medtech",
     "service": "microservices-medtech",
     "title": "Microservices Architecture for UK MedTech — MHRA Built In",
-    "metaTitle": "Microservices Architecture for MedTech UK | ClickMasters",
+    "metaTitle": "Microservices Architecture for MedTech UK | Clickmasters",
     "metaDesc": "Microservices Architecture for UK MedTech. MHRA. £45,000–£180,000.",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters MedTech Team",
+    "writtenBy": "Clickmasters MedTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "MedTech",
@@ -11965,7 +11965,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices Architecture for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices Architecture for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices Architecture for MedTech — UK Specifics",
@@ -11984,7 +11984,7 @@ const industries = [
           },
           {
             "bold": "DTAC Multi-Service Evidence Pack",
-            "text": "NHS DTAC (Digital Technology Assessment Criteria) for microservices architectures: DTAC assesses the product as a whole — not individual services. DTAC evidence pack for microservices: (1) Domain 1 (Data Flows): data flow diagram showing all microservices and patient data flows between them — each service labelled with data types processed, (2) Domain 2 (Data Protection): Article 30 ROPA covering all services (each service listed with personal data processed, legal basis, retention period), (3) Domain 3 (Technical Security): combined penetration test covering all services + inter-service mTLS evidence, (4) Domain 4 (Interoperability): FHIR R4 conformance statement covering all NHS integration points, (5) Domain 5 (Usability): WCAG 2.1 AA across all user-facing services. ClickMasters produces unified DTAC evidence pack regardless of microservices complexity."
+            "text": "NHS DTAC (Digital Technology Assessment Criteria) for microservices architectures: DTAC assesses the product as a whole — not individual services. DTAC evidence pack for microservices: (1) Domain 1 (Data Flows): data flow diagram showing all microservices and patient data flows between them — each service labelled with data types processed, (2) Domain 2 (Data Protection): Article 30 ROPA covering all services (each service listed with personal data processed, legal basis, retention period), (3) Domain 3 (Technical Security): combined penetration test covering all services + inter-service mTLS evidence, (4) Domain 4 (Interoperability): FHIR R4 conformance statement covering all NHS integration points, (5) Domain 5 (Usability): WCAG 2.1 AA across all user-facing services. Clickmasters produces unified DTAC evidence pack regardless of microservices complexity."
           }
         ]
       },
@@ -12055,7 +12055,7 @@ const industries = [
       },
       {
         "question": "Does IEC 62304 apply differently to microservices vs monoliths?",
-        "answer": "IEC 62304 software decomposition: IEC 62304 requires software to be decomposed into software items with traceability (requirement → design → code → test for each software item). Microservices map naturally to IEC 62304 software items: each microservice is a software item with clear interfaces, independent test evidence, and traceable requirements. Benefits for IEC 62304: (1) each microservice has its own IEC 62304 safety class (Clinical Decision Service = Class B, Notification Service = Class A), (2) software item integration testing = inter-service API testing, (3) regression testing scope = affected services only (not full system). Monolith IEC 62304 challenge: software item boundaries are less clear in a monolith — more documentation effort to define decomposition. ClickMasters preference: microservices for MedTech because IEC 62304 decomposition maps naturally to service boundaries."
+        "answer": "IEC 62304 software decomposition: IEC 62304 requires software to be decomposed into software items with traceability (requirement → design → code → test for each software item). Microservices map naturally to IEC 62304 software items: each microservice is a software item with clear interfaces, independent test evidence, and traceable requirements. Benefits for IEC 62304: (1) each microservice has its own IEC 62304 safety class (Clinical Decision Service = Class B, Notification Service = Class A), (2) software item integration testing = inter-service API testing, (3) regression testing scope = affected services only (not full system). Monolith IEC 62304 challenge: software item boundaries are less clear in a monolith — more documentation effort to define decomposition. Clickmasters preference: microservices for MedTech because IEC 62304 decomposition maps naturally to service boundaries."
       }
     ]
   },
@@ -12065,11 +12065,11 @@ const industries = [
     "industry": "fintech",
     "service": "devops-fintech",
     "title": "DevOps for UK FinTech — FCA PS21/3 Built In",
-    "metaTitle": "DevOps for FinTech UK | ClickMasters",
+    "metaTitle": "DevOps for FinTech UK | Clickmasters",
     "metaDesc": "DevOps for UK FinTech. FCA PS21/3. £25,000–£100,000.",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -12079,18 +12079,18 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides DevOps for UK FinTech businesses with FCA PS21/3, FCA PS24/1 (DORA) compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides DevOps for UK FinTech businesses with FCA PS21/3, FCA PS24/1 (DORA) compliance from Sprint 1.",
     "sections": [
       {
         "heading": "DevOps for FinTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "DORA (Digital Operational Resilience Act) and UK FinTech DevOps",
-            "text": "DORA (EU Digital Operational Resilience Act): applies to UK FinTechs with EU market access. DORA Article 12 (ICT change management): all ICT changes must be managed, tested, and documented. DORA Article 25 (ICT third-party risk): ICT service providers (including cloud providers) must be assessed. FCA PS21/3 UK equivalent: FCA operational resilience framework for UK-domiciled firms is the UK equivalent of DORA. Practical DevOps implication: (1) change management controls (branch protection, CI/CD pipeline approvals — same as PS21/3), (2) ICT third-party risk (cloud provider SLAs, backup strategies), (3) operational resilience testing (chaos engineering — AWS FIS, quarterly IBS availability tests). ClickMasters configures DevOps for dual compliance (FCA PS21/3 + DORA) simultaneously."
+            "text": "DORA (EU Digital Operational Resilience Act): applies to UK FinTechs with EU market access. DORA Article 12 (ICT change management): all ICT changes must be managed, tested, and documented. DORA Article 25 (ICT third-party risk): ICT service providers (including cloud providers) must be assessed. FCA PS21/3 UK equivalent: FCA operational resilience framework for UK-domiciled firms is the UK equivalent of DORA. Practical DevOps implication: (1) change management controls (branch protection, CI/CD pipeline approvals — same as PS21/3), (2) ICT third-party risk (cloud provider SLAs, backup strategies), (3) operational resilience testing (chaos engineering — AWS FIS, quarterly IBS availability tests). Clickmasters configures DevOps for dual compliance (FCA PS21/3 + DORA) simultaneously."
           },
           {
             "bold": "FCA PS21/3 Release Management in DevOps",
-            "text": "FCA PS21/3 IBS (Important Business Services) release management: changes to IBS-related services require documented change management. ClickMasters PS21/3 release pipeline: (1) PR created → Jira change request auto-created (PR title → Jira ticket), (2) automated tests pass → CI/CD status check green, (3) 2 engineer approvals required (GitHub branch protection), (4) Change Advisory Board (CAB) approval for high-impact changes (GitHub Environment protection → named CAB approvers), (5) CloudFormation change set reviewed (infrastructure changes require separate approval), (6) deployment (GitHub Actions deploy workflow → CloudFormation apply), (7) post-deployment validation (smoke tests → IBS availability check → if < 99.5% in first 15 minutes → automatic rollback). Immutable audit: every step logged in GitHub audit log + CloudTrail."
+            "text": "FCA PS21/3 IBS (Important Business Services) release management: changes to IBS-related services require documented change management. Clickmasters PS21/3 release pipeline: (1) PR created → Jira change request auto-created (PR title → Jira ticket), (2) automated tests pass → CI/CD status check green, (3) 2 engineer approvals required (GitHub branch protection), (4) Change Advisory Board (CAB) approval for high-impact changes (GitHub Environment protection → named CAB approvers), (5) CloudFormation change set reviewed (infrastructure changes require separate approval), (6) deployment (GitHub Actions deploy workflow → CloudFormation apply), (7) post-deployment validation (smoke tests → IBS availability check → if < 99.5% in first 15 minutes → automatic rollback). Immutable audit: every step logged in GitHub audit log + CloudTrail."
           },
           {
             "bold": "FinTech Disaster Recovery and RTO/RPO DevOps",
@@ -12160,11 +12160,11 @@ const industries = [
     "faqs": [
       {
         "question": "What DevOps controls does FCA PS21/3 specifically require?",
-        "answer": "FCA PS21/3 (Operational Resilience) DevOps requirements: (1) change management (all changes go through documented change process — GitHub branch protection + required approvals), (2) testing before deployment (automated testing — required CI/CD status checks), (3) deployment audit trail (immutable log of who deployed what and when — GitHub audit log + CloudTrail), (4) rollback capability (ability to quickly reverse a change — CloudFormation rollback, ECS task definition rollback), (5) IBS availability monitoring (measure IBS availability from customer perspective — CloudWatch synthetic monitoring from outside the VPC), (6) quarterly impact tolerance testing (simulate IBS outage — measure actual recovery time vs stated Impact Tolerance). ClickMasters configures all 6 as standard for FCA-regulated FinTech CI/CD."
+        "answer": "FCA PS21/3 (Operational Resilience) DevOps requirements: (1) change management (all changes go through documented change process — GitHub branch protection + required approvals), (2) testing before deployment (automated testing — required CI/CD status checks), (3) deployment audit trail (immutable log of who deployed what and when — GitHub audit log + CloudTrail), (4) rollback capability (ability to quickly reverse a change — CloudFormation rollback, ECS task definition rollback), (5) IBS availability monitoring (measure IBS availability from customer perspective — CloudWatch synthetic monitoring from outside the VPC), (6) quarterly impact tolerance testing (simulate IBS outage — measure actual recovery time vs stated Impact Tolerance). Clickmasters configures all 6 as standard for FCA-regulated FinTech CI/CD."
       },
       {
         "question": "How does DORA affect UK FinTechs not in the EU?",
-        "answer": "DORA applies to: (1) EU-domiciled financial entities, (2) ICT service providers providing services to EU financial entities. UK FinTechs with EU branches or subsidiaries: DORA applies to the EU entity. UK FinTechs with no EU presence: DORA does not directly apply. However: FCA PS21/3 mirrors DORA in most respects (change management, operational resilience testing, ICT third-party risk). UK FinTechs building for EU market access: if serving EU customers via a passported entity, DORA compliance via the EU entity is required. ClickMasters recommendation: implement PS21/3 compliance (mandatory for UK-domiciled FCA firms) — DORA compliance is 80% overlap, requiring only incremental additional controls for EU entities."
+        "answer": "DORA applies to: (1) EU-domiciled financial entities, (2) ICT service providers providing services to EU financial entities. UK FinTechs with EU branches or subsidiaries: DORA applies to the EU entity. UK FinTechs with no EU presence: DORA does not directly apply. However: FCA PS21/3 mirrors DORA in most respects (change management, operational resilience testing, ICT third-party risk). UK FinTechs building for EU market access: if serving EU customers via a passported entity, DORA compliance via the EU entity is required. Clickmasters recommendation: implement PS21/3 compliance (mandatory for UK-domiciled FCA firms) — DORA compliance is 80% overlap, requiring only incremental additional controls for EU entities."
       }
     ]
   },
@@ -12174,11 +12174,11 @@ const industries = [
     "industry": "edtech",
     "service": "api-development-edtech",
     "title": "API Development for UK EdTech — ICO AADC Built In",
-    "metaTitle": "API Development for EdTech UK | ClickMasters",
+    "metaTitle": "API Development for EdTech UK | Clickmasters",
     "metaDesc": "API Development for UK EdTech. ICO AADC. £8,000–£40,000.",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "EdTech",
@@ -12188,22 +12188,22 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides API Development for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides API Development for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "API Development for EdTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "LTI 1.3 Integration — EdTech Interoperability Standard",
-            "text": "LTI 1.3 (Learning Tools Interoperability): IMS Global standard for connecting external tools to LMS platforms. LTI 1.3 launch flow: (1) LMS (Canvas, Moodle, Blackboard, D2L) creates LTI 1.3 launch JWT, (2) tool verifies JWT signature (LMS public key via JWKS endpoint), (3) tool receives learner context (user ID, course ID, role, locale), (4) tool grants access based on LTI claims (no separate login required). LTI Advantage extensions: Assignment and Grade Services (LTI AGS — tool writes scores back to LMS gradebook), Deep Linking (tool returns content URL to LMS), Names and Role Provisioning (NRPS — tool queries course roster). UK EdTech LTI: ClickMasters has built LTI 1.3 integrations for Canvas (Russell Group universities), Moodle (FE colleges), and D2L Brightspace (further education trusts)."
+            "text": "LTI 1.3 (Learning Tools Interoperability): IMS Global standard for connecting external tools to LMS platforms. LTI 1.3 launch flow: (1) LMS (Canvas, Moodle, Blackboard, D2L) creates LTI 1.3 launch JWT, (2) tool verifies JWT signature (LMS public key via JWKS endpoint), (3) tool receives learner context (user ID, course ID, role, locale), (4) tool grants access based on LTI claims (no separate login required). LTI Advantage extensions: Assignment and Grade Services (LTI AGS — tool writes scores back to LMS gradebook), Deep Linking (tool returns content URL to LMS), Names and Role Provisioning (NRPS — tool queries course roster). UK EdTech LTI: Clickmasters has built LTI 1.3 integrations for Canvas (Russell Group universities), Moodle (FE colleges), and D2L Brightspace (further education trusts)."
           },
           {
             "bold": "xAPI (Tin Can) — Learning Analytics API",
-            "text": "xAPI (Experience API, also known as Tin Can): standard for recording learning experiences (statements). xAPI statement: actor (learner) + verb (completed, passed, failed, experienced) + object (learning activity ID). LRS (Learning Record Store): stores xAPI statements. UK EdTech xAPI use cases: (1) simulation-based assessment (flight simulators, medical training simulators send xAPI statements to LRS), (2) mobile learning (offline learning — statements queued locally, sent to LRS on reconnect), (3) learning analytics (LRS data → data warehouse → visualisations for educators). GDPR Article 9: xAPI statements about learner performance are personal data — explicit consent required for under-18 learners (AADC). xAPI statements pseudonymised by default in ClickMasters EdTech platforms (actor.mbox = hashed email — not raw email)."
+            "text": "xAPI (Experience API, also known as Tin Can): standard for recording learning experiences (statements). xAPI statement: actor (learner) + verb (completed, passed, failed, experienced) + object (learning activity ID). LRS (Learning Record Store): stores xAPI statements. UK EdTech xAPI use cases: (1) simulation-based assessment (flight simulators, medical training simulators send xAPI statements to LRS), (2) mobile learning (offline learning — statements queued locally, sent to LRS on reconnect), (3) learning analytics (LRS data → data warehouse → visualisations for educators). GDPR Article 9: xAPI statements about learner performance are personal data — explicit consent required for under-18 learners (AADC). xAPI statements pseudonymised by default in Clickmasters EdTech platforms (actor.mbox = hashed email — not raw email)."
           },
           {
             "bold": "DfE Data Standards for Schools API Integration",
-            "text": "DfE (Department for Education) data standards: (1) UPN (Unique Pupil Number — permanent pupil identifier across all schools in England), (2) CBDS (Common Basic Data Set — DfE standard data fields for pupil records), (3) CTF (Common Transfer File — XML format for pupil data transfer between schools), (4) School Census (Termly data submission to DfE — pupil numbers, characteristics, attendance, exclusions). API integration: ClickMasters EdTech platforms implement UPN as primary learner identifier (not email — email changes, UPN does not), CTF import for new pupil intake, and automated DfE School Census data extract. ICO AADC: UPN is a unique identifier for under-18 learners — classified as personal data, special handling required."
+            "text": "DfE (Department for Education) data standards: (1) UPN (Unique Pupil Number — permanent pupil identifier across all schools in England), (2) CBDS (Common Basic Data Set — DfE standard data fields for pupil records), (3) CTF (Common Transfer File — XML format for pupil data transfer between schools), (4) School Census (Termly data submission to DfE — pupil numbers, characteristics, attendance, exclusions). API integration: Clickmasters EdTech platforms implement UPN as primary learner identifier (not email — email changes, UPN does not), CTF import for new pupil intake, and automated DfE School Census data extract. ICO AADC: UPN is a unique identifier for under-18 learners — classified as personal data, special handling required."
           },
           {
             "bold": "SCORM to xAPI Migration for UK EdTech",
@@ -12274,11 +12274,11 @@ const industries = [
     "faqs": [
       {
         "question": "What are the most common EdTech API integrations in the UK?",
-        "answer": "Most common UK EdTech API integrations: (1) LTI 1.3 (connect external tools to LMS — Canvas, Moodle, Blackboard, D2L), (2) MIS APIs (Bromcom, Arbor, SIMS — pupil data in school management systems), (3) ESFA Submit Learner Data API (ILR reporting for FE colleges — mandatory), (4) Ofqual EDI (awarding organisation results reporting — City and Guilds, Pearson, NCFE APIs), (5) DfE School Census API (termly pupil data submission), (6) UCAS API (university application data — for HE institutions), (7) Microsoft Graph API (Teams integration — Microsoft 365 in education), (8) Google Classroom API (Google Workspace for Education — widely used in UK schools). ClickMasters has built all 8 integrations in UK EdTech projects."
+        "answer": "Most common UK EdTech API integrations: (1) LTI 1.3 (connect external tools to LMS — Canvas, Moodle, Blackboard, D2L), (2) MIS APIs (Bromcom, Arbor, SIMS — pupil data in school management systems), (3) ESFA Submit Learner Data API (ILR reporting for FE colleges — mandatory), (4) Ofqual EDI (awarding organisation results reporting — City and Guilds, Pearson, NCFE APIs), (5) DfE School Census API (termly pupil data submission), (6) UCAS API (university application data — for HE institutions), (7) Microsoft Graph API (Teams integration — Microsoft 365 in education), (8) Google Classroom API (Google Workspace for Education — widely used in UK schools). Clickmasters has built all 8 integrations in UK EdTech projects."
       },
       {
         "question": "How does ICO AADC apply to EdTech APIs?",
-        "answer": "AADC (Age Appropriate Design Code — ICO Children's Code): applies to all online services likely to be accessed by children under 18. For EdTech APIs receiving learner data: (1) data minimisation at API boundary — only collect age-appropriate data fields (no precise location for under-18 learners via API), (2) consent for analytics APIs — explicit verifiable consent for any learning analytics that goes beyond service delivery, (3) profiling restrictions — no behavioural profiling of under-18 learners without educational purpose, (4) API documentation must include AADC data handling statements. Third-party API providers in EdTech: any third-party API (Google Analytics, Intercom, Hotjar) integrated into an EdTech platform accessible by under-18s must comply with AADC. ClickMasters AADC API assessment: all third-party API integrations assessed against AADC requirements before integration."
+        "answer": "AADC (Age Appropriate Design Code — ICO Children's Code): applies to all online services likely to be accessed by children under 18. For EdTech APIs receiving learner data: (1) data minimisation at API boundary — only collect age-appropriate data fields (no precise location for under-18 learners via API), (2) consent for analytics APIs — explicit verifiable consent for any learning analytics that goes beyond service delivery, (3) profiling restrictions — no behavioural profiling of under-18 learners without educational purpose, (4) API documentation must include AADC data handling statements. Third-party API providers in EdTech: any third-party API (Google Analytics, Intercom, Hotjar) integrated into an EdTech platform accessible by under-18s must comply with AADC. Clickmasters AADC API assessment: all third-party API integrations assessed against AADC requirements before integration."
       }
     ]
   },
@@ -12288,11 +12288,11 @@ const industries = [
     "industry": "healthtech",
     "service": "devops-healthtech",
     "title": "DevOps for UK HealthTech — NHS DTAC Built In",
-    "metaTitle": "DevOps for HealthTech UK | ClickMasters",
+    "metaTitle": "DevOps for HealthTech UK | Clickmasters",
     "metaDesc": "DevOps for UK HealthTech. NHS DTAC. £20,000–£80,000.",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters HealthTech Team",
+    "writtenBy": "Clickmasters HealthTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "HealthTech",
@@ -12302,26 +12302,26 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides DevOps for UK HealthTech businesses with NHS DTAC, DCB0129 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides DevOps for UK HealthTech businesses with NHS DTAC, DCB0129 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "DevOps for HealthTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "IEC 62304 Traceability in CI/CD",
-            "text": "IEC 62304 (Software Lifecycle for Medical Devices) requires traceability from software requirement → design → code → test. CI/CD implements IEC 62304 traceability automatically: (1) Git commit message links to Jira requirement ticket (PROJ-123: implements requirement SR-045), (2) PR description documents design decision (why this implementation approach), (3) automated tests (unit + integration) cover the requirement, (4) test report stored as CI/CD artefact (IEC 62304 V&V evidence), (5) deployment record (who deployed to production, when, what version). IEC 62304 auditor evidence: Git history + Jira tickets + CI/CD artefacts = complete requirement-to-deployment traceability. ClickMasters generates IEC 62304 traceability matrix from Git + Jira → PDF evidence document."
+            "text": "IEC 62304 (Software Lifecycle for Medical Devices) requires traceability from software requirement → design → code → test. CI/CD implements IEC 62304 traceability automatically: (1) Git commit message links to Jira requirement ticket (PROJ-123: implements requirement SR-045), (2) PR description documents design decision (why this implementation approach), (3) automated tests (unit + integration) cover the requirement, (4) test report stored as CI/CD artefact (IEC 62304 V&V evidence), (5) deployment record (who deployed to production, when, what version). IEC 62304 auditor evidence: Git history + Jira tickets + CI/CD artefacts = complete requirement-to-deployment traceability. Clickmasters generates IEC 62304 traceability matrix from Git + Jira → PDF evidence document."
           },
           {
             "bold": "NHS DTAC Domain 3 DevSecOps Pipeline",
-            "text": "NHS DTAC Domain 3 (Technical Security) CI/CD requirements: (1) SAST (Semgrep — blocks merge on high-severity findings — OWASP A01–A10 coverage), (2) SCA (Software Composition Analysis — Trivy — critical CVE blocks deployment), (3) DAST (OWASP ZAP weekly against staging — NHS DTAC Domain 3 quarterly penetration test equivalent), (4) container scanning (Trivy — zero critical CVEs in production images), (5) secrets scanning (Trufflehog — blocks commit with secrets), (6) NHS-specific check (FHIR R4 validation — HAPI FHIR validator in CI/CD, rejects non-compliant FHIR resources before deployment). DTAC Domain 3 evidence pack: ClickMasters generates from CI/CD artefacts — Semgrep/Trivy/ZAP reports dated and signed."
+            "text": "NHS DTAC Domain 3 (Technical Security) CI/CD requirements: (1) SAST (Semgrep — blocks merge on high-severity findings — OWASP A01–A10 coverage), (2) SCA (Software Composition Analysis — Trivy — critical CVE blocks deployment), (3) DAST (OWASP ZAP weekly against staging — NHS DTAC Domain 3 quarterly penetration test equivalent), (4) container scanning (Trivy — zero critical CVEs in production images), (5) secrets scanning (Trufflehog — blocks commit with secrets), (6) NHS-specific check (FHIR R4 validation — HAPI FHIR validator in CI/CD, rejects non-compliant FHIR resources before deployment). DTAC Domain 3 evidence pack: Clickmasters generates from CI/CD artefacts — Semgrep/Trivy/ZAP reports dated and signed."
           },
           {
             "bold": "NHS DSP Toolkit Annex B and CI/CD Audit Trail",
-            "text": "NHS DSP Toolkit (Data Security and Protection Toolkit): Standard 7 (Business Continuity Plan) and Standard 9 (Cyber Attack Response) require documented processes. CI/CD audit trail: (1) Standard 7 — deployment history proves business continuity (can redeploy previous version within 15 minutes — CloudFormation rollback), (2) Standard 9 — GitHub audit log proves who deployed what (cyber attack investigation: \"was this code change malicious?\" — Git history + GitHub audit log answers definitively), (3) Standard 10 (Data Quality) — dbt data quality tests in CI/CD pipeline evidence data quality controls. NHS DSP Toolkit submission: ClickMasters provides CI/CD evidence pack as NHS DSP Toolkit submission evidence for Standards 7, 9, and 10."
+            "text": "NHS DSP Toolkit (Data Security and Protection Toolkit): Standard 7 (Business Continuity Plan) and Standard 9 (Cyber Attack Response) require documented processes. CI/CD audit trail: (1) Standard 7 — deployment history proves business continuity (can redeploy previous version within 15 minutes — CloudFormation rollback), (2) Standard 9 — GitHub audit log proves who deployed what (cyber attack investigation: \"was this code change malicious?\" — Git history + GitHub audit log answers definitively), (3) Standard 10 (Data Quality) — dbt data quality tests in CI/CD pipeline evidence data quality controls. NHS DSP Toolkit submission: Clickmasters provides CI/CD evidence pack as NHS DSP Toolkit submission evidence for Standards 7, 9, and 10."
           },
           {
             "bold": "MHRA Post-Market Surveillance CI/CD Integration",
-            "text": "IEC 62304 post-market surveillance: medical device software must be monitored in production — defects reported to MHRA via Yellow Card. CI/CD integration for post-market surveillance: (1) error monitoring (AWS CloudWatch → SNS alert → Jira bug ticket auto-created for any production exception), (2) MHRA Yellow Card threshold (if error rate > 0.1% of clinical transactions → automatic MHRA Yellow Card draft created for Medical Safety Officer review), (3) software version tracking (every deployment tagged with software version → MHRA can request specific version evidence), (4) post-market surveillance report (quarterly — automated from CloudWatch error metrics, user feedback, and support tickets). IEC 62304 postmarket surveillance plan: ClickMasters writes PMSP as part of project documentation."
+            "text": "IEC 62304 post-market surveillance: medical device software must be monitored in production — defects reported to MHRA via Yellow Card. CI/CD integration for post-market surveillance: (1) error monitoring (AWS CloudWatch → SNS alert → Jira bug ticket auto-created for any production exception), (2) MHRA Yellow Card threshold (if error rate > 0.1% of clinical transactions → automatic MHRA Yellow Card draft created for Medical Safety Officer review), (3) software version tracking (every deployment tagged with software version → MHRA can request specific version evidence), (4) post-market surveillance report (quarterly — automated from CloudWatch error metrics, user feedback, and support tickets). IEC 62304 postmarket surveillance plan: Clickmasters writes PMSP as part of project documentation."
           }
         ]
       },
@@ -12388,11 +12388,11 @@ const industries = [
     "faqs": [
       {
         "question": "What is the NHS DTAC evidence required from CI/CD for Domain 3?",
-        "answer": "NHS DTAC Domain 3 CI/CD evidence pack: (1) SAST report (Semgrep — dated, zero high-severity findings), (2) container scan report (Trivy — zero critical CVEs in production image), (3) dependency vulnerability report (Dependabot — all critical CVEs resolved within 14 days), (4) DAST report (OWASP ZAP against staging — run within last 3 months), (5) penetration test report (CREST-approved — within last 12 months for higher assurance DTAC), (6) AWS OIDC configuration evidence (no long-lived AWS credentials in CI/CD — Cyber Essentials A3). ClickMasters produces the DTAC Domain 3 evidence pack from CI/CD artefacts as a numbered PDF — submitted to DTAC assessor with the questionnaire response."
+        "answer": "NHS DTAC Domain 3 CI/CD evidence pack: (1) SAST report (Semgrep — dated, zero high-severity findings), (2) container scan report (Trivy — zero critical CVEs in production image), (3) dependency vulnerability report (Dependabot — all critical CVEs resolved within 14 days), (4) DAST report (OWASP ZAP against staging — run within last 3 months), (5) penetration test report (CREST-approved — within last 12 months for higher assurance DTAC), (6) AWS OIDC configuration evidence (no long-lived AWS credentials in CI/CD — Cyber Essentials A3). Clickmasters produces the DTAC Domain 3 evidence pack from CI/CD artefacts as a numbered PDF — submitted to DTAC assessor with the questionnaire response."
       },
       {
         "question": "How do we implement IEC 62304 traceability in GitHub without overhead?",
-        "answer": "IEC 62304 traceability with minimal overhead: ClickMasters recommendation is convention-based traceability — no expensive tools needed. Conventions: (1) branch naming (feature/SR-045-dose-calculator — branch name includes requirement ID), (2) PR title template (SR-045: Add dose calculation for paediatric weight < 10kg — requirement ID in PR title), (3) PR description template (Requirement, Design Decision, Test Coverage sections — filled by engineer), (4) test naming (describe('SR-045 Dose Calculator') — test suite named after requirement), (5) GitHub Actions generates artefact (requirement-test-matrix.json — automated from PR descriptions and test names). IEC 62304 auditors accept convention-based traceability — it is equivalent to expensive PLM tools at a fraction of the cost."
+        "answer": "IEC 62304 traceability with minimal overhead: Clickmasters recommendation is convention-based traceability — no expensive tools needed. Conventions: (1) branch naming (feature/SR-045-dose-calculator — branch name includes requirement ID), (2) PR title template (SR-045: Add dose calculation for paediatric weight < 10kg — requirement ID in PR title), (3) PR description template (Requirement, Design Decision, Test Coverage sections — filled by engineer), (4) test naming (describe('SR-045 Dose Calculator') — test suite named after requirement), (5) GitHub Actions generates artefact (requirement-test-matrix.json — automated from PR descriptions and test names). IEC 62304 auditors accept convention-based traceability — it is equivalent to expensive PLM tools at a fraction of the cost."
       }
     ]
   },
@@ -12402,11 +12402,11 @@ const industries = [
     "industry": "retailtech",
     "service": "microservices-retailtech",
     "title": "Microservices Architecture for UK RetailTech — UK Consumer Rights Act Built In",
-    "metaTitle": "Microservices Architecture for RetailTech UK | ClickMasters",
+    "metaTitle": "Microservices Architecture for RetailTech UK | Clickmasters",
     "metaDesc": "Microservices Architecture for UK RetailTech. UK Consumer Rights Act. £40,000–£180,000.",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters RetailTech Team",
+    "writtenBy": "Clickmasters RetailTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "RetailTech",
@@ -12416,7 +12416,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices Architecture for UK RetailTech businesses with UK Consumer Rights Act, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices Architecture for UK RetailTech businesses with UK Consumer Rights Act, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices Architecture for RetailTech — UK Specifics",
@@ -12497,11 +12497,11 @@ const industries = [
     "faqs": [
       {
         "question": "How do microservices improve UK retail resilience during peak trading?",
-        "answer": "Retail microservices peak trading resilience: (1) independent scaling — Promotions Service scales to 10× independently of Order Management Service (which only needs 2-3× scaling), (2) failure isolation — Promotions Service failure during Black Friday does not prevent customers checking out at standard price (circuit breaker applies standard price), (3) independent deployment — Promotions Service can be updated with new flash sale rules without redeploying the entire application, (4) targeted load testing — each service load tested independently to its specific peak traffic profile (Promotions Service: 50,000 req/min; Customer Service: 5,000 req/min), (5) per-service monitoring — CloudWatch dashboard per service shows which service is under stress during live peak trading. ClickMasters has delivered Black Friday peak trading for 3 UK top-50 retailers using this microservices pattern."
+        "answer": "Retail microservices peak trading resilience: (1) independent scaling — Promotions Service scales to 10× independently of Order Management Service (which only needs 2-3× scaling), (2) failure isolation — Promotions Service failure during Black Friday does not prevent customers checking out at standard price (circuit breaker applies standard price), (3) independent deployment — Promotions Service can be updated with new flash sale rules without redeploying the entire application, (4) targeted load testing — each service load tested independently to its specific peak traffic profile (Promotions Service: 50,000 req/min; Customer Service: 5,000 req/min), (5) per-service monitoring — CloudWatch dashboard per service shows which service is under stress during live peak trading. Clickmasters has delivered Black Friday peak trading for 3 UK top-50 retailers using this microservices pattern."
       },
       {
         "question": "What does PCI-DSS scope look like in a headless + microservices retail architecture?",
-        "answer": "PCI-DSS scope in headless + microservices retail: Shopify handles all card data (Stripe Elements in Shopify checkout) — SAQ-A is the applicable PCI-DSS scope level. SAQ-A requirements: (1) Shopify/Stripe process card data — your application never sees card numbers, (2) all traffic to Shopify via HTTPS (your BFF calls Shopify Storefront API over HTTPS), (3) no cardholder data stored in your microservices (Payment Service stores Stripe payment ID — not card number), (4) annual SAQ-A questionnaire submitted (12 yes/no questions — all answered yes with Shopify headless). ClickMasters PCI-DSS scope principle: isolate all card processing into Stripe/Shopify — your custom microservices maintain SAQ-A scope. Attempting to build custom card processing in microservices would require SAQ-D (200+ controls) — avoid at all costs."
+        "answer": "PCI-DSS scope in headless + microservices retail: Shopify handles all card data (Stripe Elements in Shopify checkout) — SAQ-A is the applicable PCI-DSS scope level. SAQ-A requirements: (1) Shopify/Stripe process card data — your application never sees card numbers, (2) all traffic to Shopify via HTTPS (your BFF calls Shopify Storefront API over HTTPS), (3) no cardholder data stored in your microservices (Payment Service stores Stripe payment ID — not card number), (4) annual SAQ-A questionnaire submitted (12 yes/no questions — all answered yes with Shopify headless). Clickmasters PCI-DSS scope principle: isolate all card processing into Stripe/Shopify — your custom microservices maintain SAQ-A scope. Attempting to build custom card processing in microservices would require SAQ-D (200+ controls) — avoid at all costs."
       }
     ]
   },
@@ -12511,11 +12511,11 @@ const industries = [
     "industry": "logtech",
     "service": "saas-development-logtech",
     "title": "SaaS Development for UK LogTech — UK GDPR Built In",
-    "metaTitle": "SaaS Development for LogTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for LogTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK LogTech. UK GDPR. £35,000–£160,000.",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LogTech Team",
+    "writtenBy": "Clickmasters LogTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LogTech",
@@ -12525,7 +12525,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for LogTech — UK Specifics",
@@ -12611,11 +12611,11 @@ const industries = [
     "industry": "govtech",
     "service": "staff-augmentation-govtech",
     "title": "Staff Augmentation for UK GovTech — GDS Service Standard Built In",
-    "metaTitle": "Staff Augmentation for GovTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for GovTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK GovTech. GDS Service Standard. from £5,000/month.",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "GovTech",
@@ -12625,7 +12625,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK GovTech businesses with GDS Service Standard, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK GovTech businesses with GDS Service Standard, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for GovTech — UK Specifics",
@@ -12636,15 +12636,15 @@ const industries = [
           },
           {
             "bold": "GOV.UK Service Standard Delivery in Staff Augmentation",
-            "text": "GDS Service Standard compliance in staff augmentation: ClickMasters engineers augmenting government teams must be familiar with all 17 GDS Service Standard points. Critical points for day-to-day delivery: (1) Point 1 (User needs — user research participation mandatory, not optional), (2) Point 5 (Make sure everyone can use the service — WCAG 2.1 AA every sprint, not a launch gate), (3) Point 9 (Create a secure service — NCSC Cyber Security Design Principles applied), (4) Point 12 (Make new source code open — code on GitHub as default — government code is taxpayer-funded), (5) Point 16 (Make your technology choices — open standards, open source preferred). ClickMasters GovTech onboarding: GDS Service Standard training for all augmented engineers before deployment."
+            "text": "GDS Service Standard compliance in staff augmentation: Clickmasters engineers augmenting government teams must be familiar with all 17 GDS Service Standard points. Critical points for day-to-day delivery: (1) Point 1 (User needs — user research participation mandatory, not optional), (2) Point 5 (Make sure everyone can use the service — WCAG 2.1 AA every sprint, not a launch gate), (3) Point 9 (Create a secure service — NCSC Cyber Security Design Principles applied), (4) Point 12 (Make new source code open — code on GitHub as default — government code is taxpayer-funded), (5) Point 16 (Make your technology choices — open standards, open source preferred). Clickmasters GovTech onboarding: GDS Service Standard training for all augmented engineers before deployment."
           },
           {
             "bold": "GOV.UK Design System Implementation in Staff Augmentation",
-            "text": "GOV.UK Design System: the official design system for UK government digital services. Staff augmentation engineers must implement components correctly — not reinterpret them. Critical GOV.UK Design System patterns: (1) Error messages (GDS error summary at top of page + inline error next to field — exact pattern, not custom), (2) Form validation (server-side validation with GDS error summary — not browser-native validation), (3) Conditional reveal (show/hide form sections based on answer — GDS JavaScript progressive enhancement), (4) File upload (GDS file upload pattern with virus scanning — ClamAV or equivalent), (5) Confirmation page (GDS confirmation page with panel — transaction reference number, next steps). ClickMasters GovTech engineers: all proficient in GOV.UK Design System before government engagement."
+            "text": "GOV.UK Design System: the official design system for UK government digital services. Staff augmentation engineers must implement components correctly — not reinterpret them. Critical GOV.UK Design System patterns: (1) Error messages (GDS error summary at top of page + inline error next to field — exact pattern, not custom), (2) Form validation (server-side validation with GDS error summary — not browser-native validation), (3) Conditional reveal (show/hide form sections based on answer — GDS JavaScript progressive enhancement), (4) File upload (GDS file upload pattern with virus scanning — ClamAV or equivalent), (5) Confirmation page (GDS confirmation page with panel — transaction reference number, next steps). Clickmasters GovTech engineers: all proficient in GOV.UK Design System before government engagement."
           },
           {
             "bold": "Security Clearance for GovTech Staff Augmentation",
-            "text": "GovTech staff augmentation security clearance requirements: (1) BPSS (Baseline Personnel Security Standard) — minimum for all government IT work (identity check, employment history, right to work), (2) SC (Security Check) — for access to OFFICIAL-SENSITIVE data or systems (HMPO, DVLA, HMRC production environments), (3) DV (Developed Vetting) — for access to TOP SECRET or sensitive intelligence systems (GCHQ, MOD, intelligence agencies). ClickMasters security clearance: all engineers have BPSS as standard. SC-cleared engineers available from prior government projects (HMPO digital service, DVLA — Batch 79, 80 case studies). DV clearance: requires nomination by government sponsor — ClickMasters cannot pre-clear for DV. ClickMasters BPSS and SC clearance maintained as standing pool."
+            "text": "GovTech staff augmentation security clearance requirements: (1) BPSS (Baseline Personnel Security Standard) — minimum for all government IT work (identity check, employment history, right to work), (2) SC (Security Check) — for access to OFFICIAL-SENSITIVE data or systems (HMPO, DVLA, HMRC production environments), (3) DV (Developed Vetting) — for access to TOP SECRET or sensitive intelligence systems (GCHQ, MOD, intelligence agencies). Clickmasters security clearance: all engineers have BPSS as standard. SC-cleared engineers available from prior government projects (HMPO digital service, DVLA — Batch 79, 80 case studies). DV clearance: requires nomination by government sponsor — Clickmasters cannot pre-clear for DV. Clickmasters BPSS and SC clearance maintained as standing pool."
           }
         ]
       },
@@ -12706,11 +12706,11 @@ const industries = [
     "faqs": [
       {
         "question": "What does GovTech staff augmentation cost in the UK?",
-        "answer": "ClickMasters GovTech staff augmentation rates: (1) Junior GDS engineer (0–2 years GDS experience, BPSS): from £4,800/month. (2) Mid GDS engineer (3–5 years GDS experience, BPSS): from £5,800/month. (3) Senior GDS engineer (6+ years, GDS assessment experience, BPSS): from £6,800/month. (4) SC-cleared engineer (any seniority, SC clearance): add £400–£800/month premium for clearance maintenance. (5) GDS Technical Lead (owns GDS service standard compliance, GDS assessment readiness): from £7,500/month. All rates are IR35-zero-risk (our engineers are employees). Government contracts: ClickMasters is registered on G-Cloud 14 (RM1557.14) for cloud hosting and software services, and DOS 6 (RM1043.8) for digital outcomes and specialists."
+        "answer": "Clickmasters GovTech staff augmentation rates: (1) Junior GDS engineer (0–2 years GDS experience, BPSS): from £4,800/month. (2) Mid GDS engineer (3–5 years GDS experience, BPSS): from £5,800/month. (3) Senior GDS engineer (6+ years, GDS assessment experience, BPSS): from £6,800/month. (4) SC-cleared engineer (any seniority, SC clearance): add £400–£800/month premium for clearance maintenance. (5) GDS Technical Lead (owns GDS service standard compliance, GDS assessment readiness): from £7,500/month. All rates are IR35-zero-risk (our engineers are employees). Government contracts: Clickmasters is registered on G-Cloud 14 (RM1557.14) for cloud hosting and software services, and DOS 6 (RM1043.8) for digital outcomes and specialists."
       },
       {
         "question": "How long does SC clearance take for GovTech augmentation?",
-        "answer": "SC (Security Check) clearance timeline: 6–12 weeks typically (UKSV — UK Security Vetting). Faster track: if engineer already has BPSS and has worked in government before, SC review may be faster (2–4 weeks if no adverse findings). Government department initiates: the government client initiates SC clearance — ClickMasters cannot self-initiate SC. Process: (1) ClickMasters provides BPSS-cleared engineer, (2) government client initiates SC sponsorship, (3) UKSV conducts SC review (identity, financial, criminal record, employment history), (4) SC granted → engineer starts on OFFICIAL-SENSITIVE work. ClickMasters maintains a pool of engineers with existing SC clearance from prior government projects — these can start immediately without 6–12 week wait."
+        "answer": "SC (Security Check) clearance timeline: 6–12 weeks typically (UKSV — UK Security Vetting). Faster track: if engineer already has BPSS and has worked in government before, SC review may be faster (2–4 weeks if no adverse findings). Government department initiates: the government client initiates SC clearance — Clickmasters cannot self-initiate SC. Process: (1) Clickmasters provides BPSS-cleared engineer, (2) government client initiates SC sponsorship, (3) UKSV conducts SC review (identity, financial, criminal record, employment history), (4) SC granted → engineer starts on OFFICIAL-SENSITIVE work. Clickmasters maintains a pool of engineers with existing SC clearance from prior government projects — these can start immediately without 6–12 week wait."
       }
     ]
   },
@@ -12720,11 +12720,11 @@ const industries = [
     "industry": "insurtech",
     "service": "api-development-insurtech",
     "title": "API Development for UK InsurTech — FCA ICOBS Built In",
-    "metaTitle": "API Development for InsurTech UK | ClickMasters",
+    "metaTitle": "API Development for InsurTech UK | Clickmasters",
     "metaDesc": "API Development for UK InsurTech. FCA ICOBS. £10,000–£45,000.",
     "lastUpdated": "April 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters InsurTech Team",
+    "writtenBy": "Clickmasters InsurTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "InsurTech",
@@ -12734,14 +12734,14 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides API Development for UK InsurTech businesses with FCA ICOBS, FCA Consumer Duty compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides API Development for UK InsurTech businesses with FCA ICOBS, FCA Consumer Duty compliance from Sprint 1.",
     "sections": [
       {
         "heading": "API Development for InsurTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "Lloyd's and London Market API Standards",
-            "text": "Lloyd's of London digital transformation: Lloyd's Blueprint Two programme mandates structured digital data submission. Key London Market APIs: (1) Lloyd's Atlas API (submission via API — risk data sent as structured ACORD 3.x JSON, not PDF), (2) LBS (Lloyd's Back-office Settlement) API — premium and claims settlement, (3) IMR (Insurers' Market Repository) API — policy document storage, (4) Riskwrite API (Lloyd's risk entry — ACORD-compliant risk placement data), (5) CDR (Core Data Record) API — all new Lloyd's business via CDR from 2024. ClickMasters CDR integration: implemented for 12 Lloyd's MGAs and coverholders — CDR compliance confirmed."
+            "text": "Lloyd's of London digital transformation: Lloyd's Blueprint Two programme mandates structured digital data submission. Key London Market APIs: (1) Lloyd's Atlas API (submission via API — risk data sent as structured ACORD 3.x JSON, not PDF), (2) LBS (Lloyd's Back-office Settlement) API — premium and claims settlement, (3) IMR (Insurers' Market Repository) API — policy document storage, (4) Riskwrite API (Lloyd's risk entry — ACORD-compliant risk placement data), (5) CDR (Core Data Record) API — all new Lloyd's business via CDR from 2024. Clickmasters CDR integration: implemented for 12 Lloyd's MGAs and coverholders — CDR compliance confirmed."
           },
           {
             "bold": "UK Comparison Site API Integration",
@@ -12753,7 +12753,7 @@ const industries = [
           },
           {
             "bold": "Reinsurance API Integration for UK Insurers",
-            "text": "UK InsurTech reinsurance API connections: (1) Munich Re API (facultative and treaty reinsurance data exchange), (2) Swiss Re Sinaloa API (treaty reinsurance bordereau), (3) Verisk ISO API (industry loss data — catastrophe exposure), (4) AIR Worldwide API (catastrophe modelling — flood, wind, earthquake exposure), (5) Lloyd's Risk Locator API (postcode-level risk data — flood, subsidence, crime). Risk aggregation: insurer portfolio uploaded to cat model API → modelled loss distribution → PML (Probable Maximum Loss) — used for reinsurance purchasing and capital modelling. ClickMasters reinsurance API integrations: treaty bordereau automation for 3 UK InsurTech MGAs."
+            "text": "UK InsurTech reinsurance API connections: (1) Munich Re API (facultative and treaty reinsurance data exchange), (2) Swiss Re Sinaloa API (treaty reinsurance bordereau), (3) Verisk ISO API (industry loss data — catastrophe exposure), (4) AIR Worldwide API (catastrophe modelling — flood, wind, earthquake exposure), (5) Lloyd's Risk Locator API (postcode-level risk data — flood, subsidence, crime). Risk aggregation: insurer portfolio uploaded to cat model API → modelled loss distribution → PML (Probable Maximum Loss) — used for reinsurance purchasing and capital modelling. Clickmasters reinsurance API integrations: treaty bordereau automation for 3 UK InsurTech MGAs."
           }
         ]
       },
@@ -12829,11 +12829,11 @@ const industries = [
     "industry": "cleantech",
     "service": "microservices-cleantech",
     "title": "Microservices Architecture for UK CleanTech — Ofgem Built In",
-    "metaTitle": "Microservices Architecture for CleanTech UK | ClickMasters",
+    "metaTitle": "Microservices Architecture for CleanTech UK | Clickmasters",
     "metaDesc": "Microservices Architecture for UK CleanTech. Ofgem. £40,000–£150,000.",
     "lastUpdated": "April 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters CleanTech Team",
+    "writtenBy": "Clickmasters CleanTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "CleanTech",
@@ -12843,7 +12843,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices Architecture for UK CleanTech businesses with Ofgem, DEFRA compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices Architecture for UK CleanTech businesses with Ofgem, DEFRA compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices Architecture for CleanTech — UK Specifics",
@@ -12934,11 +12934,11 @@ const industries = [
     "faqs": [
       {
         "question": "How do microservices improve CleanTech regulatory compliance?",
-        "answer": "CleanTech microservices regulatory compliance benefits: (1) REGO submission independence — if main platform has an incident on REGO submission day, REGO Submission Service continues independently (no shared database, no shared deployment), (2) DEFRA emission factor update isolation — when DEFRA publishes new factors in March, only Carbon Calculation Service is redeployed (other services unaffected), (3) DTAC-equivalent evidence — each service has its own data flow diagram, penetration test scope, and DPIA (if processing personal data), (4) Ofgem audit trail — each regulatory submission service logs all API calls to CloudTrail (immutable audit for Ofgem investigations). ClickMasters CleanTech microservices: designed to make regulatory compliance easier, not harder — isolated services reduce evidence scope per service."
+        "answer": "CleanTech microservices regulatory compliance benefits: (1) REGO submission independence — if main platform has an incident on REGO submission day, REGO Submission Service continues independently (no shared database, no shared deployment), (2) DEFRA emission factor update isolation — when DEFRA publishes new factors in March, only Carbon Calculation Service is redeployed (other services unaffected), (3) DTAC-equivalent evidence — each service has its own data flow diagram, penetration test scope, and DPIA (if processing personal data), (4) Ofgem audit trail — each regulatory submission service logs all API calls to CloudTrail (immutable audit for Ofgem investigations). Clickmasters CleanTech microservices: designed to make regulatory compliance easier, not harder — isolated services reduce evidence scope per service."
       },
       {
         "question": "What CleanTech data should be isolated in separate microservices?",
-        "answer": "CleanTech data isolation by microservice: personal data (customer energy consumption — UK GDPR Article 6 legitimate interest) must be isolated from operational data (turbine SCADA — no personal data). Specific isolations: (1) Meter Data Service (UK GDPR — customer HH consumption data, special billing), (2) Smart Home Service (if UK GDPR applies — customer-linked home energy data, PECR), (3) Employee Data Service (SECR staff commute data — UK GDPR employee personal data), (4) Non-personal operational services (turbine SCADA, grid data, weather data — no UK GDPR obligation, simpler architecture). ClickMasters cleantech data architecture principle: separate personal data services from operational data services from the first architecture design session."
+        "answer": "CleanTech data isolation by microservice: personal data (customer energy consumption — UK GDPR Article 6 legitimate interest) must be isolated from operational data (turbine SCADA — no personal data). Specific isolations: (1) Meter Data Service (UK GDPR — customer HH consumption data, special billing), (2) Smart Home Service (if UK GDPR applies — customer-linked home energy data, PECR), (3) Employee Data Service (SECR staff commute data — UK GDPR employee personal data), (4) Non-personal operational services (turbine SCADA, grid data, weather data — no UK GDPR obligation, simpler architecture). Clickmasters cleantech data architecture principle: separate personal data services from operational data services from the first architecture design session."
       }
     ]
   },
@@ -12948,11 +12948,11 @@ const industries = [
     "industry": "proptech",
     "service": "devops-proptech",
     "title": "DevOps for UK PropTech — UK GDPR Built In",
-    "metaTitle": "DevOps for PropTech UK | ClickMasters",
+    "metaTitle": "DevOps for PropTech UK | Clickmasters",
     "metaDesc": "DevOps for UK PropTech. UK GDPR. £20,000–£75,000.",
     "lastUpdated": "April 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters PropTech Team",
+    "writtenBy": "Clickmasters PropTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "PropTech",
@@ -12962,7 +12962,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides DevOps for UK PropTech businesses with UK GDPR, HMLR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides DevOps for UK PropTech businesses with UK GDPR, HMLR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "DevOps for PropTech — UK Specifics",
@@ -12973,7 +12973,7 @@ const industries = [
           },
           {
             "bold": "PropTech Data Freshness and Cache Management DevOps",
-            "text": "PropTech data freshness: property price data, EPC ratings, and flood risk data must be current — stale data is both a commercial risk and a regulatory risk (MEES non-compliance based on stale EPC data). Cache TTL strategy: (1) HMLR Price Paid Data (updated monthly — 30-day Redis TTL), (2) EPC Register (updated quarterly — 90-day TTL), (3) Rightmove listings (real-time — no caching — always live from portal API), (4) UPRN data (updated annually — 365-day TTL), (5) flood risk (Environment Agency — updated annually — 365-day TTL). Cache invalidation webhook: HMLR sends monthly data refresh notification → Lambda triggers Redis cache clear for Price Paid data. ClickMasters PropTech cache strategy: TTL aligned to data refresh frequency + webhook-triggered invalidation."
+            "text": "PropTech data freshness: property price data, EPC ratings, and flood risk data must be current — stale data is both a commercial risk and a regulatory risk (MEES non-compliance based on stale EPC data). Cache TTL strategy: (1) HMLR Price Paid Data (updated monthly — 30-day Redis TTL), (2) EPC Register (updated quarterly — 90-day TTL), (3) Rightmove listings (real-time — no caching — always live from portal API), (4) UPRN data (updated annually — 365-day TTL), (5) flood risk (Environment Agency — updated annually — 365-day TTL). Cache invalidation webhook: HMLR sends monthly data refresh notification → Lambda triggers Redis cache clear for Price Paid data. Clickmasters PropTech cache strategy: TTL aligned to data refresh frequency + webhook-triggered invalidation."
           },
           {
             "bold": "Smart Building IoT DevOps",
@@ -13038,11 +13038,11 @@ const industries = [
     "faqs": [
       {
         "question": "How do we test Rightmove and Zoopla portal integrations in CI/CD?",
-        "answer": "PropTech portal integration CI/CD testing: (1) Rightmove test branch (Branch ID 999999 — test listings submitted here never appear on rightmove.co.uk, but Rightmove returns real API responses), (2) Zoopla test environment (Zoopla provides a test environment for registered partners — ZPF validation), (3) schema validation (Rightmove RTDF XML schema + Zoopla ZPF schema — validate against XSD before submission), (4) response parsing (portal returns success/error codes — test that all error codes are handled gracefully, not just happy path), (5) photo upload test (Rightmove media upload API — test photo of known size and format, verify acceptance). ClickMasters PropTech CI/CD: all 5 portal tests run on every PR — portal integration breakage caught before production deploy."
+        "answer": "PropTech portal integration CI/CD testing: (1) Rightmove test branch (Branch ID 999999 — test listings submitted here never appear on rightmove.co.uk, but Rightmove returns real API responses), (2) Zoopla test environment (Zoopla provides a test environment for registered partners — ZPF validation), (3) schema validation (Rightmove RTDF XML schema + Zoopla ZPF schema — validate against XSD before submission), (4) response parsing (portal returns success/error codes — test that all error codes are handled gracefully, not just happy path), (5) photo upload test (Rightmove media upload API — test photo of known size and format, verify acceptance). Clickmasters PropTech CI/CD: all 5 portal tests run on every PR — portal integration breakage caught before production deploy."
       },
       {
         "question": "What PropTech-specific security controls satisfy Cyber Essentials?",
-        "answer": "PropTech-specific Cyber Essentials controls: (1) smart lock API keys (Salto KS, Klevio — stored in AWS Secrets Manager, not hardcoded), (2) CCTV system access (admin credentials rotated quarterly — CyberArk or Secrets Manager rotation), (3) tenant portal access (MFA mandatory for all tenant portal admin users — Cognito MFA), (4) IoT device certificates (X.509 certificates — automated rotation before 90-day expiry via AWS IoT), (5) building management system (BMS) access (network-isolated from internet — VPC-only access, no public endpoint). ClickMasters PropTech Cyber Essentials checklist: all 5 PropTech-specific controls verified in pre-Cyber Essentials assessment."
+        "answer": "PropTech-specific Cyber Essentials controls: (1) smart lock API keys (Salto KS, Klevio — stored in AWS Secrets Manager, not hardcoded), (2) CCTV system access (admin credentials rotated quarterly — CyberArk or Secrets Manager rotation), (3) tenant portal access (MFA mandatory for all tenant portal admin users — Cognito MFA), (4) IoT device certificates (X.509 certificates — automated rotation before 90-day expiry via AWS IoT), (5) building management system (BMS) access (network-isolated from internet — VPC-only access, no public endpoint). Clickmasters PropTech Cyber Essentials checklist: all 5 PropTech-specific controls verified in pre-Cyber Essentials assessment."
       }
     ]
   },
@@ -13052,11 +13052,11 @@ const industries = [
     "industry": "edtech",
     "service": "saas-development-edtech-2",
     "title": "SaaS Development for UK EdTech — ICO AADC Built In",
-    "metaTitle": "SaaS Development for EdTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for EdTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK EdTech. ICO AADC. £35,000–£150,000.",
     "lastUpdated": "April 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "EdTech",
@@ -13066,7 +13066,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK EdTech businesses with ICO AADC, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for EdTech — UK Specifics",
@@ -13081,7 +13081,7 @@ const industries = [
           },
           {
             "bold": "Ofqual-Regulated Assessment SaaS",
-            "text": "Ofqual (Office of Qualifications and Examinations Regulation): regulates qualifications in England. Ofqual-regulated EdTech SaaS requirements: (1) awarding organisation accreditation (if creating qualifications — Ofqual recognised awarding organisation status required, or partnership with one), (2) qualification data submission (Learning Aims Reference Service — LARS — database of all regulated qualifications), (3) grade boundaries (published post-assessment — Ofqual requires grade boundary transparency), (4) results integrity (candidate results records — immutable once confirmed, 5-year retention minimum), (5) special consideration (medical evidence → grade adjustment workflow). EPAO (End-Point Assessment Organisation): apprenticeship assessment — Ofqual registers EPAOs, ClickMasters has built EPAO platforms for 3 UK organisations."
+            "text": "Ofqual (Office of Qualifications and Examinations Regulation): regulates qualifications in England. Ofqual-regulated EdTech SaaS requirements: (1) awarding organisation accreditation (if creating qualifications — Ofqual recognised awarding organisation status required, or partnership with one), (2) qualification data submission (Learning Aims Reference Service — LARS — database of all regulated qualifications), (3) grade boundaries (published post-assessment — Ofqual requires grade boundary transparency), (4) results integrity (candidate results records — immutable once confirmed, 5-year retention minimum), (5) special consideration (medical evidence → grade adjustment workflow). EPAO (End-Point Assessment Organisation): apprenticeship assessment — Ofqual registers EPAOs, Clickmasters has built EPAO platforms for 3 UK organisations."
           },
           {
             "bold": "SEND (Special Educational Needs) SaaS Requirements",
@@ -13147,11 +13147,11 @@ const industries = [
     "faqs": [
       {
         "question": "How much does EdTech SaaS development cost in the UK?",
-        "answer": "ClickMasters UK EdTech SaaS costs: (1) Simple teacher CPD platform (courses, certificates, CPD log): £20,000–£40,000 (12–18 weeks). (2) Assessment SaaS (single qualification, Ofqual-adjacent, 5,000 candidates): £35,000–£70,000 (18–26 weeks). (3) MAT platform (3–10 schools, MIS integration, DfE census): £55,000–£100,000 (22–32 weeks). (4) Full LMS (university or large MAT, LTI 1.3, Turnitin, 10,000+ learners): £80,000–£160,000 (28–42 weeks). (5) Ofqual-regulated awarding organisation platform (qualification management, grade boundaries, results): £80,000–£150,000 (30–44 weeks). All prices include AADC compliance, WCAG 2.1 AA, DfE data standards, and Cyber Essentials."
+        "answer": "Clickmasters UK EdTech SaaS costs: (1) Simple teacher CPD platform (courses, certificates, CPD log): £20,000–£40,000 (12–18 weeks). (2) Assessment SaaS (single qualification, Ofqual-adjacent, 5,000 candidates): £35,000–£70,000 (18–26 weeks). (3) MAT platform (3–10 schools, MIS integration, DfE census): £55,000–£100,000 (22–32 weeks). (4) Full LMS (university or large MAT, LTI 1.3, Turnitin, 10,000+ learners): £80,000–£160,000 (28–42 weeks). (5) Ofqual-regulated awarding organisation platform (qualification management, grade boundaries, results): £80,000–£150,000 (30–44 weeks). All prices include AADC compliance, WCAG 2.1 AA, DfE data standards, and Cyber Essentials."
       },
       {
         "question": "Does ICO AADC apply to teacher-facing EdTech SaaS?",
-        "answer": "ICO AADC (Age Appropriate Design Code) applies to online services \"likely to be accessed by children.\" Teacher-facing EdTech SaaS: if the platform is only accessible by authenticated adult teachers (no pupil access), AADC does not apply to that product. However: many EdTech platforms have both teacher and pupil portals — AADC applies to the pupil-facing portal. Pupil-facing features requiring AADC: (1) pupil login portal (any feature accessible by under-18s), (2) pupil progress dashboard, (3) homework submission, (4) assessment portal. Teacher-only admin portal: AADC does not apply. ClickMasters AADC approach: identify every user journey accessible by under-18s at the start of the project — design AADC controls (data minimisation, social features off, behavioural analytics off) for those journeys only."
+        "answer": "ICO AADC (Age Appropriate Design Code) applies to online services \"likely to be accessed by children.\" Teacher-facing EdTech SaaS: if the platform is only accessible by authenticated adult teachers (no pupil access), AADC does not apply to that product. However: many EdTech platforms have both teacher and pupil portals — AADC applies to the pupil-facing portal. Pupil-facing features requiring AADC: (1) pupil login portal (any feature accessible by under-18s), (2) pupil progress dashboard, (3) homework submission, (4) assessment portal. Teacher-only admin portal: AADC does not apply. Clickmasters AADC approach: identify every user journey accessible by under-18s at the start of the project — design AADC controls (data minimisation, social features off, behavioural analytics off) for those journeys only."
       }
     ]
   },
@@ -13161,11 +13161,11 @@ const industries = [
     "industry": "healthtech",
     "service": "legacy-modernisation-healthtech",
     "title": "Legacy Modernisation for UK HealthTech — MHRA Built In",
-    "metaTitle": "Legacy Modernisation for HealthTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for HealthTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK HealthTech. MHRA. £30,000–£150,000.",
     "lastUpdated": "April 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters HealthTech Team",
+    "writtenBy": "Clickmasters HealthTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "HealthTech",
@@ -13175,7 +13175,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK HealthTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK HealthTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for HealthTech — UK Specifics",
@@ -13186,15 +13186,15 @@ const industries = [
           },
           {
             "bold": "FHIR Version Migration — STU3 to R4",
-            "text": "NHS FHIR R4 migration from STU3/DSTU2: NHS Digital retired FHIR DSTU2 and STU3 support. All NHS integrations must now use FHIR R4 UK Core profiles. Migration complexity: (1) resource structure changes (Patient resource significantly changed R3→R4 — identifier slices, address format), (2) UK Core profiles (R4 has NHS-specific profiles not present in STU3 — UKCore-Patient, UKCore-Observation), (3) API version mismatch (HealthTech product may call STU3 API → NHS endpoint returns 410 Gone → product fails), (4) SNOMED CT binding changes (value set bindings changed R3→R4 — clinical coding values must be re-verified). Migration approach: map every FHIR resource in the legacy system → R4 equivalent → validate against HAPI FHIR UK Core profiles → test in NHS sandbox. ClickMasters FHIR R4 migration: 4 UK HealthTech products migrated from STU3."
+            "text": "NHS FHIR R4 migration from STU3/DSTU2: NHS Digital retired FHIR DSTU2 and STU3 support. All NHS integrations must now use FHIR R4 UK Core profiles. Migration complexity: (1) resource structure changes (Patient resource significantly changed R3→R4 — identifier slices, address format), (2) UK Core profiles (R4 has NHS-specific profiles not present in STU3 — UKCore-Patient, UKCore-Observation), (3) API version mismatch (HealthTech product may call STU3 API → NHS endpoint returns 410 Gone → product fails), (4) SNOMED CT binding changes (value set bindings changed R3→R4 — clinical coding values must be re-verified). Migration approach: map every FHIR resource in the legacy system → R4 equivalent → validate against HAPI FHIR UK Core profiles → test in NHS sandbox. Clickmasters FHIR R4 migration: 4 UK HealthTech products migrated from STU3."
           },
           {
             "bold": "DCB0129 During Legacy Modernisation",
-            "text": "Legacy modernisation is a high DCB0129 risk — clinical functionality is being changed. DCB0129 requirements during modernisation: (1) clinical safety case review (existing clinical safety case must be updated to reflect architectural changes — not just the new features), (2) hazard transfer (hazards identified in legacy system: some resolved, some transferred, some new hazards introduced by modernisation), (3) parallel running clinical safety (during cutover: old system and new system both active — which system is clinically authoritative?), (4) rollback plan (if modernised system has clinical safety incident in first 30 days — tested rollback to legacy). ClickMasters DCB0129 modernisation: clinical safety case is a living document throughout the migration — not produced at the end."
+            "text": "Legacy modernisation is a high DCB0129 risk — clinical functionality is being changed. DCB0129 requirements during modernisation: (1) clinical safety case review (existing clinical safety case must be updated to reflect architectural changes — not just the new features), (2) hazard transfer (hazards identified in legacy system: some resolved, some transferred, some new hazards introduced by modernisation), (3) parallel running clinical safety (during cutover: old system and new system both active — which system is clinically authoritative?), (4) rollback plan (if modernised system has clinical safety incident in first 30 days — tested rollback to legacy). Clickmasters DCB0129 modernisation: clinical safety case is a living document throughout the migration — not produced at the end."
           },
           {
             "bold": "NHS DTAC Reassessment After Legacy Modernisation",
-            "text": "NHS DTAC for legacy HealthTech modernisation: if the product was previously DTAC-assessed, significant architectural change requires DTAC reassessment. DTAC change threshold: (1) new data flows (new personal data processed, new third-party integrations), (2) architecture change (monolith to microservices, on-premises to cloud), (3) new clinical functionality (new decision support, new AI). Re-assessment approach: (1) update Domain 1 data flow diagram (new architecture, new data flows), (2) new DPIA if new personal data processing, (3) new Domain 3 security assessment (new architecture = new attack surface), (4) Domain 4 interoperability update (new FHIR R4 integrations), (5) re-run WCAG audit (new UI components). ClickMasters DTAC reassessment: typically 6–10 weeks including evidence pack update and NHSX review."
+            "text": "NHS DTAC for legacy HealthTech modernisation: if the product was previously DTAC-assessed, significant architectural change requires DTAC reassessment. DTAC change threshold: (1) new data flows (new personal data processed, new third-party integrations), (2) architecture change (monolith to microservices, on-premises to cloud), (3) new clinical functionality (new decision support, new AI). Re-assessment approach: (1) update Domain 1 data flow diagram (new architecture, new data flows), (2) new DPIA if new personal data processing, (3) new Domain 3 security assessment (new architecture = new attack surface), (4) Domain 4 interoperability update (new FHIR R4 integrations), (5) re-run WCAG audit (new UI components). Clickmasters DTAC reassessment: typically 6–10 weeks including evidence pack update and NHSX review."
           }
         ]
       },
@@ -13261,11 +13261,11 @@ const industries = [
     "faqs": [
       {
         "question": "How do we migrate a HealthTech product from FHIR STU3 to R4 without downtime?",
-        "answer": "FHIR STU3 to R4 migration with zero downtime: (1) build parallel R4 integration alongside existing STU3 (new endpoint, new FHIR R4 resources in parallel with STU3 — both active in staging), (2) validate R4 integration thoroughly (HAPI FHIR UK Core validator, NHS sandbox testing — all R4 resource types validated), (3) feature flag the R4 integration (95% of traffic to STU3, 5% to R4 — monitor for errors), (4) gradual traffic shift (5% → 25% → 50% → 100% R4 over 4 weeks — any R4 errors trigger rollback to STU3), (5) decommission STU3 only after 2 weeks of 100% R4 without errors. ClickMasters FHIR migration principle: STU3 stays alive until R4 is proven in production for 30 days. Delete STU3 only on day 31."
+        "answer": "FHIR STU3 to R4 migration with zero downtime: (1) build parallel R4 integration alongside existing STU3 (new endpoint, new FHIR R4 resources in parallel with STU3 — both active in staging), (2) validate R4 integration thoroughly (HAPI FHIR UK Core validator, NHS sandbox testing — all R4 resource types validated), (3) feature flag the R4 integration (95% of traffic to STU3, 5% to R4 — monitor for errors), (4) gradual traffic shift (5% → 25% → 50% → 100% R4 over 4 weeks — any R4 errors trigger rollback to STU3), (5) decommission STU3 only after 2 weeks of 100% R4 without errors. Clickmasters FHIR migration principle: STU3 stays alive until R4 is proven in production for 30 days. Delete STU3 only on day 31."
       },
       {
         "question": "What is the cost of HealthTech FHIR R4 migration?",
-        "answer": "ClickMasters HealthTech FHIR R4 migration costs: (1) FHIR DSTU2/STU3 → R4 for a single NHS integration (e.g., PDS only): £8,000–£15,000 (4–8 weeks). (2) Full NHS integration stack migration (PDS + GP Connect + eRS + EPS — STU3 to R4): £30,000–£65,000 (14–22 weeks). (3) Legacy PHP HealthTech platform modernisation (complete rebuild with FHIR R4 from scratch — not migration): £60,000–£150,000 (24–48 weeks). (4) DTAC reassessment after migration: £5,000–£12,000 (6–10 weeks evidence update). All prices include NHS sandbox testing, HAPI FHIR UK Core validation, and DTAC evidence update. FHIR R4 migration is not optional — NHS Digital has phased out STU3 support."
+        "answer": "Clickmasters HealthTech FHIR R4 migration costs: (1) FHIR DSTU2/STU3 → R4 for a single NHS integration (e.g., PDS only): £8,000–£15,000 (4–8 weeks). (2) Full NHS integration stack migration (PDS + GP Connect + eRS + EPS — STU3 to R4): £30,000–£65,000 (14–22 weeks). (3) Legacy PHP HealthTech platform modernisation (complete rebuild with FHIR R4 from scratch — not migration): £60,000–£150,000 (24–48 weeks). (4) DTAC reassessment after migration: £5,000–£12,000 (6–10 weeks evidence update). All prices include NHS sandbox testing, HAPI FHIR UK Core validation, and DTAC evidence update. FHIR R4 migration is not optional — NHS Digital has phased out STU3 support."
       }
     ]
   },
@@ -13275,11 +13275,11 @@ const industries = [
     "industry": "logtech",
     "service": "api-development-logtech",
     "title": "API Development for UK LogTech — UK GDPR Built In",
-    "metaTitle": "API Development for LogTech UK | ClickMasters",
+    "metaTitle": "API Development for LogTech UK | Clickmasters",
     "metaDesc": "API Development for UK LogTech. UK GDPR. £8,000–£45,000.",
     "lastUpdated": "April 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LogTech Team",
+    "writtenBy": "Clickmasters LogTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LogTech",
@@ -13289,18 +13289,18 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides API Development for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides API Development for UK LogTech businesses with UK GDPR, HMRC CDS compliance from Sprint 1.",
     "sections": [
       {
         "heading": "API Development for LogTech — UK Specifics",
         "paragraphs": [
           {
             "bold": "UK Carrier API Ecosystem",
-            "text": "UK e-commerce and logistics rely on a rich carrier API ecosystem. Core carrier APIs: (1) Royal Mail Click and Drop API (label generation, tracking, collection booking — free with OBA account), (2) DPD UK API (DPDgroup — label, tracking, collection booking, address validation — DPD Business account required), (3) Evri (formerly Hermes) Carrier API (label, tracking — Evri Business account, 2–4 week onboarding), (4) DHL Express API (DHL Business Gateway — international express, label, tracking, customs data), (5) UPS Developer Kit (domestic and international, label, tracking, rates), (6) Yodel API (B2C e-commerce carrier, label, tracking), (7) Amazon MCF (Multi-Channel Fulfillment API — if fulfilling non-Amazon orders from FBA inventory). Multi-carrier abstraction: ClickMasters builds carrier abstraction layer — one internal API, multiple carrier adapters. Switching carrier = add new adapter only."
+            "text": "UK e-commerce and logistics rely on a rich carrier API ecosystem. Core carrier APIs: (1) Royal Mail Click and Drop API (label generation, tracking, collection booking — free with OBA account), (2) DPD UK API (DPDgroup — label, tracking, collection booking, address validation — DPD Business account required), (3) Evri (formerly Hermes) Carrier API (label, tracking — Evri Business account, 2–4 week onboarding), (4) DHL Express API (DHL Business Gateway — international express, label, tracking, customs data), (5) UPS Developer Kit (domestic and international, label, tracking, rates), (6) Yodel API (B2C e-commerce carrier, label, tracking), (7) Amazon MCF (Multi-Channel Fulfillment API — if fulfilling non-Amazon orders from FBA inventory). Multi-carrier abstraction: Clickmasters builds carrier abstraction layer — one internal API, multiple carrier adapters. Switching carrier = add new adapter only."
           },
           {
             "bold": "UK Address Validation APIs for LogTech",
-            "text": "UK address validation is essential for logistics — failed deliveries cost £5–£15 each. UK address APIs: (1) Royal Mail PAF (Postcode Address File — authoritative UK address database, 29M+ addresses, updated monthly), (2) OS Places API (Ordnance Survey — UPRN, address search, postcode lookup — includes addresses not in PAF), (3) Loqate (GBGroup — address validation, verification, correction, geocoding), (4) Ideal Postcodes API (Royal Mail PAF-based — REST API, generous free tier for UK startups). Address validation at order entry: customer types postcode → address picker API → structured address (line1, city, county, postcode) → carrier label. Validation prevents carrier label rejection (wrong format → carrier returns error → delivery fails). ClickMasters recommendation: Ideal Postcodes for MVP (generous free tier, good UK coverage), OS Places for enterprise (UPRN-based — most accurate for UK logistics routing)."
+            "text": "UK address validation is essential for logistics — failed deliveries cost £5–£15 each. UK address APIs: (1) Royal Mail PAF (Postcode Address File — authoritative UK address database, 29M+ addresses, updated monthly), (2) OS Places API (Ordnance Survey — UPRN, address search, postcode lookup — includes addresses not in PAF), (3) Loqate (GBGroup — address validation, verification, correction, geocoding), (4) Ideal Postcodes API (Royal Mail PAF-based — REST API, generous free tier for UK startups). Address validation at order entry: customer types postcode → address picker API → structured address (line1, city, county, postcode) → carrier label. Validation prevents carrier label rejection (wrong format → carrier returns error → delivery fails). Clickmasters recommendation: Ideal Postcodes for MVP (generous free tier, good UK coverage), OS Places for enterprise (UPRN-based — most accurate for UK logistics routing)."
           },
           {
             "bold": "HMRC CDS and Customs API Integration",
@@ -13308,7 +13308,7 @@ const industries = [
           },
           {
             "bold": "DVLA and DVSA APIs for Fleet and Logistics",
-            "text": "DVLA Vehicle Enquiry API: vehicle details by registration number (make, model, colour, engine size, fuel type, tax status, MOT expiry). Use in logistics: (1) fleet management (DVLA query on fleet vehicles — automated MOT/tax reminder), (2) carrier verification (DVLA check on delivery van registration — verify carrier vehicle is roadworthy before dispatch), (3) insurance integration (quote integration requires DVLA vehicle data — V5C registration). DVSA APIs: (1) MOT History API (MOT test results + advisory notes for any UK vehicle), (2) DVSA OCRS (Operator Compliance Risk Score — haulier compliance score), (3) Driver CPC (Certificate of Professional Competence — lorry/bus driver training record). ClickMasters fleet/logistics API integrations: DVLA + DVSA + MOT History all used in fleet management and haulier vetting platforms."
+            "text": "DVLA Vehicle Enquiry API: vehicle details by registration number (make, model, colour, engine size, fuel type, tax status, MOT expiry). Use in logistics: (1) fleet management (DVLA query on fleet vehicles — automated MOT/tax reminder), (2) carrier verification (DVLA check on delivery van registration — verify carrier vehicle is roadworthy before dispatch), (3) insurance integration (quote integration requires DVLA vehicle data — V5C registration). DVSA APIs: (1) MOT History API (MOT test results + advisory notes for any UK vehicle), (2) DVSA OCRS (Operator Compliance Risk Score — haulier compliance score), (3) Driver CPC (Certificate of Professional Competence — lorry/bus driver training record). Clickmasters fleet/logistics API integrations: DVLA + DVSA + MOT History all used in fleet management and haulier vetting platforms."
           }
         ]
       },
@@ -13375,11 +13375,11 @@ const industries = [
     "faqs": [
       {
         "question": "What is the cost of multi-carrier API integration in the UK?",
-        "answer": "ClickMasters UK multi-carrier API integration costs: (1) Single carrier integration (Royal Mail Click and Drop — simplest): £3,000–£6,000 (2–3 weeks). (2) Dual carrier (Royal Mail + DPD or Evri — most common e-commerce): £6,000–£12,000 (4–6 weeks). (3) Multi-carrier abstraction layer (5+ carriers — Royal Mail, DPD, DHL, Evri, UPS): £12,000–£25,000 (8–14 weeks). (4) Full logistics API stack (multi-carrier + address validation + DVLA fleet + HMRC CDS): £25,000–£50,000 (14–22 weeks). All prices include carrier partner account onboarding (2–4 weeks each carrier), label format testing (ZPL thermal printer format), and tracking webhook integration (carrier event → platform status update → customer notification)."
+        "answer": "Clickmasters UK multi-carrier API integration costs: (1) Single carrier integration (Royal Mail Click and Drop — simplest): £3,000–£6,000 (2–3 weeks). (2) Dual carrier (Royal Mail + DPD or Evri — most common e-commerce): £6,000–£12,000 (4–6 weeks). (3) Multi-carrier abstraction layer (5+ carriers — Royal Mail, DPD, DHL, Evri, UPS): £12,000–£25,000 (8–14 weeks). (4) Full logistics API stack (multi-carrier + address validation + DVLA fleet + HMRC CDS): £25,000–£50,000 (14–22 weeks). All prices include carrier partner account onboarding (2–4 weeks each carrier), label format testing (ZPL thermal printer format), and tracking webhook integration (carrier event → platform status update → customer notification)."
       },
       {
         "question": "How do we handle Royal Mail API rate limits in high-volume e-commerce?",
-        "answer": "Royal Mail API rate limiting: Royal Mail Click and Drop API has undocumented rate limits — typical observed limit: 100 requests/minute per OBA account. For high-volume (>100 labels/minute): (1) multiple OBA accounts (Royal Mail allows multiple accounts per business — labels generated across accounts, round-robin), (2) label batch endpoint (Royal Mail Click and Drop supports bulk label creation — 100 labels per API call instead of 1 per call), (3) Redis queue (order → Redis queue → Lambda consumer at controlled rate → Royal Mail API), (4) pre-print at off-peak (for next-day dispatch: labels generated overnight at low traffic periods, not at peak). ClickMasters high-volume Royal Mail integration: Redis queue + batch endpoint + multi-account for clients processing > 10,000 labels/day."
+        "answer": "Royal Mail API rate limiting: Royal Mail Click and Drop API has undocumented rate limits — typical observed limit: 100 requests/minute per OBA account. For high-volume (>100 labels/minute): (1) multiple OBA accounts (Royal Mail allows multiple accounts per business — labels generated across accounts, round-robin), (2) label batch endpoint (Royal Mail Click and Drop supports bulk label creation — 100 labels per API call instead of 1 per call), (3) Redis queue (order → Redis queue → Lambda consumer at controlled rate → Royal Mail API), (4) pre-print at off-peak (for next-day dispatch: labels generated overnight at low traffic periods, not at peak). Clickmasters high-volume Royal Mail integration: Redis queue + batch endpoint + multi-account for clients processing > 10,000 labels/day."
       }
     ]
   },
@@ -13389,11 +13389,11 @@ const industries = [
     "industry": "fintech",
     "service": "legacy-modernisation-fintech-2",
     "title": "Legacy Modernisation for UK FinTech — FCA PS21/3 Built In",
-    "metaTitle": "Legacy Modernisation for FinTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for FinTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK FinTech. FCA PS21/3. £35,000–£180,000.",
     "lastUpdated": "May 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -13403,7 +13403,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK FinTech businesses with FCA PS21/3, FCA Consumer Duty compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK FinTech businesses with FCA PS21/3, FCA Consumer Duty compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for FinTech — UK Specifics",
@@ -13414,11 +13414,11 @@ const industries = [
           },
           {
             "bold": "FCA Consumer Duty Legacy UX Remediation",
-            "text": "FCA Consumer Duty PS22/9 is the single biggest driver of UK FinTech legacy remediation in 2025–2026. Consumer Duty legacy UX failures (most common): (1) renewal pricing journey — legacy systems that increase renewal premium without FCA PS21/11 parity check, (2) cancellation journey — legacy systems where cancellation requires a phone call (Consumer Duty: cancellation no harder than sign-up), (3) fee disclosure — legacy systems with hidden charges in small print (Consumer Duty: all fees transparent at point of purchase), (4) complaint journey — legacy systems where complaint process is buried or inaccessible, (5) vulnerable customer journeys — legacy systems with no vulnerability identification or support pathway. ClickMasters Consumer Duty legacy audit: 2-day audit identifying all Consumer Duty UX failures before remediation scope agreed."
+            "text": "FCA Consumer Duty PS22/9 is the single biggest driver of UK FinTech legacy remediation in 2025–2026. Consumer Duty legacy UX failures (most common): (1) renewal pricing journey — legacy systems that increase renewal premium without FCA PS21/11 parity check, (2) cancellation journey — legacy systems where cancellation requires a phone call (Consumer Duty: cancellation no harder than sign-up), (3) fee disclosure — legacy systems with hidden charges in small print (Consumer Duty: all fees transparent at point of purchase), (4) complaint journey — legacy systems where complaint process is buried or inaccessible, (5) vulnerable customer journeys — legacy systems with no vulnerability identification or support pathway. Clickmasters Consumer Duty legacy audit: 2-day audit identifying all Consumer Duty UX failures before remediation scope agreed."
           },
           {
             "bold": "NPA (New Payments Architecture) Migration",
-            "text": "NPA (New Payments Architecture): Pay.UK's programme to replace BACS and Faster Payments with a new ISO 20022 standard. UK banks and payment processors must migrate to NPA. ISO 20022 migration: (1) message format change (BACS AUDDIS/ADDACS XML → ISO 20022 pain.001/camt.054 messages), (2) data enrichment (ISO 20022 carries more structured data than legacy BACS — remittance information, end-to-end IDs), (3) payment initiation (REST API replacing legacy BACS file submission), (4) settlement (NPA overlay services — Request to Pay, Enhanced Data). ClickMasters NPA migration: legacy BACS file generation system → NPA ISO 20022 REST API. Strangler Fig: old BACS file generation continues during migration, NPA API runs in parallel."
+            "text": "NPA (New Payments Architecture): Pay.UK's programme to replace BACS and Faster Payments with a new ISO 20022 standard. UK banks and payment processors must migrate to NPA. ISO 20022 migration: (1) message format change (BACS AUDDIS/ADDACS XML → ISO 20022 pain.001/camt.054 messages), (2) data enrichment (ISO 20022 carries more structured data than legacy BACS — remittance information, end-to-end IDs), (3) payment initiation (REST API replacing legacy BACS file submission), (4) settlement (NPA overlay services — Request to Pay, Enhanced Data). Clickmasters NPA migration: legacy BACS file generation system → NPA ISO 20022 REST API. Strangler Fig: old BACS file generation continues during migration, NPA API runs in parallel."
           },
           {
             "bold": "FCA PS21/3 Legacy Resilience Uplift",
@@ -13484,11 +13484,11 @@ const industries = [
     "faqs": [
       {
         "question": "What is the fastest way to achieve FCA PS21/3 compliance for a legacy system?",
-        "answer": "FCA PS21/3 fastest path for legacy system: (1) lift-and-shift to AWS (move legacy VMs to EC2/ECS — not ideal long-term but achieves cloud Multi-AZ immediately — 4–8 weeks), (2) RDS Multi-AZ (move legacy database to RDS PostgreSQL Multi-AZ — 60-second automated failover — 2–4 weeks), (3) CloudWatch Synthetics (add external IBS availability monitoring immediately — 1 week), (4) deployment process (remove maintenance windows — blue-green deployment — 2–4 weeks). Minimum viable PS21/3: lift-and-shift + RDS Multi-AZ + CloudWatch Synthetics = 8–14 weeks. Full PS21/3 modernisation (proper cloud-native, ECS Fargate, Aurora, chaos testing): 20–32 weeks. ClickMasters recommendation: minimum viable PS21/3 immediately (regulatory deadline), full modernisation as second phase."
+        "answer": "FCA PS21/3 fastest path for legacy system: (1) lift-and-shift to AWS (move legacy VMs to EC2/ECS — not ideal long-term but achieves cloud Multi-AZ immediately — 4–8 weeks), (2) RDS Multi-AZ (move legacy database to RDS PostgreSQL Multi-AZ — 60-second automated failover — 2–4 weeks), (3) CloudWatch Synthetics (add external IBS availability monitoring immediately — 1 week), (4) deployment process (remove maintenance windows — blue-green deployment — 2–4 weeks). Minimum viable PS21/3: lift-and-shift + RDS Multi-AZ + CloudWatch Synthetics = 8–14 weeks. Full PS21/3 modernisation (proper cloud-native, ECS Fargate, Aurora, chaos testing): 20–32 weeks. Clickmasters recommendation: minimum viable PS21/3 immediately (regulatory deadline), full modernisation as second phase."
       },
       {
         "question": "How do we handle GDPR data migration when modernising a legacy FinTech?",
-        "answer": "UK GDPR FinTech data migration: (1) lawful basis review (legacy system may have processed data under consent — new system may use legitimate interest — consent refresh required if legal basis changes), (2) retention schedule (legacy system may hold 10+ years of data — GDPR requires 5-year retention for FCA regulated data — delete excess data before migration, not after), (3) data mapping (Article 30 ROPA updated before migration — new system, new data flows), (4) DSAR capability (new system must support DSARs — legacy may not have had DSAR functionality), (5) encryption at rest (legacy system may not have encryption — new system must have KMS encryption from day 1 of migration). ClickMasters FinTech data migration: Article 30 ROPA update + excess data deletion + DSAR testing before go-live."
+        "answer": "UK GDPR FinTech data migration: (1) lawful basis review (legacy system may have processed data under consent — new system may use legitimate interest — consent refresh required if legal basis changes), (2) retention schedule (legacy system may hold 10+ years of data — GDPR requires 5-year retention for FCA regulated data — delete excess data before migration, not after), (3) data mapping (Article 30 ROPA updated before migration — new system, new data flows), (4) DSAR capability (new system must support DSARs — legacy may not have had DSAR functionality), (5) encryption at rest (legacy system may not have encryption — new system must have KMS encryption from day 1 of migration). Clickmasters FinTech data migration: Article 30 ROPA update + excess data deletion + DSAR testing before go-live."
       }
     ]
   },
@@ -13498,11 +13498,11 @@ const industries = [
     "industry": "medtech",
     "service": "saas-development-medtech-2",
     "title": "SaaS Development for UK MedTech — MHRA Built In",
-    "metaTitle": "SaaS Development for MedTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for MedTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK MedTech. MHRA. £40,000–£180,000.",
     "lastUpdated": "May 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters MedTech Team",
+    "writtenBy": "Clickmasters MedTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "MedTech",
@@ -13512,7 +13512,7 @@ const industries = [
       "⚖️ IR35-Safe",
       "🇬🇧 UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK MedTech businesses with MHRA, IEC 62304 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for MedTech — UK Specifics",
@@ -13523,7 +13523,7 @@ const industries = [
           },
           {
             "bold": "NHS DTAC SaaS Architecture — Multi-Tenancy",
-            "text": "NHS DTAC for multi-tenant MedTech SaaS: each NHS Trust or ICB is a separate tenant. Multi-tenancy with DTAC: (1) data isolation (PostgreSQL RLS — Trust A cannot see Trust B patient data), (2) NHS DTAC Domain 2 (each tenant has its own DPIA — processing activities differ per Trust), (3) DSP Toolkit (each NHS organisation must submit their own annual DSP Toolkit — SaaS provider's DSP Toolkit covers their own processing, not the Trusts'), (4) domain data residency (all NHS tenant data in eu-west-2 — cannot be in us-east-1 even if non-UK tenant is added), (5) audit trail per tenant (CloudTrail log per-tenant resource — each Trust can audit their own data access). ClickMasters NHS multi-tenant SaaS: RLS + per-tenant audit + eu-west-2 fixed for all NHS tenants."
+            "text": "NHS DTAC for multi-tenant MedTech SaaS: each NHS Trust or ICB is a separate tenant. Multi-tenancy with DTAC: (1) data isolation (PostgreSQL RLS — Trust A cannot see Trust B patient data), (2) NHS DTAC Domain 2 (each tenant has its own DPIA — processing activities differ per Trust), (3) DSP Toolkit (each NHS organisation must submit their own annual DSP Toolkit — SaaS provider's DSP Toolkit covers their own processing, not the Trusts'), (4) domain data residency (all NHS tenant data in eu-west-2 — cannot be in us-east-1 even if non-UK tenant is added), (5) audit trail per tenant (CloudTrail log per-tenant resource — each Trust can audit their own data access). Clickmasters NHS multi-tenant SaaS: RLS + per-tenant audit + eu-west-2 fixed for all NHS tenants."
           },
           {
             "bold": "MHRA SaMD SaaS — Regulatory Pathway",
@@ -13531,7 +13531,7 @@ const industries = [
           },
           {
             "bold": "NHS Procurement — G-Cloud 14 for MedTech SaaS",
-            "text": "G-Cloud 14 (RM1557.14): NHS organisations can procure SaaS from G-Cloud 14 without competitive tender (below £122,976 per year). MedTech SaaS G-Cloud listing requirements: (1) G-Cloud 14 service definition document (what the SaaS does, pricing, support), (2) DTAC compliance statement (all 5 domains), (3) NHS DSP Toolkit alignment (or equivalent security assurance), (4) WCAG 2.1 AA accessibility statement, (5) data processing agreement (DPA — Article 28 compliant). NHS procurement advantage: G-Cloud procurement typically 4–8 weeks vs competitive tender 6–18 months. ClickMasters supports G-Cloud 14 listing for MedTech SaaS clients — service definition document, DTAC statement, pricing model design."
+            "text": "G-Cloud 14 (RM1557.14): NHS organisations can procure SaaS from G-Cloud 14 without competitive tender (below £122,976 per year). MedTech SaaS G-Cloud listing requirements: (1) G-Cloud 14 service definition document (what the SaaS does, pricing, support), (2) DTAC compliance statement (all 5 domains), (3) NHS DSP Toolkit alignment (or equivalent security assurance), (4) WCAG 2.1 AA accessibility statement, (5) data processing agreement (DPA — Article 28 compliant). NHS procurement advantage: G-Cloud procurement typically 4–8 weeks vs competitive tender 6–18 months. Clickmasters supports G-Cloud 14 listing for MedTech SaaS clients — service definition document, DTAC statement, pricing model design."
           }
         ]
       },
@@ -13598,11 +13598,11 @@ const industries = [
     "faqs": [
       {
         "question": "How much does MedTech SaaS development cost in the UK?",
-        "answer": "ClickMasters UK MedTech SaaS development costs: (1) Clinical Operations SaaS (non-SaMD, DTAC required — ward management, clinical communication): £40,000–£80,000 (20–28 weeks). (2) Clinical Decision Support SaaS (SaMD Class I — IEC 62304 Class A, DTAC): £55,000–£100,000 (22–32 weeks). (3) SaMD Class IIa SaaS (IEC 62304 Class B, MHRA Notified Body, DTAC): £80,000–£160,000 (30–48 weeks). (4) NHS national programme SaaS (NHSE-mandated, used across 100+ NHS organisations): £120,000–£250,000 (40–60 weeks, includes NHSE programme assurance). All prices include DTAC evidence pack production, DCB0129 clinical safety case (for clinical SaaS), NHS FHIR R4 integration (standard NHS APIs), and G-Cloud 14 listing support."
+        "answer": "Clickmasters UK MedTech SaaS development costs: (1) Clinical Operations SaaS (non-SaMD, DTAC required — ward management, clinical communication): £40,000–£80,000 (20–28 weeks). (2) Clinical Decision Support SaaS (SaMD Class I — IEC 62304 Class A, DTAC): £55,000–£100,000 (22–32 weeks). (3) SaMD Class IIa SaaS (IEC 62304 Class B, MHRA Notified Body, DTAC): £80,000–£160,000 (30–48 weeks). (4) NHS national programme SaaS (NHSE-mandated, used across 100+ NHS organisations): £120,000–£250,000 (40–60 weeks, includes NHSE programme assurance). All prices include DTAC evidence pack production, DCB0129 clinical safety case (for clinical SaaS), NHS FHIR R4 integration (standard NHS APIs), and G-Cloud 14 listing support."
       },
       {
         "question": "Does NHS procurement require DTAC before G-Cloud listing?",
-        "answer": "NHS procurement DTAC requirement: NHS organisations are required to conduct DTAC assessment before procuring digital health products. The supplier does not need DTAC pre-assessment before listing on G-Cloud 14 — but NHS procurement officers will request DTAC evidence during their own procurement process. Best practice: ClickMasters recommends completing DTAC assessment before G-Cloud 14 listing — suppliers who present DTAC-assessed products win more NHS contracts (procurement officers do not need to conduct their own assessment). G-Cloud 14 listing without DTAC is possible, but NHS sales conversion is significantly lower. ClickMasters DTAC-assessed products: 18 products with approved DTAC — consistently higher NHS win rates than unassessed competitors."
+        "answer": "NHS procurement DTAC requirement: NHS organisations are required to conduct DTAC assessment before procuring digital health products. The supplier does not need DTAC pre-assessment before listing on G-Cloud 14 — but NHS procurement officers will request DTAC evidence during their own procurement process. Best practice: Clickmasters recommends completing DTAC assessment before G-Cloud 14 listing — suppliers who present DTAC-assessed products win more NHS contracts (procurement officers do not need to conduct their own assessment). G-Cloud 14 listing without DTAC is possible, but NHS sales conversion is significantly lower. Clickmasters DTAC-assessed products: 18 products with approved DTAC — consistently higher NHS win rates than unassessed competitors."
       }
     ]
   },
@@ -13612,11 +13612,11 @@ const industries = [
     "industry": "retailtech",
     "service": "ai-development-retailtech",
     "title": "AI Development for UK RetailTech -- UK GDPR Built In",
-    "metaTitle": "AI Development for RetailTech UK | ClickMasters",
+    "metaTitle": "AI Development for RetailTech UK | Clickmasters",
     "metaDesc": "AI Development for UK RetailTech. UK GDPR. GBP25,000--GBP120,000.",
     "lastUpdated": "May 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters RetailTech Team",
+    "writtenBy": "Clickmasters RetailTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "RetailTech",
@@ -13626,7 +13626,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides AI Development for UK RetailTech businesses with UK GDPR, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides AI Development for UK RetailTech businesses with UK GDPR, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "AI Development for RetailTech -- UK Specifics",
@@ -13702,7 +13702,7 @@ const industries = [
     "faqs": [
       {
         "question": "Best recommendation engine for UK e-commerce?",
-        "answer": "ClickMasters recommendation: hybrid collaborative filtering plus content-based with PECR consent management. Start with item-based collaborative filtering and content-based (no consent required -- aggregate behaviour). Add consent-gated personalisation for full history. PECR-first design: recommendations work without consent -- consent rates typically 60-70%, so 30-40% of customers get non-personalised anyway."
+        "answer": "Clickmasters recommendation: hybrid collaborative filtering plus content-based with PECR consent management. Start with item-based collaborative filtering and content-based (no consent required -- aggregate behaviour). Add consent-gated personalisation for full history. PECR-first design: recommendations work without consent -- consent rates typically 60-70%, so 30-40% of customers get non-personalised anyway."
       },
       {
         "question": "ICO AI transparency for retail pricing?",
@@ -13716,11 +13716,11 @@ const industries = [
     "industry": "legaltech",
     "service": "saas-development-legaltech",
     "title": "SaaS Development for UK LegalTech -- SRA Code 2019 Built In",
-    "metaTitle": "SaaS Development for LegalTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for LegalTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK LegalTech. SRA Code 2019. GBP35,000--GBP160,000.",
     "lastUpdated": "May 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LegalTech Team",
+    "writtenBy": "Clickmasters LegalTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LegalTech",
@@ -13730,7 +13730,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK LegalTech businesses with SRA Code 2019, UK GDPR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK LegalTech businesses with SRA Code 2019, UK GDPR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for LegalTech -- UK Specifics",
@@ -13806,7 +13806,7 @@ const industries = [
     "faqs": [
       {
         "question": "LegalTech SaaS cost UK?",
-        "answer": "ClickMasters costs: (1) Document automation (GBP35,000-GBP70,000, 18-26 weeks), (2) Practice management (GBP50,000-GBP100,000, 22-32 weeks), (3) AI contract analysis (GBP40,000-GBP80,000, 18-28 weeks), (4) HMCTS integration (GBP30,000-GBP70,000, 16-24 weeks). SRA compliance is mainly documentation and design decisions upfront -- not expensive."
+        "answer": "Clickmasters costs: (1) Document automation (GBP35,000-GBP70,000, 18-26 weeks), (2) Practice management (GBP50,000-GBP100,000, 22-32 weeks), (3) AI contract analysis (GBP40,000-GBP80,000, 18-28 weeks), (4) HMCTS integration (GBP30,000-GBP70,000, 16-24 weeks). SRA compliance is mainly documentation and design decisions upfront -- not expensive."
       },
       {
         "question": "SRA supervision for LegalTech AI?",
@@ -13820,11 +13820,11 @@ const industries = [
     "industry": "ecommerce",
     "service": "cloud-native-ecommerce",
     "title": "Cloud-Native Development for UK eCommerce -- UK Consumer Rights Act Built In",
-    "metaTitle": "Cloud-Native Development for eCommerce UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for eCommerce UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK eCommerce. UK Consumer Rights Act. GBP40,000--GBP180,000.",
     "lastUpdated": "May 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters eCommerce Team",
+    "writtenBy": "Clickmasters eCommerce Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "eCommerce",
@@ -13834,14 +13834,14 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK eCommerce businesses with UK Consumer Rights Act, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK eCommerce businesses with UK Consumer Rights Act, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for eCommerce -- UK Specifics",
         "paragraphs": [
           {
             "bold": "UK eCommerce Cloud Architecture 2026",
-            "text": "Three patterns: (1) Shopify Plus headless (Storefront API + Next.js -- PCI-DSS SAQ-A, Shopify checkout), (2) Composable Commerce (MACH -- commercetools or BigCommerce + custom services), (3) Custom full-stack (Next.js + Stripe Elements -- SAQ-A). ClickMasters recommendation: Shopify Plus headless for GBP2M-GBP50M revenue (fastest, best PCI-DSS simplicity). Composable Commerce for GBP50M+ (maximum flexibility)."
+            "text": "Three patterns: (1) Shopify Plus headless (Storefront API + Next.js -- PCI-DSS SAQ-A, Shopify checkout), (2) Composable Commerce (MACH -- commercetools or BigCommerce + custom services), (3) Custom full-stack (Next.js + Stripe Elements -- SAQ-A). Clickmasters recommendation: Shopify Plus headless for GBP2M-GBP50M revenue (fastest, best PCI-DSS simplicity). Composable Commerce for GBP50M+ (maximum flexibility)."
           },
           {
             "bold": "AWS UK eCommerce Infrastructure",
@@ -13853,7 +13853,7 @@ const industries = [
           },
           {
             "bold": "Core Web Vitals UK eCommerce",
-            "text": "Google uses CWV as ranking signal: (1) LCP < 2.5s (ClickMasters target < 1.5s -- product hero image via CloudFront WebP), (2) CLS < 0.1 (explicit image dimensions), (3) INP < 200ms (App Router RSC -- minimal client JS). Google PageSpeed > 90 mobile for competitive advantage."
+            "text": "Google uses CWV as ranking signal: (1) LCP < 2.5s (Clickmasters target < 1.5s -- product hero image via CloudFront WebP), (2) CLS < 0.1 (explicit image dimensions), (3) INP < 200ms (App Router RSC -- minimal client JS). Google PageSpeed > 90 mobile for competitive advantage."
           }
         ]
       },
@@ -13929,11 +13929,11 @@ const industries = [
     "industry": "healthtech",
     "service": "staff-augmentation-healthtech",
     "title": "Staff Augmentation for UK HealthTech -- NHS DTAC Built In",
-    "metaTitle": "Staff Augmentation for HealthTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for HealthTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK HealthTech. NHS DTAC. from GBP5,200/month.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters HealthTech Team",
+    "writtenBy": "Clickmasters HealthTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "HealthTech",
@@ -13943,7 +13943,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK HealthTech with NHS DTAC, DCB0129 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK HealthTech with NHS DTAC, DCB0129 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for HealthTech -- UK Specifics",
@@ -13954,15 +13954,15 @@ const industries = [
           },
           {
             "bold": "DCB0129 in Augmentation Engagements",
-            "text": "Requirements: (1) clinical safety case awareness (read existing CSC in week 1), (2) hazard log contribution (flag new features with clinical risk), (3) change impact check (before production: does this affect existing mitigations?), (4) incident reporting (production issues affecting clinical care escalated to CSO immediately). ClickMasters DCB0129 onboarding: 4-hour clinical safety awareness training before NHS placement."
+            "text": "Requirements: (1) clinical safety case awareness (read existing CSC in week 1), (2) hazard log contribution (flag new features with clinical risk), (3) change impact check (before production: does this affect existing mitigations?), (4) incident reporting (production issues affecting clinical care escalated to CSO immediately). Clickmasters DCB0129 onboarding: 4-hour clinical safety awareness training before NHS placement."
           },
           {
             "bold": "NHS DTAC Domain Evidence",
-            "text": "Domain 1 (data flows): new integrations documented in Mermaid diagram within 5 days. Domain 3 (security): Semgrep in CI, Trivy scanning, no long-lived credentials. Domain 4 (interoperability): HAPI FHIR UK Core validation on all NHS API work. Domain 5 (accessibility): axe-playwright test on every new UI component. DTAC reassessment: ClickMasters flags requirement when new clinical functionality or architecture changes made."
+            "text": "Domain 1 (data flows): new integrations documented in Mermaid diagram within 5 days. Domain 3 (security): Semgrep in CI, Trivy scanning, no long-lived credentials. Domain 4 (interoperability): HAPI FHIR UK Core validation on all NHS API work. Domain 5 (accessibility): axe-playwright test on every new UI component. DTAC reassessment: Clickmasters flags requirement when new clinical functionality or architecture changes made."
           },
           {
             "bold": "NHS DSP Toolkit Contribution",
-            "text": "Augmented engineers contribute evidence: Standard 7 (BC) -- deployment history, Standard 9 (Cyber) -- GitHub audit log + CloudTrail, Standard 10 (Data Quality) -- dbt tests in CI/CD. ClickMasters provides DSP Toolkit evidence contribution document to NHS client."
+            "text": "Augmented engineers contribute evidence: Standard 7 (BC) -- deployment history, Standard 9 (Cyber) -- GitHub audit log + CloudTrail, Standard 10 (Data Quality) -- dbt tests in CI/CD. Clickmasters provides DSP Toolkit evidence contribution document to NHS client."
           }
         ]
       },
@@ -14029,11 +14029,11 @@ const industries = [
     "faqs": [
       {
         "question": "NHS skills for HealthTech augmentation?",
-        "answer": "(1) FHIR R4 UK Core in production (not just heard of -- built with PDS/GP Connect), (2) DTAC evidence production (written Domain responses and data flow diagrams), (3) DCB0129 awareness (explain hazards and mitigations without prompting), (4) NHS Login P5/P9 implemented, (5) NHSUK Frontend WCAG 2.1 AA in production. ClickMasters: 90-minute NHS regulatory assessment before placement."
+        "answer": "(1) FHIR R4 UK Core in production (not just heard of -- built with PDS/GP Connect), (2) DTAC evidence production (written Domain responses and data flow diagrams), (3) DCB0129 awareness (explain hazards and mitigations without prompting), (4) NHS Login P5/P9 implemented, (5) NHSUK Frontend WCAG 2.1 AA in production. Clickmasters: 90-minute NHS regulatory assessment before placement."
       },
       {
         "question": "IR35 in NHS HealthTech?",
-        "answer": "NHS trusts are public sector -- IR35 applies in full. NHS contractors almost always inside IR35. ClickMasters engineers: employees -- zero IR35 risk for NHS clients. One invoice. No SDS. All NHS engineers: DTAC training, DCB0129 awareness, NHS Login production implementation before client placement."
+        "answer": "NHS trusts are public sector -- IR35 applies in full. NHS contractors almost always inside IR35. Clickmasters engineers: employees -- zero IR35 risk for NHS clients. One invoice. No SDS. All NHS engineers: DTAC training, DCB0129 awareness, NHS Login production implementation before client placement."
       }
     ]
   },
@@ -14043,11 +14043,11 @@ const industries = [
     "industry": "govtech",
     "service": "saas-development-govtech",
     "title": "SaaS Development for UK GovTech -- Compliance Built In",
-    "metaTitle": "SaaS Development for GovTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for GovTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK GovTech. GDS Service Standard. GBP35,000--GBP160,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "GovTech",
@@ -14057,7 +14057,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK GovTech with GDS Service Standard, GOV.UK Design System compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK GovTech with GDS Service Standard, GOV.UK Design System compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for GovTech -- UK Specifics",
@@ -14072,11 +14072,11 @@ const industries = [
           },
           {
             "bold": "G-Cloud 14 SaaS Listing",
-            "text": "G-Cloud 14 listing requirements: (1) Service Definition document (what SaaS does, features, pricing), (2) Terms and Conditions (Crown Commercial Service compliant), (3) GDPR compliance statement (DPA, data residency), (4) Cyber Essentials Plus certificate, (5) accessibility statement (WCAG 2.1 AA), (6) transparent pricing schedule. G-Cloud 14 gives access to GBP2B+ annual government SaaS procurement. ClickMasters supports G-Cloud 14 listing for GovTech SaaS clients."
+            "text": "G-Cloud 14 listing requirements: (1) Service Definition document (what SaaS does, features, pricing), (2) Terms and Conditions (Crown Commercial Service compliant), (3) GDPR compliance statement (DPA, data residency), (4) Cyber Essentials Plus certificate, (5) accessibility statement (WCAG 2.1 AA), (6) transparent pricing schedule. G-Cloud 14 gives access to GBP2B+ annual government SaaS procurement. Clickmasters supports G-Cloud 14 listing for GovTech SaaS clients."
           },
           {
             "bold": "Crown Commercial Service Frameworks",
-            "text": "Key CCS frameworks: (1) G-Cloud 14 (software hosting and support), (2) DOS 6 (Digital Outcomes and Specialists -- project delivery), (3) Technology Products and Associated Services (hardware and software), (4) SPARK (software categories). ClickMasters: G-Cloud 14 registered for custom software development and managed services. DOS 6 registered for digital outcomes. Both frameworks maximise procurement routes."
+            "text": "Key CCS frameworks: (1) G-Cloud 14 (software hosting and support), (2) DOS 6 (Digital Outcomes and Specialists -- project delivery), (3) Technology Products and Associated Services (hardware and software), (4) SPARK (software categories). Clickmasters: G-Cloud 14 registered for custom software development and managed services. DOS 6 registered for digital outcomes. Both frameworks maximise procurement routes."
           }
         ]
       },
@@ -14143,11 +14143,11 @@ const industries = [
     "industry": "logtech",
     "service": "microservices-logtech",
     "title": "Microservices for UK LogTech -- Compliance Built In",
-    "metaTitle": "Microservices for LogTech UK | ClickMasters",
+    "metaTitle": "Microservices for LogTech UK | Clickmasters",
     "metaDesc": "Microservices for UK LogTech. HMRC CDS. GBP30,000--GBP140,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LogTech Team",
+    "writtenBy": "Clickmasters LogTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LogTech",
@@ -14157,7 +14157,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Microservices for UK LogTech with HMRC CDS, UK Border Force compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Microservices for UK LogTech with HMRC CDS, UK Border Force compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Microservices for LogTech -- UK Specifics",
@@ -14176,7 +14176,7 @@ const industries = [
           },
           {
             "bold": "LogTech Microservices Event-Driven Architecture",
-            "text": "UK LogTech event-driven: (1) shipment-created event (new shipment booking -- triggers customs declaration, route planning, driver assignment), (2) customs-cleared event (HMRC CDS release -- triggers warehouse release, customer notification), (3) vehicle-departed event (GPS/tachograph data -- triggers driver hours tracking, ETA update), (4) delivery-confirmed event (POD -- Proof of Delivery -- triggers invoice generation, HMRC export declaration). Choreography vs orchestration: ClickMasters LogTech default -- choreography (services react to events via SQS/SNS, no central orchestrator) for simple linear flows, Temporal workflow orchestration for complex multi-step customs processes (HMRC CDS + Bond + ETSF release)."
+            "text": "UK LogTech event-driven: (1) shipment-created event (new shipment booking -- triggers customs declaration, route planning, driver assignment), (2) customs-cleared event (HMRC CDS release -- triggers warehouse release, customer notification), (3) vehicle-departed event (GPS/tachograph data -- triggers driver hours tracking, ETA update), (4) delivery-confirmed event (POD -- Proof of Delivery -- triggers invoice generation, HMRC export declaration). Choreography vs orchestration: Clickmasters LogTech default -- choreography (services react to events via SQS/SNS, no central orchestrator) for simple linear flows, Temporal workflow orchestration for complex multi-step customs processes (HMRC CDS + Bond + ETSF release)."
           }
         ]
       },
@@ -14243,11 +14243,11 @@ const industries = [
     "faqs": [
       {
         "question": "How much does LogTech microservices development cost?",
-        "answer": "ClickMasters LogTech microservices costs: (1) HMRC CDS customs declaration microservice (import/export declarations, duty payment): GBP25,000-GBP50,000 (12-20 weeks). (2) Fleet and driver hours compliance microservice (DVSA OCRS, tachograph): GBP20,000-GBP40,000 (10-16 weeks). (3) Full LogTech microservices platform (customs + fleet + route + driver hours): GBP80,000-GBP140,000 (28-40 weeks). HMRC CDS integration is the largest single cost component -- CDS API test environment (sandbox) setup takes 2-4 weeks before development can start. HMRC provides a sandbox but it has known limitations -- budget for additional testing time."
+        "answer": "Clickmasters LogTech microservices costs: (1) HMRC CDS customs declaration microservice (import/export declarations, duty payment): GBP25,000-GBP50,000 (12-20 weeks). (2) Fleet and driver hours compliance microservice (DVSA OCRS, tachograph): GBP20,000-GBP40,000 (10-16 weeks). (3) Full LogTech microservices platform (customs + fleet + route + driver hours): GBP80,000-GBP140,000 (28-40 weeks). HMRC CDS integration is the largest single cost component -- CDS API test environment (sandbox) setup takes 2-4 weeks before development can start. HMRC provides a sandbox but it has known limitations -- budget for additional testing time."
       },
       {
         "question": "Does LogTech need ISO 27001?",
-        "answer": "ISO 27001 for LogTech: not legally required but increasingly required by enterprise customers (large retailers, manufacturers contracting with logistics providers). ISO 27001 consideration for LogTech: (1) HMRC CDS access (CDS API credentials are sensitive government credentials -- HMRC expects adequate security controls), (2) supply chain data (logistics data includes commercial-in-confidence shipment manifests -- enterprise customers require documented security), (3) UK Border Force data (advance cargo notification contains HMRC-sensitive customs data), (4) DVSA OCRS (operator compliance scores are sensitive commercial data). ClickMasters recommendation: Cyber Essentials Plus (GBP2,000-GBP6,000) as minimum. ISO 27001 (GBP15,000-GBP40,000) for enterprise LogTech SaaS targeting large retailers and manufacturers."
+        "answer": "ISO 27001 for LogTech: not legally required but increasingly required by enterprise customers (large retailers, manufacturers contracting with logistics providers). ISO 27001 consideration for LogTech: (1) HMRC CDS access (CDS API credentials are sensitive government credentials -- HMRC expects adequate security controls), (2) supply chain data (logistics data includes commercial-in-confidence shipment manifests -- enterprise customers require documented security), (3) UK Border Force data (advance cargo notification contains HMRC-sensitive customs data), (4) DVSA OCRS (operator compliance scores are sensitive commercial data). Clickmasters recommendation: Cyber Essentials Plus (GBP2,000-GBP6,000) as minimum. ISO 27001 (GBP15,000-GBP40,000) for enterprise LogTech SaaS targeting large retailers and manufacturers."
       }
     ]
   },
@@ -14257,11 +14257,11 @@ const industries = [
     "industry": "ecommerce",
     "service": "api-development-ecommerce",
     "title": "API Development for UK eCommerce -- Compliance Built In",
-    "metaTitle": "API Development for eCommerce UK | ClickMasters",
+    "metaTitle": "API Development for eCommerce UK | Clickmasters",
     "metaDesc": "API Development for UK eCommerce. UK Consumer Rights Act. GBP12,000--GBP80,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters eCommerce Team",
+    "writtenBy": "Clickmasters eCommerce Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "eCommerce",
@@ -14271,7 +14271,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides API Development for UK eCommerce with UK Consumer Rights Act, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides API Development for UK eCommerce with UK Consumer Rights Act, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "API Development for eCommerce -- UK Specifics",
@@ -14286,7 +14286,7 @@ const industries = [
           },
           {
             "bold": "Klarna BNPL UK Consumer Credit Act",
-            "text": "Klarna BNPL (Buy Now Pay Later) UK integration: Klarna is FCA-regulated from 2026 (previously unregulated -- FCA Consumer Credit authorisation required). Klarna UK integration: (1) Klarna checkout widget (Klarna.js -- iframe embed, SAQ-A PCI scope similar to Stripe Elements), (2) consumer credit disclosure (FCA Consumer Credit Act 1974 -- Klarna must display APR, total cost of credit, cancellation rights before BNPL agreement), (3) affordability check (Klarna performs affordability check -- retailer must not present BNPL in a way that bypasses Klarna affordability check), (4) FCA Consumer Duty (BNPL presented fairly -- not as default option, not as primary payment method before customer has seen the price), (5) Customer complaint handling (FCA DISP -- BNPL complaints handled within 8 weeks). Post-FCA regulation: ClickMasters Klarna integration template updated for FCA regulated BNPL disclosure requirements."
+            "text": "Klarna BNPL (Buy Now Pay Later) UK integration: Klarna is FCA-regulated from 2026 (previously unregulated -- FCA Consumer Credit authorisation required). Klarna UK integration: (1) Klarna checkout widget (Klarna.js -- iframe embed, SAQ-A PCI scope similar to Stripe Elements), (2) consumer credit disclosure (FCA Consumer Credit Act 1974 -- Klarna must display APR, total cost of credit, cancellation rights before BNPL agreement), (3) affordability check (Klarna performs affordability check -- retailer must not present BNPL in a way that bypasses Klarna affordability check), (4) FCA Consumer Duty (BNPL presented fairly -- not as default option, not as primary payment method before customer has seen the price), (5) Customer complaint handling (FCA DISP -- BNPL complaints handled within 8 weeks). Post-FCA regulation: Clickmasters Klarna integration template updated for FCA regulated BNPL disclosure requirements."
           },
           {
             "bold": "Royal Mail Click and Drop API",
@@ -14352,11 +14352,11 @@ const industries = [
     "faqs": [
       {
         "question": "How much does UK eCommerce API development cost?",
-        "answer": "ClickMasters UK eCommerce API costs: (1) Shopify headless Storefront API integration (existing Shopify store, new Next.js frontend): GBP12,000-GBP25,000 (8-14 weeks). (2) Payment API integration (Stripe + GoCardless + Klarna): GBP10,000-GBP20,000 (6-12 weeks). (3) ERP/OMS integration (NetSuite or Brightpearl): GBP15,000-GBP30,000 (8-16 weeks). (4) Carrier API integration (Royal Mail + 2 other carriers): GBP8,000-GBP16,000 (4-10 weeks). (5) Full eCommerce API platform (all of above): GBP50,000-GBP80,000 (20-32 weeks). HMRC MTD VAT API (digital VAT for eCommerce businesses above GBP90,000 threshold): GBP8,000-GBP15,000. FCA Klarna regulatory compliance adds 2-4 weeks to BNPL integration from 2026."
+        "answer": "Clickmasters UK eCommerce API costs: (1) Shopify headless Storefront API integration (existing Shopify store, new Next.js frontend): GBP12,000-GBP25,000 (8-14 weeks). (2) Payment API integration (Stripe + GoCardless + Klarna): GBP10,000-GBP20,000 (6-12 weeks). (3) ERP/OMS integration (NetSuite or Brightpearl): GBP15,000-GBP30,000 (8-16 weeks). (4) Carrier API integration (Royal Mail + 2 other carriers): GBP8,000-GBP16,000 (4-10 weeks). (5) Full eCommerce API platform (all of above): GBP50,000-GBP80,000 (20-32 weeks). HMRC MTD VAT API (digital VAT for eCommerce businesses above GBP90,000 threshold): GBP8,000-GBP15,000. FCA Klarna regulatory compliance adds 2-4 weeks to BNPL integration from 2026."
       },
       {
         "question": "Does UK eCommerce need to comply with Consumer Rights Act returns API?",
-        "answer": "UK Consumer Rights Act (CRA 2015): consumers have 14-day right to cancel and 30-day right to reject faulty goods. eCommerce returns API requirements: (1) returns initiation (customer can initiate return within 14 days -- self-service in account portal, not just email), (2) returns reason capture (optional -- cannot make returns conditional on providing reason), (3) refund processing (refund within 14 days of receiving goods back), (4) return label generation (retailer not legally required to provide label, but industry standard -- Royal Mail Tracked Returns), (5) faulty goods workflow (30-day rejection right -- full refund including original delivery cost). ClickMasters CRA returns module: pre-built returns workflow integrated with Royal Mail Click and Drop and Stripe refund API -- CRA 14-day and 30-day rights enforced in workflow logic, not just documentation."
+        "answer": "UK Consumer Rights Act (CRA 2015): consumers have 14-day right to cancel and 30-day right to reject faulty goods. eCommerce returns API requirements: (1) returns initiation (customer can initiate return within 14 days -- self-service in account portal, not just email), (2) returns reason capture (optional -- cannot make returns conditional on providing reason), (3) refund processing (refund within 14 days of receiving goods back), (4) return label generation (retailer not legally required to provide label, but industry standard -- Royal Mail Tracked Returns), (5) faulty goods workflow (30-day rejection right -- full refund including original delivery cost). Clickmasters CRA returns module: pre-built returns workflow integrated with Royal Mail Click and Drop and Stripe refund API -- CRA 14-day and 30-day rights enforced in workflow logic, not just documentation."
       }
     ]
   },
@@ -14366,11 +14366,11 @@ const industries = [
     "industry": "healthtech",
     "service": "cloud-native-healthtech",
     "title": "Cloud-Native Development for UK HealthTech -- Compliance Built In",
-    "metaTitle": "Cloud-Native Development for HealthTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for HealthTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK HealthTech. NHS DTAC. GBP35,000--GBP160,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters HealthTech Team",
+    "writtenBy": "Clickmasters HealthTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "HealthTech",
@@ -14380,14 +14380,14 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK HealthTech with NHS DTAC, DCB0129 compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK HealthTech with NHS DTAC, DCB0129 compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for HealthTech -- UK Specifics",
         "paragraphs": [
           {
             "bold": "NHS Cloud Architecture Framework",
-            "text": "ClickMasters NHS cloud framework: (1) Clinical patient data (NHS number, diagnosis, prescription -- Article 9): AWS eu-west-2 only, private VPC, no third-party SaaS processors without DTAC Domain 2 review, (2) Operational data (staff records, finance -- no patient data): AWS eu-west-2 preferred, managed SaaS with UK GDPR DPA acceptable, (3) Public information (NHS service information, patient leaflets): CloudFront + S3, CMS acceptable, no data residency restriction. This framework prevents both over-engineering (treating public info as clinical data) and under-engineering (treating clinical data as operational data)."
+            "text": "Clickmasters NHS cloud framework: (1) Clinical patient data (NHS number, diagnosis, prescription -- Article 9): AWS eu-west-2 only, private VPC, no third-party SaaS processors without DTAC Domain 2 review, (2) Operational data (staff records, finance -- no patient data): AWS eu-west-2 preferred, managed SaaS with UK GDPR DPA acceptable, (3) Public information (NHS service information, patient leaflets): CloudFront + S3, CMS acceptable, no data residency restriction. This framework prevents both over-engineering (treating public info as clinical data) and under-engineering (treating clinical data as operational data)."
           },
           {
             "bold": "NHS FHIR R4 UK Core Cloud Architecture",
@@ -14466,11 +14466,11 @@ const industries = [
     "faqs": [
       {
         "question": "NHS HealthTech cloud setup timeline?",
-        "answer": "(1) AWS DTAC controls setup: 2-3 weeks. (2) HSCN connection: 6-10 weeks (CRITICAL PATH -- start day 1). (3) HAPI FHIR UK Core on ECS: 2-3 weeks. (4) NHS Login integration: 1-2 weeks. (5) GitHub Actions CI/CD with DTAC evidence: 1-2 weeks. Total: 10-18 weeks. Bottleneck: HSCN. ClickMasters advises starting HSCN onboarding on day 1 of every NHS engagement."
+        "answer": "(1) AWS DTAC controls setup: 2-3 weeks. (2) HSCN connection: 6-10 weeks (CRITICAL PATH -- start day 1). (3) HAPI FHIR UK Core on ECS: 2-3 weeks. (4) NHS Login integration: 1-2 weeks. (5) GitHub Actions CI/CD with DTAC evidence: 1-2 weeks. Total: 10-18 weeks. Bottleneck: HSCN. Clickmasters advises starting HSCN onboarding on day 1 of every NHS engagement."
       },
       {
         "question": "Does NHS HealthTech always need HSCN?",
-        "answer": "HSCN required for PDS, GP Connect, and EPS production. NOT required for: NHS Login, NHS App API, NHS 111 (some configs). ClickMasters rule: if your product needs to query a GP system or dispense prescriptions in production, HSCN is required. Start onboarding day 1."
+        "answer": "HSCN required for PDS, GP Connect, and EPS production. NOT required for: NHS Login, NHS App API, NHS 111 (some configs). Clickmasters rule: if your product needs to query a GP system or dispense prescriptions in production, HSCN is required. Start onboarding day 1."
       }
     ]
   },
@@ -14480,11 +14480,11 @@ const industries = [
     "industry": "retailtech",
     "service": "legacy-modernisation-retailtech",
     "title": "Legacy Modernisation for UK RetailTech -- Compliance Built In",
-    "metaTitle": "Legacy Modernisation for RetailTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for RetailTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK RetailTech. UK Consumer Rights Act. GBP25,000--GBP120,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters RetailTech Team",
+    "writtenBy": "Clickmasters RetailTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "RetailTech",
@@ -14494,7 +14494,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK RetailTech with UK Consumer Rights Act, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK RetailTech with UK Consumer Rights Act, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for RetailTech -- UK Specifics",
@@ -14505,7 +14505,7 @@ const industries = [
           },
           {
             "bold": "Magento 1.x to Shopify Plus Migration",
-            "text": "Magento 1.x EOL risks: zero security patches (PCI-DSS: considered EOL by PCI Security Council), no UK MTD VAT updates, no modern payment gateway support. Migration path: (1) data migration (products, customers, order history), (2) theme design (Shopify Liquid or Next.js headless), (3) payment integration (Stripe + GoCardless), (4) third-party integrations (ERP, logistics, loyalty). Timeline: 14-28 weeks. ClickMasters: 8 Magento 1.x to Shopify Plus migrations completed with zero order history loss."
+            "text": "Magento 1.x EOL risks: zero security patches (PCI-DSS: considered EOL by PCI Security Council), no UK MTD VAT updates, no modern payment gateway support. Migration path: (1) data migration (products, customers, order history), (2) theme design (Shopify Liquid or Next.js headless), (3) payment integration (Stripe + GoCardless), (4) third-party integrations (ERP, logistics, loyalty). Timeline: 14-28 weeks. Clickmasters: 8 Magento 1.x to Shopify Plus migrations completed with zero order history loss."
           },
           {
             "bold": "WooCommerce PHP 7.x Remediation",
@@ -14579,7 +14579,7 @@ const industries = [
       },
       {
         "question": "Does WooCommerce fail PCI-DSS?",
-        "answer": "PHP 7.4 EOL: PCI-DSS Requirement 6.3.3 requires all software to be supported and patched. PHP 7.x = no patches = PCI-DSS 6.3.3 failure. CE Plus A2 also fails. HMRC MTD extensions require newer PHP. ClickMasters: PHP 7.x WooCommerce must be upgraded to PHP 8.2 as first priority -- before adding new features."
+        "answer": "PHP 7.4 EOL: PCI-DSS Requirement 6.3.3 requires all software to be supported and patched. PHP 7.x = no patches = PCI-DSS 6.3.3 failure. CE Plus A2 also fails. HMRC MTD extensions require newer PHP. Clickmasters: PHP 7.x WooCommerce must be upgraded to PHP 8.2 as first priority -- before adding new features."
       }
     ]
   },
@@ -14589,11 +14589,11 @@ const industries = [
     "industry": "legaltech",
     "service": "cloud-native-legaltech",
     "title": "Cloud-Native Development for UK LegalTech -- Compliance Built In",
-    "metaTitle": "Cloud-Native Development for LegalTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for LegalTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK LegalTech. SRA Code 2019. GBP35,000--GBP150,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters LegalTech Team",
+    "writtenBy": "Clickmasters LegalTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "LegalTech",
@@ -14603,7 +14603,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK LegalTech with SRA Code 2019, Legal Professional Privilege compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK LegalTech with SRA Code 2019, Legal Professional Privilege compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for LegalTech -- UK Specifics",
@@ -14614,7 +14614,7 @@ const industries = [
           },
           {
             "bold": "SRA Technology Guidance Cloud Compliance",
-            "text": "SRA Technology Guidance (2020) cloud compliance: (1) competence (SRA Principle 3 -- law firms must understand cloud risks: where is data stored, who has access, what happens on breach?), (2) confidentiality in cloud (SRA Principle 6 -- cloud provider must have adequate security, appropriate DPA, UK GDPR compliance), (3) supervision of cloud-based AI (SRA requires solicitor supervision of AI outputs from cloud AI -- no autonomous legal decisions), (4) client notification (if client data processed by cloud AI -- SRA expects clients to be informed in engagement letter or privacy notice), (5) disaster recovery (SRA expects firms to have DR for client data -- AWS Multi-AZ satisfies this). SRA audit: ClickMasters provides SRA cloud compliance evidence pack for law firm clients -- AWS architecture diagram, data flow diagram, DPA with cloud providers."
+            "text": "SRA Technology Guidance (2020) cloud compliance: (1) competence (SRA Principle 3 -- law firms must understand cloud risks: where is data stored, who has access, what happens on breach?), (2) confidentiality in cloud (SRA Principle 6 -- cloud provider must have adequate security, appropriate DPA, UK GDPR compliance), (3) supervision of cloud-based AI (SRA requires solicitor supervision of AI outputs from cloud AI -- no autonomous legal decisions), (4) client notification (if client data processed by cloud AI -- SRA expects clients to be informed in engagement letter or privacy notice), (5) disaster recovery (SRA expects firms to have DR for client data -- AWS Multi-AZ satisfies this). SRA audit: Clickmasters provides SRA cloud compliance evidence pack for law firm clients -- AWS architecture diagram, data flow diagram, DPA with cloud providers."
           },
           {
             "bold": "LegalTech Microservices Architecture",
@@ -14622,7 +14622,7 @@ const industries = [
           },
           {
             "bold": "GDPR and Legal Data Handling in Cloud",
-            "text": "UK GDPR for LegalTech cloud: (1) lawful basis (contract performance for matter management data -- legal obligation for compliance records), (2) special category data (employment contracts may contain health data -- Article 9 processing), (3) data retention (SRA requires solicitors to retain client files 6 years post-matter -- cloud storage with lifecycle policy), (4) right to erasure (Article 17 -- cannot erase data subject to legal hold or regulatory retention obligation), (5) cross-border transfers (overseas client data processed in UK AWS -- UK GDPR controller for overseas data subjects -- standard terms needed). ClickMasters LegalTech GDPR: pre-built retention policies, legal hold workflow, and subject access request response tool for UK law firms."
+            "text": "UK GDPR for LegalTech cloud: (1) lawful basis (contract performance for matter management data -- legal obligation for compliance records), (2) special category data (employment contracts may contain health data -- Article 9 processing), (3) data retention (SRA requires solicitors to retain client files 6 years post-matter -- cloud storage with lifecycle policy), (4) right to erasure (Article 17 -- cannot erase data subject to legal hold or regulatory retention obligation), (5) cross-border transfers (overseas client data processed in UK AWS -- UK GDPR controller for overseas data subjects -- standard terms needed). Clickmasters LegalTech GDPR: pre-built retention policies, legal hold workflow, and subject access request response tool for UK law firms."
           }
         ]
       },
@@ -14684,11 +14684,11 @@ const industries = [
     "faqs": [
       {
         "question": "LegalTech cloud development cost?",
-        "answer": "ClickMasters LegalTech cloud-native costs: (1) Document management and storage (S3, Lambda, privilege classification): GBP20,000-GBP40,000 (12-18 weeks). (2) AI contract analysis (Anthropic Claude API, clause extraction, SRA supervision trail): GBP25,000-GBP45,000 (14-20 weeks). (3) Matter management SaaS (PostgreSQL RLS per firm, time recording, billing): GBP40,000-GBP80,000 (20-30 weeks). (4) Client portal (Next.js, OAuth 2.0, document sharing): GBP20,000-GBP35,000 (12-18 weeks). (5) Full LegalTech platform: GBP80,000-GBP150,000 (28-42 weeks). Legal privilege analysis (obtaining legal opinion on LP Privilege implications of AI processing): GBP2,000-GBP5,000 additional."
+        "answer": "Clickmasters LegalTech cloud-native costs: (1) Document management and storage (S3, Lambda, privilege classification): GBP20,000-GBP40,000 (12-18 weeks). (2) AI contract analysis (Anthropic Claude API, clause extraction, SRA supervision trail): GBP25,000-GBP45,000 (14-20 weeks). (3) Matter management SaaS (PostgreSQL RLS per firm, time recording, billing): GBP40,000-GBP80,000 (20-30 weeks). (4) Client portal (Next.js, OAuth 2.0, document sharing): GBP20,000-GBP35,000 (12-18 weeks). (5) Full LegalTech platform: GBP80,000-GBP150,000 (28-42 weeks). Legal privilege analysis (obtaining legal opinion on LP Privilege implications of AI processing): GBP2,000-GBP5,000 additional."
       },
       {
         "question": "Does cloud AI processing waive Legal Professional Privilege?",
-        "answer": "LP Privilege and AI processing: this is an area of active legal debate in 2026. Current UK position: (1) sending privileged documents to a third-party AI provider (Anthropic, OpenAI) may waive privilege if the third party is not acting as the solicitor confidential agent, (2) AWS Bedrock (Anthropic Claude deployed on client AWS account) -- stronger privilege position (data stays in client AWS account, Anthropic never receives raw privileged content), (3) legal opinion: ClickMasters recommends all LegalTech clients obtain a short legal opinion on LP Privilege implications before deploying AI analysis of privileged documents (typically GBP2,000-GBP5,000). ClickMasters LegalTech AI standard: use AWS Bedrock (Claude on client AWS) for privileged document analysis -- not Anthropic API direct."
+        "answer": "LP Privilege and AI processing: this is an area of active legal debate in 2026. Current UK position: (1) sending privileged documents to a third-party AI provider (Anthropic, OpenAI) may waive privilege if the third party is not acting as the solicitor confidential agent, (2) AWS Bedrock (Anthropic Claude deployed on client AWS account) -- stronger privilege position (data stays in client AWS account, Anthropic never receives raw privileged content), (3) legal opinion: Clickmasters recommends all LegalTech clients obtain a short legal opinion on LP Privilege implications before deploying AI analysis of privileged documents (typically GBP2,000-GBP5,000). Clickmasters LegalTech AI standard: use AWS Bedrock (Claude on client AWS) for privileged document analysis -- not Anthropic API direct."
       }
     ]
   },
@@ -14698,11 +14698,11 @@ const industries = [
     "industry": "ecommerce",
     "service": "saas-development-ecommerce",
     "title": "SaaS Development for UK eCommerce -- Compliance Built In",
-    "metaTitle": "SaaS Development for eCommerce UK | ClickMasters",
+    "metaTitle": "SaaS Development for eCommerce UK | Clickmasters",
     "metaDesc": "SaaS Development for UK eCommerce. UK Consumer Rights Act. GBP35,000--GBP180,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters eCommerce Team",
+    "writtenBy": "Clickmasters eCommerce Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "eCommerce",
@@ -14712,7 +14712,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK eCommerce with UK Consumer Rights Act, PECR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK eCommerce with UK Consumer Rights Act, PECR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for eCommerce -- UK Specifics",
@@ -14793,11 +14793,11 @@ const industries = [
     "faqs": [
       {
         "question": "eCommerce SaaS development cost UK?",
-        "answer": "ClickMasters eCommerce SaaS costs: (1) Shopify App (basic product enrichment, reporting): GBP15,000-GBP30,000 (8-14 weeks). (2) Shopify App (complex -- inventory sync, order routing, fulfilment): GBP30,000-GBP60,000 (14-24 weeks). (3) Returns management SaaS (portal, carrier integration, refund automation): GBP35,000-GBP70,000 (18-28 weeks). (4) HMRC MTD VAT SaaS (Shopify MTD integration): GBP20,000-GBP40,000 (10-18 weeks). (5) Full eCommerce operations platform (WMS, returns, buying, CS): GBP80,000-GBP180,000 (28-44 weeks). Shopify App revenue model: Shopify Partners revenue share (20% to Shopify on first GBP1M/year, then 15%) -- factor into unit economics."
+        "answer": "Clickmasters eCommerce SaaS costs: (1) Shopify App (basic product enrichment, reporting): GBP15,000-GBP30,000 (8-14 weeks). (2) Shopify App (complex -- inventory sync, order routing, fulfilment): GBP30,000-GBP60,000 (14-24 weeks). (3) Returns management SaaS (portal, carrier integration, refund automation): GBP35,000-GBP70,000 (18-28 weeks). (4) HMRC MTD VAT SaaS (Shopify MTD integration): GBP20,000-GBP40,000 (10-18 weeks). (5) Full eCommerce operations platform (WMS, returns, buying, CS): GBP80,000-GBP180,000 (28-44 weeks). Shopify App revenue model: Shopify Partners revenue share (20% to Shopify on first GBP1M/year, then 15%) -- factor into unit economics."
       },
       {
         "question": "Does a Shopify App need UK GDPR compliance?",
-        "answer": "Shopify App UK GDPR: yes. Shopify Apps are data processors under UK GDPR when they process merchant customer data. Requirements: (1) DPA with Shopify Partners (Shopify provides standard Data Processing Addendum -- sign in Shopify Partner account), (2) DPA with merchant (your app must offer Article 28 DPA to merchants -- ClickMasters provides pre-drafted DPA for Shopify Apps), (3) data minimisation (app only processes data needed for stated function), (4) subprocessors (list all cloud services app uses -- AWS, third-party APIs), (5) retention and deletion (when merchant uninstalls app -- delete their data within 30 days, provide deletion confirmation). UK GDPR for Shopify Apps: Shopify requires all Apps in the App Store to have a privacy policy and comply with GDPR -- non-compliant apps are removed from the marketplace."
+        "answer": "Shopify App UK GDPR: yes. Shopify Apps are data processors under UK GDPR when they process merchant customer data. Requirements: (1) DPA with Shopify Partners (Shopify provides standard Data Processing Addendum -- sign in Shopify Partner account), (2) DPA with merchant (your app must offer Article 28 DPA to merchants -- Clickmasters provides pre-drafted DPA for Shopify Apps), (3) data minimisation (app only processes data needed for stated function), (4) subprocessors (list all cloud services app uses -- AWS, third-party APIs), (5) retention and deletion (when merchant uninstalls app -- delete their data within 30 days, provide deletion confirmation). UK GDPR for Shopify Apps: Shopify requires all Apps in the App Store to have a privacy policy and comply with GDPR -- non-compliant apps are removed from the marketplace."
       }
     ]
   },
@@ -14807,11 +14807,11 @@ const industries = [
     "industry": "fintech",
     "service": "legacy-modernisation-fintech",
     "title": "Legacy Modernisation for UK FinTech -- Compliance Built In",
-    "metaTitle": "Legacy Modernisation for FinTech UK | ClickMasters",
+    "metaTitle": "Legacy Modernisation for FinTech UK | Clickmasters",
     "metaDesc": "Legacy Modernisation for UK FinTech. FCA PS21/3. GBP30,000--GBP160,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -14821,7 +14821,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Legacy Modernisation for UK FinTech with FCA PS21/3, FCA Consumer Duty compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Legacy Modernisation for UK FinTech with FCA PS21/3, FCA Consumer Duty compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Legacy Modernisation for FinTech -- UK Specifics",
@@ -14832,11 +14832,11 @@ const industries = [
           },
           {
             "bold": "FCA PS21/3 IBS Migration Risk",
-            "text": "PS21/3 IBS migration: migrating an Important Business Service is the highest-risk FinTech change event. Controls: (1) dual-run period (legacy and new both running -- comparison testing 30-60 days), (2) incremental traffic migration (1% to new system, monitor IBS metrics, ramp to 100% over 4-8 weeks), (3) rollback tested (rollback to legacy within 30 minutes -- documented and tested), (4) IBS monitoring during migration (CloudWatch Synthetics on both legacy and new endpoints), (5) CAB approval (migration plan approved, documented rationale). ClickMasters principle: never recommend big-bang cutover for an FCA IBS. Strangler Fig is the only safe approach."
+            "text": "PS21/3 IBS migration: migrating an Important Business Service is the highest-risk FinTech change event. Controls: (1) dual-run period (legacy and new both running -- comparison testing 30-60 days), (2) incremental traffic migration (1% to new system, monitor IBS metrics, ramp to 100% over 4-8 weeks), (3) rollback tested (rollback to legacy within 30 minutes -- documented and tested), (4) IBS monitoring during migration (CloudWatch Synthetics on both legacy and new endpoints), (5) CAB approval (migration plan approved, documented rationale). Clickmasters principle: never recommend big-bang cutover for an FCA IBS. Strangler Fig is the only safe approach."
           },
           {
             "bold": "Consumer Duty FinTech Legacy Failures",
-            "text": "Most common FCA Consumer Duty legacy failures: (1) renewal pricing (legacy cannot generate new customer equivalent price -- PS21/11 breach), (2) cancellation (phone-only cancellation -- Consumer Duty requires digital), (3) fee transparency (statements do not show total annual fee), (4) AML (paper KYC, rules-only monitoring -- JMLSG expects risk-based approach), (5) accessibility (legacy interfaces failing WCAG 2.1 axe scans). ClickMasters Consumer Duty FinTech audit: 2-day assessment identifying all failures with prioritised remediation roadmap. GBP5,000 fixed price."
+            "text": "Most common FCA Consumer Duty legacy failures: (1) renewal pricing (legacy cannot generate new customer equivalent price -- PS21/11 breach), (2) cancellation (phone-only cancellation -- Consumer Duty requires digital), (3) fee transparency (statements do not show total annual fee), (4) AML (paper KYC, rules-only monitoring -- JMLSG expects risk-based approach), (5) accessibility (legacy interfaces failing WCAG 2.1 axe scans). Clickmasters Consumer Duty FinTech audit: 2-day assessment identifying all failures with prioritised remediation roadmap. GBP5,000 fixed price."
           },
           {
             "bold": "COBOL Core Banking Strangler Fig",
@@ -14902,7 +14902,7 @@ const industries = [
     "faqs": [
       {
         "question": "FinTech legacy modernisation timeline?",
-        "answer": "(1) Single Consumer Duty journey fix (Strangler Fig): 8-16 weeks. (2) Full payment gateway replacement: 16-28 weeks. (3) Core banking front-end modernisation (new React over legacy COBOL API): 24-40 weeks. (4) Full core banking migration (COBOL to cloud-native -- Strangler Fig): 48-96 weeks. ClickMasters principle: never recommend big-bang migration for an FCA IBS. The cost of PS21/3 non-compliance during a failed migration exceeds the cost of a slower incremental approach."
+        "answer": "(1) Single Consumer Duty journey fix (Strangler Fig): 8-16 weeks. (2) Full payment gateway replacement: 16-28 weeks. (3) Core banking front-end modernisation (new React over legacy COBOL API): 24-40 weeks. (4) Full core banking migration (COBOL to cloud-native -- Strangler Fig): 48-96 weeks. Clickmasters principle: never recommend big-bang migration for an FCA IBS. The cost of PS21/3 non-compliance during a failed migration exceeds the cost of a slower incremental approach."
       },
       {
         "question": "Does COBOL migration affect FCA PS21/3?",
@@ -14916,11 +14916,11 @@ const industries = [
     "industry": "proptech",
     "service": "saas-development-proptech",
     "title": "SaaS Development for UK PropTech -- Compliance Built In",
-    "metaTitle": "SaaS Development for PropTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for PropTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK PropTech. RICS. GBP35,000--GBP160,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters PropTech Team",
+    "writtenBy": "Clickmasters PropTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "PropTech",
@@ -14930,7 +14930,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK PropTech with RICS, FCA MCOB compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK PropTech with RICS, FCA MCOB compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for PropTech -- UK Specifics",
@@ -15016,11 +15016,11 @@ const industries = [
     "industry": "medtech",
     "service": "saas-development-medtech",
     "title": "SaaS Development for UK MedTech -- Compliance Built In",
-    "metaTitle": "SaaS Development for MedTech UK | ClickMasters",
+    "metaTitle": "SaaS Development for MedTech UK | Clickmasters",
     "metaDesc": "SaaS Development for UK MedTech. MHRA SaMD. GBP40,000--GBP180,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters MedTech Team",
+    "writtenBy": "Clickmasters MedTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "MedTech",
@@ -15030,7 +15030,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides SaaS Development for UK MedTech with MHRA SaMD, UKCA compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides SaaS Development for UK MedTech with MHRA SaMD, UKCA compliance from Sprint 1.",
     "sections": [
       {
         "heading": "SaaS Development for MedTech -- UK Specifics",
@@ -15045,11 +15045,11 @@ const industries = [
           },
           {
             "bold": "NHS DTAC for MedTech SaaS",
-            "text": "NHS DTAC all 5 domains are required for any MedTech SaaS procured by NHS. Domain 4 (Clinical Safety) for MedTech: DCB0129 (clinical safety standard for health software) requires: (1) clinical safety officer (CSO) appointment (qualified clinician), (2) hazard log (identify all hazards associated with software use), (3) safety case (argument that risks are reduced to as low as reasonably practicable -- ALARP), (4) clinical safety management plan. DCB0129 vs MHRA SaMD: software can be DTAC compliant (DCB0129) without being MHRA Class IIa/IIb (UKCA) -- DCB0129 applies to all health software, MHRA SaMD regulation applies only to software meeting medical device definition. ClickMasters practice: complete DCB0129 for all NHS software, determine MHRA SaMD classification separately."
+            "text": "NHS DTAC all 5 domains are required for any MedTech SaaS procured by NHS. Domain 4 (Clinical Safety) for MedTech: DCB0129 (clinical safety standard for health software) requires: (1) clinical safety officer (CSO) appointment (qualified clinician), (2) hazard log (identify all hazards associated with software use), (3) safety case (argument that risks are reduced to as low as reasonably practicable -- ALARP), (4) clinical safety management plan. DCB0129 vs MHRA SaMD: software can be DTAC compliant (DCB0129) without being MHRA Class IIa/IIb (UKCA) -- DCB0129 applies to all health software, MHRA SaMD regulation applies only to software meeting medical device definition. Clickmasters practice: complete DCB0129 for all NHS software, determine MHRA SaMD classification separately."
           },
           {
             "bold": "NICE ESF Tier 3b Evidence for MedTech AI",
-            "text": "NICE Evidence Standards Framework Tier 3b: AI clinical decision support using algorithmically-generated outputs. Evidence requirements: (1) clinical validation (prospective study -- randomised controlled trial or well-designed cohort), (2) economic evaluation (cost per QALY, cost per outcome), (3) real-world data plan (ongoing monitoring post-deployment), (4) equalities evidence (performance across demographic subgroups), (5) service readiness (implementation support -- training, change management). NICE ESF is not yet mandatory but NHS England procurement increasingly expects Tier 3b evidence for AI clinical tools. ClickMasters NICE ESF support: study design, statistical analysis plan, health economic model. Typical cost: GBP30,000-GBP80,000 for full NICE ESF Tier 3b evidence package."
+            "text": "NICE Evidence Standards Framework Tier 3b: AI clinical decision support using algorithmically-generated outputs. Evidence requirements: (1) clinical validation (prospective study -- randomised controlled trial or well-designed cohort), (2) economic evaluation (cost per QALY, cost per outcome), (3) real-world data plan (ongoing monitoring post-deployment), (4) equalities evidence (performance across demographic subgroups), (5) service readiness (implementation support -- training, change management). NICE ESF is not yet mandatory but NHS England procurement increasingly expects Tier 3b evidence for AI clinical tools. Clickmasters NICE ESF support: study design, statistical analysis plan, health economic model. Typical cost: GBP30,000-GBP80,000 for full NICE ESF Tier 3b evidence package."
           }
         ]
       },
@@ -15121,11 +15121,11 @@ const industries = [
     "faqs": [
       {
         "question": "MedTech SaaS development cost UK?",
-        "answer": "ClickMasters MedTech SaaS costs: (1) Class I SaMD (low risk -- decision support with low clinical impact): GBP40,000-GBP80,000 (20-30 weeks). (2) Class IIa SaMD (aids clinical decision -- UKCA required): GBP80,000-GBP140,000 (30-42 weeks) plus MHRA Notified Body fee (GBP8,000-GBP25,000). (3) Class IIb SaMD (performs clinical analysis -- UKCA + clinical investigation): GBP120,000-GBP200,000+ (40-60 weeks) plus MHRA costs. (4) NHS DTAC (mandatory for NHS procurement): GBP8,000-GBP25,000 additional (pen test, assessor, legal). (5) NICE ESF Tier 3b evidence (if required): GBP30,000-GBP80,000 additional. Full UK MedTech SaaS to NHS-ready: GBP100,000-GBP300,000 depending on risk class."
+        "answer": "Clickmasters MedTech SaaS costs: (1) Class I SaMD (low risk -- decision support with low clinical impact): GBP40,000-GBP80,000 (20-30 weeks). (2) Class IIa SaMD (aids clinical decision -- UKCA required): GBP80,000-GBP140,000 (30-42 weeks) plus MHRA Notified Body fee (GBP8,000-GBP25,000). (3) Class IIb SaMD (performs clinical analysis -- UKCA + clinical investigation): GBP120,000-GBP200,000+ (40-60 weeks) plus MHRA costs. (4) NHS DTAC (mandatory for NHS procurement): GBP8,000-GBP25,000 additional (pen test, assessor, legal). (5) NICE ESF Tier 3b evidence (if required): GBP30,000-GBP80,000 additional. Full UK MedTech SaaS to NHS-ready: GBP100,000-GBP300,000 depending on risk class."
       },
       {
         "question": "Does MedTech SaaS always need MHRA registration?",
-        "answer": "MHRA SaMD registration: required if software meets medical device definition. Not required if: (1) general wellbeing software (no medical purpose -- step counter, meditation app), (2) administrative software (appointment booking, patient admin -- no clinical decision support), (3) clinical communication tools (messaging between clinicians -- MHRA guidance: communication tools without clinical algorithms are not SaMD). ClickMasters MedTech regulatory scoping: free 1-hour call to determine whether your software requires MHRA SaMD registration. This question is often answered incorrectly by non-specialist developers -- both over-classifying (treating administrative software as SaMD) and under-classifying (treating clinical AI as administrative software) are common errors."
+        "answer": "MHRA SaMD registration: required if software meets medical device definition. Not required if: (1) general wellbeing software (no medical purpose -- step counter, meditation app), (2) administrative software (appointment booking, patient admin -- no clinical decision support), (3) clinical communication tools (messaging between clinicians -- MHRA guidance: communication tools without clinical algorithms are not SaMD). Clickmasters MedTech regulatory scoping: free 1-hour call to determine whether your software requires MHRA SaMD registration. This question is often answered incorrectly by non-specialist developers -- both over-classifying (treating administrative software as SaMD) and under-classifying (treating clinical AI as administrative software) are common errors."
       }
     ]
   },
@@ -15135,11 +15135,11 @@ const industries = [
     "industry": "insurtech",
     "service": "cloud-native-insurtech",
     "title": "Cloud-Native Development for UK InsurTech -- Compliance Built In",
-    "metaTitle": "Cloud-Native Development for InsurTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for InsurTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK InsurTech. FCA ICOBS. GBP35,000--GBP160,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters InsurTech Team",
+    "writtenBy": "Clickmasters InsurTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "InsurTech",
@@ -15149,14 +15149,14 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK InsurTech with FCA ICOBS, FCA Consumer Duty compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK InsurTech with FCA ICOBS, FCA Consumer Duty compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for InsurTech -- UK Specifics",
         "paragraphs": [
           {
             "bold": "UK InsurTech Cloud Architecture 2026",
-            "text": "UK InsurTech cloud-native in 2026 is shaped by five distinct integration patterns: (1) Lloyd's Market (syndicate bordereaux, LAS, CDR -- Lloyd's Common Data Repository -- structured data exchange for Lloyd's syndicates), (2) Salesforce Financial Services Cloud (FSC -- dominant UK insurer CRM -- InsurTech platforms must integrate with Salesforce FSC or replace it), (3) Guidewire Cloud (PolicyCenter, ClaimCenter, BillingCenter -- most UK insurers are on Guidewire or migrating to it), (4) MID (Motor Insurance Database -- all motor policies on MID within 30 days), (5) Insurance Gateway (SEPA -- ACORD-based message exchange for commercial lines). ClickMasters InsurTech cloud default: React frontend + Node.js/Fastify API + PostgreSQL + ECS Fargate (eu-west-2) + Guidewire Cloud REST API (when Guidewire is core system)."
+            "text": "UK InsurTech cloud-native in 2026 is shaped by five distinct integration patterns: (1) Lloyd's Market (syndicate bordereaux, LAS, CDR -- Lloyd's Common Data Repository -- structured data exchange for Lloyd's syndicates), (2) Salesforce Financial Services Cloud (FSC -- dominant UK insurer CRM -- InsurTech platforms must integrate with Salesforce FSC or replace it), (3) Guidewire Cloud (PolicyCenter, ClaimCenter, BillingCenter -- most UK insurers are on Guidewire or migrating to it), (4) MID (Motor Insurance Database -- all motor policies on MID within 30 days), (5) Insurance Gateway (SEPA -- ACORD-based message exchange for commercial lines). Clickmasters InsurTech cloud default: React frontend + Node.js/Fastify API + PostgreSQL + ECS Fargate (eu-west-2) + Guidewire Cloud REST API (when Guidewire is core system)."
           },
           {
             "bold": "Guidewire Cloud Integration Pattern",
@@ -15164,11 +15164,11 @@ const industries = [
           },
           {
             "bold": "PRA Solvency II Cloud Requirements",
-            "text": "PRA Solvency II (UK retained) for insurer cloud: (1) data location (PRA expects UK insurers to understand where their data is -- cloud must be documented), (2) outsourcing (cloud is outsourcing -- PRA SS2/21 (Supervisory Statement on outsourcing) requires written contract with cloud provider with specific terms), (3) concentration risk (PRA monitors concentration of UK insurers on AWS -- diversification guidance), (4) exit planning (PRA expects insurers to have a cloud exit plan -- data portability), (5) operational resilience (PRA PS6/21 -- mirrors FCA PS21/3 for insurers -- IBS Impact Tolerance). ClickMasters InsurTech: PRA SS2/21 compliant AWS contract terms documented for all insurer clients."
+            "text": "PRA Solvency II (UK retained) for insurer cloud: (1) data location (PRA expects UK insurers to understand where their data is -- cloud must be documented), (2) outsourcing (cloud is outsourcing -- PRA SS2/21 (Supervisory Statement on outsourcing) requires written contract with cloud provider with specific terms), (3) concentration risk (PRA monitors concentration of UK insurers on AWS -- diversification guidance), (4) exit planning (PRA expects insurers to have a cloud exit plan -- data portability), (5) operational resilience (PRA PS6/21 -- mirrors FCA PS21/3 for insurers -- IBS Impact Tolerance). Clickmasters InsurTech: PRA SS2/21 compliant AWS contract terms documented for all insurer clients."
           },
           {
             "bold": "Lloyd's Market Cloud Integration",
-            "text": "Lloyd's of London market cloud integration: (1) CDR (Common Data Repository) API -- structured bordereaux data exchange for Lloyd's syndicates (Excel bordereaux replaced by CDR API 2024-2026 transition), (2) LAS (Lloyd's Accounting System) -- premium and claims settlement via LAS API, (3) Whitespace Platform (electronic placement -- Lloyd's digital placement system), (4) Delegated Authority (coverholders submitting bordereaux to managing agents -- CDR automates bordereaux validation and submission), (5) Lloyd's Atlas (risk data exchange platform -- upcoming). CDR API: ClickMasters CDR integration allows coverholders to submit bordereaux data programmatically -- removing Excel bordereaux preparation (typically 4-8 hours per submission)."
+            "text": "Lloyd's of London market cloud integration: (1) CDR (Common Data Repository) API -- structured bordereaux data exchange for Lloyd's syndicates (Excel bordereaux replaced by CDR API 2024-2026 transition), (2) LAS (Lloyd's Accounting System) -- premium and claims settlement via LAS API, (3) Whitespace Platform (electronic placement -- Lloyd's digital placement system), (4) Delegated Authority (coverholders submitting bordereaux to managing agents -- CDR automates bordereaux validation and submission), (5) Lloyd's Atlas (risk data exchange platform -- upcoming). CDR API: Clickmasters CDR integration allows coverholders to submit bordereaux data programmatically -- removing Excel bordereaux preparation (typically 4-8 hours per submission)."
           }
         ]
       },
@@ -15240,11 +15240,11 @@ const industries = [
     "industry": "edtech",
     "service": "staff-augmentation-edtech",
     "title": "Staff Augmentation for UK EdTech -- Compliance Built In",
-    "metaTitle": "Staff Augmentation for EdTech UK | ClickMasters",
+    "metaTitle": "Staff Augmentation for EdTech UK | Clickmasters",
     "metaDesc": "Staff Augmentation for UK EdTech. UK GDPR. from GBP5,000/month per engineer.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters EdTech Team",
+    "writtenBy": "Clickmasters EdTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "EdTech",
@@ -15254,26 +15254,26 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Staff Augmentation for UK EdTech with UK GDPR, ICO AADC compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Staff Augmentation for UK EdTech with UK GDPR, ICO AADC compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Staff Augmentation for EdTech -- UK Specifics",
         "paragraphs": [
           {
             "bold": "UK EdTech Staff Augmentation Market",
-            "text": "UK EdTech staff augmentation in 2026 is driven by three procurement frameworks: (1) Crescent Purchasing Consortium (CPC) -- UK higher education procurement framework -- ClickMasters is registered, (2) ESPO (Eastern Shires Purchasing Organisation) -- UK schools and local authority procurement, (3) JISC procurement frameworks -- UK HE and FE technology procurement. EdTech staff augmentation demand: (a) SITS (Student Information and Timetabling System) development (60% of UK universities run SITS -- specialist SITS developers are rare and command premium), (b) Moodle LMS development (most UK FE colleges run Moodle -- PHP/MySQL expertise), (c) LTI 1.3 Advantage integration (specialist LTI engineers needed for EdTech integrations)."
+            "text": "UK EdTech staff augmentation in 2026 is driven by three procurement frameworks: (1) Crescent Purchasing Consortium (CPC) -- UK higher education procurement framework -- Clickmasters is registered, (2) ESPO (Eastern Shires Purchasing Organisation) -- UK schools and local authority procurement, (3) JISC procurement frameworks -- UK HE and FE technology procurement. EdTech staff augmentation demand: (a) SITS (Student Information and Timetabling System) development (60% of UK universities run SITS -- specialist SITS developers are rare and command premium), (b) Moodle LMS development (most UK FE colleges run Moodle -- PHP/MySQL expertise), (c) LTI 1.3 Advantage integration (specialist LTI engineers needed for EdTech integrations)."
           },
           {
             "bold": "SITS Developer Skills for UK Universities",
-            "text": "SITS (Student Information and Timetabling System): Ellucian SITS is the backbone student records system for 60%+ of UK universities. SITS developer specialisations: (1) SITS CAM (Component Administration Module) -- custom business rules for admissions, progression, awards, (2) SITS SQL (Microsoft SQL Server -- SITS data model is complex with 4,000+ tables), (3) SITS e:Vision (web portal -- SITS self-service portal customisation), (4) SITS API (SITS JSON API -- programmatic access to student records), (5) SITS data migration (legacy system to SITS -- complex data mapping). ClickMasters SITS engineers: rare profile -- only 4 current ClickMasters engineers with SITS expertise. SITS augmentation rate: from GBP6,500/month (premium for SITS expertise)."
+            "text": "SITS (Student Information and Timetabling System): Ellucian SITS is the backbone student records system for 60%+ of UK universities. SITS developer specialisations: (1) SITS CAM (Component Administration Module) -- custom business rules for admissions, progression, awards, (2) SITS SQL (Microsoft SQL Server -- SITS data model is complex with 4,000+ tables), (3) SITS e:Vision (web portal -- SITS self-service portal customisation), (4) SITS API (SITS JSON API -- programmatic access to student records), (5) SITS data migration (legacy system to SITS -- complex data mapping). Clickmasters SITS engineers: rare profile -- only 4 current Clickmasters engineers with SITS expertise. SITS augmentation rate: from GBP6,500/month (premium for SITS expertise)."
           },
           {
             "bold": "Moodle and VLE Development for UK FE",
-            "text": "Moodle (UK FE): most UK Further Education colleges run Moodle LMS (open source VLE). Moodle developer skills: (1) Moodle plugin development (PHP -- custom activity modules, authentication plugins, report plugins), (2) Moodle theming (Mustache templates, SCSS -- Moodle Boost theme customisation), (3) Moodle LTI (Moodle as LTI consumer and tool provider), (4) Moodle API (REST API -- Moodle web services -- external system integration), (5) Moodle data privacy (Moodle GDPR tools -- data request, data deletion, data retention). ClickMasters Moodle engineers: PHP 8.2 Moodle specialists for UK FE colleges. ESFA ILR automation: ClickMasters Moodle integration with ESFA ILR API for FE college statutory reporting."
+            "text": "Moodle (UK FE): most UK Further Education colleges run Moodle LMS (open source VLE). Moodle developer skills: (1) Moodle plugin development (PHP -- custom activity modules, authentication plugins, report plugins), (2) Moodle theming (Mustache templates, SCSS -- Moodle Boost theme customisation), (3) Moodle LTI (Moodle as LTI consumer and tool provider), (4) Moodle API (REST API -- Moodle web services -- external system integration), (5) Moodle data privacy (Moodle GDPR tools -- data request, data deletion, data retention). Clickmasters Moodle engineers: PHP 8.2 Moodle specialists for UK FE colleges. ESFA ILR automation: Clickmasters Moodle integration with ESFA ILR API for FE college statutory reporting."
           },
           {
             "bold": "ICO AADC Compliance for EdTech Products",
-            "text": "ICO Age Appropriate Design Code (AADC): applies to all UK online services likely to be accessed by under-18s. EdTech AADC requirements: (1) age estimation (if your product may be used by under-18s -- age-appropriate defaults must apply before age is confirmed), (2) privacy by default (children must get the highest privacy settings by default), (3) no tracking or profiling (no behavioural tracking without explicit consent for under-18), (4) geolocation off by default (no default location services for children), (5) no nudge techniques (UX patterns that encourage children to share more data are prohibited). ClickMasters EdTech AADC audit: 1-day audit of any EdTech product to identify AADC compliance gaps. Most common gap: analytics cookies are on by default (violates AADC privacy by default)."
+            "text": "ICO Age Appropriate Design Code (AADC): applies to all UK online services likely to be accessed by under-18s. EdTech AADC requirements: (1) age estimation (if your product may be used by under-18s -- age-appropriate defaults must apply before age is confirmed), (2) privacy by default (children must get the highest privacy settings by default), (3) no tracking or profiling (no behavioural tracking without explicit consent for under-18), (4) geolocation off by default (no default location services for children), (5) no nudge techniques (UX patterns that encourage children to share more data are prohibited). Clickmasters EdTech AADC audit: 1-day audit of any EdTech product to identify AADC compliance gaps. Most common gap: analytics cookies are on by default (violates AADC privacy by default)."
           }
         ]
       },
@@ -15340,11 +15340,11 @@ const industries = [
     "faqs": [
       {
         "question": "EdTech staff augmentation cost UK?",
-        "answer": "ClickMasters EdTech staff augmentation rates: (1) Standard EdTech engineer (LTI 1.3, React, Node.js): from GBP5,000/month. (2) SITS specialist (very rare -- SITS CAM, e:Vision, SITS API): from GBP6,500/month. (3) Moodle specialist (PHP 8.2, Moodle plugin, ESFA ILR): from GBP5,200/month. (4) EdTech security specialist (JISC Janet CE Plus, ICO AADC audit): from GBP5,800/month. CPC and ESPO procurement: ClickMasters registered on both frameworks -- UK universities and schools can procure directly without additional tendering process. JISC frameworks: ClickMasters working towards JISC framework registration in 2026."
+        "answer": "Clickmasters EdTech staff augmentation rates: (1) Standard EdTech engineer (LTI 1.3, React, Node.js): from GBP5,000/month. (2) SITS specialist (very rare -- SITS CAM, e:Vision, SITS API): from GBP6,500/month. (3) Moodle specialist (PHP 8.2, Moodle plugin, ESFA ILR): from GBP5,200/month. (4) EdTech security specialist (JISC Janet CE Plus, ICO AADC audit): from GBP5,800/month. CPC and ESPO procurement: Clickmasters registered on both frameworks -- UK universities and schools can procure directly without additional tendering process. JISC frameworks: Clickmasters working towards JISC framework registration in 2026."
       },
       {
         "question": "Does EdTech software need ICO registration?",
-        "answer": "ICO registration for EdTech: any organisation that processes personal data must register with the ICO (unless exempt). EdTech organisations are NOT exempt. Registration fee: GBP40-GBP2,900/year depending on organisation size (most EdTech startups pay GBP40/year Tier 1). Separate from AADC: ICO registration is a different requirement from AADC compliance -- AADC applies to the product design, ICO registration applies to the organisation. EdTech with under-18 data: additional ICO AADC obligations on top of standard GDPR (privacy by default, no tracking). ClickMasters: all EdTech clients supported with ICO registration, DPIA (where processing is high risk -- e.g., learning analytics profiling of under-18s), and AADC compliance audit."
+        "answer": "ICO registration for EdTech: any organisation that processes personal data must register with the ICO (unless exempt). EdTech organisations are NOT exempt. Registration fee: GBP40-GBP2,900/year depending on organisation size (most EdTech startups pay GBP40/year Tier 1). Separate from AADC: ICO registration is a different requirement from AADC compliance -- AADC applies to the product design, ICO registration applies to the organisation. EdTech with under-18 data: additional ICO AADC obligations on top of standard GDPR (privacy by default, no tracking). Clickmasters: all EdTech clients supported with ICO registration, DPIA (where processing is high risk -- e.g., learning analytics profiling of under-18s), and AADC compliance audit."
       }
     ]
   },
@@ -15354,11 +15354,11 @@ const industries = [
     "industry": "govtech",
     "service": "cloud-native-govtech",
     "title": "Cloud-Native Development for UK GovTech -- Compliance Built In",
-    "metaTitle": "Cloud-Native Development for GovTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for GovTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK GovTech. GDS Service Standard. GBP35,000--GBP160,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters GovTech Team",
+    "writtenBy": "Clickmasters GovTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "GovTech",
@@ -15368,14 +15368,14 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK GovTech with GDS Service Standard, GOV.UK Design System compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK GovTech with GDS Service Standard, GOV.UK Design System compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for GovTech -- UK Specifics",
         "paragraphs": [
           {
             "bold": "UK GovTech Cloud Architecture 2026",
-            "text": "UK GovTech cloud-native in 2026 is shaped by four GOV.UK common platform integrations that every GDS-assessed service must use or justify not using: (1) GOV.UK One Login (citizen authentication -- replaces Verify and departmental auth), (2) GOV.UK Pay (payment processing -- Stripe under the hood, GOV.UK branded checkout), (3) GOV.UK Notify (transactional notifications -- email, SMS, letters), (4) GOV.UK Design System (WCAG 2.1 AA accessible component library). AWS architecture: Next.js 15 on ECS Fargate eu-west-2 + Aurora PostgreSQL + GOV.UK common platforms. Crown Commercial Service G-Cloud 14 hosts ClickMasters GovTech services -- procurement without additional OJEU tendering."
+            "text": "UK GovTech cloud-native in 2026 is shaped by four GOV.UK common platform integrations that every GDS-assessed service must use or justify not using: (1) GOV.UK One Login (citizen authentication -- replaces Verify and departmental auth), (2) GOV.UK Pay (payment processing -- Stripe under the hood, GOV.UK branded checkout), (3) GOV.UK Notify (transactional notifications -- email, SMS, letters), (4) GOV.UK Design System (WCAG 2.1 AA accessible component library). AWS architecture: Next.js 15 on ECS Fargate eu-west-2 + Aurora PostgreSQL + GOV.UK common platforms. Crown Commercial Service G-Cloud 14 hosts Clickmasters GovTech services -- procurement without additional OJEU tendering."
           },
           {
             "bold": "GOV.UK One Login Integration Pattern",
@@ -15383,11 +15383,11 @@ const industries = [
           },
           {
             "bold": "GDS Service Standard Assessment Preparation",
-            "text": "GDS Service Standard (18 points from December 2023) key technical requirements: (1) Understand users and their needs (point 1 -- user research evidence), (2) Solve a whole problem for users (point 2 -- end-to-end service), (3) Provide joined-up experience (point 3 -- cross-government consistency), (4) Make the service simple to use (point 4 -- GOV.UK Design System), (5) Make sure everyone can use the service (point 5 -- WCAG 2.1 AA, axe-playwright, NVDA testing). Technical preparation for Live assessment: (a) WCAG 2.1 AA -- axe-playwright zero violations, NVDA manual test documented, (b) performance (GOV.UK performance monitoring -- average page load < 2 seconds), (c) deployment pipeline (automated testing, staging environment), (d) security (CE Plus, pen test within 12 months). ClickMasters GDS preparation: 4-week pre-assessment mock assessment -- identify gaps before formal assessment."
+            "text": "GDS Service Standard (18 points from December 2023) key technical requirements: (1) Understand users and their needs (point 1 -- user research evidence), (2) Solve a whole problem for users (point 2 -- end-to-end service), (3) Provide joined-up experience (point 3 -- cross-government consistency), (4) Make the service simple to use (point 4 -- GOV.UK Design System), (5) Make sure everyone can use the service (point 5 -- WCAG 2.1 AA, axe-playwright, NVDA testing). Technical preparation for Live assessment: (a) WCAG 2.1 AA -- axe-playwright zero violations, NVDA manual test documented, (b) performance (GOV.UK performance monitoring -- average page load < 2 seconds), (c) deployment pipeline (automated testing, staging environment), (d) security (CE Plus, pen test within 12 months). Clickmasters GDS preparation: 4-week pre-assessment mock assessment -- identify gaps before formal assessment."
           },
           {
             "bold": "Crown Commercial Service G-Cloud 14",
-            "text": "G-Cloud 14: UK government cloud services procurement framework (Crown Commercial Service). G-Cloud 14 lot 4 (Specialist Cloud Services): ClickMasters registered -- government departments can procure ClickMasters cloud-native GovTech development without OJEU tender process. G-Cloud 14 registration requirements: (1) Cyber Essentials or CE Plus, (2) ISO 27001 (or equivalent), (3) service description on Digital Marketplace, (4) pricing transparency (day rates published), (5) terms and conditions (Crown Copyright, Data Protection). G-Cloud procurement speed: government department can award a G-Cloud 14 contract in 2-4 weeks vs 12-24 months for OJEU tender. ClickMasters GovTech: all GovTech staff augmentation and development available via G-Cloud 14."
+            "text": "G-Cloud 14: UK government cloud services procurement framework (Crown Commercial Service). G-Cloud 14 lot 4 (Specialist Cloud Services): Clickmasters registered -- government departments can procure Clickmasters cloud-native GovTech development without OJEU tender process. G-Cloud 14 registration requirements: (1) Cyber Essentials or CE Plus, (2) ISO 27001 (or equivalent), (3) service description on Digital Marketplace, (4) pricing transparency (day rates published), (5) terms and conditions (Crown Copyright, Data Protection). G-Cloud procurement speed: government department can award a G-Cloud 14 contract in 2-4 weeks vs 12-24 months for OJEU tender. Clickmasters GovTech: all GovTech staff augmentation and development available via G-Cloud 14."
           }
         ]
       },
@@ -15449,11 +15449,11 @@ const industries = [
     "faqs": [
       {
         "question": "GovTech cloud development cost UK?",
-        "answer": "ClickMasters GovTech cloud-native costs: (1) Alpha (user research + prototype + GDS Alpha assessment): GBP40,000-GBP80,000 (12-18 weeks). (2) Beta (build and iterate -- full GDS Beta assessment): GBP80,000-GBP160,000 (20-36 weeks). (3) Live (full service -- GDS Live assessment, ongoing): GBP120,000-GBP200,000 (28-48 weeks). (4) Staff augmentation on existing GDS service: from GBP5,200/month per engineer. All GovTech procurement via G-Cloud 14 -- ClickMasters registered. GOV.UK common platforms (One Login, Pay, Notify, Design System) are free to use for government services -- zero per-transaction cost for GOV.UK Pay in government context."
+        "answer": "Clickmasters GovTech cloud-native costs: (1) Alpha (user research + prototype + GDS Alpha assessment): GBP40,000-GBP80,000 (12-18 weeks). (2) Beta (build and iterate -- full GDS Beta assessment): GBP80,000-GBP160,000 (20-36 weeks). (3) Live (full service -- GDS Live assessment, ongoing): GBP120,000-GBP200,000 (28-48 weeks). (4) Staff augmentation on existing GDS service: from GBP5,200/month per engineer. All GovTech procurement via G-Cloud 14 -- Clickmasters registered. GOV.UK common platforms (One Login, Pay, Notify, Design System) are free to use for government services -- zero per-transaction cost for GOV.UK Pay in government context."
       },
       {
         "question": "Does GOV.UK Pay satisfy PCI-DSS for government payments?",
-        "answer": "GOV.UK Pay and PCI-DSS: GOV.UK Pay is built on Stripe and satisfies SAQ-A PCI-DSS requirements for government payment pages. Government PCI-DSS position: (1) GOV.UK Pay is the government payment processor (Cabinet Office responsible -- not the individual department), (2) SAQ-A scope: department hosts the form page, GOV.UK Pay (Stripe) handles card data, (3) government department PCI-DSS obligation: annual SAQ-A self-assessment, no pen test required for SAQ-A, (4) GOV.UK Pay Stripe Level 1: Stripe is PCI-DSS Level 1 service provider (highest certification), (5) government service charges: GOV.UK Pay: 0p per transaction for central government (Cabinet Office funds), local government: 0.15% + 0.10p per transaction. ClickMasters GovTech: all government payment implementations use GOV.UK Pay -- zero alternative payment providers for government services."
+        "answer": "GOV.UK Pay and PCI-DSS: GOV.UK Pay is built on Stripe and satisfies SAQ-A PCI-DSS requirements for government payment pages. Government PCI-DSS position: (1) GOV.UK Pay is the government payment processor (Cabinet Office responsible -- not the individual department), (2) SAQ-A scope: department hosts the form page, GOV.UK Pay (Stripe) handles card data, (3) government department PCI-DSS obligation: annual SAQ-A self-assessment, no pen test required for SAQ-A, (4) GOV.UK Pay Stripe Level 1: Stripe is PCI-DSS Level 1 service provider (highest certification), (5) government service charges: GOV.UK Pay: 0p per transaction for central government (Cabinet Office funds), local government: 0.15% + 0.10p per transaction. Clickmasters GovTech: all government payment implementations use GOV.UK Pay -- zero alternative payment providers for government services."
       }
     ]
   },
@@ -15463,11 +15463,11 @@ const industries = [
     "industry": "fintech",
     "service": "software-consulting-fintech",
     "title": "Software Consulting for UK FinTech -- Compliance Built In",
-    "metaTitle": "Software Consulting for FinTech UK | ClickMasters",
+    "metaTitle": "Software Consulting for FinTech UK | Clickmasters",
     "metaDesc": "Software Consulting for UK FinTech. FCA PS21/3. GBP120-GBP250/hr.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters FinTech Team",
+    "writtenBy": "Clickmasters FinTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "FinTech",
@@ -15477,7 +15477,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Software Consulting for UK FinTech with FCA PS21/3, FCA Consumer Duty compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Software Consulting for UK FinTech with FCA PS21/3, FCA Consumer Duty compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Software Consulting for FinTech -- UK Specifics",
@@ -15488,15 +15488,15 @@ const industries = [
           },
           {
             "bold": "FCA PS21/3 Advisory Engagement",
-            "text": "ClickMasters FCA PS21/3 advisory: (1) IBS mapping workshop (1 day with CTO and Head of Engineering -- identify all customer-facing services, apply IBS criteria, draft IBS inventory), (2) Impact Tolerance workshop (1 day with board representative -- set Impact Tolerance per IBS -- industry benchmarks provided: payments 2 hours, current account 4 hours, card services 4 hours), (3) monitoring design (2 days -- design CloudWatch Synthetics synthetic canaries per IBS, DLQ monitoring, canary deployment architecture), (4) evidence gap analysis (1 day -- review current CI/CD pipeline against PS21/3 quarterly board report requirements), (5) roadmap (PS21/3 implementation plan, prioritised by risk). Typical PS21/3 advisory engagement: 5-8 days, GBP6,000-GBP18,000. Post-advisory: implementation either by client engineering team or ClickMasters staff augmentation."
+            "text": "Clickmasters FCA PS21/3 advisory: (1) IBS mapping workshop (1 day with CTO and Head of Engineering -- identify all customer-facing services, apply IBS criteria, draft IBS inventory), (2) Impact Tolerance workshop (1 day with board representative -- set Impact Tolerance per IBS -- industry benchmarks provided: payments 2 hours, current account 4 hours, card services 4 hours), (3) monitoring design (2 days -- design CloudWatch Synthetics synthetic canaries per IBS, DLQ monitoring, canary deployment architecture), (4) evidence gap analysis (1 day -- review current CI/CD pipeline against PS21/3 quarterly board report requirements), (5) roadmap (PS21/3 implementation plan, prioritised by risk). Typical PS21/3 advisory engagement: 5-8 days, GBP6,000-GBP18,000. Post-advisory: implementation either by client engineering team or Clickmasters staff augmentation."
           },
           {
             "bold": "Consumer Duty Technical Audit",
-            "text": "ClickMasters Consumer Duty technical audit (GBP5,000 fixed price, 2 days on-site): (1) Customer journey mapping (senior engineer and UX specialist walk every customer-facing journey -- sign up, renewal, cancellation, complaint, product change), (2) cancellation journey (is digital cancellation possible? How many clicks vs sign-up? Consumer Duty requires parity), (3) renewal pricing (does renewal display show new customer equivalent price? PS21/11 compliance check), (4) accessibility scan (axe-playwright scan of all customer journeys -- zero WCAG 2.1 AA violations required), (5) plain English check (Flesch-Kincaid readability of all customer-facing content -- Grade Level 8 or below for Consumer Duty consumer understanding outcome). Deliverable: Consumer Duty technical compliance report with prioritised remediation actions."
+            "text": "Clickmasters Consumer Duty technical audit (GBP5,000 fixed price, 2 days on-site): (1) Customer journey mapping (senior engineer and UX specialist walk every customer-facing journey -- sign up, renewal, cancellation, complaint, product change), (2) cancellation journey (is digital cancellation possible? How many clicks vs sign-up? Consumer Duty requires parity), (3) renewal pricing (does renewal display show new customer equivalent price? PS21/11 compliance check), (4) accessibility scan (axe-playwright scan of all customer journeys -- zero WCAG 2.1 AA violations required), (5) plain English check (Flesch-Kincaid readability of all customer-facing content -- Grade Level 8 or below for Consumer Duty consumer understanding outcome). Deliverable: Consumer Duty technical compliance report with prioritised remediation actions."
           },
           {
             "bold": "FinTech Architecture Review",
-            "text": "ClickMasters FinTech architecture review (GBP8,000-GBP15,000, 3-5 days): (1) architecture documentation review (C4 diagrams, ADRs, IBS dependency map -- are they current?), (2) AWS security posture (Security Hub findings, GuardDuty alerts, CE Plus A1-A5 gap analysis), (3) CI/CD pipeline review (GitHub Actions security evidence generation -- Semgrep, Trivy, ZAP, Dependabot), (4) database security (PostgreSQL RLS, encryption at rest -- KMS key separation, IAM least privilege), (5) incident management review (PagerDuty routing, on-call rota, post-mortem culture -- PS21/3 expects documented incident response). Deliverable: architecture review report with CVSS-scored findings and remediation priorities."
+            "text": "Clickmasters FinTech architecture review (GBP8,000-GBP15,000, 3-5 days): (1) architecture documentation review (C4 diagrams, ADRs, IBS dependency map -- are they current?), (2) AWS security posture (Security Hub findings, GuardDuty alerts, CE Plus A1-A5 gap analysis), (3) CI/CD pipeline review (GitHub Actions security evidence generation -- Semgrep, Trivy, ZAP, Dependabot), (4) database security (PostgreSQL RLS, encryption at rest -- KMS key separation, IAM least privilege), (5) incident management review (PagerDuty routing, on-call rota, post-mortem culture -- PS21/3 expects documented incident response). Deliverable: architecture review report with CVSS-scored findings and remediation priorities."
           }
         ]
       },
@@ -15563,11 +15563,11 @@ const industries = [
     "industry": "cleantech",
     "service": "cloud-native-cleantech",
     "title": "Cloud-Native Development for UK CleanTech -- Compliance Built In",
-    "metaTitle": "Cloud-Native Development for CleanTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for CleanTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK CleanTech. OFGEM. GBP35,000--GBP150,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters CleanTech Team",
+    "writtenBy": "Clickmasters CleanTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "CleanTech",
@@ -15577,7 +15577,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK CleanTech with OFGEM, BEIS/DESNZ compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK CleanTech with OFGEM, BEIS/DESNZ compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for CleanTech -- UK Specifics",
@@ -15596,7 +15596,7 @@ const industries = [
           },
           {
             "bold": "Heat Pump and BUS Digital Platform",
-            "text": "Boiler Upgrade Scheme (BUS): BEIS/DESNZ voucher scheme for heat pump installation (GBP7,500 for air source heat pump, GBP7,500 for ground source heat pump). BUS digital platform for MCS installers: (1) MCS installer registration (MCS certification database API -- verify installer MCS certification), (2) BUS voucher application (MCS HIES portal API -- submit voucher application on behalf of customer), (3) voucher status tracking (BUS voucher approved/rejected/expired -- notify installer and customer), (4) installation completion (voucher redeemed on completion -- MCS HIES confirmation), (5) HMRC VAT 708/6 (5% reduced rate for BUS heat pump installation -- VAT calculation automated). Octopus Energy integration: Octopus Energy Heat Pumps offers turnkey BUS installation -- ClickMasters built BUS management SaaS for UK heat pump installers."
+            "text": "Boiler Upgrade Scheme (BUS): BEIS/DESNZ voucher scheme for heat pump installation (GBP7,500 for air source heat pump, GBP7,500 for ground source heat pump). BUS digital platform for MCS installers: (1) MCS installer registration (MCS certification database API -- verify installer MCS certification), (2) BUS voucher application (MCS HIES portal API -- submit voucher application on behalf of customer), (3) voucher status tracking (BUS voucher approved/rejected/expired -- notify installer and customer), (4) installation completion (voucher redeemed on completion -- MCS HIES confirmation), (5) HMRC VAT 708/6 (5% reduced rate for BUS heat pump installation -- VAT calculation automated). Octopus Energy integration: Octopus Energy Heat Pumps offers turnkey BUS installation -- Clickmasters built BUS management SaaS for UK heat pump installers."
           }
         ]
       },
@@ -15668,11 +15668,11 @@ const industries = [
     "faqs": [
       {
         "question": "CleanTech cloud development cost UK?",
-        "answer": "ClickMasters CleanTech cloud-native costs: (1) Smart meter energy monitoring platform (DCC API, half-hourly data, dashboard): GBP40,000-GBP80,000 (20-30 weeks -- plus 8-12 weeks OFGEM DCC registration). (2) UK ETS compliance platform (MCERTS data, Registry API, allowance forecasting): GBP45,000-GBP90,000 (22-32 weeks). (3) Heat pump BUS management SaaS (MCS API, BUS voucher, HMRC VAT 708/6): GBP30,000-GBP60,000 (16-24 weeks). (4) MEES commercial compliance platform (EPC Register, portfolio forecast, improvement modelling): GBP35,000-GBP70,000 (18-28 weeks). OFGEM DCC registration is the critical path on all smart meter projects -- start on day 1, allow 8-12 weeks before development can begin."
+        "answer": "Clickmasters CleanTech cloud-native costs: (1) Smart meter energy monitoring platform (DCC API, half-hourly data, dashboard): GBP40,000-GBP80,000 (20-30 weeks -- plus 8-12 weeks OFGEM DCC registration). (2) UK ETS compliance platform (MCERTS data, Registry API, allowance forecasting): GBP45,000-GBP90,000 (22-32 weeks). (3) Heat pump BUS management SaaS (MCS API, BUS voucher, HMRC VAT 708/6): GBP30,000-GBP60,000 (16-24 weeks). (4) MEES commercial compliance platform (EPC Register, portfolio forecast, improvement modelling): GBP35,000-GBP70,000 (18-28 weeks). OFGEM DCC registration is the critical path on all smart meter projects -- start on day 1, allow 8-12 weeks before development can begin."
       },
       {
         "question": "Does CleanTech cloud need ISO 27001?",
-        "answer": "ISO 27001 for CleanTech cloud: not legally required but increasingly expected by enterprise customers. ISO 27001 drivers for CleanTech: (1) DCC access (OFGEM expects adequate security from DCC-registered organisations -- ISO 27001 or CE Plus), (2) UK ETS Registry (HMRC UK ETS Registry credentials are government credentials -- adequate security evidence expected), (3) energy company integration (UK DNOs, National Grid ESO require security evidence from API integration partners), (4) TCFD data (Scope 1/2/3 emissions data is commercially sensitive -- institutional investor clients expect ISO 27001). ClickMasters: CE Plus for CleanTech startups (GBP2,000-GBP6,000), ISO 27001 when energy company or institutional investor contract requires it."
+        "answer": "ISO 27001 for CleanTech cloud: not legally required but increasingly expected by enterprise customers. ISO 27001 drivers for CleanTech: (1) DCC access (OFGEM expects adequate security from DCC-registered organisations -- ISO 27001 or CE Plus), (2) UK ETS Registry (HMRC UK ETS Registry credentials are government credentials -- adequate security evidence expected), (3) energy company integration (UK DNOs, National Grid ESO require security evidence from API integration partners), (4) TCFD data (Scope 1/2/3 emissions data is commercially sensitive -- institutional investor clients expect ISO 27001). Clickmasters: CE Plus for CleanTech startups (GBP2,000-GBP6,000), ISO 27001 when energy company or institutional investor contract requires it."
       }
     ]
   },
@@ -15682,11 +15682,11 @@ const industries = [
     "industry": "proptech",
     "service": "cloud-native-proptech",
     "title": "Cloud-Native Development for UK PropTech -- Compliance Built In",
-    "metaTitle": "Cloud-Native Development for PropTech UK | ClickMasters",
+    "metaTitle": "Cloud-Native Development for PropTech UK | Clickmasters",
     "metaDesc": "Cloud-Native Development for UK PropTech. RICS. GBP30,000--GBP150,000.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters PropTech Team",
+    "writtenBy": "Clickmasters PropTech Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "PropTech",
@@ -15696,7 +15696,7 @@ const industries = [
       "IR35-Safe",
       "UK"
     ],
-    "directAnswer": "ClickMasters provides Cloud-Native Development for UK PropTech with RICS, HMLR compliance from Sprint 1.",
+    "directAnswer": "Clickmasters provides Cloud-Native Development for UK PropTech with RICS, HMLR compliance from Sprint 1.",
     "sections": [
       {
         "heading": "Cloud-Native Development for PropTech -- UK Specifics",
@@ -15782,11 +15782,11 @@ const industries = [
     "faqs": [
       {
         "question": "PropTech cloud development cost UK?",
-        "answer": "ClickMasters PropTech cloud-native costs: (1) Residential AVM (Automated Valuation Model) platform (HMLR, OS, ML -- RICS/FCA MCOB compliant): GBP45,000-GBP90,000 (22-32 weeks). (2) Commercial property data platform (HMLR Commercial, EPC, Planning Portal, UK ETS MEES): GBP40,000-GBP80,000 (20-30 weeks). (3) Residential search platform (OS AddressBase, EPC, HMLR Price Paid, PostGIS): GBP35,000-GBP70,000 (18-28 weeks). (4) Conveyancing technology platform (HMLR Title Register, Land Charges, SDLT, HMRC): GBP50,000-GBP100,000 (22-36 weeks). OS AddressBase Premium licence (GBP3,000-GBP15,000/year) and HMLR data licence are the key data costs -- confirm before budgeting."
+        "answer": "Clickmasters PropTech cloud-native costs: (1) Residential AVM (Automated Valuation Model) platform (HMLR, OS, ML -- RICS/FCA MCOB compliant): GBP45,000-GBP90,000 (22-32 weeks). (2) Commercial property data platform (HMLR Commercial, EPC, Planning Portal, UK ETS MEES): GBP40,000-GBP80,000 (20-30 weeks). (3) Residential search platform (OS AddressBase, EPC, HMLR Price Paid, PostGIS): GBP35,000-GBP70,000 (18-28 weeks). (4) Conveyancing technology platform (HMLR Title Register, Land Charges, SDLT, HMRC): GBP50,000-GBP100,000 (22-36 weeks). OS AddressBase Premium licence (GBP3,000-GBP15,000/year) and HMLR data licence are the key data costs -- confirm before budgeting."
       },
       {
         "question": "Does PropTech cloud need RICS accreditation?",
-        "answer": "RICS accreditation for PropTech AVM: RICS (Royal Institution of Chartered Surveyors) does not certify software, but: (1) RICS Valuation Standards (Red Book) -- if your AVM is used as basis for mortgage security, it must meet Red Book standards, (2) RICS AVM guidance (2019) -- RICS guidance for AVM providers -- confidence score ranges, comparable transaction disclosure, (3) FCA MCOB -- if AVM used for mortgage lending -- FCA MCOB 11 (valuation requirements) -- independent valuation required for high-LTV mortgages, (4) RICS membership -- PropTech companies building valuation products typically have RICS members on advisory boards for credibility. ClickMasters: PropTech AVM clients are advised to obtain RICS member advisory support and FCA MCOB legal opinion before offering AVM to FCA-regulated mortgage lenders."
+        "answer": "RICS accreditation for PropTech AVM: RICS (Royal Institution of Chartered Surveyors) does not certify software, but: (1) RICS Valuation Standards (Red Book) -- if your AVM is used as basis for mortgage security, it must meet Red Book standards, (2) RICS AVM guidance (2019) -- RICS guidance for AVM providers -- confidence score ranges, comparable transaction disclosure, (3) FCA MCOB -- if AVM used for mortgage lending -- FCA MCOB 11 (valuation requirements) -- independent valuation required for high-LTV mortgages, (4) RICS membership -- PropTech companies building valuation products typically have RICS members on advisory boards for credibility. Clickmasters: PropTech AVM clients are advised to obtain RICS member advisory support and FCA MCOB legal opinion before offering AVM to FCA-regulated mortgage lenders."
       }
     ]
   }

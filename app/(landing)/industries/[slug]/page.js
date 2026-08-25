@@ -23,11 +23,11 @@ export async function generateMetadata({ params }) {
   const canonical = `${siteConfig.url}${canonicalPath}`;
 
   return {
-    title: industry.metaTitle ?? `${industry.title} | ClickMasters`,
+    title: industry.metaTitle ?? `${industry.title} | Clickmasters`,
     description: industry.metaDesc,
     alternates: { canonical },
     openGraph: {
-      title: `${industry.title} | ClickMasters`,
+      title: `${industry.title} | Clickmasters`,
       description: industry.metaDesc,
       url: canonical,
       images: [
@@ -35,13 +35,13 @@ export async function generateMetadata({ params }) {
           url: `${siteConfig.url}/og/services.webp`,
           width: 1200,
           height: 630,
-          alt: `${industry.title} ClickMasters software services`,
+          alt: `${industry.title} Clickmasters software services`,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${industry.title} | ClickMasters`,
+      title: `${industry.title} | Clickmasters`,
       description: industry.metaDesc,
       images: [`${siteConfig.url}/og/services.webp`],
     },
@@ -196,7 +196,7 @@ function IndustryTestimonials({ industryName }) {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {[
             {
-              quote: "ClickMasters transformed our digital infrastructure. Their understanding of UK fintech regulations saved us months of compliance work.",
+              quote: "Clickmasters transformed our digital infrastructure. Their understanding of UK fintech regulations saved us months of compliance work.",
               author: "Sarah Mitchell",
               role: "CTO",
               company: "FinTech Solutions Ltd",

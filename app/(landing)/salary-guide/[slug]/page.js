@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
   const guide = getSalaryGuideBySlug(slug);
 
   if (!guide) {
-    return { title: 'Salary Guide Not Found | ClickMasters' };
+    return { title: 'Salary Guide Not Found | Clickmasters' };
   }
 
   return {
@@ -45,11 +45,11 @@ export default async function SalaryGuideDetailPage({ params }) {
     description: guide.metaDesc || `Salary benchmarks for ${guide.role.replace(/-/g, ' ')} in the UK.`,
     author: {
       '@type': 'Organization',
-      name: guide.writtenBy || 'ClickMasters HR Team',
+      name: guide.writtenBy || 'Clickmasters HR Team',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'ClickMasters Software Development Company',
+      name: 'Clickmasters Software Development Company',
       url: 'https://clickmasterssoftwaredevelopmentcompany.co.uk',
     },
     dateModified: guide.lastUpdated || undefined,
@@ -63,17 +63,17 @@ export default async function SalaryGuideDetailPage({ params }) {
   const dedupedFaqs = getDedupedFaqs(guide.faqs);
   const faqJsonLd = dedupedFaqs.length > 0
     ? {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: dedupedFaqs.map(faq => ({
-          '@type': 'Question',
-          name: faq.question.replace(/^:\s*/, ''),
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.answer.replace(/^:\s*/, ''),
-          },
-        })),
-      }
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: dedupedFaqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.question.replace(/^:\s*/, ''),
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer.replace(/^:\s*/, ''),
+        },
+      })),
+    }
     : null;
 
   return (

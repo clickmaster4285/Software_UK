@@ -15,7 +15,7 @@ export async function generateMetadata({ searchParams }) {
   const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
 
   const metadata = {
-    title: 'Resource Guides | ClickMasters Software Development',
+    title: 'Resource Guides | Clickmasters Software Development',
     description: 'In-depth resource guides covering software development best practices, technologies, and industry insights for UK businesses.',
     alternates: { canonical },
   };
@@ -293,11 +293,10 @@ export default async function ResourceGuidesPage({ searchParams }) {
                 <a
                   key={page}
                   href={`/resource${qs ? `?${qs}` : ''}`}
-                  className={`w-10 h-10 rounded-lg flex items-center justify-center text-sm font-medium transition-all ${
-                    page === safePage
+                  className={`w-10 h-10 rounded-lg flex items-center justify-center text-sm font-medium transition-all ${page === safePage
                       ? 'bg-accent text-white shadow-md'
                       : 'bg-white border border-border text-text-body hover:border-accent'
-                  }`}
+                    }`}
                 >
                   {page}
                 </a>

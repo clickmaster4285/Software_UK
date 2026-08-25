@@ -136,7 +136,7 @@ function isPricingHeadingTable(text) {
 }
 
 function isAuthorTable(tableHtml, text) {
-  return /AUTHOR/i.test(text) && /ClickMasters/i.test(text);
+  return /AUTHOR/i.test(text) && /Clickmasters/i.test(text);
 }
 
 function isJsonLdTable(text) {
@@ -163,7 +163,7 @@ function isFaqTable(text) {
 // ─── Extraction Functions ───────────────────────────────────────────────────
 
 function extractMetaTable(text) {
-  const metaTitleMatch = text.match(/META TITLE:\s*(.+?)(?:\s*\|\s*ClickMasters|$)/i);
+  const metaTitleMatch = text.match(/META TITLE:\s*(.+?)(?:\s*\|\s*Clickmasters|$)/i);
   const metaDescMatch = text.match(/META DESC:\s*(.+?)(?:\s+SLUG:|$)/i);
   const slugMatch = text.match(/SLUG:\s*(\/[^\s\/]+)\//);
   return {

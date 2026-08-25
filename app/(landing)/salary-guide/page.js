@@ -14,7 +14,7 @@ export async function generateMetadata({ searchParams }) {
   const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
 
   const metadata = {
-    title: 'UK Software Developer Salary Guides | ClickMasters',
+    title: 'UK Software Developer Salary Guides | Clickmasters',
     description: 'Comprehensive salary benchmarks for UK software developers by role, technology, and experience level. Day rates and permanent salaries.',
     alternates: { canonical },
   };
@@ -88,21 +88,21 @@ function getCategoryCounts() {
     'Security & QA': 0,
     'Product & Design': 0
   };
-  
+
   salaryGuideListings.forEach(sg => {
     const cat = getRoleCategory(sg.role);
     if (counts[cat] !== undefined) {
       counts[cat]++;
     }
   });
-  
+
   return counts;
 }
 
 function SalaryGuideCard({ title, excerpt, slug, role, year }) {
   const category = getRoleCategory(role);
   const emoji = categoryEmoji[category] || '📁';
-  
+
   return (
     <Link href={`/salary-guide/${slug}`} className="group block h-full bg-white rounded-xl border border-border hover:border-accent hover:-translate-y-1 transition-all duration-250 shadow-xs hover:shadow-md">
       <div className="p-6 flex flex-col h-full justify-between">
@@ -116,16 +116,16 @@ function SalaryGuideCard({ title, excerpt, slug, role, year }) {
               {year}
             </span>
           </div>
-          
+
           <h3 className="font-heading text-xl font-bold text-text-primary mb-2 group-hover:text-accent transition-colors">
             {title.replace(/— Permanent.*/, '')}
           </h3>
-          
+
           <p className="text-sm text-text-muted line-clamp-3 mb-6">
             {excerpt || `UK salary benchmarks for ${role.replace(/-/g, ' ')} roles in ${year}.`}
           </p>
         </div>
-        
+
         <div className="flex items-center text-sm font-semibold text-accent group-hover:gap-1.5 gap-1 transition-all">
           View Salary Guide <ArrowRight className="w-4 h-4" />
         </div>
@@ -164,11 +164,11 @@ export default async function SalaryGuidesPage({ searchParams }) {
 
   // Filter from lightweight data (no heavy fields)
   let filtered = [...salaryGuideListings];
-  
+
   if (activeCategory) {
     filtered = filtered.filter(s => getRoleCategory(s.role) === activeCategory);
   }
-  
+
   if (searchQuery.trim()) {
     const q = searchQuery.toLowerCase();
     filtered = filtered.filter(s =>
@@ -177,7 +177,7 @@ export default async function SalaryGuidesPage({ searchParams }) {
       s.role?.toLowerCase().includes(q)
     );
   }
-  
+
   filtered.sort((a, b) => {
     // Put general developer (P5) first, then sort by title
     if (a.id === 'P5') return -1;
@@ -281,7 +281,7 @@ export default async function SalaryGuidesPage({ searchParams }) {
             <div className="relative">
               <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">Hire Talent</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">Hire Vetted Developers at Market Rates</h2>
-              <p className="text-white/60 max-w-xl mx-auto mb-10 text-lg">ClickMasters provides senior UK engineers on monthly contracts. Zero IR35 liability for you.</p>
+              <p className="text-white/60 max-w-xl mx-auto mb-10 text-lg">Clickmasters provides senior UK engineers on monthly contracts. Zero IR35 liability for you.</p>
               <Link href="/hire" className="btn-primary inline-flex items-center justify-center gap-2 text-base px-10 py-4">
                 Explore Tech Roles <ArrowRight className="w-4 h-4" />
               </Link>

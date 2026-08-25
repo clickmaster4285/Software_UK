@@ -3,16 +3,16 @@ import { cityListings } from '@/data/cities';
 import { ArrowRight, MapPin, BookOpen, Building2 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Software Development by City | ClickMasters UK',
-  description: 'ClickMasters provides custom software development services across UK cities. Find local expertise in London, Manchester, Birmingham, and more.',
-  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/locations' }, 
+  title: 'Software Development by City | Clickmasters UK',
+  description: 'Clickmasters provides custom software development services across UK cities. Find local expertise in London, Manchester, Birmingham, and more.',
+  alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/locations' },
 };
 
 const ITEMS_PER_PAGE = 24;
 
 function CityCard({ city }) {
   return (
-    <Link  href={`/locations/${city.slug}`} className="group block h-full bg-white rounded-xl border border-border hover:border-accent hover:-translate-y-1 transition-all duration-250 shadow-xs hover:shadow-md">
+    <Link href={`/locations/${city.slug}`} className="group block h-full bg-white rounded-xl border border-border hover:border-accent hover:-translate-y-1 transition-all duration-250 shadow-xs hover:shadow-md">
       <div className="p-6 flex flex-col h-full justify-between">
         <div>
           <div className="flex items-center gap-2 mb-4">
@@ -121,14 +121,14 @@ export default async function CitiesPage({ searchParams }) {
   );
 
   const ukCities = filtered.filter(c =>
-    ['london','manchester','birmingham','edinburgh','glasgow','liverpool','leeds','bristol',
-     'cardiff','sheffield','nottingham','southampton','brighton','leicester','coventry',
-     'exeter','york','derby','hull'].includes(c.city)
+    ['london', 'manchester', 'birmingham', 'edinburgh', 'glasgow', 'liverpool', 'leeds', 'bristol',
+      'cardiff', 'sheffield', 'nottingham', 'southampton', 'brighton', 'leicester', 'coventry',
+      'exeter', 'york', 'derby', 'hull'].includes(c.city)
   );
   const euCities = filtered.filter(c =>
-    ['berlin','paris','amsterdam','dublin','stockholm','copenhagen','oslo','helsinki',
-     'madrid','barcelona','lisbon','porto','milan','rome','vienna','prague','warsaw',
-     'budapest','athens','brussels','munich','zurich','geneva','luxembourg','reykjavik'].includes(c.city)
+    ['berlin', 'paris', 'amsterdam', 'dublin', 'stockholm', 'copenhagen', 'oslo', 'helsinki',
+      'madrid', 'barcelona', 'lisbon', 'porto', 'milan', 'rome', 'vienna', 'prague', 'warsaw',
+      'budapest', 'athens', 'brussels', 'munich', 'zurich', 'geneva', 'luxembourg', 'reykjavik'].includes(c.city)
   );
 
   return (

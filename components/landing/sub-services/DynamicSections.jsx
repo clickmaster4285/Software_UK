@@ -1,7 +1,7 @@
 "use client";
 
 import { Check } from "lucide-react";
-import { makeBoldServiceName, getSectionId } from "@/lib/subservice-utils";
+import { makeBoldServiceName, linkifyMarkdown, getSectionId } from "@/lib/subservice-utils";
 import { slugify } from "@/data/sub-services";
 import { cn } from "@/lib/utils";
 
@@ -77,7 +77,7 @@ export default function DynamicSections({ sections, serviceName }) {
                         pIdx > 0 && "mt-4"
                       )}
                       dangerouslySetInnerHTML={{
-                        __html: makeBoldServiceName(paragraph, serviceName),
+                        __html: linkifyMarkdown(makeBoldServiceName(paragraph, serviceName)),
                       }}
                     />
                   ))}
@@ -113,7 +113,7 @@ export default function DynamicSections({ sections, serviceName }) {
                             isQuote && "italic text-slate-700"
                           )}
                           dangerouslySetInnerHTML={{
-                            __html: makeBoldServiceName(item, serviceName),
+                            __html: linkifyMarkdown(makeBoldServiceName(item, serviceName)),
                           }}
                         />
                       </li>

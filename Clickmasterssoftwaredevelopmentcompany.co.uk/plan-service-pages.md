@@ -1,4 +1,4 @@
-# Plan: ClickMasters Content Migration — Standalone Service Pages
+# Plan: Clickmasters Content Migration — Standalone Service Pages
 
 **Generated:** June 20, 2026
 **Purpose:** Convert 11 standalone service DOCX files into `data/services.js` and wire to existing route
@@ -53,7 +53,7 @@ All 11 files share this consistent structure:
 ```html
 <!-- Table 1: Meta table -->
 <table>
-  META TITLE: {title} | ClickMasters
+  META TITLE: {title} | Clickmasters
   META DESC: {description}
   SLUG: /{slug}/
 </table>
@@ -131,14 +131,14 @@ All 11 files share this consistent structure:
 | `slug` | `string` | SLUG meta (cleaned) | `"mvp-development"` |
 | `serviceName` | `string` | H1 heading (cleaned) | `"MVP Development UK — Launch in 8–12 Weeks"` |
 | `title` | `string` | H1 heading (full) | `"MVP Development UK — Launch Your Minimum Viable Product in 8–12 Weeks"` |
-| `metaTitle` | `string` | META TITLE | `"MVP Development UK — Launch in 8–12 Weeks \| ClickMasters"` |
+| `metaTitle` | `string` | META TITLE | `"MVP Development UK — Launch in 8–12 Weeks \| Clickmasters"` |
 | `metaDesc` | `string` | META DESC | `"Build your MVP in 8–12 weeks from £12,000..."` |
 | `lastUpdated` | `string` | Header table | `"August 2025"` |
 | `readingTime` | `number` | Header table | `9` |
-| `writtenBy` | `string` | Header table | `"ClickMasters Engineering Team"` |
+| `writtenBy` | `string` | Header table | `"Clickmasters Engineering Team"` |
 | `reviewedBy` | `string` | Header table | `"James Whitmore, CTO"` |
 | `badges` | `array` | Badge table items | `["MVP Development", "UK GDPR", "£12,000+", "Innovate UK"]` |
-| `directAnswer` | `string` | Text after "Direct Answer:" | `"ClickMasters builds MVPs..."` |
+| `directAnswer` | `string` | Text after "Direct Answer:" | `"Clickmasters builds MVPs..."` |
 | `sections` | `array` | Section heading + paragraphs | `[{ heading: "UK Specifics", paragraphs: [...] }]` |
 | `pricingTiers` | `array` | Pricing table rows | `[{ type: "Lean MVP", scope: "...", price: "£12,000–£25,000" }]` |
 | `faqs` | `array` | Q:/A pairs | `[{ question: "...", answer: "..." }]` |
@@ -184,14 +184,14 @@ const services = [
     slug: "mvp-development",
     serviceName: "MVP Development UK — Launch in 8–12 Weeks",
     title: "MVP Development UK — Launch Your Minimum Viable Product in 8–12 Weeks",
-    metaTitle: "MVP Development UK — Launch in 8–12 Weeks | ClickMasters",
+    metaTitle: "MVP Development UK — Launch in 8–12 Weeks | Clickmasters",
     metaDesc: "Build your MVP in 8–12 weeks from £12,000...",
     lastUpdated: "August 2025",
     readingTime: 9,
-    writtenBy: "ClickMasters Engineering Team",
+    writtenBy: "Clickmasters Engineering Team",
     reviewedBy: "James Whitmore, CTO",
     badges: ["MVP Development", "UK GDPR", "£12,000+", "Innovate UK"],
-    directAnswer: "ClickMasters builds MVPs...",
+    directAnswer: "Clickmasters builds MVPs...",
     sections: [
       { heading: "MVP Development — UK Specifics", paragraphs: [...] },
       // ...

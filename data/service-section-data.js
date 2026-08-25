@@ -36,10 +36,52 @@ export const SERVICE_SECTION_DATA = {
       ]),
     ],
     faqs: [
-      faq('How much does custom software development cost?', 'MVP builds start around $8,000. Full applications range from $25,000–$60,000+. Enterprise platforms can exceed $150,000 depending on scope, integrations, and compliance.'),
-      faq('How long does a software project take?', 'MVPs typically ship in 6–12 weeks. Full products take 3–6 months. Enterprise programs run 6–18 months with phased releases every 2 weeks.'),
-      faq('Do we own the source code?', 'Yes. You receive full IP ownership, repository access, and deployment documentation at project completion.'),
-      faq('What happens after launch?', 'We offer maintenance plans covering security patches, monitoring, performance tuning, and feature iterations.'),
+      faq('What are software development services?', 'Software development services include the planning, design, programming, testing, deployment and maintenance of digital applications and systems. Services can include custom software, enterprise applications, SaaS products, APIs, desktop applications and modernisation of existing software.'),
+      faq('What does a software development company do?', 'A software development company turns business or product requirements into working software. The process can include discovery, architecture, UI/UX, frontend development, backend development, integrations, testing, deployment and ongoing support.'),
+      faq('What is bespoke software development?', 'Bespoke software development involves creating an application specifically for an organisation\'s requirements rather than using a standard commercial product with predefined functionality.'),
+      faq('How much does software development cost in the UK?', 'Costs depend on application complexity, features, integrations, platforms, security requirements, infrastructure, testing and development time. A reliable project estimate usually requires requirements discovery first.'),
+      faq('How long does it take to develop software?', 'Development time varies according to scope. A focused MVP can be completed much sooner than a complex enterprise platform involving multiple integrations, workflows and user types.'),
+      faq('Can you integrate software with our existing systems?', 'Yes. Where suitable integration methods are available, applications can connect with existing CRM, ERP, ecommerce, finance and other business platforms through APIs and integrations.'),
+      faq('Do you provide software maintenance after launch?', 'Ongoing software support can include bug fixes, security updates, new functionality, performance improvements, integrations and infrastructure changes.'),
+      faq('Do you develop software for startups?', 'Yes. Startups can use MVP and SaaS development services to validate a product idea and progressively expand functionality as the product gains users and market feedback.'),
+      faq('Can you modernise legacy software?', 'Yes. Legacy modernisation may involve replacing outdated components, introducing modern APIs, improving infrastructure, migrating data or rebuilding applications when the existing architecture can no longer meet business requirements.'),
+    ],
+    lifecycle: [
+      {
+        step: '01',
+        title: 'Discovery & Requirements',
+        description: 'We begin by understanding your organisation, users, existing systems and project objectives. The discovery stage helps establish core requirements, user types, business workflows, integrations, technical constraints, security requirements and project priorities.',
+      },
+      {
+        step: '02',
+        title: 'Solution Architecture',
+        description: 'Once the requirements are understood, we determine how the software should be structured. This can include decisions around application architecture, database structure, APIs, hosting, integrations, security, scalability and technology selection.',
+      },
+      {
+        step: '03',
+        title: 'UX & Interface Planning',
+        description: 'For user-facing software, the experience should be considered before development becomes too advanced. Wireframes and prototypes can help validate important workflows and reduce unnecessary rework later.\n\nFor specialist design requirements, our wider [UI/UX design services](/design-ui-ux) can support product and interface development.',
+      },
+      {
+        step: '04',
+        title: 'Software Development',
+        description: 'Development is organised into manageable stages so functionality can be reviewed throughout the project. This allows technical decisions, feedback and changing requirements to be managed more effectively.',
+      },
+      {
+        step: '05',
+        title: 'Quality Assurance & Testing',
+        description: 'Testing should be part of development rather than an activity performed only before launch. Our wider [software testing and QA services](/testing-and-qa) can support functional testing, automated testing, performance testing and issue resolution.',
+      },
+      {
+        step: '06',
+        title: 'Deployment',
+        description: 'Once approved, the application is prepared for its production environment. This can include infrastructure configuration, deployment pipelines, databases, application configuration and monitoring.\n\nWhere required, our [Cloud & DevOps services](/cloud-and-devops) can support modern infrastructure and deployment requirements.',
+      },
+      {
+        step: '07',
+        title: 'Maintenance & Continuous Improvement',
+        description: 'Launching software is rarely the end of its lifecycle. Applications may require security updates, bug fixes, new features, performance improvements, infrastructure changes, integration updates and user-experience improvements.',
+      },
     ],
   },
 

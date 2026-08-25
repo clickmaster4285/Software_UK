@@ -311,8 +311,8 @@ function extractIr35Comparison(tables) {
     if (line.includes('Question')) return;
     if (line.includes('Contractor Agency Answer')) {
       currentRow.question = line.replace('Contractor Agency Answer', '').trim();
-    } else if (line.includes('ClickMasters Answer')) {
-      currentRow.clickMasters = line.replace('ClickMasters Answer', '').trim();
+    } else if (line.includes('Clickmasters Answer')) {
+      currentRow.clickMasters = line.replace('Clickmasters Answer', '').trim();
       if (currentRow.question && currentRow.clickMasters) {
         rows.push(currentRow);
         currentRow = {};

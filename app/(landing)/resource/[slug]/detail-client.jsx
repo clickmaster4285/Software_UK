@@ -363,7 +363,7 @@ export default function ResourceGuideDetailClient({ guide, relatedGuides }) {
             <div className="relative">
               <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">
                 <Sparkles className="w-3 h-3 mr-1.5 inline -mt-0.5" />
-                ClickMasters
+                Clickmasters
               </span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
                 {cta ? cta.split(' ').slice(0, 6).join(' ') + (cta.split(' ').length > 6 ? '...' : '') : 'Get Expert Guidance'}

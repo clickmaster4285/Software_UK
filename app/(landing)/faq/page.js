@@ -3,8 +3,8 @@ import JsonLd from '@/components/JsonLd';
 import { faqSchema } from '@/app/metadata-config';
 
 export const metadata = {
-  title: 'FAQ | ClickMasters Software Development',
-  description: 'Frequently asked questions about ClickMasters software development services, pricing, process, and support.',
+  title: 'FAQ | Clickmasters Software Development',
+  description: 'Frequently asked questions about Clickmasters software development services, pricing, process, and support.',
   alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/faq' },
 };
 

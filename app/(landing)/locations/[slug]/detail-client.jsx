@@ -128,7 +128,7 @@ export function CityDetailClient({ city, relatedCities }) {
         <section className="border-b border-border bg-surface">
           <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-6 py-12 md:py-16">
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-text-primary mb-8">
-              Why {cityDisplay} Businesses Choose ClickMasters
+              Why {cityDisplay} Businesses Choose Clickmasters
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
               {benefits.map((benefit, idx) => (

@@ -54,7 +54,7 @@ export default function Footer() {
             <HomeLogoLink className="inline-block mb-8">
               <Image
                 src="/cm-logos/logo_white.webp"
-                alt="ClickMasters Logo"
+                alt="Clickmasters Logo"
                 width={180}
                 height={48}
                 className="h-12 w-auto"

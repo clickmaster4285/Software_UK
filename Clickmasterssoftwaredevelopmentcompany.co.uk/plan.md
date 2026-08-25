@@ -1,4 +1,4 @@
-# Plan: ClickMasters Content Migration — Case Study First
+# Plan: Clickmasters Content Migration — Case Study First
 
 **Generated:** June 13, 2026 | **Last Updated:** June 22, 2026  
 **Purpose:** Comprehensive execution plan for converting 1,785 Word documents into Next.js data files
@@ -8,7 +8,7 @@
 ## 1. Project Context
 
 ### What This Project Is
-- **Next.js website** for ClickMasters Software Development Company (UK-based B2B)
+- **Next.js website** for Clickmasters Software Development Company (UK-based B2B)
 - **URL:** https://clickmasterssoftwaredevelopmentcompany.co.uk
 - **Content:** 1,785 pages stored as `.docx` files (Word documents)
 - **Goal:** Convert all documents into data files readable by Next.js
@@ -38,12 +38,12 @@ Analyzed: `ClickMasters_P1003_case_proptech_build_to_rent_portfolio_management.d
 
 ```html
 <table>
-  META TITLE: PropTech Build-to-Rent Portfolio Management Platform — UK Institutional Landlord — ClickMasters Case Study
+  META TITLE: PropTech Build-to-Rent Portfolio Management Platform — UK Institutional Landlord — Clickmasters Case Study
   META DESC: A UK institutional landlord managing 4,200 build-to-rent units...
   SLUG: /case-studies/proptech-build-to-rent-portfolio-management/
 </table>
 
-<p>Last updated: August 2025 | Reading time: 6 min | Written by: ClickMasters Case Study Team | Reviewed by: James Whitmore, CTO</p>
+<p>Last updated: August 2025 | Reading time: 6 min | Written by: Clickmasters Case Study Team | Reviewed by: James Whitmore, CTO</p>
 
 <h1>PropTech Build-to-Rent Portfolio Management Platform — UK Institutional Landlord</h1>
 

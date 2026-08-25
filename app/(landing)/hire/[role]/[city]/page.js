@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
   const hirePage = getHirePageByRoleCity(role, city);
 
   if (!hirePage) {
-    return { title: 'Hire Developer Not Found | ClickMasters' };
+    return { title: 'Hire Developer Not Found | Clickmasters' };
   }
 
   return {
@@ -54,7 +54,7 @@ export default async function HireDetailPage({ params }) {
     description: hirePage.metaDesc || `Hire a vetted ${roleName} developer in ${cityName}. IR35-compliant, 3-stage vetting.`,
     provider: {
       '@type': 'Organization',
-      name: 'ClickMasters Software Development Company',
+      name: 'Clickmasters Software Development Company',
       url: 'https://clickmasterssoftwaredevelopmentcompany.co.uk',
     },
     areaServed: {

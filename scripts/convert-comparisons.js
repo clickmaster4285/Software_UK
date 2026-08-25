@@ -118,7 +118,7 @@ function isCtaTable(tableHtml) {
 }
 
 function isAuthorTable(tableHtml) {
-  return stripHtml(tableHtml).includes('AUTHOR') && stripHtml(tableHtml).includes('ClickMasters');
+  return stripHtml(tableHtml).includes('AUTHOR') && stripHtml(tableHtml).includes('Clickmasters');
 }
 
 function isSchemaTable(tableHtml) {
@@ -272,8 +272,8 @@ function extractCta(html) {
   for (const table of tables) {
     const text = stripHtml(table);
     if ((text.includes('Free') && (text.includes('Consultation') || text.includes('Assessment') || text.includes('Quote'))) ||
-        (text.includes('Book') && text.includes('free')) ||
-        (text.includes('Get started') || text.includes('Contact us'))) {
+      (text.includes('Book') && text.includes('free')) ||
+      (text.includes('Get started') || text.includes('Contact us'))) {
       return text.substring(0, 500);
     }
   }

@@ -20,6 +20,7 @@ import {
   Workflow,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { linkifyMarkdown } from "@/lib/subservice-utils";
 
 const SERVICE_ICONS = [
   { match: /mobile|ios|android|flutter/i, Icon: Smartphone },
@@ -83,7 +84,7 @@ export const ServicesSection = ({ serviceName, servicesCards }) => {
       </div>
 
       <p className="mt-6 max-w-3xl text-lg leading-relaxed text-text-body">
-        ClickMasters operates as a full-stack{" "}
+        Clickmasters operates as a full-stack{" "}
         <span className="font-semibold text-text-primary">
           {serviceName.toLowerCase()}
         </span>{" "}
@@ -129,9 +130,12 @@ export const ServicesSection = ({ serviceName, servicesCards }) => {
 
               <div className="my-5 h-px bg-border transition-colors group-hover:bg-accent/15" />
 
-              <p className="flex-1 text-[16px] leading-relaxed text-text-body">
-                {service.description}
-              </p>
+              <p
+                className="flex-1 text-[16px] leading-relaxed text-text-body [&_a]:font-medium [&_a]:text-accent [&_a:hover]:underline"
+                dangerouslySetInnerHTML={{
+                  __html: linkifyMarkdown(service.description),
+                }}
+              />
             </motion.article>
           );
         })}

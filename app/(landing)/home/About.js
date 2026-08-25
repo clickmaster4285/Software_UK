@@ -26,7 +26,7 @@ export default function About() {
                         The right software development firm should bring more than technical knowledge to a project. It should understand what you are trying to achieve and why it matters.
                      </p>
                      <p>
-                        Your team brings the knowledge of your business, customers and market. ClickMasters brings software strategy, product thinking and technical expertise.
+                        Your team brings the knowledge of your business, customers and market. Clickmasters brings software strategy, product thinking and technical expertise.
                      </p>
                      <p>
                         Working together allows us to make better decisions about what should be built, what matters most and how the product should develop over time.

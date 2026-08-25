@@ -16,15 +16,15 @@ The `data/resource-guides.js` file (10,374 lines, 83 DOCX source files, 63 uniqu
 
 **Location:**
 - **Guide:** `uk-software-development-contract-guide`
-- **Section:** s15 — "ClickMasters Contract Standards"
+- **Section:** s15 — "Clickmasters Contract Standards"
 - **Paragraph:** p0
 
 **Before (Wrong):**
 ```json
 {
-  "title": "ClickMasters Contract Standards",
+  "title": "Clickmasters Contract Standards",
   "paragraphs": [
-    "Every ClickMasters project contract includes: ✓ IP Assignment Agreement (100% ownership transferred on final payment) ✓ UK GDPR Article 28 Data Processing Agreement ✓ 30-day defect liability period post-launch ✓ Detailed acceptance criteria per user story (from Technical Discovery) ✓ Formal Change Request process for scope changes ✓ Source code and credentials delivery on request ✓ IR35 zero liability (our engineers are our employees) ✓ R&D Tax Credits qualifying activities documentation ✓ 30-day notice termination clause ✓ Named senior engineers — no undisclosed offshore subcontracting",
+    "Every Clickmasters project contract includes: ✓ IP Assignment Agreement (100% ownership transferred on final payment) ✓ UK GDPR Article 28 Data Processing Agreement ✓ 30-day defect liability period post-launch ✓ Detailed acceptance criteria per user story (from Technical Discovery) ✓ Formal Change Request process for scope changes ✓ Source code and credentials delivery on request ✓ IR35 zero liability (our engineers are our employees) ✓ R&D Tax Credits qualifying activities documentation ✓ 30-day notice termination clause ✓ Named senior engineers — no undisclosed offshore subcontracting",
     "Custom Software Development UK: /custom-software-development/",
     "Fixed Price vs Time & Materials UK: /fixed-price-vs-time-materials-uk/",
     "IR35 Guide UK: /ir35-software-development/",
@@ -37,9 +37,9 @@ The `data/resource-guides.js` file (10,374 lines, 83 DOCX source files, 63 uniqu
 **After (Correct):**
 ```json
 {
-  "title": "ClickMasters Contract Standards",
+  "title": "Clickmasters Contract Standards",
   "paragraphs": [
-    "Every ClickMasters project contract includes:",
+    "Every Clickmasters project contract includes:",
     "✓ IP Assignment Agreement (100% ownership transferred on final payment)",
     "✓ UK GDPR Article 28 Data Processing Agreement",
     "✓ 30-day defect liability period post-launch",
@@ -68,7 +68,7 @@ The `data/resource-guides.js` file (10,374 lines, 83 DOCX source files, 63 uniqu
 |---|---|---|---|
 | 1 | `rd-tax-credits-software-development` | Common R&D Claim Mistakes for Software Companies | 2 |
 | 2 | `how-much-does-software-development-cost-uk` | UK Day Rates by Role (2025) | 3 |
-| 3 | `innovate-uk-smart-grants-guide` | How ClickMasters Supports Grant Applications | 3 |
+| 3 | `innovate-uk-smart-grants-guide` | How Clickmasters Supports Grant Applications | 3 |
 | 4 | `cyber-essentials-software-development-guide` | Cyber Essentials for Software Development Companies | 2 |
 | 5 | `iso-27001-software-development-guide` | ISO 27001 Scope for Software Development | 2 |
 | 6 | `wcag-accessibility-guide-uk` | Manual vs Automated WCAG Testing | 2 |
@@ -82,7 +82,7 @@ The `data/resource-guides.js` file (10,374 lines, 83 DOCX source files, 63 uniqu
 | 14 | `uk-gdpr-data-processor-agreement-guide` | IDTA — International Data Transfer Addendum | 1 |
 | 15 | `dtac-compliance-guide` | DTAC for Different HealthTech Product Types | 1 |
 | 16 | `pci-dss-software-development-guide` | FCA and UK GDPR — How PCI-DSS Interacts | 1 |
-| 17 | `fixed-price-vs-time-materials-software-contract-uk` | How ClickMasters Fixed-Price Contracts Work | 1 |
+| 17 | `fixed-price-vs-time-materials-software-contract-uk` | How Clickmasters Fixed-Price Contracts Work | 1 |
 | 18 | `technical-discovery-software-development-uk` | Who Should Attend a Technical Discovery? | 1 |
 | 19 | `software-project-handover-checklist-uk` | UK GDPR Handover Obligations | 1 |
 | 20 | `iso-27001-vs-cyber-essentials-uk` | When Each Certification Is Required | 1 |
@@ -90,7 +90,7 @@ The `data/resource-guides.js` file (10,374 lines, 83 DOCX source files, 63 uniqu
 | 22 | `hmrc-making-tax-digital-software-guide-uk` | MTD Compatible Software — HMRC Recognition | 1 |
 | 23 | `open-banking-development-guide-uk` | Open Banking Use Cases — UK Market | 1 |
 | 24 | `uk-saas-pricing-models-guide` | UK SaaS Pricing Page Best Practices | 1 |
-| 25 | `uk-startup-software-development-guide` | MVP Build Checklist — What ClickMasters Covers | 1 |
+| 25 | `uk-startup-software-development-guide` | MVP Build Checklist — What Clickmasters Covers | 1 |
 | 26 | `uk-enterprise-software-procurement-guide` | UK Public Sector Procurement — G-Cloud and Digital | 1 |
 | 27 | `uk-software-team-structure-guide` | In-House vs Agency vs Staff Augmentation | 1 |
 | 28 | `technical-debt-guide-uk` | Compliance Debt — UK-Specific Priority | 1 |
@@ -110,7 +110,7 @@ The `data/resource-guides.js` file (10,374 lines, 83 DOCX source files, 63 uniqu
 | 42 | `uk-software-consulting-guide` | UK Technical Due Diligence — What Investors and Acquirers Check | 2 |
 | 43 | `uk-staff-augmentation-guide` | UK Compliance in Staff Augmentation | 2 |
 | 44 | `uk-open-banking-guide` | TrueLayer vs Yapily — UK Open Banking Aggregator Comparison | 2 |
-| 45 | `uk-cloud-cost-optimisation-guide` | AWS Cost Dashboard — What ClickMasters Monitors | 2 |
+| 45 | `uk-cloud-cost-optimisation-guide` | AWS Cost Dashboard — What Clickmasters Monitors | 2 |
 | 46 | `uk-data-engineering-guide` | NHS Health Data Engineering — UK Specifics | 2 |
 | 47 | `uk-mobile-app-development-guide` | NHS Mobile App Development — Additional Requirements | 2 |
 | 48 | `uk-saas-pricing-guide` | UK SaaS Pricing and FCA Consumer Duty | 2 |
@@ -131,7 +131,7 @@ The `data/resource-guides.js` file (10,374 lines, 83 DOCX source files, 63 uniqu
 **Before (Wrong) — Example from `innovate-uk-smart-grants-guide`:**
 ```json
 {
-  "title": "How ClickMasters Supports Grant Applications",
+  "title": "How Clickmasters Supports Grant Applications",
   "paragraphs": [
     "Technical section writing: articulating technological uncertainty and novelty in Innovate UK language",
     "Technology readiness level (TRL) assessment and progression plan",
@@ -143,8 +143,8 @@ The `data/resource-guides.js` file (10,374 lines, 83 DOCX source files, 63 uniqu
     "A: Overall success rate is approximately 5–15% depending on competition...",
     "Q: Can a startup apply for an Innovate UK Smart Grant?",
     "A: Yes — startups can apply as sole organisations or as part of collaborations...",
-    "Q: How does ClickMasters support as a technical partner?",
-    "A: ClickMasters can participate in Innovate UK applications as: technology delivery partner..."
+    "Q: How does Clickmasters support as a technical partner?",
+    "A: Clickmasters can participate in Innovate UK applications as: technology delivery partner..."
   ]
 }
 ```
@@ -152,7 +152,7 @@ The `data/resource-guides.js` file (10,374 lines, 83 DOCX source files, 63 uniqu
 **After (Correct):**
 ```json
 {
-  "title": "How ClickMasters Supports Grant Applications",
+  "title": "How Clickmasters Supports Grant Applications",
   "paragraphs": [
     "Technical section writing: articulating technological uncertainty and novelty in Innovate UK language",
     "Technology readiness level (TRL) assessment and progression plan",
@@ -212,9 +212,9 @@ The `data/resource-guides.js` file (10,374 lines, 83 DOCX source files, 63 uniqu
 **Before (Wrong):**
 ```json
 {
-  "title": "ClickMasters Contract Standards",
+  "title": "Clickmasters Contract Standards",
   "paragraphs": [
-    "Every ClickMasters project contract includes: ✓ ...",
+    "Every Clickmasters project contract includes: ✓ ...",
     "Custom Software Development UK: /custom-software-development/",
     "Fixed Price vs Time & Materials UK: /fixed-price-vs-time-materials-uk/",
     "IR35 Guide UK: /ir35-software-development/",
@@ -227,9 +227,9 @@ The `data/resource-guides.js` file (10,374 lines, 83 DOCX source files, 63 uniqu
 **After (Correct):**
 ```json
 {
-  "title": "ClickMasters Contract Standards",
+  "title": "Clickmasters Contract Standards",
   "paragraphs": [
-    "Every ClickMasters project contract includes:",
+    "Every Clickmasters project contract includes:",
     "✓ IP Assignment Agreement (100% ownership transferred on final payment)",
     "✓ UK GDPR Article 28 Data Processing Agreement",
     ...
@@ -340,7 +340,7 @@ Rather than patching the data file directly, the fix was applied at the conversi
 **Before fix:**
 ```
 === ISSUE TYPE 1: Merged checklist paragraphs (✓ items in one string) ===
-  uk-software-development-contract-guide | s15 "ClickMasters Contract Standards" | p0 | 10 checkmarks | len=593
+  uk-software-development-contract-guide | s15 "Clickmasters Contract Standards" | p0 | 10 checkmarks | len=593
 
 === ISSUE TYPE 2: FAQs embedded in paragraphs ===
   (250 instances across 55 guides)
@@ -369,12 +369,12 @@ Rather than patching the data file directly, the fix was applied at the conversi
 
 ### Spot-Check Results
 
-**1. Contract Guide — "ClickMasters Contract Standards":**
+**1. Contract Guide — "Clickmasters Contract Standards":**
 - Paragraphs: 11 (1 intro + 10 individual ✓ items) ✅
 - No related page links in paragraphs ✅
 - Related pages: 4 (in `relatedPages` array) ✅
 
-**2. Innovate UK — "How ClickMasters Supports Grant Applications":**
+**2. Innovate UK — "How Clickmasters Supports Grant Applications":**
 - Paragraphs: 5 (clean content only) ✅
 - No "FAQs" header in paragraphs ✅
 - No Q:/A: lines in paragraphs ✅

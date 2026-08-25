@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   const comparison = getComparisonBySlug(slug);
 
   if (!comparison) {
-    return { title: 'Comparison Not Found | ClickMasters' };
+    return { title: 'Comparison Not Found | Clickmasters' };
   }
 
   return {
@@ -41,11 +41,11 @@ export default async function ComparisonDetailPage({ params }) {
     description: comparison.metaDesc || `Comparison of ${comparison.topic.replace(/_/g, ' ')} for UK businesses.`,
     author: {
       '@type': 'Organization',
-      name: comparison.writtenBy || 'ClickMasters Technology Team',
+      name: comparison.writtenBy || 'Clickmasters Technology Team',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'ClickMasters Software Development Company',
+      name: 'Clickmasters Software Development Company',
       url: 'https://clickmasterssoftwaredevelopmentcompany.co.uk',
     },
     dateModified: comparison.lastUpdated || undefined,
@@ -58,17 +58,17 @@ export default async function ComparisonDetailPage({ params }) {
   const dedupedFaqs = getDedupedFaqs(comparison.faqs);
   const faqJsonLd = dedupedFaqs.length > 0
     ? {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: dedupedFaqs.map(faq => ({
-          '@type': 'Question',
-          name: faq.question.replace(/^:\s*/, ''),
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.answer.replace(/^:\s*/, ''),
-          },
-        })),
-      }
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: dedupedFaqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.question.replace(/^:\s*/, ''),
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer.replace(/^:\s*/, ''),
+        },
+      })),
+    }
     : null;
 
   return (

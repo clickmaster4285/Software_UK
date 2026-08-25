@@ -1,4 +1,4 @@
-# ClickMasters — Technical Mandate
+# Clickmasters — Technical Mandate
 
 ## 1. TECH STACK
 - **Frontend:** Next.js 16.2.4 (App Router), React 19, Tailwind CSS 4.0 (OKLCH).
@@ -159,7 +159,7 @@ Summary: About Page & Services Updates
   1. Better UX - Users can now click service cards to navigate directly to service pages      
   2. Consistency - About page now matches the design language of other pages (main-service,   
   subservice)
-  3. Storytelling - Added company journey, stats, and values to tell the "ClickMasters story" 
+  3. Storytelling - Added company journey, stats, and values to tell the "Clickmasters story" 
   like big companies do
   4. Reusability - Avoided recreating components; leveraged existing ones
   4. Reusability - Avoided recreating components; leveraged existing ones
@@ -177,10 +177,10 @@ Summary: About Page & Services Updates
   Stack → Clients → CTA
 
 
-  Session Summary — ClickMasters Website Cleanup
+  Session Summary — Clickmasters Website Cleanup
 
     Project
-    ClickMasters agency website — Next.js (app router), React 19, Tailwind 4, framer-motion. Package manager: pnpm. Dev server uses --turbopack.
+    Clickmasters agency website — Next.js (app router), React 19, Tailwind 4, framer-motion. Package manager: pnpm. Dev server uses --turbopack.
 
     ---
 

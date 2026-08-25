@@ -216,7 +216,7 @@ function extractDataTable(tableHtml) {
   const text = stripHtml(tableHtml);
   if (text.includes('Frequently Asked Questions') || text.includes('Related Guides')) return null;
   if (text.includes('Direct Answer') || text.includes('META TITLE')) return null;
-  if (tableHtml.includes('AUTHOR') && text.includes('ClickMasters')) return null;
+  if (tableHtml.includes('AUTHOR') && text.includes('Clickmasters')) return null;
   if (text.includes('Get a Free') && text.includes('Consultation')) return null;
 
   const rows = parseHtmlTableToArrays(tableHtml);
@@ -365,12 +365,12 @@ function extractCta(html) {
     if (/^\d+\s+(Free|Technical|Agile|Security|Launch)\b/.test(text)) continue;
 
     // Skip compliance tables
-    if (text.includes('Compliance Area') || text.includes('ClickMasters Implementation')) continue;
+    if (text.includes('Compliance Area') || text.includes('Clickmasters Implementation')) continue;
 
     // Actual CTA: contains "Free" + "Consultation" or "Book Free" or "Get started"
     // and is relatively short (under 400 chars — pricing tables are longer)
     if ((text.includes('Free') && (text.includes('Consultation') || text.includes('Quote') || text.includes('Assessment'))) ||
-        text.includes('Book Free') || text.includes('Get started')) {
+      text.includes('Book Free') || text.includes('Get started')) {
       if (text.length < 400) {
         return text.substring(0, 500);
       }
@@ -422,10 +422,10 @@ async function convertCities() {
         if (!parsed) continue;
 
         if ((text.includes('Service Type') || text.includes('GBP Pricing') || text.includes('Pricing')) &&
-            !text.includes('FAQ') && !text.includes('Related')) {
+          !text.includes('FAQ') && !text.includes('Related')) {
           pricingTable = parsed;
         } else if ((text.includes('Compliance Area') || text.includes('Compliance')) &&
-                   !text.includes('FAQ') && !text.includes('Related')) {
+          !text.includes('FAQ') && !text.includes('Related')) {
           complianceTable = parsed;
         } else if (!text.match(/^\d+\s+/)) {
           generalTables.push(parsed);

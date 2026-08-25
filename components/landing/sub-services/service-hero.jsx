@@ -169,6 +169,35 @@ export function ServiceHero({ page }) {
     });
   };
 
+  // Renders [label](/internal-path) links inside lead text, keeping bold-term styling
+  const renderLeadWithLinks = (text, terms) => {
+    if (!text || !text.includes("](")) return makeBoldInText(text, terms);
+    const linkRe = /\[([^\]]+)\]\((\/[^)\s]*)\)/g;
+    const parts = [];
+    let last = 0;
+    let match;
+    let key = 0;
+    while ((match = linkRe.exec(text))) {
+      if (match.index > last) {
+        parts.push(makeBoldInText(text.slice(last, match.index), terms));
+      }
+      parts.push(
+        <Link
+          key={`link-${key++}`}
+          href={match[2]}
+          className="font-medium text-accent hover:underline"
+        >
+          {makeBoldInText(match[1], terms)}
+        </Link>
+      );
+      last = match.index + match[0].length;
+    }
+    if (last < text.length) {
+      parts.push(makeBoldInText(text.slice(last), terms));
+    }
+    return parts;
+  };
+
   const breadcrumbCurrent = page.currentPageLabel ?? page.serviceName;
 
   useEffect(() => {
@@ -352,7 +381,7 @@ export function ServiceHero({ page }) {
                 className="mt-5 max-w-4xl text-base text-surface lg:text-lg"
                 variants={fadeInUp}
               >
-                {makeBoldInText(page.lead, boldTerms)}
+                {renderLeadWithLinks(page.lead, boldTerms)}
               </motion.p>
 
               {/* Highlight Pills */}

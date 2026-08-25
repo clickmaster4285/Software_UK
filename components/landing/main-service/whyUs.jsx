@@ -125,7 +125,7 @@ export function WhyChooseUs({ slug, service, countryName }) {
       {/* Premium Background Elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Animated Mesh Gradients */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -137,7 +137,7 @@ export function WhyChooseUs({ slug, service, countryName }) {
           <div className="absolute top-2/5 right-1/4 translate-x-1/3 translate-y-1/4 w-3/4 h-32 h-2/3  bg-accent/15" />
           <div className="absolute top-3/4 right-13 left-1/4 -translate-x-1/3 -translate-y-1/4 w-3/4 h-32 h-2/3  bg-accent/15" />
         </motion.div>
-        
+
         {/* Subtle Grid Overlay */}
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(var(--text-muted) 0.5px, transparent 0.5px)', backgroundSize: '32px 32px' }} />
 
@@ -185,7 +185,7 @@ export function WhyChooseUs({ slug, service, countryName }) {
             className="font-heading text-4xl font-bold tracking-tight text-text-primary leading-tight mb-8"
           >
             Why Choose {" "}
-            <span className="text-accent">ClickMasters</span>
+            <span className="text-accent">Clickmasters</span>
           </h2>
 
           <p className="mt-4 text-lg md:text-xl text-text-body font-body leading-relaxed max-w-2xl mx-auto">

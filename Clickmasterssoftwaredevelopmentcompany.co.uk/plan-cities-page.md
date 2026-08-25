@@ -1,4 +1,4 @@
-# Plan: ClickMasters Content Migration — International City Pages
+# Plan: Clickmasters Content Migration — International City Pages
 
 **Generated:** June 17, 2026
 **Purpose:** Execute international-city conversion following the case-studies / hire-pages / salary-guides / comparison-pages pattern
@@ -47,7 +47,7 @@ ClickMasters_P1119_custom_software_development_tallinn_fintech_focus.docx
 
 ```html
 <!-- Metadata Table -->
-<table>META TITLE: Custom Software Development London | ClickMasters UK
+<table>META TITLE: Custom Software Development London | Clickmasters UK
        META DESC: Custom Software Development in London...
        SLUG: /custom-software-development-london/</table>
 
@@ -64,10 +64,10 @@ ClickMasters_P1119_custom_software_development_tallinn_fintech_focus.docx
 <table><td>🏙️ London</td><td>🇬🇧 UK-Based Team</td><td>💷 £12,000–£200,000+</td><td>🔒 UK GDPR</td><td>⚖️ Zero IR35 Risk</td><td>⏱️ 8 Week Start</td></table>
 
 <!-- Direct Answer Table -->
-<table>Direct Answer: ClickMasters provides Custom Software Development services...</table>
+<table>Direct Answer: Clickmasters provides Custom Software Development services...</table>
 
 <!-- Why Choose Section -->
-<table><td>Why London Businesses Choose ClickMasters</td></table>
+<table><td>Why London Businesses Choose Clickmasters</td></table>
 <ul><li>Transparent GBP Pricing...</li><li>UK GDPR by Design...</li></ul>
 
 <!-- Ecosystem Section -->
@@ -79,7 +79,7 @@ ClickMasters_P1119_custom_software_development_tallinn_fintech_focus.docx
        <tbody><tr><td>Consultation / Discovery</td><td>...</td><td>Free</td></tr>...</tbody></table>
 
 <!-- Compliance Table -->
-<table><thead><tr><th>Compliance Area</th><th>Requirement</th><th>ClickMasters Implementation</th></tr></thead>
+<table><thead><tr><th>Compliance Area</th><th>Requirement</th><th>Clickmasters Implementation</th></tr></thead>
        <tbody>...</tbody></table>
 
 <!-- Process Steps -->
@@ -100,7 +100,7 @@ ClickMasters_P1119_custom_software_development_tallinn_fintech_focus.docx
 <table>Get a Free Custom Software Development Consultation in London...</table>
 
 <!-- Author Box -->
-<table>👤 AUTHOR | ClickMasters Custom Software Development Team — London</table>
+<table>👤 AUTHOR | Clickmasters Custom Software Development Team — London</table>
 
 <!-- Schema Table -->
 <table>JSON-LD Schema: LocalBusiness + Service + FAQPage...</table>
@@ -117,14 +117,14 @@ ClickMasters_P1119_custom_software_development_tallinn_fintech_focus.docx
 | `city` | `string` | Parsed city from filename | `"london"` |
 | `focus` | `string` | Optional sector focus from filename | `"healthtech"`, `"fintech"`, `"saas"` |
 | `title` | `string` | H1 tag text | `"Custom Software Development London — Bespoke Software Built for Your Business"` |
-| `metaTitle` | `string` | META TITLE | `"Custom Software Development London \| ClickMasters UK"` |
+| `metaTitle` | `string` | META TITLE | `"Custom Software Development London \| Clickmasters UK"` |
 | `metaDesc` | `string` | META DESC | `"Custom Software Development in London..."` |
 | `lastUpdated` | `string` | Header table | `"June 2025"` |
 | `readingTime` | `number` | Header table | `8` |
-| `writtenBy` | `string` | Header table | `"ClickMasters Custom Software Development Team"` |
+| `writtenBy` | `string` | Header table | `"Clickmasters Custom Software Development Team"` |
 | `reviewedBy` | `string` | Header table | `"James Whitmore, CTO — London client work"` |
 | `badges` | `array` | Badges table items | `["🏙️ London", "🇬🇧 UK-Based Team", "💷 £12,000–£200,000+"]` |
-| `directAnswer` | `string` | Text after "Direct Answer:" | `"ClickMasters provides Custom Software Development..."` |
+| `directAnswer` | `string` | Text after "Direct Answer:" | `"Clickmasters provides Custom Software Development..."` |
 | `benefits` | `array` | Why Choose list items | `["Transparent GBP Pricing", "UK GDPR by Design"]` |
 | `ecosystem` | `string` | Ecosystem section content | `"London is the UK's largest technology hub..."` |
 | `pricingTable` | `object` | Pricing table (headers + rows) | `{ headers: ["Service Type", ...], rows: [[...]] }` |
@@ -133,7 +133,7 @@ ClickMasters_P1119_custom_software_development_tallinn_fintech_focus.docx
 | `faqs` | `array` | Q&A pairs | `[{ question: "...", answer: "..." }]` |
 | `relatedPages` | `array` | Related guides links | `[{ title: "...", slug: "..." }]` |
 | `cta` | `string` | CTA table | `"Get a Free Consultation..."` |
-| `author` | `string` | Author box | `"ClickMasters Custom Software Development Team — London"` |
+| `author` | `string` | Author box | `"Clickmasters Custom Software Development Team — London"` |
 
 ---
 
@@ -185,18 +185,18 @@ export const cities = [
     city: "london",
     focus: "",
     title: "Custom Software Development London — Bespoke Software Built for Your Business",
-    metaTitle: "Custom Software Development London | ClickMasters UK",
+    metaTitle: "Custom Software Development London | Clickmasters UK",
     metaDesc: "Custom Software Development in London...",
     lastUpdated: "June 2025",
     readingTime: 8,
-    writtenBy: "ClickMasters Custom Software Development Team",
+    writtenBy: "Clickmasters Custom Software Development Team",
     reviewedBy: "James Whitmore, CTO — London client work",
     badges: ["🏙️ London", "🇬🇧 UK-Based Team", "💷 £12,000–£200,000+", "🔒 UK GDPR", "⚖️ Zero IR35 Risk", "⏱️ 8 Week Start"],
-    directAnswer: "ClickMasters provides Custom Software Development...",
+    directAnswer: "Clickmasters provides Custom Software Development...",
     benefits: ["Transparent GBP Pricing", "UK GDPR by Design"],
     ecosystem: "London is the UK's largest technology hub...",
     pricingTable: { headers: ["Service Type", "Description", "GBP Pricing"], rows: [["Consultation / Discovery", "...", "Free"], ...] },
-    complianceTable: { headers: ["Compliance Area", "Requirement", "ClickMasters Implementation"], rows: [...] },
+    complianceTable: { headers: ["Compliance Area", "Requirement", "Clickmasters Implementation"], rows: [...] },
     processSteps: [
       { step: 1, title: "Free London Consultation (Week 1)", description: "45-minute video call..." },
       { step: 2, title: "Technical Discovery", description: "For projects over £10K..." },
@@ -211,7 +211,7 @@ export const cities = [
       ...
     ],
     cta: "Get a Free Custom Software Development Consultation in London...",
-    author: "ClickMasters Custom Software Development Team — London"
+    author: "Clickmasters Custom Software Development Team — London"
   },
   // ... 96 city entries
 ];
@@ -275,7 +275,7 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 
 ---
 
-## 7. Styling Conventions (from ClickMasters Rule Guide)
+## 7. Styling Conventions (from Clickmasters Rule Guide)
 
 - **Typography:** Headings in `Sora` (Bold 700 / SemiBold 600), Body in `DM Sans` (Regular 400 / Medium 500)
 - **Colors:** Dark navy/deep background elements (`primary` / `primary-mid`), highlights/buttons in teal (`accent` -> `accent-hover`)
@@ -405,18 +405,18 @@ The source folder contains **multiple P-number revisions** of the same city page
   city: "london",
   focus: "",
   title: "Custom Software Development London — Bespoke Software Built for Your Business",
-  metaTitle: "Custom Software Development London | ClickMasters UK",
+  metaTitle: "Custom Software Development London | Clickmasters UK",
   metaDesc: "Custom Software Development in London...",
   lastUpdated: "June 2025",
   readingTime: 8,
-  writtenBy: "ClickMasters Custom Software Development Team",
+  writtenBy: "Clickmasters Custom Software Development Team",
   reviewedBy: "James Whitmore, CTO — London client work",
   badges: ["🏙️ London", "🇬🇧 UK-Based Team", "💷 £12,000–£200,000+", "🔒 UK GDPR", "⚖️ Zero IR35 Risk", "⏱️ 8 Week Start"],
-  directAnswer: "ClickMasters provides Custom Software Development...",
+  directAnswer: "Clickmasters provides Custom Software Development...",
   benefits: ["Transparent GBP Pricing", "UK GDPR by Design", ...],
   ecosystem: "London is the UK's largest technology hub...",
   pricingTable: { headers: ["Service Type", "Description", "GBP Pricing"], rows: [...] },
-  complianceTable: { headers: ["Compliance Area", "Requirement", "ClickMasters Implementation"], rows: [...] },
+  complianceTable: { headers: ["Compliance Area", "Requirement", "Clickmasters Implementation"], rows: [...] },
   processSteps: [
     { step: 1, title: "Free London Consultation (Week 1)", description: "45-minute video call..." },
     { step: 2, title: "Technical Discovery", description: "For projects over £10K..." },
@@ -431,7 +431,7 @@ The source folder contains **multiple P-number revisions** of the same city page
     ...
   ],
   cta: "Get a Free Custom Software Development Consultation in London...",
-  author: "ClickMasters Custom Software Development Team — London"
+  author: "Clickmasters Custom Software Development Team — London"
 }
 ```
 

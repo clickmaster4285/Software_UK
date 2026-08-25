@@ -10,7 +10,7 @@ export async function generateMetadata({ searchParams }) {
   const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
 
   const metadata = {
-    title: 'Technology Comparisons | ClickMasters UK',
+    title: 'Technology Comparisons | Clickmasters UK',
     description: 'Side-by-side comparisons of software development technologies, frameworks, and tools for UK businesses. Make informed tech stack decisions.',
     alternates: { canonical },
   };

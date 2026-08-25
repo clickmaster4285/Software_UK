@@ -18,11 +18,10 @@ function StarRating({ rating = 5 }) {
       {Array.from({ length: 5 }).map((_, i) => (
         <Star
           key={i}
-          className={`h-4 w-4 ${
-            i < rating
+          className={`h-4 w-4 ${i < rating
               ? "fill-accent text-accent"
               : "fill-border text-border"
-          }`}
+            }`}
           aria-hidden
         />
       ))}
@@ -40,16 +39,14 @@ export function TestimonialCard({ testimonial, isActive }) {
 
   return (
     <article
-      className={`relative mx-auto w-full max-w-sm px-2 py-4 transition-all duration-500 ${
-        isActive ? "scale-100" : "scale-[0.97] opacity-85"
-      }`}
+      className={`relative mx-auto w-full max-w-sm px-2 py-4 transition-all duration-500 ${isActive ? "scale-100" : "scale-[0.97] opacity-85"
+        }`}
     >
       <div
-        className={`relative flex h-full min-h-72 flex-col rounded-2xl border bg-white p-6 md:p-8 text-center shadow-[0_2px_16px_rgba(0,0,0,0.06)] transition-all duration-500 ${
-          isActive
+        className={`relative flex h-full min-h-72 flex-col rounded-2xl border bg-white p-6 md:p-8 text-center shadow-[0_2px_16px_rgba(0,0,0,0.06)] transition-all duration-500 ${isActive
             ? "border-accent/35 shadow-[0_12px_40px_rgba(0,0,0,0.1)]"
             : "border-border"
-        }`}
+          }`}
       >
         <Quote
           className="mx-auto mb-3 h-7 w-7 text-accent/80"
@@ -227,7 +224,7 @@ export function TestimonialsSection({ serviceTitle }) {
             {headline}
           </h2>
           <p className="mt-4 text-base text-text-body font-body leading-relaxed sm:text-lg">
-            Real feedback from teams who shipped products with ClickMasters — on time,
+            Real feedback from teams who shipped products with Clickmasters — on time,
             on budget, and built to scale.
           </p>
 
@@ -283,11 +280,10 @@ export function TestimonialsSection({ serviceTitle }) {
                     setIsAutoPlaying(false);
                   }}
                   aria-label={`Go to testimonial ${i + 1}`}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    i === activeIndex
+                  className={`h-2 rounded-full transition-all duration-300 ${i === activeIndex
                       ? "w-6 bg-accent"
                       : "w-2 bg-border hover:bg-accent/40"
-                  }`}
+                    }`}
                 />
               ))}
             </div>
