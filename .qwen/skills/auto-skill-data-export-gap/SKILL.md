@@ -98,7 +98,7 @@ export function getSectorsMeta() {
 3. Verify the helpers reference the correct array name (e.g., `caseStudies` vs `caseStudyListings`)
 4. Rebuild to confirm all imports resolve
 
-## Known Affected Files (ClickMasters)
+## Known Affected Files (Clickmasters)
 
 | Data File | Consumers | Required Exports |
 |-----------|-----------|-----------------|

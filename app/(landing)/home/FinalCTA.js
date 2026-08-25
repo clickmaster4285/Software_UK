@@ -36,61 +36,61 @@ export default function FinalCTA() {
           </h2>
           <p className="text-white/70 font-body text-lg md:text-xl max-w-5xl mx-auto leading-relaxed">
             Your next opportunity may begin with an idea, an existing product ready for improvement or a process that technology could make better.
-          ClickMasters brings software strategy and development expertise together to turn that requirement into software built with purpose and ready for what comes next.
-        </p>
-      </div>
-
-      {/* Bento Stats Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 max-w-4xl mx-auto">
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors group">
-          <div className="w-12 h-12 bg-accent/20 rounded-2xl flex items-center justify-center text-accent mb-6 mx-auto group-hover:scale-110 transition-transform duration-500">
-            <Zap className="w-6 h-6" />
-          </div>
-          <div className="font-heading font-bold text-3xl text-white mb-1">Agile</div>
-          <div className="text-white/40 font-body text-sm">Development Process</div>
+            Clickmasters brings software strategy and development expertise together to turn that requirement into software built with purpose and ready for what comes next.
+          </p>
         </div>
 
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors group">
-          <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-white/60 mb-6 mx-auto group-hover:scale-110 transition-transform duration-500">
-            <Clock className="w-6 h-6" />
+        {/* Bento Stats Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 max-w-4xl mx-auto">
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors group">
+            <div className="w-12 h-12 bg-accent/20 rounded-2xl flex items-center justify-center text-accent mb-6 mx-auto group-hover:scale-110 transition-transform duration-500">
+              <Zap className="w-6 h-6" />
+            </div>
+            <div className="font-heading font-bold text-3xl text-white mb-1">Agile</div>
+            <div className="text-white/40 font-body text-sm">Development Process</div>
           </div>
-          <div className="font-heading font-bold text-3xl text-white mb-1">On-time</div>
-          <div className="text-white/40 font-body text-sm">Guaranteed Delivery</div>
+
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors group">
+            <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-white/60 mb-6 mx-auto group-hover:scale-110 transition-transform duration-500">
+              <Clock className="w-6 h-6" />
+            </div>
+            <div className="font-heading font-bold text-3xl text-white mb-1">On-time</div>
+            <div className="text-white/40 font-body text-sm">Guaranteed Delivery</div>
+          </div>
+
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors group">
+            <div className="w-12 h-12 bg-accent/20 rounded-2xl flex items-center justify-center text-accent mb-6 mx-auto group-hover:scale-110 transition-transform duration-500">
+              <Headphones className="w-6 h-6" />
+            </div>
+            <div className="font-heading font-bold text-3xl text-white mb-1">24/7</div>
+            <div className="text-white/40 font-body text-sm">Technical Support</div>
+          </div>
         </div>
 
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-3xl hover:bg-white/10 transition-colors group">
-          <div className="w-12 h-12 bg-accent/20 rounded-2xl flex items-center justify-center text-accent mb-6 mx-auto group-hover:scale-110 transition-transform duration-500">
-            <Headphones className="w-6 h-6" />
-          </div>
-          <div className="font-heading font-bold text-3xl text-white mb-1">24/7</div>
-          <div className="text-white/40 font-body text-sm">Technical Support</div>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <Link
+            href="/contact"
+            className="group relative inline-flex items-center gap-2 px-10 py-5 bg-accent text-white font-heading font-bold rounded-2xl overflow-hidden shadow-2xl shadow-accent/20 hover:shadow-accent/40 transition-all hover:-translate-y-1 active:translate-y-0"
+          >
+            <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+            <span>Start Your Project</span>
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-500" />
+          </Link>
+
+          <Link
+            href="/projects"
+            className="px-10 py-5 bg-white/5 text-white font-heading font-bold rounded-2xl border border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm"
+          >
+            View Our Work
+          </Link>
+        </div>
+
+        <div className="mt-12 text-white/40 font-body text-sm flex items-center justify-center gap-4">
+          <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-accent" /> Free Consultation</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-white/10" />
+          <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-accent" /> NDA Protected</span>
         </div>
       </div>
-
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-        <Link
-          href="/contact"
-          className="group relative inline-flex items-center gap-2 px-10 py-5 bg-accent text-white font-heading font-bold rounded-2xl overflow-hidden shadow-2xl shadow-accent/20 hover:shadow-accent/40 transition-all hover:-translate-y-1 active:translate-y-0"
-        >
-          <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-          <span>Start Your Project</span>
-          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-500" />
-        </Link>
-
-        <Link
-          href="/projects"
-          className="px-10 py-5 bg-white/5 text-white font-heading font-bold rounded-2xl border border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm"
-        >
-          View Our Work
-        </Link>
-      </div>
-
-      <div className="mt-12 text-white/40 font-body text-sm flex items-center justify-center gap-4">
-        <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-accent" /> Free Consultation</span>
-        <span className="w-1.5 h-1.5 rounded-full bg-white/10" />
-        <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-accent" /> NDA Protected</span>
-      </div>
-    </div>
     </section >
   );
 }

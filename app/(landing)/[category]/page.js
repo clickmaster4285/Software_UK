@@ -18,11 +18,17 @@ export async function generateMetadata({ params }) {
       return { title: 'Service Not Found' };
    }
 
-   return metadataConfig.serviceDetail(
-      serviceData.title,
-      serviceData.description,
+   const metadata = metadataConfig.serviceDetail(
+      serviceData.metaTitle || serviceData.title,
+      serviceData.metaDescription || serviceData.description,
       category
    );
+
+   if (serviceData.metaKeywords) {
+      metadata.keywords = serviceData.metaKeywords;
+   }
+
+   return metadata;
 }
 
 import { getServicePage } from '@/data/sub-services';

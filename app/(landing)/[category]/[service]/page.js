@@ -52,12 +52,12 @@ export async function generateMetadata({ params }) {
   const canonical = `${siteConfig.url}${canonicalPath}`;
 
   return {
-    title: page.metaTitle ?? `${page.title} Services | ClickMasters`,
+    title: page.metaTitle ?? `${page.title} Services | Clickmasters`,
     description,
     keywords: page.metaKeywords || undefined,
     alternates: { canonical },
     openGraph: {
-      title: `${page.title} | ClickMasters`,
+      title: `${page.title} | Clickmasters`,
       description,
       url: canonical,
       images: [
@@ -65,13 +65,13 @@ export async function generateMetadata({ params }) {
           url: `${siteConfig.url}/og/services.webp`,
           width: 1200,
           height: 630,
-          alt: `${page.title} ClickMasters software services`,
+          alt: `${page.title} Clickmasters software services`,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${page.title} | ClickMasters`,
+      title: `${page.title} | Clickmasters`,
       description,
       images: [`${siteConfig.url}/og/services.webp`],
     },

@@ -46,7 +46,7 @@ export default function AboutPageContent() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/assets/aboutus.webp"
-            alt="About ClickMasters"
+            alt="About Clickmasters"
             fill
             priority
             className="object-cover"
@@ -65,7 +65,7 @@ export default function AboutPageContent() {
               About Clickmasters
             </h1>
             <p className="text-xl text-white/90 mb-10 leading-relaxed">
-              ClickMasters brings software strategy, product thinking and engineering together to turn ideas into useful digital products. We work with businesses that need more than code. They need a development partner capable of understanding what they want to achieve, shaping the right technical direction and building software around real users and practical requirements.
+              Clickmasters brings software strategy, product thinking and engineering together to turn ideas into useful digital products. We work with businesses that need more than code. They need a development partner capable of understanding what they want to achieve, shaping the right technical direction and building software around real users and practical requirements.
             </p>
             <p className="text-lg text-white/80 mb-10">
               From new digital products to existing systems ready for their next stage, our focus is simple: build technology with a clear purpose.
@@ -88,7 +88,7 @@ export default function AboutPageContent() {
           <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-accent/10 rounded-full blur-[120px]" />
           <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-[120px]" />
         </div>
-        
+
         <div className="container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -98,7 +98,7 @@ export default function AboutPageContent() {
               viewport={{ once: true }}
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-medium text-sm mb-6 border border-accent/20 shadow-[0_0_15px_rgba(var(--accent-rgb),0.2)]">
-                 <Target className="w-4 h-4" /> Our Philosophy
+                <Target className="w-4 h-4" /> Our Philosophy
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-8 leading-tight">
                 We Build Software With <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-600">Purpose</span>
@@ -130,11 +130,11 @@ export default function AboutPageContent() {
               <div className="absolute -inset-1 bg-gradient-to-r from-accent to-purple-600 rounded-[2rem] blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative bg-white/60 backdrop-blur-2xl border border-white/40 p-10 lg:p-14 rounded-[2rem] shadow-xl transition-all duration-500">
                 <h3 className="text-3xl font-bold font-heading mb-8 text-foreground">
-                  The Thinking Behind <br/><span className="text-accent">ClickMasters</span>
+                  The Thinking Behind <br /><span className="text-accent">Clickmasters</span>
                 </h3>
                 <div className="space-y-6 text-muted-foreground">
                   <p className="leading-relaxed">
-                    ClickMasters was built around a straightforward idea: software development should connect technical expertise with business understanding.
+                    Clickmasters was built around a straightforward idea: software development should connect technical expertise with business understanding.
                   </p>
                   <p className="leading-relaxed">
                     Building functionality is only part of a successful software project. The bigger challenge is deciding what should be built, why it matters and how the product should continue to develop as requirements change.
@@ -160,7 +160,7 @@ export default function AboutPageContent() {
             MISSION
           </div>
         </div>
-        
+
         <div className="container mx-auto max-w-[85vw] md:max-w-[75vw]  px-6 text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 30 }}
@@ -170,9 +170,9 @@ export default function AboutPageContent() {
             className="p-12 md:p-16 rounded-[3rem] bg-white/5 backdrop-blur-3xl border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)]"
           >
             <h2 className="text-4xl  md:text-5xl lg:text-6xl font-bold font-heading mb-8 text-white leading-tight">
-              Build Better <br/>
+              Build Better <br />
               <span className="text-accent">Digital Possibilities</span>
-            </h2> 
+            </h2>
             <p className="text-xl md:text-2xl text-white/90  leading-relaxed font-medium">
               Our mission is to help businesses use software as a practical driver of digital growth.
             </p>
@@ -217,20 +217,20 @@ export default function AboutPageContent() {
         <div className="container mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 relative z-10">
           <div className="text-center mb-20">
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.5 }}
-               viewport={{ once: true }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur-sm text-accent font-semibold text-sm mb-6 border border-accent/20 shadow-sm">
                 Methodology
               </span>
               <h2 className="text-4xl md:text-6xl font-bold font-heading mb-6 tracking-tight">
-                How We Think About <br/><span className="text-accent ">Software Development</span>
+                How We Think About <br /><span className="text-accent ">Software Development</span>
               </h2>
             </motion.div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(250px,auto)]">
             {[
               {
@@ -280,12 +280,12 @@ export default function AboutPageContent() {
               >
                 {/* Hover gradient background effect */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
-                
+
                 <div className={`mb-6 shrink-0 rounded-2xl flex items-center justify-center transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-lg relative ${item.horizontal ? 'w-20 h-20 md:w-24 md:h-24 md:rounded-3xl' : 'w-16 h-16'}`}>
                   <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} rounded-inherit`} />
                   <div className="relative z-10">{item.icon}</div>
                 </div>
-                
+
                 <div>
                   <h3 className={`font-bold font-heading mb-4 text-foreground ${item.horizontal ? 'text-2xl md:text-3xl' : 'text-xl'}`}>{item.title}</h3>
                   <p className={`text-muted-foreground leading-relaxed ${item.horizontal ? 'text-lg max-w-3xl' : ''}`}>{item.desc}</p>
@@ -303,10 +303,10 @@ export default function AboutPageContent() {
             <h2 className="text-4xl font-bold font-heading mb-6">The People Behind the Software</h2>
             <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
               Great digital products are created by people who understand both the technology and the purpose behind it.
-              The ClickMasters team brings together skills across software strategy, development, product design, applications, artificial intelligence, cloud technology and digital delivery.
+              The Clickmasters team brings together skills across software strategy, development, product design, applications, artificial intelligence, cloud technology and digital delivery.
               We believe strong projects are built through collaboration — between developers, designers, project teams and the people who understand the business best.
             </p>
-            <p className="text-xl font-bold mt-8">Your team understands the opportunity.<br/><span className="text-accent">Our team helps turn it into software.</span></p>
+            <p className="text-xl font-bold mt-8">Your team understands the opportunity.<br /><span className="text-accent">Our team helps turn it into software.</span></p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -317,7 +317,7 @@ export default function AboutPageContent() {
             ].map((member, i) => (
               <div key={i} className="bg-white rounded-3xl p-6 border border-black/10 shadow-sm text-center hover:-translate-y-1 transition-transform duration-300">
                 <div className="w-32 h-32 mx-auto bg-surface rounded-full mb-6 border-4 border-white shadow-md relative overflow-hidden">
-                   <Image src={member.image} alt={member.name} fill className="object-cover" />
+                  <Image src={member.image} alt={member.name} fill className="object-cover" />
                 </div>
                 <h4 className="font-bold text-lg mb-1">{member.name}</h4>
                 <p className="text-accent text-sm mb-4">{member.role}</p>
@@ -342,9 +342,9 @@ export default function AboutPageContent() {
             <span className="inline-flex items-center gap-2 text-accent text-xl font-medium mb-4">
               Our Differentiator
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4">What Makes ClickMasters Different?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4">What Makes Clickmasters Different?</h2>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
@@ -403,14 +403,14 @@ export default function AboutPageContent() {
       <section className="py-24 bg-background">
         <div className="container mx-auto max-w-6xl px-6 text-center">
           <motion.div
-             initial={{ opacity: 0, y: 30 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.6 }}
-             viewport={{ once: true }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold font-heading mb-6">Our Work Is the Best Introduction</h2>
             <p className="text-lg text-muted-foreground mb-4">
-              What we build says more about ClickMasters than a long list of claims.
+              What we build says more about Clickmasters than a long list of claims.
             </p>
             <p className="text-lg text-muted-foreground mb-4">
               Our case studies show how ideas and requirements are turned into practical software through strategy, design and engineering.
@@ -419,35 +419,35 @@ export default function AboutPageContent() {
               <p className="text-lg text-muted-foreground mb-8">
                 Each project starts differently, but the journey connects the same key elements:
               </p>
-              
+
               <div className="mt-8 flex flex-col md:flex-row flex-wrap justify-center items-center gap-3">
-                 {[
-                   { label: 'Challenge', icon: <Target className="w-4 h-4" /> },
-                   { label: 'Requirements', icon: <Compass className="w-4 h-4" /> },
-                   { label: 'Strategy', icon: <Lightbulb className="w-4 h-4" /> },
-                   { label: 'Software', icon: <Cpu className="w-4 h-4" /> },
-                   { label: 'Outcome', icon: <Rocket className="w-4 h-4" /> },
-                 ].map((step, idx, arr) => (
-                   <div key={step.label} className="flex flex-col md:flex-row items-center gap-3 group">
-                     <div className="flex items-center gap-3 px-5 py-3 bg-white border border-accent/20 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_20px_rgba(var(--accent-rgb),0.15)] hover:border-accent/40 hover:-translate-y-1 transition-all duration-300 text-sm md:text-base font-semibold text-foreground">
-                       <span className="p-1.5 rounded-xl bg-accent/10 text-accent">{step.icon}</span>
-                       {step.label}
-                     </div>
-                     {idx < arr.length - 1 && (
-                        <div className="hidden md:flex text-accent/30 group-hover:text-accent transition-colors">
-                           <ArrowRight className="w-5 h-5" />
-                        </div>
-                     )}
-                     {idx < arr.length - 1 && (
-                        <div className="md:hidden text-accent/30 group-hover:text-accent transition-colors my-1">
-                           <ArrowRight className="w-5 h-5 rotate-90" />
-                        </div>
-                     )}
-                   </div>
-                 ))}
+                {[
+                  { label: 'Challenge', icon: <Target className="w-4 h-4" /> },
+                  { label: 'Requirements', icon: <Compass className="w-4 h-4" /> },
+                  { label: 'Strategy', icon: <Lightbulb className="w-4 h-4" /> },
+                  { label: 'Software', icon: <Cpu className="w-4 h-4" /> },
+                  { label: 'Outcome', icon: <Rocket className="w-4 h-4" /> },
+                ].map((step, idx, arr) => (
+                  <div key={step.label} className="flex flex-col md:flex-row items-center gap-3 group">
+                    <div className="flex items-center gap-3 px-5 py-3 bg-white border border-accent/20 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_20px_rgba(var(--accent-rgb),0.15)] hover:border-accent/40 hover:-translate-y-1 transition-all duration-300 text-sm md:text-base font-semibold text-foreground">
+                      <span className="p-1.5 rounded-xl bg-accent/10 text-accent">{step.icon}</span>
+                      {step.label}
+                    </div>
+                    {idx < arr.length - 1 && (
+                      <div className="hidden md:flex text-accent/30 group-hover:text-accent transition-colors">
+                        <ArrowRight className="w-5 h-5" />
+                      </div>
+                    )}
+                    {idx < arr.length - 1 && (
+                      <div className="md:hidden text-accent/30 group-hover:text-accent transition-colors my-1">
+                        <ArrowRight className="w-5 h-5 rotate-90" />
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
-            
+
             <Link href="/case-studies">
               <Button className="btn-primary px-8 py-6 text-lg rounded-xl">
                 Explore Our Case Studies

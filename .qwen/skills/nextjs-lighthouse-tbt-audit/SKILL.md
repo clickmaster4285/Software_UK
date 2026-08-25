@@ -36,7 +36,7 @@ Before auditing performance, eliminate dead code that still gets compiled and bu
 4. Watch for "unused" comments that are outdated — trust grep results, not comments
 5. Watch for broken dynamic imports (e.g., `@/components/landingPage/` when no `landingPage/` directory exists)
 
-**Known dead code patterns in ClickMasters project:**
+**Known dead code patterns in Clickmasters project:**
 - `LandingHomeDeferredHeavy.jsx` — orchestrator with broken dynamic imports to non-existent `@/components/landingPage/` path; only referenced in a comment, never actually imported
 - Components listed as "unused" in comments within `main-service.jsx` — verify with grep before deleting
 

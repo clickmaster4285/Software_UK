@@ -147,10 +147,10 @@ export function HireDetailClient({ hirePage, relatedPages }) {
             <div className="max-w-7xl mx-auto">
               <span className="section-label mb-4">Why {cityName} Businesses Choose Us</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4">
-                Why Hire Through ClickMasters?
+                Why Hire Through Clickmasters?
               </h2>
               <p className="text-text-muted mb-10 max-w-2xl">
-                Every developer we place is an employee of ClickMasters — not a contractor.
+                Every developer we place is an employee of Clickmasters — not a contractor.
                 That distinction changes everything.
               </p>
 
@@ -228,7 +228,7 @@ export function HireDetailClient({ hirePage, relatedPages }) {
               </div>
 
               <p className="mt-4 text-xs text-text-muted text-center">
-                All developers are ClickMasters employees. Zero IR35 liability for your business.
+                All developers are Clickmasters employees. Zero IR35 liability for your business.
               </p>
             </div>
           </div>

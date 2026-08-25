@@ -1,4 +1,4 @@
-# Plan: ClickMasters Content Migration — Salary Guide Pages
+# Plan: Clickmasters Content Migration — Salary Guide Pages
 
 **Generated:** June 16, 2026
 **Purpose:** Execute salary-guide conversion following the case-studies and hire-pages pattern
@@ -50,7 +50,7 @@ From inspecting sample documents (`P1006_salary_security_engineer_salary_uk_2025
 <table>
   <tr>
     <td>
-      META TITLE: Security Engineer Salary UK 2025 | ClickMasters
+      META TITLE: Security Engineer Salary UK 2025 | Clickmasters
       META DESC: Security Engineer salary UK 2025...
       SLUG: /security-engineer-salary-uk-2025/
     </td>
@@ -60,7 +60,7 @@ From inspecting sample documents (`P1006_salary_security_engineer_salary_uk_2025
 <!-- Updated/Reading-Time Table -->
 <table>
   <tr>
-    <td>Last updated: August 2025 | Reading time: 7 min | Written by: ClickMasters HR Team | Reviewed by: ...</td>
+    <td>Last updated: August 2025 | Reading time: 7 min | Written by: Clickmasters HR Team | Reviewed by: ...</td>
   </tr>
 </table>
 
@@ -109,7 +109,7 @@ From inspecting sample documents (`P1006_salary_security_engineer_salary_uk_2025
 </ul>
 
 <!-- Author Box -->
-<table><tr><td>👤 AUTHOR</td><td>ClickMasters HR Team...</td></tr></table>
+<table><tr><td>👤 AUTHOR</td><td>Clickmasters HR Team...</td></tr></table>
 ```
 
 ---
@@ -123,13 +123,13 @@ We will map each Salary Guide document to the following schema:
 | `id`                | `string` | P-number from filename                           | `"P1006"`                                                           |
 | `slug`              | `string` | SLUG meta (cleaned of `/` boundaries)          | `"security-engineer-salary-uk-2025"`                                |
 | `title`             | `string` | H1 tag text                                      | `"Security Engineer Salary UK 2025"`                                |
-| `metaTitle`         | `string` | META TITLE from metadata table                   | `"Security Engineer Salary UK 2025 \| ClickMasters"`                 |
+| `metaTitle`         | `string` | META TITLE from metadata table                   | `"Security Engineer Salary UK 2025 \| Clickmasters"`                 |
 | `metaDesc`          | `string` | META DESC from metadata table                    | `"Security Engineer salary UK 2025."`                               |
 | `role`              | `string` | Parsed role name from filename                   | `"security-engineer"`                                               |
 | `year`              | `string` | Year from filename/metadata                      | `"2025"`                                                            |
 | `lastUpdated`       | `string` | Last updated date                                | `"August 2025"`                                                     |
 | `readingTime`       | `number` | Reading time in minutes                          | `7`                                                                 |
-| `writtenBy`         | `string` | Written by author name                           | `"ClickMasters HR Team"`                                            |
+| `writtenBy`         | `string` | Written by author name                           | `"Clickmasters HR Team"`                                            |
 | `reviewedBy`        | `string` | Reviewed by editor name                          | `"Reviewed annually"`                                               |
 | `badges`            | `array`  | Text items in badges table                       | `["💷 2025 GBP", "🇬🇧 UK", "⚖️ IR35"]`                           |
 | `directAnswer`      | `string` | Text following "Direct Answer: "                 | `"Security Engineer salaries range from..."`                        |
@@ -191,7 +191,7 @@ To avoid loading massive text content in listing grids:
 
 ## 6. Technical Details
 
-### Styling Conventions (from ClickMasters Rule Guide)
+### Styling Conventions (from Clickmasters Rule Guide)
 
 * **Typography:** Headings in `Sora` (Bold 700 / SemiBold 600), Body in `DM Sans` (Regular 400 / Medium 500).
 * **Colors:** Dark navy/deep background elements (`primary` / `primary-mid`), highlights/buttons in teal (`accent` -> `accent-hover`).
@@ -292,7 +292,7 @@ The source folder contains **multiple P-number revisions** of the same salary gu
   role: "python-developer",
   year: "2025",
   title: "Python Developer Salary UK 2025 — Complete Guide",
-  metaTitle: "Python Developer Salary UK 2025 | ClickMasters",
+  metaTitle: "Python Developer Salary UK 2025 | Clickmasters",
   metaDesc: "Python Developer salary UK 2025...",
   badges: ["🇬🇧 UK Market Data", "📊 2025 Benchmarks", "💷 GBP Figures"],
   directAnswer: "The average Python Developer salary...",

@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: 'ClickMasters',
-  legalName: 'ClickMasters Software Development Company',
+  name: 'Clickmasters',
+  legalName: 'Clickmasters Software Development Company',
   url: 'https://clickmasterssoftwaredevelopmentcompany.co.uk',
-  description: 'ClickMasters is a software development company providing software development services that build digital products, improve systems and drive digital growth.',
+  description: 'Clickmasters is a software development company providing software development services that build digital products, improve systems and drive digital growth.',
   logo: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/cm-logos/logo.webp',
   email: 'sale@clickmasterssoftwaredevelopmentcompany.co.uk',
   telephone: '+44798856086',
@@ -17,10 +17,10 @@ export const siteConfig = {
 
 export const metadataConfig = {
   serviceDetail: (title, description, slug) => ({
-    title: `${title} | ClickMasters`,
+    title: `${title} | Clickmasters`,
     description: description,
     openGraph: {
-      title: `${title} | ClickMasters`,
+      title: `${title} | Clickmasters`,
       description: description,
       url: `${siteConfig.url}/${slug}`,
       siteName: siteConfig.name,
@@ -29,7 +29,7 @@ export const metadataConfig = {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${title} | ClickMasters`,
+      title: `${title} | Clickmasters`,
       description: description,
     },
     alternates: {
@@ -111,7 +111,7 @@ export function webPageSchema(name, description, url) {
 // 4. FAQPage Schema
 export function faqSchema(items, url) {
   if (!items || items.length === 0) return null;
-  
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -122,12 +122,12 @@ export function faqSchema(items, url) {
       acceptedAnswer: { '@type': 'Answer', text: item.answer },
     })),
   };
-  
+
   if (url) {
     schema['@id'] = `${toAbsoluteUrl(url)}/#faq`;
     schema.url = `${toAbsoluteUrl(url)}/#faq`;
   }
-  
+
   return schema;
 }
 
@@ -148,14 +148,14 @@ export function serviceSchema(name, description, url, areaServed = null, fragmen
       '@id': `${toAbsoluteUrl(url)}/#webpage`,
     },
   };
-  
+
   if (areaServed) {
     schema.areaServed = {
       '@type': 'Country',
       name: areaServed,
     };
   }
-  
+
   return schema;
 }
 
@@ -176,7 +176,7 @@ export function articleSchema({ title, description, url, author, datePublished, 
       '@id': `${siteConfig.url}/#organization`,
     },
   };
-  
+
   if (author) {
     schema.author = {
       '@type': 'Person',
@@ -187,11 +187,11 @@ export function articleSchema({ title, description, url, author, datePublished, 
       '@id': `${siteConfig.url}/#organization`,
     };
   }
-  
+
   if (datePublished) schema.datePublished = datePublished;
   if (dateModified) schema.dateModified = dateModified;
   if (image) schema.image = image;
-  
+
   return schema;
 }
 
@@ -225,8 +225,8 @@ export function contactPageSchema() {
     '@type': 'ContactPage',
     '@id': `${siteConfig.url}/contact/#webpage`,
     url: `${siteConfig.url}/contact`,
-    name: 'Contact ClickMasters',
-    description: 'Get in touch with ClickMasters for your next software development project.',
+    name: 'Contact Clickmasters',
+    description: 'Get in touch with Clickmasters for your next software development project.',
     mainEntity: {
       '@type': 'LocalBusiness',
       '@id': `${siteConfig.url}/#localbusiness`,
@@ -250,8 +250,8 @@ export function aboutPageSchema() {
     '@type': 'AboutPage',
     '@id': `${siteConfig.url}/about/#webpage`,
     url: `${siteConfig.url}/about`,
-    name: 'About ClickMasters',
-    description: 'Learn about ClickMasters, a premier software development company.',
+    name: 'About Clickmasters',
+    description: 'Learn about Clickmasters, a premier software development company.',
     mainEntity: {
       '@id': `${siteConfig.url}/#organization`,
     },
@@ -265,7 +265,7 @@ export const homepageFaqSchema = faqSchema([
     answer: 'A software development company helps businesses plan, design, build, test and improve digital products such as custom software, websites, applications, SaaS platforms and AI-powered systems.',
   },
   {
-    question: 'What software development services does ClickMasters provide?',
+    question: 'What software development services does Clickmasters provide?',
     answer: 'Our software development services include custom software development, website development, application development, AI software development, SaaS development, enterprise software development and cloud development.',
   },
   {

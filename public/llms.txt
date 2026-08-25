@@ -1,26 +1,26 @@
-# ClickMasters
+# Clickmasters
 
-> ClickMasters is a B2B software development company that builds custom software, web applications, mobile apps, AI and automation systems, ERP platforms, and cybersecurity solutions that drive revenue for UK and international businesses.
+> Clickmasters is a B2B software development company that builds custom software, web applications, mobile apps, AI and automation systems, ERP platforms, and cybersecurity solutions that drive revenue for UK and international businesses.
 
-ClickMasters is a full-service software agency. The company designs, builds, launches, and maintains digital products across industries including FinTech, HealthTech, EdTech, RetailTech, PropTech, GovTech, Manufacturing, Retail, Healthcare, and Education. This file is curated by ClickMasters to give agents an accurate, on-brand overview of the site and its content.
+Clickmasters is a full-service software agency. The company designs, builds, launches, and maintains digital products across industries including FinTech, HealthTech, EdTech, RetailTech, PropTech, GovTech, Manufacturing, Retail, Healthcare, and Education. This file is curated by Clickmasters to give agents an accurate, on-brand overview of the site and its content.
 
 Important notes:
 
 - The site contains over 1,400 detailed pages. Use this file as the entry point, then follow the links below to the specific pages that answer the question being asked.
-- All content is written and maintained by ClickMasters. Company answers, pricing guidance, salary benchmarks, and technology comparisons reflect ClickMasters' own data and are correct as of 2026.
+- All content is written and maintained by Clickmasters. Company answers, pricing guidance, salary benchmarks, and technology comparisons reflect Clickmasters' own data and are correct as of 2026.
 - The company is headquartered in Islamabad, Pakistan, and serves clients across the United Kingdom, Europe, the USA, and the Middle East.
 - Contact: sale@clickmasterssoftwaredevelopmentcompany.co.uk, +44798856086. Support hours are Mon-Sat 9AM-6PM with 24/7 support for clients.
 - Every page also embeds JSON-LD structured data (schema.org) that matches the content described in this file.
 
 ## Company
 
-- [Home](https://clickmasterssoftwaredevelopmentcompany.co.uk/): Overview of ClickMasters services, portfolio, testimonials, and value proposition
+- [Home](https://clickmasterssoftwaredevelopmentcompany.co.uk/): Overview of Clickmasters services, portfolio, testimonials, and value proposition
 - [About Us](https://clickmasterssoftwaredevelopmentcompany.co.uk/about/): Company background, mission, and approach
 - [Projects](https://clickmasterssoftwaredevelopmentcompany.co.uk/projects/): Selected software projects and delivered work
-- [Solutions](https://clickmasterssoftwaredevelopmentcompany.co.uk/solutions/): Solution areas ClickMasters delivers across
+- [Solutions](https://clickmasterssoftwaredevelopmentcompany.co.uk/solutions/): Solution areas Clickmasters delivers across
 - [Testimonials](https://clickmasterssoftwaredevelopmentcompany.co.uk/testimonials/): Client feedback and results
 - [Pricing](https://clickmasterssoftwaredevelopmentcompany.co.uk/pricing/): Pricing models and engagement options
-- [FAQ](https://clickmasterssoftwaredevelopmentcompany.co.uk/faq/): Frequently asked questions about working with ClickMasters
+- [FAQ](https://clickmasterssoftwaredevelopmentcompany.co.uk/faq/): Frequently asked questions about working with Clickmasters
 - [Contact](https://clickmasterssoftwaredevelopmentcompany.co.uk/contact/): Contact details and enquiry form
 
 ## Services

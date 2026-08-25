@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
   const study = getCaseStudyBySlug(slug);
 
   if (!study) {
-    return { title: 'Case Study Not Found | ClickMasters' };
+    return { title: 'Case Study Not Found | Clickmasters' };
   }
 
   return {
@@ -45,7 +45,7 @@ export default async function CaseStudyDetailPage({ params }) {
     title: study.title,
     description: study.metaDesc || study.challenge?.substring(0, 200),
     url: `/case-studies/${slug}`,
-    author: study.writtenBy || 'ClickMasters',
+    author: study.writtenBy || 'Clickmasters',
     dateModified: study.lastUpdated || undefined,
   });
 
@@ -58,23 +58,23 @@ export default async function CaseStudyDetailPage({ params }) {
   // Add review structured data if client quote exists
   const reviewJsonLd = study.clientQuote
     ? {
-        '@context': 'https://schema.org',
-        '@type': 'Review',
-        itemReviewed: {
-          '@type': 'Organization',
-          name: siteConfig.legalName || siteConfig.name,
-        },
-        author: {
-          '@type': 'Person',
-          name: study.writtenBy || 'Client',
-        },
-        reviewBody: study.clientQuote,
-        reviewRating: {
-          '@type': 'Rating',
-          ratingValue: '5',
-          bestRating: '5',
-        },
-      }
+      '@context': 'https://schema.org',
+      '@type': 'Review',
+      itemReviewed: {
+        '@type': 'Organization',
+        name: siteConfig.legalName || siteConfig.name,
+      },
+      author: {
+        '@type': 'Person',
+        name: study.writtenBy || 'Client',
+      },
+      reviewBody: study.clientQuote,
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+        bestRating: '5',
+      },
+    }
     : null;
 
   return (

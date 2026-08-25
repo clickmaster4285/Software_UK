@@ -1,4 +1,4 @@
-# Plan: ClickMasters Content Migration — Glossary Pages
+# Plan: Clickmasters Content Migration — Glossary Pages
 
 **Generated:** June 19, 2026
 **Status:** ✅ Complete — build verified June 20, 2026
@@ -46,14 +46,14 @@ ClickMasters_P109_glossary_saas_definition.docx
 ```html
 <!-- Meta table -->
 <table>
-  META TITLE: What is IR35? UK Definition & Guide | ClickMasters
+  META TITLE: What is IR35? UK Definition & Guide | Clickmasters
   META DESC: IR35 explained for UK software developers and business owners...
   SLUG: /glossary/ir35-definition/
 </table>
 
 <!-- Header table -->
 <table>
-  Last updated: June 2025 | Reading time: 4 min | Written by: ClickMasters Technical Team | Reviewed by: James Whitmore, CTO
+  Last updated: June 2025 | Reading time: 4 min | Written by: Clickmasters Technical Team | Reviewed by: James Whitmore, CTO
 </table>
 
 <!-- Breadcrumb -->
@@ -128,11 +128,11 @@ ClickMasters_P109_glossary_saas_definition.docx
 | `term` | `string` | Parsed from filename (between `glossary_` and `_definition`) | `"ir35"` |
 | `termDisplay` | `string` | Formatted term for display | `"IR35"` |
 | `title` | `string` | H1 heading | `"What is IR35? — UK Software Development Guide"` |
-| `metaTitle` | `string` | META TITLE | `"What is IR35? UK Definition & Guide \| ClickMasters"` |
+| `metaTitle` | `string` | META TITLE | `"What is IR35? UK Definition & Guide \| Clickmasters"` |
 | `metaDesc` | `string` | META DESC | `"IR35 explained for UK software developers..."` |
 | `lastUpdated` | `string` | Header table | `"June 2025"` |
 | `readingTime` | `number` | Header table | `4` |
-| `writtenBy` | `string` | Header table | `"ClickMasters Technical Team"` |
+| `writtenBy` | `string` | Header table | `"Clickmasters Technical Team"` |
 | `reviewedBy` | `string` | Header table | `"James Whitmore, CTO"` |
 | `directAnswer` | `string` | Text after "Direct Answer:" | `"IR35 (Off-Payroll Working Rules) is UK tax legislation..."` |
 | `ukContext` | `string` | Section after "UK Context:" label | `"IR35 — UK Context (paragraph text)"` |

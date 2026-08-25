@@ -294,7 +294,7 @@ export function SalaryGuideDetailClient({ guide, relatedGuides }) {
                 IR35 Tax Position
               </h4>
               <p className="text-text-body text-sm leading-relaxed font-body">
-                Day rates assume outside IR35. Inside IR35 contractor day rates in the UK are typically 15–25% higher to compensate for the lack of tax efficiency and additional payroll costs. ClickMasters engineers are directly employed by us, representing **zero IR35 risk** for clients.
+                Day rates assume outside IR35. Inside IR35 contractor day rates in the UK are typically 15–25% higher to compensate for the lack of tax efficiency and additional payroll costs. Clickmasters engineers are directly employed by us, representing **zero IR35 risk** for clients.
               </p>
             </div>
           </div>

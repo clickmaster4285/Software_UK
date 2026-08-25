@@ -3,12 +3,12 @@ import { industries } from '@/data/industries';
 import { siteConfig } from '@/app/metadata-config';
 
 export const metadata = {
-  title: 'Industries We Serve | ClickMasters Software Development',
+  title: 'Industries We Serve | Clickmasters Software Development',
   description:
-    'ClickMasters builds custom software for fintech, healthtech, govtech, edtech, saas, and 8 other UK industries. Compliance-ready, scalable solutions.',
+    'Clickmasters builds custom software for fintech, healthtech, govtech, edtech, saas, and 8 other UK industries. Compliance-ready, scalable solutions.',
   alternates: { canonical: `${siteConfig.url}/industries` },
   openGraph: {
-    title: 'Industries We Serve | ClickMasters',
+    title: 'Industries We Serve | Clickmasters',
     description:
       'Custom software development for 14 UK industries. Fintech, healthtech, govtech, edtech, saas and more.',
     url: `${siteConfig.url}/industries`,

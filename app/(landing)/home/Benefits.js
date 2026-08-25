@@ -73,11 +73,11 @@ export default function Benefits() {
       <div className="max-w-full lg:max-w-[90vw] mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-primary text-[11px] font-medium uppercase tracking-[0.08em] mb-4 border border-border">
-            <span>Why ClickMasters</span>
+            <span>Why Clickmasters</span>
           </div>
           <h2 className="font-heading font-bold text-3xl md:text-5xl text-primary mb-4 tracking-tight">
             Why Choose{" "}
-            <span className="text-accent">ClickMasters </span>as Your{" "}
+            <span className="text-accent">Clickmasters </span>as Your{" "}
             <span className="text-accent">Software Development Company?</span>
           </h2>
           <p className="text-text-body font-body max-w-4xl mx-auto text-lg leading-relaxed">

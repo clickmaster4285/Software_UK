@@ -17,7 +17,7 @@ const services = [
     "metaDesc": "UK API development specialists. REST, GraphQL, HMRC MTD, NHS Spine, Companies House. From £6,000. UK GDPR compliant. OpenAPI 3.0 documentation standard. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters API Team",
+    "writtenBy": "Clickmasters API Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK-Based Team",
@@ -27,7 +27,7 @@ const services = [
       "🔒 OWASP Security",
       "📋 OpenAPI 3.0"
     ],
-    "directAnswer": "API development in the UK costs between £6,000 for a simple integration and £40,000+ for a complex multi-endpoint API with authentication, documentation, and government integrations. An API (Application Programming Interface) is a defined interface that allows different software systems to communicate. ClickMasters builds REST and GraphQL APIs, integrates UK government APIs (HMRC MTD, NHS Spine, Companies House, GOV.UK Notify), and delivers production-ready APIs with OpenAPI 3.0 documentation, OAuth2 security, and UK GDPR-compliant data handling.",
+    "directAnswer": "API development in the UK costs between £6,000 for a simple integration and £40,000+ for a complex multi-endpoint API with authentication, documentation, and government integrations. An API (Application Programming Interface) is a defined interface that allows different software systems to communicate. Clickmasters builds REST and GraphQL APIs, integrates UK government APIs (HMRC MTD, NHS Spine, Companies House, GOV.UK Notify), and delivers production-ready APIs with OpenAPI 3.0 documentation, OAuth2 security, and UK GDPR-compliant data handling.",
     "sections": [
       {
         "heading": "REST vs GraphQL — Which Is Right for Your Project?",
@@ -43,11 +43,11 @@ const services = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "ClickMasters has deep experience integrating UK government APIs — a specialisation that zero other agencies prominently feature. Here are the most common:"
+            "text": "Clickmasters has deep experience integrating UK government APIs — a specialisation that zero other agencies prominently feature. Here are the most common:"
           },
           {
             "bold": "HMRC Making Tax Digital (MTD)",
-            "text": "MTD for VAT (mandatory) and MTD for Income Tax (from 2026). ClickMasters builds bridging software and direct MTD integrations. HMRC API: OAuth 2.0 authorisation, JSON payloads, sandbox environment for testing. Key challenge: robust error handling and fallback for HMRC API outages."
+            "text": "MTD for VAT (mandatory) and MTD for Income Tax (from 2026). Clickmasters builds bridging software and direct MTD integrations. HMRC API: OAuth 2.0 authorisation, JSON payloads, sandbox environment for testing. Key challenge: robust error handling and fallback for HMRC API outages."
           },
           {
             "bold": "Companies House API",
@@ -63,7 +63,7 @@ const services = [
           },
           {
             "bold": "Open Banking OBIE APIs",
-            "text": "PSD2-mandated APIs from UK high street banks. AISPs can access account information; PISPs can initiate payments. Requires FCA authorisation. ClickMasters has integrated TrueLayer, Plaid, and direct bank connections."
+            "text": "PSD2-mandated APIs from UK high street banks. AISPs can access account information; PISPs can initiate payments. Requires FCA authorisation. Clickmasters has integrated TrueLayer, Plaid, and direct bank connections."
           },
           {
             "bold": "GOV.UK Pay",
@@ -76,7 +76,7 @@ const services = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "Every ClickMasters API is built against the OWASP API Security Top 10 and UK GDPR requirements. Key security controls:"
+            "text": "Every Clickmasters API is built against the OWASP API Security Top 10 and UK GDPR requirements. Key security controls:"
           },
           {
             "bold": "Authentication & Authorisation",
@@ -84,7 +84,7 @@ const services = [
           },
           {
             "bold": "Rate Limiting",
-            "text": "All ClickMasters APIs include rate limiting by default — protecting against abuse, DDoS, and accidental runaway processes. Token bucket algorithm for smooth handling."
+            "text": "All Clickmasters APIs include rate limiting by default — protecting against abuse, DDoS, and accidental runaway processes. Token bucket algorithm for smooth handling."
           },
           {
             "bold": "Input Validation",
@@ -150,7 +150,7 @@ const services = [
       },
       {
         "question": "How do you document APIs?",
-        "answer": "ClickMasters uses OpenAPI 3.0 (the industry standard, formerly Swagger) for all API documentation. This generates: interactive API documentation (Swagger UI or Redoc), machine-readable specification files for code generation, Postman collections for testing. Documentation is part of the deliverable — not an afterthought. For external developer APIs, we also recommend a developer portal with sandbox environment and usage examples."
+        "answer": "Clickmasters uses OpenAPI 3.0 (the industry standard, formerly Swagger) for all API documentation. This generates: interactive API documentation (Swagger UI or Redoc), machine-readable specification files for code generation, Postman collections for testing. Documentation is part of the deliverable — not an afterthought. For external developer APIs, we also recommend a developer portal with sandbox environment and usage examples."
       },
       {
         "question": "How long does API development take?",
@@ -158,11 +158,11 @@ const services = [
       },
       {
         "question": "How do you integrate with HMRC Making Tax Digital?",
-        "answer": "HMRC MTD uses an OAuth 2.0 authorisation flow — your users grant your software permission to submit on their behalf. The API uses JSON payloads over HTTPS. ClickMasters has experience with the MTD VAT API (mandatory) and is preparing for MTD Income Tax (2026). We build against HMRC's sandbox first, test thoroughly, and maintain the integration as HMRC updates their API versions. We also handle the client credential management and token refresh flow."
+        "answer": "HMRC MTD uses an OAuth 2.0 authorisation flow — your users grant your software permission to submit on their behalf. The API uses JSON payloads over HTTPS. Clickmasters has experience with the MTD VAT API (mandatory) and is preparing for MTD Income Tax (2026). We build against HMRC's sandbox first, test thoroughly, and maintain the integration as HMRC updates their API versions. We also handle the client credential management and token refresh flow."
       },
       {
         "question": "Can you build an API that connects to NHS systems?",
-        "answer": "Yes — but NHS integrations require NHS Digital supplier agreements, DSP Toolkit compliance, and (for most NHS Spine and GP Connect APIs) going through HMRC's API management platform with appropriate authorisation. ClickMasters has experience with NHS Login (patient identity), GP Connect (record access), and NHS Notify. We can advise on the regulatory pathway and technical requirements for your specific integration."
+        "answer": "Yes — but NHS integrations require NHS Digital supplier agreements, DSP Toolkit compliance, and (for most NHS Spine and GP Connect APIs) going through HMRC's API management platform with appropriate authorisation. Clickmasters has experience with NHS Login (patient identity), GP Connect (record access), and NHS Notify. We can advise on the regulatory pathway and technical requirements for your specific integration."
       }
     ]
   },
@@ -175,7 +175,7 @@ const services = [
     "metaDesc": "UK DevOps specialists. CI/CD pipelines, Terraform IaC, Kubernetes, SRE. From £4,000. Cyber Essentials infra alignment. UK data residency. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 11,
-    "writtenBy": "ClickMasters DevOps Team",
+    "writtenBy": "Clickmasters DevOps Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Team",
@@ -185,10 +185,10 @@ const services = [
       "🔒 Cyber Essentials",
       "☁️ AWS & Azure UK"
     ],
-    "directAnswer": "DevOps is the practice of combining software development and IT operations to deliver software faster and more reliably. CI/CD (Continuous Integration / Continuous Deployment) is the automation pipeline that builds, tests, and deploys your code automatically. UK businesses need DevOps expertise to reduce deployment risk, increase release frequency, and maintain security compliance (Cyber Essentials requires patch management — CI/CD makes this automatic). ClickMasters builds DevOps pipelines from £4,000, using AWS or Azure UK regions to maintain UK GDPR data residency.",
+    "directAnswer": "DevOps is the practice of combining software development and IT operations to deliver software faster and more reliably. CI/CD (Continuous Integration / Continuous Deployment) is the automation pipeline that builds, tests, and deploys your code automatically. UK businesses need DevOps expertise to reduce deployment risk, increase release frequency, and maintain security compliance (Cyber Essentials requires patch management — CI/CD makes this automatic). Clickmasters builds DevOps pipelines from £4,000, using AWS or Azure UK regions to maintain UK GDPR data residency.",
     "sections": [
       {
-        "heading": "What ClickMasters DevOps Covers",
+        "heading": "What Clickmasters DevOps Covers",
         "paragraphs": [
           {
             "bold": "CI/CD Pipeline Setup",
@@ -196,7 +196,7 @@ const services = [
           },
           {
             "bold": "Infrastructure as Code (Terraform)",
-            "text": "All infrastructure defined in version-controlled Terraform. No manual server configuration. Reproducible environments. Drift detection. Module-based architecture for reuse. ClickMasters manages Terraform state securely (remote state in S3 or Azure Storage with encryption and locking)."
+            "text": "All infrastructure defined in version-controlled Terraform. No manual server configuration. Reproducible environments. Drift detection. Module-based architecture for reuse. Clickmasters manages Terraform state securely (remote state in S3 or Azure Storage with encryption and locking)."
           },
           {
             "bold": "Kubernetes Orchestration",
@@ -260,7 +260,7 @@ const services = [
       },
       {
         "question": "Do you use Terraform or other IaC tools?",
-        "answer": "ClickMasters uses Terraform as our primary Infrastructure as Code tool for both AWS and Azure. We prefer Terraform for its provider ecosystem, state management, and wide adoption. For simpler projects on a single cloud, we may use AWS CDK (TypeScript) or Azure Bicep — with appropriate justification. We don't use manual infrastructure configuration on any production project."
+        "answer": "Clickmasters uses Terraform as our primary Infrastructure as Code tool for both AWS and Azure. We prefer Terraform for its provider ecosystem, state management, and wide adoption. For simpler projects on a single cloud, we may use AWS CDK (TypeScript) or Azure Bicep — with appropriate justification. We don't use manual infrastructure configuration on any production project."
       }
     ]
   },
@@ -273,7 +273,7 @@ const services = [
     "metaDesc": "UK QA specialists. Automated testing with Selenium, Playwright. Performance testing. OWASP security testing. WCAG 2.1 accessibility. From £3,500. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters QA Team",
+    "writtenBy": "Clickmasters QA Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK-Based Team",
@@ -283,7 +283,7 @@ const services = [
       "⚡ Performance Testing",
       "💷 From £3,500"
     ],
-    "directAnswer": "QA (Quality Assurance) and software testing services in the UK cost from £3,500 for a project-based audit to £15,000/month for ongoing QA retainers. ClickMasters provides: automated regression testing (Selenium, Playwright, Cypress), manual exploratory testing, OWASP Top 10 security testing, WCAG 2.1 AA accessibility testing (legally required under UK Equality Act 2010 and PSBAR for public sector), and performance/load testing. We integrate testing directly into CI/CD pipelines so quality gates are enforced automatically on every code change.",
+    "directAnswer": "QA (Quality Assurance) and software testing services in the UK cost from £3,500 for a project-based audit to £15,000/month for ongoing QA retainers. Clickmasters provides: automated regression testing (Selenium, Playwright, Cypress), manual exploratory testing, OWASP Top 10 security testing, WCAG 2.1 AA accessibility testing (legally required under UK Equality Act 2010 and PSBAR for public sector), and performance/load testing. We integrate testing directly into CI/CD pipelines so quality gates are enforced automatically on every code change.",
     "sections": [
       {
         "heading": "Our QA Services — What's Included",
@@ -302,7 +302,7 @@ const services = [
           },
           {
             "bold": "WCAG 2.1 Accessibility Testing",
-            "text": "WCAG 2.1 AA compliance is legally required for UK public sector websites (PSBAR 2018) and strongly recommended for all businesses under the Equality Act 2010. ClickMasters performs: automated accessibility scanning (Axe, Lighthouse), manual screen reader testing (NVDA, VoiceOver), keyboard-only navigation testing, and colour contrast verification. We provide a remediation report with prioritised fixes."
+            "text": "WCAG 2.1 AA compliance is legally required for UK public sector websites (PSBAR 2018) and strongly recommended for all businesses under the Equality Act 2010. Clickmasters performs: automated accessibility scanning (Axe, Lighthouse), manual screen reader testing (NVDA, VoiceOver), keyboard-only navigation testing, and colour contrast verification. We provide a remediation report with prioritised fixes."
           },
           {
             "bold": "Performance & Load Testing",
@@ -346,11 +346,11 @@ const services = [
     "faqs": [
       {
         "question": "What is the difference between QA and testing?",
-        "answer": "QA (Quality Assurance) is the broader process of ensuring quality is built into software development — standards, processes, code review gates, definition of done criteria. Software Testing is the specific activity of verifying that software meets requirements and finding bugs. At ClickMasters, we use the term interchangeably in common usage, but our QA practice includes both the process discipline and the hands-on testing work."
+        "answer": "QA (Quality Assurance) is the broader process of ensuring quality is built into software development — standards, processes, code review gates, definition of done criteria. Software Testing is the specific activity of verifying that software meets requirements and finding bugs. At Clickmasters, we use the term interchangeably in common usage, but our QA practice includes both the process discipline and the hands-on testing work."
       },
       {
         "question": "Is WCAG 2.1 accessibility testing legally required in the UK?",
-        "answer": "For UK public sector bodies, WCAG 2.1 AA compliance is legally required under the Public Sector Bodies Accessibility Regulations 2018 (PSBAR). For private sector companies, the Equality Act 2010 requires that you don't discriminate against disabled users in providing services — and an inaccessible website arguably does just that. While there's no explicit private sector WCAG mandate, the ICO and the Equality and Human Rights Commission have signalled that accessibility compliance is expected. ClickMasters recommends WCAG 2.1 AA as the target for all publicly accessible software."
+        "answer": "For UK public sector bodies, WCAG 2.1 AA compliance is legally required under the Public Sector Bodies Accessibility Regulations 2018 (PSBAR). For private sector companies, the Equality Act 2010 requires that you don't discriminate against disabled users in providing services — and an inaccessible website arguably does just that. While there's no explicit private sector WCAG mandate, the ICO and the Equality and Human Rights Commission have signalled that accessibility compliance is expected. Clickmasters recommends WCAG 2.1 AA as the target for all publicly accessible software."
       },
       {
         "question": "How do you integrate automated testing into our CI/CD pipeline?",
@@ -371,7 +371,7 @@ const services = [
     "metaDesc": "UK legacy software modernisation specialists. COBOL to cloud, monolith to microservices, zero-downtime migration. From £25,000. UK GDPR data migration compliance. Free assessment.",
     "lastUpdated": "June 2025",
     "readingTime": 12,
-    "writtenBy": "ClickMasters Engineering Team",
+    "writtenBy": "Clickmasters Engineering Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Team",
@@ -381,7 +381,7 @@ const services = [
       "💷 From £25,000",
       "📋 ISO 27001 Aligned"
     ],
-    "directAnswer": "Legacy system modernisation in the UK costs between £25,000 for a focused module rewrite and £150,000+ for a full enterprise platform migration. A legacy system is any software that is difficult or impossible to change safely — typically due to age, technical debt, or outdated technology. Modernisation restores your ability to move fast, reduces maintenance cost, and ensures compliance with current UK GDPR and security standards. ClickMasters uses proven migration patterns — including the strangler fig — to modernise systems incrementally without stopping your business or risking data loss.",
+    "directAnswer": "Legacy system modernisation in the UK costs between £25,000 for a focused module rewrite and £150,000+ for a full enterprise platform migration. A legacy system is any software that is difficult or impossible to change safely — typically due to age, technical debt, or outdated technology. Modernisation restores your ability to move fast, reduces maintenance cost, and ensures compliance with current UK GDPR and security standards. Clickmasters uses proven migration patterns — including the strangler fig — to modernise systems incrementally without stopping your business or risking data loss.",
     "sections": [
       {
         "heading": "The True Cost of NOT Modernising",
@@ -406,7 +406,7 @@ const services = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "The strangler fig pattern (named after the tree that gradually envelops its host) is ClickMasters' preferred approach for high-risk legacy migrations. Instead of replacing the legacy system all at once, you incrementally build new functionality around it — routing traffic to the new system piece by piece until the legacy system is eventually replaced entirely."
+            "text": "The strangler fig pattern (named after the tree that gradually envelops its host) is Clickmasters' preferred approach for high-risk legacy migrations. Instead of replacing the legacy system all at once, you incrementally build new functionality around it — routing traffic to the new system piece by piece until the legacy system is eventually replaced entirely."
           }
         ]
       }
@@ -444,7 +444,7 @@ const services = [
       },
       {
         "question": "Can you modernise COBOL systems?",
-        "answer": "Yes — ClickMasters has experience with COBOL-to-modern-stack migrations for banking and insurance clients. Our approach: comprehensive COBOL analysis (understand business logic embedded in the code), business rules extraction, parallel running (new system alongside legacy for validation), and staged cutover. We do not simply transpile COBOL to Java — we use modernisation as an opportunity to understand and properly document the business logic."
+        "answer": "Yes — Clickmasters has experience with COBOL-to-modern-stack migrations for banking and insurance clients. Our approach: comprehensive COBOL analysis (understand business logic embedded in the code), business rules extraction, parallel running (new system alongside legacy for validation), and staged cutover. We do not simply transpile COBOL to Java — we use modernisation as an opportunity to understand and properly document the business logic."
       },
       {
         "question": "How do you handle UK GDPR compliance during data migration?",
@@ -465,7 +465,7 @@ const services = [
     "metaDesc": "UK software consulting specialists. Fractional CTO, architecture review, technology due diligence, Innovate UK scoping. From £120/hr. Free initial consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters Consulting Team",
+    "writtenBy": "Clickmasters Consulting Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK-Based CTOs",
@@ -475,18 +475,18 @@ const services = [
       "💷 From £120/hr",
       "🔒 Confidential"
     ],
-    "directAnswer": "Software consulting in the UK costs between £120 and £250 per hour depending on seniority and engagement type. ClickMasters provides: Fractional CTO services (part-time technical leadership for startups and scale-ups), software architecture reviews (pre-investment, pre-scale, post-incident), technology due diligence (for M&A transactions and investment decisions), and Innovate UK grant scoping (helping you build a technical case for R&D funding).",
+    "directAnswer": "Software consulting in the UK costs between £120 and £250 per hour depending on seniority and engagement type. Clickmasters provides: Fractional CTO services (part-time technical leadership for startups and scale-ups), software architecture reviews (pre-investment, pre-scale, post-incident), technology due diligence (for M&A transactions and investment decisions), and Innovate UK grant scoping (helping you build a technical case for R&D funding).",
     "sections": [
       {
         "heading": "Software Consulting Services — What We Provide",
         "paragraphs": [
           {
             "bold": "Fractional CTO (£8,000–£18,000/month)",
-            "text": "A senior technology leader embedded in your business on a part-time basis. Fractional CTOs are ideal for: startups that need technical leadership but can't yet justify a full-time CTO salary (£150,000–£250,000+), companies between CTOs who need continuity, and scale-ups where the founding CTO has moved into a more strategic role. ClickMasters Fractional CTOs provide: technical team leadership, architecture decision-making, technology roadmap, vendor selection, team hiring, investor technical Q&A preparation."
+            "text": "A senior technology leader embedded in your business on a part-time basis. Fractional CTOs are ideal for: startups that need technical leadership but can't yet justify a full-time CTO salary (£150,000–£250,000+), companies between CTOs who need continuity, and scale-ups where the founding CTO has moved into a more strategic role. Clickmasters Fractional CTOs provide: technical team leadership, architecture decision-making, technology roadmap, vendor selection, team hiring, investor technical Q&A preparation."
           },
           {
             "bold": "Software Architecture Review (£3,500–£12,000)",
-            "text": "A structured assessment of your existing software architecture. ClickMasters reviews: system design and scalability, security architecture (UK GDPR compliance, OWASP), technical debt quantification, deployment infrastructure, database design and performance, code quality indicators, API design and documentation quality. Output: an executive summary (non-technical) and a detailed technical report with prioritised recommendations."
+            "text": "A structured assessment of your existing software architecture. Clickmasters reviews: system design and scalability, security architecture (UK GDPR compliance, OWASP), technical debt quantification, deployment infrastructure, database design and performance, code quality indicators, API design and documentation quality. Output: an executive summary (non-technical) and a detailed technical report with prioritised recommendations."
           },
           {
             "bold": "Technology Due Diligence (£5,000–£25,000)",
@@ -494,7 +494,7 @@ const services = [
           },
           {
             "bold": "Innovate UK Scoping (£2,500–£6,000)",
-            "text": "ClickMasters helps you assess whether your software project has a strong Innovate UK grant application case. We analyse: technological novelty (does it represent an advance beyond current state of knowledge?), commercial viability (does the project have a credible route to market?), and technical feasibility. We help you structure the technical narrative and can co-write the technical appendix for your application."
+            "text": "Clickmasters helps you assess whether your software project has a strong Innovate UK grant application case. We analyse: technological novelty (does it represent an advance beyond current state of knowledge?), commercial viability (does the project have a credible route to market?), and technical feasibility. We help you structure the technical narrative and can co-write the technical appendix for your application."
           },
           {
             "bold": "CTO as a Service (£6,000–£15,000/month)",
@@ -561,7 +561,7 @@ const services = [
     "metaDesc": "UK cloud-native software development. AWS eu-west-2 and Azure UK South for GDPR data residency. Kubernetes, serverless, 12-factor apps. From £20,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 11,
-    "writtenBy": "ClickMasters Cloud Team",
+    "writtenBy": "Clickmasters Cloud Team",
     "reviewedBy": "AWS & Azure Certified Architects",
     "badges": [
       "🇬🇧 UK-Based Team",
@@ -571,7 +571,7 @@ const services = [
       "☸️ Kubernetes",
       "💷 From £20,000"
     ],
-    "directAnswer": "Cloud-native development means building software specifically designed for cloud infrastructure — using containers, microservices, managed services, and auto-scaling — rather than lifting traditional server-based software into the cloud. For UK businesses, the critical additional consideration is data residency: UK GDPR requires personal data to be stored in adequate countries. ClickMasters uses AWS eu-west-2 (London) or Azure UK South as default regions for all UK client projects, keeping your personal data within the UK.",
+    "directAnswer": "Cloud-native development means building software specifically designed for cloud infrastructure — using containers, microservices, managed services, and auto-scaling — rather than lifting traditional server-based software into the cloud. For UK businesses, the critical additional consideration is data residency: UK GDPR requires personal data to be stored in adequate countries. Clickmasters uses AWS eu-west-2 (London) or Azure UK South as default regions for all UK client projects, keeping your personal data within the UK.",
     "sections": [
       {
         "heading": "AWS vs Azure for UK Businesses — Choosing Your Cloud",
@@ -587,7 +587,7 @@ const services = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "ClickMasters builds cloud-native applications following the 12-Factor App methodology — a set of principles that make software maximally portable, scalable, and maintainable in a cloud environment. The most important for UK compliance:"
+            "text": "Clickmasters builds cloud-native applications following the 12-Factor App methodology — a set of principles that make software maximally portable, scalable, and maintainable in a cloud environment. The most important for UK compliance:"
           },
           {
             "bold": "III. Config — Store config in environment",
@@ -659,7 +659,7 @@ const services = [
       },
       {
         "question": "Which cloud provider is best for UK businesses — AWS or Azure?",
-        "answer": "Both have UK data centres and UK GDPR compliance. AWS (eu-west-2, London) is generally preferred for: B2C and B2B SaaS, FinTech, eCommerce, and startups. Azure (UK South/West) is generally preferred for: businesses already using Microsoft 365, NHS and government workloads, and enterprise organisations with existing Microsoft licensing. ClickMasters architects are certified on both and will recommend based on your specific requirements — not on commission."
+        "answer": "Both have UK data centres and UK GDPR compliance. AWS (eu-west-2, London) is generally preferred for: B2C and B2B SaaS, FinTech, eCommerce, and startups. Azure (UK South/West) is generally preferred for: businesses already using Microsoft 365, NHS and government workloads, and enterprise organisations with existing Microsoft licensing. Clickmasters architects are certified on both and will recommend based on your specific requirements — not on commission."
       },
       {
         "question": "How does cloud-native development address UK GDPR data residency?",
@@ -684,7 +684,7 @@ const services = [
     "metaDesc": "UK microservices architecture specialists. Monolith to microservices migration, service mesh, event-driven architecture. Domain-driven design. From £30,000. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 12,
-    "writtenBy": "ClickMasters Architecture Team",
+    "writtenBy": "Clickmasters Architecture Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Team",
@@ -694,7 +694,7 @@ const services = [
       "☸️ Kubernetes",
       "💷 From £30,000"
     ],
-    "directAnswer": "Microservices architecture breaks a monolithic application into small, independently deployable services — each responsible for a single business capability. In the UK, microservices are the standard architecture for scaling B2B SaaS platforms, FinTech systems, and high-availability eCommerce platforms. ClickMasters designs microservices architectures using Domain-Driven Design (DDD) principles, with Kubernetes orchestration, event-driven communication (Kafka/RabbitMQ), and UK GDPR compliance built into the inter-service data model.",
+    "directAnswer": "Microservices architecture breaks a monolithic application into small, independently deployable services — each responsible for a single business capability. In the UK, microservices are the standard architecture for scaling B2B SaaS platforms, FinTech systems, and high-availability eCommerce platforms. Clickmasters designs microservices architectures using Domain-Driven Design (DDD) principles, with Kubernetes orchestration, event-driven communication (Kafka/RabbitMQ), and UK GDPR compliance built into the inter-service data model.",
     "sections": [
       {
         "heading": "Microservices vs Monolith — When to Make the Move",
@@ -735,7 +735,7 @@ const services = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "Microservices communicate either synchronously (direct API calls) or asynchronously (event-driven via message queues). ClickMasters uses a pragmatic mix:"
+            "text": "Microservices communicate either synchronously (direct API calls) or asynchronously (event-driven via message queues). Clickmasters uses a pragmatic mix:"
           }
         ]
       }
@@ -787,7 +787,7 @@ const services = [
       },
       {
         "question": "How long does a monolith to microservices migration take?",
-        "answer": "Plan for 8–24 months depending on codebase size, team capacity, and risk tolerance. The strangler fig approach means you can deliver value incrementally — extracting one service every 4–8 weeks while the monolith continues to function. The first service extraction is always the hardest and slowest. By the third or fourth, the team has a working pattern and velocity increases. ClickMasters typically recommends starting with a non-critical, well-understood domain — not the most complex or business-critical module."
+        "answer": "Plan for 8–24 months depending on codebase size, team capacity, and risk tolerance. The strangler fig approach means you can deliver value incrementally — extracting one service every 4–8 weeks while the monolith continues to function. The first service extraction is always the hardest and slowest. By the third or fourth, the team has a working pattern and velocity increases. Clickmasters typically recommends starting with a non-critical, well-understood domain — not the most complex or business-critical module."
       }
     ]
   },
@@ -800,7 +800,7 @@ const services = [
     "metaDesc": "UK software maintenance and support specialists. SLA-backed retainers, bug fixes, security patches, Cyber Essentials patch management. From £1,500/month. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Support Team",
+    "writtenBy": "Clickmasters Support Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Team",
@@ -810,7 +810,7 @@ const services = [
       "💷 From £1,500/mo",
       "⚡ 4-hr Response (P1)"
     ],
-    "directAnswer": "Software maintenance in the UK costs from £1,500/month for a basic support retainer to £15,000+/month for complex platforms requiring significant ongoing development. Every piece of custom software requires ongoing maintenance — security patches, dependency updates, bug fixes, and minor enhancements. UK businesses have a specific additional reason to prioritise maintenance: Cyber Essentials certification requires timely patch management, which means your development team must be able to update dependencies and deploy patches promptly. ClickMasters provides SLA-backed maintenance retainers that keep your software secure, compliant, and running.",
+    "directAnswer": "Software maintenance in the UK costs from £1,500/month for a basic support retainer to £15,000+/month for complex platforms requiring significant ongoing development. Every piece of custom software requires ongoing maintenance — security patches, dependency updates, bug fixes, and minor enhancements. UK businesses have a specific additional reason to prioritise maintenance: Cyber Essentials certification requires timely patch management, which means your development team must be able to update dependencies and deploy patches promptly. Clickmasters provides SLA-backed maintenance retainers that keep your software secure, compliant, and running.",
     "sections": [
       {
         "heading": "Why Software Maintenance Is Not Optional for UK Businesses",
@@ -884,14 +884,14 @@ const services = [
       },
       {
         "question": "Does Cyber Essentials require software patching?",
-        "answer": "Yes. Cyber Essentials includes \"Patch Management\" as one of its five technical controls. The requirement is: high-risk vulnerabilities must be patched within 14 days of a patch being available. For software that includes third-party dependencies (essentially all custom software), this means your development team must monitor for vulnerabilities in your dependency tree and deploy patches within the 14-day window. ClickMasters' maintenance retainers include automated vulnerability scanning and a patch deployment SLA that meets Cyber Essentials requirements."
+        "answer": "Yes. Cyber Essentials includes \"Patch Management\" as one of its five technical controls. The requirement is: high-risk vulnerabilities must be patched within 14 days of a patch being available. For software that includes third-party dependencies (essentially all custom software), this means your development team must monitor for vulnerabilities in your dependency tree and deploy patches within the 14-day window. Clickmasters' maintenance retainers include automated vulnerability scanning and a patch deployment SLA that meets Cyber Essentials requirements."
       },
       {
         "question": "What is the difference between software maintenance and new development?",
-        "answer": "Maintenance covers: bug fixes (software not working as intended), security patches, dependency updates, performance monitoring and optimisation, compatibility updates when integrated services change their APIs, and minor enhancements within the scope of existing functionality. New development covers: new features, new integrations, significant changes to existing workflows, and architectural improvements. The distinction matters for contracts: ClickMasters' maintenance retainers include a defined number of development hours per month for minor work — larger changes are quoted and managed as separate projects."
+        "answer": "Maintenance covers: bug fixes (software not working as intended), security patches, dependency updates, performance monitoring and optimisation, compatibility updates when integrated services change their APIs, and minor enhancements within the scope of existing functionality. New development covers: new features, new integrations, significant changes to existing workflows, and architectural improvements. The distinction matters for contracts: Clickmasters' maintenance retainers include a defined number of development hours per month for minor work — larger changes are quoted and managed as separate projects."
       },
       {
-        "question": "What happens if my software was not built by ClickMasters?",
+        "question": "What happens if my software was not built by Clickmasters?",
         "answer": "We maintain software not originally built by us — subject to a one-time codebase audit (£2,500–£5,000) to understand the architecture, document dependencies, and identify any immediate security or stability risks. Based on this audit, we'll quote a maintenance retainer or recommend a refactor if the codebase is in a state that makes safe maintenance impossible without prior remediation."
       }
     ]
@@ -902,10 +902,10 @@ const services = [
     "serviceName": "Software Project Rescue UK — Save Your Failed, Stalled or Over-Budget Build",
     "title": "Software Project Rescue UK — Save Your Failed, Stalled or Over-Budget Build",
     "metaTitle": "Software Project Rescue UK — Save Your Failed or Stalled Build",
-    "metaDesc": "Struggling with a failed software project? ClickMasters rescues stalled builds, missed deadlines, and offshore development disasters. Emergency code audit. Fixed-price rescue plan. Free assessment.",
+    "metaDesc": "Struggling with a failed software project? Clickmasters rescues stalled builds, missed deadlines, and offshore development disasters. Emergency code audit. Fixed-price rescue plan. Free assessment.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters Rescue Team",
+    "writtenBy": "Clickmasters Rescue Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🆘 Emergency Response",
@@ -947,7 +947,7 @@ const services = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "Without naming clients, here are examples of rescue engagements ClickMasters has completed:"
+            "text": "Without naming clients, here are examples of rescue engagements Clickmasters has completed:"
           },
           {
             "bold": "FinTech platform stalled for 8 months",
@@ -968,7 +968,7 @@ const services = [
     "faqs": [
       {
         "question": "How quickly can you assess our situation?",
-        "answer": "We offer a 48–72 hour emergency code audit. Contact us today — a senior engineer will review your codebase, document the key issues, and provide an initial written assessment within 72 hours. Cost: £2,500–£5,000 depending on codebase size and complexity. This audit gives you the information you need to make an informed decision about next steps — even if you decide not to proceed with ClickMasters for the rescue work."
+        "answer": "We offer a 48–72 hour emergency code audit. Contact us today — a senior engineer will review your codebase, document the key issues, and provide an initial written assessment within 72 hours. Cost: £2,500–£5,000 depending on codebase size and complexity. This audit gives you the information you need to make an informed decision about next steps — even if you decide not to proceed with Clickmasters for the rescue work."
       },
       {
         "question": "Can you work with code in any technology stack?",
@@ -976,7 +976,7 @@ const services = [
       },
       {
         "question": "What if my original development contract prevents you from looking at the code?",
-        "answer": "Your IP ownership depends on the contract you signed with your original developer. If your contract includes an IP assignment clause, the code is yours and you can share it with whomever you choose. If it does not (or if the assignment was conditional on full payment), the IP situation needs to be clarified. ClickMasters can review your development contract (under NDA) and advise on the IP position before any code audit begins."
+        "answer": "Your IP ownership depends on the contract you signed with your original developer. If your contract includes an IP assignment clause, the code is yours and you can share it with whomever you choose. If it does not (or if the assignment was conditional on full payment), the IP situation needs to be clarified. Clickmasters can review your development contract (under NDA) and advise on the IP position before any code audit begins."
       },
       {
         "question": "Should I pursue my original developers legally while you rescue the project?",
@@ -993,7 +993,7 @@ const services = [
     "metaDesc": "Build your MVP in 8–12 weeks from £12,000. Lean or investor-ready. Innovate UK grants available. UK GDPR compliant. R&D Tax Credits eligible. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 12,
-    "writtenBy": "ClickMasters Product Team",
+    "writtenBy": "Clickmasters Product Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK-Based Team",
@@ -1028,11 +1028,11 @@ const services = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "UK entrepreneurs have access to significant government funding to support software product development. ClickMasters has supported multiple clients through these processes as technical partner:"
+            "text": "UK entrepreneurs have access to significant government funding to support software product development. Clickmasters has supported multiple clients through these processes as technical partner:"
           },
           {
             "bold": "Note",
-            "text": "Innovate UK grant applications require a strong technical narrative. ClickMasters has experience writing and reviewing technical sections of successful Innovate UK applications as part of our client work."
+            "text": "Innovate UK grant applications require a strong technical narrative. Clickmasters has experience writing and reviewing technical sections of successful Innovate UK applications as part of our client work."
           }
         ]
       },
@@ -1136,7 +1136,7 @@ const services = [
       },
       {
         "question": "Can I get Innovate UK funding for my MVP?",
-        "answer": "Yes, if your MVP involves genuine technological innovation — not just implementing existing technology. Innovate UK Smart Grants (£25,000–£500,000) are the most common route for software startups. The application requires a strong technical case and evidence of commercial potential. ClickMasters has supported technical sections of successful Innovate UK applications. We're happy to advise on whether your project is a good fit before you invest time in an application."
+        "answer": "Yes, if your MVP involves genuine technological innovation — not just implementing existing technology. Innovate UK Smart Grants (£25,000–£500,000) are the most common route for software startups. The application requires a strong technical case and evidence of commercial potential. Clickmasters has supported technical sections of successful Innovate UK applications. We're happy to advise on whether your project is a good fit before you invest time in an application."
       },
       {
         "question": "What technology stack do you use for MVPs?",
@@ -1148,7 +1148,7 @@ const services = [
       },
       {
         "question": "What should my MVP cost if I'm applying for Innovate UK funding?",
-        "answer": "Innovate UK typically funds 35–70% of project costs depending on the grant type. Your total project cost (your matched funding + the grant) should reflect a genuine, credible budget for the scope described. Under-budgeting raises red flags with assessors. A typical Innovate UK Smart Grant project has total costs of £50,000–£500,000, with the grant covering 35–70%. ClickMasters can help you structure a credible cost case as part of supporting your application."
+        "answer": "Innovate UK typically funds 35–70% of project costs depending on the grant type. Your total project cost (your matched funding + the grant) should reflect a genuine, credible budget for the scope described. Under-budgeting raises red flags with assessors. A typical Innovate UK Smart Grant project has total costs of £50,000–£500,000, with the grant covering 35–70%. Clickmasters can help you structure a credible cost case as part of supporting your application."
       }
     ]
   },
@@ -1158,10 +1158,10 @@ const services = [
     "serviceName": "IT Staff Augmentation UK — Vetted Senior Engineers, IR35-Compliant, from £5,000/Month",
     "title": "IT Staff Augmentation UK — Vetted Senior Engineers, IR35-Compliant, from £5,000/Month",
     "metaTitle": "IT Staff Augmentation UK — IR35-Compliant Developers from £5,000/Month",
-    "metaDesc": "UK IT staff augmentation specialists. Vetted senior engineers on 30-day rolling contracts. All ClickMasters developers are our employees — zero IR35 liability for you. Free consultation.",
+    "metaDesc": "UK IT staff augmentation specialists. Vetted senior engineers on 30-day rolling contracts. All Clickmasters developers are our employees — zero IR35 liability for you. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 13,
-    "writtenBy": "ClickMasters HR Team",
+    "writtenBy": "Clickmasters HR Team",
     "reviewedBy": "James Whitmore, CTO + UK employment law reviewed",
     "badges": [
       "⚖️ Zero IR35 Risk",
@@ -1171,10 +1171,10 @@ const services = [
       "📋 3-Stage Vetting",
       "🔄 30-Day Rolling"
     ],
-    "directAnswer": "IT Staff Augmentation is the practice of extending your development team with external engineers on flexible contracts — without the overhead of permanent employment. In the UK, the critical consideration is IR35: since April 2021, medium and large businesses are responsible for determining the IR35 status of every contractor they engage. ClickMasters eliminates this risk entirely: our engineers are ClickMasters employees, not contractors. You engage ClickMasters as a company — one invoice, zero IR35 liability, all employment obligations handled by us.",
+    "directAnswer": "IT Staff Augmentation is the practice of extending your development team with external engineers on flexible contracts — without the overhead of permanent employment. In the UK, the critical consideration is IR35: since April 2021, medium and large businesses are responsible for determining the IR35 status of every contractor they engage. Clickmasters eliminates this risk entirely: our engineers are Clickmasters employees, not contractors. You engage Clickmasters as a company — one invoice, zero IR35 liability, all employment obligations handled by us.",
     "sections": [
       {
-        "heading": "The ClickMasters Staff Augmentation Model — Why We're Different",
+        "heading": "The Clickmasters Staff Augmentation Model — Why We're Different",
         "paragraphs": [
           {
             "bold": "",
@@ -1182,7 +1182,7 @@ const services = [
           },
           {
             "bold": "",
-            "text": "ClickMasters' model is different:"
+            "text": "Clickmasters' model is different:"
           }
         ]
       },
@@ -1191,7 +1191,7 @@ const services = [
         "paragraphs": [
           {
             "bold": "",
-            "text": "Every ClickMasters developer goes through three stages before being placed:"
+            "text": "Every Clickmasters developer goes through three stages before being placed:"
           },
           {
             "bold": "Stage 1",
@@ -1224,23 +1224,23 @@ const services = [
         "paragraphs": [
           {
             "bold": "Scaling fast after a funding round",
-            "text": "You've just raised and need to triple your engineering team in 90 days. Permanent recruitment takes 3–6 months per hire and creates fixed overhead. ClickMasters can deploy a dedicated team of 3–6 engineers within 2–3 weeks, on 30-day rolling terms. If the sprint is complete or the product direction changes, you're not locked in."
+            "text": "You've just raised and need to triple your engineering team in 90 days. Permanent recruitment takes 3–6 months per hire and creates fixed overhead. Clickmasters can deploy a dedicated team of 3–6 engineers within 2–3 weeks, on 30-day rolling terms. If the sprint is complete or the product direction changes, you're not locked in."
           },
           {
             "bold": "Filling a skills gap for a specific project",
-            "text": "You have a strong in-house team but no one with AWS cloud architecture expertise for your migration project. Rather than hiring permanently for a 6-month need, ClickMasters provides a senior Cloud Architect on a monthly engagement — exactly the right duration, no redundancy risk."
+            "text": "You have a strong in-house team but no one with AWS cloud architecture expertise for your migration project. Rather than hiring permanently for a 6-month need, Clickmasters provides a senior Cloud Architect on a monthly engagement — exactly the right duration, no redundancy risk."
           },
           {
             "bold": "Covering team capacity during a surge period",
-            "text": "A new enterprise client has brought forward their launch date by 6 weeks. You need two additional senior engineers for 3 months to hit the deadline. ClickMasters can staff up quickly and step back when the surge is over."
+            "text": "A new enterprise client has brought forward their launch date by 6 weeks. You need two additional senior engineers for 3 months to hit the deadline. Clickmasters can staff up quickly and step back when the surge is over."
           },
           {
             "bold": "Bridging while you recruit permanently",
-            "text": "Hiring a Head of Engineering is a 6-month process. You need technical leadership now. A ClickMasters Technical Lead or Fractional CTO bridges the gap — and can even assist with the permanent hire process by defining the technical assessment criteria."
+            "text": "Hiring a Head of Engineering is a 6-month process. You need technical leadership now. A Clickmasters Technical Lead or Fractional CTO bridges the gap — and can even assist with the permanent hire process by defining the technical assessment criteria."
           },
           {
             "bold": "Accessing specialist skills for compliance-critical work",
-            "text": "You're building for the NHS and need a developer who understands DTAC, FHIR R4, and DSP Toolkit. ClickMasters can place a developer with NHS project experience alongside your team specifically for the compliance-critical elements of the build."
+            "text": "You're building for the NHS and need a developer who understands DTAC, FHIR R4, and DSP Toolkit. Clickmasters can place a developer with NHS project experience alongside your team specifically for the compliance-critical elements of the build."
           }
         ]
       }
@@ -1337,7 +1337,7 @@ const services = [
         "answer": "IT staff augmentation is the practice of extending your development team with external engineers — either to scale capacity, fill a skills gap, or bridge while you recruit permanently. Unlike full outsourcing (where a third party owns the entire project), with staff augmentation your augmented engineers work as part of your team, using your tools, attending your standups, and contributing to your codebase."
       },
       {
-        "question": "How quickly can ClickMasters deploy developers?",
+        "question": "How quickly can Clickmasters deploy developers?",
         "answer": "For roles we have on our books: typically 1–2 weeks from initial conversation to developer starting. For specialist roles we need to recruit specifically: 2–4 weeks. This compares to 3–6 months for permanent recruitment and 4–8 weeks for most contractor agencies who need to source from the open market."
       },
       {
@@ -1350,7 +1350,7 @@ const services = [
       },
       {
         "question": "How does IP ownership work with augmented developers?",
-        "answer": "Because ClickMasters developers are our employees rather than contractors, all IP created during the engagement is owned by ClickMasters until transferred to you. Our standard contract includes an IP assignment clause that transfers all IP created during your engagement to you upon receipt of each monthly invoice. You have complete ownership of everything your augmented team builds."
+        "answer": "Because Clickmasters developers are our employees rather than contractors, all IP created during the engagement is owned by Clickmasters until transferred to you. Our standard contract includes an IP assignment clause that transfers all IP created during your engagement to you upon receipt of each monthly invoice. You have complete ownership of everything your augmented team builds."
       },
       {
         "question": "Is staff augmentation better value than a software agency project?",

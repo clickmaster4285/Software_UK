@@ -8,8 +8,8 @@ const escapeHtml = (text) =>
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
 
-// ClickMasters Official Colors (OKLCH mapped to Hex for Email)
-const BRAND_ACCENT = '#D4A017'; 
+// Clickmasters Official Colors (OKLCH mapped to Hex for Email)
+const BRAND_ACCENT = '#D4A017';
 const BRAND_PRIMARY = '#1A2A3A';
 
 const adminDetailRow = (label, value) => {
@@ -41,7 +41,7 @@ const adminEmailHtml = (f) => {
         <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;background-color:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,0.08);">
           <tr>
             <td style="background:linear-gradient(135deg, ${BRAND_PRIMARY} 0%, ${BRAND_ACCENT} 100%);padding:28px 32px;">
-              <p style="margin:0 0 4px;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.9);">ClickMasters</p>
+              <p style="margin:0 0 4px;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.9);">Clickmasters</p>
               <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;font-family:Segoe UI,system-ui,sans-serif;line-height:1.3;">New inquiry from your website</h1>
               <p style="margin:10px 0 0;font-size:14px;color:rgba(255,255,255,0.92);font-family:Segoe UI,system-ui,sans-serif;line-height:1.5;">A lead submitted the contact form. Details are below.</p>
             </td>
@@ -66,7 +66,7 @@ const adminEmailHtml = (f) => {
             </td>
           </tr>
         </table>
-        <p style="margin:16px 0 0;font-size:11px;color:#9ca3af;font-family:Segoe UI,system-ui,sans-serif;">This message was generated automatically from the ClickMasters contact system.</p>
+        <p style="margin:16px 0 0;font-size:11px;color:#9ca3af;font-family:Segoe UI,system-ui,sans-serif;">This message was generated automatically from the Clickmasters contact system.</p>
       </td>
     </tr>
   </table>
@@ -92,9 +92,9 @@ const autoReplyHtml = (name) => {
           <tr>
             <td style="padding:32px 28px;font-family:Segoe UI,system-ui,sans-serif;">
               <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#111827;">Hi ${escapeHtml(first)},</p>
-              <p style="margin:0 0 16px;font-size:15px;line-height:1.65;color:#4b5563;">We have received your message and appreciate you contacting <strong style="color:#111827;">ClickMasters</strong>. A member of our team will review your inquiry and respond as soon as possible.</p>
+              <p style="margin:0 0 16px;font-size:15px;line-height:1.65;color:#4b5563;">We have received your message and appreciate you contacting <strong style="color:#111827;">Clickmasters</strong>. A member of our team will review your inquiry and respond as soon as possible.</p>
               <p style="margin:0 0 24px;font-size:15px;line-height:1.65;color:#4b5563;">If your request is urgent, please call us using the numbers listed on our website.</p>
-              <p style="margin:0;font-size:15px;line-height:1.65;color:#4b5563;">Best regards,<br/><strong style="color:#111827;">The ClickMasters Team</strong></p>
+              <p style="margin:0;font-size:15px;line-height:1.65;color:#4b5563;">Best regards,<br/><strong style="color:#111827;">The Clickmasters Team</strong></p>
             </td>
           </tr>
           <tr>
@@ -141,17 +141,17 @@ export async function POST(req) {
     };
 
     const adminMailOptions = {
-      from: `"${process.env.ALIAS_NAME || 'ClickMasters'}" <${process.env.SMTP_MAIL}>`,
+      from: `"${process.env.ALIAS_NAME || 'Clickmasters'}" <${process.env.SMTP_MAIL}>`,
       to: process.env.RECEIVER_EMAIL || process.env.SMTP_MAIL,
       replyTo: email,
-      subject: `New lead: ${lead.name} — ClickMasters`,
+      subject: `New lead: ${lead.name} — Clickmasters`,
       html: adminEmailHtml(lead),
     };
 
     const userMailOptions = {
-      from: `"${process.env.ALIAS_NAME || 'ClickMasters'}" <${process.env.SMTP_MAIL}>`,
+      from: `"${process.env.ALIAS_NAME || 'Clickmasters'}" <${process.env.SMTP_MAIL}>`,
       to: email,
-      subject: 'Thank You for Contacting ClickMasters',
+      subject: 'Thank You for Contacting Clickmasters',
       html: autoReplyHtml(name),
     };
 

@@ -10,7 +10,7 @@ const path = require('path');
 
 const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk';
 const DATA_DIR = path.join(__dirname, '..', 'data');
-const OUTPUT_FILE = path.join(__dirname, '..', 'ClickMasters_URL_Sheet.xlsx');
+const OUTPUT_FILE = path.join(__dirname, '..', 'Clickmasters_URL_Sheet.xlsx');
 
 /**
  * Extract array data from a JS data file.

@@ -31,35 +31,35 @@ export default function LoginPage() {
             <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center font-bold text-accent text-xl italic shadow-lg shadow-primary/20">CM</div>
           </div>
           <CardTitle className="text-2xl font-bold text-center">Admin Access</CardTitle>
-          <CardDescription className="text-center">Enter your credentials to manage ClickMasters</CardDescription>
+          <CardDescription className="text-center">Enter your credentials to manage Clickmasters</CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit}>
           <CardContent className="space-y-4 my-2">
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input 
-                id="email" 
-                type="email" 
-                placeholder="admin@clickmasters.pk" 
+              <Input
+                id="email"
+                type="email"
+                placeholder="admin@clickmasters.pk"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                required 
+                required
               />
             </div>
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
-              <Input 
-                id="password" 
-                type="password" 
+              <Input
+                id="password"
+                type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                required 
+                required
               />
             </div>
           </CardContent>
           <CardFooter>
-            <Button 
-              type="submit" 
+            <Button
+              type="submit"
               className="w-full h-11 bg-primary text-accent hover:bg-primary/90 font-bold tracking-wide"
               disabled={isLoggingIn}
             >

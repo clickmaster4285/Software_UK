@@ -19,7 +19,7 @@ export default function ContactPageContent() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/contact/contact-bg.webp"
-            alt="Contact ClickMasters"
+            alt="Contact Clickmasters"
             fill
             priority
             className="object-cover"
@@ -42,7 +42,7 @@ export default function ContactPageContent() {
             <p className="text-xl text-white/90 max-w-7xl mx-auto mb-10 leading-relaxed">
               Have an idea you want to build, an existing product you want to improve or a digital opportunity you are ready to explore?
               <br />
-              Tell ClickMasters what you are working on.
+              Tell Clickmasters what you are working on.
               <br />
               You do not need a complete technical specification before contacting us. Share the idea, requirement or problem you have today, and we can start by understanding what you want to achieve.
             </p>
@@ -98,7 +98,7 @@ export default function ContactPageContent() {
               <div className="mt-8 pt-6 border-t border-border text-sm text-muted-foreground flex flex-col items-center justify-center gap-3 text-center">
                 <Shield className="w-5 h-5 text-accent" />
                 <p className="max-w-md">
-                  By submitting your details, you agree that ClickMasters may contact you regarding your enquiry.{' '}
+                  By submitting your details, you agree that Clickmasters may contact you regarding your enquiry.{' '}
                   <Link href="/privacy-policy" className="text-accent hover:underline font-medium">Privacy Policy</Link>
                 </p>
               </div>
@@ -186,7 +186,7 @@ export default function ContactPageContent() {
           <div className="relative max-w-6xl mx-auto">
             {/* Connecting Line (Desktop) */}
             <div className="hidden md:block absolute top-[48px] left-[16%] right-[16%] h-[2px] bg-gradient-to-r from-transparent via-accent/30 to-transparent rounded-full" />
-            
+
             <div className="grid md:grid-cols-3 gap-12 md:gap-8 relative z-10">
               {[
                 {
@@ -226,19 +226,19 @@ export default function ContactPageContent() {
                   className="relative group h-full"
                 >
                   <div className="h-full bg-white rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] border border-black/5 hover:border-accent/20 transition-all duration-500 flex flex-col relative overflow-hidden">
-                    
+
                     {/* Subtle Corner Glow */}
                     <div className={`absolute top-0 right-0 w-40 h-40 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-10 blur-3xl transition-opacity duration-700 rounded-full`} />
-                    
+
                     <div className="flex items-start justify-between mb-8 relative z-10">
-                       <div className={`w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br ${item.gradient} shadow-lg text-white group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-500 shrink-0`}>
-                         {item.icon}
-                       </div>
-                       <div className="text-6xl font-black text-black/5 group-hover:text-accent/10 transition-colors duration-500 font-heading leading-none">
-                         0{item.step}
-                       </div>
+                      <div className={`w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br ${item.gradient} shadow-lg text-white group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-500 shrink-0`}>
+                        {item.icon}
+                      </div>
+                      <div className="text-6xl font-black text-black/5 group-hover:text-accent/10 transition-colors duration-500 font-heading leading-none">
+                        0{item.step}
+                      </div>
                     </div>
-                    
+
                     <div className="mt-auto relative z-10">
                       <h3 className="text-2xl font-bold font-heading mb-3 text-foreground group-hover:text-accent transition-colors duration-300">
                         {item.title} {item.subtitle}
@@ -247,7 +247,7 @@ export default function ContactPageContent() {
                         {item.desc}
                       </p>
                     </div>
-                    
+
                     {/* Animated Bottom Border */}
                     <div className={`absolute bottom-0 inset-x-0 h-1.5 bg-gradient-to-r ${item.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`} />
                   </div>

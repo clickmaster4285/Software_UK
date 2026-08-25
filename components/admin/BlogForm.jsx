@@ -32,7 +32,7 @@ export default function BlogForm({ initialData, id }) {
     slug: '',
     excerpt: '',
     content: '',
-    author: 'ClickMasters Team',
+    author: 'Clickmasters Team',
     published: false,
     thumbnail: '',
     tags: [],

@@ -12,11 +12,11 @@ export const comparisons = [
     "topic": "uk_vs_offshore_software_development",
     "year": "2025",
     "title": "UK vs Offshore Software Development — The Honest Analysis (2025)",
-    "metaTitle": "UK vs Offshore Software Development — The Honest Comparison | ClickMasters",
+    "metaTitle": "UK vs Offshore Software Development — The Honest Comparison | Clickmasters",
     "metaDesc": "Honest comparison of UK vs offshore software development. True total cost, GDPR risk, IP protection, communication overhead. UK agency vs India vs Eastern Europe. Free guide.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market Context",
@@ -38,7 +38,7 @@ export const comparisons = [
         ],
         "rows": [
           [
-            "UK Agency (ClickMasters)",
+            "UK Agency (Clickmasters)",
             "£420–£560/day",
             "£92,400–£123,200",
             "All-in — no IR35 risk, GDPR compliant, IP secure"
@@ -98,7 +98,7 @@ export const comparisons = [
           ],
           [
             "Cyber Essentials or equivalent",
-            "✅ ClickMasters CE aligned",
+            "✅ Clickmasters CE aligned",
             "❌ Typically none",
             "⚠️ ISO 27001 sometimes — but not CE"
           ],
@@ -182,8 +182,8 @@ export const comparisons = [
         "answer": "The UK has issued adequacy decisions for: EU/EEA countries, Switzerland, New Zealand, Canada (commercial organisations), Israel, Japan, and a small number of others. The US has the UK-US Data Bridge (for self-certified organisations). India, most of Asia, and most of the Middle East are NOT adequate — transfers require an IDTA or other safeguards. Check the ICO's current adequacy list before selecting an offshore development partner."
       },
       {
-        "question": "How does ClickMasters compare to a traditional UK software agency?",
-        "answer": "ClickMasters provides: transparent GBP pricing (no other UK agency publishes prices), UK GDPR compliance built into every project architecture, IR35-safe staffing model (our engineers are employees), R&amp;D Tax Credits documentation as standard, and flexible engagement models (project or monthly retainer). Traditional UK agencies typically offer project work only, are opaque on pricing, and vary significantly on compliance posture."
+        "question": "How does Clickmasters compare to a traditional UK software agency?",
+        "answer": "Clickmasters provides: transparent GBP pricing (no other UK agency publishes prices), UK GDPR compliance built into every project architecture, IR35-safe staffing model (our engineers are employees), R&amp;D Tax Credits documentation as standard, and flexible engagement models (project or monthly retainer). Traditional UK agencies typically offer project work only, are opaque on pricing, and vary significantly on compliance posture."
       }
     ],
     "relatedPages": [
@@ -208,7 +208,7 @@ export const comparisons = [
         "slug": "uk-vs-eastern-europe-cost"
       }
     ],
-    "cta": "Talk to a UK-Based Engineer — No Offshore Middlemen Book a free consultation with a senior ClickMasters engineer in the UK. Transparent pricing, UK GDPR compliance by design, zero IR35 risk. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "cta": "Talk to a UK-Based Engineer — No Offshore Middlemen Book a free consultation with a senior Clickmasters engineer in the UK. Transparent pricing, UK GDPR compliance by design, zero IR35 risk. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
     "author": ""
   },
   {
@@ -217,11 +217,11 @@ export const comparisons = [
     "topic": "custom_software_vs_saas",
     "year": "2025",
     "title": "Custom Software vs SaaS — The UK Business Decision Guide (2025)",
-    "metaTitle": "Custom Software vs SaaS — Which Is Right for Your UK Business? | ClickMasters",
+    "metaTitle": "Custom Software vs SaaS — Which Is Right for Your UK Business? | Clickmasters",
     "metaDesc": "Custom software vs SaaS (off-the-shelf) — UK decision guide. When to build vs buy, 3-year TCO comparison, UK GDPR implications, IP ownership. Transparent GBP analysis.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market Context",
@@ -273,7 +273,7 @@ export const comparisons = [
           ],
           [
             "Do you have a team to manage custom software?",
-            "✅ Build — ClickMasters maintenance retainer",
+            "✅ Build — Clickmasters maintenance retainer",
             "Buy — less operational overhead"
           ],
           [
@@ -351,7 +351,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Can I start with SaaS and migrate to custom later?",
-        "answer": "Yes — and this is often the right approach for early-stage businesses. Use SaaS to validate your business model and understand your exact requirements. Once you know precisely what you need and the SaaS TCO is exceeding the custom build cost, commission a custom build. ClickMasters can also build custom integrations and workflow automation around your existing SaaS stack — giving you custom capabilities without a full rebuild."
+        "answer": "Yes — and this is often the right approach for early-stage businesses. Use SaaS to validate your business model and understand your exact requirements. Once you know precisely what you need and the SaaS TCO is exceeding the custom build cost, commission a custom build. Clickmasters can also build custom integrations and workflow automation around your existing SaaS stack — giving you custom capabilities without a full rebuild."
       },
       {
         "question": "What are the UK GDPR implications of choosing SaaS?",
@@ -389,11 +389,11 @@ export const comparisons = [
     "topic": "fixed_price_vs_time_materials",
     "year": "2025",
     "title": "Fixed Price vs Time &amp; Materials Software Development UK — Which Protects You?",
-    "metaTitle": "Fixed Price vs Time &amp; Materials Software Development UK | ClickMasters",
+    "metaTitle": "Fixed Price vs Time &amp; Materials Software Development UK | Clickmasters",
     "metaDesc": "Fixed price vs time and materials software contracts explained for UK businesses. When each is right, risk allocation, change control, budget certainty. GBP examples.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market Context",
@@ -403,7 +403,7 @@ export const comparisons = [
       "📊 Decision Framework",
       "💡 R&amp;D Tax Credits"
     ],
-    "directAnswer": "Fixed price contracts give you budget certainty and shift the risk of underestimation to the agency. Time and materials gives you flexibility for evolving requirements but shifts budget risk to you. The right choice depends on how well-defined your requirements are. ClickMasters offers fixed price (after Technical Discovery), capped T&amp;M (maximum budget agreed upfront), and pure T&amp;M. For most UK business projects, fixed price with formal change control is our recommendation — but only after proper scoping.",
+    "directAnswer": "Fixed price contracts give you budget certainty and shift the risk of underestimation to the agency. Time and materials gives you flexibility for evolving requirements but shifts budget risk to you. The right choice depends on how well-defined your requirements are. Clickmasters offers fixed price (after Technical Discovery), capped T&amp;M (maximum budget agreed upfront), and pure T&amp;M. For most UK business projects, fixed price with formal change control is our recommendation — but only after proper scoping.",
     "comparisonTables": [
       {
         "title": "",
@@ -457,7 +457,7 @@ export const comparisons = [
             "✅ Yes — to stay within cap"
           ],
           [
-            "ClickMasters availability?",
+            "Clickmasters availability?",
             "✅ Yes (after Discovery)",
             "✅ Yes",
             "✅ Yes"
@@ -472,17 +472,17 @@ export const comparisons = [
       },
       {
         "title": "Fixed Price — When It Works and When It Fails",
-        "content": "Fixed price works when: requirements are fully defined before pricing, both parties agree on exactly what \"done\" looks like (acceptance criteria), and neither party intends to change scope significantly mid-project. Fixed price fails when: requirements are vague or expected to evolve, the agency hasn't invested time in proper scoping, there's no formal change control process, or \"fixed price\" is used as a sales tactic without proper discovery. ClickMasters' fixed price model: we require a paid Technical Discovery phase (£3,500–£8,000) before quoting a fixed price. This produces a detailed specification that both parties agree on. The Discovery fee is credited against the project if you proceed. Without this step, any fixed price quote is a guess."
+        "content": "Fixed price works when: requirements are fully defined before pricing, both parties agree on exactly what \"done\" looks like (acceptance criteria), and neither party intends to change scope significantly mid-project. Fixed price fails when: requirements are vague or expected to evolve, the agency hasn't invested time in proper scoping, there's no formal change control process, or \"fixed price\" is used as a sales tactic without proper discovery. Clickmasters' fixed price model: we require a paid Technical Discovery phase (£3,500–£8,000) before quoting a fixed price. This produces a detailed specification that both parties agree on. The Discovery fee is credited against the project if you proceed. Without this step, any fixed price quote is a guess."
       }
     ],
     "faqs": [
       {
         "question": "What is a change request and how does it work in a fixed price contract?",
-        "answer": "A change request (CR) is a formal document that describes a change to the agreed project scope — either adding new functionality, changing existing requirements, or removing previously agreed features. In a fixed price contract, any change to scope requires a CR before work on the change begins. The CR should include: a description of the change, an estimate of additional time and cost, impact on the project timeline, and both parties' signatures. ClickMasters includes a formal CR process in all fixed price contracts."
+        "answer": "A change request (CR) is a formal document that describes a change to the agreed project scope — either adding new functionality, changing existing requirements, or removing previously agreed features. In a fixed price contract, any change to scope requires a CR before work on the change begins. The CR should include: a description of the change, an estimate of additional time and cost, impact on the project timeline, and both parties' signatures. Clickmasters includes a formal CR process in all fixed price contracts."
       },
       {
-        "question": "How does ClickMasters handle disputes about whether something is \"in scope\"?",
-        "answer": "Scope disputes are the biggest risk in fixed price contracts. ClickMasters mitigates this through: a detailed specification produced during Technical Discovery (with acceptance criteria for every feature), a weekly progress review against the spec, and a formal issue log where scope questions are raised and resolved quickly. In practice, most scope disputes arise from ambiguous specifications — which is why we invest in Discovery before pricing."
+        "question": "How does Clickmasters handle disputes about whether something is \"in scope\"?",
+        "answer": "Scope disputes are the biggest risk in fixed price contracts. Clickmasters mitigates this through: a detailed specification produced during Technical Discovery (with acceptance criteria for every feature), a weekly progress review against the spec, and a formal issue log where scope questions are raised and resolved quickly. In practice, most scope disputes arise from ambiguous specifications — which is why we invest in Discovery before pricing."
       }
     ],
     "relatedPages": [
@@ -507,7 +507,7 @@ export const comparisons = [
         "slug": "resources/software-development-contracts-guide"
       }
     ],
-    "cta": "Get a Fixed-Price Quote After Proper Discovery ClickMasters offers fixed-price contracts after a paid Technical Discovery phase. Book a free consultation to understand the scoping process. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "cta": "Get a Fixed-Price Quote After Proper Discovery Clickmasters offers fixed-price contracts after a paid Technical Discovery phase. Book a free consultation to understand the scoping process. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
     "author": ""
   },
   {
@@ -516,11 +516,11 @@ export const comparisons = [
     "topic": "aws_vs_azure_uk",
     "year": "2025",
     "title": "AWS vs Azure for UK Businesses — Data Residency, NHS, GovTech &amp; Cost (2025)",
-    "metaTitle": "AWS vs Azure for UK Businesses — Data Residency &amp; GDPR | ClickMasters",
+    "metaTitle": "AWS vs Azure for UK Businesses — Data Residency &amp; GDPR | Clickmasters",
     "metaDesc": "AWS eu-west-2 vs Azure UK South for UK businesses. UK GDPR data residency, NHS/Gov preference, pricing comparison, Microsoft 365 integration. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 11,
-    "writtenBy": "ClickMasters Cloud Team",
+    "writtenBy": "Clickmasters Cloud Team",
     "reviewedBy": "AWS &amp; Azure Certified Architects",
     "badges": [
       "☁️ AWS eu-west-2",
@@ -530,7 +530,7 @@ export const comparisons = [
       "💷 GBP Pricing",
       "🇬🇧 UK Cloud Experts"
     ],
-    "directAnswer": "Both AWS eu-west-2 (London) and Azure UK South/West satisfy UK GDPR data residency requirements. The choice comes down to: your existing technology stack (Microsoft-heavy organisations benefit from Azure integration), your sector (NHS England uses Azure Landing Zones; many FinTechs prefer AWS), cost at your specific usage level, and the specific managed services you need. ClickMasters is certified on both and recommends based on your requirements — not on preference or commission.",
+    "directAnswer": "Both AWS eu-west-2 (London) and Azure UK South/West satisfy UK GDPR data residency requirements. The choice comes down to: your existing technology stack (Microsoft-heavy organisations benefit from Azure integration), your sector (NHS England uses Azure Landing Zones; many FinTechs prefer AWS), cost at your specific usage level, and the specific managed services you need. Clickmasters is certified on both and recommends based on your requirements — not on preference or commission.",
     "comparisonTables": [
       {
         "title": "",
@@ -601,7 +601,7 @@ export const comparisons = [
             "Competitive; Microsoft BYOL benefits for existing licences"
           ],
           [
-            "ClickMasters Default For",
+            "Clickmasters Default For",
             "B2C SaaS, FinTech, eCommerce, API-heavy startups",
             "Enterprise, NHS/Gov, Microsoft-stack businesses, Windows workloads"
           ]
@@ -621,7 +621,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Can I switch from AWS to Azure (or vice versa) mid-project?",
-        "answer": "Switching cloud providers mid-project is expensive and disruptive. It should be planned from the outset. ClickMasters uses Terraform IaC on both platforms — infrastructure defined in code means the architecture is documented and theoretically portable. In practice, serverless functions (Lambda vs Functions), managed databases (RDS vs Azure SQL), and AI services (SageMaker vs Azure ML) have different APIs and migration cost is real. Design for cloud-agnosticism if you're genuinely unsure."
+        "answer": "Switching cloud providers mid-project is expensive and disruptive. It should be planned from the outset. Clickmasters uses Terraform IaC on both platforms — infrastructure defined in code means the architecture is documented and theoretically portable. In practice, serverless functions (Lambda vs Functions), managed databases (RDS vs Azure SQL), and AI services (SageMaker vs Azure ML) have different APIs and migration cost is real. Design for cloud-agnosticism if you're genuinely unsure."
       },
       {
         "question": "Which cloud is cheaper for a typical UK startup?",
@@ -663,11 +663,11 @@ export const comparisons = [
     "topic": "agile_vs_waterfall_uk",
     "year": "2025",
     "title": "Agile vs Waterfall Software Development UK — Decision Guide (2025)",
-    "metaTitle": "Agile vs Waterfall Software Development UK — Which Is Right? | ClickMasters",
+    "metaTitle": "Agile vs Waterfall Software Development UK — Which Is Right? | Clickmasters",
     "metaDesc": "Agile vs waterfall for UK software projects. GDS mandates agile for public sector. Fixed-price agile explained. When waterfall is appropriate. Free guide.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters Delivery Team",
+    "writtenBy": "Clickmasters Delivery Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🔄 Agile (GDS Mandate)",
@@ -677,7 +677,7 @@ export const comparisons = [
       "🇬🇧 UK Project Management",
       "📊 Decision Framework"
     ],
-    "directAnswer": "The UK Government Digital Service (GDS) mandates agile delivery for all central government digital services — making agile the default for public sector digital work. For commercial software projects, agile (Scrum or Kanban) is also the dominant methodology, particularly for product development with evolving requirements. Waterfall (sequential phases with fixed requirements) is appropriate for highly regulated, safety-critical systems with fully defined requirements and contractual fixed-price delivery. ClickMasters uses Scrum by default with a formal change control process that enables fixed-price agile delivery.",
+    "directAnswer": "The UK Government Digital Service (GDS) mandates agile delivery for all central government digital services — making agile the default for public sector digital work. For commercial software projects, agile (Scrum or Kanban) is also the dominant methodology, particularly for product development with evolving requirements. Waterfall (sequential phases with fixed requirements) is appropriate for highly regulated, safety-critical systems with fully defined requirements and contractual fixed-price delivery. Clickmasters uses Scrum by default with a formal change control process that enables fixed-price agile delivery.",
     "comparisonTables": [
       {
         "title": "",
@@ -732,8 +732,8 @@ export const comparisons = [
     ],
     "bodySections": [
       {
-        "title": "Fixed-Price Agile — How ClickMasters Makes It Work",
-        "content": "Many businesses want agile benefits (flexibility, early delivery, feedback loops) but need budget certainty for board approval or investor reporting. ClickMasters offers fixed-price agile:"
+        "title": "Fixed-Price Agile — How Clickmasters Makes It Work",
+        "content": "Many businesses want agile benefits (flexibility, early delivery, feedback loops) but need budget certainty for board approval or investor reporting. Clickmasters offers fixed-price agile:"
       },
       {
         "title": "GDS and Agile for UK Public Sector",
@@ -741,13 +741,13 @@ export const comparisons = [
       },
       {
         "title": "FAQs — Agile vs Waterfall UK",
-        "content": "Q: Can I have a fixed price on an agile project?\n\nA: Yes — ClickMasters offers fixed-price agile delivery after a Technical Discovery phase. The key is thorough scoping upfront (so the price is based on a detailed, agreed backlog) combined with a formal change control process (so scope changes are priced before work begins). This is sometimes called \"fixed-price agile\" or \"agile within a fixed budget.\" It works well for most commercial software projects.\n\nQ: Does GDS only accept Scrum or will Kanban work?\n\nA: GDS mandates agile ways of working, not a specific methodology. Scrum and Kanban are both acceptable — and hybrid approaches are common. The key GDS requirement is: short delivery cycles, working software regularly demonstrating progress, user feedback incorporated into delivery, and continuous improvement. Many government teams use a Scrum/Kanban hybrid (Scrumban) for maintenance and operations work.\n\nQ: Is waterfall ever appropriate for UK software development?\n\nA: Yes — waterfall (or a sequential, stage-gated model) is appropriate for: safety-critical systems with fully defined requirements and regulatory sign-off required at each stage (e.g., medical device software under MDR), large capital projects with fixed regulatory requirements (e.g., nuclear control systems), and embedded systems development where hardware constraints require fully defined software specs before fabrication. For the vast majority of commercial software, agile is more appropriate."
+        "content": "Q: Can I have a fixed price on an agile project?\n\nA: Yes — Clickmasters offers fixed-price agile delivery after a Technical Discovery phase. The key is thorough scoping upfront (so the price is based on a detailed, agreed backlog) combined with a formal change control process (so scope changes are priced before work begins). This is sometimes called \"fixed-price agile\" or \"agile within a fixed budget.\" It works well for most commercial software projects.\n\nQ: Does GDS only accept Scrum or will Kanban work?\n\nA: GDS mandates agile ways of working, not a specific methodology. Scrum and Kanban are both acceptable — and hybrid approaches are common. The key GDS requirement is: short delivery cycles, working software regularly demonstrating progress, user feedback incorporated into delivery, and continuous improvement. Many government teams use a Scrum/Kanban hybrid (Scrumban) for maintenance and operations work.\n\nQ: Is waterfall ever appropriate for UK software development?\n\nA: Yes — waterfall (or a sequential, stage-gated model) is appropriate for: safety-critical systems with fully defined requirements and regulatory sign-off required at each stage (e.g., medical device software under MDR), large capital projects with fixed regulatory requirements (e.g., nuclear control systems), and embedded systems development where hardware constraints require fully defined software specs before fabrication. For the vast majority of commercial software, agile is more appropriate."
       }
     ],
     "faqs": [
       {
         "question": "Can I have a fixed price on an agile project?",
-        "answer": "Yes — ClickMasters offers fixed-price agile delivery after a Technical Discovery phase. The key is thorough scoping upfront (so the price is based on a detailed, agreed backlog) combined with a formal change control process (so scope changes are priced before work begins). This is sometimes called \"fixed-price agile\" or \"agile within a fixed budget.\" It works well for most commercial software projects."
+        "answer": "Yes — Clickmasters offers fixed-price agile delivery after a Technical Discovery phase. The key is thorough scoping upfront (so the price is based on a detailed, agreed backlog) combined with a formal change control process (so scope changes are priced before work begins). This is sometimes called \"fixed-price agile\" or \"agile within a fixed budget.\" It works well for most commercial software projects."
       },
       {
         "question": "Does GDS only accept Scrum or will Kanban work?",
@@ -789,11 +789,11 @@ export const comparisons = [
     "topic": "low_code_vs_custom",
     "year": "2025",
     "title": "Low-Code vs Custom Software Development UK — Honest Comparison (2025)",
-    "metaTitle": "Low-Code vs Custom Development UK — When to Build vs Buy | ClickMasters",
+    "metaTitle": "Low-Code vs Custom Development UK — When to Build vs Buy | Clickmasters",
     "metaDesc": "Low-code vs custom software development UK. Bubble, OutSystems, Mendix vs custom build. Scaling ceiling, vendor lock-in, 3-year TCO comparison. Free guide.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🏗️ Low-Code Platforms",
@@ -803,7 +803,7 @@ export const comparisons = [
       "📈 Scaling Ceiling",
       "🇬🇧 UK Market Context"
     ],
-    "directAnswer": "Low-code platforms (Bubble, OutSystems, Mendix, Power Apps) allow faster initial builds with less technical expertise — but have scaling ceilings, vendor lock-in risk, and per-user costs that grow with your business. Custom software has higher upfront cost but no vendor dependency, no per-user fees, and no capability ceiling. The right choice depends on your growth ambitions, technical requirements, and 3-year cost model. ClickMasters will tell you honestly if low-code is the right choice — even if that means we don't build it.",
+    "directAnswer": "Low-code platforms (Bubble, OutSystems, Mendix, Power Apps) allow faster initial builds with less technical expertise — but have scaling ceilings, vendor lock-in risk, and per-user costs that grow with your business. Custom software has higher upfront cost but no vendor dependency, no per-user fees, and no capability ceiling. The right choice depends on your growth ambitions, technical requirements, and 3-year cost model. Clickmasters will tell you honestly if low-code is the right choice — even if that means we don't build it.",
     "comparisonTables": [
       {
         "title": "",
@@ -855,7 +855,7 @@ export const comparisons = [
             "Any — tailored to your exact requirements",
             "None — scales to your architecture design",
             "None — you own the code",
-            "ClickMasters default for scalable products"
+            "Clickmasters default for scalable products"
           ]
         ]
       },
@@ -865,7 +865,7 @@ export const comparisons = [
           "Cost Element",
           "Bubble (Low-Code)",
           "OutSystems Enterprise",
-          "Custom (ClickMasters)"
+          "Custom (Clickmasters)"
         ],
         "rows": [
           [
@@ -896,7 +896,7 @@ export const comparisons = [
             "Year 2–3 Maintenance",
             "Low (platform handles infra)",
             "Medium (OutSystems team needed)",
-            "£15,000–£25,000/yr (ClickMasters retainer)"
+            "£15,000–£25,000/yr (Clickmasters retainer)"
           ],
           [
             "3-Year Total",
@@ -926,11 +926,11 @@ export const comparisons = [
       },
       {
         "title": "When Low-Code IS the Right Answer",
-        "content": "ClickMasters recommends low-code for the following scenarios — even though it means we don't get the work:"
+        "content": "Clickmasters recommends low-code for the following scenarios — even though it means we don't get the work:"
       },
       {
         "title": "FAQs — Low-Code vs Custom UK",
-        "content": "Q: Can I export my code from a low-code platform if I want to switch?\n\nA: It depends on the platform. Bubble does not export executable code — it exports a data dump that would require a complete rebuild to run independently. OutSystems generates code that can theoretically be extracted, but it's typically so entangled with the OutSystems runtime that extraction is impractical. Mendix exports Java code, but it requires significant refactoring to run independently. In practice: low-code vendor lock-in is real and significant. Design for migration from day one if you plan to eventually move to custom.\n\nQ: How does low-code interact with UK GDPR compliance?\n\nA: Low-code platforms add complexity to UK GDPR compliance because: data may be stored on the platform vendor's servers (international transfer if non-UK), your ability to implement data subject rights (erasure, portability) depends on platform capabilities you don't control, and sub-processor chains can be complex (your platform vendor's subprocessors become your sub-subprocessors under Article 28). ClickMasters recommends custom builds for any product processing significant volumes of UK personal data — you need full control over data architecture.\n\nQ: What is the performance ceiling for Bubble?\n\nA: Bubble applications are typically acceptable for up to approximately 1,000–5,000 concurrent users on premium hosting plans. Above this, performance degrades significantly — Bubble's no-code runtime is not optimised for high concurrency. For B2B SaaS products with enterprise customers expecting enterprise performance (sub-200ms API responses, 99.9%+ uptime SLAs), Bubble is not appropriate. For early-stage B2C products testing product-market fit with hundreds of users, Bubble can work."
+        "content": "Q: Can I export my code from a low-code platform if I want to switch?\n\nA: It depends on the platform. Bubble does not export executable code — it exports a data dump that would require a complete rebuild to run independently. OutSystems generates code that can theoretically be extracted, but it's typically so entangled with the OutSystems runtime that extraction is impractical. Mendix exports Java code, but it requires significant refactoring to run independently. In practice: low-code vendor lock-in is real and significant. Design for migration from day one if you plan to eventually move to custom.\n\nQ: How does low-code interact with UK GDPR compliance?\n\nA: Low-code platforms add complexity to UK GDPR compliance because: data may be stored on the platform vendor's servers (international transfer if non-UK), your ability to implement data subject rights (erasure, portability) depends on platform capabilities you don't control, and sub-processor chains can be complex (your platform vendor's subprocessors become your sub-subprocessors under Article 28). Clickmasters recommends custom builds for any product processing significant volumes of UK personal data — you need full control over data architecture.\n\nQ: What is the performance ceiling for Bubble?\n\nA: Bubble applications are typically acceptable for up to approximately 1,000–5,000 concurrent users on premium hosting plans. Above this, performance degrades significantly — Bubble's no-code runtime is not optimised for high concurrency. For B2B SaaS products with enterprise customers expecting enterprise performance (sub-200ms API responses, 99.9%+ uptime SLAs), Bubble is not appropriate. For early-stage B2C products testing product-market fit with hundreds of users, Bubble can work."
       }
     ],
     "faqs": [
@@ -940,7 +940,7 @@ export const comparisons = [
       },
       {
         "question": "How does low-code interact with UK GDPR compliance?",
-        "answer": "Low-code platforms add complexity to UK GDPR compliance because: data may be stored on the platform vendor's servers (international transfer if non-UK), your ability to implement data subject rights (erasure, portability) depends on platform capabilities you don't control, and sub-processor chains can be complex (your platform vendor's subprocessors become your sub-subprocessors under Article 28). ClickMasters recommends custom builds for any product processing significant volumes of UK personal data — you need full control over data architecture."
+        "answer": "Low-code platforms add complexity to UK GDPR compliance because: data may be stored on the platform vendor's servers (international transfer if non-UK), your ability to implement data subject rights (erasure, portability) depends on platform capabilities you don't control, and sub-processor chains can be complex (your platform vendor's subprocessors become your sub-subprocessors under Article 28). Clickmasters recommends custom builds for any product processing significant volumes of UK personal data — you need full control over data architecture."
       },
       {
         "question": "What is the performance ceiling for Bubble?",
@@ -969,7 +969,7 @@ export const comparisons = [
         "slug": "low-code-development-uk"
       }
     ],
-    "cta": "Get an Honest Build vs Low-Code Assessment ClickMasters will tell you which is right for your situation — even if that means not building it ourselves. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "cta": "Get an Honest Build vs Low-Code Assessment Clickmasters will tell you which is right for your situation — even if that means not building it ourselves. → Book Free Consultation: clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
     "author": ""
   },
   {
@@ -978,11 +978,11 @@ export const comparisons = [
     "topic": "postgresql_vs_mongodb",
     "year": "2025",
     "title": "PostgreSQL vs MongoDB for UK Software — Honest Technical Comparison (2025)",
-    "metaTitle": "PostgreSQL vs MongoDB UK — Which Database for Your Software? | ClickMasters",
+    "metaTitle": "PostgreSQL vs MongoDB UK — Which Database for Your Software? | Clickmasters",
     "metaDesc": "PostgreSQL vs MongoDB for UK software development. UK GDPR compliance, performance, multi-tenancy, use cases. Honest comparison. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters Engineering Team",
+    "writtenBy": "Clickmasters Engineering Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🐘 PostgreSQL",
@@ -992,7 +992,7 @@ export const comparisons = [
       "📊 Performance",
       "🇬🇧 UK Use Cases"
     ],
-    "directAnswer": "PostgreSQL is ClickMasters' default database for UK software projects. It is the most capable open-source relational database, supports ACID transactions (critical for FinTech and healthcare), has excellent UK GDPR compliance support via row-level security, and is the most widely supported database in the UK developer talent pool. MongoDB is the right choice when you genuinely need a document data model — variable schema, deeply nested documents, horizontal write scaling. For 80% of UK software projects, PostgreSQL is the better choice.",
+    "directAnswer": "PostgreSQL is Clickmasters' default database for UK software projects. It is the most capable open-source relational database, supports ACID transactions (critical for FinTech and healthcare), has excellent UK GDPR compliance support via row-level security, and is the most widely supported database in the UK developer talent pool. MongoDB is the right choice when you genuinely need a document data model — variable schema, deeply nested documents, horizontal write scaling. For 80% of UK software projects, PostgreSQL is the better choice.",
     "comparisonTables": [
       {
         "title": "",
@@ -1058,7 +1058,7 @@ export const comparisons = [
             "MongoDB Atlas — eu-west-2 (London) available"
           ],
           [
-            "ClickMasters default?",
+            "Clickmasters default?",
             "✅ Yes — for most UK projects",
             "When document model genuinely required"
           ]
@@ -1103,7 +1103,7 @@ export const comparisons = [
         "slug": "cost-custom-software-development-uk"
       }
     ],
-    "cta": "Get a Free Database Architecture Consultation ClickMasters recommends the right database for your use case — not the trendy one. Free consultation. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "cta": "Get a Free Database Architecture Consultation Clickmasters recommends the right database for your use case — not the trendy one. Free consultation. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
     "author": "Related Pages"
   },
   {
@@ -1112,11 +1112,11 @@ export const comparisons = [
     "topic": "react_native_vs_native",
     "year": "2025",
     "title": "React Native vs Native iOS/Android — UK Mobile Development Decision Guide (2025)",
-    "metaTitle": "React Native vs Native iOS/Android UK — Which to Choose? | ClickMasters",
+    "metaTitle": "React Native vs Native iOS/Android UK — Which to Choose? | Clickmasters",
     "metaDesc": "React Native vs native iOS and Android development for UK businesses. Cost comparison, performance, GDPR privacy labels, App Store submission. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters Mobile Team",
+    "writtenBy": "Clickmasters Mobile Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "📱 React Native",
@@ -1126,7 +1126,7 @@ export const comparisons = [
       "🔒 UK GDPR Privacy Labels",
       "🇬🇧 UK Market"
     ],
-    "directAnswer": "For most UK software projects, React Native (cross-platform) is the right choice — it delivers iOS and Android from a single codebase at approximately 60–70% of the cost of building two native apps. Native iOS (Swift) or Android (Kotlin) development is appropriate when you need maximum hardware performance (AR, real-time processing), platform-specific UI conventions are critical, or you have a large existing native codebase. ClickMasters uses React Native as our default mobile stack.",
+    "directAnswer": "For most UK software projects, React Native (cross-platform) is the right choice — it delivers iOS and Android from a single codebase at approximately 60–70% of the cost of building two native apps. Native iOS (Swift) or Android (Kotlin) development is appropriate when you need maximum hardware performance (AR, real-time processing), platform-specific UI conventions are critical, or you have a large existing native codebase. Clickmasters uses React Native as our default mobile stack.",
     "comparisonTables": [
       {
         "title": "",
@@ -1198,7 +1198,7 @@ export const comparisons = [
             "Data Safety section (Google) separate"
           ],
           [
-            "ClickMasters default?",
+            "Clickmasters default?",
             "✅ Yes",
             "When native-only features required",
             "When native-only Android required"
@@ -1212,8 +1212,8 @@ export const comparisons = [
         "content": "UK GDPR applies equally to mobile apps. Both app stores have their own privacy disclosure requirements:\n\nApple App Privacy Nutrition Labels:\n\nApple requires all apps to declare what data they collect — covering: data used to track you, data linked to you, data not linked to you. This must be accurate and reflect all data collected by the app AND third-party SDKs (analytics, crash reporting, advertising). Inaccurate labels are a guideline violation and risk App Store removal. React Native apps on iOS must complete these labels.\n\nGoogle Play Data Safety Section:\n\nGoogle requires all apps to complete a Data Safety section — declaring: what data is collected, whether it is shared with third parties, whether it is encrypted, and whether users can request deletion. Like Apple, this covers all data collected including third-party SDKs. Inaccurate declarations risk Play Store removal."
       },
       {
-        "title": "ClickMasters builds mobile apps with UK GDPR privacy labels configured correctly from day one — mapping all data collection (including third-party SDKs) to the correct privacy label categories. This is standard in our mobile delivery process.",
-        "content": "Q: When is React Native the wrong choice?\n\nA: React Native is less appropriate when: (1) you need intensive real-time processing (game engines, high-frequency AR rendering) where native performance is critical, (2) your app needs to use very new platform features before React Native community support is available, (3) you have an existing large native codebase and native developers — cross-platform won't save you money, (4) your app needs deeply platform-specific UI conventions that React Native cannot easily replicate (complex custom navigation patterns, system-level integrations).\n\nQ: How much does mobile app development cost in the UK?\n\nA: React Native (iOS + Android from one codebase): £20,000–£80,000. Native iOS only: £25,000–£90,000. Native Android only: £20,000–£80,000. Building both natively: £45,000–£170,000. The React Native saving vs dual native is approximately £25,000–£90,000 for a typical project. This is why React Native is the default for most UK businesses without specific native requirements.\n\nQ: What about Flutter vs React Native?\n\nA: Flutter (Google's cross-platform framework) is growing in UK adoption. Key differences: Flutter compiles to native ARM code (better performance than React Native's JS bridge), uses Dart language (smaller UK talent pool than React/JavaScript), and has excellent UI consistency across platforms. ClickMasters uses React Native as default because the JavaScript/TypeScript skill overlap with our web development team reduces cost. We can deliver Flutter on request — typically at a 20–30% premium due to Dart specialist requirements."
+        "title": "Clickmasters builds mobile apps with UK GDPR privacy labels configured correctly from day one — mapping all data collection (including third-party SDKs) to the correct privacy label categories. This is standard in our mobile delivery process.",
+        "content": "Q: When is React Native the wrong choice?\n\nA: React Native is less appropriate when: (1) you need intensive real-time processing (game engines, high-frequency AR rendering) where native performance is critical, (2) your app needs to use very new platform features before React Native community support is available, (3) you have an existing large native codebase and native developers — cross-platform won't save you money, (4) your app needs deeply platform-specific UI conventions that React Native cannot easily replicate (complex custom navigation patterns, system-level integrations).\n\nQ: How much does mobile app development cost in the UK?\n\nA: React Native (iOS + Android from one codebase): £20,000–£80,000. Native iOS only: £25,000–£90,000. Native Android only: £20,000–£80,000. Building both natively: £45,000–£170,000. The React Native saving vs dual native is approximately £25,000–£90,000 for a typical project. This is why React Native is the default for most UK businesses without specific native requirements.\n\nQ: What about Flutter vs React Native?\n\nA: Flutter (Google's cross-platform framework) is growing in UK adoption. Key differences: Flutter compiles to native ARM code (better performance than React Native's JS bridge), uses Dart language (smaller UK talent pool than React/JavaScript), and has excellent UI consistency across platforms. Clickmasters uses React Native as default because the JavaScript/TypeScript skill overlap with our web development team reduces cost. We can deliver Flutter on request — typically at a 20–30% premium due to Dart specialist requirements."
       }
     ],
     "faqs": [
@@ -1227,7 +1227,7 @@ export const comparisons = [
       },
       {
         "question": "What about Flutter vs React Native?",
-        "answer": "Flutter (Google's cross-platform framework) is growing in UK adoption. Key differences: Flutter compiles to native ARM code (better performance than React Native's JS bridge), uses Dart language (smaller UK talent pool than React/JavaScript), and has excellent UI consistency across platforms. ClickMasters uses React Native as default because the JavaScript/TypeScript skill overlap with our web development team reduces cost. We can deliver Flutter on request — typically at a 20–30% premium due to Dart specialist requirements."
+        "answer": "Flutter (Google's cross-platform framework) is growing in UK adoption. Key differences: Flutter compiles to native ARM code (better performance than React Native's JS bridge), uses Dart language (smaller UK talent pool than React/JavaScript), and has excellent UI consistency across platforms. Clickmasters uses React Native as default because the JavaScript/TypeScript skill overlap with our web development team reduces cost. We can deliver Flutter on request — typically at a 20–30% premium due to Dart specialist requirements."
       }
     ],
     "relatedPages": [
@@ -1261,11 +1261,11 @@ export const comparisons = [
     "topic": "monolith_vs_microservices",
     "year": "2025",
     "title": "Monolith vs Microservices UK — The Honest Decision Framework (2025)",
-    "metaTitle": "Monolith vs Microservices UK — When to Choose Each | ClickMasters",
+    "metaTitle": "Monolith vs Microservices UK — When to Choose Each | Clickmasters",
     "metaDesc": "Monolith vs microservices for UK software. Conway's Law, team size thresholds, UK GDPR implications, performance at scale. Honest decision framework. Free consultation.",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters Architecture Team",
+    "writtenBy": "Clickmasters Architecture Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🏗️ Monolith First",
@@ -1275,7 +1275,7 @@ export const comparisons = [
       "💷 TCO Comparison",
       "🇬🇧 UK Engineering Context"
     ],
-    "directAnswer": "Start with a modular monolith unless you have a specific reason to use microservices. The industry's rush to microservices has created countless over-engineered systems with unnecessary operational complexity. The right time to adopt microservices is when: you have multiple teams who need to deploy independently, you have specific services that require different scaling characteristics, or your deployment frequency is bottlenecked by coordination overhead. For most UK startups and SMBs, a well-structured monolith is the right architecture. ClickMasters builds modular monoliths by default and migrates to microservices when justified.",
+    "directAnswer": "Start with a modular monolith unless you have a specific reason to use microservices. The industry's rush to microservices has created countless over-engineered systems with unnecessary operational complexity. The right time to adopt microservices is when: you have multiple teams who need to deploy independently, you have specific services that require different scaling characteristics, or your deployment frequency is bottlenecked by coordination overhead. For most UK startups and SMBs, a well-structured monolith is the right architecture. Clickmasters builds modular monoliths by default and migrates to microservices when justified.",
     "comparisonTables": [
       {
         "title": "",
@@ -1328,7 +1328,7 @@ export const comparisons = [
         "content": "Microservices create significant UK GDPR compliance complexity that monoliths do not:"
       },
       {
-        "title": "Modular Monolith Advantage: A well-structured modular monolith handles all of these UK GDPR requirements with far less complexity than a microservices equivalent. ClickMasters recommends modular monolith architectures for startups and SMBs unless the team size and deployment frequency genuinely justify microservices.",
+        "title": "Modular Monolith Advantage: A well-structured modular monolith handles all of these UK GDPR requirements with far less complexity than a microservices equivalent. Clickmasters recommends modular monolith architectures for startups and SMBs unless the team size and deployment frequency genuinely justify microservices.",
         "content": "Q: When is it too early for microservices?\n\nA: It is too early for microservices when: your team has fewer than 8 engineers, your codebase is less than 2 years old, your deployment frequency is once a week or less, you don't have multiple teams who need to deploy independently, and your system does not have specific services requiring dramatically different scaling. Most UK startups that adopt microservices prematurely spend 18 months untangling the complexity they created and either revert to a monolith or hire expensive distributed systems engineers to manage it.\n\nQ: What is a modular monolith?\n\nA: A modular monolith (sometimes called a \"structured monolith\") is a single-deployable application with clear internal boundaries between modules. Each module: has a well-defined API (even if internal), owns its data (no other module directly accesses its database tables), and can be reasoned about independently. A good modular monolith is much easier to decompose into microservices later than a \"big ball of mud\" monolith — and is easier to operate than microservices now.\n\nQ: How do you migrate from monolith to microservices safely?\n\nA: The safest approach is the strangler fig pattern: incrementally extract services at the edges of the monolith while the monolith continues to function. Start with: the service with the most independent deployment requirements, the service with the clearest bounded context (from Domain-Driven Design), and the service that genuinely needs different scaling. Do not attempt to decompose the entire monolith at once — this \"big bang\" migration has an extremely poor success rate."
       }
     ],
@@ -1368,7 +1368,7 @@ export const comparisons = [
         "slug": "cloud-native-development"
       }
     ],
-    "cta": "Free Architecture Consultation ClickMasters will give you an honest recommendation — monolith or microservices — based on your team size, deployment needs, and business context. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
+    "cta": "Free Architecture Consultation Clickmasters will give you an honest recommendation — monolith or microservices — based on your team size, deployment needs, and business context. → clickmasterssoftwaredevelopmentcompany.co.uk/contact/",
     "author": ""
   },
   {
@@ -1377,11 +1377,11 @@ export const comparisons = [
     "topic": "nearshore_vs_offshore_vs_uk",
     "year": "2025",
     "title": "Nearshore vs Offshore vs UK Software Development — Honest Three-Way Comparison (2025)",
-    "metaTitle": "Nearshore vs Offshore vs UK Software Development — Honest Comparison | ClickMasters",
+    "metaTitle": "Nearshore vs Offshore vs UK Software Development — Honest Comparison | Clickmasters",
     "metaDesc": "Nearshore (Eastern Europe) vs offshore (India/Asia) vs UK software development. Total cost, GDPR compliance, communication, talent quality. UK market rates.",
     "lastUpdated": "June 2025",
     "readingTime": 11,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -1397,7 +1397,7 @@ export const comparisons = [
         "title": "",
         "headers": [
           "Factor",
-          "UK (ClickMasters)",
+          "UK (Clickmasters)",
           "Nearshore (Poland/Romania)",
           "Offshore (India Tier 1)"
         ],
@@ -1446,7 +1446,7 @@ export const comparisons = [
           ],
           [
             "IR35 liability",
-            "ClickMasters: zero (employees)",
+            "Clickmasters: zero (employees)",
             "Variable depending on engagement",
             "Variable — check carefully"
           ],
@@ -1463,7 +1463,7 @@ export const comparisons = [
             "⚠️ High GDPR risk — not recommended"
           ],
           [
-            "ClickMasters view",
+            "Clickmasters view",
             "Default recommendation",
             "If budget genuinely constrains UK",
             "Only for non-regulated, non-personal-data work"
@@ -1559,11 +1559,11 @@ export const comparisons = [
     "topic": "software_technical_due_diligence_uk",
     "year": "2025",
     "title": "Software Technical Due Diligence UK — What Investors &amp; Acquirers Actually Check (2025)",
-    "metaTitle": "Software Technical Due Diligence UK — What Investors and Acquirers Check | ClickMasters",
+    "metaTitle": "Software Technical Due Diligence UK — What Investors and Acquirers Check | Clickmasters",
     "metaDesc": "Technical due diligence (TDD) for UK software businesses examines: architecture quality and scalability, code quality and technical debt, security posture (Cybe...",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market Context",
@@ -1672,7 +1672,7 @@ export const comparisons = [
       },
       {
         "title": "The Most Common UK TDD Findings",
-        "content": "Based on ClickMasters' experience supporting TDD preparation:"
+        "content": "Based on Clickmasters' experience supporting TDD preparation:"
       }
     ],
     "faqs": [
@@ -1682,11 +1682,11 @@ export const comparisons = [
       },
       {
         "question": "How can I prepare my software business for technical due diligence?",
-        "answer": "ClickMasters offers pre-TDD readiness assessments: architecture review and documentation, IP ownership audit (are all IP assignment agreements in place?), UK GDPR compliance audit, Cyber Essentials certification check, penetration test commissioning, and technical debt quantification. Preparing 3–6 months before planned M&amp;A or investment significantly improves TDD outcomes."
+        "answer": "Clickmasters offers pre-TDD readiness assessments: architecture review and documentation, IP ownership audit (are all IP assignment agreements in place?), UK GDPR compliance audit, Cyber Essentials certification check, penetration test commissioning, and technical debt quantification. Preparing 3–6 months before planned M&amp;A or investment significantly improves TDD outcomes."
       },
       {
-        "question": "Does ClickMasters conduct technical due diligence?",
-        "answer": "ClickMasters provides technical due diligence support from both sides: we prepare software businesses for TDD (pre-TDD readiness work), and we support investors and acquirers with TDD reviews of target businesses. Our TDD reports cover all seven areas listed above, with UK-specific regulatory compliance analysis."
+        "question": "Does Clickmasters conduct technical due diligence?",
+        "answer": "Clickmasters provides technical due diligence support from both sides: we prepare software businesses for TDD (pre-TDD readiness work), and we support investors and acquirers with TDD reviews of target businesses. Our TDD reports cover all seven areas listed above, with UK-specific regulatory compliance analysis."
       }
     ],
     "relatedPages": [
@@ -1719,12 +1719,12 @@ export const comparisons = [
     "slug": "ir35-contractor-vs-clickmasters",
     "topic": "ir35_contractor_vs_clickmasters",
     "year": "2025",
-    "title": "IR35 Inside Contractor vs ClickMasters Staff Augmentation — Total Cost Comparison (2025)",
-    "metaTitle": "Inside IR35 Contractor vs ClickMasters Staff Augmentation — Full Comparison | ClickMasters",
+    "title": "IR35 Inside Contractor vs Clickmasters Staff Augmentation — Total Cost Comparison (2025)",
+    "metaTitle": "Inside IR35 Contractor vs Clickmasters Staff Augmentation — Full Comparison | Clickmasters",
     "metaDesc": "An inside IR35 contractor costs you significantly more than their stated day rate — you pay employer NI on top, they require a Status Determination Statement (S...",
     "lastUpdated": "June 2025",
     "readingTime": 10,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market Context",
@@ -1733,30 +1733,30 @@ export const comparisons = [
       "🔒 UK GDPR",
       "📊 Decision Framework"
     ],
-    "directAnswer": "An inside IR35 contractor costs you significantly more than their stated day rate — you pay employer NI on top, they require a Status Determination Statement (SDS), and HMRC liability sits with you if the determination is wrong. ClickMasters staff augmentation eliminates IR35 entirely: our engineers are our employees, you engage us as a company, one monthly invoice, no SDS, no HMRC risk. The total cost difference is often smaller than it appears — inside IR35 contractors require 15–25% higher day rates to maintain net take-home pay equivalent to ClickMasters monthly rates.",
+    "directAnswer": "An inside IR35 contractor costs you significantly more than their stated day rate — you pay employer NI on top, they require a Status Determination Statement (SDS), and HMRC liability sits with you if the determination is wrong. Clickmasters staff augmentation eliminates IR35 entirely: our engineers are our employees, you engage us as a company, one monthly invoice, no SDS, no HMRC risk. The total cost difference is often smaller than it appears — inside IR35 contractors require 15–25% higher day rates to maintain net take-home pay equivalent to Clickmasters monthly rates.",
     "comparisonTables": [
       {
         "title": "",
         "headers": [
           "Cost Element",
           "Inside IR35 Contractor",
-          "ClickMasters Staff Augmentation"
+          "Clickmasters Staff Augmentation"
         ],
         "rows": [
           [
             "Stated rate/fee",
             "£550/day (inside IR35)",
-            "£6,500/month (ClickMasters)"
+            "£6,500/month (Clickmasters)"
           ],
           [
             "Employer NI (13.8%)",
             "£13,178/year (you pay this)",
-            "Included — ClickMasters pays"
+            "Included — Clickmasters pays"
           ],
           [
             "Apprenticeship Levy (0.5%)",
             "£477/year (you pay this)",
-            "Included — ClickMasters pays"
+            "Included — Clickmasters pays"
           ],
           [
             "IR35 Status Determination Statement",
@@ -1793,22 +1793,22 @@ export const comparisons = [
     ],
     "bodySections": [
       {
-        "title": "Total Cost Comparison — Inside IR35 Contractor vs ClickMasters",
+        "title": "Total Cost Comparison — Inside IR35 Contractor vs Clickmasters",
         "content": "Here is the full cost comparison for a senior developer at equivalent capability:"
       },
       {
         "title": "Why Inside IR35 Contractors Are Expensive",
-        "content": "The inside IR35 rate is not the total cost. When you engage an inside IR35 contractor at £550/day: (1) You pay employer National Insurance (13.8% of earnings above £9,100 threshold) — approximately £13,178/year per contractor. (2) Apprenticeship Levy (0.5%) — approximately £477/year. (3) You must issue a Status Determination Statement (SDS) — legal documentation time. (4) HMRC can challenge the determination at any time — if wrong, you owe unpaid income tax, employee NI, employer NI, interest, and penalties. ClickMasters eliminates all of this: one monthly invoice, zero additional costs."
+        "content": "The inside IR35 rate is not the total cost. When you engage an inside IR35 contractor at £550/day: (1) You pay employer National Insurance (13.8% of earnings above £9,100 threshold) — approximately £13,178/year per contractor. (2) Apprenticeship Levy (0.5%) — approximately £477/year. (3) You must issue a Status Determination Statement (SDS) — legal documentation time. (4) HMRC can challenge the determination at any time — if wrong, you owe unpaid income tax, employee NI, employer NI, interest, and penalties. Clickmasters eliminates all of this: one monthly invoice, zero additional costs."
       }
     ],
     "faqs": [
       {
-        "question": "Is ClickMasters staff augmentation always cheaper than IR35 contractors?",
-        "answer": "At equivalent capability, ClickMasters is often more cost-effective when you include: employer NI (13.8%), Apprenticeship Levy, agency fees (15–25% if via agency), IR35 admin overhead, and the risk-adjusted cost of incorrect IR35 determinations. For very senior specialists (principal architects, CTO-level), the market for outside IR35 independent consultants may still be more cost-effective for short-term engagements. ClickMasters will give you an honest comparison for your specific situation."
+        "question": "Is Clickmasters staff augmentation always cheaper than IR35 contractors?",
+        "answer": "At equivalent capability, Clickmasters is often more cost-effective when you include: employer NI (13.8%), Apprenticeship Levy, agency fees (15–25% if via agency), IR35 admin overhead, and the risk-adjusted cost of incorrect IR35 determinations. For very senior specialists (principal architects, CTO-level), the market for outside IR35 independent consultants may still be more cost-effective for short-term engagements. Clickmasters will give you an honest comparison for your specific situation."
       },
       {
         "question": "What if I need the developer inside my office every day?",
-        "answer": "ClickMasters engineers can work on-site. Most placements are hybrid (2–3 days on-site, remainder remote) — which matches modern UK professional working patterns and is typically preferred by senior engineers. Fully on-site is available for roles where daily physical presence is genuinely required."
+        "answer": "Clickmasters engineers can work on-site. Most placements are hybrid (2–3 days on-site, remainder remote) — which matches modern UK professional working patterns and is typically preferred by senior engineers. Fully on-site is available for roles where daily physical presence is genuinely required."
       }
     ],
     "relatedPages": [
@@ -1838,11 +1838,11 @@ export const comparisons = [
     "topic": "fixed_price_vs_time_materials_uk",
     "year": "2025",
     "title": "Fixed Price vs Time &amp; Materials Software Contracts UK — Honest Comparison (2025)",
-    "metaTitle": "Fixed Price vs Time &amp; Materials Software Contracts UK — Which Should You Choose? | ClickMasters",
+    "metaTitle": "Fixed Price vs Time &amp; Materials Software Contracts UK — Which Should You Choose? | Clickmasters",
     "metaDesc": "For most UK custom software projects with defined requirements: fixed price is better for the client (cost certainty, risk transferred to supplier, clear accoun",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market",
@@ -1851,7 +1851,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "📊 Decision Framework"
     ],
-    "directAnswer": "For most UK custom software projects with defined requirements: fixed price is better for the client (cost certainty, risk transferred to supplier, clear accountability). Time &amp; Materials is better when requirements genuinely cannot be defined upfront (R&amp;D, discovery phases, rapidly changing scope). ClickMasters uses fixed-price Agile for the delivery phase and Time &amp; Materials for Technical Discovery — giving clients the best of both. The choice between fixed price and time &amp; materials (T&amp;M) is one of the most consequential decisions in UK software procurement. The wrong choice can result in budget overruns (T&amp;M without scope control) or scope disputes (fixed price with poorly defined requirements). Here is an honest comparison based on UK market reality.",
+    "directAnswer": "For most UK custom software projects with defined requirements: fixed price is better for the client (cost certainty, risk transferred to supplier, clear accountability). Time &amp; Materials is better when requirements genuinely cannot be defined upfront (R&amp;D, discovery phases, rapidly changing scope). Clickmasters uses fixed-price Agile for the delivery phase and Time &amp; Materials for Technical Discovery — giving clients the best of both. The choice between fixed price and time &amp; materials (T&amp;M) is one of the most consequential decisions in UK software procurement. The wrong choice can result in budget overruns (T&amp;M without scope control) or scope disputes (fixed price with poorly defined requirements). Here is an honest comparison based on UK market reality.",
     "comparisonTables": [
       {
         "title": "",
@@ -1897,7 +1897,7 @@ export const comparisons = [
             "R&amp;D, discovery, rapidly changing scope"
           ],
           [
-            "ClickMasters approach",
+            "Clickmasters approach",
             "Fixed price for delivery phase",
             "T&amp;M for Technical Discovery only"
           ]
@@ -1907,12 +1907,12 @@ export const comparisons = [
     "bodySections": [],
     "faqs": [
       {
-        "question": "Why does ClickMasters use fixed price?",
-        "answer": "Fixed price aligns incentives correctly — ClickMasters has a financial incentive to deliver efficiently and correctly, not to bill more hours. Clients get cost certainty and can make business investment decisions based on known costs. The risk of underestimation sits with ClickMasters, not the client."
+        "question": "Why does Clickmasters use fixed price?",
+        "answer": "Fixed price aligns incentives correctly — Clickmasters has a financial incentive to deliver efficiently and correctly, not to bill more hours. Clients get cost certainty and can make business investment decisions based on known costs. The risk of underestimation sits with Clickmasters, not the client."
       },
       {
         "question": "What happens if scope changes on a fixed-price project?",
-        "answer": "Scope changes are handled via a Change Request (CR) process. If you ask for a new feature not in the original specification, ClickMasters scopes and prices it separately. This gives both parties clarity — the client knows the additional cost, and ClickMasters knows it is building what was agreed."
+        "answer": "Scope changes are handled via a Change Request (CR) process. If you ask for a new feature not in the original specification, Clickmasters scopes and prices it separately. This gives both parties clarity — the client knows the additional cost, and Clickmasters knows it is building what was agreed."
       },
       {
         "question": "When should I use Time &amp; Materials?",
@@ -1942,11 +1942,11 @@ export const comparisons = [
     "topic": "react_native_vs_native_mobile_uk",
     "year": "2025",
     "title": "React Native vs Native Mobile App Development UK — Honest Comparison (2025)",
-    "metaTitle": "React Native vs Native Mobile App Development UK — Which to Choose (2025) | ClickMasters",
+    "metaTitle": "React Native vs Native Mobile App Development UK — Which to Choose (2025) | Clickmasters",
     "metaDesc": "React Native is the right choice for most UK mobile app projects — one codebase for iOS and Android, 60–80% cost saving vs dual native, and a large UK talent po",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market",
@@ -2009,7 +2009,7 @@ export const comparisons = [
             ""
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "Default for most UK projects",
             "Only if performance-critical",
             "Only if performance-critical"
@@ -2051,11 +2051,11 @@ export const comparisons = [
     "topic": "scrum_vs_kanban_uk",
     "year": "2025",
     "title": "Scrum vs Kanban for UK Software Development — Honest Comparison (2025)",
-    "metaTitle": "Scrum vs Kanban — Which Agile Methodology for UK Software Projects? | ClickMasters",
+    "metaTitle": "Scrum vs Kanban — Which Agile Methodology for UK Software Projects? | Clickmasters",
     "metaDesc": "Scrum is better for fixed-scope product development (defined backlog, sprint commitments, predictable delivery). Kanban is better for ongoing maintenance, suppo",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market",
@@ -2064,7 +2064,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "📊 Comparison"
     ],
-    "directAnswer": "Scrum is better for fixed-scope product development (defined backlog, sprint commitments, predictable delivery). Kanban is better for ongoing maintenance, support, and continuous delivery work where priorities shift frequently. Most UK software agencies (including ClickMasters) use Scrum for the build phase and Kanban for post-launch maintenance retainers. Both are compatible with fixed-price contracts — Scrum via sprint-based delivery, Kanban via monthly capacity. Scrum vs Kanban is a practical UK software delivery decision that affects how your project is planned, how progress is measured, and how changes are handled. Here is a straightforward comparison based on real UK software delivery experience.",
+    "directAnswer": "Scrum is better for fixed-scope product development (defined backlog, sprint commitments, predictable delivery). Kanban is better for ongoing maintenance, support, and continuous delivery work where priorities shift frequently. Most UK software agencies (including Clickmasters) use Scrum for the build phase and Kanban for post-launch maintenance retainers. Both are compatible with fixed-price contracts — Scrum via sprint-based delivery, Kanban via monthly capacity. Scrum vs Kanban is a practical UK software delivery decision that affects how your project is planned, how progress is measured, and how changes are handled. Here is a straightforward comparison based on real UK software delivery experience.",
     "comparisonTables": [
       {
         "title": "",
@@ -2115,7 +2115,7 @@ export const comparisons = [
             "Post-live iteration phase"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "Build phase (Scrum)",
             "Post-launch retainer (Kanban)"
           ]
@@ -2130,7 +2130,7 @@ export const comparisons = [
       },
       {
         "question": "How does Scrum work with fixed-price contracts?",
-        "answer": "Fixed-price + Scrum: the project backlog (agreed during Technical Discovery) represents the fixed scope. Sprint planning draws from this backlog. Velocity (story points per sprint) determines the timeline estimate. The client attends Sprint Reviews to accept or reject completed stories. New requirements not in the original backlog go through a Change Request process. This gives both parties clarity — the client knows what they're getting, ClickMasters knows what it's building."
+        "answer": "Fixed-price + Scrum: the project backlog (agreed during Technical Discovery) represents the fixed scope. Sprint planning draws from this backlog. Velocity (story points per sprint) determines the timeline estimate. The client attends Sprint Reviews to accept or reject completed stories. New requirements not in the original backlog go through a Change Request process. This gives both parties clarity — the client knows what they're getting, Clickmasters knows what it's building."
       },
       {
         "question": "What Kanban metrics matter for UK maintenance retainers?",
@@ -2160,11 +2160,11 @@ export const comparisons = [
     "topic": "custom_software_vs_saas_uk",
     "year": "2025",
     "title": "Custom Software vs SaaS — Honest Decision Framework for UK Businesses (2025)",
-    "metaTitle": "Custom Software vs SaaS — Which Is Right for Your UK Business? (2025) | ClickMasters",
+    "metaTitle": "Custom Software vs SaaS — Which Is Right for Your UK Business? (2025) | Clickmasters",
     "metaDesc": "SaaS wins when: the software is not your competitive advantage, an off-the-shelf product meets 80%+ of your requirements, and your UK GDPR requirements are stan",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market",
@@ -2173,7 +2173,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "📊 Comparison"
     ],
-    "directAnswer": "SaaS wins when: the software is not your competitive advantage, an off-the-shelf product meets 80%+ of your requirements, and your UK GDPR requirements are standard. Custom wins when: the software IS your competitive advantage, SaaS cannot meet UK regulatory requirements (DTAC, FCA, GDS), or 3-year SaaS TCO exceeds the custom build cost. ClickMasters will tell you honestly which is right. The custom vs SaaS decision is one of the most consequential UK software strategy choices. Made wrongly, it leads to: years of SaaS lock-in at increasing cost, or expensive custom builds for functionality a SaaS product already does well. Here is an honest framework based on real UK market experience.",
+    "directAnswer": "SaaS wins when: the software is not your competitive advantage, an off-the-shelf product meets 80%+ of your requirements, and your UK GDPR requirements are standard. Custom wins when: the software IS your competitive advantage, SaaS cannot meet UK regulatory requirements (DTAC, FCA, GDS), or 3-year SaaS TCO exceeds the custom build cost. Clickmasters will tell you honestly which is right. The custom vs SaaS decision is one of the most consequential UK software strategy choices. Made wrongly, it leads to: years of SaaS lock-in at increasing cost, or expensive custom builds for functionality a SaaS product already does well. Here is an honest framework based on real UK market experience.",
     "comparisonTables": [
       {
         "title": "",
@@ -2279,11 +2279,11 @@ export const comparisons = [
     "topic": "monolith_vs_microservices_uk",
     "year": "2025",
     "title": "Monolith vs Microservices — Honest Architecture Decision for UK Software (2025)",
-    "metaTitle": "Monolith vs Microservices — Which Architecture for UK Software? (2025) | ClickMasters",
+    "metaTitle": "Monolith vs Microservices — Which Architecture for UK Software? (2025) | Clickmasters",
     "metaDesc": "For most UK software projects with teams under 10 engineers: start with a well-structured monolith. Microservices solve real problems (independent scaling, inde",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market",
@@ -2353,7 +2353,7 @@ export const comparisons = [
             "Higher — Kubernetes, service mesh, observability stack"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "Default for &lt;15 engineers",
             "Only when monolith pain is real and team is ready"
           ]
@@ -2398,11 +2398,11 @@ export const comparisons = [
     "topic": "react_vs_vue_vs_angular_uk",
     "year": "2025",
     "title": "React vs Vue vs Angular for UK Software Development — Honest Comparison (2025)",
-    "metaTitle": "React vs Vue vs Angular — Which JavaScript Framework for UK Businesses? (2025) | ClickMasters",
+    "metaTitle": "React vs Vue vs Angular — Which JavaScript Framework for UK Businesses? (2025) | Clickmasters",
     "metaDesc": "React is the right default for most UK software projects: largest talent pool, most used in UK market, excellent ecosystem. Vue is good when your team prefers a",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market",
@@ -2411,7 +2411,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "React is the right default for most UK software projects: largest talent pool, most used in UK market, excellent ecosystem. Vue is good when your team prefers a gentler learning curve and more opinionated structure. Angular is the right choice for large enterprise teams with Java/C# backgrounds who value enforced structure. ClickMasters defaults to React + TypeScript for all new projects. React vs Vue vs Angular is a question ClickMasters gets asked frequently by UK CTOs and engineering directors. The honest answer: talent availability matters more than technical differences at most scales. Here is the UK-specific analysis.",
+    "directAnswer": "React is the right default for most UK software projects: largest talent pool, most used in UK market, excellent ecosystem. Vue is good when your team prefers a gentler learning curve and more opinionated structure. Angular is the right choice for large enterprise teams with Java/C# backgrounds who value enforced structure. Clickmasters defaults to React + TypeScript for all new projects. React vs Vue vs Angular is a question Clickmasters gets asked frequently by UK CTOs and engineering directors. The honest answer: talent availability matters more than technical differences at most scales. Here is the UK-specific analysis.",
     "comparisonTables": [
       {
         "title": "",
@@ -2471,7 +2471,7 @@ export const comparisons = [
             "NgRx (built-in)"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ Yes — React + TypeScript",
             "No",
             "No"
@@ -2482,7 +2482,7 @@ export const comparisons = [
     "bodySections": [],
     "faqs": [
       {
-        "question": "Why does ClickMasters default to React over Vue?",
+        "question": "Why does Clickmasters default to React over Vue?",
         "answer": "UK talent pool: React developers are approximately 5x more common in the UK than Vue developers — easier to hire, easier to find contractors, easier to hand over to an internal team. Ecosystem: larger, more mature. GOV.UK Design System: official React component library available. TypeScript: React + TypeScript is the dominant UK professional frontend stack in 2025."
       },
       {
@@ -2491,7 +2491,7 @@ export const comparisons = [
       },
       {
         "question": "What about Next.js vs plain React?",
-        "answer": "ClickMasters uses Next.js (App Router) for all new React projects — Server Components improve performance (lower Core Web Vitals), built-in routing is simpler than React Router, and Server-Side Rendering improves SEO. The only case for plain React (Create React App or Vite): simple single-page apps with no SEO requirement. Even then, Next.js is simpler to set up and maintain."
+        "answer": "Clickmasters uses Next.js (App Router) for all new React projects — Server Components improve performance (lower Core Web Vitals), built-in routing is simpler than React Router, and Server-Side Rendering improves SEO. The only case for plain React (Create React App or Vite): simple single-page apps with no SEO requirement. Even then, Next.js is simpler to set up and maintain."
       }
     ],
     "relatedPages": [
@@ -2517,11 +2517,11 @@ export const comparisons = [
     "topic": "agency_vs_freelancer_vs_in_house_uk",
     "year": "2025",
     "title": "Software Development Agency vs Freelancer vs In-House — UK Decision Guide (2025)",
-    "metaTitle": "Software Development Agency vs Freelancer vs In-House — UK Decision Guide | ClickMasters",
+    "metaTitle": "Software Development Agency vs Freelancer vs In-House — UK Decision Guide | Clickmasters",
     "metaDesc": "Agency wins for: complex projects needing multiple skills simultaneously, regulated sectors requiring compliance expertise, and projects where you need a team r",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market",
@@ -2536,7 +2536,7 @@ export const comparisons = [
         "title": "",
         "headers": [
           "Factor",
-          "Agency (ClickMasters)",
+          "Agency (Clickmasters)",
           "Freelancer",
           "In-House Team"
         ],
@@ -2590,7 +2590,7 @@ export const comparisons = [
             "Core sustained product work"
           ],
           [
-            "ClickMasters advantage",
+            "Clickmasters advantage",
             "Zero IR35, full team, compliance",
             "—",
             "—"
@@ -2602,11 +2602,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "When is a freelancer better than an agency?",
-        "answer": "Freelancers are better when: the task is very well-defined (build this single component), you have a strong technical lead who can manage them day-to-day, budget is genuinely very tight, and the work is low-risk (not regulated sector, not handling personal data in novel ways). Warning: freelancer IR35 — if you engage a freelancer through a personal service company, you are responsible for IR35 determination. ClickMasters staff augmentation eliminates IR35 entirely."
+        "answer": "Freelancers are better when: the task is very well-defined (build this single component), you have a strong technical lead who can manage them day-to-day, budget is genuinely very tight, and the work is low-risk (not regulated sector, not handling personal data in novel ways). Warning: freelancer IR35 — if you engage a freelancer through a personal service company, you are responsible for IR35 determination. Clickmasters staff augmentation eliminates IR35 entirely."
       },
       {
         "question": "When should I hire in-house instead of using an agency?",
-        "answer": "In-house makes more sense when: the software is your core product and you need daily input into product direction, you need someone deeply embedded in your business culture, or you are scaling past 15+ engineers and the overhead of agency management exceeds the overhead of internal management. Most businesses start with agency, prove the product, then hire in-house around the proven product. ClickMasters supports this transition — we document everything so in-house teams can take over."
+        "answer": "In-house makes more sense when: the software is your core product and you need daily input into product direction, you need someone deeply embedded in your business culture, or you are scaling past 15+ engineers and the overhead of agency management exceeds the overhead of internal management. Most businesses start with agency, prove the product, then hire in-house around the proven product. Clickmasters supports this transition — we document everything so in-house teams can take over."
       }
     ],
     "relatedPages": [
@@ -2632,11 +2632,11 @@ export const comparisons = [
     "topic": "postgresql_vs_mysql_vs_mongodb_uk",
     "year": "2025",
     "title": "PostgreSQL vs MySQL vs MongoDB for UK Software Development — Honest Comparison (2025)",
-    "metaTitle": "PostgreSQL vs MySQL vs MongoDB — Which Database for UK Software? (2025) | ClickMasters",
+    "metaTitle": "PostgreSQL vs MySQL vs MongoDB — Which Database for UK Software? (2025) | Clickmasters",
     "metaDesc": "PostgreSQL is the right default for most UK software projects: strongest compliance posture (row-level security for UK GDPR Article 25, JSONB for flexible data)",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market",
@@ -2645,7 +2645,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "PostgreSQL is the right default for most UK software projects: strongest compliance posture (row-level security for UK GDPR Article 25, JSONB for flexible data), excellent performance at scale, and the largest UK developer community. MySQL is fine for simple read-heavy applications but PostgreSQL has overtaken it for new UK projects. MongoDB suits genuinely document-centric data (content management, product catalogues) but adds operational complexity. ClickMasters defaults to PostgreSQL on all projects. Database choice is one of the most consequential early architecture decisions. Getting it wrong means painful migrations later. Here is an honest UK-market comparison based on what works in production.",
+    "directAnswer": "PostgreSQL is the right default for most UK software projects: strongest compliance posture (row-level security for UK GDPR Article 25, JSONB for flexible data), excellent performance at scale, and the largest UK developer community. MySQL is fine for simple read-heavy applications but PostgreSQL has overtaken it for new UK projects. MongoDB suits genuinely document-centric data (content management, product catalogues) but adds operational complexity. Clickmasters defaults to PostgreSQL on all projects. Database choice is one of the most consequential early architecture decisions. Getting it wrong means painful migrations later. Here is an honest UK-market comparison based on what works in production.",
     "comparisonTables": [
       {
         "title": "",
@@ -2711,7 +2711,7 @@ export const comparisons = [
             "Medium"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ Yes — all projects",
             "No",
             "Only for document stores"
@@ -2722,7 +2722,7 @@ export const comparisons = [
     "bodySections": [],
     "faqs": [
       {
-        "question": "Why does ClickMasters default to PostgreSQL?",
+        "question": "Why does Clickmasters default to PostgreSQL?",
         "answer": "UK GDPR compliance: PostgreSQL's native Row-Level Security (RLS) is the cleanest implementation of data isolation for multi-tenant UK GDPR compliant applications — each tenant's data is isolated at the database level, not the application level. JSONB: when you need flexible schema for some fields but relational integrity for others, JSONB eliminates the need for a separate document store. TimescaleDB: IoT and time-series data (energy monitoring, telemetry) extends PostgreSQL natively. Developer talent: the largest UK PostgreSQL talent pool."
       },
       {
@@ -2753,11 +2753,11 @@ export const comparisons = [
     "topic": "typescript_vs_javascript_uk",
     "year": "2025",
     "title": "TypeScript vs JavaScript for UK Software Development — Honest Comparison (2025)",
-    "metaTitle": "TypeScript vs JavaScript — Should UK Businesses Mandate TypeScript? (2025) | ClickMasters",
+    "metaTitle": "TypeScript vs JavaScript — Should UK Businesses Mandate TypeScript? (2025) | Clickmasters",
     "metaDesc": "TypeScript is the right choice for virtually all UK professional software development in 2025. The type safety, better IDE tooling, and improved code maintainab",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market",
@@ -2766,7 +2766,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "TypeScript is the right choice for virtually all UK professional software development in 2025. The type safety, better IDE tooling, and improved code maintainability benefits outweigh the initial configuration overhead. The only cases for plain JavaScript: very small scripts (under 100 lines), quick prototypes, and contexts where a TypeScript setup is genuinely impractical. ClickMasters mandates TypeScript on all projects. TypeScript has effectively won the JavaScript ecosystem argument in the UK professional market. Here is an honest breakdown of why, and the edge cases where JavaScript still makes sense.",
+    "directAnswer": "TypeScript is the right choice for virtually all UK professional software development in 2025. The type safety, better IDE tooling, and improved code maintainability benefits outweigh the initial configuration overhead. The only cases for plain JavaScript: very small scripts (under 100 lines), quick prototypes, and contexts where a TypeScript setup is genuinely impractical. Clickmasters mandates TypeScript on all projects. TypeScript has effectively won the JavaScript ecosystem argument in the UK professional market. Here is an honest breakdown of why, and the edge cases where JavaScript still makes sense.",
     "comparisonTables": [
       {
         "title": "",
@@ -2822,7 +2822,7 @@ export const comparisons = [
             "Supported but inferior DX"
           ],
           [
-            "ClickMasters mandate",
+            "Clickmasters mandate",
             "✅ All projects — strict: true",
             "Only scripts under 100 lines"
           ]
@@ -2833,7 +2833,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Should I insist on TypeScript from my software agency?",
-        "answer": "Yes — insisting on TypeScript (with strict: true config) is one of the most valuable quality requirements you can put in your software contract. It directly reduces the bug rate (type errors are caught at compile time, not in production), makes the codebase more maintainable (types document what data looks like), and makes it easier to hand over the codebase to an internal team later. ClickMasters mandates TypeScript on all projects as a quality standard."
+        "answer": "Yes — insisting on TypeScript (with strict: true config) is one of the most valuable quality requirements you can put in your software contract. It directly reduces the bug rate (type errors are caught at compile time, not in production), makes the codebase more maintainable (types document what data looks like), and makes it easier to hand over the codebase to an internal team later. Clickmasters mandates TypeScript on all projects as a quality standard."
       },
       {
         "question": "Does TypeScript add significant development cost?",
@@ -2863,11 +2863,11 @@ export const comparisons = [
     "topic": "graphql_vs_rest_api_uk",
     "year": "2025",
     "title": "GraphQL vs REST API for UK Software Development — Honest Comparison (2025)",
-    "metaTitle": "GraphQL vs REST API — Which for UK Software Development? (2025) | ClickMasters",
+    "metaTitle": "GraphQL vs REST API — Which for UK Software Development? (2025) | Clickmasters",
     "metaDesc": "REST is the right default for most UK API development: simpler, easier to cache, better tooling for UK GDPR compliance monitoring, and the GDS API design standa",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market",
@@ -2876,7 +2876,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "REST is the right default for most UK API development: simpler, easier to cache, better tooling for UK GDPR compliance monitoring, and the GDS API design standard. GraphQL is genuinely better when: clients need flexible queries across complex related data (e.g., product catalogue with nested categories, attributes, and variants), you are building a public API consumed by many different clients with different data needs, or you are building a BFF (Backend for Frontend) aggregating multiple microservices. ClickMasters defaults to REST + OpenAPI 3.0. GraphQL vs REST is one of the most common UK API architecture debates. Here is an honest analysis of where each wins — including the UK GDPR and GDS compliance implications that most comparisons miss.",
+    "directAnswer": "REST is the right default for most UK API development: simpler, easier to cache, better tooling for UK GDPR compliance monitoring, and the GDS API design standard. GraphQL is genuinely better when: clients need flexible queries across complex related data (e.g., product catalogue with nested categories, attributes, and variants), you are building a public API consumed by many different clients with different data needs, or you are building a BFF (Backend for Frontend) aggregating multiple microservices. Clickmasters defaults to REST + OpenAPI 3.0. GraphQL vs REST is one of the most common UK API architecture debates. Here is an honest analysis of where each wins — including the UK GDPR and GDS compliance implications that most comparisons miss.",
     "comparisonTables": [
       {
         "title": "",
@@ -2932,7 +2932,7 @@ export const comparisons = [
             "Complex — log query intent"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ REST + OpenAPI 3.0 for all projects",
             "Only for complex product catalogue / BFF use cases"
           ]
@@ -2947,7 +2947,7 @@ export const comparisons = [
       },
       {
         "question": "Does GraphQL create UK GDPR compliance issues?",
-        "answer": "GraphQL's flexibility makes UK GDPR data minimisation harder to audit — you cannot easily log \"which personal data fields were returned\" because it depends on the query. For regulated UK sectors (FCA, NHS, ICO): ClickMasters recommends persisted queries (named, pre-approved queries only — no arbitrary query flexibility), field-level authorisation middleware (no personal data field returned without explicit RBAC check), and query logging with field-level resolution logging."
+        "answer": "GraphQL's flexibility makes UK GDPR data minimisation harder to audit — you cannot easily log \"which personal data fields were returned\" because it depends on the query. For regulated UK sectors (FCA, NHS, ICO): Clickmasters recommends persisted queries (named, pre-approved queries only — no arbitrary query flexibility), field-level authorisation middleware (no personal data field returned without explicit RBAC check), and query logging with field-level resolution logging."
       }
     ],
     "relatedPages": [
@@ -2973,11 +2973,11 @@ export const comparisons = [
     "topic": "kubernetes_vs_serverless_uk",
     "year": "2025",
     "title": "Kubernetes vs Serverless for UK Cloud Applications — Honest Comparison (2025)",
-    "metaTitle": "Kubernetes vs Serverless — Which for UK Cloud Applications? (2025) | ClickMasters",
+    "metaTitle": "Kubernetes vs Serverless — Which for UK Cloud Applications? (2025) | Clickmasters",
     "metaDesc": "Serverless (AWS Lambda/Azure Functions) is better for most UK startup and SMB workloads: no infrastructure management, automatic scaling, pay-per-invocation, an",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK Market",
@@ -2986,7 +2986,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Serverless (AWS Lambda/Azure Functions) is better for most UK startup and SMB workloads: no infrastructure management, automatic scaling, pay-per-invocation, and Cyber Essentials patch management handled by the cloud provider. Kubernetes is better for complex microservices with stateful workloads, specific container runtime requirements, or sustained high-throughput workloads where Lambda's 15-minute timeout or cold start latency is a problem. ClickMasters uses serverless by default for new UK projects and Kubernetes for complex orchestration requirements. Kubernetes vs Serverless is a UK infrastructure decision that affects cost, operational complexity, and compliance posture. Here is an honest comparison based on real UK production experience.",
+    "directAnswer": "Serverless (AWS Lambda/Azure Functions) is better for most UK startup and SMB workloads: no infrastructure management, automatic scaling, pay-per-invocation, and Cyber Essentials patch management handled by the cloud provider. Kubernetes is better for complex microservices with stateful workloads, specific container runtime requirements, or sustained high-throughput workloads where Lambda's 15-minute timeout or cold start latency is a problem. Clickmasters uses serverless by default for new UK projects and Kubernetes for complex orchestration requirements. Kubernetes vs Serverless is a UK infrastructure decision that affects cost, operational complexity, and compliance posture. Here is an honest comparison based on real UK production experience.",
     "comparisonTables": [
       {
         "title": "",
@@ -3042,7 +3042,7 @@ export const comparisons = [
             "Easier — single cluster logs"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ New projects default",
             "Complex microservices / stateful"
           ]
@@ -3057,7 +3057,7 @@ export const comparisons = [
       },
       {
         "question": "What is the right approach for UK FinTech: serverless or Kubernetes?",
-        "answer": "UK FinTech with FCA PS21/3 operational resilience requirements: both work. Serverless advantage: automatic multi-AZ by default (Lambda runs across multiple AZs), no patching obligation, simpler disaster recovery. Kubernetes advantage: more predictable latency (no cold starts — important for payment-critical paths), easier to run stateful components (Redis, session store) alongside application workloads. ClickMasters recommendation: serverless for stateless APIs, Kubernetes for workloads requiring persistent state or predictable sub-10ms latency."
+        "answer": "UK FinTech with FCA PS21/3 operational resilience requirements: both work. Serverless advantage: automatic multi-AZ by default (Lambda runs across multiple AZs), no patching obligation, simpler disaster recovery. Kubernetes advantage: more predictable latency (no cold starts — important for payment-critical paths), easier to run stateful components (Redis, session store) alongside application workloads. Clickmasters recommendation: serverless for stateless APIs, Kubernetes for workloads requiring persistent state or predictable sub-10ms latency."
       }
     ],
     "relatedPages": [
@@ -3083,11 +3083,11 @@ export const comparisons = [
     "topic": "nextjs_vs_remix_vs_nuxt_uk",
     "year": "2025",
     "title": "Next.js vs Remix vs Nuxt — Which Meta-Framework for UK Web Development? (2025)",
-    "metaTitle": "Next.js vs Remix vs Nuxt — Which Meta-Framework for UK Projects? (2025) | ClickMasters",
+    "metaTitle": "Next.js vs Remix vs Nuxt — Which Meta-Framework for UK Projects? (2025) | Clickmasters",
     "metaDesc": "Next.js is the right default for most UK web projects: largest UK developer community, GDS GOV.UK Design System integration, best Vercel/AWS deployment ecosyste",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -3156,7 +3156,7 @@ export const comparisons = [
             "Same effort"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All projects",
             "Form-heavy/progressive enhancement",
             "Vue-first teams only"
@@ -3167,12 +3167,12 @@ export const comparisons = [
     "bodySections": [],
     "faqs": [
       {
-        "question": "Why does ClickMasters default to Next.js over Remix?",
-        "answer": "UK talent pool: the React/Next.js talent pool in the UK is approximately 10x larger than the Remix talent pool in 2025. This matters for: hiring (if the client wants to build an in-house team), knowledge transfer (internal teams are more likely to know Next.js), and long-term maintainability. Remix is genuinely superior for specific use cases (complex multi-form workflows, progressive enhancement requirements) — ClickMasters uses it when the use case fits."
+        "question": "Why does Clickmasters default to Next.js over Remix?",
+        "answer": "UK talent pool: the React/Next.js talent pool in the UK is approximately 10x larger than the Remix talent pool in 2025. This matters for: hiring (if the client wants to build an in-house team), knowledge transfer (internal teams are more likely to know Next.js), and long-term maintainability. Remix is genuinely superior for specific use cases (complex multi-form workflows, progressive enhancement requirements) — Clickmasters uses it when the use case fits."
       },
       {
         "question": "Does Next.js App Router work with GOV.UK Design System?",
-        "answer": "Yes — the GOV.UK Design System has an official React component library (govuk-react) that works with Next.js App Router. ClickMasters uses Next.js + GOV.UK DS as the standard stack for UK public sector and GDS-assessed projects. Server Components in App Router improve Core Web Vitals scores, which is relevant for GOV.UK performance standards."
+        "answer": "Yes — the GOV.UK Design System has an official React component library (govuk-react) that works with Next.js App Router. Clickmasters uses Next.js + GOV.UK DS as the standard stack for UK public sector and GDS-assessed projects. Server Components in App Router improve Core Web Vitals scores, which is relevant for GOV.UK performance standards."
       }
     ],
     "relatedPages": [
@@ -3198,11 +3198,11 @@ export const comparisons = [
     "topic": "stripe_vs_adyen_vs_braintree_uk",
     "year": "2025",
     "title": "Stripe vs Adyen vs Braintree for UK Software Development — Honest Comparison (2025)",
-    "metaTitle": "Stripe vs Adyen vs Braintree — Which Payment Provider for UK Software? (2025) | ClickMasters",
+    "metaTitle": "Stripe vs Adyen vs Braintree — Which Payment Provider for UK Software? (2025) | Clickmasters",
     "metaDesc": "Stripe is the right default for most UK software projects: best developer experience, comprehensive UK documentation, FCA Consumer Duty-friendly hosted payment",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -3271,7 +3271,7 @@ export const comparisons = [
             "Not integrated"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All projects",
             "Enterprise / very high volume only",
             "Not recommended"
@@ -3283,7 +3283,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Stripe satisfy FCA Consumer Duty requirements?",
-        "answer": "Stripe Elements satisfies FCA Consumer Duty Consumer Understanding requirements for payment UIs: no dark patterns (no misleading prominence, no hidden charges), accessible WCAG 2.1 design, and clear charge disclosure. ClickMasters uses Stripe Elements (hosted payment fields) for all projects — this also reduces PCI-DSS scope to SAQ-A."
+        "answer": "Stripe Elements satisfies FCA Consumer Duty Consumer Understanding requirements for payment UIs: no dark patterns (no misleading prominence, no hidden charges), accessible WCAG 2.1 design, and clear charge disclosure. Clickmasters uses Stripe Elements (hosted payment fields) for all projects — this also reduces PCI-DSS scope to SAQ-A."
       },
       {
         "question": "Should I use Stripe or GOV.UK Pay for UK public sector?",
@@ -3313,11 +3313,11 @@ export const comparisons = [
     "topic": "agile_vs_waterfall_uk",
     "year": "2025",
     "title": "Agile vs Waterfall for UK Software Development — Honest Comparison (2025)",
-    "metaTitle": "Agile vs Waterfall for UK Software Projects — Which Is Right? (2025) | ClickMasters",
+    "metaTitle": "Agile vs Waterfall for UK Software Projects — Which Is Right? (2025) | Clickmasters",
     "metaDesc": "Agile (specifically fixed-price Agile) is the right approach for virtually all UK custom software development. Pure Waterfall (complete requirements up front, o",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -3326,13 +3326,13 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Agile (specifically fixed-price Agile) is the right approach for virtually all UK custom software development. Pure Waterfall (complete requirements up front, one delivery at end) fails in practice because requirements always change. The question is not Agile vs Waterfall — it is which Agile flavour. ClickMasters uses fixed-price Agile: sprint-based delivery with agreed scope, transparent progress, and formal Change Requests for additions. Agile vs Waterfall is one of the most misunderstood comparisons in UK software procurement. Most UK buyers asking about Waterfall actually want cost certainty and delivery predictability — which fixed-price Agile provides better than either pure Waterfall or pure Time-and-Materials Agile.",
+    "directAnswer": "Agile (specifically fixed-price Agile) is the right approach for virtually all UK custom software development. Pure Waterfall (complete requirements up front, one delivery at end) fails in practice because requirements always change. The question is not Agile vs Waterfall — it is which Agile flavour. Clickmasters uses fixed-price Agile: sprint-based delivery with agreed scope, transparent progress, and formal Change Requests for additions. Agile vs Waterfall is one of the most misunderstood comparisons in UK software procurement. Most UK buyers asking about Waterfall actually want cost certainty and delivery predictability — which fixed-price Agile provides better than either pure Waterfall or pure Time-and-Materials Agile.",
     "comparisonTables": [
       {
         "title": "",
         "headers": [
           "Factor",
-          "Fixed-Price Agile (ClickMasters)",
+          "Fixed-Price Agile (Clickmasters)",
           "Pure Waterfall",
           "T&amp;M Agile"
         ],
@@ -3382,7 +3382,7 @@ export const comparisons = [
           [
             "Best for",
             "Most UK software projects",
-            "None — ClickMasters does not use pure Waterfall",
+            "None — Clickmasters does not use pure Waterfall",
             "R&amp;D and discovery phases only"
           ]
         ]
@@ -3392,10 +3392,10 @@ export const comparisons = [
     "faqs": [
       {
         "question": "What is fixed-price Agile?",
-        "answer": "Fixed-price Agile: the project scope is agreed during Technical Discovery (a fixed-cost scoping phase), the delivery is structured as 2-week sprints, and the total price is fixed based on the agreed scope. Additional requirements not in the original scope are handled via Change Requests (separately priced). The client gets Agile's visibility and flexibility benefits AND cost certainty. ClickMasters uses this model for all delivery phases."
+        "answer": "Fixed-price Agile: the project scope is agreed during Technical Discovery (a fixed-cost scoping phase), the delivery is structured as 2-week sprints, and the total price is fixed based on the agreed scope. Additional requirements not in the original scope are handled via Change Requests (separately priced). The client gets Agile's visibility and flexibility benefits AND cost certainty. Clickmasters uses this model for all delivery phases."
       },
       {
-        "question": "Why doesn't ClickMasters use pure Waterfall?",
+        "question": "Why doesn't Clickmasters use pure Waterfall?",
         "answer": "Pure Waterfall (complete design → complete build → complete test → deliver) fails in practice because: requirements always change, clients cannot fully specify what they want before seeing early versions, and delivering a system 6 months after sign-off with no demos means discovering problems too late to fix cheaply. Fixed-price Agile gives clients the cost certainty of Waterfall with the flexibility and early feedback of Agile."
       }
     ],
@@ -3422,11 +3422,11 @@ export const comparisons = [
     "topic": "django_vs_fastapi_vs_flask_uk",
     "year": "2025",
     "title": "Django vs FastAPI vs Flask for UK Software Development — Honest Comparison (2025)",
-    "metaTitle": "Django vs FastAPI vs Flask — Which Python Framework for UK Projects? (2025) | ClickMasters",
+    "metaTitle": "Django vs FastAPI vs Flask — Which Python Framework for UK Projects? (2025) | Clickmasters",
     "metaDesc": "FastAPI is the right default for new UK API-first Python projects: fastest performance, native async, automatic OpenAPI 3.0 documentation, type safety with Pyda",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -3495,7 +3495,7 @@ export const comparisons = [
             "Sync by default"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ API-first projects",
             "Internal tools / content management",
             "Not recommended (use FastAPI)"
@@ -3511,7 +3511,7 @@ export const comparisons = [
       },
       {
         "question": "Is Flask worth using in 2025 for UK projects?",
-        "answer": "Flask has been largely superseded by FastAPI for new UK Python projects. FastAPI provides everything Flask does plus automatic OpenAPI documentation, Pydantic type safety, and async performance — with similar simplicity. ClickMasters does not recommend Flask for new UK projects in 2025; FastAPI is the better choice for lightweight Python APIs."
+        "answer": "Flask has been largely superseded by FastAPI for new UK Python projects. FastAPI provides everything Flask does plus automatic OpenAPI documentation, Pydantic type safety, and async performance — with similar simplicity. Clickmasters does not recommend Flask for new UK projects in 2025; FastAPI is the better choice for lightweight Python APIs."
       }
     ],
     "relatedPages": [
@@ -3537,11 +3537,11 @@ export const comparisons = [
     "topic": "headless_cms_vs_traditional_cms_uk",
     "year": "2025",
     "title": "Headless CMS vs Traditional CMS for UK Web Development — Honest Comparison (2025)",
-    "metaTitle": "Headless CMS vs Traditional CMS for UK Web Development (2025) | ClickMasters",
+    "metaTitle": "Headless CMS vs Traditional CMS for UK Web Development (2025) | Clickmasters",
     "metaDesc": "Headless CMS (Contentful, Sanity, Strapi) is better for UK projects needing: multiple front-end delivery channels (web + mobile + digital signage), a modern Rea",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -3606,7 +3606,7 @@ export const comparisons = [
             "Higher — WordPress plugins degrade"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "Multi-channel / public sector / performance",
             "WordPress for simple content sites with editors"
           ]
@@ -3621,7 +3621,7 @@ export const comparisons = [
       },
       {
         "question": "Should UK public sector use headless CMS?",
-        "answer": "For UK public sector (GDS-assessed services): GOV.UK Design System is a React component library — it works naturally with headless CMS + React/Next.js frontend. Traditional CMS WordPress/Drupal requires significant work to match GOV.UK Design System styling. ClickMasters recommends headless CMS (Contentful or Strapi) for all GDS-assessed public sector services."
+        "answer": "For UK public sector (GDS-assessed services): GOV.UK Design System is a React component library — it works naturally with headless CMS + React/Next.js frontend. Traditional CMS WordPress/Drupal requires significant work to match GOV.UK Design System styling. Clickmasters recommends headless CMS (Contentful or Strapi) for all GDS-assessed public sector services."
       }
     ],
     "relatedPages": [
@@ -3647,11 +3647,11 @@ export const comparisons = [
     "topic": "docker_vs_kubernetes_uk",
     "year": "2025",
     "title": "Docker vs Kubernetes for UK Software Development — When Do You Actually Need Kubernetes?",
-    "metaTitle": "Docker vs Kubernetes — When Does UK Software Need Kubernetes? (2025) | ClickMasters",
+    "metaTitle": "Docker vs Kubernetes — When Does UK Software Need Kubernetes? (2025) | Clickmasters",
     "metaDesc": "Most UK software projects need Docker (for consistent environments and simple deployments) but do not need Kubernetes (complex orchestration for multi-service,",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -3711,7 +3711,7 @@ export const comparisons = [
             "May be needed for complex microservices"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All new UK projects &lt;5 services",
             "5+ services / multi-tenant / specific requirements"
           ]
@@ -3726,7 +3726,7 @@ export const comparisons = [
       },
       {
         "question": "When should a UK startup start with Kubernetes?",
-        "answer": "ClickMasters recommendation: do not start with Kubernetes. Start with Docker + ECS Fargate. Graduate to Kubernetes when: you have 5+ microservices that genuinely need independent scaling, you need strong multi-tenant namespace isolation (e.g., SaaS serving NHS and FCA clients on the same infrastructure), or you have engineers with Kubernetes operational experience who can maintain it. Kubernetes for a 2-microservice startup is engineering debt, not engineering maturity."
+        "answer": "Clickmasters recommendation: do not start with Kubernetes. Start with Docker + ECS Fargate. Graduate to Kubernetes when: you have 5+ microservices that genuinely need independent scaling, you need strong multi-tenant namespace isolation (e.g., SaaS serving NHS and FCA clients on the same infrastructure), or you have engineers with Kubernetes operational experience who can maintain it. Kubernetes for a 2-microservice startup is engineering debt, not engineering maturity."
       }
     ],
     "relatedPages": [
@@ -3752,11 +3752,11 @@ export const comparisons = [
     "topic": "saas_vs_custom_software_tco_uk",
     "year": "2025",
     "title": "SaaS vs Custom Software for UK Businesses — Honest 3-Year TCO Comparison (2025)",
-    "metaTitle": "SaaS vs Custom Software for UK Businesses — 3-Year TCO Analysis (2025) | ClickMasters",
+    "metaTitle": "SaaS vs Custom Software for UK Businesses — 3-Year TCO Analysis (2025) | Clickmasters",
     "metaDesc": "For most UK software decisions: the 3-year TCO question is the right frame. SaaS wins on year-1 cost. Custom wins on 3-year cost when the SaaS licence scales wi",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -3772,7 +3772,7 @@ export const comparisons = [
         "headers": [
           "Cost Component",
           "SaaS Product",
-          "Custom Software (ClickMasters)"
+          "Custom Software (Clickmasters)"
         ],
         "rows": [
           [
@@ -3857,11 +3857,11 @@ export const comparisons = [
     "topic": "redis_vs_memcached_uk",
     "year": "2025",
     "title": "Redis vs Memcached for UK Software Development — Honest Comparison (2025)",
-    "metaTitle": "Redis vs Memcached — Which Caching Solution for UK Software? (2025) | ClickMasters",
+    "metaTitle": "Redis vs Memcached — Which Caching Solution for UK Software? (2025) | Clickmasters",
     "metaDesc": "Redis is the right default for virtually all UK software projects: data structure richness (sorted sets, pub/sub, streams), persistence options, Lua scripting,",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -3870,7 +3870,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Redis is the right default for virtually all UK software projects: data structure richness (sorted sets, pub/sub, streams), persistence options, Lua scripting, and the largest UK developer community. Memcached is only worth considering for the simplest key-value caching at extreme throughput — a scenario almost no UK project encounters. ClickMasters uses Redis (AWS ElastiCache for Redis) on all projects. Redis vs Memcached is one of the shorter technology comparisons — Redis has largely won for UK software development. This guide explains why and covers the UK-specific considerations (UK GDPR for cached personal data, ElastiCache pricing).",
+    "directAnswer": "Redis is the right default for virtually all UK software projects: data structure richness (sorted sets, pub/sub, streams), persistence options, Lua scripting, and the largest UK developer community. Memcached is only worth considering for the simplest key-value caching at extreme throughput — a scenario almost no UK project encounters. Clickmasters uses Redis (AWS ElastiCache for Redis) on all projects. Redis vs Memcached is one of the shorter technology comparisons — Redis has largely won for UK software development. This guide explains why and covers the UK-specific considerations (UK GDPR for cached personal data, ElastiCache pricing).",
     "comparisonTables": [
       {
         "title": "",
@@ -3926,7 +3926,7 @@ export const comparisons = [
             "ElastiCache for Memcached"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All projects",
             "Never — use Redis instead"
           ]
@@ -3941,7 +3941,7 @@ export const comparisons = [
       },
       {
         "question": "Should I use Redis as a database or just for caching?",
-        "answer": "Redis as primary database (Redis Stack with Redis OM): works well for leaderboards, real-time analytics, and session management. Not recommended as a primary database for transactional data that requires ACID guarantees (use PostgreSQL). ClickMasters recommendation: Redis for caching, session storage, rate limiting, pub/sub, and sorted set use cases. PostgreSQL for transactional data."
+        "answer": "Redis as primary database (Redis Stack with Redis OM): works well for leaderboards, real-time analytics, and session management. Not recommended as a primary database for transactional data that requires ACID guarantees (use PostgreSQL). Clickmasters recommendation: Redis for caching, session storage, rate limiting, pub/sub, and sorted set use cases. PostgreSQL for transactional data."
       }
     ],
     "relatedPages": [
@@ -3967,11 +3967,11 @@ export const comparisons = [
     "topic": "prisma_vs_typeorm_vs_drizzle_uk",
     "year": "2025",
     "title": "Prisma vs TypeORM vs Drizzle for UK TypeScript Development — Honest Comparison (2025)",
-    "metaTitle": "Prisma vs TypeORM vs Drizzle — Which ORM for UK TypeScript Projects? (2025) | ClickMasters",
+    "metaTitle": "Prisma vs TypeORM vs Drizzle — Which ORM for UK TypeScript Projects? (2025) | Clickmasters",
     "metaDesc": "Prisma is the right default for most UK TypeScript projects: excellent developer experience, type-safe query builder, automatic migrations, and the UK's largest",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -3980,7 +3980,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Prisma is the right default for most UK TypeScript projects: excellent developer experience, type-safe query builder, automatic migrations, and the UK's largest TypeScript ORM community. Drizzle is better for performance-critical applications where Prisma's abstraction adds latency. TypeORM is declining — avoid for new UK projects. ClickMasters defaults to Prisma on all TypeScript projects. ORM choice for TypeScript significantly affects developer productivity, type safety, and long-term maintainability. Here is an honest UK market comparison including UK GDPR data model implications.",
+    "directAnswer": "Prisma is the right default for most UK TypeScript projects: excellent developer experience, type-safe query builder, automatic migrations, and the UK's largest TypeScript ORM community. Drizzle is better for performance-critical applications where Prisma's abstraction adds latency. TypeORM is declining — avoid for new UK projects. Clickmasters defaults to Prisma on all TypeScript projects. ORM choice for TypeScript significantly affects developer productivity, type safety, and long-term maintainability. Here is an honest UK market comparison including UK GDPR data model implications.",
     "comparisonTables": [
       {
         "title": "",
@@ -4046,7 +4046,7 @@ export const comparisons = [
             "Growing"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All TypeScript projects",
             "Not recommended",
             "High-throughput specific cases"
@@ -4058,7 +4058,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Why is TypeORM declining for UK projects?",
-        "answer": "TypeORM has accumulated significant technical debt — decorator-based patterns that don't play well with TypeScript strict mode, inconsistent behaviour across database adapters, and a slower response to TypeScript ecosystem improvements. Both Prisma and Drizzle provide better type safety, better developer experience, and better community support for new UK projects in 2025. ClickMasters migrated away from TypeORM in 2023."
+        "answer": "TypeORM has accumulated significant technical debt — decorator-based patterns that don't play well with TypeScript strict mode, inconsistent behaviour across database adapters, and a slower response to TypeScript ecosystem improvements. Both Prisma and Drizzle provide better type safety, better developer experience, and better community support for new UK projects in 2025. Clickmasters migrated away from TypeORM in 2023."
       },
       {
         "question": "Does Prisma work with PostgreSQL Row-Level Security for UK GDPR multi-tenant apps?",
@@ -4088,11 +4088,11 @@ export const comparisons = [
     "topic": "terraform_vs_pulumi_vs_cdk_uk",
     "year": "2025",
     "title": "Terraform vs Pulumi vs AWS CDK — Which Infrastructure as Code for UK Software? (2025)",
-    "metaTitle": "Terraform vs Pulumi vs AWS CDK — Which IaC for UK Projects? (2025) | ClickMasters",
+    "metaTitle": "Terraform vs Pulumi vs AWS CDK — Which IaC for UK Projects? (2025) | Clickmasters",
     "metaDesc": "Terraform (with OpenTofu as the open-source fork) is the right default for most UK infrastructure projects: largest UK community, multi-cloud support (AWS + Azu",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -4161,7 +4161,7 @@ export const comparisons = [
             "✅ Best — first-class CDK constructs"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All projects",
             "TypeScript-heavy teams",
             "AWS-only with CDK L3 constructs needed"
@@ -4203,11 +4203,11 @@ export const comparisons = [
     "topic": "python_version_migration_uk_2025",
     "year": "2025",
     "title": "Python Version Migration for UK Software Projects (2025) — Honest Decision Guide",
-    "metaTitle": "Python 3.12 vs Python 3.11 vs Python 3.10 — UK Migration Guide (2025) | ClickMasters",
+    "metaTitle": "Python 3.12 vs Python 3.11 vs Python 3.10 — UK Migration Guide (2025) | Clickmasters",
     "metaDesc": "Python 3.12 is the right version for new UK projects in 2025: 5% average performance improvement over 3.11, improved error messages, better debugging. Python 3.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -4216,7 +4216,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Python 3.12 is the right version for new UK projects in 2025: 5% average performance improvement over 3.11, improved error messages, better debugging. Python 3.11 is still excellent and well-supported until October 2027. Python 3.10 reaches end-of-life October 2026 — migrate before then. Python 3.9 and below: migrate urgently. ClickMasters uses Python 3.12 on all new projects. Python version decisions affect UK software projects' performance, security (EOL versions receive no security patches — a UK GDPR Article 32 risk), and developer experience. Here is a practical UK migration guide.",
+    "directAnswer": "Python 3.12 is the right version for new UK projects in 2025: 5% average performance improvement over 3.11, improved error messages, better debugging. Python 3.11 is still excellent and well-supported until October 2027. Python 3.10 reaches end-of-life October 2026 — migrate before then. Python 3.9 and below: migrate urgently. Clickmasters uses Python 3.12 on all new projects. Python version decisions affect UK software projects' performance, security (EOL versions receive no security patches — a UK GDPR Article 32 risk), and developer experience. Here is a practical UK migration guide.",
     "comparisonTables": [
       {
         "title": "",
@@ -4225,7 +4225,7 @@ export const comparisons = [
           "Status",
           "EOL Date",
           "Key Features",
-          "ClickMasters?"
+          "Clickmasters?"
         ],
         "rows": [
           [
@@ -4270,11 +4270,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does running EOL Python create UK GDPR Article 32 obligations?",
-        "answer": "Yes — UK GDPR Article 32 requires organisations to implement appropriate technical measures to ensure security including against known vulnerabilities. EOL Python versions receive no security patches. Running production software on EOL Python is a documented security vulnerability — ICO could find this as a failure to implement appropriate technical security measures. ClickMasters includes Python version currency in all Cyber Essentials-aligned projects."
+        "answer": "Yes — UK GDPR Article 32 requires organisations to implement appropriate technical measures to ensure security including against known vulnerabilities. EOL Python versions receive no security patches. Running production software on EOL Python is a documented security vulnerability — ICO could find this as a failure to implement appropriate technical security measures. Clickmasters includes Python version currency in all Cyber Essentials-aligned projects."
       },
       {
         "question": "How difficult is migrating from Python 3.9 to 3.12?",
-        "answer": "Most Python 3.9 code runs on 3.12 without changes. Common migration issues: deprecated features removed in 3.10/3.11/3.12 (check Python What's New documents), third-party package compatibility (check PyPI — most major packages support 3.12), and type annotation syntax changes (3.12 enforces some stricter type annotation rules). ClickMasters migration approach: update Python version in CI/CD, run full test suite, fix any failures, update requirements.txt to specify minimum versions."
+        "answer": "Most Python 3.9 code runs on 3.12 without changes. Common migration issues: deprecated features removed in 3.10/3.11/3.12 (check Python What's New documents), third-party package compatibility (check PyPI — most major packages support 3.12), and type annotation syntax changes (3.12 enforces some stricter type annotation rules). Clickmasters migration approach: update Python version in CI/CD, run full test suite, fix any failures, update requirements.txt to specify minimum versions."
       }
     ],
     "relatedPages": [
@@ -4300,11 +4300,11 @@ export const comparisons = [
     "topic": "vercel_vs_aws_vs_azure_nextjs_uk",
     "year": "2025",
     "title": "Vercel vs AWS vs Azure for UK Next.js Hosting — Honest Comparison (2025)",
-    "metaTitle": "Vercel vs AWS vs Azure — Which Hosting for UK Next.js Applications? (2025) | ClickMasters",
+    "metaTitle": "Vercel vs AWS vs Azure — Which Hosting for UK Next.js Applications? (2025) | Clickmasters",
     "metaDesc": "Vercel is the right choice for most UK Next.js projects: zero infrastructure management, automatic deployments, edge functions, and the best Next.js compatibili",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -4373,7 +4373,7 @@ export const comparisons = [
             "✅ Appropriate (NHS Landing Zone)"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "Consumer/SaaS projects",
             "Regulated/enterprise UK",
             "NHS / Microsoft-heavy"
@@ -4389,7 +4389,7 @@ export const comparisons = [
       },
       {
         "question": "Does Vercel satisfy UK GDPR for standard commercial applications?",
-        "answer": "For standard commercial applications (eCommerce, SaaS, consumer apps) not subject to NHS DSP Toolkit: Vercel's edge network processes in EEA-connected locations. UK GDPR adequacy covers EEA processing. If you need confirmed UK data residency (some enterprise contracts require it): use Vercel's Enterprise plan with regional configuration, or switch to AWS eu-west-2. ClickMasters uses Vercel for commercial projects without strict UK residency requirements."
+        "answer": "For standard commercial applications (eCommerce, SaaS, consumer apps) not subject to NHS DSP Toolkit: Vercel's edge network processes in EEA-connected locations. UK GDPR adequacy covers EEA processing. If you need confirmed UK data residency (some enterprise contracts require it): use Vercel's Enterprise plan with regional configuration, or switch to AWS eu-west-2. Clickmasters uses Vercel for commercial projects without strict UK residency requirements."
       }
     ],
     "relatedPages": [
@@ -4415,11 +4415,11 @@ export const comparisons = [
     "topic": "react_native_vs_flutter_vs_native_uk",
     "year": "2025",
     "title": "React Native vs Flutter vs Native Mobile for UK Development — Honest Comparison (2025)",
-    "metaTitle": "React Native vs Flutter vs Native — UK Mobile Development (2025) | ClickMasters",
+    "metaTitle": "React Native vs Flutter vs Native — UK Mobile Development (2025) | Clickmasters",
     "metaDesc": "React Native is the right default for most UK mobile projects: your web team can contribute, TypeScript throughout, and the UK React talent pool is the largest.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -4488,7 +4488,7 @@ export const comparisons = [
             "✅ Best"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "Consumer/SaaS apps",
             "Design-heavy/cross-platform",
             "NHS DTAC / hardware-intensive"
@@ -4504,7 +4504,7 @@ export const comparisons = [
       },
       {
         "question": "Can React Native achieve WCAG 2.1 AA for UK public sector?",
-        "answer": "Yes — React Native has a comprehensive Accessibility API (accessibilityLabel, accessibilityRole, accessibilityHint). With proper implementation and screen reader testing (VoiceOver on iOS, TalkBack on Android), React Native apps can achieve WCAG 2.1 AA. ClickMasters performs manual screen reader testing on every React Native sprint for UK public sector clients."
+        "answer": "Yes — React Native has a comprehensive Accessibility API (accessibilityLabel, accessibilityRole, accessibilityHint). With proper implementation and screen reader testing (VoiceOver on iOS, TalkBack on Android), React Native apps can achieve WCAG 2.1 AA. Clickmasters performs manual screen reader testing on every React Native sprint for UK public sector clients."
       }
     ],
     "relatedPages": [
@@ -4530,11 +4530,11 @@ export const comparisons = [
     "topic": "event_driven_vs_request_response_uk",
     "year": "2025",
     "title": "Event-Driven vs Request-Response Architecture for UK Software — Honest Comparison (2025)",
-    "metaTitle": "Event-Driven vs Request-Response Architecture — UK Software Guide (2025) | ClickMasters",
+    "metaTitle": "Event-Driven vs Request-Response Architecture — UK Software Guide (2025) | Clickmasters",
     "metaDesc": "Request-response (REST APIs) is right for most UK software: simpler, easier to debug, easier to audit for FCA/NHS compliance, and appropriate for most transacti",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -4594,7 +4594,7 @@ export const comparisons = [
             "Higher — consumer contract testing needed"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All transactional workloads",
             "Data pipelines, audit trails, high-throughput microservices"
           ]
@@ -4609,7 +4609,7 @@ export const comparisons = [
       },
       {
         "question": "Does event-driven architecture help or hinder FCA compliance?",
-        "answer": "Event sourcing (every state change as an immutable event) creates a perfect FCA audit trail — every transaction, every state change, every actor, every timestamp is permanently recorded. This is excellent for FCA SYSC (Systems and Controls) requirements. The complexity cost: right to erasure is harder (events are immutable), debugging is more complex, and consumer contract testing is essential. ClickMasters recommends event sourcing specifically for FCA transaction audit trail requirements."
+        "answer": "Event sourcing (every state change as an immutable event) creates a perfect FCA audit trail — every transaction, every state change, every actor, every timestamp is permanently recorded. This is excellent for FCA SYSC (Systems and Controls) requirements. The complexity cost: right to erasure is harder (events are immutable), debugging is more complex, and consumer contract testing is essential. Clickmasters recommends event sourcing specifically for FCA transaction audit trail requirements."
       }
     ],
     "relatedPages": [
@@ -4635,11 +4635,11 @@ export const comparisons = [
     "topic": "playwright_vs_cypress_vs_selenium_uk",
     "year": "2025",
     "title": "Playwright vs Cypress vs Selenium for UK Test Automation — Honest Comparison (2025)",
-    "metaTitle": "Playwright vs Cypress vs Selenium — UK Test Automation (2025) | ClickMasters",
+    "metaTitle": "Playwright vs Cypress vs Selenium — UK Test Automation (2025) | Clickmasters",
     "metaDesc": "Playwright is the right default for UK test automation in 2025: fastest execution, built-in parallel test support, excellent TypeScript integration, and first-c",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -4708,7 +4708,7 @@ export const comparisons = [
             "Slow — Grid overhead"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All projects",
             "Legacy or dev-friendly E2E",
             "Not recommended"
@@ -4720,11 +4720,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Can Playwright test for WCAG 2.1 AA compliance?",
-        "answer": "Yes — Playwright integrates with axe-core (the leading open-source accessibility engine) via @axe-core/playwright. This provides automated detection of ~30% of WCAG 2.1 AA issues. ClickMasters integrates Playwright + axe-core into CI/CD pipelines on every build — any new accessibility violation fails the build. Manual NVDA/VoiceOver testing covers the remaining 70% that automated tools cannot detect."
+        "answer": "Yes — Playwright integrates with axe-core (the leading open-source accessibility engine) via @axe-core/playwright. This provides automated detection of ~30% of WCAG 2.1 AA issues. Clickmasters integrates Playwright + axe-core into CI/CD pipelines on every build — any new accessibility violation fails the build. Manual NVDA/VoiceOver testing covers the remaining 70% that automated tools cannot detect."
       },
       {
         "question": "Does Playwright work with TypeScript projects?",
-        "answer": "Yes — Playwright has first-class TypeScript support. ClickMasters uses Playwright with TypeScript strict mode — test files are type-checked alongside application code. This catches test bugs at compile time (not at runtime during CI/CD), making test suites more reliable and easier to maintain."
+        "answer": "Yes — Playwright has first-class TypeScript support. Clickmasters uses Playwright with TypeScript strict mode — test files are type-checked alongside application code. This catches test bugs at compile time (not at runtime during CI/CD), making test suites more reliable and easier to maintain."
       }
     ],
     "relatedPages": [
@@ -4750,11 +4750,11 @@ export const comparisons = [
     "topic": "agency_vs_freelancer_vs_in_house_uk_2025",
     "year": "2025",
     "title": "Software Development Agency vs Freelancer vs In-House — Honest UK Guide (2025)",
-    "metaTitle": "UK Software Development Agency vs Freelancer vs In-House — 2025 Guide | ClickMasters",
+    "metaTitle": "UK Software Development Agency vs Freelancer vs In-House — 2025 Guide | Clickmasters",
     "metaDesc": "Each model is right for different situations. In-house is right for core product with long-term strategic importance. Agency is right for projects with defined",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -4769,7 +4769,7 @@ export const comparisons = [
         "title": "",
         "headers": [
           "Factor",
-          "Agency (ClickMasters)",
+          "Agency (Clickmasters)",
           "Freelancer (Contractor)",
           "In-House Team"
         ],
@@ -4823,7 +4823,7 @@ export const comparisons = [
             "✅ Best model"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "New builds, regulated compliance, specific skills",
             "Well-defined short tasks only",
             "Core product 2+ years"
@@ -4835,7 +4835,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "What does a UK software development agency actually cost vs freelancer?",
-        "answer": "A senior developer freelancer costs £500–£750/day outside IR35. At 20 days/month: £10,000–£15,000/month. Plus: you manage IR35 risk, there is no team depth (single engineer, no QA or DevOps), and scope creep on a day rate shifts all cost risk to you. ClickMasters staff augmentation: from £5,000/month per engineer, IR35-safe, with specialist support. Fixed-price project: cost certainty with a full cross-functional team."
+        "answer": "A senior developer freelancer costs £500–£750/day outside IR35. At 20 days/month: £10,000–£15,000/month. Plus: you manage IR35 risk, there is no team depth (single engineer, no QA or DevOps), and scope creep on a day rate shifts all cost risk to you. Clickmasters staff augmentation: from £5,000/month per engineer, IR35-safe, with specialist support. Fixed-price project: cost certainty with a full cross-functional team."
       },
       {
         "question": "When should a UK startup hire in-house vs use an agency?",
@@ -4865,11 +4865,11 @@ export const comparisons = [
     "topic": "sql_vs_nosql_uk_2025",
     "year": "2025",
     "title": "SQL vs NoSQL — Which Database for UK Software Development? (2025)",
-    "metaTitle": "SQL vs NoSQL — Which Database Type for UK Software? (2025) | ClickMasters",
+    "metaTitle": "SQL vs NoSQL — Which Database Type for UK Software? (2025) | Clickmasters",
     "metaDesc": "SQL (PostgreSQL) is the right default for most UK software projects: ACID guarantees, strong UK GDPR compliance posture (row-level security, structured audit tr",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -4970,11 +4970,11 @@ export const comparisons = [
     "topic": "jwt_vs_session_cookies_uk",
     "year": "2025",
     "title": "JWT vs Session Cookies for UK Web App Authentication — Honest Comparison (2025)",
-    "metaTitle": "JWT vs Session Cookies — Which Authentication for UK Web Apps? (2025) | ClickMasters",
+    "metaTitle": "JWT vs Session Cookies — Which Authentication for UK Web Apps? (2025) | Clickmasters",
     "metaDesc": "Session cookies (server-side sessions) are the right default for most UK web applications: simpler, more secure (no token leakage), easier to revoke (important",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -4983,7 +4983,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Session cookies (server-side sessions) are the right default for most UK web applications: simpler, more secure (no token leakage), easier to revoke (important for UK GDPR right to erasure and FCA account closure), and no client-side token management. JWTs are genuinely better for: stateless APIs consumed by multiple clients, microservices needing to pass identity across service boundaries, and mobile apps where cookies are less natural. ClickMasters uses sessions for web apps and JWTs for APIs. JWT vs sessions is a UK web app authentication decision with real UK GDPR and FCA compliance implications. The most common mistake: using JWTs for web apps where sessions are simpler and more secure.",
+    "directAnswer": "Session cookies (server-side sessions) are the right default for most UK web applications: simpler, more secure (no token leakage), easier to revoke (important for UK GDPR right to erasure and FCA account closure), and no client-side token management. JWTs are genuinely better for: stateless APIs consumed by multiple clients, microservices needing to pass identity across service boundaries, and mobile apps where cookies are less natural. Clickmasters uses sessions for web apps and JWTs for APIs. JWT vs sessions is a UK web app authentication decision with real UK GDPR and FCA compliance implications. The most common mistake: using JWTs for web apps where sessions are simpler and more secure.",
     "comparisonTables": [
       {
         "title": "",
@@ -5034,7 +5034,7 @@ export const comparisons = [
             "✅ Natural — Bearer token in header"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "Web apps",
             "APIs and microservices"
           ]
@@ -5049,7 +5049,7 @@ export const comparisons = [
       },
       {
         "question": "Do UK FCA regulations affect our choice of authentication?",
-        "answer": "Yes — FCA PS21/3 operational resilience requires firms to be able to revoke access during incidents. Sessions are easier to revoke immediately (delete session from server). JWTs require either very short expiry times (with refresh token rotation) or a token blacklist (which adds the stateful lookup that JWTs are supposed to avoid). For FCA-regulated systems: ClickMasters implements short-lived JWTs (15 minutes) with refresh token rotation and a Redis blacklist for immediate revocation."
+        "answer": "Yes — FCA PS21/3 operational resilience requires firms to be able to revoke access during incidents. Sessions are easier to revoke immediately (delete session from server). JWTs require either very short expiry times (with refresh token rotation) or a token blacklist (which adds the stateful lookup that JWTs are supposed to avoid). For FCA-regulated systems: Clickmasters implements short-lived JWTs (15 minutes) with refresh token rotation and a Redis blacklist for immediate revocation."
       }
     ],
     "relatedPages": [
@@ -5075,11 +5075,11 @@ export const comparisons = [
     "topic": "spa_vs_ssr_uk_2025",
     "year": "2025",
     "title": "SPA vs SSR vs Static Site — Which Rendering for UK Web Applications? (2025)",
-    "metaTitle": "Single-Page Application (SPA) vs Server-Side Rendering (SSR) — UK Guide (2025) | ClickMasters",
+    "metaTitle": "Single-Page Application (SPA) vs Server-Side Rendering (SSR) — UK Guide (2025) | Clickmasters",
     "metaDesc": "Server-Side Rendering (Next.js App Router) is the right default for most UK web applications: better SEO, better Core Web Vitals (critical for Google ranking),",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -5142,7 +5142,7 @@ export const comparisons = [
             "✅ Lowest — CDN-served static"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "Consumer/public-facing apps",
             "Dashboards/admin tools",
             "Marketing/content sites"
@@ -5154,7 +5154,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does GDS Service Standard require server-side rendering?",
-        "answer": "GDS Service Standard requires services to work without JavaScript for users who disable it or use assistive technologies that do not execute JavaScript. This effectively rules out pure SPAs for GDS-assessed public sector services. Next.js App Router with Server Components renders the core functionality server-side — JavaScript enhances but is not required. All ClickMasters GovTech projects use Next.js SSR with progressive enhancement."
+        "answer": "GDS Service Standard requires services to work without JavaScript for users who disable it or use assistive technologies that do not execute JavaScript. This effectively rules out pure SPAs for GDS-assessed public sector services. Next.js App Router with Server Components renders the core functionality server-side — JavaScript enhances but is not required. All Clickmasters GovTech projects use Next.js SSR with progressive enhancement."
       },
       {
         "question": "How does rendering strategy affect UK GDPR cookie consent?",
@@ -5184,11 +5184,11 @@ export const comparisons = [
     "topic": "mongodb_atlas_vs_dynamodb_uk",
     "year": "2025",
     "title": "MongoDB Atlas vs AWS DynamoDB for UK Software — Honest Comparison (2025)",
-    "metaTitle": "MongoDB Atlas vs AWS DynamoDB — Which NoSQL for UK Projects? (2025) | ClickMasters",
+    "metaTitle": "MongoDB Atlas vs AWS DynamoDB — Which NoSQL for UK Projects? (2025) | Clickmasters",
     "metaDesc": "MongoDB Atlas is better for most UK teams switching to document-based storage: familiar query language (MQL similar to SQL), flexible schema with validation, an",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -5248,7 +5248,7 @@ export const comparisons = [
             "Pay per read/write unit + storage"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "Complex document stores, product catalogues",
             "AWS-native high-throughput, simple access patterns"
           ]
@@ -5259,7 +5259,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Is MongoDB Atlas UK GDPR compliant?",
-        "answer": "Yes — MongoDB Atlas allows you to select an AWS EU region (eu-west-1 Ireland or eu-west-2 London) for data residency. MongoDB Atlas provides a UK GDPR-compliant Data Processing Agreement. Atlas also supports field-level encryption (Client-Side Field Level Encryption) for highly sensitive fields. ClickMasters uses Atlas eu-west-2 (London) for UK data residency compliance."
+        "answer": "Yes — MongoDB Atlas allows you to select an AWS EU region (eu-west-1 Ireland or eu-west-2 London) for data residency. MongoDB Atlas provides a UK GDPR-compliant Data Processing Agreement. Atlas also supports field-level encryption (Client-Side Field Level Encryption) for highly sensitive fields. Clickmasters uses Atlas eu-west-2 (London) for UK data residency compliance."
       },
       {
         "question": "When should a UK project use DynamoDB instead of MongoDB?",
@@ -5289,11 +5289,11 @@ export const comparisons = [
     "topic": "aws_lambda_vs_ecs_vs_ec2_uk",
     "year": "2025",
     "title": "AWS Lambda vs ECS Fargate vs EC2 — Which Compute for UK Software? (2025)",
-    "metaTitle": "AWS Lambda vs ECS vs EC2 — Which Compute for UK Software? (2025) | ClickMasters",
+    "metaTitle": "AWS Lambda vs ECS vs EC2 — Which Compute for UK Software? (2025) | Clickmasters",
     "metaDesc": "AWS Lambda is the right default for most UK API workloads: zero infrastructure management, automatic scaling, pay-per-request, and Cyber Essentials OS patching",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -5362,7 +5362,7 @@ export const comparisons = [
             "✅ Fixed instance count"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "APIs, event handlers, background jobs",
             "Long-running services, batch, websockets",
             "Only for specific persistent compute needs"
@@ -5404,11 +5404,11 @@ export const comparisons = [
     "topic": "stripe_vs_gocardless_uk",
     "year": "2025",
     "title": "Stripe vs GoCardless for UK B2B Payments — Honest Comparison (2025)",
-    "metaTitle": "Stripe vs GoCardless — Which Payment Provider for UK B2B? (2025) | ClickMasters",
+    "metaTitle": "Stripe vs GoCardless — Which Payment Provider for UK B2B? (2025) | Clickmasters",
     "metaDesc": "GoCardless is better for UK B2B subscription billing and recurring payments: Direct Debit (Bacs) is significantly cheaper than card processing (typically 0.4–1.",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -5473,7 +5473,7 @@ export const comparisons = [
             "Stripe Elements — Consumer Duty-friendly"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "UK B2B SaaS subscriptions",
             "One-off payments, international, consumer"
           ]
@@ -5514,11 +5514,11 @@ export const comparisons = [
     "topic": "github_actions_vs_gitlab_vs_jenkins_uk",
     "year": "2025",
     "title": "GitHub Actions vs GitLab CI vs Jenkins — Which CI/CD for UK Software? (2025)",
-    "metaTitle": "GitHub Actions vs GitLab CI vs Jenkins — UK CI/CD Guide (2025) | ClickMasters",
+    "metaTitle": "GitHub Actions vs GitLab CI vs Jenkins — UK CI/CD Guide (2025) | Clickmasters",
     "metaDesc": "GitHub Actions is the right default for most UK software teams: native GitHub integration, excellent marketplace (thousands of pre-built actions), generous free",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -5587,7 +5587,7 @@ export const comparisons = [
             "✅ All on-premises — maximum control"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All new projects",
             "Full DevSecOps platform needed",
             "Legacy only — no new projects"
@@ -5599,11 +5599,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does GitHub storing code on US servers create UK GDPR issues?",
-        "answer": "Source code is generally not personal data (unless it contains personal data, which it should not). UK GDPR applies to personal data — code repositories containing customer data would be a UK GDPR concern. For NHS and government projects: ClickMasters uses self-hosted GitHub Actions runners on AWS eu-west-2 so CI/CD compute runs in the UK. Code storage on GitHub.com (US) for non-personal-data code is standard industry practice."
+        "answer": "Source code is generally not personal data (unless it contains personal data, which it should not). UK GDPR applies to personal data — code repositories containing customer data would be a UK GDPR concern. For NHS and government projects: Clickmasters uses self-hosted GitHub Actions runners on AWS eu-west-2 so CI/CD compute runs in the UK. Code storage on GitHub.com (US) for non-personal-data code is standard industry practice."
       },
       {
         "question": "How does CI/CD satisfy Cyber Essentials change management?",
-        "answer": "Every GitHub Actions CI/CD run generates: a git commit hash (immutable change record), a CI run log (test results, security scan results), and a deployment record (what was deployed, when, by whom). This is the Cyber Essentials change management evidence trail. ClickMasters configures branch protection rules (PRs require passing CI before merge) and deployment approvals (production deployment requires explicit approval), satisfying Cyber Essentials change control requirements."
+        "answer": "Every GitHub Actions CI/CD run generates: a git commit hash (immutable change record), a CI run log (test results, security scan results), and a deployment record (what was deployed, when, by whom). This is the Cyber Essentials change management evidence trail. Clickmasters configures branch protection rules (PRs require passing CI before merge) and deployment approvals (production deployment requires explicit approval), satisfying Cyber Essentials change control requirements."
       }
     ],
     "relatedPages": [
@@ -5629,11 +5629,11 @@ export const comparisons = [
     "topic": "fixed_price_vs_time_materials_software_uk",
     "year": "2025",
     "title": "Fixed Price vs Time and Materials — Which Software Contract for UK Buyers?",
-    "metaTitle": "Fixed Price vs Time and Materials — Which Software Contract for UK Buyers? (2025) | ClickMasters",
+    "metaTitle": "Fixed Price vs Time and Materials — Which Software Contract for UK Buyers? (2025) | Clickmasters",
     "metaDesc": "Fixed-price Agile is the right contract model for most UK software projects: cost certainty, scope clarity, and risk on the agency (not the buyer). Time-and-Mat",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -5642,13 +5642,13 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Fixed-price Agile is the right contract model for most UK software projects: cost certainty, scope clarity, and risk on the agency (not the buyer). Time-and-Materials (T&amp;M) shifts all cost risk to the buyer — every scope change, every re-estimate, every delay increases cost with no ceiling. Pure T&amp;M only makes sense for genuine exploration work (research, proof-of-concept, discovery) where scope is truly unknown. ClickMasters offers fixed-price Agile for all delivery phases. Contract model choice is one of the most consequential software procurement decisions for UK businesses. Here is an honest comparison that explains why most UK buyers should insist on fixed-price contracts.",
+    "directAnswer": "Fixed-price Agile is the right contract model for most UK software projects: cost certainty, scope clarity, and risk on the agency (not the buyer). Time-and-Materials (T&amp;M) shifts all cost risk to the buyer — every scope change, every re-estimate, every delay increases cost with no ceiling. Pure T&amp;M only makes sense for genuine exploration work (research, proof-of-concept, discovery) where scope is truly unknown. Clickmasters offers fixed-price Agile for all delivery phases. Contract model choice is one of the most consequential software procurement decisions for UK businesses. Here is an honest comparison that explains why most UK buyers should insist on fixed-price contracts.",
     "comparisonTables": [
       {
         "title": "",
         "headers": [
           "Factor",
-          "Fixed-Price Agile (ClickMasters)",
+          "Fixed-Price Agile (Clickmasters)",
           "Time and Materials"
         ],
         "rows": [
@@ -5693,7 +5693,7 @@ export const comparisons = [
             "R&amp;D, discovery, exploratory work"
           ],
           [
-            "ClickMasters model",
+            "Clickmasters model",
             "✅ Fixed-price Agile — all delivery",
             "T&amp;M only for Technical Discovery"
           ]
@@ -5704,11 +5704,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "How can a software agency offer a fixed price when requirements change?",
-        "answer": "Fixed-price Agile works via: rigorous Technical Discovery (defining scope precisely before the fixed price is set), sprint-by-sprint delivery (course corrections happen early, not after 6 months), and Change Requests for anything genuinely outside the agreed scope. The key is what is \"in scope\" — ClickMasters spends 2 weeks in Technical Discovery defining this precisely before committing to a price."
+        "answer": "Fixed-price Agile works via: rigorous Technical Discovery (defining scope precisely before the fixed price is set), sprint-by-sprint delivery (course corrections happen early, not after 6 months), and Change Requests for anything genuinely outside the agreed scope. The key is what is \"in scope\" — Clickmasters spends 2 weeks in Technical Discovery defining this precisely before committing to a price."
       },
       {
         "question": "Is T&amp;M ever the right model?",
-        "answer": "T&amp;M is right for: Technical Discovery (before requirements are clear enough for fixed price), research and prototyping (genuinely exploratory work), and ongoing support retainers (variable monthly workload). ClickMasters charges a fixed fee for Technical Discovery, then transitions to fixed-price Agile for delivery. Support retainers use a monthly hours allocation model."
+        "answer": "T&amp;M is right for: Technical Discovery (before requirements are clear enough for fixed price), research and prototyping (genuinely exploratory work), and ongoing support retainers (variable monthly workload). Clickmasters charges a fixed fee for Technical Discovery, then transitions to fixed-price Agile for delivery. Support retainers use a monthly hours allocation model."
       }
     ],
     "relatedPages": [
@@ -5734,11 +5734,11 @@ export const comparisons = [
     "topic": "aws_vs_azure_uk_2025",
     "year": "2025",
     "title": "AWS vs Azure for UK Software Development — Honest Comparison (2025)",
-    "metaTitle": "AWS vs Azure for UK Software Development — Which Cloud? (2025) | ClickMasters",
+    "metaTitle": "AWS vs Azure for UK Software Development — Which Cloud? (2025) | Clickmasters",
     "metaDesc": "AWS is the right default for most UK software projects: larger UK developer community, more mature managed services, and the most options for UK GDPR data resid",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -5803,7 +5803,7 @@ export const comparisons = [
             "Azure G-Cloud presence"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ Consumer/SaaS/FinTech",
             "NHS / Microsoft-heavy enterprise"
           ]
@@ -5844,11 +5844,11 @@ export const comparisons = [
     "topic": "openai_vs_anthropic_vs_google_ai_api_uk",
     "year": "2025",
     "title": "OpenAI vs Anthropic Claude vs Google Gemini — UK AI API Comparison for Production (2025)",
-    "metaTitle": "OpenAI vs Anthropic Claude vs Google Gemini — UK AI API Comparison (2025) | ClickMasters",
+    "metaTitle": "OpenAI vs Anthropic Claude vs Google Gemini — UK AI API Comparison (2025) | Clickmasters",
     "metaDesc": "For most UK production applications: Anthropic Claude is the best default for long-context tasks, code generation, and safety-critical applications; OpenAI GPT-",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -5857,7 +5857,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "For most UK production applications: Anthropic Claude is the best default for long-context tasks, code generation, and safety-critical applications; OpenAI GPT-4o for multimodal (vision + text); Google Gemini for Google Cloud integrations and very long context. For UK NHS and regulated HealthTech: on-premises LLM (Llama 3 via Ollama) is the only option where patient data cannot leave the UK network. ClickMasters uses Anthropic Claude as our standard LLM API. UK AI API choice affects latency, cost, UK GDPR data residency, and quality for your specific use case. Here is an honest production comparison based on real UK deployment experience.",
+    "directAnswer": "For most UK production applications: Anthropic Claude is the best default for long-context tasks, code generation, and safety-critical applications; OpenAI GPT-4o for multimodal (vision + text); Google Gemini for Google Cloud integrations and very long context. For UK NHS and regulated HealthTech: on-premises LLM (Llama 3 via Ollama) is the only option where patient data cannot leave the UK network. Clickmasters uses Anthropic Claude as our standard LLM API. UK AI API choice affects latency, cost, UK GDPR data residency, and quality for your specific use case. Here is an honest production comparison based on real UK deployment experience.",
     "comparisonTables": [
       {
         "title": "",
@@ -5917,7 +5917,7 @@ export const comparisons = [
             "$1.25–$7 input / $5–$21 output"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ Standard LLM API",
             "Multimodal/vision tasks",
             "Google Cloud integrations"
@@ -5959,11 +5959,11 @@ export const comparisons = [
     "topic": "uk_software_agency_vs_offshore_uk",
     "year": "2025",
     "title": "UK Software Agency vs Offshore — Honest Cost and Risk Comparison (2025)",
-    "metaTitle": "UK Software Development Agency vs Offshore — Honest Cost Comparison (2025) | ClickMasters",
+    "metaTitle": "UK Software Development Agency vs Offshore — Honest Cost Comparison (2025) | Clickmasters",
     "metaDesc": "Offshore development (India, Eastern Europe) is cheaper on day rates. UK agency is cheaper on total project cost when you account for: rework (re-doing work tha",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -5978,7 +5978,7 @@ export const comparisons = [
         "title": "",
         "headers": [
           "Factor",
-          "UK Fixed-Price Agency (ClickMasters)",
+          "UK Fixed-Price Agency (Clickmasters)",
           "Offshore T&amp;M Development"
         ],
         "rows": [
@@ -6023,7 +6023,7 @@ export const comparisons = [
             "N/A — but HMRC may question arrangements"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "All regulated, compliance-critical projects",
             "Simple, well-defined, non-regulated tasks"
           ]
@@ -6038,7 +6038,7 @@ export const comparisons = [
       },
       {
         "question": "When is offshore development genuinely the right choice?",
-        "answer": "Offshore makes sense for: well-defined, non-regulated tasks (data entry, testing script writing, content migration), very large teams where day-rate savings outweigh coordination costs, and non-UK-market applications where UK compliance expertise is not relevant. ClickMasters partners with vetted Eastern European agencies for specific sub-tasks where appropriate."
+        "answer": "Offshore makes sense for: well-defined, non-regulated tasks (data entry, testing script writing, content migration), very large teams where day-rate savings outweigh coordination costs, and non-UK-market applications where UK compliance expertise is not relevant. Clickmasters partners with vetted Eastern European agencies for specific sub-tasks where appropriate."
       }
     ],
     "relatedPages": [
@@ -6064,11 +6064,11 @@ export const comparisons = [
     "topic": "zod_vs_yup_vs_joi_typescript_uk",
     "year": "2025",
     "title": "Zod vs Yup vs Joi — Which Validation Library for UK TypeScript Projects? (2025)",
-    "metaTitle": "Zod vs Yup vs Joi — Which Schema Validation for UK TypeScript? (2025) | ClickMasters",
+    "metaTitle": "Zod vs Yup vs Joi — Which Schema Validation for UK TypeScript? (2025) | Clickmasters",
     "metaDesc": "Zod is the right default for UK TypeScript projects: TypeScript-first (types inferred from schema — no separate type definition required), excellent developer e",
     "lastUpdated": "June 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -6131,7 +6131,7 @@ export const comparisons = [
             "Verbose, needs customisation"
           ],
           [
-            "ClickMasters standard",
+            "Clickmasters standard",
             "✅ All TypeScript projects",
             "Legacy RHF integrations only",
             "Not recommended"
@@ -6143,7 +6143,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Why does Zod matter for UK GDPR compliance?",
-        "answer": "Zod's .strip() method strips unknown properties from objects before processing — this is UK GDPR Article 25 data minimisation at the API boundary. If a client sends extra personal data fields not in your schema, Zod strips them before they touch your database. This is \"privacy by default\" technically implemented. ClickMasters adds .strip() to all Zod schemas that process personal data as a standard practice."
+        "answer": "Zod's .strip() method strips unknown properties from objects before processing — this is UK GDPR Article 25 data minimisation at the API boundary. If a client sends extra personal data fields not in your schema, Zod strips them before they touch your database. This is \"privacy by default\" technically implemented. Clickmasters adds .strip() to all Zod schemas that process personal data as a standard practice."
       },
       {
         "question": "Should I use Zod for both frontend and backend validation?",
@@ -6173,11 +6173,11 @@ export const comparisons = [
     "topic": "iso_27001_vs_cyber_essentials_uk",
     "year": "2700",
     "title": "ISO 27001 vs Cyber Essentials — Which UK Security Certification Do You Need? (2025)",
-    "metaTitle": "ISO 27001 vs Cyber Essentials — Which UK Security Certification? (2025) | ClickMasters",
+    "metaTitle": "ISO 27001 vs Cyber Essentials — Which UK Security Certification? (2025) | Clickmasters",
     "metaDesc": "Cyber Essentials is the UK government's baseline certification — mandatory for UK government contracts handling personal data and increasingly required by NHS a",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -6252,7 +6252,7 @@ export const comparisons = [
             "6–18 months"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "All UK software companies",
             "NHS/Gov/FCA projects",
             "Enterprise SaaS, international markets"
@@ -6268,7 +6268,7 @@ export const comparisons = [
       },
       {
         "question": "How long does ISO 27001 certification take?",
-        "answer": "ISO 27001 Stage 1 (documentation review) → Stage 2 (main audit) → certification typically takes 6–18 months from project start. Key phases: ISMS documentation (3–4 months), internal audit (1 month), Stage 1 audit (1 month), gap remediation (1–3 months), Stage 2 audit (1 month). Annual surveillance audits keep the certification live. ClickMasters has achieved ISO 27001 and builds ISMS documentation as standard output for enterprise software projects."
+        "answer": "ISO 27001 Stage 1 (documentation review) → Stage 2 (main audit) → certification typically takes 6–18 months from project start. Key phases: ISMS documentation (3–4 months), internal audit (1 month), Stage 1 audit (1 month), gap remediation (1–3 months), Stage 2 audit (1 month). Annual surveillance audits keep the certification live. Clickmasters has achieved ISO 27001 and builds ISMS documentation as standard output for enterprise software projects."
       }
     ],
     "relatedPages": [
@@ -6294,11 +6294,11 @@ export const comparisons = [
     "topic": "terraform_vs_pulumi_vs_aws_cdk_uk",
     "year": "2025",
     "title": "Terraform vs Pulumi vs AWS CDK — Which IaC for UK Software Teams? (2025)",
-    "metaTitle": "Terraform vs Pulumi vs AWS CDK — UK Infrastructure as Code (2025) | ClickMasters",
+    "metaTitle": "Terraform vs Pulumi vs AWS CDK — UK Infrastructure as Code (2025) | Clickmasters",
     "metaDesc": "Terraform is the right default for most UK software teams: largest community, most modules available, provider-agnostic (AWS + Azure + multi-cloud), and the sta",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -6367,7 +6367,7 @@ export const comparisons = [
             "Low for existing language"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All infrastructure",
             "AWS-only TypeScript teams",
             "By client preference"
@@ -6383,7 +6383,7 @@ export const comparisons = [
       },
       {
         "question": "Should UK NHS and government projects use Terraform?",
-        "answer": "Terraform is the most common IaC tool in NHS Digital and GDS projects. The GOV.UK Platform team uses Terraform. NHS England's cloud-first strategy is implemented predominantly with Terraform on AWS. Terraform modules for NHS Landing Zone (Azure) are also available. ClickMasters uses Terraform for all NHS and government infrastructure — it satisfies Cyber Essentials change control and produces audit-ready change records."
+        "answer": "Terraform is the most common IaC tool in NHS Digital and GDS projects. The GOV.UK Platform team uses Terraform. NHS England's cloud-first strategy is implemented predominantly with Terraform on AWS. Terraform modules for NHS Landing Zone (Azure) are also available. Clickmasters uses Terraform for all NHS and government infrastructure — it satisfies Cyber Essentials change control and produces audit-ready change records."
       }
     ],
     "relatedPages": [
@@ -6409,11 +6409,11 @@ export const comparisons = [
     "topic": "graphql_vs_rest_vs_grpc_uk",
     "year": "2025",
     "title": "GraphQL vs REST vs gRPC — Which API for UK Software? (2025)",
-    "metaTitle": "GraphQL vs REST vs gRPC — Which API Architecture for UK Software? (2025) | ClickMasters",
+    "metaTitle": "GraphQL vs REST vs gRPC — Which API Architecture for UK Software? (2025) | Clickmasters",
     "metaDesc": "REST (with OpenAPI 3.0) is the right default for most UK APIs: widest tooling support, easiest to consume, natural fit with HTTP caching (important for UK GDPR",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -6422,7 +6422,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "REST (with OpenAPI 3.0) is the right default for most UK APIs: widest tooling support, easiest to consume, natural fit with HTTP caching (important for UK GDPR minimisation at the API boundary), and the standard for FCA-regulated financial API disclosure requirements. GraphQL is better for complex frontend data requirements (reduces over-fetching). gRPC is better for high-performance internal microservice communication. ClickMasters uses REST for all external APIs. API architecture choice affects developer experience, UK GDPR data minimisation, performance, and the complexity of your API documentation — which has direct FCA COBS disclosure implications for financial APIs.",
+    "directAnswer": "REST (with OpenAPI 3.0) is the right default for most UK APIs: widest tooling support, easiest to consume, natural fit with HTTP caching (important for UK GDPR minimisation at the API boundary), and the standard for FCA-regulated financial API disclosure requirements. GraphQL is better for complex frontend data requirements (reduces over-fetching). gRPC is better for high-performance internal microservice communication. Clickmasters uses REST for all external APIs. API architecture choice affects developer experience, UK GDPR data minimisation, performance, and the complexity of your API documentation — which has direct FCA COBS disclosure implications for financial APIs.",
     "comparisonTables": [
       {
         "title": "",
@@ -6482,7 +6482,7 @@ export const comparisons = [
             "✅ Best — binary, low latency, streaming"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All external APIs",
             "Complex frontend data requirements",
             "High-performance internal services only"
@@ -6498,7 +6498,7 @@ export const comparisons = [
       },
       {
         "question": "When should a UK project use gRPC instead of REST?",
-        "answer": "gRPC genuinely wins for: internal microservice communication where binary protocol's lower overhead matters at scale (payment processing systems, real-time trading systems), bidirectional streaming (real-time data feeds, server-side events), and polyglot microservices where protobuf provides type safety across languages. ClickMasters uses gRPC for internal microservice communication in high-throughput FinTech projects — never for external APIs where REST's universality is essential."
+        "answer": "gRPC genuinely wins for: internal microservice communication where binary protocol's lower overhead matters at scale (payment processing systems, real-time trading systems), bidirectional streaming (real-time data feeds, server-side events), and polyglot microservices where protobuf provides type safety across languages. Clickmasters uses gRPC for internal microservice communication in high-throughput FinTech projects — never for external APIs where REST's universality is essential."
       }
     ],
     "relatedPages": [
@@ -6524,11 +6524,11 @@ export const comparisons = [
     "topic": "postgresql_vs_mysql_vs_sql_server_uk",
     "year": "2025",
     "title": "PostgreSQL vs MySQL vs SQL Server — Which Database for UK Software? (2025)",
-    "metaTitle": "PostgreSQL vs MySQL vs Microsoft SQL Server — UK Database Comparison (2025) | ClickMasters",
+    "metaTitle": "PostgreSQL vs MySQL vs Microsoft SQL Server — UK Database Comparison (2025) | Clickmasters",
     "metaDesc": "PostgreSQL is the right default for new UK software projects: superior feature set (JSON, full-text search, row-level security for UK GDPR isolation, TimescaleD",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -6597,7 +6597,7 @@ export const comparisons = [
             "✅ Native — best .NET integration"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All new projects",
             "Legacy migration targets only",
             "NHS Azure SQL or .NET enterprise only"
@@ -6639,11 +6639,11 @@ export const comparisons = [
     "topic": "kubernetes_vs_ecs_vs_lambda_uk",
     "year": "2025",
     "title": "Kubernetes vs AWS ECS vs AWS Lambda — Container Orchestration for UK Software (2025)",
-    "metaTitle": "Kubernetes vs AWS ECS vs AWS Lambda — Which Orchestration for UK? (2025) | ClickMasters",
+    "metaTitle": "Kubernetes vs AWS ECS vs AWS Lambda — Which Orchestration for UK? (2025) | Clickmasters",
     "metaDesc": "AWS ECS Fargate is the right default for most UK containerised workloads: no Kubernetes complexity, no master nodes to manage, Cyber Essentials OS patching hand",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -6712,7 +6712,7 @@ export const comparisons = [
             "✅ Near-zero — pay per invocation"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "Large teams needing multi-cloud",
             "✅ Standard containerised workloads",
             "Event handlers, background jobs"
@@ -6754,11 +6754,11 @@ export const comparisons = [
     "topic": "vercel_vs_aws_vs_netlify_nextjs_uk",
     "year": "2025",
     "title": "Vercel vs AWS vs Netlify — Where to Deploy Next.js in the UK? (2025)",
-    "metaTitle": "Vercel vs AWS vs Netlify — UK Next.js Deployment (2025) | ClickMasters",
+    "metaTitle": "Vercel vs AWS vs Netlify — UK Next.js Deployment (2025) | Clickmasters",
     "metaDesc": "For most UK Next.js projects: AWS (ECS Fargate + CloudFront + ALB) is the right choice — UK data residency, Cyber Essentials OS patching handled by Fargate, and",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -6827,7 +6827,7 @@ export const comparisons = [
             "Usage-based"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ NHS, GDS, FCA, enterprise",
             "Marketing, startup MVPs",
             "Static marketing only"
@@ -6839,11 +6839,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Vercel store UK user data in the UK?",
-        "answer": "Vercel's Edge Network has global presence including EU nodes, but UK data residency guarantees equivalent to AWS eu-west-2 are not as straightforward to confirm. For NHS applications, FCA-regulated systems, and government contracts where UK GDPR data residency is required: ClickMasters deploys on AWS eu-west-2 (ECS Fargate + CloudFront). For non-regulated projects (marketing sites, internal tools without sensitive personal data): Vercel is excellent."
+        "answer": "Vercel's Edge Network has global presence including EU nodes, but UK data residency guarantees equivalent to AWS eu-west-2 are not as straightforward to confirm. For NHS applications, FCA-regulated systems, and government contracts where UK GDPR data residency is required: Clickmasters deploys on AWS eu-west-2 (ECS Fargate + CloudFront). For non-regulated projects (marketing sites, internal tools without sensitive personal data): Vercel is excellent."
       },
       {
         "question": "Is Vercel too expensive for UK production workloads?",
-        "answer": "Vercel Pro (£20/month) is sufficient for low-traffic projects. Vercel Enterprise pricing can become significant at high traffic — serverless function invocations at scale. AWS ECS Fargate is more predictable at scale (fixed monthly cost for container compute + CloudFront CDN costs). For a UK SaaS with 10,000+ daily users: AWS is typically more cost-effective than Vercel Enterprise. ClickMasters runs cost modelling as part of Technical Discovery."
+        "answer": "Vercel Pro (£20/month) is sufficient for low-traffic projects. Vercel Enterprise pricing can become significant at high traffic — serverless function invocations at scale. AWS ECS Fargate is more predictable at scale (fixed monthly cost for container compute + CloudFront CDN costs). For a UK SaaS with 10,000+ daily users: AWS is typically more cost-effective than Vercel Enterprise. Clickmasters runs cost modelling as part of Technical Discovery."
       }
     ],
     "relatedPages": [
@@ -6869,11 +6869,11 @@ export const comparisons = [
     "topic": "prisma_vs_drizzle_vs_typeorm_uk",
     "year": "2025",
     "title": "Prisma vs Drizzle vs TypeORM — Which ORM for UK TypeScript Projects? (2025)",
-    "metaTitle": "Prisma vs Drizzle vs TypeORM — UK TypeScript ORM Comparison (2025) | ClickMasters",
+    "metaTitle": "Prisma vs Drizzle vs TypeORM — UK TypeScript ORM Comparison (2025) | Clickmasters",
     "metaDesc": "Prisma is the right default for most UK TypeScript projects: excellent TypeScript type safety (generated types from schema), intuitive query API, and strong UK",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -6882,7 +6882,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Prisma is the right default for most UK TypeScript projects: excellent TypeScript type safety (generated types from schema), intuitive query API, and strong UK GDPR compliance story (explicit field selection prevents over-fetching personal data). Drizzle is better for performance-critical projects and raw SQL fans. TypeORM is legacy — avoid for new UK TypeScript projects. ClickMasters uses Prisma on all new TypeScript projects. ORM choice for UK TypeScript projects affects query performance, type safety, and UK GDPR data minimisation at the database query layer.",
+    "directAnswer": "Prisma is the right default for most UK TypeScript projects: excellent TypeScript type safety (generated types from schema), intuitive query API, and strong UK GDPR compliance story (explicit field selection prevents over-fetching personal data). Drizzle is better for performance-critical projects and raw SQL fans. TypeORM is legacy — avoid for new UK TypeScript projects. Clickmasters uses Prisma on all new TypeScript projects. ORM choice for UK TypeScript projects affects query performance, type safety, and UK GDPR data minimisation at the database query layer.",
     "comparisonTables": [
       {
         "title": "",
@@ -6942,7 +6942,7 @@ export const comparisons = [
             "Possible"
           ],
           [
-            "ClickMasters standard",
+            "Clickmasters standard",
             "✅ All TypeScript projects",
             "Performance-critical services",
             "Legacy migration only"
@@ -6954,7 +6954,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Prisma's select syntax help with UK GDPR compliance?",
-        "answer": "Yes — Prisma's select syntax requires you to explicitly specify which fields to return: prisma.user.findMany({ select: { id: true, email: true } }). This forces UK GDPR data minimisation at the query layer — you cannot accidentally return all user fields including sensitive ones. ClickMasters adds Prisma ESLint rules to enforce that select is always specified on queries returning personal data. Contrast with TypeORM's findOne() which returns all fields by default."
+        "answer": "Yes — Prisma's select syntax requires you to explicitly specify which fields to return: prisma.user.findMany({ select: { id: true, email: true } }). This forces UK GDPR data minimisation at the query layer — you cannot accidentally return all user fields including sensitive ones. Clickmasters adds Prisma ESLint rules to enforce that select is always specified on queries returning personal data. Contrast with TypeORM's findOne() which returns all fields by default."
       },
       {
         "question": "Is Drizzle faster than Prisma for UK production workloads?",
@@ -6984,11 +6984,11 @@ export const comparisons = [
     "topic": "redis_vs_memcached_vs_dynamodb_dax_uk",
     "year": "2025",
     "title": "Redis vs Memcached vs DynamoDB DAX — Which Cache for UK Software? (2025)",
-    "metaTitle": "Redis vs Memcached vs DynamoDB DAX — UK Caching (2025) | ClickMasters",
+    "metaTitle": "Redis vs Memcached vs DynamoDB DAX — UK Caching (2025) | Clickmasters",
     "metaDesc": "Redis (AWS ElastiCache for Redis) is the right default for UK software projects: rich data structures beyond simple key-value (sorted sets, streams, pub/sub), L",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -7057,7 +7057,7 @@ export const comparisons = [
             "✅ Only use case — microsecond reads"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ Sessions, rate limiting, queues, leaderboards",
             "Simple key-value only",
             "DynamoDB-specific only"
@@ -7099,11 +7099,11 @@ export const comparisons = [
     "topic": "tailwind_vs_css_modules_vs_styled_components_",
     "year": "2025",
     "title": "Tailwind CSS vs CSS Modules vs Styled Components — UK Frontend Styling (2025)",
-    "metaTitle": "Tailwind CSS vs CSS Modules vs Styled Components — UK Frontend (2025) | ClickMasters",
+    "metaTitle": "Tailwind CSS vs CSS Modules vs Styled Components — UK Frontend (2025) | Clickmasters",
     "metaDesc": "Tailwind CSS is the right default for most UK frontend projects: fastest development velocity, excellent accessibility utilities (built-in focus-visible, sr-onl",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -7172,7 +7172,7 @@ export const comparisons = [
             "Declining — Tailwind has replaced it"
           ],
           [
-            "ClickMasters standard",
+            "Clickmasters standard",
             "✅ All projects",
             "Complex design systems",
             "Legacy only"
@@ -7184,11 +7184,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Tailwind CSS work with the GOV.UK Design System?",
-        "answer": "Yes — Tailwind and GOV.UK Frontend CSS can coexist. GOV.UK Frontend uses its own CSS class names (govuk-*) which do not conflict with Tailwind utilities. ClickMasters uses Tailwind for custom components (non-GOV.UK components) and GOV.UK Frontend for required GDS components (buttons, inputs, summary lists). The Tailwind reset (preflight) must be configured to not override GOV.UK Frontend's base styles — a known issue with a straightforward fix."
+        "answer": "Yes — Tailwind and GOV.UK Frontend CSS can coexist. GOV.UK Frontend uses its own CSS class names (govuk-*) which do not conflict with Tailwind utilities. Clickmasters uses Tailwind for custom components (non-GOV.UK components) and GOV.UK Frontend for required GDS components (buttons, inputs, summary lists). The Tailwind reset (preflight) must be configured to not override GOV.UK Frontend's base styles — a known issue with a straightforward fix."
       },
       {
         "question": "Does Tailwind CSS satisfy NHS DTAC Domain 5 accessibility?",
-        "answer": "Tailwind includes accessibility utilities that support WCAG 2.1 AA: sr-only (screen reader only text — for icons without visible labels), focus-visible (keyboard focus ring management), and contrast utilities (text colour contrast ratio warnings). ClickMasters configures Tailwind with custom NHS-compliant colour tokens (WCAG 2.1 AA contrast ratios enforced in tailwind.config). Automated axe-core testing in CI/CD catches any remaining contrast or focus issues."
+        "answer": "Tailwind includes accessibility utilities that support WCAG 2.1 AA: sr-only (screen reader only text — for icons without visible labels), focus-visible (keyboard focus ring management), and contrast utilities (text colour contrast ratio warnings). Clickmasters configures Tailwind with custom NHS-compliant colour tokens (WCAG 2.1 AA contrast ratios enforced in tailwind.config). Automated axe-core testing in CI/CD catches any remaining contrast or focus issues."
       }
     ],
     "relatedPages": [
@@ -7214,11 +7214,11 @@ export const comparisons = [
     "topic": "shopify_vs_woocommerce_vs_custom_uk",
     "year": "2025",
     "title": "Shopify vs WooCommerce vs Custom eCommerce — Which for UK Businesses? (2025)",
-    "metaTitle": "Shopify vs WooCommerce vs Custom — UK eCommerce Platform (2025) | ClickMasters",
+    "metaTitle": "Shopify vs WooCommerce vs Custom — UK eCommerce Platform (2025) | Clickmasters",
     "metaDesc": "Shopify for most UK D2C businesses up to £5M annual revenue: fastest to market, best ecosystem, and Shopify handles UK VAT, Consumer Rights Act compliance, and",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -7227,7 +7227,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Shopify for most UK D2C businesses up to £5M annual revenue: fastest to market, best ecosystem, and Shopify handles UK VAT, Consumer Rights Act compliance, and PCI-DSS. WooCommerce for WordPress-heavy businesses where ownership of code and hosting cost matter. Custom eCommerce for: B2B with complex pricing, marketplace platforms, or businesses with requirements Shopify and WooCommerce genuinely cannot satisfy. ClickMasters builds custom and headless Shopify platforms. eCommerce platform choice is the most consequential UK digital commerce decision. Here is an honest comparison that includes UK-specific compliance, VAT, and Consumer Rights Act implications.",
+    "directAnswer": "Shopify for most UK D2C businesses up to £5M annual revenue: fastest to market, best ecosystem, and Shopify handles UK VAT, Consumer Rights Act compliance, and PCI-DSS. WooCommerce for WordPress-heavy businesses where ownership of code and hosting cost matter. Custom eCommerce for: B2B with complex pricing, marketplace platforms, or businesses with requirements Shopify and WooCommerce genuinely cannot satisfy. Clickmasters builds custom and headless Shopify platforms. eCommerce platform choice is the most consequential UK digital commerce decision. Here is an honest comparison that includes UK-specific compliance, VAT, and Consumer Rights Act implications.",
     "comparisonTables": [
       {
         "title": "",
@@ -7235,7 +7235,7 @@ export const comparisons = [
           "Factor",
           "Shopify",
           "WooCommerce",
-          "Custom (ClickMasters)"
+          "Custom (Clickmasters)"
         ],
         "rows": [
           [
@@ -7287,7 +7287,7 @@ export const comparisons = [
             "12–24 weeks"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "D2C up to £5M, standard products",
             "WordPress-heavy, cost-conscious",
             "B2B, marketplace, complex requirements"
@@ -7303,7 +7303,7 @@ export const comparisons = [
       },
       {
         "question": "Does Shopify satisfy UK Consumer Rights Act 2024?",
-        "answer": "Shopify provides tools for Consumer Rights Act compliance: 14-day returns window configuration, cancellation policy pages, and order management for returns processing. The CRA 2024 subscription rules (click-to-cancel, renewal reminders) are not fully automated in Shopify — they require apps (ReCharge, Skio) or custom development. ClickMasters builds CRA-compliant returns and subscription management for custom and headless Shopify platforms."
+        "answer": "Shopify provides tools for Consumer Rights Act compliance: 14-day returns window configuration, cancellation policy pages, and order management for returns processing. The CRA 2024 subscription rules (click-to-cancel, renewal reminders) are not fully automated in Shopify — they require apps (ReCharge, Skio) or custom development. Clickmasters builds CRA-compliant returns and subscription management for custom and headless Shopify platforms."
       }
     ],
     "relatedPages": [
@@ -7329,11 +7329,11 @@ export const comparisons = [
     "topic": "saas_vs_bespoke_software_uk",
     "year": "2025",
     "title": "SaaS vs Bespoke Software — Which Is Right for UK Businesses? (2025)",
-    "metaTitle": "SaaS vs Bespoke Software — Which for UK Businesses? (2025) | ClickMasters",
+    "metaTitle": "SaaS vs Bespoke Software — Which for UK Businesses? (2025) | Clickmasters",
     "metaDesc": "Use SaaS for generic business functions (email, CRM, accounting, HR) where your requirements match the standard product. Build bespoke for your core differentia",
     "lastUpdated": "July 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -7398,7 +7398,7 @@ export const comparisons = [
             "✅ Unlimited — product adapts to you"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "Generic business functions",
             "Core differentiating processes + regulated compliance"
           ]
@@ -7439,11 +7439,11 @@ export const comparisons = [
     "topic": "aws_vs_azure_vs_gcp_uk",
     "year": "2025",
     "title": "AWS vs Azure vs GCP — Which Cloud Provider for UK Software? (2025)",
-    "metaTitle": "AWS vs Azure vs GCP — Which Cloud for UK Software? (2025) | ClickMasters",
+    "metaTitle": "AWS vs Azure vs GCP — Which Cloud for UK Software? (2025) | Clickmasters",
     "metaDesc": "AWS (eu-west-2, London) is the right default for most UK software projects: UK data residency confirmed, most UK FinTech and HealthTech teams use AWS, and the w",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -7518,7 +7518,7 @@ export const comparisons = [
             "Smallest"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All new projects",
             "NHS, .NET enterprise",
             "ML-heavy data platforms"
@@ -7530,11 +7530,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does UK government require AWS or Azure?",
-        "answer": "Neither is mandated. GDS Cloud First policy requires cloud-first thinking without specifying provider. In practice: GOV.UK Platform team uses AWS eu-west-2. HMRC has a major Azure migration programme. NHS Digital uses Azure Landing Zone as the standard for NHS cloud migration. MOJ has used both. ClickMasters uses AWS for all new UK software projects (deepest managed service selection) and Azure specifically for NHS systems integrating with NHS Landing Zone."
+        "answer": "Neither is mandated. GDS Cloud First policy requires cloud-first thinking without specifying provider. In practice: GOV.UK Platform team uses AWS eu-west-2. HMRC has a major Azure migration programme. NHS Digital uses Azure Landing Zone as the standard for NHS cloud migration. MOJ has used both. Clickmasters uses AWS for all new UK software projects (deepest managed service selection) and Azure specifically for NHS systems integrating with NHS Landing Zone."
       },
       {
         "question": "Is GCP suitable for UK FinTech?",
-        "answer": "GCP is technically suitable — UK data residency in europe-west2 (London) satisfies UK GDPR. However: UK FinTech talent pool strongly favours AWS, most UK FinTech DTAC and FCA audit processes reference AWS-specific controls, and the FCA's own cloud guidance cites AWS and Azure examples. GCP FinTech use cases in the UK are mostly data/analytics platforms alongside a primary AWS application stack. ClickMasters recommends AWS for all UK FinTech primary application stacks."
+        "answer": "GCP is technically suitable — UK data residency in europe-west2 (London) satisfies UK GDPR. However: UK FinTech talent pool strongly favours AWS, most UK FinTech DTAC and FCA audit processes reference AWS-specific controls, and the FCA's own cloud guidance cites AWS and Azure examples. GCP FinTech use cases in the UK are mostly data/analytics platforms alongside a primary AWS application stack. Clickmasters recommends AWS for all UK FinTech primary application stacks."
       }
     ],
     "relatedPages": [
@@ -7560,11 +7560,11 @@ export const comparisons = [
     "topic": "openai_vs_anthropic_claude_vs_gemini_uk",
     "year": "2025",
     "title": "OpenAI vs Claude vs Gemini — Which AI API for UK Software? (2025)",
-    "metaTitle": "OpenAI vs Anthropic Claude vs Google Gemini — UK AI API (2025) | ClickMasters",
-    "metaDesc": "Claude (Anthropic) is ClickMasters' preferred AI API for UK commercial software: best performance on long-context tasks (200K token context window), most consis",
+    "metaTitle": "OpenAI vs Anthropic Claude vs Google Gemini — UK AI API (2025) | Clickmasters",
+    "metaDesc": "Claude (Anthropic) is Clickmasters' preferred AI API for UK commercial software: best performance on long-context tasks (200K token context window), most consis",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -7573,7 +7573,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Claude (Anthropic) is ClickMasters' preferred AI API for UK commercial software: best performance on long-context tasks (200K token context window), most consistent UK GDPR compliance controls (EU data residency available, clear DPA), strongest safety profile for regulated sectors (NHS, FCA), and best instruction-following for structured outputs in legal, financial, and clinical contexts. OpenAI GPT-4o is the best choice for multimodal tasks (vision + text) and the widest ecosystem (plugins, assistants). Gemini Pro is best for Google Workspace integrations and very long document analysis. AI API selection for UK commercial software involves UK GDPR compliance, data residency, and regulated sector suitability — not just benchmark performance. Here is a UK-focused comparison.",
+    "directAnswer": "Claude (Anthropic) is Clickmasters' preferred AI API for UK commercial software: best performance on long-context tasks (200K token context window), most consistent UK GDPR compliance controls (EU data residency available, clear DPA), strongest safety profile for regulated sectors (NHS, FCA), and best instruction-following for structured outputs in legal, financial, and clinical contexts. OpenAI GPT-4o is the best choice for multimodal tasks (vision + text) and the widest ecosystem (plugins, assistants). Gemini Pro is best for Google Workspace integrations and very long document analysis. AI API selection for UK commercial software involves UK GDPR compliance, data residency, and regulated sector suitability — not just benchmark performance. Here is a UK-focused comparison.",
     "comparisonTables": [
       {
         "title": "",
@@ -7627,7 +7627,7 @@ export const comparisons = [
             "✅ Available via Vertex AI"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ Regulated sectors, RAG, structured output",
             "Vision tasks, broad ecosystem",
             "Google Workspace, very long docs"
@@ -7639,11 +7639,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Which AI API satisfies UK GDPR for NHS applications?",
-        "answer": "For NHS applications (Article 9 health data): the AI API must process data under a valid Article 28 DPA (data processor agreement). Anthropic Claude (via AWS Bedrock in eu-west-2), Azure OpenAI (Azure UK South), and Google Vertex AI (europe-west2) all provide DPAs. NHS Data Security and Protection Toolkit compliance: the AI provider must satisfy DSPT standard 4 (AI systems) requirements. ClickMasters uses Claude via AWS Bedrock for all NHS AI applications — combining UK GDPR compliance with NHS DSPT alignment."
+        "answer": "For NHS applications (Article 9 health data): the AI API must process data under a valid Article 28 DPA (data processor agreement). Anthropic Claude (via AWS Bedrock in eu-west-2), Azure OpenAI (Azure UK South), and Google Vertex AI (europe-west2) all provide DPAs. NHS Data Security and Protection Toolkit compliance: the AI provider must satisfy DSPT standard 4 (AI systems) requirements. Clickmasters uses Claude via AWS Bedrock for all NHS AI applications — combining UK GDPR compliance with NHS DSPT alignment."
       },
       {
         "question": "Can I use OpenAI or Claude for FCA-regulated financial advice applications?",
-        "answer": "AI systems providing regulated financial advice (COBS 9 suitability) require FCA authorisation — the AI provider does not provide this. AI APIs can assist regulated advice but cannot substitute for it. For FCA Consumer Duty Consumer Understanding: AI-generated explanations of financial products must be FCA COBS 4 compliant (fair, clear, not misleading) — regardless of which AI API generates them. ClickMasters always includes a human review step before AI-generated financial content is shown to consumers."
+        "answer": "AI systems providing regulated financial advice (COBS 9 suitability) require FCA authorisation — the AI provider does not provide this. AI APIs can assist regulated advice but cannot substitute for it. For FCA Consumer Duty Consumer Understanding: AI-generated explanations of financial products must be FCA COBS 4 compliant (fair, clear, not misleading) — regardless of which AI API generates them. Clickmasters always includes a human review step before AI-generated financial content is shown to consumers."
       }
     ],
     "relatedPages": [
@@ -7669,11 +7669,11 @@ export const comparisons = [
     "topic": "stripe_vs_gocardless_vs_modulr_uk",
     "year": "2025",
     "title": "Stripe vs GoCardless vs Modulr — UK Payment APIs Compared (2025)",
-    "metaTitle": "Stripe vs GoCardless vs Modulr — UK Payment APIs (2025) | ClickMasters",
+    "metaTitle": "Stripe vs GoCardless vs Modulr — UK Payment APIs (2025) | Clickmasters",
     "metaDesc": "Use Stripe for card payments (best developer experience, UK VAT automation, PCI SAQ-A). Use GoCardless for recurring Direct Debit (far superior to Stripe for UK",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -7742,7 +7742,7 @@ export const comparisons = [
             "✅ Primary use case"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "✅ Card payments + subscriptions",
             "✅ Recurring bank debit",
             "✅ Bank account issuance"
@@ -7754,7 +7754,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Should a UK SaaS business use Stripe or GoCardless for recurring billing?",
-        "answer": "Both — for optimal results. Stripe for card payments (international customers, first-time conversions, startup customers without bank details). GoCardless for Direct Debit (established UK B2B customers — 1.8% failure rate vs 6.4% for cards). GoCardless Direct Debit reduces churn significantly for UK B2B SaaS — a failed card at renewal can lose a customer; GoCardless retries automatically. ClickMasters implements Stripe + GoCardless dual-rail as standard for UK B2B SaaS subscription platforms."
+        "answer": "Both — for optimal results. Stripe for card payments (international customers, first-time conversions, startup customers without bank details). GoCardless for Direct Debit (established UK B2B customers — 1.8% failure rate vs 6.4% for cards). GoCardless Direct Debit reduces churn significantly for UK B2B SaaS — a failed card at renewal can lose a customer; GoCardless retries automatically. Clickmasters implements Stripe + GoCardless dual-rail as standard for UK B2B SaaS subscription platforms."
       },
       {
         "question": "Is Modulr FCA-regulated for UK bank accounts?",
@@ -7784,11 +7784,11 @@ export const comparisons = [
     "topic": "rest_vs_graphql_vs_grpc_api_design_uk",
     "year": "2025",
     "title": "REST vs GraphQL vs gRPC — UK API Architecture Decision Framework (2025)",
-    "metaTitle": "REST vs GraphQL vs gRPC — UK API Design Decision (2025) | ClickMasters",
+    "metaTitle": "REST vs GraphQL vs gRPC — UK API Design Decision (2025) | Clickmasters",
     "metaDesc": "REST with OpenAPI 3.0 is the standard for UK external APIs — required for FCA COBS machine-readable disclosure, NHS FHIR R4 compliance (FHIR is a REST standard)",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -7854,7 +7854,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does GDS mandate REST for all government digital services?",
-        "answer": "GDS API design guidance (published on gov.uk) recommends REST + OpenAPI 3.0 for all government APIs. GDS Service Standard assessment criteria include: API documentation is machine-readable (OpenAPI satisfies this), APIs are designed for reuse (REST's standard conventions facilitate this). GDS does not explicitly prohibit GraphQL but the GOV.UK API catalogue and all published GOV.UK APIs use REST. ClickMasters uses REST for all GDS-assessed services."
+        "answer": "GDS API design guidance (published on gov.uk) recommends REST + OpenAPI 3.0 for all government APIs. GDS Service Standard assessment criteria include: API documentation is machine-readable (OpenAPI satisfies this), APIs are designed for reuse (REST's standard conventions facilitate this). GDS does not explicitly prohibit GraphQL but the GOV.UK API catalogue and all published GOV.UK APIs use REST. Clickmasters uses REST for all GDS-assessed services."
       },
       {
         "question": "When is GraphQL a genuine improvement over REST in UK projects?",
@@ -7884,11 +7884,11 @@ export const comparisons = [
     "topic": "supabase_vs_firebase_vs_planetscale_uk",
     "year": "2025",
     "title": "Supabase vs Firebase vs PlanetScale — UK Backend-as-a-Service (2025)",
-    "metaTitle": "Supabase vs Firebase vs PlanetScale — UK BaaS Platform (2025) | ClickMasters",
+    "metaTitle": "Supabase vs Firebase vs PlanetScale — UK BaaS Platform (2025) | Clickmasters",
     "metaDesc": "Supabase is the right default for UK production applications requiring PostgreSQL, UK GDPR compliance, and row-level security. Firebase is for rapid prototyping",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -7957,7 +7957,7 @@ export const comparisons = [
             "✅ MySQL — full SQL"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "✅ UK regulated applications",
             "Rapid prototyping, mobile MVPs",
             "MySQL-specific legacy workloads"
@@ -7969,11 +7969,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Is Firebase suitable for NHS HealthTech applications?",
-        "answer": "Firebase is not recommended for NHS HealthTech applications handling patient personal data (Article 9). Reasons: (1) Firestore security rules can be misconfigured — PostgreSQL RLS at the database level is a stronger GDPR isolation control. (2) Firebase is Google Cloud-hosted — NHS DTAC Domain 2 (Data Protection) requires evidence of UK data residency and clear Article 28 DPA — Firebase's data residency is not as straightforward to confirm as AWS eu-west-2. (3) NHS DSPT standard 4 auditors are familiar with PostgreSQL — less so with Firestore. ClickMasters uses Supabase (PostgreSQL) or direct PostgreSQL on AWS for all NHS applications."
+        "answer": "Firebase is not recommended for NHS HealthTech applications handling patient personal data (Article 9). Reasons: (1) Firestore security rules can be misconfigured — PostgreSQL RLS at the database level is a stronger GDPR isolation control. (2) Firebase is Google Cloud-hosted — NHS DTAC Domain 2 (Data Protection) requires evidence of UK data residency and clear Article 28 DPA — Firebase's data residency is not as straightforward to confirm as AWS eu-west-2. (3) NHS DSPT standard 4 auditors are familiar with PostgreSQL — less so with Firestore. Clickmasters uses Supabase (PostgreSQL) or direct PostgreSQL on AWS for all NHS applications."
       },
       {
         "question": "Can Supabase be self-hosted on AWS eu-west-2 for UK GDPR compliance?",
-        "answer": "Yes — Supabase is open source (Apache 2.0 licence) and can be self-hosted using Docker on AWS EC2 or ECS in eu-west-2. Self-hosted Supabase: full control over data residency, no Supabase Cloud data sharing, and PostgreSQL on your own AWS infrastructure. ClickMasters self-hosts Supabase on AWS eu-west-2 for all UK regulated applications. The self-hosted version includes all Supabase features (auth, storage, real-time, edge functions) with no vendor data sharing."
+        "answer": "Yes — Supabase is open source (Apache 2.0 licence) and can be self-hosted using Docker on AWS EC2 or ECS in eu-west-2. Self-hosted Supabase: full control over data residency, no Supabase Cloud data sharing, and PostgreSQL on your own AWS infrastructure. Clickmasters self-hosts Supabase on AWS eu-west-2 for all UK regulated applications. The self-hosted version includes all Supabase features (auth, storage, real-time, edge functions) with no vendor data sharing."
       }
     ],
     "relatedPages": [
@@ -7999,11 +7999,11 @@ export const comparisons = [
     "topic": "iso_27001_vs_soc2_vs_cyber_essentials_uk",
     "year": "2700",
     "title": "ISO 27001 vs SOC 2 vs Cyber Essentials — Which Security Certification for UK? (2025)",
-    "metaTitle": "ISO 27001 vs SOC 2 vs Cyber Essentials — UK Security Certifications (2025) | ClickMasters",
+    "metaTitle": "ISO 27001 vs SOC 2 vs Cyber Essentials — UK Security Certifications (2025) | Clickmasters",
     "metaDesc": "Cyber Essentials is the right starting point for all UK software businesses — low cost (£300–£500 self-assessment, £2,000–£5,000 Plus), required for NHS contrac",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -8072,7 +8072,7 @@ export const comparisons = [
             "US-standard — FCA prefers ISO 27001"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "✅ All UK software businesses — start here",
             "Series A+ selling to UK enterprise/FCA/NHS",
             "Only if actively targeting US enterprise"
@@ -8088,7 +8088,7 @@ export const comparisons = [
       },
       {
         "question": "Is Cyber Essentials sufficient for NHS contracts?",
-        "answer": "Cyber Essentials (basic self-assessment, not Plus) is the minimum requirement for NHS contracts per NCSC guidance. Many NHS trusts and NHS England programmes require Cyber Essentials Plus (independently assessed, including vulnerability scan). For NHS DTAC: Cyber Essentials Plus is required for Domain 3 (Technical Security) at DTAC assessment. ClickMasters holds Cyber Essentials Plus and recommends all NHS HealthTech companies obtain Plus certification before any NHS procurement."
+        "answer": "Cyber Essentials (basic self-assessment, not Plus) is the minimum requirement for NHS contracts per NCSC guidance. Many NHS trusts and NHS England programmes require Cyber Essentials Plus (independently assessed, including vulnerability scan). For NHS DTAC: Cyber Essentials Plus is required for Domain 3 (Technical Security) at DTAC assessment. Clickmasters holds Cyber Essentials Plus and recommends all NHS HealthTech companies obtain Plus certification before any NHS procurement."
       }
     ],
     "relatedPages": [
@@ -8114,11 +8114,11 @@ export const comparisons = [
     "topic": "github_actions_vs_gitlab_ci_vs_circleci_uk",
     "year": "2025",
     "title": "GitHub Actions vs GitLab CI vs CircleCI — UK CI/CD Comparison (2025)",
-    "metaTitle": "GitHub Actions vs GitLab CI vs CircleCI — UK CI/CD Platform (2025) | ClickMasters",
+    "metaTitle": "GitHub Actions vs GitLab CI vs CircleCI — UK CI/CD Platform (2025) | Clickmasters",
     "metaDesc": "GitHub Actions is the right default for all new UK projects: free for public repos, tightly integrated with GitHub (no context switching), the largest ecosystem",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -8187,7 +8187,7 @@ export const comparisons = [
             "Separate config syntax"
           ],
           [
-            "ClickMasters standard",
+            "Clickmasters standard",
             "✅ All new projects",
             "GitLab-primary teams only",
             "Not recommended for new projects"
@@ -8199,11 +8199,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Do GitHub Actions satisfy NHS DTAC security requirements for CI/CD?",
-        "answer": "Yes — GitHub Actions on GitHub-hosted runners satisfies DTAC Domain 3 (Technical Security) CI/CD requirements. GitHub is ISO 27001 certified, SOC 2 Type II certified, and provides a complete audit trail of all CI/CD runs (who triggered, when, what ran, what changed). For NHS DTAC evidence: GitHub Actions run logs are archived and exportable as CI/CD change management evidence. ClickMasters configures GitHub Actions with branch protection rules (required reviews before merge) for all NHS DTAC projects."
+        "answer": "Yes — GitHub Actions on GitHub-hosted runners satisfies DTAC Domain 3 (Technical Security) CI/CD requirements. GitHub is ISO 27001 certified, SOC 2 Type II certified, and provides a complete audit trail of all CI/CD runs (who triggered, when, what ran, what changed). For NHS DTAC evidence: GitHub Actions run logs are archived and exportable as CI/CD change management evidence. Clickmasters configures GitHub Actions with branch protection rules (required reviews before merge) for all NHS DTAC projects."
       },
       {
         "question": "Should UK companies use GitHub-hosted or self-hosted runners?",
-        "answer": "GitHub-hosted runners: simplest — no maintenance, Cyber Essentials patching handled by GitHub. Appropriate for most UK projects. Self-hosted runners (on AWS eu-west-2): required when: CI/CD needs access to private network resources (internal databases, private APIs), requires specific hardware (GPU for ML model training), or when data processed during build must remain within UK data boundary. ClickMasters uses self-hosted runners on AWS eu-west-2 for CI/CD pipelines that process personal data during testing."
+        "answer": "GitHub-hosted runners: simplest — no maintenance, Cyber Essentials patching handled by GitHub. Appropriate for most UK projects. Self-hosted runners (on AWS eu-west-2): required when: CI/CD needs access to private network resources (internal databases, private APIs), requires specific hardware (GPU for ML model training), or when data processed during build must remain within UK data boundary. Clickmasters uses self-hosted runners on AWS eu-west-2 for CI/CD pipelines that process personal data during testing."
       }
     ],
     "relatedPages": [
@@ -8229,11 +8229,11 @@ export const comparisons = [
     "topic": "contentful_vs_sanity_vs_strapi_uk",
     "year": "2025",
     "title": "Contentful vs Sanity vs Strapi — UK Headless CMS Comparison (2025)",
-    "metaTitle": "Contentful vs Sanity vs Strapi — UK Headless CMS (2025) | ClickMasters",
+    "metaTitle": "Contentful vs Sanity vs Strapi — UK Headless CMS (2025) | Clickmasters",
     "metaDesc": "Contentful is right for UK enterprise with large content teams and complex content governance requirements (content approval workflows, locale management, compl",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -8242,7 +8242,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Contentful is right for UK enterprise with large content teams and complex content governance requirements (content approval workflows, locale management, compliance-friendly audit logs). Sanity is right for developers who want maximum customisation and real-time collaborative editing (GROQ query language is genuinely powerful). Strapi is right for UK SMBs who want self-hosted, open-source headless CMS with full data ownership (UK GDPR data residency — Strapi on your own AWS eu-west-2). Strapi is ClickMasters' default for projects where UK GDPR data residency of content is required. Headless CMS choice affects UK GDPR compliance (where is content data stored?), content team workflow, and total cost of ownership.",
+    "directAnswer": "Contentful is right for UK enterprise with large content teams and complex content governance requirements (content approval workflows, locale management, compliance-friendly audit logs). Sanity is right for developers who want maximum customisation and real-time collaborative editing (GROQ query language is genuinely powerful). Strapi is right for UK SMBs who want self-hosted, open-source headless CMS with full data ownership (UK GDPR data residency — Strapi on your own AWS eu-west-2). Strapi is Clickmasters' default for projects where UK GDPR data residency of content is required. Headless CMS choice affects UK GDPR compliance (where is content data stored?), content team workflow, and total cost of ownership.",
     "comparisonTables": [
       {
         "title": "",
@@ -8302,7 +8302,7 @@ export const comparisons = [
             "Good — self-hosted UK data residency"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "Enterprise content teams",
             "Developer-led flexible content",
             "✅ UK GDPR-first, SMB, self-hosted"
@@ -8314,7 +8314,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Contentful satisfy UK GDPR data residency?",
-        "answer": "Contentful offers an EU region (Germany). For most commercial UK applications, Contentful EU region satisfies UK GDPR adequacy requirements (UK-EU adequacy decision). For NHS and government content where content may reference sensitive personal information: self-hosted Strapi on AWS eu-west-2 provides the strongest data residency story and eliminates any Contentful SaaS data sharing. ClickMasters always confirms UK GDPR data residency requirements before recommending CMS platform."
+        "answer": "Contentful offers an EU region (Germany). For most commercial UK applications, Contentful EU region satisfies UK GDPR adequacy requirements (UK-EU adequacy decision). For NHS and government content where content may reference sensitive personal information: self-hosted Strapi on AWS eu-west-2 provides the strongest data residency story and eliminates any Contentful SaaS data sharing. Clickmasters always confirms UK GDPR data residency requirements before recommending CMS platform."
       },
       {
         "question": "Is Strapi suitable for large UK enterprise content operations?",
@@ -8344,11 +8344,11 @@ export const comparisons = [
     "topic": "aws_cloudwatch_vs_datadog_vs_grafana_uk",
     "year": "2025",
     "title": "AWS CloudWatch vs Datadog vs Grafana — UK Observability Platform (2025)",
-    "metaTitle": "AWS CloudWatch vs Datadog vs Grafana — UK Observability (2025) | ClickMasters",
+    "metaTitle": "AWS CloudWatch vs Datadog vs Grafana — UK Observability (2025) | Clickmasters",
     "metaDesc": "AWS CloudWatch is the right default for UK applications hosted on AWS — native integration, no data transfer costs, UK data residency in eu-west-2 confirmed, an",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -8417,7 +8417,7 @@ export const comparisons = [
             "✅ Alertmanager — configurable"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ AWS-native UK applications",
             "Multi-cloud enterprise teams",
             "FinTech/NHS needing full log control"
@@ -8429,11 +8429,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Datadog satisfy NHS DSP Toolkit log retention requirements?",
-        "answer": "NHS DSP Toolkit Standard 7 (Data Storage and Transmission) requires audit logs retained for minimum 6 years. Datadog supports configurable log retention (30 days standard, longer with Flex Logs — additional cost). Datadog's data is processed through US infrastructure even with EU region selected — NHS DSPT assessors have increasingly questioned this for highly sensitive health data logs. ClickMasters uses AWS CloudWatch or self-hosted Grafana Loki for all NHS applications — confirmed UK data residency for audit logs."
+        "answer": "NHS DSP Toolkit Standard 7 (Data Storage and Transmission) requires audit logs retained for minimum 6 years. Datadog supports configurable log retention (30 days standard, longer with Flex Logs — additional cost). Datadog's data is processed through US infrastructure even with EU region selected — NHS DSPT assessors have increasingly questioned this for highly sensitive health data logs. Clickmasters uses AWS CloudWatch or self-hosted Grafana Loki for all NHS applications — confirmed UK data residency for audit logs."
       },
       {
         "question": "How long should UK software applications retain logs?",
-        "answer": "Log retention guidance by regulation: NHS DSP Toolkit — 6 years minimum for clinical system audit logs. FCA — 5–7 years for financial transaction logs (SYSC 9 regulated activity records). ICO/UK GDPR — personal data in logs must not be retained longer than necessary (principle of storage limitation) — balance against security/compliance retention needs. HMRC — 6 years for business records including system logs evidencing financial transactions. ClickMasters configures AWS CloudWatch log retention at 7 years for regulated UK applications (satisfies all regulatory requirements)."
+        "answer": "Log retention guidance by regulation: NHS DSP Toolkit — 6 years minimum for clinical system audit logs. FCA — 5–7 years for financial transaction logs (SYSC 9 regulated activity records). ICO/UK GDPR — personal data in logs must not be retained longer than necessary (principle of storage limitation) — balance against security/compliance retention needs. HMRC — 6 years for business records including system logs evidencing financial transactions. Clickmasters configures AWS CloudWatch log retention at 7 years for regulated UK applications (satisfies all regulatory requirements)."
       }
     ],
     "relatedPages": [
@@ -8459,11 +8459,11 @@ export const comparisons = [
     "topic": "kafka_vs_rabbitmq_vs_sqs_uk",
     "year": "2025",
     "title": "Kafka vs RabbitMQ vs AWS SQS — Which Message Queue for UK Software? (2025)",
-    "metaTitle": "Kafka vs RabbitMQ vs AWS SQS — UK Message Queue (2025) | ClickMasters",
+    "metaTitle": "Kafka vs RabbitMQ vs AWS SQS — UK Message Queue (2025) | Clickmasters",
     "metaDesc": "AWS SQS is the right default for most UK software projects: managed service (Cyber Essentials patching handled by AWS), simple queue semantics, pay-per-use pric",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -8532,7 +8532,7 @@ export const comparisons = [
             "Self-hosted infrastructure cost"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ Most UK microservice projects",
             "High-throughput event streaming",
             "Not on AWS, complex routing needed"
@@ -8544,7 +8544,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "When does a UK project genuinely need Kafka instead of SQS?",
-        "answer": "Kafka (AWS MSK) genuinely wins when: (1) 1M+ messages per day with multiple independent consumer groups each needing full event history, (2) event replay needed (replay last 7 days of events for debugging or reprocessing), (3) real-time analytics alongside event processing (Kafka Connect to Redshift/S3 for analytics pipeline). For most UK software projects: SQS is sufficient. ClickMasters has built UK FinTech systems processing 50M+ events/day on MSK — but also built 30M event/day logistics platforms on SQS + Lambda."
+        "answer": "Kafka (AWS MSK) genuinely wins when: (1) 1M+ messages per day with multiple independent consumer groups each needing full event history, (2) event replay needed (replay last 7 days of events for debugging or reprocessing), (3) real-time analytics alongside event processing (Kafka Connect to Redshift/S3 for analytics pipeline). For most UK software projects: SQS is sufficient. Clickmasters has built UK FinTech systems processing 50M+ events/day on MSK — but also built 30M event/day logistics platforms on SQS + Lambda."
       },
       {
         "question": "Does AWS SQS satisfy UK GDPR for personal data in messages?",
@@ -8574,11 +8574,11 @@ export const comparisons = [
     "topic": "react_query_vs_swr_vs_rtk_query_uk",
     "year": "2025",
     "title": "React Query vs SWR vs RTK Query — UK Data Fetching Libraries (2025)",
-    "metaTitle": "React Query vs SWR vs RTK Query — UK Data Fetching (2025) | ClickMasters",
+    "metaTitle": "React Query vs SWR vs RTK Query — UK Data Fetching (2025) | Clickmasters",
     "metaDesc": "TanStack Query (React Query v5) is the right default for most UK React applications: best developer experience, most features (background refetching, optimistic",
     "lastUpdated": "August 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -8647,7 +8647,7 @@ export const comparisons = [
             "Redux teams only"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All new React projects",
             "Simple read-only data",
             "Redux-first projects"
@@ -8663,7 +8663,7 @@ export const comparisons = [
       },
       {
         "question": "Is SWR better than React Query for Next.js applications?",
-        "answer": "SWR is made by Vercel (the Next.js company) but is not mandated or significantly advantaged in Next.js. React Query v5 works excellently with Next.js App Router. The decision is primarily about feature requirements: SWR is excellent for simple GET requests with real-time updates. React Query wins when you need: mutations with optimistic updates, infinite scroll, complex caching strategies, or devtools. ClickMasters uses React Query (TanStack Query) on all Next.js projects — the richer feature set is worth the slightly larger bundle."
+        "answer": "SWR is made by Vercel (the Next.js company) but is not mandated or significantly advantaged in Next.js. React Query v5 works excellently with Next.js App Router. The decision is primarily about feature requirements: SWR is excellent for simple GET requests with real-time updates. React Query wins when you need: mutations with optimistic updates, infinite scroll, complex caching strategies, or devtools. Clickmasters uses React Query (TanStack Query) on all Next.js projects — the richer feature set is worth the slightly larger bundle."
       }
     ],
     "relatedPages": [
@@ -8689,7 +8689,7 @@ export const comparisons = [
     "topic": "mongodb_vs_dynamodb_vs_cassandra_uk",
     "year": "2025",
     "title": "MongoDB vs DynamoDB vs Cassandra UK NoSQL (2025)",
-    "metaTitle": "MongoDB vs DynamoDB vs Cassandra UK (2025) | ClickMasters MongoDB vs DynamoDB vs Cassandra UK NoSQL (2025) Direct Answer: For most UK applications use PostgreSQL. If you genuinely need NoSQL: DynamoDB for key-value and TTL. MongoDB Atlas for document data. Cassandra for very high write throughput — rarely right for UK SME. NoSQL is frequently chosen on trend rather than genuine need. Honest UK assessment: Factor PostgreSQL DynamoDB MongoDB Atlas Cyber Essentials patching RDS managed by AWS AWS managed — no obligation Atlas managed — no obligation UK GDPR Row Level Security Native RLS — strongest IAM policies only Collection-level only UK data residency eu-west-2 eu-west-2 EU region available ACID transactions Full ACID always Single-table only Multi-document since v4 SQL query support Full SQL No — partition key No — aggregation only NHS/FCA audit familiarity High — SQL standard Medium Medium ClickMasters default All applications Key-value and TTL only Document CMS only Q: When should a UK project use DynamoDB instead of PostgreSQL? A: DynamoDB wins when access is always by a single key, data has natural TTL such as session tokens, or throughput spikes are unpredictable. Most UK CRUD applications do not meet these criteria. ClickMasters uses DynamoDB for sessions, rate limiting, and IoT events only. Q: Is MongoDB suitable for NHS applications? A: MongoDB Atlas is technically feasible but presents challenges: NHS DTAC assessors are less familiar with MongoDB; it lacks native Row Level Security; and the NHS ecosystem is SQL-native. ClickMasters uses PostgreSQL for all NHS applications without exception. Related Pages PostgreSQL vs MySQL vs SQL Server UK: /postgresql-vs-mysql-vs-sql-server-uk/ Cloud-Native Development UK: /cloud-native-development/ FinTech Software Development UK: /fintech-software-development/",
+    "metaTitle": "MongoDB vs DynamoDB vs Cassandra UK (2025) | Clickmasters MongoDB vs DynamoDB vs Cassandra UK NoSQL (2025) Direct Answer: For most UK applications use PostgreSQL. If you genuinely need NoSQL: DynamoDB for key-value and TTL. MongoDB Atlas for document data. Cassandra for very high write throughput — rarely right for UK SME. NoSQL is frequently chosen on trend rather than genuine need. Honest UK assessment: Factor PostgreSQL DynamoDB MongoDB Atlas Cyber Essentials patching RDS managed by AWS AWS managed — no obligation Atlas managed — no obligation UK GDPR Row Level Security Native RLS — strongest IAM policies only Collection-level only UK data residency eu-west-2 eu-west-2 EU region available ACID transactions Full ACID always Single-table only Multi-document since v4 SQL query support Full SQL No — partition key No — aggregation only NHS/FCA audit familiarity High — SQL standard Medium Medium Clickmasters default All applications Key-value and TTL only Document CMS only Q: When should a UK project use DynamoDB instead of PostgreSQL? A: DynamoDB wins when access is always by a single key, data has natural TTL such as session tokens, or throughput spikes are unpredictable. Most UK CRUD applications do not meet these criteria. Clickmasters uses DynamoDB for sessions, rate limiting, and IoT events only. Q: Is MongoDB suitable for NHS applications? A: MongoDB Atlas is technically feasible but presents challenges: NHS DTAC assessors are less familiar with MongoDB; it lacks native Row Level Security; and the NHS ecosystem is SQL-native. Clickmasters uses PostgreSQL for all NHS applications without exception. Related Pages PostgreSQL vs MySQL vs SQL Server UK: /postgresql-vs-mysql-vs-sql-server-uk/ Cloud-Native Development UK: /cloud-native-development/ FinTech Software Development UK: /fintech-software-development/",
     "metaDesc": "",
     "lastUpdated": "",
     "readingTime": 0,
@@ -8744,7 +8744,7 @@ export const comparisons = [
             "Medium"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All applications",
             "Key-value and TTL only",
             "Document CMS only"
@@ -8756,11 +8756,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "When should a UK project use DynamoDB instead of PostgreSQL?",
-        "answer": "DynamoDB wins when access is always by a single key, data has natural TTL such as session tokens, or throughput spikes are unpredictable. Most UK CRUD applications do not meet these criteria. ClickMasters uses DynamoDB for sessions, rate limiting, and IoT events only."
+        "answer": "DynamoDB wins when access is always by a single key, data has natural TTL such as session tokens, or throughput spikes are unpredictable. Most UK CRUD applications do not meet these criteria. Clickmasters uses DynamoDB for sessions, rate limiting, and IoT events only."
       },
       {
         "question": "Is MongoDB suitable for NHS applications?",
-        "answer": "MongoDB Atlas is technically feasible but presents challenges: NHS DTAC assessors are less familiar with MongoDB; it lacks native Row Level Security; and the NHS ecosystem is SQL-native. ClickMasters uses PostgreSQL for all NHS applications without exception."
+        "answer": "MongoDB Atlas is technically feasible but presents challenges: NHS DTAC assessors are less familiar with MongoDB; it lacks native Row Level Security; and the NHS ecosystem is SQL-native. Clickmasters uses PostgreSQL for all NHS applications without exception."
       }
     ],
     "relatedPages": [],
@@ -8773,11 +8773,11 @@ export const comparisons = [
     "topic": "nextjs_vs_remix_vs_astro_uk",
     "year": "2025",
     "title": "Next.js vs Remix vs Astro — Which React Framework for UK Software? (2025)",
-    "metaTitle": "Next.js vs Remix vs Astro — UK React Framework (2025) | ClickMasters",
+    "metaTitle": "Next.js vs Remix vs Astro — UK React Framework (2025) | Clickmasters",
     "metaDesc": "Next.js is the right default for most UK commercial applications: largest ecosystem, best Vercel/AWS deployment support, App Router (Server Components) for UK G",
     "lastUpdated": "September 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -8846,7 +8846,7 @@ export const comparisons = [
             "Static S3+CloudFront ideal"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All new UK React projects",
             "Complex form-heavy apps",
             "Marketing sites, docs"
@@ -8858,11 +8858,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Is Next.js App Router suitable for NHS HealthTech applications?",
-        "answer": "Yes — Next.js App Router with Server Components is excellent for NHS HealthTech. Server Components handle NHS FHIR R4 data server-side (health data never sent to client unless explicitly required — GDPR Article 25 data protection by design). Server Actions replace API routes for form submissions (clinical form data processed server-side). NHS Design System components can be used in Next.js without modification. ClickMasters uses Next.js App Router for all NHS web applications."
+        "answer": "Yes — Next.js App Router with Server Components is excellent for NHS HealthTech. Server Components handle NHS FHIR R4 data server-side (health data never sent to client unless explicitly required — GDPR Article 25 data protection by design). Server Actions replace API routes for form submissions (clinical form data processed server-side). NHS Design System components can be used in Next.js without modification. Clickmasters uses Next.js App Router for all NHS web applications."
       },
       {
         "question": "Should UK government digital services use Next.js or a bespoke GDS framework?",
-        "answer": "GDS does not mandate a specific frontend framework. GDS Service Standard requires: accessible (WCAG 2.1 AA), performant (&lt; 3 seconds on 3G), and progressively enhanced (works without JavaScript). Next.js with GOV.UK Design System components satisfies all three. Many UK government services use Next.js. ClickMasters uses Next.js with GOV.UK/NHS Design System components for all GDS-assessed services."
+        "answer": "GDS does not mandate a specific frontend framework. GDS Service Standard requires: accessible (WCAG 2.1 AA), performant (&lt; 3 seconds on 3G), and progressively enhanced (works without JavaScript). Next.js with GOV.UK Design System components satisfies all three. Many UK government services use Next.js. Clickmasters uses Next.js with GOV.UK/NHS Design System components for all GDS-assessed services."
       }
     ],
     "relatedPages": [
@@ -8888,11 +8888,11 @@ export const comparisons = [
     "topic": "vitest_vs_jest_vs_mocha_uk",
     "year": "2025",
     "title": "Vitest vs Jest vs Mocha — UK JavaScript Unit Testing (2025)",
-    "metaTitle": "Vitest vs Jest vs Mocha — UK JavaScript Testing (2025) | ClickMasters",
+    "metaTitle": "Vitest vs Jest vs Mocha — UK JavaScript Testing (2025) | Clickmasters",
     "metaDesc": "Vitest is the right default for all new UK TypeScript/JavaScript projects using Vite or modern bundlers: 10–20× faster than Jest, native TypeScript support with",
     "lastUpdated": "September 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -8961,7 +8961,7 @@ export const comparisons = [
             "Declining — legacy projects only"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All new TypeScript projects",
             "Existing Jest projects — no migration",
             "Not recommended"
@@ -8973,11 +8973,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Should we migrate from Jest to Vitest?",
-        "answer": "Migration from Jest to Vitest: for a project with 500+ tests, migration takes a senior engineer approximately 2–4 hours (change configuration, update import paths, verify mocking behaviour). Benefits: 10–20× faster test runs — if your Jest suite takes 4 minutes, Vitest will run in 12–24 seconds. For CI/CD: 4-minute test runs block developer productivity; 20-second runs are barely noticeable. ClickMasters recommends migrating any Jest project where the test suite takes more than 2 minutes — the ROI is immediate."
+        "answer": "Migration from Jest to Vitest: for a project with 500+ tests, migration takes a senior engineer approximately 2–4 hours (change configuration, update import paths, verify mocking behaviour). Benefits: 10–20× faster test runs — if your Jest suite takes 4 minutes, Vitest will run in 12–24 seconds. For CI/CD: 4-minute test runs block developer productivity; 20-second runs are barely noticeable. Clickmasters recommends migrating any Jest project where the test suite takes more than 2 minutes — the ROI is immediate."
       },
       {
         "question": "Do Vitest test results satisfy NHS DTAC evidence requirements?",
-        "answer": "Yes — Vitest outputs JUnit XML test reports (vitest --reporter=junit) which are accepted as automated test evidence for NHS DTAC Domain 3 (Technical Security — including test coverage). ClickMasters CI/CD configuration: Vitest runs on every pull request, JUnit XML report archived as a GitHub Actions artefact, and test coverage report (Istanbul via @vitest/coverage-istanbul) output. These artefacts form part of the DTAC evidence pack alongside the axe-core accessibility report."
+        "answer": "Yes — Vitest outputs JUnit XML test reports (vitest --reporter=junit) which are accepted as automated test evidence for NHS DTAC Domain 3 (Technical Security — including test coverage). Clickmasters CI/CD configuration: Vitest runs on every pull request, JUnit XML report archived as a GitHub Actions artefact, and test coverage report (Istanbul via @vitest/coverage-istanbul) output. These artefacts form part of the DTAC evidence pack alongside the axe-core accessibility report."
       }
     ],
     "relatedPages": [
@@ -9003,11 +9003,11 @@ export const comparisons = [
     "topic": "tailwind_css_vs_css_modules_vs_styled_compone",
     "year": "2025",
     "title": "Tailwind CSS vs CSS Modules vs Styled Components — UK (2025)",
-    "metaTitle": "Tailwind CSS vs CSS Modules vs Styled Components — UK (2025) | ClickMasters",
+    "metaTitle": "Tailwind CSS vs CSS Modules vs Styled Components — UK (2025) | Clickmasters",
     "metaDesc": "Tailwind CSS is the right default for all new UK React projects in 2025: fastest development velocity, best WCAG compliance tooling (built-in contrast utilities",
     "lastUpdated": "September 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -9076,7 +9076,7 @@ export const comparisons = [
             "Declining for new projects"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All new UK React/Next.js projects",
             "Migration from Styled Components",
             "Not recommended for new projects"
@@ -9088,11 +9088,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Tailwind CSS work with the GOV.UK Design System?",
-        "answer": "Yes — Tailwind CSS works alongside the GOV.UK Design System. The GOV.UK Design System has its own CSS (govuk-frontend npm package) which applies styles to GOV.UK class names. Tailwind CSS adds utility classes for custom components that are not in the GOV.UK Design System. ClickMasters approach: install govuk-frontend, configure Tailwind to not purge govuk-* classes, and use Tailwind utility classes only for custom components. The NHS Design System works identically."
+        "answer": "Yes — Tailwind CSS works alongside the GOV.UK Design System. The GOV.UK Design System has its own CSS (govuk-frontend npm package) which applies styles to GOV.UK class names. Tailwind CSS adds utility classes for custom components that are not in the GOV.UK Design System. Clickmasters approach: install govuk-frontend, configure Tailwind to not purge govuk-* classes, and use Tailwind utility classes only for custom components. The NHS Design System works identically."
       },
       {
         "question": "Does Styled Components work with Next.js App Router?",
-        "answer": "Styled Components (and other CSS-in-JS libraries with a JavaScript runtime) are incompatible with React Server Components in Next.js App Router. Server Components cannot include any JavaScript at runtime — CSS-in-JS libraries that inject styles at runtime will cause errors in Server Components. ClickMasters migrates Styled Components projects to Tailwind CSS or CSS Modules when adopting Next.js App Router. For projects that cannot migrate: Next.js Pages Router is still supported and works with Styled Components."
+        "answer": "Styled Components (and other CSS-in-JS libraries with a JavaScript runtime) are incompatible with React Server Components in Next.js App Router. Server Components cannot include any JavaScript at runtime — CSS-in-JS libraries that inject styles at runtime will cause errors in Server Components. Clickmasters migrates Styled Components projects to Tailwind CSS or CSS Modules when adopting Next.js App Router. For projects that cannot migrate: Next.js Pages Router is still supported and works with Styled Components."
       }
     ],
     "relatedPages": [
@@ -9118,11 +9118,11 @@ export const comparisons = [
     "topic": "trpc_vs_rest_vs_graphql_typescript_uk",
     "year": "2025",
     "title": "tRPC vs REST vs GraphQL — TypeScript API Architecture (2025)",
-    "metaTitle": "tRPC vs REST vs GraphQL — TypeScript API Architecture UK (2025) | ClickMasters",
+    "metaTitle": "tRPC vs REST vs GraphQL — TypeScript API Architecture UK (2025) | Clickmasters",
     "metaDesc": "tRPC is the right choice for full-stack TypeScript projects where the frontend and backend are in the same codebase or organisation — end-to-end type safety wit",
     "lastUpdated": "October 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -9191,7 +9191,7 @@ export const comparisons = [
             "✅ Query exactly needed fields"
           ],
           [
-            "ClickMasters use",
+            "Clickmasters use",
             "Internal full-stack TypeScript apps",
             "✅ All external UK regulated APIs",
             "Complex multi-source internal APIs"
@@ -9203,11 +9203,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "When should a UK project use tRPC instead of REST?",
-        "answer": "tRPC is right when: (1) the frontend and backend are both TypeScript and in the same monorepo, (2) the API is never consumed by external parties (no FCA COBS disclosure requirement, no partner integrations), (3) the team wants to avoid maintaining a separate OpenAPI schema. In practice: tRPC for internal admin dashboards, operator portals, and internal tooling. REST for any API exposed to external parties, consumed by mobile apps built by a separate team, or required to satisfy regulatory disclosure. ClickMasters uses tRPC for internal services and REST for all external APIs."
+        "answer": "tRPC is right when: (1) the frontend and backend are both TypeScript and in the same monorepo, (2) the API is never consumed by external parties (no FCA COBS disclosure requirement, no partner integrations), (3) the team wants to avoid maintaining a separate OpenAPI schema. In practice: tRPC for internal admin dashboards, operator portals, and internal tooling. REST for any API exposed to external parties, consumed by mobile apps built by a separate team, or required to satisfy regulatory disclosure. Clickmasters uses tRPC for internal services and REST for all external APIs."
       },
       {
         "question": "Can tRPC be used for NHS DTAC applications?",
-        "answer": "tRPC can be used for internal application layers (frontend → backend in the same Next.js application) in NHS DTAC systems. However: NHS DTAC Domain 4 (Interoperability) requires FHIR R4-compliant external APIs for any patient data exchange with other NHS systems. tRPC is not a substitute for FHIR R4. ClickMasters uses tRPC for internal application queries and FHIR R4 REST for all external NHS system integrations."
+        "answer": "tRPC can be used for internal application layers (frontend → backend in the same Next.js application) in NHS DTAC systems. However: NHS DTAC Domain 4 (Interoperability) requires FHIR R4-compliant external APIs for any patient data exchange with other NHS systems. tRPC is not a substitute for FHIR R4. Clickmasters uses tRPC for internal application queries and FHIR R4 REST for all external NHS system integrations."
       }
     ],
     "relatedPages": [
@@ -9233,11 +9233,11 @@ export const comparisons = [
     "topic": "react_testing_library_vs_enzyme_vs_storybook_",
     "year": "2025",
     "title": "React Testing Library vs Enzyme vs Storybook — UK Component Testing (2025)",
-    "metaTitle": "React Testing Library vs Enzyme vs Storybook — UK Component Testing (2025) | ClickMasters",
+    "metaTitle": "React Testing Library vs Enzyme vs Storybook — UK Component Testing (2025) | Clickmasters",
     "metaDesc": "React Testing Library (RTL) is the right default for all UK React component testing — tests user behaviour not implementation, accessible-query approach natural",
     "lastUpdated": "October 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -9300,7 +9300,7 @@ export const comparisons = [
             "✅ Widely used"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All UK React projects",
             "Not recommended",
             "Complementary — design system docs"
@@ -9316,7 +9316,7 @@ export const comparisons = [
       },
       {
         "question": "What is the difference between Storybook and React Testing Library?",
-        "answer": "Storybook is a visual development environment — you build and review components in isolation, visually. React Testing Library is a unit testing framework — you write automated tests that verify component behaviour. They are complementary: Storybook for component development and design system documentation, RTL for automated behaviour testing. ClickMasters uses both: Storybook for all UI components in a design system, RTL + axe-core for automated testing evidence, and Playwright for E2E user journey testing."
+        "answer": "Storybook is a visual development environment — you build and review components in isolation, visually. React Testing Library is a unit testing framework — you write automated tests that verify component behaviour. They are complementary: Storybook for component development and design system documentation, RTL for automated behaviour testing. Clickmasters uses both: Storybook for all UI components in a design system, RTL + axe-core for automated testing evidence, and Playwright for E2E user journey testing."
       }
     ],
     "relatedPages": [
@@ -9342,11 +9342,11 @@ export const comparisons = [
     "topic": "shopify_vs_shopify_plus_vs_headless_uk",
     "year": "2025",
     "title": "Shopify vs Shopify Plus vs Headless Shopify — UK eCommerce (2025)",
-    "metaTitle": "Shopify vs Shopify Plus vs Headless — UK eCommerce (2025) | ClickMasters",
+    "metaTitle": "Shopify vs Shopify Plus vs Headless — UK eCommerce (2025) | Clickmasters",
     "metaDesc": "Shopify (standard) is right for UK SMB retailers under £2M GMV — lowest cost, fastest to launch, sufficient features for most SMBs. Shopify Plus is right for £2",
     "lastUpdated": "October 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -9415,7 +9415,7 @@ export const comparisons = [
             "✅ Custom B2B logic"
           ],
           [
-            "ClickMasters builds",
+            "Clickmasters builds",
             "Standard themes — not our specialism",
             "Customisation + API integration",
             "✅ Primary eCommerce service"
@@ -9427,11 +9427,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "When does headless Shopify justify the additional development cost?",
-        "answer": "Headless Shopify justifies the £40,000–£160,000 build cost when: (1) Core Web Vitals are critical (LCP &gt; 4 seconds on standard Shopify theme — common for image-heavy fashion/luxury brands — costs organic search traffic), (2) bespoke product configuration (monogramming, custom sizing, made-to-order) that Shopify's product variant system cannot handle without SKU explosion, (3) complex B2C/B2B hybrid (different experiences for different customer types on the same domain), or (4) brand experience requirements that no Shopify theme can deliver. ClickMasters builds headless Shopify for 60% of our eCommerce clients."
+        "answer": "Headless Shopify justifies the £40,000–£160,000 build cost when: (1) Core Web Vitals are critical (LCP &gt; 4 seconds on standard Shopify theme — common for image-heavy fashion/luxury brands — costs organic search traffic), (2) bespoke product configuration (monogramming, custom sizing, made-to-order) that Shopify's product variant system cannot handle without SKU explosion, (3) complex B2C/B2B hybrid (different experiences for different customer types on the same domain), or (4) brand experience requirements that no Shopify theme can deliver. Clickmasters builds headless Shopify for 60% of our eCommerce clients."
       },
       {
         "question": "Is Shopify Plus worth the cost for UK retailers?",
-        "answer": "Shopify Plus costs £2,300/month minimum (roughly 0.25% of GMV for a £11M retailer). Worth it when: B2B pricing (multiple price lists) is needed, multiple storefronts (UK + EU + US) needed on one contract, or Shopify Flow (automation) saves significant staff time. Not worth it at: &lt; £2M GMV (Shopify standard is functionally identical for most purposes), or when the £2,300/month would fund better development of a differentiated headless frontend. ClickMasters assessment: most UK retailers at £5M–£15M GMV are better served by Shopify Plus headless than paying Shopify Plus fees for a standard theme."
+        "answer": "Shopify Plus costs £2,300/month minimum (roughly 0.25% of GMV for a £11M retailer). Worth it when: B2B pricing (multiple price lists) is needed, multiple storefronts (UK + EU + US) needed on one contract, or Shopify Flow (automation) saves significant staff time. Not worth it at: &lt; £2M GMV (Shopify standard is functionally identical for most purposes), or when the £2,300/month would fund better development of a differentiated headless frontend. Clickmasters assessment: most UK retailers at £5M–£15M GMV are better served by Shopify Plus headless than paying Shopify Plus fees for a standard theme."
       }
     ],
     "relatedPages": [
@@ -9457,11 +9457,11 @@ export const comparisons = [
     "topic": "vercel_vs_netlify_vs_aws_cloudfront_uk",
     "year": "2025",
     "title": "Vercel vs Netlify vs AWS CloudFront — UK Deployment Platform (2025)",
-    "metaTitle": "Vercel vs Netlify vs AWS CloudFront — UK Deployment Platform (2025) | ClickMasters",
+    "metaTitle": "Vercel vs Netlify vs AWS CloudFront — UK Deployment Platform (2025) | Clickmasters",
     "metaDesc": "Vercel is the right default for Next.js applications — native Next.js support (ISR, Server Components, Edge Runtime), UK edge locations (sub-50ms TTFB from UK),",
     "lastUpdated": "October 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -9530,7 +9530,7 @@ export const comparisons = [
             "Higher — ECS, ECR, CloudFront config"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ Next.js commercial projects",
             "Non-Next.js JAMstack",
             "NHS DTAC, FCA — confirmed data residency"
@@ -9542,7 +9542,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Vercel satisfy NHS DTAC data residency requirements?",
-        "answer": "Vercel offers EU region deployment (Frankfurt) and provides a Data Processing Agreement (Article 28 DPA) for GDPR compliance. For NHS DTAC Domain 2 (Data Protection): Vercel EU region DPA is acceptable for OFFICIAL-sensitivity NHS applications that do not process Article 9 health data at the edge. For applications processing patient Article 9 health data: ClickMasters uses AWS eu-west-2 (ECS Fargate) — the strongest NHS DTAC data residency evidence position. Vercel's serverless functions run on edge infrastructure that is distributed — NHS DTAC assessors may require confirmation of data residency for health data."
+        "answer": "Vercel offers EU region deployment (Frankfurt) and provides a Data Processing Agreement (Article 28 DPA) for GDPR compliance. For NHS DTAC Domain 2 (Data Protection): Vercel EU region DPA is acceptable for OFFICIAL-sensitivity NHS applications that do not process Article 9 health data at the edge. For applications processing patient Article 9 health data: Clickmasters uses AWS eu-west-2 (ECS Fargate) — the strongest NHS DTAC data residency evidence position. Vercel's serverless functions run on edge infrastructure that is distributed — NHS DTAC assessors may require confirmation of data residency for health data."
       },
       {
         "question": "Is Vercel suitable for FCA-regulated applications?",
@@ -9572,11 +9572,11 @@ export const comparisons = [
     "topic": "auth0_vs_cognito_vs_clerk_uk",
     "year": "2025",
     "title": "Auth0 vs AWS Cognito vs Clerk — UK Authentication Platform (2025)",
-    "metaTitle": "Auth0 vs Cognito vs Clerk — UK Authentication (2025) | ClickMasters",
+    "metaTitle": "Auth0 vs Cognito vs Clerk — UK Authentication (2025) | Clickmasters",
     "metaDesc": "Clerk is the right default for new UK TypeScript/React projects: best developer experience, Next.js App Router native, UK GDPR-compliant (EU data residency), an",
     "lastUpdated": "October 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -9645,7 +9645,7 @@ export const comparisons = [
             "✅ Excellent MFA support"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ New TypeScript/React UK projects",
             "AWS-native projects (already on AWS)",
             "Enterprise SSO, complex auth rules"
@@ -9657,11 +9657,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Clerk satisfy UK GDPR for NHS HealthTech applications?",
-        "answer": "Clerk offers EU region (Frankfurt) deployment and provides a GDPR-compliant DPA. For NHS DTAC Domain 2 (Data Protection): Clerk EU region is acceptable for authentication data (user IDs, session tokens) in most NHS applications. Clerk does not process patient clinical data — it handles authentication only. For NHS applications requiring the strongest data residency evidence: AWS Cognito in eu-west-2 is ClickMasters' preference, as it operates within the same AWS account as the clinical application."
+        "answer": "Clerk offers EU region (Frankfurt) deployment and provides a GDPR-compliant DPA. For NHS DTAC Domain 2 (Data Protection): Clerk EU region is acceptable for authentication data (user IDs, session tokens) in most NHS applications. Clerk does not process patient clinical data — it handles authentication only. For NHS applications requiring the strongest data residency evidence: AWS Cognito in eu-west-2 is Clickmasters' preference, as it operates within the same AWS account as the clinical application."
       },
       {
         "question": "Should UK startups use Auth0 or Clerk?",
-        "answer": "For UK startups: Clerk almost always wins. Clerk's prebuilt UI components save 20–40 hours of frontend development (sign-in page, sign-up, profile management, forgot password — all included). Clerk's Next.js App Router integration is the most seamless available. Auth0 is better when: you need complex enterprise SSO (SAML for multiple enterprise clients), your B2B enterprise clients require SOC 2 Type II certification from your auth provider, or you need Auth0's advanced attack protection features. ClickMasters switches most startups from Auth0 (or custom auth) to Clerk on their first refactor."
+        "answer": "For UK startups: Clerk almost always wins. Clerk's prebuilt UI components save 20–40 hours of frontend development (sign-in page, sign-up, profile management, forgot password — all included). Clerk's Next.js App Router integration is the most seamless available. Auth0 is better when: you need complex enterprise SSO (SAML for multiple enterprise clients), your B2B enterprise clients require SOC 2 Type II certification from your auth provider, or you need Auth0's advanced attack protection features. Clickmasters switches most startups from Auth0 (or custom auth) to Clerk on their first refactor."
       }
     ],
     "relatedPages": [
@@ -9687,11 +9687,11 @@ export const comparisons = [
     "topic": "kubernetes_vs_ecs_fargate_vs_app_runner_uk",
     "year": "2025",
     "title": "Kubernetes vs ECS Fargate vs AWS App Runner — UK Container Orchestration (2025)",
-    "metaTitle": "Kubernetes vs ECS Fargate vs App Runner — UK Container Orchestration (2025) | ClickMasters",
+    "metaTitle": "Kubernetes vs ECS Fargate vs App Runner — UK Container Orchestration (2025) | Clickmasters",
     "metaDesc": "ECS Fargate is the right default for most UK regulated software: no Kubernetes operational overhead, Cyber Essentials-friendly (AWS manages OS patching), FCA PS",
     "lastUpdated": "November 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -9760,7 +9760,7 @@ export const comparisons = [
             "Growing"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All UK regulated projects",
             "Multi-cloud or complex orchestration only",
             "Simple web APIs — no persistence"
@@ -9772,7 +9772,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does ECS Fargate satisfy Cyber Essentials patching requirements?",
-        "answer": "Yes — ECS Fargate tasks run on AWS-managed infrastructure where AWS handles OS patching. The Cyber Essentials requirement (patch within 14 days of critical patches) applies to your application container and its dependencies — not the underlying host OS. ClickMasters approach: Dependabot monitors application dependencies (npm, pip) and raises PRs for critical CVEs. Trivy scans container images in CI/CD. You are responsible for your application image patching; AWS is responsible for the Fargate host OS patching. This is materially simpler than EC2 or self-managed Kubernetes nodes."
+        "answer": "Yes — ECS Fargate tasks run on AWS-managed infrastructure where AWS handles OS patching. The Cyber Essentials requirement (patch within 14 days of critical patches) applies to your application container and its dependencies — not the underlying host OS. Clickmasters approach: Dependabot monitors application dependencies (npm, pip) and raises PRs for critical CVEs. Trivy scans container images in CI/CD. You are responsible for your application image patching; AWS is responsible for the Fargate host OS patching. This is materially simpler than EC2 or self-managed Kubernetes nodes."
       },
       {
         "question": "When should UK projects use Kubernetes over ECS Fargate?",
@@ -9802,11 +9802,11 @@ export const comparisons = [
     "topic": "monolith_vs_microservices_vs_modular_monolith",
     "year": "2025",
     "title": "Monolith vs Microservices vs Modular Monolith — UK Architecture (2025)",
-    "metaTitle": "Monolith vs Microservices vs Modular Monolith — UK (2025) | ClickMasters",
+    "metaTitle": "Monolith vs Microservices vs Modular Monolith — UK (2025) | Clickmasters",
     "metaDesc": "Modular monolith is the right default for most UK projects: faster to build than microservices, as maintainable as microservices when modules are well-bounded,",
     "lastUpdated": "November 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -9875,7 +9875,7 @@ export const comparisons = [
             "Already microservices"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "Never (for regulated UK software)",
             "✅ All UK projects (&lt; Series B)",
             "Post-Series B + 20+ engineers"
@@ -9887,11 +9887,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "What is a modular monolith and how does it differ from a traditional monolith?",
-        "answer": "A modular monolith is a single-deployment application divided into well-bounded modules — each module has its own domain, its own database tables (or PostgreSQL schema), and a clear API surface that other modules must use to access its data. A traditional monolith (Big Ball of Mud) has no architectural boundaries — all code can access all data directly. The key difference: a modular monolith is easy to extract into microservices later (each module becomes a service) because the boundaries already exist. A Big Ball of Mud is very hard to decompose because the code is tangled. ClickMasters builds modular monoliths with explicit module boundaries as the foundation for future microservices migration."
+        "answer": "A modular monolith is a single-deployment application divided into well-bounded modules — each module has its own domain, its own database tables (or PostgreSQL schema), and a clear API surface that other modules must use to access its data. A traditional monolith (Big Ball of Mud) has no architectural boundaries — all code can access all data directly. The key difference: a modular monolith is easy to extract into microservices later (each module becomes a service) because the boundaries already exist. A Big Ball of Mud is very hard to decompose because the code is tangled. Clickmasters builds modular monoliths with explicit module boundaries as the foundation for future microservices migration."
       },
       {
         "question": "When should a UK project migrate from modular monolith to microservices?",
-        "answer": "Migrate from modular monolith to microservices when: (1) team grows beyond 15–20 engineers and independent deployment cadence is genuinely needed (different modules deploy at different rates), (2) FCA PS21/3 IBS resilience genuinely requires independent failure domains (IBSs must be isolated from each other), (3) a specific module needs to scale independently at 10× the rate of the rest of the application. Do not migrate when: team is under 15 engineers, you believe it will \"improve code quality\" (it will not — it adds complexity), or you are following a trend. ClickMasters has migrated 8 modular monoliths to microservices — all migrations happened post-Series B, not before."
+        "answer": "Migrate from modular monolith to microservices when: (1) team grows beyond 15–20 engineers and independent deployment cadence is genuinely needed (different modules deploy at different rates), (2) FCA PS21/3 IBS resilience genuinely requires independent failure domains (IBSs must be isolated from each other), (3) a specific module needs to scale independently at 10× the rate of the rest of the application. Do not migrate when: team is under 15 engineers, you believe it will \"improve code quality\" (it will not — it adds complexity), or you are following a trend. Clickmasters has migrated 8 modular monoliths to microservices — all migrations happened post-Series B, not before."
       }
     ],
     "relatedPages": [
@@ -9917,11 +9917,11 @@ export const comparisons = [
     "topic": "posthog_vs_mixpanel_vs_amplitude_uk",
     "year": "2025",
     "title": "PostHog vs Mixpanel vs Amplitude — UK Product Analytics (2025)",
-    "metaTitle": "Posthog vs Mixpanel vs Amplitude — UK Product Analytics (2025) | ClickMasters",
+    "metaTitle": "Posthog vs Mixpanel vs Amplitude — UK Product Analytics (2025) | Clickmasters",
     "metaDesc": "PostHog (self-hosted or EU cloud) is the right default for UK regulated software: EU data residency, open-source (can be audited), session replay included, and",
     "lastUpdated": "December 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -9990,7 +9990,7 @@ export const comparisons = [
             "No"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All UK regulated + NHS/FCA",
             "Non-regulated with Mixpanel-familiar team",
             "Non-regulated with Amplitude-familiar team"
@@ -10002,11 +10002,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does PostHog satisfy NHS DTAC data processing requirements?",
-        "answer": "PostHog self-hosted on AWS eu-west-2 is the strongest NHS DTAC data processing position for product analytics. When self-hosted: (1) all analytics data stays in the NHS application's AWS account — no data transferred to PostHog's servers, (2) PostHog is open source — code auditable for DTAC Domain 3 security review, (3) Article 28 DPA not required (no third-party data processor — PostHog is software, not a service). For NHS applications: ClickMasters deploys PostHog via Docker on ECS Fargate in eu-west-2 as part of the standard application stack."
+        "answer": "PostHog self-hosted on AWS eu-west-2 is the strongest NHS DTAC data processing position for product analytics. When self-hosted: (1) all analytics data stays in the NHS application's AWS account — no data transferred to PostHog's servers, (2) PostHog is open source — code auditable for DTAC Domain 3 security review, (3) Article 28 DPA not required (no third-party data processor — PostHog is software, not a service). For NHS applications: Clickmasters deploys PostHog via Docker on ECS Fargate in eu-west-2 as part of the standard application stack."
       },
       {
         "question": "Do Mixpanel or Amplitude require PECR cookie consent?",
-        "answer": "Both Mixpanel and Amplitude require setting cookies on the user's browser for user identification and session continuity — PECR requires explicit opt-in consent for analytics cookies. PostHog self-hosted: can be configured to operate without cookies (server-side analytics — user identified by anonymised server-side session, no client-side cookie). For UK websites where PECR cookie consent reduces analytics data quality (significant % of users decline): PostHog cookieless mode captures significantly more analytics data than cookie-dependent tools. ClickMasters uses PostHog cookieless on all NHS and GDS applications."
+        "answer": "Both Mixpanel and Amplitude require setting cookies on the user's browser for user identification and session continuity — PECR requires explicit opt-in consent for analytics cookies. PostHog self-hosted: can be configured to operate without cookies (server-side analytics — user identified by anonymised server-side session, no client-side cookie). For UK websites where PECR cookie consent reduces analytics data quality (significant % of users decline): PostHog cookieless mode captures significantly more analytics data than cookie-dependent tools. Clickmasters uses PostHog cookieless on all NHS and GDS applications."
       }
     ],
     "relatedPages": [
@@ -10032,11 +10032,11 @@ export const comparisons = [
     "topic": "iso_27001_vs_cyber_essentials_vs_soc2_uk",
     "year": "2700",
     "title": "ISO 27001 vs Cyber Essentials vs SOC 2 — UK Security Certification (2025)",
-    "metaTitle": "ISO 27001 vs Cyber Essentials vs SOC 2 — UK Security Certification (2025) | ClickMasters",
+    "metaTitle": "ISO 27001 vs Cyber Essentials vs SOC 2 — UK Security Certification (2025) | Clickmasters",
     "metaDesc": "Cyber Essentials is mandatory for UK government contracts and a baseline for NHS. ISO 27001 is the UK enterprise standard — required by most enterprise procurem",
     "lastUpdated": "December 2025",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -10105,7 +10105,7 @@ export const comparisons = [
             "Trust services criteria (security, availability, processing integrity, confidentiality, privacy)"
           ],
           [
-            "ClickMasters holds",
+            "Clickmasters holds",
             "✅ Cyber Essentials Plus",
             "✅ ISO 27001",
             "Not held"
@@ -10117,11 +10117,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "In what order should a UK software startup achieve security certifications?",
-        "answer": "ClickMasters recommendation for UK B2B software startups: (1) Cyber Essentials Plus (first — 2–4 weeks, ~£1,500–£3,000, unlocks UK government procurement and NHS). (2) ISO 27001 (12–18 months after founding — when enterprise procurement requires it and budget allows £8,000–£25,000 for audit). (3) SOC 2 Type II (only if significant US enterprise customers — £15,000–£50,000 and 12 months for Type II). Most UK B2B SaaS companies never need SOC 2 — ISO 27001 is accepted by US enterprise buyers who know what it is."
+        "answer": "Clickmasters recommendation for UK B2B software startups: (1) Cyber Essentials Plus (first — 2–4 weeks, ~£1,500–£3,000, unlocks UK government procurement and NHS). (2) ISO 27001 (12–18 months after founding — when enterprise procurement requires it and budget allows £8,000–£25,000 for audit). (3) SOC 2 Type II (only if significant US enterprise customers — £15,000–£50,000 and 12 months for Type II). Most UK B2B SaaS companies never need SOC 2 — ISO 27001 is accepted by US enterprise buyers who know what it is."
       },
       {
         "question": "How much does ISO 27001 cost for a UK software company?",
-        "answer": "ISO 27001 total cost for a UK SME software company (15–50 employees): (1) ISMS consultancy (documentation, policies, procedures, risk assessment — often required for first certification): £3,000–£8,000. (2) Gap remediation (implementing missing controls): £2,000–£10,000 depending on current state. (3) Certification audit (UKAS-accredited certification body — BSI, LRQA, Bureau Veritas): £4,000–£10,000 for initial certification. (4) Annual surveillance audit: £2,000–£4,000. Total first year: £9,000–£28,000. Annual ongoing: £4,000–£8,000. ClickMasters achieved ISO 27001 in 8 months — available to advise clients on the process."
+        "answer": "ISO 27001 total cost for a UK SME software company (15–50 employees): (1) ISMS consultancy (documentation, policies, procedures, risk assessment — often required for first certification): £3,000–£8,000. (2) Gap remediation (implementing missing controls): £2,000–£10,000 depending on current state. (3) Certification audit (UKAS-accredited certification body — BSI, LRQA, Bureau Veritas): £4,000–£10,000 for initial certification. (4) Annual surveillance audit: £2,000–£4,000. Total first year: £9,000–£28,000. Annual ongoing: £4,000–£8,000. Clickmasters achieved ISO 27001 in 8 months — available to advise clients on the process."
       }
     ],
     "relatedPages": [
@@ -10147,11 +10147,11 @@ export const comparisons = [
     "topic": "docusign_vs_adobe_sign_vs_govuk_notify_uk",
     "year": "2025",
     "title": "DocuSign vs Adobe Sign vs GOV.UK Notify — UK E-Signatures (2025)",
-    "metaTitle": "Docusign vs Adobe Sign vs GOV.UK Notify — UK E-Signatures (2025) | ClickMasters",
+    "metaTitle": "Docusign vs Adobe Sign vs GOV.UK Notify — UK E-Signatures (2025) | Clickmasters",
     "metaDesc": "DocuSign is the UK enterprise default for contract e-signatures: largest enterprise adoption, UK data residency (EU servers with UK GDPR DPA), qualified e-signa",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -10220,7 +10220,7 @@ export const comparisons = [
             "Government only"
           ],
           [
-            "ClickMasters use",
+            "Clickmasters use",
             "✅ All client contracts, NHS clinical sign-off",
             "Adobe-ecosystem clients",
             "NHS/GDS notifications — not signing"
@@ -10232,11 +10232,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Is DocuSign legally binding in UK courts?",
-        "answer": "Yes — DocuSign electronic signatures are legally binding in the UK under the Electronic Communications Act 2000 and the Electronic Signatures Regulations 2002 (UK implementation of EU eIDAS equivalent). For most commercial contracts: Standard Electronic Signature (SES) via DocuSign is legally binding. For high-value transactions (property transfers, deeds, probate): Qualified Electronic Signature (QES) required — DocuSign offers QES via ID verification. The SRA (Solicitors Regulation Authority) accepts DocuSign for client care letters, engagement letters, and most commercial contracts. ClickMasters uses DocuSign for all client contracts and NHS DCB0129 clinical safety sign-off documents."
+        "answer": "Yes — DocuSign electronic signatures are legally binding in the UK under the Electronic Communications Act 2000 and the Electronic Signatures Regulations 2002 (UK implementation of EU eIDAS equivalent). For most commercial contracts: Standard Electronic Signature (SES) via DocuSign is legally binding. For high-value transactions (property transfers, deeds, probate): Qualified Electronic Signature (QES) required — DocuSign offers QES via ID verification. The SRA (Solicitors Regulation Authority) accepts DocuSign for client care letters, engagement letters, and most commercial contracts. Clickmasters uses DocuSign for all client contracts and NHS DCB0129 clinical safety sign-off documents."
       },
       {
         "question": "Does GOV.UK Notify support e-signatures?",
-        "answer": "No — GOV.UK Notify is an email, SMS, and letter notification service (API-based communications). GOV.UK Notify does not support e-signatures. For government services that need e-signatures: use DocuSign, Adobe Sign, or a government framework e-signature supplier. For government communications (appointment letters, result notifications, reminders): GOV.UK Notify. ClickMasters uses GOV.UK Notify for government and NHS notification workflows, and DocuSign for any document requiring a legally binding signature."
+        "answer": "No — GOV.UK Notify is an email, SMS, and letter notification service (API-based communications). GOV.UK Notify does not support e-signatures. For government services that need e-signatures: use DocuSign, Adobe Sign, or a government framework e-signature supplier. For government communications (appointment letters, result notifications, reminders): GOV.UK Notify. Clickmasters uses GOV.UK Notify for government and NHS notification workflows, and DocuSign for any document requiring a legally binding signature."
       }
     ],
     "relatedPages": [
@@ -10262,11 +10262,11 @@ export const comparisons = [
     "topic": "openai_vs_anthropic_vs_google_gemini_uk_ai",
     "year": "2025",
     "title": "OpenAI vs Anthropic (Claude) vs Google Gemini — UK AI API (2025)",
-    "metaTitle": "OpenAI vs Anthropic vs Google Gemini — UK AI API (2025) | ClickMasters",
-    "metaDesc": "Anthropic Claude (claude-sonnet-4-20250514) is ClickMasters' default for UK regulated applications: strongest safety characteristics, EU data residency availabl",
+    "metaTitle": "OpenAI vs Anthropic vs Google Gemini — UK AI API (2025) | Clickmasters",
+    "metaDesc": "Anthropic Claude (claude-sonnet-4-20250514) is Clickmasters' default for UK regulated applications: strongest safety characteristics, EU data residency availabl",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -10275,7 +10275,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Anthropic Claude (claude-sonnet-4-20250514) is ClickMasters' default for UK regulated applications: strongest safety characteristics, EU data residency available, most reliable for structured output and legal/clinical document analysis. OpenAI GPT-4o is right for applications where GPT-4o's reasoning or multimodal capabilities provide specific advantage. Google Gemini is right for integration with Google Workspace or Google Cloud. For NHS and FCA regulated AI applications: all three require careful data processing agreements — patient and financial data cannot be used for model training. UK AI API selection affects UK GDPR compliance, regulatory AI governance (FCA Consumer Duty, NHS DTAC Standard 4), and output quality for regulated use cases.",
+    "directAnswer": "Anthropic Claude (claude-sonnet-4-20250514) is Clickmasters' default for UK regulated applications: strongest safety characteristics, EU data residency available, most reliable for structured output and legal/clinical document analysis. OpenAI GPT-4o is right for applications where GPT-4o's reasoning or multimodal capabilities provide specific advantage. Google Gemini is right for integration with Google Workspace or Google Cloud. For NHS and FCA regulated AI applications: all three require careful data processing agreements — patient and financial data cannot be used for model training. UK AI API selection affects UK GDPR compliance, regulatory AI governance (FCA Consumer Duty, NHS DTAC Standard 4), and output quality for regulated use cases.",
     "comparisonTables": [
       {
         "title": "",
@@ -10329,7 +10329,7 @@ export const comparisons = [
             "Input £1 Output £3 (Gemini 1.5 Flash)"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All UK regulated (NHS, FCA, LegalTech)",
             "Complex reasoning, multimodal tasks",
             "Google Workspace integration"
@@ -10341,11 +10341,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Do NHS and FCA regulated applications need a special AI data processing agreement?",
-        "answer": "Yes — NHS and FCA regulated AI applications require specific DPA provisions. For NHS: (1) patient data must not be used for model training (DPA must explicitly prohibit training use of API inputs/outputs), (2) data must be processed in EU/UK region (no US-only processing), (3) DTAC Standard 4 requires AI governance documentation (model card, bias testing results). For FCA: (1) AI models processing customer financial data must have FCA Consumer Duty AI governance (model transparency, bias testing, human oversight), (2) GDPR Article 22 (automated decision-making) — FCA Consumer Duty outcome monitoring requires human review of adverse AI decisions. ClickMasters reviews AI DPA provisions for all NHS and FCA clients before deploying AI APIs."
+        "answer": "Yes — NHS and FCA regulated AI applications require specific DPA provisions. For NHS: (1) patient data must not be used for model training (DPA must explicitly prohibit training use of API inputs/outputs), (2) data must be processed in EU/UK region (no US-only processing), (3) DTAC Standard 4 requires AI governance documentation (model card, bias testing results). For FCA: (1) AI models processing customer financial data must have FCA Consumer Duty AI governance (model transparency, bias testing, human oversight), (2) GDPR Article 22 (automated decision-making) — FCA Consumer Duty outcome monitoring requires human review of adverse AI decisions. Clickmasters reviews AI DPA provisions for all NHS and FCA clients before deploying AI APIs."
       },
       {
         "question": "Is Anthropic Claude suitable for NHS clinical AI applications?",
-        "answer": "Anthropic Claude is used in production NHS AI applications. Key considerations: (1) EU data processing available (Anthropic's API can process in EU — no patient data leaves EU/UK), (2) Anthropic DPA explicitly prohibits using API inputs for model training, (3) Claude's safety characteristics (constitutional AI, refusal of harmful outputs) align with NHS DCB0129 clinical safety requirements, (4) long context window (200K tokens) enables processing of entire patient records for clinical decision support. ClickMasters uses Claude via Anthropic API in NHS clinical applications — including the LegalTech CLM platform and the Regulatory Intelligence platform described in our case studies."
+        "answer": "Anthropic Claude is used in production NHS AI applications. Key considerations: (1) EU data processing available (Anthropic's API can process in EU — no patient data leaves EU/UK), (2) Anthropic DPA explicitly prohibits using API inputs for model training, (3) Claude's safety characteristics (constitutional AI, refusal of harmful outputs) align with NHS DCB0129 clinical safety requirements, (4) long context window (200K tokens) enables processing of entire patient records for clinical decision support. Clickmasters uses Claude via Anthropic API in NHS clinical applications — including the LegalTech CLM platform and the Regulatory Intelligence platform described in our case studies."
       }
     ],
     "relatedPages": [
@@ -10371,11 +10371,11 @@ export const comparisons = [
     "topic": "nextjs_vs_remix_vs_astro_uk_2026",
     "year": "2026",
     "title": "Next.js vs Remix vs Astro — UK React Framework (2026)",
-    "metaTitle": "Next.js vs Remix vs Astro — UK React Framework (2026) | ClickMasters",
+    "metaTitle": "Next.js vs Remix vs Astro — UK React Framework (2026) | Clickmasters",
     "metaDesc": "Next.js App Router is the UK default for full-stack React applications — largest UK ecosystem, best NHS Design System and GOV.UK Design System integration, and",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -10438,7 +10438,7 @@ export const comparisons = [
             "✅ Full TypeScript"
           ],
           [
-            "ClickMasters use",
+            "Clickmasters use",
             "✅ All UK commercial applications",
             "Accessibility-critical forms (DVLA, HMRC)",
             "Marketing sites, documentation"
@@ -10450,11 +10450,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Should UK projects use Next.js App Router or Pages Router in 2026?",
-        "answer": "Next.js App Router is the right choice for all new UK projects in 2026. App Router (React Server Components) advantages: (1) data fetching in Server Components eliminates client-side loading states, (2) Partial Pre-rendering (Next.js 15 — stable in 2026) — static shell with streaming dynamic content, (3) Server Actions replace API routes for form submissions — simpler, type-safe. Pages Router: only for migrating existing Pages Router codebases incrementally. ClickMasters has built exclusively on App Router since Next.js 14 (late 2023) — all new UK projects use App Router."
+        "answer": "Next.js App Router is the right choice for all new UK projects in 2026. App Router (React Server Components) advantages: (1) data fetching in Server Components eliminates client-side loading states, (2) Partial Pre-rendering (Next.js 15 — stable in 2026) — static shell with streaming dynamic content, (3) Server Actions replace API routes for form submissions — simpler, type-safe. Pages Router: only for migrating existing Pages Router codebases incrementally. Clickmasters has built exclusively on App Router since Next.js 14 (late 2023) — all new UK projects use App Router."
       },
       {
         "question": "Is Remix better than Next.js for UK government digital services?",
-        "answer": "Remix has a genuine advantage for UK government forms: progressive enhancement (forms submit correctly even when JavaScript fails to load — important for users on poor connectivity or with JavaScript disabled). GOV.UK design principle: \"make things work for everyone\" — Remix's model aligns with GDS progressive enhancement principles. However: GDS's own frontend team uses Next.js for new government services in 2026, and the GOV.UK Design System React components work with Next.js. ClickMasters recommendation: Next.js App Router for most GDS services; Remix specifically for government forms that must work without JavaScript (e.g., tax submissions, benefit applications — where form completion is critical)."
+        "answer": "Remix has a genuine advantage for UK government forms: progressive enhancement (forms submit correctly even when JavaScript fails to load — important for users on poor connectivity or with JavaScript disabled). GOV.UK design principle: \"make things work for everyone\" — Remix's model aligns with GDS progressive enhancement principles. However: GDS's own frontend team uses Next.js for new government services in 2026, and the GOV.UK Design System React components work with Next.js. Clickmasters recommendation: Next.js App Router for most GDS services; Remix specifically for government forms that must work without JavaScript (e.g., tax submissions, benefit applications — where form completion is critical)."
       }
     ],
     "relatedPages": [
@@ -10480,11 +10480,11 @@ export const comparisons = [
     "topic": "vercel_vs_netlify_vs_aws_cloudfront_uk_2026",
     "year": "2026",
     "title": "Vercel vs Netlify vs AWS CloudFront (OpenNext) — UK Frontend Hosting (2026)",
-    "metaTitle": "Vercel vs Netlify vs AWS CloudFront — UK Frontend Hosting (2026) | ClickMasters",
+    "metaTitle": "Vercel vs Netlify vs AWS CloudFront — UK Frontend Hosting (2026) | Clickmasters",
     "metaDesc": "AWS CloudFront via OpenNext is the right choice for NHS, FCA, and GDS regulated UK applications — UK data residency confirmed, no third-party data processor req",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -10547,7 +10547,7 @@ export const comparisons = [
             "✅ Good"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All NHS, FCA, GDS regulated",
             "Non-regulated startup / SaaS MVP",
             "Simple sites, non-regulated"
@@ -10559,11 +10559,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Vercel satisfy UK GDPR requirements for NHS applications?",
-        "answer": "Vercel's UK GDPR position: Vercel is a US company with EU edge nodes and a GDPR DPA. For NHS applications with patient data (Article 9 special category): ClickMasters does not recommend Vercel as the primary hosting platform — patient data would be processed by a US-headquartered third party, and NHS assessors prefer data to remain within the NHS application's AWS account. For NHS marketing sites (no patient data): Vercel is acceptable with a signed GDPR DPA. ClickMasters uses OpenNext on AWS CloudFront for all NHS patient-facing applications and Vercel for non-regulated developer tools and documentation sites."
+        "answer": "Vercel's UK GDPR position: Vercel is a US company with EU edge nodes and a GDPR DPA. For NHS applications with patient data (Article 9 special category): Clickmasters does not recommend Vercel as the primary hosting platform — patient data would be processed by a US-headquartered third party, and NHS assessors prefer data to remain within the NHS application's AWS account. For NHS marketing sites (no patient data): Vercel is acceptable with a signed GDPR DPA. Clickmasters uses OpenNext on AWS CloudFront for all NHS patient-facing applications and Vercel for non-regulated developer tools and documentation sites."
       },
       {
         "question": "What is OpenNext and how does it deploy Next.js to AWS?",
-        "answer": "OpenNext is an open-source adapter that makes Next.js deployable to AWS without Vercel. OpenNext components: (1) Lambda@Edge (server-side rendering — Server Components and dynamic routes), (2) CloudFront distribution (CDN — serves static assets from S3 and dynamic routes from Lambda@Edge), (3) S3 (static assets — images, CSS, JS), (4) SQS + Lambda (ISR revalidation — incremental static regeneration without Vercel's infrastructure). SST (Serverless Stack) is the most mature OpenNext deployment framework for AWS. ClickMasters uses SST + OpenNext on all Next.js projects deployed to AWS — the same infrastructure approach as CloudFront for non-Next.js applications."
+        "answer": "OpenNext is an open-source adapter that makes Next.js deployable to AWS without Vercel. OpenNext components: (1) Lambda@Edge (server-side rendering — Server Components and dynamic routes), (2) CloudFront distribution (CDN — serves static assets from S3 and dynamic routes from Lambda@Edge), (3) S3 (static assets — images, CSS, JS), (4) SQS + Lambda (ISR revalidation — incremental static regeneration without Vercel's infrastructure). SST (Serverless Stack) is the most mature OpenNext deployment framework for AWS. Clickmasters uses SST + OpenNext on all Next.js projects deployed to AWS — the same infrastructure approach as CloudFront for non-Next.js applications."
       }
     ],
     "relatedPages": [
@@ -10589,11 +10589,11 @@ export const comparisons = [
     "topic": "dbt_vs_spark_vs_pandas_uk_data_transformation",
     "year": "2025",
     "title": "dbt vs Apache Spark vs Pandas — UK Data Transformation (2026)",
-    "metaTitle": "dbt vs Apache Spark vs Pandas — UK Data Transformation (2026) | ClickMasters",
+    "metaTitle": "dbt vs Apache Spark vs Pandas — UK Data Transformation (2026) | Clickmasters",
     "metaDesc": "dbt (data build tool) is the UK default for analytics engineering — transforms data in your data warehouse (Snowflake, BigQuery, Redshift, PostgreSQL) using SQL",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -10656,7 +10656,7 @@ export const comparisons = [
             "Manual asserts"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All analytics engineering (warehouse transforms)",
             "NHS population health, IoT data at scale",
             "Exploratory analysis only — not production"
@@ -10668,11 +10668,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does dbt satisfy NHS DTAC data governance requirements?",
-        "answer": "dbt provides strong NHS DTAC data governance evidence: (1) data lineage (dbt DAG shows every transformation step — where patient data comes from, what transformations are applied), (2) version control (dbt models in Git — every change has an author, commit, and review), (3) data testing (dbt tests run on every deployment — data quality checks before data reaches dashboards), (4) documentation (dbt docs generate HTML docs from code — shows every table, column, and transformation). For DTAC Domain 4 (Interoperability) and DTAC Domain 2 (Data Protection): dbt lineage and testing documentation is strong evidence of data governance maturity. ClickMasters uses dbt for all NHS analytics engineering."
+        "answer": "dbt provides strong NHS DTAC data governance evidence: (1) data lineage (dbt DAG shows every transformation step — where patient data comes from, what transformations are applied), (2) version control (dbt models in Git — every change has an author, commit, and review), (3) data testing (dbt tests run on every deployment — data quality checks before data reaches dashboards), (4) documentation (dbt docs generate HTML docs from code — shows every table, column, and transformation). For DTAC Domain 4 (Interoperability) and DTAC Domain 2 (Data Protection): dbt lineage and testing documentation is strong evidence of data governance maturity. Clickmasters uses dbt for all NHS analytics engineering."
       },
       {
         "question": "When should UK data teams use Databricks instead of dbt?",
-        "answer": "Databricks (Apache Spark) instead of dbt when: (1) processing scale exceeds warehouse capability (NHS population health — 500M+ patient events from NHS SUS data — Snowflake is slower and more expensive than Spark at this scale), (2) real-time streaming required (Kafka + Spark Streaming for IoT telemetry, financial market data), (3) ML feature engineering (Spark MLlib or Databricks Feature Store — dbt is SQL only, Databricks supports Python ML pipelines), (4) unstructured data processing (text, images — dbt handles only structured/SQL data). UK ClickMasters decision: dbt for warehouse analytics, Databricks for NHS population health, financial market data, and IoT data lake processing."
+        "answer": "Databricks (Apache Spark) instead of dbt when: (1) processing scale exceeds warehouse capability (NHS population health — 500M+ patient events from NHS SUS data — Snowflake is slower and more expensive than Spark at this scale), (2) real-time streaming required (Kafka + Spark Streaming for IoT telemetry, financial market data), (3) ML feature engineering (Spark MLlib or Databricks Feature Store — dbt is SQL only, Databricks supports Python ML pipelines), (4) unstructured data processing (text, images — dbt handles only structured/SQL data). UK Clickmasters decision: dbt for warehouse analytics, Databricks for NHS population health, financial market data, and IoT data lake processing."
       }
     ],
     "relatedPages": [
@@ -10698,11 +10698,11 @@ export const comparisons = [
     "topic": "snowflake_vs_bigquery_vs_redshift_uk_2026",
     "year": "2026",
     "title": "Snowflake vs BigQuery vs AWS Redshift — UK Data Warehouse (2026)",
-    "metaTitle": "Snowflake vs BigQuery vs Redshift — UK Data Warehouse (2026) | ClickMasters",
+    "metaTitle": "Snowflake vs BigQuery vs Redshift — UK Data Warehouse (2026) | Clickmasters",
     "metaDesc": "Snowflake is the UK enterprise default for cloud data warehouses: EU data residency (GDPR), separates compute and storage (scale independently), and the largest",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -10771,7 +10771,7 @@ export const comparisons = [
             "Strong"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ Enterprise data warehouse (non-NHS/FCA)",
             "NHS clinical data, FCA regulated data",
             "Google Workspace / GCP-heavy"
@@ -10783,11 +10783,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Snowflake satisfy NHS DTAC for clinical analytics data?",
-        "answer": "Snowflake EU (Frankfurt or London region) with a signed DPA is acceptable for NHS clinical analytics data in most cases. However: Redshift in the same AWS eu-west-2 account as the clinical application is the strongest NHS DTAC position because no data leaves your AWS account (no third-party data processor for clinical data). For NHS analytics at ICB or Trust level: ClickMasters typically uses Redshift Serverless (or provisioned Redshift RA3) within the NHS application's AWS account. For NHS commercial analytics products (sold to multiple NHS Trusts): Snowflake EU is acceptable with a signed NHS-specific DPA covering Article 9 health data."
+        "answer": "Snowflake EU (Frankfurt or London region) with a signed DPA is acceptable for NHS clinical analytics data in most cases. However: Redshift in the same AWS eu-west-2 account as the clinical application is the strongest NHS DTAC position because no data leaves your AWS account (no third-party data processor for clinical data). For NHS analytics at ICB or Trust level: Clickmasters typically uses Redshift Serverless (or provisioned Redshift RA3) within the NHS application's AWS account. For NHS commercial analytics products (sold to multiple NHS Trusts): Snowflake EU is acceptable with a signed NHS-specific DPA covering Article 9 health data."
       },
       {
         "question": "What is the cheapest UK data warehouse for a startup?",
-        "answer": "For UK startups: (1) PostgreSQL with dbt (cheapest — no additional data warehouse cost, runs transforms on existing PostgreSQL RDS), (2) BigQuery Sandbox (free up to 10GB storage + 1TB queries/month — good for early stage), (3) Redshift Serverless (pay-per-query — no cluster to manage, £0 when not querying). ClickMasters recommendation for UK startups: start with PostgreSQL + dbt (zero additional infrastructure cost), migrate to Redshift Serverless or Snowflake when query performance becomes the constraint (typically &gt; 100M rows or &gt; 5 concurrent analysts). Do not over-engineer data infrastructure at &lt; £1M ARR."
+        "answer": "For UK startups: (1) PostgreSQL with dbt (cheapest — no additional data warehouse cost, runs transforms on existing PostgreSQL RDS), (2) BigQuery Sandbox (free up to 10GB storage + 1TB queries/month — good for early stage), (3) Redshift Serverless (pay-per-query — no cluster to manage, £0 when not querying). Clickmasters recommendation for UK startups: start with PostgreSQL + dbt (zero additional infrastructure cost), migrate to Redshift Serverless or Snowflake when query performance becomes the constraint (typically &gt; 100M rows or &gt; 5 concurrent analysts). Do not over-engineer data infrastructure at &lt; £1M ARR."
       }
     ],
     "relatedPages": [
@@ -10813,11 +10813,11 @@ export const comparisons = [
     "topic": "react_native_vs_flutter_vs_expo_uk_2026",
     "year": "2026",
     "title": "React Native vs Flutter vs Expo — UK Mobile App Development (2026)",
-    "metaTitle": "React Native vs Flutter vs Expo — UK Mobile App (2026) | ClickMasters",
+    "metaTitle": "React Native vs Flutter vs Expo — UK Mobile App (2026) | Clickmasters",
     "metaDesc": "Expo (managed React Native) is the UK default for most new mobile apps: zero native configuration, OTA updates (deploy bug fixes without App Store submission),",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -10886,7 +10886,7 @@ export const comparisons = [
             "2–5 days"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All UK consumer mobile apps",
             "Pixel-perfect custom UI (luxury, gaming)",
             "NFC/BLE/biometric-heavy apps"
@@ -10898,11 +10898,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does React Native satisfy NHS DTAC for patient-facing mobile apps?",
-        "answer": "React Native (and Expo) satisfy NHS DTAC for patient-facing mobile apps with the right implementation: (1) NHS Login integration (NHS login via react-native-app-auth — OAuth 2.0 PKCE flow), (2) WCAG 2.1 AA mobile accessibility (React Native has AccessibilityInfo API — screen reader support for iOS VoiceOver and Android TalkBack), (3) biometric authentication (react-native-biometrics — TouchID/FaceID for NHS App login), (4) secure storage (react-native-encrypted-storage — patient data not in AsyncStorage in plaintext), (5) certificate pinning (SSL pinning — prevents man-in-the-middle on clinical data). ClickMasters builds all 5 as standard on NHS mobile apps."
+        "answer": "React Native (and Expo) satisfy NHS DTAC for patient-facing mobile apps with the right implementation: (1) NHS Login integration (NHS login via react-native-app-auth — OAuth 2.0 PKCE flow), (2) WCAG 2.1 AA mobile accessibility (React Native has AccessibilityInfo API — screen reader support for iOS VoiceOver and Android TalkBack), (3) biometric authentication (react-native-biometrics — TouchID/FaceID for NHS App login), (4) secure storage (react-native-encrypted-storage — patient data not in AsyncStorage in plaintext), (5) certificate pinning (SSL pinning — prevents man-in-the-middle on clinical data). Clickmasters builds all 5 as standard on NHS mobile apps."
       },
       {
         "question": "Should UK projects use Expo or bare React Native?",
-        "answer": "Expo managed workflow is the right default for 90% of UK mobile apps — it handles App Store configuration, OTA updates, push notifications, and native module requirements without native code changes. Eject to bare React Native when: (1) NFC integration (NHS smartcard, contactless payment — react-native-nfc-manager not available in managed Expo), (2) advanced Bluetooth LE (medical device integration — react-native-ble-plx requires custom native build), (3) custom native modules not in Expo SDK. ClickMasters starts every mobile project with Expo managed — ejects to bare only when a specific native requirement cannot be met in managed workflow. Most UK health, FinTech, and enterprise apps never need to eject."
+        "answer": "Expo managed workflow is the right default for 90% of UK mobile apps — it handles App Store configuration, OTA updates, push notifications, and native module requirements without native code changes. Eject to bare React Native when: (1) NFC integration (NHS smartcard, contactless payment — react-native-nfc-manager not available in managed Expo), (2) advanced Bluetooth LE (medical device integration — react-native-ble-plx requires custom native build), (3) custom native modules not in Expo SDK. Clickmasters starts every mobile project with Expo managed — ejects to bare only when a specific native requirement cannot be met in managed workflow. Most UK health, FinTech, and enterprise apps never need to eject."
       }
     ],
     "relatedPages": [
@@ -10928,11 +10928,11 @@ export const comparisons = [
     "topic": "stripe_vs_gocardless_vs_adyen_uk_2026",
     "year": "2026",
     "title": "Stripe vs GoCardless vs Adyen — UK Payments (2026)",
-    "metaTitle": "Stripe vs GoCardless vs Adyen — UK Payments (2026) | ClickMasters",
+    "metaTitle": "Stripe vs GoCardless vs Adyen — UK Payments (2026) | Clickmasters",
     "metaDesc": "Stripe is the UK default for card payments: best developer experience, UK GDPR data residency (EU region), FCA Consumer Duty-friendly (transparent pricing), and",
     "lastUpdated": "January 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -11001,7 +11001,7 @@ export const comparisons = [
             "Enterprise pricing — less transparent"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All UK card payments",
             "UK recurring payments (rent, utilities, SaaS)",
             "Enterprise omnichannel (50K+ transactions/month)"
@@ -11017,7 +11017,7 @@ export const comparisons = [
       },
       {
         "question": "When should UK projects use GoCardless instead of Stripe?",
-        "answer": "GoCardless wins for: (1) UK Direct Debit recurring payments (subscription billing where customer authorises monthly Direct Debit — GoCardless has direct Bacs scheme access, lower failure rate than Stripe Direct Debit for UK), (2) variable recurring payments (GoCardless Variable Recurring Payments — amounts can change month to month, important for utility billing), (3) Open Banking account-to-account payments (GoCardless Instant Bank Pay — Open Banking PISP), (4) high-volume recurring (GoCardless pricing is volume-based — cheaper than Stripe at high recurring volume). ClickMasters uses GoCardless for: BTR rent collection, subscription SaaS, utility billing, and any UK application where Direct Debit is the primary payment method."
+        "answer": "GoCardless wins for: (1) UK Direct Debit recurring payments (subscription billing where customer authorises monthly Direct Debit — GoCardless has direct Bacs scheme access, lower failure rate than Stripe Direct Debit for UK), (2) variable recurring payments (GoCardless Variable Recurring Payments — amounts can change month to month, important for utility billing), (3) Open Banking account-to-account payments (GoCardless Instant Bank Pay — Open Banking PISP), (4) high-volume recurring (GoCardless pricing is volume-based — cheaper than Stripe at high recurring volume). Clickmasters uses GoCardless for: BTR rent collection, subscription SaaS, utility billing, and any UK application where Direct Debit is the primary payment method."
       }
     ],
     "relatedPages": [
@@ -11043,11 +11043,11 @@ export const comparisons = [
     "topic": "shopify_vs_woocommerce_vs_custom_build_uk_202",
     "year": "2025",
     "title": "Shopify vs WooCommerce vs Custom Build — UK eCommerce (2026)",
-    "metaTitle": "Shopify vs WooCommerce vs Custom Build — UK eCommerce (2026) | ClickMasters",
+    "metaTitle": "Shopify vs WooCommerce vs Custom Build — UK eCommerce (2026) | Clickmasters",
     "metaDesc": "Shopify is the right default for most UK eCommerce businesses: PCI-DSS SAQ-A (Shopify handles card data), UK Consumer Rights Act returns built-in, and the faste",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -11116,7 +11116,7 @@ export const comparisons = [
             "✅ Full flexibility"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "&lt; £50M revenue, standard catalogue",
             "WordPress sites adding eCommerce",
             "B2B, marketplace, headless luxury"
@@ -11132,7 +11132,7 @@ export const comparisons = [
       },
       {
         "question": "When should a UK business choose custom build over Shopify?",
-        "answer": "Custom build over Shopify when: (1) B2B complex pricing (customer-specific price lists, volume discounts, credit terms — Shopify B2B has limits), (2) marketplace (multiple sellers — Shopify is single-vendor), (3) subscription with complex billing (monthly billing cycles with mid-period changes — Shopify Billing API has constraints), (4) headless luxury brand (full Core Web Vitals control — LCP &lt; 1.2s not achievable with Shopify Liquid, achievable with Next.js), (5) industry-specific compliance (medical devices, financial products — require custom approval workflows Shopify cannot support). ClickMasters honest position: for 80% of UK eCommerce businesses under £50M revenue, Shopify Plus is better than a custom build — faster, cheaper, and better maintained."
+        "answer": "Custom build over Shopify when: (1) B2B complex pricing (customer-specific price lists, volume discounts, credit terms — Shopify B2B has limits), (2) marketplace (multiple sellers — Shopify is single-vendor), (3) subscription with complex billing (monthly billing cycles with mid-period changes — Shopify Billing API has constraints), (4) headless luxury brand (full Core Web Vitals control — LCP &lt; 1.2s not achievable with Shopify Liquid, achievable with Next.js), (5) industry-specific compliance (medical devices, financial products — require custom approval workflows Shopify cannot support). Clickmasters honest position: for 80% of UK eCommerce businesses under £50M revenue, Shopify Plus is better than a custom build — faster, cheaper, and better maintained."
       }
     ],
     "relatedPages": [
@@ -11158,11 +11158,11 @@ export const comparisons = [
     "topic": "auth0_vs_cognito_vs_clerk_uk_2026",
     "year": "2026",
     "title": "Auth0 vs AWS Cognito vs Clerk — UK Authentication (2026)",
-    "metaTitle": "Auth0 vs AWS Cognito vs Clerk — UK Authentication (2026) | ClickMasters",
+    "metaTitle": "Auth0 vs AWS Cognito vs Clerk — UK Authentication (2026) | Clickmasters",
     "metaDesc": "AWS Cognito is the right default for NHS and FCA regulated UK applications already on AWS — data stays in eu-west-2 (same account), no third-party data processo",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -11231,7 +11231,7 @@ export const comparisons = [
             "~£1,500/month (Enterprise)"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All NHS/FCA regulated UK apps",
             "B2B SaaS MVPs — fast setup",
             "Enterprise with complex MFA/compliance"
@@ -11243,11 +11243,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Cognito satisfy NHS DTAC Domain 2 for clinical authentication?",
-        "answer": "AWS Cognito in eu-west-2 is the strongest NHS DTAC Domain 2 position for clinical authentication: (1) authentication events (login, MFA, token) processed in same AWS account as clinical data — no third-party data processor for authentication, (2) Cognito User Pool in eu-west-2 — UK data residency confirmed, (3) AWS CloudTrail logs all Cognito API calls (authentication audit trail — NHS DSP Toolkit Annex B Standard 7), (4) NHS SDS integration: Cognito can federate with NHS SDS (smartcard RBAC) via SAML — NHS Login for patient-facing apps, SDS for clinical staff apps. ClickMasters configures Cognito as standard for all NHS clinical applications."
+        "answer": "AWS Cognito in eu-west-2 is the strongest NHS DTAC Domain 2 position for clinical authentication: (1) authentication events (login, MFA, token) processed in same AWS account as clinical data — no third-party data processor for authentication, (2) Cognito User Pool in eu-west-2 — UK data residency confirmed, (3) AWS CloudTrail logs all Cognito API calls (authentication audit trail — NHS DSP Toolkit Annex B Standard 7), (4) NHS SDS integration: Cognito can federate with NHS SDS (smartcard RBAC) via SAML — NHS Login for patient-facing apps, SDS for clinical staff apps. Clickmasters configures Cognito as standard for all NHS clinical applications."
       },
       {
         "question": "Is Clerk suitable for FCA regulated fintech applications?",
-        "answer": "Clerk is suitable for non-regulated user-facing features (marketing site login, non-regulated customer portal) in FCA regulated applications. For FCA regulated functionality (account information, payment initiation, investment decisions): ClickMasters uses Cognito — authentication events for regulated actions should not go through a US-headquartered third party. Practical split: Clerk for the SaaS dashboard login (non-regulated), Cognito for the regulated Open Banking AISP API authentication. Clerk's EU data residency (via Cloudflare) is improving — future versions may be acceptable for more FCA use cases, but as of 2026 ClickMasters defaults to Cognito for FCA-regulated authentication paths."
+        "answer": "Clerk is suitable for non-regulated user-facing features (marketing site login, non-regulated customer portal) in FCA regulated applications. For FCA regulated functionality (account information, payment initiation, investment decisions): Clickmasters uses Cognito — authentication events for regulated actions should not go through a US-headquartered third party. Practical split: Clerk for the SaaS dashboard login (non-regulated), Cognito for the regulated Open Banking AISP API authentication. Clerk's EU data residency (via Cloudflare) is improving — future versions may be acceptable for more FCA use cases, but as of 2026 Clickmasters defaults to Cognito for FCA-regulated authentication paths."
       }
     ],
     "relatedPages": [
@@ -11273,11 +11273,11 @@ export const comparisons = [
     "topic": "langchain_vs_llamaindex_vs_custom_rag_uk_2026",
     "year": "2026",
     "title": "LangChain vs LlamaIndex vs Custom RAG — UK AI Development (2026)",
-    "metaTitle": "Langchain vs LlamaIndex vs Custom RAG — UK AI Development (2026) | ClickMasters",
+    "metaTitle": "Langchain vs LlamaIndex vs Custom RAG — UK AI Development (2026) | Clickmasters",
     "metaDesc": "Custom RAG (Retrieval-Augmented Generation) pipelines built directly against the Anthropic or OpenAI API are right for UK regulated applications (NHS, FCA, Lega",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -11340,7 +11340,7 @@ export const comparisons = [
             "Available"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All NHS/FCA/LegalTech regulated AI",
             "Rapid non-regulated RAG prototypes",
             "Legal/medical document indexing"
@@ -11352,11 +11352,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does LangChain satisfy NHS DTAC Domain 3 for AI applications?",
-        "answer": "NHS DTAC Domain 3 (Technical Security) requires evidence of code security and auditability. LangChain adds abstraction layers that make audit more difficult — DTAC Domain 3 assessors may ask \"show me exactly what data is being sent to the LLM API.\" With LangChain chains and agents, answering this precisely requires understanding LangChain internals. ClickMasters position: for NHS DTAC clinical AI applications, custom RAG with direct Anthropic API calls is more auditable and more defensible in DTAC assessment. LangChain is acceptable for NHS non-clinical applications (administrative automation) where the audit bar is lower."
+        "answer": "NHS DTAC Domain 3 (Technical Security) requires evidence of code security and auditability. LangChain adds abstraction layers that make audit more difficult — DTAC Domain 3 assessors may ask \"show me exactly what data is being sent to the LLM API.\" With LangChain chains and agents, answering this precisely requires understanding LangChain internals. Clickmasters position: for NHS DTAC clinical AI applications, custom RAG with direct Anthropic API calls is more auditable and more defensible in DTAC assessment. LangChain is acceptable for NHS non-clinical applications (administrative automation) where the audit bar is lower."
       },
       {
         "question": "When does LlamaIndex outperform custom RAG for UK regulated applications?",
-        "answer": "LlamaIndex outperforms custom RAG for: (1) complex document structures (legal contracts with cross-references — LlamaIndex's node parsers handle complex document structure better than naive chunking), (2) multi-document reasoning (IP portfolio research — synthesising across 500 patent documents — LlamaIndex query engine handles cross-document queries), (3) metadata filtering (filter clinical documents by date, author, speciality — LlamaIndex metadata filters are well-implemented), (4) hybrid search (vector + keyword — LlamaIndex built-in BM25 + vector hybrid search). ClickMasters uses LlamaIndex for the document-heavy components of LegalTech and MedTech AI features, with direct API calls for the regulated decision-making components."
+        "answer": "LlamaIndex outperforms custom RAG for: (1) complex document structures (legal contracts with cross-references — LlamaIndex's node parsers handle complex document structure better than naive chunking), (2) multi-document reasoning (IP portfolio research — synthesising across 500 patent documents — LlamaIndex query engine handles cross-document queries), (3) metadata filtering (filter clinical documents by date, author, speciality — LlamaIndex metadata filters are well-implemented), (4) hybrid search (vector + keyword — LlamaIndex built-in BM25 + vector hybrid search). Clickmasters uses LlamaIndex for the document-heavy components of LegalTech and MedTech AI features, with direct API calls for the regulated decision-making components."
       }
     ],
     "relatedPages": [
@@ -11382,11 +11382,11 @@ export const comparisons = [
     "topic": "terraform_vs_cdk_vs_pulumi_uk_iac_2026",
     "year": "2026",
     "title": "Terraform vs AWS CDK vs Pulumi — UK Infrastructure as Code (2026)",
-    "metaTitle": "Terraform vs AWS CDK vs Pulumi — UK Infrastructure as Code (2026) | ClickMasters",
-    "metaDesc": "AWS CDK (TypeScript) is ClickMasters' default for all new UK AWS projects — same TypeScript codebase as application code, best-in-class AWS integration, and Cyb",
+    "metaTitle": "Terraform vs AWS CDK vs Pulumi — UK Infrastructure as Code (2026) | Clickmasters",
+    "metaDesc": "AWS CDK (TypeScript) is Clickmasters' default for all new UK AWS projects — same TypeScript codebase as application code, best-in-class AWS integration, and Cyb",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -11395,7 +11395,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "AWS CDK (TypeScript) is ClickMasters' default for all new UK AWS projects — same TypeScript codebase as application code, best-in-class AWS integration, and Cyber Essentials patching evidence via CloudFormation change sets. Terraform is right when the team needs multi-cloud IaC (AWS + Azure), or when the team already has deep Terraform expertise. Pulumi is right for Python-heavy teams who prefer Python IaC over TypeScript. IaC framework choice affects UK GDPR infrastructure audit trail, Cyber Essentials patching evidence, and developer productivity.",
+    "directAnswer": "AWS CDK (TypeScript) is Clickmasters' default for all new UK AWS projects — same TypeScript codebase as application code, best-in-class AWS integration, and Cyber Essentials patching evidence via CloudFormation change sets. Terraform is right when the team needs multi-cloud IaC (AWS + Azure), or when the team already has deep Terraform expertise. Pulumi is right for Python-heavy teams who prefer Python IaC over TypeScript. IaC framework choice affects UK GDPR infrastructure audit trail, Cyber Essentials patching evidence, and developer productivity.",
     "comparisonTables": [
       {
         "title": "",
@@ -11449,7 +11449,7 @@ export const comparisons = [
             "AWS provider — all services"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All new UK AWS projects",
             "Multi-cloud or Terraform-expert team",
             "Python-heavy teams"
@@ -11461,11 +11461,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does AWS CDK satisfy FCA PS21/3 change management requirements?",
-        "answer": "AWS CDK + CloudFormation satisfies FCA PS21/3 change management: (1) CDK generates CloudFormation templates (every infrastructure change produces a CloudFormation change set — reviewed before apply), (2) CloudFormation change set = audit record (who requested, what changes, when applied — immutable in CloudFormation history), (3) CloudFormation stack drift detection (detects manual changes outside CDK — important for PS21/3 controlled change management), (4) AWS Config compliance rules (CDK-deployed infrastructure continuously assessed against compliance rules — evidence for FCA PS21/3 technical resilience). ClickMasters configures branch protection on CDK code + CloudFormation change set approval as the FCA PS21/3 change management process."
+        "answer": "AWS CDK + CloudFormation satisfies FCA PS21/3 change management: (1) CDK generates CloudFormation templates (every infrastructure change produces a CloudFormation change set — reviewed before apply), (2) CloudFormation change set = audit record (who requested, what changes, when applied — immutable in CloudFormation history), (3) CloudFormation stack drift detection (detects manual changes outside CDK — important for PS21/3 controlled change management), (4) AWS Config compliance rules (CDK-deployed infrastructure continuously assessed against compliance rules — evidence for FCA PS21/3 technical resilience). Clickmasters configures branch protection on CDK code + CloudFormation change set approval as the FCA PS21/3 change management process."
       },
       {
         "question": "When should UK teams use Terraform instead of AWS CDK?",
-        "answer": "Terraform wins when: (1) multi-cloud (if AWS + Azure — Terraform manages both, CDK is AWS-only), (2) existing Terraform state (migrating to CDK mid-project is painful — Terraform import is easier), (3) team expertise (if team is proficient in Terraform HCL and unfamiliar with TypeScript — CDK has a learning curve), (4) Terragrunt (DRY Terraform with Terragrunt is well-established — CDK equivalent requires custom patterns). ClickMasters Terraform use case: NHS Landing Zone (AWS + Azure hybrid NHS requirements), enterprise clients with existing Terraform state, and multi-account AWS organisations using Terraform Cloud. CDK for all greenfield UK projects."
+        "answer": "Terraform wins when: (1) multi-cloud (if AWS + Azure — Terraform manages both, CDK is AWS-only), (2) existing Terraform state (migrating to CDK mid-project is painful — Terraform import is easier), (3) team expertise (if team is proficient in Terraform HCL and unfamiliar with TypeScript — CDK has a learning curve), (4) Terragrunt (DRY Terraform with Terragrunt is well-established — CDK equivalent requires custom patterns). Clickmasters Terraform use case: NHS Landing Zone (AWS + Azure hybrid NHS requirements), enterprise clients with existing Terraform state, and multi-account AWS organisations using Terraform Cloud. CDK for all greenfield UK projects."
       }
     ],
     "relatedPages": [
@@ -11491,11 +11491,11 @@ export const comparisons = [
     "topic": "prisma_vs_drizzle_vs_typeorm_uk_2026",
     "year": "2026",
     "title": "Prisma vs Drizzle vs TypeORM — UK TypeScript ORM (2026)",
-    "metaTitle": "Prisma vs Drizzle vs TypeORM — UK TypeScript ORM (2026) | ClickMasters",
-    "metaDesc": "Prisma is ClickMasters' default for most UK TypeScript projects: best DX, schema as the source of truth, automatic migrations, and Prisma Client generates fully",
+    "metaTitle": "Prisma vs Drizzle vs TypeORM — UK TypeScript ORM (2026) | Clickmasters",
+    "metaDesc": "Prisma is Clickmasters' default for most UK TypeScript projects: best DX, schema as the source of truth, automatic migrations, and Prisma Client generates fully",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -11504,7 +11504,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Prisma is ClickMasters' default for most UK TypeScript projects: best DX, schema as the source of truth, automatic migrations, and Prisma Client generates fully typed queries. Drizzle is right for performance-critical applications (Drizzle is faster than Prisma, smaller bundle) and Edge Runtime (Cloudflare Workers, Vercel Edge). TypeORM is legacy — new UK projects should use Prisma or Drizzle. ORM choice affects UK GDPR data access pattern safety, query type safety, and developer productivity. Here is a 2026 UK comparison.",
+    "directAnswer": "Prisma is Clickmasters' default for most UK TypeScript projects: best DX, schema as the source of truth, automatic migrations, and Prisma Client generates fully typed queries. Drizzle is right for performance-critical applications (Drizzle is faster than Prisma, smaller bundle) and Edge Runtime (Cloudflare Workers, Vercel Edge). TypeORM is legacy — new UK projects should use Prisma or Drizzle. ORM choice affects UK GDPR data access pattern safety, query type safety, and developer productivity. Here is a 2026 UK comparison.",
     "comparisonTables": [
       {
         "title": "",
@@ -11564,7 +11564,7 @@ export const comparisons = [
             "Declining"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All UK projects (NHS, FCA, GDS)",
             "Edge + performance-critical",
             "Legacy codebases only"
@@ -11576,11 +11576,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Prisma satisfy NHS DTAC data minimisation requirements?",
-        "answer": "Prisma select syntax is the correct approach for NHS DTAC data minimisation. Instead of Prisma findMany({}) which returns all fields (including NHS patient personal data fields not needed for the specific query), use Prisma select: prisma.patient.findMany({ select: { nhsNumber: true, appointmentDate: true } }) — returns only the two fields needed. UK GDPR Article 25 (privacy by design): data minimisation at query level — only fetch the personal data fields needed for the specific operation. ClickMasters lints all Prisma queries in NHS projects — any findMany or findFirst without an explicit select statement fails the CI/CD pipeline."
+        "answer": "Prisma select syntax is the correct approach for NHS DTAC data minimisation. Instead of Prisma findMany({}) which returns all fields (including NHS patient personal data fields not needed for the specific query), use Prisma select: prisma.patient.findMany({ select: { nhsNumber: true, appointmentDate: true } }) — returns only the two fields needed. UK GDPR Article 25 (privacy by design): data minimisation at query level — only fetch the personal data fields needed for the specific operation. Clickmasters lints all Prisma queries in NHS projects — any findMany or findFirst without an explicit select statement fails the CI/CD pipeline."
       },
       {
         "question": "When should UK teams switch from TypeORM to Prisma?",
-        "answer": "Migrate from TypeORM to Prisma when: (1) type safety is causing bugs (TypeORM's decorator-based types miss cases Prisma catches at compile time), (2) migration management is painful (TypeORM migrations require manual SQL writing — Prisma migrate generates SQL from schema diff automatically), (3) new feature development is slow (Prisma DX is significantly faster than TypeORM for common operations). Migration approach: Prisma can introspect existing TypeORM database → generates Prisma schema from existing tables → run Prisma migrate in baseline mode (no change to existing tables). ClickMasters has migrated 12 UK projects from TypeORM to Prisma — typical migration time for a mid-size application: 1–2 weeks."
+        "answer": "Migrate from TypeORM to Prisma when: (1) type safety is causing bugs (TypeORM's decorator-based types miss cases Prisma catches at compile time), (2) migration management is painful (TypeORM migrations require manual SQL writing — Prisma migrate generates SQL from schema diff automatically), (3) new feature development is slow (Prisma DX is significantly faster than TypeORM for common operations). Migration approach: Prisma can introspect existing TypeORM database → generates Prisma schema from existing tables → run Prisma migrate in baseline mode (no change to existing tables). Clickmasters has migrated 12 UK projects from TypeORM to Prisma — typical migration time for a mid-size application: 1–2 weeks."
       }
     ],
     "relatedPages": [
@@ -11606,11 +11606,11 @@ export const comparisons = [
     "topic": "zod_vs_yup_vs_joi_uk_validation_2026",
     "year": "2026",
     "title": "Zod vs Yup vs Joi — UK TypeScript Validation (2026)",
-    "metaTitle": "Zod vs Yup vs Joi — UK TypeScript Validation (2026) | ClickMasters",
+    "metaTitle": "Zod vs Yup vs Joi — UK TypeScript Validation (2026) | Clickmasters",
     "metaDesc": "Zod is the UK default for TypeScript validation in 2026: TypeScript-first (schema types inferred — no manual type writing), tRPC native integration, and the bes",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -11679,7 +11679,7 @@ export const comparisons = [
             "Joi-to-JSON-schema — available"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All TypeScript projects (UK standard)",
             "Legacy Formik/Yup codebases",
             "Node.js legacy — no new projects"
@@ -11691,7 +11691,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "How does Zod prevent OWASP injection attacks in UK APIs?",
-        "answer": "Zod input validation prevents OWASP A03 Injection attacks by: (1) z.string().max(255) — limits string length (prevents buffer overflow and large payload attacks), (2) z.string().regex(/^[a-zA-Z0-9 ]+$/) — allowlist of permitted characters (rejects SQL special characters if applied to user input), (3) z.object({...}).strict() — rejects any fields not in the schema (prevents parameter pollution attacks — extra fields ignored in Prisma queries but caught by Zod), (4) z.enum(['pending', 'active', 'inactive']) — only permitted enum values accepted (prevents injection via enum fields). ClickMasters rule: every API endpoint has a Zod schema validating the request body — validated type is then passed to Prisma, never the raw request body."
+        "answer": "Zod input validation prevents OWASP A03 Injection attacks by: (1) z.string().max(255) — limits string length (prevents buffer overflow and large payload attacks), (2) z.string().regex(/^[a-zA-Z0-9 ]+$/) — allowlist of permitted characters (rejects SQL special characters if applied to user input), (3) z.object({...}).strict() — rejects any fields not in the schema (prevents parameter pollution attacks — extra fields ignored in Prisma queries but caught by Zod), (4) z.enum(['pending', 'active', 'inactive']) — only permitted enum values accepted (prevents injection via enum fields). Clickmasters rule: every API endpoint has a Zod schema validating the request body — validated type is then passed to Prisma, never the raw request body."
       },
       {
         "question": "What is the Zod + Prisma pattern for UK GDPR compliance?",
@@ -11721,11 +11721,11 @@ export const comparisons = [
     "topic": "trpc_vs_rest_vs_graphql_uk_2026",
     "year": "2026",
     "title": "tRPC vs REST vs GraphQL — UK TypeScript Full-Stack APIs (2026)",
-    "metaTitle": "tRPC vs REST vs GraphQL — UK TypeScript APIs (2026) | ClickMasters",
-    "metaDesc": "REST with OpenAPI 3.0 remains the UK standard for external APIs (FCA COBS, NHS FHIR R4, GDS Service Standard all mandate REST + OpenAPI). tRPC is ClickMasters'",
+    "metaTitle": "tRPC vs REST vs GraphQL — UK TypeScript APIs (2026) | Clickmasters",
+    "metaDesc": "REST with OpenAPI 3.0 remains the UK standard for external APIs (FCA COBS, NHS FHIR R4, GDS Service Standard all mandate REST + OpenAPI). tRPC is Clickmasters'",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -11734,7 +11734,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "REST with OpenAPI 3.0 remains the UK standard for external APIs (FCA COBS, NHS FHIR R4, GDS Service Standard all mandate REST + OpenAPI). tRPC is ClickMasters' default for internal TypeScript full-stack APIs (Next.js App Router + Node.js backend) — end-to-end type safety without schema duplication, zero code generation. GraphQL is right for BFF (Backend For Frontend) aggregation layers where multiple clients need different data shapes. UK API design choice must balance regulated sector compliance requirements (REST mandatory for FCA/NHS/GDS external APIs) with developer productivity (tRPC wins internally).",
+    "directAnswer": "REST with OpenAPI 3.0 remains the UK standard for external APIs (FCA COBS, NHS FHIR R4, GDS Service Standard all mandate REST + OpenAPI). tRPC is Clickmasters' default for internal TypeScript full-stack APIs (Next.js App Router + Node.js backend) — end-to-end type safety without schema duplication, zero code generation. GraphQL is right for BFF (Backend For Frontend) aggregation layers where multiple clients need different data shapes. UK API design choice must balance regulated sector compliance requirements (REST mandatory for FCA/NHS/GDS external APIs) with developer productivity (tRPC wins internally).",
     "comparisonTables": [
       {
         "title": "",
@@ -11788,7 +11788,7 @@ export const comparisons = [
             "Medium — GraphQL concepts"
           ],
           [
-            "ClickMasters use",
+            "Clickmasters use",
             "✅ All external UK APIs (FCA, NHS, GDS)",
             "All internal full-stack TypeScript APIs",
             "BFF aggregation layers only"
@@ -11804,7 +11804,7 @@ export const comparisons = [
       },
       {
         "question": "What is the UK regulatory position on tRPC for FCA-regulated APIs?",
-        "answer": "tRPC for FCA-regulated external APIs: not appropriate. FCA COBS machine-readable product information requirements, NHS FHIR R4 standard, and GDS Service Standard all require REST + OpenAPI 3.0 for external-facing APIs. tRPC does not produce an OpenAPI schema by default (there is a trpc-openapi package — but it adds complexity). FCA Consumer Duty: product information APIs must have OpenAPI 3.0 documentation (machine-readable — FCA regulatory disclosure standard). ClickMasters approach: tRPC for internal type-safe full-stack communication, REST + OpenAPI for any API that faces external consumers (TPPs, NHS systems, GDS, partners). The two can coexist in the same codebase."
+        "answer": "tRPC for FCA-regulated external APIs: not appropriate. FCA COBS machine-readable product information requirements, NHS FHIR R4 standard, and GDS Service Standard all require REST + OpenAPI 3.0 for external-facing APIs. tRPC does not produce an OpenAPI schema by default (there is a trpc-openapi package — but it adds complexity). FCA Consumer Duty: product information APIs must have OpenAPI 3.0 documentation (machine-readable — FCA regulatory disclosure standard). Clickmasters approach: tRPC for internal type-safe full-stack communication, REST + OpenAPI for any API that faces external consumers (TPPs, NHS systems, GDS, partners). The two can coexist in the same codebase."
       }
     ],
     "relatedPages": [
@@ -11830,11 +11830,11 @@ export const comparisons = [
     "topic": "react_query_vs_swr_vs_apollo_uk_2026",
     "year": "2026",
     "title": "TanStack Query (React Query) vs SWR vs Apollo Client — UK Data Fetching (2026)",
-    "metaTitle": "React Query vs SWR vs Apollo Client — UK Data Fetching (2026) | ClickMasters",
+    "metaTitle": "React Query vs SWR vs Apollo Client — UK Data Fetching (2026) | Clickmasters",
     "metaDesc": "TanStack Query (React Query v5) is the UK default for data fetching in React applications: most comprehensive (server state, caching, background refetch, pagina",
     "lastUpdated": "February 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -11903,7 +11903,7 @@ export const comparisons = [
             "Large (~70KB) — worth it only for GraphQL"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All UK React projects",
             "Simple data fetching (&lt; 5 endpoints)",
             "GraphQL-only projects"
@@ -11915,11 +11915,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "How does React Query handle UK GDPR personal data caching?",
-        "answer": "React Query caches personal data in memory — UK GDPR considerations: (1) data is only cached while the React application is running (memory cache — not localStorage), (2) on logout: queryClient.clear() removes all cached personal data from memory, (3) staleTime configuration: set staleTime appropriately for personal data sensitivity (NHS patient data: staleTime: 0 — always fresh, never stale), (4) queryClient.invalidateQueries() on any data change — cached personal data invalidated immediately when underlying data changes. UK GDPR Article 25: do not use React Query as a long-term cache for personal data — it is an application-layer optimisation, not a data store. ClickMasters configures logout cleanup and appropriate staleTime for all NHS and FCA applications."
+        "answer": "React Query caches personal data in memory — UK GDPR considerations: (1) data is only cached while the React application is running (memory cache — not localStorage), (2) on logout: queryClient.clear() removes all cached personal data from memory, (3) staleTime configuration: set staleTime appropriately for personal data sensitivity (NHS patient data: staleTime: 0 — always fresh, never stale), (4) queryClient.invalidateQueries() on any data change — cached personal data invalidated immediately when underlying data changes. UK GDPR Article 25: do not use React Query as a long-term cache for personal data — it is an application-layer optimisation, not a data store. Clickmasters configures logout cleanup and appropriate staleTime for all NHS and FCA applications."
       },
       {
         "question": "Should UK projects use SWR or React Query?",
-        "answer": "TanStack Query (React Query) is the right choice for most UK applications because: (1) UK enterprise applications typically have complex data fetching requirements (pagination, optimistic updates, background refetch) that SWR requires manual implementation for, (2) tRPC integration is native in React Query — if you use tRPC, use React Query, (3) NHS and FCA regulated applications benefit from React Query's explicit cache management (queryClient.invalidateQueries, queryClient.clear on logout). SWR is appropriate when: the application has simple data fetching (read-only, no mutations, few endpoints) and bundle size is critical (SWR is 14KB vs React Query 45KB). ClickMasters has not used SWR on a regulated UK project since 2022."
+        "answer": "TanStack Query (React Query) is the right choice for most UK applications because: (1) UK enterprise applications typically have complex data fetching requirements (pagination, optimistic updates, background refetch) that SWR requires manual implementation for, (2) tRPC integration is native in React Query — if you use tRPC, use React Query, (3) NHS and FCA regulated applications benefit from React Query's explicit cache management (queryClient.invalidateQueries, queryClient.clear on logout). SWR is appropriate when: the application has simple data fetching (read-only, no mutations, few endpoints) and bundle size is critical (SWR is 14KB vs React Query 45KB). Clickmasters has not used SWR on a regulated UK project since 2022."
       }
     ],
     "relatedPages": [
@@ -11945,11 +11945,11 @@ export const comparisons = [
     "topic": "postgresql_vs_mysql_vs_mongodb_uk_2026",
     "year": "2026",
     "title": "PostgreSQL vs MySQL vs MongoDB — UK Database Choice (2026)",
-    "metaTitle": "PostgreSQL vs MySQL vs MongoDB — UK Database Choice (2026) | ClickMasters",
-    "metaDesc": "PostgreSQL is ClickMasters' default for all UK regulated applications: best JSON support, native FHIR R4 data storage (JSONB), Row Level Security for multi-tena",
+    "metaTitle": "PostgreSQL vs MySQL vs MongoDB — UK Database Choice (2026) | Clickmasters",
+    "metaDesc": "PostgreSQL is Clickmasters' default for all UK regulated applications: best JSON support, native FHIR R4 data storage (JSONB), Row Level Security for multi-tena",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -11958,7 +11958,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "PostgreSQL is ClickMasters' default for all UK regulated applications: best JSON support, native FHIR R4 data storage (JSONB), Row Level Security for multi-tenant UK GDPR data isolation, mature UK NHS/FCA audit trail patterns, and AWS RDS + Neon.tech ecosystem. MongoDB is right for document-native workloads (content management, IoT sensor data, user-generated content). MySQL/Aurora MySQL is right when the team has deep existing MySQL expertise and no regulatory driver for PostgreSQL. UK database choice affects NHS DTAC Domain 2 data protection controls, FCA audit trail requirements, and GDPR Row Level Security implementation.",
+    "directAnswer": "PostgreSQL is Clickmasters' default for all UK regulated applications: best JSON support, native FHIR R4 data storage (JSONB), Row Level Security for multi-tenant UK GDPR data isolation, mature UK NHS/FCA audit trail patterns, and AWS RDS + Neon.tech ecosystem. MongoDB is right for document-native workloads (content management, IoT sensor data, user-generated content). MySQL/Aurora MySQL is right when the team has deep existing MySQL expertise and no regulatory driver for PostgreSQL. UK database choice affects NHS DTAC Domain 2 data protection controls, FCA audit trail requirements, and GDPR Row Level Security implementation.",
     "comparisonTables": [
       {
         "title": "",
@@ -12018,7 +12018,7 @@ export const comparisons = [
             "Multi-document transactions — available"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All NHS, FCA, GDS, and SaaS UK projects",
             "Legacy MySQL migrations, WordPress",
             "IoT data, CMS, document-heavy apps"
@@ -12030,7 +12030,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Why does NHS DTAC recommend PostgreSQL over MySQL?",
-        "answer": "NHS DTAC does not explicitly name PostgreSQL — but PostgreSQL's native Row Level Security (RLS) provides the strongest DTAC Domain 2 data protection for multi-tenant NHS applications. RLS: a database-level control that ensures a query from one NHS Trust cannot return data from another (even if application code has a bug). MySQL has no native RLS — data isolation must be implemented in application code (a bug could expose cross-tenant data). For NHS ICB population health analytics (multiple NHS Trust data in one database): PostgreSQL RLS isolates each Trust's patient data at the database level. ClickMasters implements PostgreSQL RLS for all NHS multi-tenant applications — DTAC Domain 2 evidence includes RLS policy definition."
+        "answer": "NHS DTAC does not explicitly name PostgreSQL — but PostgreSQL's native Row Level Security (RLS) provides the strongest DTAC Domain 2 data protection for multi-tenant NHS applications. RLS: a database-level control that ensures a query from one NHS Trust cannot return data from another (even if application code has a bug). MySQL has no native RLS — data isolation must be implemented in application code (a bug could expose cross-tenant data). For NHS ICB population health analytics (multiple NHS Trust data in one database): PostgreSQL RLS isolates each Trust's patient data at the database level. Clickmasters implements PostgreSQL RLS for all NHS multi-tenant applications — DTAC Domain 2 evidence includes RLS policy definition."
       },
       {
         "question": "When should UK projects use MongoDB instead of PostgreSQL?",
@@ -12060,11 +12060,11 @@ export const comparisons = [
     "topic": "github_actions_vs_gitlab_ci_vs_circleci_uk_20",
     "year": "2025",
     "title": "GitHub Actions vs GitLab CI vs CircleCI — UK CI/CD (2026)",
-    "metaTitle": "GitHub Actions vs GitLab CI vs CircleCI — UK CI/CD (2026) | ClickMasters",
-    "metaDesc": "GitHub Actions is ClickMasters' default for all UK projects on GitHub — tightest GitHub integration, largest marketplace of actions, and AWS OIDC (no long-lived",
+    "metaTitle": "GitHub Actions vs GitLab CI vs CircleCI — UK CI/CD (2026) | Clickmasters",
+    "metaDesc": "GitHub Actions is Clickmasters' default for all UK projects on GitHub — tightest GitHub integration, largest marketplace of actions, and AWS OIDC (no long-lived",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -12073,7 +12073,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "GitHub Actions is ClickMasters' default for all UK projects on GitHub — tightest GitHub integration, largest marketplace of actions, and AWS OIDC (no long-lived credentials — strongest Cyber Essentials A3 access control). GitLab CI is right when the team uses GitLab (built-in CI/CD is GitLab's core strength — no separate tool needed). CircleCI is legacy for most new UK projects — GitHub Actions has matched or exceeded CircleCI for typical UK use cases. CI/CD platform choice affects UK Cyber Essentials A2 (14-day patching evidence), FCA PS21/3 change management audit trail, and AWS OIDC security posture.",
+    "directAnswer": "GitHub Actions is Clickmasters' default for all UK projects on GitHub — tightest GitHub integration, largest marketplace of actions, and AWS OIDC (no long-lived credentials — strongest Cyber Essentials A3 access control). GitLab CI is right when the team uses GitLab (built-in CI/CD is GitLab's core strength — no separate tool needed). CircleCI is legacy for most new UK projects — GitHub Actions has matched or exceeded CircleCI for typical UK use cases. CI/CD platform choice affects UK Cyber Essentials A2 (14-day patching evidence), FCA PS21/3 change management audit trail, and AWS OIDC security posture.",
     "comparisonTables": [
       {
         "title": "",
@@ -12127,7 +12127,7 @@ export const comparisons = [
             "CircleCI (~£400+/month for medium usage)"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All GitHub-based UK projects",
             "All GitLab-based UK projects",
             "Legacy only — no new projects"
@@ -12139,11 +12139,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does GitHub Actions satisfy FCA PS21/3 change management?",
-        "answer": "GitHub Actions with branch protection satisfies FCA PS21/3 change management: (1) branch protection on main (no direct push — all changes via PR), (2) required status checks (all CI/CD pipeline checks must pass before merge — automated quality gate), (3) required reviews (minimum 2 reviewers for production changes — human change review), (4) deployment environment protection rules (GitHub Environments — production deployment requires explicit approval from named approvers), (5) audit log (GitHub audit log — every merge, every deployment, every approver — immutable, downloadable for FCA evidence). ClickMasters FCA PS21/3 CI/CD configuration: branch protection + required checks + environment approvals + CloudFormation change set review = complete PS21/3 change management audit trail."
+        "answer": "GitHub Actions with branch protection satisfies FCA PS21/3 change management: (1) branch protection on main (no direct push — all changes via PR), (2) required status checks (all CI/CD pipeline checks must pass before merge — automated quality gate), (3) required reviews (minimum 2 reviewers for production changes — human change review), (4) deployment environment protection rules (GitHub Environments — production deployment requires explicit approval from named approvers), (5) audit log (GitHub audit log — every merge, every deployment, every approver — immutable, downloadable for FCA evidence). Clickmasters FCA PS21/3 CI/CD configuration: branch protection + required checks + environment approvals + CloudFormation change set review = complete PS21/3 change management audit trail."
       },
       {
         "question": "Should UK NHS projects use self-hosted GitHub Actions runners?",
-        "answer": "For NHS applications processing clinical data (NHS Article 9 health data), self-hosted GitHub Actions runners in eu-west-2 is the strongest DTAC Domain 3 position: CI/CD pipeline runs in the same AWS account and region as the NHS application, no clinical data leaves eu-west-2 in test outputs or logs. GitHub-hosted runners: run in Microsoft Azure data centres — acceptable for most NHS applications (test data should be synthetic, not real patient data). ClickMasters NHS CI/CD configuration: self-hosted runners on ECS Fargate (eu-west-2) — runners spin up on demand, terminated after pipeline, no persistent state. NHS DSP Toolkit Annex B Standard 9.4: CI/CD infrastructure must be included in security risk assessment — self-hosted runners simplify the risk boundary."
+        "answer": "For NHS applications processing clinical data (NHS Article 9 health data), self-hosted GitHub Actions runners in eu-west-2 is the strongest DTAC Domain 3 position: CI/CD pipeline runs in the same AWS account and region as the NHS application, no clinical data leaves eu-west-2 in test outputs or logs. GitHub-hosted runners: run in Microsoft Azure data centres — acceptable for most NHS applications (test data should be synthetic, not real patient data). Clickmasters NHS CI/CD configuration: self-hosted runners on ECS Fargate (eu-west-2) — runners spin up on demand, terminated after pipeline, no persistent state. NHS DSP Toolkit Annex B Standard 9.4: CI/CD infrastructure must be included in security risk assessment — self-hosted runners simplify the risk boundary."
       }
     ],
     "relatedPages": [
@@ -12169,11 +12169,11 @@ export const comparisons = [
     "topic": "lambda_vs_fargate_vs_app_runner_uk_2026",
     "year": "2026",
     "title": "AWS Lambda vs ECS Fargate vs App Runner — UK Serverless Compute (2026)",
-    "metaTitle": "AWS Lambda vs ECS Fargate vs App Runner — UK Serverless (2026) | ClickMasters",
-    "metaDesc": "ECS Fargate is ClickMasters' default for UK regulated applications (NHS, FCA): predictable latency, persistent container, and full VPC control (private subnets,",
+    "metaTitle": "AWS Lambda vs ECS Fargate vs App Runner — UK Serverless (2026) | Clickmasters",
+    "metaDesc": "ECS Fargate is Clickmasters' default for UK regulated applications (NHS, FCA): predictable latency, persistent container, and full VPC control (private subnets,",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -12182,7 +12182,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "ECS Fargate is ClickMasters' default for UK regulated applications (NHS, FCA): predictable latency, persistent container, and full VPC control (private subnets, Security Groups). Lambda is right for event-driven workloads (S3 triggers, SQS consumers, scheduled jobs). App Runner is right for simple public APIs where you want zero infrastructure configuration. Lambda cold starts disqualify it from NHS patient-facing applications where consistent response time is required. Compute platform choice affects UK GDPR data residency, NHS DTAC Domain 3 security controls, FCA PS21/3 availability, and operational cost.",
+    "directAnswer": "ECS Fargate is Clickmasters' default for UK regulated applications (NHS, FCA): predictable latency, persistent container, and full VPC control (private subnets, Security Groups). Lambda is right for event-driven workloads (S3 triggers, SQS consumers, scheduled jobs). App Runner is right for simple public APIs where you want zero infrastructure configuration. Lambda cold starts disqualify it from NHS patient-facing applications where consistent response time is required. Compute platform choice affects UK GDPR data residency, NHS DTAC Domain 3 security controls, FCA PS21/3 availability, and operational cost.",
     "comparisonTables": [
       {
         "title": "",
@@ -12242,7 +12242,7 @@ export const comparisons = [
             "✅ Lowest — just push Docker image"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All NHS/FCA/GDS regulated workloads",
             "S3/SQS/scheduled event-driven jobs",
             "Non-regulated APIs (demo, public docs)"
@@ -12254,11 +12254,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Lambda cold start affect NHS patient-facing applications?",
-        "answer": "Lambda cold starts are a clinical safety consideration for NHS patient-facing applications. Cold start: when a Lambda function is invoked after a period of inactivity, AWS must initialise the execution environment — adds 0.5–3 seconds to first response. For NHS applications: a 3-second delay on a medication alert or clinical decision support response is unacceptable. ClickMasters uses ECS Fargate for all NHS patient-facing applications — persistent container, no cold start, consistent sub-100ms API response time. Lambda is used for NHS event-driven background jobs (FHIR resource processing, batch analytics, scheduled reports) where cold start latency does not affect patient care. Lambda Provisioned Concurrency (eliminates cold start — pre-warmed instances) is an option for Lambda patient-facing functions, but adds cost and complexity."
+        "answer": "Lambda cold starts are a clinical safety consideration for NHS patient-facing applications. Cold start: when a Lambda function is invoked after a period of inactivity, AWS must initialise the execution environment — adds 0.5–3 seconds to first response. For NHS applications: a 3-second delay on a medication alert or clinical decision support response is unacceptable. Clickmasters uses ECS Fargate for all NHS patient-facing applications — persistent container, no cold start, consistent sub-100ms API response time. Lambda is used for NHS event-driven background jobs (FHIR resource processing, batch analytics, scheduled reports) where cold start latency does not affect patient care. Lambda Provisioned Concurrency (eliminates cold start — pre-warmed instances) is an option for Lambda patient-facing functions, but adds cost and complexity."
       },
       {
         "question": "What is the cost difference between Fargate and Lambda for a UK SaaS?",
-        "answer": "Cost comparison for a typical UK SaaS (1,000 daily active users, 100,000 API requests/day): (1) ECS Fargate (2 × 0.5vCPU, 1GB tasks, eu-west-2): approximately £180–£250/month. (2) Lambda (100K invocations/day × 200ms average, 256MB): approximately £15–£25/month. Lambda is 10× cheaper at this scale. Cost crossover: Fargate becomes cost-competitive at &gt; 2M requests/day (Lambda pricing per invocation becomes significant). ClickMasters recommendation: start with Lambda for non-regulated UK SaaS (cost advantage is substantial at startup scale), migrate to Fargate if FCA or NHS regulatory requirements demand consistent latency, or if request volume makes Lambda expensive."
+        "answer": "Cost comparison for a typical UK SaaS (1,000 daily active users, 100,000 API requests/day): (1) ECS Fargate (2 × 0.5vCPU, 1GB tasks, eu-west-2): approximately £180–£250/month. (2) Lambda (100K invocations/day × 200ms average, 256MB): approximately £15–£25/month. Lambda is 10× cheaper at this scale. Cost crossover: Fargate becomes cost-competitive at &gt; 2M requests/day (Lambda pricing per invocation becomes significant). Clickmasters recommendation: start with Lambda for non-regulated UK SaaS (cost advantage is substantial at startup scale), migrate to Fargate if FCA or NHS regulatory requirements demand consistent latency, or if request volume makes Lambda expensive."
       }
     ],
     "relatedPages": [
@@ -12284,11 +12284,11 @@ export const comparisons = [
     "topic": "openai_vs_anthropic_vs_gemini_uk_ai_2026",
     "year": "2026",
     "title": "OpenAI API vs Anthropic Claude API vs Google Gemini — UK AI Development (2026)",
-    "metaTitle": "OpenAI API vs Anthropic API vs Google Gemini — UK AI Development (2026) | ClickMasters",
-    "metaDesc": "Anthropic Claude API is ClickMasters' default for UK regulated AI applications (NHS, FCA, LegalTech): 200K context window (entire long contracts, patient record",
+    "metaTitle": "OpenAI API vs Anthropic API vs Google Gemini — UK AI Development (2026) | Clickmasters",
+    "metaDesc": "Anthropic Claude API is Clickmasters' default for UK regulated AI applications (NHS, FCA, LegalTech): 200K context window (entire long contracts, patient record",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -12297,7 +12297,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Anthropic Claude API is ClickMasters' default for UK regulated AI applications (NHS, FCA, LegalTech): 200K context window (entire long contracts, patient records), strongest safety alignment, and enterprise zero-data-retention (critical for NHS LPP and FCA client data). OpenAI GPT-4o is right for multimodal applications (image + text) and the broadest ecosystem. Google Gemini is right for Google Workspace / GCP-heavy teams needing deep Google integration. LLM API choice affects UK GDPR data residency, NHS DTAC Domain 3 auditability, FCA data protection obligations, and Legal Professional Privilege.",
+    "directAnswer": "Anthropic Claude API is Clickmasters' default for UK regulated AI applications (NHS, FCA, LegalTech): 200K context window (entire long contracts, patient records), strongest safety alignment, and enterprise zero-data-retention (critical for NHS LPP and FCA client data). OpenAI GPT-4o is right for multimodal applications (image + text) and the broadest ecosystem. Google Gemini is right for Google Workspace / GCP-heavy teams needing deep Google integration. LLM API choice affects UK GDPR data residency, NHS DTAC Domain 3 auditability, FCA data protection obligations, and Legal Professional Privilege.",
     "comparisonTables": [
       {
         "title": "",
@@ -12357,7 +12357,7 @@ export const comparisons = [
             "✅ Function declarations — available"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ NHS/FCA/LegalTech regulated AI",
             "Image-heavy applications, GPT-specific features",
             "Google Workspace / GCP-heavy teams"
@@ -12369,11 +12369,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Which LLM API satisfies NHS DTAC Domain 3 for clinical AI?",
-        "answer": "NHS DTAC Domain 3 (Technical Security) for clinical AI using external LLM APIs: (1) UK GDPR Article 28 DPA with the LLM provider required, (2) zero data retention (patient data must not be used for model training — Anthropic Enterprise API: zero retention by default, OpenAI: zero retention opt-in at Enterprise tier), (3) data in transit encryption (all LLM API calls via HTTPS TLS 1.2+ — standard), (4) audit trail (every LLM API call logged in CloudWatch — prompt hash, response hash, timestamp — not the prompt content itself, which may contain patient data). ClickMasters NHS LLM architecture: Anthropic Claude API with enterprise tier (zero retention confirmed in DPA) → AWS Lambda in eu-west-2 VPC → logs to CloudWatch (hash only, no patient data). DTAC Domain 3 assessors have accepted this architecture."
+        "answer": "NHS DTAC Domain 3 (Technical Security) for clinical AI using external LLM APIs: (1) UK GDPR Article 28 DPA with the LLM provider required, (2) zero data retention (patient data must not be used for model training — Anthropic Enterprise API: zero retention by default, OpenAI: zero retention opt-in at Enterprise tier), (3) data in transit encryption (all LLM API calls via HTTPS TLS 1.2+ — standard), (4) audit trail (every LLM API call logged in CloudWatch — prompt hash, response hash, timestamp — not the prompt content itself, which may contain patient data). Clickmasters NHS LLM architecture: Anthropic Claude API with enterprise tier (zero retention confirmed in DPA) → AWS Lambda in eu-west-2 VPC → logs to CloudWatch (hash only, no patient data). DTAC Domain 3 assessors have accepted this architecture."
       },
       {
         "question": "Is OpenAI or Anthropic better for UK LegalTech AI?",
-        "answer": "For UK LegalTech AI (contract analysis, legal research): Anthropic Claude is preferred because: (1) 200K context window — entire long commercial contract (M&amp;A agreements routinely exceed 100K tokens) processed in one API call without chunking, (2) zero data retention enterprise tier — Legal Professional Privilege requires client contract data not to be retained by third parties, (3) constitutional AI safety alignment — legal AI hallucination risk is severe (incorrect legal analysis has professional negligence implications), (4) SRA Code 2019 AI oversight: Anthropic's Constitutional AI framework produces more predictable outputs that lawyers can reliably review. OpenAI's 128K context limit requires contract chunking — introduces risk of missed cross-references. ClickMasters has built 4 UK LegalTech AI products on Anthropic Claude."
+        "answer": "For UK LegalTech AI (contract analysis, legal research): Anthropic Claude is preferred because: (1) 200K context window — entire long commercial contract (M&amp;A agreements routinely exceed 100K tokens) processed in one API call without chunking, (2) zero data retention enterprise tier — Legal Professional Privilege requires client contract data not to be retained by third parties, (3) constitutional AI safety alignment — legal AI hallucination risk is severe (incorrect legal analysis has professional negligence implications), (4) SRA Code 2019 AI oversight: Anthropic's Constitutional AI framework produces more predictable outputs that lawyers can reliably review. OpenAI's 128K context limit requires contract chunking — introduces risk of missed cross-references. Clickmasters has built 4 UK LegalTech AI products on Anthropic Claude."
       }
     ],
     "relatedPages": [
@@ -12399,11 +12399,11 @@ export const comparisons = [
     "topic": "monolith_vs_microservices_vs_modular_monolith",
     "year": "2025",
     "title": "Monolith vs Microservices vs Modular Monolith — UK Architecture Decision (2026)",
-    "metaTitle": "Monolith vs Microservices vs Modular Monolith — UK Architecture (2026) | ClickMasters",
-    "metaDesc": "The Modular Monolith is ClickMasters' default for most UK regulated projects: single deployment unit (operational simplicity), clear module boundaries (extract",
+    "metaTitle": "Monolith vs Microservices vs Modular Monolith — UK Architecture (2026) | Clickmasters",
+    "metaDesc": "The Modular Monolith is Clickmasters' default for most UK regulated projects: single deployment unit (operational simplicity), clear module boundaries (extract",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -12412,7 +12412,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "The Modular Monolith is ClickMasters' default for most UK regulated projects: single deployment unit (operational simplicity), clear module boundaries (extract microservices later when justified), and lowest operational overhead for teams under 20 engineers. Microservices are right when multiple teams need independent deployment cadence, or when FCA PS21/3 IBS isolation requires independent failure domains. Never build microservices from day 1 on a new product — the domain model is unknown. UK architecture choice must balance operational complexity (regulated sectors require audit trails of production changes), team size, and regulatory isolation requirements.",
+    "directAnswer": "The Modular Monolith is Clickmasters' default for most UK regulated projects: single deployment unit (operational simplicity), clear module boundaries (extract microservices later when justified), and lowest operational overhead for teams under 20 engineers. Microservices are right when multiple teams need independent deployment cadence, or when FCA PS21/3 IBS isolation requires independent failure domains. Never build microservices from day 1 on a new product — the domain model is unknown. UK architecture choice must balance operational complexity (regulated sectors require audit trails of production changes), team size, and regulatory isolation requirements.",
     "comparisonTables": [
       {
         "title": "",
@@ -12466,7 +12466,7 @@ export const comparisons = [
             "✅ GDS acceptable for small teams"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All new UK products (NHS, FCA, GDS)",
             "FCA FinTech at scale (3+ product teams)",
             "Legacy — not for new UK builds"
@@ -12478,11 +12478,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "When should a UK FinTech move from modular monolith to microservices?",
-        "answer": "Move from modular monolith to microservices when: (1) multiple engineering teams need independent deployment of different FCA IBS domains (payment team and account team deploying independently — modular monolith deployment blocks both), (2) a specific module has significantly higher scaling requirements than others (payment processing needs 10× the resources of customer support — independent scaling saves cost), (3) FCA PS21/3 Impact Tolerance evidence is clearer with fully independent failure domains (modular monolith in one deployment — a single buggy deploy could affect all IBSs simultaneously). Do NOT move to microservices: because a technical architect read a blog post about Netflix. Netflix has 2,000+ engineers. Most UK FinTechs have 15. ClickMasters recommendation: grow into microservices, do not start with them."
+        "answer": "Move from modular monolith to microservices when: (1) multiple engineering teams need independent deployment of different FCA IBS domains (payment team and account team deploying independently — modular monolith deployment blocks both), (2) a specific module has significantly higher scaling requirements than others (payment processing needs 10× the resources of customer support — independent scaling saves cost), (3) FCA PS21/3 Impact Tolerance evidence is clearer with fully independent failure domains (modular monolith in one deployment — a single buggy deploy could affect all IBSs simultaneously). Do NOT move to microservices: because a technical architect read a blog post about Netflix. Netflix has 2,000+ engineers. Most UK FinTechs have 15. Clickmasters recommendation: grow into microservices, do not start with them."
       },
       {
         "question": "Does NHS DTAC prefer monolith or microservices?",
-        "answer": "NHS DTAC has no architectural preference — DTAC assesses the product as a whole regardless of architecture. DTAC practical considerations: (1) microservices produce more complex evidence packs (one data flow diagram per service, separate penetration test scope, per-service ROPA items), (2) modular monolith produces simpler evidence (one data flow, one penetration test scope, one ROPA), (3) IEC 62304 traceability is cleaner in a modular monolith (one software system, clear module = software item decomposition), (4) GDS assessment: GDS explicitly warns against microservices complexity for small government digital teams. ClickMasters delivers DTAC-compliant architectures in both patterns — modular monolith produces less DTAC evidence overhead."
+        "answer": "NHS DTAC has no architectural preference — DTAC assesses the product as a whole regardless of architecture. DTAC practical considerations: (1) microservices produce more complex evidence packs (one data flow diagram per service, separate penetration test scope, per-service ROPA items), (2) modular monolith produces simpler evidence (one data flow, one penetration test scope, one ROPA), (3) IEC 62304 traceability is cleaner in a modular monolith (one software system, clear module = software item decomposition), (4) GDS assessment: GDS explicitly warns against microservices complexity for small government digital teams. Clickmasters delivers DTAC-compliant architectures in both patterns — modular monolith produces less DTAC evidence overhead."
       }
     ],
     "relatedPages": [
@@ -12508,11 +12508,11 @@ export const comparisons = [
     "topic": "tailwind_vs_css_modules_vs_styled_components_",
     "year": "2025",
     "title": "Tailwind CSS vs CSS Modules vs Styled Components — UK Frontend Styling (2026)",
-    "metaTitle": "Tailwind CSS vs CSS Modules vs Styled Components — UK Frontend (2026) | ClickMasters",
+    "metaTitle": "Tailwind CSS vs CSS Modules vs Styled Components — UK Frontend (2026) | Clickmasters",
     "metaDesc": "Tailwind CSS is the UK default for new frontend projects in 2026: fastest development speed, consistent design system enforcement, and no CSS-in-JS runtime over",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -12581,7 +12581,7 @@ export const comparisons = [
             "JS bundle includes styles"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All new UK React/Next.js projects",
             "Component library development",
             "Legacy projects only"
@@ -12593,11 +12593,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Is Tailwind CSS compatible with NHS Design System and GOV.UK Design System?",
-        "answer": "NHS Design System and GOV.UK Design System ship their own CSS (NHSUK Frontend CSS and GOV.UK Frontend CSS). These are standalone CSS frameworks — not Tailwind-based. Integration approach: (1) import NHS/GOV.UK Frontend CSS as-is (do not override with Tailwind — this breaks the Design System), (2) use Tailwind only for custom components outside the Design System scope (custom layouts, non-DS components), (3) configure Tailwind preflight: false (prevents Tailwind base styles overriding NHS/GOV.UK base styles). ClickMasters NHS projects: NHSUK Frontend as primary CSS, Tailwind for supplementary components with prefix (e.g., tw-) to avoid conflicts. GOV.UK projects: equivalent approach with govuk-frontend. Never use Tailwind to recreate NHS or GOV.UK Design System components — use the official components."
+        "answer": "NHS Design System and GOV.UK Design System ship their own CSS (NHSUK Frontend CSS and GOV.UK Frontend CSS). These are standalone CSS frameworks — not Tailwind-based. Integration approach: (1) import NHS/GOV.UK Frontend CSS as-is (do not override with Tailwind — this breaks the Design System), (2) use Tailwind only for custom components outside the Design System scope (custom layouts, non-DS components), (3) configure Tailwind preflight: false (prevents Tailwind base styles overriding NHS/GOV.UK base styles). Clickmasters NHS projects: NHSUK Frontend as primary CSS, Tailwind for supplementary components with prefix (e.g., tw-) to avoid conflicts. GOV.UK projects: equivalent approach with govuk-frontend. Never use Tailwind to recreate NHS or GOV.UK Design System components — use the official components."
       },
       {
         "question": "Does Styled Components work with React Server Components in 2026?",
-        "answer": "Styled Components does not work with React Server Components (RSC) in Next.js 14/15 App Router. RSC runs on the server — no browser runtime, no JavaScript execution. Styled Components requires a JavaScript runtime to inject CSS — incompatible with RSC. Implications for UK projects: (1) App Router pages using Styled Components must be client components ('use client') — losing RSC performance benefits, (2) server-rendered pages with Styled Components cannot use App Router layouts efficiently, (3) LCP performance impact — client-side CSS injection adds time to first paint. ClickMasters position: Styled Components is a legacy choice for new Next.js 14+ projects. Migrate existing Styled Components codebases to Tailwind or CSS Modules when upgrading to App Router. The React team's RSC direction makes CSS-in-JS runtime libraries incompatible with the future of React."
+        "answer": "Styled Components does not work with React Server Components (RSC) in Next.js 14/15 App Router. RSC runs on the server — no browser runtime, no JavaScript execution. Styled Components requires a JavaScript runtime to inject CSS — incompatible with RSC. Implications for UK projects: (1) App Router pages using Styled Components must be client components ('use client') — losing RSC performance benefits, (2) server-rendered pages with Styled Components cannot use App Router layouts efficiently, (3) LCP performance impact — client-side CSS injection adds time to first paint. Clickmasters position: Styled Components is a legacy choice for new Next.js 14+ projects. Migrate existing Styled Components codebases to Tailwind or CSS Modules when upgrading to App Router. The React team's RSC direction makes CSS-in-JS runtime libraries incompatible with the future of React."
       }
     ],
     "relatedPages": [
@@ -12623,11 +12623,11 @@ export const comparisons = [
     "topic": "redis_vs_memcached_vs_dynamodb_dax_uk_2026",
     "year": "2026",
     "title": "Redis vs Memcached vs DynamoDB DAX — UK Application Caching (2026)",
-    "metaTitle": "Redis vs Memcached vs DynamoDB DAX — UK Caching (2026) | ClickMasters",
+    "metaTitle": "Redis vs Memcached vs DynamoDB DAX — UK Caching (2026) | Clickmasters",
     "metaDesc": "Redis (AWS ElastiCache for Redis) is the UK default for application caching: richer data structures (sorted sets for leaderboards, pub/sub for real-time), persi",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -12690,7 +12690,7 @@ export const comparisons = [
             "DynamoDB pricing + DAX pricing"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All NHS/FCA/retail UK caching",
             "Simple non-critical caching",
             "DynamoDB-only architectures"
@@ -12702,11 +12702,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "How do we cache NHS patient data compliantly with Redis?",
-        "answer": "NHS patient data Redis caching: (1) never cache raw NHS patient records (full FHIR Patient resources with NHS number) in Redis without encryption — use AWS KMS encryption for ElastiCache at rest, (2) short TTL (15–30 minutes for active consultation data — patient demographics rarely change, but too long is GDPR risk), (3) invalidation on update (FHIR patient resource updated → Redis DEL patient:nhsNumber — immediate invalidation), (4) no persistent storage of personal data in Redis (Redis AOF/snapshots disabled for patient data cache — or encrypted snapshots to S3 with lifecycle policy), (5) NHS DTAC Domain 2: ElastiCache encryption at rest (AWS-managed key) documented in DPIA. ClickMasters NHS Redis configuration: KMS encryption, 15-minute TTL for patient data, immediate DEL on FHIR update webhook."
+        "answer": "NHS patient data Redis caching: (1) never cache raw NHS patient records (full FHIR Patient resources with NHS number) in Redis without encryption — use AWS KMS encryption for ElastiCache at rest, (2) short TTL (15–30 minutes for active consultation data — patient demographics rarely change, but too long is GDPR risk), (3) invalidation on update (FHIR patient resource updated → Redis DEL patient:nhsNumber — immediate invalidation), (4) no persistent storage of personal data in Redis (Redis AOF/snapshots disabled for patient data cache — or encrypted snapshots to S3 with lifecycle policy), (5) NHS DTAC Domain 2: ElastiCache encryption at rest (AWS-managed key) documented in DPIA. Clickmasters NHS Redis configuration: KMS encryption, 15-minute TTL for patient data, immediate DEL on FHIR update webhook."
       },
       {
         "question": "Should UK FinTech use Redis for FCA PS21/3 rate limiting?",
-        "answer": "Redis atomic operations (INCR, EXPIRE) are the standard for FCA-regulated API rate limiting: (1) Redis INCR per-customer-per-minute counter (atomic — no race condition), (2) EXPIRE sets counter TTL (60 seconds — counter resets after 1 minute), (3) if counter &gt; limit → 429 response (FCA PS21/3: rate limiting must not block legitimate IBS access — limit must be set above typical usage patterns), (4) CloudWatch metric (Redis cache hit rate + rate limit trigger events — IBS availability evidence). FCA PS21/3 caveat: rate limiting that blocks legitimate customer access to IBS is itself a PS21/3 availability failure — ClickMasters sets rate limits at 10× expected peak usage (generous — protects against DDoS, does not affect legitimate customers)."
+        "answer": "Redis atomic operations (INCR, EXPIRE) are the standard for FCA-regulated API rate limiting: (1) Redis INCR per-customer-per-minute counter (atomic — no race condition), (2) EXPIRE sets counter TTL (60 seconds — counter resets after 1 minute), (3) if counter &gt; limit → 429 response (FCA PS21/3: rate limiting must not block legitimate IBS access — limit must be set above typical usage patterns), (4) CloudWatch metric (Redis cache hit rate + rate limit trigger events — IBS availability evidence). FCA PS21/3 caveat: rate limiting that blocks legitimate customer access to IBS is itself a PS21/3 availability failure — Clickmasters sets rate limits at 10× expected peak usage (generous — protects against DDoS, does not affect legitimate customers)."
       }
     ],
     "relatedPages": [
@@ -12732,11 +12732,11 @@ export const comparisons = [
     "topic": "playwright_vs_cypress_vs_selenium_uk_2026",
     "year": "2026",
     "title": "Playwright vs Cypress vs Selenium — UK End-to-End Testing (2026)",
-    "metaTitle": "Playwright vs Cypress vs Selenium — UK E2E Testing (2026) | ClickMasters",
-    "metaDesc": "Playwright is ClickMasters' default for E2E testing in 2026: multi-browser (Chromium, Firefox, WebKit — Cypress is Chromium-only), faster execution (parallel te",
+    "metaTitle": "Playwright vs Cypress vs Selenium — UK E2E Testing (2026) | Clickmasters",
+    "metaDesc": "Playwright is Clickmasters' default for E2E testing in 2026: multi-browser (Chromium, Firefox, WebKit — Cypress is Chromium-only), faster execution (parallel te",
     "lastUpdated": "March 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -12745,7 +12745,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Playwright is ClickMasters' default for E2E testing in 2026: multi-browser (Chromium, Firefox, WebKit — Cypress is Chromium-only), faster execution (parallel tests across browsers), and NHS DTAC-compatible (Playwright Trace Viewer generates detailed test evidence). Cypress is right for component testing within React (Cypress Component Testing is genuinely excellent — better than Playwright for isolated React component tests). Selenium is legacy — new UK projects should use Playwright. E2E testing framework choice affects NHS DTAC Domain 3 test evidence quality, Cyber Essentials Annex A2 patch verification, and WCAG 2.1 AA automated accessibility testing.",
+    "directAnswer": "Playwright is Clickmasters' default for E2E testing in 2026: multi-browser (Chromium, Firefox, WebKit — Cypress is Chromium-only), faster execution (parallel tests across browsers), and NHS DTAC-compatible (Playwright Trace Viewer generates detailed test evidence). Cypress is right for component testing within React (Cypress Component Testing is genuinely excellent — better than Playwright for isolated React component tests). Selenium is legacy — new UK projects should use Playwright. E2E testing framework choice affects NHS DTAC Domain 3 test evidence quality, Cyber Essentials Annex A2 patch verification, and WCAG 2.1 AA automated accessibility testing.",
     "comparisonTables": [
       {
         "title": "",
@@ -12798,7 +12798,7 @@ export const comparisons = [
             "✅ Best — Cypress Component Testing"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All E2E, API, and accessibility testing",
             "React component unit/integration tests",
             "Legacy projects only"
@@ -12810,11 +12810,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "How do we generate DTAC Domain 3 test evidence with Playwright?",
-        "answer": "NHS DTAC Domain 3 test evidence from Playwright: (1) Playwright Trace Viewer (trace: on-first-retry) — captures full test execution video, network requests, console logs, and screenshots at each step. DTAC assessors can review exactly what the test tested. (2) axe-playwright accessibility scan — inject axe-core into every Playwright test page, automatically report WCAG 2.1 AA violations with specific element reference. (3) GitHub Actions artefact — upload Playwright HTML report (include traces and screenshots) as CI/CD artefact, retained 90 days — DTAC assessors can access. (4) Test naming convention — each E2E test named after the user story or DCB0129 mitigation it validates ('SR-045: dose calculator prevents overdose') — traceability to IEC 62304 requirements. ClickMasters generates DTAC Domain 3 test evidence pack from Playwright artefacts automatically."
+        "answer": "NHS DTAC Domain 3 test evidence from Playwright: (1) Playwright Trace Viewer (trace: on-first-retry) — captures full test execution video, network requests, console logs, and screenshots at each step. DTAC assessors can review exactly what the test tested. (2) axe-playwright accessibility scan — inject axe-core into every Playwright test page, automatically report WCAG 2.1 AA violations with specific element reference. (3) GitHub Actions artefact — upload Playwright HTML report (include traces and screenshots) as CI/CD artefact, retained 90 days — DTAC assessors can access. (4) Test naming convention — each E2E test named after the user story or DCB0129 mitigation it validates ('SR-045: dose calculator prevents overdose') — traceability to IEC 62304 requirements. Clickmasters generates DTAC Domain 3 test evidence pack from Playwright artefacts automatically."
       },
       {
         "question": "Should UK projects test with Firefox and Safari as well as Chrome?",
-        "answer": "Yes — for UK regulated applications. WCAG 2.1 AA (NHS DTAC Domain 5, PSBAR): \"must work for all users\" includes users on Safari (iOS — 20% of UK mobile traffic) and Firefox (5% of UK desktop). Playwright multi-browser: test critical user journeys in Chromium, Firefox, and WebKit (Safari) in CI/CD. NHS NHS Design System: NHSUK Frontend tests in all 3 browsers — some CSS rendering differences in Safari require specific fixes. GOV.UK Design System: GDS tests in all major browsers — including iOS Safari (elderly population uses iPhones heavily — government digital services must work on iOS). ClickMasters CI/CD: Playwright runs Chromium in every PR (fast feedback), Firefox and WebKit in nightly scheduled runs (slower — catches browser-specific issues before they reach production)."
+        "answer": "Yes — for UK regulated applications. WCAG 2.1 AA (NHS DTAC Domain 5, PSBAR): \"must work for all users\" includes users on Safari (iOS — 20% of UK mobile traffic) and Firefox (5% of UK desktop). Playwright multi-browser: test critical user journeys in Chromium, Firefox, and WebKit (Safari) in CI/CD. NHS NHS Design System: NHSUK Frontend tests in all 3 browsers — some CSS rendering differences in Safari require specific fixes. GOV.UK Design System: GDS tests in all major browsers — including iOS Safari (elderly population uses iPhones heavily — government digital services must work on iOS). Clickmasters CI/CD: Playwright runs Chromium in every PR (fast feedback), Firefox and WebKit in nightly scheduled runs (slower — catches browser-specific issues before they reach production)."
       }
     ],
     "relatedPages": [
@@ -12840,11 +12840,11 @@ export const comparisons = [
     "topic": "figma_vs_adobe_xd_vs_sketch_uk_2026",
     "year": "2026",
     "title": "Figma vs Adobe XD vs Sketch — UK Design Tools (2026)",
-    "metaTitle": "Figma vs Adobe XD vs Sketch — UK Design Tools (2026) | ClickMasters",
+    "metaTitle": "Figma vs Adobe XD vs Sketch — UK Design Tools (2026) | Clickmasters",
     "metaDesc": "Figma is the universal UK standard for UI/UX design in 2026 — browser-based (no OS restriction), real-time collaboration (designer + developer + stakeholder in",
     "lastUpdated": "April 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -12913,7 +12913,7 @@ export const comparisons = [
             "macOS only"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All UK projects",
             "Legacy files only",
             "Legacy files only"
@@ -12925,11 +12925,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Figma have the GOV.UK and NHS Design System components?",
-        "answer": "Yes — both the GOV.UK Design System and NHS Digital publish official Figma community libraries. GOV.UK Frontend: GOV.UK publishes the \"GOV.UK Frontend\" Figma community file — all Design System components (buttons, form fields, error messages, notifications) as Figma components. NHS Design System: NHS Digital publishes the \"NHS.UK Frontend\" Figma community file — NHSUK Frontend components pre-built in Figma. Both are maintained alongside the code libraries — component updates in the code are reflected in Figma. ClickMasters workflow: GDS projects → duplicate GOV.UK Frontend Figma library → design with official components → developers implement with identical govuk-frontend code components. No design-to-code translation gap."
+        "answer": "Yes — both the GOV.UK Design System and NHS Digital publish official Figma community libraries. GOV.UK Frontend: GOV.UK publishes the \"GOV.UK Frontend\" Figma community file — all Design System components (buttons, form fields, error messages, notifications) as Figma components. NHS Design System: NHS Digital publishes the \"NHS.UK Frontend\" Figma community file — NHSUK Frontend components pre-built in Figma. Both are maintained alongside the code libraries — component updates in the code are reflected in Figma. Clickmasters workflow: GDS projects → duplicate GOV.UK Frontend Figma library → design with official components → developers implement with identical govuk-frontend code components. No design-to-code translation gap."
       },
       {
         "question": "Is Adobe XD still used in UK design teams?",
-        "answer": "Adobe XD was discontinued by Adobe in March 2023 — Adobe officially ended development and removed it from the Creative Cloud subscription. UK design teams who were using XD have migrated to Figma. ClickMasters position: ClickMasters does not use Adobe XD for any new work. For clients with legacy XD files, we export them to Figma (Figma has an XD import feature — imperfect but functional for most files). For NHS and GDS projects: the official component libraries are Figma-only — starting with XD is not viable. If a client requests XD, we explain the situation and recommend Figma — the industry has converged."
+        "answer": "Adobe XD was discontinued by Adobe in March 2023 — Adobe officially ended development and removed it from the Creative Cloud subscription. UK design teams who were using XD have migrated to Figma. Clickmasters position: Clickmasters does not use Adobe XD for any new work. For clients with legacy XD files, we export them to Figma (Figma has an XD import feature — imperfect but functional for most files). For NHS and GDS projects: the official component libraries are Figma-only — starting with XD is not viable. If a client requests XD, we explain the situation and recommend Figma — the industry has converged."
       }
     ],
     "relatedPages": [
@@ -12955,11 +12955,11 @@ export const comparisons = [
     "topic": "intercom_vs_zendesk_vs_freshdesk_uk_2026",
     "year": "2026",
     "title": "Intercom vs Zendesk vs Freshdesk — UK Customer Support (2026)",
-    "metaTitle": "Intercom vs Zendesk vs Freshdesk — UK Customer Support Software (2026) | ClickMasters",
+    "metaTitle": "Intercom vs Zendesk vs Freshdesk — UK Customer Support Software (2026) | Clickmasters",
     "metaDesc": "Intercom is right for UK product-led SaaS (in-app messaging, proactive outreach, chatbot — best for digital-first, low-touch support models). Zendesk is right f",
     "lastUpdated": "April 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -13022,7 +13022,7 @@ export const comparisons = [
             "Good REST API"
           ],
           [
-            "ClickMasters integration",
+            "Clickmasters integration",
             "✅ PLG SaaS products (in-app support)",
             "Enterprise + FCA regulated (full ticketing)",
             "SME products (cost-effective)"
@@ -13034,11 +13034,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Which support tool best satisfies FCA Consumer Duty for UK FinTech?",
-        "answer": "FCA Consumer Duty Consumer Support outcome: support must be accessible, timely, and not create barriers. Support tool requirements for FCA: (1) accessible channels (not just email — phone for complex issues, chat for quick queries), (2) response time SLAs (FCA expects prompt responses — Zendesk SLA rules enforce response targets), (3) vulnerable customer identification (customer support staff must identify and support vulnerable customers — Zendesk has agent guidance prompts and case routing for vulnerable customers), (4) complaint routing (DISP-compliant complaint handling — Zendesk ticket workflow maps to FCA DISP stages), (5) DSAR handling (customers can request their support data — Zendesk DSAR export feature). ClickMasters implements Zendesk for all FCA Consumer Duty-critical customer support builds — comprehensive enough to evidence Consumer Duty compliance."
+        "answer": "FCA Consumer Duty Consumer Support outcome: support must be accessible, timely, and not create barriers. Support tool requirements for FCA: (1) accessible channels (not just email — phone for complex issues, chat for quick queries), (2) response time SLAs (FCA expects prompt responses — Zendesk SLA rules enforce response targets), (3) vulnerable customer identification (customer support staff must identify and support vulnerable customers — Zendesk has agent guidance prompts and case routing for vulnerable customers), (4) complaint routing (DISP-compliant complaint handling — Zendesk ticket workflow maps to FCA DISP stages), (5) DSAR handling (customers can request their support data — Zendesk DSAR export feature). Clickmasters implements Zendesk for all FCA Consumer Duty-critical customer support builds — comprehensive enough to evidence Consumer Duty compliance."
       },
       {
         "question": "Is Intercom GDPR compliant for UK regulated applications?",
-        "answer": "Intercom GDPR compliance: Intercom offers EU data residency (workspace data stored in EU — Frankfurt region). UK GDPR: Intercom provides a UK GDPR-compliant Data Processing Agreement (DPA) — available in Intercom settings. Article 28 processor: Intercom acts as data processor when processing UK customer data. Data minimisation: Intercom collects customer behaviour data (page views, events) — for NHS or FCA regulated applications, ClickMasters configures Intercom to collect only necessary data (no NHS patient data, no financial account data in Intercom). NHS applications: Intercom is not appropriate for NHS patient-facing clinical applications (DTAC Domain 2 — patient data must not be sent to third-party SaaS). NHS admin staff tools: Intercom is acceptable if no patient data enters the Intercom conversation."
+        "answer": "Intercom GDPR compliance: Intercom offers EU data residency (workspace data stored in EU — Frankfurt region). UK GDPR: Intercom provides a UK GDPR-compliant Data Processing Agreement (DPA) — available in Intercom settings. Article 28 processor: Intercom acts as data processor when processing UK customer data. Data minimisation: Intercom collects customer behaviour data (page views, events) — for NHS or FCA regulated applications, Clickmasters configures Intercom to collect only necessary data (no NHS patient data, no financial account data in Intercom). NHS applications: Intercom is not appropriate for NHS patient-facing clinical applications (DTAC Domain 2 — patient data must not be sent to third-party SaaS). NHS admin staff tools: Intercom is acceptable if no patient data enters the Intercom conversation."
       }
     ],
     "relatedPages": [
@@ -13064,11 +13064,11 @@ export const comparisons = [
     "topic": "linear_vs_jira_vs_trello_uk_project_managemen",
     "year": "2025",
     "title": "Linear vs Jira vs Trello — UK Engineering Project Management (2026)",
-    "metaTitle": "Linear vs Jira vs Trello — UK Project Management (2026) | ClickMasters",
-    "metaDesc": "Linear is ClickMasters' default for software engineering teams: faster than Jira, excellent GitHub integration (automatic issue status from PR branches), and de",
+    "metaTitle": "Linear vs Jira vs Trello — UK Project Management (2026) | Clickmasters",
+    "metaDesc": "Linear is Clickmasters' default for software engineering teams: faster than Jira, excellent GitHub integration (automatic issue status from PR branches), and de",
     "lastUpdated": "April 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -13077,7 +13077,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Linear is ClickMasters' default for software engineering teams: faster than Jira, excellent GitHub integration (automatic issue status from PR branches), and designed for modern software teams. Jira is right for large enterprises needing complex workflows, FCA change management audit trail (Jira Advanced Roadmaps + Jira Service Management), or existing Atlassian ecosystems. Trello is right for simple Kanban boards and non-engineering teams. Project management tool choice affects FCA PS21/3 change management traceability, GDS Alpha/Beta delivery transparency, and engineering team velocity.",
+    "directAnswer": "Linear is Clickmasters' default for software engineering teams: faster than Jira, excellent GitHub integration (automatic issue status from PR branches), and designed for modern software teams. Jira is right for large enterprises needing complex workflows, FCA change management audit trail (Jira Advanced Roadmaps + Jira Service Management), or existing Atlassian ecosystems. Trello is right for simple Kanban boards and non-engineering teams. Project management tool choice affects FCA PS21/3 change management traceability, GDS Alpha/Beta delivery transparency, and engineering team velocity.",
     "comparisonTables": [
       {
         "title": "",
@@ -13137,8 +13137,8 @@ export const comparisons = [
             "Free tier / ~£5/user"
           ],
           [
-            "ClickMasters default",
-            "✅ All ClickMasters engineering projects",
+            "Clickmasters default",
+            "✅ All Clickmasters engineering projects",
             "Enterprise/NHS/FCA requiring deep audit",
             "Non-engineering teams"
           ]
@@ -13149,11 +13149,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Jira satisfy FCA PS21/3 change management requirements?",
-        "answer": "Jira + Jira Service Management satisfies FCA PS21/3 change management: (1) Jira Software (development tracking — every change has a Jira ticket, linked to GitHub PR, linked to deployment), (2) Jira Service Management (Change Advisory Board — change requests routed to CAB for approval before production deploy), (3) Jira Audit Log (immutable record of every issue state change, comment, and approval — FCA evidence), (4) Jira Advanced Roadmaps (release planning — which changes go into which release — PS21/3 release management evidence). GitHub-Jira integration: every production deployment references a Jira release — FCA can review: what changed, who approved, when deployed. ClickMasters PS21/3 Jira configuration: pre-built for FCA-regulated clients — available as starting template."
+        "answer": "Jira + Jira Service Management satisfies FCA PS21/3 change management: (1) Jira Software (development tracking — every change has a Jira ticket, linked to GitHub PR, linked to deployment), (2) Jira Service Management (Change Advisory Board — change requests routed to CAB for approval before production deploy), (3) Jira Audit Log (immutable record of every issue state change, comment, and approval — FCA evidence), (4) Jira Advanced Roadmaps (release planning — which changes go into which release — PS21/3 release management evidence). GitHub-Jira integration: every production deployment references a Jira release — FCA can review: what changed, who approved, when deployed. Clickmasters PS21/3 Jira configuration: pre-built for FCA-regulated clients — available as starting template."
       },
       {
         "question": "Is Linear suitable for NHS clinical software delivery?",
-        "answer": "Linear is suitable for NHS clinical software development teams as a project management tool. IEC 62304 traceability: Linear issues can be linked to GitHub commits and PRs (GitHub integration native) — requirement ID in issue title + branch name creates traceability. DTAC Domain 3 evidence: Linear cycle completion reports + GitHub PR reports provide sprint evidence. Limitations: Linear does not have built-in IEC 62304 traceability fields or DTAC evidence templates. ClickMasters NHS Linear setup: custom issue types (Requirement, Design, Implementation, Test) + custom properties (IEC 62304 classification, DCB0129 hazard reference) + GitHub integration = IEC 62304-compatible workflow in Linear. For NHS teams requiring dedicated quality management system (QMS): Jira with Xray for test management is the more mature choice."
+        "answer": "Linear is suitable for NHS clinical software development teams as a project management tool. IEC 62304 traceability: Linear issues can be linked to GitHub commits and PRs (GitHub integration native) — requirement ID in issue title + branch name creates traceability. DTAC Domain 3 evidence: Linear cycle completion reports + GitHub PR reports provide sprint evidence. Limitations: Linear does not have built-in IEC 62304 traceability fields or DTAC evidence templates. Clickmasters NHS Linear setup: custom issue types (Requirement, Design, Implementation, Test) + custom properties (IEC 62304 classification, DCB0129 hazard reference) + GitHub integration = IEC 62304-compatible workflow in Linear. For NHS teams requiring dedicated quality management system (QMS): Jira with Xray for test management is the more mature choice."
       }
     ],
     "relatedPages": [
@@ -13179,11 +13179,11 @@ export const comparisons = [
     "topic": "notion_vs_confluence_vs_google_docs_uk_2026",
     "year": "2026",
     "title": "Notion vs Confluence vs Google Docs — UK Team Documentation (2026)",
-    "metaTitle": "Notion vs Confluence vs Google Docs — UK Documentation (2026) | ClickMasters",
+    "metaTitle": "Notion vs Confluence vs Google Docs — UK Documentation (2026) | Clickmasters",
     "metaDesc": "Confluence is the right documentation tool for UK regulated projects (NHS, FCA, GDS) — integrated with Jira, supports IEC 62304 document control requirements, a",
     "lastUpdated": "April 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -13252,7 +13252,7 @@ export const comparisons = [
             "Free (Google Workspace)"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ NHS/FCA/GDS regulated projects + all projects with Jira",
             "Product teams, startups, flexible wikis",
             "Collaborative writing (specs, proposals)"
@@ -13264,11 +13264,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Confluence satisfy IEC 62304 document control requirements?",
-        "answer": "Confluence satisfies most IEC 62304 document control requirements: (1) version history (every Confluence page has a complete version history — who edited, when, what changed), (2) page restrictions (set pages as view-only once approved — prevents accidental editing of approved IEC 62304 documents), (3) approval workflow (Confluence Approvals plugin or Jira workflow — page requires approval before being marked final), (4) change history table (ClickMasters template — document version, date, author, change description at top of every IEC 62304 document). Limitation: Confluence does not have a purpose-built quality management system (QMS). For IEC 62304 Class B/C software with MHRA scrutiny, a dedicated QMS (MasterControl, Veeva Vault, Qualio) may be required. ClickMasters uses Confluence for IEC 62304 Class A software and Class B software with lower audit intensity."
+        "answer": "Confluence satisfies most IEC 62304 document control requirements: (1) version history (every Confluence page has a complete version history — who edited, when, what changed), (2) page restrictions (set pages as view-only once approved — prevents accidental editing of approved IEC 62304 documents), (3) approval workflow (Confluence Approvals plugin or Jira workflow — page requires approval before being marked final), (4) change history table (Clickmasters template — document version, date, author, change description at top of every IEC 62304 document). Limitation: Confluence does not have a purpose-built quality management system (QMS). For IEC 62304 Class B/C software with MHRA scrutiny, a dedicated QMS (MasterControl, Veeva Vault, Qualio) may be required. Clickmasters uses Confluence for IEC 62304 Class A software and Class B software with lower audit intensity."
       },
       {
         "question": "Is Notion GDPR compliant for UK health data documentation?",
-        "answer": "Notion EU data residency: Notion launched EU data residency in 2023 — workspace data stored in EU (Frankfurt). UK GDPR: Notion provides a DPA (Data Processing Agreement) — available in account settings. For NHS technical documentation in Notion: (1) never put real patient data in Notion (technical architecture documents should use synthetic data examples), (2) Notion DPA signed — Notion acts as data processor for any personal data in workspace, (3) Notion EU region selected at workspace creation. DTAC Domain 2 consideration: if Notion contains personal health data (e.g., user research notes with patient quotes), the DPA must cover Article 9 special category data. ClickMasters uses Confluence for NHS project documentation (technical docs, design docs, IEC 62304) — Notion for non-patient-data content (meeting notes, research synthesis with anonymised quotes)."
+        "answer": "Notion EU data residency: Notion launched EU data residency in 2023 — workspace data stored in EU (Frankfurt). UK GDPR: Notion provides a DPA (Data Processing Agreement) — available in account settings. For NHS technical documentation in Notion: (1) never put real patient data in Notion (technical architecture documents should use synthetic data examples), (2) Notion DPA signed — Notion acts as data processor for any personal data in workspace, (3) Notion EU region selected at workspace creation. DTAC Domain 2 consideration: if Notion contains personal health data (e.g., user research notes with patient quotes), the DPA must cover Article 9 special category data. Clickmasters uses Confluence for NHS project documentation (technical docs, design docs, IEC 62304) — Notion for non-patient-data content (meeting notes, research synthesis with anonymised quotes)."
       }
     ],
     "relatedPages": [
@@ -13294,11 +13294,11 @@ export const comparisons = [
     "topic": "aws_rds_vs_aurora_vs_dynamodb_uk_2026",
     "year": "2026",
     "title": "AWS RDS vs Aurora PostgreSQL vs DynamoDB — UK Database Hosting (2026)",
-    "metaTitle": "AWS RDS vs Aurora vs DynamoDB — UK Database Hosting (2026) | ClickMasters",
-    "metaDesc": "Aurora PostgreSQL is ClickMasters' default for UK production databases requiring high availability: 6-way replication across 3 AZs, automatic failover &lt; 30 seco",
+    "metaTitle": "AWS RDS vs Aurora vs DynamoDB — UK Database Hosting (2026) | Clickmasters",
+    "metaDesc": "Aurora PostgreSQL is Clickmasters' default for UK production databases requiring high availability: 6-way replication across 3 AZs, automatic failover &lt; 30 seco",
     "lastUpdated": "April 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -13307,7 +13307,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Aurora PostgreSQL is ClickMasters' default for UK production databases requiring high availability: 6-way replication across 3 AZs, automatic failover &lt; 30 seconds (vs RDS Multi-AZ 60–120 seconds), and FCA PS21/3 IBS resilience. RDS PostgreSQL is right for simpler workloads or cost-sensitive environments where Aurora premium is not justified. DynamoDB is right for high-throughput key-value access at millisecond latency — not a relational database replacement. AWS database choice affects NHS DTAC data residency, FCA PS21/3 failover time, UK GDPR encryption at rest, and operational cost.",
+    "directAnswer": "Aurora PostgreSQL is Clickmasters' default for UK production databases requiring high availability: 6-way replication across 3 AZs, automatic failover &lt; 30 seconds (vs RDS Multi-AZ 60–120 seconds), and FCA PS21/3 IBS resilience. RDS PostgreSQL is right for simpler workloads or cost-sensitive environments where Aurora premium is not justified. DynamoDB is right for high-throughput key-value access at millisecond latency — not a relational database replacement. AWS database choice affects NHS DTAC data residency, FCA PS21/3 failover time, UK GDPR encryption at rest, and operational cost.",
     "comparisonTables": [
       {
         "title": "",
@@ -13361,7 +13361,7 @@ export const comparisons = [
             "✅ Native serverless — scale to zero"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All NHS/FCA production (HA required)",
             "Dev/staging, cost-sensitive non-critical",
             "High-throughput key-value (sessions, caching)"
@@ -13373,11 +13373,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Aurora PostgreSQL satisfy NHS DTAC for clinical data?",
-        "answer": "Aurora PostgreSQL in eu-west-2 is the strongest NHS DTAC clinical database position: (1) 6 copies across 3 Availability Zones — Aurora storage is always replicated regardless of database instance state, (2) automated failover &lt; 30 seconds — NHS DTAC Domain 3 and clinical continuity requirements, (3) automatic backup to S3 (eu-west-2) — 7-day point-in-time recovery, (4) encryption at rest (KMS — AWS-managed or customer-managed key), (5) VPC private subnet (no public internet access to clinical database — DTAC Domain 3). ClickMasters NHS Aurora configuration: Multi-AZ enabled, deletion protection enabled, enhanced monitoring, CloudWatch Performance Insights, and automated minor version upgrades (Cyber Essentials patching)."
+        "answer": "Aurora PostgreSQL in eu-west-2 is the strongest NHS DTAC clinical database position: (1) 6 copies across 3 Availability Zones — Aurora storage is always replicated regardless of database instance state, (2) automated failover &lt; 30 seconds — NHS DTAC Domain 3 and clinical continuity requirements, (3) automatic backup to S3 (eu-west-2) — 7-day point-in-time recovery, (4) encryption at rest (KMS — AWS-managed or customer-managed key), (5) VPC private subnet (no public internet access to clinical database — DTAC Domain 3). Clickmasters NHS Aurora configuration: Multi-AZ enabled, deletion protection enabled, enhanced monitoring, CloudWatch Performance Insights, and automated minor version upgrades (Cyber Essentials patching)."
       },
       {
         "question": "When should UK projects use DynamoDB instead of PostgreSQL/Aurora?",
-        "answer": "DynamoDB replaces PostgreSQL for: (1) session management (user sessions — simple key-value, high throughput, short TTL — DynamoDB TTL attribute auto-expires sessions), (2) real-time leaderboards (DynamoDB Sorted Sets for gaming/engagement features), (3) IoT device state (device shadow — current device status, millisecond reads for 10,000+ concurrent devices), (4) e-commerce cart (shopping cart — key per user, fast reads, infrequent writes), (5) rate limiting (DynamoDB atomic counters — rate limit per customer per minute). DynamoDB is NOT a replacement for PostgreSQL as your primary application database — it has no joins, no ACID transactions across multiple items without additional complexity, and no full-text search. ClickMasters: PostgreSQL (Aurora) for application data, DynamoDB for auxiliary high-throughput key-value needs."
+        "answer": "DynamoDB replaces PostgreSQL for: (1) session management (user sessions — simple key-value, high throughput, short TTL — DynamoDB TTL attribute auto-expires sessions), (2) real-time leaderboards (DynamoDB Sorted Sets for gaming/engagement features), (3) IoT device state (device shadow — current device status, millisecond reads for 10,000+ concurrent devices), (4) e-commerce cart (shopping cart — key per user, fast reads, infrequent writes), (5) rate limiting (DynamoDB atomic counters — rate limit per customer per minute). DynamoDB is NOT a replacement for PostgreSQL as your primary application database — it has no joins, no ACID transactions across multiple items without additional complexity, and no full-text search. Clickmasters: PostgreSQL (Aurora) for application data, DynamoDB for auxiliary high-throughput key-value needs."
       }
     ],
     "relatedPages": [
@@ -13403,11 +13403,11 @@ export const comparisons = [
     "topic": "sentry_vs_datadog_vs_cloudwatch_uk_2026",
     "year": "2026",
     "title": "Sentry vs Datadog vs CloudWatch — UK Application Monitoring (2026)",
-    "metaTitle": "Sentry vs Datadog vs CloudWatch — UK Application Monitoring (2026) | ClickMasters",
-    "metaDesc": "CloudWatch (AWS) + Sentry is ClickMasters' default for UK regulated applications: CloudWatch for infrastructure metrics (FCA PS21/3 IBS availability monitoring,",
+    "metaTitle": "Sentry vs Datadog vs CloudWatch — UK Application Monitoring (2026) | Clickmasters",
+    "metaDesc": "CloudWatch (AWS) + Sentry is Clickmasters' default for UK regulated applications: CloudWatch for infrastructure metrics (FCA PS21/3 IBS availability monitoring,",
     "lastUpdated": "April 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -13416,7 +13416,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "CloudWatch (AWS) + Sentry is ClickMasters' default for UK regulated applications: CloudWatch for infrastructure metrics (FCA PS21/3 IBS availability monitoring, NHS DTAC audit trail), Sentry for application error tracking (developer-facing, excellent source maps). Datadog is right when you need unified observability across many services and are willing to pay for it. Never use Datadog exclusively for NHS/FCA applications — CloudWatch is mandatory for AWS audit trail compliance. Monitoring stack choice affects FCA PS21/3 IBS availability evidence, NHS DSP Toolkit Standard 9 (cyber attack response), UK GDPR (error logs may contain personal data), and operational cost.",
+    "directAnswer": "CloudWatch (AWS) + Sentry is Clickmasters' default for UK regulated applications: CloudWatch for infrastructure metrics (FCA PS21/3 IBS availability monitoring, NHS DTAC audit trail), Sentry for application error tracking (developer-facing, excellent source maps). Datadog is right when you need unified observability across many services and are willing to pay for it. Never use Datadog exclusively for NHS/FCA applications — CloudWatch is mandatory for AWS audit trail compliance. Monitoring stack choice affects FCA PS21/3 IBS availability evidence, NHS DSP Toolkit Standard 9 (cyber attack response), UK GDPR (error logs may contain personal data), and operational cost.",
     "comparisonTables": [
       {
         "title": "",
@@ -13470,7 +13470,7 @@ export const comparisons = [
             "✅ Best — metrics, logs, traces, profiling, APM"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All regulated UK applications (mandatory)",
             "All UK applications (alongside CloudWatch)",
             "Enterprise non-regulated with budget for it"
@@ -13482,11 +13482,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does CloudWatch satisfy FCA PS21/3 operational resilience monitoring?",
-        "answer": "CloudWatch satisfies FCA PS21/3 monitoring requirements: (1) CloudWatch Synthetics (external canary — polls IBS API endpoint every minute from outside the VPC, records availability from customer perspective — PS21/3 requires measuring IBS availability from customer viewpoint, not internal service health), (2) CloudWatch Alarms (alert on IBS availability &lt; 99.5% — immediate notification to on-call engineer), (3) CloudWatch Logs (immutable — every application log retained 90 days, exportable to S3 for FCA audit), (4) CloudWatch Dashboards (IBS availability metrics — submitted to Board quarterly as Impact Tolerance evidence), (5) AWS Health Dashboard (AWS service disruptions — PS21/3 requires tracking third-party (cloud) outages). ClickMasters configures all 5 as standard for FCA-regulated applications."
+        "answer": "CloudWatch satisfies FCA PS21/3 monitoring requirements: (1) CloudWatch Synthetics (external canary — polls IBS API endpoint every minute from outside the VPC, records availability from customer perspective — PS21/3 requires measuring IBS availability from customer viewpoint, not internal service health), (2) CloudWatch Alarms (alert on IBS availability &lt; 99.5% — immediate notification to on-call engineer), (3) CloudWatch Logs (immutable — every application log retained 90 days, exportable to S3 for FCA audit), (4) CloudWatch Dashboards (IBS availability metrics — submitted to Board quarterly as Impact Tolerance evidence), (5) AWS Health Dashboard (AWS service disruptions — PS21/3 requires tracking third-party (cloud) outages). Clickmasters configures all 5 as standard for FCA-regulated applications."
       },
       {
         "question": "Should Sentry logs contain customer personal data?",
-        "answer": "Sentry and UK GDPR: Sentry error reports can inadvertently contain personal data (error messages that include user email, stack traces with customer IDs, request payloads). UK GDPR requirements: (1) Sentry DPA must be signed (Sentry is a data processor), (2) Sentry data residency — Sentry EU (Frankfurt) required for GDPR compliance, (3) data scrubbing (Sentry has built-in PII scrubbing rules — configure to remove emails, credit card numbers, NHS numbers before sending to Sentry), (4) NHS clinical applications: never send any patient clinical data to Sentry — scrub all patient identifiable fields from error payloads. ClickMasters Sentry configuration: PII scrubbing enabled, Sentry EU region, DPA signed. For NHS clinical applications: additional scrubbing rules for NHS number, date of birth, clinical data fields."
+        "answer": "Sentry and UK GDPR: Sentry error reports can inadvertently contain personal data (error messages that include user email, stack traces with customer IDs, request payloads). UK GDPR requirements: (1) Sentry DPA must be signed (Sentry is a data processor), (2) Sentry data residency — Sentry EU (Frankfurt) required for GDPR compliance, (3) data scrubbing (Sentry has built-in PII scrubbing rules — configure to remove emails, credit card numbers, NHS numbers before sending to Sentry), (4) NHS clinical applications: never send any patient clinical data to Sentry — scrub all patient identifiable fields from error payloads. Clickmasters Sentry configuration: PII scrubbing enabled, Sentry EU region, DPA signed. For NHS clinical applications: additional scrubbing rules for NHS number, date of birth, clinical data fields."
       }
     ],
     "relatedPages": [
@@ -13512,11 +13512,11 @@ export const comparisons = [
     "topic": "nextjs_vs_remix_vs_astro_uk_fullstack_2026",
     "year": "2026",
     "title": "Next.js vs Remix vs Astro — UK Full-Stack React Framework (2026)",
-    "metaTitle": "Next.js vs Remix vs Astro — UK Full-Stack Framework (2026) | ClickMasters",
-    "metaDesc": "Next.js App Router is ClickMasters' default for all UK full-stack projects: the UK standard (GDS uses Next.js for government services, NHS for patient-facing ap",
+    "metaTitle": "Next.js vs Remix vs Astro — UK Full-Stack Framework (2026) | Clickmasters",
+    "metaDesc": "Next.js App Router is Clickmasters' default for all UK full-stack projects: the UK standard (GDS uses Next.js for government services, NHS for patient-facing ap",
     "lastUpdated": "May 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -13525,7 +13525,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "Next.js App Router is ClickMasters' default for all UK full-stack projects: the UK standard (GDS uses Next.js for government services, NHS for patient-facing apps), best ecosystem (Vercel, AWS via OpenNext), and React Server Components for performance. Remix is right for forms-heavy applications where progressive enhancement (works without JavaScript) is required — government digital forms, NHS clinical forms. Astro is right for content-heavy marketing sites where no JavaScript is the performance target. Framework choice affects Core Web Vitals (Google UK SEO ranking), GDS and NHS Design System compatibility, and deployment platform options.",
+    "directAnswer": "Next.js App Router is Clickmasters' default for all UK full-stack projects: the UK standard (GDS uses Next.js for government services, NHS for patient-facing apps), best ecosystem (Vercel, AWS via OpenNext), and React Server Components for performance. Remix is right for forms-heavy applications where progressive enhancement (works without JavaScript) is required — government digital forms, NHS clinical forms. Astro is right for content-heavy marketing sites where no JavaScript is the performance target. Framework choice affects Core Web Vitals (Google UK SEO ranking), GDS and NHS Design System compatibility, and deployment platform options.",
     "comparisonTables": [
       {
         "title": "",
@@ -13585,7 +13585,7 @@ export const comparisons = [
             "✅ First-class"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All UK full-stack applications",
             "Government forms, NHS clinical forms",
             "Content sites, documentation only"
@@ -13597,11 +13597,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does GDS recommend Next.js for government digital services?",
-        "answer": "GDS (Government Digital Service) does not mandate a specific framework but strongly influences adoption. Evidence of Next.js preference: (1) HMRC uses Next.js for several tax services, (2) Companies House digital service uses Next.js, (3) GOV.UK Frontend React (govuk-react) is a React component library — Next.js is the natural host, (4) GDS Service Standard Point 11 (choose right tools) cites large talent pool — Next.js has the largest UK developer pool. Remix consideration: GDS's own HTML-first, progressive enhancement philosophy (forms work without JavaScript — accessibility) aligns better with Remix than Next.js. ClickMasters GDS approach: Next.js App Router for most services (better ecosystem), Remix for services where JavaScript-free form submission is a hard requirement."
+        "answer": "GDS (Government Digital Service) does not mandate a specific framework but strongly influences adoption. Evidence of Next.js preference: (1) HMRC uses Next.js for several tax services, (2) Companies House digital service uses Next.js, (3) GOV.UK Frontend React (govuk-react) is a React component library — Next.js is the natural host, (4) GDS Service Standard Point 11 (choose right tools) cites large talent pool — Next.js has the largest UK developer pool. Remix consideration: GDS's own HTML-first, progressive enhancement philosophy (forms work without JavaScript — accessibility) aligns better with Remix than Next.js. Clickmasters GDS approach: Next.js App Router for most services (better ecosystem), Remix for services where JavaScript-free form submission is a hard requirement."
       },
       {
         "question": "Which framework do NHS patient-facing applications use?",
-        "answer": "NHS patient-facing applications: NHS App is React (React Native for mobile, React web). NHS Digital builds: Next.js is increasingly standard (NHS Login integration examples use Next.js, NHS FHIR R4 starter kits use Next.js). NHS UK Core FHIR R4 integration: Next.js App Router Server Components query NHS FHIR APIs server-side (no FHIR data in browser — security benefit — Article 9 health data not in client-side code). ClickMasters NHS Next.js setup: OpenNext deployed to ECS Fargate in eu-west-2 (NHS DTAC Domain 2 — patient data never leaves eu-west-2, not processed by Vercel US servers). Remix and Astro are not commonly used for NHS clinical applications — NHS Digital community knowledge is Next.js-centric."
+        "answer": "NHS patient-facing applications: NHS App is React (React Native for mobile, React web). NHS Digital builds: Next.js is increasingly standard (NHS Login integration examples use Next.js, NHS FHIR R4 starter kits use Next.js). NHS UK Core FHIR R4 integration: Next.js App Router Server Components query NHS FHIR APIs server-side (no FHIR data in browser — security benefit — Article 9 health data not in client-side code). Clickmasters NHS Next.js setup: OpenNext deployed to ECS Fargate in eu-west-2 (NHS DTAC Domain 2 — patient data never leaves eu-west-2, not processed by Vercel US servers). Remix and Astro are not commonly used for NHS clinical applications — NHS Digital community knowledge is Next.js-centric."
       }
     ],
     "relatedPages": [
@@ -13627,11 +13627,11 @@ export const comparisons = [
     "topic": "vercel_vs_aws_vs_netlify_uk_nextjs_hosting_20",
     "year": "2025",
     "title": "Vercel vs AWS (OpenNext) vs Netlify — UK Next.js Hosting (2026)",
-    "metaTitle": "Vercel vs AWS vs Netlify — UK Next.js Hosting (2026) | ClickMasters",
-    "metaDesc": "AWS via OpenNext is ClickMasters' default for all NHS and FCA Next.js applications: data stays in eu-west-2 (NHS DTAC Domain 2, FCA data residency), no third-pa",
+    "metaTitle": "Vercel vs AWS vs Netlify — UK Next.js Hosting (2026) | Clickmasters",
+    "metaDesc": "AWS via OpenNext is Clickmasters' default for all NHS and FCA Next.js applications: data stays in eu-west-2 (NHS DTAC Domain 2, FCA data residency), no third-pa",
     "lastUpdated": "May 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "🇬🇧 UK",
@@ -13640,7 +13640,7 @@ export const comparisons = [
       "🔒 UK GDPR",
       "⚖️ UK Law"
     ],
-    "directAnswer": "AWS via OpenNext is ClickMasters' default for all NHS and FCA Next.js applications: data stays in eu-west-2 (NHS DTAC Domain 2, FCA data residency), no third-party platform processes UK patient or financial data, and full AWS integration (CloudTrail audit, CloudWatch IBS monitoring). Vercel is right for non-regulated UK SaaS and marketing sites where developer experience and deployment speed matter most. Netlify is legacy for Next.js — Vercel and AWS are better choices. Hosting choice is a UK GDPR data residency decision: Vercel is a US company (patient data leaves UK for US infrastructure), AWS eu-west-2 keeps data in UK.",
+    "directAnswer": "AWS via OpenNext is Clickmasters' default for all NHS and FCA Next.js applications: data stays in eu-west-2 (NHS DTAC Domain 2, FCA data residency), no third-party platform processes UK patient or financial data, and full AWS integration (CloudTrail audit, CloudWatch IBS monitoring). Vercel is right for non-regulated UK SaaS and marketing sites where developer experience and deployment speed matter most. Netlify is legacy for Next.js — Vercel and AWS are better choices. Hosting choice is a UK GDPR data residency decision: Vercel is a US company (patient data leaves UK for US infrastructure), AWS eu-west-2 keeps data in UK.",
     "comparisonTables": [
       {
         "title": "",
@@ -13700,7 +13700,7 @@ export const comparisons = [
             "Netlify Edge Functions"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "✅ All NHS/FCA/regulated Next.js",
             "Non-regulated SaaS + marketing sites",
             "Legacy — prefer Vercel or AWS"
@@ -13712,11 +13712,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Vercel satisfy NHS DTAC for patient-facing Next.js applications?",
-        "answer": "Vercel for NHS patient-facing applications: Vercel is a US-headquartered company. Even with Vercel EU region, there is a data transfer to a US-headquartered third-party processor. NHS DTAC Domain 2 assessors have increasingly asked about third-party platform data processing — Vercel EU is GDPR-compliant (Article 28 DPA available) but is not the strongest position for NHS patient data. ClickMasters position: NHS patient-facing Next.js applications deploy to AWS eu-west-2 via OpenNext (ECS Fargate or Lambda@Edge) — same AWS account as all NHS clinical data, no third-party platform. NHS admin tools (non-patient-facing): Vercel EU is acceptable — no patient data in Vercel request logs."
+        "answer": "Vercel for NHS patient-facing applications: Vercel is a US-headquartered company. Even with Vercel EU region, there is a data transfer to a US-headquartered third-party processor. NHS DTAC Domain 2 assessors have increasingly asked about third-party platform data processing — Vercel EU is GDPR-compliant (Article 28 DPA available) but is not the strongest position for NHS patient data. Clickmasters position: NHS patient-facing Next.js applications deploy to AWS eu-west-2 via OpenNext (ECS Fargate or Lambda@Edge) — same AWS account as all NHS clinical data, no third-party platform. NHS admin tools (non-patient-facing): Vercel EU is acceptable — no patient data in Vercel request logs."
       },
       {
         "question": "Is OpenNext production-ready for UK regulated applications in 2026?",
-        "answer": "OpenNext v3 (2025) is production-ready and used by significant UK production workloads. Capabilities: Next.js App Router (RSC, Server Actions, Image Optimization, Middleware — all supported), ISR (incremental static regeneration on S3/CloudFront), streaming responses (Fastify + Lambda), and edge middleware (Lambda@Edge). Known limitations (2026): (1) App Router streaming is more complex than Vercel's optimised implementation, (2) some Next.js experimental features lag Vercel by 2–4 weeks. ClickMasters OpenNext production deployments: 8 NHS and FCA applications on OpenNext in production — zero production incidents related to OpenNext limitations. For regulated UK applications: OpenNext trade-offs (slightly higher infrastructure complexity) are worth the data residency and audit trail benefits."
+        "answer": "OpenNext v3 (2025) is production-ready and used by significant UK production workloads. Capabilities: Next.js App Router (RSC, Server Actions, Image Optimization, Middleware — all supported), ISR (incremental static regeneration on S3/CloudFront), streaming responses (Fastify + Lambda), and edge middleware (Lambda@Edge). Known limitations (2026): (1) App Router streaming is more complex than Vercel's optimised implementation, (2) some Next.js experimental features lag Vercel by 2–4 weeks. Clickmasters OpenNext production deployments: 8 NHS and FCA applications on OpenNext in production — zero production incidents related to OpenNext limitations. For regulated UK applications: OpenNext trade-offs (slightly higher infrastructure complexity) are worth the data residency and audit trail benefits."
       }
     ],
     "relatedPages": [
@@ -13742,11 +13742,11 @@ export const comparisons = [
     "topic": "trpc_vs_rest_vs_graphql_uk_api_2026",
     "year": "2026",
     "title": "tRPC vs REST vs GraphQL -- UK API Design (2026)",
-    "metaTitle": "tRPC vs REST vs GraphQL -- UK API Design 2026 | ClickMasters",
-    "metaDesc": "REST + OpenAPI 3.0 is the UK standard for external APIs -- NHS FHIR R4, FCA Open Banking, GDS, HMRC all use REST + OpenAPI 3.0. tRPC is ClickMasters default for",
+    "metaTitle": "tRPC vs REST vs GraphQL -- UK API Design 2026 | Clickmasters",
+    "metaDesc": "REST + OpenAPI 3.0 is the UK standard for external APIs -- NHS FHIR R4, FCA Open Banking, GDS, HMRC all use REST + OpenAPI 3.0. tRPC is Clickmasters default for",
     "lastUpdated": "May 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -13755,7 +13755,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "REST + OpenAPI 3.0 is the UK standard for external APIs -- NHS FHIR R4, FCA Open Banking, GDS, HMRC all use REST + OpenAPI 3.0. tRPC is ClickMasters default for internal TypeScript full-stack APIs (Next.js + Node.js -- zero boilerplate, end-to-end type safety). GraphQL is right for complex client-driven queries with multiple nested relationships -- not typically needed for UK regulated applications where REST is mandated. API design affects NHS DTAC Domain 4 interoperability, FCA Open Banking standards, GDS API standards, and developer productivity.",
+    "directAnswer": "REST + OpenAPI 3.0 is the UK standard for external APIs -- NHS FHIR R4, FCA Open Banking, GDS, HMRC all use REST + OpenAPI 3.0. tRPC is Clickmasters default for internal TypeScript full-stack APIs (Next.js + Node.js -- zero boilerplate, end-to-end type safety). GraphQL is right for complex client-driven queries with multiple nested relationships -- not typically needed for UK regulated applications where REST is mandated. API design affects NHS DTAC Domain 4 interoperability, FCA Open Banking standards, GDS API standards, and developer productivity.",
     "comparisonTables": [
       {
         "title": "",
@@ -13815,7 +13815,7 @@ export const comparisons = [
             "Any language -- SDL required"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All external UK APIs (NHS/FCA/GDS)",
             "All internal TypeScript full-stack",
             "Complex nested reads -- not regulated"
@@ -13827,11 +13827,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "When should a UK project use tRPC?",
-        "answer": "tRPC is right when: (1) TypeScript throughout (Next.js + Node.js), (2) API is internal only (not consumed by NHS/FCA/GDS third parties), (3) small team (2-8 engineers), (4) API schema stability important (compile-time errors on breaking changes). tRPC is wrong when: (1) external consumers (NHS/FCA/any non-TypeScript consumer), (2) GDS or NHS DTAC Domain 4 (interoperability standard is REST + OpenAPI). ClickMasters hybrid: tRPC for Next.js internal BFF layer, REST + OpenAPI for external NHS/FCA/third-party APIs."
+        "answer": "tRPC is right when: (1) TypeScript throughout (Next.js + Node.js), (2) API is internal only (not consumed by NHS/FCA/GDS third parties), (3) small team (2-8 engineers), (4) API schema stability important (compile-time errors on breaking changes). tRPC is wrong when: (1) external consumers (NHS/FCA/any non-TypeScript consumer), (2) GDS or NHS DTAC Domain 4 (interoperability standard is REST + OpenAPI). Clickmasters hybrid: tRPC for Next.js internal BFF layer, REST + OpenAPI for external NHS/FCA/third-party APIs."
       },
       {
         "question": "Does GraphQL satisfy NHS DTAC Domain 4?",
-        "answer": "NHS DTAC Domain 4 requires NHS FHIR R4 UK Core compliance. FHIR R4 is REST -- GraphQL is not FHIR-compatible. GraphQL cannot satisfy DTAC Domain 4. ClickMasters NHS standard: REST + OpenAPI 3.0 throughout NHS products for consistency -- tRPC only if TypeScript-only internal tool with no NHS system integration."
+        "answer": "NHS DTAC Domain 4 requires NHS FHIR R4 UK Core compliance. FHIR R4 is REST -- GraphQL is not FHIR-compatible. GraphQL cannot satisfy DTAC Domain 4. Clickmasters NHS standard: REST + OpenAPI 3.0 throughout NHS products for consistency -- tRPC only if TypeScript-only internal tool with no NHS system integration."
       }
     ],
     "relatedPages": [
@@ -13857,11 +13857,11 @@ export const comparisons = [
     "topic": "supabase_vs_firebase_vs_pocketbase_uk_2026",
     "year": "2026",
     "title": "Supabase vs Firebase vs PocketBase -- UK Backend-as-a-Service (2026)",
-    "metaTitle": "Supabase vs Firebase vs PocketBase -- UK Backend 2026 | ClickMasters",
-    "metaDesc": "Supabase is ClickMasters default for UK regulated MVPs: PostgreSQL (GDPR-compliant, Row Level Security for NHS/FCA data isolation), EU data residency, and open",
+    "metaTitle": "Supabase vs Firebase vs PocketBase -- UK Backend 2026 | Clickmasters",
+    "metaDesc": "Supabase is Clickmasters default for UK regulated MVPs: PostgreSQL (GDPR-compliant, Row Level Security for NHS/FCA data isolation), EU data residency, and open",
     "lastUpdated": "May 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -13870,7 +13870,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "Supabase is ClickMasters default for UK regulated MVPs: PostgreSQL (GDPR-compliant, Row Level Security for NHS/FCA data isolation), EU data residency, and open source (self-host for NHS DTAC). Firebase is right for non-regulated consumer apps with real-time requirements. Never use Firebase for NHS patient data -- US company, no UK data residency guarantee. BaaS choice affects UK GDPR data residency, NHS DTAC Domain 2, and FCA data protection obligations.",
+    "directAnswer": "Supabase is Clickmasters default for UK regulated MVPs: PostgreSQL (GDPR-compliant, Row Level Security for NHS/FCA data isolation), EU data residency, and open source (self-host for NHS DTAC). Firebase is right for non-regulated consumer apps with real-time requirements. Never use Firebase for NHS patient data -- US company, no UK data residency guarantee. BaaS choice affects UK GDPR data residency, NHS DTAC Domain 2, and FCA data protection obligations.",
     "comparisonTables": [
       {
         "title": "",
@@ -13930,7 +13930,7 @@ export const comparisons = [
             "Free -- self-hosting cost only"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "UK MVPs, prototypes, regulated apps",
             "Non-regulated consumer apps",
             "Ultra-simple self-hosted tools"
@@ -13942,7 +13942,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Supabase GDPR compliant for NHS?",
-        "answer": "Supabase EU (Frankfurt) is GDPR-compliant with UK GDPR DPA. For NHS patient data: ClickMasters recommends self-hosted Supabase on AWS eu-west-2 (same account as all NHS infrastructure -- no third-party processor). Supabase managed tier: acceptable for NHS admin tools. Never use Supabase hosted tier for NHS number/patient data without confirming DTAC Domain 2 with assessor."
+        "answer": "Supabase EU (Frankfurt) is GDPR-compliant with UK GDPR DPA. For NHS patient data: Clickmasters recommends self-hosted Supabase on AWS eu-west-2 (same account as all NHS infrastructure -- no third-party processor). Supabase managed tier: acceptable for NHS admin tools. Never use Supabase hosted tier for NHS number/patient data without confirming DTAC Domain 2 with assessor."
       },
       {
         "question": "Supabase vs custom PostgreSQL backend?",
@@ -13972,11 +13972,11 @@ export const comparisons = [
     "topic": "stripe_vs_gocardless_vs_braintree_uk_2026",
     "year": "2026",
     "title": "Stripe vs GoCardless vs Braintree -- UK Payment Processing (2026)",
-    "metaTitle": "Stripe vs GoCardless vs Braintree -- UK Payments 2026 | ClickMasters",
-    "metaDesc": "Stripe is ClickMasters default for UK card payments: best developer experience, PCI-DSS SAQ-A with Stripe Elements, broadest UK payment methods (cards, Apple Pa",
+    "metaTitle": "Stripe vs GoCardless vs Braintree -- UK Payments 2026 | Clickmasters",
+    "metaDesc": "Stripe is Clickmasters default for UK card payments: best developer experience, PCI-DSS SAQ-A with Stripe Elements, broadest UK payment methods (cards, Apple Pa",
     "lastUpdated": "May 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -13985,7 +13985,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "Stripe is ClickMasters default for UK card payments: best developer experience, PCI-DSS SAQ-A with Stripe Elements, broadest UK payment methods (cards, Apple Pay, Google Pay, BACS Direct Debit). GoCardless is right for UK Direct Debit and Variable Recurring Payments (VRP -- Open Banking). Braintree is legacy for new UK builds. Payment processor choice affects UK PCI-DSS scope, FCA Consumer Duty payment accessibility, and UK GDPR data processing.",
+    "directAnswer": "Stripe is Clickmasters default for UK card payments: best developer experience, PCI-DSS SAQ-A with Stripe Elements, broadest UK payment methods (cards, Apple Pay, Google Pay, BACS Direct Debit). GoCardless is right for UK Direct Debit and Variable Recurring Payments (VRP -- Open Banking). Braintree is legacy for new UK builds. Payment processor choice affects UK PCI-DSS scope, FCA Consumer Duty payment accessibility, and UK GDPR data processing.",
     "comparisonTables": [
       {
         "title": "",
@@ -14045,7 +14045,7 @@ export const comparisons = [
             "Adequate"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All card + Apple Pay / Google Pay",
             "UK Direct Debit + VRP + subscriptions",
             "Legacy projects only"
@@ -14057,11 +14057,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Stripe or GoCardless for UK subscription SaaS?",
-        "answer": "B2C SaaS (consumers -- card expected): Stripe. B2B SaaS (businesses -- prefer Direct Debit for recurring): GoCardless often preferred. Hybrid (offer both): ClickMasters recommendation for B2B SaaS. BACS failure rate lower than card decline rate for B2B -- businesses maintain bank accounts more reliably than card details."
+        "answer": "B2C SaaS (consumers -- card expected): Stripe. B2B SaaS (businesses -- prefer Direct Debit for recurring): GoCardless often preferred. Hybrid (offer both): Clickmasters recommendation for B2B SaaS. BACS failure rate lower than card decline rate for B2B -- businesses maintain bank accounts more reliably than card details."
       },
       {
         "question": "PCI-DSS scope with Stripe Elements?",
-        "answer": "SAQ-A requirements: (1) Stripe Elements iframe from Stripe domain -- page never handles card data, (2) all traffic over HTTPS, (3) no cardholder data stored (store Stripe payment intent ID only), (4) annual SAQ-A questionnaire (12 yes/no questions). ClickMasters principle: always use Stripe Elements -- never custom card input. 20p per transaction saving is not worth SAQ-D compliance (200+ controls)."
+        "answer": "SAQ-A requirements: (1) Stripe Elements iframe from Stripe domain -- page never handles card data, (2) all traffic over HTTPS, (3) no cardholder data stored (store Stripe payment intent ID only), (4) annual SAQ-A questionnaire (12 yes/no questions). Clickmasters principle: always use Stripe Elements -- never custom card input. 20p per transaction saving is not worth SAQ-D compliance (200+ controls)."
       }
     ],
     "relatedPages": [
@@ -14087,11 +14087,11 @@ export const comparisons = [
     "topic": "typescript_vs_javascript_uk_development_2026",
     "year": "2026",
     "title": "TypeScript vs JavaScript -- UK Development (2026)",
-    "metaTitle": "TypeScript vs JavaScript -- UK Development 2026 | ClickMasters",
+    "metaTitle": "TypeScript vs JavaScript -- UK Development 2026 | Clickmasters",
     "metaDesc": "TypeScript is the UK standard for all new production projects in 2026 -- NHS DTAC, FCA PS21/3, and GDS compliance benefit from compile-time error catching.",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -14146,7 +14146,7 @@ export const comparisons = [
             "Existing state -- no change"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All new UK projects -- NHS, FCA, GDS, commercial",
             "Legacy codebases only"
           ]
@@ -14157,11 +14157,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does NHS DTAC require TypeScript?",
-        "answer": "DTAC Domain 3 does not explicitly require TypeScript. But: IEC 62304 Class B requires V&amp;V evidence -- TypeScript provides compile-time V&amp;V that JavaScript cannot. DTAC assessors reviewing IEC 62304 for Class B will note absent type safety. ClickMasters: TypeScript for all NHS clinical software (Class B and C). For Class A: TypeScript still recommended, JavaScript defensible."
+        "answer": "DTAC Domain 3 does not explicitly require TypeScript. But: IEC 62304 Class B requires V&amp;V evidence -- TypeScript provides compile-time V&amp;V that JavaScript cannot. DTAC assessors reviewing IEC 62304 for Class B will note absent type safety. Clickmasters: TypeScript for all NHS clinical software (Class B and C). For Class A: TypeScript still recommended, JavaScript defensible."
       },
       {
         "question": "Is TypeScript too slow for UK startup MVPs?",
-        "answer": "TypeScript adds compilation step -- initial setup 1-2 hours. Long-term it saves time because: (1) runtime type errors caught at compile time (a runtime null in an NHS DTAC product is a clinical safety incident -- TypeScript catches it before deployment), (2) refactoring is safer, (3) code review faster. ClickMasters: TypeScript setup cost recovered in 2-3 sprints for NHS and FCA projects."
+        "answer": "TypeScript adds compilation step -- initial setup 1-2 hours. Long-term it saves time because: (1) runtime type errors caught at compile time (a runtime null in an NHS DTAC product is a clinical safety incident -- TypeScript catches it before deployment), (2) refactoring is safer, (3) code review faster. Clickmasters: TypeScript setup cost recovered in 2-3 sprints for NHS and FCA projects."
       }
     ],
     "relatedPages": [
@@ -14187,11 +14187,11 @@ export const comparisons = [
     "topic": "prisma_vs_drizzle_vs_typeorm_uk_orm_2026",
     "year": "2026",
     "title": "Prisma vs Drizzle vs TypeORM -- UK Database ORM (2026)",
-    "metaTitle": "Prisma vs Drizzle vs TypeORM -- UK ORM 2026 | ClickMasters",
-    "metaDesc": "Prisma is ClickMasters default for most UK TypeScript projects: excellent TypeScript types, Prisma Studio for data inspection, and the most intuitive query",
+    "metaTitle": "Prisma vs Drizzle vs TypeORM -- UK ORM 2026 | Clickmasters",
+    "metaDesc": "Prisma is Clickmasters default for most UK TypeScript projects: excellent TypeScript types, Prisma Studio for data inspection, and the most intuitive query",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -14200,7 +14200,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "Prisma is ClickMasters default for most UK TypeScript projects: excellent TypeScript types, Prisma Studio for data inspection, and the most intuitive query API. Drizzle is right when performance and bundle size are critical (Prisma query engine adds 40MB -- Drizzle is zero runtime). TypeORM is legacy for new UK builds. ORM choice affects NHS patient data query correctness, FCA financial record accuracy, and UK GDPR right-to-erasure implementation.",
+    "directAnswer": "Prisma is Clickmasters default for most UK TypeScript projects: excellent TypeScript types, Prisma Studio for data inspection, and the most intuitive query API. Drizzle is right when performance and bundle size are critical (Prisma query engine adds 40MB -- Drizzle is zero runtime). TypeORM is legacy for new UK builds. ORM choice affects NHS patient data query correctness, FCA financial record accuracy, and UK GDPR right-to-erasure implementation.",
     "comparisonTables": [
       {
         "title": "",
@@ -14260,7 +14260,7 @@ export const comparisons = [
             "queryBuilder -- flexible"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All UK TypeScript projects",
             "Edge functions, Lambda, RLS multi-tenant",
             "Legacy projects only"
@@ -14272,11 +14272,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Prisma vs Drizzle for NHS HealthTech?",
-        "answer": "Prisma for NHS HealthTech: single-tenant applications, no RLS needed, non-Edge/Lambda. Drizzle for NHS HealthTech: PostgreSQL RLS required (multi-tenant NHS SaaS), Edge/Lambda deployment (zero runtime critical), complex FHIR JSONB queries. ClickMasters default: Prisma for single-tenant NHS, Drizzle for multi-tenant NHS SaaS with RLS."
+        "answer": "Prisma for NHS HealthTech: single-tenant applications, no RLS needed, non-Edge/Lambda. Drizzle for NHS HealthTech: PostgreSQL RLS required (multi-tenant NHS SaaS), Edge/Lambda deployment (zero runtime critical), complex FHIR JSONB queries. Clickmasters default: Prisma for single-tenant NHS, Drizzle for multi-tenant NHS SaaS with RLS."
       },
       {
         "question": "TypeORM with TypeScript strict mode?",
-        "answer": "TypeORM with strict mode has issues: Partial entity types, decorator metadata requiring experimental decorators, less precise query builder return types. ClickMasters recommendation: do not start new UK project with TypeORM in 2026. Migrate existing TypeORM to Prisma or Drizzle when opportunity arises (major version upgrade, architecture change)."
+        "answer": "TypeORM with strict mode has issues: Partial entity types, decorator metadata requiring experimental decorators, less precise query builder return types. Clickmasters recommendation: do not start new UK project with TypeORM in 2026. Migrate existing TypeORM to Prisma or Drizzle when opportunity arises (major version upgrade, architecture change)."
       }
     ],
     "relatedPages": [
@@ -14302,11 +14302,11 @@ export const comparisons = [
     "topic": "kafka_vs_rabbitmq_vs_sqs_uk_event_streaming_2",
     "year": "2025",
     "title": "Kafka vs RabbitMQ vs AWS SQS -- UK Event Streaming (2026)",
-    "metaTitle": "Kafka vs RabbitMQ vs AWS SQS -- UK Event Streaming 2026 | ClickMasters",
-    "metaDesc": "AWS SQS (+ SNS) is ClickMasters default for most UK regulated applications: native AWS integration (CloudTrail audit, IAM permissions, CloudWatch monitorin",
+    "metaTitle": "Kafka vs RabbitMQ vs AWS SQS -- UK Event Streaming 2026 | Clickmasters",
+    "metaDesc": "AWS SQS (+ SNS) is Clickmasters default for most UK regulated applications: native AWS integration (CloudTrail audit, IAM permissions, CloudWatch monitorin",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -14315,7 +14315,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "AWS SQS (+ SNS) is ClickMasters default for most UK regulated applications: native AWS integration (CloudTrail audit, IAM permissions, CloudWatch monitoring), no infrastructure to manage, and sufficient for 99% of UK regulated use cases. Apache Kafka is right for high-throughput event streaming (10M+ messages/day) where replay and consumer groups are essential. RabbitMQ is legacy for new UK builds. Message queue choice affects NHS DTAC audit trail, FCA PS21/3 resilience (dead letter queues), and UK GDPR data retention on queued messages.",
+    "directAnswer": "AWS SQS (+ SNS) is Clickmasters default for most UK regulated applications: native AWS integration (CloudTrail audit, IAM permissions, CloudWatch monitoring), no infrastructure to manage, and sufficient for 99% of UK regulated use cases. Apache Kafka is right for high-throughput event streaming (10M+ messages/day) where replay and consumer groups are essential. RabbitMQ is legacy for new UK builds. Message queue choice affects NHS DTAC audit trail, FCA PS21/3 resilience (dead letter queues), and UK GDPR data retention on queued messages.",
     "comparisonTables": [
       {
         "title": "",
@@ -14375,7 +14375,7 @@ export const comparisons = [
             "Self-hosted cost + ops time"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All UK regulated applications",
             "NHS bulk analytics, FinTech trade data (10M+/day)",
             "Legacy projects only"
@@ -14417,11 +14417,11 @@ export const comparisons = [
     "topic": "github_actions_vs_circleci_vs_jenkins_uk_cicd",
     "year": "2025",
     "title": "GitHub Actions vs CircleCI vs Jenkins -- UK CI/CD (2026)",
-    "metaTitle": "GitHub Actions vs CircleCI vs Jenkins -- UK CI/CD 2026 | ClickMasters",
-    "metaDesc": "GitHub Actions is ClickMasters default for all UK projects: native GitHub integration, OIDC for AWS (no long-lived credentials -- Cyber Essentials A3), and",
+    "metaTitle": "GitHub Actions vs CircleCI vs Jenkins -- UK CI/CD 2026 | Clickmasters",
+    "metaDesc": "GitHub Actions is Clickmasters default for all UK projects: native GitHub integration, OIDC for AWS (no long-lived credentials -- Cyber Essentials A3), and",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -14430,7 +14430,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "GitHub Actions is ClickMasters default for all UK projects: native GitHub integration, OIDC for AWS (no long-lived credentials -- Cyber Essentials A3), and the richest marketplace for NHS DTAC evidence generation. CircleCI is right for advanced caching and parallelism on large test suites. Jenkins is legacy -- new UK projects should not use Jenkins. CI/CD platform choice affects Cyber Essentials A3 (credential management), NHS DTAC Domain 3 security evidence, and FCA PS21/3 deployment audit trail.",
+    "directAnswer": "GitHub Actions is Clickmasters default for all UK projects: native GitHub integration, OIDC for AWS (no long-lived credentials -- Cyber Essentials A3), and the richest marketplace for NHS DTAC evidence generation. CircleCI is right for advanced caching and parallelism on large test suites. Jenkins is legacy -- new UK projects should not use Jenkins. CI/CD platform choice affects Cyber Essentials A3 (credential management), NHS DTAC Domain 3 security evidence, and FCA PS21/3 deployment audit trail.",
     "comparisonTables": [
       {
         "title": "",
@@ -14490,7 +14490,7 @@ export const comparisons = [
             "BEST -- Jenkins designed for self-hosted"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All UK projects",
             "Large test suites needing advanced parallelism",
             "Legacy projects only"
@@ -14502,11 +14502,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does GitHub Actions satisfy NHS DTAC Domain 3 for CI/CD?",
-        "answer": "GitHub Actions satisfies DTAC Domain 3: (1) OIDC for AWS -- no long-lived credentials (Cyber Essentials A3 satisfied), (2) Semgrep SAST -- official Action, blocks merge on high-severity, (3) Trivy container scanning -- zero critical CVEs in production, (4) GitHub audit log -- immutable record of all Actions runs, secret access, workflow changes, (5) branch protection rules -- required reviews and status checks prevent unreviewed code reaching production. ClickMasters NHS GitHub Actions template: pre-configured workflow with Semgrep, Trivy, ZAP, Playwright, axe-core -- DTAC Domain 3 evidence pack generated automatically."
+        "answer": "GitHub Actions satisfies DTAC Domain 3: (1) OIDC for AWS -- no long-lived credentials (Cyber Essentials A3 satisfied), (2) Semgrep SAST -- official Action, blocks merge on high-severity, (3) Trivy container scanning -- zero critical CVEs in production, (4) GitHub audit log -- immutable record of all Actions runs, secret access, workflow changes, (5) branch protection rules -- required reviews and status checks prevent unreviewed code reaching production. Clickmasters NHS GitHub Actions template: pre-configured workflow with Semgrep, Trivy, ZAP, Playwright, axe-core -- DTAC Domain 3 evidence pack generated automatically."
       },
       {
         "question": "Should NHS HealthTech use GitHub self-hosted runners for HSCN?",
-        "answer": "NHS HSCN: secure network -- some NHS integrations (EPS, PDS production) require HSCN connectivity. Self-hosted runner in HSCN-connected VPC: (1) deploy GitHub self-hosted runner agent on EC2 within HSCN VPC, (2) runner accesses NHS APIs requiring HSCN, (3) split workflow -- GitHub-hosted (fast, cheap) for most steps, self-hosted HSCN runner only for NHS API integration tests. Cost: GBP80-150/month for self-hosted EC2. ClickMasters NHS HSCN runners: configured for 6 NHS HealthTech clients."
+        "answer": "NHS HSCN: secure network -- some NHS integrations (EPS, PDS production) require HSCN connectivity. Self-hosted runner in HSCN-connected VPC: (1) deploy GitHub self-hosted runner agent on EC2 within HSCN VPC, (2) runner accesses NHS APIs requiring HSCN, (3) split workflow -- GitHub-hosted (fast, cheap) for most steps, self-hosted HSCN runner only for NHS API integration tests. Cost: GBP80-150/month for self-hosted EC2. Clickmasters NHS HSCN runners: configured for 6 NHS HealthTech clients."
       }
     ],
     "relatedPages": [
@@ -14532,11 +14532,11 @@ export const comparisons = [
     "topic": "monorepo_vs_polyrepo_uk_engineering_teams_202",
     "year": "2025",
     "title": "Monorepo vs Polyrepo -- UK Engineering Teams (2026)",
-    "metaTitle": "Monorepo vs Polyrepo -- UK Engineering Teams 2026 | ClickMasters",
-    "metaDesc": "Monorepo (Turborepo or Nx) is ClickMasters default for UK regulated TypeScript full-stack projects: shared types between frontend and backend (NHS FHIR R4",
+    "metaTitle": "Monorepo vs Polyrepo -- UK Engineering Teams 2026 | Clickmasters",
+    "metaDesc": "Monorepo (Turborepo or Nx) is Clickmasters default for UK regulated TypeScript full-stack projects: shared types between frontend and backend (NHS FHIR R4",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -14545,7 +14545,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "Monorepo (Turborepo or Nx) is ClickMasters default for UK regulated TypeScript full-stack projects: shared types between frontend and backend (NHS FHIR R4 types used in both React and Node.js), shared UK GDPR utilities, unified CI/CD. Polyrepo is right for large organisations with independent team autonomy (NHS Digital -- separate repos per NHS API). Monorepo is wrong for diverse technology stacks (Python ML + Node.js API + React -- Nx handles this, but adds complexity). Monorepo vs polyrepo affects NHS DTAC evidence generation, FCA PS21/3 change management audit trail, and UK GDPR data model consistency across services.",
+    "directAnswer": "Monorepo (Turborepo or Nx) is Clickmasters default for UK regulated TypeScript full-stack projects: shared types between frontend and backend (NHS FHIR R4 types used in both React and Node.js), shared UK GDPR utilities, unified CI/CD. Polyrepo is right for large organisations with independent team autonomy (NHS Digital -- separate repos per NHS API). Monorepo is wrong for diverse technology stacks (Python ML + Node.js API + React -- Nx handles this, but adds complexity). Monorepo vs polyrepo affects NHS DTAC evidence generation, FCA PS21/3 change management audit trail, and UK GDPR data model consistency across services.",
     "comparisonTables": [
       {
         "title": "",
@@ -14596,7 +14596,7 @@ export const comparisons = [
             "Per-repo cache -- no cross-service cache benefit"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All TypeScript full-stack UK regulated projects",
             "Large orgs (100+ engineers), diverse tech stacks"
           ]
@@ -14607,11 +14607,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Is Turborepo or Nx right for a UK HealthTech monorepo?",
-        "answer": "Turborepo vs Nx for UK HealthTech monorepo: Turborepo for TypeScript-only (Next.js + Node.js -- lightweight, minimal configuration, excellent for teams &lt; 20 engineers), Nx for mixed technology (TypeScript + Python ML + AWS CDK -- Nx handles multi-language, generators for NHS boilerplate). ClickMasters HealthTech default: Turborepo for NHS HealthTech startups (Next.js frontend + Node.js FHIR API + shared types -- lightweight, fast CI), Nx for NHS HealthTech enterprises (multiple services, Python ML pipeline, CDK infrastructure -- Nx affected commands prevent unnecessary rebuilds). Both: shared packages for FHIR R4 UK Core types, NHS Login OAuth 2.0 utilities, DCB0129 audit logging."
+        "answer": "Turborepo vs Nx for UK HealthTech monorepo: Turborepo for TypeScript-only (Next.js + Node.js -- lightweight, minimal configuration, excellent for teams &lt; 20 engineers), Nx for mixed technology (TypeScript + Python ML + AWS CDK -- Nx handles multi-language, generators for NHS boilerplate). Clickmasters HealthTech default: Turborepo for NHS HealthTech startups (Next.js frontend + Node.js FHIR API + shared types -- lightweight, fast CI), Nx for NHS HealthTech enterprises (multiple services, Python ML pipeline, CDK infrastructure -- Nx affected commands prevent unnecessary rebuilds). Both: shared packages for FHIR R4 UK Core types, NHS Login OAuth 2.0 utilities, DCB0129 audit logging."
       },
       {
         "question": "Does monorepo satisfy NHS DTAC IEC 62304 traceability?",
-        "answer": "IEC 62304 traceability in monorepo: IEC 62304 requires traceability from requirements to design to implementation to tests. Monorepo advantage: (1) a single commit can cover requirement (in JIRA via commit message), implementation (code changes across frontend and backend), and test (test files in same commit) -- IEC 62304 traceability in one GitHub commit, (2) PR review covers all layers simultaneously (clinical safety engineer reviews frontend + backend + tests in one PR), (3) GitHub Actions CI evidence (single run covers all services -- DTAC Domain 3 evidence for entire system). ClickMasters IEC 62304 monorepo pattern: PR description template includes requirement reference, hazard log reference, and test coverage -- DTAC Domain 3 evidence pack generated per PR."
+        "answer": "IEC 62304 traceability in monorepo: IEC 62304 requires traceability from requirements to design to implementation to tests. Monorepo advantage: (1) a single commit can cover requirement (in JIRA via commit message), implementation (code changes across frontend and backend), and test (test files in same commit) -- IEC 62304 traceability in one GitHub commit, (2) PR review covers all layers simultaneously (clinical safety engineer reviews frontend + backend + tests in one PR), (3) GitHub Actions CI evidence (single run covers all services -- DTAC Domain 3 evidence for entire system). Clickmasters IEC 62304 monorepo pattern: PR description template includes requirement reference, hazard log reference, and test coverage -- DTAC Domain 3 evidence pack generated per PR."
       }
     ],
     "relatedPages": [
@@ -14637,11 +14637,11 @@ export const comparisons = [
     "topic": "openai_vs_anthropic_vs_google_gemini_uk_ai_ap",
     "year": "2025",
     "title": "OpenAI vs Anthropic vs Google Gemini -- UK AI API (2026)",
-    "metaTitle": "OpenAI vs Anthropic vs Google Gemini -- UK AI API 2026 | ClickMasters",
-    "metaDesc": "ClickMasters uses Anthropic Claude 3.5 Sonnet as default for UK regulated AI (healthcare, legal, financial): best-in-class 200K context window (entire NHS",
+    "metaTitle": "OpenAI vs Anthropic vs Google Gemini -- UK AI API 2026 | Clickmasters",
+    "metaDesc": "Clickmasters uses Anthropic Claude 3.5 Sonnet as default for UK regulated AI (healthcare, legal, financial): best-in-class 200K context window (entire NHS",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -14650,7 +14650,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "ClickMasters uses Anthropic Claude 3.5 Sonnet as default for UK regulated AI (healthcare, legal, financial): best-in-class 200K context window (entire NHS patient record, full M&amp;A agreement, complete financial history in one call), most transparent UK GDPR data processing commitments, and superior refusal calibration (fewer false refusals on legitimate NHS/legal content). OpenAI GPT-4o is right for multimodal tasks (image + text, audio). Google Gemini 1.5 Pro is right for Google Cloud-native applications. For UK regulated sectors, data residency and GDPR transparency matter as much as capability. AI API choice affects UK GDPR data residency, NHS DTAC Domain 2 (no personal data outside approved processors), and FCA Consumer Duty AI transparency requirements.",
+    "directAnswer": "Clickmasters uses Anthropic Claude 3.5 Sonnet as default for UK regulated AI (healthcare, legal, financial): best-in-class 200K context window (entire NHS patient record, full M&amp;A agreement, complete financial history in one call), most transparent UK GDPR data processing commitments, and superior refusal calibration (fewer false refusals on legitimate NHS/legal content). OpenAI GPT-4o is right for multimodal tasks (image + text, audio). Google Gemini 1.5 Pro is right for Google Cloud-native applications. For UK regulated sectors, data residency and GDPR transparency matter as much as capability. AI API choice affects UK GDPR data residency, NHS DTAC Domain 2 (no personal data outside approved processors), and FCA Consumer Duty AI transparency requirements.",
     "comparisonTables": [
       {
         "title": "",
@@ -14710,7 +14710,7 @@ export const comparisons = [
             "Good -- medical knowledge strong"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "NHS, FCA, LegalTech, GovTech AI",
             "Multimodal, image analysis, audio",
             "Google Cloud-native applications"
@@ -14722,11 +14722,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Anthropic Claude satisfy NHS DTAC for AI processing NHS patient data?",
-        "answer": "Anthropic Claude and NHS DTAC Domain 2: the question is whether sending NHS patient data to Anthropic API is acceptable under DTAC Domain 2. Analysis: (1) Anthropic offers EU data processing (claude.ai European region available -- data processed in EU, not US), (2) Anthropic DPA (Data Processing Agreement): Article 28 processor agreement available, (3) retention: Anthropic states API inputs are not used for training (verify in current DPA before use with patient data), (4) DTAC Domain 2 assessment: the DTAC assessor will review whether Anthropic is an approved sub-processor for NHS patient data. ClickMasters recommendation: for NHS patient data AI processing, use AWS Bedrock Claude (Anthropic models deployed on AWS eu-west-2 infrastructure -- patient data stays in AWS eu-west-2 account, no Anthropic API call). AWS Bedrock = Anthropic models + NHS DTAC-compliant AWS eu-west-2 data residency."
+        "answer": "Anthropic Claude and NHS DTAC Domain 2: the question is whether sending NHS patient data to Anthropic API is acceptable under DTAC Domain 2. Analysis: (1) Anthropic offers EU data processing (claude.ai European region available -- data processed in EU, not US), (2) Anthropic DPA (Data Processing Agreement): Article 28 processor agreement available, (3) retention: Anthropic states API inputs are not used for training (verify in current DPA before use with patient data), (4) DTAC Domain 2 assessment: the DTAC assessor will review whether Anthropic is an approved sub-processor for NHS patient data. Clickmasters recommendation: for NHS patient data AI processing, use AWS Bedrock Claude (Anthropic models deployed on AWS eu-west-2 infrastructure -- patient data stays in AWS eu-west-2 account, no Anthropic API call). AWS Bedrock = Anthropic models + NHS DTAC-compliant AWS eu-west-2 data residency."
       },
       {
         "question": "OpenAI vs Anthropic for FCA-regulated financial AI?",
-        "answer": "For FCA-regulated financial AI (credit scoring, risk assessment, Consumer Duty): (1) Anthropic Claude 3.5 Sonnet -- preferred for long financial document analysis (200K context -- entire credit file in one call), fewer false refusals on legitimate financial content, Constitutional AI transparency aligns with FCA Consumer Duty explainability requirements. (2) OpenAI GPT-4o -- preferred when multimodal analysis needed (financial documents with charts and images), or when fine-tuning on proprietary financial data (OpenAI fine-tuning API). FCA Consumer Duty AI transparency: whichever model used, ClickMasters builds SHAP-style explanation layer on top -- AI model output is not FCA Consumer Duty compliant by itself, the explanation layer is what satisfies the FCA. Model choice is secondary to explanation architecture."
+        "answer": "For FCA-regulated financial AI (credit scoring, risk assessment, Consumer Duty): (1) Anthropic Claude 3.5 Sonnet -- preferred for long financial document analysis (200K context -- entire credit file in one call), fewer false refusals on legitimate financial content, Constitutional AI transparency aligns with FCA Consumer Duty explainability requirements. (2) OpenAI GPT-4o -- preferred when multimodal analysis needed (financial documents with charts and images), or when fine-tuning on proprietary financial data (OpenAI fine-tuning API). FCA Consumer Duty AI transparency: whichever model used, Clickmasters builds SHAP-style explanation layer on top -- AI model output is not FCA Consumer Duty compliant by itself, the explanation layer is what satisfies the FCA. Model choice is secondary to explanation architecture."
       }
     ],
     "relatedPages": [
@@ -14752,11 +14752,11 @@ export const comparisons = [
     "topic": "lambda_vs_fargate_vs_app_runner_uk_serverless",
     "year": "2025",
     "title": "AWS Lambda vs Fargate vs App Runner -- UK Serverless (2026)",
-    "metaTitle": "AWS Lambda vs Fargate vs App Runner -- UK Serverless 2026 | ClickMasters",
-    "metaDesc": "ECS Fargate is ClickMasters default for UK regulated production workloads (NHS patient-facing, FCA IBS, GDS live services): no cold starts (critical for cl",
+    "metaTitle": "AWS Lambda vs Fargate vs App Runner -- UK Serverless 2026 | Clickmasters",
+    "metaDesc": "ECS Fargate is Clickmasters default for UK regulated production workloads (NHS patient-facing, FCA IBS, GDS live services): no cold starts (critical for cl",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -14765,7 +14765,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "ECS Fargate is ClickMasters default for UK regulated production workloads (NHS patient-facing, FCA IBS, GDS live services): no cold starts (critical for clinical applications), predictable latency, NHS DTAC compliance evidence, and FCA PS21/3 IBS availability. Lambda is right for event-driven background jobs (S3 triggers, SQS consumers, scheduled tasks). App Runner is right for simple containerised APIs with automatic scaling and zero ECS operational overhead. Compute choice affects NHS DTAC Domain 3 evidence, FCA PS21/3 IBS availability, and UK GDPR data residency in AWS eu-west-2.",
+    "directAnswer": "ECS Fargate is Clickmasters default for UK regulated production workloads (NHS patient-facing, FCA IBS, GDS live services): no cold starts (critical for clinical applications), predictable latency, NHS DTAC compliance evidence, and FCA PS21/3 IBS availability. Lambda is right for event-driven background jobs (S3 triggers, SQS consumers, scheduled tasks). App Runner is right for simple containerised APIs with automatic scaling and zero ECS operational overhead. Compute choice affects NHS DTAC Domain 3 evidence, FCA PS21/3 IBS availability, and UK GDPR data residency in AWS eu-west-2.",
     "comparisonTables": [
       {
         "title": "",
@@ -14825,7 +14825,7 @@ export const comparisons = [
             "Not designed for event-driven"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "Patient-facing NHS, FCA IBS, GDS live services",
             "S3/SQS event processing, scheduled jobs, ML inference",
             "Simple containerised APIs, internal tools"
@@ -14836,12 +14836,12 @@ export const comparisons = [
     "bodySections": [],
     "faqs": [
       {
-        "question": "Why does ClickMasters use Fargate instead of Lambda for NHS patient-facing services?",
-        "answer": "NHS patient-facing cold start requirement: NHS clinical applications must respond within acceptable clinical latency. Lambda cold start (200ms-2 seconds on first invocation after inactivity) is unacceptable for: (1) NHS GP Connect real-time prescriptions (GP waiting room -- 2-second cold start breaks clinical workflow), (2) NHS 111 triage (urgent care -- cold start adds critical seconds), (3) NHS emergency department systems (A&amp;E -- cold start is patient safety risk). ECS Fargate always-warm containers: Fargate tasks are always running -- no cold start, consistent 20-50ms response time. ClickMasters DTAC compliance: Fargate is the standard for NHS clinical applications. Lambda for NHS: acceptable for background processing (ILR report generation, overnight data quality checks, scheduled ESR imports) where latency is not clinically critical."
+        "question": "Why does Clickmasters use Fargate instead of Lambda for NHS patient-facing services?",
+        "answer": "NHS patient-facing cold start requirement: NHS clinical applications must respond within acceptable clinical latency. Lambda cold start (200ms-2 seconds on first invocation after inactivity) is unacceptable for: (1) NHS GP Connect real-time prescriptions (GP waiting room -- 2-second cold start breaks clinical workflow), (2) NHS 111 triage (urgent care -- cold start adds critical seconds), (3) NHS emergency department systems (A&amp;E -- cold start is patient safety risk). ECS Fargate always-warm containers: Fargate tasks are always running -- no cold start, consistent 20-50ms response time. Clickmasters DTAC compliance: Fargate is the standard for NHS clinical applications. Lambda for NHS: acceptable for background processing (ILR report generation, overnight data quality checks, scheduled ESR imports) where latency is not clinically critical."
       },
       {
         "question": "When should a UK FinTech use Lambda instead of Fargate?",
-        "answer": "Lambda is right for UK FinTech when: (1) event-driven processing (GoCardless webhook received -- Lambda triggered by SQS -- process payment event without always-on container), (2) scheduled reporting (FCA GABRIEL monthly submission -- Lambda triggered by EventBridge Scheduler), (3) S3 event processing (transaction CSV uploaded -- Lambda triggered by S3 notification -- import and validate), (4) image/document processing (ID document uploaded for KYC -- Lambda + Rekognition), (5) low-traffic internal tools (FCA SMCR log search -- Lambda + DynamoDB -- not IBS, no PS21/3 monitoring required). Lambda is WRONG for FinTech IBS: FCA PS21/3 IBS requires reliable availability monitoring -- Lambda cold starts make CloudWatch Synthetics IBS availability monitoring unreliable. ClickMasters PS21/3 rule: all IBS services on Fargate, non-IBS event processing on Lambda."
+        "answer": "Lambda is right for UK FinTech when: (1) event-driven processing (GoCardless webhook received -- Lambda triggered by SQS -- process payment event without always-on container), (2) scheduled reporting (FCA GABRIEL monthly submission -- Lambda triggered by EventBridge Scheduler), (3) S3 event processing (transaction CSV uploaded -- Lambda triggered by S3 notification -- import and validate), (4) image/document processing (ID document uploaded for KYC -- Lambda + Rekognition), (5) low-traffic internal tools (FCA SMCR log search -- Lambda + DynamoDB -- not IBS, no PS21/3 monitoring required). Lambda is WRONG for FinTech IBS: FCA PS21/3 IBS requires reliable availability monitoring -- Lambda cold starts make CloudWatch Synthetics IBS availability monitoring unreliable. Clickmasters PS21/3 rule: all IBS services on Fargate, non-IBS event processing on Lambda."
       }
     ],
     "relatedPages": [
@@ -14867,11 +14867,11 @@ export const comparisons = [
     "topic": "contentful_vs_sanity_vs_strapi_uk_headless_cm",
     "year": "2025",
     "title": "Contentful vs Sanity vs Strapi -- UK Headless CMS (2026)",
-    "metaTitle": "Contentful vs Sanity vs Strapi -- UK Headless CMS 2026 | ClickMasters",
-    "metaDesc": "Contentful is ClickMasters default for UK enterprise headless CMS (GOV.UK-adjacent content, NHS information pages, large editorial teams): excellent struct",
+    "metaTitle": "Contentful vs Sanity vs Strapi -- UK Headless CMS 2026 | Clickmasters",
+    "metaDesc": "Contentful is Clickmasters default for UK enterprise headless CMS (GOV.UK-adjacent content, NHS information pages, large editorial teams): excellent struct",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -14880,7 +14880,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "Contentful is ClickMasters default for UK enterprise headless CMS (GOV.UK-adjacent content, NHS information pages, large editorial teams): excellent structured content model, strong UK GDPR DPA, and enterprise SLAs. Sanity is right for complex custom editorial workflows and real-time collaborative editing. Strapi is right when self-hosting is required (UK GDPR data residency in own AWS account, NHS DTAC Domain 2, no third-party CMS processor for clinical content). Headless CMS choice affects UK GDPR data processor obligations, NHS DTAC Domain 2 (clinical content in third-party SaaS), and GDS Service Standard content governance.",
+    "directAnswer": "Contentful is Clickmasters default for UK enterprise headless CMS (GOV.UK-adjacent content, NHS information pages, large editorial teams): excellent structured content model, strong UK GDPR DPA, and enterprise SLAs. Sanity is right for complex custom editorial workflows and real-time collaborative editing. Strapi is right when self-hosting is required (UK GDPR data residency in own AWS account, NHS DTAC Domain 2, no third-party CMS processor for clinical content). Headless CMS choice affects UK GDPR data processor obligations, NHS DTAC Domain 2 (clinical content in third-party SaaS), and GDS Service Standard content governance.",
     "comparisonTables": [
       {
         "title": "",
@@ -14940,7 +14940,7 @@ export const comparisons = [
             "BEST -- self-hosted = own approval process"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "UK enterprise (GOV.UK-adjacent, pharma, financial)",
             "Complex custom editorial workflows",
             "NHS clinical content, UK GDPR sensitive data"
@@ -14952,11 +14952,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Is Contentful GDPR compliant for UK public sector content?",
-        "answer": "Contentful UK GDPR compliance: (1) Contentful offers EU data residency (Frankfurt -- GDPR-compliant), (2) Contentful provides a UK GDPR-compliant DPA (Article 28 processor agreement -- available in Contentful enterprise plan), (3) Contentful EU DPA covers Standard Contractual Clauses for UK-US transfers if US data residency selected. UK public sector consideration: GOV.UK Verify and GDS guidance recommends reviewing all third-party SaaS data processors -- Contentful for non-personal content (marketing pages, service information) is straightforward. For content that includes personal data (user-specific content, health information, benefit entitlement): self-hosted Strapi in AWS eu-west-2 is the stronger position. ClickMasters recommendation: Contentful for editorial content (no personal data), Strapi self-hosted for any CMS holding UK personal or health data."
+        "answer": "Contentful UK GDPR compliance: (1) Contentful offers EU data residency (Frankfurt -- GDPR-compliant), (2) Contentful provides a UK GDPR-compliant DPA (Article 28 processor agreement -- available in Contentful enterprise plan), (3) Contentful EU DPA covers Standard Contractual Clauses for UK-US transfers if US data residency selected. UK public sector consideration: GOV.UK Verify and GDS guidance recommends reviewing all third-party SaaS data processors -- Contentful for non-personal content (marketing pages, service information) is straightforward. For content that includes personal data (user-specific content, health information, benefit entitlement): self-hosted Strapi in AWS eu-west-2 is the stronger position. Clickmasters recommendation: Contentful for editorial content (no personal data), Strapi self-hosted for any CMS holding UK personal or health data."
       },
       {
         "question": "Should NHS HealthTech use a headless CMS for patient information content?",
-        "answer": "NHS HealthTech patient information CMS: patient information pages (conditions, treatments, service information) are non-personal static content -- a headless CMS is appropriate. DTAC Domain 2 consideration: even patient information content (no personal health data) goes through DTAC Domain 2 review because the CMS hosts content served to patients. ClickMasters NHS CMS recommendation: (1) Strapi self-hosted in AWS eu-west-2 account (same account as clinical application -- DTAC Domain 2 simplest position, no third-party processor), (2) Contentful with EU data residency and DTAC Domain 2 evidence (Contentful DPA, data flows documented -- acceptable for DTAC assessors who are comfortable with EU-hosted SaaS), (3) NHS Choices CMS (NHS England provides CMS for NHS Trusts -- free, pre-approved, DTAC Domain 2 trivially satisfied). ClickMasters: use NHS Choices CMS if content is standard NHS service information, Strapi self-hosted for custom patient information content."
+        "answer": "NHS HealthTech patient information CMS: patient information pages (conditions, treatments, service information) are non-personal static content -- a headless CMS is appropriate. DTAC Domain 2 consideration: even patient information content (no personal health data) goes through DTAC Domain 2 review because the CMS hosts content served to patients. Clickmasters NHS CMS recommendation: (1) Strapi self-hosted in AWS eu-west-2 account (same account as clinical application -- DTAC Domain 2 simplest position, no third-party processor), (2) Contentful with EU data residency and DTAC Domain 2 evidence (Contentful DPA, data flows documented -- acceptable for DTAC assessors who are comfortable with EU-hosted SaaS), (3) NHS Choices CMS (NHS England provides CMS for NHS Trusts -- free, pre-approved, DTAC Domain 2 trivially satisfied). Clickmasters: use NHS Choices CMS if content is standard NHS service information, Strapi self-hosted for custom patient information content."
       }
     ],
     "relatedPages": [
@@ -14982,11 +14982,11 @@ export const comparisons = [
     "topic": "postgresql_vs_mysql_vs_mongodb_uk_database_20",
     "year": "2025",
     "title": "PostgreSQL vs MySQL vs MongoDB -- UK Database (2026)",
-    "metaTitle": "PostgreSQL vs MySQL vs MongoDB -- UK Database 2026 | ClickMasters",
-    "metaDesc": "PostgreSQL is ClickMasters default for all UK regulated production workloads: native Row Level Security (NHS patient isolation, FCA multi-tenant), JSONB fo",
+    "metaTitle": "PostgreSQL vs MySQL vs MongoDB -- UK Database 2026 | Clickmasters",
+    "metaDesc": "PostgreSQL is Clickmasters default for all UK regulated production workloads: native Row Level Security (NHS patient isolation, FCA multi-tenant), JSONB fo",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -14995,7 +14995,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "PostgreSQL is ClickMasters default for all UK regulated production workloads: native Row Level Security (NHS patient isolation, FCA multi-tenant), JSONB for FHIR R4 UK Core, full ACID transactions (FCA payments), and the strongest UK GDPR right-to-erasure implementation. MySQL is acceptable for read-heavy non-regulated workloads. MongoDB is right for unstructured document storage only -- not for NHS patient data or FCA regulated financial records. Database choice affects NHS DTAC Domain 2 data isolation, FCA PS21/3 transaction integrity, and UK GDPR right-to-erasure.",
+    "directAnswer": "PostgreSQL is Clickmasters default for all UK regulated production workloads: native Row Level Security (NHS patient isolation, FCA multi-tenant), JSONB for FHIR R4 UK Core, full ACID transactions (FCA payments), and the strongest UK GDPR right-to-erasure implementation. MySQL is acceptable for read-heavy non-regulated workloads. MongoDB is right for unstructured document storage only -- not for NHS patient data or FCA regulated financial records. Database choice affects NHS DTAC Domain 2 data isolation, FCA PS21/3 transaction integrity, and UK GDPR right-to-erasure.",
     "comparisonTables": [
       {
         "title": "",
@@ -15055,7 +15055,7 @@ export const comparisons = [
             "Complex -- BSON to JSON"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All UK regulated (NHS, FCA, GDS)",
             "Read-heavy non-regulated",
             "Unstructured docs, content, catalogues"
@@ -15067,7 +15067,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Why PostgreSQL RLS for NHS multi-tenant?",
-        "answer": "PostgreSQL RLS for NHS: (1) database-level enforcement (bug in application cannot bypass RLS), (2) trust_id RLS policy filters every query automatically, (3) auditable SQL policies -- DTAC assessors review the SQL directly, (4) no code change for new tenant (new Trust = new RLS parameter), (5) DBA can verify isolation independently. ClickMasters NHS RLS: SET app.current_trust_id = $trustId per request. DTAC Domain 2 evidence: RLS SQL policies included in DTAC evidence pack as artefacts."
+        "answer": "PostgreSQL RLS for NHS: (1) database-level enforcement (bug in application cannot bypass RLS), (2) trust_id RLS policy filters every query automatically, (3) auditable SQL policies -- DTAC assessors review the SQL directly, (4) no code change for new tenant (new Trust = new RLS parameter), (5) DBA can verify isolation independently. Clickmasters NHS RLS: SET app.current_trust_id = $trustId per request. DTAC Domain 2 evidence: RLS SQL policies included in DTAC evidence pack as artefacts."
       },
       {
         "question": "Is MongoDB suitable for NHS patient data?",
@@ -15097,11 +15097,11 @@ export const comparisons = [
     "topic": "redis_vs_memcached_vs_dynamodb_uk_caching_202",
     "year": "2025",
     "title": "Redis vs Memcached vs DynamoDB -- UK Caching and NoSQL (2026)",
-    "metaTitle": "Redis vs Memcached vs DynamoDB -- UK Caching 2026 | ClickMasters",
-    "metaDesc": "ElastiCache Redis is ClickMasters default for UK regulated caching: native data structures (pub/sub for real-time NHS notifications, sorted sets for leader",
+    "metaTitle": "Redis vs Memcached vs DynamoDB -- UK Caching 2026 | Clickmasters",
+    "metaDesc": "ElastiCache Redis is Clickmasters default for UK regulated caching: native data structures (pub/sub for real-time NHS notifications, sorted sets for leader",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -15110,7 +15110,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "ElastiCache Redis is ClickMasters default for UK regulated caching: native data structures (pub/sub for real-time NHS notifications, sorted sets for leaderboards, streams for event processing), persistence for session caching under FCA PS21/3, and Redis Cluster for high-availability IBS caching. Memcached is right for simple key-value caching where Redis complexity is unnecessary. DynamoDB is right for high-throughput NoSQL workloads -- not for NHS patient data without careful DTAC review. Cache choice affects NHS DTAC Domain 2 data residency (patient data in cache), FCA PS21/3 session availability, and UK GDPR data minimisation (cache TTL policies).",
+    "directAnswer": "ElastiCache Redis is Clickmasters default for UK regulated caching: native data structures (pub/sub for real-time NHS notifications, sorted sets for leaderboards, streams for event processing), persistence for session caching under FCA PS21/3, and Redis Cluster for high-availability IBS caching. Memcached is right for simple key-value caching where Redis complexity is unnecessary. DynamoDB is right for high-throughput NoSQL workloads -- not for NHS patient data without careful DTAC review. Cache choice affects NHS DTAC Domain 2 data residency (patient data in cache), FCA PS21/3 session availability, and UK GDPR data minimisation (cache TTL policies).",
     "comparisonTables": [
       {
         "title": "",
@@ -15152,7 +15152,7 @@ export const comparisons = [
             "Document storage -- good for FHIR"
           ],
           [
-            "ClickMasters NHS session store",
+            "Clickmasters NHS session store",
             "BEST -- Redis cluster, 15-min TTL, TLS in transit",
             "Not used",
             "Not used for session"
@@ -15170,7 +15170,7 @@ export const comparisons = [
             "BEST -- 10M+ operations/day serverless"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "NHS, FCA, GDS session + cache + real-time",
             "Simple cache (non-regulated, non-session)",
             "High-throughput non-relational non-patient data"
@@ -15182,11 +15182,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Is Redis safe for NHS patient session data?",
-        "answer": "ElastiCache Redis for NHS patient sessions: (1) VPC private subnet (eu-west-2, no public internet access -- DTAC Domain 2 and Domain 3), (2) Redis AUTH token (password authentication -- Cyber Essentials A3 access control), (3) TLS in transit (Redis 7 in-transit encryption -- Cyber Essentials A1), (4) 15-minute session TTL (NHS Login sessions -- patient data not retained beyond session), (5) Redis cluster mode (Multi-AZ -- FCA PS21/3 IBS session availability, NHS DTAC continuity). ClickMasters NHS session store pattern: NHS Login JWT token stored in Redis (15-minute TTL), patient data never persisted to Redis (fetched fresh from PostgreSQL per request -- not cached). Redis is acceptable for NHS session tokens, not for patient health data (health data stays in PostgreSQL with RLS)."
+        "answer": "ElastiCache Redis for NHS patient sessions: (1) VPC private subnet (eu-west-2, no public internet access -- DTAC Domain 2 and Domain 3), (2) Redis AUTH token (password authentication -- Cyber Essentials A3 access control), (3) TLS in transit (Redis 7 in-transit encryption -- Cyber Essentials A1), (4) 15-minute session TTL (NHS Login sessions -- patient data not retained beyond session), (5) Redis cluster mode (Multi-AZ -- FCA PS21/3 IBS session availability, NHS DTAC continuity). Clickmasters NHS session store pattern: NHS Login JWT token stored in Redis (15-minute TTL), patient data never persisted to Redis (fetched fresh from PostgreSQL per request -- not cached). Redis is acceptable for NHS session tokens, not for patient health data (health data stays in PostgreSQL with RLS)."
       },
       {
         "question": "When should a UK project use DynamoDB instead of Redis?",
-        "answer": "DynamoDB for UK projects when: (1) high-throughput NoSQL (10M+ operations/day -- IoT telemetry, clickstream, gaming leaderboard), (2) serverless (Lambda + DynamoDB -- no connection pool management), (3) single-digit millisecond latency at any scale (DynamoDB auto-scaling), (4) audit log storage (DynamoDB TTL for log retention -- low-cost, high-volume write). DynamoDB is WRONG for: (1) NHS patient data (AWS DynamoDB is US-headquartered service -- data may not stay in eu-west-2 without explicit configuration -- DTAC Domain 2 review required), (2) complex queries (DynamoDB is key-value -- complex queries require Global Secondary Index design upfront), (3) ACID transactions across tables (DynamoDB transactions -- less flexible than PostgreSQL). ClickMasters DynamoDB: audit logs, IoT telemetry, non-patient event stores -- never NHS Article 9 health data without explicit DTAC review."
+        "answer": "DynamoDB for UK projects when: (1) high-throughput NoSQL (10M+ operations/day -- IoT telemetry, clickstream, gaming leaderboard), (2) serverless (Lambda + DynamoDB -- no connection pool management), (3) single-digit millisecond latency at any scale (DynamoDB auto-scaling), (4) audit log storage (DynamoDB TTL for log retention -- low-cost, high-volume write). DynamoDB is WRONG for: (1) NHS patient data (AWS DynamoDB is US-headquartered service -- data may not stay in eu-west-2 without explicit configuration -- DTAC Domain 2 review required), (2) complex queries (DynamoDB is key-value -- complex queries require Global Secondary Index design upfront), (3) ACID transactions across tables (DynamoDB transactions -- less flexible than PostgreSQL). Clickmasters DynamoDB: audit logs, IoT telemetry, non-patient event stores -- never NHS Article 9 health data without explicit DTAC review."
       }
     ],
     "relatedPages": [
@@ -15212,11 +15212,11 @@ export const comparisons = [
     "topic": "playwright_vs_cypress_vs_selenium_uk_testing_",
     "year": "2025",
     "title": "Playwright vs Cypress vs Selenium -- UK E2E Test Automation (2026)",
-    "metaTitle": "Playwright vs Cypress vs Selenium -- UK Test Automation 2026 | ClickMasters",
-    "metaDesc": "Playwright is ClickMasters default for all UK regulated E2E testing: native axe-playwright integration (WCAG 2.1 AA automated -- NHS DTAC Domain 5, GDS Ser",
+    "metaTitle": "Playwright vs Cypress vs Selenium -- UK Test Automation 2026 | Clickmasters",
+    "metaDesc": "Playwright is Clickmasters default for all UK regulated E2E testing: native axe-playwright integration (WCAG 2.1 AA automated -- NHS DTAC Domain 5, GDS Ser",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -15225,7 +15225,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "Playwright is ClickMasters default for all UK regulated E2E testing: native axe-playwright integration (WCAG 2.1 AA automated -- NHS DTAC Domain 5, GDS Service Standard), multi-browser support (Chromium, Firefox, WebKit -- GDS accessibility requirement), and the best NHS clinical workflow and GDS journey testing. Cypress is right for developer-focused component testing with interactive debugging. Selenium is legacy -- new UK projects should use Playwright. E2E test framework choice affects NHS DTAC Domain 5 accessibility evidence, GDS Service Standard assessment, and FCA PS21/3 post-deployment smoke test reliability.",
+    "directAnswer": "Playwright is Clickmasters default for all UK regulated E2E testing: native axe-playwright integration (WCAG 2.1 AA automated -- NHS DTAC Domain 5, GDS Service Standard), multi-browser support (Chromium, Firefox, WebKit -- GDS accessibility requirement), and the best NHS clinical workflow and GDS journey testing. Cypress is right for developer-focused component testing with interactive debugging. Selenium is legacy -- new UK projects should use Playwright. E2E test framework choice affects NHS DTAC Domain 5 accessibility evidence, GDS Service Standard assessment, and FCA PS21/3 post-deployment smoke test reliability.",
     "comparisonTables": [
       {
         "title": "",
@@ -15285,7 +15285,7 @@ export const comparisons = [
             "Manual screenshot setup"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All NHS, FCA, GDS production E2E testing",
             "Developer-focused component testing",
             "Legacy projects only"
@@ -15296,12 +15296,12 @@ export const comparisons = [
     "bodySections": [],
     "faqs": [
       {
-        "question": "How does ClickMasters use Playwright for NHS DTAC Domain 5?",
+        "question": "How does Clickmasters use Playwright for NHS DTAC Domain 5?",
         "answer": "Playwright DTAC Domain 5 evidence: (1) axe-playwright scan (every page in clinical workflow -- `await checkA11y(page)` from axe-playwright library -- fails test if any WCAG 2.1 AA violation), (2) keyboard navigation test (every form, button, and interactive element tested keyboard-only -- Playwright keyboard API), (3) screen reader simulation (Playwright accessibility snapshot -- `page.accessibility.snapshot()` -- validates accessibility tree), (4) focus management test (modal opens -- focus moves to modal -- modal closes -- focus returns to trigger), (5) colour contrast (axe-playwright catches contrast violations automatically). DTAC Domain 5 evidence pack: Playwright test run HTML report (pass/fail per page, axe violation details) saved as CI/CD artefact -- submitted as DTAC Domain 5 evidence."
       },
       {
         "question": "Playwright vs Cypress for GDS journey testing?",
-        "answer": "GDS journey testing: GDS journeys are multi-page forms (one-thing-per-page) with complex branching logic. Playwright advantages for GDS: (1) multi-page forms (Playwright handles complex multi-page navigation naturally -- click, fill, click, check URL pattern), (2) multi-browser (GDS requires Chrome, Firefox, Safari testing -- Playwright runs all three), (3) network interception (mock DWP API, mock GOV.UK Pay in GDS journey tests -- Playwright `page.route()` API), (4) GOV.UK One Login mock (Playwright can mock OAuth 2.0 redirect in tests -- avoids needing live GOV.UK One Login in CI), (5) trace viewer (GDS journey test fails at step 12 of 18 -- Playwright trace viewer shows exactly what happened at each step). ClickMasters GDS Playwright template: pre-built journey test pattern for GOV.UK Design System forms, GOV.UK Pay mock, GOV.UK One Login mock."
+        "answer": "GDS journey testing: GDS journeys are multi-page forms (one-thing-per-page) with complex branching logic. Playwright advantages for GDS: (1) multi-page forms (Playwright handles complex multi-page navigation naturally -- click, fill, click, check URL pattern), (2) multi-browser (GDS requires Chrome, Firefox, Safari testing -- Playwright runs all three), (3) network interception (mock DWP API, mock GOV.UK Pay in GDS journey tests -- Playwright `page.route()` API), (4) GOV.UK One Login mock (Playwright can mock OAuth 2.0 redirect in tests -- avoids needing live GOV.UK One Login in CI), (5) trace viewer (GDS journey test fails at step 12 of 18 -- Playwright trace viewer shows exactly what happened at each step). Clickmasters GDS Playwright template: pre-built journey test pattern for GOV.UK Design System forms, GOV.UK Pay mock, GOV.UK One Login mock."
       }
     ],
     "relatedPages": [
@@ -15327,11 +15327,11 @@ export const comparisons = [
     "topic": "aws_cdk_vs_terraform_vs_pulumi_uk_iac_2026",
     "year": "2026",
     "title": "AWS CDK vs Terraform vs Pulumi -- UK Infrastructure as Code (2026)",
-    "metaTitle": "AWS CDK vs Terraform vs Pulumi -- UK IaC 2026 | ClickMasters",
-    "metaDesc": "AWS CDK (TypeScript) is ClickMasters default for all UK regulated AWS infrastructure: same language as application code, CDK L3 constructs for reusable NHS",
+    "metaTitle": "AWS CDK vs Terraform vs Pulumi -- UK IaC 2026 | Clickmasters",
+    "metaDesc": "AWS CDK (TypeScript) is Clickmasters default for all UK regulated AWS infrastructure: same language as application code, CDK L3 constructs for reusable NHS",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -15340,7 +15340,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "AWS CDK (TypeScript) is ClickMasters default for all UK regulated AWS infrastructure: same language as application code, CDK L3 constructs for reusable NHS DTAC and FCA PS21/3 compliance patterns, and the strongest CloudFormation change set audit trail for FCA PS21/3 change management. Terraform is right for multi-cloud or large existing Terraform codebases. Pulumi right when full programming language power is needed. IaC choice affects NHS DTAC Domain 3 infrastructure change audit trail, FCA PS21/3 IBS change management, and UK GDPR data residency enforcement.",
+    "directAnswer": "AWS CDK (TypeScript) is Clickmasters default for all UK regulated AWS infrastructure: same language as application code, CDK L3 constructs for reusable NHS DTAC and FCA PS21/3 compliance patterns, and the strongest CloudFormation change set audit trail for FCA PS21/3 change management. Terraform is right for multi-cloud or large existing Terraform codebases. Pulumi right when full programming language power is needed. IaC choice affects NHS DTAC Domain 3 infrastructure change audit trail, FCA PS21/3 IBS change management, and UK GDPR data residency enforcement.",
     "comparisonTables": [
       {
         "title": "",
@@ -15377,7 +15377,7 @@ export const comparisons = [
           ],
           [
             "NHS DTAC L3 reusable constructs",
-            "BEST -- ClickMasters NHS DTAC CDK Construct Library",
+            "BEST -- Clickmasters NHS DTAC CDK Construct Library",
             "Terraform modules -- good",
             "Pulumi ComponentResource -- good"
           ],
@@ -15400,7 +15400,7 @@ export const comparisons = [
             "Pulumi refresh"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All UK regulated AWS production infrastructure",
             "Multi-cloud, non-AWS, large Terraform estates",
             "Complex IaC needing full programming constructs"
@@ -15412,11 +15412,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Why CDK over Terraform for NHS and FCA?",
-        "answer": "CDK advantages: (1) CloudFormation change set = automatic FCA PS21/3 IBS change management audit trail, (2) TypeScript CDK shares types with Next.js application -- single language stack, (3) ClickMasters NHS DTAC CDK Construct Library -- L3 constructs for DTAC Domain 2 VPC, Domain 3 security (GuardDuty, SecurityHub, Config, CloudTrail), and FCA PS21/3 IBS monitoring (CloudWatch Synthetics) -- reused across all ClickMasters NHS and FCA clients, (4) eu-west-2 region enforced at construct level -- cannot accidentally deploy patient data to wrong region. Terraform used for multi-cloud clients and large existing Terraform estates."
+        "answer": "CDK advantages: (1) CloudFormation change set = automatic FCA PS21/3 IBS change management audit trail, (2) TypeScript CDK shares types with Next.js application -- single language stack, (3) Clickmasters NHS DTAC CDK Construct Library -- L3 constructs for DTAC Domain 2 VPC, Domain 3 security (GuardDuty, SecurityHub, Config, CloudTrail), and FCA PS21/3 IBS monitoring (CloudWatch Synthetics) -- reused across all Clickmasters NHS and FCA clients, (4) eu-west-2 region enforced at construct level -- cannot accidentally deploy patient data to wrong region. Terraform used for multi-cloud clients and large existing Terraform estates."
       },
       {
         "question": "Does Terraform satisfy FCA PS21/3 change management?",
-        "answer": "Terraform + PS21/3: acceptable with right controls: (1) Terraform plan in PR, (2) Terraform apply in GitHub Actions on merge to main, (3) S3 + DynamoDB state with lock, (4) IBS-tagged resources in HCL, (5) Atlantis or Spacelift for GitOps audit trail. Limitation vs CDK: HCL does not enforce IBS tagging at compile time. CDK constructs enforce IBS tagging via TypeScript type system. ClickMasters: CDK preferred for new PS21/3 regulated builds, Terraform acceptable with Atlantis GitOps."
+        "answer": "Terraform + PS21/3: acceptable with right controls: (1) Terraform plan in PR, (2) Terraform apply in GitHub Actions on merge to main, (3) S3 + DynamoDB state with lock, (4) IBS-tagged resources in HCL, (5) Atlantis or Spacelift for GitOps audit trail. Limitation vs CDK: HCL does not enforce IBS tagging at compile time. CDK constructs enforce IBS tagging via TypeScript type system. Clickmasters: CDK preferred for new PS21/3 regulated builds, Terraform acceptable with Atlantis GitOps."
       }
     ],
     "relatedPages": [
@@ -15442,11 +15442,11 @@ export const comparisons = [
     "topic": "react_native_vs_flutter_vs_ionic_uk_mobile_20",
     "year": "2025",
     "title": "React Native vs Flutter vs Ionic -- UK Mobile Development (2026)",
-    "metaTitle": "React Native vs Flutter vs Ionic -- UK Mobile Development 2026 | ClickMasters",
-    "metaDesc": "React Native (Expo) is ClickMasters default for all UK regulated mobile applications: native iOS and Android from one TypeScript codebase, best NHS Login i",
+    "metaTitle": "React Native vs Flutter vs Ionic -- UK Mobile Development 2026 | Clickmasters",
+    "metaDesc": "React Native (Expo) is Clickmasters default for all UK regulated mobile applications: native iOS and Android from one TypeScript codebase, best NHS Login i",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -15455,7 +15455,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "React Native (Expo) is ClickMasters default for all UK regulated mobile applications: native iOS and Android from one TypeScript codebase, best NHS Login integration, FCA Consumer Duty mobile UX testing (axe-react-native), and the largest UK mobile developer talent pool. Flutter is right for high-performance custom UI with complex animations. Ionic is legacy for new UK builds. Mobile framework choice affects NHS DTAC Domain 5 accessibility, FCA Consumer Duty mobile UX, and UK GDPR data residency on device.",
+    "directAnswer": "React Native (Expo) is Clickmasters default for all UK regulated mobile applications: native iOS and Android from one TypeScript codebase, best NHS Login integration, FCA Consumer Duty mobile UX testing (axe-react-native), and the largest UK mobile developer talent pool. Flutter is right for high-performance custom UI with complex animations. Ionic is legacy for new UK builds. Mobile framework choice affects NHS DTAC Domain 5 accessibility, FCA Consumer Duty mobile UX, and UK GDPR data residency on device.",
     "comparisonTables": [
       {
         "title": "",
@@ -15515,7 +15515,7 @@ export const comparisons = [
             "Capacitor -- different model"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All NHS, FCA, GDS consumer-facing mobile",
             "High-performance custom UI (gaming, complex animations)",
             "Legacy projects only"
@@ -15531,7 +15531,7 @@ export const comparisons = [
       },
       {
         "question": "React Native or Flutter for NHS HealthTech startup?",
-        "answer": "React Native advantages for NHS: (1) TypeScript -- same language as Next.js backend -- full-stack TypeScript team, (2) NHS Login React Native library (official), (3) axe-react-native (DTAC Domain 5), (4) larger UK talent pool. Flutter advantages: (1) better performance for complex clinical data visualisations (waveforms, imaging), (2) single codebase for iOS + Android + web, (3) growing NHS Login Flutter support. ClickMasters default: React Native for most NHS HealthTech. Flutter for NHS apps with complex custom UI (clinical monitoring dashboards, medical imaging viewers)."
+        "answer": "React Native advantages for NHS: (1) TypeScript -- same language as Next.js backend -- full-stack TypeScript team, (2) NHS Login React Native library (official), (3) axe-react-native (DTAC Domain 5), (4) larger UK talent pool. Flutter advantages: (1) better performance for complex clinical data visualisations (waveforms, imaging), (2) single codebase for iOS + Android + web, (3) growing NHS Login Flutter support. Clickmasters default: React Native for most NHS HealthTech. Flutter for NHS apps with complex custom UI (clinical monitoring dashboards, medical imaging viewers)."
       }
     ],
     "relatedPages": [
@@ -15557,11 +15557,11 @@ export const comparisons = [
     "topic": "supabase_vs_firebase_vs_planetscale_uk_backen",
     "year": "2025",
     "title": "Supabase vs Firebase vs PlanetScale -- UK Backend-as-a-Service (2026)",
-    "metaTitle": "Supabase vs Firebase vs PlanetScale -- UK Backend 2026 | ClickMasters",
+    "metaTitle": "Supabase vs Firebase vs PlanetScale -- UK Backend 2026 | Clickmasters",
     "metaDesc": "For UK regulated workloads (NHS, FCA, GDS), none of these should be used for patient or financial personal data -- all three are US-headquartered SaaS with",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -15570,7 +15570,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "For UK regulated workloads (NHS, FCA, GDS), none of these should be used for patient or financial personal data -- all three are US-headquartered SaaS with data residency limitations. For non-regulated UK SaaS (internal tools, pre-seed MVPs, developer tools): Supabase is ClickMasters preferred BaaS -- open source PostgreSQL-based, self-hostable on AWS eu-west-2 if needed, and UK GDPR DPA available. Firebase is right for mobile-first apps with real-time requirements. PlanetScale is right for MySQL-compatible globally distributed databases. BaaS choice has significant UK GDPR implications -- all three are US-based services. For regulated UK sectors, PostgreSQL on AWS eu-west-2 (RDS or Aurora) is always the right choice.",
+    "directAnswer": "For UK regulated workloads (NHS, FCA, GDS), none of these should be used for patient or financial personal data -- all three are US-headquartered SaaS with data residency limitations. For non-regulated UK SaaS (internal tools, pre-seed MVPs, developer tools): Supabase is Clickmasters preferred BaaS -- open source PostgreSQL-based, self-hostable on AWS eu-west-2 if needed, and UK GDPR DPA available. Firebase is right for mobile-first apps with real-time requirements. PlanetScale is right for MySQL-compatible globally distributed databases. BaaS choice has significant UK GDPR implications -- all three are US-based services. For regulated UK sectors, PostgreSQL on AWS eu-west-2 (RDS or Aurora) is always the right choice.",
     "comparisonTables": [
       {
         "title": "",
@@ -15630,7 +15630,7 @@ export const comparisons = [
             "No native auth"
           ],
           [
-            "ClickMasters recommendation",
+            "Clickmasters recommendation",
             "Non-regulated UK SaaS, MVPs, internal tools",
             "Mobile real-time apps (non-regulated)",
             "MySQL-compatible non-regulated global apps"
@@ -15642,11 +15642,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Can Supabase be used for a UK startup that will eventually serve NHS customers?",
-        "answer": "Supabase for UK NHS path: if your startup is building for non-NHS customers now but plans to serve NHS in future: (1) start with Supabase EU region (eu-central-1 Frankfurt -- EU data residency, UK GDPR DPA available), (2) design data model in PostgreSQL (Supabase is PostgreSQL -- migration to AWS RDS Aurora is schema-compatible), (3) implement Row Level Security from day 1 (Supabase RLS -- same PostgreSQL RLS you will use on AWS Aurora for DTAC), (4) before NHS procurement: migrate from Supabase to AWS Aurora (PostgreSQL-compatible -- same schema, same queries, same RLS). ClickMasters advice: use Supabase for fast early development, plan migration to AWS Aurora before first NHS contract. The migration is a 2-4 week infrastructure project, not a data model rewrite."
+        "answer": "Supabase for UK NHS path: if your startup is building for non-NHS customers now but plans to serve NHS in future: (1) start with Supabase EU region (eu-central-1 Frankfurt -- EU data residency, UK GDPR DPA available), (2) design data model in PostgreSQL (Supabase is PostgreSQL -- migration to AWS RDS Aurora is schema-compatible), (3) implement Row Level Security from day 1 (Supabase RLS -- same PostgreSQL RLS you will use on AWS Aurora for DTAC), (4) before NHS procurement: migrate from Supabase to AWS Aurora (PostgreSQL-compatible -- same schema, same queries, same RLS). Clickmasters advice: use Supabase for fast early development, plan migration to AWS Aurora before first NHS contract. The migration is a 2-4 week infrastructure project, not a data model rewrite."
       },
       {
         "question": "Is Firebase suitable for UK consumer health apps?",
-        "answer": "Firebase for UK consumer health apps: depends on whether health data is processed. Firebase is acceptable for: (1) anonymous health content (article views, symptom checker without personal data -- no NHS number, no health conditions stored), (2) non-identifiable wellness data (step count, sleep -- no NHS number, not linkable to medical record). Firebase is NOT recommended for: (1) any app storing NHS number (identifiable health data -- Article 9 special category), (2) any app integrating with NHS Login (NHS Login user identity -- personal health data flows from NHS -- should be on AWS eu-west-2), (3) any app procured by NHS (DTAC Domain 2 review will identify Firebase as third-party US processor -- DTAC assessors will require justification). ClickMasters: Firebase for NHS consumer health is a common mistake in early UK HealthTech startups -- architect for AWS eu-west-2 from the start."
+        "answer": "Firebase for UK consumer health apps: depends on whether health data is processed. Firebase is acceptable for: (1) anonymous health content (article views, symptom checker without personal data -- no NHS number, no health conditions stored), (2) non-identifiable wellness data (step count, sleep -- no NHS number, not linkable to medical record). Firebase is NOT recommended for: (1) any app storing NHS number (identifiable health data -- Article 9 special category), (2) any app integrating with NHS Login (NHS Login user identity -- personal health data flows from NHS -- should be on AWS eu-west-2), (3) any app procured by NHS (DTAC Domain 2 review will identify Firebase as third-party US processor -- DTAC assessors will require justification). Clickmasters: Firebase for NHS consumer health is a common mistake in early UK HealthTech startups -- architect for AWS eu-west-2 from the start."
       }
     ],
     "relatedPages": [
@@ -15672,11 +15672,11 @@ export const comparisons = [
     "topic": "stripe_vs_gocardless_vs_worldpay_uk_payments_",
     "year": "2025",
     "title": "Stripe vs GoCardless vs Worldpay -- UK Payments (2026)",
-    "metaTitle": "Stripe vs GoCardless vs Worldpay -- UK Payments 2026 | ClickMasters",
-    "metaDesc": "Stripe Elements is ClickMasters default for UK card payments: SAQ-A PCI compliance (card data never touches ClickMasters servers), best UK developer experi",
+    "metaTitle": "Stripe vs GoCardless vs Worldpay -- UK Payments 2026 | Clickmasters",
+    "metaDesc": "Stripe Elements is Clickmasters default for UK card payments: SAQ-A PCI compliance (card data never touches Clickmasters servers), best UK developer experi",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -15685,7 +15685,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "Stripe Elements is ClickMasters default for UK card payments: SAQ-A PCI compliance (card data never touches ClickMasters servers), best UK developer experience, FCA Consumer Duty transparent pricing, and excellent fraud prevention (Stripe Radar). GoCardless is ClickMasters default for UK Direct Debit and VRP: lowest cost per transaction for recurring payments (GBP0.20 BACS vs GBP0.30+ card), best BACS Direct Debit, and FCA PS21/3 VRP for variable recurring payments. Worldpay is right for large enterprise retail with complex acquiring needs. Payment provider choice affects PCI-DSS SAQ scope (card data processing), FCA PS21/3 IBS availability, and UK GDPR data processor obligations.",
+    "directAnswer": "Stripe Elements is Clickmasters default for UK card payments: SAQ-A PCI compliance (card data never touches Clickmasters servers), best UK developer experience, FCA Consumer Duty transparent pricing, and excellent fraud prevention (Stripe Radar). GoCardless is Clickmasters default for UK Direct Debit and VRP: lowest cost per transaction for recurring payments (GBP0.20 BACS vs GBP0.30+ card), best BACS Direct Debit, and FCA PS21/3 VRP for variable recurring payments. Worldpay is right for large enterprise retail with complex acquiring needs. Payment provider choice affects PCI-DSS SAQ scope (card data processing), FCA PS21/3 IBS availability, and UK GDPR data processor obligations.",
     "comparisonTables": [
       {
         "title": "",
@@ -15745,7 +15745,7 @@ export const comparisons = [
             "Fraud tools available"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All UK card payments (consumer + B2B)",
             "All UK recurring (subscriptions, BNPL repayment, VRP)",
             "Large enterprise retail (high volume, complex acquiring)"
@@ -15757,11 +15757,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Should UK B2B SaaS use Stripe or GoCardless?",
-        "answer": "Stripe vs GoCardless for UK B2B SaaS: (1) invoice value &gt; GBP500/month (B2B SaaS enterprise tier): GoCardless BACS Direct Debit -- GBP0.20/transaction vs Stripe GBP0.25+1.5% (significant cost saving at high invoice values), (2) invoice value &lt; GBP100/month (B2B SaaS SMB tier): Stripe card -- BACS setup friction reduces conversion at low price points, (3) variable billing (usage-based SaaS): GoCardless VRP (pre-authorised variable amount) vs Stripe metered billing (card), (4) international B2B: Stripe (global card acceptance) -- GoCardless BACS is UK-only (GoCardless also supports SEPA Direct Debit for EU and ACH for US but BACS is UK-specific). ClickMasters B2B SaaS default: Stripe for SMB tier (&lt; GBP200/month), GoCardless for enterprise tier (&gt; GBP200/month) -- hybrid implementation using Stripe for initial payment and GoCardless mandate for recurring."
+        "answer": "Stripe vs GoCardless for UK B2B SaaS: (1) invoice value &gt; GBP500/month (B2B SaaS enterprise tier): GoCardless BACS Direct Debit -- GBP0.20/transaction vs Stripe GBP0.25+1.5% (significant cost saving at high invoice values), (2) invoice value &lt; GBP100/month (B2B SaaS SMB tier): Stripe card -- BACS setup friction reduces conversion at low price points, (3) variable billing (usage-based SaaS): GoCardless VRP (pre-authorised variable amount) vs Stripe metered billing (card), (4) international B2B: Stripe (global card acceptance) -- GoCardless BACS is UK-only (GoCardless also supports SEPA Direct Debit for EU and ACH for US but BACS is UK-specific). Clickmasters B2B SaaS default: Stripe for SMB tier (&lt; GBP200/month), GoCardless for enterprise tier (&gt; GBP200/month) -- hybrid implementation using Stripe for initial payment and GoCardless mandate for recurring."
       },
       {
         "question": "Does Stripe Elements satisfy PCI-DSS SAQ-A for UK eCommerce?",
-        "answer": "Stripe Elements and PCI-DSS SAQ-A: yes -- Stripe Elements (iframe-based card input) satisfies SAQ-A requirements. SAQ-A eligibility: (1) all cardholder data functions outsourced to third-party (Stripe), (2) no storage, processing, or transmission of cardholder data on ClickMasters systems, (3) Stripe CDN-hosted Elements form (customer card entry happens in Stripe iframe -- not on ClickMasters domain). PCI-DSS SAQ-A requirements: (1) confirm Stripe is PCI-DSS Level 1 Service Provider (published annual Attestation of Compliance -- yes), (2) use HTTPS on payment page (TLS 1.2+), (3) link to Stripe privacy policy. ClickMasters Stripe integration: all ClickMasters eCommerce uses Stripe Elements -- SAQ-A qualification confirmed for all clients. Never use Stripe.js with `payment_method` direct (SAQ-D scope) -- always use Stripe Elements (SAQ-A scope)."
+        "answer": "Stripe Elements and PCI-DSS SAQ-A: yes -- Stripe Elements (iframe-based card input) satisfies SAQ-A requirements. SAQ-A eligibility: (1) all cardholder data functions outsourced to third-party (Stripe), (2) no storage, processing, or transmission of cardholder data on Clickmasters systems, (3) Stripe CDN-hosted Elements form (customer card entry happens in Stripe iframe -- not on Clickmasters domain). PCI-DSS SAQ-A requirements: (1) confirm Stripe is PCI-DSS Level 1 Service Provider (published annual Attestation of Compliance -- yes), (2) use HTTPS on payment page (TLS 1.2+), (3) link to Stripe privacy policy. Clickmasters Stripe integration: all Clickmasters eCommerce uses Stripe Elements -- SAQ-A qualification confirmed for all clients. Never use Stripe.js with `payment_method` direct (SAQ-D scope) -- always use Stripe Elements (SAQ-A scope)."
       }
     ],
     "relatedPages": [
@@ -15787,11 +15787,11 @@ export const comparisons = [
     "topic": "shopify_vs_woocommerce_vs_magento_uk_ecommerc",
     "year": "2025",
     "title": "Shopify vs WooCommerce vs Magento 2 -- UK eCommerce Platform (2026)",
-    "metaTitle": "Shopify vs WooCommerce vs Magento 2 -- UK eCommerce 2026 | ClickMasters",
-    "metaDesc": "Shopify Plus is ClickMasters default for UK retailers GBP1M-GBP200M GMV: SAQ-A PCI compliance (Shopify handles all card data), best UK HMRC MTD VAT integra",
+    "metaTitle": "Shopify vs WooCommerce vs Magento 2 -- UK eCommerce 2026 | Clickmasters",
+    "metaDesc": "Shopify Plus is Clickmasters default for UK retailers GBP1M-GBP200M GMV: SAQ-A PCI compliance (Shopify handles all card data), best UK HMRC MTD VAT integra",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -15800,7 +15800,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "Shopify Plus is ClickMasters default for UK retailers GBP1M-GBP200M GMV: SAQ-A PCI compliance (Shopify handles all card data), best UK HMRC MTD VAT integration, Consumer Rights Act 14-day return automation, and the largest UK eCommerce developer community. WooCommerce on PHP 8.2 is right for content-driven retail sites where WordPress integration is valuable. Magento 2 (Adobe Commerce) is right for retailers above GBP200M GMV needing custom commerce logic that composable MACH cannot justify. Platform choice affects PCI-DSS SAQ scope, HMRC MTD VAT compliance, UK Consumer Rights Act return automation, and total cost of ownership.",
+    "directAnswer": "Shopify Plus is Clickmasters default for UK retailers GBP1M-GBP200M GMV: SAQ-A PCI compliance (Shopify handles all card data), best UK HMRC MTD VAT integration, Consumer Rights Act 14-day return automation, and the largest UK eCommerce developer community. WooCommerce on PHP 8.2 is right for content-driven retail sites where WordPress integration is valuable. Magento 2 (Adobe Commerce) is right for retailers above GBP200M GMV needing custom commerce logic that composable MACH cannot justify. Platform choice affects PCI-DSS SAQ scope, HMRC MTD VAT compliance, UK Consumer Rights Act return automation, and total cost of ownership.",
     "comparisonTables": [
       {
         "title": "",
@@ -15860,7 +15860,7 @@ export const comparisons = [
             "Good -- theme-dependent"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "UK retail GBP1M-GBP200M GMV",
             "Content-driven retail, WordPress-first",
             "Complex enterprise retail &gt; GBP200M GMV"
@@ -15872,7 +15872,7 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Does Shopify handle UK HMRC VAT correctly?",
-        "answer": "Shopify Tax for UK VAT: Shopify has UK-specific VAT rules built in: (1) Standard rate 20% (most goods and services), (2) Zero rate 0% (food, children clothing, books -- Shopify knows the rules), (3) Reduced rate 5% (domestic energy, children car seats, stop smoking aids), (4) VAT-exempt products (insurance, financial services -- not typical eCommerce), (5) EU post-Brexit VAT (Shopify Markets handles DDP -- Duties and Taxes Paid -- for EU orders post-Brexit). HMRC MTD: Shopify integrates with UK MTD VAT apps (e.g., TaxJar, Avalara, or direct HMRC MTD API apps in Shopify App Store). ClickMasters Shopify UK setup: configure Shopify Tax for UK product tax types, add MTD-compliant VAT reporting app, confirm VAT threshold (GBP90,000) monitoring."
+        "answer": "Shopify Tax for UK VAT: Shopify has UK-specific VAT rules built in: (1) Standard rate 20% (most goods and services), (2) Zero rate 0% (food, children clothing, books -- Shopify knows the rules), (3) Reduced rate 5% (domestic energy, children car seats, stop smoking aids), (4) VAT-exempt products (insurance, financial services -- not typical eCommerce), (5) EU post-Brexit VAT (Shopify Markets handles DDP -- Duties and Taxes Paid -- for EU orders post-Brexit). HMRC MTD: Shopify integrates with UK MTD VAT apps (e.g., TaxJar, Avalara, or direct HMRC MTD API apps in Shopify App Store). Clickmasters Shopify UK setup: configure Shopify Tax for UK product tax types, add MTD-compliant VAT reporting app, confirm VAT threshold (GBP90,000) monitoring."
       },
       {
         "question": "When should UK retailers use WooCommerce instead of Shopify?",
@@ -15902,11 +15902,11 @@ export const comparisons = [
     "topic": "bun_vs_nodejs_vs_deno_uk_runtime_2026",
     "year": "2026",
     "title": "Bun vs Node.js vs Deno -- UK JavaScript Runtime (2026)",
-    "metaTitle": "Bun vs Node.js vs Deno -- UK JavaScript Runtime 2026 | ClickMasters",
-    "metaDesc": "Node.js 20 LTS is ClickMasters default for all UK regulated production workloads: largest ecosystem (npm -- every NHS, FCA, and GDS library available), lon",
+    "metaTitle": "Bun vs Node.js vs Deno -- UK JavaScript Runtime 2026 | Clickmasters",
+    "metaDesc": "Node.js 20 LTS is Clickmasters default for all UK regulated production workloads: largest ecosystem (npm -- every NHS, FCA, and GDS library available), lon",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -15915,7 +15915,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "Node.js 20 LTS is ClickMasters default for all UK regulated production workloads: largest ecosystem (npm -- every NHS, FCA, and GDS library available), longest-term LTS support (critical for NHS DTAC evidence continuity), and the most proven regulated-sector production track record. Bun is ClickMasters default for development speed (Bun dev server and test runner in development -- faster feedback loops). Deno is right for secure-by-default scripts and edge workloads. Runtime choice affects NHS DTAC Domain 3 security patch availability, FCA PS21/3 LTS support continuity, and UK developer talent market availability.",
+    "directAnswer": "Node.js 20 LTS is Clickmasters default for all UK regulated production workloads: largest ecosystem (npm -- every NHS, FCA, and GDS library available), longest-term LTS support (critical for NHS DTAC evidence continuity), and the most proven regulated-sector production track record. Bun is Clickmasters default for development speed (Bun dev server and test runner in development -- faster feedback loops). Deno is right for secure-by-default scripts and edge workloads. Runtime choice affects NHS DTAC Domain 3 security patch availability, FCA PS21/3 LTS support continuity, and UK developer talent market availability.",
     "comparisonTables": [
       {
         "title": "",
@@ -15975,7 +15975,7 @@ export const comparisons = [
             "Official Deno Docker image -- good"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All UK regulated production (NHS, FCA, GDS)",
             "Development speed (dev server, test runner, scripts)",
             "Secure scripts, edge workloads, Deno Deploy"
@@ -15987,11 +15987,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Should UK HealthTech use Bun instead of Node.js in production?",
-        "answer": "Bun for NHS HealthTech production: ClickMasters current position (June 2026): not yet for NHS DTAC-regulated production. Reasons: (1) DTAC Domain 3 security patches -- Node.js has formal LTS CVE patching (7-day patch target) -- Bun does not yet have an equivalent formal CVE programme, (2) npm native modules -- some NHS-specific npm packages use native Node.js modules (node-gyp compiled) -- Bun compatibility is 95% but the 5% failure risk is unacceptable for NHS production, (3) AWS Lambda runtime -- Node.js 20 is an AWS-managed Lambda runtime (security patches applied by AWS) -- Bun requires custom Lambda runtime (customer responsibility), (4) UK DTAC assessor familiarity -- DTAC assessors understand Node.js LTS -- a novel runtime requires additional DTAC Domain 3 justification. ClickMasters recommendation: use Bun for development speed (dev server, test runner, scripts) -- deploy Node.js 20 LTS in production NHS and FCA systems."
+        "answer": "Bun for NHS HealthTech production: Clickmasters current position (June 2026): not yet for NHS DTAC-regulated production. Reasons: (1) DTAC Domain 3 security patches -- Node.js has formal LTS CVE patching (7-day patch target) -- Bun does not yet have an equivalent formal CVE programme, (2) npm native modules -- some NHS-specific npm packages use native Node.js modules (node-gyp compiled) -- Bun compatibility is 95% but the 5% failure risk is unacceptable for NHS production, (3) AWS Lambda runtime -- Node.js 20 is an AWS-managed Lambda runtime (security patches applied by AWS) -- Bun requires custom Lambda runtime (customer responsibility), (4) UK DTAC assessor familiarity -- DTAC assessors understand Node.js LTS -- a novel runtime requires additional DTAC Domain 3 justification. Clickmasters recommendation: use Bun for development speed (dev server, test runner, scripts) -- deploy Node.js 20 LTS in production NHS and FCA systems."
       },
       {
-        "question": "When will ClickMasters recommend Bun for production?",
-        "answer": "ClickMasters Bun production roadmap: ClickMasters will recommend Bun for UK regulated production when: (1) Bun formal LTS programme (with CVE response timeline equivalent to Node.js -- expected H2 2026), (2) AWS Bun managed Lambda runtime (AWS-managed Bun Lambda runtime -- removes custom runtime security responsibility), (3) 99%+ npm compatibility (NAPI native module support complete), (4) 12 months production track record at scale (UK companies reporting zero Bun-specific incidents in regulated production). Expected timeline: Bun may be production-recommended by ClickMasters in H1 2027 for non-regulated UK workloads, H2 2027 for NHS/FCA regulated. In the meantime: Bun dev server + Bun test runner in development (10x speed improvement) + Node.js production is the optimal hybrid."
+        "question": "When will Clickmasters recommend Bun for production?",
+        "answer": "Clickmasters Bun production roadmap: Clickmasters will recommend Bun for UK regulated production when: (1) Bun formal LTS programme (with CVE response timeline equivalent to Node.js -- expected H2 2026), (2) AWS Bun managed Lambda runtime (AWS-managed Bun Lambda runtime -- removes custom runtime security responsibility), (3) 99%+ npm compatibility (NAPI native module support complete), (4) 12 months production track record at scale (UK companies reporting zero Bun-specific incidents in regulated production). Expected timeline: Bun may be production-recommended by Clickmasters in H1 2027 for non-regulated UK workloads, H2 2027 for NHS/FCA regulated. In the meantime: Bun dev server + Bun test runner in development (10x speed improvement) + Node.js production is the optimal hybrid."
       }
     ],
     "relatedPages": [
@@ -16017,11 +16017,11 @@ export const comparisons = [
     "topic": "temporal_vs_bull_vs_agenda_uk_job_queue_2026",
     "year": "2026",
     "title": "Temporal vs BullMQ vs Agenda -- UK Background Job Queue (2026)",
-    "metaTitle": "Temporal vs Bull vs Agenda -- UK Job Queue 2026 | ClickMasters",
-    "metaDesc": "BullMQ (Redis-backed) is ClickMasters default for UK background jobs: mature, well-supported, excellent failure handling, and straightforward integration w",
+    "metaTitle": "Temporal vs Bull vs Agenda -- UK Job Queue 2026 | Clickmasters",
+    "metaDesc": "BullMQ (Redis-backed) is Clickmasters default for UK background jobs: mature, well-supported, excellent failure handling, and straightforward integration w",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -16030,7 +16030,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "BullMQ (Redis-backed) is ClickMasters default for UK background jobs: mature, well-supported, excellent failure handling, and straightforward integration with ElastiCache Redis (eu-west-2) for NHS DTAC data residency. Temporal is right for long-running, multi-step workflows requiring durable execution (NHS DTAC application process automation, FCA KYC multi-step onboarding). Agenda (MongoDB-backed) is legacy for new UK builds. Job queue choice affects NHS DTAC data residency, FCA PS21/3 event processing reliability, and UK GDPR audit trail completeness for background processing.",
+    "directAnswer": "BullMQ (Redis-backed) is Clickmasters default for UK background jobs: mature, well-supported, excellent failure handling, and straightforward integration with ElastiCache Redis (eu-west-2) for NHS DTAC data residency. Temporal is right for long-running, multi-step workflows requiring durable execution (NHS DTAC application process automation, FCA KYC multi-step onboarding). Agenda (MongoDB-backed) is legacy for new UK builds. Job queue choice affects NHS DTAC data residency, FCA PS21/3 event processing reliability, and UK GDPR audit trail completeness for background processing.",
     "comparisonTables": [
       {
         "title": "",
@@ -16090,7 +16090,7 @@ export const comparisons = [
             "MongoDB (separate if not in stack)"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All UK background jobs (NHS batch, FCA reporting, emails)",
             "Complex multi-step workflows (onboarding, approvals)",
             "Legacy projects only"
@@ -16102,11 +16102,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "Should UK FinTech use Temporal for AML KYC onboarding?",
-        "answer": "Temporal for FCA AML KYC onboarding: ClickMasters recommendation is yes -- Temporal is excellent for multi-step regulated onboarding workflows. AML KYC onboarding steps: (1) identity verification (Onfido API -- async, may take minutes), (2) KYC data wait (Onfido webhook received -- continue workflow), (3) sanctions screening (ComplyAdvantage API), (4) credit check (Experian API), (5) risk scoring (ML model), (6) decision (automated or manual review), (7) account creation (if approved), (8) HMRC reporting (if required). Why Temporal: (1) durable execution (if server restarts between steps 3 and 4, Temporal resumes at step 4 -- no duplicate Onfido call, no lost KYC data), (2) built-in retry (each step has configurable retry with exponential backoff), (3) workflow history (complete audit trail per customer onboarding -- FCA JMLSG evidence), (4) compensation (if step 6 fails after step 5 -- rollback logic defined). ClickMasters uses Temporal for all multi-step FCA regulated onboarding flows (5+ steps) and BullMQ for simpler background processing."
+        "answer": "Temporal for FCA AML KYC onboarding: Clickmasters recommendation is yes -- Temporal is excellent for multi-step regulated onboarding workflows. AML KYC onboarding steps: (1) identity verification (Onfido API -- async, may take minutes), (2) KYC data wait (Onfido webhook received -- continue workflow), (3) sanctions screening (ComplyAdvantage API), (4) credit check (Experian API), (5) risk scoring (ML model), (6) decision (automated or manual review), (7) account creation (if approved), (8) HMRC reporting (if required). Why Temporal: (1) durable execution (if server restarts between steps 3 and 4, Temporal resumes at step 4 -- no duplicate Onfido call, no lost KYC data), (2) built-in retry (each step has configurable retry with exponential backoff), (3) workflow history (complete audit trail per customer onboarding -- FCA JMLSG evidence), (4) compensation (if step 6 fails after step 5 -- rollback logic defined). Clickmasters uses Temporal for all multi-step FCA regulated onboarding flows (5+ steps) and BullMQ for simpler background processing."
       },
       {
         "question": "Is BullMQ suitable for NHS MHSDS monthly submission?",
-        "answer": "BullMQ for NHS MHSDS monthly submission: yes -- BullMQ is well-suited for NHS monthly batch reporting jobs. MHSDS submission workflow: (1) scheduled job (BullMQ cron -- runs on 1st of each month), (2) data extraction (query PostgreSQL -- all MHSDS records for previous month), (3) validation (NHS Digital MHSDS schema validation), (4) submission (NHS MESH API call), (5) confirmation (store MESH message ID -- receipt confirmation). BullMQ features used: (1) cron scheduling (runs monthly), (2) progress updates (job progress 0-100% -- monitoring dashboard shows submission progress), (3) retry on failure (3 retries with exponential backoff -- MESH API may be temporarily unavailable), (4) failed queue (if submission fails after retries -- CloudWatch DLQ alarm), (5) job history (BullMQ job history in Redis -- audit log of all MHSDS submissions). ClickMasters: BullMQ handles all NHS monthly batch submissions across 12 NHS clients."
+        "answer": "BullMQ for NHS MHSDS monthly submission: yes -- BullMQ is well-suited for NHS monthly batch reporting jobs. MHSDS submission workflow: (1) scheduled job (BullMQ cron -- runs on 1st of each month), (2) data extraction (query PostgreSQL -- all MHSDS records for previous month), (3) validation (NHS Digital MHSDS schema validation), (4) submission (NHS MESH API call), (5) confirmation (store MESH message ID -- receipt confirmation). BullMQ features used: (1) cron scheduling (runs monthly), (2) progress updates (job progress 0-100% -- monitoring dashboard shows submission progress), (3) retry on failure (3 retries with exponential backoff -- MESH API may be temporarily unavailable), (4) failed queue (if submission fails after retries -- CloudWatch DLQ alarm), (5) job history (BullMQ job history in Redis -- audit log of all MHSDS submissions). Clickmasters: BullMQ handles all NHS monthly batch submissions across 12 NHS clients."
       }
     ],
     "relatedPages": [
@@ -16132,11 +16132,11 @@ export const comparisons = [
     "topic": "react_query_vs_swr_vs_apollo_uk_data_fetching",
     "year": "2025",
     "title": "TanStack Query vs SWR vs Apollo Client -- UK Data Fetching (2026)",
-    "metaTitle": "React Query vs SWR vs Apollo -- UK Data Fetching 2026 | ClickMasters",
-    "metaDesc": "TanStack Query (formerly React Query) is ClickMasters default for all UK REST API data fetching: best cache management, mutation handling, and infinite que",
+    "metaTitle": "React Query vs SWR vs Apollo -- UK Data Fetching 2026 | Clickmasters",
+    "metaDesc": "TanStack Query (formerly React Query) is Clickmasters default for all UK REST API data fetching: best cache management, mutation handling, and infinite que",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -16145,7 +16145,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "TanStack Query (formerly React Query) is ClickMasters default for all UK REST API data fetching: best cache management, mutation handling, and infinite query support. SWR is right for simple read-heavy applications where TanStack Query is overkill. Apollo Client is right when a GraphQL API is mandated -- but since ClickMasters defaults to REST + tRPC (not GraphQL), Apollo is rarely needed. Data fetching library choice affects NHS clinical UI loading performance, FCA IBS UI availability, and UK GDPR cache invalidation (right to erasure -- cached patient data must be invalidated on deletion).",
+    "directAnswer": "TanStack Query (formerly React Query) is Clickmasters default for all UK REST API data fetching: best cache management, mutation handling, and infinite query support. SWR is right for simple read-heavy applications where TanStack Query is overkill. Apollo Client is right when a GraphQL API is mandated -- but since Clickmasters defaults to REST + tRPC (not GraphQL), Apollo is rarely needed. Data fetching library choice affects NHS clinical UI loading performance, FCA IBS UI availability, and UK GDPR cache invalidation (right to erasure -- cached patient data must be invalidated on deletion).",
     "comparisonTables": [
       {
         "title": "",
@@ -16175,7 +16175,7 @@ export const comparisons = [
             "Not designed for REST"
           ],
           [
-            "tRPC integration (ClickMasters default)",
+            "tRPC integration (Clickmasters default)",
             "BEST -- @tanstack/react-query used internally by tRPC",
             "tRPC can use SWR adapter",
             "Not applicable (tRPC uses React Query)"
@@ -16205,7 +16205,7 @@ export const comparisons = [
             "Large (93KB gzipped)"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "All UK REST and tRPC data fetching",
             "Simple read-only dashboards",
             "GraphQL APIs only"
@@ -16217,11 +16217,11 @@ export const comparisons = [
     "faqs": [
       {
         "question": "How does TanStack Query help UK GDPR right to erasure in NHS applications?",
-        "answer": "TanStack Query and UK GDPR erasure for NHS: when a patient exercises their right to erasure (Article 17) and the NHS application has cached patient data in TanStack Query cache: (1) erasure request received (DELETE /patients/{nhs_number}), (2) server-side erasure (PostgreSQL cascade delete -- all patient records deleted), (3) cache invalidation (queryClient.removeQueries({predicate: q =&gt; q.queryKey.includes(nhsNumber)}) -- removes all cached queries containing that NHS number), (4) active session (if patient is currently viewing their record -- React state cleared, redirect to homepage), (5) audit log (erasure request recorded -- UK GDPR right to erasure fulfilled timestamp). ClickMasters NHS erasure pattern: every NHS application has a dedicated erasure webhook that triggers both PostgreSQL cascade delete and TanStack Query cache invalidation -- UK GDPR Article 17 compliance."
+        "answer": "TanStack Query and UK GDPR erasure for NHS: when a patient exercises their right to erasure (Article 17) and the NHS application has cached patient data in TanStack Query cache: (1) erasure request received (DELETE /patients/{nhs_number}), (2) server-side erasure (PostgreSQL cascade delete -- all patient records deleted), (3) cache invalidation (queryClient.removeQueries({predicate: q =&gt; q.queryKey.includes(nhsNumber)}) -- removes all cached queries containing that NHS number), (4) active session (if patient is currently viewing their record -- React state cleared, redirect to homepage), (5) audit log (erasure request recorded -- UK GDPR right to erasure fulfilled timestamp). Clickmasters NHS erasure pattern: every NHS application has a dedicated erasure webhook that triggers both PostgreSQL cascade delete and TanStack Query cache invalidation -- UK GDPR Article 17 compliance."
       },
       {
         "question": "Should UK NHS HealthTech use Apollo Client with FHIR?",
-        "answer": "Apollo Client with FHIR R4: Apollo Client is designed for GraphQL APIs. NHS FHIR R4 UK Core is a REST API (not GraphQL). Combining Apollo Client with FHIR: (1) Apollo Client can fetch REST via @apollo/client link (REST to Apollo cache adapter) -- adds significant complexity, (2) FHIR servers provide GraphQL endpoint (HAPI FHIR has experimental GraphQL -- but not FHIR standard, not UK Core validated), (3) ClickMasters recommendation: do not use Apollo Client for NHS FHIR R4. Use TanStack Query (REST) for FHIR API calls. TanStack Query handles FHIR pagination (FHIR bundle next page links), FHIR caching (per-resource stale time), and FHIR cache invalidation (invalidate on patient update). Apollo Client adds no benefit over TanStack Query for REST FHIR -- it adds bundle size and complexity."
+        "answer": "Apollo Client with FHIR R4: Apollo Client is designed for GraphQL APIs. NHS FHIR R4 UK Core is a REST API (not GraphQL). Combining Apollo Client with FHIR: (1) Apollo Client can fetch REST via @apollo/client link (REST to Apollo cache adapter) -- adds significant complexity, (2) FHIR servers provide GraphQL endpoint (HAPI FHIR has experimental GraphQL -- but not FHIR standard, not UK Core validated), (3) Clickmasters recommendation: do not use Apollo Client for NHS FHIR R4. Use TanStack Query (REST) for FHIR API calls. TanStack Query handles FHIR pagination (FHIR bundle next page links), FHIR caching (per-resource stale time), and FHIR cache invalidation (invalidate on patient update). Apollo Client adds no benefit over TanStack Query for REST FHIR -- it adds bundle size and complexity."
       }
     ],
     "relatedPages": [
@@ -16247,11 +16247,11 @@ export const comparisons = [
     "topic": "vercel_ai_sdk_vs_langchain_vs_llamaindex_uk_2",
     "year": "2025",
     "title": "Vercel AI SDK vs LangChain vs LlamaIndex -- UK AI Development (2026)",
-    "metaTitle": "Vercel AI SDK vs LangChain vs LlamaIndex -- UK AI Development 2026 | ClickMasters",
-    "metaDesc": "Vercel AI SDK is ClickMasters default for UK AI-powered Next.js applications: native streaming (useChat, useCompletion), TypeScript-first, and the simplest",
+    "metaTitle": "Vercel AI SDK vs LangChain vs LlamaIndex -- UK AI Development 2026 | Clickmasters",
+    "metaDesc": "Vercel AI SDK is Clickmasters default for UK AI-powered Next.js applications: native streaming (useChat, useCompletion), TypeScript-first, and the simplest",
     "lastUpdated": "June 2026",
     "readingTime": 9,
-    "writtenBy": "ClickMasters Strategy Team",
+    "writtenBy": "Clickmasters Strategy Team",
     "reviewedBy": "James Whitmore, CTO",
     "badges": [
       "UK",
@@ -16260,7 +16260,7 @@ export const comparisons = [
       "UK GDPR",
       "UK Law"
     ],
-    "directAnswer": "Vercel AI SDK is ClickMasters default for UK AI-powered Next.js applications: native streaming (useChat, useCompletion), TypeScript-first, and the simplest integration for Claude and OpenAI in Next.js Server Actions. LangChain is right for complex multi-step AI chains and agent workflows. LlamaIndex is right for RAG (Retrieval-Augmented Generation) applications requiring advanced document indexing. All three must be used with UK GDPR compliance -- no patient data to non-EU AI endpoints without DPA. AI SDK choice affects UK GDPR data residency (patient data sent to AI APIs), FCA Consumer Duty AI transparency, and NHS DTAC AI governance evidence.",
+    "directAnswer": "Vercel AI SDK is Clickmasters default for UK AI-powered Next.js applications: native streaming (useChat, useCompletion), TypeScript-first, and the simplest integration for Claude and OpenAI in Next.js Server Actions. LangChain is right for complex multi-step AI chains and agent workflows. LlamaIndex is right for RAG (Retrieval-Augmented Generation) applications requiring advanced document indexing. All three must be used with UK GDPR compliance -- no patient data to non-EU AI endpoints without DPA. AI SDK choice affects UK GDPR data residency (patient data sent to AI APIs), FCA Consumer Duty AI transparency, and NHS DTAC AI governance evidence.",
     "comparisonTables": [
       {
         "title": "",
@@ -16296,7 +16296,7 @@ export const comparisons = [
             "Good -- agent patterns"
           ],
           [
-            "TypeScript-first (ClickMasters default)",
+            "TypeScript-first (Clickmasters default)",
             "BEST -- native TypeScript, React hooks",
             "JavaScript/Python -- TypeScript support adequate",
             "Python-first -- TypeScript available but secondary"
@@ -16320,7 +16320,7 @@ export const comparisons = [
             "LlamaIndex AWS Bedrock available"
           ],
           [
-            "ClickMasters default",
+            "Clickmasters default",
             "NHS/FCA Next.js AI (chat, completion, streaming)",
             "Complex AI agents, multi-step chains",
             "RAG on document collections"
@@ -16331,12 +16331,12 @@ export const comparisons = [
     "bodySections": [],
     "faqs": [
       {
-        "question": "How does ClickMasters use Vercel AI SDK for NHS applications with UK GDPR?",
-        "answer": "Vercel AI SDK for NHS UK GDPR: (1) AWS Bedrock provider (Vercel AI SDK supports AWS Bedrock -- use Claude 3.5 Sonnet via AWS Bedrock eu-west-1/eu-west-2 -- patient data stays in AWS account, Anthropic never receives raw patient data), (2) no direct Anthropic API for patient data (Vercel AI SDK direct to Anthropic API sends data to Anthropic US -- not NHS DTAC compliant for patient data), (3) prompt sanitisation (remove NHS number, name, DOB from prompts before AI call -- use de-identified references: patient_id only), (4) response logging (all AI responses logged to PostgreSQL eu-west-2 -- audit trail for NHS DTAC Domain 1), (5) user consent (patient must consent to AI-assisted services -- NHS AI Lab Standard 4 -- transparent AI use). ClickMasters NHS AI standard: AWS Bedrock for all NHS AI -- never direct AI API endpoints for patient data."
+        "question": "How does Clickmasters use Vercel AI SDK for NHS applications with UK GDPR?",
+        "answer": "Vercel AI SDK for NHS UK GDPR: (1) AWS Bedrock provider (Vercel AI SDK supports AWS Bedrock -- use Claude 3.5 Sonnet via AWS Bedrock eu-west-1/eu-west-2 -- patient data stays in AWS account, Anthropic never receives raw patient data), (2) no direct Anthropic API for patient data (Vercel AI SDK direct to Anthropic API sends data to Anthropic US -- not NHS DTAC compliant for patient data), (3) prompt sanitisation (remove NHS number, name, DOB from prompts before AI call -- use de-identified references: patient_id only), (4) response logging (all AI responses logged to PostgreSQL eu-west-2 -- audit trail for NHS DTAC Domain 1), (5) user consent (patient must consent to AI-assisted services -- NHS AI Lab Standard 4 -- transparent AI use). Clickmasters NHS AI standard: AWS Bedrock for all NHS AI -- never direct AI API endpoints for patient data."
       },
       {
         "question": "Is LangChain suitable for UK FinTech AI applications?",
-        "answer": "LangChain for UK FinTech AI: LangChain is well-suited for multi-step FinTech AI workflows. Use cases: (1) AML circular trade fraud detection (LangGraph agent -- graph traversal + LLM analysis of suspicious network), (2) contract review AI (LangChain RAG -- LlamaIndex document indexing + LangChain LLM for clause extraction), (3) financial report analysis (LangChain + tool calling -- query financial APIs + LLM synthesis), (4) customer service AI (LangChain conversation chain -- FCA Consumer Duty -- must be explainable, must escalate to human). UK GDPR for LangChain FinTech: (1) every LangChain step that processes personal data must be logged (FCA JMLSG evidence), (2) LangSmith (LangChain observability) useful for compliance logging but is a US service -- UK financial data should use self-hosted logging, (3) AWS Bedrock LangChain integration (same pattern as Vercel AI SDK -- EU data residency). ClickMasters: LangChain for complex FinTech AI workflows, Vercel AI SDK for FinTech UI streaming."
+        "answer": "LangChain for UK FinTech AI: LangChain is well-suited for multi-step FinTech AI workflows. Use cases: (1) AML circular trade fraud detection (LangGraph agent -- graph traversal + LLM analysis of suspicious network), (2) contract review AI (LangChain RAG -- LlamaIndex document indexing + LangChain LLM for clause extraction), (3) financial report analysis (LangChain + tool calling -- query financial APIs + LLM synthesis), (4) customer service AI (LangChain conversation chain -- FCA Consumer Duty -- must be explainable, must escalate to human). UK GDPR for LangChain FinTech: (1) every LangChain step that processes personal data must be logged (FCA JMLSG evidence), (2) LangSmith (LangChain observability) useful for compliance logging but is a US service -- UK financial data should use self-hosted logging, (3) AWS Bedrock LangChain integration (same pattern as Vercel AI SDK -- EU data residency). Clickmasters: LangChain for complex FinTech AI workflows, Vercel AI SDK for FinTech UI streaming."
       }
     ],
     "relatedPages": [

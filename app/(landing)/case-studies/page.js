@@ -15,7 +15,7 @@ export async function generateMetadata({ searchParams }) {
   const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
 
   const metadata = {
-    title: 'Case Studies | ClickMasters Software Development',
+    title: 'Case Studies | Clickmasters Software Development',
     description: 'Explore our portfolio of successful software development projects across FinTech, HealthTech, GovTech, EdTech, and more UK industries.',
     alternates: { canonical },
   };

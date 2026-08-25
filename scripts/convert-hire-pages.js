@@ -106,9 +106,9 @@ function extractTitle(html) {
 }
 
 function extractRoleAndCity(filename) {
-  // Pattern 1: ClickMasters_P52_hire_react-developer_london.docx
+  // Pattern 1: Clickmasters_P52_hire_react-developer_london.docx
   // role = react-developer, city = london
-  // Pattern 2: ClickMasters_P534_hire_react_developer_southampton.docx
+  // Pattern 2: Clickmasters_P534_hire_react_developer_southampton.docx
   // role = react_developer, city = southampton
 
   // Find the part after "hire_"
@@ -311,8 +311,8 @@ function extractIr35Comparison(tables) {
     if (line.includes('Question')) return;
     if (line.includes('Contractor Agency Answer')) {
       currentRow.question = line.replace('Contractor Agency Answer', '').trim();
-    } else if (line.includes('ClickMasters Answer')) {
-      currentRow.clickMasters = line.replace('ClickMasters Answer', '').trim();
+    } else if (line.includes('Clickmasters Answer')) {
+      currentRow.clickMasters = line.replace('Clickmasters Answer', '').trim();
       if (currentRow.question && currentRow.clickMasters) {
         rows.push(currentRow);
         currentRow = {};

@@ -74,7 +74,7 @@ function getAudienceLabel(mode, slug) {
 function getComparisonColumns(mode) {
   if (mode === "enterprise") {
     return [
-      { key: "clickmasters", label: "ClickMasters", highlight: true },
+      { key: "clickmasters", label: "Clickmasters", highlight: true },
       { key: "sap", label: "SAP / Oracle", highlight: false },
       { key: "generic", label: "Generic SaaS", highlight: false },
     ];
@@ -82,7 +82,7 @@ function getComparisonColumns(mode) {
   if (mode === "saas") {
     return [
       { key: "inhouse", label: "In-House Team", highlight: false },
-      { key: "clickmasters", label: "ClickMasters", highlight: true },
+      { key: "clickmasters", label: "Clickmasters", highlight: true },
     ];
   }
   return [];
@@ -268,7 +268,7 @@ export function WhyChooseUs({ slug, differentiators }) {
                 className="font-heading text-2xl font-semibold leading-snug text-text-primary sm:text-3xl"
               >
                 Why <span className="text-accent">{audience}</span> Choose
-                ClickMasters
+                Clickmasters
               </h2>
             </div>
           </div>
@@ -281,7 +281,7 @@ export function WhyChooseUs({ slug, differentiators }) {
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-text-body">
           {isComparison ? (
             <>
-              See how ClickMasters stacks up against{" "}
+              See how Clickmasters stacks up against{" "}
               {mode === "enterprise"
                 ? "legacy ERP vendors and off-the-shelf SaaS"
                 : "building an in-house engineering team"}

@@ -1,4 +1,4 @@
-# Plan: ClickMasters Content Migration — Hire Page
+# Plan: Clickmasters Content Migration — Hire Page
 
 **Generated:** June 15, 2026
 **Purpose:** Execute hire-page conversion following the case-studies pattern
@@ -31,13 +31,13 @@
 
 ```html
 <table>
-  META TITLE: Hire a React Developer in London | IR35-Compliant | ClickMasters
+  META TITLE: Hire a React Developer in London | IR35-Compliant | Clickmasters
   META DESC: Hire a vetted React Developer in London. IR35-compliant...
   SLUG: /hire-react-developer-london/
   SCHEMA: LocalBusiness + JobPosting + FAQPage + BreadcrumbList
 </table>
 
-<p>Last updated: June 2025 | Reading time: 8 min | Written by: ClickMasters Hiring Team | Reviewed by: James Whitmore, CTO</p>
+<p>Last updated: June 2025 | Reading time: 8 min | Written by: Clickmasters Hiring Team | Reviewed by: James Whitmore, CTO</p>
 
 <h1>Hire a Senior React Developer in London — UK-Vetted, IR35-Compliant</h1>
 
@@ -45,7 +45,7 @@
   🏙️ London | ⚖️ Zero IR35 Risk | 💷 £5,000/mo–£8,000/mo | ✅ 3-Stage Vetting | 🔄 30-Day Rolling | 🇬🇧 UK Right-to-Work Verified
 </table>
 
-<p><strong>Why London Businesses Choose ClickMasters for React Developers</strong></p>
+<p><strong>Why London Businesses Choose Clickmasters for React Developers</strong></p>
 <p>London has the deepest software engineering talent pool...</p>
 <ul>
   <li>Zero IR35 liability...</li>
@@ -55,7 +55,7 @@
 
 <table>
   Engagement Type | Mid-Level | Senior | Technical Lead
-  Monthly Rate (ClickMasters) | £5,000/mo | £6,500/mo | £8,000/mo
+  Monthly Rate (Clickmasters) | £5,000/mo | £6,500/mo | £8,000/mo
   ...
 </table>
 
@@ -72,7 +72,7 @@
 
 <table>
   IR35 Comparison Table
-  Contractor Agency | ClickMasters
+  Contractor Agency | Clickmasters
   IR35 assessment required? | Yes | No
   ...
 </table>
@@ -91,7 +91,7 @@
 | `id`            | P_Number from filename | `P52`                                                                  |
 | `slug`          | SLUG meta              | `/hire-react-developer-london/`                                        |
 | `title`         | H1 heading             | `Hire a Senior React Developer in London — UK-Vetted, IR35-Compliant` |
-| `metaTitle`     | META TITLE             | `Hire a React Developer in London \| IR35-Compliant \| ClickMasters`     |
+| `metaTitle`     | META TITLE             | `Hire a React Developer in London \| IR35-Compliant \| Clickmasters`     |
 | `metaDesc`      | META DESC              | `Hire a vetted React Developer in London...`                           |
 | `role`          | Filename pattern       | `react-developer`                                                      |
 | `city`          | Filename pattern       | `london`                                                               |
@@ -162,7 +162,7 @@ export const hirePages = [
     role: "react-developer",
     city: "london",
     title: "Hire a Senior React Developer in London — UK-Vetted, IR35-Compliant",
-    metaTitle: "Hire a React Developer in London | IR35-Compliant | ClickMasters",
+    metaTitle: "Hire a React Developer in London | IR35-Compliant | Clickmasters",
     metaDesc: "Hire a vetted React Developer in London. IR35-compliant...",
     cityDisplay: "London",
     rate: "£5,000/mo–£8,000/mo",
@@ -350,7 +350,7 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 
 - Hero section with role title and city badges
 - Direct answer section for quick overview
-- Benefits list (why choose ClickMasters)
+- Benefits list (why choose Clickmasters)
 - Rates table (Mid/Senior/Lead pricing)
 - Technical skills section
 - 3-stage vetting process

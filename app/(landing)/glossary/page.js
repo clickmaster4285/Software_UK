@@ -16,7 +16,7 @@ export async function generateMetadata({ searchParams }) {
   const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
 
   const metadata = {
-    title: 'Glossary \u2014 UK Software Development Terms | ClickMasters',
+    title: 'Glossary \u2014 UK Software Development Terms | Clickmasters',
     description: 'Comprehensive glossary of UK software development terms, technologies, and business concepts. Definitions covering APIs, MVPs, SaaS, GDPR, IR35, and more.',
     alternates: { canonical },
   };

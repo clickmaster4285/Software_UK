@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
   const guide = getResourceGuideBySlug(slug);
 
   if (!guide) {
-    return { title: 'Resource Guide Not Found | ClickMasters' };
+    return { title: 'Resource Guide Not Found | Clickmasters' };
   }
 
   return {
@@ -44,7 +44,7 @@ export default async function ResourceGuideDetailPage({ params }) {
     title: guide.title,
     description: guide.metaDesc || `UK software development resource guide: ${guide.title}.`,
     url: `/resource/${slug}`,
-    author: guide.writtenBy || guide.author || 'ClickMasters',
+    author: guide.writtenBy || guide.author || 'Clickmasters',
     dateModified: guide.lastUpdated || undefined,
   });
 

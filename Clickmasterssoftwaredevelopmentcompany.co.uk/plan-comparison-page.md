@@ -1,4 +1,4 @@
-# Plan: ClickMasters Content Migration — Comparison Pages
+# Plan: Clickmasters Content Migration — Comparison Pages
 
 **Generated:** June 16, 2026
 **Purpose:** Execute comparison-page conversion following the case-studies / hire-pages / salary-guides pattern
@@ -47,14 +47,14 @@ ClickMasters_P1113_comparison_uk_software_agency_vs_offshore_uk.docx
 ```html
 <!-- Metadata Table -->
 <table>
-  META TITLE: AWS vs Azure for UK Businesses — Data Residency & GDPR | ClickMasters
+  META TITLE: AWS vs Azure for UK Businesses — Data Residency & GDPR | Clickmasters
   META DESC: AWS eu-west-2 vs Azure UK South for UK businesses...
   SLUG: /aws-vs-azure-uk/
 </table>
 
 <!-- Header Table -->
 <table>
-  Last updated: June 2025 | Reading time: 11 min | Written by: ClickMasters Cloud Team | Reviewed by: AWS & Azure Certified Architects
+  Last updated: June 2025 | Reading time: 11 min | Written by: Clickmasters Cloud Team | Reviewed by: AWS & Azure Certified Architects
 </table>
 
 <!-- Breadcrumb -->
@@ -114,7 +114,7 @@ ClickMasters_P1113_comparison_uk_software_agency_vs_offshore_uk.docx
 <!-- Author Box -->
 <table>
   👤 AUTHOR
-  ClickMasters Cloud Architecture Team
+  Clickmasters Cloud Architecture Team
 </table>
 
 <!-- Schema -->
@@ -131,11 +131,11 @@ ClickMasters_P1113_comparison_uk_software_agency_vs_offshore_uk.docx
 | `slug` | `string` | SLUG meta (cleaned) | `"aws-vs-azure-uk"` |
 | `topic` | `string` | Parsed from filename (after `comparison_`) | `"aws_vs_azure_uk"` |
 | `title` | `string` | H1 tag text | `"AWS vs Azure for UK Businesses — Data Residency, NHS, GovTech & Cost (2025)"` |
-| `metaTitle` | `string` | META TITLE | `"AWS vs Azure for UK Businesses — Data Residency & GDPR \| ClickMasters"` |
+| `metaTitle` | `string` | META TITLE | `"AWS vs Azure for UK Businesses — Data Residency & GDPR \| Clickmasters"` |
 | `metaDesc` | `string` | META DESC | `"AWS eu-west-2 vs Azure UK South for UK businesses..."` |
 | `lastUpdated` | `string` | Header table | `"June 2025"` |
 | `readingTime` | `number` | Header table | `11` |
-| `writtenBy` | `string` | Header table | `"ClickMasters Cloud Team"` |
+| `writtenBy` | `string` | Header table | `"Clickmasters Cloud Team"` |
 | `reviewedBy` | `string` | Header table | `"AWS & Azure Certified Architects"` |
 | `badges` | `array` | Badges table (items in first table before Direct Answer) | `["☁️ AWS eu-west-2", "🔵 Azure UK South", ...]` |
 | `directAnswer` | `string` | Text after "Direct Answer:" | `"Both AWS eu-west-2 (London) and Azure UK South..."` |
@@ -145,7 +145,7 @@ ClickMasters_P1113_comparison_uk_software_agency_vs_offshore_uk.docx
 | `faqs` | `array` | Q&A pairs from FAQ section | `[{ question: "Can I switch...?", answer: "Switching cloud providers..." }]` |
 | `relatedPages` | `array` | Extracted links from Related Pages list | `[{ title: "Cloud-Native Development UK", slug: "cloud-native-development" }]` |
 | `cta` | `string` | CTA table content | `"Free Cloud Architecture Consultation..."` |
-| `author` | `string` | Author box | `"ClickMasters Cloud Architecture Team"` |
+| `author` | `string` | Author box | `"Clickmasters Cloud Architecture Team"` |
 
 ---
 
@@ -200,11 +200,11 @@ export const comparisons = [
     slug: "aws-vs-azure-uk",
     topic: "aws_vs_azure_uk",
     title: "AWS vs Azure for UK Businesses — Data Residency, NHS, GovTech & Cost (2025)",
-    metaTitle: "AWS vs Azure for UK Businesses — Data Residency & GDPR | ClickMasters",
+    metaTitle: "AWS vs Azure for UK Businesses — Data Residency & GDPR | Clickmasters",
     metaDesc: "AWS eu-west-2 vs Azure UK South for UK businesses...",
     lastUpdated: "June 2025",
     readingTime: 11,
-    writtenBy: "ClickMasters Cloud Team",
+    writtenBy: "Clickmasters Cloud Team",
     reviewedBy: "AWS & Azure Certified Architects",
     badges: ["☁️ AWS eu-west-2", "🔵 Azure UK South", ...],
     directAnswer: "Both AWS eu-west-2 (London) and Azure UK South...",
@@ -232,7 +232,7 @@ export const comparisons = [
       { title: "Cloud-Native Development UK", slug: "cloud-native-development" }
     ],
     cta: "Free Cloud Architecture Consultation...",
-    author: "ClickMasters Cloud Architecture Team"
+    author: "Clickmasters Cloud Architecture Team"
   },
   // ... 177 comparison pages
 ];
@@ -294,7 +294,7 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 
 ---
 
-## 7. Styling Conventions (from ClickMasters Rule Guide)
+## 7. Styling Conventions (from Clickmasters Rule Guide)
 
 - **Typography:** Headings in `Sora` (Bold 700 / SemiBold 600), Body in `DM Sans` (Regular 400 / Medium 500)
 - **Colors:** Dark navy/deep background elements (`primary` / `primary-mid`), highlights/buttons in teal (`accent` -> `accent-hover`)

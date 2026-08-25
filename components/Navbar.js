@@ -80,7 +80,7 @@ export default function Navbar() {
         <HomeLogoLink className="flex items-center">
           <Image
             src="/cm-logos/logo.webp"
-            alt="ClickMasters"
+            alt="Clickmasters"
             width={180}
             height={30}
             priority

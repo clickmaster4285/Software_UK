@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { linkifyMarkdown } from "@/lib/subservice-utils";
 import {
   Search,
   Zap,
@@ -67,7 +68,10 @@ function StepCard({ phase, index, cardRef }) {
         <h3 className="font-heading text-lg font-bold leading-snug text-text-primary">
           {phase.title}
         </h3>
-        <p className="text-sm leading-relaxed text-text-body">{phase.text}</p>
+        <p
+          className="text-sm leading-relaxed text-text-body [&_a]:font-medium [&_a]:text-accent [&_a:hover]:underline"
+          dangerouslySetInnerHTML={{ __html: linkifyMarkdown(phase.text) }}
+        />
       </div>
 
       {/* Timeline */}

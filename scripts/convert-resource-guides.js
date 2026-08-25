@@ -99,7 +99,7 @@ function extractTitle(html) {
 function parseFilename(filename) {
   const pNumberMatch = filename.match(/P(\d+)/);
   const id = pNumberMatch ? `P${pNumberMatch[1]}` : '';
-  let rest = filename.replace(/^ClickMasters_P\d+_/, '');
+  let rest = filename.replace(/^Clickmasters_P\d+_/, '');
   rest = rest.replace(/\.docx$/i, '');
   rest = rest.replace(/^resource_?/i, '');
   rest = rest.replace(/_guide_uk$/i, '');

@@ -1,4 +1,4 @@
-# ClickMasters — Master Project Guide & Style System
+# Clickmasters — Master Project Guide & Style System
 
 > **Main reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md) — content migration, data layer, routes, performance audit
 > **Execution plan:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md) — full conversion plan for 1,785 DOCX files
@@ -9,7 +9,7 @@
 
 | Field | Value |
 |-------|-------|
-| **Project** | ClickMasters Software Development Company |
+| **Project** | Clickmasters Software Development Company |
 | **URL** | https://clickmasterssoftwaredevelopmentcompany.co.uk |
 | **Type** | B2B Next.js website (SSG) |
 | **Content** | 1,785 Word documents → data files → static pages |
@@ -21,7 +21,7 @@
 
 ## 2. BRAND IDENTITY
 
-- **Name:** ClickMasters Software Development Company
+- **Name:** Clickmasters Software Development Company
 - **Domain:** clickmasterssoftwaredevelopmentcompany.co.uk
 - **Tagline:** "We Don't Just Build Software — We Build Revenue Systems"
 - **Mission:** Building custom web apps, mobile apps, and enterprise software that powers real business growth.

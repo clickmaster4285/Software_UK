@@ -18,11 +18,11 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-  title: "Software Development Company UK - ClickMasters",
+  title: "Software Development Company UK - Clickmasters",
   description: "Clickmasters is a leading software development company providing software development services that build digital products, improve systems and drive  digital growth.",
   keywords: ["Software Development", "Software Development Company", "Software Development Company UK", "Software Development Agency", "Software Development Firm", "software development services"],
   openGraph: {
-    title: "Software Development Company UK - ClickMasters",
+    title: "Software Development Company UK - Clickmasters",
     description: "Clickmasters is a leading software development company providing software development services that build digital products, improve systems and drive  digital growth.",
     type: "website",
   },

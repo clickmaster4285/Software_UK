@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Pricing | ClickMasters Software Development',
+  title: 'Pricing | Clickmasters Software Development',
   description: 'Flexible pricing plans for custom software development, web apps, mobile apps, and AI solutions. Transparent pricing for UK businesses.',
   alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/pricing' },
 };
@@ -28,7 +28,7 @@ const plans = [
 export default function PricingPage() {
   return (
     <>
-    <main>
+      <main>
         <section className="pricing-hero">
           <div className="container">
             <span className="section-label">PRICING</span>

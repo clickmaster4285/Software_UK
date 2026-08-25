@@ -15,7 +15,7 @@ const faqs = [
     answer: "A software development company helps businesses plan, design, build, test and improve digital products such as custom software, websites, applications, SaaS platforms and AI-powered systems.",
   },
   {
-    question: "What software development services does ClickMasters provide?",
+    question: "What software development services does Clickmasters provide?",
     answer: "Our software development services include custom software development, website development, application development, AI software development, SaaS development, enterprise software development and cloud development.",
   },
   {
@@ -67,8 +67,8 @@ export default function FAQ() {
         <div className="space-y-4">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
+              <AccordionItem
+                key={index}
                 value={`item-${index}`}
                 className="bg-white rounded-xl border border-border px-6 mb-4 shadow-sm hover:border-accent/20 transition-all duration-300"
               >
@@ -92,8 +92,8 @@ export default function FAQ() {
               Can&apos;t find the answer you&apos;re looking for? Reach out to our team directly and we&apos;ll be happy to help you.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link 
-                href="/contact" 
+              <Link
+                href="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white font-heading font-bold rounded-xl hover:bg-accent-hover transition-all shadow-lg hover:shadow-accent/25 hover:-translate-y-0.5 active:translate-y-0"
               >
                 <MessageCircle className="w-5 h-5" />

@@ -1,4 +1,4 @@
-# agent.md — ClickMasters Content Migration
+# agent.md — Clickmasters Content Migration
 
 > Main reference file. See `plan-industries-pages.md` for industries execution details.
 
@@ -8,7 +8,7 @@
 
 | Field | Value |
 |-------|-------|
-| Project | ClickMasters Software Development Company |
+| Project | Clickmasters Software Development Company |
 | URL | https://clickmasterssoftwaredevelopmentcompany.co.uk |
 | Type | B2B Next.js website |
 | Content | 1,785 Word documents (.docx) |

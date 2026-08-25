@@ -1,6 +1,6 @@
 ---
 name: generate-url-sheet
-description: Generate an Excel (.xlsx) URL sheet from all data/*.js files — lists every category, main page URL, and sub-page URL for the ClickMasters site
+description: Generate an Excel (.xlsx) URL sheet from all data/*.js files — lists every category, main page URL, and sub-page URL for the Clickmasters site
 source: auto-skill
 extracted_at: '2026-06-22T11:32:00.000Z'
 ---

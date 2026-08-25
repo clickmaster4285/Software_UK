@@ -14,11 +14,11 @@ export async function generateMetadata({ params }) {
   const glossaryTerm = getGlossaryTermBySlug(term);
 
   if (!glossaryTerm) {
-    return { title: 'Term Not Found | ClickMasters Glossary' };
+    return { title: 'Term Not Found | Clickmasters Glossary' };
   }
 
   return {
-    title: glossaryTerm.metaTitle || `What is ${glossaryTerm.termDisplay}? UK Definition | ClickMasters`,
+    title: glossaryTerm.metaTitle || `What is ${glossaryTerm.termDisplay}? UK Definition | Clickmasters`,
     description: glossaryTerm.metaDesc || `Definition of ${glossaryTerm.termDisplay} in UK software development context.`,
     alternates: {
       canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/glossary/${term}`,
@@ -44,7 +44,7 @@ export default async function GlossaryTermDetailPage({ params }) {
     description: glossaryTerm.directAnswer || glossaryTerm.metaDesc || '',
     inDefinedTermSet: {
       '@type': 'DefinedTermSet',
-      name: 'ClickMasters Software Development Glossary',
+      name: 'Clickmasters Software Development Glossary',
     },
   };
 

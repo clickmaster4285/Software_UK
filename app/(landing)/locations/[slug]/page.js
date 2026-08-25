@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   const city = getCityBySlug(slug);
 
   if (!city) {
-    return { title: 'City Guide Not Found | ClickMasters' };
+    return { title: 'City Guide Not Found | Clickmasters' };
   }
 
   return {
@@ -41,11 +41,11 @@ export default async function CityDetailPage({ params }) {
     description: city.metaDesc || `Custom software development in ${city.city.replace(/-/g, ' ')}.`,
     author: {
       '@type': 'Organization',
-      name: city.writtenBy || 'ClickMasters Team',
+      name: city.writtenBy || 'Clickmasters Team',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'ClickMasters Software Development Company',
+      name: 'Clickmasters Software Development Company',
       url: 'https://clickmasterssoftwaredevelopmentcompany.co.uk',
     },
     dateModified: city.lastUpdated || undefined,
@@ -58,17 +58,17 @@ export default async function CityDetailPage({ params }) {
   const dedupedFaqs = getDedupedFaqs(city.faqs);
   const faqJsonLd = dedupedFaqs.length > 0
     ? {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: dedupedFaqs.map(faq => ({
-          '@type': 'Question',
-          name: faq.question.replace(/^:\s*/, ''),
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: faq.answer.replace(/^:\s*/, ''),
-          },
-        })),
-      }
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: dedupedFaqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.question.replace(/^:\s*/, ''),
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer.replace(/^:\s*/, ''),
+        },
+      })),
+    }
     : null;
 
   return (

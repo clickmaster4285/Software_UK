@@ -379,7 +379,7 @@ export default function GlossaryDetailClient({ term, relatedTerms }) {
                 <div className="relative">
                   <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">
                     <Sparkles className="w-3 h-3 mr-1.5 inline -mt-0.5" />
-                    ClickMasters
+                    Clickmasters
                   </span>
                   <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
                     Get Expert Advice on {termDisplay}

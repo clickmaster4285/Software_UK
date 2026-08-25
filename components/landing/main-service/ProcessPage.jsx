@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { linkifyMarkdown } from "@/lib/subservice-utils";
 import {
   Lightbulb,
   Code2,
@@ -184,9 +185,10 @@ function ProcessStepCard({ phase, cardRef, nodeRef, isActive, reducedMotion }) {
           )}
         </div>
 
-        <p className="text-sm md:text-base text-text-body font-body leading-relaxed">
-          {phase.description}
-        </p>
+        <p
+          className="text-sm md:text-base text-text-body font-body leading-relaxed [&_a]:font-medium [&_a]:text-accent [&_a:hover]:underline"
+          dangerouslySetInnerHTML={{ __html: linkifyMarkdown(phase.description) }}
+        />
 
         {phase.deliverables?.length > 0 && (
           <ul className="mt-4 pt-4 border-t border-border space-y-2">
@@ -446,9 +448,12 @@ export function ProcessPage({ serviceData }) {
                 <h3 className="font-heading text-2xl font-bold text-text-primary leading-tight transition-all duration-300">
                   {phases[activeStep]?.title}
                 </h3>
-                <p className="mt-4 text-base text-text-body font-body leading-relaxed line-clamp-4">
-                  {phases[activeStep]?.description}
-                </p>
+                <p
+                  className="mt-4 text-base text-text-body font-body leading-relaxed line-clamp-4 [&_a]:font-medium [&_a]:text-accent [&_a:hover]:underline"
+                  dangerouslySetInnerHTML={{
+                    __html: linkifyMarkdown(phases[activeStep]?.description),
+                  }}
+                />
 
                 <nav
                   className="mt-8 flex flex-col gap-2 max-h-[min(42vh,320px)] overflow-y-auto custom-scrollbar pr-1"

@@ -3,7 +3,7 @@ import { getHireRolesMap } from '@/data/hire-pages';
 import { ArrowRight, Shield, CheckCircle, Clock, Users, MapPin, Sparkles, ChevronRight } from 'lucide-react';
 
 export const metadata = {
-  title: 'Hire Developers | ClickMasters — Vetted UK Engineers',
+  title: 'Hire Developers | Clickmasters — Vetted UK Engineers',
   description: 'Hire vetted software developers across the UK. IR35-compliant, 3-stage vetting, 30-day rolling contracts. React, Python, .NET, mobile & more.',
   alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/hire' },
 };
@@ -18,7 +18,7 @@ const trustCards = [
   {
     icon: Shield,
     title: 'Zero IR35 Risk',
-    description: 'Our engineers are ClickMasters employees — not contractors. You engage us as a company. No Status Determination Statement. No HMRC exposure.',
+    description: 'Our engineers are Clickmasters employees — not contractors. You engage us as a company. No Status Determination Statement. No HMRC exposure.',
     highlight: true,
   },
   {
@@ -117,7 +117,7 @@ export default function HirePage() {
       <section className="py-20 px-6 bg-surface">
         <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto">
           <div className="text-center mb-12">
-            <span className="section-label mb-4">Why ClickMasters</span>
+            <span className="section-label mb-4">Why Clickmasters</span>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4">
               Enterprise-Grade Hiring,
               <br className="md:hidden block" />
