@@ -106,9 +106,9 @@ function extractTitle(html) {
 }
 
 function extractRoleAndCity(filename) {
-  // Pattern 1: ClickMasters_P52_hire_react-developer_london.docx
+  // Pattern 1: Clickmasters_P52_hire_react-developer_london.docx
   // role = react-developer, city = london
-  // Pattern 2: ClickMasters_P534_hire_react_developer_southampton.docx
+  // Pattern 2: Clickmasters_P534_hire_react_developer_southampton.docx
   // role = react_developer, city = southampton
 
   // Find the part after "hire_"

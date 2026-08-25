@@ -654,7 +654,7 @@ function extractFaqs(html) {
 }
 
 function parseFilename(filename) {
-  const match = filename.match(/^ClickMasters_P(\d+)_(.+?)_(.+)\.docx$/);
+  const match = filename.match(/^Clickmasters_P(\d+)_(.+?)_(.+)\.docx$/);
   if (match) {
     return {
       id: `P${match[1]}`,
@@ -665,7 +665,7 @@ function parseFilename(filename) {
   // Fallback for non-standard names (e.g., P100_ecommerce_software_development_uk, P9_SaaS_Development_UK)
   const pMatch = filename.match(/P(\d+)/);
   const id = pMatch ? `P${pMatch[1]}` : '';
-  let rest = filename.replace(/^ClickMasters_P\d+_/, '').replace(/\.docx$/i, '').replace(/_uk$/i, '');
+  let rest = filename.replace(/^Clickmasters_P\d+_/, '').replace(/\.docx$/i, '').replace(/_uk$/i, '');
   const parts = rest.split('_');
   return {
     id,

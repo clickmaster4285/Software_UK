@@ -525,7 +525,7 @@ const enterpriseSoftwareDevelopmentOverride = {
     },
     {
       heading: "Enterprise Software Development for Complex Workflows",
-      body: "Enterprise software is not just about building features. It needs proper planning, strong architecture, user roles, data security, integrations, and long-term scalability.\n\nClickMasters helps businesses plan and build enterprise systems that support complex workflows. We focus on clean structure, reliable performance, and software that can grow as your business grows.",
+      body: "Enterprise software is not just about building features. It needs proper planning, strong architecture, user roles, data security, integrations, and long-term scalability.\n\nClickmasters helps businesses plan and build enterprise systems that support complex workflows. We focus on clean structure, reliable performance, and software that can grow as your business grows.",
       items: []
     },
     {
@@ -543,7 +543,7 @@ const enterpriseSoftwareDevelopmentOverride = {
     },
     {
       heading: "Enterprise Software That Grows With Your Business",
-      body: "A good enterprise software system should not only solve today's problem. It should support future growth.\n\nClickMasters builds scalable enterprise software that can be improved over time with new features, integrations, user roles, dashboards, and automation. This helps your business avoid rebuilding from scratch as your needs grow.",
+      body: "A good enterprise software system should not only solve today's problem. It should support future growth.\n\nClickmasters builds scalable enterprise software that can be improved over time with new features, integrations, user roles, dashboards, and automation. This helps your business avoid rebuilding from scratch as your needs grow.",
       items: []
     }
   ],
@@ -1873,7 +1873,7 @@ const saasProductDevelopmentOverride = {
   sections: [
     {
       heading: "Custom SaaS Development for Startups and Businesses",
-      body: "A SaaS product needs more than basic software development. It needs user accounts, subscriptions, dashboards, billing, secure data management, onboarding, product flows, and a scalable technical structure.\n\nClickMasters builds SaaS products around your business model, target users, features, and future growth plan. We focus on creating software that is easy to use, reliable, and ready to improve over time.",
+      body: "A SaaS product needs more than basic software development. It needs user accounts, subscriptions, dashboards, billing, secure data management, onboarding, product flows, and a scalable technical structure.\n\nClickmasters builds SaaS products around your business model, target users, features, and future growth plan. We focus on creating software that is easy to use, reliable, and ready to improve over time.",
       items: []
     },
     {
@@ -1883,7 +1883,7 @@ const saasProductDevelopmentOverride = {
     },
     {
       heading: "Why SaaS Products Need Strong Technical Planning",
-      body: "SaaS products are built to grow. That means the technical foundation must support more users, more data, more features, and more integrations.\n\nPoor planning can lead to slow performance, difficult updates, security issues, and expensive rebuilds later.\n\nClickMasters focuses on building SaaS products with a clean structure from the start, so your product can improve over time without becoming difficult to manage.",
+      body: "SaaS products are built to grow. That means the technical foundation must support more users, more data, more features, and more integrations.\n\nPoor planning can lead to slow performance, difficult updates, security issues, and expensive rebuilds later.\n\nClickmasters focuses on building SaaS products with a clean structure from the start, so your product can improve over time without becoming difficult to manage.",
       items: []
     }
   ],
@@ -2309,7 +2309,7 @@ const mvpDevelopmentOverride = {
   sections: [
     {
       heading: "MVP Development Services for Startups and Businesses",
-      body: "Building a full software product without validation can be risky and expensive. An MVP gives you a focused first version of your product, built around the most important features your users need.\n\nClickMasters helps businesses build MVPs for web applications, mobile apps, SaaS platforms, marketplaces, internal tools, customer portals, and AI-powered software products. Our approach focuses on clear scope, practical features, clean design, reliable development, and a scalable foundation for future growth.",
+      body: "Building a full software product without validation can be risky and expensive. An MVP gives you a focused first version of your product, built around the most important features your users need.\n\nClickmasters helps businesses build MVPs for web applications, mobile apps, SaaS platforms, marketplaces, internal tools, customer portals, and AI-powered software products. Our approach focuses on clear scope, practical features, clean design, reliable development, and a scalable foundation for future growth.",
       items: []
     },
     {
@@ -2344,7 +2344,7 @@ const mvpDevelopmentOverride = {
     },
     {
       heading: "Build an MVP Before Building the Full Product",
-      body: "An MVP helps you make better product decisions before investing in a full software platform. Instead of guessing what users want, you can launch a focused version, collect feedback, measure usage, and improve the product with real evidence.\n\nClickMasters builds MVPs that help startups and businesses validate ideas, reduce risk, and move towards a stronger full product.",
+      body: "An MVP helps you make better product decisions before investing in a full software platform. Instead of guessing what users want, you can launch a focused version, collect feedback, measure usage, and improve the product with real evidence.\n\nClickmasters builds MVPs that help startups and businesses validate ideas, reduce risk, and move towards a stronger full product.",
       items: []
     }
   ],
@@ -2462,7 +2462,7 @@ const desktopApplicationDevelopmentOverride = {
   sections: [
     {
       heading: "Custom Desktop Application Development",
-      body: "Desktop applications are still important for businesses that need strong performance, offline access, local system control, hardware connectivity, or secure internal software.\n\nClickMasters builds custom desktop applications around your business needs. Instead of forcing your team to use generic software, we develop desktop systems that match your workflows, users, data, and operational requirements.",
+      body: "Desktop applications are still important for businesses that need strong performance, offline access, local system control, hardware connectivity, or secure internal software.\n\nClickmasters builds custom desktop applications around your business needs. Instead of forcing your team to use generic software, we develop desktop systems that match your workflows, users, data, and operational requirements.",
       items: []
     },
     {
@@ -2476,7 +2476,7 @@ const desktopApplicationDevelopmentOverride = {
     },
     {
       heading: "Legacy Desktop Application Modernisation",
-      body: "Many businesses still depend on old desktop software that is slow, difficult to update, or no longer suitable for modern needs.\n\nClickMasters helps businesses modernise legacy desktop applications by improving the interface, performance, security, architecture, and usability of existing systems.\n\nLegacy modernisation helps you keep important business functionality while making the software easier to use, maintain, and scale.",
+      body: "Many businesses still depend on old desktop software that is slow, difficult to update, or no longer suitable for modern needs.\n\nClickmasters helps businesses modernise legacy desktop applications by improving the interface, performance, security, architecture, and usability of existing systems.\n\nLegacy modernisation helps you keep important business functionality while making the software easier to use, maintain, and scale.",
       items: []
     },
     {

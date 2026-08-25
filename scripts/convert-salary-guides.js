@@ -114,8 +114,8 @@ function parseFilename(filename) {
   const pNumberMatch = filename.match(/P(\d+)/);
   const id = pNumberMatch ? `P${pNumberMatch[1]}` : '';
 
-  // Remove ClickMasters_P{ID}_
-  let rest = filename.replace(/^ClickMasters_P\d+_/, '');
+  // Remove Clickmasters_P{ID}_
+  let rest = filename.replace(/^Clickmasters_P\d+_/, '');
   rest = rest.replace(/\.docx$/i, '');
   
   // Remove leading 'salary_' if present

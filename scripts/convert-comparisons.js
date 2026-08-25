@@ -23,7 +23,7 @@ function parseFilename(filename) {
   const id = pNumberMatch ? `P${pNumberMatch[1]}` : '';
 
   let rest = filename.replace(/\.docx$/i, '');
-  rest = rest.replace(/^ClickMasters_P\d+_comparison_/, '');
+  rest = rest.replace(/^Clickmasters_P\d+_comparison_/, '');
 
   return { id, topic: rest };
 }

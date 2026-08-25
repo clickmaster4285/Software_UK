@@ -32,7 +32,7 @@ function parseFilename(filename) {
   const id = pNumberMatch ? `P${pNumberMatch[1]}` : '';
 
   let rest = filename.replace(/\.docx$/i, '');
-  rest = rest.replace(/^ClickMasters_P\d+_/, '');
+  rest = rest.replace(/^Clickmasters_P\d+_/, '');
 
   const parts = rest.split('_');
 
