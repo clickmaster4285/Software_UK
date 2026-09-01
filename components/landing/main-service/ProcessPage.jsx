@@ -370,9 +370,8 @@ export function ProcessPage({ serviceData }) {
           viewport={{ once: true }}
           className="absolute inset-0"
         >
-          <div className="absolute top-0 right-1/4 w-125 h-125 bg-primary/15 rounded-full blur-[120px] -translate-y-1/2" />
-          <div className="absolute bottom-0 left-1/4 w-150600px] bg-accent/15 rounded-full blur-[140px] translate-y-1/2" />
-          <div className="absolute rounded-lg top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 bg-accent/20" />
+          <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-primary/15 rounded-full blur-[120px] -translate-y-1/2" />
+          <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[140px] translate-y-1/2" />
         </motion.div>
 
         {/* Subtle Grid Overlay */}
@@ -404,7 +403,7 @@ export function ProcessPage({ serviceData }) {
         </div>
       </div>
 
-      <div className="container relative z-10">
+      <div className="mx-auto max-w-[96vw] lg:max-w-[90vw] px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.header
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -427,7 +426,7 @@ export function ProcessPage({ serviceData }) {
         </motion.header>
 
         {/* Two-column layout: left = pinned step card, right = scrolling timeline */}
-        <div className="max-w-7xl mx-auto lg:flex lg:items-start lg:gap-14">
+        <div className="mx-auto max-w-[96vw] lg:max-w-[90vw] lg:flex lg:items-start lg:gap-14">
           {/* leftPanelRef — scrolls 30vh → 60vh while pinned (PIN_CONFIG) */}
           <aside
             className="hidden lg:block lg:w-[34%] lg:shrink-0 lg:sticky"

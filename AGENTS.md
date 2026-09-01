@@ -236,6 +236,7 @@ app/
 ## 7. CONTENT STRATEGY
 
 - **Tone:** Professional, Results-Driven, Authoritative but Approachable
+- **No Emojis Policy (CRITICAL):** Do NOT use emojis in headings, titles, section labels, or body text. All headings must be clean, professional B2B text (e.g. "When Cross-Platform Is NOT the Right Choice", NOT "⚠️ When Cross-Platform..."). All conversion scripts (`convert-*.js`) and runtime sanitizers (`lib/subservice-utils.js`) MUST automatically strip all emojis and symbol/mojibake artifacts.
 - **Keywords:** Scalable revenue, ROI, High-performance systems, Enterprise security
 - **Case Studies:** Manufacturing, Retail, Healthcare, Education, Real Estate, FinTech, HealthTech, GovTech, EdTech, PropTech, InsurTech, LogTech, RetailTech, MedTech, CleanTech, LegalTech, AgriTech
 
