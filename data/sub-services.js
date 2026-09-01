@@ -4170,7 +4170,7 @@ const crossPlatformAppDevelopmentOverride = {
       ]
     },
     {
-      heading: "\xE2\u0161\xA0\xEF\xB8\x8F When Cross-Platform Is NOT the Right Choice",
+      heading: "When Cross-Platform Is NOT the Right Choice",
       body: "Build native (Swift + Kotlin) instead of cross-platform when: the app requires immediate access to a new iOS or Android OS API on the day of release (cross-platform frameworks lag by weeks to months); the app involves intensive hardware integration (Bluetooth LE profiles, NFC on iOS, industrial device APIs via Zebra DataWedge) that native modules cannot cleanly abstract; the use case is graphics-intensive (games, AR/VR, real-time video processing) where native rendering has a measurable performance advantage; or the enterprise requires separate iOS-optimized and Android-optimized UX (e.g., iPad split-view alongside Android tablet landscape layout). For the majority of B2B and consumer app use cases dashboards, forms, lists, navigation, push notifications, maps, camera cross-platform delivers indistinguishable user experience at meaningfully lower cost.",
       items: []
     },
@@ -4183,7 +4183,7 @@ const crossPlatformAppDevelopmentOverride = {
       ]
     },
     {
-      heading: "\xF0\u0178\u2019\xA1 Clickmasters Default Framework Recommendation",
+      heading: "Clickmasters Default Framework Recommendation",
       body: "React Native is the default for teams with existing JavaScript/TypeScript and React expertise the codebase skills transfer, the ecosystem is larger, and the native component rendering satisfies platform design expectations without extra configuration. Flutter is the default when: the team is starting fresh without JS expertise, the app requires sophisticated animations or custom UI that native components cannot achieve, or pixel-perfect cross-platform consistency is more important than native platform look-and-feel. Both frameworks deliver production-quality apps. The decision is primarily about team expertise and UI fidelity preference.",
       items: []
     },
@@ -4503,7 +4503,7 @@ const flutterAppDevelopmentOverride = {
       items: []
     },
     {
-      heading: "\xF0\u0178\u2019\xA1 Flutter vs React Native When to Choose Flutter",
+      heading: "Flutter vs React Native When to Choose Flutter",
       body: "Choose Flutter over React Native when: the app requires complex, high-fidelity animations and custom UI that native widget constraints would limit; pixel-perfect consistency between iOS and Android matters more than native platform conventions; the development team is learning cross-platform fresh (Dart is faster to learn than a React Native stack with TypeScript + React + Native Modules); the app targets multiple platforms beyond mobile (web, macOS, Windows from one codebase); or the project requires the best possible frame rate performance without React Native's JavaScript thread overhead.",
       items: []
     },
@@ -4673,7 +4673,7 @@ const reactNativeDevelopmentOverride = {
       items: []
     },
     {
-      heading: "\xE2\u0153\u2026 Is Your React Native Agency Building on the New Architecture?",
+      heading: "Is Your React Native Agency Building on the New Architecture?",
       body: "The New Architecture is default in React Native 0.76+. If an agency's React Native work uses the legacy bridge architecture (you can identify this from their stack descriptions AsyncStorage as the primary storage, no mention of JSI or TurboModules, no EAS Build), they are building on deprecated patterns. Clickmasters builds all new React Native projects on the New Architecture and can migrate legacy codebases to the New Architecture as part of a modernisation engagement.",
       items: []
     },
@@ -13917,7 +13917,7 @@ const industrialIoTOverride = {
       items: []
     },
     {
-      heading: "OEE = Availability \xC3\u2014 Performance \xC3\u2014 Quality",
+      heading: "OEE = Availability × Performance × Quality",
       body: "OEE (Overall Equipment Effectiveness) = Availability x Performance x Quality. Availability: actual running time / planned production time. Performance: actual output rate / rated output rate. Quality: good parts / total parts produced. World-class OEE is typically 85%+. The global manufacturing average is approximately 65%. Low Availability indicates unplanned downtime or long changeovers. Low Performance indicates slow running or minor stoppages. Low Quality indicates process parameter issues causing defects. Real-time OEE monitoring with automatic downtime categorisation (operators select the loss reason on an HMI) makes losses visible and drives focused improvement. Moving from 65% to 75% OEE on a production line can increase output by 15% without adding equipment or headcount.",
       items: []
     }
@@ -13995,7 +13995,7 @@ const embeddedSystemsDevelopmentOverride = {
   //   { label: 'FreeRTOS most widely deployed RTOS, adds 5-10KB flash, 500 bytes RAM overhead', value: 'FreeRTOS' },
   //   { label: 'Zephyr RTOS Linux Foundation, strong hardware support, native BLE, LoRaWAN, default for Nordic nRF52/nRF53', value: 'Zephyr' },
   //   { label: 'Nordic Power Profiler Kit II measure current vs time, identify unexpected active periods', value: 'PPK2' },
-  //   { label: 'CR2032 coin cell requires <10ÂµA average current for 1-year battery life', value: '<10ÂµA' },
+  //   { label: 'CR2032 coin cell requires <10µA average current for 1-year battery life', value: '<10µA' },
   // ],
   servicesCards: [
     { title: "Bare-Metal Firmware", description: "C/C++ firmware directly on hardware: startup code and linker script (configure memory regions, initialise .data/.bss, set up stack, call main), peripheral initialisation (GPIO, UART, SPI, I2C, ADC, PWM, timers HAL or direct register access), interrupt service routines (minimal ISR code, volatile flags or ring buffers to communicate with main loop, deterministic latency), DMA-based peripheral drivers (SPI at maximum throughput with minimal CPU overhead), hardware-in-the-loop testing (automated test scripts via JTAG/SWD exercise firmware functions on real target hardware in CI/CD)." },
@@ -14048,7 +14048,7 @@ const embeddedSystemsDevelopmentOverride = {
       items: []
     },
     {
-      heading: "Low Power Design Achieving <10\xC2\xB5A Average Current",
+      heading: "Low Power Design Achieving <10µA Average Current",
       body: "For a CR2032 coin cell battery with 220mAh capacity, 1-year battery life requires average current <25\xC2\xB5A (220mAh / 8760h \xE2\u2030\u02C6 25\xC2\xB5A). For safety margin and typical battery self-discharge, target <10\xC2\xB5A average current. Achieving this requires: careful sleep mode selection (Stop mode (20\xC2\xB5A) vs Standby (2\xC2\xB5A) vs Shutdown (<1\xC2\xB5A) trade-off between wake latency and current draw), peripheral power gating (disable SPI clock when idle, gate sensor VCC between measurements inactive sensors still draw quiescent current), wake-up sources (RTC alarm for periodic measurement (once per minute), external interrupt for user event), current profiling (Nordic Power Profiler Kit II measures current vs time identify unexpected active periods, unexpected high sleep current from un-gated peripherals). Clickmasters achieves <10\xC2\xB5A for most BLE sensor applications, <5\xC2\xB5A for simple periodic measurement devices.",
       items: []
     }

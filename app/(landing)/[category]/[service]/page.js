@@ -201,7 +201,7 @@ export default async function ServiceByCategoryPage({ params }) {
           <ServiceHero page={page} />
         </div>
 
-        <div className="px-4 md:px-8">
+        <div className="mx-auto max-w-[96vw] lg:max-w-[90vw] px-4 sm:px-6 lg:px-8">
           <main className="">
             {sections.length > 0 && (
               <DynamicSections

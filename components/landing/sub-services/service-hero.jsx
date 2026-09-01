@@ -285,12 +285,12 @@ export function ServiceHero({ page }) {
 
       {/* Breadcrumb */}
       <motion.div
-        className="relative  z-10 border-b border-white/10 w-full px-6 pt-20"
+        className="relative z-10 border-b border-white/10 w-full pt-20"
         initial={{ opacity: 0, y: -16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        <div className=" mx-auto max-w-[96vw] lg:max-w-[90vw] px-4 md:px-8 py-3.5">
+        <div className="mx-auto max-w-[96vw] lg:max-w-[90vw] px-4 sm:px-6 lg:px-8 py-3.5">
           <nav className="flex items-center gap-1.5 text-sm">
             <Link
               href="/"
@@ -338,10 +338,10 @@ export function ServiceHero({ page }) {
       {/* Main Hero Content */}
       <section
         ref={sectionRef}
-        className="relative z-10 mx-auto max-w-[96vw] lg:max-w-[90vw] flex-1 flex items-center px-6"
+        className="relative z-10 mx-auto max-w-[96vw] lg:max-w-[90vw] w-full flex-1 flex items-center px-4 sm:px-6 lg:px-8"
       >
-        <div className="py-12 lg:py-16">
-          <div className="grid gap-12 lg:grid-cols-[1fr_480px] items-center lg:items-center lg:gap-8">
+        <div className="w-full py-12 lg:py-16">
+          <div className="grid gap-12 lg:grid-cols-[1fr_480px] items-center lg:gap-12 w-full">
             {/* LEFT COLUMN */}
             <motion.div
               className="flex flex-col "
@@ -536,7 +536,7 @@ export function ServiceHero({ page }) {
 
             {/* RIGHT COLUMN Hero Image */}
             <motion.div
-              className="relative shrink-0 max-w-100"
+              className="relative w-full max-w-[480px] shrink-0"
               variants={fadeInRight}
               initial="hidden"
               animate={controls}

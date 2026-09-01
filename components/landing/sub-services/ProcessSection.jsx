@@ -273,7 +273,7 @@ export const ProcessSection = ({ serviceName, processPhases }) => {
           />
         </div>
 
-        <div className="mx-auto max-w-[96vw] lg:max-w-[90vw]">
+        <div className="mx-auto max-w-[96vw] lg:max-w-[90vw] px-4 sm:px-6 lg:px-8">
 
           {/* Header */}
           <div

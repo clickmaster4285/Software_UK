@@ -515,14 +515,17 @@ const Component = dynamic(() =>
 19. ✅ Build verified — industries pages compile and resolve
 20. ✅ SEO Structured Data — Full JSON-LD schema implementation (Organization, FAQPage, Article, Service, BreadcrumbList) on all static/dynamic routes safely injected via centralized `JsonLd` component.
 
+21. ✅ Main & Sub-Services MD Conversion — Converted 21 sub-services & 3 main-services with safe non-destructive overlay.
+22. ✅ Strict No Emojis Policy — Stripped all emojis and corrupted emoji symbols across all data files, conversion scripts (`scripts/convert-sub-services-md.js`), and runtime utilities (`lib/subservice-utils.js`). All content must remain clean, professional B2B text.
+
 ### In Progress
-21. 🔲 Service conversion (11 standalone files) — create `scripts/convert-service.js` → `data/services.js`
+23. 🔲 Service conversion (11 standalone files) — create `scripts/convert-service.js` → `data/services.js`
 
 ### Pending
-22. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
-23. 🔲 Fix pre-existing Radix UI prerender errors (glossary/case-studies)
+24. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
+25. 🔲 Fix pre-existing Radix UI prerender errors (glossary/case-studies)
 
 ---
 
-**Last Updated:** July 7, 2026
-**See also:** `plan-industries-pages.md` (industries execution details)
+**Last Updated:** September 1, 2026
+**See also:** `plan-industries-pages.md` (industries execution details), `plan-services-improvement.md`
