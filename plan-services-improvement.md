@@ -435,6 +435,8 @@ Both files **must stay** — they are the content-richness layer for the main se
 
 ---
 
+---
+
 ## 11. Executed — MD Conversion Pipeline & Non-Destructive Overlay Architecture (Completed)
 
 **Executed:** September 1, 2026
@@ -449,7 +451,42 @@ Both files **must stay** — they are the content-richness layer for the main se
 | 6 | `data/main-services.js` | Enriched `getServiceData(slug)` to overlay rich fields from `mainServicesMd` if present. | ✅ Updated |
 | 7 | `components/landing/sub-services/ServiceRichContent.jsx` | Renders rich intro paragraphs with relative links, cost factor checklist, Why Choose Clickmasters cards, and related service pills. | ✅ Active |
 
+### 11.1 Converted Main Services (3 Pages)
+
+| # | Main Service Name | Route / Slug | Source Markdown File |
+|---|-------------------|--------------|----------------------|
+| 1 | **Software Development** | `/software-development` | `main-services/Serivces Pages Content Clickamster software .co .uk.md` |
+| 2 | **Web Development** | `/web-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (15).md` |
+| 3 | **Mobile Development** | `/mobile-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (11).md` |
+
+### 11.2 Converted Sub-Services (21 Pages)
+
+| # | Sub-Service Name | Category | Route | Source Markdown File |
+|---|------------------|----------|-------|----------------------|
+| 1 | **Custom Software Development** | Software Development | `/software-development/custom-software-development` | `(2).md` |
+| 2 | **Enterprise Software Development** | Software Development | `/software-development/enterprise-software-development` | `(9).md` |
+| 3 | **SaaS Product Development** | Software Development | `/software-development/saas-product-development` | `(3).md` |
+| 4 | **MVP Development** | Software Development | `/software-development/mvp-development` | `(5).md` |
+| 5 | **Desktop Application Development** | Software Development | `/software-development/desktop-application-development` | `(1).md` |
+| 6 | **API Development & Integration** | Software Development | `/software-development/api-development-integration` | `(4).md` |
+| 7 | **Microservices Architecture** | Software Development | `/software-development/microservices-architecture` | `(7).md` |
+| 8 | **Backend Development** | Software Development | `/software-development/backend-development` | `(10).md` |
+| 9 | **Frontend Development** | Software Development | `/software-development/frontend-development` | `(6).md` |
+| 10 | **Full Stack Development** | Software Development | `/software-development/full-stack-development` | `(8).md` |
+| 11 | **Web Application Development** | Web Development | `/web-development/web-application-development` | `(15).md` |
+| 12 | **Headless CMS Development** | Web Development | `/web-development/headless-cms-development` | `(16).md` |
+| 13 | **E-Commerce Development** | Web Development | `/web-development/e-commerce-development` | `(17).md` |
+| 14 | **Shopify Development** | Web Development | `/web-development/shopify-development` | `(18).md` |
+| 15 | **WooCommerce Development** | Web Development | `/web-development/woocommerce-development` | `(19).md` |
+| 16 | **PWA Development** | Web Development | `/web-development/pwa-development` | `(20).md` |
+| 17 | **iOS App Development** | Mobile Development | `/mobile-development/ios-app-development` | `.md` |
+| 18 | **Android App Development** | Mobile Development | `/mobile-development/android-app-development` | `(12).md` |
+| 19 | **Flutter App Development** | Mobile Development | `/mobile-development/flutter-app-development` | `(13).md` |
+| 20 | **React Native Development** | Mobile Development | `/mobile-development/react-native-development` | `(14).md` |
+| 21 | **Cross-Platform App Development** | Mobile Development | `/mobile-development/cross-platform-app-development` | `(11).md` |
+
 ---
 
-**Last Updated:** September 1, 2026 (v4 — added §11 MD conversion pipeline executed)
+**Last Updated:** September 1, 2026 (v4 — added full inventory of 3 main and 21 sub-services)
+
 
