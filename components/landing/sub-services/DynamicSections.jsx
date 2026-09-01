@@ -2,7 +2,7 @@
 
 import { Check } from "lucide-react";
 import { makeBoldServiceName, linkifyMarkdown, getSectionId } from "@/lib/subservice-utils";
-import { slugify } from "@/data/sub-services";
+import { slugify } from "@/lib/slugify";
 import { cn } from "@/lib/utils";
 
 function isQuoteItem(text) {

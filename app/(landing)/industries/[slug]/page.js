@@ -7,7 +7,7 @@ import {
   getRelatedIndustries,
 } from '@/data/industries';
 import { siteConfig, breadcrumbSchema, faqSchema, serviceSchema } from '@/app/metadata-config';
-import { slugify } from '@/data/sub-services';
+import { slugify } from '@/lib/slugify';
 import IndustrySections from '@/app/(landing)/industries/[slug]/IndustrySections';
 
 export async function generateStaticParams() {

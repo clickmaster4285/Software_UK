@@ -446,6 +446,7 @@ const enterpriseSoftwareDevelopmentOverride = {
   serviceName: "Enterprise Software Development",
   heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Enterprise Software Development Services | Clickmasters",
+  metaKeywords: "enterprise software development services, enterprise software development services UK, enterprise software development, enterprise software development company, enterprise software development company UK, enterprise software development agency, custom enterprise software development, enterprise application development, enterprise application development services, enterprise software solutions, custom enterprise software, enterprise software company UK, custom ERP development, custom CRM development, enterprise business software, workflow management systems, business process automation, employee portal development, customer portal development, enterprise dashboards, enterprise system integration, role-based access control, enterprise API integration, scalable software architecture, enterprise database development, business management software, legacy enterprise software modernisation, secure enterprise applications, enterprise reporting systems",
   metaDescription: "Clickmasters provides enterprise software development services for businesses that need secure, scalable, and custom-built systems to manage operations, teams, workflows, and growth.",
   lead: "Clickmasters provides enterprise software development services for businesses that need secure, scalable, and custom-built software systems. We help companies build enterprise platforms that improve operations, connect departments, manage data, and support long-term business growth.",
   highlights: [
@@ -1805,6 +1806,7 @@ const saasProductDevelopmentOverride = {
   serviceName: "SaaS Product Development",
   heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "SaaS Product Development Services | Clickmasters",
+  metaKeywords: "SaaS product development services, SaaS product development services UK, SaaS development company, SaaS development company UK, SaaS product development company, SaaS software development, custom SaaS development, SaaS application development, SaaS platform development, B2B SaaS development, SaaS MVP development, SaaS software development company, subscription software development, cloud-based software development, multi-tenant SaaS development, SaaS dashboard development, SaaS admin panel development, SaaS customer portal, SaaS architecture, SaaS billing integration, subscription management, payment gateway integration, user authentication, role-based access, SaaS API integration, SaaS product design, SaaS scalability, SaaS product maintenance, SaaS onboarding, usage tracking, recurring billing software",
   metaDescription: "Clickmasters provides SaaS product development services for startups and businesses that want to build secure, scalable, subscription-based software products.",
   lead: "Clickmasters provides SaaS product development services for startups, founders, and businesses that want to build scalable subscription-based software products. We help you plan, design, develop, and launch SaaS platforms that are built for users, business goals, and long-term growth.",
   highlights: [
@@ -2237,6 +2239,7 @@ const mvpDevelopmentOverride = {
   serviceName: "MVP Development",
   heroImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "MVP Development Services UK | Clickmasters",
+  metaKeywords: "MVP development services, MVP development services UK, MVP development company, MVP development company UK, MVP software development, MVP software development company, minimum viable product development, MVP product development, startup MVP development, custom MVP development, MVP app development, MVP application development, software MVP development, MVP development agency, SaaS MVP development, web app MVP development, mobile app MVP development, AI MVP development, MVP product strategy, MVP feature prioritisation, MVP prototyping, minimum viable product, MVP validation, product validation, startup software development, MVP UI/UX design, MVP testing, MVP launch, MVP scalability, proof of concept, prototype development, MVP vs prototype, MVP vs PoC, product-market validation, early user feedback, scalable product architecture",
   metaDescription: "Clickmasters provides MVP development services for startups and businesses that want to validate ideas, launch faster, reduce risk, and build scalable software products.",
   lead: "Clickmasters provides MVP development services for startups, founders, and businesses that want to turn an idea into a working software product. We help you plan, design, build, test, and launch a minimum viable product with the core features needed to validate your idea with real users.",
   highlights: [
@@ -2392,6 +2395,7 @@ const desktopApplicationDevelopmentOverride = {
   serviceName: "Desktop Application Development",
   heroImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "Desktop Application Development Services | Clickmasters",
+  metaKeywords: "desktop application development services, desktop application development services UK, desktop application development company, desktop application development company UK, desktop software development, desktop software development services, custom desktop application development, custom desktop software development, desktop app development company, desktop app development services, Windows application development, macOS application development, cross-platform desktop development, Windows desktop application development, macOS desktop app development, Linux desktop application development, cross-platform desktop applications, offline desktop software, enterprise desktop applications, business desktop software, desktop admin tools, desktop reporting systems, hardware-connected software, legacy desktop application modernisation, desktop software integration, local database applications, C# desktop development, .NET desktop development, WPF development, Electron desktop development, Qt desktop development, .NET MAUI development, Tauri desktop development, desktop software maintenance",
   metaDescription: "Clickmasters provides desktop application development services for businesses that need secure, custom desktop software for Windows, macOS, Linux, and internal operations.",
   lead: "Clickmasters provides desktop application development services for businesses that need secure, reliable, and custom-built desktop software. We build desktop applications for Windows, macOS, and cross-platform environments, helping companies manage internal operations, data, workflows, reporting, and business processes from powerful desktop systems.",
   highlights: [
@@ -2529,6 +2533,7 @@ const apiDevelopmentIntegrationOverride = {
   serviceName: "API Development & Integration",
   heroImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1332&auto=format&fit=crop",
   metaTitle: "API Development & Integration Services | Clickmasters",
+  metaKeywords: "API development and integration services, API development and integration services UK, API development services, API integration services, API development company, API integration company, API development company UK, API integration company UK, custom API development, custom API integration, third-party API integration, software integration services, system integration services, API development agency, REST API development, GraphQL API development, SOAP API integration, API architecture, API design, API documentation, API testing, API modernisation, CRM API integration, ERP API integration, payment API integration, SaaS API integration, database integration, legacy system integration, API security, API authentication, OAuth integration, API gateway, middleware integration, webhook integration, data synchronisation, workflow automation, real-time data integration, API maintenance, API monitoring, enterprise API integration",
   metaDescription: "Clickmasters provides API development and integration services to connect software, automate workflows, exchange data, and build secure business systems.",
   lead: "Clickmasters provides API development and integration services for businesses that need connected software systems, secure data exchange, and automated workflows. We design, build, integrate, test, and maintain APIs that help your applications, databases, SaaS platforms, CRM, ERP, websites, mobile apps, and internal systems work together.",
   highlights: [
@@ -16052,6 +16057,26 @@ function getServiceTechnologies(slug) {
   }
   return getTechnologiesForService(service.category);
 }
+/**
+ * Lightweight listing records for menu/listing/related components.
+ * Matches the `caseStudyListings` / `hirePageListings` pattern used elsewhere
+ * in this project: consumers that only need titles, links and meta for menus,
+ * megamenus, explore sections and related-service rails should import this thin
+ * array instead of pulling the full service objects (or, in an app with tree-shaking
+ * limits, the full sub-services module). Keeps listing pages lean.
+ */
+const subServiceListings = services.map(({
+  slug, categorySlug, category, title, serviceName, metaTitle, metaDescription, heroImage,
+}) => ({
+  slug,
+  categorySlug,
+  category,
+  title,
+  serviceName,
+  metaTitle,
+  metaDescription,
+  heroImage,
+}));
 export {
   allTechnologies,
   getAllServicePages,
@@ -16061,5 +16086,6 @@ export {
   getServiceTechnologies,
   getTechnologiesForService,
   serviceMenuSections,
-  slugify
+  slugify,
+  subServiceListings
 };
