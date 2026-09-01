@@ -1,3 +1,5 @@
+import { subServicesMd, subServiceMdListings, getSubServiceMdBySlug, getSubServiceMdByCategoryAndSlug } from './sub-services-md.js';
+
 function slugify(value) {
   return value.toLowerCase().trim().replace(/['"]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 }
@@ -15203,9 +15205,28 @@ const serviceOverrides = /* @__PURE__ */ new Map([
   [vulnerabilityAssessmentOverride.slug, vulnerabilityAssessmentOverride],
   [web3DevelopmentOverride.slug, web3DevelopmentOverride]
 ]);
-const services = baseServices.map(
-  (service) => serviceOverrides.get(service.slug) ?? service
-);
+const mdMap = new Map(subServicesMd.map(s => [s.slug, s]));
+
+const services = baseServices.map((service) => {
+  const override = serviceOverrides.get(service.slug) ?? service;
+  const md = mdMap.get(service.slug);
+  if (!md) return override;
+
+  return {
+    ...override,
+    h1: md.h1 || override.h1 || override.title,
+    intro: md.intro && md.intro.length > 0 ? md.intro : override.intro,
+    metaTitle: md.metaTitle || override.metaTitle,
+    metaDescription: md.metaDescription || override.metaDescription,
+    metaKeywords: md.metaKeywords && md.metaKeywords.length > 0 ? md.metaKeywords : override.metaKeywords,
+    tables: md.tables && md.tables.length > 0 ? md.tables : override.tables,
+    costFactors: md.costFactors && md.costFactors.length > 0 ? md.costFactors : override.costFactors,
+    whyChoose: md.whyChoose && md.whyChoose.length > 0 ? md.whyChoose : override.whyChoose,
+    relatedLinks: md.relatedLinks && md.relatedLinks.length > 0 ? md.relatedLinks : override.relatedLinks,
+    faqs: md.faqs && md.faqs.length > 0 ? md.faqs : override.faqs,
+    jsonLd: md.jsonLd || override.jsonLd,
+  };
+});
 const bySlug = new Map(services.map((s) => [s.slug, s]));
 function getAllServiceSlugs() {
   return services.map((s) => s.slug);
@@ -16087,5 +16108,10 @@ export {
   getTechnologiesForService,
   serviceMenuSections,
   slugify,
-  subServiceListings
+  subServiceListings,
+  subServicesMd,
+  subServiceMdListings,
+  getSubServiceMdBySlug,
+  getSubServiceMdByCategoryAndSlug
 };
+

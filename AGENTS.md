@@ -324,6 +324,8 @@ const Component = dynamic(() =>
 | `scripts/convert-resource-guides.js` | Convert resource guide DOCX → `data/resource-guides.js` |
 | `scripts/convert-glossary.js` | Convert glossary DOCX → `data/glossary.js` |
 | `scripts/convert-industries.js` | Convert industry DOCX → `data/industries.js` |
+| `scripts/convert-sub-services-md.js` | Convert 21 sub-service Markdown files → `data/sub-services-md.js` (rich intros, tables, cost factors, why choose, FAQs) |
+| `scripts/convert-main-services-md.js` | Convert 3 main-service Markdown files → `data/main-services-md.js` |
 | `scripts/convert-service.js` | Convert standalone service DOCX → `data/services.js` (pending) |
 | `scripts/generate-url-sheet.js` | Generate Excel URL sheet from all data files |
 | `scripts/audit-canonical.js` | Audit all pages for canonical tag coverage |
@@ -343,18 +345,21 @@ const Component = dynamic(() =>
 | How-To/Cost files | Merged into `Resource-Guide/` | Same template, avoids extra category |
 | Tech files | Merged into `Hire-Page/` | All are developer hire pages |
 | City files | Merged into `International-City/` | City-specific pages |
+| Sub-Services Data Architecture | Non-destructive MD overlay pattern | Enriches matching slugs from `data/sub-services-md.js` while 100% preserving base/override data for all other 81+ slugs |
 
 ---
 
 ## 12. NEXT ACTIONS
 
-1. 🔲 **Standalone Services** — Create `scripts/convert-service.js` → `data/services.js` (11 files, route: `/service/[slug]/`)
-2. 🔲 **Industry+Service Combos** — Plan and convert 202 combo files → `/[category]/[service]/` route
-3. 🔲 **Performance** — Lazy-load About + Contact pages, remove GSAP/Swiper/Lenis
-4. ✅ **Radix UI fix** — P1109 resolved — verified successful build of 1586/1586 static pages
+1. ✅ **Main & Sub-Services MD Conversion** — Converted 21 sub-services and 3 main-services MD files → `data/sub-services-md.js` & `data/main-services-md.js` with non-destructive overlay in `data/sub-services.js` and `data/main-services.js`.
+2. 🔲 **Standalone Services** — Create `scripts/convert-service.js` → `data/services.js` (11 files, route: `/service/[slug]/`)
+3. 🔲 **Industry+Service Combos** — Plan and convert 202 combo files → `/[category]/[service]/` route
+4. 🔲 **Performance** — Lazy-load About + Contact pages, remove GSAP/Swiper/Lenis
+5. ✅ **Radix UI fix** — P1109 resolved — verified successful build of 1586/1586 static pages
 
 ---
 
-**Last Updated:** August 15, 2026
+**Last Updated:** September 1, 2026
 **Main Reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md)
 **Execution Plan:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md)
+

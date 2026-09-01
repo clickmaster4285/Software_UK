@@ -433,14 +433,23 @@ Both files **must stay** — they are the content-richness layer for the main se
 - `service-section-data.js`, `whyChooseUsData.js`, `main-services.js` data — unchanged this round (see §9 verdict: keep both; merge later in Phase 1..
 - `getServicePage()` already used a `Map` (line ~15209 `bySlug.get(slug))` — no perf bug there.
 
-**Validation status:** `lib/slugify.js` passes `node --check`. `node_modules` is not installed in this environment, so `npm run build` / eslint could not be executed here — run `npm install && npm run build` where deps are available to confirm the full 1,586-page SSG build.
+---
 
-.
+## 11. Executed — MD Conversion Pipeline & Non-Destructive Overlay Architecture (Completed)
 
-**Recommended next steps (per §3 plan):** split `data/sub-services.js` with `subServiceListings` (lightweight) full vs listings files;; add renderers for MD-rich fields (`intro`, `tables`, `costFactors`, `whyChoose`, `relatedLinks`); add missing `blockchain-and-web3` enrichment.
+**Executed:** September 1, 2026
 
-
+| # | File / Component | Purpose / Change | Status |
+|---|------------------|-------------------|:------:|
+| 1 | `scripts/convert-sub-services-md.js` | Parses all 21 `sub-services/*.md` files into structured JSON objects. Extracts meta titles, 10–40 keywords, canonical URLs, relative internal links in intros, H2/H3 body sections, comparison tables, cost factors, why-choose blocks, deduplicated FAQs, and JSON-LD schemas. | ✅ Executed |
+| 2 | `scripts/convert-main-services-md.js` | Parses all 3 `main-services/*.md` category files (`/software-development`, `/web-development`, `/mobile-development`) into structured category data. | ✅ Executed |
+| 3 | `data/sub-services-md.js` | Standalone generated data store containing 21 rich sub-service entries, lightweight `subServiceMdListings` array, and lookup functions. | ✅ Created |
+| 4 | `data/main-services-md.js` | Standalone generated data store containing 3 rich main-service entries. | ✅ Created |
+| 5 | `data/sub-services.js` | **Non-destructive overlay applied**: imports `subServicesMd` and enriches matching slugs with rich fields while preserving 100% of existing base/override data for all other 81+ slugs. Also exports `subServicesMd` and lookup helpers. | ✅ Updated |
+| 6 | `data/main-services.js` | Enriched `getServiceData(slug)` to overlay rich fields from `mainServicesMd` if present. | ✅ Updated |
+| 7 | `components/landing/sub-services/ServiceRichContent.jsx` | Renders rich intro paragraphs with relative links, cost factor checklist, Why Choose Clickmasters cards, and related service pills. | ✅ Active |
 
 ---
 
-**Last Updated:** September 1, 2026 (v3 — added §10 executed
+**Last Updated:** September 1, 2026 (v4 — added §11 MD conversion pipeline executed)
+
