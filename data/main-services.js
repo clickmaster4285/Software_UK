@@ -6,7 +6,8 @@ import {
   Stethoscope, Truck, Tv2, Landmark, Leaf, Hotel, Activity, CircuitBoard,
   Layers3, Layers, Blocks, FlaskConical, Settings2, Shield, TrendingUp, MessageSquare, GraduationCap, Building2
 } from 'lucide-react';
-import { enrichServiceData } from './service-section-data';
+import { enrichServiceData } from './service-section-data.js';
+import { mainServicesMd, mainServiceMdListings, getMainServiceMdBySlug } from './main-services-md.js';
 
 /**
  * ICON MAPPING
@@ -833,18 +834,40 @@ export const mainServicesData = {
 
 // HELPER FUNCTIONS
 
+const mdCategoryMap = new Map(mainServicesMd.map(m => [m.slug, m]));
+
 /**
  * Get full data for a main service by its slug.
  */
 export const getServiceData = (slug) => {
   const service = mainServicesData[slug];
   if (!service) return null;
-  return enrichServiceData(slug, service);
+  const enriched = enrichServiceData(slug, service);
+  const md = mdCategoryMap.get(slug);
+  if (!md) return enriched;
+
+  return {
+    ...enriched,
+    h1: md.h1 || enriched.h1 || enriched.title,
+    intro: md.intro && md.intro.length > 0 ? md.intro : enriched.intro,
+    metaTitle: md.metaTitle || enriched.metaTitle,
+    metaDescription: md.metaDescription || enriched.metaDescription,
+    metaKeywords: md.metaKeywords && md.metaKeywords.length > 0 ? md.metaKeywords : enriched.metaKeywords,
+    sections: md.sections && md.sections.length > 0 ? md.sections : enriched.sections,
+    tables: md.tables && md.tables.length > 0 ? md.tables : enriched.tables,
+    costFactors: md.costFactors && md.costFactors.length > 0 ? md.costFactors : enriched.costFactors,
+    whyChoose: md.whyChoose && md.whyChoose.length > 0 ? md.whyChoose : enriched.whyChoose,
+    relatedLinks: md.relatedLinks && md.relatedLinks.length > 0 ? md.relatedLinks : enriched.relatedLinks,
+    faqs: md.faqs && md.faqs.length > 0 ? md.faqs : enriched.faqs,
+    jsonLd: md.jsonLd || enriched.jsonLd,
+  };
 };
 
-export { enrichServiceData, SERVICE_SECTION_DATA } from './service-section-data';
+export { enrichServiceData, SERVICE_SECTION_DATA } from './service-section-data.js';
 
-export { getWhyChooseUsData, DEFAULT_WHY_CHOOSE_US_BENEFITS } from './whyChooseUsData';
+export { getWhyChooseUsData, DEFAULT_WHY_CHOOSE_US_BENEFITS } from './whyChooseUsData.js';
+
+export { mainServicesMd, mainServiceMdListings, getMainServiceMdBySlug };
 
 /**
  * Get all slugs for main service categories.

@@ -30,6 +30,16 @@ const PricingSection = dynamic(() => import('@/components/landing/sub-services/P
 const TestimonialsSection = dynamic(() => import('@/components/landing/sub-services/TestimonialsSection').then(mod => mod.TestimonialsSection));
 const FAQSection = dynamic(() => import('@/components/landing/sub-services/FAQSection').then(mod => mod.FAQSection));
 
+// Rich MD-derived content (intro, cost factors, why-choose, related links) — no-op until data is populated
+const ServiceRichContent = dynamic(() =>
+  import('@/components/landing/sub-services/ServiceRichContent').then(mod => {
+    const C = mod.default || mod.ServiceRichContent;
+    const W = (p) => <C {...p} />;
+    W.displayName = 'ServiceRichContent';
+    return W;
+  })
+);
+
 const defaultFaqs = homepageFaqSchema.mainEntity.map((item) => ({
   question: item.name,
   answer: item.acceptedAnswer.text,
@@ -199,6 +209,8 @@ export default async function ServiceByCategoryPage({ params }) {
                 serviceName={page.serviceName}
               />
             )}
+
+            <ServiceRichContent page={page} />
 
             {page.servicesCards && (
               <ServicesSection

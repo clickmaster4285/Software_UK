@@ -1,6 +1,6 @@
 'use client';
 
-import { slugify } from '@/data/sub-services';
+import { slugify } from '@/lib/slugify';
 
 export default function IndustrySections({ sections, serviceName }) {
   if (!sections?.length) return null;

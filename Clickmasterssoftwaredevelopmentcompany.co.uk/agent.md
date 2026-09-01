@@ -64,7 +64,9 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 │   ├── cities.js            ✅ (203 unique, re-processed)
 │   ├── resource-guides.js   ✅ (80 unique, re-processed)
 │   ├── glossary.js          ✅ (200 unique, build verified)
-│   └── industries.js        ✅ (148 unique, build verified)
+│   ├── industries.js        ✅ (148 unique, build verified)
+│   ├── sub-services-md.js   ✅ (21 unique, converted from MD)
+│   └── main-services-md.js  ✅ (3 unique, converted from MD)
 ```
 
 ---
