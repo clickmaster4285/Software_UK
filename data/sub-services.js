@@ -24,10 +24,10 @@ const serviceMenuSections = [
     items: [
       { title: "Web Application Development", description: "Modern web apps and business portals." },
       { title: "Website Development", description: "SEO-friendly websites that convert." },
-      { title: "PWA Development", description: "Installable web apps with offline support." },
+      { title: "Progressive Web App Development", description: "Installable web apps with offline support." },
       { title: "Headless CMS Development", description: "Flexible content systems with API delivery." },
       { title: "JAMstack Development", description: "Fast static-first web architectures." },
-      { title: "E-commerce Development", description: "Scalable online stores and checkout flows." },
+      { title: "Ecommerce Development", description: "Scalable online stores and checkout flows." },
       { title: "Headless E-commerce", description: "Composable commerce for modern storefronts." },
       { title: "Shopify Development", description: "Custom Shopify storefront and app work." },
       { title: "WooCommerce Development", description: "WordPress commerce customization and support." }
@@ -4941,9 +4941,9 @@ const woocommerceDevelopmentOverride = {
   }
 };
 const ecommerceDevelopmentOverride = {
-  slug: "e-commerce-development",
+  slug: "ecommerce-development",
   categorySlug: "web-development",
-  sectionId: "e-commerce-development",
+  sectionId: "ecommerce-development",
   category: "Web Development",
   title: "E-commerce Development Company Building High-Converting Commerce Platforms",
   serviceName: "E-commerce Development",

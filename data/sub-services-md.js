@@ -4862,13 +4862,13 @@ export const subServicesMd = [
     "sourceFile": "Serivces Pages Content Clickamster software .co .uk (16).md"
   },
   {
-    "slug": "e-commerce-development",
+    "slug": "ecommerce-development",
     "categorySlug": "web-development",
     "category": "Web Development",
     "title": "Ecommerce Development Services UK",
     "serviceName": "Ecommerce Development Services UK",
     "h1": "Ecommerce Development Services UK",
-    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/web-development/e-commerce-development",
+    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/web-development/ecommerce-development",
     "metaTitle": "Ecommerce Development Services UK | ClickMasters",
     "metaDescription": "Custom ecommerce development services in the UK for scalable online stores, checkout, payments, APIs and business integrations. Build with ClickMasters.",
     "metaKeywords": [
