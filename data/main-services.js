@@ -303,7 +303,7 @@ export const mainServicesData = {
     tagline: 'Beautiful, User-Centered Design Solutions',
     description: 'Our design team creates intuitive, engaging experiences that users love.',
     heroBadge: 'Award-Winning Design Team',
-    heroImage: 'https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop',
     stats: [{ value: "300+", label: "Design Projects" }, { value: "95%", label: "User Satisfaction" }],
     trustedClients: [
       { name: 'MediaWave', industry: 'Media', icon: 'Tv2' },
@@ -315,21 +315,21 @@ export const mainServicesData = {
         slug: 'ui-ux-design',
         description: 'User-first interfaces.',
         icon: 'Palette',
-        heroImage: 'https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: 'Product Design',
         slug: 'product-design',
         description: 'End-to-end product thinking.',
         icon: 'Package',
-        heroImage: 'https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: 'Web Design',
         slug: 'web-design',
         description: 'Modern web layouts.',
         icon: 'Globe',
-        heroImage: 'https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: 'Mobile App Design',
@@ -343,21 +343,21 @@ export const mainServicesData = {
         slug: 'ux-research',
         description: 'Research-backed decisions.',
         icon: 'Search',
-        heroImage: 'https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: 'Wireframing & Prototyping',
         slug: 'wireframing-prototyping',
         description: 'Rapid prototypes.',
         icon: 'Edit3',
-        heroImage: 'https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: 'Design Systems',
         slug: 'design-systems',
         description: 'Reusable language.',
         icon: 'LayoutDashboard',
-        heroImage: 'https://images.unsplash.com/photo-1586717791821-3f44a563deaf?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1332&auto=format&fit=crop'
       },
     ],
   },
