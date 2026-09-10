@@ -28,6 +28,8 @@
 | Comparison Page | 177 | `Comparison-Page/` | ✅ (141 unique) |
 | Resource Guide | 103 | `Resource-Guide/` | ✅ (80 unique, +9 resource + 7 how-to + 4 cost merged, re-processed) |
 | Glossary | 200 | `Glossary/` | ✅ (200 unique, build verified) |
+| Main Services MD | 4 | `main-services/` | ✅ (software-dev, web-dev, mobile-dev, design-ui-ux) |
+| Sub-Services MD | 28 | `sub-services/` | ✅ (21 original + 7 new design-ui-ux/jamstack) |
 | **Total** | **1,785** | 9 folders | **All complete** |
 
 ### Duplicate Slugs
@@ -56,6 +58,8 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 ├── Resource-Guide/      (105 .docx) ✅ (103 original + 2 from Industry-Service-Page)
 ├── Salary-Guide/        (193 .docx) ✅
 ├── Glossary/            (200 .docx) ✅
+├── main-services/           (4 .md) ✅ (software-dev, web-dev, mobile-dev, design-ui-ux)
+├── sub-services/            (28 .md) ✅ (21 original + 7 new)
 ├── data/
 │   ├── case-studies.js       ✅ (274 unique)
 │   ├── hire-pages.js        ✅ (269 unique, re-processed)
@@ -65,8 +69,8 @@ Clickmasterssoftwaredevelopmentcompany.co.uk/
 │   ├── resource-guides.js   ✅ (80 unique, re-processed)
 │   ├── glossary.js          ✅ (200 unique, build verified)
 │   ├── industries.js        ✅ (148 unique, build verified)
-│   ├── sub-services-md.js   ✅ (21 unique, converted from MD)
-│   └── main-services-md.js  ✅ (3 unique, converted from MD)
+│   ├── sub-services-md.js   ✅ (28 unique, converted from MD)
+│   └── main-services-md.js  ✅ (4 unique, converted from MD)
 ```
 
 ---
@@ -515,15 +519,17 @@ const Component = dynamic(() =>
 19. ✅ Build verified — industries pages compile and resolve
 20. ✅ SEO Structured Data — Full JSON-LD schema implementation (Organization, FAQPage, Article, Service, BreadcrumbList) on all static/dynamic routes safely injected via centralized `JsonLd` component.
 
-21. ✅ Main & Sub-Services MD Conversion — Converted 21 sub-services & 3 main-services with safe non-destructive overlay.
+21. ✅ Main & Sub-Services MD Conversion — Converted 28 sub-services & 4 main-services with safe non-destructive overlay.
 22. ✅ Strict No Emojis Policy — Stripped all emojis and corrupted emoji symbols across all data files, conversion scripts (`scripts/convert-sub-services-md.js`), and runtime utilities (`lib/subservice-utils.js`). All content must remain clean, professional B2B text.
+23. ✅ Design UI/UX Category — Added new main service `/design-ui-ux` with 7 sub-services: design-systems, product-design, web-design, mobile-app-design, ux-research, wireframing-prototyping, plus jamstack-development under web-development.
+24. ✅ Slug Consistency Fix — Fixed PWA and E-commerce slug mismatches. All slugs must now match across `serviceMenuSections`, override objects, MD data, and `main-services.js`.
 
 ### In Progress
-23. 🔲 Service conversion (11 standalone files) — create `scripts/convert-service.js` → `data/services.js`
+25. 🔲 Service conversion (11 standalone files) — create `scripts/convert-service.js` → `data/services.js`
 
 ### Pending
-24. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
-25. 🔲 Fix pre-existing Radix UI prerender errors (glossary/case-studies)
+26. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
+27. 🔲 Fix pre-existing Radix UI prerender errors (glossary/case-studies)
 
 ---
 

@@ -451,15 +451,16 @@ Both files **must stay** — they are the content-richness layer for the main se
 | 6 | `data/main-services.js` | Enriched `getServiceData(slug)` to overlay rich fields from `mainServicesMd` if present. | ✅ Updated |
 | 7 | `components/landing/sub-services/ServiceRichContent.jsx` | Renders rich intro paragraphs with relative links, cost factor checklist, Why Choose Clickmasters cards, and related service pills. | ✅ Active |
 
-### 11.1 Converted Main Services (3 Pages)
+### 11.1 Converted Main Services (4 Pages)
 
 | # | Main Service Name | Route / Slug | Source Markdown File |
 |---|-------------------|--------------|----------------------|
 | 1 | **Software Development** | `/software-development` | `main-services/Serivces Pages Content Clickamster software .co .uk.md` |
 | 2 | **Web Development** | `/web-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (15).md` |
 | 3 | **Mobile Development** | `/mobile-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (11).md` |
+| 4 | **Design UI/UX** | `/design-ui-ux` | `main-services/Uiux main.md` |
 
-### 11.2 Converted Sub-Services (21 Pages)
+### 11.2 Converted Sub-Services (28 Pages)
 
 | # | Sub-Service Name | Category | Route | Source Markdown File |
 |---|------------------|----------|-------|----------------------|
@@ -475,18 +476,44 @@ Both files **must stay** — they are the content-richness layer for the main se
 | 10 | **Full Stack Development** | Software Development | `/software-development/full-stack-development` | `(8).md` |
 | 11 | **Web Application Development** | Web Development | `/web-development/web-application-development` | `(15).md` |
 | 12 | **Headless CMS Development** | Web Development | `/web-development/headless-cms-development` | `(16).md` |
-| 13 | **E-Commerce Development** | Web Development | `/web-development/e-commerce-development` | `(17).md` |
+| 13 | **Ecommerce Development** | Web Development | `/web-development/ecommerce-development` | `(17).md` |
 | 14 | **Shopify Development** | Web Development | `/web-development/shopify-development` | `(18).md` |
 | 15 | **WooCommerce Development** | Web Development | `/web-development/woocommerce-development` | `(19).md` |
-| 16 | **PWA Development** | Web Development | `/web-development/pwa-development` | `(20).md` |
-| 17 | **iOS App Development** | Mobile Development | `/mobile-development/ios-app-development` | `.md` |
-| 18 | **Android App Development** | Mobile Development | `/mobile-development/android-app-development` | `(12).md` |
-| 19 | **Flutter App Development** | Mobile Development | `/mobile-development/flutter-app-development` | `(13).md` |
-| 20 | **React Native Development** | Mobile Development | `/mobile-development/react-native-development` | `(14).md` |
-| 21 | **Cross-Platform App Development** | Mobile Development | `/mobile-development/cross-platform-app-development` | `(11).md` |
+| 16 | **Progressive Web App Development** | Web Development | `/web-development/progressive-web-app-development` | `(20).md` |
+| 17 | **JAMstack Development** | Web Development | `/web-development/jamstack-development` | `jamstack.md` |
+| 18 | **iOS App Development** | Mobile Development | `/mobile-development/ios-app-development` | `.md` |
+| 19 | **Android App Development** | Mobile Development | `/mobile-development/android-app-development` | `(12).md` |
+| 20 | **Flutter App Development** | Mobile Development | `/mobile-development/flutter-app-development` | `(13).md` |
+| 21 | **React Native Development** | Mobile Development | `/mobile-development/react-native-development` | `(14).md` |
+| 22 | **Cross-Platform App Development** | Mobile Development | `/mobile-development/cross-platform-app-development` | `(11).md` |
+| 23 | **Design Systems** | Design UI/UX | `/design-ui-ux/design-systems` | `design system.md` |
+| 24 | **Product Design** | Design UI/UX | `/design-ui-ux/product-design` | `prodcut design.md` |
+| 25 | **Web Design** | Design UI/UX | `/design-ui-ux/web-design` | `web design.md` |
+| 26 | **Mobile App Design** | Design UI/UX | `/design-ui-ux/mobile-app-design` | `mobile app.md` |
+| 27 | **UX Research** | Design UI/UX | `/design-ui-ux/ux-research` | `ux research.md` |
+| 28 | **Wireframing & Prototyping** | Design UI/UX | `/design-ui-ux/wireframing-prototyping` | `wireframing & p.md` |
 
 ---
 
-**Last Updated:** September 1, 2026 (v4 — added full inventory of 3 main and 21 sub-services)
+### 11.3 Slug Consistency Rule (Added September 10, 2026)
+
+> **CRITICAL:** A slug mismatch between `serviceMenuSections`, override objects, and MD data causes 404 errors.
+
+**Before adding new services, verify these 4 locations all use the same slug:**
+
+| Location | Field |
+|----------|-------|
+| `data/sub-services.js` → `serviceMenuSections[].items[].title` | `slugify(title)` must match |
+| `data/sub-services.js` → override object | `slug` field |
+| `data/sub-services-md.js` → entry | `slug` field |
+| `data/main-services.js` → `subServices[]` | `slug` field |
+
+**Past fixes:**
+- `"PWA Development"` → `"Progressive Web App Development"` (slug: `progressive-web-app-development`)
+- `"E-commerce Development"` → `"Ecommerce Development"` (slug: `ecommerce-development`)
+
+---
+
+**Last Updated:** September 10, 2026 (v5 — added Design UI/UX category, 7 new sub-services, slug consistency rule)
 
 

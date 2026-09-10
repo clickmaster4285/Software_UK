@@ -1,7 +1,7 @@
 // AUTO-GENERATED from main-services/*.md by scripts/convert-main-services-md.js
 // Rich main-service content: intro, tables, costFactors, whyChoose, relatedLinks, full FAQs & keywords.
 // NOTE: written to data/main-services-md.js so data/main-services.js is unaffected until ready.
-// Generated: 2026-09-01T10:25:52.334Z
+// Generated: 2026-09-10T05:02:54.080Z
 
 export const mainServicesMd = [
   {
@@ -1712,6 +1712,688 @@ export const mainServicesMd = [
     ],
     "jsonLd": {},
     "sourceFile": "Serivces Pages Content Clickamster software .co .uk.md"
+  },
+  {
+    "slug": "design-ui-ux",
+    "title": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux",
+    "h1": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux",
+    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux",
+    "metaTitle": "UI/UX Design Services UK | Clickmasters",
+    "metaDescription": "Custom UI/UX design services in the UK for software, websites and mobile apps, including UX research, wireframes, prototypes, UI design and design systems. UI/UX Design Services UK",
+    "metaKeywords": [
+      "ui ux design services",
+      "ux design services",
+      "ui design services",
+      "user experience design services",
+      "ui ux design agency",
+      "ui ux design company",
+      "ui ux design agency UK",
+      "ux design company UK",
+      "user interface design services",
+      "ui ux design and development services"
+    ],
+    "intro": [
+      "Looking for UI/UX design services to make your software, website or mobile app easier to understand and use? Effective UI/UX design combines user research, clear user journeys, interaction design and visual interfaces to create digital products around real user needs.",
+      "Clickmasters provides UI and UX design services for UK businesses, covering UX research, user flows, wireframes, prototypes, interface design, design systems, usability testing and developer-ready design handoff.",
+      "If your project also requires engineering and implementation, explore our [software development services](/software-development) for custom software, SaaS products, APIs, frontend and backend development."
+    ],
+    "sections": [
+      {
+        "heading": "UI/UX Design Company for Digital Products",
+        "body": "Good UI/UX design is not simply about making a screen look attractive.\n\nIt considers:\n\nWho is using the product?\n\n↓\n\nWhat are they trying to accomplish?\n\n↓\n\nWhat information and actions do they need?\n\n↓\n\nHow should the journey work?\n\n↓\n\nHow should the interface communicate it?\n\n↓\n\nHow can the experience be validated before development?\n\nThis research-to-validation relationship is strongly reflected in the current UI/UX SERP, where Google associates UI/UX companies with UX research, user journeys, wireframing, prototyping, usability testing, design systems and digital product development.\n\nOur approach connects research → UX architecture → UI design → prototype → validation → development handoff, helping reduce guesswork before engineering begins.\n\n# Our UI/UX Design Services",
+        "items": []
+      },
+      {
+        "heading": "UX Research",
+        "body": "UX research helps uncover how users think, what they are trying to achieve and where they experience difficulty.\n\nDepending on the project, research can involve:\n\nResearch findings should influence actual product decisions rather than simply becoming a report that is never used.\n\nThe SERP places UX research among the most important components of a complete UI/UX service, alongside interviews, personas, usability testing and journey mapping.",
+        "items": [
+          "Stakeholder discussions",
+          "User interviews",
+          "Customer interviews",
+          "Competitor analysis",
+          "Existing-product review",
+          "User behaviour analysis",
+          "User personas",
+          "Journey mapping",
+          "Usability evaluation",
+          "Feedback analysis"
+        ]
+      },
+      {
+        "heading": "UX Strategy",
+        "body": "UX strategy connects user needs with business and product requirements.\n\nThis can involve defining:\n\nThe objective is to determine what experience needs to be designed before deciding what individual screens should look like.",
+        "items": [
+          "Product objectives",
+          "Target users",
+          "Core tasks",
+          "User priorities",
+          "Functional requirements",
+          "Experience principles",
+          "Key journeys",
+          "Information structure",
+          "Validation requirements"
+        ]
+      },
+      {
+        "heading": "User Personas",
+        "body": "User personas can help product teams organise research findings around meaningful user groups.\n\nA persona may consider:\n\nPersonas should be grounded in available evidence rather than invented demographic profiles.",
+        "items": [
+          "User goals",
+          "Responsibilities",
+          "Motivations",
+          "Behaviour",
+          "Technical ability",
+          "Common tasks",
+          "Frustrations",
+          "Decision factors"
+        ]
+      },
+      {
+        "heading": "User Journey Mapping",
+        "body": "A user journey shows how someone moves through a product to reach an objective.\n\nFor example:\n\nDiscover Product\n\n→ Understand Value\n\n→ Create Account\n\n→ Complete Setup\n\n→ Perform Core Task\n\n→ Receive Feedback\n\n→ Return\n\nJourney mapping can reveal where users encounter unnecessary steps, missing information or unclear decisions.",
+        "items": []
+      },
+      {
+        "heading": "Information Architecture",
+        "body": "Information architecture defines how content, functionality and navigation are organised.\n\nIt can include:\n\nClear information architecture helps users understand where they are, what is available and how to reach the next step.",
+        "items": [
+          "Navigation structure",
+          "Page or screen hierarchy",
+          "Content hierarchy",
+          "Feature grouping",
+          "Labels",
+          "Categories",
+          "Search structure",
+          "Relationships between areas of a product"
+        ]
+      },
+      {
+        "heading": "User Flow Design",
+        "body": "User flows map the steps required to complete specific actions.\n\nExamples include:\n\nNew User\n\n→ Registration → Verification → Setup → Dashboard\n\nor:\n\nEcommerce Customer\n\n→ Search → Product → Basket → Checkout → Confirmation\n\nUser flows help identify unnecessary screens, missing states and potential friction before detailed interface design begins.\n\n# Wireframing & Prototyping",
+        "items": []
+      },
+      {
+        "heading": "Wireframing",
+        "body": "Wireframes establish the structure of screens before detailed visual styling.\n\nThey can define:\n\nStarting with wireframes can make structural changes easier before significant time is spent on high-fidelity interface design.",
+        "items": [
+          "Information hierarchy",
+          "Navigation",
+          "Content placement",
+          "Forms",
+          "Actions",
+          "Components",
+          "Screen relationships",
+          "User flows"
+        ]
+      },
+      {
+        "heading": "Interactive Prototyping",
+        "body": "Interactive prototypes allow important user journeys to be experienced before the product is fully developed.\n\nA prototype can help validate:\n\nThis can help teams identify UX issues earlier in the project.\n\nThe current SERP strongly connects prototyping with validation rather than treating prototypes as purely visual deliverables.",
+        "items": [
+          "Navigation",
+          "Screen transitions",
+          "Forms",
+          "User flows",
+          "Interactions",
+          "Task completion",
+          "Content hierarchy",
+          "Feature understanding"
+        ]
+      },
+      {
+        "heading": "Low-Fidelity vs High-Fidelity Prototypes",
+        "body": "Both can be useful at different stages of a project.\n\n# UI Design Services\n\nUI design defines the visual and interactive presentation of a digital product.\n\nThis can include:\n\nThe goal is not simply visual consistency.\n\nThe interface should help users understand:\n\nWhat is this?\n\nWhat can I do here?\n\nWhat happens next?\n\nDid my action work?",
+        "items": [
+          "Layouts",
+          "Typography",
+          "Interface hierarchy",
+          "Buttons",
+          "Inputs",
+          "Forms",
+          "Navigation",
+          "Cards",
+          "Tables",
+          "Dashboards",
+          "Notifications",
+          "Error messages",
+          "Icons",
+          "Responsive states",
+          "Interactive components"
+        ]
+      },
+      {
+        "heading": "Visual Hierarchy",
+        "body": "Visual hierarchy helps users recognise what deserves attention first.\n\nIt can be influenced by:\n\nGood hierarchy reduces the amount of interpretation required from the user.",
+        "items": [
+          "Size",
+          "Position",
+          "Spacing",
+          "Typography",
+          "Contrast",
+          "Grouping",
+          "Component treatment"
+        ]
+      },
+      {
+        "heading": "Interaction Design",
+        "body": "Interaction design considers how interfaces respond when users take action.\n\nThis includes:\n\nA complete interface should account for more than the ideal or \"happy path.\"\n\nUsers also need clear feedback when something is loading, unavailable, incomplete or unsuccessful.\n\n# Design Systems\n\nA design system creates reusable rules and components for maintaining interface consistency.\n\nIt can contain:\n\nInstead of redesigning common interface elements for every new screen, teams can reuse established components.\n\nThe SERP treats design systems as an important part of scalable UI/UX work because they standardise interface components and support more consistent implementation.",
+        "items": [
+          "Hover states",
+          "Active states",
+          "Loading states",
+          "Confirmation states",
+          "Empty states",
+          "Error states",
+          "Form validation",
+          "Transitions",
+          "Feedback",
+          "Typography rules",
+          "Spacing",
+          "Form fields",
+          "Buttons",
+          "Navigation",
+          "Cards",
+          "Modals",
+          "Tables",
+          "Alerts",
+          "Icons",
+          "Component states",
+          "Interaction patterns",
+          "Usage guidance"
+        ]
+      },
+      {
+        "heading": "Why Use a Design System?",
+        "body": "A design system can help:\n\nA design system should still evolve as the product changes.\n\n# Usability Testing\n\nUsability testing evaluates how effectively users can complete important tasks.\n\nA test might explore:\n\nFindings can then inform another design iteration.\n\nThe process becomes:\n\nDesign → Test → Identify Issues → Improve → Validate\n\nrather than:\n\nDesign → Assume → Develop",
+        "items": [
+          "Improve consistency",
+          "Reduce repeated design work",
+          "Support development teams",
+          "Make new screens easier to design",
+          "Reduce interface variation",
+          "Improve design-to-development communication",
+          "Support larger digital products",
+          "Can users find the feature?",
+          "Do they understand the terminology?",
+          "Can they complete the task?",
+          "Where do they hesitate?",
+          "Which steps cause confusion?",
+          "Which errors occur repeatedly?",
+          "Does the product provide enough feedback?"
+        ]
+      },
+      {
+        "heading": "UX Audits",
+        "body": "An existing website, app or software product may already have users but still suffer from usability problems.\n\nA UX audit can review areas such as:\n\nThe purpose is to identify specific experience problems and prioritise improvements.\n\n# Product Design\n\nUI/UX is often one part of a wider digital product design process.\n\nProduct design can connect:\n\nUser Needs\n\n*\n\nBusiness Requirements\n\n*\n\nProduct Functionality\n\n*\n\nUX Architecture\n\n*\n\nUI Design\n\n*\n\nValidation\n\nThe result is a more complete product definition before engineering begins.\n\nFor complex software products, this can reduce the risk of development teams building screens without sufficient clarity around users or workflows.\n\n# UI/UX Design for Software Products\n\nSoftware interfaces often need to support more complex workflows than standard marketing websites.\n\nExamples can include:\n\nThe design challenge is often to make complex functionality feel understandable rather than simply reducing the number of features.\n\n# SaaS UI/UX Design\n\nSaaS products may need to support the complete customer lifecycle:\n\nLanding / Sign-up\n\n→ Onboarding\n\n→ First Value\n\n→ Regular Usage\n\n→ Upgrade\n\n→ Account Management\n\nUI/UX considerations can include:\n\nFor SaaS products, strong UX often depends on helping users understand the product quickly and complete core tasks without unnecessary support.\n\n# Web UI/UX Design\n\nWebsite UX combines information architecture, content hierarchy and interaction design.\n\nWe can design experiences for:\n\nThe design process can cover:\n\nWebsite UI/UX design should remain separate from the engineering work required to build the final website.\n\n# Mobile App UI/UX Design\n\nMobile interfaces require careful consideration of limited screen space and touch interaction.\n\nMobile app design can include:\n\nDesign should also account for differences between mobile and desktop behaviour instead of simply shrinking a desktop interface.\n\n# Ecommerce UI/UX Design\n\nEcommerce UX focuses on helping users find, evaluate and purchase products.\n\nImportant journeys can include:\n\nHomepage\n\n→ Category\n\n→ Search / Filter\n\n→ Product\n\n→ Basket\n\n→ Checkout\n\nThe interface should help customers make decisions without introducing unnecessary friction.\n\nUX considerations can include:\n\n# Enterprise Software UI/UX\n\nEnterprise platforms can involve large feature sets, multiple user roles and complex business processes.\n\nDesign considerations may include:\n\nThe objective is often to simplify complex operations without removing functionality employees actually need.\n\nThe supplied SERP explicitly associates UI/UX providers with websites, mobile apps, SaaS, ecommerce platforms and enterprise software, showing that product-type coverage is important for topical completeness.\n\n# Responsive UI/UX Design\n\nUsers may access the same digital product across:\n\nResponsive design should therefore consider how:\n\nResponsive design is not simply resizing an interface.\n\nLayouts and interactions may need to change according to the available screen space.\n\n# Accessibility in UI/UX Design\n\nAccessibility should be considered during design rather than left entirely to development.\n\nDesign considerations can include:\n\nDevelopment and testing ultimately determine whether the final product meets applicable accessibility requirements, but many accessibility decisions begin during UX and UI design.\n\n# UI/UX Design vs UI Development\n\nThese are related but different disciplines.\n\nA design project should produce enough clarity for developers to understand:\n\nThis design-to-development relationship is a key content gap in the current SERP and helps distinguish a complete UI/UX process from visual design alone.\n\n# Developer Handoff\n\nA structured handoff helps engineering teams translate approved designs into the final product.\n\nDepending on the project, handoff can include:\n\nDesigners and developers may also collaborate during implementation to clarify interactions or update designs where technical constraints emerge.\n\n# What Do You Receive from a UI/UX Project?\n\nDeliverables depend on the scope, but may include:\n\nThe current SERP identifies concrete deliverables such as personas, journey maps, user flows, wireframes, prototypes, design systems and developer specifications as an opportunity for stronger service-page content.\n\n# Our UI/UX Design Process",
+        "items": [
+          "Navigation",
+          "User journeys",
+          "Forms",
+          "Calls to action",
+          "Information architecture",
+          "Content hierarchy",
+          "Mobile usability",
+          "Accessibility considerations",
+          "Interaction consistency",
+          "Interface patterns",
+          "Error states",
+          "Dashboards",
+          "Admin panels",
+          "Reporting",
+          "Data entry",
+          "Workflow management",
+          "User permissions",
+          "Settings",
+          "Search",
+          "Filters",
+          "Tables",
+          "Forms",
+          "Data visualisation",
+          "Notifications",
+          "Registration",
+          "Onboarding",
+          "Dashboards",
+          "Feature discovery",
+          "Empty states",
+          "Permissions",
+          "Billing",
+          "Notifications",
+          "Settings",
+          "Help",
+          "Account management",
+          "Corporate websites",
+          "B2B websites",
+          "SaaS websites",
+          "Ecommerce websites",
+          "Customer portals",
+          "Content platforms",
+          "Service websites",
+          "Navigation",
+          "Landing pages",
+          "Content structure",
+          "Conversion journeys",
+          "Forms",
+          "Mobile behaviour",
+          "Calls to action",
+          "Responsive layouts",
+          "App navigation",
+          "Onboarding",
+          "Registration",
+          "User flows",
+          "Forms",
+          "Dashboards",
+          "Search",
+          "Profiles",
+          "Settings",
+          "Notifications",
+          "Empty states",
+          "Error states",
+          "Touch interactions",
+          "Navigation",
+          "Search",
+          "Filters",
+          "Product information",
+          "Variants",
+          "Product imagery",
+          "Basket",
+          "Checkout",
+          "Forms",
+          "Mobile shopping",
+          "Error handling",
+          "Role-based interfaces",
+          "Large data tables",
+          "Filters",
+          "Bulk actions",
+          "Dashboards",
+          "Multi-step workflows",
+          "Permissions",
+          "Reporting",
+          "Configuration",
+          "Error prevention",
+          "Desktop computers",
+          "Laptops",
+          "Tablets",
+          "Mobile phones",
+          "Navigation changes",
+          "Content reflows",
+          "Forms behave",
+          "Tables adapt",
+          "Buttons remain usable",
+          "Important actions remain visible",
+          "Text readability",
+          "Colour contrast",
+          "Keyboard journeys",
+          "Focus behaviour",
+          "Form labels",
+          "Error messages",
+          "Interactive states",
+          "Touch target size",
+          "Content hierarchy",
+          "Consistent navigation",
+          "Layouts",
+          "Components",
+          "Interactions",
+          "States",
+          "Responsive behaviour",
+          "User flows",
+          "Approved screens",
+          "User flows",
+          "Interaction behaviour",
+          "Component specifications",
+          "Responsive layouts",
+          "Design-system guidance",
+          "States",
+          "Assets",
+          "Notes",
+          "Acceptance details",
+          "Research findings",
+          "User personas",
+          "Journey maps",
+          "Information architecture",
+          "User flows",
+          "Wireframes",
+          "High-fidelity interface designs",
+          "Interactive prototypes",
+          "Design-system components",
+          "Usability findings",
+          "Developer handoff specifications"
+        ]
+      },
+      {
+        "heading": "1\\. Discovery",
+        "body": "We begin by understanding:",
+        "items": [
+          "Business goals",
+          "Product requirements",
+          "Target users",
+          "Current problems",
+          "Technical constraints",
+          "Existing products",
+          "Project scope"
+        ]
+      },
+      {
+        "heading": "2\\. User & Product Research",
+        "body": "Where required, we examine users, competitors, existing behaviour and available product data.",
+        "items": []
+      },
+      {
+        "heading": "3\\. UX Strategy",
+        "body": "We define the experience priorities and identify the key journeys the product needs to support.",
+        "items": []
+      },
+      {
+        "heading": "4\\. Information Architecture",
+        "body": "Content, functionality and navigation are structured into a logical product hierarchy.",
+        "items": []
+      },
+      {
+        "heading": "5\\. User Flows",
+        "body": "Important tasks are mapped step by step.",
+        "items": []
+      },
+      {
+        "heading": "6\\. Wireframing",
+        "body": "Screens are structured without becoming distracted by detailed visual styling.",
+        "items": []
+      },
+      {
+        "heading": "7\\. UI Design",
+        "body": "The approved UX structure is developed into a complete visual interface.",
+        "items": []
+      },
+      {
+        "heading": "8\\. Prototyping",
+        "body": "Important journeys can be turned into interactive prototypes for review and validation.",
+        "items": []
+      },
+      {
+        "heading": "9\\. Usability Validation",
+        "body": "Where appropriate, designs are evaluated to identify usability problems before development.",
+        "items": []
+      },
+      {
+        "heading": "10\\. Design System & Handoff",
+        "body": "Reusable components, states and design specifications are prepared for implementation.\n\nThe SERP consistently frames a complete UI/UX engagement as discovery → research → architecture → wireframes → UI design → prototype → testing → development handoff, rather than a single visual-design stage.\n\n# Benefits of UI/UX Design\n\nEffective UI/UX design can help businesses work towards:",
+        "items": []
+      },
+      {
+        "heading": "Clearer User Journeys",
+        "body": "Users can understand what to do and where to go next.",
+        "items": []
+      },
+      {
+        "heading": "Improved Usability",
+        "body": "Complex functionality can become easier to learn and operate.",
+        "items": []
+      },
+      {
+        "heading": "Better Product Adoption",
+        "body": "Clear onboarding and interface design can make it easier for users to begin using a product.",
+        "items": []
+      },
+      {
+        "heading": "Reduced Development Rework",
+        "body": "Validating flows and interactions before development can reveal issues earlier.",
+        "items": []
+      },
+      {
+        "heading": "Greater Design Consistency",
+        "body": "Design systems and reusable interface patterns can reduce inconsistent experiences.",
+        "items": []
+      },
+      {
+        "heading": "Better Conversion Journeys",
+        "body": "For transactional products, reducing friction can help support actions such as:\n\nThese should be treated as design objectives rather than guaranteed commercial results. The ranking landscape consistently connects UX with usability, engagement and conversion, rather than aesthetics alone.\n\n# When Do You Need UI/UX Design Services?\n\nUI/UX support can be valuable when:",
+        "items": [
+          "Enquiries",
+          "Registrations",
+          "Purchases",
+          "Subscriptions",
+          "Bookings",
+          "You are planning a new software product",
+          "Users struggle with an existing platform",
+          "The interface has become inconsistent",
+          "A product contains too many confusing workflows",
+          "You are developing an MVP",
+          "A website is being redesigned",
+          "A mobile application is being developed",
+          "An existing system needs modernisation",
+          "Customer onboarding is difficult",
+          "Teams need a scalable design system",
+          "Development begins without clear interface specifications"
+        ]
+      },
+      {
+        "heading": "Redesigning an Existing Product",
+        "body": "A redesign should not automatically mean replacing the entire interface.\n\nWe can first identify:\n\nThis can support a more focused redesign rather than changing everything simply to make the product appear different.\n\n# UI/UX Design for MVPs\n\nFor an MVP, design should focus on validating the core experience rather than designing every possible future feature.\n\nA typical MVP design approach might be:\n\nCore User Problem\n\n↓\n\nEssential User Journey\n\n↓\n\nRequired Features\n\n↓\n\nWireframes\n\n↓\n\nPrototype\n\n↓\n\nValidation\n\n↓\n\nDevelopment\n\nThis can help prevent early-stage products from becoming overloaded with low-priority functionality.\n\n# How Much Does UI/UX Design Cost?\n\nUI/UX design cost depends on the scope and complexity of the project.\n\nFactors can include:\n\nA small website UX project and a complex enterprise software platform require very different levels of research and design work.\n\nDiscovery is normally required before an accurate quotation can be prepared.\n\nPricing and budget are important decision-stage concerns within the current SERP, alongside portfolio, case studies and provider expertise.\n\n# How Long Does UI/UX Design Take?\n\nThe timeline depends on:\n\nA focused UX improvement project may require less time than designing a new multi-role software platform from the ground up.\n\n# UI/UX Agency vs Freelance Designer\n\nThe appropriate model depends on project complexity.\n\nThe choice should depend on the work required rather than assuming one model is universally better.\n\n# How to Choose a UI/UX Design Company\n\nWhen evaluating a UI/UX provider, consider:\n\nPortfolio, case studies, industry experience and end-to-end capabilities are among the strongest provider-selection signals surfaced in the current SERP.\n\n# Why Choose Clickmasters for UI/UX Design?\n\nClickmasters approaches UI/UX design as part of the wider digital product development process.\n\nDepending on project requirements, our work can cover:\n\nThe objective is to create an interface based on user tasks and product requirements rather than making design decisions from visual preference alone.\n\n# Frequently Asked Questions",
+        "items": [
+          "What already works",
+          "Which journeys cause problems",
+          "Which components are inconsistent",
+          "Which screens need restructuring",
+          "Which features users struggle to discover",
+          "Product type",
+          "Number of user roles",
+          "Number of workflows",
+          "Research requirements",
+          "Existing product",
+          "Number of screens",
+          "Prototype complexity",
+          "Usability testing",
+          "Design-system requirements",
+          "Responsive layouts",
+          "Project duration",
+          "Developer handoff",
+          "Scope",
+          "Product complexity",
+          "Research",
+          "Number of user types",
+          "Number of screens",
+          "Stakeholder availability",
+          "Prototype requirements",
+          "Testing",
+          "Feedback rounds",
+          "Design-system requirements",
+          "Does the team conduct UX research?",
+          "Can they explain their design process?",
+          "Do they understand your product type?",
+          "Can they design complex workflows?",
+          "Do they produce interactive prototypes?",
+          "Do they conduct usability testing?",
+          "Do they create scalable design systems?",
+          "Do they understand developer handoff?",
+          "Are relevant case studies available?",
+          "Can they explain how design decisions were validated?",
+          "Do they understand both user and business requirements?",
+          "UX research",
+          "User personas",
+          "Journey mapping",
+          "Information architecture",
+          "User flows",
+          "Wireframes",
+          "Interactive prototypes",
+          "UI design",
+          "Responsive design",
+          "Design systems",
+          "Usability evaluation",
+          "Developer handoff"
+        ]
+      },
+      {
+        "heading": "What are UI/UX design services?",
+        "body": "UI/UX design services can include user research, UX strategy, information architecture, user journeys, user flows, wireframes, interface design, interactive prototypes, usability testing, design systems and developer handoff.",
+        "items": []
+      },
+      {
+        "heading": "What is the difference between UI and UX design?",
+        "body": "UX design focuses on how a product works and how users move through it, while UI design focuses on the visual and interactive interface through which users complete those journeys. Both disciplines work together.",
+        "items": []
+      },
+      {
+        "heading": "What does a UI/UX design company do?",
+        "body": "A UI/UX design company researches user needs, structures product journeys, creates wireframes and prototypes, designs interfaces, tests usability and prepares approved designs for development.",
+        "items": []
+      },
+      {
+        "heading": "Why is UX research important?",
+        "body": "UX research helps product teams understand user needs, behaviours and problems before making design decisions. It can reduce reliance on assumptions during product planning.",
+        "items": []
+      },
+      {
+        "heading": "What is a wireframe?",
+        "body": "A wireframe is a structural representation of a screen or page. It focuses on information hierarchy, functionality and layout before detailed visual design is applied.",
+        "items": []
+      },
+      {
+        "heading": "What is an interactive prototype?",
+        "body": "An interactive prototype simulates important product interactions and user journeys before the final product is developed. It can be used for stakeholder review and usability validation.",
+        "items": []
+      },
+      {
+        "heading": "What is a UI design system?",
+        "body": "A design system is a collection of reusable components, interface rules and patterns that helps maintain consistency across a digital product.",
+        "items": []
+      },
+      {
+        "heading": "Do you design websites and mobile apps?",
+        "body": "Yes. UI/UX design can be applied to websites, web applications, mobile applications, SaaS platforms, ecommerce platforms and other software interfaces.",
+        "items": []
+      },
+      {
+        "heading": "Can you redesign an existing product?",
+        "body": "Yes. Existing products can be reviewed to identify usability, navigation, workflow and interface problems before developing an improved UX and UI direction.",
+        "items": []
+      },
+      {
+        "heading": "Do you provide UI/UX design for SaaS platforms?",
+        "body": "Yes. SaaS UI/UX projects can include onboarding, dashboards, workflows, account management, settings, billing, product navigation and other application interfaces.",
+        "items": []
+      },
+      {
+        "heading": "Does UI/UX design include development?",
+        "body": "UI/UX design primarily defines the user experience and interface. Frontend or application development implements the approved design in working software. The two disciplines should collaborate closely during handoff and implementation.",
+        "items": []
+      },
+      {
+        "heading": "How much does UI/UX design cost?",
+        "body": "Cost depends on product complexity, research requirements, user roles, number of workflows and screens, prototyping, usability testing, responsive requirements and design-system scope. Discovery is normally required for an accurate estimate.",
+        "items": []
+      },
+      {
+        "heading": "How long does a UI/UX design project take?",
+        "body": "The timeline depends on project scope, research, product complexity, number of screens, user roles, testing requirements and stakeholder feedback.\n\n# Design Better Digital Products with Clickmasters\n\nPlanning a new website, software platform or mobile app, or trying to improve an existing digital product?\n\nClickmasters can help research the users, structure the experience, design the interface, create prototypes, validate important journeys and prepare the final design for development.\n\nPrimary CTA: Book a Free Consultation Secondary CTA: Request a UI/UX Design Quote\n\nService Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"Service\",\n\n\"@id\": \"/design-ui-ux\\#service\",\n\n\"name\": \"UI/UX Design Services\",\n\n\"alternateName\": \\[\n\n\"UI UX Design\",\n\n\"User Experience Design\",\n\n\"User Interface Design\"\n\n\\],\n\n\"url\": \"/design-ui-ux\",\n\n\"description\": \"UI/UX design services for UK businesses, including UX research, user journeys, information architecture, wireframing, prototyping, interface design, design systems, usability testing and developer handoff.\",\n\n\"serviceType\": \"UI/UX Design\",\n\n\"category\": \"Digital Product Design\",\n\n\"provider\": {\n\n\"@type\": \"Organization\",\n\n\"@id\": \"/\\#organization\",\n\n\"name\": \"Clickmasters Software Development Company\",\n\n\"url\": \"/\"\n\n},\n\n\"areaServed\": {\n\n\"@type\": \"Country\",\n\n\"name\": \"United Kingdom\"\n\n},\n\n\"audience\": {\n\n\"@type\": \"BusinessAudience\",\n\n\"audienceType\": \"Startups, SMEs and enterprises\"\n\n},\n\n\"hasOfferCatalog\": {\n\n\"@type\": \"OfferCatalog\",\n\n\"name\": \"UI/UX Design Services\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"UX Research\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"UX Strategy\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"User Journey Mapping\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Information Architecture\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"User Flow Design\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Wireframing\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Interactive Prototyping\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"User Interface Design\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Design Systems\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Usability Testing\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"UX Audits\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Developer Handoff\"\n\n}\n\n}\n\n\\]\n\n},\n\n\"isRelatedTo\": \\[\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Software Development Services\",\n\n\"url\": \"/software-development\"\n\n}\n\n\\]\n\n}\n\n\\</script\\>\n\nFaqs\n\n\\<script type=\"application/ld+json\"\\> { \"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"@id\": \"/design-ui-ux\\#faq\", \"url\": \"/design-ui-ux\", \"mainEntity\": \\[ { \"@type\": \"Question\", \"name\": \"What are UI/UX design services?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"UI/UX design services can include user research, UX strategy, information architecture, user journeys, user flows, wireframes, interface design, interactive prototypes, usability testing, design systems and developer handoff.\" } }, { \"@type\": \"Question\", \"name\": \"What is the difference between UI and UX design?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"UX design focuses on how a product works and how users move through it, while UI design focuses on the visual and interactive interface through which users complete those journeys. Both disciplines work together.\" } }, { \"@type\": \"Question\", \"name\": \"What does a UI/UX design company do?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"A UI/UX design company researches user needs, structures product journeys, creates wireframes and prototypes, designs interfaces, tests usability and prepares approved designs for development.\" } }, { \"@type\": \"Question\", \"name\": \"Why is UX research important?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"UX research helps product teams understand user needs, behaviours and problems before making design decisions. It can reduce reliance on assumptions during product planning.\" } }, { \"@type\": \"Question\", \"name\": \"What is a wireframe?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"A wireframe is a structural representation of a screen or page. It focuses on information hierarchy, functionality and layout before detailed visual design is applied.\" } }, { \"@type\": \"Question\", \"name\": \"What is an interactive prototype?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"An interactive prototype simulates important product interactions and user journeys before the final product is developed. It can be used for stakeholder review and usability validation.\" } }, { \"@type\": \"Question\", \"name\": \"What is a UI design system?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"A design system is a collection of reusable components, interface rules and patterns that helps maintain consistency across a digital product.\" } }, { \"@type\": \"Question\", \"name\": \"Do you design websites and mobile apps?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Yes. UI/UX design can be applied to websites, web applications, mobile applications, SaaS platforms, ecommerce platforms and other software interfaces.\" } }, { \"@type\": \"Question\", \"name\": \"Can you redesign an existing product?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Yes. Existing products can be reviewed to identify usability, navigation, workflow and interface problems before developing an improved UX and UI direction.\" } }, { \"@type\": \"Question\", \"name\": \"Do you provide UI/UX design for SaaS platforms?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Yes. SaaS UI/UX projects can include onboarding, dashboards, workflows, account management, settings, billing, product navigation and other application interfaces.\" } }, { \"@type\": \"Question\", \"name\": \"Does UI/UX design include development?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"UI/UX design primarily defines the user experience and interface. Frontend or application development implements the approved design in working software. The two disciplines should collaborate closely during handoff and implementation.\" } }, { \"@type\": \"Question\", \"name\": \"How much does UI/UX design cost?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Cost depends on product complexity, research requirements, user roles, number of workflows and screens, prototyping, usability testing, responsive requirements and design-system scope. Discovery is normally required for an accurate estimate.\" } }, { \"@type\": \"Question\", \"name\": \"How long does a UI/UX design project take?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"The timeline depends on project scope, research, product complexity, number of screens, user roles, testing requirements and stakeholder feedback.\" } } \\] } \\</script\\>\n\nBreadcrumb Schema \\<script type=\"application/ld+json\"\\> { \"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"@id\": \"/design-ui-ux\\#breadcrumb\", \"itemListElement\": \\[ { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"/\" }, { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"UI/UX Design\", \"item\": \"/design-ui-ux\" } \\] } \\</script\\>",
+        "items": []
+      }
+    ],
+    "tables": [
+      {
+        "title": "Low-Fidelity vs High-Fidelity Prototypes",
+        "headers": [
+          "Low-Fidelity",
+          "High-Fidelity"
+        ],
+        "rows": [
+          [
+            "Focuses on structure",
+            "Closer to final interface"
+          ],
+          [
+            "Faster to change",
+            "Includes detailed visual design"
+          ],
+          [
+            "Useful for early flows",
+            "Useful for realistic testing"
+          ],
+          [
+            "Limited styling",
+            "Includes components and interactions"
+          ],
+          [
+            "Helps validate direction",
+            "Helps validate final experience"
+          ]
+        ]
+      },
+      {
+        "title": "UX Audits",
+        "headers": [
+          "UI/UX Design",
+          "Frontend Development"
+        ],
+        "rows": [
+          [
+            "Understands user needs",
+            "Implements interface"
+          ],
+          [
+            "Defines user journeys",
+            "Builds interactions"
+          ],
+          [
+            "Creates wireframes",
+            "Writes frontend code"
+          ],
+          [
+            "Creates prototypes",
+            "Connects application logic"
+          ],
+          [
+            "Designs visual interface",
+            "Implements components"
+          ],
+          [
+            "Defines design system",
+            "Builds reusable code"
+          ],
+          [
+            "Validates usability",
+            "Tests implementation"
+          ]
+        ]
+      },
+      {
+        "title": "Redesigning an Existing Product",
+        "headers": [
+          "Freelance Designer",
+          "UI/UX Company"
+        ],
+        "rows": [
+          [
+            "Useful for focused assignments",
+            "Suitable for broader projects"
+          ],
+          [
+            "Usually one specialist",
+            "Can involve multiple disciplines"
+          ],
+          [
+            "Simpler project structure",
+            "Can cover research through handoff"
+          ],
+          [
+            "May suit individual screens",
+            "Better suited to complex user journeys"
+          ],
+          [
+            "Availability depends on one person",
+            "Greater resource flexibility possible"
+          ]
+        ]
+      }
+    ],
+    "costFactors": [],
+    "whyChoose": [],
+    "faqs": [],
+    "relatedLinks": [
+      {
+        "label": "software development services",
+        "href": "/software-development"
+      }
+    ],
+    "jsonLd": {},
+    "sourceFile": "Uiux main.md"
   }
 ];
 

@@ -47,7 +47,7 @@ const nextConfig = {
       "lucide-react",
     ],
   },
-  allowedDevOrigins: ['192.168.88.62'],
+  allowedDevOrigins: ['192.168.88.36'],
   async headers() {
     return [
       {

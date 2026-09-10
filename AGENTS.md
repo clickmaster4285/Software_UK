@@ -325,8 +325,8 @@ const Component = dynamic(() =>
 | `scripts/convert-resource-guides.js` | Convert resource guide DOCX → `data/resource-guides.js` |
 | `scripts/convert-glossary.js` | Convert glossary DOCX → `data/glossary.js` |
 | `scripts/convert-industries.js` | Convert industry DOCX → `data/industries.js` |
-| `scripts/convert-sub-services-md.js` | Convert 21 sub-service Markdown files → `data/sub-services-md.js` (rich intros, tables, cost factors, why choose, FAQs) |
-| `scripts/convert-main-services-md.js` | Convert 3 main-service Markdown files → `data/main-services-md.js` |
+| `scripts/convert-sub-services-md.js` | Convert 28 sub-service Markdown files → `data/sub-services-md.js` (rich intros, tables, cost factors, why choose, FAQs) |
+| `scripts/convert-main-services-md.js` | Convert 4 main-service Markdown files → `data/main-services-md.js` |
 | `scripts/convert-service.js` | Convert standalone service DOCX → `data/services.js` (pending) |
 | `scripts/generate-url-sheet.js` | Generate Excel URL sheet from all data files |
 | `scripts/audit-canonical.js` | Audit all pages for canonical tag coverage |
@@ -352,15 +352,71 @@ const Component = dynamic(() =>
 
 ## 12. NEXT ACTIONS
 
-1. ✅ **Main & Sub-Services MD Conversion** — Converted 21 sub-services and 3 main-services MD files → `data/sub-services-md.js` & `data/main-services-md.js` with non-destructive overlay in `data/sub-services.js` and `data/main-services.js`.
-2. 🔲 **Standalone Services** — Create `scripts/convert-service.js` → `data/services.js` (11 files, route: `/service/[slug]/`)
-3. 🔲 **Industry+Service Combos** — Plan and convert 202 combo files → `/[category]/[service]/` route
-4. 🔲 **Performance** — Lazy-load About + Contact pages, remove GSAP/Swiper/Lenis
-5. ✅ **Radix UI fix** — P1109 resolved — verified successful build of 1586/1586 static pages
+1. ✅ **Main & Sub-Services MD Conversion** — Converted 28 sub-services and 4 main-services MD files → `data/sub-services-md.js` & `data/main-services-md.js` with non-destructive overlay in `data/sub-services.js` and `data/main-services.js`.
+2. ✅ **Design UI/UX Category** — Added new main service `/design-ui-ux` with 7 sub-services: design-systems, product-design, web-design, mobile-app-design, ux-research, wireframing-prototyping, plus jamstack-development under web-development.
+3. ✅ **Slug Consistency Fix** — Fixed PWA and E-commerce slug mismatches between `serviceMenuSections` titles, override objects, and MD data. All slugs must now match across all files.
+4. 🔲 **Standalone Services** — Create `scripts/convert-service.js` → `data/services.js` (11 files, route: `/service/[slug]/`)
+5. 🔲 **Industry+Service Combos** — Plan and convert 202 combo files → `/[category]/[service]/` route
+6. 🔲 **Performance** — Lazy-load About + Contact pages, remove GSAP/Swiper/Lenis
+7. ✅ **Radix UI fix** — P1109 resolved — verified successful build of 1586/1586 static pages
 
 ---
 
-**Last Updated:** September 1, 2026
+## 13. ADDING NEW SERVICES (Slug Consistency Rule)
+
+> **CRITICAL:** A slug mismatch between `serviceMenuSections`, override objects, and MD data causes 404 errors. Always verify slugs match across all 4 locations before deploying.
+
+### Steps to Add a New Main Service
+
+1. Add title to `serviceMenuSections` in `data/sub-services.js` (this title gets slugified)
+2. Create override object in `data/sub-services.js` with `slug` = `slugify(title)`
+3. Create MD file in `main-services/` directory with URL matching the slug
+4. Run `node scripts/convert-main-services-md.js`
+5. Add entry to `main-services.js` with matching slug
+6. Add entry to `service-section-data.js` and `whyChooseUsData.js`
+
+### Steps to Add a New Sub-Service
+
+1. Add title to the correct category in `serviceMenuSections` in `data/sub-services.js`
+2. Create override object in `data/sub-services.js` with `slug` = `slugify(title)` and matching `categorySlug`
+3. Create MD file in `sub-services/` directory with URL matching the slug
+4. Run `node scripts/convert-sub-services-md.js`
+5. Add slug to the parent category's `subServices` array in `main-services.js`
+
+### Slug Verification Checklist
+
+Before deploying, verify these 4 locations all use the same slug:
+
+| Location | Field |
+|----------|-------|
+| `data/sub-services.js` → `serviceMenuSections[].items[].title` | `slugify(title)` must match |
+| `data/sub-services.js` → override object | `slug` field |
+| `data/sub-services-md.js` → entry | `slug` field |
+| `data/main-services.js` → `subServices[]` | `slug` field |
+
+### Example: Adding "Blockchain Consulting"
+
+```js
+// 1. serviceMenuSections (slugify("Blockchain Consulting") = "blockchain-consulting")
+{ title: "Blockchain Consulting", description: "..." }
+
+// 2. Override object
+const blockchainConsultingOverride = {
+  slug: "blockchain-consulting",  // MUST match slugify(title)
+  categorySlug: "blockchain-and-web3",
+  // ...
+};
+
+// 3. MD file URL
+// https://clickmasterssoftwaredevelopmentcompany.co.uk/blockchain-and-web3/blockchain-consulting
+
+// 4. main-services.js subServices
+{ title: 'Blockchain Consulting', slug: 'blockchain-consulting', ... }
+```
+
+---
+
+**Last Updated:** September 10, 2026
 **Main Reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md)
 **Execution Plan:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md)
 
