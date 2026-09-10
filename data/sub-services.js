@@ -47,7 +47,7 @@ const serviceMenuSections = [
   {
     label: "Design UI/UX",
     items: [
-      { title: "UI/UX Design Services", description: "User-first interfaces with measurable outcomes." },
+      { title: "UI/UX Design", description: "User-first interfaces with measurable outcomes." },
       { title: "Product Design", description: "End-to-end product thinking and execution." },
       { title: "Web Design", description: "Modern web layouts with clear hierarchy." },
       { title: "Mobile App Design", description: "Mobile-first design systems and flows." },
