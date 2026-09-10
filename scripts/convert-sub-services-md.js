@@ -44,6 +44,7 @@ function clean(text) {
     String(text || '')
       .replace(/\*\*/g, '')
       .replace(/`/g, '')
+      .replace(/^#+\s*/, '')
       .replace(/\s+/g, ' ')
       .trim()
   );
@@ -82,7 +83,7 @@ function startsListMarker(line) {
 
 function extractSchemas(content) {
   const schemas = {};
-  const scriptRegex = /<script\s+type=["']application\/ld\+json["']>([\s\S]*?)<\/script>/gi;
+  const scriptRegex = /\\?<script\s+type=["']application\/ld\+json["']>([\s\S]*?)\\?<\/script>/gi;
   let match;
 
   while ((match = scriptRegex.exec(content)) !== null) {
@@ -235,7 +236,20 @@ function parseMd(content) {
   }
 
   // 4. H1 & Intro
-  const h1Match = content.match(/#+\s*\**H1:\s*([^\n*]+)\**/i) || content.match(/#+\s*\*\*([^\n*]+)\*\*/);
+  const h1MatchExplicit = content.match(/#+\s*\**H1:\s*([^\n*]+)\**/i);
+  let h1Match = h1MatchExplicit;
+  if (!h1Match) {
+    const boldHeadings = [...content.matchAll(/#+\s*\*\*([^\n*]+)\*\*/g)];
+    for (const m of boldHeadings) {
+      const val = clean(m[1]).toLowerCase();
+      if (/^meta (title|description|keyword)/i.test(val)) continue;
+      if (/^https?:\/\//.test(val)) continue;
+      if (/^seo\b/i.test(val)) continue;
+      if (val.length < 5) continue;
+      h1Match = m;
+      break;
+    }
+  }
   if (h1Match) {
     out.h1 = clean(h1Match[1]);
     out.title = out.h1;
@@ -295,25 +309,34 @@ function parseMd(content) {
   };
 
   // Iterate lines for Intro, Sections, FAQs
+  let introExtracted = false;
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     const t = line.trim();
     if (!t) continue;
 
-    // Intro extraction between H1 and first H2
-    if (/^#\s*\**H1:/i.test(t)) {
-      let j = i + 1;
-      const introParas = [];
-      while (j < lines.length && !/^#{2,4}\s*\*\*/.test(lines[j].trim())) {
-        const lj = lines[j].trim();
-        if (lj && !startsListMarker(lj) && !/^\*\*URL:|^##\s|^#\s|\bMeta (Title|Description)/i.test(lj)) {
-          introParas.push(stripBoldKeepLinks(lj));
+    // Intro extraction between H1 and next heading
+    if (!introExtracted && (/^#\s*\**H1:/i.test(t) || /^#\s+\*\*[A-Z]/.test(t))) {
+      const isMetaH1 = /\bMeta (Title|Description|Keyword)/i.test(t);
+      if (!isMetaH1) {
+        let j = i + 1;
+        const introParas = [];
+        while (j < lines.length) {
+          const lj = lines[j].trim();
+          if (/^#{1,4}\s*\*\*[A-Z]/.test(lj) && !/\bMeta (Title|Description|Keyword)/i.test(lj)) break;
+          if (/^(Primary|Secondary)\s+CTA:|^\s*[\{\[]|^\\?<script|^Service Schema|^FAQ Schema|^Breadcrumb|schema\.org/i.test(lj)) break;
+          if (lj && !startsListMarker(lj) && !/^\*\*URL:|\bMeta (Title|Description)/i.test(lj)) {
+            introParas.push(stripBoldKeepLinks(lj));
+          }
+          j++;
         }
-        j++;
+        if (introParas.length > 0) {
+          out.intro = introParas;
+          introExtracted = true;
+          i = j - 1;
+          continue;
+        }
       }
-      out.intro = introParas;
-      i = j - 1;
-      continue;
     }
 
     // FAQ section start
@@ -332,7 +355,7 @@ function parseMd(content) {
 
     // FAQ answer text
     if (inFaq && faqCurrent) {
-      if (/\\?<\/?script|application\/ld\+json/i.test(t)) {
+      if (/^\\?<\/script|application\/ld\+json/i.test(t)) {
         inFaq = false;
         faqCurrent = null;
         continue;
@@ -343,10 +366,12 @@ function parseMd(content) {
       continue;
     }
 
-    // H2/H3 Section start
-    if (/^#{2,4}\s*\*\*(.+)\*\*\s*$/.test(t)) {
-      const heading = clean(t.match(/^#{2,4}\s*\*\*(.+)\*\*\s*$/)[1]);
+    // H1-H4 Section start
+    if (/^#{1,4}\s*\*\*(.+)\*\*\s*$/.test(t)) {
+      const heading = clean(t.match(/^#{1,4}\s*\*\*(.+)\*\*\s*$/)[1]);
       if (/meta (title|description|keyword)/i.test(heading)) continue;
+      if (/^seo\b/i.test(heading)) continue;
+      if (/^https?:\/\//.test(heading)) continue;
 
       if (inFaq) {
         inFaq = false;
@@ -355,10 +380,10 @@ function parseMd(content) {
 
       const blocks = [];
       let j = i + 1;
-      while (j < lines.length && !/^#{2,4}\s*\*\*(.+)\*\*\s*$/.test(lines[j].trim())) {
+      while (j < lines.length && !/^#{1,4}\s*\*\*(.+)\*\*\s*$/.test(lines[j].trim())) {
         const lj = lines[j].trim();
         if (lj === '') { j++; continue; }
-        if (/^<script/i.test(lj)) break;
+        if (/^\\?<script/i.test(lj)) break;
 
         if (startsListMarker(lj)) {
           const items = [];
@@ -386,8 +411,8 @@ function parseMd(content) {
             lines[j].trim() !== '' &&
             !startsListMarker(lines[j].trim()) &&
             !lines[j].trim().startsWith('|') &&
-            !/^#{1,4}/.test(lines[j].trim()) &&
-            !/^<script/i.test(lines[j].trim())
+            !/^#{1,4}\s*\*\*/.test(lines[j].trim()) &&
+            !/^<script|\\?<script/i.test(lines[j].trim())
           ) {
             p.push(lines[j].trim());
             j++;

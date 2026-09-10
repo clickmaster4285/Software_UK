@@ -15207,14 +15207,25 @@ const serviceOverrides = /* @__PURE__ */ new Map([
 ]);
 const mdMap = new Map(subServicesMd.map(s => [s.slug, s]));
 
+function isCorruptedH1(val) {
+  if (!val) return true;
+  const v = val.toLowerCase().trim();
+  if (v === 'meta title' || v === 'meta title:' || v === 'meta description' || v === 'meta description:') return true;
+  if (/^https?:\/\//.test(v)) return true;
+  if (v.length < 5) return true;
+  return false;
+}
+
 const services = baseServices.map((service) => {
   const override = serviceOverrides.get(service.slug) ?? service;
   const md = mdMap.get(service.slug);
   if (!md) return override;
 
+  const mdH1 = isCorruptedH1(md.h1) ? null : md.h1;
+
   return {
     ...override,
-    h1: md.h1 || override.h1 || override.title,
+    h1: mdH1 || override.h1 || override.title,
     intro: md.intro && md.intro.length > 0 ? md.intro : override.intro,
     metaTitle: md.metaTitle || override.metaTitle,
     metaDescription: md.metaDescription || override.metaDescription,
