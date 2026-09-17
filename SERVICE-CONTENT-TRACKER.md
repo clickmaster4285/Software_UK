@@ -333,6 +333,38 @@
 - [x] **JSON-LD schema extraction** — Fixed escaped `\<script\>` tags, `\#`, `\[`, `\]`; 39/39 sub-services + 6/7 main services have parsed schemas
 - [x] **Fix slug mismatches** — DApp, compliance-management, model-training-optimization all aliased correctly
 - [x] **Verify new blockchain/cybersecurity/ML pages** — All 11 new pages verified 200
+- [x] **Fix metaTitle regex** — Added backtick-wrapped format support (`## **\`Meta Title\`**`); 39/39 sub-services now extracted
+- [x] **Fix metaKeywords extraction** — Added "Target SEO Keywords", "Meta Tags", inline format support; 34/39 sub-services (5 have no keyword section in source)
+- [x] **Fix main-services metaKeywords** — Added "Target SEO Keywords" support; 5/7 main services now extracted
+
+### 🟡 Known Gaps (Source File Issues — Not Parser Bugs)
+
+These gaps exist because the source MD files don't contain the data. No parser fix can extract what isn't there.
+
+**Sub-services (5 missing metaKeywords):**
+- `android-app-development` — Source has typo `**appMeta Keywords**` (not `Meta Keywords`)
+- `woocommerce-development` — No keyword section in source
+- `custom-software-development` — Keywords inline on line 1 with URL, bold-wrapped (format mismatch)
+- `product-design` — No keyword section in source
+- `web-design` — No keyword section in source
+
+**Sub-services (3 missing intro):**
+- `custom-software-development` — All content on line 1, no `# **Title**` H1 format
+- `saas-product-development` — Same single-line format
+- `enterprise-software-development` — Same single-line format
+
+**Sub-services (7 missing tables/costFactors):**
+- Original Software Development files have comparison tables inline, not in `## **Table:**` format
+
+**Main-services (2 missing metaKeywords):**
+- `mobile-development` — No keyword section in source
+- `software-development` — Keywords inline on line 1
+
+**Main-services (4 missing intro, 5 missing costFactors/whyChoose):**
+- Main services use `service-section-data.js` and `whyChooseUsData.js` for these fields instead of MD
+
+**Main-services (7 missing faqs):**
+- Main services have FAQs in `service-section-data.js`, not in MD files
 
 ### 🟡 Medium Priority
 
@@ -342,6 +374,8 @@
 - [ ] **Standalone services** — Convert 11 files in `Service/` → `data/services.js` (route: `/service/[slug]/`)
 - [ ] **Industry+Service combos** — Plan conversion of 202 files → `/[category]/[service]/` route
 - [ ] **Create MD files for override-only services** — 102 sub-services have no MD content; create MD sources for high-value ones (AI, Cloud, Cybersecurity, Blockchain)
+- [x] **metaKeywords extraction cleanup (Sep 17)** — Fixed parser to strip bold markers, section headings, CTA labels, URL artifacts, numbering, and Markdown backslashes from keyword arrays
+- [x] **metaKeywords normalization to arrays** — Converted string `metaKeywords` to arrays in `data/sub-services.js` (13 instances) and `data/main-services.js`; added `cleanMetaKeywords()` runtime filter in overlay paths to remove corrupted entries
 
 ### 🟢 Low Priority
 
@@ -357,17 +391,49 @@
 
 | Fix | File | What Changed |
 |-----|------|-------------|
-| H1 extraction | `convert-sub-services-md.js` | Skips Meta Title/Description, SEO keywords, URLs. Finds actual page H1. |
+| H1 extraction | `convert-sub-services-md.js` | Skips Meta Title/Description, SEO keywords, URLs. Finds actual page H1. Also supports inline bold H1 on line 1 for single-line-format MDs. |
 | Intro extraction | `convert-sub-services-md.js` | Fires on `# **Title**` format. Only triggers once (prevents overwrite). |
 | Section headings | `convert-sub-services-md.js` | `^#{2,4}` → `^#{1,4}` to match single `#` headings. |
 | JSON-LD regex | `convert-sub-services-md.js` | `\\?<script...\\?>` handles escaped angle brackets on opening + closing tags. |
-| JSON-LD cleanup | `convert-sub-services-md.js` | Unescapes `\/`, `\[`, `\]`, `\#` in JSON; strips trailing whitespace per line. |
-| `clean()` function | `convert-sub-services-md.js` | Strips leading `#` from meta titles/descriptions. |
+| JSON-LD cleanup | `convert-sub-services-md.js` | Unescapes `\/`, `\[`, `\]`, `\#` in JSON; strips trailing whitespace per line. Strips all backslashes. |
+| `clean()` function | `convert-sub-services-md.js` | Strips leading `#` from meta titles/descriptions. Strips backslashes. |
 | FAQ exit condition | `convert-sub-services-md.js` | Tightened regex to avoid premature exit. |
 | Overlay resilience | `sub-services.js` | `isCorruptedH1()` rejects meta titles, URLs, SEO keywords as H1. |
 | Base slug aliases | `sub-services.js` | `baseSlugAliases` map bridges `dapp-development` → `decentralized-app-dapp-development`. |
 | MD slug aliases | `convert-sub-services-md.js` | 3 aliases: `dapp-development`, `compliance-management`, `model-training-optimization`. |
-| Main-services JSON-LD | `convert-main-services-md.js` | Same escaped-tag regex + cleanup applied (was only non-escaped before). |
+| Main-services JSON-LD | `convert-main-services-md.js` | Same escaped-tag regex + cleanup applied (was only non-escaped before). Strips all backslashes. |
+| Meta Title backticks | both converters | Match `## **\`Meta Title\`**` format (backtick-wrapped). |
+| Meta Keywords variants | both converters | Match "Target SEO Keywords", "Meta Tags", inline format, numbered lists. |
+| Meta Keywords noise filter | both converters | Filters `CTA:`, `Secondary CTA:`, `Who We Are`, `Page Content`, section headings, `URL:`. Splits bold-separated keywords. Strips numbering. |
+| Backslash stripping | both converters | `.replace(/\\\\/g, '')` in `clean()`, keyword extraction, and JSON-LD cleanup removes Markdown escape artifacts. |
+| Main-services H1 | `convert-main-services-md.js` | Skips metadata headings like `## **Recommended Meta Data**` when extracting H1. |
+| runtime metaKeywords normalization | `sub-services.js`, `main-services.js` | `cleanMetaKeywords()` filters corrupted MD keyword arrays before overlay; falls back to hand-written override arrays when MD data is bad. |
+| Data layer array normalization | `sub-services.js`, `main-services.js` | Converted string `metaKeywords` to arrays in both files; overlay logic now always returns arrays. |
+
+---
+
+## 7. Audit Findings — September 17, 2026
+
+### Field Extraction Summary
+
+| Field | Sub-Services (39) | Main-Services (7) | Notes |
+|-------|:-----------------:|:-----------------:|-------|
+| metaTitle | 39/39 (100%) | 7/7 (100%) | All formats handled |
+| metaDescription | 39/39 (100%) | 7/7 (100%) | All formats handled |
+| metaKeywords | 34/39 (87%) | 5/7 (71%) | 5 source files lack keyword sections |
+| h1 | 39/39 (100%) | 7/7 (100%) | isCorruptedH1() guard active |
+| intro | 36/39 (92%) | 3/7 (43%) | 3 original SD files + 4 main services use inline format |
+| tables | 32/39 (82%) | 6/7 (86%) | Original SD files have inline tables |
+| costFactors | 32/39 (82%) | 2/7 (29%) | Main services use service-section-data.js |
+| whyChoose | 37/39 (95%) | 2/7 (29%) | Main services use whyChooseUsData.js |
+| relatedLinks | 38/39 (97%) | 7/7 (100%) | 1 SD file lacks links |
+| faqs | 39/39 (100%) | 0/7 (0%) | Main services have FAQs in service-section-data.js |
+| jsonLd | 39/39 (100%) | 6/7 (86%) | Blockchain MD has no schema blocks |
+
+### Gap Classification
+
+- **Parser bugs (fixed):** metaTitle backtick format, metaKeywords "Target SEO Keywords"/"Meta Tags" variants, JSON-LD escaped tags, slug mismatches
+- **Source file gaps (not fixable):** 5 sub-services + 2 main services lack keyword sections; 3 SD files use single-line format; main services don't have FAQ/cost/why-choose in MD (use separate data files)
 
 ---
 

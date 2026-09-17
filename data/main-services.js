@@ -39,6 +39,22 @@ export function slugify(value) {
     .replace(/^-+|-+$/g, '');
 }
 
+function cleanMetaKeywords(keywords) {
+  if (!keywords || !Array.isArray(keywords)) return [];
+  const badExact = ['cta:', 'secondary cta:', 'url:', 'who we are', 'page content', 'recommended meta data', 'target seo keywords', 'meta keywords', 'meta tags'];
+  return keywords.filter(k => {
+    const lower = k.toLowerCase().trim();
+    if (!lower || lower.length < 3) return false;
+    if (badExact.includes(lower)) return false;
+    if (lower.includes('|')) return false;
+    if (lower.endsWith(':') && lower.length < 30) return false;
+    if (lower.startsWith('custom ') && k.length > 80) return false;
+    if (lower.startsWith('clickmasters') && k.length > 50) return false;
+    if (lower.includes('meta title') || lower.includes('meta description') || lower.includes('meta keyword') || lower.includes('meta tag')) return false;
+    return true;
+  });
+}
+
 export const mainServicesData = {
   // 1. SOFTWARE DEVELOPMENT
   'software-development': {
@@ -47,7 +63,7 @@ export const mainServicesData = {
     icon: 'Code2',
     metaTitle: 'Software Development Services UK',
     metaDescription: 'UK software development services for custom software, SaaS, enterprise systems, APIs and more. Build secure, scalable software with Clickmasters.',
-    metaKeywords: 'software development, software development services, software development services UK',
+    metaKeywords: ["software development", "software development services", "software development services UK"],
     tagline: 'Build reliable software around the way your business actually works.',
     description: 'Clickmasters Software Development Company is a UK software development company helping businesses plan, build, modernise and scale digital products and business systems. Our software development services cover everything from bespoke applications and enterprise platforms to SaaS products, APIs, desktop software and complex backend systems.',
     heroBadge: '10+ Enterprise Solutions Delivered',
@@ -852,7 +868,7 @@ export const getServiceData = (slug) => {
     intro: md.intro && md.intro.length > 0 ? md.intro : enriched.intro,
     metaTitle: md.metaTitle || enriched.metaTitle,
     metaDescription: md.metaDescription || enriched.metaDescription,
-    metaKeywords: md.metaKeywords && md.metaKeywords.length > 0 ? md.metaKeywords : enriched.metaKeywords,
+    metaKeywords: (() => { const c = cleanMetaKeywords(md.metaKeywords); return c.length > 0 ? c : enriched.metaKeywords; })(),
     sections: md.sections && md.sections.length > 0 ? md.sections : enriched.sections,
     tables: md.tables && md.tables.length > 0 ? md.tables : enriched.tables,
     costFactors: md.costFactors && md.costFactors.length > 0 ? md.costFactors : enriched.costFactors,

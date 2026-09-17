@@ -437,6 +437,28 @@ Both files **must stay** — they are the content-richness layer for the main se
 
 ---
 
+## 10. Executed — Meta Keywords Fix & Escaping Normalization (Completed)
+
+**Executed:** September 17, 2026
+
+| # | File / Component | Purpose / Change | Status |
+|---|------------------|------------------|:------:|
+| 1 | `scripts/convert-sub-services-md.js` | `clean()` now strips backslashes; `extractKeywords()` splits bold-separated keywords, filters section headings/CTAs/URL noise, splits numbered lists, and stops at URL boundaries | ✅ |
+| 2 | `scripts/convert-main-services-md.js` | Same `clean()` backslash fix; `extractKeywords()` filters numbered lists, section headings, and noise; H1 extraction skips metadata headings like `## **Recommended Meta Data**` | ✅ |
+| 3 | `data/sub-services.js` | Converted 13 hand-written `metaKeywords` strings to arrays; added `cleanMetaKeywords()` runtime filter in overlay path that removes corrupted MD keyword entries before fallback | ✅ |
+| 4 | `data/main-services.js` | Converted string `metaKeywords` to array; added `cleanMetaKeywords()` in `getServiceData()` overlay path | ✅ |
+| 5 | `data/sub-services-md.js` | Re-generated 39 entries with cleaned keywords, H1/title/metaTitle/metaDescription, no backslashes | ✅ |
+| 6 | `data/main-services-md.js` | Re-generated 7 entries with cleaned keywords and normalized fields | ✅ |
+
+### Why this matters
+
+- **SEO:** `metaKeywords` arrays now contain actual search terms, not Markdown artifacts, section headings, or CTA labels. Search engines indexing these fields will see clean, relevant keywords.
+- **Data consistency:** All `metaKeywords` values are now uniformly arrays. Runtime overlay logic always returns arrays, eliminating type mismatches between string and array consumers.
+- **Content quality:** `serviceName`, `metaTitle`, `intro`, `sections`, and JSON-LD schemas no longer contain Markdown escape artifacts (`\-`, `\<`, `\]`, `\\#`).
+- **Resilience:** The overlay layer actively sanitizes MD-extracted keywords before exposing them to pages, preventing parser drift from breaking production SEO.
+
+---
+
 ## 11. Executed — MD Conversion Pipeline & Non-Destructive Overlay Architecture (Completed)
 
 **Executed:** September 1, 2026 | **Parser fixes:** September 10, 2026
@@ -532,6 +554,6 @@ Both files **must stay** — they are the content-richness layer for the main se
 
 ---
 
-**Last Updated:** September 17, 2026 (v7 — added Cybersecurity, ML, Blockchain main services + 11 new sub-services, JSON-LD extraction fix, slug alias fixes, all 41 pages verified)
+**Last Updated:** September 17, 2026 (v8 — parser fixes for metaTitle backtick format, metaKeywords variants, JSON-LD escaped tags; full field extraction audit completed; known source-file gaps documented)
 
 

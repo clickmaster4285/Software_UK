@@ -1,7 +1,7 @@
 // AUTO-GENERATED from main-services/*.md by scripts/convert-main-services-md.js
 // Rich main-service content: intro, tables, costFactors, whyChoose, relatedLinks, full FAQs & keywords.
 // NOTE: written to data/main-services-md.js so data/main-services.js is unaffected until ready.
-// Generated: 2026-09-17T05:44:27.224Z
+// Generated: 2026-09-17T09:07:15.975Z
 
 export const mainServicesMd = [
   {
@@ -11,7 +11,18 @@ export const mainServicesMd = [
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/cybersecurity",
     "metaTitle": "Cyber Security Services & Consulting UK | Clickmasters",
     "metaDescription": "Cyber security services for UK businesses, including security audits, penetration testing, compliance support and risk-focused security consulting from Clickmasters.",
-    "metaKeywords": [],
+    "metaKeywords": [
+      "cyber security services",
+      "cyber security services UK",
+      "cyber security consulting services",
+      "cyber security consultancy services",
+      "cyber security services company",
+      "cyber security service provider",
+      "business cyber security services",
+      "cyber security professional services",
+      "cyber security solutions and services",
+      "IT cyber security services"
+    ],
     "intro": [],
     "sections": [
       {
@@ -192,42 +203,42 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "1\\. Define the Scope",
+        "heading": "1. Define the Scope",
         "body": "The systems, applications, environments and security objectives included in the assessment are established.",
         "items": []
       },
       {
-        "heading": "2\\. Understand the Environment",
+        "heading": "2. Understand the Environment",
         "body": "Relevant application, infrastructure and security information is reviewed.",
         "items": []
       },
       {
-        "heading": "3\\. Identify Security Risks",
+        "heading": "3. Identify Security Risks",
         "body": "Potential vulnerabilities, control weaknesses and areas of exposure are assessed.",
         "items": []
       },
       {
-        "heading": "4\\. Perform Technical Testing",
+        "heading": "4. Perform Technical Testing",
         "body": "Testing is conducted according to the agreed assessment or penetration-testing scope.",
         "items": []
       },
       {
-        "heading": "5\\. Analyse Findings",
+        "heading": "5. Analyse Findings",
         "body": "Identified issues are evaluated according to technical severity and potential impact.",
         "items": []
       },
       {
-        "heading": "6\\. Document the Results",
+        "heading": "6. Document the Results",
         "body": "Findings and relevant evidence are structured into clear security information.",
         "items": []
       },
       {
-        "heading": "7\\. Prioritise Remediation",
+        "heading": "7. Prioritise Remediation",
         "body": "Security issues are organised so higher-risk weaknesses can be addressed appropriately.",
         "items": []
       },
       {
-        "heading": "8\\. Improve Security Controls",
+        "heading": "8. Improve Security Controls",
         "body": "Technical and procedural improvements can be implemented based on the findings.\n\nThe supplied SERP repeatedly connects cyber security services with identifying risk, testing controls, remediating weaknesses and improving organisational resilience.\n\n# What You Receive\n\nDeliverables depend on the selected cyber security service and agreed project scope.\n\nThey can include:\n\n# Cyber Security for Existing Software\n\nExisting software can be assessed even when it was developed previously or by another development team.\n\nA security assessment can review:\n\nThis allows security weaknesses to be identified without requiring the system to be rebuilt from the beginning.\n\n# Security Before Software Launch\n\nSecurity testing can also form part of the preparation for launching new software.\n\nA pre-launch review can help evaluate:\n\nIssues discovered before deployment can then be addressed before the application enters its production environment.\n\n# Security After Application Changes\n\nMajor changes can affect an application's existing security assumptions.\n\nFurther assessment may be relevant after:\n\nThe assessment scope should reflect what has changed and what new risks may have been introduced.\n\n# How Much Do Cyber Security Services Cost?\n\nCyber security service costs depend on the type and scope of work required.\n\nFactors can include:\n\nA focused application assessment therefore has a different scope from a wider review covering multiple systems and technical environments.\n\n# How Long Does a Cyber Security Assessment Take?\n\nThe timeline depends on:\n\nThe project scope should be defined before the security work begins so testing boundaries and deliverables are clear.\n\n# Why Choose Clickmasters for Cyber Security Services?\n\nClickmasters approaches cyber security in the context of the software and digital systems an organisation relies on.\n\nDepending on the required service, our process can connect:\n\nBusiness Systems\n\n→ Security Assessment\n\n→ Technical Testing\n\n→ Risk Analysis\n\n→ Security Findings\n\n→ Remediation\n\n→ Improved Security Posture\n\nThis connects security work with the applications, APIs, data and wider technology environment being protected.\n\n# Frequently Asked Questions",
         "items": [
           "Scope documentation",
@@ -590,7 +601,18 @@ export const mainServicesMd = [
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml",
     "metaTitle": "Machine Learning Development Services UK | Clickmasters",
     "metaDescription": "Custom machine learning development services in the UK for predictive analytics, recommendation systems, model training, integration, deployment and support.",
-    "metaKeywords": [],
+    "metaKeywords": [
+      "machine learning development services",
+      "machine learning services",
+      "machine learning development company",
+      "machine learning development company UK",
+      "machine learning solutions",
+      "custom machine learning development",
+      "machine learning consulting services",
+      "machine learning company UK",
+      "ML development services",
+      "machine learning software development"
+    ],
     "intro": [],
     "sections": [
       {
@@ -893,62 +915,62 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We define the business problem, expected outcome and success criteria.",
         "items": []
       },
       {
-        "heading": "2\\. ML Feasibility Assessment",
+        "heading": "2. ML Feasibility Assessment",
         "body": "We determine whether machine learning is an appropriate technical approach.",
         "items": []
       },
       {
-        "heading": "3\\. Data Assessment",
+        "heading": "3. Data Assessment",
         "body": "Available data is evaluated for suitability, quality and accessibility.",
         "items": []
       },
       {
-        "heading": "4\\. Data Preparation",
+        "heading": "4. Data Preparation",
         "body": "Relevant data is cleaned, transformed and structured for model development.",
         "items": []
       },
       {
-        "heading": "5\\. Model Approach",
+        "heading": "5. Model Approach",
         "body": "Suitable model approaches are evaluated according to the problem and constraints.",
         "items": []
       },
       {
-        "heading": "6\\. Model Training",
+        "heading": "6. Model Training",
         "body": "The selected approach is trained using prepared data.",
         "items": []
       },
       {
-        "heading": "7\\. Model Evaluation",
+        "heading": "7. Model Evaluation",
         "body": "Performance is measured against suitable technical and business criteria.",
         "items": []
       },
       {
-        "heading": "8\\. Iteration & Optimisation",
+        "heading": "8. Iteration & Optimisation",
         "body": "Model behaviour is analysed and improved where appropriate.",
         "items": []
       },
       {
-        "heading": "9\\. Software Integration",
+        "heading": "9. Software Integration",
         "body": "The model is connected with the wider application or business system.",
         "items": []
       },
       {
-        "heading": "10\\. Deployment",
+        "heading": "10. Deployment",
         "body": "The approved model is prepared for the required production environment.",
         "items": []
       },
       {
-        "heading": "11\\. Monitoring",
+        "heading": "11. Monitoring",
         "body": "Performance and relevant production behaviour can be monitored.",
         "items": []
       },
       {
-        "heading": "12\\. Retraining & Improvement",
+        "heading": "12. Retraining & Improvement",
         "body": "The model can be reviewed and retrained as data or requirements change.\n\n# What You Receive from an ML Development Project\n\nDeliverables depend on the agreed scope and can include:\n\n# How Much Does Machine Learning Development Cost?\n\nThere is no single fixed cost for custom machine learning development.\n\nCost depends on factors such as:\n\nA small feasibility project requires a different level of work from a production ML platform integrated with multiple enterprise systems.\n\n# How Long Does Machine Learning Development Take?\n\nThe timeline depends on:\n\nML projects can contain more experimentation than conventional software projects, so a useful delivery plan should separate feasibility, model validation and production engineering.\n\n# Why Choose Clickmasters for Machine Learning Development?\n\nClickmasters approaches machine learning as part of a complete software system rather than as an isolated model.\n\nDepending on project requirements, our workflow can connect:\n\nBusiness Objective\n\n→ Data\n\n→ Machine Learning Model\n\n→ Software Integration\n\n→ Deployment\n\n→ Monitoring\n\n→ Improvement\n\nThis helps keep model development aligned with the application, data and business process in which the machine learning capability will actually operate.\n\n# Frequently Asked Questions",
         "items": [
           "ML feasibility findings",
@@ -1553,42 +1575,42 @@ export const mainServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery and Planning",
+        "heading": "1. Discovery and Planning",
         "body": "We start by understanding your app idea, target users, business goals, required features, platforms, and technical needs.",
         "items": []
       },
       {
-        "heading": "2\\. Feature Scope",
+        "heading": "2. Feature Scope",
         "body": "We define the features needed for the first version of the app. This helps keep the project focused, practical, and easier to launch.",
         "items": []
       },
       {
-        "heading": "3\\. UX/UI Design",
+        "heading": "3. UX/UI Design",
         "body": "We design user journeys, wireframes, app screens, navigation flows, and interface layouts so the app feels simple and clear for users.",
         "items": []
       },
       {
-        "heading": "4\\. Prototype",
+        "heading": "4. Prototype",
         "body": "A prototype helps you review the app structure before development starts. It gives you a clear view of how users will move through the app.",
         "items": []
       },
       {
-        "heading": "5\\. Mobile App Development",
+        "heading": "5. Mobile App Development",
         "body": "Our developers build the frontend, backend, database, APIs, integrations, admin panel, and mobile app features based on the agreed scope.",
         "items": []
       },
       {
-        "heading": "6\\. Testing and Quality Assurance",
+        "heading": "6. Testing and Quality Assurance",
         "body": "We test the app across devices, screen sizes, user flows, features, performance, security, and integrations before launch.",
         "items": []
       },
       {
-        "heading": "7\\. App Store and Google Play Launch",
+        "heading": "7. App Store and Google Play Launch",
         "body": "We help prepare your app for Apple App Store and Google Play submission, including release preparation, app details, screenshots, and launch support.",
         "items": []
       },
       {
-        "heading": "8\\. Maintenance and Improvements",
+        "heading": "8. Maintenance and Improvements",
         "body": "After launch, we can support bug fixes, updates, performance improvements, new features, version releases, and long-term app maintenance.",
         "items": []
       },
@@ -2015,8 +2037,8 @@ export const mainServicesMd = [
   },
   {
     "slug": "web-development",
-    "title": "Recommended Meta Data",
-    "h1": "Recommended Meta Data",
+    "title": "Web Development Services UK for Custom Websites",
+    "h1": "Web Development Services UK for Custom Websites",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/web-development",
     "metaTitle": "Web Development Services UK | ClickMasters",
     "metaDescription": "Custom web development services in the UK for websites, web apps, ecommerce platforms and portals. Build secure, scalable web solutions with ClickMasters.",
@@ -2029,8 +2051,7 @@ export const mainServicesMd = [
       "custom web development services",
       "custom web development company UK",
       "custom website development services",
-      "custom website development UK",
-      "https://clickmasterssoftwaredevelopmentcompany.co.uk/web-development"
+      "custom website development UK"
     ],
     "intro": [],
     "sections": [
@@ -2413,12 +2434,12 @@ export const mainServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We begin by understanding the business, users, challenges, current systems, and goals.",
         "items": []
       },
       {
-        "heading": "2\\. Requirements Definition",
+        "heading": "2. Requirements Definition",
         "body": "We define:",
         "items": [
           "User types",
@@ -2432,32 +2453,32 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "3\\. Architecture Planning",
+        "heading": "3. Architecture Planning",
         "body": "We determine the appropriate frontend, backend, database, APIs, integrations, infrastructure, and deployment architecture.",
         "items": []
       },
       {
-        "heading": "4\\. UX/UI Design",
+        "heading": "4. UX/UI Design",
         "body": "We develop user journeys, wireframes, interface designs, navigation, and reusable components.",
         "items": []
       },
       {
-        "heading": "5\\. Frontend Development",
+        "heading": "5. Frontend Development",
         "body": "We build the responsive user-facing application experience.",
         "items": []
       },
       {
-        "heading": "6\\. Backend Development",
+        "heading": "6. Backend Development",
         "body": "We develop the databases, APIs, application logic, authentication, integrations, and server-side functionality.",
         "items": []
       },
       {
-        "heading": "7\\. Integration",
+        "heading": "7. Integration",
         "body": "We connect required business systems, payment platforms, APIs, or third-party services.",
         "items": []
       },
       {
-        "heading": "8\\. Testing & QA",
+        "heading": "8. Testing & QA",
         "body": "Testing can cover:",
         "items": [
           "Functionality",
@@ -2476,12 +2497,12 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "9\\. Deployment",
+        "heading": "9. Deployment",
         "body": "We prepare the production environment and release the website or application.",
         "items": []
       },
       {
-        "heading": "10\\. Maintenance & Improvement",
+        "heading": "10. Maintenance & Improvement",
         "body": "After launch, we can support:",
         "items": [
           "Bug fixes",
@@ -3116,8 +3137,8 @@ export const mainServicesMd = [
   },
   {
     "slug": "software-development",
-    "title": "Meta keywords",
-    "h1": "Meta keywords",
+    "title": "Software Development Services UK",
+    "h1": "Software Development Services UK",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/custom-software-development",
     "metaTitle": "Software Development Services UK | Clickmasters",
     "metaDescription": "UK software development services for custom software, SaaS, enterprise systems, APIs and more. Build secure, scalable software with Clickmasters.",
@@ -3296,7 +3317,7 @@ export const mainServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery & Requirements",
+        "heading": "1. Discovery & Requirements",
         "body": "We begin by understanding your organisation, users, existing systems and project objectives.\n\nThe discovery stage helps establish:\n\n---",
         "items": [
           "Core requirements",
@@ -3309,7 +3330,7 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "2\\. Solution Architecture",
+        "heading": "2. Solution Architecture",
         "body": "Once the requirements are understood, we determine how the software should be structured.\n\nThis can include decisions around:\n\n---",
         "items": [
           "Application architecture",
@@ -3323,27 +3344,27 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "3\\. UX & Interface Planning",
+        "heading": "3. UX & Interface Planning",
         "body": "For user-facing software, the experience should be considered before development becomes too advanced.\n\nWireframes and prototypes can help validate important workflows and reduce unnecessary rework later.\n\nFor specialist design requirements, our wider [UI/UX design services](/design-ui-ux) can support product and interface development.\n\n---",
         "items": []
       },
       {
-        "heading": "4\\. Software Development",
+        "heading": "4. Software Development",
         "body": "Development is organised into manageable stages so functionality can be reviewed throughout the project.\n\nThis allows technical decisions, feedback and changing requirements to be managed more effectively.\n\n---",
         "items": []
       },
       {
-        "heading": "5\\. Quality Assurance & Testing",
+        "heading": "5. Quality Assurance & Testing",
         "body": "Testing should be part of development rather than an activity performed only before launch.\n\nOur wider [software testing and QA services](/testing-and-qa) can support functional testing, automated testing, performance testing and issue resolution.\n\n---",
         "items": []
       },
       {
-        "heading": "6\\. Deployment",
+        "heading": "6. Deployment",
         "body": "Once approved, the application is prepared for its production environment.\n\nThis can include infrastructure configuration, deployment pipelines, databases, application configuration and monitoring.\n\nWhere required, our [Cloud & DevOps services](/cloud-and-devops) can support modern infrastructure and deployment requirements.\n\n---",
         "items": []
       },
       {
-        "heading": "7\\. Maintenance & Continuous Improvement",
+        "heading": "7. Maintenance & Continuous Improvement",
         "body": "Launching software is rarely the end of its lifecycle.\n\nApplications may require:\n\nOngoing development allows software to continue adapting as the business changes.\n\n---\n\n# Secure and Scalable Software Engineering\n\nSecurity and scalability should influence architecture from the beginning.\n\nDepending on the application and its requirements, our development approach can include:\n\nIf your organisation operates in a regulated environment, relevant compliance and data requirements should be identified during discovery.\n\n---\n\n# Technologies Used for Software Development\n\nTechnology selection should be based on the requirements of the application rather than trends alone.\n\nDepending on the project, our development work can involve modern technologies across:",
         "items": [
           "Security updates",
@@ -3822,11 +3843,11 @@ export const mainServicesMd = [
   },
   {
     "slug": "design-ui-ux",
-    "title": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux",
-    "h1": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux",
+    "title": "UI/UX Design Company for Digital Products",
+    "h1": "UI/UX Design Company for Digital Products",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux",
     "metaTitle": "UI/UX Design Services UK | Clickmasters",
-    "metaDescription": "Custom UI/UX design services in the UK for software, websites and mobile apps, including UX research, wireframes, prototypes, UI design and design systems. UI/UX Design Services UK",
+    "metaDescription": "Custom UI/UX design services in the UK for software, websites and mobile apps, including UX research, wireframes, prototypes, UI design and design systems.",
     "metaKeywords": [
       "ui ux design services",
       "ux design services",
@@ -4167,7 +4188,7 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We begin by understanding:",
         "items": [
           "Business goals",
@@ -4180,47 +4201,47 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "2\\. User & Product Research",
+        "heading": "2. User & Product Research",
         "body": "Where required, we examine users, competitors, existing behaviour and available product data.",
         "items": []
       },
       {
-        "heading": "3\\. UX Strategy",
+        "heading": "3. UX Strategy",
         "body": "We define the experience priorities and identify the key journeys the product needs to support.",
         "items": []
       },
       {
-        "heading": "4\\. Information Architecture",
+        "heading": "4. Information Architecture",
         "body": "Content, functionality and navigation are structured into a logical product hierarchy.",
         "items": []
       },
       {
-        "heading": "5\\. User Flows",
+        "heading": "5. User Flows",
         "body": "Important tasks are mapped step by step.",
         "items": []
       },
       {
-        "heading": "6\\. Wireframing",
+        "heading": "6. Wireframing",
         "body": "Screens are structured without becoming distracted by detailed visual styling.",
         "items": []
       },
       {
-        "heading": "7\\. UI Design",
+        "heading": "7. UI Design",
         "body": "The approved UX structure is developed into a complete visual interface.",
         "items": []
       },
       {
-        "heading": "8\\. Prototyping",
+        "heading": "8. Prototyping",
         "body": "Important journeys can be turned into interactive prototypes for review and validation.",
         "items": []
       },
       {
-        "heading": "9\\. Usability Validation",
+        "heading": "9. Usability Validation",
         "body": "Where appropriate, designs are evaluated to identify usability problems before development.",
         "items": []
       },
       {
-        "heading": "10\\. Design System & Handoff",
+        "heading": "10. Design System & Handoff",
         "body": "Reusable components, states and design specifications are prepared for implementation.\n\nThe SERP consistently frames a complete UI/UX engagement as discovery → research → architecture → wireframes → UI design → prototype → testing → development handoff, rather than a single visual-design stage.\n\n# Benefits of UI/UX Design\n\nEffective UI/UX design can help businesses work towards:",
         "items": []
       },
@@ -4762,22 +4783,22 @@ export const mainServicesMd = [
   },
   {
     "slug": "blockchain-and-web3",
-    "title": "Meta Keywords",
-    "h1": "Meta Keywords",
+    "title": "Blockchain & Web3 Development Built Around Real Business Requirements",
+    "h1": "Blockchain & Web3 Development Built Around Real Business Requirements",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/blockchain-and-web3",
     "metaTitle": "Blockchain & Web3 Development Services UK | Clickmasters",
     "metaDescription": "Blockchain and Web3 development services in the UK for DApps, smart contracts, crypto wallets, NFT marketplaces, integrations and custom software solutions.",
     "metaKeywords": [
-      "1. blockchain and web3 development services",
-      "2. web3 development services",
-      "3. web3 development company",
-      "4. web3 development company UK",
-      "5. blockchain development services",
-      "6. blockchain development company UK",
-      "7. custom blockchain development",
-      "8. web3 application development",
-      "9. blockchain software development",
-      "10. blockchain and web3 development company",
+      "blockchain and web3 development services",
+      "web3 development services",
+      "web3 development company",
+      "web3 development company UK",
+      "blockchain development services",
+      "blockchain development company UK",
+      "custom blockchain development",
+      "web3 application development",
+      "blockchain software development",
+      "blockchain and web3 development company",
       "Blockchain & Web3 Development Services UK",
       "Looking for blockchain and Web3 development services to build a decentralised application",
       "blockchain-enabled platform or digital product? Successful blockchain projects require more than choosing a network or writing smart contracts. They need clear business requirements",
@@ -4785,7 +4806,6 @@ export const mainServicesMd = [
       "secure application logic",
       "system integration",
       "testing and a practical route to deployment.",
-      "Clickmasters provides blockchain and Web3 development services for UK businesses",
       "covering blockchain applications",
       "smart contracts",
       "DApps",
@@ -5049,62 +5069,62 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We review the product idea, business problem, intended users and technical environment.",
         "items": []
       },
       {
-        "heading": "2\\. Use-Case Validation",
+        "heading": "2. Use-Case Validation",
         "body": "We determine what role blockchain or Web3 functionality should play within the solution.",
         "items": []
       },
       {
-        "heading": "3\\. Requirements Analysis",
+        "heading": "3. Requirements Analysis",
         "body": "Functional, technical, operational and integration requirements are defined.",
         "items": []
       },
       {
-        "heading": "4\\. Architecture",
+        "heading": "4. Architecture",
         "body": "The application, blockchain, smart contract, API, data and integration layers are structured.",
         "items": []
       },
       {
-        "heading": "5\\. UX/UI Design",
+        "heading": "5. UX/UI Design",
         "body": "Where required, user journeys, wireframes and interface designs are created.",
         "items": []
       },
       {
-        "heading": "6\\. Blockchain & Web3 Development",
+        "heading": "6. Blockchain & Web3 Development",
         "body": "The agreed blockchain and application functionality is implemented.",
         "items": []
       },
       {
-        "heading": "7\\. Smart Contract Development & Integration",
+        "heading": "7. Smart Contract Development & Integration",
         "body": "Required contract logic is developed and connected with the wider application.",
         "items": []
       },
       {
-        "heading": "8\\. Application Development",
+        "heading": "8. Application Development",
         "body": "Frontend, backend and supporting application functionality are developed.",
         "items": []
       },
       {
-        "heading": "9\\. Integration",
+        "heading": "9. Integration",
         "body": "The application is connected with required wallets, APIs, blockchain networks and external systems.",
         "items": []
       },
       {
-        "heading": "10\\. Testing",
+        "heading": "10. Testing",
         "body": "Application functionality, transactions, smart contract interaction and integrations are tested.",
         "items": []
       },
       {
-        "heading": "11\\. Deployment",
+        "heading": "11. Deployment",
         "body": "Approved application components are prepared for the appropriate production environment.",
         "items": []
       },
       {
-        "heading": "12\\. Maintenance & Support",
+        "heading": "12. Maintenance & Support",
         "body": "The software can continue to be maintained and improved as requirements evolve.\n\nThe commercial SERP strongly favours pages that explain the complete service lifecycle rather than generic descriptions of blockchain technology.\n\n# Blockchain & Web3 Development for Existing Software\n\nBlockchain capabilities can sometimes be integrated into existing software rather than requiring a completely new application.\n\nExisting environments may include:\n\nThe project can identify which areas would benefit from blockchain while leaving conventional components unchanged where appropriate.\n\n# What You Receive from a Blockchain & Web3 Development Project\n\nProject deliverables depend on the agreed scope and can include:\n\n# How Much Does Blockchain & Web3 Development Cost?\n\nThere is no single fixed cost for blockchain or Web3 development.\n\nCost can depend on:\n\nA basic Proof of Concept, Web3 MVP and enterprise-grade blockchain platform therefore require very different levels of work.\n\nCost is a particularly important commercial topic because blockchain development cost appears directly within the current search journey.\n\n# How Long Does Blockchain & Web3 Development Take?\n\nThe development timeline depends on:\n\nThe appropriate timeline is determined according to the agreed project scope.\n\n# Why Choose Clickmasters for Blockchain & Web3 Development?\n\nClickmasters approaches blockchain and Web3 as part of a wider software-development requirement.\n\nDepending on project scope, development can connect:\n\nBusiness Requirement\n\n→ Technical Discovery\n\n→ Blockchain Architecture\n\n→ Web3 Application Development\n\n→ Smart Contracts\n\n→ Wallet / Blockchain Integration\n\n→ Testing\n\n→ Deployment\n\nThis allows blockchain functionality to work as part of a complete digital product rather than as an isolated technical component.\n\n# Frequently Asked Questions",
         "items": [
           "Web applications",
