@@ -439,7 +439,7 @@ Both files **must stay** — they are the content-richness layer for the main se
 
 ## 11. Executed — MD Conversion Pipeline & Non-Destructive Overlay Architecture (Completed)
 
-**Executed:** September 1, 2026
+**Executed:** September 1, 2026 | **Parser fixes:** September 10, 2026
 
 | # | File / Component | Purpose / Change | Status |
 |---|------------------|-------------------|:------:|
@@ -453,45 +453,49 @@ Both files **must stay** — they are the content-richness layer for the main se
 
 ### 11.1 Converted Main Services (4 Pages)
 
-| # | Main Service Name | Route / Slug | Source Markdown File |
-|---|-------------------|--------------|----------------------|
-| 1 | **Software Development** | `/software-development` | `main-services/Serivces Pages Content Clickamster software .co .uk.md` |
-| 2 | **Web Development** | `/web-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (15).md` |
-| 3 | **Mobile Development** | `/mobile-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (11).md` |
-| 4 | **Design UI/UX** | `/design-ui-ux` | `main-services/Uiux main.md` |
+| # | Main Service Name | Route / Slug | Source Markdown File | Status |
+|---|-------------------|--------------|----------------------|--------|
+| 1 | **Software Development** | `/software-development` | `main-services/Serivces Pages Content Clickamster software .co .uk.md` | ✅ |
+| 2 | **Web Development** | `/web-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (15).md` | ✅ |
+| 3 | **Mobile Development** | `/mobile-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (11).md` | ✅ |
+| 4 | **Design UI/UX** | `/design-ui-ux` | `main-services/Uiux main.md` | ✅ Added Sep 10 |
+
+**Remaining:** 15 main services without MD data (AI, ML, NLP, Data, Cloud, Cyber, Blockchain, IoT, etc.)
 
 ### 11.2 Converted Sub-Services (28 Pages)
 
-| # | Sub-Service Name | Category | Route | Source Markdown File |
-|---|------------------|----------|-------|----------------------|
-| 1 | **Custom Software Development** | Software Development | `/software-development/custom-software-development` | `(2).md` |
-| 2 | **Enterprise Software Development** | Software Development | `/software-development/enterprise-software-development` | `(9).md` |
-| 3 | **SaaS Product Development** | Software Development | `/software-development/saas-product-development` | `(3).md` |
-| 4 | **MVP Development** | Software Development | `/software-development/mvp-development` | `(5).md` |
-| 5 | **Desktop Application Development** | Software Development | `/software-development/desktop-application-development` | `(1).md` |
-| 6 | **API Development & Integration** | Software Development | `/software-development/api-development-integration` | `(4).md` |
-| 7 | **Microservices Architecture** | Software Development | `/software-development/microservices-architecture` | `(7).md` |
-| 8 | **Backend Development** | Software Development | `/software-development/backend-development` | `(10).md` |
-| 9 | **Frontend Development** | Software Development | `/software-development/frontend-development` | `(6).md` |
-| 10 | **Full Stack Development** | Software Development | `/software-development/full-stack-development` | `(8).md` |
-| 11 | **Web Application Development** | Web Development | `/web-development/web-application-development` | `(15).md` |
-| 12 | **Headless CMS Development** | Web Development | `/web-development/headless-cms-development` | `(16).md` |
-| 13 | **Ecommerce Development** | Web Development | `/web-development/ecommerce-development` | `(17).md` |
-| 14 | **Shopify Development** | Web Development | `/web-development/shopify-development` | `(18).md` |
-| 15 | **WooCommerce Development** | Web Development | `/web-development/woocommerce-development` | `(19).md` |
-| 16 | **Progressive Web App Development** | Web Development | `/web-development/progressive-web-app-development` | `(20).md` |
-| 17 | **JAMstack Development** | Web Development | `/web-development/jamstack-development` | `jamstack.md` |
-| 18 | **iOS App Development** | Mobile Development | `/mobile-development/ios-app-development` | `.md` |
-| 19 | **Android App Development** | Mobile Development | `/mobile-development/android-app-development` | `(12).md` |
-| 20 | **Flutter App Development** | Mobile Development | `/mobile-development/flutter-app-development` | `(13).md` |
-| 21 | **React Native Development** | Mobile Development | `/mobile-development/react-native-development` | `(14).md` |
-| 22 | **Cross-Platform App Development** | Mobile Development | `/mobile-development/cross-platform-app-development` | `(11).md` |
-| 23 | **Design Systems** | Design UI/UX | `/design-ui-ux/design-systems` | `design system.md` |
-| 24 | **Product Design** | Design UI/UX | `/design-ui-ux/product-design` | `prodcut design.md` |
-| 25 | **Web Design** | Design UI/UX | `/design-ui-ux/web-design` | `web design.md` |
-| 26 | **Mobile App Design** | Design UI/UX | `/design-ui-ux/mobile-app-design` | `mobile app.md` |
-| 27 | **UX Research** | Design UI/UX | `/design-ui-ux/ux-research` | `ux research.md` |
-| 28 | **Wireframing & Prototyping** | Design UI/UX | `/design-ui-ux/wireframing-prototyping` | `wireframing & p.md` |
+| # | Sub-Service Name | Category | Route | Source Markdown File | Status |
+|---|------------------|----------|-------|----------------------|--------|
+| 1 | **Custom Software Development** | Software Development | `/software-development/custom-software-development` | `(2).md` | ✅ |
+| 2 | **Enterprise Software Development** | Software Development | `/software-development/enterprise-software-development` | `(9).md` | ✅ |
+| 3 | **SaaS Product Development** | Software Development | `/software-development/saas-product-development` | `(3).md` | ✅ |
+| 4 | **MVP Development** | Software Development | `/software-development/mvp-development` | `(5).md` | ✅ |
+| 5 | **Desktop Application Development** | Software Development | `/software-development/desktop-application-development` | `(1).md` | ✅ |
+| 6 | **API Development & Integration** | Software Development | `/software-development/api-development-integration` | `(4).md` | ✅ |
+| 7 | **Microservices Architecture** | Software Development | `/software-development/microservices-architecture` | `(7).md` | ✅ |
+| 8 | **Backend Development** | Software Development | `/software-development/backend-development` | `(10).md` | ✅ |
+| 9 | **Frontend Development** | Software Development | `/software-development/frontend-development` | `(6).md` | ✅ |
+| 10 | **Full Stack Development** | Software Development | `/software-development/full-stack-development` | `(8).md` | ✅ |
+| 11 | **Web Application Development** | Web Development | `/web-development/web-application-development` | `(15).md` | ✅ |
+| 12 | **Headless CMS Development** | Web Development | `/web-development/headless-cms-development` | `(16).md` | ✅ |
+| 13 | **Ecommerce Development** | Web Development | `/web-development/ecommerce-development` | `(17).md` | ✅ |
+| 14 | **Shopify Development** | Web Development | `/web-development/shopify-development` | `(18).md` | ✅ |
+| 15 | **WooCommerce Development** | Web Development | `/web-development/woocommerce-development` | `(19).md` | ✅ |
+| 16 | **Progressive Web App Development** | Web Development | `/web-development/progressive-web-app-development` | `(20).md` | ✅ |
+| 17 | **JAMstack Development** | Web Development | `/web-development/jamstack-development` | `jamstack.md` | ✅ |
+| 18 | **iOS App Development** | Mobile Development | `/mobile-development/ios-app-development` | `.md` | ✅ |
+| 19 | **Android App Development** | Mobile Development | `/mobile-development/android-app-development` | `(12).md` | ✅ |
+| 20 | **Flutter App Development** | Mobile Development | `/mobile-development/flutter-app-development` | `(13).md` | ✅ |
+| 21 | **React Native Development** | Mobile Development | `/mobile-development/react-native-development` | `(14).md` | ✅ |
+| 22 | **Cross-Platform App Development** | Mobile Development | `/mobile-development/cross-platform-app-development` | `(11).md` | ✅ |
+| 23 | **Design Systems** | Design UI/UX | `/design-ui-ux/design-systems` | `design system.md` | ✅ Added Sep 10 |
+| 24 | **Product Design** | Design UI/UX | `/design-ui-ux/product-design` | `prodcut design.md` | ✅ Added Sep 10 |
+| 25 | **Web Design** | Design UI/UX | `/design-ui-ux/web-design` | `web design.md` | ✅ Added Sep 10 |
+| 26 | **Mobile App Design** | Design UI/UX | `/design-ui-ux/mobile-app-design` | `mobile app.md` | ✅ Added Sep 10 |
+| 27 | **UX Research** | Design UI/UX | `/design-ui-ux/ux-research` | `ux research.md` | ✅ Added Sep 10 |
+| 28 | **Wireframing & Prototyping** | Design UI/UX | `/design-ui-ux/wireframing-prototyping` | `wireframing & p.md` | ✅ Added Sep 10 |
+
+**Remaining:** 102 sub-services across 15 categories have override-only content (no MD files). See `SERVICE-CONTENT-TRACKER.md` for full per-service breakdown.
 
 ---
 
@@ -514,6 +518,6 @@ Both files **must stay** — they are the content-richness layer for the main se
 
 ---
 
-**Last Updated:** September 10, 2026 (v5 — added Design UI/UX category, 7 new sub-services, slug consistency rule)
+**Last Updated:** September 10, 2026 (v6 — added Design UI/UX category, 7 new sub-services, MD parser fixes, per-service tracking, updated converted tables with status columns)
 
 
