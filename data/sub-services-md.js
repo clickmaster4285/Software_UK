@@ -1,7 +1,7 @@
 // AUTO-GENERATED from sub-services/*.md by scripts/convert-sub-services-md.js
 // Rich sub-service content: intro, tables, costFactors, whyChoose, relatedLinks, full FAQs & keywords.
 // NOTE: written to data/sub-services-md.js so data/sub-services.js is unaffected until ready.
-// Generated: 2026-09-17T05:44:27.183Z
+// Generated: 2026-09-17T09:07:15.772Z
 
 export const subServicesMd = [
   {
@@ -15,18 +15,16 @@ export const subServicesMd = [
     "metaTitle": "Crypto Wallet Development Services UK | Clickmasters",
     "metaDescription": "Custom crypto wallet development services in the UK for custodial, non-custodial, Web3 and multi-chain wallets with integrations, security and support.",
     "metaKeywords": [
-      "Target SEO Keywords",
-      "1. crypto wallet development services",
-      "2. crypto wallet development company",
-      "3. crypto wallet development company UK",
-      "4. cryptocurrency wallet development",
-      "5. cryptocurrency wallet development company",
-      "6. custom crypto wallet development",
-      "7. crypto wallet app development",
-      "8. Web3 wallet development",
-      "9. multi-chain crypto wallet development",
-      "10. cryptocurrency wallet developers",
-      "Meta Tags"
+      "crypto wallet development services",
+      "crypto wallet development company",
+      "crypto wallet development company UK",
+      "cryptocurrency wallet development",
+      "cryptocurrency wallet development company",
+      "custom crypto wallet development",
+      "crypto wallet app development",
+      "Web3 wallet development",
+      "multi-chain crypto wallet development",
+      "cryptocurrency wallet developers"
     ],
     "intro": [
       "Looking for crypto wallet development services to build a secure and usable application for managing blockchain-based assets? A crypto wallet requires more than an interface for sending and receiving transactions. The product also needs suitable wallet architecture, key-management workflows, blockchain connectivity, transaction handling, security, integrations, testing and recovery processes.",
@@ -552,57 +550,57 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We define the product objective, users, wallet type and required functionality.",
         "items": []
       },
       {
-        "heading": "2\\. Requirements Analysis",
+        "heading": "2. Requirements Analysis",
         "body": "Supported workflows, blockchain requirements, custody model, integrations and security needs are documented.",
         "items": []
       },
       {
-        "heading": "3\\. Wallet Architecture",
+        "heading": "3. Wallet Architecture",
         "body": "The user interface, wallet logic, blockchain integration, backend services and security responsibilities are structured.",
         "items": []
       },
       {
-        "heading": "4\\. UX/UI Design",
+        "heading": "4. UX/UI Design",
         "body": "Key journeys such as onboarding, wallet creation, asset management, send/receive transactions and recovery are designed.",
         "items": []
       },
       {
-        "heading": "5\\. Wallet Development",
+        "heading": "5. Wallet Development",
         "body": "The required frontend, backend and wallet functionality is implemented.",
         "items": []
       },
       {
-        "heading": "6\\. Blockchain Integration",
+        "heading": "6. Blockchain Integration",
         "body": "The wallet is connected with the blockchain functionality required by the agreed scope.",
         "items": []
       },
       {
-        "heading": "7\\. Third-Party Integrations",
+        "heading": "7. Third-Party Integrations",
         "body": "Required APIs, DApps or external services are integrated where applicable.",
         "items": []
       },
       {
-        "heading": "8\\. Functional Testing",
+        "heading": "8. Functional Testing",
         "body": "Wallet features and user workflows are tested.",
         "items": []
       },
       {
-        "heading": "9\\. Security Testing",
+        "heading": "9. Security Testing",
         "body": "Security-sensitive functionality and integration points are reviewed.",
         "items": []
       },
       {
-        "heading": "10\\. Deployment",
+        "heading": "10. Deployment",
         "body": "The approved application is prepared for the appropriate production environment.",
         "items": []
       },
       {
-        "heading": "11\\. Maintenance & Updates",
+        "heading": "11. Maintenance & Updates",
         "body": "The product can continue to be maintained as networks, integrations and product requirements evolve.",
         "items": []
       },
@@ -1120,19 +1118,16 @@ export const subServicesMd = [
     "metaTitle": "DApp Development Services UK | Web3 Apps | Clickmasters",
     "metaDescription": "Custom DApp development services in the UK for decentralised applications, smart contract integration, wallet connectivity, testing, deployment and support.",
     "metaKeywords": [
-      "URL:",
-      "Target SEO Keywords",
-      "1. dapp development services",
-      "2. dapp development company",
-      "3. dapp development company UK",
-      "4. custom dapp development",
-      "5. decentralised application development",
-      "6. decentralised application development company",
-      "7. dapp developers UK",
-      "8. web3 dapp development",
-      "9. blockchain dapp development",
-      "10. dapp development UK",
-      "Meta Tags"
+      "dapp development services",
+      "dapp development company",
+      "dapp development company UK",
+      "custom dapp development",
+      "decentralised application development",
+      "decentralised application development company",
+      "dapp developers UK",
+      "web3 dapp development",
+      "blockchain dapp development",
+      "dapp development UK"
     ],
     "intro": [
       "Looking for DApp development services to turn a decentralised product idea into a working blockchain application? A successful DApp requires more than smart contracts. It needs a usable interface, suitable application architecture, wallet connectivity, blockchain integration, testing and a clear deployment process.",
@@ -1571,62 +1566,62 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We define the product objective, intended users, functionality and blockchain requirements.",
         "items": []
       },
       {
-        "heading": "2\\. Requirements Analysis",
+        "heading": "2. Requirements Analysis",
         "body": "User journeys, smart contract requirements, wallet functionality, integrations and technical requirements are documented.",
         "items": []
       },
       {
-        "heading": "3\\. Architecture",
+        "heading": "3. Architecture",
         "body": "The frontend, blockchain, smart contract, wallet, backend and integration layers are structured.",
         "items": []
       },
       {
-        "heading": "4\\. UX/UI Design",
+        "heading": "4. UX/UI Design",
         "body": "Important user journeys, screens and transaction experiences are designed.",
         "items": []
       },
       {
-        "heading": "5\\. Smart Contract Integration",
+        "heading": "5. Smart Contract Integration",
         "body": "Required blockchain logic is developed or connected with the DApp according to project scope.",
         "items": []
       },
       {
-        "heading": "6\\. Frontend Development",
+        "heading": "6. Frontend Development",
         "body": "The user-facing decentralised application is implemented.",
         "items": []
       },
       {
-        "heading": "7\\. Backend & API Development",
+        "heading": "7. Backend & API Development",
         "body": "Required supporting backend services, APIs and integrations are developed.",
         "items": []
       },
       {
-        "heading": "8\\. Wallet Integration",
+        "heading": "8. Wallet Integration",
         "body": "The application is connected with the required wallet interaction flow.",
         "items": []
       },
       {
-        "heading": "9\\. Testing",
+        "heading": "9. Testing",
         "body": "Application features, blockchain interactions, transactions, integrations and error states are tested.",
         "items": []
       },
       {
-        "heading": "10\\. Security Review",
+        "heading": "10. Security Review",
         "body": "Relevant DApp and smart contract integration points are reviewed before deployment.",
         "items": []
       },
       {
-        "heading": "11\\. Deployment",
+        "heading": "11. Deployment",
         "body": "Approved application components are prepared for the appropriate production environment.",
         "items": []
       },
       {
-        "heading": "12\\. Maintenance & Improvement",
+        "heading": "12. Maintenance & Improvement",
         "body": "The application can continue to evolve as product and technical requirements change.\n\nThe current SERP follows a similar lifecycle of discovery, architecture, development, smart-contract/frontend integration, security review, deployment and support.",
         "items": []
       },
@@ -1991,18 +1986,16 @@ export const subServicesMd = [
     "metaTitle": "NFT Marketplace Development Services UK | Clickmasters",
     "metaDescription": "Custom NFT marketplace development services in the UK for minting, trading, smart contracts, wallet integration, auctions, royalties, testing and support.",
     "metaKeywords": [
-      "Target SEO Keywords",
-      "1. nft marketplace development services",
-      "2. nft marketplace development company",
-      "3. nft marketplace development company UK",
-      "4. custom nft marketplace development",
-      "5. nft marketplace developers",
-      "6. nft platform development",
-      "7. nft marketplace software development",
-      "8. nft marketplace app development",
-      "9. web3 marketplace development",
-      "10. nft marketplace development UK",
-      "Meta Tags"
+      "nft marketplace development services",
+      "nft marketplace development company",
+      "nft marketplace development company UK",
+      "custom nft marketplace development",
+      "nft marketplace developers",
+      "nft platform development",
+      "nft marketplace software development",
+      "nft marketplace app development",
+      "web3 marketplace development",
+      "nft marketplace development UK"
     ],
     "intro": [
       "Looking for NFT marketplace development services to build a platform where users can create, list, discover, buy, sell or trade blockchain-based digital assets? A successful NFT marketplace requires more than a storefront. It needs marketplace architecture, intuitive user journeys, wallet connectivity, smart contracts, asset metadata, transaction workflows, administration, testing and deployment.",
@@ -2518,62 +2511,62 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We define the marketplace objective, users, digital assets, transaction model and core functionality.",
         "items": []
       },
       {
-        "heading": "2\\. Requirements Analysis",
+        "heading": "2. Requirements Analysis",
         "body": "Minting, listings, sales, auctions, wallets, smart contracts, administration and integration requirements are documented.",
         "items": []
       },
       {
-        "heading": "3\\. Marketplace Architecture",
+        "heading": "3. Marketplace Architecture",
         "body": "Blockchain and conventional application responsibilities are structured.",
         "items": []
       },
       {
-        "heading": "4\\. UX/UI Design",
+        "heading": "4. UX/UI Design",
         "body": "User journeys, marketplace screens, wallet interactions and transaction experiences are designed.",
         "items": []
       },
       {
-        "heading": "5\\. Smart Contract Development & Integration",
+        "heading": "5. Smart Contract Development & Integration",
         "body": "The required blockchain logic is developed or integrated according to project scope.",
         "items": []
       },
       {
-        "heading": "6\\. Marketplace Development",
+        "heading": "6. Marketplace Development",
         "body": "The user-facing marketplace and required supporting functionality are implemented.",
         "items": []
       },
       {
-        "heading": "7\\. Wallet Integration",
+        "heading": "7. Wallet Integration",
         "body": "Wallet-based user and transaction journeys are connected with the marketplace.",
         "items": []
       },
       {
-        "heading": "8\\. API & Backend Integration",
+        "heading": "8. API & Backend Integration",
         "body": "Supporting application services and external integrations are implemented.",
         "items": []
       },
       {
-        "heading": "9\\. Testing",
+        "heading": "9. Testing",
         "body": "Marketplace functionality, wallets, contracts, transactions and integrations are tested.",
         "items": []
       },
       {
-        "heading": "10\\. Security Review",
+        "heading": "10. Security Review",
         "body": "Security-sensitive application and blockchain components are reviewed.",
         "items": []
       },
       {
-        "heading": "11\\. Deployment",
+        "heading": "11. Deployment",
         "body": "Approved marketplace components are prepared for the required production environment.",
         "items": []
       },
       {
-        "heading": "12\\. Maintenance & Improvement",
+        "heading": "12. Maintenance & Improvement",
         "body": "The marketplace can continue to evolve as users, assets, integrations and technical requirements change.",
         "items": []
       },
@@ -2676,7 +2669,7 @@ export const subServicesMd = [
             "Conventional payment/database transactions"
           ],
           [
-            "On-chain \\+ off-chain architecture",
+            "On-chain + off-chain architecture",
             "Primarily conventional application architecture"
           ]
         ]
@@ -2945,8 +2938,7 @@ export const subServicesMd = [
     "metaDescription": "ClickMasters provides desktop application development services for businesses that need secure, custom desktop software for Windows, macOS, Linux, and internal operations.",
     "metaKeywords": [
       "desktop application development services",
-      "desktop application development services UK",
-      "desktop application development company",
+      "desktop application development services UK` `desktop application development company",
       "desktop application development company UK",
       "desktop software development",
       "desktop software development services",
@@ -2977,8 +2969,7 @@ export const subServicesMd = [
       "Qt desktop development",
       ".NET MAUI development",
       "Tauri desktop development",
-      "desktop software maintenance",
-      "URL:"
+      "desktop software maintenance"
     ],
     "intro": [
       "`/software-development/desktop-application-development`",
@@ -3087,7 +3078,7 @@ export const subServicesMd = [
         "heading": "Desktop Application Technologies",
         "body": "We choose technologies based on your project requirements, platform, performance needs, and long-term support.\n\nCommon desktop development technologies may include:\n\nThe right technology depends on whether your desktop app needs Windows-only support, cross-platform access, offline functionality, hardware integration, or enterprise-level performance.",
         "items": [
-          "C\\#",
+          "C#",
           ".NET",
           "WPF",
           "WinUI",
@@ -3123,37 +3114,37 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Requirement Discussion",
+        "heading": "1. Requirement Discussion",
         "body": "We understand your business problem, users, operating systems, workflows, and desktop software goals.",
         "items": []
       },
       {
-        "heading": "2\\. Technical Planning",
+        "heading": "2. Technical Planning",
         "body": "We define the best platform, architecture, technology stack, database structure, integrations, and security needs.",
         "items": []
       },
       {
-        "heading": "3\\. UI/UX Design",
+        "heading": "3. UI/UX Design",
         "body": "We design clean and easy-to-use desktop screens so your team can work faster and avoid confusion.",
         "items": []
       },
       {
-        "heading": "4\\. Desktop Application Development",
+        "heading": "4. Desktop Application Development",
         "body": "Our team builds the desktop software with the required features, business logic, database setup, integrations, and user controls.",
         "items": []
       },
       {
-        "heading": "5\\. Testing and QA",
+        "heading": "5. Testing and QA",
         "body": "We test the application for performance, usability, bugs, security, platform compatibility, and workflow accuracy.",
         "items": []
       },
       {
-        "heading": "6\\. Deployment",
+        "heading": "6. Deployment",
         "body": "We prepare the desktop application for installation, release, updates, and user access.",
         "items": []
       },
       {
-        "heading": "7\\. Maintenance and Support",
+        "heading": "7. Maintenance and Support",
         "body": "After launch, we can support updates, bug fixes, improvements, security patches, and future feature development.",
         "items": []
       },
@@ -3283,7 +3274,7 @@ export const subServicesMd = [
       },
       {
         "question": "What technologies are used for desktop application development?",
-        "answer": "Desktop applications can be built using technologies such as C\\#, .NET, WPF, WinUI, Electron, Tauri, Qt, Flutter, .NET MAUI, Swift, and database technologies."
+        "answer": "Desktop applications can be built using technologies such as C#, .NET, WPF, WinUI, Electron, Tauri, Qt, Flutter, .NET MAUI, Swift, and database technologies."
       },
       {
         "question": "Can you modernise an old desktop application?",
@@ -3522,15 +3513,14 @@ export const subServicesMd = [
     "slug": "backend-development",
     "categorySlug": "software-development",
     "category": "Software Development",
-    "title": "2\\. Backend Development Page",
+    "title": "2. Backend Development Page",
     "serviceName": "Backend Development Services UK",
-    "h1": "2\\. Backend Development Page",
+    "h1": "2. Backend Development Page",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/backend-development",
     "metaTitle": "Backend Development Services UK | ClickMasters",
     "metaDescription": "Backend development services in the UK for secure APIs, databases, integrations and scalable applications. Build reliable backend systems with ClickMasters.",
     "metaKeywords": [
-      "backend development services",
-      "backend development company backend development company UK backend development services UK backend developers UK custom backend development backend application development backend web development services server-side development services API development database development server-side development application logic authentication development database integration backend architecture scalable backend cloud backend development backend API development third-party integrations"
+      "backend development services"
     ],
     "intro": [
       "Build the secure server-side foundation your application depends on.",
@@ -3540,7 +3530,7 @@ export const subServicesMd = [
     ],
     "sections": [
       {
-        "heading": "2\\. Backend Development Page",
+        "heading": "2. Backend Development Page",
         "body": "URL: `/software-development/backend-development`",
         "items": []
       },
@@ -3708,37 +3698,37 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Requirements Analysis",
+        "heading": "1. Requirements Analysis",
         "body": "We identify what the backend needs to support, including application workflows, users, integrations and data.",
         "items": []
       },
       {
-        "heading": "2\\. Architecture Planning",
+        "heading": "2. Architecture Planning",
         "body": "We define application structure, databases, APIs, security and infrastructure requirements.",
         "items": []
       },
       {
-        "heading": "3\\. Database & API Design",
+        "heading": "3. Database & API Design",
         "body": "Data models and application interfaces are established.",
         "items": []
       },
       {
-        "heading": "4\\. Backend Development",
+        "heading": "4. Backend Development",
         "body": "Our developers implement business logic, integrations, authentication and server-side functionality.",
         "items": []
       },
       {
-        "heading": "5\\. Testing",
+        "heading": "5. Testing",
         "body": "Backend functionality is tested for expected behaviour, integrations, errors and performance.",
         "items": []
       },
       {
-        "heading": "6\\. Deployment",
+        "heading": "6. Deployment",
         "body": "The backend is prepared for the appropriate production infrastructure.",
         "items": []
       },
       {
-        "heading": "7\\. Monitoring & Improvement",
+        "heading": "7. Monitoring & Improvement",
         "body": "Performance, errors and new requirements can continue to be addressed after deployment.",
         "items": []
       },
@@ -4002,8 +3992,7 @@ export const subServicesMd = [
       "cross platform application development company",
       "cross platform app developers",
       "custom cross platform app development",
-      "cross platform mobile application development",
-      "URL:"
+      "cross platform mobile application development"
     ],
     "intro": [
       "ClickMasters provides cross-platform app development services for startups, businesses, and enterprises that want to build mobile applications for iOS and Android without managing completely separate development projects.",
@@ -4259,42 +4248,42 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery and Requirements",
+        "heading": "1. Discovery and Requirements",
         "body": "We discuss your product idea, business model, target users, required platforms, features, integrations, and long-term objectives.",
         "items": []
       },
       {
-        "heading": "2\\. Framework and Architecture Planning",
+        "heading": "2. Framework and Architecture Planning",
         "body": "We evaluate whether cross-platform development is appropriate and determine the framework, backend architecture, API requirements, database structure, and platform-specific needs.",
         "items": []
       },
       {
-        "heading": "3\\. UI/UX Design",
+        "heading": "3. UI/UX Design",
         "body": "We create application flows, wireframes, interfaces, and reusable components while considering differences between Android and iOS user experiences.",
         "items": []
       },
       {
-        "heading": "4\\. Cross-Platform Development",
+        "heading": "4. Cross-Platform Development",
         "body": "Our developers build the application features, shared logic, interfaces, backend connections, and platform-specific functionality.",
         "items": []
       },
       {
-        "heading": "5\\. API and System Integration",
+        "heading": "5. API and System Integration",
         "body": "We connect the application with payment systems, CRMs, ERPs, SaaS platforms, databases, cloud services, or other third-party systems where required.",
         "items": []
       },
       {
-        "heading": "6\\. Testing and Quality Assurance",
+        "heading": "6. Testing and Quality Assurance",
         "body": "The application is tested across supported devices, platforms, operating-system versions, features, integrations, and important user journeys.",
         "items": []
       },
       {
-        "heading": "7\\. App Store Deployment",
+        "heading": "7. App Store Deployment",
         "body": "We prepare production builds and support release to the Apple App Store and Google Play Store.",
         "items": []
       },
       {
-        "heading": "8\\. Maintenance and Product Improvement",
+        "heading": "8. Maintenance and Product Improvement",
         "body": "After launch, the application can be improved through user feedback, analytics, bug fixes, updates, new features, and performance optimisation.",
         "items": []
       },
@@ -4799,19 +4788,18 @@ export const subServicesMd = [
     "slug": "android-app-development",
     "categorySlug": "mobile-development",
     "category": "Mobile Development",
-    "title": "Android App Development Company UK for Secure, Scalable Mobile Apps",
-    "serviceName": "Android Application Development Company UK \\",
-    "h1": "Android App Development Company UK for Secure, Scalable Mobile Apps",
+    "title": "Custom Android app development",
+    "serviceName": "Android Application Development Company UK",
+    "h1": "Custom Android app development",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/mobile-development/android-app-development",
-    "metaTitle": "Android Application Development Company UK \\- Clickmasters",
+    "metaTitle": "Android Application Development Company UK - Clickmasters",
     "metaDescription": "Clickmasters is an Android app development company in the UK providing custom Android app development services for startups, SMEs and growing businesses.",
     "metaKeywords": [
       "android app development agency​",
       "android app development company",
       "android app development company uk",
       "android app development services",
-      "Custom Android app development",
-      "URL:"
+      "Custom Android app development"
     ],
     "intro": [
       "Clickmasters helps businesses build secure, scalable, and user-friendly Android applications for customers, internal teams, and digital product growth. As an Android app development company in the UK, we provide custom Android app development services from strategy and UI/UX design to development, testing, Google Play launch, and long-term support.",
@@ -4957,37 +4945,37 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery and Planning",
+        "heading": "1. Discovery and Planning",
         "body": "We start by understanding your app idea, target users, business goals, Android app requirements, required features, budget, and timeline.",
         "items": []
       },
       {
-        "heading": "2\\. Feature Scope",
+        "heading": "2. Feature Scope",
         "body": "We define the core features your Android app needs in the first version. This keeps the project focused and helps avoid unnecessary development cost.",
         "items": []
       },
       {
-        "heading": "3\\. UX/UI Design",
+        "heading": "3. UX/UI Design",
         "body": "We create user journeys, wireframes, app screens, and interface flows so the Android app is easy to use before development begins.",
         "items": []
       },
       {
-        "heading": "4\\. Android App Development",
+        "heading": "4. Android App Development",
         "body": "Our developers build the Android app, backend, database, APIs, integrations, admin panel, and required mobile features based on the agreed scope.",
         "items": []
       },
       {
-        "heading": "5\\. Testing and QA",
+        "heading": "5. Testing and QA",
         "body": "We test the Android app across devices, screen sizes, Android versions, user flows, integrations, performance, and security requirements.",
         "items": []
       },
       {
-        "heading": "6\\. Google Play Store Launch",
+        "heading": "6. Google Play Store Launch",
         "body": "We help prepare your Android app for Google Play Store submission, including release preparation, app details, screenshots, testing, and launch support.",
         "items": []
       },
       {
-        "heading": "7\\. Maintenance and Updates",
+        "heading": "7. Maintenance and Updates",
         "body": "After launch, we can support bug fixes, Android version updates, performance improvements, feature upgrades, security checks, and ongoing app maintenance.",
         "items": []
       },
@@ -5491,8 +5479,7 @@ export const subServicesMd = [
       "flutter mobile app development",
       "flutter mobile app development services",
       "flutter application development services",
-      "flutter application development company",
-      "URL:"
+      "flutter application development company"
     ],
     "intro": [
       "ClickMasters provides Flutter app development services for startups, businesses, and enterprises that want to build modern applications for iOS and Android from a shared development environment. We help you plan, design, develop, test, launch, and maintain Flutter applications around your users, business requirements, integrations, and long-term product goals.",
@@ -5821,42 +5808,42 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery & Product Planning",
+        "heading": "1. Discovery & Product Planning",
         "body": "We start by understanding your business goals, users, application idea, features, platforms, integrations, and product roadmap.",
         "items": []
       },
       {
-        "heading": "2\\. Flutter Suitability Assessment",
+        "heading": "2. Flutter Suitability Assessment",
         "body": "We assess whether Flutter is appropriate for the application and identify any platform-specific or technical requirements that may affect architecture.",
         "items": []
       },
       {
-        "heading": "3\\. UI/UX Design",
+        "heading": "3. UI/UX Design",
         "body": "We define user journeys, wireframes, application screens, interactions, and reusable interface components.",
         "items": []
       },
       {
-        "heading": "4\\. Technical Architecture",
+        "heading": "4. Technical Architecture",
         "body": "We plan the Flutter application structure, backend requirements, APIs, database, authentication, integrations, environments, and security.",
         "items": []
       },
       {
-        "heading": "5\\. Flutter Development",
+        "heading": "5. Flutter Development",
         "body": "Our developers build the application using Flutter and Dart while implementing the required business logic, interfaces, integrations, and platform-specific functionality.",
         "items": []
       },
       {
-        "heading": "6\\. Testing & QA",
+        "heading": "6. Testing & QA",
         "body": "We test the application across supported devices, operating systems, screen sizes, integrations, and important user journeys.",
         "items": []
       },
       {
-        "heading": "7\\. App Store Deployment",
+        "heading": "7. App Store Deployment",
         "body": "We prepare release builds and support deployment to the Apple App Store and Google Play Store.",
         "items": []
       },
       {
-        "heading": "8\\. Maintenance & Product Growth",
+        "heading": "8. Maintenance & Product Growth",
         "body": "After launch, we can continue improving the application through new features, upgrades, fixes, performance improvements, and integration changes.",
         "items": []
       },
@@ -6387,9 +6374,9 @@ export const subServicesMd = [
     "slug": "react-native-development",
     "categorySlug": "mobile-development",
     "category": "Mobile Development",
-    "title": "React Native Development Services",
+    "title": "react native development services",
     "serviceName": "React Native Development Services UK",
-    "h1": "React Native Development Services",
+    "h1": "react native development services",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/mobile-development/react-native-development",
     "metaTitle": "React Native Development Services UK | ClickMasters",
     "metaDescription": "ClickMasters provides React Native development services in the UK for scalable iOS and Android apps, from design and development to testing, integration and support.",
@@ -6403,8 +6390,7 @@ export const subServicesMd = [
       "react native app development company",
       "react native app development company UK",
       "react native development agency",
-      "react native development agency UK",
-      "URL:"
+      "react native development agency UK"
     ],
     "intro": [
       "ClickMasters provides React Native development services for startups, businesses, and enterprises that want to build mobile applications for iOS and Android through a shared development approach. We help you plan, design, develop, test, launch, and maintain React Native applications around your users, business requirements, integrations, and long-term product goals.",
@@ -6817,42 +6803,42 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery & Requirements",
+        "heading": "1. Discovery & Requirements",
         "body": "We begin by understanding your application idea, users, business goals, Android and iOS requirements, features, integrations, and long-term roadmap.",
         "items": []
       },
       {
-        "heading": "2\\. React Native Suitability Assessment",
+        "heading": "2. React Native Suitability Assessment",
         "body": "We evaluate whether React Native is appropriate and identify any native, hardware, performance, or platform requirements that may influence architecture.",
         "items": []
       },
       {
-        "heading": "3\\. UI/UX Design",
+        "heading": "3. UI/UX Design",
         "body": "We create user journeys, wireframes, application interfaces, navigation, and reusable components.",
         "items": []
       },
       {
-        "heading": "4\\. Application Architecture",
+        "heading": "4. Application Architecture",
         "body": "We plan the React Native project structure, backend services, APIs, databases, authentication, integrations, environments, and platform-specific functionality.",
         "items": []
       },
       {
-        "heading": "5\\. React Native Development",
+        "heading": "5. React Native Development",
         "body": "Our developers build the application features, shared functionality, integrations, and required Android or iOS-specific components.",
         "items": []
       },
       {
-        "heading": "6\\. Testing & Quality Assurance",
+        "heading": "6. Testing & Quality Assurance",
         "body": "The application is tested across supported devices, operating systems, integrations, and key user journeys.",
         "items": []
       },
       {
-        "heading": "7\\. App Store Deployment",
+        "heading": "7. App Store Deployment",
         "body": "We prepare production builds and support release to the Apple App Store and Google Play Store.",
         "items": []
       },
       {
-        "heading": "8\\. Maintenance & Product Improvement",
+        "heading": "8. Maintenance & Product Improvement",
         "body": "After launch, we can continue improving the application through upgrades, bug fixes, new features, optimisation, and compatibility updates.",
         "items": []
       },
@@ -7977,12 +7963,12 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We begin by understanding your business problem, users, existing workflows, current systems, and product objectives.",
         "items": []
       },
       {
-        "heading": "2\\. Requirements Definition",
+        "heading": "2. Requirements Definition",
         "body": "We document the required:",
         "items": [
           "Features",
@@ -7995,37 +7981,37 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "3\\. UX & Prototyping",
+        "heading": "3. UX & Prototyping",
         "body": "We map user journeys and create wireframes or prototypes to validate the application experience.",
         "items": []
       },
       {
-        "heading": "4\\. Technical Architecture",
+        "heading": "4. Technical Architecture",
         "body": "We plan the frontend, backend, database, APIs, integrations, infrastructure, authentication, and application structure.",
         "items": []
       },
       {
-        "heading": "5\\. Development",
+        "heading": "5. Development",
         "body": "Frontend and backend components are developed around the agreed application requirements.",
         "items": []
       },
       {
-        "heading": "6\\. Integration",
+        "heading": "6. Integration",
         "body": "Required external services and business systems are connected to the application.",
         "items": []
       },
       {
-        "heading": "7\\. Testing & QA",
+        "heading": "7. Testing & QA",
         "body": "We test functionality, user journeys, APIs, integrations, browsers, devices, performance, and relevant security requirements.",
         "items": []
       },
       {
-        "heading": "8\\. Deployment",
+        "heading": "8. Deployment",
         "body": "The application is prepared and released into its production environment.",
         "items": []
       },
       {
-        "heading": "9\\. Maintenance & Product Development",
+        "heading": "9. Maintenance & Product Development",
         "body": "Following launch, the application can continue to evolve through fixes, upgrades, new functionality, performance work, and architecture improvements.\n\nThis end-to-end lifecycle is one of the clearest recurring competitor patterns in your SERP.",
         "items": []
       },
@@ -8650,9 +8636,9 @@ export const subServicesMd = [
     "slug": "headless-cms-development",
     "categorySlug": "web-development",
     "category": "Web Development",
-    "title": "Headless CMS Development Services UK",
+    "title": "headless CMS development services",
     "serviceName": "Headless CMS Development Services UK",
-    "h1": "Headless CMS Development Services UK",
+    "h1": "headless CMS development services",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/web-development/headless-cms-development",
     "metaTitle": "Headless CMS Development Services UK | ClickMasters",
     "metaDescription": "Custom headless CMS development services in the UK for API-first websites, migrations, integrations and modern frontends. Build scalable platforms with ClickMasters.",
@@ -8666,7 +8652,8 @@ export const subServicesMd = [
       "headless CMS website development",
       "headless CMS migration services",
       "headless CMS integration services",
-      "headless CMS agency UK"
+      "headless CMS agency UK",
+      "Headless CMS Development Company for UK Businesses"
     ],
     "intro": [
       "ClickMasters provides Headless CMS development services for UK businesses that need flexible, custom-coded digital experiences without tightly coupling content management to the frontend. We help organisations plan content architecture, implement Headless CMS platforms, build custom frontends, connect APIs and business systems, migrate existing content, test the solution, launch it, and support its continued development.",
@@ -9109,52 +9096,52 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We assess your business requirements, existing website, CMS, content, users, integrations, and future roadmap.",
         "items": []
       },
       {
-        "heading": "2\\. Headless Suitability Assessment",
+        "heading": "2. Headless Suitability Assessment",
         "body": "We determine whether Headless architecture creates a meaningful advantage compared with a traditional CMS or another approach.",
         "items": []
       },
       {
-        "heading": "3\\. CMS Platform Evaluation",
+        "heading": "3. CMS Platform Evaluation",
         "body": "We evaluate potential platforms against content, editorial, technical, security, integration, and commercial requirements.",
         "items": []
       },
       {
-        "heading": "4\\. Content Architecture",
+        "heading": "4. Content Architecture",
         "body": "We define content types, relationships, reusable components, taxonomy, permissions, localisation, and publishing workflows.",
         "items": []
       },
       {
-        "heading": "5\\. UX/UI Design",
+        "heading": "5. UX/UI Design",
         "body": "We plan how customers will experience the website independently from how editors manage content.",
         "items": []
       },
       {
-        "heading": "6\\. Frontend Development",
+        "heading": "6. Frontend Development",
         "body": "The custom frontend is developed around the required user experience and application functionality.",
         "items": []
       },
       {
-        "heading": "7\\. CMS Implementation",
+        "heading": "7. CMS Implementation",
         "body": "We configure content models, permissions, editorial workflows, preview functionality, and other CMS capabilities.",
         "items": []
       },
       {
-        "heading": "8\\. API & System Integration",
+        "heading": "8. API & System Integration",
         "body": "The CMS and frontend are connected with other required systems.",
         "items": []
       },
       {
-        "heading": "9\\. Content Migration",
+        "heading": "9. Content Migration",
         "body": "Existing content is mapped, transformed, migrated, and validated where applicable.",
         "items": []
       },
       {
-        "heading": "10\\. Testing & QA",
+        "heading": "10. Testing & QA",
         "body": "Testing can include:",
         "items": [
           "CMS workflows",
@@ -9170,12 +9157,12 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "11\\. Deployment",
+        "heading": "11. Deployment",
         "body": "We prepare production environments and launch the frontend and CMS configuration.",
         "items": []
       },
       {
-        "heading": "12\\. Ongoing Support",
+        "heading": "12. Ongoing Support",
         "body": "Following launch, the platform can continue to evolve through updates, integrations, performance improvements, new features, and content-model changes.\n\nThis broader process goes beyond the common competitor pattern of simply listing CMS platforms and frontend technologies. It aligns more closely with the SERP's full semantic path of content architecture → frontend → integrations → migration → performance → support.",
         "items": []
       },
@@ -10189,7 +10176,7 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We understand:",
         "items": [
           "Business model",
@@ -10203,7 +10190,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "2\\. Requirements",
+        "heading": "2. Requirements",
         "body": "We define:",
         "items": [
           "Customer journeys",
@@ -10219,7 +10206,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "3\\. Platform & Architecture Planning",
+        "heading": "3. Platform & Architecture Planning",
         "body": "We determine whether requirements are best served through:",
         "items": [
           "Existing ecommerce platform",
@@ -10230,7 +10217,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "4\\. UX/UI Design",
+        "heading": "4. UX/UI Design",
         "body": "We plan:",
         "items": [
           "Navigation",
@@ -10244,7 +10231,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "5\\. Development",
+        "heading": "5. Development",
         "body": "We build required:",
         "items": [
           "Frontend",
@@ -10256,7 +10243,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "6\\. Integration",
+        "heading": "6. Integration",
         "body": "We connect relevant:",
         "items": [
           "Payments",
@@ -10269,12 +10256,12 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "7\\. Data Migration",
+        "heading": "7. Data Migration",
         "body": "Where needed, products, customers, orders, URLs, and related commerce data are migrated.",
         "items": []
       },
       {
-        "heading": "8\\. Testing & QA",
+        "heading": "8. Testing & QA",
         "body": "Testing can cover:",
         "items": [
           "Product functionality",
@@ -10295,12 +10282,12 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "9\\. Launch",
+        "heading": "9. Launch",
         "body": "We prepare production systems, migrations, redirects, analytics, indexing controls, and deployment.",
         "items": []
       },
       {
-        "heading": "10\\. Continuous Development",
+        "heading": "10. Continuous Development",
         "body": "After launch, we can continue with:\n\nThis follows the lifecycle that Google and ranking competitors associate with a complete ecommerce development provider.",
         "items": [
           "Bug fixes",
@@ -11423,7 +11410,7 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We understand:",
         "items": [
           "Business model",
@@ -11437,7 +11424,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "2\\. Requirements",
+        "heading": "2. Requirements",
         "body": "We define:",
         "items": [
           "Store functionality",
@@ -11451,7 +11438,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "3\\. Architecture & Shopify Planning",
+        "heading": "3. Architecture & Shopify Planning",
         "body": "We determine:",
         "items": [
           "Shopify configuration",
@@ -11464,12 +11451,12 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "4\\. UX/UI",
+        "heading": "4. UX/UI",
         "body": "We plan key shopping journeys across desktop and mobile devices.",
         "items": []
       },
       {
-        "heading": "5\\. Shopify Development",
+        "heading": "5. Shopify Development",
         "body": "We implement:",
         "items": [
           "Theme functionality",
@@ -11481,27 +11468,27 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "6\\. Integration",
+        "heading": "6. Integration",
         "body": "Shopify is connected with the systems required by the business.",
         "items": []
       },
       {
-        "heading": "7\\. Migration",
+        "heading": "7. Migration",
         "body": "Where applicable, products, content, customers and other required information are migrated.",
         "items": []
       },
       {
-        "heading": "8\\. Testing & QA",
+        "heading": "8. Testing & QA",
         "body": "The store is tested across important customer journeys, devices and browsers.",
         "items": []
       },
       {
-        "heading": "9\\. Launch",
+        "heading": "9. Launch",
         "body": "Production configuration, redirects, analytics and required integrations are prepared for launch.",
         "items": []
       },
       {
-        "heading": "10\\. Ongoing Development",
+        "heading": "10. Ongoing Development",
         "body": "After launch, the store can continue evolving through maintenance, new functionality and optimisation.\n\nThis aligns with the SERP's expectation that a Shopify provider supports more than the initial build — including migration, integrations, optimisation and post-launch support.",
         "items": []
       },
@@ -11958,19 +11945,8 @@ export const subServicesMd = [
     "h1": "WooCommerce Developement for UK Businesses",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/web-development/woocommerce-development",
     "metaTitle": "WooCommerce Development Services UK | Clickmasters",
-    "metaDescription": "Custom WooCommerce development services in the UK for store builds, plugins, integrations, migrations, performance optimisation and ongoing support. WooCommerce Development Services UK",
-    "metaKeywords": [
-      "woocommerce development services",
-      "woocommerce development services UK",
-      "woocommerce developer UK",
-      "woocommerce developers UK",
-      "woocommerce development agency UK",
-      "woocommerce development company",
-      "woocommerce development UK",
-      "custom woocommerce development",
-      "woocommerce web development",
-      "woocommerce website development services"
-    ],
+    "metaDescription": "Custom WooCommerce development services in the UK for store builds, plugins, integrations, migrations, performance optimisation and ongoing support.",
+    "metaKeywords": [],
     "intro": [
       "WooCommerce plugins extend the capabilities of the ecommerce platform.",
       "Custom plugin development can be considered when available extensions cannot properly support a business requirement.",
@@ -12379,7 +12355,7 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We understand:",
         "items": [
           "Business model",
@@ -12393,7 +12369,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "2\\. Requirements",
+        "heading": "2. Requirements",
         "body": "We define:",
         "items": [
           "Store functionality",
@@ -12407,7 +12383,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "3\\. Technical Planning",
+        "heading": "3. Technical Planning",
         "body": "We determine:",
         "items": [
           "WooCommerce configuration",
@@ -12420,12 +12396,12 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "4\\. UX/UI Planning",
+        "heading": "4. UX/UI Planning",
         "body": "The important shopping journeys are designed across desktop and mobile experiences.",
         "items": []
       },
       {
-        "heading": "5\\. Development",
+        "heading": "5. Development",
         "body": "We implement the required:",
         "items": [
           "Theme functionality",
@@ -12437,17 +12413,17 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "6\\. Integration",
+        "heading": "6. Integration",
         "body": "WooCommerce is connected with relevant business and third-party systems.",
         "items": []
       },
       {
-        "heading": "7\\. Migration",
+        "heading": "7. Migration",
         "body": "Where required, existing products, customers, orders and other agreed data are migrated.",
         "items": []
       },
       {
-        "heading": "8\\. Testing & QA",
+        "heading": "8. Testing & QA",
         "body": "Testing can cover:",
         "items": [
           "Products",
@@ -12465,12 +12441,12 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "9\\. Launch",
+        "heading": "9. Launch",
         "body": "The production environment, migration requirements, redirects, tracking and integrations are prepared for release.",
         "items": []
       },
       {
-        "heading": "10\\. Ongoing Development",
+        "heading": "10. Ongoing Development",
         "body": "Following launch, the store can continue evolving through maintenance, new functionality and technical improvements.",
         "items": []
       },
@@ -12999,18 +12975,23 @@ export const subServicesMd = [
     "slug": "custom-software-development",
     "categorySlug": "software-development",
     "category": "Software Development",
-    "title": "Who We Are",
-    "serviceName": "Custom Software Development Company UK \\",
-    "h1": "Who We Are",
+    "title": "Custom Software Development Company for Business-Focused Software Solutions",
+    "serviceName": "Custom Software Development Company UK",
+    "h1": "Custom Software Development Company for Business-Focused Software Solutions",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/custom-software-development",
-    "metaTitle": "Custom Software Development Company UK \\- Clickmasters Meta Description: Clickmasters provides custom software development services for businesses that need secure, scalable, and bespoke software solutions built around their workflows, operations, and growth. Custom Software Development Company for Business-Focused Software Solutions",
-    "metaDescription": "Clickmasters provides custom software development services for businesses that need secure, scalable, and bespoke software solutions built around their workflows, operations, and growth. Custom Software Development Company for Business-Focused Software Solutions",
+    "metaTitle": "Custom Software Development Company UK - Clickmasters",
+    "metaDescription": "Clickmasters provides custom software development services for businesses that need secure, scalable, and bespoke software solutions built around their workflows, operations, and growth.",
     "metaKeywords": [
-      "[https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/custom-software-development](https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/custom-software-development)",
       "Custom Software Development Custom Software Development company",
       "Custom Software Development company uk",
       "Custom Software Development agency",
-      "Custom Software Development services"
+      "Custom Software Development services",
+      "Custom Software Development Company UK - Clickmasters",
+      "Custom Software Development Company for Business-Focused Software Solutions",
+      "CTA:",
+      "Book a Free Consultation",
+      "Secondary CTA:",
+      "Request a Custom Software Quote"
     ],
     "intro": [],
     "sections": [
@@ -13447,10 +13428,10 @@ export const subServicesMd = [
     "categorySlug": "web-development",
     "category": "Web Development",
     "title": "Progressive Web App Development Services UK",
-    "serviceName": "Progressive Web App Development Services UK \\",
+    "serviceName": "Progressive Web App Development Services UK",
     "h1": "Progressive Web App Development Services UK",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/web-development/pwa-development",
-    "metaTitle": "Progressive Web App Development Services UK \\- Clickmasters",
+    "metaTitle": "Progressive Web App Development Services UK - Clickmasters",
     "metaDescription": "Build fast, secure and installable PWAs with Clickmasters. Custom progressive web app development services in the UK with APIs, offline features and support.",
     "metaKeywords": [
       "progressive web app development company",
@@ -13798,52 +13779,52 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We understand your users, business requirements, existing systems and product objectives.",
         "items": []
       },
       {
-        "heading": "2\\. PWA Suitability Assessment",
+        "heading": "2. PWA Suitability Assessment",
         "body": "We determine whether a Progressive Web App provides meaningful advantages compared with a conventional web application or mobile application.",
         "items": []
       },
       {
-        "heading": "3\\. Requirements Definition",
+        "heading": "3. Requirements Definition",
         "body": "We define functionality, users, workflows, APIs, offline requirements, integrations and security needs.",
         "items": []
       },
       {
-        "heading": "4\\. UX/UI Design",
+        "heading": "4. UX/UI Design",
         "body": "User journeys and application interfaces are designed for mobile, tablet and desktop usage.",
         "items": []
       },
       {
-        "heading": "5\\. Architecture Planning",
+        "heading": "5. Architecture Planning",
         "body": "We plan the frontend, backend, APIs, database, service workers, caching and integrations.",
         "items": []
       },
       {
-        "heading": "6\\. Development",
+        "heading": "6. Development",
         "body": "The application and required progressive capabilities are developed.",
         "items": []
       },
       {
-        "heading": "7\\. Integration",
+        "heading": "7. Integration",
         "body": "The PWA is connected with relevant business systems and third-party services.",
         "items": []
       },
       {
-        "heading": "8\\. Testing & QA",
+        "heading": "8. Testing & QA",
         "body": "Functionality, browsers, devices, progressive features, performance and accessibility are tested.",
         "items": []
       },
       {
-        "heading": "9\\. Deployment",
+        "heading": "9. Deployment",
         "body": "The application is prepared and released into the production environment.",
         "items": []
       },
       {
-        "heading": "10\\. Maintenance & Improvement",
+        "heading": "10. Maintenance & Improvement",
         "body": "Following launch, development can continue through updates, bug fixes, performance work and additional features.",
         "items": []
       },
@@ -14373,8 +14354,7 @@ export const subServicesMd = [
       "SaaS product maintenance",
       "SaaS onboarding",
       "usage tracking",
-      "recurring billing software",
-      "URL:"
+      "recurring billing software"
     ],
     "intro": [],
     "sections": [
@@ -14464,37 +14444,37 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Product Discovery",
+        "heading": "1. Product Discovery",
         "body": "We understand your SaaS idea, target users, business model, features, and launch goals.",
         "items": []
       },
       {
-        "heading": "2\\. Feature Planning",
+        "heading": "2. Feature Planning",
         "body": "We define the main features needed for the first version and separate must-have features from future improvements.",
         "items": []
       },
       {
-        "heading": "3\\. UI/UX Design",
+        "heading": "3. UI/UX Design",
         "body": "We design user-friendly screens for customers, admins, dashboards, sign-up flows, and product features.",
         "items": []
       },
       {
-        "heading": "4\\. SaaS Architecture",
+        "heading": "4. SaaS Architecture",
         "body": "We plan the technical structure, database, user roles, subscriptions, integrations, and scalability.",
         "items": []
       },
       {
-        "heading": "5\\. SaaS Development",
+        "heading": "5. SaaS Development",
         "body": "Our team builds the frontend, backend, database, APIs, dashboards, and SaaS product features.",
         "items": []
       },
       {
-        "heading": "6\\. Testing and Launch",
+        "heading": "6. Testing and Launch",
         "body": "We test the SaaS platform for bugs, performance, usability, security, and user flow before launch.",
         "items": []
       },
       {
-        "heading": "7\\. Support and Improvements",
+        "heading": "7. Support and Improvements",
         "body": "After launch, we can support new features, bug fixes, performance improvements, and product updates.",
         "items": []
       },
@@ -14800,8 +14780,7 @@ export const subServicesMd = [
       "real-time data integration",
       "API maintenance",
       "API monitoring",
-      "enterprise API integration",
-      "URL:"
+      "enterprise API integration"
     ],
     "intro": [
       "`/software-development/api-development-integration`",
@@ -14971,32 +14950,32 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery and Requirements",
+        "heading": "1. Discovery and Requirements",
         "body": "We understand your systems, data flow, business process, integration goals, users, and technical requirements.",
         "items": []
       },
       {
-        "heading": "2\\. API and System Mapping",
+        "heading": "2. API and System Mapping",
         "body": "We identify which systems need to connect, what data needs to move, how often it should sync, and what rules are required.",
         "items": []
       },
       {
-        "heading": "3\\. Architecture and Security Planning",
+        "heading": "3. Architecture and Security Planning",
         "body": "We plan API structure, authentication, authorisation, data validation, error handling, rate limits, and secure access control.",
         "items": []
       },
       {
-        "heading": "4\\. Development and Integration",
+        "heading": "4. Development and Integration",
         "body": "Our developers build APIs, connect third-party systems, create endpoints, configure data exchange, and implement business logic.",
         "items": []
       },
       {
-        "heading": "5\\. Testing and Deployment",
+        "heading": "5. Testing and Deployment",
         "body": "We test the integration for accuracy, reliability, performance, security, and real-world workflow behaviour before launch.",
         "items": []
       },
       {
-        "heading": "6\\. Monitoring and Maintenance",
+        "heading": "6. Monitoring and Maintenance",
         "body": "After launch, we can monitor integrations, fix errors, update APIs, manage version changes, and support long-term reliability.",
         "items": []
       },
@@ -15473,9 +15452,7 @@ export const subServicesMd = [
     "metaDescription": "ClickMasters provides MVP development services for startups and businesses that want to validate ideas, launch faster, reduce risk, and build scalable software products.",
     "metaKeywords": [
       "MVP development services",
-      "MVP development services UK",
-      "MVP development company MVP development company UK MVP software development MVP software development company minimum viable product development MVP product development startup MVP development custom MVP development MVP app development MVP application development software MVP development MVP development agency SaaS MVP development web app MVP development mobile app MVP development AI MVP development MVP product strategy MVP feature prioritisation MVP prototyping minimum viable product MVP validation product validation startup software development MVP UI/UX design MVP testing MVP launch MVP scalability proof of concept prototype development MVP vs prototype MVP vs PoC product-market validation early user feedback scalable product architecture",
-      "URL:"
+      "MVP development services UK"
     ],
     "intro": [
       "`/software-development/mvp-development`",
@@ -15578,42 +15555,42 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Idea Review",
+        "heading": "1. Idea Review",
         "body": "We discuss your idea, target audience, product goals, business model, and expected outcome.",
         "items": []
       },
       {
-        "heading": "2\\. Research and Planning",
+        "heading": "2. Research and Planning",
         "body": "We review the market, competitors, users, main features, and technical requirements.",
         "items": []
       },
       {
-        "heading": "3\\. MVP Scope Definition",
+        "heading": "3. MVP Scope Definition",
         "body": "We define the essential features needed for the first version and remove unnecessary complexity.",
         "items": []
       },
       {
-        "heading": "4\\. Wireframing and UI/UX Design",
+        "heading": "4. Wireframing and UI/UX Design",
         "body": "We create user journeys, screens, and clickable prototypes so the MVP structure is clear before coding.",
         "items": []
       },
       {
-        "heading": "5\\. Software Development",
+        "heading": "5. Software Development",
         "body": "Our team builds the MVP using the right frontend, backend, database, API, and integration setup.",
         "items": []
       },
       {
-        "heading": "6\\. Testing and Quality Assurance",
+        "heading": "6. Testing and Quality Assurance",
         "body": "We test the product to make sure the main features work smoothly across users, devices, and workflows.",
         "items": []
       },
       {
-        "heading": "7\\. Launch and Feedback",
+        "heading": "7. Launch and Feedback",
         "body": "After launch, your MVP can be tested with real users. Feedback, analytics, and user behaviour can guide the next version.",
         "items": []
       },
       {
-        "heading": "8\\. Iteration and Scaling",
+        "heading": "8. Iteration and Scaling",
         "body": "Once the MVP is validated, we help improve features, add new modules, optimise performance, and scale the product.",
         "items": []
       },
@@ -16004,10 +15981,9 @@ export const subServicesMd = [
     "h1": "Frontend Development Services UK",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/frontend-development",
     "metaTitle": "Frontend Development Services UK | ClickMasters",
-    "metaDescription": "Frontend development services in the UK for responsive, accessible and high-performing web applications. Build modern interfaces with ClickMasters. 3\\. Frontend Development Page",
+    "metaDescription": "Frontend development services in the UK for responsive, accessible and high-performing web applications. Build modern interfaces with ClickMasters.",
     "metaKeywords": [
-      "frontend development services",
-      "frontend development company frontend development company UK frontend development services UK front end development company front end development services frontend developers UK custom frontend development web frontend development React development Next.js development Vue.js development Angular development responsive frontend development frontend API integration UI development web application interface development accessible frontend development frontend performance optimisation component development"
+      "frontend development services"
     ],
     "intro": [
       "Create fast, responsive and intuitive interfaces for modern digital products.",
@@ -16177,37 +16153,37 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Requirements & Design Review",
+        "heading": "1. Requirements & Design Review",
         "body": "We review user journeys, designs, functionality and backend requirements.",
         "items": []
       },
       {
-        "heading": "2\\. Frontend Architecture",
+        "heading": "2. Frontend Architecture",
         "body": "The application structure, components, routing and state requirements are planned.",
         "items": []
       },
       {
-        "heading": "3\\. Component Development",
+        "heading": "3. Component Development",
         "body": "Reusable interface components are developed according to the product requirements.",
         "items": []
       },
       {
-        "heading": "4\\. API Integration",
+        "heading": "4. API Integration",
         "body": "Frontend functionality is connected with backend services and relevant external APIs.",
         "items": []
       },
       {
-        "heading": "5\\. Responsive & Accessibility Testing",
+        "heading": "5. Responsive & Accessibility Testing",
         "body": "Interfaces are checked across required devices, browsers and interaction methods.",
         "items": []
       },
       {
-        "heading": "6\\. Performance Optimisation",
+        "heading": "6. Performance Optimisation",
         "body": "Frontend performance is reviewed and unnecessary bottlenecks addressed.",
         "items": []
       },
       {
-        "heading": "7\\. Deployment & Continuous Improvement",
+        "heading": "7. Deployment & Continuous Improvement",
         "body": "The interface can continue evolving as user feedback and product requirements change.",
         "items": []
       },
@@ -16463,15 +16439,15 @@ export const subServicesMd = [
     "slug": "microservices-architecture",
     "categorySlug": "software-development",
     "category": "Software Development",
-    "title": "Microservices Architecture Services, UK",
+    "title": "Microservices Architecture Page",
     "serviceName": "Microservices Architecture Services UK",
-    "h1": "Microservices Architecture Services, UK",
+    "h1": "Microservices Architecture Page",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/microservices-architecture",
-    "metaTitle": "Microservices Architecture Services UK | ClickMasters Meta Description Build scalable, flexible applications with microservices architecture services in the UK. ClickMasters helps modernise, integrate and optimise complex software. Microservices Architecture Page",
-    "metaDescription": "Build scalable, flexible applications with microservices architecture services in the UK. ClickMasters helps modernise, integrate and optimise complex software. Microservices Architecture Page",
+    "metaTitle": "Microservices Architecture Services UK | ClickMasters",
+    "metaDescription": "Build scalable, flexible applications with microservices architecture services in the UK. ClickMasters helps modernise, integrate and optimise complex software.",
     "metaKeywords": [
       "microservices architecture services",
-      "microservices development services microservices architecture company microservices development company microservices consulting services microservices architecture UK microservices development UK monolith to microservices migration microservices migration services microservices design distributed architecture API-based architecture event-driven architecture containerised applications Docker microservices Kubernetes microservices service-to-service communication scalable software architecture application modernisation"
+      "Microservices Architecture Page"
     ],
     "intro": [
       "Build software systems that can evolve, scale and deploy more independently.",
@@ -16590,37 +16566,37 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Architecture Assessment",
+        "heading": "1. Architecture Assessment",
         "body": "We review your current application, business requirements, technical constraints and expected growth.",
         "items": []
       },
       {
-        "heading": "2\\. Service Boundary Definition",
+        "heading": "2. Service Boundary Definition",
         "body": "We identify logical business capabilities and determine where independent services may make sense.",
         "items": []
       },
       {
-        "heading": "3\\. Architecture & Integration Design",
+        "heading": "3. Architecture & Integration Design",
         "body": "APIs, events, databases, security and service communication are defined.",
         "items": []
       },
       {
-        "heading": "4\\. Infrastructure Planning",
+        "heading": "4. Infrastructure Planning",
         "body": "We plan how services will be deployed, monitored and scaled.",
         "items": []
       },
       {
-        "heading": "5\\. Development & Migration",
+        "heading": "5. Development & Migration",
         "body": "New services are developed or existing functionality is gradually extracted from the current application.",
         "items": []
       },
       {
-        "heading": "6\\. Testing",
+        "heading": "6. Testing",
         "body": "Individual services and their integrations are tested to ensure the wider system continues to operate correctly.",
         "items": []
       },
       {
-        "heading": "7\\. Deployment & Monitoring",
+        "heading": "7. Deployment & Monitoring",
         "body": "Services are deployed with suitable monitoring and operational visibility.",
         "items": []
       },
@@ -16800,10 +16776,9 @@ export const subServicesMd = [
     "h1": "Full Stack Development Services UK",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/full-stack-development",
     "metaTitle": "Full Stack Development Services UK | ClickMasters",
-    "metaDescription": "Full stack development services in the UK for complete web applications, SaaS platforms, APIs and databases. Build scalable software with ClickMasters. 4\\. Full Stack Development Page",
+    "metaDescription": "Full stack development services in the UK for complete web applications, SaaS platforms, APIs and databases. Build scalable software with ClickMasters.",
     "metaKeywords": [
-      "full stack development services",
-      "full stack development company full stack development company UK full stack development services UK full stack developers UK full stack web development full stack application development custom full stack development full stack development agency frontend and backend development full stack web application development SaaS application development database developmentAPI integration React Node.js development MERN stack development application development end-to-end development full stack software development"
+      "full stack development services"
     ],
     "intro": [
       "Develop complete applications with frontend and backend engineering working together.",
@@ -16974,42 +16949,42 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We establish the business requirements, target users and core application functionality.",
         "items": []
       },
       {
-        "heading": "2\\. Architecture",
+        "heading": "2. Architecture",
         "body": "Frontend, backend, databases, APIs and infrastructure are planned as connected parts of one application.",
         "items": []
       },
       {
-        "heading": "3\\. UX & Interface Planning",
+        "heading": "3. UX & Interface Planning",
         "body": "User journeys and application interfaces are defined.",
         "items": []
       },
       {
-        "heading": "4\\. Frontend & Backend Development",
+        "heading": "4. Frontend & Backend Development",
         "body": "The user-facing application and supporting server-side functionality are developed in coordinated stages.",
         "items": []
       },
       {
-        "heading": "5\\. Integration",
+        "heading": "5. Integration",
         "body": "Databases, APIs and external services are connected.",
         "items": []
       },
       {
-        "heading": "6\\. Quality Assurance",
+        "heading": "6. Quality Assurance",
         "body": "Functionality is tested across the complete application rather than evaluating the frontend and backend independently.\n\nOur wider [software testing and QA services](/testing-and-qa?utm_source=chatgpt.com) can support more extensive testing requirements.",
         "items": []
       },
       {
-        "heading": "7\\. Deployment",
+        "heading": "7. Deployment",
         "body": "The application is prepared for production with appropriate infrastructure and deployment processes.\n\nOur [Cloud & DevOps services](/cloud-and-devops?utm_source=chatgpt.com) can support more complex deployment requirements.",
         "items": []
       },
       {
-        "heading": "8\\. Ongoing Development",
+        "heading": "8. Ongoing Development",
         "body": "After launch, applications can continue receiving new functionality, updates and technical improvements.",
         "items": []
       },
@@ -17347,8 +17322,7 @@ export const subServicesMd = [
       "business management software",
       "legacy enterprise software modernisation",
       "secure enterprise applications",
-      "enterprise reporting systems",
-      "URL:"
+      "enterprise reporting systems"
     ],
     "intro": [],
     "sections": [
@@ -17440,32 +17414,32 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery and Planning",
+        "heading": "1. Discovery and Planning",
         "body": "We understand your business, users, workflow, software goals, and technical requirements.",
         "items": []
       },
       {
-        "heading": "2\\. Software Architecture",
+        "heading": "2. Software Architecture",
         "body": "We plan the structure of your enterprise software, including database, modules, user roles, integrations, and scalability.",
         "items": []
       },
       {
-        "heading": "3\\. UI/UX Design",
+        "heading": "3. UI/UX Design",
         "body": "We design clean, user-friendly software screens for admins, teams, customers, or department users.",
         "items": []
       },
       {
-        "heading": "4\\. Custom Development",
+        "heading": "4. Custom Development",
         "body": "Our developers build the system with secure code, reliable backend logic, user dashboards, APIs, and business features.",
         "items": []
       },
       {
-        "heading": "5\\. Testing and QA",
+        "heading": "5. Testing and QA",
         "body": "We test the software for performance, usability, security, bugs, and workflow accuracy.",
         "items": []
       },
       {
-        "heading": "6\\. Launch and Support",
+        "heading": "6. Launch and Support",
         "body": "After launch, we support updates, improvements, maintenance, and future feature development.",
         "items": []
       },
@@ -17714,18 +17688,16 @@ export const subServicesMd = [
     "slug": "ios-app-development",
     "categorySlug": "mobile-development",
     "category": "Mobile Development",
-    "title": "iOS App Development Company UK for Secure, Scalable Apple Apps",
+    "title": "iOS App Development Page Content",
     "serviceName": "iOS App Development Company UK",
-    "h1": "iOS App Development Company UK for Secure, Scalable Apple Apps",
+    "h1": "iOS App Development Page Content",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/mobile-development/ios-app-development",
     "metaTitle": "iOS App Development Company UK | Clickmasters",
     "metaDescription": "Clickmasters provides iOS app development services for businesses that need secure, scalable iPhone and iPad apps built for users and growth.",
     "metaKeywords": [
-      "ios app development company ios app development services ios app development agency",
       "ios app development company",
       "ios app development services",
-      "ios app development agency",
-      "URL:"
+      "ios app development agency"
     ],
     "intro": [
       "Clickmasters helps businesses build secure, scalable, and user-friendly iOS applications for iPhone, iPad, and the wider Apple ecosystem. As an iOS app development company in the UK, we provide custom iOS app development services from product strategy and UX/UI design to Swift development, App Store launch, and long-term support.",
@@ -17873,37 +17845,37 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery and Planning",
+        "heading": "1. Discovery and Planning",
         "body": "We start by understanding your app idea, target users, business goals, iOS app requirements, required features, budget, and timeline.",
         "items": []
       },
       {
-        "heading": "2\\. Feature Scope",
+        "heading": "2. Feature Scope",
         "body": "We define the core features your iOS app needs in the first version. This keeps the project focused and helps avoid unnecessary development cost.",
         "items": []
       },
       {
-        "heading": "3\\. UX/UI Design",
+        "heading": "3. UX/UI Design",
         "body": "We create user journeys, wireframes, app screens, and interface flows so the iOS app is easy to use before development begins.",
         "items": []
       },
       {
-        "heading": "4\\. iOS App Development",
+        "heading": "4. iOS App Development",
         "body": "Our developers build the iOS app, backend, database, APIs, integrations, admin panel, and required mobile features based on the agreed scope.",
         "items": []
       },
       {
-        "heading": "5\\. Testing and QA",
+        "heading": "5. Testing and QA",
         "body": "We test the iOS app across devices, screen sizes, iOS versions, user flows, integrations, performance, and security requirements.",
         "items": []
       },
       {
-        "heading": "6\\. App Store Launch",
+        "heading": "6. App Store Launch",
         "body": "We help prepare your iOS app for Apple App Store submission, including release preparation, app details, screenshots, testing, and launch support.",
         "items": []
       },
       {
-        "heading": "7\\. Maintenance and Updates",
+        "heading": "7. Maintenance and Updates",
         "body": "After launch, we can support bug fixes, iOS version updates, performance improvements, feature upgrades, security checks, and ongoing app maintenance.",
         "items": []
       },
@@ -18413,18 +18385,16 @@ export const subServicesMd = [
     "metaTitle": "AI Model Training & Optimisation Services UK | Clickmasters",
     "metaDescription": "AI model training and optimisation services in the UK for data preparation, fine-tuning, evaluation, performance improvement, deployment and monitoring.",
     "metaKeywords": [
-      "URL:",
-      "Target SEO Keywords",
-      "1. AI model training services",
-      "2. AI model optimisation services",
-      "3. model training and optimisation services",
-      "4. machine learning model training services",
-      "5. custom AI model training",
-      "6. AI model fine tuning services",
-      "7. machine learning model optimisation",
-      "8. AI model performance optimisation",
-      "9. model training services UK",
-      "10. AI model training company UK"
+      "AI model training services",
+      "AI model optimisation services",
+      "model training and optimisation services",
+      "machine learning model training services",
+      "custom AI model training",
+      "AI model fine tuning services",
+      "machine learning model optimisation",
+      "AI model performance optimisation",
+      "model training services UK",
+      "AI model training company UK"
     ],
     "intro": [
       "Improve the accuracy, efficiency and production readiness of machine learning systems with custom AI model training and optimisation services.",
@@ -18911,62 +18881,62 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Requirements Discovery",
+        "heading": "1. Requirements Discovery",
         "body": "We define the model objective, expected outputs and production requirements.",
         "items": []
       },
       {
-        "heading": "2\\. Data Audit",
+        "heading": "2. Data Audit",
         "body": "Available training data is evaluated for suitability and quality.",
         "items": []
       },
       {
-        "heading": "3\\. Data Preparation",
+        "heading": "3. Data Preparation",
         "body": "Data is cleaned, structured, labelled or transformed where required.",
         "items": []
       },
       {
-        "heading": "4\\. Baseline Development",
+        "heading": "4. Baseline Development",
         "body": "An initial model or existing model baseline is established.",
         "items": []
       },
       {
-        "heading": "5\\. Training or Fine-Tuning",
+        "heading": "5. Training or Fine-Tuning",
         "body": "The selected training approach is applied.",
         "items": []
       },
       {
-        "heading": "6\\. Evaluation",
+        "heading": "6. Evaluation",
         "body": "Model performance is measured against appropriate metrics and acceptance criteria.",
         "items": []
       },
       {
-        "heading": "7\\. Error Analysis",
+        "heading": "7. Error Analysis",
         "body": "Performance limitations and model weaknesses are investigated.",
         "items": []
       },
       {
-        "heading": "8\\. Model Optimisation",
+        "heading": "8. Model Optimisation",
         "body": "The model can be optimised around accuracy, latency, size, memory, throughput or other requirements.",
         "items": []
       },
       {
-        "heading": "9\\. Integration",
+        "heading": "9. Integration",
         "body": "The trained model is connected with the wider software system where required.",
         "items": []
       },
       {
-        "heading": "10\\. Deployment Preparation",
+        "heading": "10. Deployment Preparation",
         "body": "The model and supporting infrastructure are prepared for production.",
         "items": []
       },
       {
-        "heading": "11\\. Monitoring",
+        "heading": "11. Monitoring",
         "body": "Relevant production metrics can be tracked.",
         "items": []
       },
       {
-        "heading": "12\\. Retraining & Iterative Improvement",
+        "heading": "12. Retraining & Iterative Improvement",
         "body": "New data and performance information can inform future model versions.",
         "items": []
       },
@@ -19504,18 +19474,16 @@ export const subServicesMd = [
     "metaTitle": "Cyber Security Compliance Management UK | Clickmasters",
     "metaDescription": "Cyber security compliance management and custom GRC software development in the UK for controls, evidence, policies, risks, audits and compliance automation.",
     "metaKeywords": [
-      "Target SEO Keywords",
-      "1. cyber security compliance management",
-      "2. cyber security compliance services",
-      "3. cybersecurity compliance management software",
-      "4. cyber security compliance software",
-      "5. compliance management software development",
-      "6. custom compliance software development",
-      "7. cybersecurity compliance software development",
-      "8. GRC software development",
-      "9. compliance automation software development",
-      "10. security compliance management platform",
-      "Meta Tags"
+      "cyber security compliance management",
+      "cyber security compliance services",
+      "cybersecurity compliance management software",
+      "cyber security compliance software",
+      "compliance management software development",
+      "custom compliance software development",
+      "cybersecurity compliance software development",
+      "GRC software development",
+      "compliance automation software development",
+      "security compliance management platform"
     ],
     "intro": [
       "Managing cyber security compliance across policies, controls, evidence, risks and audits can become difficult when information is spread across spreadsheets, documents and disconnected systems. Organisations need a structured way to understand requirements, assign security controls, collect evidence, track remediation and maintain visibility over their compliance position.",
@@ -19997,12 +19965,12 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We identify the business problem, intended users and compliance-management objectives.",
         "items": []
       },
       {
-        "heading": "2\\. Requirements Analysis",
+        "heading": "2. Requirements Analysis",
         "body": "We define:",
         "items": [
           "Framework requirements",
@@ -20017,12 +19985,12 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "3\\. Compliance Workflow Mapping",
+        "heading": "3. Compliance Workflow Mapping",
         "body": "The relationship between requirements, controls, evidence, findings and remediation is structured.",
         "items": []
       },
       {
-        "heading": "4\\. Data Model Design",
+        "heading": "4. Data Model Design",
         "body": "The underlying platform model can define entities such as:",
         "items": [
           "Frameworks",
@@ -20039,42 +20007,42 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "5\\. Software Architecture",
+        "heading": "5. Software Architecture",
         "body": "The frontend, backend, data, security and integration layers are structured.",
         "items": []
       },
       {
-        "heading": "6\\. UX/UI Design",
+        "heading": "6. UX/UI Design",
         "body": "User journeys and dashboards are designed around the responsibilities of each user type.",
         "items": []
       },
       {
-        "heading": "7\\. Platform Development",
+        "heading": "7. Platform Development",
         "body": "The agreed compliance-management functionality is implemented.",
         "items": []
       },
       {
-        "heading": "8\\. API & System Integration",
+        "heading": "8. API & System Integration",
         "body": "Required systems are connected with the compliance platform.",
         "items": []
       },
       {
-        "heading": "9\\. Testing",
+        "heading": "9. Testing",
         "body": "Features, permissions, workflows, integrations and reporting are tested.",
         "items": []
       },
       {
-        "heading": "10\\. Security Testing",
+        "heading": "10. Security Testing",
         "body": "Relevant security-sensitive functionality is reviewed according to scope.",
         "items": []
       },
       {
-        "heading": "11\\. Deployment",
+        "heading": "11. Deployment",
         "body": "The approved platform is prepared for the required environment.",
         "items": []
       },
       {
-        "heading": "12\\. Maintenance & Framework Updates",
+        "heading": "12. Maintenance & Framework Updates",
         "body": "The system can continue to evolve as business requirements, workflows and supported frameworks change.",
         "items": []
       },
@@ -20587,19 +20555,16 @@ export const subServicesMd = [
     "metaTitle": "Deep Learning Development Services UK | Clickmasters",
     "metaDescription": "Custom deep learning development services in the UK for neural networks, model training, integration, deployment, optimisation and production model monitoring.",
     "metaKeywords": [
-      "Deep Learning Development Services UK",
-      "URL:",
-      "Target SEO Keywords",
-      "1. deep learning development services",
-      "2. deep learning development company",
-      "3. deep learning development company UK",
-      "4. deep learning services UK",
-      "5. custom deep learning development",
-      "6. deep learning solutions",
-      "7. deep learning software development",
-      "8. deep learning model development",
-      "9. neural network development services",
-      "10. deep learning consulting services"
+      "deep learning development services",
+      "deep learning development company",
+      "deep learning development company UK",
+      "deep learning services UK",
+      "custom deep learning development",
+      "deep learning solutions",
+      "deep learning software development",
+      "deep learning model development",
+      "neural network development services",
+      "deep learning consulting services"
     ],
     "intro": [
       "`/machine-learning-ml/deep-learning-solutions`"
@@ -21079,62 +21044,62 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We define the business problem, expected model output and software requirements.",
         "items": []
       },
       {
-        "heading": "2\\. Feasibility Assessment",
+        "heading": "2. Feasibility Assessment",
         "body": "We determine whether deep learning is appropriate for the problem.",
         "items": []
       },
       {
-        "heading": "3\\. Data Assessment",
+        "heading": "3. Data Assessment",
         "body": "Available data is evaluated for quality, suitability and accessibility.",
         "items": []
       },
       {
-        "heading": "4\\. Data Preparation",
+        "heading": "4. Data Preparation",
         "body": "Relevant data is cleaned, transformed, labelled or structured where required.",
         "items": []
       },
       {
-        "heading": "5\\. Architecture Selection",
+        "heading": "5. Architecture Selection",
         "body": "Suitable neural-network architectures are evaluated according to the problem.",
         "items": []
       },
       {
-        "heading": "6\\. Model Development",
+        "heading": "6. Model Development",
         "body": "The selected model architecture is implemented.",
         "items": []
       },
       {
-        "heading": "7\\. Model Training",
+        "heading": "7. Model Training",
         "body": "The model is trained using prepared data.",
         "items": []
       },
       {
-        "heading": "8\\. Evaluation",
+        "heading": "8. Evaluation",
         "body": "Performance is measured using appropriate technical and business criteria.",
         "items": []
       },
       {
-        "heading": "9\\. Optimisation",
+        "heading": "9. Optimisation",
         "body": "The model can be refined for accuracy, latency, resource usage or other production requirements.",
         "items": []
       },
       {
-        "heading": "10\\. Software Integration",
+        "heading": "10. Software Integration",
         "body": "The approved model is connected with the wider software system.",
         "items": []
       },
       {
-        "heading": "11\\. Deployment",
+        "heading": "11. Deployment",
         "body": "The solution is prepared for the required production environment.",
         "items": []
       },
       {
-        "heading": "12\\. Monitoring & Retraining",
+        "heading": "12. Monitoring & Retraining",
         "body": "Model behaviour can be monitored and updated as data or requirements change.",
         "items": []
       },
@@ -21638,12 +21603,28 @@ export const subServicesMd = [
     "categorySlug": "design-ui-ux",
     "category": "Design UI/UX",
     "title": "Build a Consistent UI Across Products & Teams",
-    "serviceName": "Build a Consistent UI Across Products & Teams",
+    "serviceName": "Design System Development Services UK",
     "h1": "Build a Consistent UI Across Products & Teams",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux/design-systems",
-    "metaTitle": "",
-    "metaDescription": "",
-    "metaKeywords": [],
+    "metaTitle": "Design System Development Services UK | Clickmasters",
+    "metaDescription": "Custom design system development services in the UK for digital products, including design tokens, reusable UI components, documentation and governance.",
+    "metaKeywords": [
+      "design system development services",
+      "design system development company UK",
+      "design system development agency UK",
+      "design system services UK",
+      "custom design system development",
+      "design system consultancy UK",
+      "UI design system services",
+      "design system component library",
+      "design system governance services",
+      "enterprise design system development",
+      "Design System Development Services UK",
+      "Looking for",
+      "Clickmasters",
+      "Explore our broader [",
+      "UI/UX design services"
+    ],
     "intro": [
       "As digital products grow, interfaces can become fragmented.",
       "Different teams may create:",
@@ -22160,7 +22141,7 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We understand:",
         "items": [
           "Digital products",
@@ -22173,12 +22154,12 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "2\\. Interface Audit",
+        "heading": "2. Interface Audit",
         "body": "Existing components, patterns and inconsistencies are reviewed.",
         "items": []
       },
       {
-        "heading": "3\\. Design System Strategy",
+        "heading": "3. Design System Strategy",
         "body": "We define:",
         "items": [
           "Scope",
@@ -22190,47 +22171,47 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "4\\. Foundations",
+        "heading": "4. Foundations",
         "body": "Core visual and interaction rules are established.",
         "items": []
       },
       {
-        "heading": "5\\. Design Tokens",
+        "heading": "5. Design Tokens",
         "body": "Reusable design decisions are structured.",
         "items": []
       },
       {
-        "heading": "6\\. Component Architecture",
+        "heading": "6. Component Architecture",
         "body": "Components and variants are defined.",
         "items": []
       },
       {
-        "heading": "7\\. Design Library",
+        "heading": "7. Design Library",
         "body": "Reusable components are organised for the design workflow.",
         "items": []
       },
       {
-        "heading": "8\\. Development Alignment",
+        "heading": "8. Development Alignment",
         "body": "Where implementation is included, component requirements are aligned with the frontend architecture.",
         "items": []
       },
       {
-        "heading": "9\\. Documentation",
+        "heading": "9. Documentation",
         "body": "Usage rules, examples and component behaviour are documented.",
         "items": []
       },
       {
-        "heading": "10\\. Accessibility Review",
+        "heading": "10. Accessibility Review",
         "body": "Relevant design and interaction considerations are incorporated.",
         "items": []
       },
       {
-        "heading": "11\\. Governance",
+        "heading": "11. Governance",
         "body": "Processes for updates, contributions and maintenance are defined.",
         "items": []
       },
       {
-        "heading": "12\\. Adoption & Handoff",
+        "heading": "12. Adoption & Handoff",
         "body": "Teams receive the system and supporting guidance required to begin using it.\n\nThis matches the strongest lifecycle exposed by the SERP: audit → foundations → tokens → components → implementation → documentation → rollout → governance.",
         "items": []
       },
@@ -22369,12 +22350,12 @@ export const subServicesMd = [
           [
             "Buttons, forms, cards",
             "UI components",
-            "Foundations \\+ components"
+            "Foundations + components"
           ],
           [
             "Mainly design-focused",
             "Design and/or code",
-            "Design \\+ code \\+ documentation"
+            "Design + code + documentation"
           ],
           [
             "Limited rules",
@@ -22804,10 +22785,10 @@ export const subServicesMd = [
     "categorySlug": "web-development",
     "category": "Web Development",
     "title": "Jamstack Development Services UK",
-    "serviceName": "Jamstack Development Services UK \\",
+    "serviceName": "Jamstack Development Services UK",
     "h1": "Jamstack Development Services UK",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/web-development/jamstack-development",
-    "metaTitle": "Jamstack Development Services UK \\- Clickmasters Meta Description",
+    "metaTitle": "Jamstack Development Services UK - Clickmasters",
     "metaDescription": "Jamstack development services in the UK for fast, secure and scalable websites. Get Headless CMS, API integration, migration and ongoing support.",
     "metaKeywords": [
       "jamstack development services",
@@ -23182,47 +23163,47 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We understand the business, users, existing platform, content, integrations and project objectives.",
         "items": []
       },
       {
-        "heading": "2\\. Architecture Assessment",
+        "heading": "2. Architecture Assessment",
         "body": "We determine whether Jamstack provides meaningful technical and commercial benefits.",
         "items": []
       },
       {
-        "heading": "3\\. Technology Selection",
+        "heading": "3. Technology Selection",
         "body": "We evaluate the appropriate frontend architecture, CMS, APIs and deployment approach.",
         "items": []
       },
       {
-        "heading": "4\\. Content Architecture",
+        "heading": "4. Content Architecture",
         "body": "Where a Headless CMS is involved, content structures and editorial requirements are defined.",
         "items": []
       },
       {
-        "heading": "5\\. UX/UI",
+        "heading": "5. UX/UI",
         "body": "We design the user journeys, interface and responsive experience.",
         "items": []
       },
       {
-        "heading": "6\\. Frontend Development",
+        "heading": "6. Frontend Development",
         "body": "The presentation layer is developed around the selected architecture.",
         "items": []
       },
       {
-        "heading": "7\\. CMS & API Integration",
+        "heading": "7. CMS & API Integration",
         "body": "The frontend is connected with required content platforms, backend services and business systems.",
         "items": []
       },
       {
-        "heading": "8\\. Migration",
+        "heading": "8. Migration",
         "body": "Where required, existing content, URLs and data are moved into the new architecture.",
         "items": []
       },
       {
-        "heading": "9\\. Testing & QA",
+        "heading": "9. Testing & QA",
         "body": "We test:",
         "items": [
           "Functionality",
@@ -23237,7 +23218,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "10\\. Deployment & Support",
+        "heading": "10. Deployment & Support",
         "body": "The platform is deployed and can continue to be developed through maintenance, optimisation and new features.\n\nThe SERP's expected journey is similarly structured around discovery, architecture, framework/CMS selection, frontend implementation, API integration, testing, deployment, optimisation and support.",
         "items": []
       },
@@ -23290,7 +23271,7 @@ export const subServicesMd = [
         ],
         "rows": [
           [
-            "Frontend \\+ backend",
+            "Frontend + backend",
             "Usually tightly connected",
             "More decoupled"
           ],
@@ -23683,13 +23664,24 @@ export const subServicesMd = [
     "slug": "mobile-app-design",
     "categorySlug": "design-ui-ux",
     "category": "Design UI/UX",
-    "title": "Mobile App Design Company UK | UI/UX | Clickmasters",
-    "serviceName": "Mobile App Design Company UK | UI/UX",
-    "h1": "Mobile App Design Company UK | UI/UX | Clickmasters",
+    "title": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux/mobile-app-design",
+    "serviceName": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux/mobile-app-design",
+    "h1": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux/mobile-app-design",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux/mobile-app-design",
-    "metaTitle": "Mobile App Design Company UK | UI/UX | Clickmasters",
-    "metaDescription": "Mobile app UI/UX design services in the UK for iOS and Android apps, covering UX research, user flows, wireframes, prototypes, UI design and handoff.",
-    "metaKeywords": [],
+    "metaTitle": "",
+    "metaDescription": "",
+    "metaKeywords": [
+      "mobile app design company",
+      "mobile app design company UK",
+      "mobile app design services",
+      "mobile app design agency",
+      "mobile app design agency UK",
+      "mobile app UI UX design",
+      "mobile app UX design services",
+      "mobile app UI design services",
+      "mobile application design services",
+      "custom mobile app design"
+    ],
     "intro": [
       "Looking for mobile app design services to turn your app idea into a clear, usable and development-ready experience? Effective app design combines user research, UX architecture, user journeys, wireframes, interactive prototypes and interface design to define how people will actually use the product.",
       "Clickmasters provides mobile app UI/UX design services for UK businesses, helping structure and design mobile experiences for new applications, MVPs and existing apps that need improvement.",
@@ -24331,7 +24323,7 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We establish:",
         "items": [
           "Product goals",
@@ -24343,57 +24335,57 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "2\\. UX Research",
+        "heading": "2. UX Research",
         "body": "Where required, available evidence or new user research can help understand user needs and behaviours.",
         "items": []
       },
       {
-        "heading": "3\\. Product Structure",
+        "heading": "3. Product Structure",
         "body": "Core functionality and screen relationships are defined.",
         "items": []
       },
       {
-        "heading": "4\\. Information Architecture",
+        "heading": "4. Information Architecture",
         "body": "Features and information are organised.",
         "items": []
       },
       {
-        "heading": "5\\. User Journeys & Flows",
+        "heading": "5. User Journeys & Flows",
         "body": "Important tasks are mapped from beginning to completion.",
         "items": []
       },
       {
-        "heading": "6\\. Wireframing",
+        "heading": "6. Wireframing",
         "body": "The app structure is translated into individual screens.",
         "items": []
       },
       {
-        "heading": "7\\. Interactive Prototyping",
+        "heading": "7. Interactive Prototyping",
         "body": "Important screens can be connected into realistic journeys.",
         "items": []
       },
       {
-        "heading": "8\\. UX Validation",
+        "heading": "8. UX Validation",
         "body": "Prototype feedback or usability testing can identify issues.",
         "items": []
       },
       {
-        "heading": "9\\. UI Design",
+        "heading": "9. UI Design",
         "body": "Approved structures are translated into detailed mobile interfaces.",
         "items": []
       },
       {
-        "heading": "10\\. Design System",
+        "heading": "10. Design System",
         "body": "Reusable components and interface standards can be established where required.",
         "items": []
       },
       {
-        "heading": "11\\. Responsive & Platform Review",
+        "heading": "11. Responsive & Platform Review",
         "body": "Relevant iOS, Android and device considerations are incorporated.",
         "items": []
       },
       {
-        "heading": "12\\. Developer Handoff",
+        "heading": "12. Developer Handoff",
         "body": "Approved designs and interaction requirements are prepared for engineering.\n\nThis follows the same high-level lifecycle Google is currently rewarding: Discovery → Research → UX Architecture → Wireframes → Prototype → UI → Testing → Design System → Developer Handoff.",
         "items": []
       },
@@ -24982,19 +24974,16 @@ export const subServicesMd = [
     "metaTitle": "Penetration Testing Services UK | Clickmasters",
     "metaDescription": "Penetration testing services in the UK for web apps, APIs, networks, mobile and cloud environments, with risk-led findings, remediation guidance and retesting.",
     "metaKeywords": [
-      "URL:",
-      "Target SEO Keywords",
-      "1. penetration testing services",
-      "2. penetration testing services UK",
-      "3. penetration testing UK",
-      "4. penetration testing company UK",
-      "5. penetration testing company",
-      "6. web application penetration testing",
-      "7. network penetration testing services",
-      "8. application penetration testing",
-      "9. API penetration testing",
-      "10. cyber security penetration testing services",
-      "Meta Tags"
+      "penetration testing services",
+      "penetration testing services UK",
+      "penetration testing UK",
+      "penetration testing company UK",
+      "penetration testing company",
+      "web application penetration testing",
+      "network penetration testing services",
+      "application penetration testing",
+      "API penetration testing",
+      "cyber security penetration testing services"
     ],
     "intro": [
       "Need penetration testing services to identify whether vulnerabilities in your applications, APIs, networks or infrastructure could be exploited? Pen testing goes beyond identifying potential security weaknesses by using controlled attack techniques to evaluate how those weaknesses could affect the systems your organisation relies on.",
@@ -25188,7 +25177,7 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Scoping",
+        "heading": "1. Scoping",
         "body": "We define:\n\nClear scope is important both technically and operationally.",
         "items": [
           "Systems included",
@@ -25202,7 +25191,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "2\\. Attack-Surface Review",
+        "heading": "2. Attack-Surface Review",
         "body": "The agreed target is reviewed to understand:",
         "items": [
           "Accessible functionality",
@@ -25214,7 +25203,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "3\\. Vulnerability Discovery",
+        "heading": "3. Vulnerability Discovery",
         "body": "Potential weaknesses are identified using appropriate testing approaches.\n\nThese may involve a combination of:",
         "items": [
           "Manual investigation",
@@ -25225,12 +25214,12 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "4\\. Controlled Exploitation",
+        "heading": "4. Controlled Exploitation",
         "body": "Where permitted, identified weaknesses are tested to determine whether they can be exploited.\n\nThis can help distinguish a theoretical weakness from a practical security risk.",
         "items": []
       },
       {
-        "heading": "5\\. Risk Validation",
+        "heading": "5. Risk Validation",
         "body": "Findings are evaluated according to factors such as:",
         "items": [
           "Exploitability",
@@ -25242,17 +25231,17 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "6\\. Reporting",
+        "heading": "6. Reporting",
         "body": "Confirmed findings are documented with information that supports remediation.",
         "items": []
       },
       {
-        "heading": "7\\. Remediation",
+        "heading": "7. Remediation",
         "body": "Development or infrastructure teams can address the identified vulnerabilities.",
         "items": []
       },
       {
-        "heading": "8\\. Retesting",
+        "heading": "8. Retesting",
         "body": "Where included within the agreed engagement, remediated findings can be retested to determine whether the original issue has been appropriately addressed.\n\nThe SERP shows that methodology, reporting, remediation and retesting are major provider-selection factors.",
         "items": []
       },
@@ -26000,19 +25989,16 @@ export const subServicesMd = [
     "metaTitle": "Predictive Analytics Services UK | Clickmasters",
     "metaDescription": "Predictive analytics services in the UK for forecasting, predictive modelling, ML development, data integration, deployment and ongoing model monitoring.",
     "metaKeywords": [
-      "Predictive Analytics Services UK",
-      "URL:",
-      "Target SEO Keywords",
-      "1. predictive analytics services",
-      "2. predictive analytics services UK",
-      "3. predictive analytics development",
-      "4. predictive analytics solutions",
-      "5. predictive model development",
-      "6. predictive modelling services",
-      "7. predictive analytics software development",
-      "8. custom predictive analytics",
-      "9. predictive analytics company UK",
-      "10. machine learning predictive analytics"
+      "predictive analytics services",
+      "predictive analytics services UK",
+      "predictive analytics development",
+      "predictive analytics solutions",
+      "predictive model development",
+      "predictive modelling services",
+      "predictive analytics software development",
+      "custom predictive analytics",
+      "predictive analytics company UK",
+      "machine learning predictive analytics"
     ],
     "intro": [
       "`/machine-learning-ml/predictive-analytics`"
@@ -26422,62 +26408,62 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Business Discovery",
+        "heading": "1. Business Discovery",
         "body": "We define the business question, expected prediction and how the output will be used.",
         "items": []
       },
       {
-        "heading": "2\\. Data Assessment",
+        "heading": "2. Data Assessment",
         "body": "Available data sources are reviewed for relevance and suitability.",
         "items": []
       },
       {
-        "heading": "3\\. Data Preparation",
+        "heading": "3. Data Preparation",
         "body": "Relevant data is cleaned, transformed and structured.",
         "items": []
       },
       {
-        "heading": "4\\. Feature Engineering",
+        "heading": "4. Feature Engineering",
         "body": "Useful model inputs are selected or created.",
         "items": []
       },
       {
-        "heading": "5\\. Model Development",
+        "heading": "5. Model Development",
         "body": "Suitable predictive modelling approaches are developed.",
         "items": []
       },
       {
-        "heading": "6\\. Model Training",
+        "heading": "6. Model Training",
         "body": "The selected models are trained using prepared data.",
         "items": []
       },
       {
-        "heading": "7\\. Model Validation",
+        "heading": "7. Model Validation",
         "body": "Performance is measured using suitable evaluation criteria.",
         "items": []
       },
       {
-        "heading": "8\\. Model Optimisation",
+        "heading": "8. Model Optimisation",
         "body": "The selected model can be refined according to performance and production requirements.",
         "items": []
       },
       {
-        "heading": "9\\. Software Integration",
+        "heading": "9. Software Integration",
         "body": "The model is connected with the required application, API, dashboard or workflow.",
         "items": []
       },
       {
-        "heading": "10\\. Deployment",
+        "heading": "10. Deployment",
         "body": "The validated model is prepared for the required production environment.",
         "items": []
       },
       {
-        "heading": "11\\. Monitoring",
+        "heading": "11. Monitoring",
         "body": "Model behaviour and relevant production metrics can be monitored.",
         "items": []
       },
       {
-        "heading": "12\\. Retraining & Improvement",
+        "heading": "12. Retraining & Improvement",
         "body": "Models can be reviewed and updated when data or requirements change.",
         "items": []
       },
@@ -26972,18 +26958,8 @@ export const subServicesMd = [
     "h1": "Product Design for Software & Digital Products",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux/product-design",
     "metaTitle": "Digital Product Design Services UK | Clickmasters",
-    "metaDescription": "Digital product design services in the UK for SaaS, apps and software, covering UX research, product strategy, wireframes, prototypes and UI design. Digital Product Design Services UK",
-    "metaKeywords": [
-      "product design services UK",
-      "digital product design company",
-      "digital product design agency",
-      "software product design services",
-      "SaaS product design",
-      "product UX design",
-      "digital product design UK",
-      "product design company UK",
-      "product design and development services"
-    ],
+    "metaDescription": "Digital product design services in the UK for SaaS, apps and software, covering UX research, product strategy, wireframes, prototypes and UI design.",
+    "metaKeywords": [],
     "intro": [
       "A digital product should not begin with isolated screens.",
       "Before deciding what an interface looks like, the product team needs to understand:",
@@ -27450,7 +27426,7 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We understand:",
         "items": [
           "Product idea",
@@ -27463,57 +27439,57 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "2\\. Research",
+        "heading": "2. Research",
         "body": "We examine available information about users, competitors and the existing product environment.",
         "items": []
       },
       {
-        "heading": "3\\. Product Strategy",
+        "heading": "3. Product Strategy",
         "body": "The product objectives, priorities and key assumptions are structured.",
         "items": []
       },
       {
-        "heading": "4\\. Requirements Definition",
+        "heading": "4. Requirements Definition",
         "body": "Features, user roles, business rules and important workflows are defined.",
         "items": []
       },
       {
-        "heading": "5\\. Information Architecture",
+        "heading": "5. Information Architecture",
         "body": "The product structure and navigation are organised.",
         "items": []
       },
       {
-        "heading": "6\\. User Flows",
+        "heading": "6. User Flows",
         "body": "Important user tasks are mapped.",
         "items": []
       },
       {
-        "heading": "7\\. Wireframing",
+        "heading": "7. Wireframing",
         "body": "Product screens and functionality are structured.",
         "items": []
       },
       {
-        "heading": "8\\. UI Design",
+        "heading": "8. UI Design",
         "body": "The approved UX is developed into the visual interface.",
         "items": []
       },
       {
-        "heading": "9\\. Interactive Prototyping",
+        "heading": "9. Interactive Prototyping",
         "body": "Important journeys can be simulated before development.",
         "items": []
       },
       {
-        "heading": "10\\. Validation",
+        "heading": "10. Validation",
         "body": "Usability and stakeholder feedback can be used to refine the product.",
         "items": []
       },
       {
-        "heading": "11\\. Design System",
+        "heading": "11. Design System",
         "body": "Reusable components and interface rules can be documented.",
         "items": []
       },
       {
-        "heading": "12\\. Developer Handoff",
+        "heading": "12. Developer Handoff",
         "body": "Approved designs are prepared for implementation.\n\nA digital-product competitor such as Cyber-Duck similarly bases product development on research and information architecture before moving iteratively through design and development.",
         "items": []
       },
@@ -28119,19 +28095,16 @@ export const subServicesMd = [
     "metaTitle": "Recommendation System Development Services UK | Clickmasters",
     "metaDescription": "Custom recommendation system development in the UK for personalised recommendations, ML models, API integration, deployment, monitoring and optimisation.",
     "metaKeywords": [
-      "Recommendation System Development Services UK",
-      "URL:",
-      "Target SEO Keywords",
-      "1. recommendation system development services",
-      "2. recommendation system development",
-      "3. recommendation engine development",
-      "4. custom recommendation system development",
-      "5. AI recommendation system development",
-      "6. recommendation system development company",
-      "7. recommendation system development company UK",
-      "8. recommender system development",
-      "9. personalised recommendation system",
-      "10. recommendation engine development services"
+      "recommendation system development services",
+      "recommendation system development",
+      "recommendation engine development",
+      "custom recommendation system development",
+      "AI recommendation system development",
+      "recommendation system development company",
+      "recommendation system development company UK",
+      "recommender system development",
+      "personalised recommendation system",
+      "recommendation engine development services"
     ],
     "intro": [
       "`/machine-learning-ml/recommendation-systems`"
@@ -28675,62 +28648,62 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We define what needs to be recommended, to whom and where recommendations will appear.",
         "items": []
       },
       {
-        "heading": "2\\. Data Assessment",
+        "heading": "2. Data Assessment",
         "body": "Available user, item and interaction data is reviewed.",
         "items": []
       },
       {
-        "heading": "3\\. Recommendation Strategy",
+        "heading": "3. Recommendation Strategy",
         "body": "Suitable recommendation approaches are identified according to the data and product requirements.",
         "items": []
       },
       {
-        "heading": "4\\. Data Preparation",
+        "heading": "4. Data Preparation",
         "body": "Relevant data is cleaned, transformed and structured.",
         "items": []
       },
       {
-        "heading": "5\\. Model Development",
+        "heading": "5. Model Development",
         "body": "Recommendation models are developed around the agreed approach.",
         "items": []
       },
       {
-        "heading": "6\\. Model Evaluation",
+        "heading": "6. Model Evaluation",
         "body": "Recommendation quality is evaluated using suitable metrics.",
         "items": []
       },
       {
-        "heading": "7\\. API & Software Development",
+        "heading": "7. API & Software Development",
         "body": "Supporting services and APIs are developed where required.",
         "items": []
       },
       {
-        "heading": "8\\. Application Integration",
+        "heading": "8. Application Integration",
         "body": "The recommendation engine is connected with the existing product.",
         "items": []
       },
       {
-        "heading": "9\\. Deployment",
+        "heading": "9. Deployment",
         "body": "The approved system is prepared for the production environment.",
         "items": []
       },
       {
-        "heading": "10\\. Monitoring",
+        "heading": "10. Monitoring",
         "body": "Production performance and user interaction signals can be monitored.",
         "items": []
       },
       {
-        "heading": "11\\. Optimisation",
+        "heading": "11. Optimisation",
         "body": "Recommendation logic can be refined based on performance and product objectives.",
         "items": []
       },
       {
-        "heading": "12\\. Retraining",
+        "heading": "12. Retraining",
         "body": "Models can be updated as new behavioural and catalogue data becomes available.",
         "items": []
       },
@@ -29214,20 +29187,16 @@ export const subServicesMd = [
     "metaTitle": "Cyber Security Audit Services UK for Business | Clickmasters",
     "metaDescription": "Cyber security audit services for UK businesses to assess controls, identify security gaps, review risk and support prioritised remediation with Clickmasters.",
     "metaKeywords": [
-      "Cyber Security Audit Services UK",
-      "URL:",
-      "Target SEO Keywords",
-      "1. cyber security audit",
-      "2. cyber security audit services",
-      "3. cyber security audit service",
-      "4. cyber security audit UK",
-      "5. cyber security audits UK",
-      "6. cyber security auditing",
-      "7. IT cyber security audit services",
-      "8. cyber security audit company",
-      "9. cyber security risk audit",
-      "10. cyber security audit and review services",
-      "Meta Tags"
+      "cyber security audit",
+      "cyber security audit services",
+      "cyber security audit service",
+      "cyber security audit UK",
+      "cyber security audits UK",
+      "cyber security auditing",
+      "IT cyber security audit services",
+      "cyber security audit company",
+      "cyber security risk audit",
+      "cyber security audit and review services"
     ],
     "intro": [
       "`/cybersecurity/security-audits`"
@@ -29447,7 +29416,7 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Define Audit Objectives",
+        "heading": "1. Define Audit Objectives",
         "body": "We establish why the audit is being conducted and what the organisation needs to understand.\n\nObjectives can include:",
         "items": [
           "Identifying security gaps",
@@ -29459,7 +29428,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "2\\. Define the Scope",
+        "heading": "2. Define the Scope",
         "body": "The systems and areas included in the audit are agreed.\n\nScope can define:\n\nThis prevents ambiguity over what has and has not been assessed.",
         "items": [
           "Applications",
@@ -29474,7 +29443,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "3\\. Gather Evidence",
+        "heading": "3. Gather Evidence",
         "body": "Relevant evidence is reviewed according to the audit scope.\n\nThis can include:",
         "items": [
           "Policies",
@@ -29488,7 +29457,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "4\\. Evaluate Security Controls",
+        "heading": "4. Evaluate Security Controls",
         "body": "Existing controls are assessed against the agreed audit requirements.\n\nThe objective is to determine whether controls:",
         "items": [
           "Exist",
@@ -29499,7 +29468,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "5\\. Identify Findings",
+        "heading": "5. Identify Findings",
         "body": "Security weaknesses, gaps or control concerns are documented.\n\nA finding should explain:",
         "items": [
           "What was observed",
@@ -29511,7 +29480,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "6\\. Assess & Prioritise Risk",
+        "heading": "6. Assess & Prioritise Risk",
         "body": "Not every finding requires the same urgency.\n\nPrioritisation can consider:",
         "items": [
           "Severity",
@@ -29524,17 +29493,17 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "7\\. Prepare the Audit Report",
+        "heading": "7. Prepare the Audit Report",
         "body": "Audit findings are organised into structured documentation for technical and business review.",
         "items": []
       },
       {
-        "heading": "8\\. Plan Remediation",
+        "heading": "8. Plan Remediation",
         "body": "Recommended actions are prioritised so the organisation can decide what should be addressed first.",
         "items": []
       },
       {
-        "heading": "9\\. Review Improvements",
+        "heading": "9. Review Improvements",
         "body": "Where appropriate, identified areas can be reviewed after remediation to determine whether the relevant issue has been addressed.",
         "items": []
       },
@@ -30132,17 +30101,16 @@ export const subServicesMd = [
     "metaTitle": "Smart Contract Development Services UK | Clickmasters",
     "metaDescription": "Custom smart contract development services in the UK for architecture, coding, testing, integrations, deployment, optimisation and blockchain applications.",
     "metaKeywords": [
-      "1. smart contract development services",
-      "2. smart contract development company",
-      "3. smart contract development company UK",
-      "4. custom smart contract development",
-      "5. smart contract developers",
-      "6. smart contract development UK",
-      "7. blockchain smart contract development",
-      "8. smart contract integration services",
-      "9. secure smart contract development",
-      "10. smart contract development for businesses",
-      "Meta Tags"
+      "smart contract development services",
+      "smart contract development company",
+      "smart contract development company UK",
+      "custom smart contract development",
+      "smart contract developers",
+      "smart contract development UK",
+      "blockchain smart contract development",
+      "smart contract integration services",
+      "secure smart contract development",
+      "smart contract development for businesses"
     ],
     "intro": [
       "Looking for smart contract development services to automate blockchain-based transactions, business rules or application workflows? Smart contracts need carefully structured logic, secure implementation, testing and integration with the wider blockchain application before production deployment.",
@@ -30497,62 +30465,62 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We review the business requirement, application concept and intended smart-contract functionality.",
         "items": []
       },
       {
-        "heading": "2\\. Requirements Analysis",
+        "heading": "2. Requirements Analysis",
         "body": "Contract rules, participants, permissions, transactions and integrations are defined.",
         "items": []
       },
       {
-        "heading": "3\\. Blockchain & Architecture Planning",
+        "heading": "3. Blockchain & Architecture Planning",
         "body": "The contract architecture and relationship with the wider application are structured.",
         "items": []
       },
       {
-        "heading": "4\\. Contract Logic Design",
+        "heading": "4. Contract Logic Design",
         "body": "Business rules are translated into clearly defined smart-contract behaviour.",
         "items": []
       },
       {
-        "heading": "5\\. Smart Contract Development",
+        "heading": "5. Smart Contract Development",
         "body": "The agreed contract functionality is implemented.",
         "items": []
       },
       {
-        "heading": "6\\. Unit Testing",
+        "heading": "6. Unit Testing",
         "body": "Individual functions and expected contract behaviour are tested.",
         "items": []
       },
       {
-        "heading": "7\\. Integration Testing",
+        "heading": "7. Integration Testing",
         "body": "Interactions between contracts, applications, wallets and other system components are tested.",
         "items": []
       },
       {
-        "heading": "8\\. Security Review",
+        "heading": "8. Security Review",
         "body": "Contract logic, permissions and interaction points are reviewed.",
         "items": []
       },
       {
-        "heading": "9\\. Test Deployment",
+        "heading": "9. Test Deployment",
         "body": "The application and smart-contract behaviour can be validated in an appropriate testing environment.",
         "items": []
       },
       {
-        "heading": "10\\. Production Deployment",
+        "heading": "10. Production Deployment",
         "body": "Approved contract functionality is prepared for the production blockchain environment.",
         "items": []
       },
       {
-        "heading": "11\\. Verification & Integration",
+        "heading": "11. Verification & Integration",
         "body": "The deployed contract is connected with the required application components.",
         "items": []
       },
       {
-        "heading": "12\\. Maintenance",
+        "heading": "12. Maintenance",
         "body": "Where the architecture allows, contracts and connected systems can be maintained as requirements evolve.",
         "items": []
       },
@@ -30988,9 +30956,8 @@ export const subServicesMd = [
     "h1": "UX Research Services UK",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux/ux-research",
     "metaTitle": "UX Research Services UK for Digital Products | Clickmasters",
-    "metaDescription": "Meta Description",
+    "metaDescription": "",
     "metaKeywords": [
-      "Meta Tags",
       "ux research services",
       "ux research services UK",
       "user research services",
@@ -31337,7 +31304,7 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Define the Research Question",
+        "heading": "1. Define the Research Question",
         "body": "We start with the decision the research needs to support.\n\nFor example:\n\nA clear research question helps prevent unnecessary research.",
         "items": [
           "Should we change this journey?",
@@ -31348,7 +31315,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "2\\. Understand the Product Context",
+        "heading": "2. Understand the Product Context",
         "body": "We examine the relevant:",
         "items": [
           "Business objective",
@@ -31362,7 +31329,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "3\\. Select the Research Method",
+        "heading": "3. Select the Research Method",
         "body": "The method should follow the research question.\n\nPossible methods can include:",
         "items": [
           "Interviews",
@@ -31375,12 +31342,12 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "4\\. Define Participants",
+        "heading": "4. Define Participants",
         "body": "Where primary user research is required, relevant participant characteristics are established.\n\nThe goal is to speak with people who can provide evidence about the actual research question.",
         "items": []
       },
       {
-        "heading": "5\\. Prepare the Research",
+        "heading": "5. Prepare the Research",
         "body": "Preparation may include:",
         "items": [
           "Discussion guide",
@@ -31393,12 +31360,12 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "6\\. Conduct the Research",
+        "heading": "6. Conduct the Research",
         "body": "Sessions are then carried out using the selected methodology.\n\nThe focus should remain on observing and understanding users rather than steering them toward a preferred answer.",
         "items": []
       },
       {
-        "heading": "7\\. Analyse & Synthesise Findings",
+        "heading": "7. Analyse & Synthesise Findings",
         "body": "Individual observations are reviewed to identify:",
         "items": [
           "Repeated behaviours",
@@ -31411,7 +31378,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "8\\. Prioritise Findings",
+        "heading": "8. Prioritise Findings",
         "body": "Not every observation has the same importance.\n\nFindings can be considered according to:",
         "items": [
           "Frequency",
@@ -31422,7 +31389,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "9\\. Create Recommendations",
+        "heading": "9. Create Recommendations",
         "body": "Research findings can then inform:",
         "items": [
           "Product decisions",
@@ -31435,7 +31402,7 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "10\\. Validate Improvements",
+        "heading": "10. Validate Improvements",
         "body": "Where appropriate, revised designs can be tested again.\n\nThe process becomes:\n\nResearch → Design → Test → Learn → Improve\n\nrather than a one-time research activity.\n\nCDS also describes research as an ongoing process rather than a single project, encouraging continuous testing as needs and audiences change.",
         "items": []
       },
@@ -32197,10 +32164,10 @@ export const subServicesMd = [
     "categorySlug": "design-ui-ux",
     "category": "Design UI/UX",
     "title": "web design company",
-    "serviceName": "Web Design Company UK \\- web UX & Responsive Design \\",
+    "serviceName": "Web Design Company UK - web UX & Responsive Design",
     "h1": "web design company",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux/web-design",
-    "metaTitle": "Web Design Company UK \\- web UX & Responsive Design \\- Clickmasters",
+    "metaTitle": "Web Design Company UK - web UX & Responsive Design - Clickmasters",
     "metaDescription": "Professional web design services for UK businesses, covering UX, wireframes, responsive layouts, UI design and prototypes for modern business websites.",
     "metaKeywords": [
       "web design company",
@@ -32692,7 +32659,7 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We understand:",
         "items": [
           "Business",
@@ -32705,52 +32672,52 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "2\\. Website Strategy",
+        "heading": "2. Website Strategy",
         "body": "We define what the website needs to achieve and which journeys matter most.",
         "items": []
       },
       {
-        "heading": "3\\. Information Architecture",
+        "heading": "3. Information Architecture",
         "body": "Website content and pages are organised into a logical hierarchy.",
         "items": []
       },
       {
-        "heading": "4\\. User Journeys",
+        "heading": "4. User Journeys",
         "body": "Important paths through the website are mapped.",
         "items": []
       },
       {
-        "heading": "5\\. Wireframing",
+        "heading": "5. Wireframing",
         "body": "Core page structures are developed.",
         "items": []
       },
       {
-        "heading": "6\\. Review & Iteration",
+        "heading": "6. Review & Iteration",
         "body": "Layouts are reviewed against business and user requirements.",
         "items": []
       },
       {
-        "heading": "7\\. UI Design",
+        "heading": "7. UI Design",
         "body": "Approved wireframes are translated into detailed visual interfaces.",
         "items": []
       },
       {
-        "heading": "8\\. Responsive Design",
+        "heading": "8. Responsive Design",
         "body": "Relevant screen-size behaviours are defined.",
         "items": []
       },
       {
-        "heading": "9\\. Prototype & Validation",
+        "heading": "9. Prototype & Validation",
         "body": "Important journeys can be connected and reviewed before engineering.",
         "items": []
       },
       {
-        "heading": "10\\. Design System & Components",
+        "heading": "10. Design System & Components",
         "body": "Reusable components can be documented where required.",
         "items": []
       },
       {
-        "heading": "11\\. Developer Handoff",
+        "heading": "11. Developer Handoff",
         "body": "Approved designs are prepared for website development.\n\nThis commercial process is consistent with competitor patterns. Elementary uses discovery, wireframing and prototyping, while Honcho structures its process around discovery, strategy, high-fidelity design, development and QA.",
         "items": []
       },
@@ -32927,7 +32894,7 @@ export const subServicesMd = [
             "Predefined workflow"
           ],
           [
-            "UX \\+ UI capability",
+            "UX + UI capability",
             "Depends on individual",
             "Template-led"
           ],
@@ -33230,7 +33197,18 @@ export const subServicesMd = [
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux/wireframing-prototyping",
     "metaTitle": "Wireframing & Prototyping Services UK | Clickmasters",
     "metaDescription": "Wireframing and prototyping services in the UK for websites, apps and software, covering user flows, responsive wireframes and interactive prototypes.",
-    "metaKeywords": [],
+    "metaKeywords": [
+      "wireframing services",
+      "wireframe design services",
+      "wireframe design services UK",
+      "wireframing services UK",
+      "wireframe design company",
+      "interactive prototyping services",
+      "UX wireframing services",
+      "website wireframe design services",
+      "mobile app wireframing services",
+      "wireframe and prototyping services"
+    ],
     "intro": [
       "Looking for wireframing and prototyping services to define your website, application or software experience before development begins? Wireframes help structure screens, content, navigation and user flows, while interactive prototypes make those journeys easier to review and validate before engineering.",
       "Clickmasters provides wireframe design and interactive prototyping for UK businesses, helping turn product requirements and user journeys into clear, structured digital experiences.",
@@ -33603,7 +33581,7 @@ export const subServicesMd = [
         "items": []
       },
       {
-        "heading": "1\\. Discovery",
+        "heading": "1. Discovery",
         "body": "We begin by understanding:",
         "items": [
           "Business goals",
@@ -33617,52 +33595,52 @@ export const subServicesMd = [
         ]
       },
       {
-        "heading": "2\\. Requirements Definition",
+        "heading": "2. Requirements Definition",
         "body": "We establish the functionality and information that needs to be represented.",
         "items": []
       },
       {
-        "heading": "3\\. Information Architecture",
+        "heading": "3. Information Architecture",
         "body": "The overall product or website structure is organised.",
         "items": []
       },
       {
-        "heading": "4\\. User Flow Mapping",
+        "heading": "4. User Flow Mapping",
         "body": "Important tasks are mapped across screens.",
         "items": []
       },
       {
-        "heading": "5\\. Initial Wireframes",
+        "heading": "5. Initial Wireframes",
         "body": "The core structural approach is translated into screens.",
         "items": []
       },
       {
-        "heading": "6\\. Review",
+        "heading": "6. Review",
         "body": "Wireframes are reviewed against product requirements and important user journeys.",
         "items": []
       },
       {
-        "heading": "7\\. Iteration",
+        "heading": "7. Iteration",
         "body": "Feedback and identified issues are incorporated into revised wireframes.",
         "items": []
       },
       {
-        "heading": "8\\. Responsive States",
+        "heading": "8. Responsive States",
         "body": "Where required, the structure is adapted for relevant device sizes.",
         "items": []
       },
       {
-        "heading": "9\\. Interactive Prototype",
+        "heading": "9. Interactive Prototype",
         "body": "Approved screens can be connected into a prototype representing important interactions.",
         "items": []
       },
       {
-        "heading": "10\\. Validation",
+        "heading": "10. Validation",
         "body": "The prototype can be reviewed with stakeholders or evaluated with users where research forms part of the project.",
         "items": []
       },
       {
-        "heading": "11\\. Design Handoff",
+        "heading": "11. Design Handoff",
         "body": "Approved structures and interactions are prepared for the next design or development stage.\n\nThis closely matches the lifecycle Google currently associates with the service: discovery → requirements → information architecture/user flows → wireframes → validation → iteration → prototype/handoff.",
         "items": []
       },

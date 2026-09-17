@@ -31,6 +31,7 @@ const DOMAIN = 'https://clickmasterssoftwaredevelopmentcompany.co.uk';
 
 function clean(text) {
   return String(text || '')
+    .replace(/\\/g, '')
     .replace(/\*\*/g, '')
     .replace(/`/g, '')
     .replace(/\s+/g, ' ')
@@ -74,8 +75,8 @@ function extractSchemas(content) {
   while ((match = scriptRegex.exec(content)) !== null) {
     try {
       const cleanJson = match[1]
+        .replace(/\\/g, '')
         .replace(/\*\*/g, '')
-        .replace(/\\([/[\]#])/g, '$1')
         .replace(/[ \t]+$/gm, '')
         .trim();
       const parsed = JSON.parse(cleanJson);
@@ -97,7 +98,7 @@ function extractSchemas(content) {
 // ─── Keyword Extractor ────────────────────────────────────────────────────────
 
 function extractKeywords(content) {
-  const kwSectionMatch = content.match(/(?:Meta\s*Keywords?|Recommended\s*Meta\s*Data)[\s\S]*?(?=(?:Page\s*Content|URL:|\*\*URL:|Meta\s*Title|Meta\s*Description|#\s*\*\*H1|##\s*\*\*H1|#\s+\*\*))/i);
+  const kwSectionMatch = content.match(/(?:Meta\s*Keywords?|Target\s+SEO\s+Keywords?|Recommended\s*Meta\s*Data)[\s\S]*?(?=(?:Page\s*Content|URL:|\*\*URL:|Meta\s*Title|Meta\s*Description|#\s*\*\*H1|##\s*\*\*H1|#\s+\*\*))/i);
   if (!kwSectionMatch) return [];
 
   const raw = kwSectionMatch[0];
@@ -110,13 +111,19 @@ function extractKeywords(content) {
 
   const lines = raw.split(/\r?\n/);
   for (const line of lines) {
-    const cleaned = clean(line.replace(/#+/g, '').replace(/`[^`]+`/g, ''));
-    if (cleaned && !/meta keyword|recommended meta|page content/i.test(cleaned) && cleaned.length > 3) {
-      const parts = cleaned.split(/,\s*/);
-      for (const p of parts) {
-        if (p.trim().length > 2 && !/meta keyword|recommended meta/i.test(p)) {
-          keywords.push(p.trim());
-        }
+    let cleaned = clean(line.replace(/#+/g, '').replace(/`[^`]+`/g, ''));
+    if (!cleaned) continue;
+    // Filter out known section headings and noise before splitting
+    if (/^(meta keywords?|target seo keywords?|recommended meta data|url:|page content)$/i.test(cleaned)) continue;
+    if (/^(meta keyword|recommended meta|page content)/i.test(cleaned)) continue;
+    // Strip numbering like "1. ", "2. "
+    cleaned = cleaned.replace(/^\d+\.\s*/, '').trim();
+    if (!cleaned || cleaned.length <= 3) continue;
+    const parts = cleaned.split(/,\s*/);
+    for (const p of parts) {
+      const trimmed = p.trim();
+      if (trimmed.length > 2 && !/meta keyword|recommended meta|meta title|meta description|meta tag|page content|^url:$/i.test(trimmed)) {
+        keywords.push(trimmed);
       }
     }
   }
@@ -124,7 +131,12 @@ function extractKeywords(content) {
   const seen = new Set();
   return keywords.filter(k => {
     const lower = k.toLowerCase().trim();
-    if (!lower || seen.has(lower) || lower.includes('page content')) return false;
+    if (!lower || seen.has(lower)) return false;
+    if (lower.includes('page content') || lower.startsWith('http') || lower.startsWith('https')) return false;
+    if (lower.includes('meta title') || lower.includes('meta description') || lower.includes('meta keyword') || lower.includes('meta tag')) return false;
+    if (k.includes('|') && k.length < 120) return false;
+    if (lower.startsWith('custom ') && lower.length > 80) return false;
+    if (lower.startsWith('clickmasters') && lower.length > 50) return false;
     seen.add(lower);
     return true;
   });
@@ -152,14 +164,14 @@ function parseMainMd(content) {
     jsonLd: extractSchemas(content),
   };
 
-  // 1. Meta Title
-  const titleMatch = content.match(/(?:#*\s*\**Meta Title:?\**\s*|\n##\s*\*\*Meta Title\*\*\s*\n+)([^\n]+)/i);
+  // 1. Meta Title (handles ## **Meta Title**, ## **`Meta Title`**, and inline Meta Title:)
+  const titleMatch = content.match(/(?:#*\s*\**`?Meta Title`?[:\s]*\**\s*|\n##\s*\*\*`?Meta Title`?\*\*\s*\n+)([^\n]+?)(?=\s*\*\*|$)/im);
   if (titleMatch) {
     out.metaTitle = clean(titleMatch[1]);
   }
 
-  // 2. Meta Description
-  const descMatch = content.match(/(?:#*\s*\**Meta Description:?\**\s*|\n##\s*\*\*Meta Description\*\*\s*\n+)([^\n]+)/i);
+  // 2. Meta Description (handles ## **Meta Description**, ## **`Meta Description`**, and inline)
+  const descMatch = content.match(/(?:#*\s*\**`?Meta Description`?[:\s]*\**\s*|\n##\s*\*\*`?Meta Description`?\*\*\s*\n+)([^\n]+?)(?=\s*\*\*|$)/im);
   if (descMatch) {
     out.metaDescription = clean(descMatch[1]);
   }
@@ -173,7 +185,20 @@ function parseMainMd(content) {
   }
 
   // 4. H1 & Intro
-  const h1Match = content.match(/#+\s*\**H1:\s*([^\n*]+)\**/i) || content.match(/#+\s*\*\*([^\n*]+)\*\*/);
+  let h1Match = content.match(/#+\s*\**H1:\s*([^\n*]+)\**/i);
+  if (!h1Match) {
+    const boldHeadings = [...content.matchAll(/#+\s*\*\*([^\n*]+)\*\*/g)];
+    for (const m of boldHeadings) {
+      const val = clean(m[1]).toLowerCase();
+      if (/^meta (title|description|keyword|data|tag)/i.test(val)) continue;
+      if (/^https?:\/\//.test(val)) continue;
+      if (/^seo\b/i.test(val)) continue;
+      if (/^recommended meta/i.test(val)) continue;
+      if (val.length < 5) continue;
+      h1Match = m;
+      break;
+    }
+  }
   if (h1Match) {
     out.h1 = clean(h1Match[1]);
     out.title = out.h1;

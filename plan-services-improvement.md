@@ -437,6 +437,28 @@ Both files **must stay** — they are the content-richness layer for the main se
 
 ---
 
+## 10. Executed — Meta Keywords Fix & Escaping Normalization (Completed)
+
+**Executed:** September 17, 2026
+
+| # | File / Component | Purpose / Change | Status |
+|---|------------------|------------------|:------:|
+| 1 | `scripts/convert-sub-services-md.js` | `clean()` now strips backslashes; `extractKeywords()` splits bold-separated keywords, filters section headings/CTAs/URL noise, splits numbered lists, and stops at URL boundaries | ✅ |
+| 2 | `scripts/convert-main-services-md.js` | Same `clean()` backslash fix; `extractKeywords()` filters numbered lists, section headings, and noise; H1 extraction skips metadata headings like `## **Recommended Meta Data**` | ✅ |
+| 3 | `data/sub-services.js` | Converted 13 hand-written `metaKeywords` strings to arrays; added `cleanMetaKeywords()` runtime filter in overlay path that removes corrupted MD keyword entries before fallback | ✅ |
+| 4 | `data/main-services.js` | Converted string `metaKeywords` to array; added `cleanMetaKeywords()` in `getServiceData()` overlay path | ✅ |
+| 5 | `data/sub-services-md.js` | Re-generated 39 entries with cleaned keywords, H1/title/metaTitle/metaDescription, no backslashes | ✅ |
+| 6 | `data/main-services-md.js` | Re-generated 7 entries with cleaned keywords and normalized fields | ✅ |
+
+### Why this matters
+
+- **SEO:** `metaKeywords` arrays now contain actual search terms, not Markdown artifacts, section headings, or CTA labels. Search engines indexing these fields will see clean, relevant keywords.
+- **Data consistency:** All `metaKeywords` values are now uniformly arrays. Runtime overlay logic always returns arrays, eliminating type mismatches between string and array consumers.
+- **Content quality:** `serviceName`, `metaTitle`, `intro`, `sections`, and JSON-LD schemas no longer contain Markdown escape artifacts (`\-`, `\<`, `\]`, `\\#`).
+- **Resilience:** The overlay layer actively sanitizes MD-extracted keywords before exposing them to pages, preventing parser drift from breaking production SEO.
+
+---
+
 ## 11. Executed — MD Conversion Pipeline & Non-Destructive Overlay Architecture (Completed)
 
 **Executed:** September 1, 2026 | **Parser fixes:** September 10, 2026
@@ -532,6 +554,35 @@ Both files **must stay** — they are the content-richness layer for the main se
 
 ---
 
-**Last Updated:** September 17, 2026 (v7 — added Cybersecurity, ML, Blockchain main services + 11 new sub-services, JSON-LD extraction fix, slug alias fixes, all 41 pages verified)
+## 12. Current State & Why It Matters (Updated Sep 17, 2026)
 
+### What we improved this session
+
+| Area | Problem | Fix | Impact |
+|------|---------|-----|--------|
+| `metaKeywords` extraction | Bold markers, CTA labels, section headings, URL artifacts, and Markdown escapes were leaking into keyword arrays | Parser strips `**...**`, splits bold-separated tokens, filters noise (`CTA:`, `Who We Are`, `URL:`, `Target SEO Keywords`), stops at URL boundaries, strips numbering and backslashes | Clean SEO keywords across 39 sub-service + 7 main-service pages |
+| `metaKeywords` data type | 13 sub-service overrides and 1 main-service override stored keywords as strings instead of arrays | Converted all to arrays; added `cleanMetaKeywords()` runtime sanitizer in overlay paths | Type consistency; no runtime crashes or malformed meta tags |
+| H1/title/metaTitle/metaDescription | Inline bold format and single-line MDs caused parser to grab meta section headings instead of real H1 | Parser now checks inline bold phrases on line 1 first; main-services parser skips metadata headings | Correct page titles and H1s for all 46 MD-driven pages |
+| Backslash artifacts | Source MDs contained Markdown escapes (`\-`, `\<`, `\]`, `\\#`) that survived into JSON output | `clean()` and JSON-LD cleanup now strip all `\` characters | No more `\\` in rendered `serviceName`, `metaTitle`, or schema JSON |
+
+### How the architecture works now
+
+1. **Source of truth:** 39 sub-service and 7 main-service Markdown files in `sub-services/` and `main-services/`
+2. **Conversion:** `convert-sub-services-md.js` and `convert-main-services-md.js` parse MD → `data/sub-services-md.js` and `data/main-services-md.js`
+3. **Non-destructive overlay:** `data/sub-services.js` and `data/main-services.js` merge MD-rich fields over hand-written overrides, preserving 100% of curated data for the 91+ services without MD files
+4. **Runtime sanitization:** `cleanMetaKeywords()` and `isCorruptedH1()` guard the overlay against parser drift or corrupted source data
+5. **Build verification:** All 1,586 static pages pre-render cleanly after each conversion
+
+### Why it matters
+
+- **SEO integrity:** Search engines and social scrapers read `metaKeywords`, `metaTitle`, and `metaDescription` directly from page metadata. Garbage keywords or broken titles hurt rankings and click-through rates.
+- **Data reliability:** Converting string `metaKeywords` to arrays and adding runtime sanitization prevents subtle bugs where consumers expect arrays but receive strings.
+- **Maintainability:** The converter fixes are idempotent — re-running `node scripts/convert-*.js` after editing any MD file produces clean output without manual cleanup.
+- **User-facing quality:** Removing backslash artifacts from `serviceName`, `metaTitle`, and schema JSON ensures rendered pages and structured data look professional when shared or indexed.
+
+---
+
+**Last Updated:** September 17, 2026 (v9 — metaKeywords cleanup, backslash stripping, runtime sanitization, array normalization)
+**Main Reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md)
+**Execution Plan:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md)
 

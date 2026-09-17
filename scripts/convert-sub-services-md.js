@@ -42,6 +42,7 @@ function stripEmojis(text) {
 function clean(text) {
   return stripEmojis(
     String(text || '')
+      .replace(/\\/g, '')
       .replace(/\*\*/g, '')
       .replace(/`/g, '')
       .replace(/^#+\s*/, '')
@@ -89,8 +90,8 @@ function extractSchemas(content) {
   while ((match = scriptRegex.exec(content)) !== null) {
     try {
       const cleanJson = match[1]
+        .replace(/\\/g, '')
         .replace(/\*\*/g, '')
-        .replace(/\\([/[\]#])/g, '$1')
         .replace(/[ \t]+$/gm, '')
         .trim();
       const parsed = JSON.parse(cleanJson);
@@ -112,63 +113,78 @@ function extractSchemas(content) {
 // ─── Keyword Extractor ────────────────────────────────────────────────────────
 
 function extractKeywords(content) {
-  const m = content.match(/^[\s\S]*?(?=(?:##?\s*\**Meta Title|\*\*Meta Title:|Meta Title:|#+\s*\**H1|\n##\s*\*\*Who We Are))/i);
-  if (!m) return [];
-
-  const top = m[0];
-  const lines = top.split(/\r?\n/);
   const keywords = [];
 
-  // 1. Backtick phrases
-  const backticks = top.match(/`([^`]+)`/g);
-  if (backticks && backticks.length > 2) {
-    backticks.forEach(b => {
-      const cleanB = b.replace(/[`*]/g, '').trim();
-      if (cleanB.length > 2 && !/meta keyword|recommended meta/i.test(cleanB)) {
-        keywords.push(cleanB);
-      }
+  // Find keyword section by locating the header, then grab content until next major heading
+  const kwHeaderRe = /\**`?(?:Meta\s*Keywords?|Target\s+SEO\s*Keywords?|Meta\s*Tags)`?\**[:\s]*/im;
+  const kwMatch = content.match(kwHeaderRe);
+  if (kwMatch) {
+    const startIdx = kwMatch.index + kwMatch[0].length;
+    // Grab content after header until next major heading or URL marker
+    const rest = content.substring(startIdx);
+    const nextHeading = rest.match(/\n(?:#{1,3}\s+\*\*|URL:\s*|\*\*URL:\s*)/);
+    const section = nextHeading ? rest.substring(0, nextHeading.index) : rest.substring(0, 3000);
+
+    // Split into lines and also handle inline keywords on the header line
+    const allText = kwMatch[0] + section;
+    const lines = allText.split(/\r?\n/);
+    lines.forEach(line => {
+      let l = line.trim();
+      if (!l) return;
+      // Strip the header prefix if present
+      l = l.replace(/^#*\s*\**`?(?:Meta\s*Keywords?|Target\s+SEO\s*Keywords?|Meta\s*Tags)`?\**[:\s]*/i, '').trim();
+      if (!l) return;
+      // Skip known section-heading noise
+      if (/^(target seo keywords|meta keywords?|meta tags?|url:|cta:|secondary cta:|who we are|page content|recommended meta data)$/i.test(l)) return;
+      // Split on double-spaces (inline format) or process as individual lines
+      const parts = l.split(/\s{2,}/);
+      parts.forEach(p => {
+        let cleaned = p.replace(/^\d+\.\s*/, '').replace(/^[#*`\s]+/, '').replace(/[#*`\s]+$/, '').replace(/\\/g, '').trim();
+        if (!cleaned) return;
+        // If bold markers remain in the middle, split on them (e.g. **kw1** **kw2**)
+        if (cleaned.includes('**')) {
+          const subParts = cleaned.split(/\*\*\s*/).filter(s => s.trim().length > 0);
+          subParts.forEach(sp => {
+            const finalClean = sp.replace(/\*\*/g, '').replace(/\\/g, '').trim();
+            if (finalClean.length > 2 && finalClean.length < 120 && !/meta keyword|meta title|meta desc|meta tag|https?:\/\//i.test(finalClean)) {
+              keywords.push(finalClean);
+            }
+          });
+        } else {
+          if (cleaned.length > 2 && cleaned.length < 120 && !/meta keyword|meta title|meta desc|meta tag|https?:\/\//i.test(cleaned)) {
+            keywords.push(cleaned);
+          }
+        }
+      });
     });
   }
 
-  // 2. Lines containing Meta Keywords or bold lists
-  lines.forEach(line => {
-    let l = line.trim();
-    if (!l || l.startsWith('http') || l.startsWith('[http') || l.startsWith('URL:') || l.startsWith('`http')) return;
-    
-    if (/Meta\s*Keywords?/i.test(l)) {
-      l = l.replace(/^#*\s*\**`?Meta\s*Keywords?`?\**\s*/i, '').trim();
-      // Split on double-spaces, tabs, newlines, or commas
-      const parts = l.split(/(?: {2,}|\t+|\n+|,)/);
-      parts.forEach(p => {
-        const cp = p.replace(/[`*#]/g, '').trim();
-        if (cp.length > 2 && !/meta keyword|meta title|meta desc/i.test(cp)) {
-          keywords.push(cp);
-        }
-      });
-    }
-
-    // Bold phrase lines
-    const boldMatches = l.match(/\*\*([^*]+)\*\*/g);
+  // Fallback: extract bold phrases from the meta section (before Meta Title header)
+  if (keywords.length === 0) {
+    const metaTitleIdx = content.search(/##?\s*\**`?Meta Title`?\**/i);
+    const topSection = metaTitleIdx > 0 ? content.substring(0, metaTitleIdx) : content.substring(0, 2000);
+    const boldMatches = topSection.match(/\*\*([^*]+)\*\*/g);
     if (boldMatches) {
       boldMatches.forEach(bm => {
-        const c = bm.replace(/\*\*/g, '').replace(/`/g, '').trim();
-        if (c.length > 2 && !/meta keyword|recommended meta|page content|who we are/i.test(c) && !c.startsWith('http')) {
+        const c = bm.replace(/\*\*/g, '').replace(/`/g, '').replace(/\\/g, '').trim();
+        if (c.length > 2 && c.length < 80 && !/meta keyword|meta tag|recommended meta|meta title|meta desc|https?:\/\//i.test(c) && !c.startsWith('http')) {
           keywords.push(c);
         }
       });
     }
-
-    // Single line keyword (if line is short and non-heading)
-    const cleanLine = l.replace(/^[#*`\s]+|[#*`\s]+$/g, '').trim();
-    if (cleanLine.length > 2 && cleanLine.length < 80 && !/meta keyword|recommended meta|page content|url:/i.test(cleanLine) && !cleanLine.startsWith('http')) {
-      keywords.push(cleanLine);
-    }
-  });
+  }
 
   const seen = new Set();
   return keywords.filter(k => {
     const lower = k.toLowerCase().trim();
-    if (!lower || seen.has(lower) || lower.includes('page content') || lower.startsWith('http') || lower.includes('meta title') || lower.includes('meta description')) return false;
+    if (!lower || seen.has(lower)) return false;
+    if (lower.includes('page content') || lower.startsWith('http') || lower.startsWith('https')) return false;
+    if (lower.includes('meta title') || lower.includes('meta description') || lower.includes('meta keyword') || lower.includes('meta tag')) return false;
+    if (lower === 'url:' || lower.startsWith('url:')) return false;
+    // Filter out meta titles (contain | separator for site name) and meta descriptions (long text)
+    if (k.includes('|') && k.length < 120) return false;  // metaTitle pattern: "Service | Clickmasters"
+    if (lower.startsWith('custom ') && lower.length > 80) return false;  // metaDescription pattern
+    if (lower.startsWith('clickmasters') && lower.length > 50) return false;  // metaDescription starting with company name
     seen.add(lower);
     return true;
   });
@@ -199,14 +215,14 @@ function parseMd(content) {
     jsonLd: extractSchemas(content),
   };
 
-  // 1. Meta Title
-  const titleMatch = content.match(/(?:#*\s*\**Meta Title:?\**\s*|\n##\s*\*\*Meta Title\*\*\s*\n+)([^\n]+)/i);
+  // 1. Meta Title (handles ## **Meta Title**, ## **`Meta Title`**, and inline Meta Title:)
+  const titleMatch = content.match(/(?:#*\s*\**`?Meta Title`?[:\s]*\**\s*|\n##\s*\*\*`?Meta Title`?\*\*\s*\n+)([^\n]+?)(?=\s*\*\*|$)/im);
   if (titleMatch) {
     out.metaTitle = clean(titleMatch[1]);
   }
 
-  // 2. Meta Description
-  const descMatch = content.match(/(?:#*\s*\**Meta Description:?\**\s*|\n##\s*\*\*Meta Description\*\*\s*\n+)([^\n]+)/i);
+  // 2. Meta Description (handles ## **Meta Description**, ## **`Meta Description`**, and inline)
+  const descMatch = content.match(/(?:#*\s*\**`?Meta Description`?[:\s]*\**\s*|\n##\s*\*\*`?Meta Description`?\*\*\s*\n+)([^\n]+?)(?=\s*\*\*|$)/im);
   if (descMatch) {
     out.metaDescription = clean(descMatch[1]);
   }
@@ -240,18 +256,35 @@ function parseMd(content) {
   }
 
   // 4. H1 & Intro
-  const h1MatchExplicit = content.match(/#+\s*\**H1:\s*([^\n*]+)\**/i);
-  let h1Match = h1MatchExplicit;
-  if (!h1Match) {
-    const boldHeadings = [...content.matchAll(/#+\s*\*\*([^\n*]+)\*\*/g)];
-    for (const m of boldHeadings) {
-      const val = clean(m[1]).toLowerCase();
-      if (/^meta (title|description|keyword)/i.test(val)) continue;
-      if (/^https?:\/\//.test(val)) continue;
-      if (/^seo\b/i.test(val)) continue;
-      if (val.length < 5) continue;
-      h1Match = m;
+  let h1Match = null;
+
+  // First, try inline H1 on line 1 (for single-line format MDs like custom-software-development)
+  const firstLine = content.split('\n')[0];
+  const inlineBolds = [...firstLine.matchAll(/\*\*([^*]+)\*\*/g)];
+  for (let i = inlineBolds.length - 1; i >= 0; i--) {
+    const val = clean(inlineBolds[i][1]);
+    if (/^meta (title|description|keyword|tag|data)/i.test(val)) continue;
+    if (val.length > 5) {
+      h1Match = inlineBolds[i];
       break;
+    }
+  }
+
+  // Fallback: explicit H1 declaration or markdown headings
+  if (!h1Match) {
+    const h1MatchExplicit = content.match(/#+\s*\**H1:\s*([^\n*]+)\**/i);
+    h1Match = h1MatchExplicit;
+    if (!h1Match) {
+      const boldHeadings = [...content.matchAll(/#+\s*\*\*([^\n*]+)\*\*/g)];
+      for (const m of boldHeadings) {
+        const val = clean(m[1]).toLowerCase();
+        if (/^meta (title|description|keyword)/i.test(val)) continue;
+        if (/^https?:\/\//.test(val)) continue;
+        if (/^seo\b/i.test(val)) continue;
+        if (val.length < 5) continue;
+        h1Match = m;
+        break;
+      }
     }
   }
   if (h1Match) {
