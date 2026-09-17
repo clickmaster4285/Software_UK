@@ -68,14 +68,15 @@ function startsListMarker(line) {
 
 function extractSchemas(content) {
   const schemas = {};
-  const scriptRegex = /<script\s+type=["']application\/ld\+json["']>([\s\S]*?)<\/script>/gi;
+  const scriptRegex = /\\?<script\s+type=["']application\/ld\+json["']\\?>([\s\S]*?)\\?<\/script\\?>/gi;
   let match;
 
   while ((match = scriptRegex.exec(content)) !== null) {
     try {
       const cleanJson = match[1]
         .replace(/\*\*/g, '')
-        .replace(/\\([/])/g, '$1')
+        .replace(/\\([/[\]#])/g, '$1')
+        .replace(/[ \t]+$/gm, '')
         .trim();
       const parsed = JSON.parse(cleanJson);
       const type = parsed['@type'];
