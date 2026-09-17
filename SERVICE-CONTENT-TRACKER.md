@@ -21,9 +21,9 @@
 |-------|-------------|--------|
 | **Phase 1** | Source-of-truth pipeline (convert scripts, lightweight exports, lookup fns) | 🔧 Partial — scripts created, overlay working, lightweight exports not yet split |
 | **Phase 2** | Fix live pages (imports, navbar, dead code) | ✅ Done — slugify extracted, mid-file imports fixed, dead import removed |
-| **Phase 3** | Content quality (intro, tables, costFactors, whyChoose, FAQs, links) | 🔧 Partial — Design UI/UX entries have all fields; original 21 entries need re-verify |
+| **Phase 3** | Content quality (intro, tables, costFactors, whyChoose, FAQs, links) | 🔧 Partial — 39 sub-services + 7 main services converted; 102 override-only remain |
 | **Phase 4** | Performance/SEO (split data file, lazy-load, canonical, schema, sitemap) | 🔲 Not started |
-| **Phase 5** | Validate (build, canonical audit, sample pages, Lighthouse, JSON-LD) | 🔲 Not started |
+| **Phase 5** | Validate (build, canonical audit, sample pages, Lighthouse, JSON-LD) | 🔧 Partial — JSON-LD extraction fixed; all 41 pages verified 200 |
 
 ---
 
@@ -36,7 +36,7 @@
 | 3 | Mobile Development | `mobile-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (11).md` | ✅ |
 | 4 | Design UI/UX | `design-ui-ux` | `main-services/Uiux main.md` | ✅ |
 | 5 | Artificial Intelligence (AI) | `artificial-intelligence-ai` | — | 🔲 |
-| 6 | Machine Learning (ML) | `machine-learning-ml` | — | 🔲 |
+| 6 | Machine Learning (ML) | `machine-learning` | `main-services/Machine Learining.md` | ✅ Added Sep 17 |
 | 7 | NLP & Computer Vision | `nlp-computer-vision` | — | 🔲 |
 | 8 | Data Services | `data-services` | — | 🔲 |
 | 9 | Data & Intelligence | `data-intelligence` | — | 🔲 |
@@ -44,14 +44,14 @@
 | 11 | Automation & Integration | `automation-integration` | — | 🔲 |
 | 12 | Cloud & DevOps | `cloud-devops` | — | 🔲 |
 | 13 | Database Services | `database-services` | — | 🔲 |
-| 14 | Cybersecurity | `cybersecurity` | — | 🔲 |
+| 14 | Cybersecurity | `cybersecurity` | `main-services/Cyber Security.md` | ✅ Added Sep 17 |
 | 15 | Testing & QA | `testing-qa` | — | 🔲 |
 | 16 | Support & Outsourcing | `support-outsourcing` | — | 🔲 |
-| 17 | Blockchain & Web3 | `blockchain-and-web3` | — | 🔲 |
+| 17 | Blockchain & Web3 | `blockchain-and-web3` | `main-services/block chain.md` | ✅ Added Sep 17 |
 | 18 | IoT & Emerging Tech | `iot-emerging-tech` | — | 🔲 |
 | 19 | Immersive Tech | `immersive-tech` | — | 🔲 |
 
-**Converted: 4 / 19 main services**
+**Converted: 7 / 19 main services**
 
 ---
 
@@ -130,10 +130,10 @@
 |---|-------------|------|:--------:|:-------:|--------|
 | 1 | Machine Learning Solutions | `machine-learning-solutions` | ✅ | 🔲 | 🔧 Override only |
 | 2 | Machine Learning Experts | `machine-learning-experts` | ✅ | 🔲 | 🔧 Override only |
-| 3 | Predictive Analytics | `predictive-analytics` | ✅ | 🔲 | 🔧 Override only |
-| 4 | Recommendation Systems | `recommendation-systems` | ✅ | 🔲 | 🔧 Override only |
-| 5 | Model Training Optimisation | `model-training-optimisation` | ✅ | 🔲 | 🔧 Override only |
-| 6 | Deep Learning Solutions | `deep-learning-solutions` | ✅ | 🔲 | 🔧 Override only |
+| 3 | Predictive Analytics | `predictive-analytics` | ✅ | ✅ | ✅ Added Sep 17 |
+| 4 | Recommendation Systems | `recommendation-systems` | ✅ | ✅ | ✅ Added Sep 17 |
+| 5 | Model Training Optimisation | `model-training-optimisation` | ✅ | ✅ | ✅ Added Sep 17 |
+| 6 | Deep Learning Solutions | `deep-learning-solutions` | ✅ | ✅ | ✅ Added Sep 17 |
 | 7 | Deep Learning Experts | `deep-learning-experts` | ✅ | 🔲 | 🔧 Override only |
 
 ### NLP & Computer Vision (6 sub-services)
@@ -225,10 +225,10 @@
 | # | Sub-Service | Slug | Override | MD Data | Status |
 |---|-------------|------|:--------:|:-------:|--------|
 | 1 | Cybersecurity Services | `cybersecurity-services` | ✅ | 🔲 | 🔧 Override only |
-| 2 | Security Audits | `security-audits` | ✅ | 🔲 | 🔧 Override only |
-| 3 | Penetration Testing | `penetration-testing` | ✅ | 🔲 | 🔧 Override only |
+| 2 | Security Audits | `security-audits` | ✅ | ✅ | ✅ Added Sep 17 |
+| 3 | Penetration Testing | `penetration-testing` | ✅ | ✅ | ✅ Added Sep 17 |
 | 4 | Vulnerability Assessment | `vulnerability-assessment` | ✅ | 🔲 | 🔧 Override only |
-| 5 | Compliance & Risk Management | `compliance-risk-management` | ✅ | 🔲 | 🔧 Override only |
+| 5 | Compliance & Risk Management | `compliance-risk-management` | ✅ | ✅ | ✅ Added Sep 17 |
 | 6 | Application Security | `application-security` | ✅ | 🔲 | 🔧 Override only |
 
 ### Testing & QA (6 sub-services)
@@ -257,11 +257,11 @@
 | # | Sub-Service | Slug | Override | MD Data | Status |
 |---|-------------|------|:--------:|:-------:|--------|
 | 1 | Blockchain Development | `blockchain-development` | ✅ | 🔲 | 🔧 Override only |
-| 2 | Smart Contract Development | `smart-contract-development` | ✅ | 🔲 | 🔧 Override only |
-| 3 | DApp Development | `dapp-development` | ✅ | 🔲 | 🔧 Override only |
+| 2 | Smart Contract Development | `smart-contract-development` | ✅ | ✅ | ✅ Added Sep 17 |
+| 3 | DApp Development | `decentralized-app-dapp-development` | ✅ | ✅ | ✅ Added Sep 17 |
 | 4 | Web3 Development | `web3-development` | ✅ | 🔲 | 🔧 Override only |
-| 5 | Crypto Wallet Development | `crypto-wallet-development` | ✅ | 🔲 | 🔧 Override only |
-| 6 | NFT Marketplace Development | `nft-marketplace-development` | ✅ | 🔲 | 🔧 Override only |
+| 5 | Crypto Wallet Development | `crypto-wallet-development` | ✅ | ✅ | ✅ Added Sep 17 |
+| 6 | NFT Marketplace Development | `nft-marketplace-development` | ✅ | ✅ | ✅ Added Sep 17 |
 | 7 | Token Development | `token-development` | ✅ | 🔲 | 🔧 Override only |
 
 ### IoT & Emerging Tech (4 sub-services)
@@ -289,12 +289,12 @@
 | Metric | Count |
 |--------|------:|
 | Total categories | 19 |
-| Main services with MD data | **4** |
-| Main services remaining | 15 |
+| Main services with MD data | **7** |
+| Main services remaining | 12 |
 | Total sub-services | **130** |
-| Sub-services with MD data | **28** |
-| Sub-services override-only (no MD) | **102** |
-| Sub-services with both override + MD | **28** |
+| Sub-services with MD data | **39** |
+| Sub-services override-only (no MD) | **91** |
+| Sub-services with both override + MD | **39** |
 
 ### By Category
 
@@ -305,7 +305,7 @@
 | Mobile Development | 6 | 5 | 1 | 0 |
 | Design UI/UX | 7 | 6 | 1 | 0 |
 | AI | 10 | 0 | 10 | 0 |
-| ML | 7 | 0 | 7 | 0 |
+| ML | 7 | 5 | 2 | 0 |
 | NLP & Computer Vision | 6 | 0 | 6 | 0 |
 | Data Services | 6 | 0 | 6 | 0 |
 | Data & Intelligence | 9 | 0 | 9 | 0 |
@@ -313,10 +313,10 @@
 | Automation & Integration | 6 | 0 | 6 | 0 |
 | Cloud & DevOps | 9 | 0 | 9 | 0 |
 | Database Services | 5 | 0 | 5 | 0 |
-| Cybersecurity | 6 | 0 | 6 | 0 |
+| Cybersecurity | 6 | 3 | 3 | 0 |
 | Testing & QA | 6 | 0 | 6 | 0 |
 | Support & Outsourcing | 5 | 0 | 5 | 0 |
-| Blockchain & Web3 | 7 | 0 | 7 | 0 |
+| Blockchain & Web3 | 7 | 4 | 3 | 0 |
 | IoT & Emerging Tech | 4 | 0 | 4 | 0 |
 | Immersive Tech | 4 | 0 | 4 | 0 |
 
@@ -326,11 +326,13 @@
 
 ### 🔴 High Priority
 
-- [ ] **Re-verify original 28 entries** — Run `node scripts/convert-sub-services-md.js` and confirm non-Design entries weren't broken by parser changes
-- [ ] **Verify Design UI/UX pages render** — Check `localhost:3001/design-ui-ux/*` for all 7 sub-services
-- [ ] **Verify PWA + Ecommerce pages** — Confirm `/web-development/progressive-web-app-development` and `/web-development/ecommerce-development` load (previous 404 fix)
-- [ ] **Re-run main-services MD conversion** — Run `node scripts/convert-main-services-md.js` to include design-ui-ux (4th entry)
-- [ ] **JSON-LD schema extraction** — Test escaped `\<script\>` tag handling on actual MD output
+- [x] **Re-verify original 28 entries** — All 39 entries re-converted; pages verified 200
+- [x] **Verify Design UI/UX pages render** — All 7 pages returning 200
+- [x] **Verify PWA + Ecommerce pages** — Both load correctly (slug fixes applied)
+- [x] **Re-run main-services MD conversion** — 7 main services now converted (was 4)
+- [x] **JSON-LD schema extraction** — Fixed escaped `\<script\>` tags, `\#`, `\[`, `\]`; 39/39 sub-services + 6/7 main services have parsed schemas
+- [x] **Fix slug mismatches** — DApp, compliance-management, model-training-optimization all aliased correctly
+- [x] **Verify new blockchain/cybersecurity/ML pages** — All 11 new pages verified 200
 
 ### 🟡 Medium Priority
 
@@ -358,10 +360,14 @@
 | H1 extraction | `convert-sub-services-md.js` | Skips Meta Title/Description, SEO keywords, URLs. Finds actual page H1. |
 | Intro extraction | `convert-sub-services-md.js` | Fires on `# **Title**` format. Only triggers once (prevents overwrite). |
 | Section headings | `convert-sub-services-md.js` | `^#{2,4}` → `^#{1,4}` to match single `#` headings. |
-| JSON-LD extraction | `convert-sub-services-md.js` | Handles escaped `\<script\>` / `\</script\>` tags. |
+| JSON-LD regex | `convert-sub-services-md.js` | `\\?<script...\\?>` handles escaped angle brackets on opening + closing tags. |
+| JSON-LD cleanup | `convert-sub-services-md.js` | Unescapes `\/`, `\[`, `\]`, `\#` in JSON; strips trailing whitespace per line. |
 | `clean()` function | `convert-sub-services-md.js` | Strips leading `#` from meta titles/descriptions. |
 | FAQ exit condition | `convert-sub-services-md.js` | Tightened regex to avoid premature exit. |
 | Overlay resilience | `sub-services.js` | `isCorruptedH1()` rejects meta titles, URLs, SEO keywords as H1. |
+| Base slug aliases | `sub-services.js` | `baseSlugAliases` map bridges `dapp-development` → `decentralized-app-dapp-development`. |
+| MD slug aliases | `convert-sub-services-md.js` | 3 aliases: `dapp-development`, `compliance-management`, `model-training-optimization`. |
+| Main-services JSON-LD | `convert-main-services-md.js` | Same escaped-tag regex + cleanup applied (was only non-escaped before). |
 
 ---
 
@@ -369,19 +375,19 @@
 
 | File | Purpose |
 |------|---------|
-| `data/sub-services.js` | Base services + 102 override objects + merged services array + overlay logic |
-| `data/sub-services-md.js` | MD-converted sub-service content (28 entries) |
+| `data/sub-services.js` | Base services + 102 override objects + merged services array + overlay logic + baseSlugAliases |
+| `data/sub-services-md.js` | MD-converted sub-service content (39 entries) |
 | `data/main-services.js` | 19 main service categories with subServices arrays |
-| `data/main-services-md.js` | MD-converted main service content (4 entries) |
+| `data/main-services-md.js` | MD-converted main service content (7 entries) |
 | `data/service-section-data.js` | Per-category pricing/features/faqs (keep, merge later) |
 | `data/whyChooseUsData.js` | Per-category why-choose-us (keep, merge later) |
 | `scripts/convert-sub-services-md.js` | Reads `sub-services/*.md` → writes `data/sub-services-md.js` |
 | `scripts/convert-main-services-md.js` | Reads `main-services/*.md` → writes `data/main-services-md.js` |
-| `sub-services/` | 28 MD source files (21 original + 7 Design UI/UX) |
-| `main-services/` | 4 MD source files (3 original + 1 Design UI/UX) |
+| `sub-services/` | 39 MD source files (21 original + 7 Design UI/UX + 11 new) |
+| `main-services/` | 7 MD source files (3 original + 1 Design UI/UX + 3 new) |
 | `SERVICE-CONTENT-TRACKER.md` | This file |
 | `plan-services-improvement.md` | Full improvement plan (Phases 1-5) |
 
 ---
 
-**Last Updated:** September 10, 2026
+**Last Updated:** September 17, 2026

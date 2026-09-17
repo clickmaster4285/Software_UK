@@ -451,7 +451,7 @@ Both files **must stay** — they are the content-richness layer for the main se
 | 6 | `data/main-services.js` | Enriched `getServiceData(slug)` to overlay rich fields from `mainServicesMd` if present. | ✅ Updated |
 | 7 | `components/landing/sub-services/ServiceRichContent.jsx` | Renders rich intro paragraphs with relative links, cost factor checklist, Why Choose Clickmasters cards, and related service pills. | ✅ Active |
 
-### 11.1 Converted Main Services (4 Pages)
+### 11.1 Converted Main Services (7 Pages)
 
 | # | Main Service Name | Route / Slug | Source Markdown File | Status |
 |---|-------------------|--------------|----------------------|--------|
@@ -459,10 +459,13 @@ Both files **must stay** — they are the content-richness layer for the main se
 | 2 | **Web Development** | `/web-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (15).md` | ✅ |
 | 3 | **Mobile Development** | `/mobile-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (11).md` | ✅ |
 | 4 | **Design UI/UX** | `/design-ui-ux` | `main-services/Uiux main.md` | ✅ Added Sep 10 |
+| 5 | **Cybersecurity** | `/cybersecurity` | `main-services/Cyber Security.md` | ✅ Added Sep 17 |
+| 6 | **Machine Learning** | `/machine-learning` | `main-services/Machine Learining.md` | ✅ Added Sep 17 |
+| 7 | **Blockchain & Web3** | `/blockchain-and-web3` | `main-services/block chain.md` | ✅ Added Sep 17 |
 
-**Remaining:** 15 main services without MD data (AI, ML, NLP, Data, Cloud, Cyber, Blockchain, IoT, etc.)
+**Remaining:** 12 main services without MD data (AI, NLP, Data Services, Data & Intelligence, Automation x2, Cloud, Database, Testing, Support, IoT, Immersive)
 
-### 11.2 Converted Sub-Services (28 Pages)
+### 11.2 Converted Sub-Services (39 Pages)
 
 | # | Sub-Service Name | Category | Route | Source Markdown File | Status |
 |---|------------------|----------|-------|----------------------|--------|
@@ -494,8 +497,19 @@ Both files **must stay** — they are the content-richness layer for the main se
 | 26 | **Mobile App Design** | Design UI/UX | `/design-ui-ux/mobile-app-design` | `mobile app.md` | ✅ Added Sep 10 |
 | 27 | **UX Research** | Design UI/UX | `/design-ui-ux/ux-research` | `ux research.md` | ✅ Added Sep 10 |
 | 28 | **Wireframing & Prototyping** | Design UI/UX | `/design-ui-ux/wireframing-prototyping` | `wireframing & p.md` | ✅ Added Sep 10 |
+| 29 | **Penetration Testing** | Cybersecurity | `/cybersecurity/penetration-testing` | `penetration testing.md` | ✅ Added Sep 17 |
+| 30 | **Security Audits** | Cybersecurity | `/cybersecurity/security-audits` | `security audit.md` | ✅ Added Sep 17 |
+| 31 | **Compliance & Risk Management** | Cybersecurity | `/cybersecurity/compliance-risk-management` | `compliance Managemnt.md` | ✅ Added Sep 17 |
+| 32 | **Deep Learning Solutions** | Machine Learning | `/machine-learning/deep-learning-solutions` | `deep learning.md` | ✅ Added Sep 17 |
+| 33 | **Model Training Optimisation** | Machine Learning | `/machine-learning/model-training-optimisation` | `ai model training.md` | ✅ Added Sep 17 |
+| 34 | **Predictive Analytics** | Machine Learning | `/machine-learning/predictive-analytics` | `predictive analytics.md` | ✅ Added Sep 17 |
+| 35 | **Recommendation Systems** | Machine Learning | `/machine-learning/recommendation-systems` | `recommendation system development.md` | ✅ Added Sep 17 |
+| 36 | **Smart Contract Development** | Blockchain & Web3 | `/blockchain-and-web3/smart-contract-development` | `smart contract.md` | ✅ Added Sep 17 |
+| 37 | **DApp Development** | Blockchain & Web3 | `/blockchain-and-web3/decentralized-app-dapp-development` | `Dapp Development.md` | ✅ Added Sep 17 |
+| 38 | **Crypto Wallet Development** | Blockchain & Web3 | `/blockchain-and-web3/crypto-wallet-development` | `Crypto Wallet.md` | ✅ Added Sep 17 |
+| 39 | **NFT Marketplace Development** | Blockchain & Web3 | `/blockchain-and-web3/nft-marketplace-development` | `NFT Marketplace.md` | ✅ Added Sep 17 |
 
-**Remaining:** 102 sub-services across 15 categories have override-only content (no MD files). See `SERVICE-CONTENT-TRACKER.md` for full per-service breakdown.
+**Remaining:** 91 sub-services across 15 categories have override-only content (no MD files). See `SERVICE-CONTENT-TRACKER.md` for full per-service breakdown.
 
 ---
 
@@ -518,6 +532,6 @@ Both files **must stay** — they are the content-richness layer for the main se
 
 ---
 
-**Last Updated:** September 10, 2026 (v6 — added Design UI/UX category, 7 new sub-services, MD parser fixes, per-service tracking, updated converted tables with status columns)
+**Last Updated:** September 17, 2026 (v7 — added Cybersecurity, ML, Blockchain main services + 11 new sub-services, JSON-LD extraction fix, slug alias fixes, all 41 pages verified)
 
 

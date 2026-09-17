@@ -230,9 +230,14 @@ const serviceMenuSections = [
     ]
   }
 ];
+// Base slug aliases — maps slugified menu titles to override keys
+const baseSlugAliases = {
+  'dapp-development': 'decentralized-app-dapp-development',
+};
 const baseServices = serviceMenuSections.flatMap(
   (section) => section.items.map((item) => {
-    const slug = slugify(item.title);
+    const rawSlug = slugify(item.title);
+    const slug = baseSlugAliases[rawSlug] || rawSlug;
     const categorySlug = slugify(section.label);
     return {
       slug,

@@ -325,8 +325,8 @@ const Component = dynamic(() =>
 | `scripts/convert-resource-guides.js` | Convert resource guide DOCX → `data/resource-guides.js` |
 | `scripts/convert-glossary.js` | Convert glossary DOCX → `data/glossary.js` |
 | `scripts/convert-industries.js` | Convert industry DOCX → `data/industries.js` |
-| `scripts/convert-sub-services-md.js` | Convert 28 sub-service Markdown files → `data/sub-services-md.js` (rich intros, tables, cost factors, why choose, FAQs) |
-| `scripts/convert-main-services-md.js` | Convert 4 main-service Markdown files → `data/main-services-md.js` |
+| `scripts/convert-sub-services-md.js` | Convert 39 sub-service Markdown files → `data/sub-services-md.js` (rich intros, tables, cost factors, why choose, FAQs, JSON-LD schemas) |
+| `scripts/convert-main-services-md.js` | Convert 7 main-service Markdown files → `data/main-services-md.js` |
 | `scripts/convert-service.js` | Convert standalone service DOCX → `data/services.js` (pending) |
 | `scripts/generate-url-sheet.js` | Generate Excel URL sheet from all data files |
 | `scripts/audit-canonical.js` | Audit all pages for canonical tag coverage |
@@ -416,7 +416,7 @@ const blockchainConsultingOverride = {
 
 ---
 
-**Last Updated:** September 10, 2026
+**Last Updated:** September 17, 2026
 **Main Reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md)
 **Execution Plan:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md)
 
