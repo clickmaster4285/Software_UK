@@ -3,16 +3,17 @@
 
 ## **Target SEO Keywords**
 
-1. video analytics development services  
-2. video analytics services UK  
-3. video analytics software development  
-4. custom video analytics development  
-5. AI video analytics development  
-6. video analytics development company  
-7. video analytics development company UK  
-8. intelligent video analytics software  
-9. real-time video analytics development  
-10. computer vision video analytics services
+## video analytics development services
+
+1. video analytics services UK  
+2. video analytics software development  
+3. custom video analytics development  
+4. AI video analytics development  
+5. video analytics development company  
+6. video analytics development company UK  
+7. intelligent video analytics software  
+8. real-time video analytics development  
+9. computer vision video analytics services
 
 ## **Meta Title**
 

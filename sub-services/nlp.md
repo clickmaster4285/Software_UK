@@ -24,13 +24,22 @@
 
 ---
 
-# **H1: Natural Language Processing (NLP) Services UK**
+# **SECTION 01 — HERO**
+
+## **H1: Natural Language Processing (NLP) Services UK**
 
 Turn unstructured text and language data into searchable, classifiable and actionable information with custom **natural language processing services**.
 
 **Clickmasters** develops NLP solutions that help software analyse text, identify entities, classify content, understand semantic relationships, extract information and connect language intelligence with existing applications and business workflows.
 
 Our NLP development capability forms part of our broader [**NLP & Computer Vision Development Services**](https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision), where language, speech, images and video can be integrated into wider AI-enabled software systems.
+
+**Primary CTA:** Book an NLP Consultation  
+ **Secondary CTA:** Discuss Your NLP Project
+
+---
+
+# **SECTION 02 — DEFINITION**
 
 ## **What Is Natural Language Processing?**
 
@@ -40,23 +49,22 @@ NLP can transform unstructured language into information that software can searc
 
 A typical NLP workflow can look like:
 
-**Text / Document**
-
-→ **Text Preparation**
-
-→ **NLP Model**
-
-→ **Classification / Entity / Meaning / Relationship**
-
-→ **Structured Output**
-
-→ **Business Application**
+**Text / Document**  
+ → **Text Preparation**  
+ → **NLP Model**  
+ → **Classification / Entity / Meaning / Relationship**  
+ → **Structured Output**  
+ → **Business Application**
 
 NLP can be used with emails, documents, reviews, support conversations, knowledge bases and other text-heavy data sources.
 
-# **Our Natural Language Processing Services**
+---
 
-## **NLP Consulting & Use-Case Assessment**
+# **SECTION 03 — SPECIFIC CAPABILITIES**
+
+## **Our Natural Language Processing Services**
+
+### **NLP Consulting & Use-Case Assessment**
 
 A successful NLP project starts by defining what the software needs to understand or extract from language.
 
@@ -75,7 +83,7 @@ Discovery can establish:
 
 The aim is to determine whether NLP is suitable and which language-processing approach best fits the problem.
 
-## **Custom NLP Development**
+### **Custom NLP Development**
 
 Custom NLP development builds language-processing functionality around specific data, workflows and software requirements.
 
@@ -96,19 +104,16 @@ Projects can involve capabilities such as:
 
 The appropriate approach depends on what the application needs to understand and how the output will be used.
 
-# **Text Classification**
+### **Text Classification**
 
 Text classification assigns text to defined categories.
 
 A typical process is:
 
-**Input Text**
-
-→ **NLP Model**
-
-→ **Category**
-
-→ **Application Action**
+**Input Text**  
+ → **NLP Model**  
+ → **Category**  
+ → **Application Action**
 
 Text classification can support workflows involving:
 
@@ -121,7 +126,7 @@ Text classification can support workflows involving:
 
 The categories and training approach should reflect the actual business workflow.
 
-# **Named Entity Recognition**
+### **Named Entity Recognition**
 
 Named Entity Recognition, commonly abbreviated as NER, identifies specific entities within text.
 
@@ -138,17 +143,14 @@ Entities can include:
 
 A simple workflow can look like:
 
-**Unstructured Text**
-
-→ **NER Model**
-
-→ **Detected Entities**
-
-→ **Structured Data**
+**Unstructured Text**  
+ → **NER Model**  
+ → **Detected Entities**  
+ → **Structured Data**
 
 NER can help applications turn free-form text into information that can be searched, stored or passed to another business process.
 
-# **Custom Entity Extraction**
+### **Custom Entity Extraction**
 
 Not every organisation works with standard entity types.
 
@@ -163,7 +165,7 @@ Custom entity extraction can focus on domain-specific information such as:
 
 The required model depends on how consistently those entities appear within the source text and what training information is available.
 
-# **Sentiment Analysis**
+### **Sentiment Analysis**
 
 Sentiment analysis identifies defined opinion or sentiment patterns within text.
 
@@ -178,31 +180,21 @@ Potential data sources can include:
 
 A typical workflow is:
 
-**Text**
-
-→ **Sentiment Model**
-
-→ **Sentiment Classification**
-
-→ **Dashboard / Workflow / Analysis**
+**Text**  
+ → **Sentiment Model**  
+ → **Sentiment Classification**  
+ → **Dashboard / Workflow / Analysis**
 
 Sentiment outputs should be interpreted according to the business context rather than treated as perfect representations of human opinion.
 
-# **Intent Classification**
+### **Intent Classification**
 
 Intent classification identifies the purpose behind a piece of text.
 
-For example:
-
-**User Message**
-
-→ **NLP Model**
-
-→ **Detected Intent**
-
-→ **Relevant Workflow**
-
-This can support software that needs to route language-based requests according to what the user is trying to accomplish.
+**User Message**  
+ → **NLP Model**  
+ → **Detected Intent**  
+ → **Relevant Workflow**
 
 Potential uses include:
 
@@ -212,7 +204,7 @@ Potential uses include:
 * Conversational applications  
 * Internal automation
 
-# **Topic Classification**
+### **Topic Classification**
 
 Topic classification can identify which subject or category a document or message belongs to.
 
@@ -226,179 +218,36 @@ It can support:
 
 Depending on requirements, topic categories can be predefined or discovered through a broader text-analysis process.
 
-# **Information Extraction**
+### **Information Extraction**
 
 Information extraction converts useful information from unstructured text into structured output.
 
-A workflow can look like:
-
-**Document / Message**
-
-→ **NLP Processing**
-
-→ **Entities \+ Fields \+ Relationships**
-
-→ **Structured Record**
-
-→ **Business System**
+**Document / Message**  
+ → **NLP Processing**  
+ → **Entities \+ Fields \+ Relationships**  
+ → **Structured Record**  
+ → **Business System**
 
 This can reduce the amount of manual work required to identify specific information within large text collections.
 
-# **Document Processing with NLP**
+---
 
-Businesses often store valuable information inside documents that are difficult for conventional software to interpret.
+# **SECTION 04 — HOW IT WORKS**
 
-NLP-based document processing can support:
+## **How NLP Works in Software Applications**
 
-* Document classification  
-* Entity extraction  
-* Information extraction  
-* Content tagging  
-* Document routing  
-* Text summarisation  
-* Search and retrieval
+An NLP system typically receives text or document data, prepares it for processing, applies a language model or other NLP logic and returns structured information to an application or workflow.
 
-For image-based or scanned documents, the workflow can also involve computer vision or OCR before NLP processes the extracted language.
+A typical architecture can look like:
 
-# **Semantic Search Development**
+**Language Input**  
+ → **Text Preparation**  
+ → **NLP Model**  
+ → **Classification / Extraction / Retrieval**  
+ → **Structured Output**  
+ → **Application Action**
 
-Traditional search often depends heavily on exact keywords.
-
-Semantic search aims to retrieve information based more closely on the meaning and context of the user's query.
-
-A simplified architecture is:
-
-**User Query**
-
-→ **Semantic Representation**
-
-→ **Similarity / Retrieval**
-
-→ **Relevant Documents or Records**
-
-Semantic search can support:
-
-* Internal document search  
-* Knowledge bases  
-* Product information  
-* Help centres  
-* Content repositories  
-* Enterprise search
-
-The search architecture depends on the size, structure and update frequency of the information being searched.
-
-# **Text Similarity**
-
-Text-similarity systems compare language to determine how closely pieces of text relate semantically.
-
-Potential uses include:
-
-* Duplicate-content identification  
-* Similar-document retrieval  
-* Matching user queries to information  
-* Content clustering  
-* Search ranking
-
-Similarity should be evaluated against the type of relationship that matters to the application.
-
-# **Text Summarisation**
-
-NLP can be used to reduce longer text into shorter representations.
-
-Applications can include summarising:
-
-* Reports  
-* Documents  
-* Conversations  
-* Support interactions  
-* Articles  
-* Internal information
-
-Summarisation requirements can vary significantly depending on whether the output needs to be extractive, generated or constrained to specific information.
-
-Generated summaries should be evaluated appropriately where factual accuracy is important.
-
-# **Keyword & Key-Phrase Extraction**
-
-NLP can identify important terms or phrases within text.
-
-This can help with:
-
-* Document tagging  
-* Search indexing  
-* Content organisation  
-* Research analysis  
-* Topic discovery
-
-Key-phrase extraction can complement broader classification and information-extraction workflows.
-
-# **NLP for Customer Feedback Analysis**
-
-Businesses can receive large amounts of feedback across multiple channels.
-
-NLP can help structure this text by identifying:
-
-* Sentiment  
-* Topics  
-* Common issues  
-* Product references  
-* Request types  
-* Recurring themes
-
-The structured output can then be used within dashboards, reports or operational workflows.
-
-# **NLP for Support-Ticket Classification**
-
-NLP can analyse support requests and assign them to appropriate categories.
-
-A workflow can be:
-
-**Incoming Request**
-
-→ **Text Classification**
-
-→ **Intent / Category**
-
-→ **Routing**
-
-→ **Relevant Team or Workflow**
-
-This can support higher-volume support operations where manual sorting creates unnecessary work.
-
-# **NLP for Knowledge Management**
-
-Large document collections can become difficult to navigate using folders and exact keyword matching alone.
-
-NLP capabilities can support:
-
-* Semantic search  
-* Document classification  
-* Information extraction  
-* Automated tagging  
-* Similar-document discovery  
-* Question-oriented retrieval
-
-These capabilities can be integrated into internal knowledge systems where appropriate.
-
-# **NLP for Business Workflow Automation**
-
-NLP can act as the language-processing layer within a wider automation workflow.
-
-For example:
-
-**Incoming Document**
-
-→ **NLP Classification**
-
-→ **Extract Information**
-
-→ **Validate Output**
-
-→ **Send to Business System**
-
-This allows unstructured language to participate in workflows that would otherwise require structured input.
-
-# **NLP Data Preparation**
+### **NLP Data Preparation**
 
 Language data often requires preparation before it can be used for model development.
 
@@ -416,7 +265,7 @@ Depending on the approach, preparation can involve:
 
 The exact preprocessing requirements depend on the model architecture.
 
-# **Text Annotation & Labelling**
+### **Text Annotation & Labelling**
 
 Supervised NLP models may require examples with known labels.
 
@@ -431,7 +280,7 @@ Depending on the task, annotation can identify:
 
 Clear labelling guidelines are important because inconsistent labels can reduce model quality.
 
-# **Tokenisation**
+### **Tokenisation**
 
 Tokenisation breaks language into units that a model can process.
 
@@ -444,157 +293,180 @@ These units may represent:
 
 Modern NLP architectures can use different tokenisation approaches depending on the underlying model.
 
-# **NLP Model Development**
+---
 
-An NLP model can be developed or adapted according to:
+# **SECTION 05 — ADVANCED FEATURES**
 
-* Language task  
-* Available data  
-* Required performance  
-* Processing volume  
-* Latency  
-* Explainability  
-* Infrastructure  
-* Integration requirements
+## **Advanced NLP Capabilities**
 
-Possible approaches can include conventional machine-learning models, neural networks or transformer-based architectures.
+### **Document Processing with NLP**
 
-The correct model should be selected according to the problem rather than simply choosing the most complex architecture available.
+Businesses often store valuable information inside documents that are difficult for conventional software to interpret.
 
-# **NLP Model Training**
+NLP-based document processing can support:
 
-Where custom training is required, development can involve:
-
-* Dataset preparation  
-* Model selection  
-* Training  
-* Validation  
-* Error analysis  
-* Performance measurement  
-* Iteration
-
-The objective is to produce language-processing behaviour that performs appropriately on data beyond the examples used during training.
-
-For dedicated model lifecycle work, explore our [**AI Model Training & Optimisation Services**](https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml/model-training-optimization).
-
-# **NLP Model Fine-Tuning**
-
-An existing language model can sometimes be adapted to a more specific task.
-
-A fine-tuning workflow can look like:
-
-**Pre-Trained Model**
-
-→ **Task-Specific Dataset**
-
-→ **Fine-Tuning**
-
-→ **Evaluation**
-
-→ **Adapted Model**
-
-Fine-tuning may be appropriate where an existing model provides a useful foundation and sufficient relevant training data is available.
-
-# **NLP & Large Language Models**
-
-Large language models are part of the modern NLP ecosystem, but NLP is broader than LLMs.
-
-NLP includes tasks such as:
-
-* Classification  
-* Entity recognition  
+* Document classification  
+* Entity extraction  
 * Information extraction  
-* Sentiment analysis  
-* Search  
-* Language modelling  
-* Text generation
+* Content tagging  
+* Document routing  
+* Text summarisation  
+* Search and retrieval
 
-LLMs can support some of these tasks, but a large generative model is not always required.
+For image-based or scanned documents, the workflow can also involve computer vision or OCR before NLP processes the extracted language.
 
-The solution should be selected according to accuracy, latency, control, data, cost and integration requirements.
+### **Semantic Search Development**
 
-# **NLP vs Generative AI**
+Traditional search often depends heavily on exact keywords.
 
-NLP and generative AI overlap, but they are not identical.
+Semantic search aims to retrieve information based more closely on the meaning and context of the user's query.
 
-| NLP | Generative AI |
-| ----- | ----- |
-| Broad field of language processing | Focuses on generating new outputs |
-| Classification | Text generation |
-| Entity extraction | Generated responses |
-| Sentiment analysis | Generated summaries |
-| Semantic search | Conversational generation |
-| Information extraction | Generative content |
+**User Query**  
+ → **Semantic Representation**  
+ → **Similarity / Retrieval**  
+ → **Relevant Documents or Records**
 
-Many applications can use both approaches within the same software architecture.
+Semantic search can support:
 
-# **NLP vs Natural Language Understanding**
+* Internal document search  
+* Knowledge bases  
+* Product information  
+* Help centres  
+* Content repositories  
+* Enterprise search
 
-Natural Language Processing is the broader field concerned with processing language.
+### **Text Similarity**
 
-Natural Language Understanding, or NLU, commonly refers more specifically to interpreting meaning, intent and relationships within language.
+Text-similarity systems compare language to determine how closely pieces of text relate semantically.
 
-For example:
+Potential uses include:
 
-**NLP**
+* Duplicate-content identification  
+* Similar-document retrieval  
+* Matching user queries to information  
+* Content clustering  
+* Search ranking
 
-→ process language
+### **Text Summarisation**
 
-**NLU**
+NLP can be used to reduce longer text into shorter representations.
 
-→ interpret intent, entities and meaning
+Applications can include summarising:
 
-The distinction can vary according to the architecture and application.
+* Reports  
+* Documents  
+* Conversations  
+* Support interactions  
+* Articles  
+* Internal information
 
-# **NLP & Speech Recognition**
+Summarisation requirements can vary significantly depending on whether the output needs to be extractive, generated or constrained to specific information.
 
-Speech recognition and NLP solve related but separate stages of a language workflow.
+Generated summaries should be evaluated appropriately where factual accuracy is important.
 
-Speech recognition primarily converts:
+### **Keyword & Key-Phrase Extraction**
 
-**Speech**
+NLP can identify important terms or phrases within text.
 
-→ **Text**
+This can help with:
 
-NLP then processes:
+* Document tagging  
+* Search indexing  
+* Content organisation  
+* Research analysis  
+* Topic discovery
 
-**Text**
+Key-phrase extraction can complement broader classification and information-extraction workflows.
 
-→ **Meaning / Entity / Intent / Classification**
+---
 
-A combined workflow can be:
+# **SECTION 06 — USE CASES**
 
-**Spoken Audio**
+## **NLP Use Cases**
 
-→ **Speech Recognition**
+### **NLP for Customer Feedback Analysis**
 
-→ **Transcript**
+Businesses can receive large amounts of feedback across multiple channels.
 
-→ **NLP**
+NLP can help structure this text by identifying:
 
-→ **Structured Output**
+* Sentiment  
+* Topics  
+* Common issues  
+* Product references  
+* Request types  
+* Recurring themes
 
-For speech-to-text and voice-focused systems, visit our [**Speech Recognition Development Services**](https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision/speech-recognition).
+The structured output can then be used within dashboards, reports or operational workflows.
 
-# **NLP & Document AI**
+### **NLP for Support-Ticket Classification**
 
-Language processing can work alongside visual document technologies.
+NLP can analyse support requests and assign them to appropriate categories.
 
-For image-based documents:
+**Incoming Request**  
+ → **Text Classification**  
+ → **Intent / Category**  
+ → **Routing**  
+ → **Relevant Team or Workflow**
 
-**Document Image**
+This can support higher-volume support operations where manual sorting creates unnecessary work.
 
-→ **OCR / Visual Processing**
+### **NLP for Knowledge Management**
 
-→ **Extracted Text**
+Large document collections can become difficult to navigate using folders and exact keyword matching alone.
 
-→ **NLP**
+NLP capabilities can support:
 
-→ **Structured Information**
+* Semantic search  
+* Document classification  
+* Information extraction  
+* Automated tagging  
+* Similar-document discovery  
+* Question-oriented retrieval
 
-This creates a natural connection between NLP and the wider computer-vision side of our AI development capability.
+These capabilities can be integrated into internal knowledge systems where appropriate.
 
-# **NLP API Development**
+### **NLP for Business Workflow Automation**
+
+NLP can act as the language-processing layer within a wider automation workflow.
+
+**Incoming Document**  
+ → **NLP Classification**  
+ → **Extract Information**  
+ → **Validate Output**  
+ → **Send to Business System**
+
+This allows unstructured language to participate in workflows that would otherwise require structured input.
+
+---
+
+# **SECTION 07 — INTEGRATION**
+
+## **NLP Integration with Existing Software**
+
+NLP models can potentially integrate with:
+
+* Web applications  
+* Mobile applications  
+* Business software  
+* CRM systems  
+* Document platforms  
+* Knowledge bases  
+* Search systems  
+* Internal tools  
+* Workflow applications
+
+A typical integration architecture is:
+
+**Existing Software**  
+ → **NLP API / Service**  
+ → **Language Model**  
+ → **Structured Output**  
+ → **Existing Workflow**
+
+This allows NLP functionality to be introduced without necessarily replacing the underlying software system.
+
+### **NLP API Development**
 
 NLP functionality can be made available to applications through APIs.
 
@@ -616,79 +488,143 @@ and receive:
 
 API-based architecture can separate language-processing logic from the main application where appropriate.
 
-# **NLP Integration with Existing Software**
+---
 
-NLP models can potentially integrate with:
+# **SECTION 08 — TECHNICAL ARCHITECTURE**
 
-* Web applications  
-* Mobile applications  
-* Business software  
-* CRM systems  
-* Document platforms  
-* Knowledge bases  
-* Search systems  
-* Internal tools  
-* Workflow applications
+## **NLP Technical Architecture**
 
-A typical integration architecture is:
+### **NLP Model Development**
 
-**Existing Software**
+An NLP model can be developed or adapted according to:
 
-→ **NLP API / Service**
-
-→ **Language Model**
-
-→ **Structured Output**
-
-→ **Existing Workflow**
-
-This allows NLP functionality to be introduced without necessarily replacing the underlying software system.
-
-# **Real-Time NLP Processing**
-
-Some applications require language processing immediately after text is received.
-
-A real-time workflow can be:
-
-**User Input**
-
-→ **NLP Service**
-
-→ **Classification / Extraction / Retrieval**
-
-→ **Application Response**
-
-Real-time processing can create additional requirements around:
-
+* Language task  
+* Available data  
+* Required performance  
+* Processing volume  
 * Latency  
+* Explainability  
 * Infrastructure  
-* API performance  
-* Model size  
-* Scaling
+* Integration requirements
 
-Not every NLP use case needs real-time inference.
+Possible approaches can include conventional machine-learning models, neural networks or transformer-based architectures.
 
-# **Batch NLP Processing**
+The correct model should be selected according to the problem rather than simply choosing the most complex architecture available.
 
-Large document or text collections can also be processed in batches.
+### **NLP Model Training**
 
-A batch workflow can look like:
+Where custom training is required, development can involve:
 
-**Document Collection**
+* Dataset preparation  
+* Model selection  
+* Training  
+* Validation  
+* Error analysis  
+* Performance measurement  
+* Iteration
 
-→ **Scheduled NLP Processing**
+The objective is to produce language-processing behaviour that performs appropriately on data beyond the examples used during training.
 
-→ **Classification / Extraction**
+For dedicated model lifecycle work, explore our **AI Model Training & Optimisation Services**.
 
-→ **Structured Database**
+### **NLP Model Fine-Tuning**
 
-Batch processing can be suitable for tasks where immediate output is unnecessary.
+An existing language model can sometimes be adapted to a more specific task.
 
-# **NLP Model Evaluation**
+**Pre-Trained Model**  
+ → **Task-Specific Dataset**  
+ → **Fine-Tuning**  
+ → **Evaluation**  
+ → **Adapted Model**
+
+Fine-tuning may be appropriate where an existing model provides a useful foundation and sufficient relevant training data is available.
+
+### **NLP & Large Language Models**
+
+Large language models are part of the modern NLP ecosystem, but NLP is broader than LLMs.
+
+NLP includes tasks such as:
+
+* Classification  
+* Entity recognition  
+* Information extraction  
+* Sentiment analysis  
+* Search  
+* Language modelling  
+* Text generation
+
+LLMs can support some of these tasks, but a large generative model is not always required.
+
+The solution should be selected according to accuracy, latency, control, data, cost and integration requirements.
+
+### **NLP vs Generative AI**
+
+NLP and generative AI overlap, but they are not identical.
+
+| NLP | Generative AI |
+| ----- | ----- |
+| Broad field of language processing | Focuses on generating new outputs |
+| Classification | Text generation |
+| Entity extraction | Generated responses |
+| Sentiment analysis | Generated summaries |
+| Semantic search | Conversational generation |
+| Information extraction | Generative content |
+
+Many applications can use both approaches within the same software architecture.
+
+### **NLP vs Natural Language Understanding**
+
+Natural Language Processing is the broader field concerned with processing language.
+
+Natural Language Understanding, or NLU, commonly refers more specifically to interpreting meaning, intent and relationships within language.
+
+**NLP**  
+ → process language
+
+**NLU**  
+ → interpret intent, entities and meaning
+
+The distinction can vary according to the architecture and application.
+
+### **NLP & Speech Recognition**
+
+Speech recognition and NLP solve related but separate stages of a language workflow.
+
+**Speech**  
+ → **Text**
+
+NLP then processes:
+
+**Text**  
+ → **Meaning / Entity / Intent / Classification**
+
+A combined workflow can be:
+
+**Spoken Audio**  
+ → **Speech Recognition**  
+ → **Transcript**  
+ → **NLP**  
+ → **Structured Output**
+
+For speech-to-text and voice-focused systems, visit our **Speech Recognition Development Services**.
+
+### **NLP & Document AI**
+
+Language processing can work alongside visual document technologies.
+
+**Document Image**  
+ → **OCR / Visual Processing**  
+ → **Extracted Text**  
+ → **NLP**  
+ → **Structured Information**
+
+This creates a natural connection between NLP and the wider computer-vision side of our AI development capability.
+
+### **NLP Model Evaluation**
 
 NLP model evaluation depends on the task.
 
-## **Classification**
+#### **Classification**
 
 Metrics can include:
 
@@ -697,11 +633,11 @@ Metrics can include:
 * Recall  
 * F1 score
 
-## **Entity Recognition**
+#### **Entity Recognition**
 
 Evaluation can consider whether relevant entities are correctly identified and classified.
 
-## **Search & Retrieval**
+#### **Search & Retrieval**
 
 Evaluation can consider:
 
@@ -710,15 +646,13 @@ Evaluation can consider:
 * Recall  
 * Retrieval precision
 
-## **Summarisation**
+#### **Summarisation**
 
 Evaluation may require both automated metrics and human review, depending on the output and business risk.
 
 The evaluation method should reflect how the NLP output will actually be used.
 
-# **NLP Error Analysis**
-
-Headline metrics alone may not explain where a language model fails.
+### **NLP Error Analysis**
 
 Error analysis can investigate:
 
@@ -733,7 +667,7 @@ Error analysis can investigate:
 
 These findings can inform data improvement and model refinement.
 
-# **NLP Model Monitoring**
+### **NLP Model Monitoring**
 
 Language patterns can change after deployment.
 
@@ -747,56 +681,153 @@ Monitoring can consider:
 * Error rates  
 * Unexpected outputs
 
-The appropriate monitoring process depends on how important the NLP model is to the wider application.
-
-# **NLP Model Retraining**
+### **NLP Model Retraining**
 
 Models may need to be retrained or adapted as new data becomes available.
 
-A controlled lifecycle can be:
-
-**New Language Data**
-
-→ **Validation**
-
-→ **Model Update**
-
-→ **Evaluation**
-
-→ **Compare with Existing Model**
-
-→ **Approved Deployment**
+**New Language Data**  
+ → **Validation**  
+ → **Model Update**  
+ → **Evaluation**  
+ → **Compare with Existing Model**  
+ → **Approved Deployment**
 
 Model updates should be evaluated before replacing a production version.
 
-# **Custom NLP vs Off-the-Shelf NLP APIs**
+---
 
-Businesses can use an existing NLP service or develop more customised language-processing functionality.
+# **SECTION 09 — DEPLOYMENT**
 
-| Custom NLP | Off-the-Shelf NLP API |
-| ----- | ----- |
-| Built around specific workflows | Uses predefined capabilities |
-| Can use business-specific labels | Standard entity/task definitions |
-| Greater model and architecture control | Faster initial implementation |
-| Custom integration possible | Depends on provider API |
-| Requires development and maintenance | Provider manages core platform |
+## **Real-Time & Batch NLP Processing**
 
-## **Existing APIs May Be Suitable When**
+### **Real-Time NLP Processing**
 
-* Requirements are standard  
-* Fast implementation matters  
-* Generic language tasks are sufficient  
-* Custom model behaviour is unnecessary
+Some applications require language processing immediately after text is received.
 
-## **Custom NLP May Be Suitable When**
+**User Input**  
+ → **NLP Service**  
+ → **Classification / Extraction / Retrieval**  
+ → **Application Response**
 
-* Domain-specific language is important  
-* Custom classifications are required  
-* Proprietary text data creates value  
-* Workflows require deep integration  
-* Greater model control is needed
+Real-time processing can create additional requirements around:
 
-# **NLP Proof of Concept**
+* Latency  
+* Infrastructure  
+* API performance  
+* Model size  
+* Scaling
+
+Not every NLP use case needs real-time inference.
+
+### **Batch NLP Processing**
+
+Large document or text collections can also be processed in batches.
+
+**Document Collection**  
+ → **Scheduled NLP Processing**  
+ → **Classification / Extraction**  
+ → **Structured Database**
+
+Batch processing can be suitable for tasks where immediate output is unnecessary.
+
+---
+
+# **SECTION 10 — PROCESS**
+
+## **Our NLP Development Process**
+
+### **1\. Business & Language Use-Case Discovery**
+
+We define the business problem, language input and required output.
+
+### **2\. Data Assessment**
+
+Available documents, text and language data are reviewed.
+
+### **3\. Data Preparation**
+
+Relevant data is cleaned, structured, labelled or annotated where required.
+
+### **4\. NLP Approach**
+
+Suitable modelling and language-processing approaches are evaluated.
+
+### **5\. Model Development**
+
+The selected NLP capability is developed or adapted.
+
+### **6\. Training or Fine-Tuning**
+
+The model is trained or fine-tuned where required.
+
+### **7\. Evaluation**
+
+Model performance is measured against appropriate criteria.
+
+### **8\. Error Analysis & Optimisation**
+
+Weaknesses are investigated and relevant improvements made.
+
+### **9\. NLP Integration**
+
+The model is connected with the required application or workflow.
+
+### **10\. Deployment**
+
+The approved NLP capability is prepared for production.
+
+### **11\. Monitoring**
+
+Model and system behaviour can be tracked after deployment.
+
+### **12\. Iterative Improvement**
+
+New data and production feedback can inform future model updates.
+
+## **What You Receive**
+
+Deliverables depend on the agreed NLP project scope and can include:
+
+* NLP requirements  
+* Data-readiness findings  
+* Text-processing workflow  
+* Data annotation requirements  
+* NLP model  
+* Model evaluation results  
+* NLP API  
+* Application integration  
+* Deployment configuration  
+* Monitoring requirements  
+* Technical documentation  
+* Handover information.
+
+---
+
+# **SECTION 11 — WHY CLICKMASTERS**
+
+## **Why Choose Clickmasters for NLP Development?**
+
+**Clickmasters** approaches NLP as a software-engineering capability rather than an isolated language model.
+
+Our development approach can connect:
+
+**Business Problem**  
+ → **Language Data**  
+ → **NLP Model**  
+ → **Structured Information**  
+ → **Software Integration**  
+ → **Business Workflow**  
+ → **Monitoring**
+
+This keeps NLP development aligned with the software and process where the language intelligence will actually be used.
+
+---
+
+# **SECTION 12 — PoC / MVP**
+
+## **Validate Your NLP Project**
+
+### **NLP Proof of Concept**
 
 An NLP Proof of Concept can test whether a language-processing idea is technically viable before committing to a larger production build.
 
@@ -812,7 +843,7 @@ A PoC can evaluate:
 
 The objective is to validate a focused use case.
 
-# **NLP MVP Development**
+### **NLP MVP Development**
 
 An NLP-enabled MVP can combine an initial language model with the software required to test it within a real workflow.
 
@@ -828,74 +859,13 @@ An MVP can include:
 
 The system can then be refined based on actual usage and model performance.
 
-# **Our NLP Development Process**
+---
 
-## **1\. Business & Language Use-Case Discovery**
+# **SECTION 13 — COST \+ TIMELINE**
 
-We define the business problem, language input and required output.
+## **NLP Development Cost & Timeline**
 
-## **2\. Data Assessment**
-
-Available documents, text and language data are reviewed.
-
-## **3\. Data Preparation**
-
-Relevant data is cleaned, structured, labelled or annotated where required.
-
-## **4\. NLP Approach**
-
-Suitable modelling and language-processing approaches are evaluated.
-
-## **5\. Model Development**
-
-The selected NLP capability is developed or adapted.
-
-## **6\. Training or Fine-Tuning**
-
-The model is trained or fine-tuned where required.
-
-## **7\. Evaluation**
-
-Model performance is measured against appropriate criteria.
-
-## **8\. Error Analysis & Optimisation**
-
-Weaknesses are investigated and relevant improvements made.
-
-## **9\. NLP Integration**
-
-The model is connected with the required application or workflow.
-
-## **10\. Deployment**
-
-The approved NLP capability is prepared for production.
-
-## **11\. Monitoring**
-
-Model and system behaviour can be tracked after deployment.
-
-## **12\. Iterative Improvement**
-
-New data and production feedback can inform future model updates.
-
-# **What You Receive**
-
-Deliverables depend on the agreed NLP project scope and can include:
-
-* NLP requirements  
-* Data-readiness findings  
-* Text-processing workflow  
-* Data annotation requirements  
-* NLP model  
-* Model evaluation results  
-* NLP API  
-* Application integration  
-* Deployment configuration  
-* Monitoring requirements  
-* Technical documentation  
-* Handover information
-
-# **How Much Does NLP Development Cost?**
+### **How Much Does NLP Development Cost?**
 
 The cost of NLP development depends on the scope and technical requirements.
 
@@ -916,7 +886,7 @@ Factors can include:
 
 A focused text-classification model has a different development scope from a language-processing platform integrated with several business systems.
 
-# **How Long Does NLP Development Take?**
+### **How Long Does NLP Development Take?**
 
 The development timeline depends on:
 
@@ -932,27 +902,69 @@ The development timeline depends on:
 
 Projects can be structured into feasibility, model development and production-integration stages.
 
-# **Why Choose Clickmasters for NLP Development?**
+---
 
-**Clickmasters** approaches NLP as a software-engineering capability rather than an isolated language model.
+# **SECTION 14 — FAQ**
 
-Our development approach can connect:
+## **Frequently Asked Questions About NLP Development**
 
-**Business Problem**
+**The supplied NLP content does not contain an FAQ section.**
 
-→ **Language Data**
+So for the developer handoff, keep this section reserved:
 
-→ **NLP Model**
+**UI:** FAQ accordion
 
-→ **Structured Information**
+Do not let the developer create the answers. Add the approved SEO FAQ content here when available.
 
-→ **Software Integration**
+---
 
-→ **Business Workflow**
+# **SECTION 15 — RELATED SERVICES**
 
-→ **Monitoring**
+## **Related NLP, AI & Computer Vision Services**
 
-This keeps NLP development aligned with the software and process where the language intelligence will actually be used.
+Use the service relationships already referenced throughout the content.
+
+### **NLP & Computer Vision Development Services**
+
+Explore the broader parent service covering language, speech, image and video AI development.
+
+**Internal Link:**  
+ `/nlp-computer-vision`
+
+### **Speech Recognition Development Services**
+
+Build speech-to-text and voice-processing capabilities that can feed spoken language into NLP workflows.
+
+**Internal Link:**  
+ `/nlp-computer-vision/speech-recognition`
+
+### **AI Model Training & Optimisation Services**
+
+Prepare language data, train or fine-tune models, evaluate performance and optimise NLP systems for production.
+
+**Internal Link:**  
+ `/machine-learning-ml/model-training-optimization`
+
+### **Computer Vision Development Services**
+
+Develop visual AI capabilities for applications that need to process images, documents or video alongside language.
+
+**Internal Link:**  
+ `/nlp-computer-vision/computer-vision`
+
+---
+
+# **SECTION 16 — FINAL CTA**
+
+## **Build Your NLP Solution with Clickmasters**
+
+The supplied file **does not include a separate final CTA section**, so reserve this position in the template and use the approved CTA copy once finalised.
+
+Recommended UI placement:
+
+**Primary CTA:** Book an NLP Consultation
+
+.
 
 # **Frequently Asked Questions**
 
