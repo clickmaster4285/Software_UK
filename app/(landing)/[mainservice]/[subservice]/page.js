@@ -47,15 +47,15 @@ const defaultFaqs = homepageFaqSchema.mainEntity.map((item) => ({
 
 export async function generateStaticParams() {
   return getAllServicePages().map((page) => ({
-    category: page.categorySlug,
-    service: page.slug,
+    mainservice: page.categorySlug,
+    subservice: page.slug,
   }));
 }
 
 export async function generateMetadata({ params }) {
-  const { category, service } = await params;
-  const page = getServicePage(service);
-  if (!page || page.categorySlug !== category) return { title: 'Service' };
+  const { mainservice, subservice } = await params;
+  const page = getServicePage(subservice);
+  if (!page || page.categorySlug !== mainservice) return { title: 'Service' };
 
   const description = page.metaDescription;
   const canonicalPath = getCanonicalPath(page);
@@ -93,13 +93,13 @@ function getCanonicalPath(page) {
 }
 
 export default async function ServiceByCategoryPage({ params }) {
-  const { category, service } = await params;
-  const page = getServicePage(service);
+  const { mainservice, subservice } = await params;
+  const page = getServicePage(subservice);
 
   if (!page) notFound();
 
   // If the category slug doesn't match, redirect to the correct one (canonical URL)
-  if (page.categorySlug !== category) {
+  if (page.categorySlug !== mainservice) {
     redirect(`/${page.categorySlug}/${page.slug}`);
   }
 
@@ -107,7 +107,7 @@ export default async function ServiceByCategoryPage({ params }) {
   const faqs = page.faqs || [];
   const canonicalPath = getCanonicalPath(page);
   const url = `${siteConfig.url}${canonicalPath}`;
-  const techStack = getServiceTechnologies(service);
+  const techStack = getServiceTechnologies(subservice);
 
   const tocItems = [
     { id: 'overview', title: 'Overview', level: 2 },

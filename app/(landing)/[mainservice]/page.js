@@ -1,4 +1,4 @@
-// \app\(landing)\[category]\page.js
+// \app\(landing)\[mainservice]\page.js
 import { notFound } from 'next/navigation';
 import { getServiceData, getAllServiceSlugs } from '@/data/main-services';
 import { metadataConfig, breadcrumbSchema, faqSchema, serviceSchema, siteConfig } from '@/app/metadata-config';
@@ -7,12 +7,12 @@ import ServiceClient from './main-service';
 // Generate static paths for all services at build time
 export async function generateStaticParams() {
    const slugs = getAllServiceSlugs();
-   return slugs.map((category) => ({ category }));
+   return slugs.map((mainservice) => ({ mainservice }));
 }
 
 export async function generateMetadata({ params }) {
-   const { category } = await params;
-   const serviceData = getServiceData(category);
+   const { mainservice } = await params;
+   const serviceData = getServiceData(mainservice);
 
    if (!serviceData) {
       return { title: 'Service Not Found' };
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
    const metadata = metadataConfig.serviceDetail(
       serviceData.metaTitle || serviceData.title,
       serviceData.metaDescription || serviceData.description,
-      category
+      mainservice
    );
 
    if (serviceData.metaKeywords) {
@@ -32,18 +32,18 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ServicePage({ params }) {
-   const { category } = await params;
+   const { mainservice } = await params;
 
    // Main category pages use enriched data from main-services + service-section-data.
    // (All category slugs resolve via getServiceData — see getAllServiceSlugs().
 
-   const mainData = getServiceData(category);
+   const mainData = getServiceData(mainservice);
 
    if (!mainData) {
       notFound();
    }
 
-   const pageUrl = `${siteConfig.url}/${category}`;
+   const pageUrl = `${siteConfig.url}/${mainservice}`;
    const faqs = (mainData.faqs || []).map((f) => ({
       question: f.question,
       answer: f.answer,
@@ -59,25 +59,25 @@ export default async function ServicePage({ params }) {
    return (
       <>
          <script
-            id={`service-schema-${category}`}
+            id={`service-schema-${mainservice}`}
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
          />
          {faqJsonLd && (
             <script
-               id={`faq-schema-${category}`}
+               id={`faq-schema-${mainservice}`}
                type="application/ld+json"
                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
             />
          )}
          <script
-            id={`breadcrumb-${category}`}
+            id={`breadcrumb-${mainservice}`}
             type="application/ld+json"
             dangerouslySetInnerHTML={{
                __html: JSON.stringify(
                   breadcrumbSchema([
                      { name: 'Home', url: '/' },
-                     { name: mainData.title, url: `/${category}` },
+                     { name: mainData.title, url: `/${mainservice}` },
                   ])
                ),
             }}

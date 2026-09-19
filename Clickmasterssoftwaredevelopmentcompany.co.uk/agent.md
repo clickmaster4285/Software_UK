@@ -285,7 +285,7 @@ Each case study has this HTML pattern:
 | Tech files → | Merged into `Hire-Page/` | All are `tech_{technology}_development` (developer hire pages) |
 | City files → | Merged into `International-City/` | They are city-specific pages |
 | Guide files → | Merged into `Resource-Guide/` | Same DOCX template as existing resource guides |
-| Industry+Service URL | `/industries/[slug]` | Dedicated route, not `/[category]/[service]/` |
+| Industry+Service URL | `/industries/[slug]` | Dedicated route, not `/[mainservice]/[subservice]/` |
 | Duplicate handling | Lowest P-number | Same strategy as all prior phases |
 | Execution order | Cleanup first, then convert sequentially | Ensures clean separation before conversion |
 
@@ -523,13 +523,15 @@ const Component = dynamic(() =>
 22. ✅ Strict No Emojis Policy — Stripped all emojis and corrupted emoji symbols across all data files, conversion scripts (`scripts/convert-sub-services-md.js`), and runtime utilities (`lib/subservice-utils.js`). All content must remain clean, professional B2B text.
 23. ✅ Design UI/UX Category — Added new main service `/design-ui-ux` with 7 sub-services: design-systems, product-design, web-design, mobile-app-design, ux-research, wireframing-prototyping, plus jamstack-development under web-development.
 24. ✅ Slug Consistency Fix — Fixed PWA and E-commerce slug mismatches. All slugs must now match across `serviceMenuSections`, override objects, MD data, and `main-services.js`.
+25. ✅ Route rename — Renamed `/[category]/[service]/` to `/[mainservice]/[subservice]/` to avoid confusion with industries pages.
+26. ✅ Standalone services removed — Deleted `scripts/convert-service.js` and all `/service/[slug]/` references; 11 `Service/` DOCX files were never part of the active content model.
 
 ### In Progress
-25. 🔲 Service conversion (11 standalone files) — create `scripts/convert-service.js` → `data/services.js`
+27. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
 
 ### Pending
-26. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP/Swiper/Lenis removal
-27. 🔲 Fix pre-existing Radix UI prerender errors (glossary/case-studies)
+28. 🔲 Fix pre-existing Radix UI prerender errors (glossary/case-studies)
+29. 🔲 Big data file split — Split `data/sub-services.js` (1.95 MB) into lightweight listings + full data
 
 ---
 

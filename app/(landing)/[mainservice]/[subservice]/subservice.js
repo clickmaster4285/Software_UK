@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { NavigationWheel } from '@/app/(landing)/[category]/[service]/NavigationWheel';
+import { NavigationWheel } from '@/app/(landing)/[mainservice]/[subservice]/NavigationWheel';
 import { ArrowRight, CheckCircle, ChevronDown, ChevronUp, Rocket, ArrowLeft, Code2, Globe, Smartphone, Palette, Bot, Brain, MessageSquare, BarChart3, Settings2, Cloud, Database, Shield, FlaskConical, Users, Blocks, Cpu, Glasses, MessageCircle, TrendingUp, } from 'lucide-react';
 
 const categoryIcons = {

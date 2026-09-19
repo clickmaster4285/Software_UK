@@ -371,8 +371,7 @@ These gaps exist because the source MD files don't contain the data. No parser f
 - [ ] **Phase 4: Split data file** — Create `sub-services-listings.js` (lightweight) so listing/navbar pages don't import 1.95 MB
 - [ ] **Phase 4: Lazy-load heavy sections** — Verify `dynamic()` usage on ProcessSection, CaseStudySection, PricingSection
 - [ ] **Phase 4: Canonical tags** — Confirm all sub-service pages have `alternates: { canonical }`
-- [ ] **Standalone services** — Convert 11 files in `Service/` → `data/services.js` (route: `/service/[slug]/`)
-- [ ] **Industry+Service combos** — Plan conversion of 202 files → `/[category]/[service]/` route
+- [ ] **Industry+Service combos** — Plan conversion of 202 files → `/[mainservice]/[subservice]/` route
 - [ ] **Create MD files for override-only services** — 102 sub-services have no MD content; create MD sources for high-value ones (AI, Cloud, Cybersecurity, Blockchain)
 - [x] **metaKeywords extraction cleanup (Sep 17)** — Fixed parser to strip bold markers, section headings, CTA labels, URL artifacts, numbering, and Markdown backslashes from keyword arrays
 - [x] **metaKeywords normalization to arrays** — Converted string `metaKeywords` to arrays in `data/sub-services.js` (13 instances) and `data/main-services.js`; added `cleanMetaKeywords()` runtime filter in overlay paths to remove corrupted entries
