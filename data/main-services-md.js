@@ -1,7 +1,7 @@
 // AUTO-GENERATED from main-services/*.md by scripts/convert-main-services-md.js
 // Rich main-service content: intro, tables, costFactors, whyChoose, relatedLinks, full FAQs & keywords.
 // NOTE: written to data/main-services-md.js so data/main-services.js is unaffected until ready.
-// Generated: 2026-09-17T09:07:15.975Z
+// Generated: 2026-09-21T10:28:15.237Z
 
 export const mainServicesMd = [
   {
@@ -3847,7 +3847,7 @@ export const mainServicesMd = [
     "h1": "UI/UX Design Company for Digital Products",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux",
     "metaTitle": "UI/UX Design Services UK | Clickmasters",
-    "metaDescription": "Custom UI/UX design services in the UK for software, websites and mobile apps, including UX research, wireframes, prototypes, UI design and design systems.",
+    "metaDescription": "Custom UI/UX design services in the UK for software, websites and mobile apps, including UX research, wireframes, prototypes, UI design and design systems. UI/UX Design Services UK",
     "metaKeywords": [
       "ui ux design services",
       "ux design services",
@@ -5309,6 +5309,1272 @@ export const mainServicesMd = [
     ],
     "jsonLd": {},
     "sourceFile": "block chain.md"
+  },
+  {
+    "slug": "nlp-computer-vision",
+    "title": "NLP & Computer Vision Development Services UK",
+    "h1": "NLP & Computer Vision Development Services UK",
+    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision",
+    "metaTitle": "NLP & Computer Vision Development Services UK | Clickmasters",
+    "metaDescription": "NLP and computer vision development services in the UK for text, speech, image and video AI, covering model development, integration and deployment.",
+    "metaKeywords": [
+      "NLP and computer vision development services",
+      "NLP and computer vision services",
+      "NLP and computer vision development",
+      "natural language processing and computer vision",
+      "NLP computer vision company UK",
+      "AI language and vision solutions",
+      "custom NLP and computer vision development",
+      "NLP and computer vision company",
+      "AI vision and language development",
+      "NLP computer vision solutions"
+    ],
+    "intro": [
+      "Turn text, speech, images and video into AI capabilities that can work inside your software and business processes.",
+      "Clickmasters can help assess the use case, prepare your data, develop or adapt the required models, integrate them with your application and prepare the solution for production.",
+      "Primary CTA: Book an AI Consultation",
+      "\\<script type=\"application/ld+json\"\\>",
+      "{",
+      "\"@context\": \"https://schema.org\",",
+      "\"@type\": \"Service\",",
+      "\"@id\": \"/nlp-computer-vision\\#service\",",
+      "\"name\": \"NLP & Computer Vision Development Services\",",
+      "\"alternateName\": \\[",
+      "\"NLP and Computer Vision Services\",",
+      "\"Natural Language Processing and Computer Vision Development\",",
+      "\"AI Language and Vision Development\"",
+      "\\],",
+      "\"url\": \"/nlp-computer-vision\",",
+      "\"description\": \"NLP and computer vision development services in the UK for text, speech, image and video AI, including model development, integration, deployment and monitoring.\",",
+      "\"serviceType\": \"NLP & Computer Vision Development Services\",",
+      "\"category\": \"Artificial Intelligence Development\",",
+      "\"provider\": {",
+      "\"@type\": \"Organization\",",
+      "\"@id\": \"/\\#organization\",",
+      "\"name\": \"Clickmasters Software Development Company\",",
+      "\"url\": \"/\"",
+      "},",
+      "\"areaServed\": {",
+      "\"@type\": \"Country\",",
+      "\"name\": \"United Kingdom\"",
+      "},",
+      "\"hasOfferCatalog\": {",
+      "\"@type\": \"OfferCatalog\",",
+      "\"name\": \"NLP & Computer Vision Services\",",
+      "\"itemListElement\": \\[",
+      "{",
+      "\"@type\": \"Offer\",",
+      "\"itemOffered\": {",
+      "\"@type\": \"Service\",",
+      "\"name\": \"Natural Language Processing Development\",",
+      "\"url\": \"/nlp-computer-vision/nlp\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Offer\",",
+      "\"itemOffered\": {",
+      "\"@type\": \"Service\",",
+      "\"name\": \"Speech Recognition Development\",",
+      "\"url\": \"/nlp-computer-vision/speech-recognition\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Offer\",",
+      "\"itemOffered\": {",
+      "\"@type\": \"Service\",",
+      "\"name\": \"Computer Vision Development\",",
+      "\"url\": \"/nlp-computer-vision/computer-vision\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Offer\",",
+      "\"itemOffered\": {",
+      "\"@type\": \"Service\",",
+      "\"name\": \"Image Processing\",",
+      "\"url\": \"/nlp-computer-vision/image-processing\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Offer\",",
+      "\"itemOffered\": {",
+      "\"@type\": \"Service\",",
+      "\"name\": \"Video Analytics Development\",",
+      "\"url\": \"/nlp-computer-vision/video-analytics\"",
+      "}",
+      "}",
+      "\\]",
+      "},",
+      "\"isRelatedTo\": \\[",
+      "{",
+      "\"@type\": \"Service\",",
+      "\"name\": \"Artificial Intelligence Development Services\",",
+      "\"url\": \"/artificial-intelligence-ai\"",
+      "},",
+      "{",
+      "\"@type\": \"Service\",",
+      "\"name\": \"Machine Learning Development Services\",",
+      "\"url\": \"/machine-learning-ml\"",
+      "},",
+      "{",
+      "\"@type\": \"Service\",",
+      "\"name\": \"Deep Learning Development Services\",",
+      "\"url\": \"/machine-learning-ml/deep-learning-solutions\"",
+      "}",
+      "\\]",
+      "}",
+      "\\</script\\>",
+      "Faq Schema",
+      "\\<script type=\"application/ld+json\"\\>",
+      "{",
+      "\"@context\": \"https://schema.org\",",
+      "\"@type\": \"FAQPage\",",
+      "\"@id\": \"/nlp-computer-vision\\#faq\",",
+      "\"url\": \"/nlp-computer-vision\",",
+      "\"mainEntity\": \\[",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"What are NLP and computer vision development services?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"NLP and computer vision development services create AI-powered software capable of processing language and visual data, including text, speech, images and video, and integrating the resulting outputs into applications and business workflows.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"What is natural language processing?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"Natural language processing is an area of AI that enables software to analyse and work with human language, including text classification, entity extraction, sentiment analysis and semantic search.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"What is computer vision?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"Computer vision is an area of AI that enables software to analyse images and video to identify objects, classifications, patterns or other visual information.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"What is the difference between NLP and computer vision?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"NLP primarily processes language such as text and speech, while computer vision processes visual information such as images and video.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"Can NLP and computer vision work together?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"Yes. They can be combined in multimodal systems such as document intelligence, where computer vision or OCR extracts visual information and NLP interprets the resulting text.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"What is document AI?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"Document AI combines technologies such as image processing, OCR and NLP to extract and interpret structured information from documents.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"What is the difference between computer vision and image processing?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"Image processing mainly transforms or prepares visual data, while computer vision aims to interpret the content or meaning of images and video.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"Can computer vision analyse video?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"Yes. Computer vision can be applied to video frames for tasks such as object detection, tracking, classification and event analysis.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"What is speech recognition?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"Speech recognition converts spoken audio into text or another machine-readable representation that can be used by software or further processed with NLP.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"Can NLP and computer vision models integrate with existing software?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"Yes. AI capabilities can often be connected with existing web, mobile and business applications through APIs, backend services or dedicated integration layers.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"Do NLP and computer vision projects require custom model training?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"Not always. Depending on the use case, a project may use an existing model, fine-tune an existing model or train a custom model.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"Can NLP and computer vision work in real time?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"Some NLP and computer vision applications can provide real-time or near-real-time processing where the model, infrastructure and software architecture support it.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"How are NLP and computer vision models evaluated?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"Evaluation depends on the task and can include metrics such as accuracy, precision, recall, F1 score, retrieval relevance, detection performance or other application-specific measures.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"How much does NLP and computer vision development cost?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"Cost depends on data preparation, model complexity, training requirements, integrations, real-time processing, deployment infrastructure and ongoing model-management requirements.\"",
+      "}",
+      "},",
+      "{",
+      "\"@type\": \"Question\",",
+      "\"name\": \"How long does NLP and computer vision development take?\",",
+      "\"acceptedAnswer\": {",
+      "\"@type\": \"Answer\",",
+      "\"text\": \"The timeline depends on data readiness, model requirements, training or fine-tuning, integration, testing and production deployment requirements.\"",
+      "}",
+      "}",
+      "\\]",
+      "}",
+      "\\</script\\>",
+      "Breadcrumb Schema",
+      "\\<script type=\"application/ld+json\"\\>",
+      "{",
+      "\"@context\": \"https://schema.org\",",
+      "\"@type\": \"BreadcrumbList\",",
+      "\"@id\": \"/nlp-computer-vision\\#breadcrumb\",",
+      "\"itemListElement\": \\[",
+      "{",
+      "\"@type\": \"ListItem\",",
+      "\"position\": 1,",
+      "\"name\": \"Home\",",
+      "\"item\": \"/\"",
+      "},",
+      "{",
+      "\"@type\": \"ListItem\",",
+      "\"position\": 2,",
+      "\"name\": \"NLP & Computer Vision\",",
+      "\"item\": \"/nlp-computer-vision\"",
+      "}",
+      "\\]",
+      "}",
+      "\\</script\\>"
+    ],
+    "sections": [
+      {
+        "heading": "Target SEO Keywords",
+        "body": "",
+        "items": [
+          "NLP and computer vision development services",
+          "NLP and computer vision services",
+          "NLP and computer vision development",
+          "natural language processing and computer vision",
+          "NLP computer vision company UK",
+          "AI language and vision solutions",
+          "custom NLP and computer vision development",
+          "NLP and computer vision company",
+          "AI vision and language development",
+          "NLP computer vision solutions"
+        ]
+      },
+      {
+        "heading": "H1: NLP & Computer Vision Development Services UK",
+        "body": "Build intelligent software that can process and understand text, speech, images and video with custom NLP and computer vision development services.\n\nClickmasters develops AI solutions that combine natural language processing and computer vision with machine learning, model integration and production software engineering. We help businesses turn unstructured language and visual data into structured information, predictions, classifications and software actions.\n\nOur NLP and computer vision services connect with our broader Artificial Intelligence Development Services and Machine Learning Development Services.\n\nPrimary CTA: Book a Consultation Secondary CTA: Discuss Your AI Project\n\n---\n\n# SECTION 02 — DEFINITION / SERVICE OVERVIEW",
+        "items": []
+      },
+      {
+        "heading": "NLP & Computer Vision for Intelligent Software",
+        "body": "Natural language processing and computer vision solve two different but complementary problems.\n\nNatural Language Processing → understands and processes language\n\nComputer Vision → understands and processes visual information\n\nTogether, they can enable software to work with:\n\nA simplified architecture can look like:\n\nBusiness Data → Text / Speech / Image / Video → NLP or Computer Vision Model → Structured Output → Business Application → Decision / Automation / User Experience\n\n---\n\n# SECTION 03 — CORE / CHILD SERVICES",
+        "items": [
+          "Text",
+          "Documents",
+          "Speech",
+          "Images",
+          "Video",
+          "Mixed language and visual inputs"
+        ]
+      },
+      {
+        "heading": "Our NLP & Computer Vision Development Services",
+        "body": "Our services cover the development and integration of AI capabilities for language and visual data.\n\nCore areas include:\n\nThe specific architecture depends on the data, required output and software environment.",
+        "items": [
+          "Natural language processing",
+          "Speech recognition",
+          "Computer vision",
+          "Image processing",
+          "Video analytics",
+          "Model development",
+          "AI integration",
+          "Data preparation",
+          "Model training",
+          "Model deployment",
+          "Model monitoring"
+        ]
+      },
+      {
+        "heading": "Natural Language Processing Development",
+        "body": "Natural language processing enables software to analyse, interpret and work with human language.\n\nNLP systems can support:\n\nA typical NLP workflow can follow:\n\nText / Document → Language Processing → Entity / Meaning / Classification → Structured Output → Application\n\nFor dedicated language-focused projects, explore our NLP Development Services.",
+        "items": [
+          "Text classification",
+          "Information extraction",
+          "Named entity recognition",
+          "Sentiment analysis",
+          "Semantic search",
+          "Document processing",
+          "Text analysis",
+          "Language understanding",
+          "Content categorisation",
+          "Conversational interfaces"
+        ]
+      },
+      {
+        "heading": "Speech Recognition Development",
+        "body": "Speech recognition converts spoken audio into text or machine-readable output.\n\nAudio → Speech Recognition → Transcript / Command → Language Processing → Application\n\nSpeech recognition can form part of:\n\nFor dedicated speech projects, visit our Speech Recognition Development Services.",
+        "items": [
+          "Voice-enabled applications",
+          "Transcription workflows",
+          "Search interfaces",
+          "Customer-service tools",
+          "Spoken-command systems"
+        ]
+      },
+      {
+        "heading": "Computer Vision Development",
+        "body": "Computer vision enables software to analyse and interpret visual information from images and video.\n\nComputer vision systems can support:\n\nImage / Video → Computer Vision Model → Detected Object / Classification / Pattern → Structured Output → Application\n\nFor dedicated visual AI development, explore our Computer Vision Development Services.",
+        "items": [
+          "Image recognition",
+          "Image classification",
+          "Object detection",
+          "Object tracking",
+          "Image segmentation",
+          "Visual inspection",
+          "Document-image analysis",
+          "Video understanding"
+        ]
+      },
+      {
+        "heading": "Image Processing Development",
+        "body": "Image processing focuses on transforming, enhancing or preparing visual data for software or computer vision workflows.\n\nImage-processing capabilities can include:\n\nRaw Image → Image Processing → Prepared Visual Data → Computer Vision Model\n\nFor projects focused specifically on visual transformation and preparation, visit our Image Processing Services.",
+        "items": [
+          "Image enhancement",
+          "Noise reduction",
+          "Resizing",
+          "Cropping",
+          "Filtering",
+          "Contrast adjustment",
+          "Image normalisation",
+          "Pre-processing",
+          "Feature preparation",
+          "Image transformation"
+        ]
+      },
+      {
+        "heading": "Video Analytics Development",
+        "body": "Video analytics applies computer vision to sequences of frames to identify objects, patterns, movement or events.\n\nVideo Stream → Frame Processing → Object Detection → Tracking / Analysis → Event or Structured Output\n\nPotential capabilities can include:\n\nFor dedicated video projects, explore our Video Analytics Development Services.\n\n---\n\n# SECTION 04 — HOW IT WORKS",
+        "items": [
+          "Object detection",
+          "Object tracking",
+          "Motion analysis",
+          "Video classification",
+          "Event detection",
+          "Visual pattern analysis"
+        ]
+      },
+      {
+        "heading": "How NLP & Computer Vision Work Together",
+        "body": "Some AI applications require language and visual understanding within the same workflow.\n\nThese systems can combine:\n\nComputer Vision \\+ Natural Language Processing → Multimodal Software Capability\n\nInstead of treating images and text separately, a combined system can process relationships between different forms of information.",
+        "items": []
+      },
+      {
+        "heading": "Document Intelligence",
+        "body": "Document intelligence is a strong example of NLP and computer vision working together.\n\nScanned Document / Image → Visual Processing → Text Extraction → NLP → Entity / Field / Classification Output\n\nThis type of architecture can help software convert unstructured documents into structured data for further processing.",
+        "items": []
+      },
+      {
+        "heading": "OCR & Text Extraction Workflows",
+        "body": "Optical character recognition can provide a bridge between visual information and NLP.\n\nDocument Image → OCR → Extracted Text → NLP → Structured Information\n\nOCR alone extracts text. NLP can then interpret, classify or extract meaning from that text.",
+        "items": []
+      },
+      {
+        "heading": "Multimodal Search",
+        "body": "Search applications can combine language and visual information.\n\nText Query \\+ Image Data → Representations → Similarity / Retrieval → Relevant Results\n\nThe exact architecture depends on what users need to search and what data is available.",
+        "items": []
+      },
+      {
+        "heading": "Visual & Language Interfaces",
+        "body": "Some applications may need to interpret visual input and generate or retrieve language-based information.\n\nVisual Input → Computer Vision → Structured Visual Information → Language Processing → Application Response\n\nThis can support applications where users interact with visual information through natural-language interfaces.\n\n---\n\n# SECTION 05 — ADVANCED CAPABILITIES",
+        "items": []
+      },
+      {
+        "heading": "Advanced NLP & Computer Vision Capabilities",
+        "body": "",
+        "items": []
+      },
+      {
+        "heading": "Named Entity Recognition",
+        "body": "Named entity recognition identifies defined entities within text.\n\nThese can include:\n\nUnstructured Text → NLP Model → Entity Detection → Structured Data",
+        "items": [
+          "People",
+          "Organisations",
+          "Locations",
+          "Products",
+          "Dates",
+          "Reference numbers",
+          "Domain-specific terms"
+        ]
+      },
+      {
+        "heading": "Sentiment Analysis",
+        "body": "Sentiment analysis can classify language according to defined sentiment or opinion categories.\n\nPotential inputs can include:",
+        "items": [
+          "Customer reviews",
+          "Support conversations",
+          "Surveys",
+          "Feedback",
+          "Messages",
+          "Social content"
+        ]
+      },
+      {
+        "heading": "Semantic Search",
+        "body": "Semantic search uses language representations to retrieve information based on meaning rather than exact keyword matching alone.\n\nUser Query → Semantic Representation → Similarity / Retrieval → Relevant Results",
+        "items": []
+      },
+      {
+        "heading": "Document Processing",
+        "body": "NLP can be used to analyse information extracted from digital documents.\n\nApplications can include:",
+        "items": [
+          "Document classification",
+          "Entity extraction",
+          "Information extraction",
+          "Content tagging",
+          "Document routing",
+          "Search and retrieval"
+        ]
+      },
+      {
+        "heading": "Image Recognition",
+        "body": "Image recognition models can identify or classify visual content according to defined categories.\n\nImage → Visual Model → Classification / Recognition → Application Output",
+        "items": []
+      },
+      {
+        "heading": "Object Detection",
+        "body": "Object detection identifies defined objects and their positions within visual data.\n\nA detection system can produce information such as:",
+        "items": [
+          "Object type",
+          "Object location",
+          "Detection confidence",
+          "Number of detected objects"
+        ]
+      },
+      {
+        "heading": "Object Tracking",
+        "body": "Object tracking follows detected objects across multiple video frames.\n\nVideo → Object Detection → Tracking → Movement / Sequence Data → Application",
+        "items": []
+      },
+      {
+        "heading": "Image Segmentation",
+        "body": "Image segmentation separates areas of an image into meaningful regions or classes.\n\nInstead of only identifying an object, segmentation can help determine which pixels belong to a particular visual region.\n\n---\n\n# SECTION 06 — USE CASES",
+        "items": []
+      },
+      {
+        "heading": "NLP & Computer Vision Use Cases",
+        "body": "",
+        "items": []
+      },
+      {
+        "heading": "Intelligent Document Processing",
+        "body": "Combine document images, text extraction and NLP to convert unstructured documents into structured information.",
+        "items": []
+      },
+      {
+        "heading": "Semantic Search",
+        "body": "Understand the meaning of user queries and retrieve more relevant text or documents.",
+        "items": []
+      },
+      {
+        "heading": "Text Classification",
+        "body": "Automatically assign text to predefined categories.",
+        "items": []
+      },
+      {
+        "heading": "Information Extraction",
+        "body": "Extract useful entities or fields from large volumes of text.",
+        "items": []
+      },
+      {
+        "heading": "Speech-to-Text Workflows",
+        "body": "Convert spoken content into text for further processing or software actions.",
+        "items": []
+      },
+      {
+        "heading": "Image Classification",
+        "body": "Classify images according to defined categories.",
+        "items": []
+      },
+      {
+        "heading": "Object Detection",
+        "body": "Locate and classify objects within images or video.",
+        "items": []
+      },
+      {
+        "heading": "Video Analytics",
+        "body": "Analyse video sequences to detect objects, movement or defined events.",
+        "items": []
+      },
+      {
+        "heading": "Visual Inspection",
+        "body": "Analyse images to identify defined visual patterns or conditions.",
+        "items": []
+      },
+      {
+        "heading": "Multimodal Applications",
+        "body": "Combine text and visual information within the same AI-enabled software workflow.\n\n---\n\n# SECTION 07 — INTEGRATION",
+        "items": []
+      },
+      {
+        "heading": "NLP & Computer Vision Integration",
+        "body": "AI capabilities need to connect with existing software before they become useful business functionality.\n\nModels can potentially integrate with:\n\nA typical integration model is:\n\nApplication → AI Service / API → NLP or Computer Vision Model → Structured Output → Application Response",
+        "items": [
+          "Web applications",
+          "Mobile applications",
+          "Enterprise systems",
+          "APIs",
+          "Data platforms",
+          "Search systems",
+          "Workflow tools",
+          "Internal software"
+        ]
+      },
+      {
+        "heading": "AI API Development",
+        "body": "NLP and computer vision functionality can be exposed through APIs.\n\nAn application could send:\n\nand receive:\n\nThe API design depends on performance, security and application requirements.\n\n---\n\n# SECTION 08 — TECHNICAL ARCHITECTURE",
+        "items": [
+          "Text",
+          "A document",
+          "An image",
+          "Audio",
+          "A video reference",
+          "Classification",
+          "Extracted information",
+          "Detected objects",
+          "Transcript",
+          "Structured metadata",
+          "Ranked results"
+        ]
+      },
+      {
+        "heading": "NLP & Computer Vision Technical Architecture",
+        "body": "",
+        "items": []
+      },
+      {
+        "heading": "Data Preparation for NLP & Computer Vision",
+        "body": "AI models depend on usable training and inference data.",
+        "items": []
+      },
+      {
+        "heading": "Text Data",
+        "body": "",
+        "items": [
+          "Cleaning",
+          "Normalisation",
+          "Formatting",
+          "Annotation",
+          "Label preparation",
+          "Document structuring"
+        ]
+      },
+      {
+        "heading": "Image Data",
+        "body": "",
+        "items": [
+          "Resizing",
+          "Normalisation",
+          "Image enhancement",
+          "Annotation",
+          "Class labelling",
+          "Object labelling"
+        ]
+      },
+      {
+        "heading": "Video Data",
+        "body": "The preparation process should match the model task rather than applying the same workflow to every dataset.",
+        "items": [
+          "Frame extraction",
+          "Sequence preparation",
+          "Annotation",
+          "Object labels",
+          "Event labels"
+        ]
+      },
+      {
+        "heading": "Data Labelling",
+        "body": "Supervised NLP and computer vision models may require labelled examples.\n\nLabels can identify:",
+        "items": [
+          "Text categories",
+          "Entities",
+          "Sentiment",
+          "Objects",
+          "Image classes",
+          "Visual regions",
+          "Events",
+          "Speech content"
+        ]
+      },
+      {
+        "heading": "Model Training",
+        "body": "NLP and computer vision models may need training or adaptation around the project's data.\n\nTraining can involve:\n\nFor dedicated training and model-performance work, explore our AI Model Training & Optimisation Services.",
+        "items": [
+          "Dataset preparation",
+          "Architecture selection",
+          "Model training",
+          "Validation",
+          "Error analysis",
+          "Iteration",
+          "Performance evaluation"
+        ]
+      },
+      {
+        "heading": "Model Fine-Tuning",
+        "body": "Where an appropriate existing model is available, fine-tuning can adapt it to a more specific task or dataset.\n\nExisting Model → Project Data → Fine-Tuning → Evaluation → Task-Specific Model",
+        "items": []
+      },
+      {
+        "heading": "Deep Learning for NLP & Computer Vision",
+        "body": "Deep learning can support language and vision problems involving complex patterns or high-dimensional data.\n\nNeural Networks → Language Models → NLP\n\nand\n\nNeural Networks → Visual Models → Computer Vision\n\nFor broader neural-network development, see our Deep Learning Development Services.",
+        "items": []
+      },
+      {
+        "heading": "NLP & Computer Vision Model Evaluation",
+        "body": "Model quality should be evaluated according to the task being performed.",
+        "items": []
+      },
+      {
+        "heading": "NLP",
+        "body": "",
+        "items": [
+          "Accuracy",
+          "Precision",
+          "Recall",
+          "F1 score",
+          "Retrieval relevance",
+          "Classification quality"
+        ]
+      },
+      {
+        "heading": "Computer Vision",
+        "body": "Technical metrics should be connected to the actual software requirement.",
+        "items": [
+          "Classification performance",
+          "Detection performance",
+          "Segmentation quality",
+          "Tracking performance",
+          "Error analysis"
+        ]
+      },
+      {
+        "heading": "Error Analysis",
+        "body": "Error analysis can investigate:",
+        "items": [
+          "Incorrect classifications",
+          "Missed entities",
+          "False detections",
+          "Missed objects",
+          "Poor-quality inputs",
+          "Difficult image conditions",
+          "Ambiguous text",
+          "Edge cases"
+        ]
+      },
+      {
+        "heading": "Real-Time AI Processing",
+        "body": "Some applications require NLP or computer vision outputs with low latency.\n\nReal-time requirements can apply to:",
+        "items": [
+          "Speech processing",
+          "Visual detection",
+          "Object tracking",
+          "Live video analytics",
+          "Interactive language interfaces"
+        ]
+      },
+      {
+        "heading": "Batch Processing",
+        "body": "Other use cases can process information asynchronously.\n\nDocuments / Images / Video Files → Scheduled Processing → AI Models → Structured Results → Database / Application",
+        "items": []
+      },
+      {
+        "heading": "Model Optimisation",
+        "body": "Production NLP and computer vision models may need optimisation around:",
+        "items": [
+          "Model size",
+          "Inference speed",
+          "Memory",
+          "Throughput",
+          "Compute requirements",
+          "Prediction quality"
+        ]
+      },
+      {
+        "heading": "Model Monitoring",
+        "body": "Monitoring can help identify:\n\n---\n\n# SECTION 09 — DEPLOYMENT",
+        "items": [
+          "Prediction-performance changes",
+          "Data drift",
+          "Model drift",
+          "Latency problems",
+          "API failures",
+          "Input changes",
+          "Resource issues"
+        ]
+      },
+      {
+        "heading": "Cloud & Edge AI Deployment",
+        "body": "",
+        "items": []
+      },
+      {
+        "heading": "Cloud Deployment",
+        "body": "NLP and computer vision models can be deployed within cloud-based software architectures where this suits the application's requirements.\n\nCloud deployment planning can account for:\n\nThe production architecture should be selected around application requirements rather than only the development environment.",
+        "items": [
+          "Model serving",
+          "APIs",
+          "Compute",
+          "Scaling",
+          "Storage",
+          "Logging",
+          "Monitoring",
+          "Security"
+        ]
+      },
+      {
+        "heading": "Edge AI Deployment",
+        "body": "Some computer vision and speech applications may require processing closer to the device or data source.\n\nEdge deployment can help where requirements include:\n\nModel size, memory and device compute become important constraints in edge environments.\n\n---\n\n# SECTION 10 — PROCESS",
+        "items": [
+          "Low latency",
+          "Local processing",
+          "Limited connectivity",
+          "Reduced data transmission"
+        ]
+      },
+      {
+        "heading": "Our NLP & Computer Vision Development Process",
+        "body": "",
+        "items": []
+      },
+      {
+        "heading": "1. Problem Discovery",
+        "body": "We define the business problem, input data and required AI output.",
+        "items": []
+      },
+      {
+        "heading": "2. Feasibility Assessment",
+        "body": "We assess whether NLP, computer vision or a combined approach is appropriate.",
+        "items": []
+      },
+      {
+        "heading": "3. Data Assessment",
+        "body": "Available text, audio, image or video data is reviewed.",
+        "items": []
+      },
+      {
+        "heading": "4. Data Preparation",
+        "body": "Data is cleaned, structured, annotated or transformed where required.",
+        "items": []
+      },
+      {
+        "heading": "5. Model Approach",
+        "body": "Suitable model architectures and implementation approaches are evaluated.",
+        "items": []
+      },
+      {
+        "heading": "6. Model Development",
+        "body": "The selected NLP or computer vision capability is developed or adapted.",
+        "items": []
+      },
+      {
+        "heading": "7. Training & Evaluation",
+        "body": "The model is trained or fine-tuned and evaluated against suitable criteria.",
+        "items": []
+      },
+      {
+        "heading": "8. Optimisation",
+        "body": "Performance can be refined for accuracy, latency, model size or production constraints.",
+        "items": []
+      },
+      {
+        "heading": "9. Software Integration",
+        "body": "The AI model is connected with the required application or workflow.",
+        "items": []
+      },
+      {
+        "heading": "10. Deployment",
+        "body": "The approved solution is prepared for its production environment.",
+        "items": []
+      },
+      {
+        "heading": "11. Monitoring",
+        "body": "Relevant model and system behaviour can be monitored.",
+        "items": []
+      },
+      {
+        "heading": "12. Iterative Improvement",
+        "body": "Production data and feedback can inform future model updates.",
+        "items": []
+      },
+      {
+        "heading": "What You Receive",
+        "body": "Deliverables depend on the agreed project scope and can include:\n\n---\n\n# SECTION 11 — WHY CLICKMASTERS",
+        "items": [
+          "AI requirements",
+          "Feasibility findings",
+          "Data-readiness assessment",
+          "Data-processing workflow",
+          "NLP or computer vision model",
+          "Model evaluation results",
+          "AI API",
+          "Application integration",
+          "Deployment configuration",
+          "Monitoring requirements",
+          "Technical documentation",
+          "Handover information."
+        ]
+      },
+      {
+        "heading": "Validate Your NLP & Computer Vision Project",
+        "body": "",
+        "items": []
+      },
+      {
+        "heading": "NLP & Computer Vision Proof of Concept",
+        "body": "A Proof of Concept can help determine whether an AI approach is technically viable before full production development.\n\nA PoC can test:\n\nThe aim is to answer a defined technical question rather than build the final product immediately.",
+        "items": [
+          "Data quality",
+          "Model suitability",
+          "Initial accuracy",
+          "Processing requirements",
+          "Integration feasibility",
+          "Performance limitations"
+        ]
+      },
+      {
+        "heading": "NLP & Computer Vision MVP Development",
+        "body": "An MVP can combine initial NLP or computer vision functionality with the minimum software required to test it in a practical workflow.\n\nAn MVP can include:\n\nThe system can then be expanded according to real user and model-performance feedback.\n\n---\n\n# SECTION 13 — COST \\+ TIMELINE",
+        "items": [
+          "Data pipeline",
+          "Initial model",
+          "AI API",
+          "Application integration",
+          "Basic interface",
+          "Model evaluation",
+          "Monitoring requirements"
+        ]
+      },
+      {
+        "heading": "How Much Does NLP & Computer Vision Development Cost?",
+        "body": "The cost depends on factors such as:\n\nA focused text-classification solution has a different development scope from a real-time multimodal platform processing language and video.",
+        "items": [
+          "Data availability",
+          "Data preparation",
+          "Data labelling",
+          "Model complexity",
+          "NLP or vision requirements",
+          "Real-time processing",
+          "Software integration",
+          "Infrastructure",
+          "Deployment",
+          "Monitoring",
+          "Ongoing model improvement"
+        ]
+      },
+      {
+        "heading": "How Long Does NLP & Computer Vision Development Take?",
+        "body": "The timeline depends on:\n\nProjects can be structured into feasibility, model development and production-integration stages.\n\n---\n\n# SECTION 14 — FAQ",
+        "items": [
+          "Data readiness",
+          "Model requirements",
+          "Training or fine-tuning",
+          "Model evaluation",
+          "Software integration",
+          "Real-time requirements",
+          "Deployment environment",
+          "Testing",
+          "Stakeholder feedback"
+        ]
+      }
+    ],
+    "tables": [],
+    "costFactors": [
+      "Data availability",
+      "Data preparation",
+      "Data labelling",
+      "Model complexity",
+      "NLP or vision requirements",
+      "Real-time processing",
+      "Software integration",
+      "Infrastructure",
+      "Deployment",
+      "Monitoring",
+      "Ongoing model improvement",
+      "Data readiness",
+      "Model requirements",
+      "Training or fine-tuning",
+      "Model evaluation",
+      "Software integration",
+      "Real-time requirements",
+      "Deployment environment",
+      "Testing",
+      "Stakeholder feedback"
+    ],
+    "whyChoose": [
+      {
+        "title": "Why Choose Clickmasters for NLP & Computer Vision Development?",
+        "body": "Clickmasters approaches NLP and computer vision as part of a complete AI and software-development lifecycle.\n\nOur approach can connect:\n\nBusiness Problem → Text / Speech / Image / Video → AI Model → Structured Intelligence → Software Integration → Business Workflow → Monitoring\n\nThis keeps the AI capability connected to the application and workflow where its output will actually be used.\n\n---\n\n# SECTION 12 — PoC / MVP",
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Related AI & Machine Learning Services",
+        "answer": "For this pillar page, use related higher-level or adjacent services rather than repeating all five child pages again. Recommended cards based on services already referenced in the supplied content:"
+      },
+      {
+        "question": "Artificial Intelligence Development Services",
+        "answer": "Broader AI development services for integrating intelligent software capabilities into applications and business workflows."
+      },
+      {
+        "question": "Machine Learning Development Services",
+        "answer": "Machine-learning development for predictive, classification and data-driven software requirements."
+      },
+      {
+        "question": "AI Model Training & Optimisation Services",
+        "answer": "Data preparation, model training, fine-tuning, evaluation and optimisation for production AI systems."
+      },
+      {
+        "question": "Deep Learning Development Services",
+        "answer": "Neural-network development for complex language, visual and other high-dimensional AI problems. ---"
+      },
+      {
+        "question": "Build Your NLP & Computer Vision Solution with Clickmasters",
+        "answer": "The supplied file ends at the “Why Choose Clickmasters” section and does not include the approved final CTA copy. Use the existing approved CTA from the main NLP & Computer Vision page here rather than allowing the developer to invent new marketing copy. Primary CTA: Book a Consultation"
+      },
+      {
+        "question": "What are NLP and computer vision development services?",
+        "answer": "NLP and computer vision development services create AI-powered software capable of processing language and visual data, including text, speech, images and video, and integrating the resulting outputs into applications and business workflows."
+      },
+      {
+        "question": "What is natural language processing?",
+        "answer": "Natural language processing is an area of AI that enables software to analyse and work with human language, including text classification, entity extraction, sentiment analysis and semantic search."
+      },
+      {
+        "question": "What is computer vision?",
+        "answer": "Computer vision is an area of AI that enables software to analyse images and video to identify objects, classifications, patterns or other visual information."
+      },
+      {
+        "question": "What is the difference between NLP and computer vision?",
+        "answer": "NLP primarily processes language such as text and speech, while computer vision processes visual information such as images and video."
+      },
+      {
+        "question": "Can NLP and computer vision work together?",
+        "answer": "Yes. They can be combined in multimodal systems such as document intelligence, where computer vision or OCR extracts visual information and NLP interprets the resulting text."
+      },
+      {
+        "question": "What is document AI?",
+        "answer": "Document AI combines technologies such as image processing, OCR and NLP to extract and interpret structured information from documents."
+      },
+      {
+        "question": "What is the difference between computer vision and image processing?",
+        "answer": "Image processing mainly transforms or prepares visual data, while computer vision aims to interpret the content or meaning of images and video."
+      },
+      {
+        "question": "Can computer vision analyse video?",
+        "answer": "Yes. Computer vision can be applied to video frames for tasks such as object detection, tracking, classification and event analysis."
+      },
+      {
+        "question": "What is speech recognition?",
+        "answer": "Speech recognition converts spoken audio into text or another machine-readable representation that can be used by software or further processed with NLP."
+      },
+      {
+        "question": "Can NLP and computer vision models integrate with existing software?",
+        "answer": "Yes. AI capabilities can often be connected with existing web, mobile and business applications through APIs, backend services or dedicated integration layers."
+      },
+      {
+        "question": "Do NLP and computer vision projects require custom model training?",
+        "answer": "Not always. Depending on the use case, a project may use an existing model, fine-tune an existing model or train a custom model."
+      },
+      {
+        "question": "Can NLP and computer vision work in real time?",
+        "answer": "Some NLP and computer vision applications can provide real-time or near-real-time processing where the model, infrastructure and software architecture support it."
+      },
+      {
+        "question": "How are NLP and computer vision models evaluated?",
+        "answer": "Evaluation depends on the task and can include metrics such as accuracy, precision, recall, F1 score, retrieval relevance, detection performance or other application-specific measures."
+      },
+      {
+        "question": "How much does NLP and computer vision development cost?",
+        "answer": "Cost depends on data preparation, model complexity, training requirements, integrations, real-time processing, deployment infrastructure and ongoing model-management requirements."
+      },
+      {
+        "question": "How long does NLP and computer vision development take?",
+        "answer": "The timeline depends on data readiness, model requirements, training or fine-tuning, integration, testing and production deployment requirements."
+      }
+    ],
+    "relatedLinks": [],
+    "jsonLd": {
+      "service": {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision#service",
+        "name": "NLP & Computer Vision Development Services",
+        "alternateName": [
+          "NLP and Computer Vision Services",
+          "Natural Language Processing and Computer Vision Development",
+          "AI Language and Vision Development"
+        ],
+        "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision",
+        "description": "NLP and computer vision development services in the UK for text, speech, image and video AI, including model development, integration, deployment and monitoring.",
+        "serviceType": "NLP & Computer Vision Development Services",
+        "category": "Artificial Intelligence Development",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/#organization",
+          "name": "Clickmasters Software Development Company",
+          "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United Kingdom"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "NLP & Computer Vision Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Natural Language Processing Development",
+                "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision/nlp"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Speech Recognition Development",
+                "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision/speech-recognition"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Computer Vision Development",
+                "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision/computer-vision"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Image Processing",
+                "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision/image-processing"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Video Analytics Development",
+                "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision/video-analytics"
+              }
+            }
+          ]
+        },
+        "isRelatedTo": [
+          {
+            "@type": "Service",
+            "name": "Artificial Intelligence Development Services",
+            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/artificial-intelligence-ai"
+          },
+          {
+            "@type": "Service",
+            "name": "Machine Learning Development Services",
+            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml"
+          },
+          {
+            "@type": "Service",
+            "name": "Deep Learning Development Services",
+            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml/deep-learning-solutions"
+          }
+        ]
+      },
+      "faqPage": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision#faq",
+        "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are NLP and computer vision development services?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NLP and computer vision development services create AI-powered software capable of processing language and visual data, including text, speech, images and video, and integrating the resulting outputs into applications and business workflows."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is natural language processing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Natural language processing is an area of AI that enables software to analyse and work with human language, including text classification, entity extraction, sentiment analysis and semantic search."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is computer vision?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Computer vision is an area of AI that enables software to analyse images and video to identify objects, classifications, patterns or other visual information."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between NLP and computer vision?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NLP primarily processes language such as text and speech, while computer vision processes visual information such as images and video."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can NLP and computer vision work together?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. They can be combined in multimodal systems such as document intelligence, where computer vision or OCR extracts visual information and NLP interprets the resulting text."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is document AI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Document AI combines technologies such as image processing, OCR and NLP to extract and interpret structured information from documents."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between computer vision and image processing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Image processing mainly transforms or prepares visual data, while computer vision aims to interpret the content or meaning of images and video."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can computer vision analyse video?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Computer vision can be applied to video frames for tasks such as object detection, tracking, classification and event analysis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is speech recognition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Speech recognition converts spoken audio into text or another machine-readable representation that can be used by software or further processed with NLP."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can NLP and computer vision models integrate with existing software?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. AI capabilities can often be connected with existing web, mobile and business applications through APIs, backend services or dedicated integration layers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do NLP and computer vision projects require custom model training?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not always. Depending on the use case, a project may use an existing model, fine-tune an existing model or train a custom model."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can NLP and computer vision work in real time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some NLP and computer vision applications can provide real-time or near-real-time processing where the model, infrastructure and software architecture support it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are NLP and computer vision models evaluated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evaluation depends on the task and can include metrics such as accuracy, precision, recall, F1 score, retrieval relevance, detection performance or other application-specific measures."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does NLP and computer vision development cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cost depends on data preparation, model complexity, training requirements, integrations, real-time processing, deployment infrastructure and ongoing model-management requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does NLP and computer vision development take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The timeline depends on data readiness, model requirements, training or fine-tuning, integration, testing and production deployment requirements."
+            }
+          }
+        ]
+      },
+      "breadcrumb": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://clickmasterssoftwaredevelopmentcompany.co.uk/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "NLP & Computer Vision",
+            "item": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision"
+          }
+        ]
+      }
+    },
+    "sourceFile": "nlp main service.md"
   }
 ];
 
