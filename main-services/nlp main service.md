@@ -844,51 +844,7 @@
 
 # **SECTION 14 — FAQ**
 
-## **Frequently Asked Questions**
-
-**The supplied content file does not contain the FAQ section, so place the already-approved NLP & Computer Vision FAQs here when handing the page to development.**
-
-**UI: FAQ accordion.**
-
-**Do not create new FAQ answers in development without the approved SEO copy.**
-
----
-
-# **SECTION 15 — RELATED SERVICES**
-
-## **Related AI & Machine Learning Services**
-
-**For this pillar page, use related higher-level or adjacent services rather than repeating all five child pages again.**
-
-**Recommended cards based on services already referenced in the supplied content:**
-
-### **Artificial Intelligence Development Services**
-
-**Broader AI development services for integrating intelligent software capabilities into applications and business workflows.**
-
-### **Machine Learning Development Services**
-
-**Machine-learning development for predictive, classification and data-driven software requirements.**
-
-### **AI Model Training & Optimisation Services**
-
-**Data preparation, model training, fine-tuning, evaluation and optimisation for production AI systems.**
-
-### **Deep Learning Development Services**
-
-**Neural-network development for complex language, visual and other high-dimensional AI problems.**
-
----
-
-# **SECTION 16 — FINAL CTA**
-
-## **Build Your NLP & Computer Vision Solution with Clickmasters**
-
-**The supplied file ends at the “Why Choose Clickmasters” section and does not include the approved final CTA copy. Use the existing approved CTA from the main NLP & Computer Vision page here rather than allowing the developer to invent new marketing copy.**
-
-**Primary CTA: Book a Consultation**
-
-#  **Frequently Asked Questions**
+# **Frequently Asked Questions**
 
 ### **What are NLP and computer vision development services?**
 
@@ -949,6 +905,32 @@ Cost depends on data preparation, model complexity, training requirements, integ
 ### **How long does NLP and computer vision development take?**
 
 The timeline depends on data readiness, model requirements, training or fine-tuning, integration, testing and production deployment requirements.
+
+---
+
+# **SECTION 15 — RELATED SERVICES**
+
+## **Related AI & Machine Learning Services**
+
+### **Artificial Intelligence Development Services**
+
+Broader AI development services for integrating intelligent software capabilities into applications and business workflows.
+
+### **Machine Learning Development Services**
+
+Machine-learning development for predictive, classification and data-driven software requirements.
+
+### **AI Model Training & Optimisation Services**
+
+Data preparation, model training, fine-tuning, evaluation and optimisation for production AI systems.
+
+### **Deep Learning Development Services**
+
+Neural-network development for complex language, visual and other high-dimensional AI problems.
+
+---
+
+# **SECTION 16 — FINAL CTA**
 
 # **Build Your NLP & Computer Vision Solution with Clickmasters**
 

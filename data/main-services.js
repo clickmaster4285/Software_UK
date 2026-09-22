@@ -55,6 +55,155 @@ function cleanMetaKeywords(keywords) {
   });
 }
 
+/** Max MD childServices accepted before treating the list as polluted. */
+const MAX_MD_CHILD_SERVICES = 15;
+
+/**
+ * True when href is a real sub-service path under the main service slug.
+ * Accepts absolute or relative URLs.
+ */
+function isValidChildHref(href, slug) {
+  if (!href || typeof href !== 'string' || !slug) return false;
+  const path = href.replace(/^https?:\/\/[^/]+/i, '').split(/[?#]/)[0];
+  return new RegExp(`^/${slug}/[a-z0-9][a-z0-9-]*/?$`, 'i').test(path);
+}
+
+/**
+ * Prefer MD childServices when they map to real sub-routes.
+ * Fills missing hrefs by matching curated subServices (slugify title).
+ * Otherwise return null so Explore falls back to curated subServices.
+ */
+function normalizeChildServices(mdChildren, slug, subServices) {
+  if (!Array.isArray(mdChildren) || mdChildren.length === 0) return null;
+  if (mdChildren.length > MAX_MD_CHILD_SERVICES) return null;
+
+  const bySlug = new Map(
+    (subServices || []).map((s) => [s.slug, s])
+  );
+  const byTitle = new Map(
+    (subServices || []).map((s) => [slugify(s.title), s])
+  );
+
+  const enriched = [];
+  for (const child of mdChildren) {
+    let href = (child.href || child.url || '').trim();
+    let match = null;
+
+    if (isValidChildHref(href, slug)) {
+      const childSlug = href.replace(/^https?:\/\/[^/]+/i, '').split('/').filter(Boolean).pop();
+      match = bySlug.get(childSlug) || null;
+    } else {
+      match = byTitle.get(slugify(child.title)) || null;
+      if (match) href = `/${slug}/${match.slug}`;
+    }
+
+    if (!isValidChildHref(href, slug)) continue;
+
+    enriched.push({
+      ...child,
+      title: child.title || match?.title || '',
+      description: child.description || match?.description || '',
+      href,
+      url: href,
+      icon: match?.icon || child.icon || 'Code2',
+    });
+  }
+
+  if (enriched.length >= 2 && enriched.length <= MAX_MD_CHILD_SERVICES) {
+    return enriched;
+  }
+  return null;
+}
+
+/**
+ * MD whyChoose is usually one section block ({ title, body, items }).
+ * UI cards need { title, description, features }. Only overlay when the
+ * list looks like benefit cards; otherwise keep whyChooseUsData as SoT.
+ */
+function normalizeWhyChoose(mdWhyChoose) {
+  if (!Array.isArray(mdWhyChoose) || mdWhyChoose.length === 0) return null;
+
+  const cards = mdWhyChoose.map((item) => ({
+    title: item.title || '',
+    description: item.description || item.body || '',
+    features: item.features || item.items || [],
+    body: item.body,
+    items: item.items,
+  }));
+
+  const looksLikeBenefitCards =
+    cards.length >= 2 &&
+    cards.every((c) => c.title && !/^why choose/i.test(c.title.trim()));
+
+  return looksLikeBenefitCards ? cards : null;
+}
+
+function normalizeIndustries(mdIndustries) {
+  if (!Array.isArray(mdIndustries) || mdIndustries.length === 0) return null;
+  return mdIndustries.map((ind) => {
+    if (typeof ind === 'string') {
+      return {
+        title: ind,
+        name: ind,
+        description: `Specialized ${ind.toLowerCase()} solutions tailored to your business needs.`,
+      };
+    }
+    const title = ind.title || ind.name || '';
+    return {
+      ...ind,
+      title,
+      name: ind.name || title,
+      description: ind.description || (title ? `Specialized ${title.toLowerCase()} solutions.` : ''),
+    };
+  });
+}
+
+/**
+ * MD CTA is often `{ primary: "Book a …" }`. FinalCTA expects
+ * `{ primary: { heading, subheading, description, buttonText, buttonUrl } }`.
+ */
+function normalizeCta(mdCta, serviceTitle) {
+  if (!mdCta || (!mdCta.primary && !mdCta.secondary)) return null;
+
+  const primaryRaw = mdCta.primary;
+  const secondaryRaw = mdCta.secondary;
+
+  if (primaryRaw && typeof primaryRaw === 'object' && primaryRaw.heading) {
+    return {
+      ...mdCta,
+      primary: {
+        heading: primaryRaw.heading,
+        subheading: primaryRaw.subheading || "Let's Build it Together",
+        description: primaryRaw.description || '',
+        buttonText: primaryRaw.buttonText || 'Contact Us',
+        buttonUrl: primaryRaw.buttonUrl || '/contact',
+      },
+      ctaText:
+        primaryRaw.buttonText ||
+        (typeof primaryRaw.heading === 'string' && primaryRaw.heading.length < 40
+          ? primaryRaw.heading
+          : 'Get Started'),
+    };
+  }
+
+  const primaryLabel = typeof primaryRaw === 'string' ? primaryRaw.trim() : '';
+  const secondaryLabel = typeof secondaryRaw === 'string' ? secondaryRaw.trim() : '';
+  if (!primaryLabel && !secondaryLabel) return null;
+
+  const title = serviceTitle || 'your project';
+  return {
+    primary: {
+      heading: primaryLabel || `Ready to start your ${title}?`,
+      subheading: "Let's Build it Together",
+      description: `Our team will discuss your ${title.toLowerCase()} requirements and propose a technical solution tailored to your business goals.`,
+      buttonText: primaryLabel && primaryLabel.length <= 40 ? primaryLabel : 'Contact Us',
+      buttonUrl: '/contact',
+    },
+    secondary: secondaryLabel || null,
+    ctaText: primaryLabel && primaryLabel.length <= 40 ? primaryLabel : 'Get Started',
+  };
+}
+
 export const mainServicesData = {
   // 1. SOFTWARE DEVELOPMENT
   'software-development': {
@@ -854,6 +1003,7 @@ const mdCategoryMap = new Map(mainServicesMd.map(m => [m.slug, m]));
 
 /**
  * Get full data for a main service by its slug.
+ * MD overlay is non-destructive; shapes are normalized for UI components.
  */
 export const getServiceData = (slug) => {
   const service = mainServicesData[slug];
@@ -862,28 +1012,53 @@ export const getServiceData = (slug) => {
   const md = mdCategoryMap.get(slug);
   if (!md) return enriched;
 
+  const childServices = normalizeChildServices(
+    md.childServices,
+    slug,
+    enriched.subServices
+  );
+  const whyChoose = normalizeWhyChoose(md.whyChoose);
+  const industries = normalizeIndustries(md.industries);
+  const cta = normalizeCta(md.cta, md.h1 || enriched.title || enriched.h1);
+  const process =
+    md.process && md.process.length > 0
+      ? md.process.map((step) => ({
+          ...step,
+          title: String(step.title || '').replace(/^\d+[\.\)]\s*/, '').trim() || step.title,
+        }))
+      : enriched.process;
+
   return {
     ...enriched,
     h1: md.h1 || enriched.h1 || enriched.title,
     intro: md.intro && md.intro.length > 0 ? md.intro : enriched.intro,
     metaTitle: md.metaTitle || enriched.metaTitle,
     metaDescription: md.metaDescription || enriched.metaDescription,
-    metaKeywords: (() => { const c = cleanMetaKeywords(md.metaKeywords); return c.length > 0 ? c : enriched.metaKeywords; })(),
+    metaKeywords: (() => {
+      const c = cleanMetaKeywords(md.metaKeywords);
+      return c.length > 0 ? c : enriched.metaKeywords;
+    })(),
     sections: md.sections && md.sections.length > 0 ? md.sections : enriched.sections,
     tables: md.tables && md.tables.length > 0 ? md.tables : enriched.tables,
     costFactors: md.costFactors && md.costFactors.length > 0 ? md.costFactors : enriched.costFactors,
-    whyChoose: md.whyChoose && md.whyChoose.length > 0 ? md.whyChoose : enriched.whyChoose,
+    // Only overlay card-shaped whyChoose; else WhyChooseUs uses whyChooseUsData
+    whyChoose: whyChoose || enriched.whyChoose,
     relatedLinks: md.relatedLinks && md.relatedLinks.length > 0 ? md.relatedLinks : enriched.relatedLinks,
     faqs: md.faqs && md.faqs.length > 0 ? md.faqs : enriched.faqs,
     jsonLd: md.jsonLd || enriched.jsonLd,
-    process: md.process && md.process.length > 0 ? md.process : enriched.process,
+    process: process && process.length > 0 ? process : enriched.process,
     techStack: md.techStack && md.techStack.length > 0 ? md.techStack : enriched.techStack,
-    industries: md.industries && md.industries.length > 0 ? md.industries : enriched.industries,
-    childServices: md.childServices && md.childServices.length > 0 ? md.childServices : enriched.childServices,
+    industries: industries || enriched.industries,
+    // Gated: polluted MD children → undefined → Explore uses subServices
+    childServices: childServices || undefined,
     deliverables: md.deliverables && md.deliverables.length > 0 ? md.deliverables : enriched.deliverables,
-    engagementModels: md.engagementModels && md.engagementModels.length > 0 ? md.engagementModels : enriched.engagementModels,
+    engagementModels:
+      md.engagementModels && md.engagementModels.length > 0
+        ? md.engagementModels
+        : enriched.engagementModels,
     useCases: md.useCases && md.useCases.length > 0 ? md.useCases : enriched.useCases,
-    cta: md.cta && (md.cta.primary || md.cta.secondary) ? md.cta : enriched.cta,
+    cta: cta || enriched.cta,
+    ctaText: cta?.ctaText || enriched.ctaText,
   };
 };
 

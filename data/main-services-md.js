@@ -1,7 +1,7 @@
 // AUTO-GENERATED from main-services/*.md by scripts/convert-main-services-md.js
 // Rich main-service content: intro, tables, costFactors, whyChoose, relatedLinks, full FAQs & keywords.
 // NOTE: written to data/main-services-md.js so data/main-services.js is unaffected until ready.
-// Generated: 2026-09-22T07:45:08.267Z
+// Generated: 2026-09-22T09:13:17.769Z
 
 export const mainServicesMd = [
   {
@@ -206,7 +206,7 @@ export const mainServicesMd = [
       },
       {
         "heading": "Cyber Security Assessment Process",
-        "body": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe supplied SERP repeatedly connects cyber security services with identifying risk, testing controls, remediating weaknesses and improving organisational resilience.",
+        "body": "The supplied SERP repeatedly connects cyber security services with identifying risk, testing controls, remediating weaknesses and improving organisational resilience.",
         "items": []
       },
       {
@@ -297,6 +297,11 @@ export const mainServicesMd = [
           "Reporting requirements",
           "Retesting"
         ]
+      },
+      {
+        "heading": "Strengthen Your Cyber Security with Clickmasters",
+        "body": "Need to understand where your systems are vulnerable or which security improvements should be prioritised?\n\nClickmasters can assess your security requirements, identify technical weaknesses, test agreed systems and provide structured findings to support remediation and stronger security controls.\n\nPrimary CTA: Book a Cyber Security Consultation\n\nService Scheama\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"Service\",\n\n\"@id\": \"/cybersecurity\\#service\",\n\n\"name\": \"Cyber Security Services\",\n\n\"alternateName\": \\[\n\n\"Cyber Security Consulting Services\",\n\n\"Business Cyber Security Services\",\n\n\"IT Cyber Security Services\"\n\n\\],\n\n\"url\": \"/cybersecurity\",\n\n\"description\": \"Cyber security services for UK businesses including security audits, penetration testing, security assessments and compliance-focused security support.\",\n\n\"serviceType\": \"Cyber Security Services\",\n\n\"category\": \"Cyber Security\",\n\n\"provider\": {\n\n\"@type\": \"Organization\",\n\n\"@id\": \"/\\#organization\",\n\n\"name\": \"Clickmasters Software Development Company\",\n\n\"url\": \"/\"\n\n},\n\n\"areaServed\": {\n\n\"@type\": \"Country\",\n\n\"name\": \"United Kingdom\"\n\n},\n\n\"hasOfferCatalog\": {\n\n\"@type\": \"OfferCatalog\",\n\n\"name\": \"Cyber Security Services\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Security Audit Services\",\n\n\"url\": \"/cybersecurity/security-audits\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Penetration Testing Services\",\n\n\"url\": \"/cybersecurity/penetration-testing\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Cyber Security Compliance Services\",\n\n\"url\": \"/cybersecurity/compliance-management\"\n\n}\n\n}\n\n\\]\n\n},\n\n\"isRelatedTo\": \\[\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Software Development Services\",\n\n\"url\": \"/software-development\"\n\n}\n\n\\]\n\n}\n\n\\</script\\>\n\nFAQ Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"FAQPage\",\n\n\"@id\": \"/cybersecurity\\#faq\",\n\n\"url\": \"/cybersecurity\",\n\n\"mainEntity\": \\[\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What are cyber security services?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Cyber security services are professional technical and advisory activities used to identify vulnerabilities, assess security controls, test systems, understand cyber risk and improve the protection of applications, infrastructure and business information.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What cyber security services does Clickmasters provide?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Clickmasters provides cyber security services including security audits, penetration testing, security assessments and compliance-focused security support according to the agreed project scope.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is a cyber security assessment?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"A cyber security assessment reviews systems, controls and potential vulnerabilities to identify security risks and areas that may require technical or procedural improvement.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is the difference between a security audit and penetration testing?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"A security audit broadly reviews security controls, configurations and weaknesses, while penetration testing uses controlled technical testing to determine whether vulnerabilities can be exploited.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is penetration testing?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Penetration testing is a controlled security-testing process used to identify and validate exploitable weaknesses within an agreed technical scope.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is a cyber security audit?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"A cyber security audit reviews selected security controls, systems, configurations and processes to identify weaknesses and areas requiring improvement.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What are cyber security compliance services?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Cyber security compliance services assess security controls and processes against relevant requirements to identify gaps and support remediation and evidence preparation.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can existing software be security tested?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. Existing applications, APIs and other software systems can be assessed according to an agreed security-testing scope.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can a web application be penetration tested?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. Web applications can be included within a penetration-testing scope to evaluate relevant vulnerabilities, authentication, access controls and application behaviour.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can APIs be security tested?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. APIs can be assessed for issues involving authentication, authorisation, data exposure, input handling and other security weaknesses within the agreed scope.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"How much do cyber security services cost?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Cost depends on service type, technical scope, number of systems, application complexity, testing requirements, reporting and any required follow-up work.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"How long does a cyber security assessment take?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"The timeline depends on the systems being assessed, project scope, complexity, testing depth and reporting requirements.\"\n\n}\n\n}\n\n\\]\n\n}\n\n\\</script\\>\n\nBreadcrumb Schema \\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"BreadcrumbList\",\n\n\"@id\": \"/cybersecurity\\#breadcrumb\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 1,\n\n\"name\": \"Home\",\n\n\"item\": \"/\"\n\n},\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 2,\n\n\"name\": \"Cyber Security\",\n\n\"item\": \"/cybersecurity\"\n\n}\n\n\\]\n\n}\n\n\\</script\\>",
+        "items": []
       }
     ],
     "tables": [
@@ -601,7 +606,48 @@ export const mainServicesMd = [
     "cta": {
       "primary": "Book a Cyber Security Consultation"
     },
-    "process": [],
+    "process": [
+      {
+        "step": 1,
+        "title": "Define the Scope",
+        "description": "The systems, applications, environments and security objectives included in the assessment are established."
+      },
+      {
+        "step": 2,
+        "title": "Understand the Environment",
+        "description": "Relevant application, infrastructure and security information is reviewed."
+      },
+      {
+        "step": 3,
+        "title": "Identify Security Risks",
+        "description": "Potential vulnerabilities, control weaknesses and areas of exposure are assessed."
+      },
+      {
+        "step": 4,
+        "title": "Perform Technical Testing",
+        "description": "Testing is conducted according to the agreed assessment or penetration-testing scope."
+      },
+      {
+        "step": 5,
+        "title": "Analyse Findings",
+        "description": "Identified issues are evaluated according to technical severity and potential impact."
+      },
+      {
+        "step": 6,
+        "title": "Document the Results",
+        "description": "Findings and relevant evidence are structured into clear security information."
+      },
+      {
+        "step": 7,
+        "title": "Prioritise Remediation",
+        "description": "Security issues are organised so higher-risk weaknesses can be addressed appropriately."
+      },
+      {
+        "step": 8,
+        "title": "Improve Security Controls",
+        "description": "Technical and procedural improvements can be implemented based on the findings."
+      }
+    ],
     "techStack": [],
     "industries": [],
     "childServices": [
@@ -1006,6 +1052,11 @@ export const mainServicesMd = [
           "Deployment requirements",
           "Stakeholder feedback"
         ]
+      },
+      {
+        "heading": "Build Your Machine Learning Solution with Clickmasters",
+        "body": "Planning a predictive, recommendation, classification or other machine-learning-enabled software product?\n\nClickmasters can help assess the opportunity, structure the data and technical requirements, develop and evaluate the model, integrate it with your software and prepare the solution for production.\n\nPrimary CTA: Book a Machine Learning Consultation\n\nService Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"Service\",\n\n\"@id\": \"/machine-learning-ml\\#service\",\n\n\"name\": \"Machine Learning Development Services\",\n\n\"alternateName\": \\[\n\n\"Machine Learning Services\",\n\n\"Custom Machine Learning Development\",\n\n\"ML Development Services\"\n\n\\],\n\n\"url\": \"/machine-learning-ml\",\n\n\"description\": \"Custom machine learning development services in the UK covering ML consulting, data readiness, model development, training, optimisation, software integration, deployment and lifecycle support.\",\n\n\"serviceType\": \"Machine Learning Development Services\",\n\n\"category\": \"Machine Learning\",\n\n\"provider\": {\n\n\"@type\": \"Organization\",\n\n\"@id\": \"/\\#organization\",\n\n\"name\": \"Clickmasters Software Development Company\",\n\n\"url\": \"/\"\n\n},\n\n\"areaServed\": {\n\n\"@type\": \"Country\",\n\n\"name\": \"United Kingdom\"\n\n},\n\n\"hasOfferCatalog\": {\n\n\"@type\": \"OfferCatalog\",\n\n\"name\": \"Machine Learning Development Services\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Machine Learning Consulting\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Data Readiness Assessment\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Custom Machine Learning Model Development\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Predictive Analytics\",\n\n\"url\": \"/machine-learning-ml/predictive-analytics\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Recommendation System Development\",\n\n\"url\": \"/machine-learning-ml/recommendation-systems\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Model Training and Optimisation\",\n\n\"url\": \"/machine-learning-ml/model-training-optimization\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Deep Learning Development\",\n\n\"url\": \"/machine-learning-ml/deep-learning-solutions\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Machine Learning Integration\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Machine Learning Model Deployment\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Model Monitoring and Retraining\"\n\n}\n\n}\n\n\\]\n\n},\n\n\"isRelatedTo\": \\[\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Artificial Intelligence Services\",\n\n\"url\": \"/artificial-intelligence-ai\"\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Software Development Services\",\n\n\"url\": \"/software-development\"\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Data Services\",\n\n\"url\": \"/data-services\"\n\n}\n\n\\]\n\n}\n\n\\</script\\>\n\nFaq Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"FAQPage\",\n\n\"@id\": \"/machine-learning-ml\\#faq\",\n\n\"url\": \"/machine-learning-ml\",\n\n\"mainEntity\": \\[\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What are machine learning development services?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Machine learning development services cover the planning, data preparation, model development, training, evaluation, integration, deployment and ongoing improvement of software systems that use machine learning.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What does a machine learning development company do?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"A machine learning development company helps identify suitable ML use cases, assess data, develop and evaluate models, integrate them with software and prepare machine learning functionality for production use.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is custom machine learning development?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Custom machine learning development involves creating models and ML-enabled software around a specific business problem, dataset, workflow and technical environment.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"How do I know if my business needs machine learning?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Machine learning may be appropriate where useful patterns can be learned from data and those patterns can support predictions, classification, recommendations or other business outcomes. A feasibility assessment can help determine whether ML is appropriate.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What data is needed for machine learning?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"The required data depends on the use case. Important factors include relevance, quality, completeness, historical coverage, structure and whether the data contains enough useful information to train and evaluate a model.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can machine learning integrate with existing software?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. Machine learning functionality can often be integrated with existing applications through APIs, backend services, data pipelines or dedicated ML components where the software architecture supports it.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is the difference between machine learning and traditional software?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Traditional software primarily follows explicitly programmed rules, while machine learning models learn statistical patterns from data and use those patterns to generate outputs such as predictions or classifications.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is a machine learning Proof of Concept?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"A machine learning Proof of Concept is a focused experiment used to determine whether available data and an ML approach can produce useful results before investing in a larger production system.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is MLOps?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"MLOps is the set of practices used to deploy, monitor, version, maintain and retrain machine learning models in production environments.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Why do machine learning models need monitoring?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Model performance can change as real-world data and behaviour change. Monitoring can help identify performance degradation, data drift, model drift and operational problems.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"How often should a machine learning model be retrained?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"There is no universal retraining schedule. Retraining depends on how quickly the underlying data changes, model performance, business requirements and the availability of new training data.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is the difference between predictive analytics and machine learning?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Predictive analytics focuses on using data to estimate future outcomes. Machine learning is one technical approach that can be used to build predictive models as well as classification, recommendation and other data-driven systems.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can you build recommendation systems?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Recommendation systems can be developed where suitable user, item or interaction data is available. The appropriate approach depends on the product, data and personalisation requirements.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"How much does machine learning development cost?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Cost depends on data readiness, model complexity, experimentation, integrations, deployment, infrastructure, monitoring, security and the wider software-development scope.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"How long does machine learning development take?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"The timeline depends on data readiness, project complexity, model requirements, experimentation, software integration, testing and deployment requirements.\"\n\n}\n\n}\n\n\\]\n\n}\n\n\\</script\\>\n\nBreadcrumb Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"BreadcrumbList\",\n\n\"@id\": \"/machine-learning-ml\\#breadcrumb\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 1,\n\n\"name\": \"Home\",\n\n\"item\": \"/\"\n\n},\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 2,\n\n\"name\": \"Machine Learning\",\n\n\"item\": \"/machine-learning-ml\"\n\n}\n\n\\]\n\n}\n\n\\</script\\>",
+        "items": []
       }
     ],
     "tables": [
@@ -1432,7 +1483,68 @@ export const mainServicesMd = [
     "cta": {
       "primary": "Book a Machine Learning Consultation"
     },
-    "process": [],
+    "process": [
+      {
+        "step": 1,
+        "title": "Discovery",
+        "description": "We define the business problem, expected outcome and success criteria."
+      },
+      {
+        "step": 2,
+        "title": "ML Feasibility Assessment",
+        "description": "We determine whether machine learning is an appropriate technical approach."
+      },
+      {
+        "step": 3,
+        "title": "Data Assessment",
+        "description": "Available data is evaluated for suitability, quality and accessibility."
+      },
+      {
+        "step": 4,
+        "title": "Data Preparation",
+        "description": "Relevant data is cleaned, transformed and structured for model development."
+      },
+      {
+        "step": 5,
+        "title": "Model Approach",
+        "description": "Suitable model approaches are evaluated according to the problem and constraints."
+      },
+      {
+        "step": 6,
+        "title": "Model Training",
+        "description": "The selected approach is trained using prepared data."
+      },
+      {
+        "step": 7,
+        "title": "Model Evaluation",
+        "description": "Performance is measured against suitable technical and business criteria."
+      },
+      {
+        "step": 8,
+        "title": "Iteration & Optimisation",
+        "description": "Model behaviour is analysed and improved where appropriate."
+      },
+      {
+        "step": 9,
+        "title": "Software Integration",
+        "description": "The model is connected with the wider application or business system."
+      },
+      {
+        "step": 10,
+        "title": "Deployment",
+        "description": "The approved model is prepared for the required production environment."
+      },
+      {
+        "step": 11,
+        "title": "Monitoring",
+        "description": "Performance and relevant production behaviour can be monitored."
+      },
+      {
+        "step": 12,
+        "title": "Retraining & Improvement",
+        "description": "The model can be reviewed and retrained as data or requirements change."
+      }
+    ],
     "techStack": [],
     "industries": [],
     "childServices": [
@@ -1440,6 +1552,16 @@ export const mainServicesMd = [
         "title": "Machine Learning Consulting & Feasibility Assessment",
         "href": "",
         "description": "Not every business problem requires machine learning."
+      },
+      {
+        "title": "Data Readiness Assessment",
+        "href": "",
+        "description": "Machine learning depends heavily on data quality."
+      },
+      {
+        "title": "Data Preparation for Machine Learning",
+        "href": "",
+        "description": "Raw business data often requires preparation before it can be used effectively for model development."
       },
       {
         "title": "Custom Machine Learning Model Development",
@@ -1504,8 +1626,8 @@ export const mainServicesMd = [
   },
   {
     "slug": "design-ui-ux",
-    "title": "UI/UX Design Company for Digital Products",
-    "h1": "UI/UX Design Company for Digital Products",
+    "title": "UI/UX Design Services UK",
+    "h1": "UI/UX Design Services UK",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux",
     "metaTitle": "UI/UX Design Services UK | Clickmasters",
     "metaDescription": "Custom UI/UX design services in the UK for software, websites and mobile apps, including UX research, wireframes, prototypes, UI design and design systems. UI/UX Design Services UK",
@@ -1938,6 +2060,11 @@ export const mainServicesMd = [
           "Can they explain how design decisions were validated?",
           "Do they understand both user and business requirements?"
         ]
+      },
+      {
+        "heading": "Design Better Digital Products with Clickmasters",
+        "body": "Planning a new website, software platform or mobile app, or trying to improve an existing digital product?\n\nClickmasters can help research the users, structure the experience, design the interface, create prototypes, validate important journeys and prepare the final design for development.\n\nPrimary CTA: Book a Free Consultation Secondary CTA: Request a UI/UX Design Quote\n\nService Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"Service\",\n\n\"@id\": \"/design-ui-ux\\#service\",\n\n\"name\": \"UI/UX Design Services\",\n\n\"alternateName\": \\[\n\n\"UI UX Design\",\n\n\"User Experience Design\",\n\n\"User Interface Design\"\n\n\\],\n\n\"url\": \"/design-ui-ux\",\n\n\"description\": \"UI/UX design services for UK businesses, including UX research, user journeys, information architecture, wireframing, prototyping, interface design, design systems, usability testing and developer handoff.\",\n\n\"serviceType\": \"UI/UX Design\",\n\n\"category\": \"Digital Product Design\",\n\n\"provider\": {\n\n\"@type\": \"Organization\",\n\n\"@id\": \"/\\#organization\",\n\n\"name\": \"Clickmasters Software Development Company\",\n\n\"url\": \"/\"\n\n},\n\n\"areaServed\": {\n\n\"@type\": \"Country\",\n\n\"name\": \"United Kingdom\"\n\n},\n\n\"audience\": {\n\n\"@type\": \"BusinessAudience\",\n\n\"audienceType\": \"Startups, SMEs and enterprises\"\n\n},\n\n\"hasOfferCatalog\": {\n\n\"@type\": \"OfferCatalog\",\n\n\"name\": \"UI/UX Design Services\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"UX Research\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"UX Strategy\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"User Journey Mapping\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Information Architecture\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"User Flow Design\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Wireframing\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Interactive Prototyping\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"User Interface Design\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Design Systems\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Usability Testing\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"UX Audits\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Developer Handoff\"\n\n}\n\n}\n\n\\]\n\n},\n\n\"isRelatedTo\": \\[\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Software Development Services\",\n\n\"url\": \"/software-development\"\n\n}\n\n\\]\n\n}\n\n\\</script\\>\n\nFaqs\n\n\\<script type=\"application/ld+json\"\\> { \"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"@id\": \"/design-ui-ux\\#faq\", \"url\": \"/design-ui-ux\", \"mainEntity\": \\[ { \"@type\": \"Question\", \"name\": \"What are UI/UX design services?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"UI/UX design services can include user research, UX strategy, information architecture, user journeys, user flows, wireframes, interface design, interactive prototypes, usability testing, design systems and developer handoff.\" } }, { \"@type\": \"Question\", \"name\": \"What is the difference between UI and UX design?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"UX design focuses on how a product works and how users move through it, while UI design focuses on the visual and interactive interface through which users complete those journeys. Both disciplines work together.\" } }, { \"@type\": \"Question\", \"name\": \"What does a UI/UX design company do?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"A UI/UX design company researches user needs, structures product journeys, creates wireframes and prototypes, designs interfaces, tests usability and prepares approved designs for development.\" } }, { \"@type\": \"Question\", \"name\": \"Why is UX research important?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"UX research helps product teams understand user needs, behaviours and problems before making design decisions. It can reduce reliance on assumptions during product planning.\" } }, { \"@type\": \"Question\", \"name\": \"What is a wireframe?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"A wireframe is a structural representation of a screen or page. It focuses on information hierarchy, functionality and layout before detailed visual design is applied.\" } }, { \"@type\": \"Question\", \"name\": \"What is an interactive prototype?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"An interactive prototype simulates important product interactions and user journeys before the final product is developed. It can be used for stakeholder review and usability validation.\" } }, { \"@type\": \"Question\", \"name\": \"What is a UI design system?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"A design system is a collection of reusable components, interface rules and patterns that helps maintain consistency across a digital product.\" } }, { \"@type\": \"Question\", \"name\": \"Do you design websites and mobile apps?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Yes. UI/UX design can be applied to websites, web applications, mobile applications, SaaS platforms, ecommerce platforms and other software interfaces.\" } }, { \"@type\": \"Question\", \"name\": \"Can you redesign an existing product?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Yes. Existing products can be reviewed to identify usability, navigation, workflow and interface problems before developing an improved UX and UI direction.\" } }, { \"@type\": \"Question\", \"name\": \"Do you provide UI/UX design for SaaS platforms?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Yes. SaaS UI/UX projects can include onboarding, dashboards, workflows, account management, settings, billing, product navigation and other application interfaces.\" } }, { \"@type\": \"Question\", \"name\": \"Does UI/UX design include development?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"UI/UX design primarily defines the user experience and interface. Frontend or application development implements the approved design in working software. The two disciplines should collaborate closely during handoff and implementation.\" } }, { \"@type\": \"Question\", \"name\": \"How much does UI/UX design cost?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Cost depends on product complexity, research requirements, user roles, number of workflows and screens, prototyping, usability testing, responsive requirements and design-system scope. Discovery is normally required for an accurate estimate.\" } }, { \"@type\": \"Question\", \"name\": \"How long does a UI/UX design project take?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"The timeline depends on project scope, research, product complexity, number of screens, user roles, testing requirements and stakeholder feedback.\" } } \\] } \\</script\\>\n\nBreadcrumb Schema \\<script type=\"application/ld+json\"\\> { \"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"@id\": \"/design-ui-ux\\#breadcrumb\", \"itemListElement\": \\[ { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"/\" }, { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"UI/UX Design\", \"item\": \"/design-ui-ux\" } \\] } \\</script\\>",
+        "items": []
       }
     ],
     "tables": [
@@ -2378,52 +2505,52 @@ export const mainServicesMd = [
     "process": [
       {
         "step": 1,
-        "title": "1. Discovery",
+        "title": "Discovery",
         "description": "We begin by understanding:"
       },
       {
         "step": 2,
-        "title": "2. User & Product Research",
+        "title": "User & Product Research",
         "description": "Where required, we examine users, competitors, existing behaviour and available product data."
       },
       {
         "step": 3,
-        "title": "3. UX Strategy",
+        "title": "UX Strategy",
         "description": "We define the experience priorities and identify the key journeys the product needs to support."
       },
       {
         "step": 4,
-        "title": "4. Information Architecture",
+        "title": "Information Architecture",
         "description": "Content, functionality and navigation are structured into a logical product hierarchy."
       },
       {
         "step": 5,
-        "title": "5. User Flows",
+        "title": "User Flows",
         "description": "Important tasks are mapped step by step."
       },
       {
         "step": 6,
-        "title": "6. Wireframing",
+        "title": "Wireframing",
         "description": "Screens are structured without becoming distracted by detailed visual styling."
       },
       {
         "step": 7,
-        "title": "7. UI Design",
+        "title": "UI Design",
         "description": "The approved UX structure is developed into a complete visual interface."
       },
       {
         "step": 8,
-        "title": "8. Prototyping",
+        "title": "Prototyping",
         "description": "Important journeys can be turned into interactive prototypes for review and validation."
       },
       {
         "step": 9,
-        "title": "9. Usability Validation",
+        "title": "Usability Validation",
         "description": "Where appropriate, designs are evaluated to identify usability problems before development."
       },
       {
         "step": 10,
-        "title": "10. Design System & Handoff",
+        "title": "Design System & Handoff",
         "description": "Reusable components, states and design specifications are prepared for implementation."
       }
     ],
@@ -2453,8 +2580,8 @@ export const mainServicesMd = [
   },
   {
     "slug": "blockchain-and-web3",
-    "title": "Blockchain & Web3 Development Built Around Real Business Requirements",
-    "h1": "Blockchain & Web3 Development Built Around Real Business Requirements",
+    "title": "Blockchain & Web3 Development Services UK",
+    "h1": "Blockchain & Web3 Development Services UK",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/blockchain-and-web3",
     "metaTitle": "Blockchain & Web3 Development Services UK | Clickmasters",
     "metaDescription": "Blockchain and Web3 development services in the UK for DApps, smart contracts, crypto wallets, NFT marketplaces, integrations and custom software solutions.",
@@ -2468,25 +2595,11 @@ export const mainServicesMd = [
       "custom blockchain development",
       "web3 application development",
       "blockchain software development",
-      "blockchain and web3 development company",
-      "Blockchain & Web3 Development Services UK",
-      "Looking for blockchain and Web3 development services to build a decentralised application",
-      "blockchain-enabled platform or digital product? Successful blockchain projects require more than choosing a network or writing smart contracts. They need clear business requirements",
-      "suitable architecture",
-      "secure application logic",
-      "system integration",
-      "testing and a practical route to deployment.",
-      "covering blockchain applications",
-      "smart contracts",
-      "DApps",
-      "crypto wallets",
-      "NFT marketplace development",
-      "integrations",
-      "testing and technical delivery according to project requirements. As part of our broader [Software Development Services](https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development)",
-      "we build blockchain and Web3 solutions as part of complete software products and business systems."
+      "blockchain and web3 development company"
     ],
     "intro": [
-      "Blockchain and Web3 development services in the UK for DApps, smart contracts, crypto wallets, NFT marketplaces, integrations and custom software solutions."
+      "Looking for blockchain and Web3 development services to build a decentralised application, blockchain-enabled platform or digital product? Successful blockchain projects require more than choosing a network or writing smart contracts. They need clear business requirements, suitable architecture, secure application logic, system integration, testing and a practical route to deployment.",
+      "Clickmasters provides blockchain and Web3 development services for UK businesses, covering blockchain applications, smart contracts, DApps, crypto wallets, NFT marketplace development, integrations, testing and technical delivery according to project requirements. As part of our broader [Software Development Services](/software-development), we build blockchain and Web3 solutions as part of complete software products and business systems."
     ],
     "sections": [
       {
@@ -2612,20 +2725,6 @@ export const mainServicesMd = [
           "Reporting",
           "Private operational data",
           "Conventional backend services"
-        ]
-      },
-      {
-        "heading": "Blockchain Network & Technology Selection",
-        "body": "Different blockchain networks have different characteristics.\n\nImportant considerations can include:\n\nThe current search landscape references networks such as Ethereum and Solana as examples of the broader blockchain technology layer.\n\nNetwork selection should be based on project requirements rather than selecting a platform only because it is widely known.",
-        "items": [
-          "Transaction fees",
-          "Performance",
-          "Smart contract capabilities",
-          "Ecosystem",
-          "Scalability",
-          "Integration options",
-          "Development tooling",
-          "Interoperability"
         ]
       },
       {
@@ -2793,6 +2892,11 @@ export const mainServicesMd = [
           "Stakeholder feedback",
           "Deployment needs"
         ]
+      },
+      {
+        "heading": "Build Your Blockchain & Web3 Product with Clickmasters",
+        "body": "Planning a blockchain application, decentralised platform, smart-contract product, DApp, crypto wallet or NFT marketplace?\n\nClickmasters can help define the requirements, structure the technical architecture, develop the application functionality, integrate the required blockchain components and prepare the product for deployment.\n\nPrimary CTA: Book a Free Consultation",
+        "items": []
       }
     ],
     "tables": [
@@ -2921,74 +3025,179 @@ export const mainServicesMd = [
         "answer": "The timeline depends on application complexity, architecture, smart contracts, integrations, number of features, testing, security requirements and stakeholder feedback."
       }
     ],
-    "relatedLinks": [],
-    "jsonLd": {},
+    "relatedLinks": [
+      {
+        "label": "Software Development Services",
+        "href": "/software-development"
+      }
+    ],
+    "jsonLd": {
+      "service": {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/blockchain-and-web3#service",
+        "name": "Blockchain & Web3 Development Services UK",
+        "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/blockchain-and-web3",
+        "description": "Blockchain and Web3 development services in the UK for DApps, smart contracts, crypto wallets, NFT marketplaces, integrations and custom software solutions.",
+        "serviceType": "Blockchain & Web3 Development Services",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/#organization",
+          "name": "Clickmasters Software Development Company",
+          "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United Kingdom"
+        }
+      },
+      "faqPage": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/blockchain-and-web3#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are blockchain and Web3 development services?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Blockchain and Web3 development services include planning, architecture, application development, smart contracts, DApps, wallet integrations, blockchain integrations, testing and deployment of decentralised or blockchain-enabled digital products."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between blockchain and Web3?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Blockchain is the underlying distributed-ledger technology used to record and verify transactions or data. Web3 is a broader application ecosystem that can use blockchain, smart contracts, wallets and decentralised technologies to create user-facing digital products."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do all applications need blockchain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Many software products are better suited to conventional application architecture. Blockchain should be used where decentralisation, distributed trust, digital ownership or programmable transactions provide genuine value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can blockchain integrate with existing software?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Blockchain functionality can be connected to existing applications, APIs, backend systems, databases and other business software where the technical architecture supports it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does blockchain and Web3 development cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cost depends on product scope, architecture, blockchain network, smart contracts, application functionality, wallet requirements, integrations, UX/UI, security, testing, infrastructure and maintenance."
+            }
+          }
+        ]
+      },
+      "breadcrumb": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/blockchain-and-web3#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://clickmasterssoftwaredevelopmentcompany.co.uk/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blockchain & Web3",
+            "item": "https://clickmasterssoftwaredevelopmentcompany.co.uk/blockchain-and-web3"
+          }
+        ]
+      }
+    },
     "cta": {
       "primary": "Book a Free Consultation"
     },
     "process": [
       {
         "step": 1,
-        "title": "1. Discovery",
+        "title": "Discovery",
         "description": "We review the product idea, business problem, intended users and technical environment."
       },
       {
         "step": 2,
-        "title": "2. Use-Case Validation",
+        "title": "Use-Case Validation",
         "description": "We determine what role blockchain or Web3 functionality should play within the solution."
       },
       {
         "step": 3,
-        "title": "3. Requirements Analysis",
+        "title": "Requirements Analysis",
         "description": "Functional, technical, operational and integration requirements are defined."
       },
       {
         "step": 4,
-        "title": "4. Architecture",
+        "title": "Architecture",
         "description": "The application, blockchain, smart contract, API, data and integration layers are structured."
       },
       {
         "step": 5,
-        "title": "5. UX/UI Design",
+        "title": "UX/UI Design",
         "description": "Where required, user journeys, wireframes and interface designs are created."
       },
       {
         "step": 6,
-        "title": "6. Blockchain & Web3 Development",
+        "title": "Blockchain & Web3 Development",
         "description": "The agreed blockchain and application functionality is implemented."
       },
       {
         "step": 7,
-        "title": "7. Smart Contract Development & Integration",
+        "title": "Smart Contract Development & Integration",
         "description": "Required contract logic is developed and connected with the wider application."
       },
       {
         "step": 8,
-        "title": "8. Application Development",
+        "title": "Application Development",
         "description": "Frontend, backend and supporting application functionality are developed."
       },
       {
         "step": 9,
-        "title": "9. Integration",
+        "title": "Integration",
         "description": "The application is connected with required wallets, APIs, blockchain networks and external systems."
       },
       {
         "step": 10,
-        "title": "10. Testing",
+        "title": "Testing",
         "description": "Application functionality, transactions, smart contract interaction and integrations are tested."
       },
       {
         "step": 11,
-        "title": "11. Deployment",
+        "title": "Deployment",
         "description": "Approved application components are prepared for the appropriate production environment."
       },
       {
         "step": 12,
-        "title": "12. Maintenance & Support",
+        "title": "Maintenance & Support",
         "description": "The software can continue to be maintained and improved as requirements evolve."
       }
     ],
-    "techStack": [],
+    "techStack": [
+      {
+        "category": "Blockchain Network & Technology Selection",
+        "items": [
+          "Transaction fees",
+          "Performance",
+          "Smart contract capabilities",
+          "Ecosystem",
+          "Scalability",
+          "Integration options",
+          "Development tooling",
+          "Interoperability"
+        ]
+      }
+    ],
     "industries": [],
     "childServices": [
       {
@@ -3044,17 +3253,18 @@ export const mainServicesMd = [
     "slug": "mobile-development",
     "title": "Mobile App Development Company UK",
     "h1": "Mobile App Development Company UK",
-    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/mobile-development/mobile-app-development",
+    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/mobile-development",
     "metaTitle": "Mobile App Development Company UK | Clickmasters",
     "metaDescription": "Clickmasters is a mobile app development company in the UK providing custom mobile app development services for iOS, Android and cross-platform apps.",
     "metaKeywords": [],
     "intro": [
-      "Clickmasters is a mobile app development company in the UK providing custom mobile app development services for iOS, Android and cross-platform apps."
+      "Clickmasters is a mobile app development company in the UK helping businesses build secure, scalable, and user-friendly mobile applications. At Clickmasters [software development services](/software-development), we provide custom mobile app development for startups, growing companies, and established businesses that need apps built around real users, business goals, and long-term growth.",
+      "Whether you need an iOS app, Android app, cross-platform mobile app, customer app, internal business app, booking app, e-commerce app, or SaaS mobile application, our team can help you plan, design, develop, test, launch, and improve your mobile product."
     ],
     "sections": [
       {
-        "heading": "Mobile App Development Company UK",
-        "body": "Clickmasters is a mobile app development company in the UK helping businesses build secure, scalable, and user-friendly mobile applications. At Clickmasters [software development services](/software-development), we provide custom mobile app development for startups, growing companies, and established businesses that need apps built around real users, business goals, and long-term growth.\n\nWhether you need an iOS app, Android app, cross-platform mobile app, customer app, internal business app, booking app, e-commerce app, or SaaS mobile application, our team can help you plan, design, develop, test, launch, and improve your mobile product.\n\n\n\nClickmasters provides custom mobile app development services built around your idea, audience, features, workflows, and technical requirements. We do not build generic templates. apps. We create mobile applications that fit your business model and give users a smooth, reliable experience.\n\nWe can help you build mobile apps for:\n\n\n\n### iOS App Development\n\nWe build iOS mobile apps for iPhone and iPad users with clean interfaces, secure performance, and smooth user journeys. iOS app development is useful when your audience is mainly Apple users or when your business needs a premium mobile experience for customers or staff.\n\n### Android App Development\n\nWe develop Android mobile apps for businesses that want to reach users across Android devices. Android apps are suitable for customer-facing apps, ecommerce apps, service booking apps, internal business tools, and field team applications.\n\n### Cross-Platform App Development\n\nCross-platform mobile app development allows one app to work across both iOS and Android using a shared codebase. This can reduce development time, simplify maintenance, and help businesses launch faster across multiple devices.\n\n### Flutter App Development\n\nFlutter is useful for businesses that want visually polished, responsive, and cross-platform mobile apps. It supports fast development and consistent user experience across iOS and Android.\n\n### React Native App Development\n\nReact Native is a strong option for cross-platform apps where speed, flexibility, and native-like performance are important. It can be useful for MVPs, SaaS apps, customer apps, and business applications.\n\n\n\n### Customer Mobile Apps\n\nWe build customer-facing apps that help users browse services, book appointments, place orders, manage accounts, receive updates, and stay connected with your business.\n\n### Ecommerce Mobile Apps\n\nEcommerce apps help customers browse products, add items to cart, place orders, track deliveries, manage returns, and receive personalised offers.\n\n### Booking and Appointment Apps\n\nBooking apps allow users to book services, manage appointments, receive reminders, make payments, and communicate with your business.\n\n### SaaS Mobile Apps\n\nWe build SaaS mobile apps that connect users to dashboards, subscriptions, account features, notifications, reports, and product functionality.\n\n### Internal Business Apps\n\nInternal apps help your staff manage tasks, reports, stock, customer data, field operations, approvals, and daily workflows from mobile devices.\n\n### Marketplace Apps\n\nMarketplace apps connect buyers, sellers, service providers, vendors, or users inside one mobile platform with profiles, listings, messaging, payments, and reviews.\n\n### AI-Powered Mobile Apps\n\nWe can add AI features where they make sense, such as chatbots, recommendations, automation, document processing, smart search, or predictive insights.\n\n\n\nA mobile app may be right for your business if:\n\n\n\nIf your app needs advanced device features, native development may be better. If you want to launch on both iOS and Android with a practical budget, cross-platform development may be the better option.\n\n\n\n\n\n### 1\\. Discovery and Planning\n\nWe start by understanding your app idea, target users, business goals, required features, platforms, and technical needs.\n\n### 2\\. Feature Scope\n\nWe define the features needed for the first version of the app. This helps keep the project focused, practical, and easier to launch.\n\n### 3\\. UX/UI Design\n\nWe design user journeys, wireframes, app screens, navigation flows, and interface layouts so the app feels simple and clear for users.\n\n### 4\\. Prototype\n\nA prototype helps you review the app structure before development starts. It gives you a clear view of how users will move through the app.\n\n### 5\\. Mobile App Development\n\nOur developers build the frontend, backend, database, APIs, integrations, admin panel, and mobile app features based on the agreed scope.\n\n### 6\\. Testing and Quality Assurance\n\nWe test the app across devices, screen sizes, user flows, features, performance, security, and integrations before launch.\n\n### 7\\. App Store and Google Play Launch\n\nWe help prepare your app for Apple App Store and Google Play submission, including release preparation, app details, screenshots, and launch support.\n\n### 8\\. Maintenance and Improvements\n\nAfter launch, we can support bug fixes, updates, performance improvements, new features, version releases, and long-term app maintenance.\n\n\n\nMobile app integrations can include:\n\nGood integration helps your app work as part of your full business system instead of becoming a separate tool.\n\n\n\nCommon technologies may include:\n\nThe right stack depends on whether your app is customer-facing, internal, SaaS-based, e-commerce-focused, AI-powered, or connected to existing business systems.\n\n\n\nMain cost factors include:\n\nA simple mobile app with basic features will cost less than a complex SaaS, marketplace, e-commerce, or enterprise app with multiple integrations and user roles.\n\n\n\nYou can choose us for:\n\n\n\nClickMasters helps you build mobile applications that are easy to use, aligned with your business goals, and ready to grow with your users.",
+        "heading": "Custom Mobile App Development Services",
+        "body": "Every successful mobile app starts with a clear purpose. Some businesses need an app to improve customer engagement. Others need a mobile tool for staff, field teams, bookings, sales, operations, or digital product growth.\n\nClickmasters provides custom mobile app development services built around your idea, audience, features, workflows, and technical requirements. We do not build generic templates. apps. We create mobile applications that fit your business model and give users a smooth, reliable experience.\n\nWe can help you build mobile apps for:",
         "items": [
           "Customer engagement",
           "Online bookings",
@@ -3067,7 +3277,13 @@ export const mainServicesMd = [
           "Delivery and logistics",
           "CRM and ERP extensions",
           "Reporting dashboards",
-          "AI-powered mobile features",
+          "AI-powered mobile features"
+        ]
+      },
+      {
+        "heading": "Why Your Business May Need a Mobile App",
+        "body": "A mobile app can give users faster access to your services and create a more direct connection between your business and your audience. For internal teams, a mobile app can reduce manual work and make business processes easier to manage from anywhere.\n\nA mobile app may be right for your business if:",
+        "items": [
           "Customers need regular access to your service",
           "You want better user engagement",
           "You need push notifications",
@@ -3075,7 +3291,18 @@ export const mainServicesMd = [
           "You want to improve bookings, orders, or customer support",
           "You need offline or low-connectivity access",
           "You want app-based loyalty, memberships, or subscriptions",
-          "You need to connect mobile users with an existing SaaS or web platform",
+          "You need to connect mobile users with an existing SaaS or web platform"
+        ]
+      },
+      {
+        "heading": "Native vs Cross-Platform Mobile App Development",
+        "body": "Choosing between native and cross-platform development is one of the most important decisions in a mobile app project.\n\nIf your app needs advanced device features, native development may be better. If you want to launch on both iOS and Android with a practical budget, cross-platform development may be the better option.",
+        "items": []
+      },
+      {
+        "heading": "Core Features We Can Build",
+        "body": "Your mobile app features depend on the product type, users, and business goals. Common features include:",
+        "items": [
           "User registration and login",
           "User profiles",
           "Admin dashboard",
@@ -3095,7 +3322,13 @@ export const mainServicesMd = [
           "CRM or ERP integration",
           "Offline functionality",
           "API integration",
-          "AI chatbot or smart assistant",
+          "AI chatbot or smart assistant"
+        ]
+      },
+      {
+        "heading": "Mobile App Integrations",
+        "body": "Most mobile apps need to connect with other systems. We can integrate your app with existing websites, web applications, SaaS platforms, CRMs, ERPs, payment systems, databases, and third-party APIs.\n\nMobile app integrations can include:\n\nGood integration helps your app work as part of your full business system instead of becoming a separate tool.",
+        "items": [
           "Payment gateways",
           "CRM systems",
           "ERP systems",
@@ -3108,19 +3341,13 @@ export const mainServicesMd = [
           "Email and SMS platforms",
           "Push notification services",
           "AI APIs",
-          "Internal business software",
-          "Swift for iOS apps",
-          "Kotlin for Android apps",
-          "Flutter for cross-platform apps",
-          "React Native for cross-platform apps",
-          "Firebase",
-          "REST APIs",
-          "GraphQL APIs",
-          "Cloud databases",
-          "Secure authentication",
-          "Push notification services",
-          "Analytics tools",
-          "Admin dashboard technologies",
+          "Internal business software"
+        ]
+      },
+      {
+        "heading": "Mobile App Development Cost",
+        "body": "Mobile app development cost depends on the app type, features, platforms, design complexity, integrations, and support needs.\n\nMain cost factors include:\n\nA simple mobile app with basic features will cost less than a complex SaaS, marketplace, e-commerce, or enterprise app with multiple integrations and user roles.",
+        "items": [
           "iOS, Android, or both platforms",
           "Native or cross-platform development",
           "Number of screens",
@@ -3132,28 +3359,23 @@ export const mainServicesMd = [
           "Offline functionality",
           "AI features",
           "App store launch support",
-          "Testing and maintenance",
-          "Custom mobile app development",
-          "iOS and Android app development",
-          "Cross-platform app development",
-          "Mobile app UX/UI design",
-          "App prototypes and MVPs",
-          "Secure backend development",
-          "API and third-party integrations",
-          "App testing and QA",
-          "App store launch support",
-          "Maintenance and improvements"
+          "Testing and maintenance"
         ]
       },
       {
-        "heading": "Ready to Build Your Mobile App?",
-        "body": "Need a mobile app development company in the UK for your next project? Clickmasters can help you plan, design, build, launch, and support a custom mobile app for your business.\n\nContact Clickmasters today to discuss your mobile app development project.\n\nService Landing Page Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@graph\": \\[\n\n{\n\n\"@type\": \"Organization\",\n\n\"@id\": \"/\\#organization\",\n\n\"name\": \"ClickMasters\",\n\n\"url\": \"/\",\n\n\"logo\": {\n\n\"@type\": \"ImageObject\",\n\n\"url\": \"/logo.png\"\n\n},\n\n\"sameAs\": \\[\\]\n\n},\n\n{\n\n\"@type\": \"WebSite\",\n\n\"@id\": \"/\\#website\",\n\n\"url\": \"/\",\n\n\"name\": \"ClickMasters\",\n\n\"publisher\": {\n\n\"@id\": \"/\\#organization\"\n\n}\n\n},\n\n{\n\n\"@type\": \"WebPage\",\n\n\"@id\": \"/mobile-development/mobile-app-development/\\#webpage\",\n\n\"url\": \"/mobile-development/mobile-app-development\",\n\n\"name\": \"Mobile App Development Company UK\",\n\n\"description\": \"ClickMasters is a mobile app development company in the UK providing custom mobile app development services for iOS, Android and cross-platform apps.\",\n\n\"isPartOf\": {\n\n\"@id\": \"/\\#website\"\n\n},\n\n\"about\": {\n\n\"@id\": \"/mobile-development/mobile-app-development/\\#service\"\n\n},\n\n\"primaryImageOfPage\": {\n\n\"@type\": \"ImageObject\",\n\n\"url\": \"/images/mobile-app-development-services.jpg\"\n\n},\n\n\"breadcrumb\": {\n\n\"@id\": \"/mobile-development/mobile-app-development/\\#breadcrumb\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"@id\": \"/mobile-development/mobile-app-development/\\#service\",\n\n\"name\": \"Mobile App Development Services\",\n\n\"serviceType\": \"Mobile App Development\",\n\n\"description\": \"ClickMasters provides custom mobile app development services for businesses that need secure, scalable and user-friendly iOS, Android and cross-platform mobile applications.\",\n\n\"provider\": {\n\n\"@id\": \"/\\#organization\"\n\n},\n\n\"areaServed\": {\n\n\"@type\": \"Country\",\n\n\"name\": \"United Kingdom\"\n\n},\n\n\"audience\": {\n\n\"@type\": \"Audience\",\n\n\"audienceType\": \"Startups, small businesses, growing companies and established businesses\"\n\n},\n\n\"category\": \"Software Development\",\n\n\"hasOfferCatalog\": {\n\n\"@type\": \"OfferCatalog\",\n\n\"name\": \"Mobile App Development Services\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"iOS App Development\",\n\n\"description\": \"Custom iOS app development for iPhone and iPad users with secure performance and smooth user journeys.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Android App Development\",\n\n\"description\": \"Android app development for businesses that want to reach users across Android devices.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Cross-Platform App Development\",\n\n\"description\": \"Cross-platform mobile app development for businesses that need one app across iOS and Android.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Flutter App Development\",\n\n\"description\": \"Flutter app development for responsive cross-platform mobile applications.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"React Native App Development\",\n\n\"description\": \"React Native app development for flexible and native-like cross-platform mobile apps.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Mobile App Maintenance\",\n\n\"description\": \"Mobile app support, updates, bug fixes, performance improvements and feature enhancements after launch.\"\n\n}\n\n}\n\n\\]\n\n}\n\n},\n\n{\n\n\"@type\": \"BreadcrumbList\",\n\n\"@id\": \"/mobile-development/mobile-app-development/\\#breadcrumb\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 1,\n\n\"name\": \"Home\",\n\n\"item\": \"/\"\n\n},\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 2,\n\n\"name\": \"Mobile Development\",\n\n\"item\": \"/mobile-development\"\n\n},\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 3,\n\n\"name\": \"Mobile App Development\",\n\n\"item\": \"/mobile-development/mobile-app-development\"\n\n}\n\n\\]\n\n},\n\n{\n\n\"@type\": \"FAQPage\",\n\n\"@id\": \"/mobile-development/mobile-app-development/\\#faq\",\n\n\"mainEntity\": \\[\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What are mobile app development services?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Mobile app development services include planning, designing, developing, testing, launching and maintaining mobile applications for platforms such as iOS and Android.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Is ClickMasters a mobile app development company in the UK?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. ClickMasters provides mobile app development services in the UK for businesses that need custom iOS, Android and cross-platform mobile applications.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is custom mobile app development?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Custom mobile app development means building a mobile app around specific business needs, users, features, workflows, integrations and long-term goals.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can you build both iOS and Android apps?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. ClickMasters can build iOS apps, Android apps or cross-platform mobile apps that work on both platforms.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Should I choose native or cross-platform app development?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Native development is better for advanced platform-specific performance. Cross-platform development is useful when you want to launch on both iOS and Android with a shared codebase and easier maintenance.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can you build a mobile app MVP?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. ClickMasters can build a focused mobile app MVP with core features so you can test your idea, collect user feedback and improve the product before full-scale development.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Do you provide app store launch support?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. ClickMasters can help prepare your app for Apple App Store and Google Play launch, including release preparation, submission support and post-launch updates.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can you integrate my app with existing software?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. ClickMasters can connect your mobile app with websites, web apps, SaaS platforms, CRMs, ERPs, payment gateways, databases and third-party APIs.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"How much does mobile app development cost?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Mobile app development cost depends on features, design, platform choice, backend complexity, integrations, user roles, testing and ongoing support requirements.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Do you provide mobile app maintenance?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. ClickMasters can provide mobile app maintenance, bug fixes, updates, performance improvements, security checks and new feature development after launch.\"\n\n}\n\n}\n\n\\]\n\n}\n\n\\]\n\n}\n\n\\</script\\>",
+        "heading": "Build a Mobile App That Users Actually Use",
+        "body": "Many apps fail because they are built with too many features, poor user experience, weak planning, or no long-term support. A successful app needs clear purpose, useful features, strong design, reliable development, and continuous improvement after launch.\n\nClickMasters helps you build mobile applications that are easy to use, aligned with your business goals, and ready to grow with your users.",
+        "items": []
+      },
+      {
+        "heading": "CTA Section",
+        "body": "\n\nPrimary CTA: Discuss Your Mobile App Project\n\nContact Clickmasters today to discuss your mobile app development project.\n\nService Landing Page Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@graph\": \\[\n\n{\n\n\"@type\": \"Organization\",\n\n\"@id\": \"/\\#organization\",\n\n\"name\": \"ClickMasters\",\n\n\"url\": \"/\",\n\n\"logo\": {\n\n\"@type\": \"ImageObject\",\n\n\"url\": \"/logo.png\"\n\n},\n\n\"sameAs\": \\[\\]\n\n},\n\n{\n\n\"@type\": \"WebSite\",\n\n\"@id\": \"/\\#website\",\n\n\"url\": \"/\",\n\n\"name\": \"ClickMasters\",\n\n\"publisher\": {\n\n\"@id\": \"/\\#organization\"\n\n}\n\n},\n\n{\n\n\"@type\": \"WebPage\",\n\n\"@id\": \"/mobile-development/mobile-app-development/\\#webpage\",\n\n\"url\": \"/mobile-development/mobile-app-development\",\n\n\"name\": \"Mobile App Development Company UK\",\n\n\"description\": \"ClickMasters is a mobile app development company in the UK providing custom mobile app development services for iOS, Android and cross-platform apps.\",\n\n\"isPartOf\": {\n\n\"@id\": \"/\\#website\"\n\n},\n\n\"about\": {\n\n\"@id\": \"/mobile-development/mobile-app-development/\\#service\"\n\n},\n\n\"primaryImageOfPage\": {\n\n\"@type\": \"ImageObject\",\n\n\"url\": \"/images/mobile-app-development-services.jpg\"\n\n},\n\n\"breadcrumb\": {\n\n\"@id\": \"/mobile-development/mobile-app-development/\\#breadcrumb\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"@id\": \"/mobile-development/mobile-app-development/\\#service\",\n\n\"name\": \"Mobile App Development Services\",\n\n\"serviceType\": \"Mobile App Development\",\n\n\"description\": \"ClickMasters provides custom mobile app development services for businesses that need secure, scalable and user-friendly iOS, Android and cross-platform mobile applications.\",\n\n\"provider\": {\n\n\"@id\": \"/\\#organization\"\n\n},\n\n\"areaServed\": {\n\n\"@type\": \"Country\",\n\n\"name\": \"United Kingdom\"\n\n},\n\n\"audience\": {\n\n\"@type\": \"Audience\",\n\n\"audienceType\": \"Startups, small businesses, growing companies and established businesses\"\n\n},\n\n\"category\": \"Software Development\",\n\n\"hasOfferCatalog\": {\n\n\"@type\": \"OfferCatalog\",\n\n\"name\": \"Mobile App Development Services\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"iOS App Development\",\n\n\"description\": \"Custom iOS app development for iPhone and iPad users with secure performance and smooth user journeys.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Android App Development\",\n\n\"description\": \"Android app development for businesses that want to reach users across Android devices.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Cross-Platform App Development\",\n\n\"description\": \"Cross-platform mobile app development for businesses that need one app across iOS and Android.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Flutter App Development\",\n\n\"description\": \"Flutter app development for responsive cross-platform mobile applications.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"React Native App Development\",\n\n\"description\": \"React Native app development for flexible and native-like cross-platform mobile apps.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Mobile App Maintenance\",\n\n\"description\": \"Mobile app support, updates, bug fixes, performance improvements and feature enhancements after launch.\"\n\n}\n\n}\n\n\\]\n\n}\n\n},\n\n{\n\n\"@type\": \"BreadcrumbList\",\n\n\"@id\": \"/mobile-development/mobile-app-development/\\#breadcrumb\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 1,\n\n\"name\": \"Home\",\n\n\"item\": \"/\"\n\n},\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 2,\n\n\"name\": \"Mobile Development\",\n\n\"item\": \"/mobile-development\"\n\n},\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 3,\n\n\"name\": \"Mobile App Development\",\n\n\"item\": \"/mobile-development/mobile-app-development\"\n\n}\n\n\\]\n\n},\n\n{\n\n\"@type\": \"FAQPage\",\n\n\"@id\": \"/mobile-development/mobile-app-development/\\#faq\",\n\n\"mainEntity\": \\[\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What are mobile app development services?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Mobile app development services include planning, designing, developing, testing, launching and maintaining mobile applications for platforms such as iOS and Android.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Is ClickMasters a mobile app development company in the UK?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. ClickMasters provides mobile app development services in the UK for businesses that need custom iOS, Android and cross-platform mobile applications.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is custom mobile app development?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Custom mobile app development means building a mobile app around specific business needs, users, features, workflows, integrations and long-term goals.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can you build both iOS and Android apps?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. ClickMasters can build iOS apps, Android apps or cross-platform mobile apps that work on both platforms.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Should I choose native or cross-platform app development?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Native development is better for advanced platform-specific performance. Cross-platform development is useful when you want to launch on both iOS and Android with a shared codebase and easier maintenance.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can you build a mobile app MVP?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. ClickMasters can build a focused mobile app MVP with core features so you can test your idea, collect user feedback and improve the product before full-scale development.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Do you provide app store launch support?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. ClickMasters can help prepare your app for Apple App Store and Google Play launch, including release preparation, submission support and post-launch updates.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can you integrate my app with existing software?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. ClickMasters can connect your mobile app with websites, web apps, SaaS platforms, CRMs, ERPs, payment gateways, databases and third-party APIs.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"How much does mobile app development cost?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Mobile app development cost depends on features, design, platform choice, backend complexity, integrations, user roles, testing and ongoing support requirements.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Do you provide mobile app maintenance?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. ClickMasters can provide mobile app maintenance, bug fixes, updates, performance improvements, security checks and new feature development after launch.\"\n\n}\n\n}\n\n\\]\n\n}\n\n\\]\n\n}\n\n\\</script\\>",
         "items": []
       }
     ],
     "tables": [
       {
-        "title": "Mobile App Development Company UK",
+        "title": "Native vs Cross-Platform Mobile App Development",
         "headers": [
           "Approach",
           "Best For",
@@ -3183,8 +3405,38 @@ export const mainServicesMd = [
         ]
       }
     ],
-    "costFactors": [],
-    "whyChoose": [],
+    "costFactors": [
+      "iOS, Android, or both platforms",
+      "Native or cross-platform development",
+      "Number of screens",
+      "User roles and dashboards",
+      "Backend and database requirements",
+      "Payment or subscription features",
+      "API integrations",
+      "Push notifications",
+      "Offline functionality",
+      "AI features",
+      "App store launch support",
+      "Testing and maintenance"
+    ],
+    "whyChoose": [
+      {
+        "title": "Why Choose Clickmasters as Your Mobile App Development Agency?",
+        "body": "Clickmasters helps businesses build mobile apps that are useful, scalable, and built for real user needs. Our approach combines planning, design, development, testing, launch, and long-term support.\n\nYou can choose us for:",
+        "items": [
+          "Custom mobile app development",
+          "iOS and Android app development",
+          "Cross-platform app development",
+          "Mobile app UX/UI design",
+          "App prototypes and MVPs",
+          "Secure backend development",
+          "API and third-party integrations",
+          "App testing and QA",
+          "App store launch support",
+          "Maintenance and improvements"
+        ]
+      }
+    ],
     "faqs": [
       {
         "question": "What are mobile app development services?",
@@ -3465,13 +3717,136 @@ export const mainServicesMd = [
         }
       ]
     },
-    "cta": {},
-    "process": [],
-    "techStack": [],
+    "cta": {
+      "primary": "Discuss Your Mobile App Project"
+    },
+    "process": [
+      {
+        "step": 1,
+        "title": "Discovery and Planning",
+        "description": "We start by understanding your app idea, target users, business goals, required features, platforms, and technical needs."
+      },
+      {
+        "step": 2,
+        "title": "Feature Scope",
+        "description": "We define the features needed for the first version of the app. This helps keep the project focused, practical, and easier to launch."
+      },
+      {
+        "step": 3,
+        "title": "UX/UI Design",
+        "description": "We design user journeys, wireframes, app screens, navigation flows, and interface layouts so the app feels simple and clear for users."
+      },
+      {
+        "step": 4,
+        "title": "Prototype",
+        "description": "A prototype helps you review the app structure before development starts. It gives you a clear view of how users will move through the app."
+      },
+      {
+        "step": 5,
+        "title": "Mobile App Development",
+        "description": "Our developers build the frontend, backend, database, APIs, integrations, admin panel, and mobile app features based on the agreed scope."
+      },
+      {
+        "step": 6,
+        "title": "Testing and Quality Assurance",
+        "description": "We test the app across devices, screen sizes, user flows, features, performance, security, and integrations before launch."
+      },
+      {
+        "step": 7,
+        "title": "App Store and Google Play Launch",
+        "description": "We help prepare your app for Apple App Store and Google Play submission, including release preparation, app details, screenshots, and launch support."
+      },
+      {
+        "step": 8,
+        "title": "Maintenance and Improvements",
+        "description": "After launch, we can support bug fixes, updates, performance improvements, new features, version releases, and long-term app maintenance."
+      }
+    ],
+    "techStack": [
+      {
+        "category": "Mobile App Technology Stack",
+        "items": [
+          "Swift for iOS apps",
+          "Kotlin for Android apps",
+          "Flutter for cross-platform apps",
+          "React Native for cross-platform apps",
+          "Firebase",
+          "REST APIs",
+          "GraphQL APIs",
+          "Cloud databases",
+          "Secure authentication",
+          "Push notification services",
+          "Analytics tools",
+          "Admin dashboard technologies"
+        ]
+      }
+    ],
     "industries": [],
-    "childServices": [],
+    "childServices": [
+      {
+        "title": "iOS App Development",
+        "href": "",
+        "description": "We build iOS mobile apps for iPhone and iPad users with clean interfaces, secure performance, and smooth user journeys. iOS app development is useful when your audience is mainly Apple users or when your business needs a premium mobile experience for customers or staff."
+      },
+      {
+        "title": "Android App Development",
+        "href": "",
+        "description": "We develop Android mobile apps for businesses that want to reach users across Android devices. Android apps are suitable for customer-facing apps, ecommerce apps, service booking apps, internal business tools, and field team applications."
+      },
+      {
+        "title": "Cross-Platform App Development",
+        "href": "",
+        "description": "Cross-platform mobile app development allows one app to work across both iOS and Android using a shared codebase. This can reduce development time, simplify maintenance, and help businesses launch faster across multiple devices."
+      },
+      {
+        "title": "Flutter App Development",
+        "href": "",
+        "description": "Flutter is useful for businesses that want visually polished, responsive, and cross-platform mobile apps. It supports fast development and consistent user experience across iOS and Android."
+      },
+      {
+        "title": "React Native App Development",
+        "href": "",
+        "description": "React Native is a strong option for cross-platform apps where speed, flexibility, and native-like performance are important. It can be useful for MVPs, SaaS apps, customer apps, and business applications."
+      }
+    ],
     "engagementModels": [],
-    "useCases": [],
+    "useCases": [
+      {
+        "title": "Customer Mobile Apps",
+        "description": "We build customer-facing apps that help users browse services, book appointments, place orders, manage accounts, receive updates, and stay connected with your business.",
+        "metric": ""
+      },
+      {
+        "title": "Ecommerce Mobile Apps",
+        "description": "Ecommerce apps help customers browse products, add items to cart, place orders, track deliveries, manage returns, and receive personalised offers.",
+        "metric": ""
+      },
+      {
+        "title": "Booking and Appointment Apps",
+        "description": "Booking apps allow users to book services, manage appointments, receive reminders, make payments, and communicate with your business.",
+        "metric": ""
+      },
+      {
+        "title": "SaaS Mobile Apps",
+        "description": "We build SaaS mobile apps that connect users to dashboards, subscriptions, account features, notifications, reports, and product functionality.",
+        "metric": ""
+      },
+      {
+        "title": "Internal Business Apps",
+        "description": "Internal apps help your staff manage tasks, reports, stock, customer data, field operations, approvals, and daily workflows from mobile devices.",
+        "metric": ""
+      },
+      {
+        "title": "Marketplace Apps",
+        "description": "Marketplace apps connect buyers, sellers, service providers, vendors, or users inside one mobile platform with profiles, listings, messaging, payments, and reviews.",
+        "metric": ""
+      },
+      {
+        "title": "AI-Powered Mobile Apps",
+        "description": "We can add AI features where they make sense, such as chatbots, recommendations, automation, document processing, smart search, or predictive insights.",
+        "metric": ""
+      }
+    ],
     "deliverables": [],
     "sourceFile": "mobile-app-development.md"
   },
@@ -3497,15 +3872,12 @@ export const mainServicesMd = [
     "intro": [
       "Build intelligent software that can process and understand text, speech, images and video with custom NLP and computer vision development services.",
       "Clickmasters develops AI solutions that combine natural language processing and computer vision with machine learning, model integration and production software engineering. We help businesses turn unstructured language and visual data into structured information, predictions, classifications and software actions.",
-      "Our NLP and computer vision services connect with our broader Artificial Intelligence Development Services and Machine Learning Development Services.",
-      "Primary CTA: Book a Consultation",
-      "Secondary CTA: Discuss Your AI Project",
-      "---"
+      "Our NLP and computer vision services connect with our broader Artificial Intelligence Development Services and Machine Learning Development Services."
     ],
     "sections": [
       {
-        "heading": "SECTION 02 — DEFINITION / SERVICE OVERVIEW",
-        "body": "\n\nNatural Language Processing → understands and processes language\n\nComputer Vision → understands and processes visual information\n\nTogether, they can enable software to work with:\n\nA simplified architecture can look like:\n\nBusiness Data → Text / Speech / Image / Video → NLP or Computer Vision Model → Structured Output → Business Application → Decision / Automation / User Experience\n\n---",
+        "heading": "NLP & Computer Vision for Intelligent Software",
+        "body": "Natural language processing and computer vision solve two different but complementary problems.\n\nNatural Language Processing → understands and processes language\n\nComputer Vision → understands and processes visual information\n\nTogether, they can enable software to work with:\n\nA simplified architecture can look like:\n\nBusiness Data → Text / Speech / Image / Video → NLP or Computer Vision Model → Structured Output → Business Application → Decision / Automation / User Experience\n\n---",
         "items": [
           "Text",
           "Documents",
@@ -3516,47 +3888,18 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "SECTION 04 — HOW IT WORKS",
-        "body": "\n\nThese systems can combine:\n\nComputer Vision \\+ Natural Language Processing → Multimodal Software Capability\n\nInstead of treating images and text separately, a combined system can process relationships between different forms of information.\n\n### Document Intelligence\n\nDocument intelligence is a strong example of NLP and computer vision working together.\n\nScanned Document / Image → Visual Processing → Text Extraction → NLP → Entity / Field / Classification Output\n\nThis type of architecture can help software convert unstructured documents into structured data for further processing.\n\n### OCR & Text Extraction Workflows\n\nOptical character recognition can provide a bridge between visual information and NLP.\n\nDocument Image → OCR → Extracted Text → NLP → Structured Information\n\nOCR alone extracts text. NLP can then interpret, classify or extract meaning from that text.\n\n### Multimodal Search\n\nSearch applications can combine language and visual information.\n\nText Query \\+ Image Data → Representations → Similarity / Retrieval → Relevant Results\n\nThe exact architecture depends on what users need to search and what data is available.\n\n### Visual & Language Interfaces\n\nSome applications may need to interpret visual input and generate or retrieve language-based information.\n\nVisual Input → Computer Vision → Structured Visual Information → Language Processing → Application Response\n\nThis can support applications where users interact with visual information through natural-language interfaces.\n\n---",
+        "heading": "How NLP & Computer Vision Work Together",
+        "body": "Some AI applications require language and visual understanding within the same workflow.\n\nThese systems can combine:\n\nComputer Vision \\+ Natural Language Processing → Multimodal Software Capability\n\nInstead of treating images and text separately, a combined system can process relationships between different forms of information.\n\n\n\n\n\n\n\n",
         "items": []
       },
       {
-        "heading": "SECTION 05 — ADVANCED CAPABILITIES",
-        "body": "\n\n### Named Entity Recognition\n\nNamed entity recognition identifies defined entities within text.\n\nThese can include:\n\nUnstructured Text → NLP Model → Entity Detection → Structured Data\n\n### Sentiment Analysis\n\nSentiment analysis can classify language according to defined sentiment or opinion categories.\n\nPotential inputs can include:\n\n### Semantic Search\n\nSemantic search uses language representations to retrieve information based on meaning rather than exact keyword matching alone.\n\nUser Query → Semantic Representation → Similarity / Retrieval → Relevant Results\n\n### Document Processing\n\nNLP can be used to analyse information extracted from digital documents.\n\nApplications can include:\n\n### Image Recognition\n\nImage recognition models can identify or classify visual content according to defined categories.\n\nImage → Visual Model → Classification / Recognition → Application Output\n\n### Object Detection\n\nObject detection identifies defined objects and their positions within visual data.\n\nA detection system can produce information such as:\n\n### Object Tracking\n\nObject tracking follows detected objects across multiple video frames.\n\nVideo → Object Detection → Tracking → Movement / Sequence Data → Application\n\n### Image Segmentation\n\nImage segmentation separates areas of an image into meaningful regions or classes.\n\nInstead of only identifying an object, segmentation can help determine which pixels belong to a particular visual region.\n\n---",
-        "items": [
-          "People",
-          "Organisations",
-          "Locations",
-          "Products",
-          "Dates",
-          "Reference numbers",
-          "Domain-specific terms",
-          "Customer reviews",
-          "Support conversations",
-          "Surveys",
-          "Feedback",
-          "Messages",
-          "Social content",
-          "Document classification",
-          "Entity extraction",
-          "Information extraction",
-          "Content tagging",
-          "Document routing",
-          "Search and retrieval",
-          "Object type",
-          "Object location",
-          "Detection confidence",
-          "Number of detected objects"
-        ]
-      },
-      {
-        "heading": "SECTION 06 — USE CASES",
-        "body": "### Intelligent Document Processing\n\nCombine document images, text extraction and NLP to convert unstructured documents into structured information.\n\n### Semantic Search\n\nUnderstand the meaning of user queries and retrieve more relevant text or documents.\n\n### Text Classification\n\nAutomatically assign text to predefined categories.\n\n### Information Extraction\n\nExtract useful entities or fields from large volumes of text.\n\n### Speech-to-Text Workflows\n\nConvert spoken content into text for further processing or software actions.\n\n### Image Classification\n\nClassify images according to defined categories.\n\n### Object Detection\n\nLocate and classify objects within images or video.\n\n### Video Analytics\n\nAnalyse video sequences to detect objects, movement or defined events.\n\n### Visual Inspection\n\nAnalyse images to identify defined visual patterns or conditions.\n\n### Multimodal Applications\n\nCombine text and visual information within the same AI-enabled software workflow.\n\n---",
+        "heading": "Advanced NLP & Computer Vision Capabilities",
+        "body": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
         "items": []
       },
       {
-        "heading": "SECTION 07 — INTEGRATION",
-        "body": "\n\nModels can potentially integrate with:\n\nA typical integration model is:\n\nApplication → AI Service / API → NLP or Computer Vision Model → Structured Output → Application Response\n\n### AI API Development\n\nNLP and computer vision functionality can be exposed through APIs.\n\nAn application could send:\n\nand receive:\n\nThe API design depends on performance, security and application requirements.\n\n---",
+        "heading": "NLP & Computer Vision Integration",
+        "body": "AI capabilities need to connect with existing software before they become useful business functionality.\n\nModels can potentially integrate with:\n\nA typical integration model is:\n\nApplication → AI Service / API → NLP or Computer Vision Model → Structured Output → Application Response\n\n",
         "items": [
           "Web applications",
           "Mobile applications",
@@ -3565,116 +3908,17 @@ export const mainServicesMd = [
           "Data platforms",
           "Search systems",
           "Workflow tools",
-          "Internal software",
-          "Text",
-          "A document",
-          "An image",
-          "Audio",
-          "A video reference",
-          "Classification",
-          "Extracted information",
-          "Detected objects",
-          "Transcript",
-          "Structured metadata",
-          "Ranked results"
+          "Internal software"
         ]
       },
       {
-        "heading": "SECTION 08 — TECHNICAL ARCHITECTURE",
-        "body": "\n\n### Data Preparation for NLP & Computer Vision\n\nAI models depend on usable training and inference data.\n\n#### Text Data\n\n#### Image Data\n\n#### Video Data\n\nThe preparation process should match the model task rather than applying the same workflow to every dataset.\n\n### Data Labelling\n\nSupervised NLP and computer vision models may require labelled examples.\n\nLabels can identify:\n\n### Model Training\n\nNLP and computer vision models may need training or adaptation around the project's data.\n\nTraining can involve:\n\nFor dedicated training and model-performance work, explore our AI Model Training & Optimisation Services.\n\n### Model Fine-Tuning\n\nWhere an appropriate existing model is available, fine-tuning can adapt it to a more specific task or dataset.\n\nExisting Model → Project Data → Fine-Tuning → Evaluation → Task-Specific Model\n\n### Deep Learning for NLP & Computer Vision\n\nDeep learning can support language and vision problems involving complex patterns or high-dimensional data.\n\nNeural Networks → Language Models → NLP\n\nand\n\nNeural Networks → Visual Models → Computer Vision\n\nFor broader neural-network development, see our Deep Learning Development Services.\n\n### NLP & Computer Vision Model Evaluation\n\nModel quality should be evaluated according to the task being performed.\n\n#### NLP\n\n#### Computer Vision\n\nTechnical metrics should be connected to the actual software requirement.\n\n### Error Analysis\n\nError analysis can investigate:\n\n### Real-Time AI Processing\n\nSome applications require NLP or computer vision outputs with low latency.\n\nReal-time requirements can apply to:\n\n### Batch Processing\n\nOther use cases can process information asynchronously.\n\nDocuments / Images / Video Files → Scheduled Processing → AI Models → Structured Results → Database / Application\n\n### Model Optimisation\n\nProduction NLP and computer vision models may need optimisation around:\n\n### Model Monitoring\n\nMonitoring can help identify:\n\n---",
-        "items": [
-          "Cleaning",
-          "Normalisation",
-          "Formatting",
-          "Annotation",
-          "Label preparation",
-          "Document structuring",
-          "Resizing",
-          "Normalisation",
-          "Image enhancement",
-          "Annotation",
-          "Class labelling",
-          "Object labelling",
-          "Frame extraction",
-          "Sequence preparation",
-          "Annotation",
-          "Object labels",
-          "Event labels",
-          "Text categories",
-          "Entities",
-          "Sentiment",
-          "Objects",
-          "Image classes",
-          "Visual regions",
-          "Events",
-          "Speech content",
-          "Dataset preparation",
-          "Architecture selection",
-          "Model training",
-          "Validation",
-          "Error analysis",
-          "Iteration",
-          "Performance evaluation",
-          "Accuracy",
-          "Precision",
-          "Recall",
-          "F1 score",
-          "Retrieval relevance",
-          "Classification quality",
-          "Classification performance",
-          "Detection performance",
-          "Segmentation quality",
-          "Tracking performance",
-          "Error analysis",
-          "Incorrect classifications",
-          "Missed entities",
-          "False detections",
-          "Missed objects",
-          "Poor-quality inputs",
-          "Difficult image conditions",
-          "Ambiguous text",
-          "Edge cases",
-          "Speech processing",
-          "Visual detection",
-          "Object tracking",
-          "Live video analytics",
-          "Interactive language interfaces",
-          "Model size",
-          "Inference speed",
-          "Memory",
-          "Throughput",
-          "Compute requirements",
-          "Prediction quality",
-          "Prediction-performance changes",
-          "Data drift",
-          "Model drift",
-          "Latency problems",
-          "API failures",
-          "Input changes",
-          "Resource issues"
-        ]
+        "heading": "Cloud & Edge AI Deployment",
+        "body": "\n\n",
+        "items": []
       },
       {
-        "heading": "SECTION 09 — DEPLOYMENT",
-        "body": "\n\n### Cloud Deployment\n\nNLP and computer vision models can be deployed within cloud-based software architectures where this suits the application's requirements.\n\nCloud deployment planning can account for:\n\nThe production architecture should be selected around application requirements rather than only the development environment.\n\n### Edge AI Deployment\n\nSome computer vision and speech applications may require processing closer to the device or data source.\n\nEdge deployment can help where requirements include:\n\nModel size, memory and device compute become important constraints in edge environments.\n\n---",
-        "items": [
-          "Model serving",
-          "APIs",
-          "Compute",
-          "Scaling",
-          "Storage",
-          "Logging",
-          "Monitoring",
-          "Security",
-          "Low latency",
-          "Local processing",
-          "Limited connectivity",
-          "Reduced data transmission"
-        ]
-      },
-      {
-        "heading": "SECTION 10 — PROCESS",
-        "body": "\n\n### 1\\. Problem Discovery\n\nWe define the business problem, input data and required AI output.\n\n### 2\\. Feasibility Assessment\n\nWe assess whether NLP, computer vision or a combined approach is appropriate.\n\n### 3\\. Data Assessment\n\nAvailable text, audio, image or video data is reviewed.\n\n### 4\\. Data Preparation\n\nData is cleaned, structured, annotated or transformed where required.\n\n### 5\\. Model Approach\n\nSuitable model architectures and implementation approaches are evaluated.\n\n### 6\\. Model Development\n\nThe selected NLP or computer vision capability is developed or adapted.\n\n### 7\\. Training & Evaluation\n\nThe model is trained or fine-tuned and evaluated against suitable criteria.\n\n### 8\\. Optimisation\n\nPerformance can be refined for accuracy, latency, model size or production constraints.\n\n### 9\\. Software Integration\n\nThe AI model is connected with the required application or workflow.\n\n### 10\\. Deployment\n\nThe approved solution is prepared for its production environment.\n\n### 11\\. Monitoring\n\nRelevant model and system behaviour can be monitored.\n\n### 12\\. Iterative Improvement\n\nProduction data and feedback can inform future model updates.\n\n\n\n---",
+        "heading": "What You Receive",
+        "body": "Deliverables depend on the agreed project scope and can include:\n\n---",
         "items": [
           "AI requirements",
           "Feasibility findings",
@@ -3691,106 +3935,36 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "SECTION 11 — WHY CLICKMASTERS",
-        "body": "\n\nOur approach can connect:\n\nBusiness Problem → Text / Speech / Image / Video → AI Model → Structured Intelligence → Software Integration → Business Workflow → Monitoring\n\nThis keeps the AI capability connected to the application and workflow where its output will actually be used.\n\n---",
+        "heading": "Validate Your NLP & Computer Vision Project",
+        "body": "\n\n",
         "items": []
       },
       {
-        "heading": "SECTION 12 — PoC / MVP",
-        "body": "\n\n### NLP & Computer Vision Proof of Concept\n\nA Proof of Concept can help determine whether an AI approach is technically viable before full production development.\n\nA PoC can test:\n\nThe aim is to answer a defined technical question rather than build the final product immediately.\n\n### NLP & Computer Vision MVP Development\n\nAn MVP can combine initial NLP or computer vision functionality with the minimum software required to test it in a practical workflow.\n\nAn MVP can include:\n\nThe system can then be expanded according to real user and model-performance feedback.\n\n---",
-        "items": [
-          "Data quality",
-          "Model suitability",
-          "Initial accuracy",
-          "Processing requirements",
-          "Integration feasibility",
-          "Performance limitations",
-          "Data pipeline",
-          "Initial model",
-          "AI API",
-          "Application integration",
-          "Basic interface",
-          "Model evaluation",
-          "Monitoring requirements"
-        ]
+        "heading": "NLP & Computer Vision Development Cost & Timeline",
+        "body": "\n\n",
+        "items": []
       },
       {
-        "heading": "SECTION 13 — COST + TIMELINE",
-        "body": "\n\n### How Much Does NLP & Computer Vision Development Cost?\n\nThe cost depends on factors such as:\n\nA focused text-classification solution has a different development scope from a real-time multimodal platform processing language and video.\n\n### How Long Does NLP & Computer Vision Development Take?\n\nThe timeline depends on:\n\nProjects can be structured into feasibility, model development and production-integration stages.\n\n---",
-        "items": [
-          "Data availability",
-          "Data preparation",
-          "Data labelling",
-          "Model complexity",
-          "NLP or vision requirements",
-          "Real-time processing",
-          "Software integration",
-          "Infrastructure",
-          "Deployment",
-          "Monitoring",
-          "Ongoing model improvement",
-          "Data readiness",
-          "Model requirements",
-          "Training or fine-tuning",
-          "Model evaluation",
-          "Software integration",
-          "Real-time requirements",
-          "Deployment environment",
-          "Testing",
-          "Stakeholder feedback"
-        ]
+        "heading": "Related AI & Machine Learning Services",
+        "body": "\n\n\n\n\n\n",
+        "items": []
       },
       {
         "heading": "Build Your NLP & Computer Vision Solution with Clickmasters",
-        "body": "The supplied file ends at the “Why Choose Clickmasters” section and does not include the approved final CTA copy. Use the existing approved CTA from the main NLP & Computer Vision page here rather than allowing the developer to invent new marketing copy.\n\nPrimary CTA: Book a Consultation",
+        "body": "Turn text, speech, images and video into AI capabilities that can work inside your software and business processes.\n\nClickmasters can help assess the use case, prepare your data, develop or adapt the required models, integrate them with your application and prepare the solution for production.\n\nPrimary CTA: Book an AI Consultation\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"Service\",\n\n\"@id\": \"/nlp-computer-vision\\#service\",\n\n\"name\": \"NLP & Computer Vision Development Services\",\n\n\"alternateName\": \\[\n\n\"NLP and Computer Vision Services\",\n\n\"Natural Language Processing and Computer Vision Development\",\n\n\"AI Language and Vision Development\"\n\n\\],\n\n\"url\": \"/nlp-computer-vision\",\n\n\"description\": \"NLP and computer vision development services in the UK for text, speech, image and video AI, including model development, integration, deployment and monitoring.\",\n\n\"serviceType\": \"NLP & Computer Vision Development Services\",\n\n\"category\": \"Artificial Intelligence Development\",\n\n\"provider\": {\n\n\"@type\": \"Organization\",\n\n\"@id\": \"/\\#organization\",\n\n\"name\": \"Clickmasters Software Development Company\",\n\n\"url\": \"/\"\n\n},\n\n\"areaServed\": {\n\n\"@type\": \"Country\",\n\n\"name\": \"United Kingdom\"\n\n},\n\n\"hasOfferCatalog\": {\n\n\"@type\": \"OfferCatalog\",\n\n\"name\": \"NLP & Computer Vision Services\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Natural Language Processing Development\",\n\n\"url\": \"/nlp-computer-vision/nlp\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Speech Recognition Development\",\n\n\"url\": \"/nlp-computer-vision/speech-recognition\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Computer Vision Development\",\n\n\"url\": \"/nlp-computer-vision/computer-vision\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Image Processing\",\n\n\"url\": \"/nlp-computer-vision/image-processing\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Video Analytics Development\",\n\n\"url\": \"/nlp-computer-vision/video-analytics\"\n\n}\n\n}\n\n\\]\n\n},\n\n\"isRelatedTo\": \\[\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Artificial Intelligence Development Services\",\n\n\"url\": \"/artificial-intelligence-ai\"\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Machine Learning Development Services\",\n\n\"url\": \"/machine-learning-ml\"\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Deep Learning Development Services\",\n\n\"url\": \"/machine-learning-ml/deep-learning-solutions\"\n\n}\n\n\\]\n\n}\n\n\\</script\\>\n\nFaq Schema \\<script type=\"application/ld+json\"\\> { \"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"@id\": \"/nlp-computer-vision\\#faq\", \"url\": \"/nlp-computer-vision\", \"mainEntity\": \\[ { \"@type\": \"Question\", \"name\": \"What are NLP and computer vision development services?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"NLP and computer vision development services create AI-powered software capable of processing language and visual data, including text, speech, images and video, and integrating the resulting outputs into applications and business workflows.\" } }, { \"@type\": \"Question\", \"name\": \"What is natural language processing?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Natural language processing is an area of AI that enables software to analyse and work with human language, including text classification, entity extraction, sentiment analysis and semantic search.\" } }, { \"@type\": \"Question\", \"name\": \"What is computer vision?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Computer vision is an area of AI that enables software to analyse images and video to identify objects, classifications, patterns or other visual information.\" } }, { \"@type\": \"Question\", \"name\": \"What is the difference between NLP and computer vision?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"NLP primarily processes language such as text and speech, while computer vision processes visual information such as images and video.\" } }, { \"@type\": \"Question\", \"name\": \"Can NLP and computer vision work together?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Yes. They can be combined in multimodal systems such as document intelligence, where computer vision or OCR extracts visual information and NLP interprets the resulting text.\" } }, { \"@type\": \"Question\", \"name\": \"What is document AI?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Document AI combines technologies such as image processing, OCR and NLP to extract and interpret structured information from documents.\" } }, { \"@type\": \"Question\", \"name\": \"What is the difference between computer vision and image processing?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Image processing mainly transforms or prepares visual data, while computer vision aims to interpret the content or meaning of images and video.\" } }, { \"@type\": \"Question\", \"name\": \"Can computer vision analyse video?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Yes. Computer vision can be applied to video frames for tasks such as object detection, tracking, classification and event analysis.\" } }, { \"@type\": \"Question\", \"name\": \"What is speech recognition?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Speech recognition converts spoken audio into text or another machine-readable representation that can be used by software or further processed with NLP.\" } }, { \"@type\": \"Question\", \"name\": \"Can NLP and computer vision models integrate with existing software?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Yes. AI capabilities can often be connected with existing web, mobile and business applications through APIs, backend services or dedicated integration layers.\" } }, { \"@type\": \"Question\", \"name\": \"Do NLP and computer vision projects require custom model training?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Not always. Depending on the use case, a project may use an existing model, fine-tune an existing model or train a custom model.\" } }, { \"@type\": \"Question\", \"name\": \"Can NLP and computer vision work in real time?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Some NLP and computer vision applications can provide real-time or near-real-time processing where the model, infrastructure and software architecture support it.\" } }, { \"@type\": \"Question\", \"name\": \"How are NLP and computer vision models evaluated?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Evaluation depends on the task and can include metrics such as accuracy, precision, recall, F1 score, retrieval relevance, detection performance or other application-specific measures.\" } }, { \"@type\": \"Question\", \"name\": \"How much does NLP and computer vision development cost?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"Cost depends on data preparation, model complexity, training requirements, integrations, real-time processing, deployment infrastructure and ongoing model-management requirements.\" } }, { \"@type\": \"Question\", \"name\": \"How long does NLP and computer vision development take?\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"The timeline depends on data readiness, model requirements, training or fine-tuning, integration, testing and production deployment requirements.\" } } \\] } \\</script\\> Breadcrumb Schema \\<script type=\"application/ld+json\"\\> { \"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"@id\": \"/nlp-computer-vision\\#breadcrumb\", \"itemListElement\": \\[ { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"/\" }, { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"NLP & Computer Vision\", \"item\": \"/nlp-computer-vision\" } \\] } \\</script\\>",
         "items": []
       }
     ],
     "tables": [],
-    "costFactors": [
-      "Data availability",
-      "Data preparation",
-      "Data labelling",
-      "Model complexity",
-      "NLP or vision requirements",
-      "Real-time processing",
-      "Software integration",
-      "Infrastructure",
-      "Deployment",
-      "Monitoring",
-      "Ongoing model improvement",
-      "Data readiness",
-      "Model requirements",
-      "Training or fine-tuning",
-      "Model evaluation",
-      "Software integration",
-      "Real-time requirements",
-      "Deployment environment",
-      "Testing",
-      "Stakeholder feedback"
+    "costFactors": [],
+    "whyChoose": [
+      {
+        "title": "Why Choose Clickmasters for NLP & Computer Vision Development?",
+        "body": "Clickmasters approaches NLP and computer vision as part of a complete AI and software-development lifecycle.\n\nOur approach can connect:\n\nBusiness Problem → Text / Speech / Image / Video → AI Model → Structured Intelligence → Software Integration → Business Workflow → Monitoring\n\nThis keeps the AI capability connected to the application and workflow where its output will actually be used.\n\n---",
+        "items": []
+      }
     ],
-    "whyChoose": [],
     "faqs": [
-      {
-        "question": "Related AI & Machine Learning Services",
-        "answer": "For this pillar page, use related higher-level or adjacent services rather than repeating all five child pages again. Recommended cards based on services already referenced in the supplied content:"
-      },
-      {
-        "question": "Artificial Intelligence Development Services",
-        "answer": "Broader AI development services for integrating intelligent software capabilities into applications and business workflows."
-      },
-      {
-        "question": "Machine Learning Development Services",
-        "answer": "Machine-learning development for predictive, classification and data-driven software requirements."
-      },
-      {
-        "question": "AI Model Training & Optimisation Services",
-        "answer": "Data preparation, model training, fine-tuning, evaluation and optimisation for production AI systems."
-      },
-      {
-        "question": "Deep Learning Development Services",
-        "answer": "Neural-network development for complex language, visual and other high-dimensional AI problems. ---"
-      },
       {
         "question": "What are NLP and computer vision development services?",
         "answer": "NLP and computer vision development services create AI-powered software capable of processing language and visual data, including text, speech, images and video, and integrating the resulting outputs into applications and business workflows."
@@ -3849,7 +4023,7 @@ export const mainServicesMd = [
       },
       {
         "question": "How long does NLP and computer vision development take?",
-        "answer": "The timeline depends on data readiness, model requirements, training or fine-tuning, integration, testing and production deployment requirements."
+        "answer": "The timeline depends on data readiness, model requirements, training or fine-tuning, integration, testing and production deployment requirements. ---"
       }
     ],
     "relatedLinks": [],
@@ -4093,270 +4267,268 @@ export const mainServicesMd = [
     "cta": {
       "primary": "Book an AI Consultation"
     },
-    "process": [],
-    "techStack": [],
+    "process": [
+      {
+        "step": 1,
+        "title": "Problem Discovery",
+        "description": "We define the business problem, input data and required AI output."
+      },
+      {
+        "step": 2,
+        "title": "Feasibility Assessment",
+        "description": "We assess whether NLP, computer vision or a combined approach is appropriate."
+      },
+      {
+        "step": 3,
+        "title": "Data Assessment",
+        "description": "Available text, audio, image or video data is reviewed."
+      },
+      {
+        "step": 4,
+        "title": "Data Preparation",
+        "description": "Data is cleaned, structured, annotated or transformed where required."
+      },
+      {
+        "step": 5,
+        "title": "Model Approach",
+        "description": "Suitable model architectures and implementation approaches are evaluated."
+      },
+      {
+        "step": 6,
+        "title": "Model Development",
+        "description": "The selected NLP or computer vision capability is developed or adapted."
+      },
+      {
+        "step": 7,
+        "title": "Training & Evaluation",
+        "description": "The model is trained or fine-tuned and evaluated against suitable criteria."
+      },
+      {
+        "step": 8,
+        "title": "Optimisation",
+        "description": "Performance can be refined for accuracy, latency, model size or production constraints."
+      },
+      {
+        "step": 9,
+        "title": "Software Integration",
+        "description": "The AI model is connected with the required application or workflow."
+      },
+      {
+        "step": 10,
+        "title": "Deployment",
+        "description": "The approved solution is prepared for its production environment."
+      },
+      {
+        "step": 11,
+        "title": "Monitoring",
+        "description": "Relevant model and system behaviour can be monitored."
+      },
+      {
+        "step": 12,
+        "title": "Iterative Improvement",
+        "description": "Production data and feedback can inform future model updates."
+      }
+    ],
+    "techStack": [
+      {
+        "category": "Data Preparation for NLP & Computer Vision",
+        "items": [
+          "AI models depend on usable training and inference data."
+        ]
+      },
+      {
+        "category": "Data Labelling",
+        "items": [
+          "Text categories",
+          "Entities",
+          "Sentiment",
+          "Objects",
+          "Image classes",
+          "Visual regions",
+          "Events",
+          "Speech content"
+        ]
+      },
+      {
+        "category": "Model Training",
+        "items": [
+          "Dataset preparation",
+          "Architecture selection",
+          "Model training",
+          "Validation",
+          "Error analysis",
+          "Iteration",
+          "Performance evaluation"
+        ]
+      },
+      {
+        "category": "Model Fine-Tuning",
+        "items": [
+          "Where an appropriate existing model is available",
+          "fine-tuning can adapt it to a more specific task or dataset. Existing Model → Project Data → Fine-Tuning → Evaluation → Task-Specific Model"
+        ]
+      },
+      {
+        "category": "Deep Learning for NLP & Computer Vision",
+        "items": [
+          "Deep learning can support language and vision problems involving complex patterns or high-dimensional data. Neural Networks → Language Models → NLP and Neural Networks → Visual Models → Computer Vision For broader neural-network development",
+          "see our Deep Learning Development Services."
+        ]
+      },
+      {
+        "category": "NLP & Computer Vision Model Evaluation",
+        "items": [
+          "Model quality should be evaluated according to the task being performed."
+        ]
+      },
+      {
+        "category": "Error Analysis",
+        "items": [
+          "Incorrect classifications",
+          "Missed entities",
+          "False detections",
+          "Missed objects",
+          "Poor-quality inputs",
+          "Difficult image conditions",
+          "Ambiguous text",
+          "Edge cases"
+        ]
+      },
+      {
+        "category": "Real-Time AI Processing",
+        "items": [
+          "Speech processing",
+          "Visual detection",
+          "Object tracking",
+          "Live video analytics",
+          "Interactive language interfaces"
+        ]
+      },
+      {
+        "category": "Batch Processing",
+        "items": [
+          "Other use cases can process information asynchronously. Documents / Images / Video Files → Scheduled Processing → AI Models → Structured Results → Database / Application"
+        ]
+      },
+      {
+        "category": "Model Optimisation",
+        "items": [
+          "Model size",
+          "Inference speed",
+          "Memory",
+          "Throughput",
+          "Compute requirements",
+          "Prediction quality"
+        ]
+      },
+      {
+        "category": "Model Monitoring",
+        "items": [
+          "Prediction-performance changes",
+          "Data drift",
+          "Model drift",
+          "Latency problems",
+          "API failures",
+          "Input changes",
+          "Resource issues"
+        ]
+      }
+    ],
     "industries": [],
     "childServices": [
       {
-        "title": "Natural language processing",
+        "title": "Natural Language Processing Development",
         "href": "",
-        "description": ""
+        "description": "Natural language processing enables software to analyse, interpret and work with human language. NLP systems can support: A typical NLP workflow can follow: Text / Document → Language Processing → Entity / Meaning / Classification → Structured Output → Application For dedicated language-focused projects, explore our NLP Development Services."
       },
       {
-        "title": "Speech recognition",
+        "title": "Speech Recognition Development",
         "href": "",
-        "description": ""
+        "description": "Speech recognition converts spoken audio into text or machine-readable output. Audio → Speech Recognition → Transcript / Command → Language Processing → Application Speech recognition can form part of: For dedicated speech projects, visit our Speech Recognition Development Services."
       },
       {
-        "title": "Computer vision",
+        "title": "Computer Vision Development",
         "href": "",
-        "description": ""
+        "description": "Computer vision enables software to analyse and interpret visual information from images and video. Computer vision systems can support: Image / Video → Computer Vision Model → Detected Object / Classification / Pattern → Structured Output → Application For dedicated visual AI development, explore our Computer Vision Development Services."
       },
       {
-        "title": "Image processing",
+        "title": "Image Processing Development",
         "href": "",
-        "description": ""
+        "description": "Image processing focuses on transforming, enhancing or preparing visual data for software or computer vision workflows. Image-processing capabilities can include: Raw Image → Image Processing → Prepared Visual Data → Computer Vision Model For projects focused specifically on visual transformation and preparation, visit our Image Processing Services."
       },
       {
-        "title": "Video analytics",
+        "title": "Video Analytics Development",
         "href": "",
-        "description": ""
-      },
-      {
-        "title": "Model development",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "AI integration",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Data preparation",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Model training",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Model deployment",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Model monitoring",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Text classification",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Information extraction",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Named entity recognition",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Sentiment analysis",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Semantic search",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Document processing",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Text analysis",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Language understanding",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Content categorisation",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Conversational interfaces",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Voice-enabled applications",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Transcription workflows",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Search interfaces",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Customer-service tools",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Spoken-command systems",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Image recognition",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Image classification",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Object detection",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Object tracking",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Image segmentation",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Visual inspection",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Document-image analysis",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Video understanding",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Image enhancement",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Noise reduction",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Resizing",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Cropping",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Filtering",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Contrast adjustment",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Image normalisation",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Pre-processing",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Feature preparation",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Image transformation",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Object detection",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Object tracking",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Motion analysis",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Video classification",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Event detection",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Visual pattern analysis",
-        "href": "",
-        "description": ""
+        "description": "Video analytics applies computer vision to sequences of frames to identify objects, patterns, movement or events. Video Stream → Frame Processing → Object Detection → Tracking / Analysis → Event or Structured Output Potential capabilities can include: For dedicated video projects, explore our Video Analytics Development Services."
       }
     ],
     "engagementModels": [],
     "useCases": [
       {
-        "title": "NLP & Computer Vision Use Cases",
-        "description": "",
+        "title": "Intelligent Document Processing",
+        "description": "Combine document images, text extraction and NLP to convert unstructured documents into structured information.",
+        "metric": ""
+      },
+      {
+        "title": "Semantic Search",
+        "description": "Understand the meaning of user queries and retrieve more relevant text or documents.",
+        "metric": ""
+      },
+      {
+        "title": "Text Classification",
+        "description": "Automatically assign text to predefined categories.",
+        "metric": ""
+      },
+      {
+        "title": "Information Extraction",
+        "description": "Extract useful entities or fields from large volumes of text.",
+        "metric": ""
+      },
+      {
+        "title": "Speech-to-Text Workflows",
+        "description": "Convert spoken content into text for further processing or software actions.",
+        "metric": ""
+      },
+      {
+        "title": "Image Classification",
+        "description": "Classify images according to defined categories.",
+        "metric": ""
+      },
+      {
+        "title": "Object Detection",
+        "description": "Locate and classify objects within images or video.",
+        "metric": ""
+      },
+      {
+        "title": "Video Analytics",
+        "description": "Analyse video sequences to detect objects, movement or defined events.",
+        "metric": ""
+      },
+      {
+        "title": "Visual Inspection",
+        "description": "Analyse images to identify defined visual patterns or conditions.",
+        "metric": ""
+      },
+      {
+        "title": "Multimodal Applications",
+        "description": "Combine text and visual information within the same AI-enabled software workflow. ---",
         "metric": ""
       }
     ],
-    "deliverables": [],
+    "deliverables": [
+      "AI requirements",
+      "Feasibility findings",
+      "Data-readiness assessment",
+      "Data-processing workflow",
+      "NLP or computer vision model",
+      "Model evaluation results",
+      "AI API",
+      "Application integration",
+      "Deployment configuration",
+      "Monitoring requirements",
+      "Technical documentation",
+      "Handover information."
+    ],
     "sourceFile": "nlp main service.md"
   },
   {
@@ -4370,9 +4542,7 @@ export const mainServicesMd = [
     "intro": [
       "Build reliable software around the way your business actually works.",
       "[Clickmasters Software Development Company](/) is a UK software development company helping businesses plan, build, modernise and scale digital products and business systems. Our software development services cover everything from bespoke applications and enterprise platforms to SaaS products, APIs, desktop software and complex backend systems.",
-      "Whether you are launching a new product, replacing outdated software or improving an existing system, our development team can support the complete journey from discovery and architecture through development, testing, deployment and ongoing improvement.",
-      "Discuss Your Software Project",
-      "---"
+      "Whether you are launching a new product, replacing outdated software or improving an existing system, our development team can support the complete journey from discovery and architecture through development, testing, deployment and ongoing improvement."
     ],
     "sections": [
       {
@@ -4463,6 +4633,16 @@ export const mainServicesMd = [
           "Development timeline",
           "Ongoing maintenance"
         ]
+      },
+      {
+        "heading": "Software Development Engagement Models",
+        "body": "Different projects require different working arrangements.",
+        "items": []
+      },
+      {
+        "heading": "Discuss Your Software Development Project",
+        "body": "Whether you need a new business application, SaaS product, enterprise platform or improvements to an existing system, our software development team can help define the right approach.\n\nStart by telling us what your business needs the software to achieve. We can review your objectives, existing technology, users and technical requirements before recommending a development approach.\n\nRequest a Consultation\n\nGet a Software Development Quote\n\nSchemas FAQS\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"FAQPage\",\n\n\"@id\": \"/software-development\\#faq\",\n\n\"url\": \"/software-development\",\n\n\"mainEntity\": \\[\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What are software development services?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Software development services include the planning, design, programming, testing, deployment and maintenance of digital applications and systems. Services can include custom software, enterprise applications, SaaS products, APIs, desktop applications and modernisation of existing software.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What does a software development company do?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"A software development company turns business or product requirements into working software. The process can include discovery, architecture, UI/UX, frontend development, backend development, integrations, testing, deployment and ongoing support.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is bespoke software development?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Bespoke software development involves creating an application specifically for an organisation's requirements rather than using a standard commercial product with predefined functionality.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"How much does software development cost in the UK?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Costs depend on application complexity, features, integrations, platforms, security requirements, infrastructure, testing and development time. A reliable project estimate usually requires requirements discovery first.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"How long does it take to develop software?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Development time varies according to scope. A focused MVP can be completed much sooner than a complex enterprise platform involving multiple integrations, workflows and user types.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can you integrate software with our existing systems?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. Where suitable integration methods are available, applications can connect with existing CRM, ERP, ecommerce, finance and other business platforms through APIs and integrations.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Do you provide software maintenance after launch?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Ongoing software support can include bug fixes, security updates, new functionality, performance improvements, integrations and infrastructure changes.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Do you develop software for startups?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. Startups can use MVP and SaaS development services to validate a product idea and progressively expand functionality as the product gains users and market feedback.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can you modernise legacy software?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. Legacy modernisation may involve replacing outdated components, introducing modern APIs, improving infrastructure, migrating data or rebuilding applications when the existing architecture can no longer meet business requirements.\"\n\n}\n\n}\n\n\\]\n\n}\n\n\\</script\\>\n\nService Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"Service\",\n\n\"@id\": \"/software-development\\#service\",\n\n\"name\": \"Software Development Services UK\",\n\n\"alternateName\": \\[\n\n\"Software Development Services\",\n\n\"Software Development Company UK\",\n\n\"Software Development Agency UK\"\n\n\\],\n\n\"url\": \"/software-development\",\n\n\"description\": \"UK software development services for businesses requiring custom software, enterprise applications, SaaS products, MVPs, desktop applications, APIs, backend development, frontend development and scalable software systems.\",\n\n\"serviceType\": \"Software Development Services\",\n\n\"provider\": {\n\n\"@type\": \"Organization\",\n\n\"@id\": \"/\\#organization\",\n\n\"name\": \"ClickMasters Software Development Company\",\n\n\"url\": \"/\"\n\n},\n\n\"areaServed\": {\n\n\"@type\": \"Country\",\n\n\"name\": \"United Kingdom\"\n\n},\n\n\"audience\": {\n\n\"@type\": \"BusinessAudience\",\n\n\"audienceType\": \"Startups, SMEs and Enterprises\"\n\n},\n\n\"hasOfferCatalog\": {\n\n\"@type\": \"OfferCatalog\",\n\n\"name\": \"Software Development Services\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Custom Software Development\",\n\n\"url\": \"/software-development/custom-software-development\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Enterprise Software Development\",\n\n\"url\": \"/software-development/enterprise-software-development\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"SaaS Product Development\",\n\n\"url\": \"/software-development/saas-product-development\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"MVP Development\",\n\n\"url\": \"/software-development/mvp-development\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Desktop Application Development\",\n\n\"url\": \"/software-development/desktop-application-development\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"API Development and Integration\",\n\n\"url\": \"/software-development/api-development-integration\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Microservices Architecture\",\n\n\"url\": \"/software-development/microservices-architecture\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Backend Development\",\n\n\"url\": \"/software-development/backend-development\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Frontend Development\",\n\n\"url\": \"/software-development/frontend-development\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Offer\",\n\n\"itemOffered\": {\n\n\"@type\": \"Service\",\n\n\"name\": \"Full Stack Development\",\n\n\"url\": \"/software-development/full-stack-development\"\n\n}\n\n}\n\n\\]\n\n}\n\n}\n\n\\</script\\>",
+        "items": []
       }
     ],
     "tables": [],
@@ -4538,6 +4718,10 @@ export const mainServicesMd = [
       {
         "label": "Cloud & DevOps services",
         "href": "/cloud-and-devops"
+      },
+      {
+        "label": "Custom Software Development",
+        "href": "/software-development/custom-software-development"
       }
     ],
     "jsonLd": {
@@ -4740,37 +4924,37 @@ export const mainServicesMd = [
     "process": [
       {
         "step": 1,
-        "title": "1. Discovery & Requirements",
+        "title": "Discovery & Requirements",
         "description": "We begin by understanding your organisation, users, existing systems and project objectives."
       },
       {
         "step": 2,
-        "title": "2. Solution Architecture",
+        "title": "Solution Architecture",
         "description": "Once the requirements are understood, we determine how the software should be structured."
       },
       {
         "step": 3,
-        "title": "3. UX & Interface Planning",
+        "title": "UX & Interface Planning",
         "description": "For user-facing software, the experience should be considered before development becomes too advanced."
       },
       {
         "step": 4,
-        "title": "4. Software Development",
+        "title": "Software Development",
         "description": "Development is organised into manageable stages so functionality can be reviewed throughout the project."
       },
       {
         "step": 5,
-        "title": "5. Quality Assurance & Testing",
+        "title": "Quality Assurance & Testing",
         "description": "Testing should be part of development rather than an activity performed only before launch."
       },
       {
         "step": 6,
-        "title": "6. Deployment",
+        "title": "Deployment",
         "description": "Once approved, the application is prepared for its production environment."
       },
       {
         "step": 7,
-        "title": "7. Maintenance & Continuous Improvement",
+        "title": "Maintenance & Continuous Improvement",
         "description": "Launching software is rarely the end of its lifecycle."
       }
     ],
@@ -4857,54 +5041,26 @@ export const mainServicesMd = [
         "title": "Custom Software Development",
         "href": "/software-development/custom-software-development",
         "description": "When standard software does not fit your processes, custom software development gives your business greater control over functionality, workflows and future development."
-      },
-      {
-        "title": "Enterprise Software Development",
-        "href": "",
-        "description": "Complex organisations need software that can support larger user bases, multiple departments, business-critical workflows and integrations."
-      },
-      {
-        "title": "SaaS Product Development",
-        "href": "",
-        "description": "Planning to launch or improve a subscription-based software product?"
-      },
-      {
-        "title": "MVP Development",
-        "href": "",
-        "description": "A minimum viable product allows you to test an idea with a focused set of essential features before investing in a larger software platform."
-      },
-      {
-        "title": "Desktop Application Development",
-        "href": "",
-        "description": "Not every application needs to operate entirely through a browser."
-      },
-      {
-        "title": "API Development & Integration",
-        "href": "",
-        "description": "Modern businesses often rely on multiple applications that need to exchange information reliably."
-      },
-      {
-        "title": "Microservices Architecture",
-        "href": "",
-        "description": "As some software platforms grow, a single tightly connected application can become difficult to scale and maintain."
-      },
-      {
-        "title": "Backend Development",
-        "href": "",
-        "description": "The backend powers the core functionality users may never directly see."
-      },
-      {
-        "title": "Frontend Development",
-        "href": "",
-        "description": "Good software needs to be technically capable and straightforward to use."
-      },
-      {
-        "title": "Full Stack Development",
-        "href": "",
-        "description": "Some projects benefit from one coordinated team working across both the user-facing application and the systems behind it."
       }
     ],
-    "engagementModels": [],
+    "engagementModels": [
+      {
+        "title": "Project-Based Development",
+        "description": "Suitable for projects where requirements and deliverables can be clearly defined."
+      },
+      {
+        "title": "Dedicated Development Team",
+        "description": "Suitable for businesses requiring ongoing engineering capability across a longer product roadmap."
+      },
+      {
+        "title": "Ongoing Software Development",
+        "description": "Suitable for existing applications that require continuous features, improvements and technical changes."
+      },
+      {
+        "title": "Maintenance & Support",
+        "description": "Suitable for software requiring ongoing monitoring, fixes, updates and technical assistance."
+      }
+    ],
     "useCases": [],
     "deliverables": [],
     "sourceFile": "software-development.md"
@@ -4931,32 +5087,27 @@ export const mainServicesMd = [
     "intro": [
       "Extend your software capabilities with flexible software support and outsourcing services designed around your applications, development requirements and internal teams.",
       "Clickmasters helps UK businesses maintain existing software, resolve technical issues, expand development capacity and access dedicated software-development resources. These services complement our broader [Software Development Services](/software-development), supporting businesses before, during and after software delivery.",
-      "Our support and outsourcing services include software maintenance and support, technical support, dedicated development teams and IT staff augmentation, allowing businesses to choose the support or resourcing model that best matches their software and team requirements.",
-      "Primary CTA: Discuss Your Support Requirements",
-      "Secondary CTA: Book a Consultation",
-      "---"
+      "Our support and outsourcing services include software maintenance and support, technical support, dedicated development teams and IT staff augmentation, allowing businesses to choose the support or resourcing model that best matches their software and team requirements."
     ],
     "sections": [
       {
-        "heading": "SECTION 02 — SERVICE OVERVIEW",
-        "body": "\n\nExisting platforms may require maintenance, technical assistance, additional development capacity or specialist resources to continue supporting changing business requirements.\n\nOur support and outsourcing services are structured around two main areas:\n\nSoftware Support → maintain, troubleshoot and support existing applications\n\nDevelopment Resourcing → extend development capacity through dedicated teams or additional specialists\n\nA typical engagement can look like:\n\nExisting Software / Development Requirement → Requirement Assessment → Support or Resourcing Model → Implementation / Delivery → Ongoing Collaboration\n\nThe appropriate model depends on whether you need help with the software itself, technical problem resolution or additional development resources.\n\n---",
+        "heading": "Software Support & Outsourcing for Ongoing Development",
+        "body": "Software delivery does not always end when an application is launched.\n\nExisting platforms may require maintenance, technical assistance, additional development capacity or specialist resources to continue supporting changing business requirements.\n\nOur support and outsourcing services are structured around two main areas:\n\nSoftware Support → maintain, troubleshoot and support existing applications\n\nDevelopment Resourcing → extend development capacity through dedicated teams or additional specialists\n\nA typical engagement can look like:\n\nExisting Software / Development Requirement → Requirement Assessment → Support or Resourcing Model → Implementation / Delivery → Ongoing Collaboration\n\nThe appropriate model depends on whether you need help with the software itself, technical problem resolution or additional development resources.\n\n---",
         "items": []
       },
       {
-        "heading": "SECTION 04 — SERVICE MODEL",
-        "body": "\n\n### Need to Maintain Existing Software?\n\nExisting Application → Maintenance Assessment → Bug Fixes / Updates / Improvements → Ongoing Maintenance\n\nChoose Software Maintenance & Support.\n\n### Need Help Resolving Technical Problems?\n\nTechnical Issue → Investigation → Diagnosis → Resolution / Escalation → Verification\n\nChoose Technical Support.\n\n### Need a Complete External Development Team?\n\nProduct / Roadmap → Dedicated Development Team → Continuous Delivery → Ongoing Development\n\nChoose Dedicated Development Teams.\n\n### Need Additional People for Your Existing Team?\n\nExisting Internal Team\n\n→ Expanded Development Capacity\n\nChoose Staff Augmentation.\n\n---",
-        "items": [
-          "Additional External Specialists"
-        ]
-      },
-      {
-        "heading": "SECTION 05 — SUPPORT CAPABILITIES",
-        "body": "\n\nDepending on the application and agreed scope, ongoing support can cover areas such as:\n\n### Application Maintenance\n\nMaintain existing application functionality as business and technical requirements change.\n\n### Bug Resolution\n\nInvestigate and resolve software defects affecting existing functionality.\n\n### Software Updates\n\nImplement technical updates where applications, dependencies or connected systems change.\n\n### Performance Improvement\n\nInvestigate application areas that require technical or performance optimisation.\n\n### Compatibility Support\n\nAdapt software where changes in operating environments, browsers, APIs, frameworks or connected systems affect existing functionality.\n\n### Feature Enhancements\n\nExtend an existing application with agreed improvements or additional capabilities.\n\n### Technical Troubleshooting\n\nInvestigate application issues and determine where corrective technical action is required.\n\n### Ongoing Engineering Assistance\n\nProvide continued technical input for software that requires regular maintenance or development activity.\n\n---",
+        "heading": "Choose the Right Software Support or Outsourcing Model",
+        "body": "Different requirements need different engagement models.\n\n\n\n\n\n\n\n",
         "items": []
       },
       {
-        "heading": "SECTION 06 — OUTSOURCING CAPABILITIES",
-        "body": "\n\nDepending on the engagement, external development resources can support:\n\nThe appropriate structure depends on whether you need a dedicated external team or individual specialists integrated into your existing team.\n\n---",
+        "heading": "Software Support for Existing Applications",
+        "body": "Businesses can require ongoing engineering support for software that is already operational.\n\nDepending on the application and agreed scope, ongoing support can cover areas such as:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+        "items": []
+      },
+      {
+        "heading": "Extend Your Software Development Capacity",
+        "body": "Development outsourcing can provide additional engineering capacity without requiring every capability to be built entirely inside the organisation.\n\nDepending on the engagement, external development resources can support:\n\nThe appropriate structure depends on whether you need a dedicated external team or individual specialists integrated into your existing team.\n\n---",
         "items": [
           "New feature development",
           "Application improvements",
@@ -4974,39 +5125,18 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "SECTION 07 — ENGAGEMENT MODEL COMPARISON",
-        "body": "\n\n### Choose a Dedicated Development Team When\n\n### Consider Staff Augmentation When\n\n---",
-        "items": [
-          "You need an ongoing external development unit",
-          "A product requires continuous development",
-          "Multiple engineering capabilities are required",
-          "You want additional long-term delivery capacity",
-          "The external team needs to work around a defined product roadmap",
-          "You already have an internal development team",
-          "You need additional engineering capacity",
-          "A specific technical skill is missing",
-          "Workloads have temporarily increased",
-          "You want specialists to integrate into your existing team structure"
-        ]
-      },
-      {
-        "heading": "SECTION 08 — SUPPORT MODEL COMPARISON",
-        "body": "\n\nA software application can require both.\n\nFor example:\n\nSoftware issue appears → Technical Support investigates it → Maintenance team implements a code-level correction → Updated application is tested and released\n\n---",
+        "heading": "Dedicated Development Team vs Staff Augmentation",
+        "body": "Both models increase development capacity, but they solve different organisational requirements.\n\n\n\n",
         "items": []
       },
       {
-        "heading": "SECTION 09 — USE CASES",
-        "body": "### Supporting Existing Business Software\n\nMaintain software that is already being used by employees, customers or other business systems.\n\n### Extending an Existing Application\n\nAdd or improve functionality without rebuilding the complete software product.\n\n### Increasing Development Capacity\n\nAdd development resources when an internal team does not have enough capacity to handle the required workload.\n\n### Filling Technical Skill Gaps\n\nBring additional technical expertise into an existing development environment where a particular capability is required.\n\n### Supporting an Ongoing Product Roadmap\n\nUse a dedicated external development team to continue building and improving a software product over time.\n\n### Troubleshooting Production Issues\n\nInvestigate technical issues affecting deployed software and identify the appropriate resolution path.\n\n### Taking Over Existing Software\n\nAssess an existing application and establish an appropriate maintenance, support or development workflow.\n\n### Supporting Software Modernisation\n\nProvide engineering resources for applications being gradually updated, refactored or integrated with newer software architecture.\n\n---",
+        "heading": "Software Maintenance vs Technical Support",
+        "body": "Software maintenance and technical support are related, but they are not identical.\n\nA software application can require both.\n\nFor example:\n\nSoftware issue appears → Technical Support investigates it → Maintenance team implements a code-level correction → Updated application is tested and released\n\n---",
         "items": []
       },
       {
-        "heading": "SECTION 10 — HOW WE WORK",
-        "body": "### 1\\. Requirements Discovery\n\nWe identify whether the requirement involves software maintenance, technical support, dedicated development resources or staff augmentation.\n\n### 2\\. Existing Environment Assessment\n\nWhere existing software is involved, the application, technical environment and available documentation can be reviewed.\n\n### 3\\. Scope & Engagement Model\n\nThe appropriate support or resourcing structure is defined around the required work.\n\n### 4\\. Technical Onboarding\n\nRelevant software, repositories, documentation, workflows and technical requirements are reviewed as required by the engagement.\n\n### 5\\. Delivery Setup\n\nResponsibilities, communication processes and development or support workflows are established.\n\n### 6\\. Development or Support\n\nThe agreed team or specialists work on the defined maintenance, support or development requirements.\n\n### 7\\. Testing & Review\n\nRelevant changes or resolutions are reviewed and tested before completion or release.\n\n### 8\\. Integration & Release\n\nApproved software changes can be integrated into the wider application or deployment workflow.\n\n### 9\\. Ongoing Collaboration\n\nLonger-term engagements can continue around maintenance, support or software-development requirements.\n\n### 10\\. Continuous Improvement\n\nDelivery processes and technical priorities can evolve as software and business requirements change.\n\n---",
-        "items": []
-      },
-      {
-        "heading": "SECTION 11 — DELIVERABLES",
-        "body": "\n\nThey can include:\n\nThe exact deliverables should be defined according to the individual support or outsourcing engagement.\n\n---",
+        "heading": "What You Receive",
+        "body": "Deliverables depend on the selected service and agreed engagement scope.\n\nThey can include:\n\nThe exact deliverables should be defined according to the individual support or outsourcing engagement.\n\n---",
         "items": [
           "Technical requirements assessment",
           "Existing software review",
@@ -5026,13 +5156,8 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "SECTION 12 — WHY CLICKMASTERS",
-        "body": "\n\nOur approach can connect:\n\nBusiness Requirement → Existing Software / Development Need → Appropriate Support Model → Engineering Resources → Development / Resolution → Software Delivery → Ongoing Support\n\nThis allows the engagement to be structured around what the business actually needs: maintaining existing software, resolving technical issues or expanding development capacity.\n\n---",
-        "items": []
-      },
-      {
-        "heading": "SECTION 13 — COST + ENGAGEMENT",
-        "body": "\n\nFactors can include:\n\nA focused technical-support requirement has a different scope from providing a dedicated development team for an ongoing software product.\n\n\n\nSupport may be required for:\n\nThe appropriate structure should be determined during requirements discovery rather than applying the same engagement model to every client.\n\n---",
+        "heading": "Software Support & Outsourcing Costs",
+        "body": "The cost of software support and outsourcing depends on the type and scope of the engagement.\n\nFactors can include:\n\nA focused technical-support requirement has a different scope from providing a dedicated development team for an ongoing software product.",
         "items": [
           "Existing software complexity",
           "Codebase condition",
@@ -5045,7 +5170,13 @@ export const mainServicesMd = [
           "Integration requirements",
           "Testing requirements",
           "Engagement duration",
-          "Ongoing maintenance requirements",
+          "Ongoing maintenance requirements"
+        ]
+      },
+      {
+        "heading": "How Long Can a Support or Outsourcing Engagement Last?",
+        "body": "The engagement period depends on the requirement.\n\nSupport may be required for:\n\nThe appropriate structure should be determined during requirements discovery rather than applying the same engagement model to every client.\n\n---",
+        "items": [
           "A defined technical issue",
           "A specific maintenance period",
           "A software improvement programme",
@@ -5055,14 +5186,19 @@ export const mainServicesMd = [
         ]
       },
       {
-        "heading": "SECTION 16 — FINAL CTA",
-        "body": "\n\nPrimary CTA: Discuss Your Support Requirements Service Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"Service\",\n\n\"@id\": \"/support-and-outsourcing\\#service\",\n\n\"name\": \"Software Support & Outsourcing Services UK\",\n\n\"url\": \"/support-and-outsourcing\",\n\n\"description\": \"Software support and outsourcing services for UK businesses, including software maintenance, technical support, dedicated development teams and IT staff augmentation.\",\n\n\"serviceType\": \"Software Support and Outsourcing Services\",\n\n\"provider\": {\n\n\"@type\": \"Organization\",\n\n\"@id\": \"/\\#organization\",\n\n\"name\": \"Clickmasters Software Development Company\",\n\n\"url\": \"/\"\n\n},\n\n\"areaServed\": {\n\n\"@type\": \"Country\",\n\n\"name\": \"United Kingdom\"\n\n},\n\n\"isRelatedTo\": \\[\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Software Development Services\",\n\n\"url\": \"/software-development\"\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Software Maintenance & Support Services\",\n\n\"url\": \"/support-and-outsourcing/maintenance-support\"\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Dedicated Development Team Services\",\n\n\"url\": \"/support-and-outsourcing/dedicated-development-teams\"\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"IT Staff Augmentation Services\",\n\n\"url\": \"/support-and-outsourcing/staff-augmentation\"\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Technical Support Services\",\n\n\"url\": \"/support-and-outsourcing/technical-support\"\n\n}\n\n\\]\n\n}\n\n\\</script\\>\n\nFaq Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"FAQPage\",\n\n\"@id\": \"/support-and-outsourcing\\#faq\",\n\n\"mainEntity\": \\[\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What are software support and outsourcing services?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Software support and outsourcing services provide external technical and development resources for maintaining applications, resolving software issues, extending development capacity and supporting ongoing software delivery.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is software maintenance and support?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Software maintenance and support involves maintaining an existing application through activities such as bug fixing, technical updates, compatibility improvements, performance work and ongoing software enhancements.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is technical support?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Technical support focuses on investigating, troubleshooting and resolving technical problems affecting software applications or related systems.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is a dedicated development team?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"A dedicated development team is an external team assigned to work continuously on a business's software product, application or development roadmap.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is IT staff augmentation?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"IT staff augmentation adds external technical specialists to an organisation's existing team to provide additional skills or development capacity.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is the difference between staff augmentation and a dedicated development team?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Staff augmentation generally adds individual specialists to an existing client team, while a dedicated development team provides a more complete external team working around an ongoing product or development requirement.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is the difference between software maintenance and technical support?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Software maintenance focuses on maintaining and improving the application itself, while technical support focuses more directly on troubleshooting and resolving technical issues.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can you support existing software?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Support can be provided for existing software where the application, codebase, technology and requirements can be appropriately assessed.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can developers work with our existing internal team?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. Staff augmentation and other collaborative delivery models can be structured so external specialists work alongside an existing internal development team.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can support include new software features?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Depending on the engagement, ongoing software support can include agreed enhancements and additional functionality as well as maintenance work.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Do we need a dedicated development team?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Not necessarily. A dedicated team is one engagement model. Businesses with an existing team may instead require staff augmentation, while businesses focused on an existing application may require maintenance or technical support.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"How much do software support and outsourcing services cost?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Cost depends on the type of service, development requirements, team structure, software complexity, engagement duration and level of ongoing support required.\"\n\n}\n\n}\n\n\\]\n\n}\n\n\\</script\\>\n\nBreadcrumb Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"BreadcrumbList\",\n\n\"@id\": \"/support-and-outsourcing\\#breadcrumb\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 1,\n\n\"name\": \"Home\",\n\n\"item\": \"/\"\n\n},\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 2,\n\n\"name\": \"Support & Outsourcing\",\n\n\"item\": \"/support-and-outsourcing\"\n\n}\n\n\\]\n\n}\n\n\\</script\\>",
+        "heading": "Explore Our Support & Outsourcing Services",
+        "body": "\n\n\n\n\n\n",
+        "items": []
+      },
+      {
+        "heading": "Extend Your Software Development Capability with Clickmasters",
+        "body": "Whether you need ongoing application maintenance, technical support, additional specialists or a dedicated software-development team, Clickmasters can help structure the engagement around your existing software, internal resources and development requirements.\n\nPrimary CTA: Discuss Your Support Requirements Service Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"Service\",\n\n\"@id\": \"/support-and-outsourcing\\#service\",\n\n\"name\": \"Software Support & Outsourcing Services UK\",\n\n\"url\": \"/support-and-outsourcing\",\n\n\"description\": \"Software support and outsourcing services for UK businesses, including software maintenance, technical support, dedicated development teams and IT staff augmentation.\",\n\n\"serviceType\": \"Software Support and Outsourcing Services\",\n\n\"provider\": {\n\n\"@type\": \"Organization\",\n\n\"@id\": \"/\\#organization\",\n\n\"name\": \"Clickmasters Software Development Company\",\n\n\"url\": \"/\"\n\n},\n\n\"areaServed\": {\n\n\"@type\": \"Country\",\n\n\"name\": \"United Kingdom\"\n\n},\n\n\"isRelatedTo\": \\[\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Software Development Services\",\n\n\"url\": \"/software-development\"\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Software Maintenance & Support Services\",\n\n\"url\": \"/support-and-outsourcing/maintenance-support\"\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Dedicated Development Team Services\",\n\n\"url\": \"/support-and-outsourcing/dedicated-development-teams\"\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"IT Staff Augmentation Services\",\n\n\"url\": \"/support-and-outsourcing/staff-augmentation\"\n\n},\n\n{\n\n\"@type\": \"Service\",\n\n\"name\": \"Technical Support Services\",\n\n\"url\": \"/support-and-outsourcing/technical-support\"\n\n}\n\n\\]\n\n}\n\n\\</script\\>\n\nFaq Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"FAQPage\",\n\n\"@id\": \"/support-and-outsourcing\\#faq\",\n\n\"mainEntity\": \\[\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What are software support and outsourcing services?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Software support and outsourcing services provide external technical and development resources for maintaining applications, resolving software issues, extending development capacity and supporting ongoing software delivery.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is software maintenance and support?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Software maintenance and support involves maintaining an existing application through activities such as bug fixing, technical updates, compatibility improvements, performance work and ongoing software enhancements.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is technical support?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Technical support focuses on investigating, troubleshooting and resolving technical problems affecting software applications or related systems.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is a dedicated development team?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"A dedicated development team is an external team assigned to work continuously on a business's software product, application or development roadmap.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is IT staff augmentation?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"IT staff augmentation adds external technical specialists to an organisation's existing team to provide additional skills or development capacity.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is the difference between staff augmentation and a dedicated development team?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Staff augmentation generally adds individual specialists to an existing client team, while a dedicated development team provides a more complete external team working around an ongoing product or development requirement.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"What is the difference between software maintenance and technical support?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Software maintenance focuses on maintaining and improving the application itself, while technical support focuses more directly on troubleshooting and resolving technical issues.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can you support existing software?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Support can be provided for existing software where the application, codebase, technology and requirements can be appropriately assessed.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can developers work with our existing internal team?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Yes. Staff augmentation and other collaborative delivery models can be structured so external specialists work alongside an existing internal development team.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Can support include new software features?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Depending on the engagement, ongoing software support can include agreed enhancements and additional functionality as well as maintenance work.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"Do we need a dedicated development team?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Not necessarily. A dedicated team is one engagement model. Businesses with an existing team may instead require staff augmentation, while businesses focused on an existing application may require maintenance or technical support.\"\n\n}\n\n},\n\n{\n\n\"@type\": \"Question\",\n\n\"name\": \"How much do software support and outsourcing services cost?\",\n\n\"acceptedAnswer\": {\n\n\"@type\": \"Answer\",\n\n\"text\": \"Cost depends on the type of service, development requirements, team structure, software complexity, engagement duration and level of ongoing support required.\"\n\n}\n\n}\n\n\\]\n\n}\n\n\\</script\\>\n\nBreadcrumb Schema\n\n\\<script type=\"application/ld+json\"\\>\n\n{\n\n\"@context\": \"https://schema.org\",\n\n\"@type\": \"BreadcrumbList\",\n\n\"@id\": \"/support-and-outsourcing\\#breadcrumb\",\n\n\"itemListElement\": \\[\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 1,\n\n\"name\": \"Home\",\n\n\"item\": \"/\"\n\n},\n\n{\n\n\"@type\": \"ListItem\",\n\n\"position\": 2,\n\n\"name\": \"Support & Outsourcing\",\n\n\"item\": \"/support-and-outsourcing\"\n\n}\n\n\\]\n\n}\n\n\\</script\\>",
         "items": []
       }
     ],
     "tables": [
       {
-        "title": "SECTION 07 — ENGAGEMENT MODEL COMPARISON",
+        "title": "Dedicated Development Team vs Staff Augmentation",
         "headers": [
           "Dedicated Development Team",
           "Staff Augmentation"
@@ -5095,7 +5231,7 @@ export const mainServicesMd = [
         ]
       },
       {
-        "title": "SECTION 08 — SUPPORT MODEL COMPARISON",
+        "title": "Software Maintenance vs Technical Support",
         "headers": [
           "Software Maintenance & Support",
           "Technical Support"
@@ -5140,20 +5276,85 @@ export const mainServicesMd = [
       "Integration requirements",
       "Testing requirements",
       "Engagement duration",
-      "Ongoing maintenance requirements",
-      "A defined technical issue",
-      "A specific maintenance period",
-      "A software improvement programme",
-      "An ongoing product roadmap",
-      "Temporary capacity expansion",
-      "Longer-term development support"
+      "Ongoing maintenance requirements"
     ],
-    "whyChoose": [],
-    "faqs": [],
+    "whyChoose": [
+      {
+        "title": "Why Choose Clickmasters for Software Support & Outsourcing?",
+        "body": "Clickmasters approaches software support and outsourcing as part of the wider software-development lifecycle rather than treating support as disconnected from engineering.\n\nOur approach can connect:\n\nBusiness Requirement → Existing Software / Development Need → Appropriate Support Model → Engineering Resources → Development / Resolution → Software Delivery → Ongoing Support\n\nThis allows the engagement to be structured around what the business actually needs: maintaining existing software, resolving technical issues or expanding development capacity.\n\n---",
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are software support and outsourcing services?",
+        "answer": "Software support and outsourcing services provide external technical and development resources for maintaining applications, resolving software issues, extending development capacity and supporting ongoing software delivery."
+      },
+      {
+        "question": "What is software maintenance and support?",
+        "answer": "Software maintenance and support involves maintaining an existing application through activities such as bug fixing, technical updates, compatibility improvements, performance work and ongoing software enhancements."
+      },
+      {
+        "question": "What is technical support?",
+        "answer": "Technical support focuses on investigating, troubleshooting and resolving technical problems affecting software applications or related systems."
+      },
+      {
+        "question": "What is a dedicated development team?",
+        "answer": "A dedicated development team is an external team assigned to work continuously on a business's software product, application or development roadmap."
+      },
+      {
+        "question": "What is IT staff augmentation?",
+        "answer": "IT staff augmentation adds external technical specialists to an organisation's existing team to provide additional skills or development capacity."
+      },
+      {
+        "question": "What is the difference between staff augmentation and a dedicated development team?",
+        "answer": "Staff augmentation generally adds individual specialists to an existing client team, while a dedicated development team provides a more complete external team working around an ongoing product or development requirement."
+      },
+      {
+        "question": "What is the difference between software maintenance and technical support?",
+        "answer": "Software maintenance focuses on maintaining and improving the application itself, while technical support focuses more directly on troubleshooting and resolving technical issues."
+      },
+      {
+        "question": "Can you support existing software?",
+        "answer": "Support can be provided for existing software where the application, codebase, technology and requirements can be appropriately assessed."
+      },
+      {
+        "question": "Can developers work with our existing internal team?",
+        "answer": "Yes. Staff augmentation and other collaborative delivery models can be structured so external specialists work alongside an existing internal development team."
+      },
+      {
+        "question": "Can support include new software features?",
+        "answer": "Depending on the engagement, ongoing software support can include agreed enhancements and additional functionality as well as maintenance work."
+      },
+      {
+        "question": "Do we need a dedicated development team?",
+        "answer": "Not necessarily. A dedicated team is one engagement model. Businesses with an existing team may instead require staff augmentation, while businesses focused on an existing application may require maintenance or technical support."
+      },
+      {
+        "question": "How much do software support and outsourcing services cost?",
+        "answer": "Cost depends on the type of service, development requirements, team structure, software complexity, engagement duration and level of ongoing support required. ---"
+      }
+    ],
     "relatedLinks": [
       {
         "label": "Software Development Services",
         "href": "/software-development"
+      },
+      {
+        "label": "Software Maintenance & Support",
+        "href": "/support-and-outsourcing/maintenance-support"
+      },
+      {
+        "label": "Technical Support",
+        "href": "/support-and-outsourcing/technical-support"
+      },
+      {
+        "label": "Dedicated Development Teams",
+        "href": "/support-and-outsourcing/dedicated-development-teams"
+      },
+      {
+        "label": "IT Staff Augmentation",
+        "href": "/support-and-outsourcing/staff-augmentation"
       }
     ],
     "jsonLd": {
@@ -5333,224 +5534,119 @@ export const mainServicesMd = [
     "process": [
       {
         "step": 1,
-        "title": "Our Support & Outsourcing Process",
-        "description": ""
+        "title": "Requirements Discovery",
+        "description": "We identify whether the requirement involves software maintenance, technical support, dedicated development resources or staff augmentation."
+      },
+      {
+        "step": 2,
+        "title": "Existing Environment Assessment",
+        "description": "Where existing software is involved, the application, technical environment and available documentation can be reviewed."
+      },
+      {
+        "step": 3,
+        "title": "Scope & Engagement Model",
+        "description": "The appropriate support or resourcing structure is defined around the required work."
+      },
+      {
+        "step": 4,
+        "title": "Technical Onboarding",
+        "description": "Relevant software, repositories, documentation, workflows and technical requirements are reviewed as required by the engagement."
+      },
+      {
+        "step": 5,
+        "title": "Delivery Setup",
+        "description": "Responsibilities, communication processes and development or support workflows are established."
+      },
+      {
+        "step": 6,
+        "title": "Development or Support",
+        "description": "The agreed team or specialists work on the defined maintenance, support or development requirements."
+      },
+      {
+        "step": 7,
+        "title": "Testing & Review",
+        "description": "Relevant changes or resolutions are reviewed and tested before completion or release."
+      },
+      {
+        "step": 8,
+        "title": "Integration & Release",
+        "description": "Approved software changes can be integrated into the wider application or deployment workflow."
+      },
+      {
+        "step": 9,
+        "title": "Ongoing Collaboration",
+        "description": "Longer-term engagements can continue around maintenance, support or software-development requirements."
+      },
+      {
+        "step": 10,
+        "title": "Continuous Improvement",
+        "description": "Delivery processes and technical priorities can evolve as software and business requirements change. ---"
       }
     ],
     "techStack": [],
     "industries": [],
     "childServices": [
       {
-        "title": "Bug fixes",
-        "href": "",
-        "description": ""
+        "title": "Software Maintenance & Support",
+        "href": "/support-and-outsourcing/maintenance-support",
+        "description": "Keep existing applications reliable, maintainable and aligned with changing software requirements through ongoing maintenance and support. Services can include: Our Software Maintenance & Support Services are intended for businesses that already have software and require continued engineering support after initial development. Internal Link: /support-and-outsourcing/maintenance-support"
       },
       {
-        "title": "Software updates",
-        "href": "",
-        "description": ""
+        "title": "Technical Support",
+        "href": "/support-and-outsourcing/technical-support",
+        "description": "Resolve application and software issues through structured investigation, troubleshooting and technical assistance. Technical support can include: Our Technical Support Services focus primarily on identifying and resolving technical problems affecting existing software and application workflows. Internal Link: /support-and-outsourcing/technical-support"
       },
       {
-        "title": "Application maintenance",
-        "href": "",
-        "description": ""
+        "title": "Dedicated Development Teams",
+        "href": "/support-and-outsourcing/dedicated-development-teams",
+        "description": "Add a dedicated external software-development team that can work continuously on your product, platform or development roadmap. A dedicated team engagement can support: Our Dedicated Development Team Services are suited to businesses that need a consistent external development unit rather than individual short-term resources. Internal Link: /support-and-outsourcing/dedicated-development-teams"
       },
       {
-        "title": "Compatibility changes",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Performance improvements",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Feature maintenance",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Existing-codebase support",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Preventive maintenance",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Corrective maintenance",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Adaptive maintenance",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Ongoing technical improvements",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Issue diagnosis",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Software troubleshooting",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Application support",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Incident investigation",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Production support",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Technical escalation",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Problem resolution",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Support documentation",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Issue tracking",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Operational assistance",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Ongoing product development",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Application development",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Feature delivery",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Backend and frontend engineering",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "QA and testing",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Software modernisation",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Technical improvement",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Long-term development programmes",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Additional delivery capacity",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Frontend development",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Backend development",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Full-stack development",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "QA and testing",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "DevOps",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Application development",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Software engineering",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Specialist technical skills",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Temporary capacity requirements",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Longer-term team expansion",
-        "href": "",
-        "description": ""
-      },
-      {
-        "title": "Explore Our Support & Outsourcing Services",
-        "href": "",
-        "description": ""
+        "title": "IT Staff Augmentation",
+        "href": "/support-and-outsourcing/staff-augmentation",
+        "description": "Expand an existing internal team with additional development and technical specialists according to project, capacity or skill requirements. Staff augmentation can support requirements involving: Our IT Staff Augmentation Services are designed for organisations that want additional specialists to work alongside their existing internal teams. Internal Link: /support-and-outsourcing/staff-augmentation"
       }
     ],
     "engagementModels": [],
     "useCases": [
       {
-        "title": "When Businesses Use Support & Outsourcing Services",
-        "description": "",
+        "title": "Supporting Existing Business Software",
+        "description": "Maintain software that is already being used by employees, customers or other business systems.",
+        "metric": ""
+      },
+      {
+        "title": "Extending an Existing Application",
+        "description": "Add or improve functionality without rebuilding the complete software product.",
+        "metric": ""
+      },
+      {
+        "title": "Increasing Development Capacity",
+        "description": "Add development resources when an internal team does not have enough capacity to handle the required workload.",
+        "metric": ""
+      },
+      {
+        "title": "Filling Technical Skill Gaps",
+        "description": "Bring additional technical expertise into an existing development environment where a particular capability is required.",
+        "metric": ""
+      },
+      {
+        "title": "Supporting an Ongoing Product Roadmap",
+        "description": "Use a dedicated external development team to continue building and improving a software product over time.",
+        "metric": ""
+      },
+      {
+        "title": "Troubleshooting Production Issues",
+        "description": "Investigate technical issues affecting deployed software and identify the appropriate resolution path.",
+        "metric": ""
+      },
+      {
+        "title": "Taking Over Existing Software",
+        "description": "Assess an existing application and establish an appropriate maintenance, support or development workflow.",
+        "metric": ""
+      },
+      {
+        "title": "Supporting Software Modernisation",
+        "description": "Provide engineering resources for applications being gradually updated, refactored or integrated with newer software architecture. ---",
         "metric": ""
       }
     ],
@@ -5680,6 +5776,11 @@ export const mainServicesMd = [
           "Cloud services",
           "Third-party APIs"
         ]
+      },
+      {
+        "heading": "Web Platforms Built Around Business Requirements",
+        "body": "We can develop web solutions for different types of business requirements.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+        "items": []
       },
       {
         "heading": "Website Development vs Web Application Development",
@@ -6083,11 +6184,7 @@ export const mainServicesMd = [
       },
       {
         "question": "Do you provide support after launch?",
-        "answer": "Yes. Ongoing development can include bug fixes, upgrades, security improvements, performance optimisation, integration changes, new functionality, and continued platform development."
-      },
-      {
-        "question": "Build a Custom Website or Web Application with ClickMasters",
-        "answer": "Need a custom-coded website, web application, ecommerce platform, customer portal, or digital business system? ClickMasters can help define the requirements, plan the architecture, design the user experience, develop the frontend and backend, integrate your systems, test the platform, deploy it, and support its continued development. Faq Schema"
+        "answer": "Yes. Ongoing development can include bug fixes, upgrades, security improvements, performance optimisation, integration changes, new functionality, and continued platform development. Need a custom-coded website, web application, ecommerce platform, customer portal, or digital business system? ClickMasters can help define the requirements, plan the architecture, design the user experience, develop the frontend and backend, integrate your systems, test the platform, deploy it, and support its continued development. Faq Schema"
       }
     ],
     "relatedLinks": [
@@ -6110,6 +6207,30 @@ export const mainServicesMd = [
       {
         "label": "API development and integration services",
         "href": "/software-development/api-development-integration"
+      },
+      {
+        "label": "Web Application Development",
+        "href": "/web-development/web-application-development"
+      },
+      {
+        "label": "Custom Ecommerce Development",
+        "href": "/web-development/ecommerce-development"
+      },
+      {
+        "label": "Headless Ecommerce Development",
+        "href": "/web-development/headless-ecommerce"
+      },
+      {
+        "label": "Progressive Web App Development",
+        "href": "/web-development/progressive-web-app-development"
+      },
+      {
+        "label": "Headless CMS Development",
+        "href": "/web-development/headless-cms-development"
+      },
+      {
+        "label": "JAMstack Development",
+        "href": "/web-development/jamstack-development"
       }
     ],
     "jsonLd": {
@@ -6401,52 +6522,52 @@ export const mainServicesMd = [
     "process": [
       {
         "step": 1,
-        "title": "1. Discovery",
+        "title": "Discovery",
         "description": "We begin by understanding the business, users, challenges, current systems, and goals."
       },
       {
         "step": 2,
-        "title": "2. Requirements Definition",
+        "title": "Requirements Definition",
         "description": "We define:"
       },
       {
         "step": 3,
-        "title": "3. Architecture Planning",
+        "title": "Architecture Planning",
         "description": "We determine the appropriate frontend, backend, database, APIs, integrations, infrastructure, and deployment architecture."
       },
       {
         "step": 4,
-        "title": "4. UX/UI Design",
+        "title": "UX/UI Design",
         "description": "We develop user journeys, wireframes, interface designs, navigation, and reusable components."
       },
       {
         "step": 5,
-        "title": "5. Frontend Development",
+        "title": "Frontend Development",
         "description": "We build the responsive user-facing application experience."
       },
       {
         "step": 6,
-        "title": "6. Backend Development",
+        "title": "Backend Development",
         "description": "We develop the databases, APIs, application logic, authentication, integrations, and server-side functionality."
       },
       {
         "step": 7,
-        "title": "7. Integration",
+        "title": "Integration",
         "description": "We connect required business systems, payment platforms, APIs, or third-party services."
       },
       {
         "step": 8,
-        "title": "8. Testing & QA",
+        "title": "Testing & QA",
         "description": "Testing can cover:"
       },
       {
         "step": 9,
-        "title": "9. Deployment",
+        "title": "Deployment",
         "description": "We prepare the production environment and release the website or application."
       },
       {
         "step": 10,
-        "title": "10. Maintenance & Improvement",
+        "title": "Maintenance & Improvement",
         "description": "After launch, we can support:"
       }
     ],
@@ -6454,39 +6575,34 @@ export const mainServicesMd = [
     "industries": [],
     "childServices": [
       {
-        "title": "Custom Website Development",
-        "href": "",
-        "description": "We build custom websites for organisations that need more flexibility than standard themes, templates, or page builders can provide."
-      },
-      {
         "title": "Web Application Development",
-        "href": "",
-        "description": "Web applications provide software functionality through a browser."
+        "href": "/web-development/web-application-development",
+        "description": "Web applications provide software functionality through a browser. Unlike a standard informational website, a web application usually includes application logic, databases, accounts, permissions, workflows, integrations, and interactive functionality. We can develop: Explore our web application development services."
       },
       {
         "title": "Custom Ecommerce Development",
-        "href": "",
-        "description": "We develop ecommerce platforms around the way your business sells, manages customers, processes transactions, and connects with operational systems."
+        "href": "/web-development/ecommerce-development",
+        "description": "We develop ecommerce platforms around the way your business sells, manages customers, processes transactions, and connects with operational systems. Custom ecommerce functionality can include: Explore our ecommerce development services."
       },
       {
         "title": "Headless Ecommerce Development",
-        "href": "",
-        "description": "Headless ecommerce separates the customer-facing frontend from the commerce backend."
+        "href": "/web-development/headless-ecommerce",
+        "description": "Headless ecommerce separates the customer-facing frontend from the commerce backend. This can provide greater control over frontend architecture while allowing commerce functionality to be delivered through APIs. Headless ecommerce may be useful for businesses that need: Learn more about our headless ecommerce development capabilities."
       },
       {
         "title": "Progressive Web App Development",
-        "href": "",
-        "description": "Progressive web applications use modern web capabilities to create browser-based experiences that can behave more like applications."
+        "href": "/web-development/progressive-web-app-development",
+        "description": "Progressive web applications use modern web capabilities to create browser-based experiences that can behave more like applications. Depending on platform and browser support, PWAs may provide: A PWA may be suitable where a business wants an application-like user experience while maintaining web accessibility. Explore our progressive web app development services."
       },
       {
         "title": "Headless CMS Development",
-        "href": "",
-        "description": "For content-heavy digital platforms, we can develop frontend experiences that consume content from a headless content management system through APIs."
+        "href": "/web-development/headless-cms-development",
+        "description": "For content-heavy digital platforms, we can develop frontend experiences that consume content from a headless content management system through APIs. A headless architecture can be useful when the same content needs to support: Explore our headless CMS development services."
       },
       {
         "title": "JAMstack Development",
-        "href": "",
-        "description": "JAMstack architecture can combine modern frontend frameworks, APIs, pre-rendering, serverless functionality, and distributed delivery."
+        "href": "/web-development/jamstack-development",
+        "description": "JAMstack architecture can combine modern frontend frameworks, APIs, pre-rendering, serverless functionality, and distributed delivery. It can be considered for projects where performance, frontend flexibility, content delivery, and API-based architecture are important. Explore our JAMstack development services."
       }
     ],
     "engagementModels": [],

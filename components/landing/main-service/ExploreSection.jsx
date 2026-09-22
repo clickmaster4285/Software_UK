@@ -41,7 +41,7 @@ export function ExploreSection({ serviceData }) {
   const allLinks = isServicePage
     ? (serviceData.childServices && serviceData.childServices.length > 0
         ? serviceData.childServices.map((child) => ({
-            href: child.url || `/${serviceData.slug}`,
+            href: child.url || child.href || `/${serviceData.slug}`,
             title: child.title,
             desc: child.description || '',
             ariaLabel: `Learn about ${child.title}`,
@@ -71,44 +71,41 @@ export function ExploreSection({ serviceData }) {
   return (
     <section
       ref={sectionRef}
-      className="bg-transparent py-20 relative overflow-hidden"
+      className="bg-transparent py-16 md:py-24 relative overflow-hidden"
       aria-labelledby="explore-heading"
     >
       <div className="max-w-[96vw] lg:max-w-[90vw] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Header */}
-        <div className="max-w-3xl mb-16">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 mb-4"
-          >
-            <span className="text-xl font-bold tracking-wide uppercase text-accent">
-              {isServicePage ? 'Capabilities' : 'Ecosystem'}
-            </span>
-          </motion.div>
-
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
+        <div className="max-w-3xl mb-12 md:mb-14">
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            className="section-label mb-4"
+          >
+            {isServicePage ? 'Capabilities' : 'Ecosystem'}
+          </motion.p>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.05 }}
             id="explore-heading"
-            className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4 tracking-tight"
           >
             {isServicePage ? `${serviceData.title} Services` : 'Explore Our Expertise'}
           </motion.h2>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground font-body leading-relaxed"
+            transition={{ delay: 0.1 }}
+            className="text-base md:text-lg text-muted-foreground font-body leading-relaxed"
           >
             {isServicePage
-              ? `Deep-dive into our core ${serviceData.title.toLowerCase()} capabilities designed for enterprise scale and performance.`
-              : 'From cloud architecture to AI implementation, discover how we build and scale modern technology solutions for global brands.'
+              ? `Core ${serviceData.title.toLowerCase()} capabilities for enterprise scale and performance.`
+              : 'From cloud architecture to AI, how we build and scale technology for global brands.'
             }
           </motion.p>
         </div>
@@ -137,19 +134,17 @@ export function ExploreSection({ serviceData }) {
                   <Link
                     href={item.href}
                     aria-label={item.ariaLabel}
-                    className="group flex flex-col h-full bg-card rounded-3xl border border-border p-8 transition-all duration-500 hover:border-accent/20 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] hover:-translate-y-2 relative overflow-hidden"
+                    className="group flex flex-col h-full rounded-xl border border-border/80 bg-background p-6 transition-colors duration-200 hover:border-accent/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40"
                   >
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full -mr-16 -mt-16 transition-transform duration-700 group-hover:scale-150" />
-
-                    <div className="relative mb-8 inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-surface group-hover:bg-accent/10 transition-colors duration-500">
+                    <div className="mb-5 inline-flex items-center justify-center w-11 h-11 rounded-lg bg-surface group-hover:bg-accent/10 transition-colors">
                       <Icon
-                        className="w-7 h-7 text-muted-foreground group-hover:text-accent transition-colors duration-500"
+                        className="w-5 h-5 text-muted-foreground group-hover:text-accent transition-colors"
                         strokeWidth={1.5}
                       />
                     </div>
 
-                    <div className="relative grow">
-                      <h3 className="text-xl font-heading font-bold text-foreground mb-3 group-hover:text-accent transition-colors duration-500">
+                    <div className="grow">
+                      <h3 className="text-lg font-heading font-semibold text-foreground mb-2 group-hover:text-accent transition-colors">
                         {item.title}
                       </h3>
                       <p className="text-muted-foreground font-body text-sm leading-relaxed line-clamp-3">
@@ -157,11 +152,9 @@ export function ExploreSection({ serviceData }) {
                       </p>
                     </div>
 
-                    <div className="relative mt-8 pt-6 border-t border-border flex items-center gap-2 group-hover:gap-3 transition-all duration-300">
-                      <span className="text-sm font-bold text-accent tracking-wide">
-                        EXPLORE SERVICE
-                      </span>
-                      <ArrowRight className="w-4 h-4 text-accent" />
+                    <div className="mt-5 pt-4 border-t border-border/60 flex items-center gap-2 text-sm font-medium text-accent">
+                      <span>Explore</span>
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
                     </div>
                   </Link>
                 </motion.div>
@@ -179,11 +172,12 @@ export function ExploreSection({ serviceData }) {
             className="mt-16 flex justify-center"
           >
             <button
+              type="button"
               onClick={() => setShowAll(!showAll)}
-              className="group flex items-center gap-3 bg-primary text-primary-foreground px-10 py-4 rounded-2xl font-heading font-bold tracking-wide hover:bg-accent transition-all duration-300 shadow-xl shadow-primary/10"
+              className="group flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-heading font-semibold hover:bg-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40"
             >
-              {showAll ? 'SHOW LESS' : `VIEW ALL SERVICES (${allLinks.length})`}
-              <ArrowRight className={`w-5 h-5 transition-transform duration-300 ${showAll ? '-rotate-90' : 'group-hover:translate-x-1'}`} />
+              {showAll ? 'Show less' : `View all (${allLinks.length})`}
+              <ArrowRight className={`w-4 h-4 transition-transform ${showAll ? '-rotate-90' : 'group-hover:translate-x-0.5'}`} />
             </button>
           </motion.div>
         )}

@@ -120,7 +120,7 @@ export default function PainPointsSolutions({ serviceData }) {
 
   const mdUseCases = serviceData?.useCases;
   const { pains: displayPains, solutions: displaySolutions } =
-    mdUseCases && mdUseCases.length > 0
+    mdUseCases && mdUseCases.length >= 3
       ? buildFromUseCases(mdUseCases)
       : { pains: painPoints, solutions };
 

@@ -176,7 +176,7 @@ export function FaqSection({ faqs: customFaqs, serviceTitle, subtitle }) {
         }}
       />
 
-      <div className="container relative z-10 py-28">
+      <div className="container relative z-10 py-16 md:py-24">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,30rem)_1fr] lg:items-start">
           {/* Editorial sidebar */}
           <motion.aside

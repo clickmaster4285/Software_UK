@@ -160,9 +160,9 @@ function ProcessStepCard({ phase, cardRef, nodeRef, isActive, reducedMotion }) {
       </div>
 
       <div
-        className={`group rounded-xl border bg-white p-5 md:p-6 shadow-[0_2px_16px_rgba(0,0,0,0.05)] transition-all duration-500 ${isActive
-          ? "border-accent/40 shadow-[0_12px_36px_rgba(0,0,0,0.08)]"
-          : "border-border"
+        className={`group rounded-lg border bg-background p-5 md:p-6 transition-colors duration-300 ${isActive
+          ? "border-accent/50"
+          : "border-border/80"
           }`}
       >
         <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
@@ -223,19 +223,34 @@ export function ProcessPage({ serviceData }) {
 
   const [activeStep, setActiveStep] = useState(0);
 
+  const mdProcess = serviceData?.process || serviceData?.lifecycle;
+  const globalDeliverables = Array.isArray(serviceData?.deliverables)
+    ? serviceData.deliverables.filter(Boolean)
+    : [];
+
   const phases =
-    (serviceData?.process || serviceData?.lifecycle)?.map((l, idx) => ({
-      step: String(l.step || `0${idx + 1}`),
-      title: l.title,
-      description: l.description,
-      icon: PHASE_ICONS[idx % PHASE_ICONS.length],
-      deliverables: l.deliverables || [
-        "Documentation",
-        "Working code",
-        "QA report",
-      ],
-      duration: l.duration || "Flexible",
-    })) || DEFAULT_PHASES;
+    mdProcess?.length > 0
+      ? mdProcess.map((l, idx) => {
+          const stepNum = String(l.step ?? idx + 1).padStart(2, "0");
+          // Prefer per-step deliverables; else share global list across steps
+          let stepDeliverables = l.deliverables;
+          if ((!stepDeliverables || stepDeliverables.length === 0) && globalDeliverables.length > 0) {
+            const chunk = Math.ceil(globalDeliverables.length / mdProcess.length);
+            stepDeliverables = globalDeliverables.slice(idx * chunk, idx * chunk + chunk);
+          }
+          return {
+            step: stepNum,
+            title: l.title,
+            description: l.description,
+            icon: PHASE_ICONS[idx % PHASE_ICONS.length],
+            deliverables: stepDeliverables || [],
+            duration: l.duration || null,
+          };
+        })
+      : DEFAULT_PHASES;
+
+  // Full "What You Receive" band when MD provides deliverables
+  const showDeliverablesBand = globalDeliverables.length > 0;
 
   const defaultMetrics = [
     { ...parseMetric("98%"), label: "On-time delivery" },
@@ -358,7 +373,7 @@ export function ProcessPage({ serviceData }) {
   return (
     <section
       ref={sectionRef}
-      className="relative py-20 bg-transparent font-sans"
+      className="relative py-16 md:py-24 bg-transparent font-sans"
       aria-labelledby="process-heading"
     >
       {/* Premium Background Elements */}
@@ -438,7 +453,7 @@ export function ProcessPage({ serviceData }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, ease: EASE }}
-                className="rounded-3xl border border-border bg-white p-8 shadow-[0_4px_30px_rgba(0,0,0,0.04)]"
+                className="rounded-xl border border-border/80 bg-background p-6 md:p-8"
               >
                 <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-3">
                   Step {String(activeStep + 1).padStart(2, "0")} of{" "}
@@ -540,6 +555,34 @@ export function ProcessPage({ serviceData }) {
             </div>
           </div>
         </div>
+
+        {showDeliverablesBand && (
+          <motion.div
+            className="mt-16 rounded-xl border border-border/80 bg-background p-6 md:p-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.5, ease: EASE }}
+          >
+            <h3 className="font-heading text-xl font-semibold text-text-primary mb-2">
+              What You Receive
+            </h3>
+            <p className="text-sm text-text-muted font-body mb-6 max-w-2xl">
+              Typical deliverables from a {serviceTitle.toLowerCase()} engagement — scoped to your project.
+            </p>
+            <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {globalDeliverables.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-start gap-2 text-sm text-text-body font-body"
+                >
+                  <Check className="h-4 w-4 shrink-0 text-accent mt-0.5" aria-hidden />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
       </div>
     </section>
   );

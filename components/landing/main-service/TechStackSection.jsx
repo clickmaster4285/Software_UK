@@ -16,6 +16,42 @@ const CATEGORIES = [
   { key: "devops", label: "DevOps & Monitoring" },
 ];
 
+/** Flat name → icon lookup from aboutData (case-insensitive, fuzzy). */
+function buildIconLookup() {
+  const map = new Map();
+  for (const key of Object.keys(techStackNames)) {
+    const names = techStackNames[key] || [];
+    const icons = techStackImages[key] || [];
+    names.forEach((name, idx) => {
+      if (!icons[idx]) return;
+      const norm = name.toLowerCase();
+      map.set(norm, icons[idx]);
+      // Also index bare tokens: "React.js" → "react", "Swift/iOS" → "swift"
+      norm.split(/[\s/]+/).forEach((token) => {
+        const t = token.replace(/[^a-z0-9+.#]/g, "");
+        if (t.length >= 2 && !map.has(t)) map.set(t, icons[idx]);
+      });
+    });
+  }
+  return map;
+}
+
+const ICON_LOOKUP = buildIconLookup();
+
+function resolveTechIcon(rawName) {
+  const name = String(rawName || "").trim();
+  if (!name) return null;
+  const lower = name.toLowerCase();
+  if (ICON_LOOKUP.has(lower)) return ICON_LOOKUP.get(lower);
+
+  // Substring match against known keys (e.g. "Swift for iOS apps" → swift)
+  for (const [key, icon] of ICON_LOOKUP.entries()) {
+    if (key.length < 3) continue;
+    if (lower.includes(key) || key.includes(lower)) return icon;
+  }
+  return null;
+}
+
 function buildCategories() {
   return CATEGORIES.map(({ key, label }) => ({
     key,
@@ -84,14 +120,37 @@ export function TechStackSection({ serviceData }) {
   const categories = useMemo(() => {
     const mdTechStack = serviceData?.techStack;
     if (mdTechStack && mdTechStack.length > 0) {
-      return mdTechStack.map((cat, idx) => ({
-        key: cat.category || `cat-${idx}`,
-        label: cat.category || `Category ${idx + 1}`,
-        items: (cat.items || []).map(name => ({
-          name: typeof name === 'string' ? name : name.name || name,
-          icon: null,
-        })),
-      })).filter(cat => cat.items.length > 0);
+      // Support both { category, items } and flat string arrays
+      const normalized = mdTechStack.map((cat, idx) => {
+        if (typeof cat === "string") {
+          return {
+            key: `item-${idx}`,
+            label: "Technologies",
+            items: [{ name: cat, icon: resolveTechIcon(cat) }],
+          };
+        }
+        const items = (cat.items || []).map((name) => {
+          const label = typeof name === "string" ? name : name.name || String(name);
+          return { name: label, icon: resolveTechIcon(label) };
+        });
+        return {
+          key: cat.category || `cat-${idx}`,
+          label: cat.category || `Category ${idx + 1}`,
+          items,
+        };
+      }).filter((cat) => cat.items.length > 0);
+
+      // Collapse flat string-only techStack into one card
+      if (normalized.every((c) => c.key.startsWith("item-"))) {
+        return [
+          {
+            key: "technologies",
+            label: "Technology Stack",
+            items: normalized.flatMap((c) => c.items),
+          },
+        ];
+      }
+      return normalized;
     }
     return buildCategories();
   }, [serviceData?.techStack]);

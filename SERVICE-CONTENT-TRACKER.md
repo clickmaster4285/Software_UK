@@ -19,11 +19,22 @@
 
 | Phase | Description | Status |
 |-------|-------------|--------|
-| **Phase 1** | Source-of-truth pipeline (convert scripts, lightweight exports, lookup fns) | 🔧 Partial — scripts created, overlay working, lightweight exports not yet split |
-| **Phase 2** | Fix live pages (imports, navbar, dead code) | ✅ Done — slugify extracted, mid-file imports fixed, dead import removed |
-| **Phase 3** | Content quality (intro, tables, costFactors, whyChoose, FAQs, links) | 🔧 Partial — 39 sub-services + 7 main services converted; 102 override-only remain |
+| **Phase 1** | Source-of-truth pipeline (convert scripts, lightweight exports, lookup fns) | 🔧 Partial — converters + overlay working; listings split still open |
+| **Phase 2** | Fix live pages (imports, navbar, dead code) | ✅ Done |
+| **Phase 3** | Content quality (intro, tables, costFactors, whyChoose, FAQs, links) | 🔧 Partial — 39 sub-services + **9 main services** MD; remaining mains deferred |
 | **Phase 4** | Performance/SEO (split data file, lazy-load, canonical, schema, sitemap) | 🔲 Not started |
-| **Phase 5** | Validate (build, canonical audit, sample pages, Lighthouse, JSON-LD) | 🔧 Partial — JSON-LD extraction fixed; all 41 pages verified 200 |
+| **Phase 5** | Validate (build, canonical audit, sample pages, Lighthouse, JSON-LD) | ✅ Main-services extraction validated Sep 22 — build 1586/1586 |
+
+### Main-services extraction plan (`plan-main-services-extraction.md`)
+
+| Phase | Status |
+|-------|--------|
+| A Adapters + Explore gate | ✅ |
+| B Converter harden | ✅ |
+| C MD source outliers | ✅ |
+| D Component polish | ✅ |
+| E 4 missing MD | ⏸️ Deferred |
+| F Validation | ✅ Build 1586/1586 |
 
 ---
 
@@ -31,27 +42,21 @@
 
 | # | Category | Slug | MD File | Status |
 |---|----------|------|---------|--------|
-| 1 | Software Development | `software-development` | `main-services/Serivces Pages Content Clickamster software .co .uk.md` | ✅ |
-| 2 | Web Development | `web-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (15).md` | ✅ |
-| 3 | Mobile Development | `mobile-development` | `main-services/Serivces Pages Content Clickamster software .co .uk (11).md` | ✅ |
-| 4 | Design UI/UX | `design-ui-ux` | `main-services/Uiux main.md` | ✅ |
-| 5 | Artificial Intelligence (AI) | `artificial-intelligence-ai` | — | 🔲 |
-| 6 | Machine Learning (ML) | `machine-learning` | `main-services/Machine Learining.md` | ✅ Added Sep 17 |
-| 7 | NLP & Computer Vision | `nlp-computer-vision` | — | 🔲 |
-| 8 | Data Services | `data-services` | — | 🔲 |
-| 9 | Data & Intelligence | `data-intelligence` | — | 🔲 |
-| 10 | Automation & Chatbot | `automation-chatbot` | — | 🔲 |
-| 11 | Automation & Integration | `automation-integration` | — | 🔲 |
-| 12 | Cloud & DevOps | `cloud-devops` | — | 🔲 |
-| 13 | Database Services | `database-services` | — | 🔲 |
-| 14 | Cybersecurity | `cybersecurity` | `main-services/Cyber Security.md` | ✅ Added Sep 17 |
-| 15 | Testing & QA | `testing-qa` | — | 🔲 |
-| 16 | Support & Outsourcing | `support-outsourcing` | — | 🔲 |
-| 17 | Blockchain & Web3 | `blockchain-and-web3` | `main-services/block chain.md` | ✅ Added Sep 17 |
-| 18 | IoT & Emerging Tech | `iot-emerging-tech` | — | 🔲 |
-| 19 | Immersive Tech | `immersive-tech` | — | 🔲 |
+| 1 | Software Development | `software-development` | `software-development.md` | ✅ |
+| 2 | Web Development | `web-development` | `web-development.md` | ✅ |
+| 3 | Mobile Development | `mobile-development` | `mobile-app-development.md` | ✅ |
+| 4 | Design UI/UX | `design-ui-ux` | `Uiux main.md` | ✅ |
+| 5 | Artificial Intelligence (AI) | `artificial-intelligence-ai` | — | 🔲 Deferred |
+| 6 | Machine Learning (ML) | `machine-learning-ml` | `Machine Learining.md` | ✅ |
+| 7 | NLP & Computer Vision | `nlp-computer-vision` | `nlp main service.md` | ✅ Added Sep 22 |
+| 8 | Data Services | `data-services` | — | 🔲 Deferred |
+| 9 | Cloud & DevOps | `cloud-and-devops` | — | 🔲 Deferred |
+| 10 | Cybersecurity | `cybersecurity` | `Cyber Security.md` | ✅ |
+| 11 | Testing & QA | `testing-and-qa` | — | 🔲 Deferred |
+| 12 | Support & Outsourcing | `support-and-outsourcing` | `support-and-outsourcing.md` | ✅ Added Sep 22 |
+| 13 | Blockchain & Web3 | `blockchain-and-web3` | `block chain.md` | ✅ |
 
-**Converted: 7 / 19 main services**
+**Converted: 9 / 13 main services in `mainServicesData`** (4 deferred: AI, Data, Cloud/DevOps, Testing & QA)
 
 ---
 

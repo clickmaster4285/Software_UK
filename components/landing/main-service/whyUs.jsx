@@ -121,8 +121,8 @@ export function WhyChooseUs({ slug, service, countryName }) {
         benefits: mdWhyChoose.map(item => ({
           icon: 'Check',
           title: item.title,
-          description: item.description,
-          features: item.features || [],
+          description: item.description || item.body || '',
+          features: item.features || item.items || [],
         })),
       }
     : getWhyChooseUsData(slug, service);

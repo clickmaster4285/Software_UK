@@ -101,17 +101,22 @@ export function IndustriesSection({ serviceData }) {
 
   const mdIndustries = serviceData?.industries;
   const displayIndustries = mdIndustries && mdIndustries.length > 0
-    ? mdIndustries.map((ind, idx) => ({
-        icon: [Factory, Store, Briefcase, Heart, GraduationCap, Building2, Globe2, Cpu][idx % 8],
-        title: typeof ind === 'string' ? ind : ind.title,
-        description: typeof ind === 'string'
-          ? `Specialized ${ind.toLowerCase()} solutions tailored to your business needs.`
-          : ind.description || `Specialized ${ind.title.toLowerCase()} solutions.`,
-        features: typeof ind === 'string' ? [] : (ind.features || []),
-        stats: typeof ind === 'string' ? '' : (ind.stats || ''),
-        statLabel: typeof ind === 'string' ? '' : (ind.statLabel || ''),
-        slug: typeof ind === 'string' ? ind.toLowerCase().replace(/[^a-z0-9]+/g, '-') : (ind.slug || ''),
-      }))
+    ? mdIndustries.map((ind, idx) => {
+        const title = typeof ind === 'string' ? ind : (ind.title || ind.name || '');
+        return {
+          icon: [Factory, Store, Briefcase, Heart, GraduationCap, Building2, Globe2, Cpu][idx % 8],
+          title,
+          description: typeof ind === 'string'
+            ? `Specialized ${ind.toLowerCase()} solutions tailored to your business needs.`
+            : ind.description || (title ? `Specialized ${title.toLowerCase()} solutions.` : ''),
+          features: typeof ind === 'string' ? [] : (ind.features || []),
+          stats: typeof ind === 'string' ? '' : (ind.stats || ''),
+          statLabel: typeof ind === 'string' ? '' : (ind.statLabel || ''),
+          slug: typeof ind === 'string'
+            ? ind.toLowerCase().replace(/[^a-z0-9]+/g, '-')
+            : (ind.slug || title.toLowerCase().replace(/[^a-z0-9]+/g, '-')),
+        };
+      })
     : industries;
 
   return (

@@ -65,6 +65,70 @@ function startsListMarker(line) {
   return t.startsWith('* ') || t.startsWith('- ') || /^\d+\.\s/.test(t);
 }
 
+function extractInternalLinkHref(text) {
+  if (!text) return '';
+  const raw = String(text);
+
+  const labeled =
+    raw.match(/Internal Link:\s*[`'"\s]*(\/[-a-z0-9/]+)/i);
+  if (labeled) return labeled[1].replace(/\/$/, '');
+
+  const mdLink = raw.match(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)/);
+  if (mdLink) {
+    let href = mdLink[2];
+    if (href.startsWith(DOMAIN)) href = href.replace(DOMAIN, '');
+    if (href.startsWith('/')) return href.split(/[?#]/)[0].replace(/\/$/, '');
+  }
+  return '';
+}
+
+function parseStepTitle(title) {
+  const cleaned = clean(String(title || '').replace(/\\/g, ''));
+  const m = cleaned.match(/^(\d+)[\.\)]\s*(.+)$/);
+  if (m) return { step: parseInt(m[1], 10), title: m[2].trim() };
+  return { step: null, title: cleaned };
+}
+
+function isScaffoldSectionHeading(heading) {
+  return /^SECTION\s*\d+/i.test(String(heading || '').trim());
+}
+
+function isFaqHeading(heading) {
+  return /^(frequently asked questions|faqs?)(\b|$)/i.test(String(heading || '').trim());
+}
+
+function isPlaceholderFaqNoise(text) {
+  const t = String(text || '').toLowerCase();
+  return (
+    /does not contain (the )?faq/i.test(t) ||
+    /do not create new faq/i.test(t) ||
+    /place the already-approved/i.test(t) ||
+    /^ui:\s*faq accordion/i.test(t)
+  );
+}
+
+/** Child-service parent headings only — avoid capability / explore pollution. */
+function isChildServicesHeading(heading) {
+  const h = String(heading || '').toLowerCase();
+  if (/compar|engagement|support model|when |capabilities|use cases/i.test(h)) return false;
+  return (
+    /^our .+ services$/i.test(h) ||
+    /^our .+ services for\b/i.test(h) ||
+    /core(\s*\/\s*child)?\s*services/i.test(h) ||
+    /^child services$/i.test(h) ||
+    /^mobile app development services\b/i.test(h)
+  );
+}
+
+function isProcessHeading(heading) {
+  const h = String(heading || '').toLowerCase();
+  return (
+    /\bprocess\b/i.test(h) ||
+    /how we (work|build|deliver)/i.test(h) ||
+    /our approach|methodology|workflow/i.test(h)
+  );
+}
+
 // ─── Schema Parser ───────────────────────────────────────────────────────────
 
 function extractSchemas(content) {
@@ -208,6 +272,10 @@ function parseMainMd(content) {
 
   // 4. H1 & Intro
   let h1Match = content.match(/#+\s*\**H1:\s*([^\n*]+)\**/i);
+  // UIUX-style: title tacked onto Meta Description line → **UI/UX Design Services UK**
+  if (!h1Match) {
+    h1Match = content.match(/#+\s*\*\*Meta Description:\*\*[^\n]*?\*\*([^*\n|]+)\*\*\s*$/im);
+  }
   if (!h1Match) {
     const boldHeadings = [...content.matchAll(/#+\s*\*\*([^\n*]+)\*\*/g)];
     for (const m of boldHeadings) {
@@ -216,9 +284,19 @@ function parseMainMd(content) {
       if (/^https?:\/\//.test(val)) continue;
       if (/^seo\b/i.test(val)) continue;
       if (/^recommended meta/i.test(val)) continue;
+      if (/^section\s+\d+/i.test(val)) continue;
+      if (/^our\s+/i.test(val)) continue;
       if (val.length < 5) continue;
       h1Match = m;
       break;
+    }
+  }
+  // Last resort: Meta Title before pipe
+  if (!h1Match && out.metaTitle) {
+    const fromMeta = out.metaTitle.split('|')[0].trim();
+    if (fromMeta.length >= 10) {
+      out.h1 = fromMeta;
+      out.title = fromMeta;
     }
   }
   if (h1Match) {
@@ -237,7 +315,73 @@ function parseMainMd(content) {
 
   let inFaq = false;
   let faqCurrent = null;
-  let foundFirstHeading = false;
+
+  const finalizeIntro = (paras) => {
+    const metaDesc = clean(out.metaDescription || '').toLowerCase();
+    return paras
+      .map((p) => stripBoldKeepLinks(p))
+      .filter((p) => {
+        if (!p || p.length < 20) return false;
+        const pl = p.toLowerCase();
+        if (/^(primary cta|secondary cta|cta)\s*:/i.test(p)) return false;
+        if (/^---+\s*$/.test(p)) return false;
+        if (/page content/i.test(pl)) return false;
+        if (/meta (title|description|keyword)/i.test(pl)) return false;
+        if (metaDesc && pl === metaDesc) return false;
+        if (/^(discuss your|book a |request |talk to )/i.test(p) && p.length < 80) return false;
+        // Reject keyword-list stubs (short phrases, no sentence punctuation)
+        if (p.length < 70 && !/[.?!]/.test(p) && !/\[/.test(p)) return false;
+        return true;
+      });
+  };
+
+  const isPageH1Line = (t) => {
+    if (!/^#{1,2}\s/.test(t)) return false;
+    if (/\bMeta\s+(Title|Description|Keywords?)\b/i.test(t)) return false;
+    if (/^#+\s*\*?\*?SECTION\s+\d+/i.test(t)) return false;
+    if (/https?:\/\//i.test(t)) return false;
+    if (/^#+\s*`/.test(t)) return false;
+    const headingText = clean(t.replace(/^#+\s*/, ''));
+    // Reject keyword-stub headings (UIUX lists each keyword as # line)
+    if (headingText.length < 28 && !/^H1:/i.test(headingText)) return false;
+    if (/^[a-z0-9 /-]+$/.test(headingText) && headingText.length < 45) return false;
+    // Explicit H1 tag (any level)
+    if (/^#{1,2}\s*\**H1:\s*/i.test(t)) return true;
+    // Top-level content title (Software / Web style) — not "Our …" / FAQ / CTA
+    if (
+      /^#\s+\*{0,2}[A-Za-z]/.test(t) &&
+      !/\b(FAQs?|CTA Section|Our .+ Services|Frequently Asked)\b/i.test(t)
+    ) {
+      return true;
+    }
+    return false;
+  };
+
+  const collectIntroFrom = (startIdx) => {
+    const introParas = [];
+    let j = startIdx;
+    while (j < lines.length) {
+      const lj = lines[j].trim();
+      if (/^#{1,4}\s/.test(lj)) break;
+      if (
+        /^(Primary CTA|Secondary CTA|CTA)\s*:/i.test(lj) ||
+        /^\*\*(Primary CTA|Secondary CTA|CTA)\b/i.test(lj) ||
+        /^---+\s*$/.test(lj) ||
+        (/^(Discuss Your|Book a |Request |Talk to )/i.test(lj) && lj.length < 80) ||
+        (/^\*\*[^*]{3,60}\*\*\s*$/.test(lj) && !/[.?!]/.test(lj) && lj.length < 80)
+      ) {
+        j++;
+        continue;
+      }
+      if (startsListMarker(lj)) {
+        j++;
+        continue;
+      }
+      if (lj.length >= 20) introParas.push(lj);
+      j++;
+    }
+    return { paras: finalizeIntro(introParas), end: j };
+  };
 
   const pushContentSection = (heading, blocks) => {
     const hLower = heading.toLowerCase();
@@ -245,18 +389,16 @@ function parseMainMd(content) {
 
     // ── FILTER: skip SEO metadata, empty, and stub sections ──
     if (/^(target seo keywords|seo keywords|meta (title|description|keywords|tags)|recommended meta|url:|who we are|page content|author|table of contents)/i.test(hLower)) return;
-    if (/^\d+\.\s/.test(hLower)) return; // numbered steps (1. Problem Discovery)
-    const bodyText = blocks.filter(b => !b.isList && !b.isTable).map(b => b.text).join(' ').trim();
+    if (/^\d+\.\s/.test(hLower)) return; // numbered steps as top-level headings
+    const bodyText = blocks.filter(b => !b.isList && !b.isTable && !b.isChildBlock).map(b => b.text).join(' ').trim();
     const listItems = blocks.filter(b => b.isList).flatMap(b => b.items);
-    if (!bodyText && listItems.length === 0) return; // completely empty section
-    if (bodyText.length < 40 && listItems.length === 0) return; // too short to be useful
-
-    // ── FILTER: skip tiny sub-service detail stubs (items-only, < 6 items, no body) ──
-    if (!bodyText && listItems.length > 0 && listItems.length <= 6) return;
-
-    // ── FILTER: skip small capability stubs (short body < 120 chars, no items or ≤4 items) ──
-    // These are individual capability descriptions that belong in childServices
-    if (bodyText.length < 120 && listItems.length <= 4) return;
+    const childBlocksEarly = blocks.filter(b => b.isChildBlock);
+    // Keep sections that only contain structured child blocks (process / services)
+    if (!bodyText && listItems.length === 0 && childBlocksEarly.length === 0) return;
+    if (bodyText.length < 40 && listItems.length === 0 && childBlocksEarly.length === 0) return;
+    // Skip tiny capability stubs — but not when they have real child blocks
+    if (childBlocksEarly.length === 0 && bodyText.length < 120 && listItems.length <= 4) return;
+    if (childBlocksEarly.length === 0 && !bodyText && listItems.length > 0 && listItems.length <= 6) return;
     
     if (/why choose (clickmasters|us|our)/i.test(hLower)) {
       out.whyChoose.push({
@@ -284,19 +426,141 @@ function parseMainMd(content) {
     }
 
     // Process steps
-    if (/our .+ process|how we (work|build|deliver)|our approach|development process|design process|our .+ (workflow|methodology|approach)/i.test(hLower)) {
+    if (isProcessHeading(hLower)) {
       const childBlocks = blocks.filter(b => b.isChildBlock);
       if (childBlocks.length > 0) {
-        out.process.push(...childBlocks.map((b, idx) => ({
-          step: idx + 1,
+        out.process.push(...childBlocks.map((b, idx) => {
+          const parsed = parseStepTitle(b.title);
+          return {
+            step: parsed.step || idx + 1,
+            title: parsed.title,
+            description: b.body || '',
+          };
+        }));
+      }
+      const listBlocks = blocks.filter(b => b.isList);
+      if (listBlocks.length > 0 && childBlocks.length === 0) {
+        out.process.push(...listBlocks.flatMap(b => b.items.map((item, idx) => {
+          const parsed = parseStepTitle(item);
+          return {
+            step: parsed.step || idx + 1,
+            title: parsed.title,
+            description: '',
+          };
+        })));
+      }
+      const textBlocks = blocks.filter(b => !b.isList && !b.isTable && !b.isChildBlock);
+      if (textBlocks.length > 0) {
+        out.sections.push({
+          heading,
+          body: textBlocks.map(b => b.text).join('\n\n'),
+          items: listBlocks.flatMap(b => b.items),
+        });
+      }
+      return;
+    }
+
+    // Tech stack
+    if (
+      /technolog(y|ies)|tech stack|tools? (and|&) technolog|technology stack|network (&|and) technolog|technical architecture|architecture stack/i.test(
+        hLower
+      )
+    ) {
+      const childBlocks = blocks.filter(b => b.isChildBlock);
+      if (childBlocks.length > 0) {
+        out.techStack.push(...childBlocks.map(b => ({
+          category: b.title,
+          items: b.items && b.items.length > 0
+            ? b.items
+            : (b.body ? b.body.split(/,\s*/).map(i => i.trim()).filter(Boolean) : []),
+        })));
+      }
+      const listBlocks = blocks.filter(b => b.isList);
+      if (listBlocks.length > 0 && childBlocks.length === 0) {
+        out.techStack.push({
+          category: heading,
+          items: listBlocks.flatMap(b => b.items),
+        });
+      }
+      return;
+    }
+
+    // Industries
+    if (/industr(y|ies)|verticals|for different industries/i.test(hLower) && !/cost|price|engagement/i.test(hLower)) {
+      const childBlocks = blocks.filter(b => b.isChildBlock);
+      if (childBlocks.length > 0) {
+        out.industries.push(...childBlocks.map(b => ({
+          name: b.title,
+          description: b.body,
+        })));
+      }
+      const listBlocks = blocks.filter(b => b.isList);
+      if (listBlocks.length > 0 && childBlocks.length === 0) {
+        out.industries.push(...listBlocks.flatMap(b => b.items.map(item => ({
+          name: item,
+          description: '',
+        }))));
+      }
+      return;
+    }
+
+    // Child services — tight heading match; prefer items with real hrefs
+    if (isChildServicesHeading(hLower)) {
+      const childBlocks = blocks.filter(b => b.isChildBlock);
+      const listBlocks = blocks.filter(b => b.isList);
+      const allItems = [];
+      if (childBlocks.length > 0) {
+        allItems.push(...childBlocks
+          .filter(b => {
+            const t = b.title.toLowerCase();
+            if (/^(existing|user|known|our|your|the |how |what |why |when |need )/i.test(t)) return false;
+            if (parseStepTitle(b.title).step) return false;
+            return true;
+          })
+          .map(b => {
+            const href =
+              extractInternalLinkHref(b.body) ||
+              extractInternalLinkHref((b.items || []).join('\n'));
+            const description = clean(
+              String(b.body || '')
+                .replace(/\*\*Internal Link:\*\*[\s\S]*/i, '')
+                .replace(/Internal Link:\s*\/[-a-z0-9/]+/gi, '')
+                .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')
+                .replace(/\s+---+\s*$/g, '')
+            );
+            return { title: b.title, href, description };
+          }));
+      }
+      if (listBlocks.length > 0 && allItems.length === 0) {
+        allItems.push(...listBlocks.flatMap(b => b.items.map(item => {
+          const href = extractInternalLinkHref(item);
+          const linkMatch = item.match(/\[([^\]]+)\]\(([^)]+)\)/);
+          if (linkMatch) {
+            let h = linkMatch[2];
+            if (h.startsWith(DOMAIN)) h = h.replace(DOMAIN, '');
+            return { title: clean(linkMatch[1]), href: h.startsWith('/') ? h : href, description: '' };
+          }
+          return { title: clean(item), href, description: '' };
+        })));
+      }
+      // Prefer linked children; if none linked, keep titles (Phase A can fill hrefs)
+      const linked = allItems.filter(i => i.href && i.href.startsWith('/'));
+      out.childServices.push(...(linked.length > 0 ? linked : allItems).slice(0, 15));
+      return;
+    }
+
+    // Engagement models
+    if (/engagement model|how we engage|engagement options|resourcing model|support model compar/i.test(hLower)) {
+      const childBlocks = blocks.filter(b => b.isChildBlock);
+      if (childBlocks.length > 0) {
+        out.engagementModels.push(...childBlocks.map(b => ({
           title: b.title,
           description: b.body,
         })));
       }
       const listBlocks = blocks.filter(b => b.isList);
       if (listBlocks.length > 0 && childBlocks.length === 0) {
-        out.process.push(...listBlocks.flatMap(b => b.items.map((item, idx) => ({
-          step: idx + 1,
+        out.engagementModels.push(...listBlocks.flatMap(b => b.items.map(item => ({
           title: item,
           description: '',
         }))));
@@ -312,109 +576,8 @@ function parseMainMd(content) {
       return;
     }
 
-    // Tech stack
-    if (/technolog(y|ies) (used|we use|stack)|tech stack|tools? and technolog/i.test(hLower)) {
-      const childBlocks = blocks.filter(b => b.isChildBlock);
-      if (childBlocks.length > 0) {
-        out.techStack.push(...childBlocks.map(b => ({
-          category: b.title,
-          items: b.items && b.items.length > 0 ? b.items : (b.body ? b.body.split(/,\s*/).map(i => i.trim()).filter(Boolean) : []),
-        })));
-      }
-      const listBlocks = blocks.filter(b => b.isList);
-      if (listBlocks.length > 0 && childBlocks.length === 0) {
-        out.techStack.push(...listBlocks.flatMap(b => b.items));
-      }
-      return;
-    }
-
-    // Industries
-    if (/industr(y|ies)/i.test(hLower) && !/cost|price|engagement/i.test(hLower)) {
-      const childBlocks = blocks.filter(b => b.isChildBlock);
-      if (childBlocks.length > 0) {
-        out.industries.push(...childBlocks.map(b => ({
-          name: b.title,
-          description: b.body,
-        })));
-      }
-      const listBlocks = blocks.filter(b => b.isList);
-      if (listBlocks.length > 0 && childBlocks.length === 0) {
-        out.industries.push(...listBlocks.flatMap(b => b.items));
-      }
-      return;
-    }
-
-    // Child services
-    if (/our .+ services|core services|what we offer|our offerings|child services|explore our|explore the/i.test(hLower) && !/compar/i.test(hLower)) {
-      const childBlocks = blocks.filter(b => b.isChildBlock);
-      const listBlocks = blocks.filter(b => b.isList);
-      const allItems = [];
-      if (childBlocks.length > 0) {
-        allItems.push(...childBlocks
-          .filter(b => {
-            const t = b.title.toLowerCase();
-            if (/^(existing|user|known|our|your|the |how |what |why |when )/i.test(t)) return false;
-            if (/^(authentication|access|application|network|data|security config|requirements|gap|policy|risk|remediation|control|documentation)/i.test(t)) return false;
-            return true;
-          })
-          .map(b => {
-            const linkMatch = b.body.match(/\[([^\]]+)\]\(([^)]+)\)/);
-            let href = '';
-            if (linkMatch) {
-              href = linkMatch[2];
-              if (href.startsWith(DOMAIN)) href = href.replace(DOMAIN, '');
-            }
-            return { title: b.title, href, description: b.body.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1').trim() };
-          }));
-      }
-      if (listBlocks.length > 0 && allItems.length === 0) {
-        allItems.push(...listBlocks.flatMap(b => b.items.map(item => {
-          const linkMatch = item.match(/\[([^\]]+)\]\(([^)]+)\)/);
-          if (linkMatch) {
-            let href = linkMatch[2];
-            if (href.startsWith(DOMAIN)) href = href.replace(DOMAIN, '');
-            return { title: clean(linkMatch[1]), href, description: '' };
-          }
-          return { title: item, href: '', description: '' };
-        })));
-      }
-      out.childServices.push(...allItems);
-      return;
-    }
-
-    if (blocks.some(b => b.isTable)) {
-      blocks.filter(b => b.isTable).forEach(b => out.tables.push({ title: heading, headers: b.headers, rows: b.rows }));
-      const nonTable = blocks.filter(b => !b.isTable && !b.isList);
-      const list = blocks.filter(b => b.isList);
-      if (nonTable.length || list.length) {
-        out.sections.push({
-          heading,
-          body: nonTable.map(b => b.text).join('\n\n'),
-          items: list.flatMap(b => b.items),
-        });
-      }
-      return;
-    }
-
-    // Engagement models
-    if (/engagement model|how we engage|engagement options/i.test(hLower)) {
-      const listBlocks = blocks.filter(b => b.isList);
-      if (listBlocks.length > 0) {
-        out.engagementModels.push(...listBlocks.flatMap(b => b.items));
-      }
-      const textBlocks = blocks.filter(b => !b.isList && !b.isTable);
-      if (textBlocks.length > 0) {
-        out.sections.push({
-          heading,
-          body: textBlocks.map(b => b.text).join('\n\n'),
-          items: listBlocks.flatMap(b => b.items),
-        });
-      }
-      return;
-    }
-
     // Use cases
-    if (/use cases?|when (businesses|companies|teams) use|common use cases|use cases? (we |that )|problems? (we |that )|solutions? (we |that )|we build|what we build|solutions? we deliver/i.test(hLower)) {
+    if (/use cases?|when (businesses|companies|teams) use|common use cases|problems? (we |that )|we build|what we build|solutions? we deliver|what .+ can we (build|develop)/i.test(hLower)) {
       const childBlocks = blocks.filter(b => b.isChildBlock);
       const listBlocks = blocks.filter(b => b.isList);
       if (childBlocks.length > 0) {
@@ -487,90 +650,79 @@ function parseMainMd(content) {
     const t = line.trim();
     if (!t) continue;
 
-    // Intro extraction: find the first substantial paragraph block after H1 heading
-    // This handles all MD structures: pre-heading intro, post-H1 intro, post-meta intro
-    if (/^#{1,4}\s/.test(t)) foundFirstHeading = true;
-    if (!introCollected && !out.intro.length) {
-    // Skip until we find the first heading (intro comes after H1)
-    if (!foundFirstHeading) continue;
-    // Skip meta sections (numbered keywords, Meta Title/Description blocks, URLs)
-    if (/^#+\s/.test(t) && /(meta|keyword|url|target seo)/i.test(t)) continue;
-    if (/^\d+\.\s/.test(t) && t.length < 80) continue; // numbered keyword list
-    if (/^https?:\/\//i.test(t)) continue;
-    if (/^\*\*(Meta|URL|Primary CTA|Secondary CTA)/i.test(t)) continue;
-
-      // Check if this line starts a real content paragraph
-      const isUrlLine = t.startsWith('/') || t.startsWith('https://') || (t.charCodeAt(0) === 96);
-      if (t.length > 30 && !isUrlLine && !/^#{1,4}\s/.test(t) && !/^\*\*Meta/i.test(t) && !/^\*\*URL/i.test(t) && !/\|\s*Click/i.test(t)) {
-        const introParas = [];
-        let j = i;
-          while (j < lines.length) {
-            const lj = lines[j].trim();
-            // Stop at: heading, meta block, keyword list, URL line, CTA line
-            if (/^#{1,4}\s/.test(lj)) break;
-            if (/^\*\*(Meta|URL|Primary CTA|Secondary CTA|CTA)\b/i.test(lj)) break;
-            if (/^\*\*Meta Description[:*]/i.test(lj)) break;
-            if (/^https?:\/\//i.test(lj)) break;
-            if (lj.startsWith('/') || lj.charCodeAt(0) === 96) break;
-            if (/^#+\s/.test(lj) && /(meta|keyword|url|target seo)/i.test(lj)) break;
-            if (/^\d+\.\s/.test(lj) && lj.length < 80) break;
-            if (/\|\s*Click/i.test(lj)) break;
-            if (/^\*\*[A-Z]/.test(lj) && /\b(services?|company|UK|Clickmasters|Click)\b/i.test(lj) && lj.length < 200) break;
-            // Skip CTA lines, separator lines, and very short lines
-            if (/^(Primary CTA|Secondary CTA|CTA):/i.test(lj)) break;
-            if (/^---+\s*$/.test(lj)) break;
-            if (lj && !startsListMarker(lj) && lj.length >= 20) {
-              introParas.push(stripBoldKeepLinks(lj));
-            }
-            j++;
-          }
-        if (introParas.length > 0) {
-          out.intro = introParas.filter(p => {
-            const pl = p.toLowerCase();
-            if (/^(primary cta|secondary cta|cta)\s*:/i.test(p)) return false;
-            if (/^---+\s*$/.test(p)) return false;
-            if (/page content/i.test(pl)) return false;
-            if (/meta (title|description|keyword)/i.test(pl)) return false;
-            return true;
-          });
-          introCollected = true;
-          i = j - 1;
-          continue;
-        }
+    // Intro: ONLY paragraphs between page H1 and the next heading (never meta description)
+    if (!introCollected && isPageH1Line(t)) {
+      const { paras, end } = collectIntroFrom(i + 1);
+      if (paras.length > 0) {
+        out.intro = paras;
+        introCollected = true;
       }
-    }
-
-    // Intro extraction between H1 and first H2 (fallback for MDs with H1: tag)
-    if (!out.intro.length && (/^#{1,2}\s*\**H1:/i.test(t) || (/^#\s*\*\*/.test(t) && !/meta/i.test(t) && !out.intro.length))) {
-      let j = i + 1;
-      const introParas = [];
-      while (j < lines.length && !/^#{1,4}\s*\*\*/.test(lines[j].trim())) {
-        const lj = lines[j].trim();
-        if (lj && !startsListMarker(lj) && !/^\*\*URL:|^##\s|^#\s|\bMeta (Title|Description)/i.test(lj)) {
-          introParas.push(stripBoldKeepLinks(lj));
-        }
-        j++;
-      }
-      out.intro = introParas;
-      i = j - 1;
+      i = end - 1;
       continue;
     }
 
-    // FAQ section start
-    if (/^#{1,4}\s*\*\*(Frequently Asked Questions|FAQs?)(\s+About|\s+For|\s+—|\s+[-–]|:|\s*\w+\s+\w+\s+\w+)?\s*\*\*/i.test(t)) {
+    // UIUX-style: Meta Description heading embeds page title on the SAME line; hero copy follows
+    // Must NOT match bare `**Meta Description:**` labels (support MD) — those close with `:**`
+    if (
+      !introCollected &&
+      /^#+\s*\*\*Meta Description:\*\*/i.test(t) &&
+      /\*\*[^*]{8,}\*\*\s*$/.test(t) &&
+      !/^\*{0,2}Meta Description:\*{0,2}\s*$/i.test(t)
+    ) {
+      const { paras, end } = collectIntroFrom(i + 1);
+      if (paras.length > 0) {
+        out.intro = paras;
+        introCollected = true;
+        i = end - 1;
+        continue;
+      }
+    }
+
+    // Fallback: first "Looking for …" / substantial hero paragraph after meta block
+    if (!introCollected && /^(Looking for |\*\*Looking for )/i.test(t) && t.length > 40) {
+      const { paras, end } = collectIntroFrom(i);
+      if (paras.length > 0) {
+        out.intro = paras;
+        introCollected = true;
+        i = end - 1;
+        continue;
+      }
+    }
+
+    // FAQ section start — allow trailing text after "FAQs" / "Frequently Asked Questions"
+    if (/^#{1,4}\s*\*\*(Frequently Asked Questions|FAQs?)\b[^*]*\*\*\s*$/i.test(t)) {
       inFaq = true;
+      faqCurrent = null;
       continue;
     }
 
-    // FAQ question (### **question**) — must be BEFORE heading detection
+    // Exit FAQ on SECTION scaffolds or non-question top-level headings
+    if (inFaq && /^#\s+\*\*(.+)\*\*\s*$/.test(t)) {
+      const h = clean(t.match(/^#\s+\*\*(.+)\*\*\s*$/)[1]);
+      if (isScaffoldSectionHeading(h) || (!isFaqHeading(h) && !/\?$/.test(h))) {
+        inFaq = false;
+        faqCurrent = null;
+        // fall through so SECTION skip / section parser can handle this line
+      }
+    }
+
+    // FAQ question (### **question?**) — require "?" to avoid related-service cards
     if (inFaq && /^#{2,4}\s*\*\*(.+)\*\*\s*$/.test(t)) {
-      const q = t.match(/^#{2,4}\s*\*\*(.+)\*\*\s*$/)[1].trim();
-      faqCurrent = { question: clean(q), answer: '' };
+      const q = clean(t.match(/^#{2,4}\s*\*\*(.+)\*\*\s*$/)[1]);
+      if (!/\?$/.test(q)) {
+        // Non-question heading inside FAQ block — leave FAQ mode if it looks like a new section
+        if (isScaffoldSectionHeading(q) || /related services|final cta|child services/i.test(q)) {
+          inFaq = false;
+          faqCurrent = null;
+        }
+        continue;
+      }
+      faqCurrent = { question: q, answer: '' };
       out.faqs.push(faqCurrent);
       continue;
     }
 
-    // FAQ answer text — must be BEFORE heading detection
+    // FAQ answer text — preserve list items and blank-line paragraph breaks
     if (inFaq && faqCurrent) {
       if (/\\?<\/?script|application\/ld\+json/i.test(t)) {
         inFaq = false;
@@ -580,11 +732,18 @@ function parseMainMd(content) {
       if (/^#{1,4}/.test(t) && !/FAQ/i.test(t)) {
         inFaq = false;
         faqCurrent = null;
+        // don't continue — reprocess this heading on next iteration by rewinding
+        i -= 1;
+        continue;
+      }
+      if (isPlaceholderFaqNoise(t)) {
         continue;
       }
       if (startsListMarker(t)) {
         const item = clean(t.replace(/^[-*]\s+/, '').replace(/^\d+\.\s+/, ''));
         faqCurrent.answer = (faqCurrent.answer ? faqCurrent.answer + '\n' : '') + '- ' + item;
+      } else if (t.trim() === '') {
+        faqCurrent.answer = faqCurrent.answer ? faqCurrent.answer + '\n\n' : '';
       } else if (!/^\*\*Faq\s*Schema/i.test(t)) {
         faqCurrent.answer = (faqCurrent.answer ? faqCurrent.answer + ' ' : '') + clean(t);
       }
@@ -595,11 +754,14 @@ function parseMainMd(content) {
     if (!inFaq && /^#{1,4}\s*\*\*(.+)\*\*\s*$/.test(t)) {
       const heading = clean(t.match(/^#{1,4}\s*\*\*(.+)\*\*\s*$/)[1]).replace(/^H1:\s*/i, '');
       if (/meta (title|description|keyword)/i.test(heading)) continue;
-
-      if (inFaq) {
-        inFaq = false;
-        faqCurrent = null;
-      }
+      // SECTION scaffolds must not swallow ##/### children (Support, NLP)
+      if (isScaffoldSectionHeading(heading)) continue;
+      // Page H1 must not swallow the rest of the document as child blocks
+      const isPageH1 =
+        /^H1:/i.test(heading) ||
+        (out.h1 && clean(heading) === clean(out.h1)) ||
+        (out.title && clean(heading) === clean(out.title));
+      if (isPageH1) continue;
 
       const blocks = [];
       let j = i + 1;
@@ -609,8 +771,8 @@ function parseMainMd(content) {
         if (lj === '') { j++; continue; }
         if (/^<script/i.test(lj)) break;
         // Always stop at FAQ sections
-        if (/^#{1,4}\s*\*\*(Frequently Asked Questions|FAQs?)\s*\*\*/i.test(lj)) break;
-        // Stop at h1 headings (new top-level section)
+        if (/^#{1,4}\s*\*\*(Frequently Asked Questions|FAQs?)\b/i.test(lj)) break;
+        // Stop at next SECTION scaffold or other h1
         if (/^#\s+\*\*(.+)\*\*\s*$/.test(lj)) break;
 
         // Collect h2 headings as child blocks under h1
@@ -622,6 +784,22 @@ function parseMainMd(content) {
           while (j < lines.length && lines[j].trim() !== '' && !/^#{1,4}/.test(lines[j].trim())) {
             childLines.push(lines[j].trim());
             j++;
+          }
+          // Also absorb following Internal Link lines (may follow a blank line)
+          while (j < lines.length && lines[j].trim() === '') j++;
+          while (j < lines.length) {
+            const peek = lines[j].trim();
+            if (/^\*\*Internal Link:\*\*/i.test(peek) || /^Internal Link:/i.test(peek)) {
+              childLines.push(peek);
+              j++;
+              while (j < lines.length && lines[j].trim() !== '' && !/^#{1,4}/.test(lines[j].trim())) {
+                childLines.push(lines[j].trim());
+                j++;
+              }
+              while (j < lines.length && lines[j].trim() === '') j++;
+              continue;
+            }
+            break;
           }
           const childText = [];
           const childItems = [];
@@ -641,9 +819,11 @@ function parseMainMd(content) {
           const childHeading = clean(lj.match(/^#{3}\s+\*\*(.+)\*\*\s*$/)[1]);
           const childLines = [];
           j++;
-          while (j < lines.length && lines[j].trim() === '') j++;
-          while (j < lines.length && lines[j].trim() !== '' && !/^#{1,4}/.test(lines[j].trim())) {
-            childLines.push(lines[j].trim());
+          // Absorb all non-heading content until the next # heading (includes Internal Link)
+          while (j < lines.length) {
+            const peek = lines[j].trim();
+            if (/^#{1,4}/.test(peek) || /^<script/i.test(peek)) break;
+            if (peek) childLines.push(peek);
             j++;
           }
           const childText = [];
@@ -703,16 +883,18 @@ function parseMainMd(content) {
     }
   }
 
-  // Deduplicate FAQs
+  // Deduplicate FAQs; drop placeholder / non-question noise
   const seenFaqs = new Set();
   out.faqs = out.faqs.filter(f => {
-    const q = f.question.toLowerCase().trim();
-    if (!q || seenFaqs.has(q)) return false;
+    const q = (f.question || '').toLowerCase().trim();
+    if (!q || !/\?$/.test(q) || seenFaqs.has(q)) return false;
+    if (isPlaceholderFaqNoise(f.answer) || isPlaceholderFaqNoise(f.question)) return false;
+    if (!f.answer || f.answer.trim().length < 20) return false;
     seenFaqs.add(q);
     return true;
   });
 
-  // Extract internal links from all body text (intro, sections, whyChoose, FAQs, costFactors, tables)
+  // Extract internal links from all body text
   const allText = [
     ...(out.intro || []),
     ...out.sections.map(s => s.body),
@@ -722,11 +904,24 @@ function parseMainMd(content) {
     ...(out.faqs || []).map(f => f.answer || ''),
     ...(out.costFactors || []).map(c => typeof c === 'string' ? c : JSON.stringify(c)),
     ...(out.tables || []).flatMap(t => (t.rows || []).map(r => Array.isArray(r) ? r.join(' ') : JSON.stringify(r))),
+    ...(out.childServices || []).map(c => `${c.title} ${c.description || ''} ${c.href || ''}`),
+    ...(out.process || []).map(p => `${p.title} ${p.description || ''}`),
+    ...(out.useCases || []).map(u => `${u.title || ''} ${u.description || ''}`),
+    ...(out.deliverables || []),
   ].join('\n');
 
   out.relatedLinks = extractInternalLinks(allText).filter(
     (l, idx, arr) => arr.findIndex(x => x.href === l.href) === idx && l.href !== `/${out.slug}`
   );
+
+  // Also add child service hrefs as related links
+  for (const child of out.childServices || []) {
+    if (child.href && child.href.startsWith('/') && child.href !== `/${out.slug}`) {
+      if (!out.relatedLinks.some(l => l.href === child.href)) {
+        out.relatedLinks.push({ label: child.title, href: child.href });
+      }
+    }
+  }
 
   return out;
 }
