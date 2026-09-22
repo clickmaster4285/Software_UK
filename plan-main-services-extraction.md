@@ -32,7 +32,7 @@
 | **D — Component polish** | ✅ Done Sep 22, 2026 | deliverables band, useCases≥3, tech icons, engagement models |
 | **E — 4 missing MD** | ⏸️ Deferred | AI, Data, Cloud/DevOps, Testing & QA |
 | **F — Validation** | ✅ Done Sep 22, 2026 | Census OK; build **1586/1586** via `next build --webpack` |
-| **G — UI/UX polish** | ✅ Done Sep 22, 2026 | See [`plan-main-services-ui.md`](./plan-main-services-ui.md) |
+| **G — UI/UX polish** | ✅ Done Sep 22, 2026 | Hero title/tagline/metaDesc; Overview + image; ContentSections restored; see [`plan-main-services-ui.md`](./plan-main-services-ui.md) |
 
 ---
 
@@ -189,5 +189,5 @@ Implemented in `data/main-services.js` + small component fixes:
 ---
 
 **Status:** Phase A–D + F + G complete — **E deferred** (4 remaining MD files)  
-**UI polish:** [`plan-main-services-ui.md`](./plan-main-services-ui.md)  
+**UI polish (authoritative):** [`plan-main-services-ui.md`](./plan-main-services-ui.md) — hero contract, issues fixed, field→UI map, what to update next  
 **Main Reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md)

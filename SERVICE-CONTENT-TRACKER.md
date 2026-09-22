@@ -35,6 +35,9 @@
 | D Component polish | ✅ |
 | E 4 missing MD | ⏸️ Deferred |
 | F Validation | ✅ Build 1586/1586 |
+| G UI/UX polish | ✅ Hero + Overview + ContentSections restore — see `plan-main-services-ui.md` |
+
+**UI note (Sep 22):** Hero uses MD `h1` + curated `tagline` + `metaDescription`. Full MD `intro` renders in Overview (image left). Do not put long intro into the hero again.
 
 ---
 
