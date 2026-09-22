@@ -11,6 +11,7 @@ import { ScrollSnakeLine } from '@/components/ui/scroll-snake-line';
 
 // Lazy: components with default export
 const PainPointsSolutions = dynamic(() => import('@/components/landing/main-service/PainPointsSolutions'), { ssr: true });
+const ContentSections = dynamic(() => import('@/components/landing/main-service/ContentSections'), { ssr: true });
 const FeaturedInsights = dynamic(() => import('@/components/landing/main-service/FeaturedInsights'), { ssr: true });
 
 // Lazy: components with both named + default export (default works)
@@ -105,7 +106,9 @@ export default function ServiceClient({ serviceData }) {
 
         <ExploreSection serviceData={serviceData} />
 
-        <PainPointsSolutions />
+        <PainPointsSolutions serviceData={serviceData} />
+
+        <ContentSections serviceData={serviceData} />
 
         <Suspense fallback={<div className="h-96 animate-pulse bg-surface" />}>
           <TrustedClientsSection
@@ -118,7 +121,7 @@ export default function ServiceClient({ serviceData }) {
 
       <AppsSection />
       <ProcessPage serviceData={serviceData} />
-      <TechStackSection />
+      <TechStackSection serviceData={serviceData} />
       <FeaturedInsights />
       <WhyChooseUs
         slug={serviceData?.slug}
@@ -129,9 +132,10 @@ export default function ServiceClient({ serviceData }) {
         plans={pricingPlans}
         title={`${serviceData?.title} Investment`}
         subtitle={`Flexible engagement models for ${serviceData?.title?.toLowerCase() || 'your project'} — scoped to your timeline, team size, and goals.`}
+        costFactors={serviceData?.costFactors}
       />
 
-      <IndustriesSection />
+      <IndustriesSection serviceData={serviceData} />
 
       <TestimonialsSection serviceTitle={serviceData?.title} />
 
@@ -141,7 +145,7 @@ export default function ServiceClient({ serviceData }) {
         subtitle={`Common questions about ${serviceData?.title?.toLowerCase() || 'our services'}, delivery, and engagement models.`}
       />
 
-      <FinalCTA />
+      <FinalCTA serviceData={serviceData} />
 
 {/*
       Used sections from components/landing/main-service

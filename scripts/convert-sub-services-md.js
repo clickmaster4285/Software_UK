@@ -223,7 +223,9 @@ function parseMd(content) {
     || content.match(/\n\*\*`?Meta Title`?\*\*[ \t]*\n+([^\n]+)/im)
     || content.match(/\*\*Meta Title\*\*[ \t]*\n+([^\n]+)/im)
     || content.match(/Meta Title:\s*(.+?)(?:\s+\**Meta Description)/im)
+    || content.match(/Meta Title:\*{0,2}\s*\n+\s*([^\n]+)/im)
     || content.match(/Meta Title:\s*([^\n]+)/im)
+    || content.match(/Meta Title\*{0,2}\s+([^\n]+)/im)
     || content.match(/\n\s*Meta Title:\s*\n+([^\n]+)/im);
   if (titleMatch) {
     out.metaTitle = clean(titleMatch[1]);
@@ -235,7 +237,9 @@ function parseMd(content) {
     || content.match(/\n\*\*`?Meta Description`?:\*\*[ \t]*\n+([^\n]+)/im)
     || content.match(/\n\*\*`?Meta Description`?\*\*[ \t]*\n+([^\n]+)/im)
     || content.match(/\*\*Meta Description\*\*[ \t]*\n+([^\n]+)/im)
+    || content.match(/Meta Description[:\s]*\*{0,2}\s*\n+\s*([^\n]+)/im)
     || content.match(/Meta Description[:\s]+([^\n]+)/im)
+    || content.match(/Meta Description\*{0,2}\s+([^\n]+)/im)
     || content.match(/\n\s*Meta Description\s*[:\s]*\n+\s*([^\n]+)/im);
   if (descMatch) {
     out.metaDescription = clean(descMatch[1]);

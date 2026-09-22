@@ -87,7 +87,7 @@ const globalStats = [
   { number: '99%', label: 'Client Retention' },
 ];
 
-export function IndustriesSection() {
+export function IndustriesSection({ serviceData }) {
   const router = useRouter();
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -98,6 +98,21 @@ export function IndustriesSection() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const backgroundRotate = useTransform(scrollYProgress, [0, 1], [0, 10]);
+
+  const mdIndustries = serviceData?.industries;
+  const displayIndustries = mdIndustries && mdIndustries.length > 0
+    ? mdIndustries.map((ind, idx) => ({
+        icon: [Factory, Store, Briefcase, Heart, GraduationCap, Building2, Globe2, Cpu][idx % 8],
+        title: typeof ind === 'string' ? ind : ind.title,
+        description: typeof ind === 'string'
+          ? `Specialized ${ind.toLowerCase()} solutions tailored to your business needs.`
+          : ind.description || `Specialized ${ind.title.toLowerCase()} solutions.`,
+        features: typeof ind === 'string' ? [] : (ind.features || []),
+        stats: typeof ind === 'string' ? '' : (ind.stats || ''),
+        statLabel: typeof ind === 'string' ? '' : (ind.statLabel || ''),
+        slug: typeof ind === 'string' ? ind.toLowerCase().replace(/[^a-z0-9]+/g, '-') : (ind.slug || ''),
+      }))
+    : industries;
 
   return (
     <section
@@ -162,7 +177,7 @@ export function IndustriesSection() {
 
         {/* Industries Grid */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          {industries.map((industry, index) => {
+          {displayIndustries.map((industry, index) => {
             const Icon = industry.icon;
             const isHovered = hoveredIndex === index;
 

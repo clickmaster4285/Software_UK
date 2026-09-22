@@ -87,7 +87,26 @@ const FloatingParticle = ({ delay = 0, x = "0%", y = "0%", size = 4 }) => (
   />
 );
 
-export default function PainPointsSolutions() {
+const PAIN_ICONS = [XCircle, Clock, ShieldAlert, TrendingUp];
+const SOLUTION_ICONS = [CheckCircle2, Zap, CheckCircle2, TrendingUp];
+
+function buildFromUseCases(useCases) {
+  const pains = useCases.map((uc, idx) => ({
+    id: `uc-${idx}`,
+    title: uc.title,
+    description: uc.description,
+    icon: PAIN_ICONS[idx % PAIN_ICONS.length],
+    color: 'var(--accent)',
+  }));
+  const solutions = useCases.map((uc, idx) => ({
+    title: uc.title,
+    description: uc.description,
+    metric: uc.metric || '',
+  }));
+  return { pains, solutions };
+}
+
+export default function PainPointsSolutions({ serviceData }) {
   const [activeIndex, setActiveIndex] = useState(null);
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -98,6 +117,12 @@ export default function PainPointsSolutions() {
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
   const hasLocation = true;
   const countryName = "United Kingdom";
+
+  const mdUseCases = serviceData?.useCases;
+  const { pains: displayPains, solutions: displaySolutions } =
+    mdUseCases && mdUseCases.length > 0
+      ? buildFromUseCases(mdUseCases)
+      : { pains: painPoints, solutions };
 
   return (
     <section
@@ -170,9 +195,9 @@ export default function PainPointsSolutions() {
 
         {/* Pain → Solution Grid */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-          {painPoints.map((pain, idx) => {
+          {displayPains.map((pain, idx) => {
             const Icon = pain.icon;
-            const solution = solutions[idx];
+            const solution = displaySolutions[idx];
             const isActive = activeIndex === idx;
 
             return (

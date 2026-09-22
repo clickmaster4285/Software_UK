@@ -710,7 +710,85 @@ export const subServiceListings = subServices.map(({ slug, categorySlug, title, 
 
 ---
 
-**Last Updated:** September 17, 2026 (v10 — route rename executed, standalone services removed, big data file split planned)
+## 15. Executed — Meta Title & Meta Description Regex Fixes (Completed)
+
+**Executed:** September 19, 2026
+
+### Problem
+
+The converter scripts (`convert-sub-services-md.js` and `convert-main-services-md.js`) failed to extract `metaTitle` and `metaDescription` from several markdown files because the source files used inconsistent formatting. The regex patterns only handled a few common formats, but the 44 sub-service and 8 main-service MD files contained at least 6 distinct meta tag formats.
+
+### Issues Found & Fixed
+
+| # | File(s) | Format | Problem | Fix |
+|---|---------|--------|---------|-----|
+| 1 | All MD files | `\r\n` line endings | `\r` characters in file content interfered with regex matching (e.g., `\n` in patterns wouldn't match `\r\n`) | Added `content.replace(/\r/g, '')` at top of `parseMd()` and `parseMainMd()` |
+| 2 | Multiple files | `**Meta Title:**` on standalone line (no `#` prefix) | Pattern 3 `\n\*\*`Meta Title`?:\*\*[ \t]*\n+` required `\n` before `**` but pattern was matching incorrectly | Added `\*\*` after `:` in pattern to match `\n**Meta Title:**` |
+| 3 | `penetration-testing.md`, `security-audits.md`, `compliance-risk-management.md` | `**Meta Title**` mid-line (no colon) | No pattern for bold title without colon on same line | Added `\*\*Meta Title\*\*[ \t]*\n+([^\n]+)` pattern |
+| 4 | `product-design.md` | `Meta Title:**\n\n# Content` | `**` after colon, content on NEXT line with `#` prefix; generic `Meta Title:\s*([^\n]+)` captured only `**` | Added `Meta Title:\*{0,2}\s*\n+\s*([^\n]+)` pattern and placed it BEFORE the generic inline pattern |
+| 5 | `woocommerce-development.md` | `Meta title**  Content` | No colon after `Title`, `**` closes bold, content on same line | Added `Meta Title\*{0,2}\s+([^\n]+)` pattern (no colon required) |
+| 6 | `microservices-architecture.md` | `**Meta Title:** Content  **Meta Description** Content` | Both meta tags on SAME line; lazy `(.+?)` pattern worked but captured leading `**` | Existing `Meta Title:\s*(.+?)(?:\s+\**Meta Description)` pattern worked; `clean()` strips `**` |
+| 7 | `woocommerce-development.md` | `# **Meta Description:**\n\n# Content` | `#` prefix before `**Meta Description:**`; generic `Meta Description[:\s]+` captured `**` instead of next-line content | Added `Meta Description[:\s]*\*{0,2}\s*\n+\s*([^\n]+)` and placed it BEFORE generic pattern |
+
+### Root Causes
+
+1. **`\r\n` line endings** — Windows-style line endings broke `\n`-based regex patterns
+2. **Inconsistent bold formatting** — Some files used `**Meta Title:**`, others `Meta Title:**`, others `Meta title**`, others `**Meta Title**`
+3. **Content on same line vs next line** — Some files had `Meta Title:** Content` (same line), others `Meta Title:**\n\nContent` (next line)
+4. **Pattern ordering** — Generic patterns like `Meta Title:\s*([^\n]+)` matched first and captured `**` (bold markers) instead of actual content, preventing more specific newline-based patterns from running
+
+### Solution
+
+Added 4 new regex patterns to both title and description extraction chains, and reordered patterns so more-specific patterns run before generic ones:
+
+**Title patterns (in order):**
+```
+1. \n## **Meta Title** ...         (## heading with bold)
+2. # **Meta Title:** ...            (# prefix with bold colon)
+3. \n**Meta Title:** \n+ ...       (standalone bold colon, content next line)
+4. \n**Meta Title** \n+ ...        (standalone bold, content next line)
+5. **Meta Title** \n+ ...          (bold at line start, content next line)
+6. Meta Title: ...(lazy)... Meta Description  (same-line with desc)
+7. Meta Title:** \n+ ...           (colon + bold, content next line) ← NEW
+8. Meta Title: ...                 (plain inline) ← moved AFTER #7
+9. Meta Title** ...                (no colon, bold, same line) ← NEW
+10. \n Meta Title: \n+ ...         (standalone plain)
+```
+
+**Description patterns (in order):**
+```
+1. \n## **Meta Description** ...   (## heading with bold)
+2. # **Meta Description:** ...     (# prefix with bold colon)
+3. \n**Meta Description:** \n+ ... (standalone bold colon, content next line)
+4. \n**Meta Description** \n+ ...  (standalone bold, content next line)
+5. **Meta Description** \n+ ...    (bold at line start, content next line)
+6. Meta Description:** \n+ ...     (colon + bold, content next line) ← NEW
+7. Meta Description ...             (plain inline) ← moved AFTER #6
+8. Meta Description** ...          (no colon, bold, same line) ← NEW
+9. \n Meta Description \n+ ...     (standalone plain)
+```
+
+### Result
+
+| Category | Total | Has metaTitle | Has metaDescription |
+|----------|-------|--------------|-------------------|
+| Sub-services | 44 | 44 | 44 |
+| Main services | 8 | 8 | 8 |
+
+All 52 markdown files now produce correct `metaTitle` and `metaDescription` fields.
+
+### Files Modified
+
+| File | Change |
+|------|--------|
+| `scripts/convert-sub-services-md.js` | Added `\r` normalization in `parseMd()`; added 4 new title patterns + 3 new desc patterns; reordered patterns so specific matches run before generic |
+| `scripts/convert-main-services-md.js` | Same `\r` normalization in `parseMainMd()`; same pattern additions |
+| `data/sub-services-md.js` | Re-generated — 44 entries, all with metaTitle + metaDescription |
+| `data/main-services-md.js` | Re-generated — 8 entries, all with metaTitle + metaDescription |
+
+---
+
+**Last Updated:** September 19, 2026 (v11 — meta title/description regex fixes for all 52 MD files)
 **Main Reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md)
 **Execution Plan:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md)
 

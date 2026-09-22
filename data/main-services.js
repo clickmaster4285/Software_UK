@@ -876,6 +876,14 @@ export const getServiceData = (slug) => {
     relatedLinks: md.relatedLinks && md.relatedLinks.length > 0 ? md.relatedLinks : enriched.relatedLinks,
     faqs: md.faqs && md.faqs.length > 0 ? md.faqs : enriched.faqs,
     jsonLd: md.jsonLd || enriched.jsonLd,
+    process: md.process && md.process.length > 0 ? md.process : enriched.process,
+    techStack: md.techStack && md.techStack.length > 0 ? md.techStack : enriched.techStack,
+    industries: md.industries && md.industries.length > 0 ? md.industries : enriched.industries,
+    childServices: md.childServices && md.childServices.length > 0 ? md.childServices : enriched.childServices,
+    deliverables: md.deliverables && md.deliverables.length > 0 ? md.deliverables : enriched.deliverables,
+    engagementModels: md.engagementModels && md.engagementModels.length > 0 ? md.engagementModels : enriched.engagementModels,
+    useCases: md.useCases && md.useCases.length > 0 ? md.useCases : enriched.useCases,
+    cta: md.cta && (md.cta.primary || md.cta.secondary) ? md.cta : enriched.cta,
   };
 };
 

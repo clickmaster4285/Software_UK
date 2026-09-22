@@ -224,8 +224,8 @@ export function ProcessPage({ serviceData }) {
   const [activeStep, setActiveStep] = useState(0);
 
   const phases =
-    serviceData?.lifecycle?.map((l, idx) => ({
-      step: l.step || `0${idx + 1}`,
+    (serviceData?.process || serviceData?.lifecycle)?.map((l, idx) => ({
+      step: String(l.step || `0${idx + 1}`),
       title: l.title,
       description: l.description,
       icon: PHASE_ICONS[idx % PHASE_ICONS.length],

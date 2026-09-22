@@ -37,13 +37,17 @@ function TechIconCell({ name, icon }) {
       transition={{ type: "spring", stiffness: 400, damping: 24 }}
     >
       <motion.div className="relative flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-white p-2 shadow-sm transition-shadow duration-300 group-hover:shadow-[0_4px_16px_rgba(0,0,0,0.08)]">
-        <Image
-          src={icon}
-          alt={name}
-          width={32}
-          height={32}
-          className="h-8 w-8 object-contain"
-        />
+        {icon ? (
+          <Image
+            src={icon}
+            alt={name}
+            width={32}
+            height={32}
+            className="h-8 w-8 object-contain"
+          />
+        ) : (
+          <span className="text-xs font-bold text-accent font-heading">{name.slice(0, 2).toUpperCase()}</span>
+        )}
       </motion.div>
       <span className="text-center text-[11px] font-medium leading-tight text-text-body font-body line-clamp-2">
         {name}
@@ -76,8 +80,21 @@ function CategoryCard({ category, items, index }) {
   );
 }
 
-export function TechStackSection() {
-  const categories = useMemo(() => buildCategories(), []);
+export function TechStackSection({ serviceData }) {
+  const categories = useMemo(() => {
+    const mdTechStack = serviceData?.techStack;
+    if (mdTechStack && mdTechStack.length > 0) {
+      return mdTechStack.map((cat, idx) => ({
+        key: cat.category || `cat-${idx}`,
+        label: cat.category || `Category ${idx + 1}`,
+        items: (cat.items || []).map(name => ({
+          name: typeof name === 'string' ? name : name.name || name,
+          icon: null,
+        })),
+      })).filter(cat => cat.items.length > 0);
+    }
+    return buildCategories();
+  }, [serviceData?.techStack]);
   const [activeTab, setActiveTab] = useState(categories[0]?.key ?? "frontend");
 
   const activeCategory = categories.find((c) => c.key === activeTab) ?? categories[0];

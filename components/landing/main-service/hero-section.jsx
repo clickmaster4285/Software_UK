@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, FileText } from 'lucide-react';
 import Image from 'next/image';
+import { linkifyMarkdown } from '@/lib/subservice-utils';
 
 const heroBullets = [
   'MVP to full-scale SaaS development',
@@ -139,6 +140,17 @@ export function HeroSection({ serviceData }) {
   const displayBullets = serviceData?.features?.map((f) => f.title) || heroBullets;
   const heroImageUrl = serviceData?.heroImage;
 
+  const heroDescription = serviceData?.intro?.length > 0
+    ? serviceData.intro
+        .filter(p => {
+          const text = typeof p === 'string' ? p : p.text || '';
+          const tagline = serviceData?.tagline || '';
+          return tagline && text === tagline ? false : true;
+        })
+        .map(p => typeof p === 'string' ? p : p.text || p)
+        .join(' ')
+    : serviceData?.description || 'We design, build, and deploy high-performance systems for companies globally.';
+
   return (
     <section
       className="relative w-full min-h-screen flex items-center overflow-hidden"
@@ -171,7 +183,7 @@ export function HeroSection({ serviceData }) {
                   id="hero-heading"
                   className="font-heading text-[2.5rem] font-bold leading-tight tracking-tight text-accent sm:text-5xl md:text-6xl lg:text-7xl"
                 >
-                  {serviceData?.title || 'Software Development'}
+                  {serviceData?.h1 || serviceData?.title || 'Software Development'}
                 </h1>
               </div>
               <div className="overflow-hidden mt-3">
@@ -182,10 +194,10 @@ export function HeroSection({ serviceData }) {
             </div>
 
             {/* Description */}
-            <p className="font-body text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed mb-8 max-w-2xl">
-              {serviceData?.description ||
-                'We design, build, and deploy high-performance systems for companies globally.'}
-            </p>
+            <p
+              className="font-body text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed mb-8 max-w-2xl [&_a]:text-accent [&_a]:font-medium [&_a:hover]:underline"
+              dangerouslySetInnerHTML={{ __html: linkifyMarkdown(heroDescription) }}
+            />
 
             {/* Typewriter */}
             <div className="mb-10">

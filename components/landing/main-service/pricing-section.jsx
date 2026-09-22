@@ -134,6 +134,7 @@ export function PricingSection({
   plans: customPlans,
   title,
   subtitle,
+  costFactors,
 }) {
   const rawPlans =
     customPlans?.length > 0
@@ -221,6 +222,28 @@ export function PricingSection({
           Final quotes depend on scope, integrations, and timeline. All plans include a
           free discovery call and written proposal — no hidden fees.
         </motion.p>
+
+        {costFactors && costFactors.length > 0 && (
+          <motion.div
+            className="mt-14 mx-auto max-w-4xl rounded-2xl border border-border bg-white p-8 shadow-[0_2px_16px_rgba(0,0,0,0.05)]"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: EASE }}
+          >
+            <h3 className="font-heading text-lg font-semibold text-text-primary mb-4">
+              Key Cost Factors
+            </h3>
+            <ul className="grid gap-3 sm:grid-cols-2">
+              {costFactors.map((factor, idx) => (
+                <li key={idx} className="flex items-start gap-2 text-sm text-text-body font-body">
+                  <Check className="h-4 w-4 shrink-0 text-accent mt-0.5" aria-hidden />
+                  {typeof factor === 'string' ? factor : factor.text || factor.title || JSON.stringify(factor)}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
       </motion.div>
     </section>
   );

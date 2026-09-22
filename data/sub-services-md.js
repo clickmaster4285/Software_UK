@@ -1,7 +1,7 @@
 // AUTO-GENERATED from sub-services/*.md by scripts/convert-sub-services-md.js
 // Rich sub-service content: intro, tables, costFactors, whyChoose, relatedLinks, full FAQs & keywords.
 // NOTE: written to data/sub-services-md.js so data/sub-services.js is unaffected until ready.
-// Generated: 2026-09-21T10:38:05.097Z
+// Generated: 2026-09-21T11:10:11.887Z
 
 export const subServicesMd = [
   {
@@ -2925,538 +2925,6 @@ export const subServicesMd = [
       }
     },
     "sourceFile": "NFT Marketplace.md"
-  },
-  {
-    "slug": "mvp-development",
-    "categorySlug": "software-development",
-    "category": "Software Development",
-    "title": "MVP Development Services",
-    "serviceName": "MVP Development Services UK",
-    "h1": "MVP Development Services",
-    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/mvp-development",
-    "metaTitle": "MVP Development Services UK | ClickMasters",
-    "metaDescription": "ClickMasters provides MVP development services for startups and businesses that want to validate ideas, launch faster, reduce risk, and build scalable software products.",
-    "metaKeywords": [
-      "MVP development services",
-      "MVP development services UK"
-    ],
-    "intro": [
-      "`/software-development/mvp-development`",
-      "MVP Development Services UK | ClickMasters",
-      "ClickMasters provides MVP development services for startups and businesses that want to validate ideas, launch faster, reduce risk, and build scalable software products."
-    ],
-    "sections": [
-      {
-        "heading": "H1: MVP Development Services",
-        "body": "ClickMasters provides MVP development services for startups, founders, and businesses that want to turn an idea into a working software product. We help you plan, design, build, test, and launch a minimum viable product with the core features needed to validate your idea with real users.\n\nAn MVP helps you enter the market faster, reduce development risk, collect user feedback, and understand whether your product idea has real demand before investing in full-scale development.\n\nExplore our complete [software development services](/software-development) for custom software, SaaS, enterprise, API, backend, frontend, and full stack development capabilities.",
-        "items": []
-      },
-      {
-        "heading": "MVP Development Services for Startups and Businesses",
-        "body": "Building a full software product without validation can be risky and expensive. An MVP gives you a focused first version of your product, built around the most important features your users need.\n\nClickMasters helps businesses build MVPs for web applications, mobile apps, SaaS platforms, marketplaces, internal tools, customer portals, and AI-powered software products. Our approach focuses on clear scope, practical features, clean design, reliable development, and a scalable foundation for future growth.",
-        "items": []
-      },
-      {
-        "heading": "What Is MVP Development?",
-        "body": "MVP development is the process of building a minimum viable product with only the essential features needed to test a business idea, solve a real user problem, and gather feedback from early users.\n\nAn MVP is not an unfinished or low-quality product. It is a carefully planned first version that helps you validate your concept before building a complete product.\n\nA strong MVP should help you answer important questions:",
-        "items": [
-          "Do users understand the product?",
-          "Does the product solve a real problem?",
-          "Which features are actually needed?",
-          "Are users willing to sign up, use, or pay?",
-          "What should be improved before scaling?"
-        ]
-      },
-      {
-        "heading": "Our MVP Development Services",
-        "body": "",
-        "items": []
-      },
-      {
-        "heading": "MVP Discovery & Product Strategy",
-        "body": "We start by understanding your idea, target users, business model, goals, and competition. This helps us define the right MVP scope before development begins.",
-        "items": []
-      },
-      {
-        "heading": "Feature Prioritisation",
-        "body": "Not every feature belongs in the first version. We help you separate must-have features from future features so your MVP stays focused, lean, and easier to launch.",
-        "items": []
-      },
-      {
-        "heading": "UI/UX Design",
-        "body": "We design clean user flows, wireframes, and product screens so your MVP is simple to use and easy to understand for early users.",
-        "items": []
-      },
-      {
-        "heading": "MVP Web Application Development",
-        "body": "We build browser-based MVPs such as dashboards, portals, SaaS platforms, marketplaces, booking systems, and business software.",
-        "items": []
-      },
-      {
-        "heading": "MVP Mobile App Development",
-        "body": "We develop MVP mobile apps for Android, iOS, or cross-platform use, depending on your users, budget, and launch goals.",
-        "items": []
-      },
-      {
-        "heading": "SaaS MVP Development",
-        "body": "We build SaaS MVPs with user accounts, dashboards, subscriptions, admin panels, billing flows, and scalable product architecture.",
-        "items": []
-      },
-      {
-        "heading": "AI MVP Development",
-        "body": "We can build AI-powered MVPs with chatbots, AI agents, document processing, LLM features, automation, and AI integrations where required.",
-        "items": []
-      },
-      {
-        "heading": "MVP Testing & QA",
-        "body": "Before launch, we test your MVP for usability, bugs, performance, security, and key user flows to make sure it works properly.",
-        "items": []
-      },
-      {
-        "heading": "MVP Launch Support",
-        "body": "We help prepare your MVP for launch so you can start collecting real feedback, tracking users, and improving the product.",
-        "items": []
-      },
-      {
-        "heading": "MVPs We Can Build",
-        "body": "ClickMasters can build different types of MVP software, including:",
-        "items": [
-          "SaaS MVPs",
-          "Web app MVPs",
-          "Mobile app MVPs",
-          "Marketplace MVPs",
-          "AI MVPs",
-          "CRM MVPs",
-          "Booking system MVPs",
-          "Customer portal MVPs",
-          "Admin dashboard MVPs",
-          "Internal business tool MVPs",
-          "Ecommerce MVPs",
-          "Workflow automation MVPs"
-        ]
-      },
-      {
-        "heading": "Our MVP Development Process",
-        "body": "",
-        "items": []
-      },
-      {
-        "heading": "1. Idea Review",
-        "body": "We discuss your idea, target audience, product goals, business model, and expected outcome.",
-        "items": []
-      },
-      {
-        "heading": "2. Research and Planning",
-        "body": "We review the market, competitors, users, main features, and technical requirements.",
-        "items": []
-      },
-      {
-        "heading": "3. MVP Scope Definition",
-        "body": "We define the essential features needed for the first version and remove unnecessary complexity.",
-        "items": []
-      },
-      {
-        "heading": "4. Wireframing and UI/UX Design",
-        "body": "We create user journeys, screens, and clickable prototypes so the MVP structure is clear before coding.",
-        "items": []
-      },
-      {
-        "heading": "5. Software Development",
-        "body": "Our team builds the MVP using the right frontend, backend, database, API, and integration setup.",
-        "items": []
-      },
-      {
-        "heading": "6. Testing and Quality Assurance",
-        "body": "We test the product to make sure the main features work smoothly across users, devices, and workflows.",
-        "items": []
-      },
-      {
-        "heading": "7. Launch and Feedback",
-        "body": "After launch, your MVP can be tested with real users. Feedback, analytics, and user behaviour can guide the next version.",
-        "items": []
-      },
-      {
-        "heading": "8. Iteration and Scaling",
-        "body": "Once the MVP is validated, we help improve features, add new modules, optimise performance, and scale the product.",
-        "items": []
-      },
-      {
-        "heading": "What Features Should an MVP Include?",
-        "body": "An MVP should include only the features needed to deliver the core value of the product. The goal is not to build everything at once. The goal is to prove that the product idea works.\n\nCommon MVP features include:\n\nThe right feature set depends on your idea, target users, product type, and validation goal.",
-        "items": [
-          "User registration and login",
-          "Core product feature",
-          "User dashboard",
-          "Admin dashboard",
-          "Basic reporting",
-          "Payment or subscription flow",
-          "Notifications",
-          "Search or filtering",
-          "User profile",
-          "Database management",
-          "API integrations",
-          "Feedback collection",
-          "Analytics setup"
-        ]
-      },
-      {
-        "heading": "MVP vs Prototype vs PoC",
-        "body": "If you only need to show an idea visually, a prototype may be enough. If you need to prove a technical concept, a PoC may be better. If you want users to test and use the product, an MVP is the right option.",
-        "items": []
-      },
-      {
-        "heading": "How Long Does MVP Development Take?",
-        "body": "MVP development time depends on the product scope, features, design complexity, integrations, and platform type.\n\nA simple MVP can be built faster when the scope is clear and the features are limited. A complex MVP with mobile apps, dashboards, payments, AI features, or multiple user roles will take longer.\n\nThe best way to reduce timeline is to start with essential features only and improve the product after launch based on real user feedback.",
-        "items": []
-      },
-      {
-        "heading": "What Affects MVP Development Cost?",
-        "body": "MVP development cost depends on:\n\nClickMasters helps you define a practical MVP scope so you can avoid spending budget on features that are not needed in the first version.",
-        "items": [
-          "Number of features",
-          "Web app, mobile app, or SaaS platform",
-          "UI/UX design requirements",
-          "Frontend and backend complexity",
-          "Database structure",
-          "Third-party integrations",
-          "Payment or subscription system",
-          "AI features",
-          "Testing requirements",
-          "Post-launch support"
-        ]
-      },
-      {
-        "heading": "Build an MVP Before Building the Full Product",
-        "body": "An MVP helps you make better product decisions before investing in a full software platform. Instead of guessing what users want, you can launch a focused version, collect feedback, measure usage, and improve the product with real evidence.\n\nClickMasters builds MVPs that help startups and businesses validate ideas, reduce risk, and move towards a stronger full product.",
-        "items": []
-      }
-    ],
-    "tables": [
-      {
-        "title": "MVP vs Prototype vs PoC",
-        "headers": [
-          "Type",
-          "Purpose",
-          "Best For"
-        ],
-        "rows": [
-          [
-            "Prototype",
-            "Shows how the product may look and work",
-            "Presenting design and user flow"
-          ],
-          [
-            "PoC",
-            "Proves if a technical idea is possible",
-            "Testing technical feasibility"
-          ],
-          [
-            "MVP",
-            "Launches a usable first version for real users",
-            "Validating market demand"
-          ],
-          [
-            "Full Product",
-            "Builds the complete product after validation",
-            "Scaling and long-term growth"
-          ]
-        ]
-      }
-    ],
-    "costFactors": [
-      "Number of features",
-      "Web app, mobile app, or SaaS platform",
-      "UI/UX design requirements",
-      "Frontend and backend complexity",
-      "Database structure",
-      "Third-party integrations",
-      "Payment or subscription system",
-      "AI features",
-      "Testing requirements",
-      "Post-launch support"
-    ],
-    "whyChoose": [
-      {
-        "title": "Why Choose ClickMasters for MVP Development?",
-        "body": "ClickMasters helps businesses move from idea to launch with a clear and practical MVP development process. We focus on building software that is useful, testable, and ready for future improvement.\n\nYou can choose us for:",
-        "items": [
-          "Clear MVP planning",
-          "Practical feature prioritisation",
-          "UI/UX design support",
-          "Custom software development",
-          "Web, mobile, SaaS, and AI MVPs",
-          "Scalable architecture",
-          "Testing and QA",
-          "Launch support",
-          "Post-launch improvement",
-          "Long-term software development support"
-        ]
-      }
-    ],
-    "faqs": [
-      {
-        "question": "What are MVP development services?",
-        "answer": "MVP development services include planning, designing, building, testing, and launching a minimum viable product with the essential features needed to validate a product idea."
-      },
-      {
-        "question": "What does MVP mean in software development?",
-        "answer": "MVP stands for Minimum Viable Product. It is the first usable version of a software product built with core features for early users."
-      },
-      {
-        "question": "Who needs MVP development?",
-        "answer": "MVP development is useful for startups, founders, small businesses, and companies that want to test a software idea before investing in full product development."
-      },
-      {
-        "question": "Can you build a SaaS MVP?",
-        "answer": "Yes. We can build SaaS MVPs with user accounts, dashboards, subscriptions, admin panels, billing features, and scalable architecture."
-      },
-      {
-        "question": "Can you build a mobile app MVP?",
-        "answer": "Yes. We can build Android, iOS, and cross-platform mobile app MVPs based on your product goals and target users."
-      },
-      {
-        "question": "How much does MVP development cost?",
-        "answer": "The cost depends on features, design, platform, integrations, user roles, and complexity. A focused MVP with fewer features costs less than a complex SaaS or mobile product."
-      },
-      {
-        "question": "How long does it take to build an MVP?",
-        "answer": "The timeline depends on scope and complexity. A simple MVP can be completed faster, while a complex product with multiple features, dashboards, and integrations needs more time."
-      },
-      {
-        "question": "Can an MVP become a full product later?",
-        "answer": "Yes. A well-planned MVP can be improved and scaled into a complete software product after validation, user feedback, and product roadmap planning."
-      }
-    ],
-    "relatedLinks": [
-      {
-        "label": "software development services",
-        "href": "/software-development"
-      }
-    ],
-    "jsonLd": {
-      "faqPage": {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/mvp-development#faq",
-        "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/mvp-development",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What are MVP development services?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "MVP development services include planning, designing, building, testing, and launching a minimum viable product with the essential features needed to validate a product idea."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What does MVP mean in software development?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "MVP stands for Minimum Viable Product. It is the first usable version of a software product built with core features for early users."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Who needs MVP development?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "MVP development is useful for startups, founders, small businesses, and companies that want to test a software idea before investing in full product development."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you build a SaaS MVP?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. ClickMasters can build SaaS MVPs with user accounts, dashboards, subscriptions, admin panels, billing features, and scalable architecture."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you build a mobile app MVP?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. ClickMasters can build Android, iOS, and cross-platform mobile app MVPs based on your product goals and target users."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How much does MVP development cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The cost depends on features, design, platform, integrations, user roles, and complexity. A focused MVP with fewer features costs less than a complex SaaS or mobile product."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does it take to build an MVP?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The timeline depends on scope and complexity. A simple MVP can be completed faster, while a complex product with multiple features, dashboards, and integrations needs more time."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can an MVP become a full product later?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. A well-planned MVP can be improved and scaled into a complete software product after validation, user feedback, and product roadmap planning."
-            }
-          }
-        ]
-      },
-      "service": {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/mvp-development#service",
-        "name": "MVP Development Services UK",
-        "alternateName": [
-          "MVP Development Services",
-          "MVP Development Company UK",
-          "Minimum Viable Product Development",
-          "MVP Software Development",
-          "Startup MVP Development"
-        ],
-        "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/mvp-development",
-        "description": "MVP development services for startups, founders and businesses that need to validate software ideas, launch faster, collect user feedback and build a scalable foundation for future product development.",
-        "serviceType": "MVP Development",
-        "category": "Software Development",
-        "provider": {
-          "@type": "Organization",
-          "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/#organization",
-          "name": "ClickMasters Software Development Company",
-          "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "United Kingdom"
-        },
-        "audience": {
-          "@type": "BusinessAudience",
-          "audienceType": "Startups, founders, small businesses and growing companies"
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "MVP Development Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "MVP Discovery and Product Strategy"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "MVP Feature Prioritisation"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "MVP UI/UX Design"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "MVP Web Application Development"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "MVP Mobile App Development"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "SaaS MVP Development"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "AI MVP Development"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "MVP Testing and QA"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "MVP Launch Support"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "MVP Iteration and Scaling"
-              }
-            }
-          ]
-        },
-        "isRelatedTo": [
-          {
-            "@type": "Service",
-            "name": "Software Development Services",
-            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development"
-          },
-          {
-            "@type": "Service",
-            "name": "SaaS Product Development",
-            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/saas-product-development"
-          },
-          {
-            "@type": "Service",
-            "name": "Custom Software Development",
-            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/custom-software-development"
-          },
-          {
-            "@type": "Service",
-            "name": "Frontend Development Services",
-            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/frontend-development"
-          },
-          {
-            "@type": "Service",
-            "name": "Backend Development Services",
-            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/backend-development"
-          },
-          {
-            "@type": "Service",
-            "name": "Full Stack Development Services",
-            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/full-stack-development"
-          },
-          {
-            "@type": "Service",
-            "name": "Mobile App Development",
-            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/mobile-development/mobile-app-development"
-          },
-          {
-            "@type": "Service",
-            "name": "Artificial Intelligence Development",
-            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/artificial-intelligence-ai"
-          }
-        ]
-      }
-    },
-    "sourceFile": "`mvp-development.md"
   },
   {
     "slug": "model-training-optimisation",
@@ -20049,7 +19517,7 @@ export const subServicesMd = [
     "h1": "Microservices Architecture Page",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/microservices-architecture",
     "metaTitle": "Microservices Architecture Services UK | ClickMasters",
-    "metaDescription": "",
+    "metaDescription": "Build scalable, flexible applications with microservices architecture services in the UK. ClickMasters helps modernise, integrate and optimise complex software. Microservices Architecture Page",
     "metaKeywords": [
       "microservices architecture services",
       "Microservices Architecture Page"
@@ -21674,6 +21142,538 @@ export const subServicesMd = [
       }
     },
     "sourceFile": "mobile app.md"
+  },
+  {
+    "slug": "mvp-development",
+    "categorySlug": "software-development",
+    "category": "Software Development",
+    "title": "MVP Development Services",
+    "serviceName": "MVP Development Services UK",
+    "h1": "MVP Development Services",
+    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/mvp-development",
+    "metaTitle": "MVP Development Services UK | ClickMasters",
+    "metaDescription": "ClickMasters provides MVP development services for startups and businesses that want to validate ideas, launch faster, reduce risk, and build scalable software products.",
+    "metaKeywords": [
+      "MVP development services",
+      "MVP development services UK"
+    ],
+    "intro": [
+      "`/software-development/mvp-development`",
+      "MVP Development Services UK | ClickMasters",
+      "ClickMasters provides MVP development services for startups and businesses that want to validate ideas, launch faster, reduce risk, and build scalable software products."
+    ],
+    "sections": [
+      {
+        "heading": "H1: MVP Development Services",
+        "body": "ClickMasters provides MVP development services for startups, founders, and businesses that want to turn an idea into a working software product. We help you plan, design, build, test, and launch a minimum viable product with the core features needed to validate your idea with real users.\n\nAn MVP helps you enter the market faster, reduce development risk, collect user feedback, and understand whether your product idea has real demand before investing in full-scale development.\n\nExplore our complete [software development services](/software-development) for custom software, SaaS, enterprise, API, backend, frontend, and full stack development capabilities.",
+        "items": []
+      },
+      {
+        "heading": "MVP Development Services for Startups and Businesses",
+        "body": "Building a full software product without validation can be risky and expensive. An MVP gives you a focused first version of your product, built around the most important features your users need.\n\nClickMasters helps businesses build MVPs for web applications, mobile apps, SaaS platforms, marketplaces, internal tools, customer portals, and AI-powered software products. Our approach focuses on clear scope, practical features, clean design, reliable development, and a scalable foundation for future growth.",
+        "items": []
+      },
+      {
+        "heading": "What Is MVP Development?",
+        "body": "MVP development is the process of building a minimum viable product with only the essential features needed to test a business idea, solve a real user problem, and gather feedback from early users.\n\nAn MVP is not an unfinished or low-quality product. It is a carefully planned first version that helps you validate your concept before building a complete product.\n\nA strong MVP should help you answer important questions:",
+        "items": [
+          "Do users understand the product?",
+          "Does the product solve a real problem?",
+          "Which features are actually needed?",
+          "Are users willing to sign up, use, or pay?",
+          "What should be improved before scaling?"
+        ]
+      },
+      {
+        "heading": "Our MVP Development Services",
+        "body": "",
+        "items": []
+      },
+      {
+        "heading": "MVP Discovery & Product Strategy",
+        "body": "We start by understanding your idea, target users, business model, goals, and competition. This helps us define the right MVP scope before development begins.",
+        "items": []
+      },
+      {
+        "heading": "Feature Prioritisation",
+        "body": "Not every feature belongs in the first version. We help you separate must-have features from future features so your MVP stays focused, lean, and easier to launch.",
+        "items": []
+      },
+      {
+        "heading": "UI/UX Design",
+        "body": "We design clean user flows, wireframes, and product screens so your MVP is simple to use and easy to understand for early users.",
+        "items": []
+      },
+      {
+        "heading": "MVP Web Application Development",
+        "body": "We build browser-based MVPs such as dashboards, portals, SaaS platforms, marketplaces, booking systems, and business software.",
+        "items": []
+      },
+      {
+        "heading": "MVP Mobile App Development",
+        "body": "We develop MVP mobile apps for Android, iOS, or cross-platform use, depending on your users, budget, and launch goals.",
+        "items": []
+      },
+      {
+        "heading": "SaaS MVP Development",
+        "body": "We build SaaS MVPs with user accounts, dashboards, subscriptions, admin panels, billing flows, and scalable product architecture.",
+        "items": []
+      },
+      {
+        "heading": "AI MVP Development",
+        "body": "We can build AI-powered MVPs with chatbots, AI agents, document processing, LLM features, automation, and AI integrations where required.",
+        "items": []
+      },
+      {
+        "heading": "MVP Testing & QA",
+        "body": "Before launch, we test your MVP for usability, bugs, performance, security, and key user flows to make sure it works properly.",
+        "items": []
+      },
+      {
+        "heading": "MVP Launch Support",
+        "body": "We help prepare your MVP for launch so you can start collecting real feedback, tracking users, and improving the product.",
+        "items": []
+      },
+      {
+        "heading": "MVPs We Can Build",
+        "body": "ClickMasters can build different types of MVP software, including:",
+        "items": [
+          "SaaS MVPs",
+          "Web app MVPs",
+          "Mobile app MVPs",
+          "Marketplace MVPs",
+          "AI MVPs",
+          "CRM MVPs",
+          "Booking system MVPs",
+          "Customer portal MVPs",
+          "Admin dashboard MVPs",
+          "Internal business tool MVPs",
+          "Ecommerce MVPs",
+          "Workflow automation MVPs"
+        ]
+      },
+      {
+        "heading": "Our MVP Development Process",
+        "body": "",
+        "items": []
+      },
+      {
+        "heading": "1. Idea Review",
+        "body": "We discuss your idea, target audience, product goals, business model, and expected outcome.",
+        "items": []
+      },
+      {
+        "heading": "2. Research and Planning",
+        "body": "We review the market, competitors, users, main features, and technical requirements.",
+        "items": []
+      },
+      {
+        "heading": "3. MVP Scope Definition",
+        "body": "We define the essential features needed for the first version and remove unnecessary complexity.",
+        "items": []
+      },
+      {
+        "heading": "4. Wireframing and UI/UX Design",
+        "body": "We create user journeys, screens, and clickable prototypes so the MVP structure is clear before coding.",
+        "items": []
+      },
+      {
+        "heading": "5. Software Development",
+        "body": "Our team builds the MVP using the right frontend, backend, database, API, and integration setup.",
+        "items": []
+      },
+      {
+        "heading": "6. Testing and Quality Assurance",
+        "body": "We test the product to make sure the main features work smoothly across users, devices, and workflows.",
+        "items": []
+      },
+      {
+        "heading": "7. Launch and Feedback",
+        "body": "After launch, your MVP can be tested with real users. Feedback, analytics, and user behaviour can guide the next version.",
+        "items": []
+      },
+      {
+        "heading": "8. Iteration and Scaling",
+        "body": "Once the MVP is validated, we help improve features, add new modules, optimise performance, and scale the product.",
+        "items": []
+      },
+      {
+        "heading": "What Features Should an MVP Include?",
+        "body": "An MVP should include only the features needed to deliver the core value of the product. The goal is not to build everything at once. The goal is to prove that the product idea works.\n\nCommon MVP features include:\n\nThe right feature set depends on your idea, target users, product type, and validation goal.",
+        "items": [
+          "User registration and login",
+          "Core product feature",
+          "User dashboard",
+          "Admin dashboard",
+          "Basic reporting",
+          "Payment or subscription flow",
+          "Notifications",
+          "Search or filtering",
+          "User profile",
+          "Database management",
+          "API integrations",
+          "Feedback collection",
+          "Analytics setup"
+        ]
+      },
+      {
+        "heading": "MVP vs Prototype vs PoC",
+        "body": "If you only need to show an idea visually, a prototype may be enough. If you need to prove a technical concept, a PoC may be better. If you want users to test and use the product, an MVP is the right option.",
+        "items": []
+      },
+      {
+        "heading": "How Long Does MVP Development Take?",
+        "body": "MVP development time depends on the product scope, features, design complexity, integrations, and platform type.\n\nA simple MVP can be built faster when the scope is clear and the features are limited. A complex MVP with mobile apps, dashboards, payments, AI features, or multiple user roles will take longer.\n\nThe best way to reduce timeline is to start with essential features only and improve the product after launch based on real user feedback.",
+        "items": []
+      },
+      {
+        "heading": "What Affects MVP Development Cost?",
+        "body": "MVP development cost depends on:\n\nClickMasters helps you define a practical MVP scope so you can avoid spending budget on features that are not needed in the first version.",
+        "items": [
+          "Number of features",
+          "Web app, mobile app, or SaaS platform",
+          "UI/UX design requirements",
+          "Frontend and backend complexity",
+          "Database structure",
+          "Third-party integrations",
+          "Payment or subscription system",
+          "AI features",
+          "Testing requirements",
+          "Post-launch support"
+        ]
+      },
+      {
+        "heading": "Build an MVP Before Building the Full Product",
+        "body": "An MVP helps you make better product decisions before investing in a full software platform. Instead of guessing what users want, you can launch a focused version, collect feedback, measure usage, and improve the product with real evidence.\n\nClickMasters builds MVPs that help startups and businesses validate ideas, reduce risk, and move towards a stronger full product.",
+        "items": []
+      }
+    ],
+    "tables": [
+      {
+        "title": "MVP vs Prototype vs PoC",
+        "headers": [
+          "Type",
+          "Purpose",
+          "Best For"
+        ],
+        "rows": [
+          [
+            "Prototype",
+            "Shows how the product may look and work",
+            "Presenting design and user flow"
+          ],
+          [
+            "PoC",
+            "Proves if a technical idea is possible",
+            "Testing technical feasibility"
+          ],
+          [
+            "MVP",
+            "Launches a usable first version for real users",
+            "Validating market demand"
+          ],
+          [
+            "Full Product",
+            "Builds the complete product after validation",
+            "Scaling and long-term growth"
+          ]
+        ]
+      }
+    ],
+    "costFactors": [
+      "Number of features",
+      "Web app, mobile app, or SaaS platform",
+      "UI/UX design requirements",
+      "Frontend and backend complexity",
+      "Database structure",
+      "Third-party integrations",
+      "Payment or subscription system",
+      "AI features",
+      "Testing requirements",
+      "Post-launch support"
+    ],
+    "whyChoose": [
+      {
+        "title": "Why Choose ClickMasters for MVP Development?",
+        "body": "ClickMasters helps businesses move from idea to launch with a clear and practical MVP development process. We focus on building software that is useful, testable, and ready for future improvement.\n\nYou can choose us for:",
+        "items": [
+          "Clear MVP planning",
+          "Practical feature prioritisation",
+          "UI/UX design support",
+          "Custom software development",
+          "Web, mobile, SaaS, and AI MVPs",
+          "Scalable architecture",
+          "Testing and QA",
+          "Launch support",
+          "Post-launch improvement",
+          "Long-term software development support"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are MVP development services?",
+        "answer": "MVP development services include planning, designing, building, testing, and launching a minimum viable product with the essential features needed to validate a product idea."
+      },
+      {
+        "question": "What does MVP mean in software development?",
+        "answer": "MVP stands for Minimum Viable Product. It is the first usable version of a software product built with core features for early users."
+      },
+      {
+        "question": "Who needs MVP development?",
+        "answer": "MVP development is useful for startups, founders, small businesses, and companies that want to test a software idea before investing in full product development."
+      },
+      {
+        "question": "Can you build a SaaS MVP?",
+        "answer": "Yes. We can build SaaS MVPs with user accounts, dashboards, subscriptions, admin panels, billing features, and scalable architecture."
+      },
+      {
+        "question": "Can you build a mobile app MVP?",
+        "answer": "Yes. We can build Android, iOS, and cross-platform mobile app MVPs based on your product goals and target users."
+      },
+      {
+        "question": "How much does MVP development cost?",
+        "answer": "The cost depends on features, design, platform, integrations, user roles, and complexity. A focused MVP with fewer features costs less than a complex SaaS or mobile product."
+      },
+      {
+        "question": "How long does it take to build an MVP?",
+        "answer": "The timeline depends on scope and complexity. A simple MVP can be completed faster, while a complex product with multiple features, dashboards, and integrations needs more time."
+      },
+      {
+        "question": "Can an MVP become a full product later?",
+        "answer": "Yes. A well-planned MVP can be improved and scaled into a complete software product after validation, user feedback, and product roadmap planning."
+      }
+    ],
+    "relatedLinks": [
+      {
+        "label": "software development services",
+        "href": "/software-development"
+      }
+    ],
+    "jsonLd": {
+      "faqPage": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/mvp-development#faq",
+        "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/mvp-development",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are MVP development services?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MVP development services include planning, designing, building, testing, and launching a minimum viable product with the essential features needed to validate a product idea."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does MVP mean in software development?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MVP stands for Minimum Viable Product. It is the first usable version of a software product built with core features for early users."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who needs MVP development?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MVP development is useful for startups, founders, small businesses, and companies that want to test a software idea before investing in full product development."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you build a SaaS MVP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. ClickMasters can build SaaS MVPs with user accounts, dashboards, subscriptions, admin panels, billing features, and scalable architecture."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you build a mobile app MVP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. ClickMasters can build Android, iOS, and cross-platform mobile app MVPs based on your product goals and target users."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does MVP development cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The cost depends on features, design, platform, integrations, user roles, and complexity. A focused MVP with fewer features costs less than a complex SaaS or mobile product."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to build an MVP?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The timeline depends on scope and complexity. A simple MVP can be completed faster, while a complex product with multiple features, dashboards, and integrations needs more time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can an MVP become a full product later?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A well-planned MVP can be improved and scaled into a complete software product after validation, user feedback, and product roadmap planning."
+            }
+          }
+        ]
+      },
+      "service": {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/mvp-development#service",
+        "name": "MVP Development Services UK",
+        "alternateName": [
+          "MVP Development Services",
+          "MVP Development Company UK",
+          "Minimum Viable Product Development",
+          "MVP Software Development",
+          "Startup MVP Development"
+        ],
+        "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/mvp-development",
+        "description": "MVP development services for startups, founders and businesses that need to validate software ideas, launch faster, collect user feedback and build a scalable foundation for future product development.",
+        "serviceType": "MVP Development",
+        "category": "Software Development",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://clickmasterssoftwaredevelopmentcompany.co.uk/#organization",
+          "name": "ClickMasters Software Development Company",
+          "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United Kingdom"
+        },
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": "Startups, founders, small businesses and growing companies"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "MVP Development Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "MVP Discovery and Product Strategy"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "MVP Feature Prioritisation"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "MVP UI/UX Design"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "MVP Web Application Development"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "MVP Mobile App Development"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "SaaS MVP Development"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI MVP Development"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "MVP Testing and QA"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "MVP Launch Support"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "MVP Iteration and Scaling"
+              }
+            }
+          ]
+        },
+        "isRelatedTo": [
+          {
+            "@type": "Service",
+            "name": "Software Development Services",
+            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development"
+          },
+          {
+            "@type": "Service",
+            "name": "SaaS Product Development",
+            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/saas-product-development"
+          },
+          {
+            "@type": "Service",
+            "name": "Custom Software Development",
+            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/custom-software-development"
+          },
+          {
+            "@type": "Service",
+            "name": "Frontend Development Services",
+            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/frontend-development"
+          },
+          {
+            "@type": "Service",
+            "name": "Backend Development Services",
+            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/backend-development"
+          },
+          {
+            "@type": "Service",
+            "name": "Full Stack Development Services",
+            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/full-stack-development"
+          },
+          {
+            "@type": "Service",
+            "name": "Mobile App Development",
+            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/mobile-development/mobile-app-development"
+          },
+          {
+            "@type": "Service",
+            "name": "Artificial Intelligence Development",
+            "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/artificial-intelligence-ai"
+          }
+        ]
+      }
+    },
+    "sourceFile": "mvp-development.md"
   },
   {
     "slug": "natural-language-processing",
@@ -24818,10 +24818,10 @@ export const subServicesMd = [
     "categorySlug": "design-ui-ux",
     "category": "Design UI/UX",
     "title": "Product Design for Software & Digital Products",
-    "serviceName": "Product Design for Software & Digital Products",
+    "serviceName": "Digital Product Design Services UK",
     "h1": "Product Design for Software & Digital Products",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/design-ui-ux/product-design",
-    "metaTitle": "",
+    "metaTitle": "Digital Product Design Services UK | Clickmasters",
     "metaDescription": "Digital product design services in the UK for SaaS, apps and software, covering UX research, product strategy, wireframes, prototypes and UI design. Digital Product Design Services UK",
     "metaKeywords": [],
     "intro": [
@@ -39271,11 +39271,11 @@ export const subServicesMd = [
     "categorySlug": "web-development",
     "category": "Web Development",
     "title": "WooCommerce Developement for UK Businesses",
-    "serviceName": "WooCommerce Developement for UK Businesses",
+    "serviceName": "WooCommerce Development Services UK",
     "h1": "WooCommerce Developement for UK Businesses",
     "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/web-development/woocommerce-development",
-    "metaTitle": "",
-    "metaDescription": "",
+    "metaTitle": "WooCommerce Development Services UK | Clickmasters",
+    "metaDescription": "Custom WooCommerce development services in the UK for store builds, plugins, integrations, migrations, performance optimisation and ongoing support. WooCommerce Development Services UK",
     "metaKeywords": [],
     "intro": [
       "WooCommerce plugins extend the capabilities of the ecommerce platform.",

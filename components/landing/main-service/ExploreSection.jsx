@@ -38,21 +38,32 @@ export function ExploreSection({ serviceData }) {
 
   const isServicePage = !!serviceData;
 
-  const allLinks = isServicePage && serviceData.subServices
-    ? serviceData.subServices.map((subService) => ({
-      href: `/${serviceData.slug}/${subService.slug}`,
-      title: subService.title,
-      desc: subService.description,
-      ariaLabel: `Learn about ${subService.title}: ${subService.description}`,
-      icon: subService.icon,
-    }))
+  const allLinks = isServicePage
+    ? (serviceData.childServices && serviceData.childServices.length > 0
+        ? serviceData.childServices.map((child) => ({
+            href: child.url || `/${serviceData.slug}`,
+            title: child.title,
+            desc: child.description || '',
+            ariaLabel: `Learn about ${child.title}`,
+            icon: child.icon || 'Code2',
+          }))
+        : serviceData.subServices
+          ? serviceData.subServices.map((subService) => ({
+              href: `/${serviceData.slug}/${subService.slug}`,
+              title: subService.title,
+              desc: subService.description,
+              ariaLabel: `Learn about ${subService.title}: ${subService.description}`,
+              icon: subService.icon,
+            }))
+          : []
+      )
     : Object.values(mainServicesData).map((service) => ({
-      href: `/${service.slug}`,
-      title: service.title,
-      desc: service.description,
-      ariaLabel: `Learn about ${service.title}: ${service.description}`,
-      icon: service.icon,
-    }));
+        href: `/${service.slug}`,
+        title: service.title,
+        desc: service.description,
+        ariaLabel: `Learn about ${service.title}: ${service.description}`,
+        icon: service.icon,
+      }));
 
   const displayedLinks = showAll ? allLinks : allLinks.slice(0, 12);
   const hasMoreItems = allLinks.length > 12;

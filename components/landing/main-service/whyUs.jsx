@@ -111,7 +111,21 @@ function BenefitCard({
  * Why Choose Us section — data from @/data/whyChooseUsData.js (keyed by slug).
  */
 export function WhyChooseUs({ slug, service, countryName }) {
-  const data = getWhyChooseUsData(slug, service);
+  const mdWhyChoose = service?.whyChoose;
+  const data = mdWhyChoose && mdWhyChoose.length > 0
+    ? {
+        subtitle: `Proven expertise in ${service?.title || 'software development'} — delivering measurable results for businesses across the UK.`,
+        stats: service?.stats?.length
+          ? service.stats.map(s => ({ number: s.value, label: s.label }))
+          : [],
+        benefits: mdWhyChoose.map(item => ({
+          icon: 'Check',
+          title: item.title,
+          description: item.description,
+          features: item.features || [],
+        })),
+      }
+    : getWhyChooseUsData(slug, service);
 
   const displaySubtitle = data.subtitle;
   const stats = data.stats ?? [];
