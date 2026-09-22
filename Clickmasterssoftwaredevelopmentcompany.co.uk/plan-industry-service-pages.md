@@ -18,7 +18,7 @@
 | 4 | Comparison Pages | 177 | 141 | `/comparison/[slug]/` | ✅ |
 | 5 | Resource Guides | 103 | 80 | `/resource/[slug]/` | ✅ |
 | 6 | International City | 306 | 203 | `/cities/[slug]/` | ✅ |
-| **7** | **Industry / Service** | **215** | **TBD** | **`/[category]/[service]/`** | **🔲 Not Started** |
+| **7** | **Industry / Service** | **215** | **TBD** | **`/[mainservice]/[subservice]/`** | **🔲 Not Started** |
 | 8 | Glossary | 200 | TBD | `/glossary/[term]/` | 🔲 Pending |
 
 ---
@@ -153,7 +153,7 @@ ClickMasters_P1002_healthtech_qa-testing.docx
 
 - **215 DOCX files** located under `Clickmasterssoftwaredevelopmentcompany.co.uk/Industry-Service-Page/`
 - Data file `data/industry-services.js` — does not exist yet
-- Existing route `app/(landing)/[category]/[service]/page.js` — exists but uses `data/sub-services.js` (manually created data, not from DOCX)
+- Existing route `app/(landing)/[mainservice]/[subservice]/page.js` — exists but uses `data/sub-services.js` (manually created data, not from DOCX)
 - Need to: create conversion script → generate data → update existing route
 
 ---
@@ -190,9 +190,9 @@ Following the established pattern:
 
 ### Phase 3: Update Existing Route + Create New Listing Route
 
-**Update existing:** `app/(landing)/[category]/[service]/page.js` — change import from `data/sub-services.js` to `data/industry-services.js`
+**Update existing:** `app/(landing)/[mainservice]/[subservice]/page.js` — change import from `data/sub-services.js` to `data/industry-services.js`
 
-**Create new:** `app/(landing)/[category]/page.js` — industry listing page showing all services for that industry
+**Create new:** `app/(landing)/[mainservice]/page.js` — industry listing page showing all services for that industry
 
 ---
 
@@ -216,8 +216,8 @@ Following the established pattern:
 - [ ] **Step 2:** Create conversion script `scripts/convert-industry-services.js`
 - [ ] **Step 3:** Run script on 215 files → generate `data/industry-services.js`
 - [ ] **Step 4:** Add lightweight data helpers
-- [ ] **Step 5:** Update existing `app/(landing)/[category]/[service]/page.js` to use `data/industry-services.js`
-- [ ] **Step 6:** Create `app/(landing)/[category]/page.js` (industry listing page)
+- [ ] **Step 5:** Update existing `app/(landing)/[mainservice]/[subservice]/page.js` to use `data/industry-services.js`
+- [ ] **Step 6:** Create `app/(landing)/[mainservice]/page.js` (industry listing page)
 - [ ] **Step 7:** Run production build and verify all pages pre-render
 
 ---

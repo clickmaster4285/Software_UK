@@ -170,7 +170,7 @@ Uses `useCaseStudy(id)` hook → expects data from MongoDB via API.
 2. Comparison Page (177) → `data/comparisons.js` → `/comparison/[slug]/`
 3. Resource Guide (83) → `data/resource-guides.js` → `/resource/[slug]/`
 4. International City (179) → `data/cities.js` → `/cities/[slug]/`
-5. Industry / Service Page (573) → `data/services.js` → `/[category]/[service]/`
+5. Main & Sub-Service Pages (1,414+) → `data/main-services.js` + `data/sub-services.js` → `/[mainservice]/` + `/[mainservice]/[subservice]/`
 
 ### 🔲 Known Issues to Address
 - `deliveryModel` and `timeline` fields are empty across all case studies (source DOCX lack these fields)
@@ -229,7 +229,7 @@ export const caseStudies = [
 | Comparison Page | 177 | `data/comparisons.js` | `/comparison/[slug]/` |
 | Resource Guide | 83 | `data/resource-guides.js` | `/resource/[slug]/` |
 | International City | 179 | `data/cities.js` | `/cities/[slug]/` |
-| Industry / Service | 573 | `data/services.js` | `/[category]/[service]/` |
+| Industry / Service | 573 | `data/main-services.js` + `data/sub-services.js` | `/[mainservice]/[subservice]/` |
 
 ---
 
@@ -359,7 +359,7 @@ const bullets = content.split(/(?<=\.)\s+(?=[A-Z])|;\s*/);
 - [ ] Comparison Page (177) → `data/comparisons.js`
 - [ ] Resource Guide (83) → `data/resource-guides.js`
 - [ ] International City (179) → `data/cities.js`
-- [ ] Industry / Service Page (573) → `data/services.js`
+- [x] Main & Sub-Service Pages (1,414+) → `data/main-services.js` + `data/sub-services.js`
 
 ---
 

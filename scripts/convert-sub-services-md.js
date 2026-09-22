@@ -193,6 +193,7 @@ function extractKeywords(content) {
 // ─── Main MD Parser ──────────────────────────────────────────────────────────
 
 function parseMd(content) {
+  content = content.replace(/\r/g, '');
   const lines = content.split(/\r?\n/);
   const out = {
     slug: '',
@@ -215,14 +216,31 @@ function parseMd(content) {
     jsonLd: extractSchemas(content),
   };
 
-  // 1. Meta Title (handles ## **Meta Title**, ## **`Meta Title`**, and inline Meta Title:)
-  const titleMatch = content.match(/(?:#*\s*\**`?Meta Title`?[:\s]*\**\s*|\n##\s*\*\*`?Meta Title`?\*\*\s*\n+)([^\n]+?)(?=\s*\*\*|$)/im);
+    // 1. Meta Title (prioritize ## **Meta Title**, then inline **Meta Title:** content, then standalone **Meta Title:** with content next line)
+  const titleMatch = content.match(/\n##[ \t]*\*\*`?Meta Title`?\*\*[ \t]*\n+([^\n]+)/im)
+    || content.match(/#[ \t]*\*\*`?Meta Title`?:\s*\*\*?[ \t]+([^\n]+)/im)
+    || content.match(/\n\*\*`?Meta Title`?:\*\*[ \t]*\n+([^\n]+)/im)
+    || content.match(/\n\*\*`?Meta Title`?\*\*[ \t]*\n+([^\n]+)/im)
+    || content.match(/\*\*Meta Title\*\*[ \t]*\n+([^\n]+)/im)
+    || content.match(/Meta Title:\s*(.+?)(?:\s+\**Meta Description)/im)
+    || content.match(/Meta Title:\*{0,2}\s*\n+\s*([^\n]+)/im)
+    || content.match(/Meta Title:\s*([^\n]+)/im)
+    || content.match(/Meta Title\*{0,2}\s+([^\n]+)/im)
+    || content.match(/\n\s*Meta Title:\s*\n+([^\n]+)/im);
   if (titleMatch) {
     out.metaTitle = clean(titleMatch[1]);
   }
 
-  // 2. Meta Description (handles ## **Meta Description**, ## **`Meta Description`**, and inline)
-  const descMatch = content.match(/(?:#*\s*\**`?Meta Description`?[:\s]*\**\s*|\n##\s*\*\*`?Meta Description`?\*\*\s*\n+)([^\n]+?)(?=\s*\*\*|$)/im);
+  // 2. Meta Description (prioritize ## **Meta Description**, then inline **Meta Description:** content, then standalone **Meta Description:** with content next line)
+  const descMatch = content.match(/\n##[ \t]*\*\*`?Meta Description`?\*\*[ \t]*\n+([^\n]+)/im)
+    || content.match(/#[ \t]*\*\*`?Meta Description`?:\s*\*\*?[ \t]+([^\n]+)/im)
+    || content.match(/\n\*\*`?Meta Description`?:\*\*[ \t]*\n+([^\n]+)/im)
+    || content.match(/\n\*\*`?Meta Description`?\*\*[ \t]*\n+([^\n]+)/im)
+    || content.match(/\*\*Meta Description\*\*[ \t]*\n+([^\n]+)/im)
+    || content.match(/Meta Description[:\s]*\*{0,2}\s*\n+\s*([^\n]+)/im)
+    || content.match(/Meta Description[:\s]+([^\n]+)/im)
+    || content.match(/Meta Description\*{0,2}\s+([^\n]+)/im)
+    || content.match(/\n\s*Meta Description\s*[:\s]*\n+\s*([^\n]+)/im);
   if (descMatch) {
     out.metaDescription = clean(descMatch[1]);
   }
@@ -249,6 +267,7 @@ function parseMd(content) {
     'dapp-development': 'decentralized-app-dapp-development',
     'compliance-management': 'compliance-risk-management',
     'model-training-optimization': 'model-training-optimisation',
+    'nlp': 'natural-language-processing',
   };
   if (slugAliases[out.slug]) {
     out.slug = slugAliases[out.slug];

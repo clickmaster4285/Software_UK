@@ -13,9 +13,16 @@ const cards = [
   { subtitle: "Enterprise Security" },
 ];
 
-export function FinalCTA() {
+export function FinalCTA({ serviceData }) {
   const trackRef = useRef(null);
   const [paused, setPaused] = useState(false);
+
+  const cta = serviceData?.cta;
+  const heading = cta?.primary?.heading || "Have a software project in mind?";
+  const subheading = cta?.primary?.subheading || "Let's Build it Together";
+  const description = cta?.primary?.description || "Our software development team will discuss your requirements and propose a technical solution tailored to your specific business goals.";
+  const buttonText = cta?.primary?.buttonText || "Contact Us";
+  const buttonUrl = cta?.primary?.buttonUrl || "/contact";
 
   useEffect(() => {
     const el = trackRef.current;
@@ -64,23 +71,22 @@ export function FinalCTA() {
               </span>
               
               <h2 id="cta-heading" className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
-                Have a software project in mind?
+                {heading}
                 <br />
-                <span className="text-accent">Let&apos;s Build it Together</span>
+                <span className="text-accent">{subheading}</span>
               </h2>
               
               <p className="font-body text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-xl">
-                Our software development team will discuss your requirements and propose a technical solution 
-                tailored to your specific business goals.
+                {description}
               </p>  
               
               <div className="flex flex-wrap gap-4">
-                <button className="btn-primary group h-14 px-10 rounded-xl bg-accent text-white hover:bg-accent-hover transition-all duration-300 shadow-xl shadow-accent/20">
+                <a href={buttonUrl} className="btn-primary group h-14 px-10 rounded-xl bg-accent text-white hover:bg-accent-hover transition-all duration-300 shadow-xl shadow-accent/20 inline-flex items-center">
                   <span className="flex items-center gap-2">
-                    Contact Us
+                    {buttonText}
                     <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </span>
-                </button>
+                </a>
               </div>
             </div>
 

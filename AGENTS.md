@@ -49,8 +49,7 @@
 | Resource Guides | 105 | 80 | `/resource/` + `/resource/[slug]/` | `data/resource-guides.js` | ✅ |
 | Glossary | 200 | 200 | `/glossary/` + `/glossary/[term]/` | `data/glossary.js` | ✅ |
 | Industries | 202 | 148 | `/industries/` + `/industries/[slug]/` | `data/industries.js` | ✅ |
-| Standalone Services | 11 | TBD | `/service/[slug]/` | `data/services.js` | 🔲 |
-| **Total** | **1,785** | **~1,414** | | | **9/10 complete** |
+| **Total** | **1,774** | **~1,414** | | | **8/8 complete** |
 
 ### Static Pages (no data file needed)
 `/about/`, `/contact/`, `/faq/`, `/pricing/`, `/projects/`, `/solutions/`, `/testimonials/`, `/` (homepage)
@@ -74,11 +73,10 @@
 | [`plan-glossary.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-glossary.md) | Glossary | `/glossary/[term]/` | ✅ |
 | [`plan-hire-page.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-hire-page.md) | Hire Pages | `/hire/[role]/[city]/` | ✅ |
 | [`plan-industries-pages.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-industries-pages.md) | Industries | `/industries/[slug]/` | ✅ |
-| [`plan-industry-service-pages.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-industry-service-pages.md) | Industry+Service Combos | `/[category]/[service]/` | 🔲 |
+| [`plan-industry-service-pages.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-industry-service-pages.md) | Industry+Service Combos | `/[mainservice]/[subservice]/` | 🔲 |
 | [`plan-international-city.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-international-city.md) | International Cities (alt) | `/locations/[slug]/` | ✅ |
 | [`plan-resource.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-resource.md) | Resource Guides | `/resource/[slug]/` | ✅ |
 | [`plan-salary-guide.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-salary-guide.md) | Salary Guides | `/salary-guide/[slug]/` | ✅ |
-| [`plan-service-pages.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-service-pages.md) | Standalone Services | `/service/[slug]/` | 🔲 |
 
 ### Key Source Folders (DOCX)
 | Folder | Count | Description |
@@ -91,7 +89,6 @@
 | `International-City/` | 306 | City-specific documents |
 | `Resource-Guide/` | 105 | Resource guide documents |
 | `Salary-Guide/` | 193 | Salary benchmark documents |
-| `Service/` | 11 | Standalone service documents |
 
 ---
 
@@ -143,8 +140,10 @@ app/
 │   │   ├── page.js                    ← Listing page (metadata + canonical via siteConfig.url)
 │   │   └── [slug]/
 │   │       └── page.js                ← Detail page (generateMetadata with canonical)
-│   ├── [category]/[service]/
-│   │   └── page.js                    ← Sub-service detail (generateMetadata with canonical)
+│   ├── [mainservice]/
+│   │   ├── page.js                    ← Main service page (metadata + canonical)
+│   │   └── [subservice]/
+│   │       └── page.js                ← Sub-service detail (generateMetadata with canonical)
 │   ├── resource/
 │   │   ├── page.js                    ← Listing page (metadata + canonical)
 │   │   └── [slug]/
@@ -327,7 +326,6 @@ const Component = dynamic(() =>
 | `scripts/convert-industries.js` | Convert industry DOCX → `data/industries.js` |
 | `scripts/convert-sub-services-md.js` | Convert 39 sub-service Markdown files → `data/sub-services-md.js` (rich intros, tables, cost factors, why choose, FAQs, JSON-LD schemas) |
 | `scripts/convert-main-services-md.js` | Convert 7 main-service Markdown files → `data/main-services-md.js` |
-| `scripts/convert-service.js` | Convert standalone service DOCX → `data/services.js` (pending) |
 | `scripts/generate-url-sheet.js` | Generate Excel URL sheet from all data files |
 | `scripts/audit-canonical.js` | Audit all pages for canonical tag coverage |
 
@@ -339,7 +337,7 @@ const Component = dynamic(() =>
 |----------|--------|-----|
 | Storage | Data files (not MongoDB) | Simpler, follows proven pattern |
 | Build | SSG with `generateStaticParams` | Fastest, static CDN |
-| Route params | `[slug]` (not `[id]`) | Better SEO |
+| Route params | `[mainservice]` + `[subservice]` (not `[category]`/`[service]`) | Avoids confusion with industries pages; clearer semantics |
 | Duplicate handling | Lowest P-number as canonical | Consistent across all phases |
 | Client component metadata | Sibling `layout.js` | Next.js restriction — client components can't export metadata |
 | Domain in canonical | `clickmasterssoftwaredevelopmentcompany.co.uk` | Real domain (not `clickmasters.co`) |
@@ -355,9 +353,9 @@ const Component = dynamic(() =>
 1. ✅ **Main & Sub-Services MD Conversion** — Converted 28 sub-services and 4 main-services MD files → `data/sub-services-md.js` & `data/main-services-md.js` with non-destructive overlay in `data/sub-services.js` and `data/main-services.js`.
 2. ✅ **Design UI/UX Category** — Added new main service `/design-ui-ux` with 7 sub-services: design-systems, product-design, web-design, mobile-app-design, ux-research, wireframing-prototyping, plus jamstack-development under web-development.
 3. ✅ **Slug Consistency Fix** — Fixed PWA and E-commerce slug mismatches between `serviceMenuSections` titles, override objects, and MD data. All slugs must now match across all files.
-4. 🔲 **Standalone Services** — Create `scripts/convert-service.js` → `data/services.js` (11 files, route: `/service/[slug]/`)
-5. 🔲 **Industry+Service Combos** — Plan and convert 202 combo files → `/[category]/[service]/` route
-6. 🔲 **Performance** — Lazy-load About + Contact pages, remove GSAP/Swiper/Lenis
+4. 🔲 **Industry+Service Combos** — Plan and convert 202 combo files → `/[mainservice]/[subservice]/` route
+5. 🔲 **Performance** — Lazy-load About + Contact pages, remove GSAP/Swiper/Lenis
+6. ✅ **Route rename** — Renamed `/[category]/[service]/` to `/[mainservice]/[subservice]/` to avoid confusion with industries pages
 7. ✅ **Radix UI fix** — P1109 resolved — verified successful build of 1586/1586 static pages
 
 ---

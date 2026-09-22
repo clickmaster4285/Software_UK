@@ -5,20 +5,16 @@ import { ChevronRight } from 'lucide-react';
 import { Suspense, useRef } from 'react';
 import dynamic from 'next/dynamic';
 
-// Eager: Hero is above-the-fold
 import { HeroSection } from '@/components/landing/main-service/hero-section';
 import { ScrollSnakeLine } from '@/components/ui/scroll-snake-line';
 
-// Lazy: components with default export
+const OverviewSection = dynamic(() => import('@/components/landing/main-service/OverviewSection'), { ssr: true });
+const ContentSections = dynamic(() => import('@/components/landing/main-service/ContentSections'), { ssr: true });
 const PainPointsSolutions = dynamic(() => import('@/components/landing/main-service/PainPointsSolutions'), { ssr: true });
-const FeaturedInsights = dynamic(() => import('@/components/landing/main-service/FeaturedInsights'), { ssr: true });
-
-// Lazy: components with both named + default export (default works)
 const TrustedClientsSection = dynamic(() => import('@/components/landing/main-service/TrustedClientsSection'), { ssr: true });
 const ProcessPage = dynamic(() => import('@/components/landing/main-service/ProcessPage'), { ssr: true });
 const FaqSection = dynamic(() => import('@/components/landing/main-service/FaqSection'), { ssr: true });
 
-// Lazy: named export only — wrap as component functions
 const ExploreSection = dynamic(() =>
   import('@/components/landing/main-service/ExploreSection').then(mod => {
     const C = mod.ExploreSection; const W = (p) => <C {...p} />; W.displayName = 'ExploreSection'; return W;
@@ -63,7 +59,6 @@ const FinalCTA = dynamic(() =>
 export default function ServiceClient({ serviceData }) {
   const scrollPathRef = useRef(null);
 
-  // Use pricing from serviceData if available (passed from page.js which merged it)
   const pricingPlans =
     serviceData?.pricing?.map((p, index) => ({
       name: p.type,
@@ -77,18 +72,16 @@ export default function ServiceClient({ serviceData }) {
 
   return (
     <main className="min-h-screen bg-background pt-18 relative overflow-x-clip">
-
-      {/* Premium Breadcrumb */}
       <div className="relative z-20 border-b border-border/40 bg-background/80 backdrop-blur-md">
         <div className="mx-auto max-w-[96vw] lg:max-w-[90vw] px-4 py-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center space-x-2 text-sm font-medium">
+          <nav className="flex items-center space-x-2 text-sm font-medium" aria-label="Breadcrumb">
             <Link
               href="/"
               className="text-muted-foreground hover:text-primary transition-colors duration-200 font-body"
             >
               Home
             </Link>
-            <ChevronRight className="h-4 w-4 text-border" />
+            <ChevronRight className="h-4 w-4 text-border" aria-hidden />
             <span className="text-foreground font-heading font-semibold">
               {serviceData?.title}
             </span>
@@ -96,18 +89,34 @@ export default function ServiceClient({ serviceData }) {
         </div>
       </div>
 
-      {/* Main Service Sections */}
+      {/* 1. Hero */}
       <HeroSection serviceData={serviceData} />
 
-      {/* Shared Scroll Path for Snake Line */}
+      {/* 2. Overview (remaining MD intro) */}
+      <OverviewSection serviceData={serviceData} />
+
       <div ref={scrollPathRef} className="relative">
         <ScrollSnakeLine targetRef={scrollPathRef} />
 
-        <ExploreSection serviceData={serviceData} />
+        {/* 3. Explore */}
+        <div className="bg-surface">
+          <ExploreSection serviceData={serviceData} />
+        </div>
 
-        <PainPointsSolutions />
+        {/* 4. MD body sections (was deferred — 155 sections were orphaned) */}
+        <div className="bg-background">
+          <ContentSections serviceData={serviceData} />
+        </div>
 
-        <Suspense fallback={<div className="h-96 animate-pulse bg-surface" />}>
+        {/* 5. Pain points */}
+        <div className="bg-surface">
+          <PainPointsSolutions serviceData={serviceData} />
+        </div>
+      </div>
+
+       {/* 11. Social proof */}
+       <div className="bg-background">
+        <Suspense fallback={<div className="h-64 animate-pulse bg-surface" aria-hidden />}>
           <TrustedClientsSection
             clients={serviceData?.trustedClients}
             title={`${serviceData?.title}`}
@@ -116,54 +125,54 @@ export default function ServiceClient({ serviceData }) {
         </Suspense>
       </div>
 
-      <AppsSection />
-      <ProcessPage serviceData={serviceData} />
-      <TechStackSection />
-      <FeaturedInsights />
-      <WhyChooseUs
-        slug={serviceData?.slug}
-        service={serviceData}
-      />
+      {/* 6. Process */}
+      <div className="bg-background">
+        <ProcessPage serviceData={serviceData} />
+      </div>
 
+      {/* 7. Why choose */}
+      <div className="bg-surface">
+        <WhyChooseUs slug={serviceData?.slug} service={serviceData} />
+      </div>
+
+      {/* 8. Tech */}
+      <div className="bg-background">
+        <TechStackSection serviceData={serviceData} />
+      </div>
+
+      {/* 9. Industries */}
+      <div className="bg-surface">
+        <IndustriesSection serviceData={serviceData} />
+      </div>
+
+      {/* 10. Pricing */}
       <PricingSection
         plans={pricingPlans}
         title={`${serviceData?.title} Investment`}
         subtitle={`Flexible engagement models for ${serviceData?.title?.toLowerCase() || 'your project'} — scoped to your timeline, team size, and goals.`}
+        costFactors={serviceData?.costFactors}
+        engagementModels={serviceData?.engagementModels}
       />
 
-      <IndustriesSection />
+      <div className="bg-surface">
+        <AppsSection />
+      </div>
 
-      <TestimonialsSection serviceTitle={serviceData?.title} />
+      <div className="bg-background">
+        <TestimonialsSection serviceTitle={serviceData?.title} />
+      </div>
 
-      <FaqSection
-        faqs={serviceData?.faqs}
-        serviceTitle={serviceData?.title}
-        subtitle={`Common questions about ${serviceData?.title?.toLowerCase() || 'our services'}, delivery, and engagement models.`}
-      />
+      {/* 12. FAQ */}
+      <div className="bg-surface">
+        <FaqSection
+          faqs={serviceData?.faqs}
+          serviceTitle={serviceData?.title}
+          subtitle={`Common questions about ${serviceData?.title?.toLowerCase() || 'our services'}, delivery, and engagement models.`}
+        />
+      </div>
 
-      <FinalCTA />
-
-{/*
-      Used sections from components/landing/main-service
-      ------------------------------------------------
-      1. Breadcrumb (Defined in-file)
-      2. HeroSection (hero-section.jsx)
-      3. ExploreSection (ExploreSection.jsx)
-      4. PainPointsSolutions (PainPointsSolutions.jsx)
-      5. TrustedClientsSection (TrustedClientsSection.jsx)
-      6. AppsSection (AppsSection.jsx)
-      7. ProcessPage (ProcessPage.jsx)
-      8. TechStackSection (TechStackSection.jsx)
-      9. FeaturedInsights (FeaturedInsights.jsx)
-      10. WhyChooseUs (whyUs.jsx)
-      11. IndustriesSection (industries-section.jsx)
-      12. PricingSection (pricing-section.jsx)
-      13. TestimonialsSection (TestimonialsSection.jsx)
-      14. FaqSection (FaqSection.jsx)
-      15. FinalCTA (finalCta.jsx)
-
-      */}
-
+      {/* 13. Final CTA */}
+      <FinalCTA serviceData={serviceData} />
     </main>
   );
 }

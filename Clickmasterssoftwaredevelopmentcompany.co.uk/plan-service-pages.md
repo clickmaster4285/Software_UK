@@ -1,7 +1,7 @@
-# Plan: Clickmasters Content Migration — Standalone Service Pages
+# Plan: Clickmasters Content Migration — Standalone Service Pages (REMOVED)
 
 **Generated:** June 20, 2026
-**Purpose:** Convert 11 standalone service DOCX files into `data/services.js` and wire to existing route
+**Status:** ❌ Removed — standalone services were never wired up and are no longer part of the content model.
 **Reference:** See `agent.md` for overall context, `plan-industry-service-pages.md` for industry+service combo plan
 
 ---
@@ -19,8 +19,8 @@
 | 5 | Resource Guides | 105 | 81 | `/resource/[slug]/` | ✅ (re-run with 2 new files) |
 | 6 | International City | 306 | 203 | `/cities/[slug]/` | ✅ |
 | 7 | Glossary | 200 | 200 | `/glossary/[term]/` | ✅ |
-| **8** | **Standalone Services** | **11** | **TBD** | **`/service/[slug]/`** | **🔲 Not Started** |
-| 9 | Industry+Service Combos | 202 | TBD | `/[category]/[service]/` | 🔲 Not Started |
+| **8** | **Standalone Services** | **11** | **N/A** | **Removed** | **❌ Removed Sep 17, 2026** |
+| 9 | Industry+Service Combos | 202 | TBD | `/[mainservice]/[subservice]/` | 🔲 Not Started |
 
 ---
 

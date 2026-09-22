@@ -1,8 +1,46 @@
 # Plan: Improve Main-Services & Sub-Services Data Architecture
 
 **Generated:** September 1, 2026
-**Scope:** `data/main-services.js`, `data/sub-services.js`, the `/[category]/` and `/[category]/[service]/` routes, and the ~20 MD content files in `main-services/` and `sub-services/`
+**Last Updated:** September 19, 2026
+**Scope:** `data/main-services.js`, `data/sub-services.js`, the `/[mainservice]/` and `/[mainservice]/[subservice]/` routes, and the ~20 MD content files in `main-services/` and `sub-services/`
 **Goal:** Understand the current state, identify gaps & risks, and define an improvement plan
+
+---
+
+## Executive Summary
+
+### What is done
+
+| Area | Status | Notes |
+|------|--------|-------|
+| MD conversion pipeline | ✅ | 39 sub-services + 7 main-services converted via non-destructive overlay |
+| metaKeywords cleanup | ✅ | Parser strips bold markers, CTAs, section headings, numbering, backslashes; arrays normalized in both data files |
+| Route rename | ✅ | `/[category]/[service]/` → `/[mainservice]/[subservice]/`; all pages, metadata, breadcrumbs updated |
+| Standalone services removal | ✅ | Deleted `scripts/convert-service.js` and all `/service/[slug]/` references |
+| Build verification | ✅ | `npm run build` passes: 1586/1586 static pages generated |
+| Documentation sync | ✅ | `AGENTS.md`, `SERVICE-CONTENT-TRACKER.md`, `plan-services-improvement.md`, master plans updated |
+
+### What is remaining
+
+| Area | Status | Notes |
+|------|--------|-------|
+| Big data file split | 🔲 | `data/sub-services.js` is 1.86 MB / 16,150 lines; needs lightweight listing export |
+| Override-only MD content | 🔲 | 91 sub-services have no MD source files; create MD sources for high-value categories |
+| Performance tuning | 🔲 | Lazy-load About/Contact, remove GSAP/Swiper/Lenis |
+| Industry+Service combos | 🔲 | 202 combo DOCX files still need planning/conversion |
+| JSON-LD from MD | 🔲 | Regenerate Service/FAQPage schemas from MD's exact format |
+| Lighthouse audit | 🔲 | Target 70+ performance score |
+
+### What to do next
+
+1. **Split `data/sub-services.js`** — Create `data/sub-services-listings.js` with `subServiceListings` + `serviceMenuSections` for navbar/mega-menu imports
+2. **Create missing MD sources** — Prioritize AI, Cloud, Cybersecurity, Blockchain sub-services
+3. **Plan industry+service combos** — Decide data architecture before converting 202 DOCX files
+4. **Run performance pass** — Lazy-load About/Contact, remove heavy animation libraries
+
+### Overall plan/goal
+
+Keep the current non-destructive overlay architecture: MD files are the source of truth, converters generate `data/sub-services-md.js` and `data/main-services-md.js`, and the hand-written data files merge MD-rich fields over curated overrides. The immediate priority is reducing the 1.86 MB `sub-services.js` bundle impact by splitting out lightweight listings, then filling content gaps for the 91 override-only services.
 
 ---
 
@@ -18,10 +56,10 @@
 | `data/service-section-data.js` | Per-category `features`, `pricing`, `faqs`, `trustedClients`, `stats` (filled-in for all 13) | 33 KB |
 | `data/whyChooseUsData.js` | Per-category Why-Choose-Us content + defaults | 17 KB |
 | `data/sub-services.js` | Massive hand-written file: 102 sub-service override objects + technology map + helper fns | 16,070 lines / 1.95 MB |
-| `app/(landing)/[category]/page.js` | Main category route — combines `mainServicesData` + `service-section-data` | 92 lines |
-| `app/(landing)/[category]/[service]/page.js` | Sub-service detail route — pulls from `data/sub-services.js` | 334 lines |
-| `app/(landing)/[category]/main-service.jsx` | Renders the main category page UI (12 sub-components) | 14 sections |
-| `app/(landing)/[category]/[service]/subservice.js` | Client component used by the sub-service page (NavigationWheel) | 380 lines |
+| `app/(landing)/[mainservice]/page.js` | Main category route — combines `mainServicesData` + `service-section-data` | 92 lines |
+| `app/(landing)/[mainservice]/[subservice]/page.js` | Sub-service detail route — pulls from `data/sub-services.js` | 334 lines |
+| `app/(landing)/[mainservice]/main-service.jsx` | Renders the main category page UI (12 sub-components) | 14 sections |
+| `app/(landing)/[mainservice]/[subservice]/subservice.js` | Client component used by the sub-service page (NavigationWheel) | 380 lines |
 | `components/landing/main-service/*` | 14 components used by main service pages | — |
 | `components/landing/sub-services/*` | 16 components used by sub-service pages | — |
 
@@ -347,10 +385,10 @@ Software uk/
 │   └── sub-services.js            ← 102 override objects (16,070 lines)
 ├── main-services/*.md            (3 files) ← source-of-truth content
 ├── sub-services/*.md            (21 files) ← source-of-truth content
-├── app/(landing)/[category]/page.js            ← main category route
-├── app/(landing)/[category]/[service]/page.js ← sub-service detail route
-├── app/(landing)/[category]/main-service.jsx  ← main category UI
-├── app/(landing)/[category]/[service]/subservice.js ← sub-service client UI (may be dead)
+├── app/(landing)/[mainservice]/page.js            ← main category route
+├── app/(landing)/[mainservice]/[subservice]/page.js ← sub-service detail route
+├── app/(landing)/[mainservice]/main-service.jsx  ← main category UI
+├── app/(landing)/[mainservice]/[subservice]/subservice.js ← sub-service client UI (may be dead)
 ├── components/landing/main-service/*        (14 components)
 └── components/landing/sub-services/*        (16 components)
 ```
@@ -398,9 +436,9 @@ Both files **must stay** — they are the content-richness layer for the main se
 | `data/whyChooseUsData.js` | Keep → merge | Content moves into `main-services.js`; keep `getWhyChooseUsData` re-export for `whyUs.jsx`. |
 | `components/landing/main-service/ExploreSection.jsx` | Change | Use `subServiceListings` (lightweight) instead of the full `mainServicesData/subServices` — avoids forcing the 1.95 MB module. |
 | `components/landing/main-service/whyUs.jsx` | No change needed | Already imports `getWhyChooseUsData` cleanly; keeps working via re-export. |
-| `app/(landing)/[category]/page.js` | Change | Move the 2 mid-file `import`s to the top (ES-module validity); swap to new lookup API. |
-| `app/(landing)/[category]/[service]/page.js` | Change | Use `getSubServiceByCategoryAndSlug`; add exact Meta Title from MD; render new fields (`intro`, `tables`, `costFactors`, `whyChoose`, `relatedLinks`). |
-| `app/(landing)/[category]/[service]/subservice.js` | Verify/delete | Appears dead (not imported by `page.js`). If kept, add renderers for new fields; if not, delete. |
+| `app/(landing)/[mainservice]/page.js` | Change | Move the 2 mid-file `import`s to the top (ES-module validity); swap to new lookup API. |
+| `app/(landing)/[mainservice]/[subservice]/page.js` | Change | Use `getSubServiceByCategoryAndSlug`; add exact Meta Title from MD; render new fields (`intro`, `tables`, `costFactors`, `whyChoose`, `relatedLinks`). |
+| `app/(landing)/[mainservice]/[subservice]/subservice.js` | Verify/delete | Appears dead (not imported by `page.js`). If kept, add renderers for new fields; if not, delete. |
 | `components/landing/sub-services/DynamicSections.jsx` | Change | Handle bullets lists + comparison tables + cost factors cleanly (it already renders `sections`). |
 | `iconMap` (in `main-services.js`) | Keep as-is | String→Lucide mapping; unchanged. |
 | `data/case-studies.js`, `hire-pages.js`, etc. | Unchanged | Out of scope; not touched. |
@@ -426,10 +464,10 @@ Both files **must stay** — they are the content-richness layer for the main se
 | 1 | `lib/slugify.js` (**new**) | Tiny, pure `slugify` helper extracted (identical impl to the two inline copies) | Pages needing only `slugify` no longer pull the 1.95 MB module |
 | 2 | `app/(landing)/industries/[slug]/page.js` | `import { slugify } from '@/data/sub-services'` → `from '@/lib/slugify'` | Stops 148 industry detail pages from loading the 1.95 MB module per request during SSG |
 | 3 | `app/(landing)/industries/[slug]/IndustrySections.jsx` | Same `slugify` import switch (client component) | Stops the industry client bundle from pulling the 1.95 MB module |
-| 4 | `app/(landing)/[category]/page.js` | Removed the dead `import { getServicePage } from '@/data/sub-services'` and `import { mainServicesData } from '@/data/main-services'` (mid-file); simplified `mainData = getServiceData(category)`; moved all imports to top | All 13 category slugs resolve via `getServiceData()`; the `getServicePage(category)` fallback was dead code that still forced-loading the 1.95 MB module on every main category page. Also fixed the ES-module mid-file-import smell. |
+| 4 | `app/(landing)/[mainservice]/page.js` | Removed the dead `import { getServicePage } from '@/data/sub-services'` and `import { mainServicesData } from '@/data/main-services'` (mid-file); simplified `mainData = getServiceData(mainservice)`; moved all imports to top | All 13 category slugs resolve via `getServiceData()`; the `getServicePage(category)` fallback was dead code that still forced-loading the 1.95 MB module on every main category page. Also fixed the ES-module mid-file-import smell. |
 
 **Left untouched (intentional):**
-- `app/(landing)/[category]/[service]/page.js` — correctly keeps `@/data/sub-services` (detail page needs the full data`.
+- `app/(landing)/[mainservice]/[subservice]/page.js` — correctly keeps `@/data/sub-services` (detail page needs the full data`.
 - `service-section-data.js`, `whyChooseUsData.js`, `main-services.js` data — unchanged this round (see §9 verdict: keep both; merge later in Phase 1..
 - `getServicePage()` already used a `Map` (line ~15209 `bySlug.get(slug))` — no perf bug there.
 
@@ -582,7 +620,175 @@ Both files **must stay** — they are the content-richness layer for the main se
 
 ---
 
-**Last Updated:** September 17, 2026 (v9 — metaKeywords cleanup, backslash stripping, runtime sanitization, array normalization)
+## 13. Executed — Route Rename & Standalone Services Removal (September 17, 2026)
+
+### What changed
+
+| Before | After |
+|--------|-------|
+| `app/(landing)/[category]/page.js` | `app/(landing)/[mainservice]/page.js` |
+| `app/(landing)/[category]/[service]/page.js` | `app/(landing)/[mainservice]/[subservice]/page.js` |
+| `app/(landing)/[category]/main-service.jsx` | `app/(landing)/[mainservice]/main-service.jsx` |
+| `app/(landing)/[category]/[service]/subservice.js` | `app/(landing)/[mainservice]/[subservice]/subservice.js` |
+| `params.category` / `params.service` | `params.mainservice` / `params.subservice` |
+| `/service/[slug]/` standalone route | **Removed** — no longer part of the site |
+
+### Why
+
+- The `[category]` param name was confusing: it overlaps semantically with the `/industries/[slug]/` route and the `categorySlug` data field.
+- The `[service]` param name collides with the now-removed standalone `/service/[slug]/` route.
+- `[mainservice]` + `[subservice]` makes the URL hierarchy explicit: a sub-service page always lives under its parent main service.
+- Removed the standalone services concept entirely: the 11 `Service/` DOCX files and `scripts/convert-service.js` are deleted. They were old, never wired up, and not part of the current content model.
+
+### Files cleaned up
+
+- Deleted `scripts/convert-service.js`
+- Removed standalone-services section from `scripts/generate-sitemaps.js`
+- Removed all `/service/[slug]/` and `data/services.js` references from `AGENTS.md`, `SERVICE-CONTENT-TRACKER.md`, `plan-services-improvement.md`
+- Updated route directory structure and all internal imports (`NavigationWheel`, breadcrumb params, `generateStaticParams`, `generateMetadata`)
+
+### Build verification
+
+- `npm run build` passes: **1586/1586 static pages** generated
+- Sitemaps regenerate cleanly
+
+---
+
+## 14. Planned — Big Data File Split for `data/sub-services.js`
+
+**Problem:** `data/sub-services.js` is 16,070 lines / 1.95 MB. Every page that imports anything from it ships the full module, including 102 override objects with long body text, `processPhases`, `techStackCategories`, `pricingTiers`, etc.
+
+**Goal:** Split into a lightweight listing slice and a full detail slice, following the pattern already established by `caseStudyListings` and `hirePageListings`.
+
+### Proposed file layout
+
+```
+data/
+├── sub-services.js                ← full array + lookup fns (keep current, or rename to sub-services-full.js)
+├── sub-services-listings.js       ← NEW lightweight array for navbar/mega-menu/listing pages
+├── sub-services-technologies.js   ← categoryTechMappings (rarely needed)
+├── main-services.js               ← unchanged
+├── main-services-listings.js      ← lightweight for navbar/footer
+```
+
+### Proposed `subServiceListings` shape
+
+```js
+export const subServiceListings = subServices.map(({ slug, categorySlug, title, serviceName, metaTitle, metaDescription, heroImage }) => ({
+  slug,
+  categorySlug,
+  title,
+  serviceName,
+  metaTitle,
+  metaDescription,
+  heroImage,
+}));
+```
+
+### Consumers to update
+
+| File | Current | After |
+|------|---------|-------|
+| `components/Navbar.js` | Imports `serviceMenuSections` from `sub-services.js` | Switch to `subServiceListings` or a dedicated `serviceMenuSections` export from a separate file |
+| `components/Footer.js` | Same | Same |
+| `components/MegaMenu.jsx` | Same | Same |
+| `app/(landing)/[mainservice]/page.js` | Uses `getServiceData()` from `main-services.js` | Already lightweight — no change needed |
+| `app/(landing)/[mainservice]/[subservice]/page.js` | Imports `getAllServicePages`, `getServicePage` from `sub-services.js` | Keep full import — detail page needs full data |
+
+### Approach
+
+1. Add `subServiceListings` export to `data/sub-services.js` (or a new `data/sub-services-listings.js`)
+2. Add `mainServiceListings` export to `data/main-services.js`
+3. Audit navbar/mega-menu/footer imports and switch them to the lightweight arrays
+4. Verify `npm run build` still generates 1,586 pages
+5. Measure TBT improvement with Lighthouse
+
+### Risks
+
+- `serviceMenuSections` is used by the mega-menu and is generated from `baseServices`. Any split must preserve this array or provide an equivalent.
+- `categoryTechMappings` is used by `TechStack` component on sub-service pages. Move to `sub-services-technologies.js` if split.
+
+---
+
+## 15. Executed — Meta Title & Meta Description Regex Fixes (Completed)
+
+**Executed:** September 19, 2026
+
+### Problem
+
+The converter scripts (`convert-sub-services-md.js` and `convert-main-services-md.js`) failed to extract `metaTitle` and `metaDescription` from several markdown files because the source files used inconsistent formatting. The regex patterns only handled a few common formats, but the 44 sub-service and 8 main-service MD files contained at least 6 distinct meta tag formats.
+
+### Issues Found & Fixed
+
+| # | File(s) | Format | Problem | Fix |
+|---|---------|--------|---------|-----|
+| 1 | All MD files | `\r\n` line endings | `\r` characters in file content interfered with regex matching (e.g., `\n` in patterns wouldn't match `\r\n`) | Added `content.replace(/\r/g, '')` at top of `parseMd()` and `parseMainMd()` |
+| 2 | Multiple files | `**Meta Title:**` on standalone line (no `#` prefix) | Pattern 3 `\n\*\*`Meta Title`?:\*\*[ \t]*\n+` required `\n` before `**` but pattern was matching incorrectly | Added `\*\*` after `:` in pattern to match `\n**Meta Title:**` |
+| 3 | `penetration-testing.md`, `security-audits.md`, `compliance-risk-management.md` | `**Meta Title**` mid-line (no colon) | No pattern for bold title without colon on same line | Added `\*\*Meta Title\*\*[ \t]*\n+([^\n]+)` pattern |
+| 4 | `product-design.md` | `Meta Title:**\n\n# Content` | `**` after colon, content on NEXT line with `#` prefix; generic `Meta Title:\s*([^\n]+)` captured only `**` | Added `Meta Title:\*{0,2}\s*\n+\s*([^\n]+)` pattern and placed it BEFORE the generic inline pattern |
+| 5 | `woocommerce-development.md` | `Meta title**  Content` | No colon after `Title`, `**` closes bold, content on same line | Added `Meta Title\*{0,2}\s+([^\n]+)` pattern (no colon required) |
+| 6 | `microservices-architecture.md` | `**Meta Title:** Content  **Meta Description** Content` | Both meta tags on SAME line; lazy `(.+?)` pattern worked but captured leading `**` | Existing `Meta Title:\s*(.+?)(?:\s+\**Meta Description)` pattern worked; `clean()` strips `**` |
+| 7 | `woocommerce-development.md` | `# **Meta Description:**\n\n# Content` | `#` prefix before `**Meta Description:**`; generic `Meta Description[:\s]+` captured `**` instead of next-line content | Added `Meta Description[:\s]*\*{0,2}\s*\n+\s*([^\n]+)` and placed it BEFORE generic pattern |
+
+### Root Causes
+
+1. **`\r\n` line endings** — Windows-style line endings broke `\n`-based regex patterns
+2. **Inconsistent bold formatting** — Some files used `**Meta Title:**`, others `Meta Title:**`, others `Meta title**`, others `**Meta Title**`
+3. **Content on same line vs next line** — Some files had `Meta Title:** Content` (same line), others `Meta Title:**\n\nContent` (next line)
+4. **Pattern ordering** — Generic patterns like `Meta Title:\s*([^\n]+)` matched first and captured `**` (bold markers) instead of actual content, preventing more specific newline-based patterns from running
+
+### Solution
+
+Added 4 new regex patterns to both title and description extraction chains, and reordered patterns so more-specific patterns run before generic ones:
+
+**Title patterns (in order):**
+```
+1. \n## **Meta Title** ...         (## heading with bold)
+2. # **Meta Title:** ...            (# prefix with bold colon)
+3. \n**Meta Title:** \n+ ...       (standalone bold colon, content next line)
+4. \n**Meta Title** \n+ ...        (standalone bold, content next line)
+5. **Meta Title** \n+ ...          (bold at line start, content next line)
+6. Meta Title: ...(lazy)... Meta Description  (same-line with desc)
+7. Meta Title:** \n+ ...           (colon + bold, content next line) ← NEW
+8. Meta Title: ...                 (plain inline) ← moved AFTER #7
+9. Meta Title** ...                (no colon, bold, same line) ← NEW
+10. \n Meta Title: \n+ ...         (standalone plain)
+```
+
+**Description patterns (in order):**
+```
+1. \n## **Meta Description** ...   (## heading with bold)
+2. # **Meta Description:** ...     (# prefix with bold colon)
+3. \n**Meta Description:** \n+ ... (standalone bold colon, content next line)
+4. \n**Meta Description** \n+ ...  (standalone bold, content next line)
+5. **Meta Description** \n+ ...    (bold at line start, content next line)
+6. Meta Description:** \n+ ...     (colon + bold, content next line) ← NEW
+7. Meta Description ...             (plain inline) ← moved AFTER #6
+8. Meta Description** ...          (no colon, bold, same line) ← NEW
+9. \n Meta Description \n+ ...     (standalone plain)
+```
+
+### Result
+
+| Category | Total | Has metaTitle | Has metaDescription |
+|----------|-------|--------------|-------------------|
+| Sub-services | 44 | 44 | 44 |
+| Main services | 8 | 8 | 8 |
+
+All 52 markdown files now produce correct `metaTitle` and `metaDescription` fields.
+
+### Files Modified
+
+| File | Change |
+|------|--------|
+| `scripts/convert-sub-services-md.js` | Added `\r` normalization in `parseMd()`; added 4 new title patterns + 3 new desc patterns; reordered patterns so specific matches run before generic |
+| `scripts/convert-main-services-md.js` | Same `\r` normalization in `parseMainMd()`; same pattern additions |
+| `data/sub-services-md.js` | Re-generated — 44 entries, all with metaTitle + metaDescription |
+| `data/main-services-md.js` | Re-generated — 8 entries, all with metaTitle + metaDescription |
+
+---
+
+**Last Updated:** September 19, 2026 (v11 — meta title/description regex fixes for all 52 MD files)
 **Main Reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md)
 **Execution Plan:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md)
 

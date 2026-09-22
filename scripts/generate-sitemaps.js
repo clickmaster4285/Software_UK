@@ -249,19 +249,7 @@ function run() {
     }
   }
 
-  // B. Add Standalone Services from data/services.js (if any exist)
-  const standaloneServicesPath = path.join(DATA_DIR, 'services.js');
-  if (fs.existsSync(standaloneServicesPath)) {
-    const standaloneServices = extractData(standaloneServicesPath, 'services');
-    for (const service of standaloneServices) {
-      serviceUrls.push({
-        loc: `${BASE_URL}/service/${service.slug}`,
-        changefreq: 'weekly',
-        priority: 0.7,
-        lastmod: new Date().toISOString()
-      });
-    }
-  }
+  // B. Standalone services removed — no longer part of the site map
 
   if (serviceUrls.length > 0) {
     const servicesFilename = 'sitemap-services.xml';

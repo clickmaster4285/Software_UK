@@ -80,7 +80,7 @@
 ## 5. MAIN SERVICE ARCHITECTURE & COMPONENT GUIDE
 
 ### 5.1 Strategic Overview
-- **Data-Driven Core**: Dynamic routing at `app/(landing)/[category]/page.js`. Data is sourced from `data/main-services.js` and enriched via `data/service-section-data.js` using `enrichServiceData()` to ensure content density and fallbacks.
+- **Data-Driven Core**: Dynamic routing at `app/(landing)/[mainservice]/page.js`. Data is sourced from `data/main-services.js` and enriched via `data/service-section-data.js` using `enrichServiceData()` to ensure content density and fallbacks.
 - **Premium Aesthetics**: Strictly uses Tailwind 4 OKLCH tokens. Features atmospheric depth through mesh gradients (`bg-primary/15`, `blur-120px`), grid overlays, and `backdrop-blur` layers.
 - **Motion Orchestration**: 
     - **GSAP (ScrollTrigger)**: High-precision pinning and "Snake Line" progress tracking.
@@ -208,11 +208,11 @@ Summary: About Page & Services Updates
     │                                                          │ grid of 3 cards (prev/current/next), AnimatePresence slide transitions, dot indicators, autoplay │      
     │                                                          │  with pause-on-hover, prev/next/play-pause controls.                                             │      
     ├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────┤      
-    │ app/(landing)/[category]/[service]/subservice.js         │ Removed lenisRef={lenisRef} prop from <NavigationWheel>                                          │      
+    │ app/(landing)/[mainservice]/[subservice]/subservice.js         │ Removed lenisRef={lenisRef} prop from <NavigationWheel>                                          │      
     ├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────┤      
-    │ app/(landing)/[category]/[service]/ClientScrollWheel.jsx │ Removed lenisRef={{ current: null }} prop from <NavigationWheel>                                 │      
+    │ app/(landing)/[mainservice]/[subservice]/ClientScrollWheel.jsx │ Removed lenisRef={{ current: null }} prop from <NavigationWheel>                                 │      
     ├──────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────┤      
-    │ app/(landing)/[category]/[service]/NavigationWheel.js    │ Removed lenisRef from destructured props. scrollTo() now uses native el.scrollIntoView({         │      
+    │ app/(landing)/[mainservice]/[subservice]/NavigationWheel.js    │ Removed lenisRef from destructured props. scrollTo() now uses native el.scrollIntoView({         │      
     │                                                          │ behavior: 'smooth', block: 'start' }) only.                                                      │      
     └──────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────┘      
 
@@ -233,9 +233,9 @@ Summary: About Page & Services Updates
      - TrustedBySection.jsx
      - LandingHomeDeferredHeavy.jsx (had broken dynamic imports to non-existent @/components/landingPage/ path)
 
-    14 files remain — all actively imported by app/(landing)/[category]/main-service.jsx.
+     14 files remain — all actively imported by app/(landing)/[mainservice]/main-service.jsx.
 
-    Also cleaned up the stale "Unused sections" comment block in app/(landing)/[category]/main-service.jsx.
+     Also cleaned up the stale "Unused sections" comment block in app/(landing)/[mainservice]/main-service.jsx.
 
     ---
 
@@ -247,7 +247,7 @@ Summary: About Page & Services Updates
      - ServiceSubpageBreadcrumb.jsx
      - table-of-contents.jsx
 
-    16 files remain — all actively imported (directly or dynamically) by app/(landing)/[category]/[service]/page.js or by each other.
+     16 files remain — all actively imported (directly or dynamically) by app/(landing)/[mainservice]/[subservice]/page.js or by each other.
 
     ---
 

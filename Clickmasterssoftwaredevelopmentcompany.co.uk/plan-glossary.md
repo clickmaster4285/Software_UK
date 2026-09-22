@@ -19,7 +19,7 @@
 | 4 | Comparison Pages | 177 | 141 | `/comparison/[slug]/` | ✅ |
 | 5 | Resource Guides | 103 | 80 | `/resource/[slug]/` | ✅ Re-processed |
 | 6 | International City | 306 | 203 | `/cities/[slug]/` | ✅ Re-processed |
-| 7 | Industry / Service | 215 | TBD | `/[category]/[service]/` | 🔲 Pending |
+| 7 | Industry / Service | 215 | TBD | `/[mainservice]/[subservice]/` | 🔲 Pending |
 | **8** | **Glossary** | **200** | **200** | **`/glossary/[term]/`** | **✅ Complete (build verified)** |
 
 ---
