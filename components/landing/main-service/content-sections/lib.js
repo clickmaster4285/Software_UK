@@ -80,6 +80,31 @@ export function slugChapter(label) {
     .replace(/^-|-$/g, '');
 }
 
+/**
+ * Main-service CTA is `{ buttonText, buttonUrl, ... }`;
+ * sub-service CTA is a plain string. Always return a string label or null.
+ */
+export function normalizeCtaLabel(value) {
+  if (!value) return null;
+  if (typeof value === 'string') {
+    const t = value.trim();
+    return t.length > 2 && t.length < 90 ? t : null;
+  }
+  if (typeof value === 'object') {
+    const t = String(value.buttonText || value.label || value.primary || '').trim();
+    return t.length > 2 && t.length < 90 ? t : null;
+  }
+  return null;
+}
+
+export function normalizePageCta(cta) {
+  if (!cta || typeof cta !== 'object') return null;
+  const primary = normalizeCtaLabel(cta.primary);
+  const secondary = normalizeCtaLabel(cta.secondary);
+  if (!primary && !secondary) return null;
+  return { primary, secondary };
+}
+
 export function isCompactSection(section) {
   const body = typeof section.body === 'string' ? section.body.trim() : '';
   const items = Array.isArray(section.items) ? section.items.filter(Boolean) : [];

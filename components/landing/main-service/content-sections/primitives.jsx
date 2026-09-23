@@ -3,27 +3,29 @@
 import Link from 'next/link';
 import { Check, ArrowRight } from 'lucide-react';
 import { linkifyMarkdown, stripCtaArtifacts } from '@/lib/subservice-utils';
-import { isCompactSection } from './lib';
+import { isCompactSection, normalizeCtaLabel } from './lib';
 
 export function ContentCtaButtons({ primary, secondary }) {
-  if (!primary && !secondary) return null;
+  const primaryLabel = normalizeCtaLabel(primary);
+  const secondaryLabel = normalizeCtaLabel(secondary);
+  if (!primaryLabel && !secondaryLabel) return null;
   return (
     <div className="mt-5 flex flex-wrap items-center gap-3">
-      {primary && (
+      {primaryLabel && (
         <Link
           href="/contact-us"
           className="inline-flex items-center gap-2 rounded-lg bg-linear-to-r from-accent to-accent-hover px-5 py-2.5 text-sm font-semibold text-white shadow-[0_4px_16px_oklch(0.5675_0.2072_318.97/0.3)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_oklch(0.5675_0.2072_318.97/0.4)]"
         >
-          {primary}
+          {primaryLabel}
           <ArrowRight className="h-4 w-4" aria-hidden />
         </Link>
       )}
-      {secondary && (
+      {secondaryLabel && (
         <Link
           href="/contact-us"
           className="inline-flex items-center gap-2 rounded-lg border border-border bg-white px-5 py-2.5 text-sm font-semibold text-text-primary transition-colors hover:border-accent/40 hover:text-accent"
         >
-          {secondary}
+          {secondaryLabel}
         </Link>
       )}
     </div>
@@ -72,8 +74,8 @@ export function ComparisonTable({ table }) {
 export function RenderedBody({ body, compact, cta }) {
   if (!body && !cta?.primary && !cta?.secondary) return null;
   const { text, primaryCta, secondaryCta } = stripCtaArtifacts(body || '');
-  const primary = primaryCta || cta?.primary || null;
-  const secondary = secondaryCta || cta?.secondary || null;
+  const primary = normalizeCtaLabel(primaryCta || cta?.primary);
+  const secondary = normalizeCtaLabel(secondaryCta || cta?.secondary);
   if (!text && !primary && !secondary) return null;
 
   const parts = text
