@@ -1,11 +1,21 @@
 # Plan: Main Services MD → Data → Components
 
 **Generated:** September 21, 2026  
-**Last Updated:** September 22, 2026  
+**Last Updated:** September 23, 2026  
 **Scope:** 9 MD files in `main-services/`, `scripts/convert-main-services-md.js`, `data/main-services-md.js`, `data/main-services.js` overlay, `app/(landing)/[mainservice]/`, `components/landing/main-service/*`  
 **Goal:** Make MD the reliable content source for main-service pages — extract correctly, normalize shapes, map to components without breaking curated/API sections
 
-**Related:** [`plan-services-improvement.md`](./plan-services-improvement.md) · [`SERVICE-CONTENT-TRACKER.md`](./SERVICE-CONTENT-TRACKER.md) · Canvas: `main-services-pipeline-analysis.canvas.tsx`
+**Status:** Phase A–D + F + G complete — **E deferred** (4 remaining MD files)
+
+### Focus index (service content)
+
+| Doc | Role |
+|-----|------|
+| **This file** | Main extraction + UI (done for 9/13; E deferred) |
+| [`plan-sub-services-extraction.md`](./plan-sub-services-extraction.md) | **NEXT** — sub-services same procedure |
+| [`SERVICE-CONTENT-TRACKER.md`](./SERVICE-CONTENT-TRACKER.md) | Living counts / per-slug status |
+
+**Related:** [`SERVICE-CONTENT-TRACKER.md`](./SERVICE-CONTENT-TRACKER.md) · Canvas: `main-services-pipeline-analysis.canvas.tsx`
 
 ---
 
@@ -32,7 +42,7 @@
 | **D — Component polish** | ✅ Done Sep 22, 2026 | deliverables band, useCases≥3, tech icons, engagement models |
 | **E — 4 missing MD** | ⏸️ Deferred | AI, Data, Cloud/DevOps, Testing & QA |
 | **F — Validation** | ✅ Done Sep 22, 2026 | Census OK; build **1586/1586** via `next build --webpack` |
-| **G — UI/UX polish** | ✅ Done Sep 22, 2026 | Hero title/tagline/metaDesc; Overview + image; ContentSections restored; see [`plan-main-services-ui.md`](./plan-main-services-ui.md) |
+| **G — UI/UX polish** | ✅ Done Sep 22, 2026 | Hero title/tagline/metaDesc; Overview + image; ContentSections restored — see §10 below |
 
 ---
 
@@ -189,5 +199,91 @@ Implemented in `data/main-services.js` + small component fixes:
 ---
 
 **Status:** Phase A–D + F + G complete — **E deferred** (4 remaining MD files)  
-**UI polish (authoritative):** [`plan-main-services-ui.md`](./plan-main-services-ui.md) — hero contract, issues fixed, field→UI map, what to update next  
+**Next workstream:** [`plan-sub-services-extraction.md`](./plan-sub-services-extraction.md)  
 **Main Reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md)
+
+---
+
+## 10. UI / UX (Phase G — complete)
+
+**Design read:** B2B agency landings; preserve OKLCH + Sora/DM Sans; redesign-preserve.
+
+### 10.1 What we did
+
+| Area | Change |
+|------|--------|
+| **Hero** | Title / tagline / description mapping for first viewport |
+| **Overview** | Under hero: MD intro + image left / text right + calm motion |
+| **Page rhythm** | Reordered sections, alternating surfaces, lighter card chrome |
+| **ContentSections** | Restored (was deferred; 155 MD sections orphaned) |
+| **Converter** | Intro after H1 only; not Meta Description |
+
+### 10.2 Hero contract (do not break)
+
+```
+Badge (optional, curated heroBadge)
+H1          ← MD h1
+Tagline     ← curated tagline (short marketing line)
+Description ← metaDescription (short scannable)
+CTAs        ← serviceData.cta when present, else defaults
+```
+
+Helpers in `components/landing/main-service/hero-section.jsx`:
+- `getHeroDescription()` — meta / description (not intro dump)
+- `getOverviewParas()` — full MD `intro[]` for Overview
+- `shouldShowTagline()` — hide only if duplicate/noise
+
+**Rules:** Do not put long intro in the hero. Do not hide tagline solely because H1 ends with “Services UK”. Overview owns `intro[]`.
+
+Overview image: `public/landing/main-services/people-starting-business-project.png` (`OVERVIEW_IMAGE` in `OverviewSection.jsx`).
+
+### 10.3 Issues removed
+
+| Symptom | Cause | Fix |
+|---------|--------|-----|
+| Meta description used as intro | Converter grabbed meta body | H1-gated intro; skip meta labels |
+| Long “Looking for…” in hero | Hero used truncated intro | Hero = metaDesc; intro → Overview |
+| Tagline hidden | Hide when H1 had “Services UK” | Show curated tagline when short marketing line |
+| 155 sections invisible | ContentSections deferred | Re-wired after Explore |
+| Typewriter / dual headlines | Hero overload | Typewriter removed |
+
+### 10.4 Page section order
+
+```
+Breadcrumb → Hero → Overview → Explore → ContentSections → PainPoints
+→ Process → WhyChooseUs → Tech → Industries → Pricing
+→ Clients / Apps / Testimonials → FAQ → FinalCTA
+```
+
+### 10.5 Field → UI map
+
+| Field | Source | UI |
+|-------|--------|-----|
+| `h1` | MD | Hero title |
+| `tagline` | Curated | Hero subline |
+| `metaDescription` | MD | Hero description |
+| `intro[]` | MD | Overview |
+| `sections` / `tables` | MD | ContentSections |
+| `childServices` / `subServices` | MD gated / curated | Explore |
+| `useCases` | MD | PainPoints (≥3) |
+| `process` / `deliverables` | MD | ProcessPage |
+| `whyChoose` | Curated SoT | WhyChooseUs |
+| `techStack` / `industries` | MD when present | Tech / Industries |
+| `costFactors` / `engagementModels` | MD | Pricing |
+| `faqs` / `cta` | MD | FAQ / CTAs |
+
+### 10.6 Content update recipe
+
+1. Edit `main-services/*.md` → `node scripts/convert-main-services-md.js`
+2. Spot-check `/[slug]` hero + Overview + ContentSections
+3. New main with MD: curated `tagline`/`heroBadge`/`subServices` + slug checklist in `AGENTS.md` §13
+
+### 10.7 Known gaps (not wiring bugs)
+
+| Gap | Status |
+|-----|--------|
+| 4 mains without MD | Phase E deferred |
+| Sparse techStack / industries | Curated fallbacks |
+| childServices gated | Explore uses curated |
+| Software/Web missing MD cta | Default CTAs |
+| Turbopack font quirk | `next build --webpack` |

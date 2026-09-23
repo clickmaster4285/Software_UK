@@ -535,5 +535,5 @@ const Component = dynamic(() =>
 
 ---
 
-**Last Updated:** September 1, 2026
-**See also:** `plan-industries-pages.md` (industries execution details), `plan-services-improvement.md`
+**Last Updated:** September 23, 2026  
+**See also:** `plan-industries-pages.md` (industries), `plan-sub-services-extraction.md` + `plan-main-services-extraction.md` + `SERVICE-CONTENT-TRACKER.md` (service content)

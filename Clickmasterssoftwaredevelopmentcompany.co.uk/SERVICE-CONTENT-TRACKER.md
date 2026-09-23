@@ -2,6 +2,25 @@
 
 > Tracks per-service MD conversion status, design-ui-ux category setup, parser improvements, and improvement plan progress.
 
+**Last Updated:** September 23, 2026
+
+---
+
+## 0. Focus index (start here)
+
+| Priority | Doc | Status |
+|----------|-----|--------|
+| **1 — NEXT** | [`plan-sub-services-extraction.md`](./plan-sub-services-extraction.md) | Sub MD → overlay → hero/overview/sections |
+| 2 | [`plan-main-services-extraction.md`](./plan-main-services-extraction.md) | ✅ Mains extraction + UI (§10); E deferred |
+| 3 | This file | Living counts / per-slug / deferred backlog |
+
+**Active plans only (3 files) in `Clickmasterssoftwaredevelopmentcompany.co.uk/`:**  
+`plan-sub-services-extraction.md` · `plan-main-services-extraction.md` · `SERVICE-CONTENT-TRACKER.md`  
+
+Removed Sep 23, 2026: `plan-services-improvement.md`, `plan-main-services-ui.md` (merged into main §10), `plan-service-pages.md` (standalone services model — never shipped).
+
+**Hero rule:** Do not put long MD intro into heroes. Mains: `h1` + curated tagline + `metaDescription`; full intro in Overview. Subs: same in the sub plan.
+
 ---
 
 ## Status Legend
@@ -21,23 +40,40 @@
 |-------|-------------|--------|
 | **Phase 1** | Source-of-truth pipeline (convert scripts, lightweight exports, lookup fns) | 🔧 Partial — converters + overlay working; listings split still open |
 | **Phase 2** | Fix live pages (imports, navbar, dead code) | ✅ Done |
-| **Phase 3** | Content quality (intro, tables, costFactors, whyChoose, FAQs, links) | 🔧 Partial — 39 sub-services + **9 main services** MD; remaining mains deferred |
-| **Phase 4** | Performance/SEO (split data file, lazy-load, canonical, schema, sitemap) | 🔲 Not started |
-| **Phase 5** | Validate (build, canonical audit, sample pages, Lighthouse, JSON-LD) | ✅ Main-services extraction validated Sep 22 — build 1586/1586 |
+| **Phase 3** | Content quality (intro, tables, costFactors, whyChoose, FAQs, links) | 🔧 Partial — ~44 sub MD + **9 main** MD; sub pipeline polish **NEXT** |
+| **Phase 4** | Performance/SEO (split data file, lazy-load, canonical, schema, sitemap) | 🔲 Deferred backlog |
+| **Phase 5** | Validate (build, canonical audit, sample pages, Lighthouse, JSON-LD) | ✅ Main-services validated Sep 22 — build 1586/1586 |
 
-### Main-services extraction plan (`plan-main-services-extraction.md`)
+### Main-services (`plan-main-services-extraction.md`)
 
 | Phase | Status |
 |-------|--------|
-| A Adapters + Explore gate | ✅ |
-| B Converter harden | ✅ |
-| C MD source outliers | ✅ |
-| D Component polish | ✅ |
+| A–D, F | ✅ |
 | E 4 missing MD | ⏸️ Deferred |
-| F Validation | ✅ Build 1586/1586 |
-| G UI/UX polish | ✅ Hero + Overview + ContentSections restore — see `plan-main-services-ui.md` |
+| G UI/UX | ✅ See plan §10 |
 
-**UI note (Sep 22):** Hero uses MD `h1` + curated `tagline` + `metaDescription`. Full MD `intro` renders in Overview (image left). Do not put long intro into the hero again.
+### Sub-services (`plan-sub-services-extraction.md`) — NEXT
+
+| Phase | Status |
+|-------|--------|
+| Docs consolidate | ✅ Sep 23 |
+| A Converter harden + regenerate | 🔲 |
+| B Overlay `sections` | 🔲 |
+| C Hero + Overview | 🔲 |
+| D MD sections UI | 🔲 |
+| E Polish + QA | 🔲 |
+
+**Known gaps (pre-A):** intro can equal metaDesc; overlay skips `sections`; hero uses curated `title`/`lead`; ecommerce/PWA slug aliases miss routes; 4 support MDs on disk not in generated JS.
+
+### Deferred backlog
+
+| Item | Notes |
+|------|-------|
+| `sub-services-listings.js` split | Reduce huge `sub-services.js` import cost |
+| ~88 override-only sub MDs | After pipeline polish |
+| Main Phase E | AI, Data, Cloud/DevOps, Testing MD files |
+| Lighthouse / remove GSAP | Perf backlog |
+| Industry+service combos | Separate plans under `Clickmasterssoftwaredevelopmentcompany.co.uk/` |
 
 ---
 
@@ -459,8 +495,9 @@ These gaps exist because the source MD files don't contain the data. No parser f
 | `sub-services/` | 39 MD source files (21 original + 7 Design UI/UX + 11 new) |
 | `main-services/` | 7 MD source files (3 original + 1 Design UI/UX + 3 new) |
 | `SERVICE-CONTENT-TRACKER.md` | This file |
-| `plan-services-improvement.md` | Full improvement plan (Phases 1-5) |
+| `plan-main-services-extraction.md` | Main MD + UI plan (done; E deferred) |
+| `plan-sub-services-extraction.md` | Sub MD + UI plan (**NEXT**) |
 
 ---
 
-**Last Updated:** September 17, 2026
+**Last Updated:** September 23, 2026
