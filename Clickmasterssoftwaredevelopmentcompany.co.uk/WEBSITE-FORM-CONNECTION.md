@@ -17,7 +17,7 @@ Send leads from your site into ClickMasters ERP. You only change the **API URL**
 ## Endpoint
 
 ```http
-POST https://apierp.clickmasters.pk/api/public/web-leads
+POST https://apierp.clickmasters.pk/public/web-leads
 Content-Type: application/json
 X-Website-Key: YOUR_API_KEY
 ```
@@ -29,7 +29,7 @@ No key / wrong key / inactive site → **401**. Leads are not created without a 
 ## Copy-paste example
 
 ```js
-fetch("https://apierp.clickmasters.pk/api/public/web-leads", {
+fetch("https://apierp.clickmasters.pk/public/web-leads", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",

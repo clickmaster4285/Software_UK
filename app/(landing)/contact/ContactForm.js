@@ -41,19 +41,20 @@ export default function ContactForm() {
     };
 
     try {
-      const res = await fetch('https://crm.clickmasters.pk/api/leads', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
 
-      if (res.ok) {
+      const data = await res.json().catch(() => ({}));
+
+      if (res.ok && data.success) {
         setStatus('success');
         setForm({ name: '', email: '', phone: '', budget: '', message: '' });
       } else {
-        const err = await res.json();
         setStatus('error');
-        console.error('CRM error:', err);
+        console.error('Lead submit error:', data.message || res.status);
       }
     } catch (err) {
       setStatus('error');

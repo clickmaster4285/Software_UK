@@ -1,4 +1,16 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
+
+const ERP_ENDPOINT = 'https://apierp.clickmasters.pk/public/web-leads';
+const WEBSITE = 'clickmasterssoftwaredevelopmentcompany.co.uk';
+const ALLOWED_SERVICES = new Set([
+  'Software Development',
+  'Web Development',
+  'Mobile App Development',
+  'Artificial Intelligence',
+  'Blockchain',
+  'Digital Marketing',
+  'Automation',
+]);
 
 const escapeHtml = (text) =>
   String(text)
@@ -8,7 +20,6 @@ const escapeHtml = (text) =>
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
 
-// Clickmasters Official Colors (OKLCH mapped to Hex for Email)
 const BRAND_ACCENT = '#D4A017';
 const BRAND_PRIMARY = '#1A2A3A';
 
@@ -28,7 +39,7 @@ const adminEmailHtml = (f) => {
     adminDetailRow('Email', f.email) +
     adminDetailRow('Phone', f.phone ?? '') +
     adminDetailRow('Company', f.company ?? '') +
-    adminDetailRow('Service / source', f.services ?? '') +
+    adminDetailRow('Service / source', f.service ?? '') +
     adminDetailRow('Budget', f.budget ?? '');
 
   return `<!DOCTYPE html>
@@ -110,60 +121,132 @@ const autoReplyHtml = (name) => {
 </html>`;
 };
 
-export async function POST(req) {
-  try {
-    const nodemailer = (await import('nodemailer')).default;
-    const body = await req.json();
-    const { name, email, message, company, phone, services, budget } = body;
+const clean = (value) => (typeof value === 'string' ? value.trim() : '');
 
-    if (!name || !email || !message) {
-      return NextResponse.json({ message: 'Missing required fields' }, { status: 400 });
-    }
+async function sendLeadEmails(lead) {
+  const nodemailer = (await import('nodemailer')).default;
+  const smtpPass = String(process.env.SMTP_PASSWORD || '').replace(/\s+/g, '');
+  if (!process.env.SMTP_MAIL || !smtpPass) {
+    throw new Error('SMTP_MAIL or SMTP_PASSWORD is not set');
+  }
 
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || 'smtp.gmail.com',
-      port: Number(process.env.SMTP_PORT) || 587,
-      secure: false,
-      auth: {
-        user: process.env.SMTP_MAIL,
-        pass: process.env.SMTP_PASSWORD,
-      },
-    });
+  const transporter = nodemailer.createTransport({
+    host: process.env.SMTP_HOST || 'smtp.gmail.com',
+    port: Number(process.env.SMTP_PORT) || 587,
+    secure: false,
+    auth: {
+      user: process.env.SMTP_MAIL,
+      pass: smtpPass,
+    },
+  });
 
-    const lead = {
-      name: String(name).trim(),
-      email: String(email).trim(),
-      message: String(message).trim(),
-      company: company ? String(company).trim() : undefined,
-      phone: phone ? String(phone).trim() : undefined,
-      services: services ? String(services).trim() : undefined,
-      budget: budget ? String(budget).trim() : undefined,
-    };
+  const from = `"${process.env.ALIAS_NAME || 'Clickmasters'}" <${process.env.SMTP_MAIL}>`;
 
-    const adminMailOptions = {
-      from: `"${process.env.ALIAS_NAME || 'Clickmasters'}" <${process.env.SMTP_MAIL}>`,
+  await Promise.all([
+    transporter.sendMail({
+      from,
       to: process.env.RECEIVER_EMAIL || process.env.SMTP_MAIL,
-      replyTo: email,
+      replyTo: lead.email,
       subject: `New lead: ${lead.name} — Clickmasters`,
       html: adminEmailHtml(lead),
-    };
-
-    const userMailOptions = {
-      from: `"${process.env.ALIAS_NAME || 'Clickmasters'}" <${process.env.SMTP_MAIL}>`,
-      to: email,
+    }),
+    transporter.sendMail({
+      from,
+      to: lead.email,
       subject: 'Thank You for Contacting Clickmasters',
-      html: autoReplyHtml(name),
+      html: autoReplyHtml(lead.name),
+    }),
+  ]);
+}
+
+export async function POST(req) {
+  try {
+    const websiteKey = process.env.NEXT_PUBLIC_API_KEY;
+    if (!websiteKey) {
+      console.error('ERP API_KEY is not set');
+      return NextResponse.json(
+        { success: false, message: 'Server configuration error' },
+        { status: 500 }
+      );
+    }
+
+    const body = await req.json().catch(() => ({}));
+    const name = clean(body.name);
+    const email = clean(body.email);
+    const message = clean(body.message);
+
+    if (!name || !email || !message) {
+      return NextResponse.json(
+        { success: false, message: 'Missing required fields' },
+        { status: 400 }
+      );
+    }
+
+    const service = clean(body.service);
+    const payload = {
+      name,
+      email,
+      message,
+      phone: clean(body.phone),
+      company: clean(body.company),
+      website: WEBSITE,
+      landingPage: clean(body.landingPage),
+      referrer: clean(body.referrer),
+      source: clean(body.source) || 'contact-page',
+      utm_source: clean(body.utm_source),
+      utm_medium: clean(body.utm_medium),
+      utm_campaign: clean(body.utm_campaign),
+      utm_term: clean(body.utm_term),
+      utm_content: clean(body.utm_content),
     };
 
-    await Promise.all([
-      transporter.sendMail(adminMailOptions),
-      transporter.sendMail(userMailOptions)
-    ]);
+    if (service && ALLOWED_SERVICES.has(service)) {
+      payload.service = service;
+    }
 
-    return NextResponse.json({ message: 'Email sent successfully', success: true });
+    const res = await fetch(ERP_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Website-Key': websiteKey,
+      },
+      body: JSON.stringify(payload),
+      cache: 'no-store',
+    });
 
+    const data = await res.json().catch(() => ({}));
+
+    if (!res.ok) {
+      console.error('ERP lead error:', res.status, data.message || data);
+      return NextResponse.json(
+        { success: false, message: data.message || 'Failed to submit lead' },
+        { status: res.status }
+      );
+    }
+
+    try {
+      await sendLeadEmails({
+        name,
+        email,
+        message,
+        phone: payload.phone,
+        company: payload.company,
+        service: payload.service,
+        budget: clean(body.budget),
+      });
+    } catch (emailError) {
+      console.error('Lead email error (ERP already saved):', emailError);
+    }
+
+    return NextResponse.json(
+      { success: true, data: data.data || data },
+      { status: 201 }
+    );
   } catch (error) {
-    console.error('Error sending email:', error);
-    return NextResponse.json({ message: 'Failed to send message', success: false }, { status: 500 });
+    console.error('Contact lead error:', error);
+    return NextResponse.json(
+      { success: false, message: 'Failed to submit lead' },
+      { status: 500 }
+    );
   }
 }
