@@ -324,7 +324,7 @@ const Component = dynamic(() =>
 | `scripts/convert-resource-guides.js` | Convert resource guide DOCX → `data/resource-guides.js` |
 | `scripts/convert-glossary.js` | Convert glossary DOCX → `data/glossary.js` |
 | `scripts/convert-industries.js` | Convert industry DOCX → `data/industries.js` |
-| `scripts/convert-sub-services-md.js` | Convert 39 sub-service Markdown files → `data/sub-services-md.js` (rich intros, tables, cost factors, why choose, FAQs, JSON-LD schemas) |
+| `scripts/convert-sub-services-md.js` | Convert ~48 sub-service Markdown files → `data/sub-services-md.js` (intros, sections, tables, cost factors, why choose, FAQs, CTAs, JSON-LD) |
 | `scripts/convert-main-services-md.js` | Convert 7 main-service Markdown files → `data/main-services-md.js` |
 | `scripts/generate-url-sheet.js` | Generate Excel URL sheet from all data files |
 | `scripts/audit-canonical.js` | Audit all pages for canonical tag coverage |
@@ -350,13 +350,18 @@ const Component = dynamic(() =>
 
 ## 12. NEXT ACTIONS
 
-1. ✅ **Main & Sub-Services MD Conversion** — Converted 28 sub-services and 4 main-services MD files → `data/sub-services-md.js` & `data/main-services-md.js` with non-destructive overlay in `data/sub-services.js` and `data/main-services.js`.
-2. ✅ **Design UI/UX Category** — Added new main service `/design-ui-ux` with 7 sub-services: design-systems, product-design, web-design, mobile-app-design, ux-research, wireframing-prototyping, plus jamstack-development under web-development.
-3. ✅ **Slug Consistency Fix** — Fixed PWA and E-commerce slug mismatches between `serviceMenuSections` titles, override objects, and MD data. All slugs must now match across all files.
-4. 🔲 **Industry+Service Combos** — Plan and convert 202 combo files → `/[mainservice]/[subservice]/` route
-5. 🔲 **Performance** — Lazy-load About + Contact pages, remove GSAP/Swiper/Lenis
-6. ✅ **Route rename** — Renamed `/[category]/[service]/` to `/[mainservice]/[subservice]/` to avoid confusion with industries pages
-7. ✅ **Radix UI fix** — P1109 resolved — verified successful build of 1586/1586 static pages
+1. ✅ **Main & Sub-Services MD Conversion** — 48 sub + 9 main MD files → `data/sub-services-md.js` & `data/main-services-md.js` with non-destructive overlay.
+2. ✅ **Design UI/UX Category** — `/design-ui-ux` + 7 sub-services; jamstack under web-development.
+3. ✅ **Slug Consistency Fix** — PWA / ecommerce / support aliases aligned across menu, override, MD, main-services.
+4. ✅ **Sub-services pipeline A–D (Sep 23)** — Converter harden, overlay `sections`/`cta`/`hasMdSections`, hero full intro, chapter ContentSections, CTA buttons end-to-end, UK £ pricing, main/sub CTA normalize (build green). See [`plan-sub-services-extraction.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-sub-services-extraction.md).
+5. 🔲 **Sub Phase E** — Spot-check custom-software / frontend / NLP; fill empty FAQ MDs; density polish.
+6. 🔲 **~88 override-only sub MDs** — After Phase E.
+7. 🔲 **Industry+Service Combos** — Plan and convert 202 combo files → `/[mainservice]/[subservice]/` route
+8. 🔲 **Performance** — Lazy-load About + Contact; listings split for `sub-services.js`; GSAP removal backlog
+9. ✅ **Route rename** — `/[mainservice]/[subservice]/`
+10. ✅ **Radix UI / SSG** — Clean static builds
+
+**Service content docs:** [`plan-sub-services-extraction.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-sub-services-extraction.md) · [`plan-main-services-extraction.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-main-services-extraction.md) · [`SERVICE-CONTENT-TRACKER.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/SERVICE-CONTENT-TRACKER.md)
 
 ---
 
@@ -414,7 +419,8 @@ const blockchainConsultingOverride = {
 
 ---
 
-**Last Updated:** September 17, 2026
+**Last Updated:** September 23, 2026
 **Main Reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md)
 **Execution Plan:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md)
+**Service content:** [`plan-sub-services-extraction.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-sub-services-extraction.md) · [`SERVICE-CONTENT-TRACKER.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/SERVICE-CONTENT-TRACKER.md)
 

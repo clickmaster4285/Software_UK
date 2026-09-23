@@ -12,7 +12,7 @@
 | Doc | Role |
 |-----|------|
 | **This file** | Main extraction + UI (done for 9/13; E deferred) |
-| [`plan-sub-services-extraction.md`](./plan-sub-services-extraction.md) | **NEXT** — sub-services same procedure |
+| [`plan-sub-services-extraction.md`](./plan-sub-services-extraction.md) | **Active** — A–D + CTAs done; E polish |
 | [`SERVICE-CONTENT-TRACKER.md`](./SERVICE-CONTENT-TRACKER.md) | Living counts / per-slug status |
 
 **Related:** [`SERVICE-CONTENT-TRACKER.md`](./SERVICE-CONTENT-TRACKER.md) · Canvas: `main-services-pipeline-analysis.canvas.tsx`

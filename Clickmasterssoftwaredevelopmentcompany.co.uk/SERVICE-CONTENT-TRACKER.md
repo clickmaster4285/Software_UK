@@ -10,7 +10,7 @@
 
 | Priority | Doc | Status |
 |----------|-----|--------|
-| **1 — NEXT** | [`plan-sub-services-extraction.md`](./plan-sub-services-extraction.md) | Sub MD → overlay → hero/overview/sections |
+| **1 — Active** | [`plan-sub-services-extraction.md`](./plan-sub-services-extraction.md) | Sub MD → overlay → hero + ContentSections + CTAs (A–D done; E polish) |
 | 2 | [`plan-main-services-extraction.md`](./plan-main-services-extraction.md) | ✅ Mains extraction + UI (§10); E deferred |
 | 3 | This file | Living counts / per-slug / deferred backlog |
 
@@ -19,7 +19,13 @@
 
 Removed Sep 23, 2026: `plan-services-improvement.md`, `plan-main-services-ui.md` (merged into main §10), `plan-service-pages.md` (standalone services model — never shipped).
 
-**Hero rule:** Do not put long MD intro into heroes. Mains: `h1` + curated tagline + `metaDescription`; full intro in Overview. Subs: same in the sub plan.
+**Hero rules:**
+- **Mains:** `h1` + curated tagline + short `metaDescription`; full intro in Overview.
+- **Subs:** `h1` + gated tagline + **full `intro[]` in hero** (no Overview split). CTAs from MD `page.cta` strings.
+
+**CTA shapes (do not mix):**
+- Sub-service: `cta: { primary: string, secondary: string | null }`
+- Main-service: `cta.primary` is `{ heading, subheading, description, buttonText, buttonUrl }` — ContentSections uses `normalizeCtaLabel()`.
 
 ---
 
@@ -40,9 +46,9 @@ Removed Sep 23, 2026: `plan-services-improvement.md`, `plan-main-services-ui.md`
 |-------|-------------|--------|
 | **Phase 1** | Source-of-truth pipeline (convert scripts, lightweight exports, lookup fns) | 🔧 Partial — converters + overlay working; listings split still open |
 | **Phase 2** | Fix live pages (imports, navbar, dead code) | ✅ Done |
-| **Phase 3** | Content quality (intro, tables, costFactors, whyChoose, FAQs, links) | 🔧 Partial — ~44 sub MD + **9 main** MD; sub pipeline polish **NEXT** |
+| **Phase 3** | Content quality (intro, tables, costFactors, whyChoose, FAQs, links, CTAs) | 🔧 Partial — **48 sub MD** + **9 main** MD; sub A–D + CTA wiring ✅; E polish next |
 | **Phase 4** | Performance/SEO (split data file, lazy-load, canonical, schema, sitemap) | 🔲 Deferred backlog |
-| **Phase 5** | Validate (build, canonical audit, sample pages, Lighthouse, JSON-LD) | ✅ Main-services validated Sep 22 — build 1586/1586 |
+| **Phase 5** | Validate (build, canonical audit, sample pages, Lighthouse, JSON-LD) | ✅ Build green Sep 23 (after CTA normalize fix) |
 
 ### Main-services (`plan-main-services-extraction.md`)
 
@@ -52,25 +58,34 @@ Removed Sep 23, 2026: `plan-services-improvement.md`, `plan-main-services-ui.md`
 | E 4 missing MD | ⏸️ Deferred |
 | G UI/UX | ✅ See plan §10 |
 
-### Sub-services (`plan-sub-services-extraction.md`) — NEXT
+### Sub-services (`plan-sub-services-extraction.md`) — Active
 
 | Phase | Status |
 |-------|--------|
 | Docs consolidate | ✅ Sep 23 |
-| A Converter harden + regenerate | ✅ Sep 23 — 48 MD, 0 meta-as-intro, ecommerce/PWA/technical-support aliases fixed |
-| B Overlay `sections` | ✅ Sep 23 — `cleanMdSections` + `hasMdSections` (48/130 pages) |
-| C Hero + Overview | ✅ Sep 23 — H1/tagline/metaDesc + OverviewSection |
-| D MD sections UI | ✅ Sep 23 — ContentSections (MD) / DynamicSections (curated) |
-| E Polish + QA | 🔲 |
+| A Converter harden + regenerate | ✅ Sep 23 — 48 MD, 0 meta-as-intro, ecommerce/PWA/technical-support aliases |
+| B Overlay `sections` + `cta` + `hasMdSections` | ✅ Sep 23 |
+| C Hero full intro (no Overview split) | ✅ Sep 23 |
+| D MD ContentSections + chapter groups | ✅ Sep 23 |
+| D3 CTA extract + hero/FAQ/Process/Pricing/content buttons | ✅ Sep 23 |
+| D4 Main/sub CTA shape normalize (build fix) | ✅ Sep 23 |
+| E Polish + QA | 🔲 Spot-check + empty FAQ MDs |
 
-**Phase A–D notes:** Empty FAQs on 7 support/NLP MDs (source gaps). Spot-check + density polish left for Phase E.
+**What improved (Sep 23):**
+- MD sections actually render (were extracted but never overlaid)
+- CTA scaffold text → real buttons from MD labels (`**Primary CTA:**` form with colon inside bold)
+- Chapter jump-nav ContentSections (9 controllable group files); Details 2-col grid
+- UK pricing (£ / GBP); Button className merge fix
+- Shared ContentSections safe for both main (object CTA) and sub (string CTA)
+
+**Known gaps:** Empty FAQs on ~7 support/NLP MDs (source). ~88 override-only subs still without MD.
 
 ### Deferred backlog
 
 | Item | Notes |
 |------|-------|
 | `sub-services-listings.js` split | Reduce huge `sub-services.js` import cost |
-| ~88 override-only sub MDs | After pipeline polish |
+| ~88 override-only sub MDs | After Phase E polish |
 | Main Phase E | AI, Data, Cloud/DevOps, Testing MD files |
 | Lighthouse / remove GSAP | Perf backlog |
 | Industry+service combos | Separate plans under `Clickmasterssoftwaredevelopmentcompany.co.uk/` |
@@ -452,6 +467,12 @@ These gaps exist because the source MD files don't contain the data. No parser f
 | Main-services H1 | `convert-main-services-md.js` | Skips metadata headings like `## **Recommended Meta Data**` when extracting H1. |
 | runtime metaKeywords normalization | `sub-services.js`, `main-services.js` | `cleanMetaKeywords()` filters corrupted MD keyword arrays before overlay; falls back to hand-written override arrays when MD data is bad. |
 | Data layer array normalization | `sub-services.js`, `main-services.js` | Converted string `metaKeywords` to arrays in both files; overlay logic now always returns arrays. |
+| Sub CTA extract (`**Primary CTA:**`) | `convert-sub-services-md.js` | Colon-inside-bold + line-bounded labels; page `cta` + per-`section.cta`; intro collector merges CTAs |
+| Runtime CTA strip | `lib/subservice-utils.js` | `stripCtaArtifacts` → `{ text, primaryCta, secondaryCta }` |
+| CTA label normalize | `content-sections/lib.js` | `normalizeCtaLabel` / `normalizePageCta` — string vs main-service object |
+| Sub hero CTAs | `service-hero.jsx` | Labels from `page.cta`; quote/consult secondary → `/contact-us` |
+| ContentSections chapters | `content-sections/*` | 9 group files + jump nav; Details 2-col; closing Ready-to CTAs as buttons |
+| UK pricing | `PricingCard` / `PricingSection` | £ / `en-GB` / GBP copy |
 
 ---
 
@@ -459,24 +480,25 @@ These gaps exist because the source MD files don't contain the data. No parser f
 
 ### Field Extraction Summary
 
-| Field | Sub-Services (39) | Main-Services (7) | Notes |
+| Field | Sub-Services (39→48) | Main-Services (7→9) | Notes |
 |-------|:-----------------:|:-----------------:|-------|
-| metaTitle | 39/39 (100%) | 7/7 (100%) | All formats handled |
-| metaDescription | 39/39 (100%) | 7/7 (100%) | All formats handled |
-| metaKeywords | 34/39 (87%) | 5/7 (71%) | 5 source files lack keyword sections |
-| h1 | 39/39 (100%) | 7/7 (100%) | isCorruptedH1() guard active |
-| intro | 36/39 (92%) | 3/7 (43%) | 3 original SD files + 4 main services use inline format |
-| tables | 32/39 (82%) | 6/7 (86%) | Original SD files have inline tables |
-| costFactors | 32/39 (82%) | 2/7 (29%) | Main services use service-section-data.js |
-| whyChoose | 37/39 (95%) | 2/7 (29%) | Main services use whyChooseUsData.js |
-| relatedLinks | 38/39 (97%) | 7/7 (100%) | 1 SD file lacks links |
-| faqs | 39/39 (100%) | 0/7 (0%) | Main services have FAQs in service-section-data.js |
-| jsonLd | 39/39 (100%) | 6/7 (86%) | Blockchain MD has no schema blocks |
+| metaTitle | ~100% | ~100% | All formats handled |
+| metaDescription | ~100% | ~100% | All formats handled |
+| metaKeywords | high | high | Some source files lack keyword sections |
+| h1 | ~100% | ~100% | isCorruptedH1() guard active |
+| intro | ~100% post Phase A | varies | Sub: 0 meta-as-intro after Sep 23 harden |
+| `cta` page pair | ~39/48 primary; ~24/48 both | object shape on mains | Sub strings; see normalize helpers |
+| tables | high | high | Original SD files have inline tables |
+| costFactors | high | low in MD | Main services use service-section-data.js |
+| whyChoose | high | low in MD | Main services use whyChooseUsData.js |
+| relatedLinks | high | high | Internal domain links relativized |
+| faqs | most; ~7 empty | curated data | Empty = source MD gaps |
+| jsonLd | high | most | Blockchain MD may lack schema |
 
 ### Gap Classification
 
-- **Parser bugs (fixed):** metaTitle backtick format, metaKeywords "Target SEO Keywords"/"Meta Tags" variants, JSON-LD escaped tags, slug mismatches
-- **Source file gaps (not fixable):** 5 sub-services + 2 main services lack keyword sections; 3 SD files use single-line format; main services don't have FAQ/cost/why-choose in MD (use separate data files)
+- **Parser bugs (fixed Sep 23):** meta-as-intro, CTA colon-inside-bold, intro skipping CTAs, sections not overlaid, main object CTA rendered as child
+- **Source file gaps (not fixable in converter):** ~7 empty FAQ MDs; ~88 override-only pages without MD; 4 main categories deferred
 
 ---
 
@@ -484,20 +506,24 @@ These gaps exist because the source MD files don't contain the data. No parser f
 
 | File | Purpose |
 |------|---------|
-| `data/sub-services.js` | Base services + 102 override objects + merged services array + overlay logic + baseSlugAliases |
-| `data/sub-services-md.js` | MD-converted sub-service content (39 entries) |
-| `data/main-services.js` | 19 main service categories with subServices arrays |
-| `data/main-services-md.js` | MD-converted main service content (7 entries) |
-| `data/service-section-data.js` | Per-category pricing/features/faqs (keep, merge later) |
-| `data/whyChooseUsData.js` | Per-category why-choose-us (keep, merge later) |
-| `scripts/convert-sub-services-md.js` | Reads `sub-services/*.md` → writes `data/sub-services-md.js` |
-| `scripts/convert-main-services-md.js` | Reads `main-services/*.md` → writes `data/main-services-md.js` |
-| `sub-services/` | 39 MD source files (21 original + 7 Design UI/UX + 11 new) |
-| `main-services/` | 7 MD source files (3 original + 1 Design UI/UX + 3 new) |
+| `data/sub-services.js` | Base services + overrides + overlay (`cleanMdSections`, `hasMdSections`, `cta`) |
+| `data/sub-services-md.js` | MD-converted sub-service content (**48** entries) |
+| `data/main-services.js` | Main service categories + MD overlay |
+| `data/main-services-md.js` | MD-converted main service content (**9** entries) |
+| `data/service-section-data.js` | Per-category pricing/features/faqs (keep) |
+| `data/whyChooseUsData.js` | Per-category why-choose-us (keep) |
+| `scripts/convert-sub-services-md.js` | `sub-services/*.md` → `data/sub-services-md.js` |
+| `scripts/convert-main-services-md.js` | `main-services/*.md` → `data/main-services-md.js` |
+| `lib/subservice-utils.js` | Mojibake clean, CTA strip, linkify, section ids |
+| `components/landing/sub-services/service-hero.jsx` | Sub hero: full intro + MD CTAs |
+| `components/landing/main-service/content-sections/` | Shared chapter UI (mains + MD subs) |
+| `sub-services/` | ~48 MD source files |
+| `main-services/` | ~9 MD source files |
 | `SERVICE-CONTENT-TRACKER.md` | This file |
 | `plan-main-services-extraction.md` | Main MD + UI plan (done; E deferred) |
-| `plan-sub-services-extraction.md` | Sub MD + UI plan (**NEXT**) |
+| `plan-sub-services-extraction.md` | Sub MD + UI plan (**Active** — E polish next) |
 
 ---
 
-**Last Updated:** September 23, 2026
+**Last Updated:** September 23, 2026  
+**Next:** Phase E spot-check on custom-software / frontend / one NLP page; then optional ~88 MD backlog.
