@@ -2,7 +2,7 @@
 
 import { useEffect, useId, useRef, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { groupServiceContent, slugChapter } from './lib';
+import { groupServiceContent, slugChapter, normalizePageCta, normalizeCtaLabel } from './lib';
 import { DefaultGroupBody, ContentCtaButtons } from './primitives';
 import ContentJumpNav from './ContentJumpNav';
 import OverviewContent from './groups/OverviewContent';
@@ -149,7 +149,8 @@ function FlatDocument({ sections, tables }) {
  */
 export function ContentSections({ serviceData }) {
   const tables = serviceData?.tables;
-  const pageCta = serviceData?.cta || null;
+  // Main-service cta.primary is an object; sub-service is a string — normalize first
+  const pageCta = normalizePageCta(serviceData?.cta);
 
   // Attach / complete CTAs on closing sections from page-level MD labels
   const sections = (serviceData?.sections || []).map((s) => {
@@ -157,14 +158,20 @@ export function ContentSections({ serviceData }) {
       /^ready to |^let.?s |final cta|next step|get started|talk to us/i.test(
         s.heading || ''
       );
-    if (!pageCta && !s.cta) return s;
-    if (s.cta?.primary || s.cta?.secondary || isClosing) {
+    const sectionCta = normalizePageCta(s.cta);
+    if (!pageCta && !sectionCta) return s;
+    if (sectionCta?.primary || sectionCta?.secondary || isClosing) {
       return {
         ...s,
         cta: {
-          primary: s.cta?.primary || (isClosing ? pageCta?.primary : null) || null,
+          primary:
+            sectionCta?.primary ||
+            (isClosing ? pageCta?.primary : null) ||
+            null,
           secondary:
-            s.cta?.secondary || (isClosing ? pageCta?.secondary : null) || null,
+            sectionCta?.secondary ||
+            (isClosing ? pageCta?.secondary : null) ||
+            null,
         },
       };
     }
@@ -180,7 +187,9 @@ export function ContentSections({ serviceData }) {
     tables || []
   );
   const useChapters = sections.length > 6 && orderedGroups.length > 1;
-  const anySectionCta = sections.some((s) => s.cta?.primary || s.cta?.secondary);
+  const anySectionCta = sections.some(
+    (s) => normalizeCtaLabel(s.cta?.primary) || normalizeCtaLabel(s.cta?.secondary)
+  );
 
   return (
     <section
