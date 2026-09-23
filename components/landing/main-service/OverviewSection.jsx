@@ -54,6 +54,7 @@ export default function OverviewSection({ serviceData }) {
 
   return (
     <section
+      id="service-overview"
       className="relative py-16 md:py-24 bg-background border-b border-border/40 overflow-hidden"
       aria-labelledby="overview-heading"
     >

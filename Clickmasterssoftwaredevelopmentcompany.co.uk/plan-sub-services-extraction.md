@@ -2,7 +2,7 @@
 
 **Generated:** September 23, 2026  
 **Last Updated:** September 23, 2026  
-**Status:** Ready to implement (docs consolidated; code not started)
+**Status:** Phases A–D done — overlay + hero/Overview + MD sections wired (Sep 23)
 
 **Mirror of (completed mains):** [`plan-main-services-extraction.md`](./plan-main-services-extraction.md) (§10 = UI contract)  
 **Tracker:** [`SERVICE-CONTENT-TRACKER.md`](./SERVICE-CONTENT-TRACKER.md)
@@ -39,10 +39,10 @@
 | Phase | Status | Notes |
 |-------|--------|-------|
 | **Docs consolidate** | ✅ Done Sep 23 | Single focus set; removed old umbrella + duplicate UI plan |
-| **A — Converter harden** | 🔲 Pending | Intro/H1/noise/aliases + regenerate |
-| **B — Overlay adapters** | 🔲 Pending | Merge `md.sections` when clean |
-| **C — Hero + Overview** | 🔲 Pending | Mirror main §10 hero contract |
-| **D — Sections UI** | 🔲 Pending | ContentSections-style or DynamicSections MD path |
+| **A — Converter harden** | ✅ Done Sep 23 | H1-gated intro; reject metaDesc; noise filter; live slug aliases; URL/filename resolve; regenerated 48 |
+| **B — Overlay adapters** | ✅ Done Sep 23 | `cleanMdSections` + `hasMdSections`; overlay `sections` |
+| **C — Hero + Overview** | ✅ Done Sep 23 (revised) | Full intro in hero; no Overview split on sub-pages |
+| **D — Sections UI** | ✅ Done Sep 23 | ContentSections when MD; DynamicSections curated-only fallback |
 | **E — Polish + QA** | 🔲 Pending | Dedupe rich content; 3-page spot-check |
 
 ---
@@ -62,12 +62,12 @@ sub-services/*.md
 |-------|------|
 | MD sources | `sub-services/` (~48 files) |
 | Converter | `scripts/convert-sub-services-md.js` |
-| Generated | `data/sub-services-md.js` (~44; stale vs disk) |
+| Generated | `data/sub-services-md.js` (**48** entries, regenerated Sep 23) |
 | Overlay | `data/sub-services.js` (~line 15240) |
 | Hero | `components/landing/sub-services/service-hero.jsx` |
 | Rich / sections | `ServiceRichContent.jsx`, `DynamicSections.jsx` |
 
-**Counts:** ~130 live pages · ~42 with MD overlay · ~88 curated-only · 2 slug orphans (ecommerce/PWA) · 4 support MDs not in generated JS.
+**Counts:** ~130 live pages · **48 MD / 48 slug-matched to overrides** · ~88 curated-only · ecommerce/PWA orphans fixed · support MDs included.
 
 ---
 
@@ -75,12 +75,12 @@ sub-services/*.md
 
 | Main fix | Sub today |
 |----------|-----------|
-| Intro ≠ metaDesc | Converter still pollutes intro |
-| Hero H1 + tagline + short meta | Uses curated `title`/`lead` |
-| Overview for full intro | Intro mid-page in ServiceRichContent |
-| MD `sections` on page | Overlay omits `sections` |
-| Slug consistency | ecommerce/PWA aliases miss routes |
-| Fresh convert | 4 support MDs missing from generated JS |
+| Intro ≠ metaDesc | ✅ Fixed (Phase A) — 0 meta-as-intro, 0 empty intro |
+| Hero H1 + tagline + short meta | ✅ Phase C — `service-hero.jsx` |
+| Overview for full intro | ✅ Phase C — reuses main `OverviewSection` |
+| MD `sections` on page | ✅ Phase B+D — overlay + `ContentSections` |
+| Slug consistency | ✅ Fixed — ecommerce, PWA, technical-support |
+| Fresh convert | ✅ 48/48 on disk → `sub-services-md.js` |
 
 ---
 
@@ -99,17 +99,19 @@ Full `intro[]` → Overview under hero. MD `sections` → ContentSections-style 
 
 ## 4. Phases A–E
 
-### A — Converter harden + regenerate
-Port main intro rules; reject metaDesc-as-intro; filter noise headings; fix aliases (`ecommerce-development`, `progressive-web-app-development`); re-run converter; census.
+### A — Converter harden + regenerate ✅
+Ported main intro rules (`finalizeIntro`, `isPageH1Line`, `collectIntroFrom`); reject metaDesc-as-intro; filter noise headings; aliases target live routes (`ecommerce-development`, `progressive-web-app-development`); URL resolve prefers filename/schema 2-seg paths; regenerated 48 entries.
 
-### B — Overlay adapters
-Overlay `sections` when clean; keep `isCorruptedH1` / `cleanMetaKeywords`.
+**Census (post-A):** empty intro 0 · meta-as-intro 0 · noise sections 0 · slug miss 0 · empty FAQs 7 (source MD gaps — Phase E / deferred).
 
-### C — Hero + Overview
-`service-hero.jsx` + Overview under hero; dedupe intro from ServiceRichContent.
+### B — Overlay adapters ✅
+`cleanMdSections()` filters noise/empty stubs; overlays `md.sections` when clean; sets `hasMdSections` for UI routing. Keeps `isCorruptedH1` / `cleanMetaKeywords`.
 
-### D — Wire MD sections
-After Overview; curated DynamicSections only when no MD sections.
+### C — Hero + Overview ✅
+`service-hero.jsx`: H1 ← `page.h1`, tagline ← short curated `lead`, description ← `metaDescription` via `getHeroDescription`. Full `intro[]` → main `OverviewSection` under hero. `ServiceRichContent` gets `hideIntro` when Overview is shown.
+
+### D — Wire MD sections ✅
+`ContentSections` when `hasMdSections`; curated `DynamicSections` + standalone tables only when no MD sections. TOC collapses MD body to a single “Details” item.
 
 ### E — Polish + QA
 Light density; update tracker; spot-check custom-software, frontend-development, one NLP/AI page.
@@ -129,4 +131,4 @@ Light density; update tracker; spot-check custom-software, frontend-development,
 
 ---
 
-**Next action:** Start Phase A when you say go.
+**Next action:** Start Phase E (polish + 3-page QA spot-check).

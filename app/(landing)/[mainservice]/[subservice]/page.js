@@ -16,7 +16,6 @@ import { ServicesSection } from '@/components/landing/sub-services/ServicesSecti
 import { EngineeringBaseline } from '@/components/landing/sub-services/EngineeringBaseline';
 import { WhyChooseUs } from '@/components/landing/sub-services/WhyChooseUs';
 import { TechStack } from '@/components/landing/sub-services/TechStack';
-import { CTAComponents } from '@/components/landing/sub-services/FooterCTA';
 import { CeoVision } from '@/components/landing/sub-services/CeoVision';
 import { ClientScrollWheel } from './ClientScrollWheel';
 
@@ -29,8 +28,9 @@ const CaseStudySection = dynamic(() => import('@/components/landing/sub-services
 const PricingSection = dynamic(() => import('@/components/landing/sub-services/PricingSection').then(mod => mod.PricingSection));
 const TestimonialsSection = dynamic(() => import('@/components/landing/sub-services/TestimonialsSection').then(mod => mod.TestimonialsSection));
 const FAQSection = dynamic(() => import('@/components/landing/sub-services/FAQSection').then(mod => mod.FAQSection));
+const ContentSections = dynamic(() => import('@/components/landing/main-service/ContentSections'), { ssr: true });
 
-// Rich MD-derived content (intro, cost factors, why-choose, related links) — no-op until data is populated
+// Rich MD-derived content (cost factors, why-choose, related links) — full intro lives in hero
 const ServiceRichContent = dynamic(() =>
   import('@/components/landing/sub-services/ServiceRichContent').then(mod => {
     const C = mod.default || mod.ServiceRichContent;
@@ -104,6 +104,7 @@ export default async function ServiceByCategoryPage({ params }) {
   }
 
   const sections = page.sections || [];
+  const hasMdSections = Boolean(page.hasMdSections);
   const faqs = page.faqs || [];
   const canonicalPath = getCanonicalPath(page);
   const url = `${siteConfig.url}${canonicalPath}`;
@@ -113,12 +114,16 @@ export default async function ServiceByCategoryPage({ params }) {
     { id: 'overview', title: 'Overview', level: 2 },
   ];
 
-  sections.forEach((section, index) => {
-    const id = getSectionId(section.heading, index, slugify);
-    if (!tocItems.find(item => item.id === id)) {
-      tocItems.push({ id, title: section.heading, level: 2 });
-    }
-  });
+  if (hasMdSections) {
+    tocItems.push({ id: 'md-content', title: 'Details', level: 2 });
+  } else {
+    sections.forEach((section, index) => {
+      const id = getSectionId(section.heading, index, slugify);
+      if (!tocItems.find(item => item.id === id)) {
+        tocItems.push({ id, title: section.heading, level: 2 });
+      }
+    });
+  }
 
   if (page.servicesCards && !tocItems.find(item => item.id === 'our-services')) {
     tocItems.push({ id: 'our-services', title: 'Our Services', level: 2 });
@@ -148,7 +153,8 @@ export default async function ServiceByCategoryPage({ params }) {
     tocItems.push({ id: 'pricing', title: 'Pricing', level: 2 });
   }
 
-  if (page.tables) {
+  // Tables already shown inside ContentSections when hasMdSections
+  if (!hasMdSections && page.tables) {
     page.tables.forEach((table) => {
       const id = slugify(table.title);
       if (!tocItems.find(item => item.id === id)) {
@@ -203,14 +209,20 @@ export default async function ServiceByCategoryPage({ params }) {
 
         <div className="mx-auto max-w-[96vw] lg:max-w-[90vw] px-4 sm:px-6 lg:px-8">
           <main className="">
-            {sections.length > 0 && (
-              <DynamicSections
-                sections={sections}
-                serviceName={page.serviceName}
-              />
+            {hasMdSections ? (
+              <div className="-mx-4 sm:-mx-6 lg:-mx-8">
+                <ContentSections serviceData={page} />
+              </div>
+            ) : (
+              sections.length > 0 && (
+                <DynamicSections
+                  sections={sections}
+                  serviceName={page.serviceName}
+                />
+              )
             )}
 
-            <ServiceRichContent page={page} />
+            <ServiceRichContent page={page} hideIntro />
 
             {page.servicesCards && (
               <ServicesSection
@@ -240,6 +252,7 @@ export default async function ServiceByCategoryPage({ params }) {
                 <ProcessSection
                   serviceName={page.serviceName}
                   processPhases={page.processPhases}
+                  cta={page.cta}
                 />
               )}
             </div>
@@ -261,13 +274,14 @@ export default async function ServiceByCategoryPage({ params }) {
                 <PricingSection
                   serviceName={page.serviceName}
                   pricingTiers={page.pricingTiers}
+                  cta={page.cta}
                 />
               )}
             </div>
 
             <CeoVision />
 
-            {page.tables && page.tables.map((table) => (
+            {!hasMdSections && page.tables && page.tables.map((table) => (
               <section key={table.title} id={slugify(table.title)} className="mx-auto max-w-[96vw] lg:max-w-[90vw] scroll-mt-20 pt-16">
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-1 rounded-full bg-primary" />
@@ -324,7 +338,7 @@ export default async function ServiceByCategoryPage({ params }) {
             </div>
 
             <div id="faq" className="scroll-mt-20">
-              {faqs.length > 0 && <FAQSection faqs={faqs} />}
+              {faqs.length > 0 && <FAQSection faqs={faqs} cta={page.cta} />}
             </div>
           </main>
         </div>

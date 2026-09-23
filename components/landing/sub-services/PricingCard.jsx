@@ -22,7 +22,7 @@ export function PricingCard({
 
   const formatPrice = (value) => {
     if (!value || value <= 0) return null;
-    return value.toLocaleString("en-AU");
+    return value.toLocaleString("en-GB");
   };
 
   const hasValidPrice = price > 0;
@@ -51,26 +51,26 @@ export function PricingCard({
 
               <div className="mt-8">
 
-                {/* PRICE DISPLAY */}
+                {/* PRICE DISPLAY — UK GBP */}
                 {hasValidPrice ? (
                   <>
                     {/* RANGE */}
                     {hasRange ? (
                       <div className="flex flex-col">
                         <span className="text-4xl font-extrabold tracking-tight text-slate-900">
-                          ${formatPrice(price)} – ${formatPrice(originalPrice)}
+                          £{formatPrice(price)} – £{formatPrice(originalPrice)}
                         </span>
                         <p className="text-xs text-slate-500 mt-1 uppercase tracking-widest font-bold">
-                          AUD · one-time investment range
+                          GBP · one-time investment range
                         </p>
                       </div>
                     ) : (
                       <div className="flex flex-col">
                         <span className="text-5xl font-extrabold tracking-tight text-slate-900">
-                          ${formatPrice(price)}
+                          £{formatPrice(price)}
                         </span>
                         <p className="text-xs text-slate-500 mt-1 uppercase tracking-widest font-bold">
-                          AUD · one-time payment
+                          GBP · one-time payment
                         </p>
                       </div>
                     )}

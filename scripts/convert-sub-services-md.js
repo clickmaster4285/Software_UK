@@ -51,13 +51,64 @@ function clean(text) {
   );
 }
 
+/** Remove MD scaffold CTAs / schema labels that leak into body & FAQ answers. */
+// MD forms seen: **Primary CTA:** Label  |  **Primary CTA**: Label  |  Primary CTA: Label
+const CTA_LABEL_RE =
+  /\*{0,2}\s*(Primary|Secondary)\s+CTA\s*:?\s*\*{0,2}\s*:?\s*/i;
+
+function stripCtaArtifacts(text) {
+  return String(text || '')
+    .replace(
+      new RegExp(CTA_LABEL_RE.source + '[^\\n]*', 'gi'),
+      ' '
+    )
+    .replace(/\b(?:Primary|Secondary)\s+CTA\s*:/gi, ' ')
+    .replace(/\b(?:Service|FAQ|Breadcrumb)\s*Schema\b/gi, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/\s+([.,;:!?])/g, '$1')
+    .trim();
+}
+
+function scrubCtaLabel(raw) {
+  const v = clean(String(raw || '').replace(/^\*+\s*/, '').replace(/\*+$/, ''));
+  // Drop trailing secondary fragment if both were on one line
+  return v
+    .replace(/\s*\*{0,2}\s*Secondary\s+CTA\s*:?\s*\*{0,2}\s*:?\s*.*$/i, '')
+    .trim();
+}
+
+function extractCtaPair(text) {
+  const src = String(text || '');
+  // Colon may sit inside or outside closing ** (e.g. **Primary CTA:** Label)
+  const primaryMatch = src.match(
+    /\*{0,2}\s*Primary\s+CTA\s*:?\s*\*{0,2}\s*:?\s*([^\n]+)/i
+  );
+  const secondaryMatch = src.match(
+    /\*{0,2}\s*Secondary\s+CTA\s*:?\s*\*{0,2}\s*:?\s*([^\n]+)/i
+  );
+  const primary = primaryMatch ? scrubCtaLabel(primaryMatch[1]) : '';
+  const secondary = secondaryMatch ? scrubCtaLabel(secondaryMatch[1]) : '';
+  return {
+    primary: primary && primary.length > 2 && primary.length < 90 ? primary : null,
+    secondary:
+      secondary && secondary.length > 2 && secondary.length < 90 ? secondary : null,
+  };
+}
+
+function isCtaOnlyLine(line) {
+  const t = String(line || '').replace(/\*\*/g, '').trim();
+  return /^(Primary|Secondary)\s+CTA\s*:/i.test(t) || /^(Primary|Secondary)\s+CTA$/i.test(t);
+}
+
 function stripBoldKeepLinks(text) {
   return stripEmojis(
-    String(text || '')
-      .replace(/\*\*/g, '')
-      .replace(/https:\/\/clickmasterssoftwaredevelopmentcompany\.co\.uk/g, '')
-      .replace(/\s+/g, ' ')
-      .trim()
+    stripCtaArtifacts(
+      String(text || '')
+        .replace(/\*\*/g, '')
+        .replace(/https:\/\/clickmasterssoftwaredevelopmentcompany\.co\.uk/g, '')
+        .replace(/\s+/g, ' ')
+        .trim()
+    )
   );
 }
 
@@ -192,7 +243,7 @@ function extractKeywords(content) {
 
 // ─── Main MD Parser ──────────────────────────────────────────────────────────
 
-function parseMd(content) {
+function parseMd(content, sourceFile = '') {
   content = content.replace(/\r/g, '');
   const lines = content.split(/\r?\n/);
   const out = {
@@ -213,10 +264,21 @@ function parseMd(content) {
     whyChoose: [],
     faqs: [],
     relatedLinks: [],
+    cta: null,
     jsonLd: extractSchemas(content),
   };
 
-    // 1. Meta Title (prioritize ## **Meta Title**, then inline **Meta Title:** content, then standalone **Meta Title:** with content next line)
+  const slugAliases = {
+    'e-commerce-development': 'ecommerce-development',
+    'progressive-web-app-develoment': 'progressive-web-app-development', // typo in MD filename/URL
+    'pwa-development': 'progressive-web-app-development',
+    'dapp-development': 'decentralized-app-dapp-development',
+    'compliance-management': 'compliance-risk-management',
+    'model-training-optimization': 'model-training-optimisation',
+    'nlp': 'natural-language-processing',
+  };
+
+  // 1. Meta Title (prioritize ## **Meta Title**, then inline **Meta Title:** content, then standalone **Meta Title:** with content next line)
   const titleMatch = content.match(/\n##[ \t]*\*\*`?Meta Title`?\*\*[ \t]*\n+([^\n]+)/im)
     || content.match(/#[ \t]*\*\*`?Meta Title`?:\s*\*\*?[ \t]+([^\n]+)/im)
     || content.match(/\n\*\*`?Meta Title`?:\*\*[ \t]*\n+([^\n]+)/im)
@@ -245,8 +307,29 @@ function parseMd(content) {
     out.metaDescription = clean(descMatch[1]);
   }
 
-  // 3. URL, Slug, CategorySlug
-  const urlMatch = content.match(/https:\/\/clickmasterssoftwaredevelopmentcompany\.co\.uk(\/[a-z0-9-]+(?:\/[a-z0-9-]+)?)/i);
+  // 3. URL, Slug, CategorySlug — prefer category/subservice (2 segments)
+  // Prefer path whose leaf matches the source filename when available.
+  const fileBase = sourceFile
+    ? path.basename(sourceFile, path.extname(sourceFile))
+        .toLowerCase()
+        .replace(/&/g, 'and')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '')
+    : '';
+  const allUrls = [...content.matchAll(/https:\/\/clickmasterssoftwaredevelopmentcompany\.co\.uk(\/[a-z0-9-]+(?:\/[a-z0-9-]+)?)/gi)];
+  const twoSegUrls = allUrls.filter((m) => m[1].split('/').filter(Boolean).length >= 2);
+  const byFilename = fileBase
+    ? twoSegUrls.find((m) => {
+        const leaf = m[1].split('/').filter(Boolean)[1];
+        return leaf === fileBase || leaf === (slugAliases[fileBase] || fileBase);
+      })
+    : null;
+  // Prefer explicit Service schema "url" with 2 segments
+  const schemaUrl = content.match(/"@type"\s*:\s*"Service"[\s\S]{0,400}?"url"\s*:\s*"https:\/\/clickmasterssoftwaredevelopmentcompany\.co\.uk(\/[a-z0-9-]+\/[a-z0-9-]+)/i);
+  const urlMatch = byFilename
+    || (schemaUrl ? { 1: schemaUrl[1] } : null)
+    || twoSegUrls[0]
+    || allUrls[0];
   if (urlMatch) {
     out.url = `${DOMAIN}${urlMatch[1]}`;
     const parts = urlMatch[1].split('/').filter(Boolean);
@@ -259,19 +342,17 @@ function parseMd(content) {
     }
   }
 
-  // Slug aliases / normalization to match existing route structure
-  const slugAliases = {
-    'ecommerce-development': 'e-commerce-development',
-    'progressive-web-app-develoment': 'pwa-development',
-    'progressive-web-app-development': 'pwa-development',
-    'dapp-development': 'decentralized-app-dapp-development',
-    'compliance-management': 'compliance-risk-management',
-    'model-training-optimization': 'model-training-optimisation',
-    'nlp': 'natural-language-processing',
-  };
   if (slugAliases[out.slug]) {
     out.slug = slugAliases[out.slug];
     out.url = `${DOMAIN}/${out.categorySlug}/${out.slug}`;
+  }
+  // When MD only linked the category (slug === categorySlug), derive from filename
+  if (out.slug && out.categorySlug && out.slug === out.categorySlug && fileBase) {
+    out.slug = slugAliases[fileBase] || fileBase;
+    out.url = `${DOMAIN}/${out.categorySlug}/${out.slug}`;
+  } else if ((!out.slug || out.slug === out.categorySlug) && fileBase) {
+    out.slug = slugAliases[fileBase] || fileBase;
+    if (out.categorySlug) out.url = `${DOMAIN}/${out.categorySlug}/${out.slug}`;
   }
 
   // 4. H1 & Intro
@@ -308,21 +389,120 @@ function parseMd(content) {
   }
   if (h1Match) {
     out.h1 = clean(h1Match[1]);
+    // Strip leftover "H1:" prefix if present
+    out.h1 = out.h1.replace(/^H1:\s*/i, '').trim();
     out.title = out.h1;
   }
 
   let inFaq = false;
   let faqCurrent = null;
 
-  const pushContentSection = (heading, blocks) => {
+  const finalizeIntro = (paras) => {
+    const metaDesc = clean(out.metaDescription || '').toLowerCase();
+    const metaTitle = clean(out.metaTitle || '').toLowerCase();
+    return paras
+      .map((p) => stripBoldKeepLinks(p))
+      .filter((p) => {
+        if (!p || p.length < 20) return false;
+        const pl = p.toLowerCase();
+        if (/^(primary cta|secondary cta|cta)\s*:/i.test(p)) return false;
+        if (/^---+\s*$/.test(p)) return false;
+        if (/page content/i.test(pl)) return false;
+        if (/meta (title|description|keyword)/i.test(pl)) return false;
+        if (metaDesc && pl === metaDesc) return false;
+        if (metaTitle && pl === metaTitle) return false;
+        // URL path fragments mistakenly captured as intro
+        if (/^\/[a-z0-9-]+(\/[a-z0-9-]+)?\/?$/i.test(p.trim())) return false;
+        if (/^(discuss your|book a |request |talk to )/i.test(p) && p.length < 80) return false;
+        if (p.length < 70 && !/[.?!]/.test(p) && !/\[/.test(p)) return false;
+        return true;
+      });
+  };
+
+  const isPageH1Line = (t) => {
+    if (!/^#{1,2}\s/.test(t)) return false;
+    if (/\bMeta\s+(Title|Description|Keywords?)\b/i.test(t)) return false;
+    if (/^#+\s*\*?\*?SECTION\s+\d+/i.test(t)) return false;
+    if (/https?:\/\//i.test(t)) return false;
+    if (/^#+\s*`/.test(t)) return false;
+    const headingText = clean(t.replace(/^#+\s*/, ''));
+    if (headingText.length < 20 && !/^H1:/i.test(headingText)) return false;
+    if (/^[a-z0-9 /-]+$/.test(headingText) && headingText.length < 45) return false;
+    // Explicit H1 tag (any level) — common in SECTION scaffolds: ## **H1: …**
+    if (/^#{1,2}\s*\**H1:\s*/i.test(t)) return true;
+    if (
+      /^#\s+\*{0,2}[A-Za-z]/.test(t) &&
+      !/\b(FAQs?|CTA Section|Our .+ Services|Frequently Asked|Target SEO)\b/i.test(t)
+    ) {
+      return true;
+    }
+    return false;
+  };
+
+  const collectIntroFrom = (startIdx) => {
+    const introParas = [];
+    let j = startIdx;
+    while (j < lines.length) {
+      const lj = lines[j].trim();
+      if (/^#{1,4}\s/.test(lj)) break;
+      if (isCtaOnlyLine(lj) || /^(Primary CTA|Secondary CTA|CTA)\s*:/i.test(lj) || /^\*\*(Primary CTA|Secondary CTA|CTA)\b/i.test(lj)) {
+        const pair = extractCtaPair(lj);
+        if (pair.primary || pair.secondary) {
+          out.cta = {
+            primary: pair.primary || out.cta?.primary || null,
+            secondary: pair.secondary || out.cta?.secondary || null,
+          };
+        }
+        j++;
+        continue;
+      }
+      if (
+        /^---+\s*$/.test(lj) ||
+        (/^(Discuss Your|Book a |Request |Talk to )/i.test(lj) && lj.length < 80) ||
+        (/^\*\*[^*]{3,60}\*\*\s*$/.test(lj) && !/[.?!]/.test(lj) && lj.length < 80) ||
+        /^\\?<script|application\/ld\+json|schema\.org/i.test(lj)
+      ) {
+        j++;
+        continue;
+      }
+      if (startsListMarker(lj)) {
+        j++;
+        continue;
+      }
+      if (lj.length >= 20) introParas.push(lj);
+      j++;
+    }
+    return { paras: finalizeIntro(introParas), end: j };
+  };
+
+  const isNoiseSectionHeading = (heading) => {
+    const hLower = heading.toLowerCase().trim();
+    if (/^(target seo keywords|seo keywords|meta (title|description|keywords|tags)|recommended meta|url:|who we are|page content|author|table of contents)/i.test(hLower)) return true;
+    if (/^h1:\s*/i.test(hLower)) return true;
+    if (/^section\s+\d+/i.test(hLower)) return true;
+    if (/^\d+\.\s/.test(hLower) && hLower.length < 60) return true;
+    return false;
+  };
+
+  const mergeCta = (current, pair) => {
+    if (!pair?.primary && !pair?.secondary) return current;
+    return {
+      primary: pair.primary || current?.primary || null,
+      secondary: pair.secondary || current?.secondary || null,
+    };
+  };
+
+  const pushContentSection = (heading, blocks, sectionCta = null) => {
     const hLower = heading.toLowerCase();
     if (/frequently asked|\bfaqs?\b/i.test(hLower)) return;
-    
+    if (isNoiseSectionHeading(heading)) return;
+
     if (/why choose (clickmasters|us)/i.test(hLower)) {
       out.whyChoose.push({
         title: heading,
         body: blocks.filter(b => !b.isList).map(b => b.text).join('\n\n'),
         items: blocks.filter(b => b.isList).flatMap(b => b.items),
+        ...(sectionCta ? { cta: sectionCta } : {}),
       });
       return;
     }
@@ -338,6 +518,7 @@ function parseMd(content) {
           heading,
           body: textBlocks.map(b => b.text).join('\n\n'),
           items: listBlocks.flatMap(b => b.items),
+          ...(sectionCta ? { cta: sectionCta } : {}),
         });
       }
       return;
@@ -347,20 +528,28 @@ function parseMd(content) {
       blocks.filter(b => b.isTable).forEach(b => out.tables.push({ title: heading, headers: b.headers, rows: b.rows }));
       const nonTable = blocks.filter(b => !b.isTable && !b.isList);
       const list = blocks.filter(b => b.isList);
-      if (nonTable.length || list.length) {
+      if (nonTable.length || list.length || sectionCta) {
         out.sections.push({
           heading,
           body: nonTable.map(b => b.text).join('\n\n'),
           items: list.flatMap(b => b.items),
+          ...(sectionCta ? { cta: sectionCta } : {}),
         });
       }
       return;
     }
 
+    const bodyText = blocks.filter(b => !b.isList && !b.isTable).map(b => b.text).join(' ').trim();
+    const listItems = blocks.filter(b => b.isList).flatMap(b => b.items);
+    // Skip empty / tiny stub sections (allow CTA-only closing sections)
+    if (!bodyText && listItems.length === 0 && !sectionCta) return;
+    if (bodyText.length < 40 && listItems.length === 0 && !sectionCta) return;
+
     out.sections.push({
       heading,
       body: blocks.filter(b => !b.isList).map(b => b.text).join('\n\n'),
-      items: blocks.filter(b => b.isList).flatMap(b => b.items),
+      items: listItems,
+      ...(sectionCta ? { cta: sectionCta } : {}),
     });
   };
 
@@ -371,27 +560,29 @@ function parseMd(content) {
     const t = line.trim();
     if (!t) continue;
 
-    // Intro extraction between H1 and next heading
-    if (!introExtracted && (/^#\s*\**H1:/i.test(t) || /^#\s+\*\*[A-Z]/.test(t))) {
-      const isMetaH1 = /\bMeta (Title|Description|Keyword)/i.test(t);
-      if (!isMetaH1) {
-        let j = i + 1;
-        const introParas = [];
-        while (j < lines.length) {
-          const lj = lines[j].trim();
-          if (/^#{1,4}\s*\*\*[A-Z]/.test(lj) && !/\bMeta (Title|Description|Keyword)/i.test(lj)) break;
-          if (/^(Primary|Secondary)\s+CTA:|^\s*[\{\[]|^\\?<script|^Service Schema|^FAQ Schema|^Breadcrumb|schema\.org/i.test(lj)) break;
-          if (lj && !startsListMarker(lj) && !/^\*\*URL:|\bMeta (Title|Description)/i.test(lj)) {
-            introParas.push(stripBoldKeepLinks(lj));
-          }
-          j++;
-        }
-        if (introParas.length > 0) {
-          out.intro = introParas;
-          introExtracted = true;
-          i = j - 1;
-          continue;
-        }
+    // Intro: ONLY paragraphs between page H1 and the next heading (never meta description)
+    if (!introExtracted && isPageH1Line(t)) {
+      const { paras, end } = collectIntroFrom(i + 1);
+      if (paras.length > 0) {
+        out.intro = paras;
+        introExtracted = true;
+      }
+      i = end - 1;
+      continue;
+    }
+
+    // Fallback: first substantial "Looking for" / body para after meta (rare MD shapes)
+    if (
+      !introExtracted &&
+      /^(Looking for |\*\*Looking for )/i.test(t) &&
+      t.length > 40
+    ) {
+      const { paras, end } = collectIntroFrom(i);
+      if (paras.length > 0) {
+        out.intro = paras;
+        introExtracted = true;
+        i = end - 1;
+        continue;
       }
     }
 
@@ -416,8 +607,11 @@ function parseMd(content) {
         faqCurrent = null;
         continue;
       }
+      if (isCtaOnlyLine(t)) continue;
       if (!/^#{1,4}/.test(t) && !startsListMarker(t) && !/^\*\*Faq\s*Schema/i.test(t)) {
-        faqCurrent.answer = (faqCurrent.answer ? faqCurrent.answer + ' ' : '') + clean(t);
+        faqCurrent.answer = stripCtaArtifacts(
+          (faqCurrent.answer ? faqCurrent.answer + ' ' : '') + clean(t)
+        );
       }
       continue;
     }
@@ -435,21 +629,32 @@ function parseMd(content) {
       }
 
       const blocks = [];
+      let sectionCta = null;
       let j = i + 1;
       while (j < lines.length && !/^#{1,4}\s*\*\*(.+)\*\*\s*$/.test(lines[j].trim())) {
         const lj = lines[j].trim();
         if (lj === '') { j++; continue; }
         if (/^\\?<script/i.test(lj)) break;
+        if (isCtaOnlyLine(lj)) {
+          const pair = extractCtaPair(lj);
+          sectionCta = mergeCta(sectionCta, pair);
+          out.cta = mergeCta(out.cta, pair);
+          j++;
+          continue;
+        }
 
         if (startsListMarker(lj)) {
           const items = [];
           while (j < lines.length && (startsListMarker(lines[j].trim()) || /^\s*$/.test(lines[j]))) {
             if (startsListMarker(lines[j].trim())) {
-              items.push(clean(lines[j].trim().replace(/^[-*]\s+/, '').replace(/^\d+\.\s+/, '')));
+              const itemText = stripCtaArtifacts(
+                clean(lines[j].trim().replace(/^[-*]\s+/, '').replace(/^\d+\.\s+/, ''))
+              );
+              if (itemText && !isCtaOnlyLine(itemText)) items.push(itemText);
             }
             j++;
           }
-          blocks.push({ isList: true, items });
+          if (items.length) blocks.push({ isList: true, items });
         } else if (lj.startsWith('|')) {
           const rows = [];
           while (j < lines.length && lines[j].trim().startsWith('|')) {
@@ -460,8 +665,7 @@ function parseMd(content) {
           const body = rows.filter(r => !r.every(c => /^[:\- ]+$/.test(c))).slice(1);
           if (headerRow.length) blocks.push({ isTable: true, headers: headerRow, rows: body });
         } else {
-          const p = [lj];
-          j++;
+          const p = [];
           while (
             j < lines.length &&
             lines[j].trim() !== '' &&
@@ -470,14 +674,23 @@ function parseMd(content) {
             !/^#{1,4}\s*\*\*/.test(lines[j].trim()) &&
             !/^<script|\\?<script/i.test(lines[j].trim())
           ) {
-            p.push(lines[j].trim());
+            const pl = lines[j].trim();
+            if (isCtaOnlyLine(pl)) {
+              const pair = extractCtaPair(pl);
+              sectionCta = mergeCta(sectionCta, pair);
+              out.cta = mergeCta(out.cta, pair);
+              j++;
+              continue;
+            }
+            p.push(pl);
             j++;
           }
-          blocks.push({ text: stripBoldKeepLinks(p.join(' ')) });
+          const joined = stripBoldKeepLinks(p.join(' '));
+          if (joined.length >= 20) blocks.push({ text: joined });
         }
       }
       i = j - 1;
-      pushContentSection(heading, blocks);
+      pushContentSection(heading, blocks, sectionCta);
       continue;
     }
   }
@@ -498,14 +711,44 @@ function parseMd(content) {
     ? clean(out.metaTitle.replace(/\s*[|–-]\s*(Clickmasters|ClickMasters).*$/i, ''))
     : (out.h1 || out.slug);
 
-  // Deduplicate FAQs
+  // Deduplicate FAQs + strip CTA scaffold from answers
   const seenFaqs = new Set();
-  out.faqs = out.faqs.filter(f => {
-    const q = f.question.toLowerCase().trim();
-    if (!q || seenFaqs.has(q)) return false;
-    seenFaqs.add(q);
-    return true;
-  });
+  out.faqs = out.faqs
+    .map((f) => ({
+      ...f,
+      question: stripCtaArtifacts(f.question),
+      answer: stripCtaArtifacts(f.answer),
+    }))
+    .filter((f) => {
+      const q = f.question.toLowerCase().trim();
+      if (!q || seenFaqs.has(q)) return false;
+      if (!f.answer || f.answer.length < 10) return false;
+      seenFaqs.add(q);
+      return true;
+    });
+
+  // Clean section bodies / intros
+  out.intro = (out.intro || []).map(stripCtaArtifacts).filter((p) => p.length >= 20);
+  out.sections = (out.sections || [])
+    .map((s) => ({
+      ...s,
+      body: stripCtaArtifacts(s.body || ''),
+      items: (s.items || []).map(stripCtaArtifacts).filter(Boolean),
+      // Keep section.cta if already captured from MD lines
+      cta: s.cta || null,
+    }))
+    .filter((s) => (s.body && s.body.length >= 20) || (s.items && s.items.length > 0) || s.cta);
+
+  // Extract / merge CTAs from full source (fill any missing label)
+  {
+    const pair = extractCtaPair(content);
+    if (pair.primary || pair.secondary) {
+      out.cta = {
+        primary: out.cta?.primary || pair.primary || null,
+        secondary: out.cta?.secondary || pair.secondary || null,
+      };
+    }
+  }
 
   // Extract internal links from all body text
   const allText = [
@@ -536,7 +779,7 @@ function main() {
   files.forEach((file, idx) => {
     try {
       const content = fs.readFileSync(path.join(SRC_DIR, file), 'utf8');
-      const parsed = parseMd(content);
+      const parsed = parseMd(content, file);
       parsed.sourceFile = file;
       results.push(parsed);
       console.log(`  ${idx + 1}/${files.length}  ${file}  →  /${parsed.categorySlug || '?'}/${parsed.slug || '?'}`);

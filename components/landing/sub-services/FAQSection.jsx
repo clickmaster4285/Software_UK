@@ -1,13 +1,14 @@
 "use client";
 // components/landingPagePage/FAQSection.tsx
-import { ChevronDown, MessageCircle } from 'lucide-react';
+import { ChevronDown, MessageCircle, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Badge } from "@/components/ui/badge";
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { stripCtaArtifacts } from '@/lib/subservice-utils';
 
-export const FAQSection = ({ faqs }) => {
+export const FAQSection = ({ faqs, cta }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -23,7 +24,6 @@ export const FAQSection = ({ faqs }) => {
     const parts = [];
     const keywords = ['custom software development', 'ai development', 'mobile development', 'web development', 'data engineering', 'ui/ux design'];
 
-    const lastIndex = 0;
     const lowerText = text.toLowerCase();
 
     keywords.forEach(keyword => {
@@ -50,11 +50,23 @@ export const FAQSection = ({ faqs }) => {
 
   if (!faqs || faqs.length === 0) return null;
 
+  const cleanedFaqs = faqs.map((faq) => {
+    const q = stripCtaArtifacts(faq.question || '');
+    const a = stripCtaArtifacts(faq.answer || '');
+    return {
+      ...faq,
+      question: q.text,
+      answer: a.text,
+      primaryCta: a.primaryCta,
+      secondaryCta: a.secondaryCta,
+    };
+  }).filter((f) => f.question && f.answer);
+
   // Split FAQs into two columns to prevent layout shift across columns
-  const midIndex = Math.ceil(faqs.length / 2);
+  const midIndex = Math.ceil(cleanedFaqs.length / 2);
   const columns = [
-    faqs.slice(0, midIndex),
-    faqs.slice(midIndex)
+    cleanedFaqs.slice(0, midIndex),
+    cleanedFaqs.slice(midIndex)
   ];
 
   const FAQItem = ({ faq, actualIndex }) => (
@@ -88,6 +100,27 @@ export const FAQSection = ({ faqs }) => {
               <p className="text-[15px] leading-relaxed text-slate-600">
                 {makeBoldWithColor(faq.answer)}
               </p>
+              {(faq.primaryCta || faq.secondaryCta) && (
+                <div className="mt-4 flex flex-wrap gap-2.5">
+                  {faq.primaryCta && (
+                    <Link
+                      href="/contact-us"
+                      className="inline-flex items-center gap-1.5 rounded-lg bg-linear-to-r from-accent to-accent-hover px-4 py-2 text-sm font-semibold text-white"
+                    >
+                      {faq.primaryCta}
+                      <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+                    </Link>
+                  )}
+                  {faq.secondaryCta && (
+                    <Link
+                      href="/contact-us"
+                      className="inline-flex items-center rounded-lg border border-border bg-white px-4 py-2 text-sm font-semibold text-text-primary hover:border-accent/40"
+                    >
+                      {faq.secondaryCta}
+                    </Link>
+                  )}
+                </div>
+              )}
             </div>
           </motion.div>
         )}
@@ -155,10 +188,18 @@ export const FAQSection = ({ faqs }) => {
         <p className="mt-3 text-slate-600 max-w-lg mx-auto">
           Can&apos;t find the answer you&apos;re looking for? Please chat to our friendly team.
         </p>
-        <div className="mt-8">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Button asChild className="bg-accent hover:bg-accent-hover text-white rounded-xl px-8 py-6 font-semibold shadow-lg shadow-accent/20 transition-all hover:-translate-y-0.5 border-0">
-            <Link href="/contact-us">Get in touch</Link>
+            <Link href="/contact-us">
+              {cta?.primary || 'Get in touch'}
+              <ArrowRight className="ml-2 h-4 w-4" aria-hidden />
+            </Link>
           </Button>
+          {cta?.secondary && (
+            <Button asChild variant="outline" className="rounded-xl px-8 py-6 font-semibold border-border hover:border-accent/40">
+              <Link href="/contact-us">{cta.secondary}</Link>
+            </Button>
+          )}
         </div>
       </motion.div>
     </section>
