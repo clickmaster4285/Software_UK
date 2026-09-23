@@ -103,7 +103,7 @@ function StepCard({ phase, index, cardRef }) {
 }
 
 /* ─── Main Export ─── */
-export const ProcessSection = ({ serviceName, processPhases }) => {
+export const ProcessSection = ({ serviceName, processPhases, cta }) => {
   const phases = processPhases?.map((phase, index) => ({ ...phase, index })) ?? [];
   const cardRefs = useRef([]);
   const headerRef = useRef(null);
@@ -312,14 +312,22 @@ export const ProcessSection = ({ serviceName, processPhases }) => {
           </div>
 
           {/* CTA */}
-          <div className="mt-14 flex justify-center">
+          <div className="mt-14 flex flex-wrap justify-center gap-3">
             <Link
-              href="/contact"
+              href="/contact-us"
               className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-hover hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)]"
             >
-              Start Your Project
+              {cta?.primary || 'Start Your Project'}
               <ArrowRight className="h-4 w-4" aria-hidden />
             </Link>
+            {cta?.secondary && (
+              <Link
+                href="/contact-us"
+                className="inline-flex items-center gap-2 rounded-lg border border-border bg-white px-7 py-3.5 text-sm font-semibold text-text-primary transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/40"
+              >
+                {cta.secondary}
+              </Link>
+            )}
           </div>
         </div>
       </section>

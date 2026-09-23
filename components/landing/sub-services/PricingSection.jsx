@@ -44,7 +44,7 @@ const chunkArray = (array, size) => {
   return chunks;
 };
 
-export function PricingSection({ serviceName, pricingTiers }) {
+export function PricingSection({ serviceName, pricingTiers, cta }) {
   const CHUNK_SIZE = 6;
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -92,7 +92,7 @@ export function PricingSection({ serviceName, pricingTiers }) {
               `Best For: ${tier.bestFor}`,
               `Budget Range: ${isCustom
                 ? "Custom"
-                : `${min.toLocaleString()} - ${max.toLocaleString()} AUD`
+                : `£${min.toLocaleString("en-GB")} - £${max.toLocaleString("en-GB")} GBP`
               }`,
               "Dedicated Project Manager",
               "Quality Assurance Testing",
@@ -101,7 +101,9 @@ export function PricingSection({ serviceName, pricingTiers }) {
           },
         ],
 
-        buttonText: isCustom ? "Contact Us" : "Get Started",
+        buttonText: isCustom
+          ? (cta?.secondary || cta?.primary || "Contact Us")
+          : (cta?.primary || "Get Started"),
 
         onButtonClick: () => { },
       };

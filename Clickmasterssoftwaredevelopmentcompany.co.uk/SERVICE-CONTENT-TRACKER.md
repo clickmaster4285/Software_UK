@@ -57,13 +57,13 @@ Removed Sep 23, 2026: `plan-services-improvement.md`, `plan-main-services-ui.md`
 | Phase | Status |
 |-------|--------|
 | Docs consolidate | ✅ Sep 23 |
-| A Converter harden + regenerate | 🔲 |
-| B Overlay `sections` | 🔲 |
-| C Hero + Overview | 🔲 |
-| D MD sections UI | 🔲 |
+| A Converter harden + regenerate | ✅ Sep 23 — 48 MD, 0 meta-as-intro, ecommerce/PWA/technical-support aliases fixed |
+| B Overlay `sections` | ✅ Sep 23 — `cleanMdSections` + `hasMdSections` (48/130 pages) |
+| C Hero + Overview | ✅ Sep 23 — H1/tagline/metaDesc + OverviewSection |
+| D MD sections UI | ✅ Sep 23 — ContentSections (MD) / DynamicSections (curated) |
 | E Polish + QA | 🔲 |
 
-**Known gaps (pre-A):** intro can equal metaDesc; overlay skips `sections`; hero uses curated `title`/`lead`; ecommerce/PWA slug aliases miss routes; 4 support MDs on disk not in generated JS.
+**Phase A–D notes:** Empty FAQs on 7 support/NLP MDs (source gaps). Spot-check + density polish left for Phase E.
 
 ### Deferred backlog
 
@@ -290,11 +290,11 @@ Removed Sep 23, 2026: `plan-services-improvement.md`, `plan-main-services-ui.md`
 
 | # | Sub-Service | Slug | Override | MD Data | Status |
 |---|-------------|------|:--------:|:-------:|--------|
-| 1 | Maintenance & Support | `maintenance-support` | ✅ | 🔲 | 🔧 Override only |
-| 2 | Dedicated Development Teams | `dedicated-development-teams` | ✅ | 🔲 | 🔧 Override only |
+| 1 | Maintenance & Support | `maintenance-support` | ✅ | ✅ | ✅ Regenerated Sep 23 (empty FAQs in source) |
+| 2 | Dedicated Development Teams | `dedicated-development-teams` | ✅ | ✅ | ✅ Regenerated Sep 23 (empty FAQs in source) |
 | 3 | IT Outsourcing | `it-outsourcing` | ✅ | 🔲 | 🔧 Override only |
-| 4 | Staff Augmentation | `staff-augmentation` | ✅ | 🔲 | 🔧 Override only |
-| 5 | Technical Support | `technical-support` | ✅ | 🔲 | 🔧 Override only |
+| 4 | Staff Augmentation | `staff-augmentation` | ✅ | ✅ | ✅ Regenerated Sep 23 (empty FAQs in source) |
+| 5 | Technical Support | `technical-support` | ✅ | ✅ | ✅ Slug fixed Sep 23 (empty FAQs in source) |
 
 ### Blockchain & Web3 (7 sub-services)
 

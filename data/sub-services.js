@@ -15237,12 +15237,33 @@ function cleanMetaKeywords(keywords) {
   });
 }
 
+/** Filter MD sections before overlay — drop noise / empty stubs. */
+function cleanMdSections(sections) {
+  if (!Array.isArray(sections) || sections.length === 0) return null;
+  const noiseRe =
+    /^(target seo keywords|seo keywords|meta (title|description|keywords|tags)|recommended meta|url:|who we are|page content|author|table of contents|h1:|section \d+)/i;
+  const cleaned = sections.filter((s) => {
+    if (!s || typeof s.heading !== 'string') return false;
+    const heading = s.heading.trim();
+    if (!heading || noiseRe.test(heading)) return false;
+    if (/^h1:\s*/i.test(heading)) return false;
+    const body = typeof s.body === 'string' ? s.body.trim() : '';
+    const items = Array.isArray(s.items) ? s.items.filter(Boolean) : [];
+    const hasCta = Boolean(s.cta?.primary || s.cta?.secondary);
+    if (!body && items.length === 0 && !hasCta) return false;
+    if (body.length < 40 && items.length === 0 && !hasCta) return false;
+    return true;
+  });
+  return cleaned.length > 0 ? cleaned : null;
+}
+
 const services = baseServices.map((service) => {
   const override = serviceOverrides.get(service.slug) ?? service;
   const md = mdMap.get(service.slug);
   if (!md) return override;
 
   const mdH1 = isCorruptedH1(md.h1) ? null : md.h1;
+  const mdSections = cleanMdSections(md.sections);
 
   return {
     ...override,
@@ -15251,11 +15272,14 @@ const services = baseServices.map((service) => {
     metaTitle: md.metaTitle || override.metaTitle,
     metaDescription: md.metaDescription || override.metaDescription,
     metaKeywords: (() => { const c = cleanMetaKeywords(md.metaKeywords); return c.length > 0 ? c : override.metaKeywords; })(),
+    sections: mdSections || override.sections,
+    hasMdSections: Boolean(mdSections),
     tables: md.tables && md.tables.length > 0 ? md.tables : override.tables,
     costFactors: md.costFactors && md.costFactors.length > 0 ? md.costFactors : override.costFactors,
     whyChoose: md.whyChoose && md.whyChoose.length > 0 ? md.whyChoose : override.whyChoose,
     relatedLinks: md.relatedLinks && md.relatedLinks.length > 0 ? md.relatedLinks : override.relatedLinks,
     faqs: md.faqs && md.faqs.length > 0 ? md.faqs : override.faqs,
+    cta: md.cta || override.cta,
     jsonLd: md.jsonLd || override.jsonLd,
   };
 });

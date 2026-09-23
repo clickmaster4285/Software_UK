@@ -16,12 +16,14 @@ import { linkifyMarkdown } from "@/lib/subservice-utils";
  * Every block is conditionally rendered (no-op when the field is absent), so
  * this is safe to wire up before the data conversion populates the fields.
  */
-export default function ServiceRichContent({ page }) {
+export default function ServiceRichContent({ page, hideIntro = false }) {
   if (!page) return null;
 
-  const intro = Array.isArray(page.intro)
-    ? page.intro
-    : page.intro ? [page.intro] : [];
+  const intro = hideIntro
+    ? []
+    : Array.isArray(page.intro)
+      ? page.intro
+      : page.intro ? [page.intro] : [];
 
   const costFactors = (page.costFactors || []).filter(Boolean);
   const whyChoose = (page.whyChoose || []).filter(Boolean);

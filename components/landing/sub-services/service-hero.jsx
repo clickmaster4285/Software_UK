@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { linkifyMarkdown } from "@/lib/subservice-utils";
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
@@ -139,66 +140,43 @@ export function ServiceHero({ page }) {
   const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
 
   const isGoalPage = Boolean(page.parentService && page.currentPageLabel);
-  const boldTerms =
-    page.boldTerms?.filter(Boolean) ??
-    (page.serviceName ? [page.serviceName] : []);
 
-  // Helper function to emphasize key terms in text
-  const makeBoldInText = (text, terms) => {
-    if (!text || terms.length === 0) return text;
+  // Full description stays in the hero — no separate Overview split
+  const h1 = page.h1 || page.title || page.serviceName;
+  const heroParas = (() => {
+    const intro = Array.isArray(page.intro)
+      ? page.intro.map((p) => (typeof p === "string" ? p : p?.text || "")).filter(Boolean)
+      : [];
+    if (intro.length > 0) return intro;
+    const meta = String(page.metaDescription || "").trim();
+    if (meta) return [meta];
+    const lead = String(page.lead || "").trim();
+    if (lead) return [lead];
+    return [];
+  })();
+  const rawTagline = typeof page.lead === "string" ? page.lead.trim() : "";
+  const showTagline = (() => {
+    if (!rawTagline) return false;
+    if (rawTagline.toLowerCase() === String(h1).toLowerCase()) return false;
+    if (heroParas.some((p) => p.toLowerCase() === rawTagline.toLowerCase())) return false;
+    if (rawTagline.length > 90) return false;
+    if (/^Looking for |^Clickmasters /i.test(rawTagline)) return false;
+    return true;
+  })();
 
-    const escaped = terms
-      .filter(Boolean)
-      .map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
-    if (escaped.length === 0) return text;
-
-    const regex = new RegExp(`(${escaped.join("|")})`, "gi");
-    const split = text.split(regex);
-    const lowerTerms = terms.map((t) => t.toLowerCase());
-
-    return split.map((part, index) => {
-      const isBold = terms.some((t) => part.toLowerCase() === t.toLowerCase());
-      if (isBold) {
-        return (
-          <span key={index} className="font-semibold bg-white px-1 rounded-lg text-xl text-accent">
-            {part}
-          </span>
-        );
-      }
-      return part;
-    });
-  };
-
-  // Renders [label](/internal-path) links inside lead text, keeping bold-term styling
-  const renderLeadWithLinks = (text, terms) => {
-    if (!text || !text.includes("](")) return makeBoldInText(text, terms);
-    const linkRe = /\[([^\]]+)\]\((\/[^)\s]*)\)/g;
-    const parts = [];
-    let last = 0;
-    let match;
-    let key = 0;
-    while ((match = linkRe.exec(text))) {
-      if (match.index > last) {
-        parts.push(makeBoldInText(text.slice(last, match.index), terms));
-      }
-      parts.push(
-        <Link
-          key={`link-${key++}`}
-          href={match[2]}
-          className="font-medium text-accent hover:underline"
-        >
-          {makeBoldInText(match[1], terms)}
-        </Link>
-      );
-      last = match.index + match[0].length;
-    }
-    if (last < text.length) {
-      parts.push(makeBoldInText(text.slice(last), terms));
-    }
-    return parts;
-  };
-
-  const breadcrumbCurrent = page.currentPageLabel ?? page.serviceName;
+  const primaryCtaLabel = page.cta?.primary || "Book a Free Consultation";
+  const secondaryCtaLabel =
+    page.cta?.secondary ||
+    (isGoalPage ? "View parent service" : "View all services");
+  const secondaryIsQuote = /quote|consultation|discuss|contact|request|talk|book/i.test(
+    secondaryCtaLabel
+  );
+  const secondaryHref =
+    isGoalPage && page.parentService && !secondaryIsQuote
+      ? page.parentService.href
+      : secondaryIsQuote
+        ? "/contact-us"
+        : `/${page.categorySlug}`;
 
   useEffect(() => {
     if (isInView) controls.start("visible");
@@ -368,21 +346,38 @@ export function ServiceHero({ page }) {
                 )}
               </motion.div>
 
-              {/* Title */}
+              {/* Title — MD H1 when available */}
               <motion.h1
                 className="text-balance text-3xl font-black tracking-loose text-white sm:text-4xl lg:text-5xl leading-[1.15]"
                 variants={fadeInUp}
               >
-                {page.title}
+                {h1}
               </motion.h1>
 
-              {/* Lead */}
-              <motion.p
-                className="mt-5 max-w-4xl text-base text-surface lg:text-lg"
-                variants={fadeInUp}
-              >
-                {renderLeadWithLinks(page.lead, boldTerms)}
-              </motion.p>
+              {/* Short curated tagline (only when lead is scannable) */}
+              {showTagline && (
+                <motion.p
+                  className="mt-3 max-w-3xl text-lg font-semibold text-white/90 sm:text-xl"
+                  variants={fadeInUp}
+                >
+                  {rawTagline}
+                </motion.p>
+              )}
+
+              {/* Full description — all intro copy in the hero */}
+              {heroParas.length > 0 && (
+                <motion.div
+                  className="mt-5 max-w-4xl space-y-4 text-base text-surface lg:text-lg [&_a]:font-medium [&_a]:text-accent [&_a:hover]:underline"
+                  variants={fadeInUp}
+                >
+                  {heroParas.map((para, i) => (
+                    <p
+                      key={`hero-desc-${i}`}
+                      dangerouslySetInnerHTML={{ __html: linkifyMarkdown(para) }}
+                    />
+                  ))}
+                </motion.div>
+              )}
 
               {/* Highlight Pills */}
               {page.highlights && page.highlights.length > 0 && (
@@ -435,10 +430,10 @@ export function ServiceHero({ page }) {
                   <Button
                     asChild
                     size="lg"
-                    className="rounded-lg px-7 bg-linear-to-r from-accent to-accent-hover text-white font-semibold shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer border-0"
+                    className="h-11 rounded-lg px-7 bg-linear-to-r from-accent to-accent-hover text-white font-semibold shadow-[0_4px_20px_oklch(0.5675_0.2072_318.97/0.35)] hover:shadow-[0_8px_32px_oklch(0.5675_0.2072_318.97/0.45)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer border-0"
                   >
                     <Link href="/contact-us">
-                      Get your free strategy call
+                      {primaryCtaLabel}
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
@@ -452,16 +447,10 @@ export function ServiceHero({ page }) {
                     variant="outline"
                     size="lg"
                     asChild
-                    className="group rounded-lg border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/15 hover:border-accent hover:-translate-y-0.5 font-semibold text-white transition-all duration-300 cursor-pointer"
+                    className="group h-11 rounded-lg border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/15 hover:border-accent hover:-translate-y-0.5 font-semibold text-white transition-all duration-300 cursor-pointer"
                   >
-                    <Link
-                      href={
-                        isGoalPage && page.parentService
-                          ? page.parentService.href
-                          : `/${page.categorySlug}`
-                      }
-                    >
-                      {isGoalPage ? "View parent service" : "View all services"}
+                    <Link href={secondaryHref}>
+                      {secondaryCtaLabel}
                     </Link>
                   </Button>
                 </motion.div>
