@@ -172,7 +172,7 @@ export default async function CaseStudiesPage({ searchParams }) {
           {filtered.length === 0 ? (
             <div className="text-center py-24">
               <div className="text-6xl mb-6">🔍</div>
-              <h3 className="font-heading text-2xl font-bold text-text-primary mb-3">No case studies found</h3>
+              <h2 className="font-heading text-2xl font-bold text-text-primary mb-3">No case studies found</h2>
               <p className="text-text-muted max-w-md mx-auto mb-6">
                 Try adjusting your search or filter criteria.
               </p>

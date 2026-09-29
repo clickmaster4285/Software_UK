@@ -220,7 +220,7 @@
     @apply absolute -top-3 right-6 bg-accent text-white px-4 py-1.5 rounded-full text-xs font-semibold;
   }
 
-  .pricing-card h3 {
+  .pricing-card h2 {
     @apply font-heading font-semibold text-xl text-primary mb-4;
   }
 

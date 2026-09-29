@@ -144,7 +144,7 @@ function TableOfContents({ study }) {
   return (
     <nav className="hidden xl:block sticky top-28 w-56 shrink-0 self-start">
       <div className="bg-white rounded-2xl border border-border p-5 shadow-[0_2px_16px_rgba(0,0,0,0.05)]">
-        <h4 className="text-[10px] font-bold text-text-muted uppercase tracking-[0.15em] mb-4 font-heading">Contents</h4>
+        <p className="text-[10px] font-bold text-text-muted uppercase tracking-[0.15em] mb-4 font-heading">Contents</p>
 
         {/* Active indicator line */}
         <div className="relative">

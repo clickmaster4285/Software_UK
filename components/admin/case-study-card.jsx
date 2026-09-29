@@ -67,9 +67,9 @@ export function CaseStudyCard({
       {/* Content */}
       <CardContent className="p-6 flex flex-col gap-4 flex-1">
         {/* Title */}
-        <h3 className="font-heading text-lg font-bold text-text-primary leading-snug line-clamp-2 group-hover:text-accent transition-colors duration-300">
+        <p className="font-heading text-lg font-bold text-text-primary leading-snug line-clamp-2 group-hover:text-accent transition-colors duration-300">
           {title}
-        </h3>
+        </p>
 
         {/* Excerpt */}
         <p className="text-sm text-text-muted leading-relaxed line-clamp-3 flex-1">

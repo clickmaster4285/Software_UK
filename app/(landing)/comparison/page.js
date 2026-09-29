@@ -95,9 +95,9 @@ function ComparisonCard({ comparison }) {
             )}
           </div>
 
-          <h3 className="font-heading text-lg font-bold text-text-primary mb-2 group-hover:text-accent transition-colors line-clamp-2">
+          <p className="font-heading text-lg font-bold text-text-primary mb-2 group-hover:text-accent transition-colors line-clamp-2">
             {comparison.title}
-          </h3>
+          </p>
 
           {comparison.metaDesc && (
             <p className="text-sm text-text-muted line-clamp-3 mb-6">

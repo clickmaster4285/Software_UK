@@ -117,9 +117,9 @@ function SalaryGuideCard({ title, excerpt, slug, role, year }) {
             </span>
           </div>
 
-          <h3 className="font-heading text-xl font-bold text-text-primary mb-2 group-hover:text-accent transition-colors">
+          <p className="font-heading text-xl font-bold text-text-primary mb-2 group-hover:text-accent transition-colors">
             {title.replace(/— Permanent.*/, '')}
-          </h3>
+          </p>
 
           <p className="text-sm text-text-muted line-clamp-3 mb-6">
             {excerpt || `UK salary benchmarks for ${role.replace(/-/g, ' ')} roles in ${year}.`}
@@ -224,7 +224,7 @@ export default async function SalaryGuidesPage({ searchParams }) {
           {filtered.length === 0 ? (
             <div className="text-center py-24">
               <div className="text-6xl mb-6">🔍</div>
-              <h3 className="font-heading text-2xl font-bold text-text-primary mb-3">No salary guides found</h3>
+              <h2 className="font-heading text-2xl font-bold text-text-primary mb-3">No salary guides found</h2>
               <p className="text-text-muted max-w-md mx-auto mb-6">
                 Try adjusting your search or filter criteria.
               </p>
