@@ -22,9 +22,9 @@ function CityCard({ city }) {
             </span>
           </div>
 
-          <h3 className="font-heading text-lg font-bold text-text-primary mb-2 group-hover:text-accent transition-colors line-clamp-2">
+          <p className="font-heading text-lg font-bold text-text-primary mb-2 group-hover:text-accent transition-colors line-clamp-2">
             {city.title}
-          </h3>
+          </p>
 
           {city.metaDesc && (
             <p className="text-sm text-text-muted line-clamp-3 mb-6">

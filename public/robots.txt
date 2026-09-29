@@ -19,8 +19,8 @@ Disallow: /*?_rsc=
 Disallow: /*&_rsc=
 
 # Block unnecessary query/filter URLs
-Disallow: /*?page=
-Disallow: /*&page=
+# NOTE: ?page= is intentionally NOT blocked — paginated listing URLs are
+# linked internally and self-canonical (see listing page generateMetadata).
 Disallow: /*?sort=
 Disallow: /*&sort=
 Disallow: /*?filter=

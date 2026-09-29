@@ -43,7 +43,7 @@ export default function PricingPage() {
               {plans.map((plan, index) => (
                 <div key={plan.name} className={`pricing-card ${plan.badge ? 'popular' : ''}`} style={{ animationDelay: `${index * 0.1}s` }}>
                   {plan.badge && <span className="badge">{plan.badge}</span>}
-                  <h3>{plan.name}</h3>
+                  <h2>{plan.name}</h2>
                   <div className="price">
                     <span className="amount">${plan.price}</span>
                     <span className="period">/mo</span>

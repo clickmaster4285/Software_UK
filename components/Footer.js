@@ -65,10 +65,10 @@ export default function Footer() {
             </p>
 
             <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl">
-              <h4 className="font-heading font-bold text-lg mb-2 flex items-center gap-2">
+              <h2 className="font-heading font-bold text-lg mb-2 flex items-center gap-2">
                 <Mail className="w-6 h-6 text-accent" />
                 Stay Updated
-              </h4>
+              </h2>
               <p className="text-white/60 font-body text-sm mb-6">
                 Get the latest insights on software engineering and product growth.
               </p>
@@ -91,7 +91,7 @@ export default function Footer() {
           {/* Quick Links Grid */}
           <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-2">
             <div>
-              <h4 className="font-heading font-bold text-white mb-6 uppercase tracking-widest text-xs opacity-50">Services</h4>
+              <h2 className="font-heading font-bold text-white mb-6 uppercase tracking-widest text-xs opacity-50">Services</h2>
               <ul className="flex flex-col gap-4">
                 {footerLinks.services.map((link) => (
                   <li key={link.name}>
@@ -104,7 +104,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-heading font-bold text-white mb-6 uppercase tracking-widest text-xs opacity-50">Company</h4>
+              <h2 className="font-heading font-bold text-white mb-6 uppercase tracking-widest text-xs opacity-50">Company</h2>
               <ul className="flex flex-col gap-4">
                 {footerLinks.company.map((link) => (
                   <li key={link.name}>
@@ -117,7 +117,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-heading font-bold text-white mb-6 uppercase tracking-widest text-xs opacity-50">Contact</h4>
+              <h2 className="font-heading font-bold text-white mb-6 uppercase tracking-widest text-xs opacity-50">Contact</h2>
               <ul className="flex flex-col gap-4">
                 <li className="flex items-start gap-3 text-white/60 text-sm font-body">
                   <MapPin className="w-4 h-4 text-accent shrink-0 mt-0.5" />
@@ -157,20 +157,6 @@ export default function Footer() {
                   <Image
                     src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
                     alt="GitHub"
-                    width={20}
-                    height={20}
-                    className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity"
-                  />
-                </Link>
-                <Link
-                  href="https://unsplash.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2.5 bg-white/5 rounded-xl border border-white/10 text-white/60 hover:text-accent hover:border-accent/50 hover:bg-white/10 transition-all group"
-                >
-                  <Image
-                    src="https://img.icons8.com/ios-filled/50/ffffff/unsplash.png"
-                    alt="Unsplash"
                     width={20}
                     height={20}
                     className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity"

@@ -286,6 +286,7 @@ function run() {
     for (const entry of data) {
       try {
         const subPath = cat.routeBuilder(entry);
+        if (!subPath || subPath.includes('//')) continue;
         const subUrl = `${BASE_URL}${cat.mainPath}${subPath}`;
         urls.push({
           loc: subUrl,

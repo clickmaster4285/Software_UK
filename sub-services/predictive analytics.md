@@ -34,7 +34,7 @@ Turn business data into forecasts, risk indicators and actionable insights with 
 
 **Clickmasters** develops predictive analytics solutions that help businesses use historical and operational data to estimate future outcomes, identify patterns and support better decision-making. Our services cover data preparation, predictive model development, machine learning, software integration, deployment, monitoring and ongoing model improvement.
 
-Predictive analytics forms part of our broader [**Machine Learning Development Services**](https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml?utm_source=chatgpt.com), helping organisations move from raw business data to predictions that can be used inside applications and day-to-day workflows.
+Predictive analytics forms part of our broader [**Machine Learning Development Services**](https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml), helping organisations move from raw business data to predictions that can be used inside applications and day-to-day workflows.
 
 ## **What Is Predictive Analytics?**
 

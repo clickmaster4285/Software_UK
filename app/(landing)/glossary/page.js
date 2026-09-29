@@ -62,9 +62,9 @@ function GlossaryCard({ term }) {
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-surface border border-border text-text-body mb-3">
             {term.termDisplay.charAt(0).toUpperCase()}
           </span>
-          <h3 className="font-heading text-lg font-bold text-text-primary mb-2 group-hover:text-accent transition-colors leading-snug">
+          <p className="font-heading text-lg font-bold text-text-primary mb-2 group-hover:text-accent transition-colors leading-snug">
             {term.termDisplay}
-          </h3>
+          </p>
           <p className="text-sm text-text-muted line-clamp-2 mb-4">
             {term.metaDesc || `Definition of ${term.termDisplay} in UK software development context.`}
           </p>

@@ -32,7 +32,7 @@ Build data-driven applications with custom **deep learning development services*
 
 **Clickmasters** develops deep learning solutions that use neural network models to support complex pattern recognition, prediction, classification and intelligent software functionality. Our services can cover data preparation, model architecture, training, evaluation, optimisation, software integration, deployment and ongoing model monitoring.
 
-Deep learning development forms part of our broader [**Machine Learning Development Services**](https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml?utm_source=chatgpt.com), helping businesses move from experimental models to deep-learning capabilities integrated into real software systems.
+Deep learning development forms part of our broader [**Machine Learning Development Services**](https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml), helping businesses move from experimental models to deep-learning capabilities integrated into real software systems.
 
 ## **What Is Deep Learning?**
 

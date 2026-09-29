@@ -133,9 +133,9 @@ function ResourceCard({ guide }) {
             )}
           </div>
 
-          <h3 className="font-heading text-lg font-bold text-text-primary mb-2 group-hover:text-accent transition-colors leading-snug">
+          <p className="font-heading text-lg font-bold text-text-primary mb-2 group-hover:text-accent transition-colors leading-snug">
             {guide.title.length > 90 ? guide.title.substring(0, 87) + '...' : guide.title}
-          </h3>
+          </p>
 
           <p className="text-sm text-text-muted line-clamp-3 mb-6">
             {guide.metaDesc || `UK software development resource guide covering ${guide.title.toLowerCase()}.`}

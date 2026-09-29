@@ -32,7 +32,7 @@ Deliver more relevant products, content and experiences with custom **recommenda
 
 **Clickmasters** develops recommendation engines that analyse user behaviour, item information and interaction data to generate personalised suggestions inside websites, applications and digital platforms. Our services cover recommendation strategy, data preparation, model development, system integration, deployment, monitoring and ongoing optimisation.
 
-Recommendation system development forms part of our broader [**Machine Learning Development Services**](https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml?utm_source=chatgpt.com), connecting machine learning models with real products and business workflows.
+Recommendation system development forms part of our broader [**Machine Learning Development Services**](https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml), connecting machine learning models with real products and business workflows.
 
 ## **What Is a Recommendation System?**
 

@@ -1,7 +1,7 @@
 // AUTO-GENERATED from sub-services/*.md by scripts/convert-sub-services-md.js
 // Rich sub-service content: intro, tables, costFactors, whyChoose, relatedLinks, full FAQs & keywords.
 // NOTE: written to data/sub-services-md.js so data/sub-services.js is unaffected until ready.
-// Generated: 2026-09-23T07:03:39.006Z
+// Generated: 2026-09-29T08:22:09.685Z
 
 export const subServicesMd = [
   {
@@ -2809,7 +2809,7 @@ export const subServicesMd = [
     "intro": [
       "Improve the accuracy, efficiency and production readiness of machine learning systems with custom AI model training and optimisation services.",
       "Clickmasters helps businesses prepare training data, train and fine-tune machine learning models, evaluate model performance, optimise models for production requirements and integrate trained models into wider software systems. Our approach connects model development with deployment, monitoring and ongoing improvement rather than treating training as an isolated technical task.",
-      "Model training and optimisation forms part of our broader [Machine Learning Development Services](/machine-learning-ml?utm_source=chatgpt.com), supporting the model lifecycle from prepared data through to production operation."
+      "Model training and optimisation forms part of our broader [Machine Learning Development Services](/machine-learning-ml), supporting the model lifecycle from prepared data through to production operation."
     ],
     "sections": [
       {
@@ -3558,7 +3558,7 @@ export const subServicesMd = [
     "relatedLinks": [
       {
         "label": "Machine Learning Development Services",
-        "href": "/machine-learning-ml?utm_source=chatgpt.com"
+        "href": "/machine-learning-ml"
       },
       {
         "label": "Predictive Analytics Services",
@@ -9634,7 +9634,7 @@ export const subServicesMd = [
     "intro": [
       "Build data-driven applications with custom deep learning development services designed around your data, software architecture and business requirements.",
       "Clickmasters develops deep learning solutions that use neural network models to support complex pattern recognition, prediction, classification and intelligent software functionality. Our services can cover data preparation, model architecture, training, evaluation, optimisation, software integration, deployment and ongoing model monitoring.",
-      "Deep learning development forms part of our broader [Machine Learning Development Services](/machine-learning-ml?utm_source=chatgpt.com), helping businesses move from experimental models to deep-learning capabilities integrated into real software systems."
+      "Deep learning development forms part of our broader [Machine Learning Development Services](/machine-learning-ml), helping businesses move from experimental models to deep-learning capabilities integrated into real software systems."
     ],
     "sections": [
       {
@@ -10330,7 +10330,7 @@ export const subServicesMd = [
     "relatedLinks": [
       {
         "label": "Machine Learning Development Services",
-        "href": "/machine-learning-ml?utm_source=chatgpt.com"
+        "href": "/machine-learning-ml"
       },
       {
         "label": "NLP & Computer Vision Services",
@@ -18693,7 +18693,7 @@ export const subServicesMd = [
     "intro": [
       "Looking for Jamstack development services for a faster, flexible and scalable web platform? Jamstack architecture separates the frontend from content and backend systems, allowing websites and applications to connect through APIs.",
       "Clickmasters provides custom Jamstack development for UK businesses, covering architecture, frontend development, Headless CMS integration, APIs, migration, testing, deployment and ongoing support.",
-      "Explore our complete [web development services](/web-development?utm_source=chatgpt.com) for websites, web applications, ecommerce platforms, PWAs and Headless development."
+      "Explore our complete [web development services](/web-development) for websites, web applications, ecommerce platforms, PWAs and Headless development."
     ],
     "sections": [
       {
@@ -19259,7 +19259,7 @@ export const subServicesMd = [
     "relatedLinks": [
       {
         "label": "web development services",
-        "href": "/web-development?utm_source=chatgpt.com"
+        "href": "/web-development"
       }
     ],
     "cta": {
@@ -24559,7 +24559,7 @@ export const subServicesMd = [
     "intro": [
       "Turn business data into forecasts, risk indicators and actionable insights with custom predictive analytics services.",
       "Clickmasters develops predictive analytics solutions that help businesses use historical and operational data to estimate future outcomes, identify patterns and support better decision-making. Our services cover data preparation, predictive model development, machine learning, software integration, deployment, monitoring and ongoing model improvement.",
-      "Predictive analytics forms part of our broader [Machine Learning Development Services](/machine-learning-ml?utm_source=chatgpt.com), helping organisations move from raw business data to predictions that can be used inside applications and day-to-day workflows."
+      "Predictive analytics forms part of our broader [Machine Learning Development Services](/machine-learning-ml), helping organisations move from raw business data to predictions that can be used inside applications and day-to-day workflows."
     ],
     "sections": [
       {
@@ -25172,7 +25172,7 @@ export const subServicesMd = [
     "relatedLinks": [
       {
         "label": "Machine Learning Development Services",
-        "href": "/machine-learning-ml?utm_source=chatgpt.com"
+        "href": "/machine-learning-ml"
       },
       {
         "label": "Model Training & Optimisation Services",
@@ -28452,7 +28452,7 @@ export const subServicesMd = [
     "intro": [
       "Deliver more relevant products, content and experiences with custom recommendation system development services built around your users, data and business requirements.",
       "Clickmasters develops recommendation engines that analyse user behaviour, item information and interaction data to generate personalised suggestions inside websites, applications and digital platforms. Our services cover recommendation strategy, data preparation, model development, system integration, deployment, monitoring and ongoing optimisation.",
-      "Recommendation system development forms part of our broader [Machine Learning Development Services](/machine-learning-ml?utm_source=chatgpt.com), connecting machine learning models with real products and business workflows."
+      "Recommendation system development forms part of our broader [Machine Learning Development Services](/machine-learning-ml), connecting machine learning models with real products and business workflows."
     ],
     "sections": [
       {
@@ -29200,7 +29200,7 @@ export const subServicesMd = [
     "relatedLinks": [
       {
         "label": "Machine Learning Development Services",
-        "href": "/machine-learning-ml?utm_source=chatgpt.com"
+        "href": "/machine-learning-ml"
       },
       {
         "label": "Deep Learning Development Services",
@@ -39047,7 +39047,7 @@ export const subServicesMd = [
       },
       {
         "heading": "Web Application Development for Startups",
-        "body": "Startups often need to validate a software product before developing its complete long-term roadmap. The first version should focus on proving the product's central value. If your application is still at validation stage, explore our [MVP development services](/software-development/mvp-development?utm_source=chatgpt.com).",
+        "body": "Startups often need to validate a software product before developing its complete long-term roadmap. The first version should focus on proving the product's central value. If your application is still at validation stage, explore our [MVP development services](/software-development/mvp-development).",
         "items": [
           "Target users",
           "Core problem",
@@ -39522,7 +39522,7 @@ export const subServicesMd = [
       },
       {
         "label": "MVP development services",
-        "href": "/software-development/mvp-development?utm_source=chatgpt.com"
+        "href": "/software-development/mvp-development"
       },
       {
         "label": "progressive web app development services",
