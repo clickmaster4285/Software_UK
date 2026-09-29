@@ -1,10 +1,4 @@
 /** @type {import('next').NextConfig} */
-import bundleAnalyzer from "@next/bundle-analyzer";
-
-const withBundleAnalyzer = bundleAnalyzer({
-  enabled: "true",
-});
-
 const nextConfig = {
   async redirects() {
     return [
@@ -54,10 +48,18 @@ const nextConfig = {
         source: '/:path*',
         headers: [
           { key: 'X-Robots-Tag', value: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
+          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains' },
+          {
+            key: 'Content-Security-Policy',
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://images.unsplash.com https://img.icons8.com https://cdn.jsdelivr.net https://i.pravatar.cc https://upload.wikimedia.org https://www.transparenttextures.com; font-src 'self'; connect-src 'self'; worker-src 'self' blob:; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          },
         ],
       },
     ];
   },
 };
 
-export default withBundleAnalyzer(nextConfig);
+export default nextConfig;
