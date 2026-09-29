@@ -232,7 +232,13 @@ const serviceMenuSections = [
 ];
 // Base slug aliases — maps slugified menu titles to override keys
 const baseSlugAliases = {
-  'dapp-development': 'decentralized-app-dapp-development',
+  'natural-language-processing': 'nlp',
+  'headless-e-commerce': 'headless-ecommerce',
+  'model-training-optimisation': 'model-training-optimization',
+  'business-intelligence-bi': 'business-intelligence',
+  'ci-cd-pipeline-setup': 'cicd-pipeline-setup',
+  'containerisation': 'containerization',
+  'compliance-risk-management': 'compliance-management',
 };
 const sectionSlugAliases = {
   'cloud-devops': 'cloud-and-devops',
@@ -3576,9 +3582,9 @@ const headlessCmsDevelopmentOverride = {
   }
 };
 const headlessEcommerceOverride = {
-  slug: "headless-e-commerce",
+  slug: "headless-ecommerce",
   categorySlug: "web-development",
-  sectionId: "headless-e-commerce",
+  sectionId: "headless-ecommerce",
   category: "Web Development",
   title: "Headless E-commerce Development Company Building Composable Storefronts",
   serviceName: "Headless E-commerce",
@@ -7028,9 +7034,9 @@ const recommendationSystemsOverride = {
   ]
 };
 const modelTrainingOptimisationOverride = {
-  slug: "model-training-optimisation",
+  slug: "model-training-optimization",
   categorySlug: "machine-learning-ml",
-  sectionId: "model-training-optimisation",
+  sectionId: "model-training-optimization",
   category: "Artificial Intelligence (AI)",
   title: "Model Training & Optimisation",
   serviceName: "Model Training & Optimisation",
@@ -7293,9 +7299,9 @@ const deepLearningSolutionsOverride = {
   ]
 };
 const naturalLanguageProcessingOverride = {
-  slug: "natural-language-processing",
+  slug: "nlp",
   categorySlug: "nlp-computer-vision",
-  sectionId: "natural-language-processing",
+  sectionId: "nlp",
   category: "NLP & Computer Vision",
   title: "Natural Language Processing Services",
   serviceName: "Natural Language Processing",
@@ -11363,9 +11369,9 @@ const vulnerabilityAssessmentOverride = {
   ]
 };
 const complianceRiskManagementOverride = {
-  slug: "compliance-risk-management",
+  slug: "compliance-management",
   categorySlug: "cybersecurity",
-  sectionId: "compliance-risk-management",
+  sectionId: "compliance-management",
   category: "Cybersecurity & Compliance",
   title: "Compliance & Risk Management Services",
   serviceName: "Compliance & Risk Management",
@@ -14435,9 +14441,9 @@ const smartContractDevelopmentOverride = {
   ]
 };
 const dappDevelopmentOverride = {
-  slug: "decentralized-app-dapp-development",
+  slug: "dapp-development",
   categorySlug: "blockchain-and-web3",
-  sectionId: "decentralized-app-dapp-development",
+  sectionId: "dapp-development",
   category: "Blockchain & Web3",
   title: "DApp Development Services",
   serviceName: "DApp Development",

@@ -1,7 +1,7 @@
 // AUTO-GENERATED from sub-services/*.md by scripts/convert-sub-services-md.js
 // Rich sub-service content: intro, tables, costFactors, whyChoose, relatedLinks, full FAQs & keywords.
 // NOTE: written to data/sub-services-md.js so data/sub-services.js is unaffected until ready.
-// Generated: 2026-09-29T08:22:09.685Z
+// Generated: 2026-09-29T11:44:57.409Z
 
 export const subServicesMd = [
   {
@@ -1066,13 +1066,13 @@ export const subServicesMd = [
     "sourceFile": "Crypto Wallet.md"
   },
   {
-    "slug": "decentralized-app-dapp-development",
+    "slug": "dapp-development",
     "categorySlug": "blockchain-and-web3",
     "category": "Blockchain And Web3",
     "title": "DApp Development Services UK",
     "serviceName": "DApp Development Services UK | Web3 Apps",
     "h1": "DApp Development Services UK",
-    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/blockchain-and-web3/decentralized-app-dapp-development",
+    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/blockchain-and-web3/dapp-development",
     "metaTitle": "DApp Development Services UK | Web3 Apps | Clickmasters",
     "metaDescription": "Custom DApp development services in the UK for decentralised applications, smart contract integration, wallet connectivity, testing, deployment and support.",
     "metaKeywords": [
@@ -2785,13 +2785,13 @@ export const subServicesMd = [
     "sourceFile": "NFT Marketplace.md"
   },
   {
-    "slug": "model-training-optimisation",
+    "slug": "model-training-optimization",
     "categorySlug": "machine-learning-ml",
     "category": "Machine Learning (ML)",
     "title": "AI Model Training & Optimisation Services UK",
     "serviceName": "AI Model Training & Optimisation Services UK",
     "h1": "AI Model Training & Optimisation Services UK",
-    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml/model-training-optimisation",
+    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml/model-training-optimization",
     "metaTitle": "AI Model Training & Optimisation Services UK | Clickmasters",
     "metaDescription": "AI model training and optimisation services in the UK for data preparation, fine-tuning, evaluation, performance improvement, deployment and monitoring.",
     "metaKeywords": [
@@ -5740,13 +5740,13 @@ export const subServicesMd = [
     "sourceFile": "backend-development.md"
   },
   {
-    "slug": "compliance-risk-management",
+    "slug": "compliance-management",
     "categorySlug": "cybersecurity",
     "category": "Cybersecurity",
     "title": "Cyber Security Compliance Management Services UK",
     "serviceName": "Cyber Security Compliance Management UK",
     "h1": "Cyber Security Compliance Management Services UK",
-    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/cybersecurity/compliance-risk-management",
+    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/cybersecurity/compliance-management",
     "metaTitle": "Cyber Security Compliance Management UK | Clickmasters",
     "metaDescription": "Cyber security compliance management and custom GRC software development in the UK for controls, evidence, policies, risks, audits and compliance automation.",
     "metaKeywords": [
@@ -22545,13 +22545,13 @@ export const subServicesMd = [
     "sourceFile": "mvp-development.md"
   },
   {
-    "slug": "natural-language-processing",
+    "slug": "nlp",
     "categorySlug": "nlp-computer-vision",
     "category": "Nlp Computer Vision",
     "title": "Natural Language Processing (NLP) Services UK",
     "serviceName": "Natural Language Processing (NLP) Services UK",
     "h1": "Natural Language Processing (NLP) Services UK",
-    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision/natural-language-processing",
+    "url": "https://clickmasterssoftwaredevelopmentcompany.co.uk/nlp-computer-vision/nlp",
     "metaTitle": "Natural Language Processing (NLP) Services UK | Clickmasters",
     "metaDescription": "Natural language processing services in the UK for text analytics, NER, sentiment analysis, semantic search, document processing, integration and deployment.",
     "metaKeywords": [
