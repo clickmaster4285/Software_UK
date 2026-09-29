@@ -4,22 +4,22 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const logos = [
-   { name: "Google", url: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" },
-   { name: "Microsoft", url: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" },
-   { name: "Amazon", url: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" },
-   { name: "Apple", url: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" },
-   { name: "Meta", url: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" },
-   { name: "Netflix", url: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" },
-   { name: "Adobe", url: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Adobe_logo_and_wordmark_%282017%29.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" },
-   { name: "Salesforce", url: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" },
-   { name: "IBM", url: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" },
-   { name: "Intel", url: "https://upload.wikimedia.org/wikipedia/commons/8/85/Intel_logo_2023.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" },
-   { name: "Nvidia", url: "https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg" },
-   { name: "Tesla", url: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg" },
-   { name: "Shopify", url: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" },
-   { name: "Slack", url: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg" },
-   { name: "Oracle", url: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg" },
-   { name: "Cisco", url: "https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" },
+   { name: "Google", url: "/logos/google.svg" },
+   { name: "Microsoft", url: "/logos/microsoft.svg" },
+   { name: "Amazon", url: "/logos/amazon.svg" },
+   { name: "Apple", url: "/logos/apple.svg" },
+   { name: "Meta", url: "/logos/meta.svg" },
+   { name: "Netflix", url: "/logos/netflix.svg" },
+   { name: "Adobe", url: "/logos/adobe.svg" },
+   { name: "Salesforce", url: "/logos/salesforce.svg" },
+   { name: "IBM", url: "/logos/ibm.svg" },
+   { name: "Intel", url: "/logos/intel.svg" },
+   { name: "Nvidia", url: "/logos/nvidia.svg" },
+   { name: "Tesla", url: "/logos/tesla.svg" },
+   { name: "Shopify", url: "/logos/shopify.svg" },
+   { name: "Slack", url: "/logos/slack.svg" },
+   { name: "Oracle", url: "/logos/oracle.svg" },
+   { name: "Cisco", url: "/logos/cisco.svg" },
 ];
 
 function MarqueeTrack({ logos: logoList, reverse = false, dimmed = false }) {
@@ -74,11 +74,11 @@ export default function TrustedBy() {
             </div>
 
             {/* Right to Left Marquee */}
-            <div className="relative py-8">
+            {/* <div className="relative py-8">
                <div className="absolute inset-y-0 left-0 w-32 bg-linear-to-r from-white to-transparent z-10 pointer-events-none" />
                <div className="absolute inset-y-0 right-0 w-32 bg-linear-to-l from-white to-transparent z-10 pointer-events-none" />
                <MarqueeTrack logos={logos} reverse dimmed />
-            </div>
+            </div> */}
          </div>
       </section>
    );

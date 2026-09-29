@@ -9858,7 +9858,8 @@ export const hirePages = [
 ];
 
 // ── Lightweight listing data (no heavy text fields) ──
-export const hirePageListings = hirePages.map(({ slug, role, city, cityDisplay, rate }) => ({
+const validHirePages = hirePages.filter((hp) => hp.role && hp.city);
+export const hirePageListings = validHirePages.map(({ slug, role, city, cityDisplay, rate }) => ({
   slug, role, city, cityDisplay, rate,
 }));
 
@@ -9870,7 +9871,7 @@ export function getHirePageByRoleCity(role, city) {
 // ── Group listings by role (for /hire page) ──
 export function getHireRolesMap() {
   const rolesMap = new Map();
-  hirePages.forEach(hp => {
+  validHirePages.forEach(hp => {
     if (!rolesMap.has(hp.role)) {
       rolesMap.set(hp.role, {
         role: hp.role,

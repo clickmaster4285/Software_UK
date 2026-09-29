@@ -234,11 +234,15 @@ const serviceMenuSections = [
 const baseSlugAliases = {
   'dapp-development': 'decentralized-app-dapp-development',
 };
+const sectionSlugAliases = {
+  'cloud-devops': 'cloud-and-devops',
+};
 const baseServices = serviceMenuSections.flatMap(
   (section) => section.items.map((item) => {
     const rawSlug = slugify(item.title);
     const slug = baseSlugAliases[rawSlug] || rawSlug;
-    const categorySlug = slugify(section.label);
+    const rawCategorySlug = slugify(section.label);
+    const categorySlug = sectionSlugAliases[rawCategorySlug] || rawCategorySlug;
     return {
       slug,
       categorySlug,
@@ -7290,9 +7294,9 @@ const deepLearningSolutionsOverride = {
 };
 const naturalLanguageProcessingOverride = {
   slug: "natural-language-processing",
-  categorySlug: "artificial-intelligence-ai",
+  categorySlug: "nlp-computer-vision",
   sectionId: "natural-language-processing",
-  category: "Artificial Intelligence (AI)",
+  category: "NLP & Computer Vision",
   title: "Natural Language Processing Services",
   serviceName: "Natural Language Processing",
   heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
@@ -7419,9 +7423,9 @@ const naturalLanguageProcessingOverride = {
 };
 const speechRecognitionOverride = {
   slug: "speech-recognition",
-  categorySlug: "artificial-intelligence-ai",
+  categorySlug: "nlp-computer-vision",
   sectionId: "speech-recognition",
-  category: "Artificial Intelligence (AI)",
+  category: "NLP & Computer Vision",
   title: "Speech Recognition Services",
   serviceName: "Speech Recognition",
   heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
@@ -7552,9 +7556,9 @@ const speechRecognitionOverride = {
 };
 const textAnalyticsOverride = {
   slug: "text-analytics",
-  categorySlug: "artificial-intelligence-ai",
+  categorySlug: "nlp-computer-vision",
   sectionId: "text-analytics",
-  category: "Artificial Intelligence (AI)",
+  category: "NLP & Computer Vision",
   title: "Text Analytics Services",
   serviceName: "Text Analytics",
   heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
@@ -7683,9 +7687,9 @@ const textAnalyticsOverride = {
 };
 const computerVisionOverride = {
   slug: "computer-vision",
-  categorySlug: "artificial-intelligence-ai",
+  categorySlug: "nlp-computer-vision",
   sectionId: "computer-vision",
-  category: "Artificial Intelligence (AI)",
+  category: "NLP & Computer Vision",
   title: "Computer Vision Services",
   serviceName: "Computer Vision",
   heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
@@ -7814,9 +7818,9 @@ const computerVisionOverride = {
 };
 const imageProcessingOverride = {
   slug: "image-processing",
-  categorySlug: "artificial-intelligence-ai",
+  categorySlug: "nlp-computer-vision",
   sectionId: "image-processing",
-  category: "Artificial Intelligence (AI)",
+  category: "NLP & Computer Vision",
   title: "Image Processing Services",
   serviceName: "Image Processing",
   heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
@@ -7945,9 +7949,9 @@ const imageProcessingOverride = {
 };
 const videoAnalyticsOverride = {
   slug: "video-analytics",
-  categorySlug: "artificial-intelligence-ai",
+  categorySlug: "nlp-computer-vision",
   sectionId: "video-analytics",
-  category: "Artificial Intelligence (AI)",
+  category: "NLP & Computer Vision",
   title: "Video Analytics Services",
   serviceName: "Video Analytics",
   heroImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop",
