@@ -524,7 +524,7 @@ We can help define:
 
 The first version should focus on proving the product's central value.
 
-If your application is still at validation stage, explore our [MVP development services](https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/mvp-development?utm_source=chatgpt.com).
+If your application is still at validation stage, explore our [MVP development services](https://clickmasterssoftwaredevelopmentcompany.co.uk/software-development/mvp-development).
 
 ## **Web Application Development for SMEs**
 

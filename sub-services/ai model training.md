@@ -30,7 +30,7 @@ Improve the accuracy, efficiency and production readiness of machine learning sy
 
 **Clickmasters** helps businesses prepare training data, train and fine-tune machine learning models, evaluate model performance, optimise models for production requirements and integrate trained models into wider software systems. Our approach connects model development with deployment, monitoring and ongoing improvement rather than treating training as an isolated technical task.
 
-Model training and optimisation forms part of our broader [**Machine Learning Development Services**](https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml?utm_source=chatgpt.com), supporting the model lifecycle from prepared data through to production operation.
+Model training and optimisation forms part of our broader [**Machine Learning Development Services**](https://clickmasterssoftwaredevelopmentcompany.co.uk/machine-learning-ml), supporting the model lifecycle from prepared data through to production operation.
 
 ## **What Are AI Model Training & Optimisation Services?**
 

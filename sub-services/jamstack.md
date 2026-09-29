@@ -30,7 +30,7 @@ Looking for **Jamstack development services** for a faster, flexible and scalabl
 
 **Clickmasters** provides custom Jamstack development for UK businesses, covering architecture, frontend development, Headless CMS integration, APIs, migration, testing, deployment and ongoing support.
 
-Explore our complete [web development services](https://clickmasterssoftwaredevelopmentcompany.co.uk/web-development?utm_source=chatgpt.com) for websites, web applications, ecommerce platforms, PWAs and Headless development.
+Explore our complete [web development services](https://clickmasterssoftwaredevelopmentcompany.co.uk/web-development) for websites, web applications, ecommerce platforms, PWAs and Headless development.
 
 ## **Jamstack Development Company for UK Businesses**
 
