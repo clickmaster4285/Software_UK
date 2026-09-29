@@ -272,10 +272,6 @@ function parseMd(content, sourceFile = '') {
     'e-commerce-development': 'ecommerce-development',
     'progressive-web-app-develoment': 'progressive-web-app-development', // typo in MD filename/URL
     'pwa-development': 'progressive-web-app-development',
-    'dapp-development': 'decentralized-app-dapp-development',
-    'compliance-management': 'compliance-risk-management',
-    'model-training-optimization': 'model-training-optimisation',
-    'nlp': 'natural-language-processing',
   };
 
   // 1. Meta Title (prioritize ## **Meta Title**, then inline **Meta Title:** content, then standalone **Meta Title:** with content next line)

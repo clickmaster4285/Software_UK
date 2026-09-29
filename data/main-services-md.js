@@ -1,7 +1,7 @@
 // AUTO-GENERATED from main-services/*.md by scripts/convert-main-services-md.js
 // Rich main-service content: intro, tables, costFactors, whyChoose, relatedLinks, full FAQs & keywords.
 // NOTE: written to data/main-services-md.js so data/main-services.js is unaffected until ready.
-// Generated: 2026-09-22T09:13:17.769Z
+// Generated: 2026-09-29T11:44:57.655Z
 
 export const mainServicesMd = [
   {
