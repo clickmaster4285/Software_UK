@@ -254,10 +254,12 @@ export function ServiceHero({ page }) {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/landing/sub-services/sub-service-bg.jpg"
+          src="/landing/sub-services/sub-service-bg.webp"
           alt="Background"
           fill
           priority
+          quality={70}
+          sizes="100vw"
           className="object-cover"
         />
         {/* Dark Overlay for better text contrast */}
@@ -538,6 +540,8 @@ export function ServiceHero({ page }) {
                 alt={page.title || "Platform dashboard preview"}
                 width={460}
                 height={320}
+                sizes="(max-width: 1024px) 0vw, 460px"
+                quality={70}
                 priority
                 className="w-full  rounded-4xl h-auto object-contain drop-shadow-2xl"
               />

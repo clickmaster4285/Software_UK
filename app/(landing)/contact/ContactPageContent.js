@@ -22,6 +22,8 @@ export default function ContactPageContent() {
             alt="Contact Clickmasters"
             fill
             priority
+            sizes="100vw"
+            quality={70}
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/50" />

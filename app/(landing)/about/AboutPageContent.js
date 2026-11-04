@@ -49,6 +49,8 @@ export default function AboutPageContent() {
             alt="About Clickmasters"
             fill
             priority
+            sizes="100vw"
+            quality={70}
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/80 mix-blend-multiply" />
@@ -317,7 +319,7 @@ export default function AboutPageContent() {
             ].map((member, i) => (
               <div key={i} className="bg-white rounded-3xl p-6 border border-black/10 shadow-sm text-center hover:-translate-y-1 transition-transform duration-300">
                 <div className="w-32 h-32 mx-auto bg-surface rounded-full mb-6 border-4 border-white shadow-md relative overflow-hidden">
-                  <Image src={member.image} alt={member.name} fill className="object-cover" />
+                  <Image src={member.image} alt={member.name} fill sizes="128px" quality={70} className="object-cover" />
                 </div>
                 <h4 className="font-bold text-lg mb-1">{member.name}</h4>
                 <p className="text-accent text-sm mb-4">{member.role}</p>

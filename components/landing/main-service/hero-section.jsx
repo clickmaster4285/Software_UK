@@ -263,6 +263,8 @@ export function HeroSection({ serviceData }) {
                     height={420}
                     src={heroImageUrl}
                     alt=""
+                    sizes="(max-width: 1024px) 0vw, 560px"
+                    quality={70}
                     className="w-full h-full object-cover"
                     priority
                   />
