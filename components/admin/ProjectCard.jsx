@@ -23,7 +23,7 @@ const STATUS_LABELS = {
 
 function getProjectLink(project) {
   const { url, _id } = project;
-  const href = url?.startsWith('http') ? url : `/software-solutions/${_id}`;
+  const href = url?.startsWith('http') ? url : `/projects/${_id}`;
   const isExternal = url?.startsWith('http');
   return { href, isExternal };
 };

@@ -57,7 +57,7 @@ export function CTAComponents() {
                   size="lg"
                   className="rounded-lg bg-linear-to-r from-accent to-accent-hover text-white font-semibold text-base py-6 px-10 shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
                 >
-                  <Link href="/contact-us" className="flex items-center gap-2">
+                  <Link href="/contact" className="flex items-center gap-2">
                     Book Strategy Call Now
                     <ArrowRight className="h-5 w-5" />
                   </Link>
@@ -97,7 +97,7 @@ export function CTAComponents() {
                 asChild
                 className="rounded-lg bg-linear-to-r from-accent to-accent-hover text-white font-semibold text-base py-6 px-8 whitespace-nowrap shadow-[0_2px_16px_rgba(0,0,0,0.07)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
               >
-                <Link href="/contact-us" className="flex items-center gap-2">
+                <Link href="/contact" className="flex items-center gap-2">
                   Get Your Proposal
                   <ArrowRight className="h-5 w-5" />
                 </Link>

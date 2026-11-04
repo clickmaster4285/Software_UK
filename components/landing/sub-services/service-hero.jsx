@@ -29,13 +29,14 @@ function Counter({
   suffix = "",
   prefix = "",
 }) {
-  const [count, setCount] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-  const elementRef = useRef(null);
-
   const numericMatch = String(targetValue).match(/\d+/);
   const numericTarget = numericMatch ? parseInt(numericMatch[0], 10) : 0;
   const originalSuffix = String(targetValue).replace(/\d+/, "");
+  // SSR / first paint show the final value so crawlers never see "0+" / "0%"
+  const [count, setCount] = useState(numericTarget);
+  const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const elementRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -52,10 +53,11 @@ function Counter({
   }, []);
 
   useEffect(() => {
-    if (!isVisible) return;
+    if (!isVisible || hasAnimated) return;
     let startTime;
     let animationFrame;
     const duration = 2000;
+    setCount(0);
 
     const animate = (currentTime) => {
       if (!startTime) startTime = currentTime;
@@ -66,6 +68,7 @@ function Counter({
         animationFrame = requestAnimationFrame(animate);
       } else {
         setCount(numericTarget);
+        setHasAnimated(true);
       }
     };
 
@@ -73,7 +76,7 @@ function Counter({
     return () => {
       if (animationFrame) cancelAnimationFrame(animationFrame);
     };
-  }, [isVisible, numericTarget]);
+  }, [isVisible, numericTarget, hasAnimated]);
 
   return (
     <div
@@ -175,7 +178,7 @@ export function ServiceHero({ page }) {
     isGoalPage && page.parentService && !secondaryIsQuote
       ? page.parentService.href
       : secondaryIsQuote
-        ? "/contact-us"
+        ? "/contact"
         : `/${page.categorySlug}`;
 
   useEffect(() => {
@@ -251,10 +254,12 @@ export function ServiceHero({ page }) {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/landing/sub-services/sub-service-bg.jpg"
+          src="/landing/sub-services/sub-service-bg.webp"
           alt="Background"
           fill
           priority
+          quality={70}
+          sizes="100vw"
           className="object-cover"
         />
         {/* Dark Overlay for better text contrast */}
@@ -432,7 +437,7 @@ export function ServiceHero({ page }) {
                     size="lg"
                     className="h-11 rounded-lg px-7 bg-linear-to-r from-accent to-accent-hover text-white font-semibold shadow-[0_4px_20px_oklch(0.5675_0.2072_318.97/0.35)] hover:shadow-[0_8px_32px_oklch(0.5675_0.2072_318.97/0.45)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer border-0"
                   >
-                    <Link href="/contact-us">
+                    <Link href="/contact">
                       {primaryCtaLabel}
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
@@ -535,6 +540,8 @@ export function ServiceHero({ page }) {
                 alt={page.title || "Platform dashboard preview"}
                 width={460}
                 height={320}
+                sizes="(max-width: 1024px) 0vw, 460px"
+                quality={70}
                 priority
                 className="w-full  rounded-4xl h-auto object-contain drop-shadow-2xl"
               />

@@ -34,7 +34,7 @@ const footerLinks = {
     { name: "Support Center", href: "/contact" },
   ],
   legal: [
-    { name: "Privacy Policy", href: "#" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Terms of Service", href: "#" },
     { name: "Cookie Policy", href: "#" },
   ],

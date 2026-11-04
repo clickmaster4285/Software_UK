@@ -592,7 +592,7 @@ export const mainServicesData = {
         slug: 'ai-automation-systems',
         description: 'Intelligent automation.',
         icon: 'Workflow',
-        heroImage: 'https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: 'AI Integration Services',
@@ -606,7 +606,7 @@ export const mainServicesData = {
         slug: 'ai-model-development',
         description: 'Custom model training.',
         icon: 'Cpu',
-        heroImage: 'https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: 'LLM Applications Development',
@@ -626,7 +626,7 @@ export const mainServicesData = {
     tagline: 'Intelligent Data-Driven Solutions',
     description: 'Harness ML to transform data into actionable insights.',
     heroBadge: '50+ ML Models Deployed',
-    heroImage: 'https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop',
     stats: [{ value: "50+", label: "ML Models" }, { value: "95%", label: "Accuracy" }],
     subServices: [
       {
@@ -634,49 +634,49 @@ export const mainServicesData = {
         slug: "machine-learning-solutions",
         description: "Tailored ML systems.",
         icon: 'Brain',
-        heroImage: 'https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: "Machine Learning Experts",
         slug: "machine-learning-experts",
         description: "Expert ML practitioners.",
         icon: 'Users',
-        heroImage: 'https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: "Predictive Analytics",
         slug: "predictive-analytics",
         description: "Outcome forecasting.",
         icon: 'BarChart3',
-        heroImage: 'https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: "Recommendation Systems",
         slug: "recommendation-systems",
         description: "Personalized engagement.",
         icon: 'Target',
-        heroImage: 'https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: "Model Training & Optimization",
         slug: "model-training-optimization",
         description: "Performance tuning.",
         icon: 'Settings',
-        heroImage: 'https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: "Deep Learning Solutions",
         slug: "deep-learning-solutions",
         description: "Advanced neural models.",
         icon: 'Cpu',
-        heroImage: 'https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: "Deep Learning Experts",
         slug: "deep-learning-experts",
         description: "Specialized architectures.",
         icon: 'UserCheck',
-        heroImage: 'https://images.unsplash.com/photo-1555949963-aa291f58a2b7?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1332&auto=format&fit=crop'
       },
     ]
   },
@@ -737,42 +737,42 @@ export const mainServicesData = {
     tagline: 'Comprehensive Data Management',
     description: 'Transform raw data into business assets.',
     heroBadge: '100+ Data Projects',
-    heroImage: 'https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop',
     subServices: [
       {
         title: "Data Science & Analytics",
         slug: "data-science-analytics",
         description: "Data-driven strategy.",
         icon: 'BarChart3',
-        heroImage: 'https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: "Business Intelligence (BI)",
         slug: "business-intelligence",
         description: "Dashboards and reports.",
         icon: 'BarChart',
-        heroImage: 'https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: "Data Engineering",
         slug: "data-engineering",
         description: "Reliable pipelines.",
         icon: 'Database',
-        heroImage: 'https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: "Data Warehousing",
         slug: "data-warehousing",
         description: "Warehouse design.",
         icon: 'HardDrive',
-        heroImage: 'https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop'
       },
       {
         title: "Big Data Solutions",
         slug: "big-data-solutions",
         description: "Large infrastructure.",
         icon: 'Database',
-        heroImage: 'https://images.unsplash.com/photo-1551288049-bbbda53663cf?q=80&w=1332&auto=format&fit=crop'
+        heroImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1332&auto=format&fit=crop'
       },
     ]
   },

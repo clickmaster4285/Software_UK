@@ -97,9 +97,11 @@ export function CeoVision() {
                 className="h-full w-full"
               >
                 <Image
-                  src="/landing/sub-services/ceo.jpeg"
+                  src="/landing/sub-services/ceo.webp"
                   alt="CEO Vision"
                   fill
+                  quality={70}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-center"
                   draggable={false}
                   priority

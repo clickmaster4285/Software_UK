@@ -13,7 +13,7 @@ export function ContentCtaButtons({ primary, secondary }) {
     <div className="mt-5 flex flex-wrap items-center gap-3">
       {primaryLabel && (
         <Link
-          href="/contact-us"
+          href="/contact"
           className="inline-flex items-center gap-2 rounded-lg bg-linear-to-r from-accent to-accent-hover px-5 py-2.5 text-sm font-semibold text-white shadow-[0_4px_16px_oklch(0.5675_0.2072_318.97/0.3)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_oklch(0.5675_0.2072_318.97/0.4)]"
         >
           {primaryLabel}
@@ -22,7 +22,7 @@ export function ContentCtaButtons({ primary, secondary }) {
       )}
       {secondaryLabel && (
         <Link
-          href="/contact-us"
+          href="/contact"
           className="inline-flex items-center gap-2 rounded-lg border border-border bg-white px-5 py-2.5 text-sm font-semibold text-text-primary transition-colors hover:border-accent/40 hover:text-accent"
         >
           {secondaryLabel}

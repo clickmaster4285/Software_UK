@@ -5,7 +5,7 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { linkifyMarkdown } from '@/lib/subservice-utils';
 import { getOverviewParas } from '@/components/landing/main-service/hero-section';
 
-const OVERVIEW_IMAGE = '/landing/main-services/people-starting-business-project.png';
+const OVERVIEW_IMAGE = '/landing/main-services/people-starting-business-project.webp';
 const EASE = [0.22, 1, 0.36, 1];
 
 /**
@@ -72,6 +72,7 @@ export default function OverviewSection({ serviceData }) {
                 fill
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
                 sizes="(max-width: 1024px) 100vw, 45vw"
+                quality={70}
                 priority={false}
               />
               <div

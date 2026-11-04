@@ -107,7 +107,7 @@ export function AppsSection() {
 
         {/* <div className="mt-20 text-center">
           <Link
-            href="/software-solutions"
+            href="/projects"
             className="group inline-flex items-center gap-3 rounded-xl bg-linear-to-r from-primary to-primary-mid px-10 py-4 font-bold text-white shadow-lg shadow-primary/15 transition-all hover:from-accent hover:to-accent-hover hover:shadow-xl hover:shadow-accent/20 active:scale-[0.98]"
           >
             View All Solutions

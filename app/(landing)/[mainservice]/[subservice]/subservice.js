@@ -189,7 +189,7 @@ export default function ServiceDetailClient({ service, categorySlug }) {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact-us">
+              <Link href="/contact">
                 <button className="px-6 py-3 md:px-8 md:py-4 bg-accent text-white text-sm font-medium tracking-wider rounded-md hover:bg-accent-hover transition-colors">
                   <span className="flex items-center justify-center">
                     Get started
@@ -356,7 +356,7 @@ export default function ServiceDetailClient({ service, categorySlug }) {
             <p className="text-white/80 mb-8 font-body">
               Let&apos;s discuss your project requirements and see how we can help you achieve your business goals.
             </p>
-            <Link href="/contact-us">
+            <Link href="/contact">
               <button className="px-8 py-4 bg-accent text-white text-sm font-medium tracking-wider rounded-md hover:bg-accent-hover transition-colors">
                 <span className="flex items-center justify-center">
                   Contact us today
