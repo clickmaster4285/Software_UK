@@ -45,6 +45,43 @@ function toAbsoluteUrl(url) {
   return `${siteConfig.url}${normalizedPath}`.replace(/\/+$/, '');
 }
 
+const MONTH_INDEX = {
+  january: 1,
+  february: 2,
+  march: 3,
+  april: 4,
+  may: 5,
+  june: 6,
+  july: 7,
+  august: 8,
+  september: 9,
+  october: 10,
+  november: 11,
+  december: 12,
+};
+
+/** Convert "June 2025" / "2025-06-01" into ISO-8601 DateTime for schema.org. */
+export function toIsoDateTime(value) {
+  if (!value) return undefined;
+  const raw = String(value).trim();
+  if (!raw) return undefined;
+
+  if (/^\d{4}-\d{2}-\d{2}T/.test(raw)) return raw;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(raw)) return `${raw}T00:00:00+00:00`;
+
+  const monthYear = raw.match(/^([A-Za-z]+)\s+(\d{4})$/);
+  if (monthYear) {
+    const month = MONTH_INDEX[monthYear[1].toLowerCase()];
+    if (month) {
+      return `${monthYear[2]}-${String(month).padStart(2, '0')}-01T00:00:00+00:00`;
+    }
+  }
+
+  const parsed = new Date(raw);
+  if (!Number.isNaN(parsed.getTime())) return parsed.toISOString();
+  return undefined;
+}
+
 // 1. Organization Schema
 export function organizationSchema() {
   return {
@@ -161,16 +198,21 @@ export function serviceSchema(name, description, url, areaServed = null, fragmen
 
 // 6. Article Schema
 export function articleSchema({ title, description, url, author, datePublished, dateModified, image }) {
+  const absoluteUrl = toAbsoluteUrl(url);
+  const published = toIsoDateTime(datePublished) || toIsoDateTime(dateModified);
+  const modified = toIsoDateTime(dateModified) || published;
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    '@id': `${toAbsoluteUrl(url)}/#article`,
+    '@id': `${absoluteUrl}/#article`,
     headline: title,
     description: description,
-    url: toAbsoluteUrl(url),
+    url: absoluteUrl,
+    image: image ? toAbsoluteUrl(image) : siteConfig.logo,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${toAbsoluteUrl(url)}/#webpage`,
+      '@id': `${absoluteUrl}/#webpage`,
     },
     publisher: {
       '@id': `${siteConfig.url}/#organization`,
@@ -181,6 +223,8 @@ export function articleSchema({ title, description, url, author, datePublished, 
     schema.author = {
       '@type': 'Person',
       name: author,
+      url: `${siteConfig.url}/about`,
+      sameAs: [siteConfig.url],
     };
   } else {
     schema.author = {
@@ -188,11 +232,46 @@ export function articleSchema({ title, description, url, author, datePublished, 
     };
   }
 
-  if (datePublished) schema.datePublished = datePublished;
-  if (dateModified) schema.dateModified = dateModified;
-  if (image) schema.image = image;
+  if (published) schema.datePublished = published;
+  if (modified) schema.dateModified = modified;
 
   return schema;
+}
+
+/** Review schema helper (case-study client quotes, etc.). */
+export function reviewSchema({
+  reviewBody,
+  authorName,
+  datePublished,
+  ratingValue = '5',
+  itemReviewedName,
+}) {
+  if (!reviewBody) return null;
+
+  const published = toIsoDateTime(datePublished);
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    itemReviewed: {
+      '@type': 'Organization',
+      name: itemReviewedName || siteConfig.legalName || siteConfig.name,
+      url: siteConfig.url,
+    },
+    author: {
+      '@type': 'Person',
+      name: authorName || 'Client',
+      url: `${siteConfig.url}/about`,
+      sameAs: [siteConfig.url],
+    },
+    reviewBody,
+    ...(published ? { datePublished: published } : {}),
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: String(ratingValue),
+      bestRating: '5',
+    },
+  };
 }
 
 // 7. Breadcrumb Schema
@@ -236,10 +315,31 @@ export function contactPageSchema() {
       email: siteConfig.email,
       address: siteConfig.address,
       url: siteConfig.url,
+      priceRange: '£££',
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 33.6844,
+        longitude: 73.0479,
+      },
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: [
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday',
+          ],
+          opens: '09:00',
+          closes: '18:00',
+        },
+      ],
       parentOrganization: {
         '@id': `${siteConfig.url}/#organization`,
       },
-    }
+    },
   };
 }
 
