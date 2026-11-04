@@ -5,11 +5,13 @@ import { motion, useInView, useSpring, useTransform } from "framer-motion";
 
 function Counter({ value }) {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: false });
-  const numericValue = parseInt(value.replace(/[^0-9]/g, ""));
+  const inView = useInView(ref, { once: true, amount: 0.2 });
+  const numericValue = parseInt(value.replace(/[^0-9]/g, ""), 10) || 0;
   const suffix = value.replace(/[0-9]/g, "");
+  const [hasAnimated, setHasAnimated] = useState(false);
 
-  const spring = useSpring(0, {
+  // Start at the final value so SSR / crawlers never see "0+"
+  const spring = useSpring(numericValue, {
     mass: 1,
     stiffness: 100,
     damping: 30,
@@ -20,12 +22,11 @@ function Counter({ value }) {
   );
 
   useEffect(() => {
-    if (inView) {
-      spring.set(numericValue);
-    } else {
-      spring.set(0);
-    }
-  }, [inView, numericValue, spring]);
+    if (!inView || hasAnimated) return;
+    spring.jump(0);
+    spring.set(numericValue);
+    setHasAnimated(true);
+  }, [inView, numericValue, spring, hasAnimated]);
 
   return <motion.span ref={ref}>{displayValue}</motion.span>;
 }

@@ -29,13 +29,14 @@ function Counter({
   suffix = "",
   prefix = "",
 }) {
-  const [count, setCount] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-  const elementRef = useRef(null);
-
   const numericMatch = String(targetValue).match(/\d+/);
   const numericTarget = numericMatch ? parseInt(numericMatch[0], 10) : 0;
   const originalSuffix = String(targetValue).replace(/\d+/, "");
+  // SSR / first paint show the final value so crawlers never see "0+" / "0%"
+  const [count, setCount] = useState(numericTarget);
+  const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const elementRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -52,10 +53,11 @@ function Counter({
   }, []);
 
   useEffect(() => {
-    if (!isVisible) return;
+    if (!isVisible || hasAnimated) return;
     let startTime;
     let animationFrame;
     const duration = 2000;
+    setCount(0);
 
     const animate = (currentTime) => {
       if (!startTime) startTime = currentTime;
@@ -66,6 +68,7 @@ function Counter({
         animationFrame = requestAnimationFrame(animate);
       } else {
         setCount(numericTarget);
+        setHasAnimated(true);
       }
     };
 
@@ -73,7 +76,7 @@ function Counter({
     return () => {
       if (animationFrame) cancelAnimationFrame(animationFrame);
     };
-  }, [isVisible, numericTarget]);
+  }, [isVisible, numericTarget, hasAnimated]);
 
   return (
     <div

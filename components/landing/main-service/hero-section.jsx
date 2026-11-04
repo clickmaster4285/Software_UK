@@ -46,20 +46,24 @@ function useInViewOnce(ref, threshold = 0.15) {
 }
 
 const Counter = ({ end, duration = 2, delay = 0 }) => {
-  const [count, setCount] = useState(0);
+  // SSR / first paint show the final value so crawlers never see "0+"
+  const [count, setCount] = useState(end);
+  const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef(null);
   const isInView = useInViewOnce(ref, 0.2);
   const reducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || hasAnimated) return;
     if (reducedMotion) {
       setCount(end);
+      setHasAnimated(true);
       return;
     }
 
     let startTime;
     let animationFrame;
+    setCount(0);
 
     const animate = (timestamp) => {
       if (!startTime) startTime = timestamp;
@@ -70,6 +74,7 @@ const Counter = ({ end, duration = 2, delay = 0 }) => {
         animationFrame = requestAnimationFrame(animate);
       } else {
         setCount(end);
+        setHasAnimated(true);
       }
     };
 
@@ -81,7 +86,7 @@ const Counter = ({ end, duration = 2, delay = 0 }) => {
       window.clearTimeout(timeoutId);
       if (animationFrame) cancelAnimationFrame(animationFrame);
     };
-  }, [isInView, end, duration, delay, reducedMotion]);
+  }, [isInView, end, duration, delay, reducedMotion, hasAnimated]);
 
   return <span ref={ref}>{count}+</span>;
 };
