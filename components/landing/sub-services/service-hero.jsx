@@ -175,7 +175,7 @@ export function ServiceHero({ page }) {
     isGoalPage && page.parentService && !secondaryIsQuote
       ? page.parentService.href
       : secondaryIsQuote
-        ? "/contact-us"
+        ? "/contact"
         : `/${page.categorySlug}`;
 
   useEffect(() => {
@@ -432,7 +432,7 @@ export function ServiceHero({ page }) {
                     size="lg"
                     className="h-11 rounded-lg px-7 bg-linear-to-r from-accent to-accent-hover text-white font-semibold shadow-[0_4px_20px_oklch(0.5675_0.2072_318.97/0.35)] hover:shadow-[0_8px_32px_oklch(0.5675_0.2072_318.97/0.45)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer border-0"
                   >
-                    <Link href="/contact-us">
+                    <Link href="/contact">
                       {primaryCtaLabel}
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>

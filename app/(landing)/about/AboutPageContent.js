@@ -71,7 +71,7 @@ export default function AboutPageContent() {
               From new digital products to existing systems ready for their next stage, our focus is simple: build technology with a clear purpose.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/contact-us">
+              <Link href="/contact">
                 <Button className="btn-primary px-8 py-6 text-lg rounded-xl">
                   Discuss Your Project
                   <ArrowRight className="w-5 h-5 ml-2" />

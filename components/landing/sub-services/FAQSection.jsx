@@ -104,7 +104,7 @@ export const FAQSection = ({ faqs, cta }) => {
                 <div className="mt-4 flex flex-wrap gap-2.5">
                   {faq.primaryCta && (
                     <Link
-                      href="/contact-us"
+                      href="/contact"
                       className="inline-flex items-center gap-1.5 rounded-lg bg-linear-to-r from-accent to-accent-hover px-4 py-2 text-sm font-semibold text-white"
                     >
                       {faq.primaryCta}
@@ -113,7 +113,7 @@ export const FAQSection = ({ faqs, cta }) => {
                   )}
                   {faq.secondaryCta && (
                     <Link
-                      href="/contact-us"
+                      href="/contact"
                       className="inline-flex items-center rounded-lg border border-border bg-white px-4 py-2 text-sm font-semibold text-text-primary hover:border-accent/40"
                     >
                       {faq.secondaryCta}
@@ -190,14 +190,14 @@ export const FAQSection = ({ faqs, cta }) => {
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Button asChild className="bg-accent hover:bg-accent-hover text-white rounded-xl px-8 py-6 font-semibold shadow-lg shadow-accent/20 transition-all hover:-translate-y-0.5 border-0">
-            <Link href="/contact-us">
+            <Link href="/contact">
               {cta?.primary || 'Get in touch'}
               <ArrowRight className="ml-2 h-4 w-4" aria-hidden />
             </Link>
           </Button>
           {cta?.secondary && (
             <Button asChild variant="outline" className="rounded-xl px-8 py-6 font-semibold border-border hover:border-accent/40">
-              <Link href="/contact-us">{cta.secondary}</Link>
+              <Link href="/contact">{cta.secondary}</Link>
             </Button>
           )}
         </div>

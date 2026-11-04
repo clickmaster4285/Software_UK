@@ -314,7 +314,7 @@ export const ProcessSection = ({ serviceName, processPhases, cta }) => {
           {/* CTA */}
           <div className="mt-14 flex flex-wrap justify-center gap-3">
             <Link
-              href="/contact-us"
+              href="/contact"
               className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-hover hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)]"
             >
               {cta?.primary || 'Start Your Project'}
@@ -322,7 +322,7 @@ export const ProcessSection = ({ serviceName, processPhases, cta }) => {
             </Link>
             {cta?.secondary && (
               <Link
-                href="/contact-us"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-lg border border-border bg-white px-7 py-3.5 text-sm font-semibold text-text-primary transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/40"
               >
                 {cta.secondary}
