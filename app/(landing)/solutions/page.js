@@ -1,101 +1,148 @@
-'use client';
-
-import { useCategoryList } from '@/hooks/useCategories';
-import { Skeleton } from '@/components/ui/skeleton';
 import Link from 'next/link';
-import { Card, CardContent, CardDescription, CardFooter } from '@/components/ui/card';
-import { ArrowRight, Code2, Cpu, BarChart3, Workflow, ShieldCheck, Palette } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { ArrowRight, Code2, Globe, Smartphone, Brain, Palette, Cloud } from 'lucide-react';
+import { getFeaturedCaseStudyCards } from '@/lib/case-study-public';
 
-const iconMap = {
-  'workflow-tools': <Workflow className="w-6 h-6" />,
-  'automation': <Cpu className="w-6 h-6" />,
-  'analytics': <BarChart3 className="w-6 h-6" />,
-  'creative-studio': <Palette className="w-6 h-6" />,
-  'security': <ShieldCheck className="w-6 h-6" />,
-  'software-development': <Code2 className="w-6 h-6" />,
-};
+export const dynamic = 'force-static';
+
+const solutionHubs = [
+  {
+    title: 'Custom Software Development',
+    href: '/software-development',
+    icon: Code2,
+    summary:
+      'Bespoke applications, SaaS platforms, APIs and enterprise systems built around your workflows, compliance needs and growth targets.',
+  },
+  {
+    title: 'Web Development',
+    href: '/web-development',
+    icon: Globe,
+    summary:
+      'High-performance B2B websites, web apps, headless commerce and portals with Core Web Vitals, SEO and CRM integrations built in.',
+  },
+  {
+    title: 'Mobile App Development',
+    href: '/mobile-development',
+    icon: Smartphone,
+    summary:
+      'Native and cross-platform iOS and Android apps using React Native and Flutter, from MVP validation to production scale.',
+  },
+  {
+    title: 'AI & Automation',
+    href: '/artificial-intelligence-ai',
+    icon: Brain,
+    summary:
+      'Production AI agents, chatbots, RAG systems and workflow automation that reduce operational cost without sacrificing control.',
+  },
+  {
+    title: 'UI/UX Design',
+    href: '/design-ui-ux',
+    icon: Palette,
+    summary:
+      'Research-led product design, design systems and accessible interfaces that help B2B software convert and retain users.',
+  },
+  {
+    title: 'Cloud & DevOps',
+    href: '/cloud-and-devops',
+    icon: Cloud,
+    summary:
+      'Cloud migration, CI/CD, infrastructure as code and managed reliability for AWS, GCP and Azure environments.',
+  },
+];
 
 export default function SolutionsPage() {
-  const { data: categories, isLoading } = useCategoryList();
-  const activeCategories = categories?.filter(c => !c.deleted) || [];
+  const featured = getFeaturedCaseStudyCards(6);
 
   return (
-    <main className="bg-white">
-      <section className="page-hero">
-        <div className="container">
-          <span className="section-label">OUR SOLUTIONS</span>
-          <h1>Your Solution for Every Challenge</h1>
-          <p className="hero-sub text-white/90 max-w-2xl mx-auto">
-            Powerful software tools designed to transform how your business operates and scales in the digital age.
+    <main className="bg-background">
+      <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20">
+        <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
+        <div className="relative mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 text-center">
+          <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">Our Solutions</span>
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            Software Solutions for Every Growth Stage
+          </h1>
+          <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto">
+            Clickmasters designs and builds digital products that solve operational bottlenecks, unlock new revenue
+            channels and keep UK and international businesses competitive. Whether you need a greenfield product,
+            a modernisation programme or an AI-assisted workflow, we pair strategy with engineering so the solution
+            ships, scales and stays maintainable.
           </p>
         </div>
       </section>
 
-      <section className="py-24 bg-surface">
-        <div className="container">
-          {isLoading ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[1, 2, 3, 4, 5, 6].map(i => <Skeleton key={i} className="h-64 rounded-3xl" />)}
-            </div>
-          ) : activeCategories.length === 0 ? (
-            <div className="text-center py-20 bg-white rounded-3xl shadow-sm border border-slate-100">
-              <h3 className="text-2xl font-bold text-slate-900">Solutions coming soon</h3>
-              <p className="text-slate-500 mt-2">We&apos;re currently expanding our specialized expertise. Check back soon!</p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {activeCategories.map((solution, index) => (
+      <section className="py-20 px-6 bg-surface">
+        <div className="mx-auto max-w-[96vw] lg:max-w-[90vw]">
+          <div className="max-w-3xl mb-12">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4">
+              Choose the capability that matches your outcome
+            </h2>
+            <p className="text-text-body text-lg leading-relaxed">
+              Our solution hubs map directly to delivery teams. Each path includes discovery, architecture, build,
+              QA, launch support and optional retainers. Start with the category closest to your problem — we will
+              refine scope on a free consultation and give you a fixed-price proposal in GBP.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {solutionHubs.map((item) => {
+              const Icon = item.icon;
+              return (
                 <Link
-                  key={solution._id}
-                  href={`/solutions/${solution.slug || solution._id}`}
-                  className="block group opacity-0 animate-fade-up h-full"
-                  style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'forwards' }}
+                  key={item.href}
+                  href={item.href}
+                  className="group rounded-2xl border border-border bg-white p-8 shadow-[0_2px_16px_rgba(0,0,0,0.07)] transition-all hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
                 >
-                  <Card className="h-full bg-white rounded-[2rem] border-slate-100 shadow-sm transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/5 group-hover:-translate-y-1 flex flex-col overflow-hidden">
-                    <CardContent className="p-10 flex-1">
-                      <div className="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-accent group-hover:text-primary transition-colors duration-500">
-                        {iconMap[solution.slug] || <Code2 className="w-6 h-6" />}
-                      </div>
-                      <h3 className="text-2xl font-bold text-primary mb-4 leading-tight group-hover:text-accent transition-colors">
-                        {solution.name}
-                      </h3>
-                      <CardDescription className="text-text-body text-base leading-relaxed">
-                        {solution.description || 'Specialized software solutions engineered for maximum impact and efficiency.'}
-                      </CardDescription>
-                    </CardContent>
-                    <CardFooter className="bg-slate-50/50 border-t border-slate-50 p-10 mt-auto">
-                      <span className="inline-flex items-center text-sm font-bold text-primary uppercase tracking-widest">
-                        Learn More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </span>
-                    </CardFooter>
-                  </Card>
+                  <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/5 text-primary group-hover:bg-accent group-hover:text-white transition-colors">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-text-primary mb-3 group-hover:text-accent transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-text-body text-sm leading-relaxed mb-6">{item.summary}</p>
+                  <span className="inline-flex items-center gap-2 text-sm font-semibold text-accent">
+                    Explore solution <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
                 </Link>
-              ))}
-            </div>
-          )}
+              );
+            })}
+          </div>
         </div>
       </section>
 
-      {/* Trust Section */}
-      <section className="py-24 bg-white">
-        <div className="container">
-          <div className="bg-primary rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="relative z-10 max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Not sure which solution is right for you?</h2>
-              <p className="text-white/70 text-lg mb-10 leading-relaxed">
-                Book a free 30-minute strategy call with our engineering team to discuss your goals and technical requirements.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-accent text-primary font-bold h-16 px-10 rounded-2xl hover:bg-accent/90 shadow-xl shadow-black/20" asChild>
-                  <Link href="/contact">Book Strategy Call</Link>
-                </Button>
-                <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 h-16 px-10 rounded-2xl" asChild>
-                  <Link href="/case-studies">View Success Stories</Link>
-                </Button>
-              </div>
-            </div>
+      <section className="py-20 px-6 bg-background">
+        <div className="mx-auto max-w-[96vw] lg:max-w-[90vw]">
+          <div className="max-w-3xl mb-10">
+            <h2 className="font-heading text-3xl font-bold text-text-primary mb-4">
+              Proven on real UK programmes
+            </h2>
+            <p className="text-text-body text-lg leading-relaxed">
+              Every solution path is backed by delivered work across FinTech, HealthTech, GovTech, EdTech, PropTech
+              and commerce. Browse representative case studies, then talk to us about the outcome you need next.
+              Engagements typically start with a paid discovery sprint so risk, compliance and integration constraints
+              are clear before full build commitment.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+            {featured.map((cs) => (
+              <Link
+                key={cs.slug}
+                href={`/case-studies/${cs.slug}`}
+                className="rounded-xl border border-border bg-white px-5 py-4 text-sm font-medium text-text-primary hover:border-accent/40 hover:text-accent transition-colors"
+              >
+                {cs.industry}: {cs.title}
+              </Link>
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-4">
+            <Link href="/case-studies" className="btn-primary inline-flex items-center gap-2">
+              Browse all case studies <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 rounded-lg border border-border bg-white px-8 py-3 font-semibold text-text-primary hover:border-accent hover:text-accent transition-colors"
+            >
+              Book a strategy call
+            </Link>
           </div>
         </div>
       </section>

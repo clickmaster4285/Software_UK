@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Our Projects | Clickmasters Software Development',
-  description: 'Browse our portfolio of completed software development projects — web applications, mobile apps, backend systems, and design solutions.',
+  title: 'Project Gallery | Clickmasters',
+  description: 'Browse Clickmasters project gallery and case studies across FinTech, HealthTech, GovTech, EdTech, PropTech and commerce — real delivery outcomes.',
   alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/projects' },
 };
 

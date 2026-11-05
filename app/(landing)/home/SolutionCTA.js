@@ -74,7 +74,7 @@ export default function SolutionCTA() {
             </h2>
           </div>
           <Link
-            href="/projects"
+            href="/case-studies"
             className="group inline-flex items-center gap-2 font-bold text-primary transition-colors hover:text-accent"
           >
             View All Projects

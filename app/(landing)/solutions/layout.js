@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Solutions | Clickmasters Software Development',
-  description: 'Explore our software development solutions — workflow automation, analytics, security, creative studio, and custom software development.',
+  title: 'Software Solutions Hub | Clickmasters',
+  description: 'Explore Clickmasters software solutions for custom software, web, mobile, AI, UI/UX and cloud — backed by UK case studies and GBP-scoped delivery.',
   alternates: { canonical: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/solutions' },
 };
 

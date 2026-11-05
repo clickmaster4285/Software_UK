@@ -1,138 +1,111 @@
-'use client';
-
-import { useProjectList } from '@/hooks/useProjects';
-import { Skeleton } from '@/components/ui/skeleton';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { ExternalLink, Globe, Layout, Smartphone, GitBranch, Server, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
+import { ArrowRight } from 'lucide-react';
+import { caseStudyCards, getFeaturedCaseStudyCards } from '@/lib/case-study-public';
 
-const iconMap = {
-  'web': <Globe className="w-5 h-5" />,
-  'mobile': <Smartphone className="w-5 h-5" />,
-  'backend': <Server className="w-5 h-5" />,
-  'design': <Layout className="w-5 h-5" />,
-};
+export const dynamic = 'force-static';
+
+const sectors = [
+  'FinTech',
+  'HealthTech',
+  'GovTech',
+  'EdTech',
+  'PropTech',
+  'eCommerce',
+  'InsurTech',
+  'LegalTech',
+];
 
 export default function ProjectsPage() {
-  const { data: projects, isLoading } = useProjectList();
+  const featured = getFeaturedCaseStudyCards(9);
+  const total = caseStudyCards.length;
 
   return (
-    <main className="bg-white">
-      <section className="page-hero">
-        <div className="container">
-          <span className="section-label">PORTFOLIO</span>
-          <h1>Our Project Gallery</h1>
-          <p className="hero-sub text-white/90 max-w-2xl mx-auto">
-            A showcase of custom software solutions, web applications, and digital products we&apos;ve engineered for our global clients.
+    <main className="bg-background">
+      <section className="relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-20">
+        <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-mid to-primary-light" />
+        <div className="relative mx-auto max-w-[96vw] lg:max-w-[90vw] px-6 text-center">
+          <span className="section-label mb-6 bg-white/10 border-white/15 text-white/80">Portfolio</span>
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            Project Gallery &amp; Delivery Outcomes
+          </h1>
+          <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto">
+            Explore {total}+ documented software programmes delivered by Clickmasters for UK and international
+            clients. This gallery highlights the systems, platforms and products we engineer — from regulated
+            FinTech and NHS-connected HealthTech to commerce, PropTech and public-sector digital services.
           </p>
         </div>
       </section>
 
-      <section className="py-24 bg-surface">
-        <div className="container">
-          {isLoading ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[1, 2, 3, 4, 5, 6].map(i => <Skeleton key={i} className="h-80 rounded-3xl" />)}
-            </div>
-          ) : !projects || projects.length === 0 ? (
-            <div className="text-center py-20 bg-white rounded-3xl shadow-sm border border-slate-100">
-              <h3 className="text-2xl font-bold text-slate-900">Projects coming soon</h3>
-              <p className="text-slate-500 mt-2">We&apos;re currently updating our portfolio with our latest work. Check back soon!</p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
-                <article 
-                  key={project._id} 
-                  className="bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500 group opacity-0 animate-fade-up flex flex-col h-full"
-                  style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'forwards' }}
-                >
-                  <div className="aspect-video relative overflow-hidden bg-slate-100">
-                    <Image 
-                      src={project.thumbnail || 'https://via.placeholder.com/800x450?text=Project'} 
-                      alt={project.title} 
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute top-4 left-4 z-10">
-                      <Badge className="bg-primary/80 backdrop-blur-md text-white border-none">
-                        {project.category?.name || 'Project'}
-                      </Badge>
-                    </div>
-                    {project.status === 'live' && (
-                      <div className="absolute top-4 right-4">
-                        <span className="flex h-3 w-3 relative">
-                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                          <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
-                        </span>
-                      </div>
-                    )}
-                  </div>
-
-                  <div className="p-8 flex-1 flex flex-col">
-                    <h3 className="text-xl font-bold text-primary mb-3 leading-tight group-hover:text-accent transition-colors">
-                      {project.title}
-                    </h3>
-                    <p className="text-text-body text-sm line-clamp-3 leading-relaxed mb-6">
-                      {project.description}
-                    </p>
-                    
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {project.tags?.slice(0, 3).map(tag => (
-                        <span key={tag} className="text-[10px] font-bold text-slate-400 uppercase tracking-widest bg-slate-50 px-2 py-1 rounded-md">
-                          {tag}
-                        </span>
-                      ))}
-                      {project.tags?.length > 3 && (
-                        <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest bg-slate-50 px-2 py-1 rounded-md">
-                          +{project.tags.length - 3}
-                        </span>
-                      )}
-                    </div>
-
-                    <div className="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
-                      <div className="flex gap-2">
-                        <Button variant="outline" size="icon" className="w-8 h-8 rounded-lg border-slate-200" asChild>
-                          <Link href={project.url} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="w-4 h-4" />
-                          </Link>
-                        </Button>
-                        <Button variant="outline" size="icon" className="w-8 h-8 rounded-lg border-slate-200">
-                          <GitBranch className="w-4 h-4" />
-                        </Button>
-                      </div>
-                      <Link 
-                        href={project.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-primary font-bold text-[10px] uppercase tracking-widest flex items-center gap-2 hover:text-accent transition-colors"
-                      >
-                        Visit Project <ArrowRight className="w-3 h-3" />
-                      </Link>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          )}
+      <section className="py-16 px-6 bg-surface border-b border-border">
+        <div className="mx-auto max-w-[96vw] lg:max-w-[90vw]">
+          <h2 className="font-heading text-2xl font-bold text-text-primary mb-4">Browse by sector</h2>
+          <p className="text-text-body mb-8 max-w-3xl">
+            Each sector collection links into our full case-study library with measurable outcomes, technology
+            stacks and compliance notes. Use these as a starting point for scoping a similar engagement.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {sectors.map((sector) => (
+              <Link
+                key={sector}
+                href={`/case-studies?sector=${encodeURIComponent(sector)}`}
+                className="rounded-full border border-border bg-white px-4 py-2 text-sm font-semibold text-text-primary hover:border-accent hover:text-accent transition-colors"
+              >
+                {sector}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-24 bg-white">
-        <div className="container">
-          <div className="bg-accent rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden text-primary">
-            <div className="max-w-2xl mx-auto relative z-10">
-              <h2 className="text-3xl md:text-5xl font-black mb-6">Have a project in mind?</h2>
-              <p className="text-primary/70 text-lg mb-10 leading-relaxed font-medium">
-                We&apos;re always looking for exciting new challenges. Let&apos;s build something exceptional together.
-              </p>
-              <Button size="lg" className="bg-primary text-accent font-bold h-16 px-12 rounded-2xl hover:bg-primary/90 shadow-xl shadow-primary/20" asChild>
-                <Link href="/contact">Start a Conversation</Link>
-              </Button>
+      <section className="py-20 px-6 bg-background">
+        <div className="mx-auto max-w-[96vw] lg:max-w-[90vw]">
+          <div className="max-w-3xl mb-12">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-text-primary mb-4">
+              Featured delivery programmes
+            </h2>
+            <p className="text-text-body text-lg leading-relaxed">
+              These projects represent the depth of work behind the Clickmasters portfolio: FCA-aware FinTech
+              platforms, DTAC-ready NHS applications, local authority digital services, commerce rebuilds and
+              multi-tenant SaaS products. Every write-up covers challenge, approach, results and the stack we
+              used — so you can evaluate fit before we talk delivery model or commercial terms.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {featured.map((cs) => (
+              <Link
+                key={cs.slug}
+                href={`/case-studies/${cs.slug}`}
+                className="group rounded-2xl border border-border bg-white p-6 shadow-[0_2px_16px_rgba(0,0,0,0.07)] transition-all hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
+              >
+                <p className="text-xs font-bold uppercase tracking-widest text-accent mb-3">{cs.industry || 'Case Study'}</p>
+                <h3 className="font-heading text-lg font-bold text-text-primary mb-3 group-hover:text-accent transition-colors leading-snug">
+                  {cs.title}
+                </h3>
+                <p className="text-sm text-text-muted line-clamp-3 mb-4">{cs.excerpt}</p>
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-accent">
+                  Read case study <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <div className="rounded-3xl bg-primary px-8 py-12 md:px-12 text-center">
+            <h2 className="font-heading text-3xl font-bold text-white mb-4">Looking for a similar outcome?</h2>
+            <p className="text-white/70 max-w-2xl mx-auto mb-8 text-lg">
+              Tell us about the product, system or workflow you need to ship. We will recommend an approach,
+              timeline and GBP investment range based on comparable programmes in this gallery.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/case-studies" className="btn-primary inline-flex items-center justify-center gap-2">
+                View full case-study library <ArrowRight className="h-4 w-4" />
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white px-8 py-3 font-bold text-white hover:bg-white/10 transition-colors"
+              >
+                Start a conversation
+              </Link>
             </div>
           </div>
         </div>
