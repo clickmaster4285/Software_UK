@@ -57,13 +57,15 @@ function Counter({
     let startTime;
     let animationFrame;
     const duration = 2000;
-    setCount(0);
+    // Never flash 0 — ease up from ~70% of the final figure
+    const from = Math.max(1, Math.floor(numericTarget * 0.7));
+    setCount(from);
 
     const animate = (currentTime) => {
       if (!startTime) startTime = currentTime;
       const progress = Math.min((currentTime - startTime) / duration, 1);
       const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-      setCount(Math.floor(easeOutQuart * numericTarget));
+      setCount(Math.floor(from + (numericTarget - from) * easeOutQuart));
       if (progress < 1) {
         animationFrame = requestAnimationFrame(animate);
       } else {

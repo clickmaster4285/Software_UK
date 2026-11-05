@@ -63,14 +63,16 @@ const Counter = ({ end, duration = 2, delay = 0 }) => {
 
     let startTime;
     let animationFrame;
-    setCount(0);
+    // Never flash 0 — ease up from ~70% of the final figure
+    const from = Math.max(1, Math.floor(end * 0.7));
+    setCount(from);
 
     const animate = (timestamp) => {
       if (!startTime) startTime = timestamp;
       const progress = (timestamp - startTime) / (duration * 1000);
 
       if (progress < 1) {
-        setCount(Math.min(Math.floor(end * progress), end));
+        setCount(Math.min(Math.floor(from + (end - from) * progress), end));
         animationFrame = requestAnimationFrame(animate);
       } else {
         setCount(end);

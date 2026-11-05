@@ -25,13 +25,13 @@ export const SERVICE_SECTION_DATA = {
       feature('Quality Assurance', 'Comprehensive testing for bug-free delivery', 'ShieldCheck'),
     ],
     pricing: [
-      tier('MVP Build', '$8,000+', 'Startups validating product-market fit', '6–12 weeks', [
+      tier('MVP Build', '£8,000+', 'Startups validating product-market fit', '6–12 weeks', [
         'Core workflows', 'Auth & admin', 'Staging deployment', '2-week sprints',
       ]),
-      tier('Custom Application', '$25,000+', 'Growing B2B teams scaling operations', '3–6 months', [
+      tier('Custom Application', '£25,000+', 'Growing B2B teams scaling operations', '3–6 months', [
         'Full product build', 'API integrations', 'QA & security review', 'Documentation handover',
       ]),
-      tier('Enterprise Platform', '$60,000+', 'Complex orgs with compliance needs', '6–18 months', [
+      tier('Enterprise Platform', '£60,000+', 'Complex orgs with compliance needs', '6–18 months', [
         'Multi-module systems', 'SSO & RBAC', 'Dedicated team', 'SLA & 24/7 support',
       ]),
     ],
@@ -105,18 +105,18 @@ export const SERVICE_SECTION_DATA = {
       { value: '24/7', label: 'Support' },
     ],
     pricing: [
-      tier('Business Website', '$3,500+', 'SMBs needing a professional web presence', '3–6 weeks', [
+      tier('Business Website', '£3,500+', 'SMBs needing a professional web presence', '3–6 weeks', [
         'Up to 10 pages', 'CMS setup', 'Mobile responsive', 'Basic SEO',
       ]),
-      tier('Web Application', '$15,000+', 'Portals, dashboards, and custom apps', '2–4 months', [
+      tier('Web Application', '£15,000+', 'Portals, dashboards, and custom apps', '2–4 months', [
         'Custom UX/UI', 'Auth & roles', 'API integrations', 'Performance tuning',
       ]),
-      tier('Enterprise Web Platform', '$45,000+', 'High-traffic, multi-tenant systems', '4–12 months', [
+      tier('Enterprise Web Platform', '£45,000+', 'High-traffic, multi-tenant systems', '4–12 months', [
         'Scalable architecture', 'Headless CMS', 'Advanced analytics', 'Dedicated SLA',
       ]),
     ],
     faqs: [
-      faq('How much does web development cost?', 'Marketing sites start from $3,500. Custom web apps range $15,000–$45,000+. Enterprise platforms are scoped individually.'),
+      faq('How much does web development cost?', 'Marketing sites start from £3,500. Custom web apps range £15,000–£45,000+. Enterprise platforms are scoped individually.'),
       faq('Which stack do you use for web projects?', 'We primarily use Next.js, React, Node.js, and headless CMS options (Sanity, Contentful) with cloud hosting on Vercel, AWS, or Azure.'),
       faq('Will my site be SEO-friendly?', 'Yes. We implement semantic HTML, Core Web Vitals optimization, structured data, and technical SEO foundations from day one.'),
       faq('Can you redesign an existing website?', 'Absolutely. We audit performance, UX, and code quality, then migrate or rebuild with minimal downtime.'),
@@ -143,13 +143,13 @@ export const SERVICE_SECTION_DATA = {
       { value: '24/7', label: 'Support' },
     ],
     pricing: [
-      tier('MVP App', '$12,000+', 'Founders validating a mobile idea', '8–14 weeks', [
+      tier('MVP App', '£12,000+', 'Founders validating a mobile idea', '8–14 weeks', [
         'iOS or Android', 'Core flows', 'Auth', 'App Store submission',
       ]),
-      tier('Cross-Platform App', '$28,000+', 'Teams needing iOS + Android together', '3–5 months', [
+      tier('Cross-Platform App', '£28,000+', 'Teams needing iOS + Android together', '3–5 months', [
         'React Native / Flutter', 'Push notifications', 'Offline mode', 'Analytics',
       ]),
-      tier('Enterprise Mobile', '$55,000+', 'Regulated or high-scale products', '5–12 months', [
+      tier('Enterprise Mobile', '£55,000+', 'Regulated or high-scale products', '5–12 months', [
         'Native builds', 'MDM & security', 'API integrations', 'Ongoing releases',
       ]),
     ],
@@ -181,13 +181,13 @@ export const SERVICE_SECTION_DATA = {
       { value: '2 weeks', label: 'Prototype Delivery' },
     ],
     pricing: [
-      tier('UX Audit', '$2,500+', 'Teams improving an existing product', '2–3 weeks', [
+      tier('UX Audit', '£2,500+', 'Teams improving an existing product', '2–3 weeks', [
         'Heuristic review', 'Usability findings', 'Priority roadmap', 'Workshop session',
       ]),
-      tier('Product Design', '$8,000+', 'New apps or major redesigns', '4–8 weeks', [
+      tier('Product Design', '£8,000+', 'New apps or major redesigns', '4–8 weeks', [
         'Wireframes', 'UI mockups', 'Interactive prototype', 'Dev-ready specs',
       ]),
-      tier('Design System', '$18,000+', 'Scaling products and design ops', '6–12 weeks', [
+      tier('Design System', '£18,000+', 'Scaling products and design ops', '6–12 weeks', [
         'Component library', 'Figma tokens', 'Documentation', 'Engineer handoff',
       ]),
     ],
@@ -219,13 +219,13 @@ export const SERVICE_SECTION_DATA = {
       { value: '24/7', label: 'Monitoring' },
     ],
     pricing: [
-      tier('AI PoC', '$8,000+', 'Teams exploring a focused AI use case', '4–8 weeks', [
+      tier('AI PoC', '£8,000+', 'Teams exploring a focused AI use case', '4–8 weeks', [
         'Use-case workshop', 'Prototype', 'Evaluation metrics', 'Go/no-go report',
       ]),
-      tier('Production AI App', '$25,000+', 'Chatbots, agents, and RAG systems', '2–4 months', [
+      tier('Production AI App', '£25,000+', 'Chatbots, agents, and RAG systems', '2–4 months', [
         'LLM integration', 'Vector DB', 'Admin dashboard', 'Security review',
       ]),
-      tier('Enterprise AI Platform', '$60,000+', 'Org-wide AI with governance', '4–12 months', [
+      tier('Enterprise AI Platform', '£60,000+', 'Org-wide AI with governance', '4–12 months', [
         'Multi-workflow agents', 'SSO & audit logs', 'Fine-tuning', 'Dedicated support',
       ]),
     ],
@@ -257,13 +257,13 @@ export const SERVICE_SECTION_DATA = {
       { value: '24/7', label: 'Model Monitoring' },
     ],
     pricing: [
-      tier('ML Discovery', '$6,000+', 'Data assessment and feasibility', '3–4 weeks', [
+      tier('ML Discovery', '£6,000+', 'Data assessment and feasibility', '3–4 weeks', [
         'Data audit', 'Baseline model', 'ROI estimate', 'Roadmap',
       ]),
-      tier('Custom ML Solution', '$22,000+', 'Production models in your stack', '2–5 months', [
+      tier('Custom ML Solution', '£22,000+', 'Production models in your stack', '2–5 months', [
         'Feature engineering', 'Model training', 'API deployment', 'Dashboards',
       ]),
-      tier('Enterprise ML Platform', '$50,000+', 'Multiple models and MLOps', '6–12 months', [
+      tier('Enterprise ML Platform', '£50,000+', 'Multiple models and MLOps', '6–12 months', [
         'Pipeline automation', 'A/B testing', 'Drift monitoring', 'Dedicated team',
       ]),
     ],
@@ -295,13 +295,13 @@ export const SERVICE_SECTION_DATA = {
       { value: '24/7', label: 'Inference Uptime' },
     ],
     pricing: [
-      tier('NLP/CV Pilot', '$10,000+', 'Single use-case validation', '6–10 weeks', [
+      tier('NLP/CV Pilot', '£10,000+', 'Single use-case validation', '6–10 weeks', [
         'Dataset review', 'Model prototype', 'Accuracy benchmarks', 'Integration plan',
       ]),
-      tier('Production Pipeline', '$28,000+', 'Document or vision automation', '3–5 months', [
+      tier('Production Pipeline', '£28,000+', 'Document or vision automation', '3–5 months', [
         'Custom models', 'API endpoints', 'Human review loop', 'Monitoring',
       ]),
-      tier('Enterprise Vision Platform', '$55,000+', 'Multi-site, high-volume processing', '6–14 months', [
+      tier('Enterprise Vision Platform', '£55,000+', 'Multi-site, high-volume processing', '6–14 months', [
         'Edge deployment', 'Video analytics', 'SLA', 'Dedicated MLOps',
       ]),
     ],
@@ -333,13 +333,13 @@ export const SERVICE_SECTION_DATA = {
       { value: '24/7', label: 'Monitoring' },
     ],
     pricing: [
-      tier('Data Assessment', '$4,000+', 'Teams untangling messy data', '2–4 weeks', [
+      tier('Data Assessment', '£4,000+', 'Teams untangling messy data', '2–4 weeks', [
         'Source inventory', 'Quality report', 'Architecture recommendation', 'Quick wins',
       ]),
-      tier('Analytics Platform', '$18,000+', 'Warehouses and BI dashboards', '2–4 months', [
+      tier('Analytics Platform', '£18,000+', 'Warehouses and BI dashboards', '2–4 months', [
         'Warehouse setup', 'dbt models', 'Dashboards', 'Team training',
       ]),
-      tier('Enterprise Data Program', '$45,000+', 'Org-wide data strategy', '6–12 months', [
+      tier('Enterprise Data Program', '£45,000+', 'Org-wide data strategy', '6–12 months', [
         'Lakehouse design', 'Governance', 'Real-time streams', 'Dedicated engineers',
       ]),
     ],
@@ -371,13 +371,13 @@ export const SERVICE_SECTION_DATA = {
       { value: '24/7', label: 'SRE Support' },
     ],
     pricing: [
-      tier('Cloud Audit', '$3,500+', 'Cost and security review', '2–3 weeks', [
+      tier('Cloud Audit', '£3,500+', 'Cost and security review', '2–3 weeks', [
         'Architecture review', 'Cost report', 'Security gaps', 'Remediation plan',
       ]),
-      tier('DevOps Setup', '$12,000+', 'CI/CD and infrastructure as code', '4–8 weeks', [
+      tier('DevOps Setup', '£12,000+', 'CI/CD and infrastructure as code', '4–8 weeks', [
         'Pipeline setup', 'IaC templates', 'Staging/prod', 'Runbooks',
       ]),
-      tier('Managed Cloud', '$8,000/mo+', 'Ongoing SRE and optimization', 'Monthly', [
+      tier('Managed Cloud', '£8,000/mo+', 'Ongoing SRE and optimization', 'Monthly', [
         'Monitoring', 'Incident response', 'Scaling', 'Cost optimization',
       ]),
     ],
@@ -409,13 +409,13 @@ export const SERVICE_SECTION_DATA = {
       { value: '24/7', label: 'Incident Support' },
     ],
     pricing: [
-      tier('Security Assessment', '$4,500+', 'Baseline risk visibility', '2–3 weeks', [
+      tier('Security Assessment', '£4,500+', 'Baseline risk visibility', '2–3 weeks', [
         'Vulnerability scan', 'Policy review', 'Risk report', 'Remediation priorities',
       ]),
-      tier('Penetration Test', '$8,000+', 'Web, API, or network testing', '3–5 weeks', [
+      tier('Penetration Test', '£8,000+', 'Web, API, or network testing', '3–5 weeks', [
         'Scoped testing', 'Exploit validation', 'Executive summary', 'Retest option',
       ]),
-      tier('Compliance Program', '$25,000+', 'SOC2 / ISO readiness', '3–6 months', [
+      tier('Compliance Program', '£25,000+', 'SOC2 / ISO readiness', '3–6 months', [
         'Gap analysis', 'Control implementation', 'Evidence collection', 'Audit support',
       ]),
     ],
@@ -447,13 +447,13 @@ export const SERVICE_SECTION_DATA = {
       { value: '24/7', label: 'Test Automation' },
     ],
     pricing: [
-      tier('QA Audit', '$2,500+', 'Quick quality assessment', '1–2 weeks', [
+      tier('QA Audit', '£2,500+', 'Quick quality assessment', '1–2 weeks', [
         'Test plan review', 'Critical path testing', 'Bug report', 'Recommendations',
       ]),
-      tier('Dedicated QA Team', '$6,000/mo+', 'Ongoing sprint QA', 'Monthly', [
+      tier('Dedicated QA Team', '£6,000/mo+', 'Ongoing sprint QA', 'Monthly', [
         'Regression suites', 'Automation', 'Release sign-off', 'Slack support',
       ]),
-      tier('Enterprise QA Program', '$18,000+', 'Full test strategy', '2–4 months', [
+      tier('Enterprise QA Program', '£18,000+', 'Full test strategy', '2–4 months', [
         'Automation framework', 'Performance tests', 'CI integration', 'Documentation',
       ]),
     ],
@@ -481,17 +481,17 @@ export const SERVICE_SECTION_DATA = {
     stats: [
       { value: '50+', label: 'Web3 Projects' },
       { value: '100%', label: 'Audit Pass Rate' },
-      { value: '$2M+', label: 'TVL Secured' },
+      { value: '£2M+', label: 'TVL Secured' },
       { value: '24/7', label: 'Monitoring' },
     ],
     pricing: [
-      tier('Smart Contract MVP', '$15,000+', 'Token or simple DeFi logic', '6–10 weeks', [
+      tier('Smart Contract MVP', '£15,000+', 'Token or simple DeFi logic', '6–10 weeks', [
         'Contract development', 'Testnet deploy', 'Basic audit prep', 'Frontend wallet connect',
       ]),
-      tier('DApp Platform', '$35,000+', 'Marketplaces and NFT platforms', '3–6 months', [
+      tier('DApp Platform', '£35,000+', 'Marketplaces and NFT platforms', '3–6 months', [
         'Smart contracts', 'Web3 frontend', 'Indexing', 'Security review',
       ]),
-      tier('Enterprise Web3', '$70,000+', 'Private chain or hybrid solutions', '6–12 months', [
+      tier('Enterprise Web3', '£70,000+', 'Private chain or hybrid solutions', '6–12 months', [
         'Custom chain integration', 'Compliance layer', 'Dedicated team', 'SLA',
       ]),
     ],
@@ -523,13 +523,13 @@ export const SERVICE_SECTION_DATA = {
       { value: '24/7', label: 'Availability' },
     ],
     pricing: [
-      tier('Maintenance Plan', '$2,500/mo+', 'Small apps and websites', 'Monthly', [
+      tier('Maintenance Plan', '£2,500/mo+', 'Small apps and websites', 'Monthly', [
         'Bug fixes', 'Security patches', 'Uptime monitoring', 'Monthly report',
       ]),
-      tier('Dedicated Team', '$12,000/mo+', 'Ongoing feature development', 'Monthly', [
+      tier('Dedicated Team', '£12,000/mo+', 'Ongoing feature development', 'Monthly', [
         '2–4 engineers', 'Sprint delivery', 'PM included', 'Flexible scale',
       ]),
-      tier('Staff Augmentation', '$4,500/mo+', 'Per senior engineer', 'Monthly', [
+      tier('Staff Augmentation', '£4,500/mo+', 'Per senior engineer', 'Monthly', [
         'Skill-matched talent', 'Your tools & process', 'Fast onboarding', 'Replacement guarantee',
       ]),
     ],

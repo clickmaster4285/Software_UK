@@ -6,6 +6,7 @@ import { useCaseStudyList } from "@/hooks/useCaseStudies";
 import Link from "next/link";
 import Image from "next/image";
 import { resolveImageUrl } from "@/lib/utils";
+import { getFeaturedCaseStudyCards } from "@/lib/case-study-public";
 
 // ─── Types ─────────────────────────────────────────────────────────────────────
 
@@ -307,10 +308,20 @@ const InsightsCards = ({ cards, isLoading }) => {
 export default function FeaturedInsights() {
   const { data: blogs = [], isLoading: blogsLoading } = useBlogList();
   const { data: caseStudies = [], isLoading: csLoading } = useCaseStudyList();
+  const staticCaseStudies = getFeaturedCaseStudyCards(4);
 
   const isLoading = blogsLoading || csLoading;
 
-  const publishedCS = caseStudies.filter((c) => c.published !== false).slice(0, 4);
+  const apiCS = caseStudies.filter((c) => c.published !== false).slice(0, 4);
+  const publishedCS = apiCS.length > 0
+    ? apiCS
+    : staticCaseStudies.map((cs) => ({
+        _id: cs.slug,
+        title: cs.title,
+        slug: cs.slug,
+        thumbnail: null,
+        published: true,
+      }));
   const publishedBlogs = blogs.filter((b) => b.published !== false).slice(0, 4);
 
   // Layout order to achieve: Col1 (2 cards), Col2 (3 cards), Col3 (3 cards)

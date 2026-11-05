@@ -14,12 +14,6 @@ export async function generateMetadata({ searchParams }) {
   const searchQuery = resolvedSearchParams?.q || '';
   const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
 
-  const metadata = {
-    title: 'Case Studies | Clickmasters Software Development',
-    description: 'Explore our portfolio of successful software development projects across FinTech, HealthTech, GovTech, EdTech, and more UK industries.',
-    alternates: { canonical },
-  };
-
   // Compute total pages for SEO pagination links
   let filtered = [...caseStudyListings];
   if (activeSector) {
@@ -34,7 +28,20 @@ export async function generateMetadata({ searchParams }) {
       s.technologies?.some(t => t.toLowerCase().includes(q))
     );
   }
-  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE) || 1;
+
+  const sectorLabel = activeSector ? `${activeSector} ` : '';
+  const pageLabel = page > 1 ? ` — Page ${page} of ${totalPages}` : '';
+  const title = `${sectorLabel}Case Studies${pageLabel} | Clickmasters`.replace(/\s+/g, ' ').trim();
+  const description = activeSector
+    ? `Browse ${activeSector} software case studies from Clickmasters — measurable outcomes across UK industries.${page > 1 ? ` Page ${page} of ${totalPages}.` : ''}`
+    : `Explore our portfolio of successful software development projects across FinTech, HealthTech, GovTech, EdTech, and more UK industries.${page > 1 ? ` Page ${page} of ${totalPages}.` : ''}`;
+
+  const metadata = {
+    title,
+    description,
+    alternates: { canonical },
+  };
 
   const other = {};
   if (page > 1) {
@@ -155,7 +162,9 @@ export default async function CaseStudiesPage({ searchParams }) {
             Portfolio
           </span>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Case Studies
+            {activeSector
+              ? `${activeSector} Case Studies${safePage > 1 ? ` — Page ${safePage}` : ''}`
+              : `Case Studies${safePage > 1 ? ` — Page ${safePage} of ${totalPages}` : ''}`}
           </h1>
           <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto">
             {filtered.length} projects delivered across {sectors.length} sectors — each one a measurable business outcome.

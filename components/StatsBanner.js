@@ -10,7 +10,9 @@ function Counter({ value }) {
   const suffix = value.replace(/[0-9]/g, "");
   const [hasAnimated, setHasAnimated] = useState(false);
 
-  // Start at the final value so SSR / crawlers never see "0+"
+  // Always render the final figure — never flash "0+" for users or crawlers.
+  // Motion is a subtle count-up from ~70% of the value, not from zero.
+  const startValue = Math.max(1, Math.floor(numericValue * 0.7));
   const spring = useSpring(numericValue, {
     mass: 1,
     stiffness: 100,
@@ -23,19 +25,24 @@ function Counter({ value }) {
 
   useEffect(() => {
     if (!inView || hasAnimated) return;
-    spring.jump(0);
+    spring.jump(startValue);
     spring.set(numericValue);
     setHasAnimated(true);
-  }, [inView, numericValue, spring, hasAnimated]);
+  }, [inView, numericValue, spring, hasAnimated, startValue]);
 
-  return <motion.span ref={ref}>{displayValue}</motion.span>;
+  return (
+    <motion.span ref={ref} aria-label={value}>
+      {displayValue}
+    </motion.span>
+  );
 }
 
 export default function StatsBanner() {
+  // Conservative, site-consistent figures (aligned with About / Why Choose Us)
   const stats = [
-    { value: "1860+", label: "Projects Delivered " },
-    { value: "3500+", label: "Clients Served Globally" },
-    { value: "75+", label: "Awards & Recognitions" },
+    { value: "200+", label: "Projects Delivered" },
+    { value: "50+", label: "Clients Served" },
+    { value: "12+", label: "Industries Served" },
     { value: "5+", label: "Years Building Systems" },
   ];
 

@@ -126,18 +126,37 @@ export default function Portfolio() {
                ))}
             </div>
 
-            <div className="text-center mt-16 flex flex-col sm:flex-row items-center justify-center gap-6">
-               <Link
-                  href="/projects"
-                  className="w-full sm:w-auto px-10 py-4 bg-accent text-white font-body font-bold rounded-xl hover:bg-accent-hover transition-all shadow-xl shadow-accent/20 flex items-center justify-center gap-2"
-               >
-                  View Project Gallery <ArrowRight className="w-5 h-5" />
-               </Link>
+            <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+               {[
+                  { href: "/case-studies/open-banking-aisp-platform-fintech", label: "FinTech — Open Banking AISP" },
+                  { href: "/case-studies/nhs-mental-health-app-dtac", label: "HealthTech — NHS Mental Health App" },
+                  { href: "/case-studies/local-council-govtech-transformation", label: "GovTech — Local Council" },
+                  { href: "/case-studies/edtech-assessment-platform-kcsie", label: "EdTech — KCSIE Assessment" },
+                  { href: "/case-studies/proptech-rental-management-saas", label: "PropTech — Rental Management" },
+                  { href: "/case-studies/headless-ecommerce-fashion-retailer", label: "eCommerce — Headless Fashion" },
+               ].map((item) => (
+                  <Link
+                     key={item.href}
+                     href={item.href}
+                     className="px-5 py-4 rounded-2xl bg-white/10 border border-white/15 text-white/90 font-body text-sm hover:bg-white/15 hover:border-accent/40 hover:text-white transition-all"
+                  >
+                     {item.label}
+                  </Link>
+               ))}
+            </div>
+
+            <div className="text-center mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
                <Link
                   href="/case-studies"
+                  className="w-full sm:w-auto px-10 py-4 bg-accent text-white font-body font-bold rounded-xl hover:bg-accent-hover transition-all shadow-xl shadow-accent/20 flex items-center justify-center gap-2"
+               >
+                  Browse All Case Studies <ArrowRight className="w-5 h-5" />
+               </Link>
+               <Link
+                  href="/projects"
                   className="w-full sm:w-auto px-10 py-4 bg-transparent text-white border-2 border-white font-body font-bold rounded-xl hover:bg-white/10 transition-all text-center"
                >
-                  Read Success Stories
+                  View Project Gallery
                </Link>
             </div>
          </div>

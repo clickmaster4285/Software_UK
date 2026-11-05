@@ -16,10 +16,10 @@ import {
 
 const footerLinks = {
   services: [
-    { name: "Custom Software", href: "/solutions" },
-    { name: "Web Development", href: "/solutions" },
-    { name: "Mobile Apps", href: "/solutions" },
-    { name: "ERP Systems", href: "/solutions" },
+    { name: "Custom Software", href: "/software-development" },
+    { name: "Web Development", href: "/web-development" },
+    { name: "Mobile Apps", href: "/mobile-development" },
+    { name: "AI Solutions", href: "/artificial-intelligence-ai" },
   ],
   company: [
     { name: "About Us", href: "/about" },
@@ -27,10 +27,18 @@ const footerLinks = {
     { name: "Case Studies", href: "/case-studies" },
     { name: "Contact", href: "/contact" },
   ],
+  // Deep links into the case-study library (CSU-03 inlink coverage)
+  caseStudies: [
+    { name: "Open Banking FinTech", href: "/case-studies/open-banking-aisp-platform-fintech" },
+    { name: "NHS Mental Health App", href: "/case-studies/nhs-mental-health-app-dtac" },
+    { name: "Local Council GovTech", href: "/case-studies/local-council-govtech-transformation" },
+    { name: "Headless eCommerce", href: "/case-studies/headless-ecommerce-fashion-retailer" },
+    { name: "All Case Studies", href: "/case-studies" },
+  ],
   resources: [
-    { name: "Blog & Insights", href: "/blog" },
     { name: "FAQ", href: "/faq" },
     { name: "Client Testimonials", href: "/testimonials" },
+    { name: "Projects Gallery", href: "/projects" },
     { name: "Support Center", href: "/contact" },
   ],
   legal: [
@@ -89,7 +97,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links Grid */}
-          <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-3 gap-2">
+          <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-2">
             <div>
               <h2 className="font-heading font-bold text-white mb-6 uppercase tracking-widest text-xs opacity-50">Services</h2>
               <ul className="flex flex-col gap-4">
@@ -107,6 +115,19 @@ export default function Footer() {
               <h2 className="font-heading font-bold text-white mb-6 uppercase tracking-widest text-xs opacity-50">Company</h2>
               <ul className="flex flex-col gap-4">
                 {footerLinks.company.map((link) => (
+                  <li key={link.name}>
+                    <Link href={link.href} className="text-white/60 font-body text-sm hover:text-accent transition-colors">
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="font-heading font-bold text-white mb-6 uppercase tracking-widest text-xs opacity-50">Case Studies</h2>
+              <ul className="flex flex-col gap-4">
+                {footerLinks.caseStudies.map((link) => (
                   <li key={link.name}>
                     <Link href={link.href} className="text-white/60 font-body text-sm hover:text-accent transition-colors">
                       {link.name}

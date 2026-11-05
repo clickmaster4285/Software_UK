@@ -43,28 +43,30 @@ export default function Hero() {
                         Start Your Software Project
                      </Link>
                      <Link
-                        href="/contact"
+                        href="/case-studies"
                         className="px-8 py-4 border-2 border-white text-white font-body font-bold text-lg rounded-lg hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-xl"
                      >
                         View Our Work
                      </Link>
                   </div>
                   <div className="flex items-center gap-4">
-                     <div className="flex -space-x-3">
-                        {[1, 2, 3, 4].map((i) => (
-                           <div key={i} className="relative w-10 h-10 rounded-full border-2 border-white bg-gray-300 overflow-hidden">
-                              <Image
-                                 src={`https://i.pravatar.cc/100?img=${i + 10}`}
-                                 alt="client"
-                                 fill
-                                 sizes="40px"
-                                 className="object-cover"
-                              />
+                     <div className="flex -space-x-3" aria-hidden="true">
+                        {["CM", "UK", "FS", "AI"].map((initials, i) => (
+                           <div
+                              key={initials}
+                              className="relative flex h-10 w-10 items-center justify-center rounded-full border-2 border-white text-[11px] font-heading font-bold text-white"
+                              style={{
+                                 background:
+                                    ["oklch(0.45 0.12 250)", "oklch(0.5 0.14 30)", "oklch(0.42 0.1 160)", "oklch(0.48 0.13 300)"][i],
+                                 zIndex: 4 - i,
+                              }}
+                           >
+                              {initials}
                            </div>
                         ))}
                      </div>
                      <p className="text-gray-300 font-body text-sm">
-                        Joined by <span className="text-white font-bold">500+</span> successful businesses
+                        Trusted by <span className="text-white font-bold">50+</span> UK &amp; international businesses
                      </p>
                   </div>
                </div>
