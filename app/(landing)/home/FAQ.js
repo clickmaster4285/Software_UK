@@ -99,7 +99,15 @@ export default function FAQ() {
                 <MessageCircle className="w-5 h-5" />
                 Contact Support
               </Link>
-              <span className="text-white/60 font-body text-sm">Or email us at support@clickmasters.uk</span>
+              <span className="text-white/60 font-body text-sm">
+                Or email us at{" "}
+                <a
+                  href="mailto:sale@clickmasterssoftwaredevelopmentcompany.co.uk"
+                  className="text-white/80 hover:text-accent transition-colors underline-offset-2 hover:underline"
+                >
+                  sale@clickmasterssoftwaredevelopmentcompany.co.uk
+                </a>
+              </span>
             </div>
           </div>
         </div>

@@ -2,6 +2,9 @@
 const nextConfig = {
   async redirects() {
     return [
+      // CSU-01 / P0 — legacy paths still discovered by crawlers & old inlinks
+      { source: '/contact-us', destination: '/contact', permanent: true },
+      { source: '/software-solutions', destination: '/case-studies', permanent: true },
       { source: '/cloud-devops', destination: '/cloud-and-devops', permanent: true },
       { source: '/cloud-devops/:path*', destination: '/cloud-and-devops/:path*', permanent: true },
       { source: '/testing-qa', destination: '/testing-and-qa', permanent: true },
@@ -34,10 +37,6 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'i.pravatar.cc',
-      },
-      {
-        protocol: 'https',
         hostname: 'www.magnific.com',
       }
     ],
@@ -57,10 +56,11 @@ const nextConfig = {
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()' },
           { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains' },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://images.unsplash.com https://img.icons8.com https://cdn.jsdelivr.net https://i.pravatar.cc https://upload.wikimedia.org https://www.transparenttextures.com; font-src 'self'; connect-src 'self'; worker-src 'self' blob:; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://images.unsplash.com https://img.icons8.com https://cdn.jsdelivr.net https://upload.wikimedia.org https://www.transparenttextures.com; font-src 'self'; connect-src 'self'; worker-src 'self' blob:; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
           },
         ],
       },

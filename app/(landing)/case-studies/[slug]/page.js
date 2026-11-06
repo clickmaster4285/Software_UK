@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { getCaseStudyBySlug, getRelatedCaseStudies } from '@/data/case-studies';
 import { CaseStudyDetailClient } from './detail-client';
 import JsonLd from '@/components/JsonLd';
-import { articleSchema, breadcrumbSchema, reviewSchema } from '@/app/metadata-config';
+import { articleSchema, breadcrumbSchema } from '@/app/metadata-config';
 
 // Generate static params for all case study pages
 export async function generateStaticParams() {
@@ -57,17 +57,13 @@ export default async function CaseStudyDetailPage({ params }) {
     { name: study.title, url: `/case-studies/${slug}` }
   ]);
 
-  const reviewJsonLd = reviewSchema({
-    reviewBody: study.clientQuote,
-    authorName: study.writtenBy || 'Client',
-    datePublished: study.lastUpdated || undefined,
-  });
+  // Review/Rating JSON-LD omitted: client quotes are anonymised ("name withheld")
+  // and must not claim a named, consenting reviewer in Rich Results.
 
   return (
     <>
       <JsonLd schema={articleJsonLd} />
       <JsonLd schema={breadcrumbsLd} />
-      {reviewJsonLd && <JsonLd schema={reviewJsonLd} />}
       <CaseStudyDetailClient study={study} relatedStudies={relatedStudies} />
     </>
   );

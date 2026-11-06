@@ -344,11 +344,11 @@ const customSoftwareDevelopmentOverride = {
     { layer: "Security", technologies: "OWASP ASVS, SAST/DAST scanning, Vault (secrets), AWS IAM, SSL/TLS hardening" }
   ],
   pricingTiers: [
-    { type: "MVP Build", investment: "$8,000 - $25,000", timeline: "6 - 12 weeks", bestFor: "Startups validating a product idea with real users" },
-    { type: "Web / Mobile App", investment: "$15,000 - $80,000", timeline: "3 - 6 months", bestFor: "B2B apps, portals, platforms, and internal tools" },
-    { type: "SaaS Platform", investment: "$30,000 - $150,000", timeline: "4 - 9 months", bestFor: "Multi-tenant SaaS with billing, auth, and API layer" },
-    { type: "Enterprise System", investment: "$60,000 - $250,000+", timeline: "6 - 18 months", bestFor: "ERP/CRM builds, compliance systems, large integrations" },
-    { type: "Dedicated Team", investment: "$8,000 - $25,000/mo", timeline: "Ongoing", bestFor: "Companies needing long-term embedded development capacity" }
+    { type: "MVP Build", investment: "£8,000 - £25,000", timeline: "6 - 12 weeks", bestFor: "Startups validating a product idea with real users" },
+    { type: "Web / Mobile App", investment: "£15,000 - £80,000", timeline: "3 - 6 months", bestFor: "B2B apps, portals, platforms, and internal tools" },
+    { type: "SaaS Platform", investment: "£30,000 - £150,000", timeline: "4 - 9 months", bestFor: "Multi-tenant SaaS with billing, auth, and API layer" },
+    { type: "Enterprise System", investment: "£60,000 - £250,000+", timeline: "6 - 18 months", bestFor: "ERP/CRM builds, compliance systems, large integrations" },
+    { type: "Dedicated Team", investment: "£8,000 - £25,000/mo", timeline: "Ongoing", bestFor: "Companies needing long-term embedded development capacity" }
   ],
   industryUseCases: [
     { name: "Healthcare", description: "Custom healthcare software including patient management, appointment scheduling, telehealth platforms, and clinical workflow systems." },
@@ -519,13 +519,13 @@ const enterpriseSoftwareDevelopmentOverride = {
     { layer: "Integration", technologies: "REST, GraphQL, gRPC, Apache Kafka, AWS SQS/SNS, MuleSoft where needed" }
   ],
   pricingTiers: [
-    { type: "Enterprise Web / Data Platform", investment: "$40,000 to $100,000", timeline: "4 to 8 months", bestFor: "Discovery, architecture, dev, QA, deployment, 60 day support" },
-    { type: "Custom ERP (Modular)", investment: "$80,000 to $200,000", timeline: "8 to 14 months", bestFor: "Full lifecycle + data migration + parallel run + training" },
-    { type: "Enterprise SaaS Platform", investment: "$60,000 to $180,000", timeline: "6 to 12 months", bestFor: "Multi tenant architecture, billing, auth, API, DevOps setup" },
-    { type: "Legacy Modernization", investment: "$50,000 to $150,000", timeline: "6 to 14 months", bestFor: "Architecture review, re platform/rebuild, data migration, cutover" },
-    { type: "Systems Integration Hub", investment: "$30,000 to $80,000", timeline: "3 to 7 months", bestFor: "API design, middleware, monitoring, error handling, documentation" },
-    { type: "Compliance / Audit Platform", investment: "$40,000 to $120,000", timeline: "5 to 10 months", bestFor: "Framework alignment, audit trail, reporting, access control" },
-    { type: "Dedicated Engineering Team", investment: "$15,000 to $40,000/mo", timeline: "Ongoing", bestFor: "4 to 10 FTE engineers, PM, QA embedded in your product org" }
+    { type: "Enterprise Web / Data Platform", investment: "£40,000 to £100,000", timeline: "4 to 8 months", bestFor: "Discovery, architecture, dev, QA, deployment, 60 day support" },
+    { type: "Custom ERP (Modular)", investment: "£80,000 to £200,000", timeline: "8 to 14 months", bestFor: "Full lifecycle + data migration + parallel run + training" },
+    { type: "Enterprise SaaS Platform", investment: "£60,000 to £180,000", timeline: "6 to 12 months", bestFor: "Multi tenant architecture, billing, auth, API, DevOps setup" },
+    { type: "Legacy Modernization", investment: "£50,000 to £150,000", timeline: "6 to 14 months", bestFor: "Architecture review, re platform/rebuild, data migration, cutover" },
+    { type: "Systems Integration Hub", investment: "£30,000 to £80,000", timeline: "3 to 7 months", bestFor: "API design, middleware, monitoring, error handling, documentation" },
+    { type: "Compliance / Audit Platform", investment: "£40,000 to £120,000", timeline: "5 to 10 months", bestFor: "Framework alignment, audit trail, reporting, access control" },
+    { type: "Dedicated Engineering Team", investment: "£15,000 to £40,000/mo", timeline: "Ongoing", bestFor: "4 to 10 FTE engineers, PM, QA embedded in your product org" }
   ],
   industryUseCases: [
     { name: "Healthcare", description: "Patient management platforms, clinical workflow software, telehealth systems, and compliance-grade data management." },
@@ -609,9 +609,9 @@ const aiAgentsDevelopmentOverride = {
   ],
   // marketStats: [
   //   { label: 'Of enterprise tasks will be agent-automatable by 2027 (Gartner)', value: '45%' },
-  //   { label: 'Autonomous AI agents market size by 2030', value: '$47B' },
+  //   { label: 'Autonomous AI agents market size by 2030', value: '£47B' },
   //   { label: 'Throughput increase for knowledge work using agent pipelines', value: '10x' },
-  //   { label: 'Average annual savings per knowledge worker with AI agent augmentation', value: '$28K' },
+  //   { label: 'Average annual savings per knowledge worker with AI agent augmentation', value: '£28K' },
   // ],
   servicesCards: [
     { title: "Research & Intelligence Agents", description: "Autonomous agents that conduct structured research across web sources, internal documents, databases, and APIs synthesizing findings into structured reports, competitive analyses, market intelligence briefings, or prospect summaries. Processing time: tasks taking a human analyst 4-8 hours are completed in 15-40 minutes." },
@@ -653,14 +653,14 @@ const aiAgentsDevelopmentOverride = {
     { layer: "Infrastructure", technologies: "AWS ECS Fargate (agent API), SQS (async task queue), Step Functions (HITL workflows), S3 (artifact storage)" }
   ],
   pricingTiers: [
-    { type: "Single-Purpose Agent (PoC)", investment: "$12,000 - $25,000", timeline: "4 - 7 weeks", bestFor: "One use case, ReAct architecture, 3-5 tools, evaluation harness, audit logging" },
-    { type: "Production Single Agent", investment: "$25,000 - $65,000", timeline: "8 - 12 weeks", bestFor: "Full reliability framework, HITL checkpoints, monitoring, operator docs, 30-day support" },
-    { type: "Research / Intelligence Agent", investment: "$20,000 - $55,000", timeline: "6 - 10 weeks", bestFor: "Web + document tools, structured output, weekly scheduling, Slack/email delivery" },
-    { type: "Data Processing Agent", investment: "$25,000 - $70,000", timeline: "8 - 14 weeks", bestFor: "Document ingestion pipeline, extraction schema, confidence scoring, human review queue" },
-    { type: "Multi-Agent System", investment: "$50,000 - $130,000", timeline: "10 - 18 weeks", bestFor: "Supervisor + specialist agents, inter-agent communication, parallel execution, evaluation" },
-    { type: "Agentic Workflow Platform", investment: "$70,000 - $180,000", timeline: "4 - 8 months", bestFor: "Agent registry, shared tool library, admin portal, cost controls, multi-workflow coverage" },
-    { type: "Agent + RAG Combined", investment: "$35,000 - $90,000", timeline: "8 - 14 weeks", bestFor: "Agentic RAG with dynamic retrieval, multi-source knowledge, reasoning + retrieval combined" },
-    { type: "Maintenance & Improvement", investment: "$4,000 - $15,000/mo", timeline: "Ongoing", bestFor: "Model upgrades, tool updates, evaluation runs, accuracy improvements, new use cases" }
+    { type: "Single-Purpose Agent (PoC)", investment: "£12,000 - £25,000", timeline: "4 - 7 weeks", bestFor: "One use case, ReAct architecture, 3-5 tools, evaluation harness, audit logging" },
+    { type: "Production Single Agent", investment: "£25,000 - £65,000", timeline: "8 - 12 weeks", bestFor: "Full reliability framework, HITL checkpoints, monitoring, operator docs, 30-day support" },
+    { type: "Research / Intelligence Agent", investment: "£20,000 - £55,000", timeline: "6 - 10 weeks", bestFor: "Web + document tools, structured output, weekly scheduling, Slack/email delivery" },
+    { type: "Data Processing Agent", investment: "£25,000 - £70,000", timeline: "8 - 14 weeks", bestFor: "Document ingestion pipeline, extraction schema, confidence scoring, human review queue" },
+    { type: "Multi-Agent System", investment: "£50,000 - £130,000", timeline: "10 - 18 weeks", bestFor: "Supervisor + specialist agents, inter-agent communication, parallel execution, evaluation" },
+    { type: "Agentic Workflow Platform", investment: "£70,000 - £180,000", timeline: "4 - 8 months", bestFor: "Agent registry, shared tool library, admin portal, cost controls, multi-workflow coverage" },
+    { type: "Agent + RAG Combined", investment: "£35,000 - £90,000", timeline: "8 - 14 weeks", bestFor: "Agentic RAG with dynamic retrieval, multi-source knowledge, reasoning + retrieval combined" },
+    { type: "Maintenance & Improvement", investment: "£4,000 - £15,000/mo", timeline: "Ongoing", bestFor: "Model upgrades, tool updates, evaluation runs, accuracy improvements, new use cases" }
   ],
   industryUseCases: [
     { name: "Competitive Intelligence Agent", description: "Monitors 20+ competitor websites, pricing pages, job postings, press releases. Extracts structured change signals. 8 hours of analyst time replaced per week. Strategic reaction time reduced from 2 weeks to 2 days." },
@@ -734,7 +734,7 @@ const aiAgentsDevelopmentOverride = {
     },
     {
       question: "How much does AI agent development cost?",
-      answer: "AI agent development costs range from $12,000 for a single-purpose proof-of-concept to $180,000+ for a multi-agent platform covering several workflows. The primary cost drivers are: architecture complexity (single-agent vs. multi-agent), number of tools and integrations required, reliability engineering scope (audit logging, HITL checkpoints, evaluation harness), and ongoing maintenance requirements. Ongoing costs include LLM API usage (typically $0.01-$0.50 per agent run depending on model and task length), cloud infrastructure, and third-party tool APIs. Clickmasters provides fixed-price proposals after a free feasibility assessment."
+      answer: "AI agent development costs range from £12,000 for a single-purpose proof-of-concept to £180,000+ for a multi-agent platform covering several workflows. The primary cost drivers are: architecture complexity (single-agent vs. multi-agent), number of tools and integrations required, reliability engineering scope (audit logging, HITL checkpoints, evaluation harness), and ongoing maintenance requirements. Ongoing costs include LLM API usage (typically £0.01-£0.50 per agent run depending on model and task length), cloud infrastructure, and third-party tool APIs. Clickmasters provides fixed-price proposals after a free feasibility assessment."
     },
     {
       question: "What is LangGraph and why do you use it for AI agents?",
@@ -815,7 +815,7 @@ const aiAutomationSystemsOverride = {
   ],
   // marketStats: [
   //   { label: 'Of work activities across all industries could be automated with current AI technology (McKinsey)', value: '45%' },
-  //   { label: 'Cost per GPT-4o API call AI processes a document for less than the cost of 1 second of human attention', value: '$0.002' },
+  //   { label: 'Cost per GPT-4o API call AI processes a document for less than the cost of 1 second of human attention', value: '£0.002' },
   //   { label: 'Extraction accuracy achievable on structured document types (invoices, purchase orders, standard forms)', value: '95%+' },
   //   { label: 'Typical time to deliver an intelligent document processing system from kickoff to production', value: '3-6 wks' },
   // ],
@@ -851,13 +851,13 @@ const aiAutomationSystemsOverride = {
     { layer: "Deployment", technologies: "AWS Lambda (serverless event-triggered for low-volume async processing), AWS ECS Fargate (containerised for high-volume synchronous processing), CloudWatch + Sentry (monitoring alert on accuracy degradation, latency spikes)" }
   ],
   pricingTiers: [
-    { type: "Automation Discovery Workshop", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Process audit, automation ROI analysis, prioritised opportunity roadmap" },
-    { type: "Intelligent Document Processing", investment: "$15,000 - $45,000", timeline: "4 - 8 weeks", bestFor: "Extraction pipeline, validation, human-in-loop review UI, ERP integration" },
-    { type: "LLM Workflow Automation", investment: "$12,000 - $35,000", timeline: "3 - 7 weeks", bestFor: "Email triage, classification, routing, n8n/Make integration" },
-    { type: "AI Decision System", investment: "$15,000 - $50,000", timeline: "4 - 9 weeks", bestFor: "Rules + LLM hybrid, confidence scoring, audit trail, human review queue" },
-    { type: "RAG Knowledge Automation", investment: "$12,000 - $35,000", timeline: "3 - 7 weeks", bestFor: "Document indexing, retrieval pipeline, answer generation, evaluation" },
-    { type: "Custom Automation Build", investment: "$20,000 - $80,000", timeline: "5 - 12 weeks", bestFor: "Multi-step complex automation document + decision + workflow combined" },
-    { type: "AI Automation Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "Model updates, accuracy monitoring, new automation development" }
+    { type: "Automation Discovery Workshop", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Process audit, automation ROI analysis, prioritised opportunity roadmap" },
+    { type: "Intelligent Document Processing", investment: "£15,000 - £45,000", timeline: "4 - 8 weeks", bestFor: "Extraction pipeline, validation, human-in-loop review UI, ERP integration" },
+    { type: "LLM Workflow Automation", investment: "£12,000 - £35,000", timeline: "3 - 7 weeks", bestFor: "Email triage, classification, routing, n8n/Make integration" },
+    { type: "AI Decision System", investment: "£15,000 - £50,000", timeline: "4 - 9 weeks", bestFor: "Rules + LLM hybrid, confidence scoring, audit trail, human review queue" },
+    { type: "RAG Knowledge Automation", investment: "£12,000 - £35,000", timeline: "3 - 7 weeks", bestFor: "Document indexing, retrieval pipeline, answer generation, evaluation" },
+    { type: "Custom Automation Build", investment: "£20,000 - £80,000", timeline: "5 - 12 weeks", bestFor: "Multi-step complex automation document + decision + workflow combined" },
+    { type: "AI Automation Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "Model updates, accuracy monitoring, new automation development" }
   ],
   industryUseCases: [
     { name: "Intelligent Document Processing", description: "Extract structured data from invoices, purchase orders, contracts, and forms with 95%+ accuracy. Human-in-the-loop for low-confidence cases." },
@@ -957,7 +957,7 @@ const aiAutomationSystemsOverride = {
   },
   caseStudy: {
     title: "Document Automation for Insurance",
-    description: "Built an intelligent document processing system that reduced claims processing time by 85% and saved the firm $1.2M in annual operational costs.",
+    description: "Built an intelligent document processing system that reduced claims processing time by 85% and saved the firm £1.2M in annual operational costs.",
     slug: "insurance-ai-automation",
     badge: "Operational AI"
   },
@@ -1004,7 +1004,7 @@ const aiChatbotDevelopmentOverride = {
   // marketStats: [
   //   { label: 'Of customers prefer AI chatbot over waiting for a human agent (Salesforce)', value: '62%' },
   //   { label: 'Tier 1 ticket deflection rate achievable with a well-built support AI', value: '50-70%' },
-  //   { label: 'Enterprise AI chatbot market size by 2027', value: '$11B' },
+  //   { label: 'Enterprise AI chatbot market size by 2027', value: '£11B' },
   //   { label: 'Average response time with AI vs. 6 hours with human-only support', value: '3 min' },
   // ],
   servicesCards: [
@@ -1044,14 +1044,14 @@ const aiChatbotDevelopmentOverride = {
     { layer: "Security", technologies: "PII detection and redaction (Presidio), prompt injection detection, output safety classification, SOC 2 aligned data handling" }
   ],
   pricingTiers: [
-    { type: "Focused AI Chatbot", investment: "$15,000 - $35,000", timeline: "6 - 10 weeks", bestFor: "Single use case, 1 knowledge source, web widget, basic escalation, analytics" },
-    { type: "Customer Support AI", investment: "$25,000 - $65,000", timeline: "8 - 14 weeks", bestFor: "RAG pipeline, helpdesk integration, escalation engine, CSAT, analytics dashboard" },
-    { type: "Internal Knowledge Bot", investment: "$20,000 - $50,000", timeline: "7 - 12 weeks", bestFor: "RAG on internal sources, Slack/Teams integration, permission filtering, gap tracking" },
-    { type: "Sales Qualification Bot", investment: "$20,000 - $55,000", timeline: "7 - 12 weeks", bestFor: "Qualification logic, CRM integration, calendar booking, rep routing, analytics" },
-    { type: "Multi-Channel AI Chatbot", investment: "$35,000 - $90,000", timeline: "10 - 16 weeks", bestFor: "3+ channels, multiple use cases, full integration suite, custom analytics" },
-    { type: "Transactional/Agentic Bot", investment: "$40,000 - $100,000", timeline: "12 - 18 weeks", bestFor: "Function calling, multiple system integrations, audit logging, identity verification" },
-    { type: "Enterprise AI Chat Platform", investment: "$70,000 - $160,000", timeline: "4 - 8 months", bestFor: "Multi-tenant, multiple use cases, admin portal, fine-tuning, full compliance suite" },
-    { type: "Improvement Retainer", investment: "$4,000 - $12,000/mo", timeline: "Ongoing", bestFor: "Knowledge base updates, accuracy monitoring, new intents, channel additions" }
+    { type: "Focused AI Chatbot", investment: "£15,000 - £35,000", timeline: "6 - 10 weeks", bestFor: "Single use case, 1 knowledge source, web widget, basic escalation, analytics" },
+    { type: "Customer Support AI", investment: "£25,000 - £65,000", timeline: "8 - 14 weeks", bestFor: "RAG pipeline, helpdesk integration, escalation engine, CSAT, analytics dashboard" },
+    { type: "Internal Knowledge Bot", investment: "£20,000 - £50,000", timeline: "7 - 12 weeks", bestFor: "RAG on internal sources, Slack/Teams integration, permission filtering, gap tracking" },
+    { type: "Sales Qualification Bot", investment: "£20,000 - £55,000", timeline: "7 - 12 weeks", bestFor: "Qualification logic, CRM integration, calendar booking, rep routing, analytics" },
+    { type: "Multi-Channel AI Chatbot", investment: "£35,000 - £90,000", timeline: "10 - 16 weeks", bestFor: "3+ channels, multiple use cases, full integration suite, custom analytics" },
+    { type: "Transactional/Agentic Bot", investment: "£40,000 - £100,000", timeline: "12 - 18 weeks", bestFor: "Function calling, multiple system integrations, audit logging, identity verification" },
+    { type: "Enterprise AI Chat Platform", investment: "£70,000 - £160,000", timeline: "4 - 8 months", bestFor: "Multi-tenant, multiple use cases, admin portal, fine-tuning, full compliance suite" },
+    { type: "Improvement Retainer", investment: "£4,000 - £12,000/mo", timeline: "Ongoing", bestFor: "Knowledge base updates, accuracy monitoring, new intents, channel additions" }
   ],
   industryUseCases: [
     { name: "Customer Support AI", description: "Deflects 50-70% of Tier 1 tickets. RAG on documentation + ticketing integration + escalation engine. Reduces average response time from 6 hours to under 3 minutes." },
@@ -1140,7 +1140,7 @@ const aiChatbotDevelopmentOverride = {
     },
     {
       question: "How much does it cost to build an AI chatbot?",
-      answer: "Custom AI chatbot development costs range from $15,000 for a focused single-use-case chatbot to $160,000+ for an enterprise multi-channel AI chat platform. The main cost drivers are: knowledge base size and complexity, number of system integrations (helpdesk, CRM, calendars), channels deployed (web, Slack, Teams, WhatsApp), escalation logic complexity, compliance requirements, and whether a custom analytics dashboard is included. Ongoing costs include LLM API usage (billed at provider rates, typically $0.50-$5.00 per 1,000 messages depending on model), cloud infrastructure ($150-$800/month), and optionally a maintenance retainer for knowledge base updates and improvement sprints."
+      answer: "Custom AI chatbot development costs range from £15,000 for a focused single-use-case chatbot to £160,000+ for an enterprise multi-channel AI chat platform. The main cost drivers are: knowledge base size and complexity, number of system integrations (helpdesk, CRM, calendars), channels deployed (web, Slack, Teams, WhatsApp), escalation logic complexity, compliance requirements, and whether a custom analytics dashboard is included. Ongoing costs include LLM API usage (billed at provider rates, typically £0.50-£5.00 per 1,000 messages depending on model), cloud infrastructure (£150-£800/month), and optionally a maintenance retainer for knowledge base updates and improvement sprints."
     },
     {
       question: "What deflection rate can I expect from an AI chatbot?",
@@ -1259,14 +1259,14 @@ const aiModelDevelopmentOverride = {
     { layer: "Deployment Infrastructure", technologies: "AWS SageMaker, EC2 G-instances (G4dn, G5, P4d), ECS Fargate, Lambda, CloudWatch" }
   ],
   pricingTiers: [
-    { type: "AI Model Scoping", investment: "$4,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Use case analysis, fine-tuning vs RAG decision, model selection, dataset requirements" },
-    { type: "Dataset Preparation", investment: "$5,000 - $20,000", timeline: "2 - 4 weeks", bestFor: "Data curation, labelling, formatting, quality review, train/eval split" },
-    { type: "LLM Fine-Tuning (GPT-4o)", investment: "$8,000 - $25,000", timeline: "2 - 4 weeks", bestFor: "OpenAI fine-tuning API, eval framework, endpoint deployment" },
-    { type: "LLM Fine-Tuning (Open-Source)", investment: "$15,000 - $45,000", timeline: "4 - 8 weeks", bestFor: "Llama/Mistral, LoRA/QLoRA, self-hosted deployment, inference optimisation" },
-    { type: "Custom Classification Model", investment: "$10,000 - $30,000", timeline: "3 - 6 weeks", bestFor: "BERT fine-tune, labelled dataset, eval metrics, production deployment" },
-    { type: "Self-Hosted Model Deployment", investment: "$12,000 - $35,000", timeline: "3 - 6 weeks", bestFor: "vLLM, OpenAI-compatible API, GPU infrastructure, monitoring" },
-    { type: "MLOps Pipeline", investment: "$15,000 - $50,000", timeline: "4 - 8 weeks", bestFor: "DVC, W&B, model registry, CI/CD, drift detection, model monitoring" },
-    { type: "AI Model Retainer", investment: "$4,000 - $10,000/mo", timeline: "Ongoing", bestFor: "Retraining on new data, eval monitoring, model iteration, drift response" }
+    { type: "AI Model Scoping", investment: "£4,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Use case analysis, fine-tuning vs RAG decision, model selection, dataset requirements" },
+    { type: "Dataset Preparation", investment: "£5,000 - £20,000", timeline: "2 - 4 weeks", bestFor: "Data curation, labelling, formatting, quality review, train/eval split" },
+    { type: "LLM Fine-Tuning (GPT-4o)", investment: "£8,000 - £25,000", timeline: "2 - 4 weeks", bestFor: "OpenAI fine-tuning API, eval framework, endpoint deployment" },
+    { type: "LLM Fine-Tuning (Open-Source)", investment: "£15,000 - £45,000", timeline: "4 - 8 weeks", bestFor: "Llama/Mistral, LoRA/QLoRA, self-hosted deployment, inference optimisation" },
+    { type: "Custom Classification Model", investment: "£10,000 - £30,000", timeline: "3 - 6 weeks", bestFor: "BERT fine-tune, labelled dataset, eval metrics, production deployment" },
+    { type: "Self-Hosted Model Deployment", investment: "£12,000 - £35,000", timeline: "3 - 6 weeks", bestFor: "vLLM, OpenAI-compatible API, GPU infrastructure, monitoring" },
+    { type: "MLOps Pipeline", investment: "£15,000 - £50,000", timeline: "4 - 8 weeks", bestFor: "DVC, W&B, model registry, CI/CD, drift detection, model monitoring" },
+    { type: "AI Model Retainer", investment: "£4,000 - £10,000/mo", timeline: "Ongoing", bestFor: "Retraining on new data, eval monitoring, model iteration, drift response" }
   ],
   industryUseCases: [
     { name: "Domain-Specific LLM Fine-Tuning", description: "Teach Llama or GPT-4o your industry's terminology, writing style, and reasoning patterns. 500-2,000 examples for domain adaptation." },
@@ -1315,7 +1315,7 @@ const aiModelDevelopmentOverride = {
   },
   caseStudy: {
     title: "Deep Learning for Visual Inspection",
-    description: "Built a computer vision model that achieved 99.4% accuracy in detecting manufacturing defects, saving the client $2M in annual waste.",
+    description: "Built a computer vision model that achieved 99.4% accuracy in detecting manufacturing defects, saving the client £2M in annual waste.",
     slug: "manufacturing-ai-vision",
     badge: "Computer Vision"
   },
@@ -1399,10 +1399,10 @@ const dataEngineeringOverride = {
     { layer: "Observability", technologies: "Monte Carlo, Great Expectations, DataDog" }
   ],
   pricingTiers: [
-    { type: "Data Strategy Audit", investment: "$4,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Companies needing a technical data roadmap" },
-    { type: "Modern Data Stack Build", investment: "$25,000 - $60,000", timeline: "8 - 14 weeks", bestFor: "Foundational warehouse and core pipelines" },
-    { type: "Real-Time Stream Engine", investment: "$20,000 - $45,000", timeline: "6 - 12 weeks", bestFor: "High-frequency data needs and live alerting" },
-    { type: "Managed Data Retainer", investment: "$3,000 - $10,000/mo", timeline: "Ongoing", bestFor: "Continuous pipeline monitoring and dbt modeling" }
+    { type: "Data Strategy Audit", investment: "£4,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Companies needing a technical data roadmap" },
+    { type: "Modern Data Stack Build", investment: "£25,000 - £60,000", timeline: "8 - 14 weeks", bestFor: "Foundational warehouse and core pipelines" },
+    { type: "Real-Time Stream Engine", investment: "£20,000 - £45,000", timeline: "6 - 12 weeks", bestFor: "High-frequency data needs and live alerting" },
+    { type: "Managed Data Retainer", investment: "£3,000 - £10,000/mo", timeline: "Ongoing", bestFor: "Continuous pipeline monitoring and dbt modeling" }
   ],
   industryUseCases: [
     { name: "Fintech & Compliance", description: "Reconciling millions of daily transactions with automated audit logs and fraud detection feeds." },
@@ -1468,10 +1468,10 @@ const generativeAiSolutionsOverride = {
     "Enterprise AI Integration"
   ],
   // marketStats: [
-  //   { label: 'Generative AI market size projected by 2032', value: '$1.3T' },
+  //   { label: 'Generative AI market size projected by 2032', value: '£1.3T' },
   //   { label: 'Enterprise AI projects fail to reach production', value: '78%' },
   //   { label: 'Avg productivity gain in knowledge-worker tasks with GenAI', value: '40%' },
-  //   { label: 'Average cost of an AI project failure (IBM, 2024)', value: '$4.4M' },
+  //   { label: 'Average cost of an AI project failure (IBM, 2024)', value: '£4.4M' },
   // ],
   servicesCards: [
     { title: "Custom LLM Application Development", description: "End-to-end LLM-powered applications: system prompt engineering, context window optimization, streaming response implementation, conversation state management, token cost management, multi-model routing. Foundation models: GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, Llama 3, Mistral." },
@@ -1513,15 +1513,15 @@ const generativeAiSolutionsOverride = {
     { layer: "Infrastructure", technologies: "AWS (ECS Fargate, Lambda, S3, OpenSearch), Azure (OpenAI Service), GCP (Vertex AI)" }
   ],
   pricingTiers: [
-    { type: "AI Proof-of-Concept", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "Validated architecture prototype with evaluation metrics not a demo, a testable system" },
-    { type: "RAG Knowledge Base System", investment: "$20,000 - $60,000", timeline: "6 - 12 weeks", bestFor: "Full RAG pipeline: ingestion, embedding, retrieval, LLM layer, UI, monitoring, evaluation" },
-    { type: "AI Chatbot (Production)", investment: "$25,000 - $70,000", timeline: "8 - 14 weeks", bestFor: "Multi-turn chat, tool use, escalation logic, channel integration, analytics dashboard" },
-    { type: "AI Automation Pipeline", investment: "$15,000 - $50,000", timeline: "5 - 10 weeks", bestFor: "Document processing, structured extraction, generation pipeline, review queue, monitoring" },
-    { type: "AI Agent System", investment: "$30,000 - $90,000", timeline: "8 - 16 weeks", bestFor: "Multi-step autonomous agent, tool integrations, memory layers, audit trail, human checkpoints" },
-    { type: "LLM Fine-Tuning", investment: "$20,000 - $60,000", timeline: "6 - 12 weeks", bestFor: "Dataset prep, training runs, evaluation, self-hosted deployment, inference API" },
-    { type: "AI Feature Integration", investment: "$15,000 - $45,000", timeline: "4 - 8 weeks", bestFor: "AI capability added to existing product: design, API integration, streaming UI, cost controls" },
-    { type: "Enterprise AI Platform", investment: "$60,000 - $180,000", timeline: "4 - 9 months", bestFor: "Multi-use-case AI platform: RAG + agents + automation + admin portal + fine-tuning pipeline" },
-    { type: "AI Growth Retainer", investment: "$6,000 - $20,000/mo", timeline: "Ongoing", bestFor: "Accuracy improvements, knowledge base updates, new use cases, model upgrades, monitoring" }
+    { type: "AI Proof-of-Concept", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "Validated architecture prototype with evaluation metrics not a demo, a testable system" },
+    { type: "RAG Knowledge Base System", investment: "£20,000 - £60,000", timeline: "6 - 12 weeks", bestFor: "Full RAG pipeline: ingestion, embedding, retrieval, LLM layer, UI, monitoring, evaluation" },
+    { type: "AI Chatbot (Production)", investment: "£25,000 - £70,000", timeline: "8 - 14 weeks", bestFor: "Multi-turn chat, tool use, escalation logic, channel integration, analytics dashboard" },
+    { type: "AI Automation Pipeline", investment: "£15,000 - £50,000", timeline: "5 - 10 weeks", bestFor: "Document processing, structured extraction, generation pipeline, review queue, monitoring" },
+    { type: "AI Agent System", investment: "£30,000 - £90,000", timeline: "8 - 16 weeks", bestFor: "Multi-step autonomous agent, tool integrations, memory layers, audit trail, human checkpoints" },
+    { type: "LLM Fine-Tuning", investment: "£20,000 - £60,000", timeline: "6 - 12 weeks", bestFor: "Dataset prep, training runs, evaluation, self-hosted deployment, inference API" },
+    { type: "AI Feature Integration", investment: "£15,000 - £45,000", timeline: "4 - 8 weeks", bestFor: "AI capability added to existing product: design, API integration, streaming UI, cost controls" },
+    { type: "Enterprise AI Platform", investment: "£60,000 - £180,000", timeline: "4 - 9 months", bestFor: "Multi-use-case AI platform: RAG + agents + automation + admin portal + fine-tuning pipeline" },
+    { type: "AI Growth Retainer", investment: "£6,000 - £20,000/mo", timeline: "Ongoing", bestFor: "Accuracy improvements, knowledge base updates, new use cases, model upgrades, monitoring" }
   ],
   industryUseCases: [
     { name: "Internal Knowledge Base AI", description: "RAG-powered assistant connected to wikis, SharePoint, Notion, and email. 60-70% reduction in internal search time. 30% onboarding time reduction." },
@@ -1594,7 +1594,7 @@ const generativeAiSolutionsOverride = {
     },
     {
       question: "How much does it cost to build a generative AI solution?",
-      answer: "Custom generative AI development costs range from $8,000 for a validated proof of concept to $180,000+ for a full enterprise AI platform. The primary cost drivers are: the complexity of the RAG pipeline or agent architecture, the volume and diversity of data sources to be ingested, integration requirements with existing systems, evaluation rigor required, and whether self-hosted model deployment is needed for data privacy. Ongoing LLM API costs (charged directly by OpenAI, Anthropic, or Google) are separate from development costs and depend on usage volume. Clickmasters provides fixed-price proposals after a free feasibility assessment."
+      answer: "Custom generative AI development costs range from £8,000 for a validated proof of concept to £180,000+ for a full enterprise AI platform. The primary cost drivers are: the complexity of the RAG pipeline or agent architecture, the volume and diversity of data sources to be ingested, integration requirements with existing systems, evaluation rigor required, and whether self-hosted model deployment is needed for data privacy. Ongoing LLM API costs (charged directly by OpenAI, Anthropic, or Google) are separate from development costs and depend on usage volume. Clickmasters provides fixed-price proposals after a free feasibility assessment."
     },
     {
       question: "How do you prevent AI hallucinations in production systems?",
@@ -1720,11 +1720,11 @@ const mobileAppDevelopmentOverride = {
     { layer: "DevOps", technologies: "Fastlane, GitHub Actions, CI/CD pipelines" }
   ],
   pricingTiers: [
-    { type: "Simple Mobile App", investment: "$8,000 - $20,000", timeline: "6 - 10 weeks", bestFor: "Basic app with core features for one platform" },
-    { type: "Business Mobile App", investment: "$15,000 - $40,000", timeline: "8 - 14 weeks", bestFor: "Multi-feature app with backend and integrations" },
-    { type: "Cross-Platform App", investment: "$20,000 - $60,000", timeline: "10 - 16 weeks", bestFor: "App needed on both iOS and Android" },
-    { type: "SaaS Mobile App", investment: "$25,000 - $80,000", timeline: "3 - 6 months", bestFor: "SaaS product with dashboards, billing, and user management" },
-    { type: "Enterprise Mobile App", investment: "$40,000 - $120,000+", timeline: "4 - 8 months", bestFor: "Complex enterprise app with integrations and compliance" }
+    { type: "Simple Mobile App", investment: "£8,000 - £20,000", timeline: "6 - 10 weeks", bestFor: "Basic app with core features for one platform" },
+    { type: "Business Mobile App", investment: "£15,000 - £40,000", timeline: "8 - 14 weeks", bestFor: "Multi-feature app with backend and integrations" },
+    { type: "Cross-Platform App", investment: "£20,000 - £60,000", timeline: "10 - 16 weeks", bestFor: "App needed on both iOS and Android" },
+    { type: "SaaS Mobile App", investment: "£25,000 - £80,000", timeline: "3 - 6 months", bestFor: "SaaS product with dashboards, billing, and user management" },
+    { type: "Enterprise Mobile App", investment: "£40,000 - £120,000+", timeline: "4 - 8 months", bestFor: "Complex enterprise app with integrations and compliance" }
   ],
   industryUseCases: [
     { name: "Healthcare", description: "Patient management, appointment booking, telehealth platforms, and clinical workflow mobile apps." },
@@ -1875,11 +1875,11 @@ const saasProductDevelopmentOverride = {
     { layer: "Security", technologies: "OWASP ASVS, SAST/DAST scanning, Vault (secrets), OAuth 2.0, SSO" }
   ],
   pricingTiers: [
-    { type: "SaaS MVP", investment: "$10,000 - $30,000", timeline: "6 - 12 weeks", bestFor: "Founders validating a SaaS idea with real users" },
-    { type: "SaaS Web App", investment: "$20,000 - $80,000", timeline: "3 - 6 months", bestFor: "B2B SaaS with dashboards, billing, and admin panel" },
-    { type: "Full SaaS Platform", investment: "$40,000 - $150,000", timeline: "5 - 10 months", bestFor: "Multi-tenant SaaS with subscriptions, API, and scaling" },
-    { type: "Enterprise SaaS", investment: "$80,000 - $250,000+", timeline: "8 - 14 months", bestFor: "Complex SaaS with compliance, integrations, and dedicated support" },
-    { type: "Dedicated Team", investment: "$10,000 - $30,000/mo", timeline: "Ongoing", bestFor: "SaaS companies needing ongoing product development capacity" }
+    { type: "SaaS MVP", investment: "£10,000 - £30,000", timeline: "6 - 12 weeks", bestFor: "Founders validating a SaaS idea with real users" },
+    { type: "SaaS Web App", investment: "£20,000 - £80,000", timeline: "3 - 6 months", bestFor: "B2B SaaS with dashboards, billing, and admin panel" },
+    { type: "Full SaaS Platform", investment: "£40,000 - £150,000", timeline: "5 - 10 months", bestFor: "Multi-tenant SaaS with subscriptions, API, and scaling" },
+    { type: "Enterprise SaaS", investment: "£80,000 - £250,000+", timeline: "8 - 14 months", bestFor: "Complex SaaS with compliance, integrations, and dedicated support" },
+    { type: "Dedicated Team", investment: "£10,000 - £30,000/mo", timeline: "Ongoing", bestFor: "SaaS companies needing ongoing product development capacity" }
   ],
   industryUseCases: [
     { name: "Healthcare SaaS", description: "Patient management, telehealth platforms, clinical workflow tools, and HIPAA-compliant SaaS products." },
@@ -1986,10 +1986,10 @@ const websiteDevelopmentOverride = {
     { layer: "SEO & Perf", technologies: "Lighthouse CI, Screaming Frog, Ahrefs, Semrush" }
   ],
   pricingTiers: [
-    { type: "Landing Page System", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "Marketing teams needing campaign-ready templates" },
-    { type: "Corporate Website", investment: "$15,000 - $40,000", timeline: "6 - 10 weeks", bestFor: "Mid-market B2B brands needing credibility and leads" },
-    { type: "SaaS Marketing Site", investment: "$18,000 - $50,000", timeline: "7 - 12 weeks", bestFor: "Software products optimizing for demo/trial conversion" },
-    { type: "Website Redesign", investment: "$12,000 - $45,000", timeline: "6 - 12 weeks", bestFor: "Existing sites needing better performance and SEO" }
+    { type: "Landing Page System", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "Marketing teams needing campaign-ready templates" },
+    { type: "Corporate Website", investment: "£15,000 - £40,000", timeline: "6 - 10 weeks", bestFor: "Mid-market B2B brands needing credibility and leads" },
+    { type: "SaaS Marketing Site", investment: "£18,000 - £50,000", timeline: "7 - 12 weeks", bestFor: "Software products optimizing for demo/trial conversion" },
+    { type: "Website Redesign", investment: "£12,000 - £45,000", timeline: "6 - 12 weeks", bestFor: "Existing sites needing better performance and SEO" }
   ],
   industryUseCases: [
     { name: "SaaS & Technology", description: "Full-funnel sites with integrations directories, pricing toggles, and sub-1.5s LCP on homepages." },
@@ -2039,7 +2039,7 @@ const websiteDevelopmentOverride = {
   faqs: [
     {
       question: "How much does website development cost?",
-      answer: "Engagement costs range from $8,000 for a small corporate site to $50,000+ for a full SaaS marketing platform with deep CRM integrations."
+      answer: "Engagement costs range from £8,000 for a small corporate site to £50,000+ for a full SaaS marketing platform with deep CRM integrations."
     },
     {
       question: "How long does it take to build a website?",
@@ -2133,11 +2133,11 @@ const webApplicationDevelopmentOverride = {
     { layer: "Observability", technologies: "Sentry (errors). Datadog or Grafana (metrics). Lighthouse CI (performance gates)." }
   ],
   pricingTiers: [
-    { type: "Internal Tool / Dashboard", investment: "$10,000 - $35,000", timeline: "6 - 12 weeks", bestFor: "Admin dashboards, ops tools, reporting apps, internal workflows" },
-    { type: "Customer / Partner Portal", investment: "$20,000 - $60,000", timeline: "10 - 18 weeks", bestFor: "Authenticated portals, document hubs, self-service account management" },
-    { type: "B2B Web Application", investment: "$30,000 - $100,000", timeline: "3 - 6 months", bestFor: "Full-featured apps: auth, RBAC, API integrations, admin panels" },
-    { type: "SaaS Web Platform", investment: "$50,000 - $150,000", timeline: "5 - 9 months", bestFor: "Multi-tenant SaaS, billing, SSO, API, onboarding flows" },
-    { type: "Web App Modernization", investment: "$20,000 - $90,000", timeline: "3 - 8 months", bestFor: "Legacy rewrites, PHP/jQuery to React/Next.js, performance overhaul" }
+    { type: "Internal Tool / Dashboard", investment: "£10,000 - £35,000", timeline: "6 - 12 weeks", bestFor: "Admin dashboards, ops tools, reporting apps, internal workflows" },
+    { type: "Customer / Partner Portal", investment: "£20,000 - £60,000", timeline: "10 - 18 weeks", bestFor: "Authenticated portals, document hubs, self-service account management" },
+    { type: "B2B Web Application", investment: "£30,000 - £100,000", timeline: "3 - 6 months", bestFor: "Full-featured apps: auth, RBAC, API integrations, admin panels" },
+    { type: "SaaS Web Platform", investment: "£50,000 - £150,000", timeline: "5 - 9 months", bestFor: "Multi-tenant SaaS, billing, SSO, API, onboarding flows" },
+    { type: "Web App Modernization", investment: "£20,000 - £90,000", timeline: "3 - 8 months", bestFor: "Legacy rewrites, PHP/jQuery to React/Next.js, performance overhaul" }
   ],
   industryUseCases: [
     { name: "Customer Self-Service Portals", description: "Authenticated portals for account data, order history, invoices, and tickets. Reduces support volume by 40-60%." },
@@ -2177,7 +2177,7 @@ const webApplicationDevelopmentOverride = {
         ["Authentication", "Optional", "Core requirement", "Core requirement"],
         ["Typical users", "Public visitors", "Authenticated B2B users", "Consumers/Field workers"],
         ["SEO importance", "Critical", "Low (users already acquired)", "App Store Optimization"],
-        ["Build cost", "$5K-$50K", "$15K-$200K+", "$20K+ per platform"]
+        ["Build cost", "£5K-£50K", "£15K-£200K+", "£20K+ per platform"]
       ]
     },
     {
@@ -2208,7 +2208,7 @@ const webApplicationDevelopmentOverride = {
     },
     {
       question: "How much does it cost to develop a web application?",
-      answer: "Web application development costs range from $10,000 for a focused internal tool to $150,000+ for a full SaaS platform. Most B2B web applications fall in the $30,000-$100,000 range. We provide fixed-price proposals after scoping."
+      answer: "Web application development costs range from £10,000 for a focused internal tool to £150,000+ for a full SaaS platform. Most B2B web applications fall in the £30,000-£100,000 range. We provide fixed-price proposals after scoping."
     },
     {
       question: "How long does web application development take?",
@@ -2312,11 +2312,11 @@ const mvpDevelopmentOverride = {
     { layer: "Security", technologies: "OWASP ASVS, SAST/DAST scanning, OAuth 2.0, JWT" }
   ],
   pricingTiers: [
-    { type: "Simple MVP", investment: "$5,000 - $15,000", timeline: "4 - 8 weeks", bestFor: "Validating a single-feature idea quickly" },
-    { type: "Web App MVP", investment: "$10,000 - $30,000", timeline: "6 - 12 weeks", bestFor: "Browser-based MVP with dashboards and user accounts" },
-    { type: "Mobile App MVP", investment: "$15,000 - $40,000", timeline: "8 - 14 weeks", bestFor: "Cross-platform or native mobile MVP" },
-    { type: "SaaS MVP", investment: "$15,000 - $50,000", timeline: "8 - 16 weeks", bestFor: "SaaS with subscriptions, billing, and admin panel" },
-    { type: "AI MVP", investment: "$20,000 - $60,000", timeline: "10 - 18 weeks", bestFor: "AI-powered product with chatbots, LLM features, or automation" }
+    { type: "Simple MVP", investment: "£5,000 - £15,000", timeline: "4 - 8 weeks", bestFor: "Validating a single-feature idea quickly" },
+    { type: "Web App MVP", investment: "£10,000 - £30,000", timeline: "6 - 12 weeks", bestFor: "Browser-based MVP with dashboards and user accounts" },
+    { type: "Mobile App MVP", investment: "£15,000 - £40,000", timeline: "8 - 14 weeks", bestFor: "Cross-platform or native mobile MVP" },
+    { type: "SaaS MVP", investment: "£15,000 - £50,000", timeline: "8 - 16 weeks", bestFor: "SaaS with subscriptions, billing, and admin panel" },
+    { type: "AI MVP", investment: "£20,000 - £60,000", timeline: "10 - 18 weeks", bestFor: "AI-powered product with chatbots, LLM features, or automation" }
   ],
   industryUseCases: [
     { name: "Healthcare MVPs", description: "Patient management, appointment booking, telehealth platforms, and clinical workflow MVPs." },
@@ -2466,11 +2466,11 @@ const desktopApplicationDevelopmentOverride = {
     { layer: "DevOps", technologies: "ClickOnce, MSI installers, auto-update, CI/CD pipelines" }
   ],
   pricingTiers: [
-    { type: "Simple Desktop Tool", investment: "$5,000 - $15,000", timeline: "4 - 8 weeks", bestFor: "Basic internal tool with limited features" },
-    { type: "Business Desktop App", investment: "$12,000 - $40,000", timeline: "6 - 12 weeks", bestFor: "Multi-feature business application with database" },
-    { type: "Enterprise Desktop System", investment: "$30,000 - $80,000", timeline: "3 - 6 months", bestFor: "Complex desktop software with integrations and roles" },
-    { type: "Cross-Platform App", investment: "$20,000 - $60,000", timeline: "2 - 5 months", bestFor: "Application needed on Windows, macOS, and Linux" },
-    { type: "Legacy Modernisation", investment: "$15,000 - $50,000", timeline: "2 - 5 months", bestFor: "Upgrading old desktop software to modern standards" }
+    { type: "Simple Desktop Tool", investment: "£5,000 - £15,000", timeline: "4 - 8 weeks", bestFor: "Basic internal tool with limited features" },
+    { type: "Business Desktop App", investment: "£12,000 - £40,000", timeline: "6 - 12 weeks", bestFor: "Multi-feature business application with database" },
+    { type: "Enterprise Desktop System", investment: "£30,000 - £80,000", timeline: "3 - 6 months", bestFor: "Complex desktop software with integrations and roles" },
+    { type: "Cross-Platform App", investment: "£20,000 - £60,000", timeline: "2 - 5 months", bestFor: "Application needed on Windows, macOS, and Linux" },
+    { type: "Legacy Modernisation", investment: "£15,000 - £50,000", timeline: "2 - 5 months", bestFor: "Upgrading old desktop software to modern standards" }
   ],
   industryUseCases: [
     { name: "Healthcare", description: "Patient management, clinical workflow, appointment scheduling, and compliance-grade desktop systems." },
@@ -2607,11 +2607,11 @@ const apiDevelopmentIntegrationOverride = {
     { layer: "Security", technologies: "OWASP ASVS, rate limiting, data encryption, SSL/TLS, WAF" }
   ],
   pricingTiers: [
-    { type: "Simple API Integration", investment: "$3,000 - $10,000", timeline: "2 - 4 weeks", bestFor: "Connecting two systems with basic data flow" },
-    { type: "Custom API Development", investment: "$8,000 - $25,000", timeline: "4 - 8 weeks", bestFor: "Building a custom API for your software platform" },
-    { type: "Multi-System Integration", investment: "$15,000 - $50,000", timeline: "6 - 12 weeks", bestFor: "Connecting multiple business systems with middleware" },
-    { type: "Enterprise Integration Hub", investment: "$30,000 - $80,000", timeline: "3 - 6 months", bestFor: "Complex integration layer with multiple systems and rules" },
-    { type: "Ongoing API Support", investment: "$3,000 - $10,000/mo", timeline: "Ongoing", bestFor: "Monitoring, maintenance, versioning, and new integrations" }
+    { type: "Simple API Integration", investment: "£3,000 - £10,000", timeline: "2 - 4 weeks", bestFor: "Connecting two systems with basic data flow" },
+    { type: "Custom API Development", investment: "£8,000 - £25,000", timeline: "4 - 8 weeks", bestFor: "Building a custom API for your software platform" },
+    { type: "Multi-System Integration", investment: "£15,000 - £50,000", timeline: "6 - 12 weeks", bestFor: "Connecting multiple business systems with middleware" },
+    { type: "Enterprise Integration Hub", investment: "£30,000 - £80,000", timeline: "3 - 6 months", bestFor: "Complex integration layer with multiple systems and rules" },
+    { type: "Ongoing API Support", investment: "£3,000 - £10,000/mo", timeline: "Ongoing", bestFor: "Monitoring, maintenance, versioning, and new integrations" }
   ],
   industryUseCases: [
     { name: "Healthcare", description: "EHR/EMR integrations, HL7 FHIR APIs, patient portal connectivity, and clinical data exchange." },
@@ -2778,10 +2778,10 @@ const backendDevelopmentOverride = {
     { layer: "Infrastructure", technologies: "Docker, Kubernetes (where appropriate), CI/CD pipelines" }
   ],
   pricingTiers: [
-    { type: "Architecture Review", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Performance analysis and improvement roadmap" },
-    { type: "Simple REST API", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Up to 25 endpoints, auth, and Supertest suite" },
-    { type: "Full-Scale Platform", investment: "$15,000 - $45,000", timeline: "6 - 10 weeks", bestFor: "Resource model, OAuth 2.0, jobs, and load testing" },
-    { type: "Database Optimization", investment: "$5,000 - $15,000", timeline: "2 - 3 weeks", bestFor: "Schema review, index strategy, and PgBouncer" }
+    { type: "Architecture Review", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Performance analysis and improvement roadmap" },
+    { type: "Simple REST API", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Up to 25 endpoints, auth, and Supertest suite" },
+    { type: "Full-Scale Platform", investment: "£15,000 - £45,000", timeline: "6 - 10 weeks", bestFor: "Resource model, OAuth 2.0, jobs, and load testing" },
+    { type: "Database Optimization", investment: "£5,000 - £15,000", timeline: "2 - 3 weeks", bestFor: "Schema review, index strategy, and PgBouncer" }
   ],
   industryUseCases: [
     { name: "SaaS & B2B Software", description: "Multi-tenant PostgreSQL with row-level security and enterprise SSO integration." },
@@ -2940,10 +2940,10 @@ const frontendDevelopmentOverride = {
     { layer: "Monitoring", technologies: "Lighthouse CI, Vercel Analytics, Sentry" }
   ],
   pricingTiers: [
-    { type: "Frontend Architecture Review", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Codebase audit and performance assessment" },
-    { type: "React SPA (Core)", investment: "$8,000 - $22,000", timeline: "4 - 8 weeks", bestFor: "TypeScript-first SPAs with Zustand and Query" },
-    { type: "Next.js Web App", investment: "$12,000 - $35,000", timeline: "5 - 10 weeks", bestFor: "High-performance apps requiring SSR/SEO" },
-    { type: "Storybook Design System", investment: "$10,000 - $30,000", timeline: "4 - 8 weeks", bestFor: "Multi-team product organizations" }
+    { type: "Frontend Architecture Review", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Codebase audit and performance assessment" },
+    { type: "React SPA (Core)", investment: "£8,000 - £22,000", timeline: "4 - 8 weeks", bestFor: "TypeScript-first SPAs with Zustand and Query" },
+    { type: "Next.js Web App", investment: "£12,000 - £35,000", timeline: "5 - 10 weeks", bestFor: "High-performance apps requiring SSR/SEO" },
+    { type: "Storybook Design System", investment: "£10,000 - £30,000", timeline: "4 - 8 weeks", bestFor: "Multi-team product organizations" }
   ],
   industryUseCases: [
     { name: "SaaS Dashboards", description: "Data-dense interfaces with Server Components for fast initial loads and real-time updates." },
@@ -3044,7 +3044,7 @@ const frontendDevelopmentOverride = {
   },
   caseStudy: {
     title: "Accessibility Remediation and Performance Overhaul",
-    description: "Resolved 47 WCAG violations and improved dashboard LCP from 4.8s to 1.9s, unblocking a $120K ARR enterprise deal within 30 days.",
+    description: "Resolved 47 WCAG violations and improved dashboard LCP from 4.8s to 1.9s, unblocking a £120K ARR enterprise deal within 30 days.",
     slug: "fintech-frontend-modernization",
     badge: "Next.js / Accessibility"
   }
@@ -3108,10 +3108,10 @@ const fullStackDevelopmentOverride = {
     { layer: "Cloud & Infrastructure", technologies: "AWS, Microsoft Azure, Google Cloud, Docker, Kubernetes where appropriate, CI/CD" }
   ],
   pricingTiers: [
-    { type: "Full Stack Scoping", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Architecture, data model, and fixed-price proposal" },
-    { type: "Full Stack MVP", investment: "$20,000 - $55,000", timeline: "8 - 14 weeks", bestFor: "Next.js + Fastify + PostgreSQL + AWS + CI/CD foundation" },
-    { type: "Complete SaaS Product", investment: "$35,000 - $100,000", timeline: "3 - 5 months", bestFor: "Multi-tenancy, Stripe Billing, and full onboarding flow" },
-    { type: "Internal B2B Tool", investment: "$15,000 - $45,000", timeline: "6 - 12 weeks", bestFor: "Data management, approval workflows, and reporting" }
+    { type: "Full Stack Scoping", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Architecture, data model, and fixed-price proposal" },
+    { type: "Full Stack MVP", investment: "£20,000 - £55,000", timeline: "8 - 14 weeks", bestFor: "Next.js + Fastify + PostgreSQL + AWS + CI/CD foundation" },
+    { type: "Complete SaaS Product", investment: "£35,000 - £100,000", timeline: "3 - 5 months", bestFor: "Multi-tenancy, Stripe Billing, and full onboarding flow" },
+    { type: "Internal B2B Tool", investment: "£15,000 - £45,000", timeline: "6 - 12 weeks", bestFor: "Data management, approval workflows, and reporting" }
   ],
   industryUseCases: [
     { name: "Multi-Tenant SaaS", description: "PostgreSQL RLS for data isolation, Stripe for subscriptions, and feature flags per pricing tier." },
@@ -3230,10 +3230,10 @@ const microservicesArchitectureOverride = {
     { layer: "DevOps", technologies: "CI/CD pipelines, infrastructure automation and monitoring" }
   ],
   pricingTiers: [
-    { type: "Architecture Assessment", investment: "$5,000 - $12,000", timeline: "1 - 2 weeks", bestFor: "Microservices vs Monolith audit and decision recommendation" },
-    { type: "Infrastructure Foundation", investment: "$15,000 - $35,000", timeline: "3 - 5 weeks", bestFor: "Kubernetes, GitOps, API Gateway, and Observability setup" },
-    { type: "Greenfield Microservices", investment: "$40,000 - $120,000", timeline: "3 - 6 months", bestFor: "Full lifecycle build: design, infra, services, and launch" },
-    { type: "Monolith Migration", investment: "$30,000 - $90,000", timeline: "2 - 5 months", bestFor: "Incremental service extraction (Strangler Fig) for existing apps" }
+    { type: "Architecture Assessment", investment: "£5,000 - £12,000", timeline: "1 - 2 weeks", bestFor: "Microservices vs Monolith audit and decision recommendation" },
+    { type: "Infrastructure Foundation", investment: "£15,000 - £35,000", timeline: "3 - 5 weeks", bestFor: "Kubernetes, GitOps, API Gateway, and Observability setup" },
+    { type: "Greenfield Microservices", investment: "£40,000 - £120,000", timeline: "3 - 6 months", bestFor: "Full lifecycle build: design, infra, services, and launch" },
+    { type: "Monolith Migration", investment: "£30,000 - £90,000", timeline: "2 - 5 months", bestFor: "Incremental service extraction (Strangler Fig) for existing apps" }
   ],
   industryUseCases: [
     { name: "Fintech & Payments", description: "PCI scope reduction via service isolation and saga patterns for atomic cross-service consistency." },
@@ -3346,10 +3346,10 @@ const progressiveWebDevelopmentOverride = {
     { layer: "Hosting & Perf", technologies: "Vercel, Cloudflare, Next.js Image optimization" }
   ],
   pricingTiers: [
-    { type: "PWA Architecture Review", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "Internal teams needing strategy and audit" },
-    { type: "PWA Conversion", investment: "$6,000 - $25,000", timeline: "3 - 6 weeks", bestFor: "Existing web apps needing install/offline capabilities" },
-    { type: "Offline-First Field App", investment: "$20,000 - $55,000", timeline: "7 - 12 weeks", bestFor: "Technicians and logistics teams in low-connectivity zones" },
-    { type: "PWA + App Store Listing", investment: "$25,000 - $70,000", timeline: "8 - 14 weeks", bestFor: "B2B products needing store presence from one codebase" }
+    { type: "PWA Architecture Review", investment: "£2,000 - £5,000", timeline: "1 week", bestFor: "Internal teams needing strategy and audit" },
+    { type: "PWA Conversion", investment: "£6,000 - £25,000", timeline: "3 - 6 weeks", bestFor: "Existing web apps needing install/offline capabilities" },
+    { type: "Offline-First Field App", investment: "£20,000 - £55,000", timeline: "7 - 12 weeks", bestFor: "Technicians and logistics teams in low-connectivity zones" },
+    { type: "PWA + App Store Listing", investment: "£25,000 - £70,000", timeline: "8 - 14 weeks", bestFor: "B2B products needing store presence from one codebase" }
   ],
   industryUseCases: [
     { name: "Field Service & Inspection", description: "Technicians in warehouses or remote sites using offline forms, photo capture, and automatic sync on reconnect." },
@@ -3363,7 +3363,7 @@ const progressiveWebDevelopmentOverride = {
       body: "Most B2B companies reach a crossroads: their web app fails mobile users who need offline capability or home screen access, but native apps are too expensive. A Progressive Web App (PWA) delivers app-store quality and offline reliability from a single web codebase.",
       items: [
         "Field team loses work in areas with poor cellular coverage",
-        "Spending $200,000+ maintaining separate iOS and Android apps",
+        "Spending £200,000+ maintaining separate iOS and Android apps",
         "Users want push notifications without App Store overhead",
         "App Store review cycles delaying critical business updates"
       ]
@@ -3411,7 +3411,7 @@ const progressiveWebDevelopmentOverride = {
     },
     {
       question: "How much does PWA development cost?",
-      answer: "Conversion of an existing app costs $6k-$25k. Greenfield SaaS PWAs cost $15k-$45k. Offline-first field apps with bidirectional sync cost $20k-$55k. This is typically 50% cheaper than native development."
+      answer: "Conversion of an existing app costs £6k-£25k. Greenfield SaaS PWAs cost £15k-£45k. Offline-first field apps with bidirectional sync cost £20k-£55k. This is typically 50% cheaper than native development."
     },
     {
       question: "Can a PWA really work offline?",
@@ -3427,7 +3427,7 @@ const progressiveWebDevelopmentOverride = {
     }
   ],
   testimonial: {
-    quote: "We avoided a $120,000 native app build by choosing a Clickmasters PWA instead. The offline functionality is flawless for our field technicians, and we love shipping updates instantly without waiting for app store reviews.",
+    quote: "We avoided a £120,000 native app build by choosing a Clickmasters PWA instead. The offline functionality is flawless for our field technicians, and we love shipping updates instantly without waiting for app store reviews.",
     author: "Product Manager",
     role: "SaaS & Logistics Company"
   },
@@ -3495,10 +3495,10 @@ const headlessCmsDevelopmentOverride = {
     { layer: "Integrations", technologies: "HubSpot, Shopify Storefront API, Zapier, Cloudinary" }
   ],
   pricingTiers: [
-    { type: "Headless CMS Strategy", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Internal teams needing a platform and model roadmap" },
-    { type: "Next.js Headless Build", investment: "$18,000 - $55,000", timeline: "6 - 12 weeks", bestFor: "Complete CMS setup + high-performance web frontend" },
-    { type: "WP to Headless Migration", investment: "$15,000 - $45,000", timeline: "6 - 12 weeks", bestFor: "Organizations outgrowing WordPress legacy debt" },
-    { type: "Content + Commerce", investment: "$20,000 - $60,000", timeline: "7 - 14 weeks", bestFor: "Editorial sites integrated with Shopify or Medusa" }
+    { type: "Headless CMS Strategy", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Internal teams needing a platform and model roadmap" },
+    { type: "Next.js Headless Build", investment: "£18,000 - £55,000", timeline: "6 - 12 weeks", bestFor: "Complete CMS setup + high-performance web frontend" },
+    { type: "WP to Headless Migration", investment: "£15,000 - £45,000", timeline: "6 - 12 weeks", bestFor: "Organizations outgrowing WordPress legacy debt" },
+    { type: "Content + Commerce", investment: "£20,000 - £60,000", timeline: "7 - 14 weeks", bestFor: "Editorial sites integrated with Shopify or Medusa" }
   ],
   industryUseCases: [
     { name: "SaaS Marketing Sites", description: "Slice-based page building allowing marketing teams to launch landing pages in minutes without dev help." },
@@ -3637,10 +3637,10 @@ const headlessEcommerceOverride = {
     { layer: "Infrastructure", technologies: "Vercel, AWS, Cloudflare" }
   ],
   pricingTiers: [
-    { type: "Headless Audit", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Architecture roadmap and platform assessment" },
-    { type: "Custom medusa Build", investment: "$25,000 - $60,000", timeline: "8 - 14 weeks", bestFor: "Open-source, self-hosted, full control commerce" },
-    { type: "Shopify Headless", investment: "$20,000 - $55,000", timeline: "8 - 12 weeks", bestFor: "Shopify Plus backends with sub-second frontends" },
-    { type: "Enterprise Composable", investment: "$50,000 - $150,000", timeline: "4 - 9 months", bestFor: "Complex global scale, multi-brand, omnichannel" }
+    { type: "Headless Audit", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Architecture roadmap and platform assessment" },
+    { type: "Custom medusa Build", investment: "£25,000 - £60,000", timeline: "8 - 14 weeks", bestFor: "Open-source, self-hosted, full control commerce" },
+    { type: "Shopify Headless", investment: "£20,000 - £55,000", timeline: "8 - 12 weeks", bestFor: "Shopify Plus backends with sub-second frontends" },
+    { type: "Enterprise Composable", investment: "£50,000 - £150,000", timeline: "4 - 9 months", bestFor: "Complex global scale, multi-brand, omnichannel" }
   ],
   industryUseCases: [
     { name: "High-Growth D2C", description: "Brands needing unique storytelling and instant mobile loads to maximize ad spend ROI." },
@@ -3665,21 +3665,21 @@ const headlessEcommerceOverride = {
       items: [
         "2.5s average Shopify theme LCP on mobile headless Next.js achieves <1.5s on the same content",
         "36% average conversion rate lift after headless re-platform (Shopify case studies)",
-        "$500K+ revenue recovered annually per 1-second LCP improvement for a $10M GMV store",
+        "£500K+ revenue recovered annually per 1-second LCP improvement for a £10M GMV store",
         "3x more content + product page variants achievable with headless vs. theme-based architecture"
       ]
     },
     {
       heading: "The Headless Commerce Performance ROI",
-      body: "For a D2C brand doing $10M GMV at 2.5% conversion rate: current average Shopify theme LCP of 2.5 seconds on mobile. Moving to headless Next.js achieving 1.2 seconds LCP a 1.3-second improvement. At Google's measured 7% conversion rate increase per second improvement, that is approximately a 9% conversion rate lift worth $900,000 in additional annual GMV. The headless implementation costs $25,000-$70,000 and pays back within 2-4 months of launch.",
+      body: "For a D2C brand doing £10M GMV at 2.5% conversion rate: current average Shopify theme LCP of 2.5 seconds on mobile. Moving to headless Next.js achieving 1.2 seconds LCP a 1.3-second improvement. At Google's measured 7% conversion rate increase per second improvement, that is approximately a 9% conversion rate lift worth £900,000 in additional annual GMV. The headless implementation costs £25,000-£70,000 and pays back within 2-4 months of launch.",
       items: []
     },
     {
       heading: "Headless Commerce Architecture Decision Framework",
       body: "",
       items: [
-        "Traditional Shopify / WooCommerce: Days to weeks launch, 2-4s LCP, theme constraints, blog separate from products, 8,000+ apps, full Shopify admin, limited checkout customization, best for <$5M GMV",
-        "Headless (Shopify API + Next.js): 6-14 weeks launch, sub-second LCP, unlimited React components, unified content+commerce, limited to API apps, full Shopify admin maintained, Shopify hosted checkout, best for $5M+ GMV",
+        "Traditional Shopify / WooCommerce: Days to weeks launch, 2-4s LCP, theme constraints, blog separate from products, 8,000+ apps, full Shopify admin, limited checkout customization, best for <£5M GMV",
+        "Headless (Shopify API + Next.js): 6-14 weeks launch, sub-second LCP, unlimited React components, unified content+commerce, limited to API apps, full Shopify admin maintained, Shopify hosted checkout, best for £5M+ GMV",
         "Custom Commerce (Medusa.js): 8-18 weeks launch, sub-second LCP, unlimited React + custom commerce UI, any CMS integration, build or integrate custom, custom admin via Medusa dashboard, fully custom checkout, best for full ownership or complex B2B"
       ]
     },
@@ -3723,7 +3723,7 @@ const headlessEcommerceOverride = {
     },
     {
       question: "Is it better than a standard Shopify theme?",
-      answer: "For brands doing over $5M GMV or requiring sub-second loads and highly custom designs, headless is superior. For smaller stores, a well-optimized standard theme is often sufficient."
+      answer: "For brands doing over £5M GMV or requiring sub-second loads and highly custom designs, headless is superior. For smaller stores, a well-optimized standard theme is often sufficient."
     },
     {
       question: "Does it work with SEO?",
@@ -3735,15 +3735,15 @@ const headlessEcommerceOverride = {
     },
     {
       question: "When should I go headless vs. stick with Shopify themes?",
-      answer: "Shopify themes are right when your store does <$5M GMV annually, you need to launch quickly, and requirements are standard. Headless is right when mobile product pages load >2.5s and performance limits conversion, your brand has a design vision Liquid cannot execute, you need editorial content integrated with products, you have B2B requirements beyond native features, or you want to own your commerce data."
+      answer: "Shopify themes are right when your store does <£5M GMV annually, you need to launch quickly, and requirements are standard. Headless is right when mobile product pages load >2.5s and performance limits conversion, your brand has a design vision Liquid cannot execute, you need editorial content integrated with products, you have B2B requirements beyond native features, or you want to own your commerce data."
     },
     {
       question: "What is Medusa.js and when should I use it instead of Shopify?",
-      answer: "Medusa.js is an open-source, Node.js-based headless commerce platform a self-hosted alternative to Shopify. Choose Medusa over Shopify when you need complete data ownership, want to avoid Shopify's per-transaction fees at scale ($10M+ GMV), your commerce logic exceeds Shopify's API capabilities, or you prefer open-source infrastructure."
+      answer: "Medusa.js is an open-source, Node.js-based headless commerce platform a self-hosted alternative to Shopify. Choose Medusa over Shopify when you need complete data ownership, want to avoid Shopify's per-transaction fees at scale (£10M+ GMV), your commerce logic exceeds Shopify's API capabilities, or you prefer open-source infrastructure."
     },
     {
       question: "How much does headless e-commerce development cost?",
-      answer: "Costs range from $20,000 for a core headless Shopify storefront to $100,000 for a full headless B2B commerce platform. A full D2C stack (Shopify + Next.js + Contentful + Algolia) costs $35,000-$90,000. Medusa.js full platform costs $30,000-$75,000. All fixed-price after free assessment."
+      answer: "Costs range from £20,000 for a core headless Shopify storefront to £100,000 for a full headless B2B commerce platform. A full D2C stack (Shopify + Next.js + Contentful + Algolia) costs £35,000-£90,000. Medusa.js full platform costs £30,000-£75,000. All fixed-price after free assessment."
     },
     {
       question: "Does headless e-commerce work with the Shopify admin?",
@@ -3769,9 +3769,9 @@ const headlessEcommerceOverride = {
   },
   caseStudy: {
     title: "Headless Shopify Storefront for a D2C Wellness Brand",
-    description: "Replaced a premium Shopify 2.0 theme with Next.js + Shopify Storefront API + Sanity CMS. Product page LCP dropped from 3.4s to 1.1s on mobile. Mobile conversion rate increased from 1.3% to 2.1% validated in A/B test. Additional annualized GMV: +$480,000 at cutover. 34 editorial buying guides with embedded Shopify product cards published in 90 days no developer involvement.",
+    description: "Replaced a premium Shopify 2.0 theme with Next.js + Shopify Storefront API + Sanity CMS. Product page LCP dropped from 3.4s to 1.1s on mobile. Mobile conversion rate increased from 1.3% to 2.1% validated in A/B test. Additional annualized GMV: +£480,000 at cutover. 34 editorial buying guides with embedded Shopify product cards published in 90 days no developer involvement.",
     slug: "retail-headless-migration",
-    badge: "Wellness D2C \xC2\xB7 +$480K GMV"
+    badge: "Wellness D2C \xC2\xB7 +£480K GMV"
   }
 };
 const shopifyDevelopmentOverride = {
@@ -3794,7 +3794,7 @@ const shopifyDevelopmentOverride = {
   ],
   // marketStats: [
   //   { label: 'Stores built on Shopify globally', value: '4.6M+' },
-  //   { label: 'Annual GMV processed on Shopify', value: '$235B' },
+  //   { label: 'Annual GMV processed on Shopify', value: '£235B' },
   //   { label: 'Mobile-first traffic share', value: '70%' },
   //   { label: 'Avg Shopify LCP on mobile', value: '2.5s' },
   // ],
@@ -3830,10 +3830,10 @@ const shopifyDevelopmentOverride = {
     { layer: "Ops", technologies: "GitHub, Vercel (for Hydrogen), Netlify, ShipStation" }
   ],
   pricingTiers: [
-    { type: "Custom Shopify Theme", investment: "$8,000 - $22,000", timeline: "5 - 9 weeks", bestFor: "Full custom Liquid theme, CWV compliant, all page templates" },
-    { type: "Shopify Plus Implementation", investment: "$12,000 - $35,000", timeline: "6 - 10 weeks", bestFor: "Plus setup, Checkout Extensibility, B2B, ERP integration" },
-    { type: "Shopify B2B Configuration", investment: "$8,000 - $25,000", timeline: "4 - 8 weeks", bestFor: "Company accounts, price lists, PO payment, rep portal" },
-    { type: "Migration to Shopify", investment: "$8,000 - $30,000", timeline: "4 - 8 weeks", bestFor: "Moving from WooCommerce/Magento without losing SEO rank" }
+    { type: "Custom Shopify Theme", investment: "£8,000 - £22,000", timeline: "5 - 9 weeks", bestFor: "Full custom Liquid theme, CWV compliant, all page templates" },
+    { type: "Shopify Plus Implementation", investment: "£12,000 - £35,000", timeline: "6 - 10 weeks", bestFor: "Plus setup, Checkout Extensibility, B2B, ERP integration" },
+    { type: "Shopify B2B Configuration", investment: "£8,000 - £25,000", timeline: "4 - 8 weeks", bestFor: "Company accounts, price lists, PO payment, rep portal" },
+    { type: "Migration to Shopify", investment: "£8,000 - £30,000", timeline: "4 - 8 weeks", bestFor: "Moving from WooCommerce/Magento without losing SEO rank" }
   ],
   industryUseCases: [
     { name: "D2C Fashion & Beauty", description: "Rich storytelling themes with high mobile conversion, loyalty integration, and editorial lookbooks." },
@@ -3847,19 +3847,19 @@ const shopifyDevelopmentOverride = {
       body: "Custom Shopify Themes, Shopify Plus Implementations, and Headless Storefronts That Convert for D2C Brands and B2B Merchants",
       items: [
         "4.6M active Shopify merchants worldwide the largest commerce platform on earth",
-        "$235B GMV processed on Shopify in 2023",
-        "2.5s average Shopify theme LCP on mobile a $50K-$500K annual conversion opportunity",
-        "$500+/month Shopify Plus fee vs. unlimited custom checkout and B2B functionality"
+        "£235B GMV processed on Shopify in 2023",
+        "2.5s average Shopify theme LCP on mobile a £50K-£500K annual conversion opportunity",
+        "£500+/month Shopify Plus fee vs. unlimited custom checkout and B2B functionality"
       ]
     },
     {
       heading: "Shopify Plan Selection Basic vs. Shopify vs. Advanced vs. Plus",
       body: "Getting this wrong means either overpaying for Plus features you do not use, or hitting the ceiling of Basic/Advanced when your business requires Checkout Extensibility, B2B accounts, or Flow automation.",
       items: [
-        "Basic ($39/mo): 2.0% transaction fees (non-Payments), 2 staff accounts. Best for small brands, proof-of-concept, budget-first launch.",
-        "Shopify ($105/mo): 1.0% fees, 5 staff accounts. Best for growing D2C, multiple staff, some custom needs.",
-        "Advanced ($399/mo): 0.5% fees, 15 staff accounts. Best for scaling brands, advanced reporting, lower transaction fees.",
-        "Plus ($2,300/mo): 0.15% fees, unlimited staff. Full Checkout Extensibility, Shopify B2B, Flow automation, Launchpad, up to 9 expansion stores. Upgrade when GMV exceeds $80,000/month or B2B/checkout customization required."
+        "Basic (£39/mo): 2.0% transaction fees (non-Payments), 2 staff accounts. Best for small brands, proof-of-concept, budget-first launch.",
+        "Shopify (£105/mo): 1.0% fees, 5 staff accounts. Best for growing D2C, multiple staff, some custom needs.",
+        "Advanced (£399/mo): 0.5% fees, 15 staff accounts. Best for scaling brands, advanced reporting, lower transaction fees.",
+        "Plus (£2,300/mo): 0.15% fees, unlimited staff. Full Checkout Extensibility, Shopify B2B, Flow automation, Launchpad, up to 9 expansion stores. Upgrade when GMV exceeds £80,000/month or B2B/checkout customization required."
       ]
     },
     {
@@ -3898,11 +3898,11 @@ const shopifyDevelopmentOverride = {
   faqs: [
     {
       question: "How much does Shopify development cost?",
-      answer: "Shopify development costs range from $2,000 for a store audit to $55,000 for a headless Shopify storefront with Next.js. A custom Shopify theme costs $8,000-$22,000 (5-9 weeks). A Shopify Plus implementation with Checkout Extensibility, B2B, and ERP integration costs $12,000-$35,000 (6-10 weeks). A custom Shopify app costs $10,000-$40,000. All pricing is fixed after a free strategy session."
+      answer: "Shopify development costs range from £2,000 for a store audit to £55,000 for a headless Shopify storefront with Next.js. A custom Shopify theme costs £8,000-£22,000 (5-9 weeks). A Shopify Plus implementation with Checkout Extensibility, B2B, and ERP integration costs £12,000-£35,000 (6-10 weeks). A custom Shopify app costs £10,000-£40,000. All pricing is fixed after a free strategy session."
     },
     {
       question: "What is the difference between Shopify and Shopify Plus?",
-      answer: "Shopify Plus ($2,300+/month) is the enterprise tier. Key Plus-only capabilities: Checkout Extensibility (custom checkout UI and validation), Shopify B2B (company accounts with customer-specific price lists, purchase order payment), Shopify Flow (workflow automation), Launchpad (scheduled flash sales), unlimited staff accounts, lower transaction fees (0.15% vs 2.0% on Basic), and expansion stores. Breakeven where fee savings offset higher cost is typically $80,000 GMV/month."
+      answer: "Shopify Plus (£2,300+/month) is the enterprise tier. Key Plus-only capabilities: Checkout Extensibility (custom checkout UI and validation), Shopify B2B (company accounts with customer-specific price lists, purchase order payment), Shopify Flow (workflow automation), Launchpad (scheduled flash sales), unlimited staff accounts, lower transaction fees (0.15% vs 2.0% on Basic), and expansion stores. Breakeven where fee savings offset higher cost is typically £80,000 GMV/month."
     },
     {
       question: "What is Checkout Extensibility in Shopify Plus?",
@@ -3934,7 +3934,7 @@ const shopifyDevelopmentOverride = {
     },
     {
       question: "Do I need Shopify Plus?",
-      answer: "Shopify Plus is recommended for brands doing over $1M GMV or requiring advanced B2B features, custom checkouts, Checkout Extensibility, or dedicated enterprise support. We help evaluate ROI based on your specific requirements including transaction fee savings analysis."
+      answer: "Shopify Plus is recommended for brands doing over £1M GMV or requiring advanced B2B features, custom checkouts, Checkout Extensibility, or dedicated enterprise support. We help evaluate ROI based on your specific requirements including transaction fee savings analysis."
     }
   ],
   testimonial: {
@@ -3944,7 +3944,7 @@ const shopifyDevelopmentOverride = {
   },
   caseStudy: {
     title: "Shopify Plus Implementation for a D2C Health & Wellness Brand",
-    description: "Upgraded from Shopify Advanced to Plus, migrated checkout.liquid to Checkout Extensibility, configured B2B wholesale portal, and optimized Core Web Vitals. Mobile LCP: 3.8s \xE2\u2020\u2019 1.6s. Lighthouse Performance: 52 \xE2\u2020\u2019 81. Mobile conversion rate +12% ($216K annual revenue). Wholesale order volume: $47K in first 90 days.",
+    description: "Upgraded from Shopify Advanced to Plus, migrated checkout.liquid to Checkout Extensibility, configured B2B wholesale portal, and optimized Core Web Vitals. Mobile LCP: 3.8s \xE2\u2020\u2019 1.6s. Lighthouse Performance: 52 \xE2\u2020\u2019 81. Mobile conversion rate +12% (£216K annual revenue). Wholesale order volume: £47K in first 90 days.",
     slug: "retailer-shopify-migration",
     badge: "Plus Migration \xC2\xB7 +12% CVR"
   }
@@ -4012,11 +4012,11 @@ const androidAppDevelopmentOverride = {
     { layer: "DevOps", technologies: "Fastlane, GitHub Actions, CI/CD pipelines" }
   ],
   pricingTiers: [
-    { type: "Simple Android App", investment: "$6,000 - $15,000", timeline: "5 - 8 weeks", bestFor: "Basic app with core features" },
-    { type: "Business Android App", investment: "$12,000 - $35,000", timeline: "8 - 12 weeks", bestFor: "Multi-feature app with backend and integrations" },
-    { type: "SaaS Android App", investment: "$20,000 - $60,000", timeline: "3 - 5 months", bestFor: "SaaS product with dashboards, billing, and user management" },
-    { type: "Enterprise Android App", investment: "$30,000 - $100,000+", timeline: "4 - 7 months", bestFor: "Complex enterprise app with integrations and compliance" },
-    { type: "Android MVP", investment: "$8,000 - $25,000", timeline: "6 - 10 weeks", bestFor: "Testing an idea before full investment" }
+    { type: "Simple Android App", investment: "£6,000 - £15,000", timeline: "5 - 8 weeks", bestFor: "Basic app with core features" },
+    { type: "Business Android App", investment: "£12,000 - £35,000", timeline: "8 - 12 weeks", bestFor: "Multi-feature app with backend and integrations" },
+    { type: "SaaS Android App", investment: "£20,000 - £60,000", timeline: "3 - 5 months", bestFor: "SaaS product with dashboards, billing, and user management" },
+    { type: "Enterprise Android App", investment: "£30,000 - £100,000+", timeline: "4 - 7 months", bestFor: "Complex enterprise app with integrations and compliance" },
+    { type: "Android MVP", investment: "£8,000 - £25,000", timeline: "6 - 10 weeks", bestFor: "Testing an idea before full investment" }
   ],
   industryUseCases: [
     { name: "Healthcare", description: "Patient management, appointment booking, telehealth platforms, and clinical workflow Android apps." },
@@ -4157,15 +4157,15 @@ const crossPlatformAppDevelopmentOverride = {
     { layer: "Analytics", technologies: "Firebase Analytics + Crashlytics, Sentry, Mixpanel, Amplitude" }
   ],
   pricingTiers: [
-    { type: "App Scoping & Framework Selection", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "Architecture + framework recommendation + fixed-price proposal" },
-    { type: "Cross-Platform MVP", investment: "$20,000 - $45,000", timeline: "8 - 12 weeks", bestFor: "Core features, Firebase, both stores. Native both: $30-65K" },
-    { type: "Consumer App (full-featured)", investment: "$28,000 - $65,000", timeline: "10 - 16 weeks", bestFor: "Full feature set, IAP, push, both stores. Native both: $45-110K" },
-    { type: "Enterprise App", investment: "$30,000 - $75,000", timeline: "10 - 16 weeks", bestFor: "SSO, offline-first, MDM, both stores. Native both: $50-120K" },
-    { type: "React Native (New Architecture)", investment: "$25,000 - $60,000", timeline: "9 - 14 weeks", bestFor: "JSI + Fabric + TurboModules, both stores" },
-    { type: "Flutter App", investment: "$22,000 - $58,000", timeline: "8 - 13 weeks", bestFor: "Riverpod, GoRouter, both stores" },
-    { type: "Native Module / Platform Channel", investment: "$8,000 - $25,000", timeline: "3 - 6 weeks", bestFor: "Bridge to platform-specific SDK" },
-    { type: "App Refactor / Architecture Upgrade", investment: "$10,000 - $30,000", timeline: "4 - 8 weeks", bestFor: "New Arch migration, test coverage, dependency update" },
-    { type: "Maintenance Retainer", investment: "$2,500 - $7,000/mo", timeline: "Ongoing", bestFor: "OS updates, store compliance, feature dev" }
+    { type: "App Scoping & Framework Selection", investment: "£2,000 - £5,000", timeline: "1 week", bestFor: "Architecture + framework recommendation + fixed-price proposal" },
+    { type: "Cross-Platform MVP", investment: "£20,000 - £45,000", timeline: "8 - 12 weeks", bestFor: "Core features, Firebase, both stores. Native both: £30-65K" },
+    { type: "Consumer App (full-featured)", investment: "£28,000 - £65,000", timeline: "10 - 16 weeks", bestFor: "Full feature set, IAP, push, both stores. Native both: £45-110K" },
+    { type: "Enterprise App", investment: "£30,000 - £75,000", timeline: "10 - 16 weeks", bestFor: "SSO, offline-first, MDM, both stores. Native both: £50-120K" },
+    { type: "React Native (New Architecture)", investment: "£25,000 - £60,000", timeline: "9 - 14 weeks", bestFor: "JSI + Fabric + TurboModules, both stores" },
+    { type: "Flutter App", investment: "£22,000 - £58,000", timeline: "8 - 13 weeks", bestFor: "Riverpod, GoRouter, both stores" },
+    { type: "Native Module / Platform Channel", investment: "£8,000 - £25,000", timeline: "3 - 6 weeks", bestFor: "Bridge to platform-specific SDK" },
+    { type: "App Refactor / Architecture Upgrade", investment: "£10,000 - £30,000", timeline: "4 - 8 weeks", bestFor: "New Arch migration, test coverage, dependency update" },
+    { type: "Maintenance Retainer", investment: "£2,500 - £7,000/mo", timeline: "Ongoing", bestFor: "OS updates, store compliance, feature dev" }
   ],
   industryUseCases: [
     { name: "B2B Field Service & Logistics", description: "Offline-first cross-platform apps for technicians, drivers, and inspectors. Single codebase deploys to both iOS and Android fleets." },
@@ -4241,7 +4241,7 @@ const crossPlatformAppDevelopmentOverride = {
     },
     {
       question: "How much does cross-platform app development cost?",
-      answer: "Cross-platform app development costs range from $2,000 for a framework selection and scoping engagement to $75,000 for a full enterprise cross-platform app with SSO, offline-first architecture, native module bridging, and both App Store and Google Play submission. A cross-platform MVP costs $20,000-45,000 and takes 8-12 weeks. A full-featured consumer app costs $28,000-65,000. For comparison, building the same app natively (separate Swift + Kotlin codebases) would cost $45,000-110,000 making cross-platform 30-45% more cost-effective for most use cases."
+      answer: "Cross-platform app development costs range from £2,000 for a framework selection and scoping engagement to £75,000 for a full enterprise cross-platform app with SSO, offline-first architecture, native module bridging, and both App Store and Google Play submission. A cross-platform MVP costs £20,000-45,000 and takes 8-12 weeks. A full-featured consumer app costs £28,000-65,000. For comparison, building the same app natively (separate Swift + Kotlin codebases) would cost £45,000-110,000 making cross-platform 30-45% more cost-effective for most use cases."
     },
     {
       question: "Is cross-platform app performance as good as native?",
@@ -4339,11 +4339,11 @@ const iosAppDevelopmentOverride = {
     { layer: "DevOps", technologies: "Fastlane, GitHub Actions, CI/CD pipelines" }
   ],
   pricingTiers: [
-    { type: "Simple iOS App", investment: "$8,000 - $20,000", timeline: "6 - 10 weeks", bestFor: "Basic app with core features for iPhone" },
-    { type: "Business iOS App", investment: "$15,000 - $40,000", timeline: "8 - 14 weeks", bestFor: "Multi-feature app with backend and integrations" },
-    { type: "SaaS iOS App", investment: "$25,000 - $60,000", timeline: "3 - 5 months", bestFor: "SaaS product with dashboards, billing, and user management" },
-    { type: "Enterprise iOS App", investment: "$35,000 - $100,000+", timeline: "4 - 7 months", bestFor: "Complex enterprise app with integrations and compliance" },
-    { type: "iOS MVP", investment: "$10,000 - $25,000", timeline: "6 - 10 weeks", bestFor: "Testing an idea before full investment" }
+    { type: "Simple iOS App", investment: "£8,000 - £20,000", timeline: "6 - 10 weeks", bestFor: "Basic app with core features for iPhone" },
+    { type: "Business iOS App", investment: "£15,000 - £40,000", timeline: "8 - 14 weeks", bestFor: "Multi-feature app with backend and integrations" },
+    { type: "SaaS iOS App", investment: "£25,000 - £60,000", timeline: "3 - 5 months", bestFor: "SaaS product with dashboards, billing, and user management" },
+    { type: "Enterprise iOS App", investment: "£35,000 - £100,000+", timeline: "4 - 7 months", bestFor: "Complex enterprise app with integrations and compliance" },
+    { type: "iOS MVP", investment: "£10,000 - £25,000", timeline: "6 - 10 weeks", bestFor: "Testing an idea before full investment" }
   ],
   industryUseCases: [
     { name: "Healthcare", description: "Patient management, appointment booking, telehealth platforms, and clinical workflow iOS apps." },
@@ -4485,15 +4485,15 @@ const flutterAppDevelopmentOverride = {
     { layer: "Testing", technologies: "flutter_test (unit/widget), integration_test (E2E), Mockito, Maestro (cross-platform E2E)" }
   ],
   pricingTiers: [
-    { type: "Flutter Scoping", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "Architecture, state management, platform channels map, both stores plan" },
-    { type: "Flutter MVP", investment: "$18,000 - $40,000", timeline: "8 - 12 weeks", bestFor: "Core features, Riverpod, Firebase, iOS+Android, Codemagic CI/CD" },
-    { type: "Flutter Consumer App", investment: "$25,000 - $60,000", timeline: "9 - 14 weeks", bestFor: "Full feature set, in-app purchases, custom animations, both stores" },
-    { type: "Flutter Enterprise App", investment: "$28,000 - $70,000", timeline: "10 - 15 weeks", bestFor: "SSO, offline-first, MDM, platform channels, both stores" },
-    { type: "Flutter + Web Target", investment: "$30,000 - $75,000", timeline: "10 - 16 weeks", bestFor: "Mobile + web from one codebase, PWA config, Cloudflare deploy" },
-    { type: "Custom Animation / UI", investment: "$8,000 - $25,000", timeline: "3 - 6 weeks", bestFor: "Complex animation system, custom painter, Lottie integration" },
-    { type: "Flutter Modernisation", investment: "$10,000 - $30,000", timeline: "4 - 8 weeks", bestFor: "Null safety, Riverpod migration, GoRouter, test coverage" },
-    { type: "Platform Channel Development", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "pigeon-based native bridge for hardware SDK or platform API" },
-    { type: "Flutter Maintenance Retainer", investment: "$2,500 - $7,000/mo", timeline: "Ongoing", bestFor: "SDK upgrades, store compliance, feature dev, crash monitoring" }
+    { type: "Flutter Scoping", investment: "£2,000 - £5,000", timeline: "1 week", bestFor: "Architecture, state management, platform channels map, both stores plan" },
+    { type: "Flutter MVP", investment: "£18,000 - £40,000", timeline: "8 - 12 weeks", bestFor: "Core features, Riverpod, Firebase, iOS+Android, Codemagic CI/CD" },
+    { type: "Flutter Consumer App", investment: "£25,000 - £60,000", timeline: "9 - 14 weeks", bestFor: "Full feature set, in-app purchases, custom animations, both stores" },
+    { type: "Flutter Enterprise App", investment: "£28,000 - £70,000", timeline: "10 - 15 weeks", bestFor: "SSO, offline-first, MDM, platform channels, both stores" },
+    { type: "Flutter + Web Target", investment: "£30,000 - £75,000", timeline: "10 - 16 weeks", bestFor: "Mobile + web from one codebase, PWA config, Cloudflare deploy" },
+    { type: "Custom Animation / UI", investment: "£8,000 - £25,000", timeline: "3 - 6 weeks", bestFor: "Complex animation system, custom painter, Lottie integration" },
+    { type: "Flutter Modernisation", investment: "£10,000 - £30,000", timeline: "4 - 8 weeks", bestFor: "Null safety, Riverpod migration, GoRouter, test coverage" },
+    { type: "Platform Channel Development", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "pigeon-based native bridge for hardware SDK or platform API" },
+    { type: "Flutter Maintenance Retainer", investment: "£2,500 - £7,000/mo", timeline: "Ongoing", bestFor: "SDK upgrades, store compliance, feature dev, crash monitoring" }
   ],
   industryUseCases: [
     { name: "B2B Field Service", description: "Offline-first Flutter apps for technicians. Drift local persistence, background sync, biometric auth. Single codebase deploys to iOS and Android fleets." },
@@ -4565,7 +4565,7 @@ const flutterAppDevelopmentOverride = {
     },
     {
       question: "How much does Flutter app development cost?",
-      answer: "Flutter app development costs range from $2,000 for a scoping engagement to $75,000 for a Flutter app targeting mobile, web, and enterprise requirements. A Flutter MVP costs $18,000-40,000 and takes 8-12 weeks. A full-featured Flutter consumer app costs $25,000-60,000. A Flutter enterprise app with SSO and offline-first architecture costs $28,000-70,000. Adding a Flutter web target to an existing mobile app costs $8,000-20,000 additional. Flutter is typically 5-15% more affordable than equivalent React Native projects of similar scope, because Dart's strong type system and Flutter's architectural consistency reduce debugging time."
+      answer: "Flutter app development costs range from £2,000 for a scoping engagement to £75,000 for a Flutter app targeting mobile, web, and enterprise requirements. A Flutter MVP costs £18,000-40,000 and takes 8-12 weeks. A full-featured Flutter consumer app costs £25,000-60,000. A Flutter enterprise app with SSO and offline-first architecture costs £28,000-70,000. Adding a Flutter web target to an existing mobile app costs £8,000-20,000 additional. Flutter is typically 5-15% more affordable than equivalent React Native projects of similar scope, because Dart's strong type system and Flutter's architectural consistency reduce debugging time."
     },
     {
       question: "Can Flutter apps access native iOS and Android features?",
@@ -4655,15 +4655,15 @@ const reactNativeDevelopmentOverride = {
     { layer: "CI/CD & Testing", technologies: "EAS Build, GitHub Actions, Jest + RNTL, Detox, Maestro, MSW" }
   ],
   pricingTiers: [
-    { type: "React Native Scoping", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "Architecture, Expo vs bare, state management, native module map" },
-    { type: "React Native MVP (Expo)", investment: "$15,000 - $35,000", timeline: "8 - 12 weeks", bestFor: "Expo Managed, TypeScript, Firebase, EAS Build, both stores" },
-    { type: "React Native MVP (Bare)", investment: "$18,000 - $40,000", timeline: "8 - 12 weeks", bestFor: "Bare/New Architecture, Zustand, WatermelonDB, both stores" },
-    { type: "Consumer App (Full)", investment: "$25,000 - $60,000", timeline: "9 - 14 weeks", bestFor: "Full features, RevenueCat IAP, custom animations, Detox E2E" },
-    { type: "Enterprise App", investment: "$28,000 - $70,000", timeline: "10 - 15 weeks", bestFor: "SSO, offline-first, MDM, TurboModules, certificate pinning" },
-    { type: "Native TurboModule Dev", investment: "$8,000 - $25,000", timeline: "3 - 6 weeks", bestFor: "JSI + Codegen spec, New Architecture compatible, both platforms" },
-    { type: "New Architecture Migration", investment: "$10,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Legacy bridge \xE2\u2020\u2019 JSI + Fabric + TurboModules migration" },
-    { type: "RN Legacy Modernisation", investment: "$10,000 - $30,000", timeline: "4 - 8 weeks", bestFor: "TypeScript, Zustand, MMKV, New Architecture, test coverage" },
-    { type: "React Native Retainer", investment: "$2,500 - $7,000/mo", timeline: "Ongoing", bestFor: "OS updates, store compliance, feature dev, crash monitoring" }
+    { type: "React Native Scoping", investment: "£2,000 - £5,000", timeline: "1 week", bestFor: "Architecture, Expo vs bare, state management, native module map" },
+    { type: "React Native MVP (Expo)", investment: "£15,000 - £35,000", timeline: "8 - 12 weeks", bestFor: "Expo Managed, TypeScript, Firebase, EAS Build, both stores" },
+    { type: "React Native MVP (Bare)", investment: "£18,000 - £40,000", timeline: "8 - 12 weeks", bestFor: "Bare/New Architecture, Zustand, WatermelonDB, both stores" },
+    { type: "Consumer App (Full)", investment: "£25,000 - £60,000", timeline: "9 - 14 weeks", bestFor: "Full features, RevenueCat IAP, custom animations, Detox E2E" },
+    { type: "Enterprise App", investment: "£28,000 - £70,000", timeline: "10 - 15 weeks", bestFor: "SSO, offline-first, MDM, TurboModules, certificate pinning" },
+    { type: "Native TurboModule Dev", investment: "£8,000 - £25,000", timeline: "3 - 6 weeks", bestFor: "JSI + Codegen spec, New Architecture compatible, both platforms" },
+    { type: "New Architecture Migration", investment: "£10,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Legacy bridge \xE2\u2020\u2019 JSI + Fabric + TurboModules migration" },
+    { type: "RN Legacy Modernisation", investment: "£10,000 - £30,000", timeline: "4 - 8 weeks", bestFor: "TypeScript, Zustand, MMKV, New Architecture, test coverage" },
+    { type: "React Native Retainer", investment: "£2,500 - £7,000/mo", timeline: "Ongoing", bestFor: "OS updates, store compliance, feature dev, crash monitoring" }
   ],
   industryUseCases: [
     { name: "B2B Field Service", description: "Offline-first React Native with WatermelonDB. Zustand for state. New Architecture for performance. Single TypeScript codebase deploys to iOS and Android fleets." },
@@ -4743,7 +4743,7 @@ const reactNativeDevelopmentOverride = {
     },
     {
       question: "How much does React Native app development cost?",
-      answer: "React Native app development costs range from $2,000 for a scoping session to $70,000 for a full enterprise app with SSO, offline-first architecture, and custom TurboModule development. A React Native MVP costs $15,000-40,000 depending on whether Expo Managed or Bare is used and the feature scope. A full consumer app costs $25,000-60,000. An enterprise app with offline-first data, SSO, and MDM compatibility costs $28,000-70,000. New Architecture migration of an existing legacy React Native app costs $10,000-35,000. Both stores are included as standard on all engagements."
+      answer: "React Native app development costs range from £2,000 for a scoping session to £70,000 for a full enterprise app with SSO, offline-first architecture, and custom TurboModule development. A React Native MVP costs £15,000-40,000 depending on whether Expo Managed or Bare is used and the feature scope. A full consumer app costs £25,000-60,000. An enterprise app with offline-first data, SSO, and MDM compatibility costs £28,000-70,000. New Architecture migration of an existing legacy React Native app costs £10,000-35,000. Both stores are included as standard on all engagements."
     },
     {
       question: "What is EAS Build and do I need it?",
@@ -4795,7 +4795,7 @@ const woocommerceDevelopmentOverride = {
   // marketStats: [
   //   { label: 'Global e-commerce market share', value: '39%' },
   //   { label: 'Active WooCommerce stores', value: '6M+' },
-  //   { label: 'Platform licensing cost', value: '$0' },
+  //   { label: 'Platform licensing cost', value: '£0' },
   //   { label: 'Plugins available', value: '6,000+' },
   // ],
   servicesCards: [
@@ -4830,10 +4830,10 @@ const woocommerceDevelopmentOverride = {
     { layer: "DevOps", technologies: "WP-CLI, GitHub Actions, Docker" }
   ],
   pricingTiers: [
-    { type: "Custom WooCommerce Theme", investment: "$8,000 - $22,000", timeline: "5 - 9 weeks", bestFor: "Full custom theme, CWV optimisation, Klaviyo setup" },
-    { type: "WooCommerce B2B Wholesale", investment: "$8,000 - $28,000", timeline: "4 - 9 weeks", bestFor: "Customer pricing, PO payment, registration workflow" },
-    { type: "Custom Plugin Development", investment: "$8,000 - $35,000", timeline: "4 - 9 weeks", bestFor: "Custom product types, pricing logic, ERP integration" },
-    { type: "Headless WooCommerce", investment: "$18,000 - $48,000", timeline: "7 - 12 weeks", bestFor: "WPGraphQL + Next.js, SSG product pages" }
+    { type: "Custom WooCommerce Theme", investment: "£8,000 - £22,000", timeline: "5 - 9 weeks", bestFor: "Full custom theme, CWV optimisation, Klaviyo setup" },
+    { type: "WooCommerce B2B Wholesale", investment: "£8,000 - £28,000", timeline: "4 - 9 weeks", bestFor: "Customer pricing, PO payment, registration workflow" },
+    { type: "Custom Plugin Development", investment: "£8,000 - £35,000", timeline: "4 - 9 weeks", bestFor: "Custom product types, pricing logic, ERP integration" },
+    { type: "Headless WooCommerce", investment: "£18,000 - £48,000", timeline: "7 - 12 weeks", bestFor: "WPGraphQL + Next.js, SSG product pages" }
   ],
   industryUseCases: [
     { name: "Content-Commerce Hybrid", description: "Blogs or media sites that sell products alongside high-volume editorial content with native WordPress SEO." },
@@ -4848,7 +4848,7 @@ const woocommerceDevelopmentOverride = {
       items: [
         "39% of all e-commerce websites globally run on WooCommerce",
         "6M+ active WooCommerce stores the world's most used e-commerce plugin",
-        "$0 platform licensing cost WooCommerce is open-source, no monthly SaaS fees or transaction fees",
+        "£0 platform licensing cost WooCommerce is open-source, no monthly SaaS fees or transaction fees",
         "60% of poorly-configured WooCommerce stores fail Core Web Vitals on mobile performance is the most common growth blocker"
       ]
     },
@@ -4856,11 +4856,11 @@ const woocommerceDevelopmentOverride = {
       heading: "WooCommerce vs Shopify The Honest Comparison",
       body: "",
       items: [
-        "Platform cost: WooCommerce free (open-source) | Shopify $39-$399+/month + transaction fees (0.5-2%)",
+        "Platform cost: WooCommerce free (open-source) | Shopify £39-£399+/month + transaction fees (0.5-2%)",
         "Content integration: WooCommerce native WordPress | Shopify separate blog from product pages, limited content capabilities",
         "SEO control: WooCommerce full Yoast/Rank Math, any URL structure | Shopify good but limited imposed URL structures",
         "Customisation depth: WooCommerce unlimited PHP-level access, database control | Shopify Platform limits, checkout requires Plus",
-        "B2B/wholesale: WooCommerce excellent dedicated B2B plugins | Shopify Plus only ($2,300/month)",
+        "B2B/wholesale: WooCommerce excellent dedicated B2B plugins | Shopify Plus only (£2,300/month)",
         "Data ownership: WooCommerce complete your server, your database | Shopify accessible via API but stored on Shopify servers"
       ]
     },
@@ -4869,7 +4869,7 @@ const woocommerceDevelopmentOverride = {
       body: "",
       items: [
         "WooCommerce: Free platform cost, native WordPress content integration, good when optimized performance, excellent B2B, higher maintenance. Best for WordPress teams, content-commerce, B2B wholesale.",
-        "Shopify: $39-$2,300+/month platform cost, limited content integration, moderate performance ceiling, B2B only on Plus ($2,300/month), low maintenance. Best for fast launch, standard D2C.",
+        "Shopify: £39-£2,300+/month platform cost, limited content integration, moderate performance ceiling, B2B only on Plus (£2,300/month), low maintenance. Best for fast launch, standard D2C.",
         "Headless WooCommerce: Free WooCommerce + hosting + frontend, native WordPress + any frontend, excellent performance (static SSG), excellent B2B, highest maintenance. Best for performance-critical content-commerce."
       ]
     },
@@ -4908,11 +4908,11 @@ const woocommerceDevelopmentOverride = {
     },
     {
       question: "Should I use WooCommerce or Shopify?",
-      answer: "WooCommerce is better when: your business is already on WordPress and content is central to your brand strategy; you need B2B wholesale pricing without paying $2,300/month for Shopify Plus; you require complete data ownership; or you need deep customisation that Shopify constrains. Shopify is better when: you want fastest launch without server management; your team is non-technical; your catalog and checkout are standard D2C; or you need global payment methods. Clickmasters builds on both and recommends based on your requirements."
+      answer: "WooCommerce is better when: your business is already on WordPress and content is central to your brand strategy; you need B2B wholesale pricing without paying £2,300/month for Shopify Plus; you require complete data ownership; or you need deep customisation that Shopify constrains. Shopify is better when: you want fastest launch without server management; your team is non-technical; your catalog and checkout are standard D2C; or you need global payment methods. Clickmasters builds on both and recommends based on your requirements."
     },
     {
       question: "How much does WooCommerce development cost?",
-      answer: "Costs range from $2,000 for a performance audit to $48,000 for headless WooCommerce. A custom WooCommerce theme costs $8,000-$22,000 (5-9 weeks). B2B wholesale implementation costs $8,000-$28,000. Custom plugin costs $8,000-$35,000. Performance optimization costs $4,000-$12,000. Migration from Shopify/Magento costs $8,000-$28,000. All fixed-price after free strategy session. WooCommerce itself is free. Costs are for development, hosting, and premium plugins."
+      answer: "Costs range from £2,000 for a performance audit to £48,000 for headless WooCommerce. A custom WooCommerce theme costs £8,000-£22,000 (5-9 weeks). B2B wholesale implementation costs £8,000-£28,000. Custom plugin costs £8,000-£35,000. Performance optimization costs £4,000-£12,000. Migration from Shopify/Magento costs £8,000-£28,000. All fixed-price after free strategy session. WooCommerce itself is free. Costs are for development, hosting, and premium plugins."
     },
     {
       question: "Why is my WooCommerce store slow and how do I fix it?",
@@ -4920,7 +4920,7 @@ const woocommerceDevelopmentOverride = {
     },
     {
       question: "Can WooCommerce handle B2B wholesale pricing?",
-      answer: "Yes. WooCommerce with B2B King or Wholesale Suite provides: customer-group-based pricing (different price lists per group), individual account pricing, minimum order quantity enforcement, minimum order value requirements, purchase order payment (PO number capture, Net 30/60 terms), restricted catalog visibility, and sales rep accounts. This provides far more B2B capability than Shopify's native B2B features (which require $2,300/month Plus)."
+      answer: "Yes. WooCommerce with B2B King or Wholesale Suite provides: customer-group-based pricing (different price lists per group), individual account pricing, minimum order quantity enforcement, minimum order value requirements, purchase order payment (PO number capture, Net 30/60 terms), restricted catalog visibility, and sales rep accounts. This provides far more B2B capability than Shopify's native B2B features (which require £2,300/month Plus)."
     },
     {
       question: "How do you migrate from Shopify to WooCommerce?",
@@ -4932,7 +4932,7 @@ const woocommerceDevelopmentOverride = {
     },
     {
       question: "Do you provide ongoing WooCommerce maintenance?",
-      answer: "Yes. Clickmasters provides a WooCommerce maintenance retainer covering: monthly WordPress core, WooCommerce, and plugin updates (tested on staging), security monitoring, uptime monitoring with incident response, automated daily backups with monthly restore testing, performance monitoring (weekly Lighthouse score tracking), and monthly reporting. Maintenance retainers start at $2,000/month for stores under 500 orders/month."
+      answer: "Yes. Clickmasters provides a WooCommerce maintenance retainer covering: monthly WordPress core, WooCommerce, and plugin updates (tested on staging), security monitoring, uptime monitoring with incident response, automated daily backups with monthly restore testing, performance monitoring (weekly Lighthouse score tracking), and monthly reporting. Maintenance retainers start at £2,000/month for stores under 500 orders/month."
     },
     {
       question: "Is WooCommerce scalable?",
@@ -4975,10 +4975,10 @@ const ecommerceDevelopmentOverride = {
     "Performance & CRO"
   ],
   // marketStats: [
-  //   { label: 'Global e-commerce sales by 2025', value: '$7.4T' },
+  //   { label: 'Global e-commerce sales by 2025', value: '£7.4T' },
   //   { label: 'Conversion drop per 1s delay', value: '7%' },
   //   { label: 'B2B buyers preferring self-serve', value: '36%' },
-  //   { label: 'Revenue recovered per 100ms speed fix', value: '$2.4M' },
+  //   { label: 'Revenue recovered per 100ms speed fix', value: '£2.4M' },
   // ],
   servicesCards: [
     { title: "Shopify & Shopify Plus", description: "Custom Shopify theme development using Liquid built for performance, accessibility, and conversion. Plus-specific features like Checkout Extensibility and B2B catalogs." },
@@ -5015,11 +5015,11 @@ const ecommerceDevelopmentOverride = {
     { layer: "Analytics & CRO", technologies: "GA4 Enhanced E-commerce, Segment, Hotjar, VWO" }
   ],
   pricingTiers: [
-    { type: "Shopify Store (Custom)", investment: "$8,000 - $20,000", timeline: "4 - 7 weeks", bestFor: "D2C brands needing high-performance custom themes" },
-    { type: "Shopify Plus / ERP Build", investment: "$15,000 - $50,000", timeline: "6 - 12 weeks", bestFor: "Mid-market businesses with backend integration needs" },
-    { type: "Headless Commerce", investment: "$25,000 - $70,000", timeline: "8 - 14 weeks", bestFor: "Enterprise, high-traffic, and performance-critical sites" },
-    { type: "Custom B2B Portal", investment: "$30,000 - $80,000", timeline: "8 - 16 weeks", bestFor: "Wholesalers with complex pricing and contract rules" },
-    { type: "E-commerce Migration", investment: "$10,000 - $40,000", timeline: "4 - 10 weeks", bestFor: "Moving legacy stores without losing SEO authority" }
+    { type: "Shopify Store (Custom)", investment: "£8,000 - £20,000", timeline: "4 - 7 weeks", bestFor: "D2C brands needing high-performance custom themes" },
+    { type: "Shopify Plus / ERP Build", investment: "£15,000 - £50,000", timeline: "6 - 12 weeks", bestFor: "Mid-market businesses with backend integration needs" },
+    { type: "Headless Commerce", investment: "£25,000 - £70,000", timeline: "8 - 14 weeks", bestFor: "Enterprise, high-traffic, and performance-critical sites" },
+    { type: "Custom B2B Portal", investment: "£30,000 - £80,000", timeline: "8 - 16 weeks", bestFor: "Wholesalers with complex pricing and contract rules" },
+    { type: "E-commerce Migration", investment: "£10,000 - £40,000", timeline: "4 - 10 weeks", bestFor: "Moving legacy stores without losing SEO authority" }
   ],
   industryUseCases: [
     { name: "D2C Retail & Brands", description: "Optimized for mobile conversion, product storytelling, and subscription commerce." },
@@ -5079,11 +5079,11 @@ const ecommerceDevelopmentOverride = {
   faqs: [
     {
       question: "How much does e-commerce website development cost?",
-      answer: "Costs range from $8,000 for a custom Shopify store to $100,000+ for complex marketplaces or B2B portals. Most mid-market projects fall in the $25k-$50k range."
+      answer: "Costs range from £8,000 for a custom Shopify store to £100,000+ for complex marketplaces or B2B portals. Most mid-market projects fall in the £25k-£50k range."
     },
     {
       question: "Should I use Shopify or build a custom platform?",
-      answer: "Shopify is best for D2C under $10M GMV. Custom builds are better for complex B2B pricing, unique product configurators, or legacy ERP deep integrations."
+      answer: "Shopify is best for D2C under £10M GMV. Custom builds are better for complex B2B pricing, unique product configurators, or legacy ERP deep integrations."
     },
     {
       question: "What is headless commerce and when do I need it?",
@@ -5134,7 +5134,7 @@ const uiUxDesignOverride = {
     "Developer Handoff Ready"
   ],
   // marketStats: [
-  //   { label: 'Return for every $1 invested in UX (Forrester)', value: '$100' },
+  //   { label: 'Return for every £1 invested in UX (Forrester)', value: '£100' },
   //   { label: 'Conversion rate increase achievable through UX redesign', value: '200%' },
   //   { label: 'Of users won\'t return after a poor user experience', value: '83%' },
   //   { label: 'Reduction in development time with a proper design system', value: '50%' },
@@ -5154,7 +5154,7 @@ const uiUxDesignOverride = {
     { feature: "UI vs UX vs Product Design", description: "Clear taxonomy buyers need before evaluating partners | Basic: Terms used interchangeably" },
     { feature: "B2B-Specific UX Challenges", description: "Data density, role-based views, enterprise accessibility, complex workflows | Basic: Consumer-focused design principles only" },
     { feature: "Design System Value", description: "Long-term design asset reducing future development cost by 30-50% | Basic: No design system strategy" },
-    { feature: "Pricing Transparency", description: 'Explicit pricing across 9 engagement tiers from $3K to $60K | Basic: "Contact us for pricing" industry-wide gap' }
+    { feature: "Pricing Transparency", description: 'Explicit pricing across 9 engagement tiers from £3K to £60K | Basic: "Contact us for pricing" industry-wide gap' }
   ],
   processPhases: [
     { phase: "Phase 1", title: "Discovery & Research", timeline: "Week 1-2", text: "Stakeholder interviews, user research sessions, analytics review, competitive UX analysis. Deliverable: Research Synthesis Report + Design Direction Brief." },
@@ -5175,15 +5175,15 @@ const uiUxDesignOverride = {
     { layer: "Frontend Sync", technologies: "React, Vue, Angular component library integration" }
   ],
   pricingTiers: [
-    { type: "UX Audit", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Expert heuristic review, WCAG audit, prioritized issue list, fix recommendations" },
-    { type: "MVP Product Design", investment: "$10,000 - $25,000", timeline: "4 - 7 weeks", bestFor: "Discovery, IA, wireframes, high-fidelity UI, interactive prototype, handoff" },
-    { type: "Full Product Design", investment: "$20,000 - $60,000", timeline: "8 - 14 weeks", bestFor: "Full research, IA, wireframes, UI, usability testing, design system foundation, handoff" },
-    { type: "Design System (Foundation)", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "Design tokens, base component library, documentation, Figma library" },
-    { type: "Design System (Full)", investment: "$20,000 - $50,000", timeline: "6 - 10 weeks", bestFor: "Full component library + documentation site + dev framework integration" },
-    { type: "Web Application Redesign", investment: "$15,000 - $50,000", timeline: "6 - 12 weeks", bestFor: "UX audit, IA restructure, full UI redesign, usability validation, design system" },
-    { type: "Mobile App UI/UX Design", investment: "$12,000 - $35,000", timeline: "5 - 9 weeks", bestFor: "iOS + Android platform-native designs, interactive prototype, handoff" },
-    { type: "Design Sprint (5 days)", investment: "$5,000 - $10,000", timeline: "1 week", bestFor: "Rapid design sprint for specific feature or problem" },
-    { type: "Ongoing Design Retainer", investment: "$4,000 - $12,000/mo", timeline: "Ongoing", bestFor: "Dedicated design hours for feature design, design system maintenance, UX improvement" }
+    { type: "UX Audit", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Expert heuristic review, WCAG audit, prioritized issue list, fix recommendations" },
+    { type: "MVP Product Design", investment: "£10,000 - £25,000", timeline: "4 - 7 weeks", bestFor: "Discovery, IA, wireframes, high-fidelity UI, interactive prototype, handoff" },
+    { type: "Full Product Design", investment: "£20,000 - £60,000", timeline: "8 - 14 weeks", bestFor: "Full research, IA, wireframes, UI, usability testing, design system foundation, handoff" },
+    { type: "Design System (Foundation)", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "Design tokens, base component library, documentation, Figma library" },
+    { type: "Design System (Full)", investment: "£20,000 - £50,000", timeline: "6 - 10 weeks", bestFor: "Full component library + documentation site + dev framework integration" },
+    { type: "Web Application Redesign", investment: "£15,000 - £50,000", timeline: "6 - 12 weeks", bestFor: "UX audit, IA restructure, full UI redesign, usability validation, design system" },
+    { type: "Mobile App UI/UX Design", investment: "£12,000 - £35,000", timeline: "5 - 9 weeks", bestFor: "iOS + Android platform-native designs, interactive prototype, handoff" },
+    { type: "Design Sprint (5 days)", investment: "£5,000 - £10,000", timeline: "1 week", bestFor: "Rapid design sprint for specific feature or problem" },
+    { type: "Ongoing Design Retainer", investment: "£4,000 - £12,000/mo", timeline: "Ongoing", bestFor: "Dedicated design hours for feature design, design system maintenance, UX improvement" }
   ],
   industryUseCases: [
     { name: "SaaS Platforms", description: "Reducing complex data complexity into intuitive dashboards that drive user retention and feature adoption." },
@@ -5217,7 +5217,7 @@ const uiUxDesignOverride = {
     },
     {
       heading: "The UX Investment ROI Benchmark",
-      body: "Forrester Research consistently finds a $100 return for every $1 invested in UX improvement. For a B2B SaaS company with $5M ARR, a 15% reduction in support ticket volume from UX improvements saves $150-300K annually. A 20% improvement in onboarding completion rate achievable through structured UX redesign typically increases 90-day retention by 12-18%, directly compounding ARR.",
+      body: "Forrester Research consistently finds a £100 return for every £1 invested in UX improvement. For a B2B SaaS company with £5M ARR, a 15% reduction in support ticket volume from UX improvements saves £150-300K annually. A 20% improvement in onboarding completion rate achievable through structured UX redesign typically increases 90-day retention by 12-18%, directly compounding ARR.",
       items: []
     },
     {
@@ -5256,7 +5256,7 @@ const uiUxDesignOverride = {
     },
     {
       question: "How much does UI/UX design cost?",
-      answer: "UI/UX design costs range from $3,000 for a focused UX audit to $60,000 for a full product design engagement with research, wireframing, high-fidelity UI, usability testing, and a design system. The primary cost drivers are: number of screens and user flows, depth of UX research required, whether usability testing is included, design system scope, and whether mobile designs are needed. A UX audit ($3,000-8,000) is often the best entry point for existing products it identifies the highest-value improvements before committing to a full redesign budget."
+      answer: "UI/UX design costs range from £3,000 for a focused UX audit to £60,000 for a full product design engagement with research, wireframing, high-fidelity UI, usability testing, and a design system. The primary cost drivers are: number of screens and user flows, depth of UX research required, whether usability testing is included, design system scope, and whether mobile designs are needed. A UX audit (£3,000-8,000) is often the best entry point for existing products it identifies the highest-value improvements before committing to a full redesign budget."
     },
     {
       question: "What is a design system and do I need one?",
@@ -5317,7 +5317,7 @@ const jamstackDevelopmentOverride = {
   // marketStats: [
   //   { label: 'Median page load vs WordPress', value: '10x Faster' },
   //   { label: 'Uptime via CDN distribution', value: '99.9%' },
-  //   { label: 'Ongoing server maintenance cost', value: '$0' },
+  //   { label: 'Ongoing server maintenance cost', value: '£0' },
   //   { label: 'Time to First Byte from Edge', value: '<100ms' },
   // ],
   servicesCards: [
@@ -5352,10 +5352,10 @@ const jamstackDevelopmentOverride = {
     { layer: "Search & Tools", technologies: "Algolia, Pagefind, Vitest, Playwright" }
   ],
   pricingTiers: [
-    { type: "JAMstack Architecture Review", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "Internal teams needing a migration or perf roadmap" },
-    { type: "Next.js Marketing Site", investment: "$10,000 - $28,000", timeline: "4 - 8 weeks", bestFor: "SaaS marketing sites and content-heavy B2B sites" },
-    { type: "Next.js SaaS Application", investment: "$15,000 - $45,000", timeline: "6 - 10 weeks", bestFor: "Dynamic apps requiring SSR, auth, and CI/CD" },
-    { type: "WP to JAMstack Migration", investment: "$12,000 - $40,000", timeline: "5 - 10 weeks", bestFor: "Eliminating WordPress maintenance and speed issues" }
+    { type: "JAMstack Architecture Review", investment: "£2,000 - £5,000", timeline: "1 week", bestFor: "Internal teams needing a migration or perf roadmap" },
+    { type: "Next.js Marketing Site", investment: "£10,000 - £28,000", timeline: "4 - 8 weeks", bestFor: "SaaS marketing sites and content-heavy B2B sites" },
+    { type: "Next.js SaaS Application", investment: "£15,000 - £45,000", timeline: "6 - 10 weeks", bestFor: "Dynamic apps requiring SSR, auth, and CI/CD" },
+    { type: "WP to JAMstack Migration", investment: "£12,000 - £40,000", timeline: "5 - 10 weeks", bestFor: "Eliminating WordPress maintenance and speed issues" }
   ],
   industryUseCases: [
     { name: "SaaS Marketing", description: "Sub-second loads for trial signups and demo requests with near-instant content updates via ISR." },
@@ -5420,7 +5420,7 @@ const jamstackDevelopmentOverride = {
     },
     {
       question: "What is the cost of maintenance?",
-      answer: "Ongoing maintenance costs are near zero. Because there is no server OS, PHP, or database to manage, you only pay for your SaaS platform (e.g., Vercel), which is typically $0-$20/mo for B2B sites."
+      answer: "Ongoing maintenance costs are near zero. Because there is no server OS, PHP, or database to manage, you only pay for your SaaS platform (e.g., Vercel), which is typically £0-£20/mo for B2B sites."
     },
     {
       question: "Can I migrate my WordPress site?",
@@ -5428,7 +5428,7 @@ const jamstackDevelopmentOverride = {
     }
   ],
   testimonial: {
-    quote: "Moving to a JAMstack architecture with Clickmasters eliminated our $8,000/month WordPress overhead and dropped our mobile load time to 1.1s. Our demo request conversion rate nearly doubled within 90 days.",
+    quote: "Moving to a JAMstack architecture with Clickmasters eliminated our £8,000/month WordPress overhead and dropped our mobile load time to 1.1s. Our demo request conversion rate nearly doubled within 90 days.",
     author: "CTO",
     role: "B2B SaaS Company"
   },
@@ -5460,8 +5460,8 @@ const productDesignOverride = {
   ],
   // marketStats: [
   //   { label: 'Of users say they won\'t return after a bad UX experience (Sweor 2023)', value: '88%' },
-  //   { label: 'Cost to fix a design error in production vs $1 to fix it in the design phase', value: '$100' },
-  //   { label: 'Average ROI on UX investment every $1 spent on UX returns $5', value: '5:1' },
+  //   { label: 'Cost to fix a design error in production vs £1 to fix it in the design phase', value: '£100' },
+  //   { label: 'Average ROI on UX investment every £1 spent on UX returns £5', value: '5:1' },
   //   { label: 'Figma\'s collaborative design platform the universal language between product, design, and engineering', value: 'Design' },
   // ],
   servicesCards: [
@@ -5474,7 +5474,7 @@ const productDesignOverride = {
     { feature: "Process Rigor", description: "Discovery \xE2\u2020\u2019 Research \xE2\u2020\u2019 IA \xE2\u2020\u2019 Wireframe \xE2\u2020\u2019 Visual \xE2\u2020\u2019 Testing \xE2\u2020\u2019 Handoff | Basic: Skip research, go straight to visual" },
     { feature: "Research-Driven", description: "5-8 user interviews before any wireframes | Basic: Internal opinions dressed as user insights" },
     { feature: "Design-to-Dev Handoff", description: "Figma dev mode, interaction specs, accessibility annotations | Basic: Static screens with no implementation guidance" },
-    { feature: "Development Rework Prevention", description: "$100 fix in production vs $1 fix in design | Basic: Design as aesthetic layer, not risk mitigation" },
+    { feature: "Development Rework Prevention", description: "£100 fix in production vs £1 fix in design | Basic: Design as aesthetic layer, not risk mitigation" },
     { feature: "ROI Framing", description: 'Task completion rate, time-on-task, error rate targets | Basic: "Beautiful design" with no success metrics' }
   ],
   processPhases: [
@@ -5494,14 +5494,14 @@ const productDesignOverride = {
     { layer: "Accessibility", technologies: "Stark, Contrast, axe DevTools" }
   ],
   pricingTiers: [
-    { type: "Design Audit", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Heuristic evaluation, CWV review, severity-ranked improvement roadmap" },
-    { type: "UX Discovery Sprint", investment: "$8,000 - $18,000", timeline: "2 - 3 weeks", bestFor: "Stakeholder interviews, competitive audit, user flows, problem framing" },
-    { type: "User Research (5-8 interviews)", investment: "$8,000 - $15,000", timeline: "2 - 3 weeks", bestFor: "Screener, interviews, affinity map, journey map, persona, report" },
-    { type: "Wireframing (Full product)", investment: "$6,000 - $18,000", timeline: "2 - 4 weeks", bestFor: "All screens, all states, clickable prototype, usability test" },
-    { type: "High-Fidelity Figma Design", investment: "$10,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Component library, all screens, responsive, dark mode, handoff-ready" },
-    { type: "Design + Dev (Combined)", investment: "$25,000 - $120,000", timeline: "8 - 20 weeks", bestFor: "Full product design then engineering one team, no handoff friction" },
-    { type: "Design System", investment: "$10,000 - $30,000", timeline: "4 - 8 weeks", bestFor: "Figma component library + code implementation in Storybook" },
-    { type: "Design Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "Sprint design support, feature design, usability testing, iteration" }
+    { type: "Design Audit", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Heuristic evaluation, CWV review, severity-ranked improvement roadmap" },
+    { type: "UX Discovery Sprint", investment: "£8,000 - £18,000", timeline: "2 - 3 weeks", bestFor: "Stakeholder interviews, competitive audit, user flows, problem framing" },
+    { type: "User Research (5-8 interviews)", investment: "£8,000 - £15,000", timeline: "2 - 3 weeks", bestFor: "Screener, interviews, affinity map, journey map, persona, report" },
+    { type: "Wireframing (Full product)", investment: "£6,000 - £18,000", timeline: "2 - 4 weeks", bestFor: "All screens, all states, clickable prototype, usability test" },
+    { type: "High-Fidelity Figma Design", investment: "£10,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Component library, all screens, responsive, dark mode, handoff-ready" },
+    { type: "Design + Dev (Combined)", investment: "£25,000 - £120,000", timeline: "8 - 20 weeks", bestFor: "Full product design then engineering one team, no handoff friction" },
+    { type: "Design System", investment: "£10,000 - £30,000", timeline: "4 - 8 weeks", bestFor: "Figma component library + code implementation in Storybook" },
+    { type: "Design Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "Sprint design support, feature design, usability testing, iteration" }
   ],
   industryUseCases: [
     { name: "SaaS Product Design", description: "Complete product design for B2B SaaS from user research through high-fidelity Figma. Reduce development rework by validating flows before engineering." },
@@ -5517,9 +5517,9 @@ const productDesignOverride = {
     },
     {
       heading: "Why User Research Is Worth the Investment",
-      body: "A 3-week user research engagement costs $8,000-15,000. A 12-week engineering engagement building a feature based on incorrect assumptions costs $40,000-80,000 and produces zero user value. Five moderated user interviews consistently reveal the most critical usability issues and the most impactful missing features at a fraction of the cost of building and testing in production.",
+      body: "A 3-week user research engagement costs £8,000-15,000. A 12-week engineering engagement building a feature based on incorrect assumptions costs £40,000-80,000 and produces zero user value. Five moderated user interviews consistently reveal the most critical usability issues and the most impactful missing features at a fraction of the cost of building and testing in production.",
       items: [
-        "Google's research found a 100:1 ROI on usability improvements $1 spent finding a usability issue in research saves $100 in engineering cost to fix the same issue post-launch"
+        "Google's research found a 100:1 ROI on usability improvements £1 spent finding a usability issue in research saves £100 in engineering cost to fix the same issue post-launch"
       ]
     },
     {
@@ -5535,7 +5535,7 @@ const productDesignOverride = {
     },
     {
       question: "How much does product design cost?",
-      answer: "Product design costs range from $3,000 for a design audit to $35,000 for a full high-fidelity Figma design of a complete B2B product. A UX discovery sprint costs $8,000-18,000 and takes 2-3 weeks. User research (5-8 interviews with full analysis) costs $8,000-15,000. Wireframing a complete product costs $6,000-18,000. High-fidelity Figma design of a full product costs $10,000-35,000 and takes 4-8 weeks. Combined design and development engagements (Clickmasters designs and builds the product) cost $25,000-120,000. All pricing is fixed after a scoping session."
+      answer: "Product design costs range from £3,000 for a design audit to £35,000 for a full high-fidelity Figma design of a complete B2B product. A UX discovery sprint costs £8,000-18,000 and takes 2-3 weeks. User research (5-8 interviews with full analysis) costs £8,000-15,000. Wireframing a complete product costs £6,000-18,000. High-fidelity Figma design of a full product costs £10,000-35,000 and takes 4-8 weeks. Combined design and development engagements (Clickmasters designs and builds the product) cost £25,000-120,000. All pricing is fixed after a scoping session."
     },
     {
       question: "What does a design-to-dev handoff include?",
@@ -5543,7 +5543,7 @@ const productDesignOverride = {
     },
     {
       question: "Why is user research worth the investment?",
-      answer: "User research prevents building the wrong thing the most expensive mistake in software development. A 3-week user research engagement costs $8,000-15,000. A 12-week engineering engagement building a feature based on incorrect assumptions costs $40,000-80,000 and produces zero user value. Five moderated user interviews consistently reveal the most critical usability issues and the most impactful missing features at a fraction of the cost of building and testing in production. The specific ROI: Google's research found a 100:1 ROI on usability improvements $1 spent finding a usability issue in research saves $100 in engineering cost to fix the same issue post-launch."
+      answer: "User research prevents building the wrong thing the most expensive mistake in software development. A 3-week user research engagement costs £8,000-15,000. A 12-week engineering engagement building a feature based on incorrect assumptions costs £40,000-80,000 and produces zero user value. Five moderated user interviews consistently reveal the most critical usability issues and the most impactful missing features at a fraction of the cost of building and testing in production. The specific ROI: Google's research found a 100:1 ROI on usability improvements £1 spent finding a usability issue in research saves £100 in engineering cost to fix the same issue post-launch."
     }
   ],
   testimonial: {
@@ -5631,14 +5631,14 @@ const webDesignOverride = {
     { layer: "Implementation (Optional)", technologies: "Next.js (React), WordPress (PHP), Tailwind CSS, Vercel/WP Engine" }
   ],
   pricingTiers: [
-    { type: "Website Design Audit", investment: "$3,000 - $6,000", timeline: "1 - 2 weeks", bestFor: "Heuristic eval, conversion analysis, CWV audit, priority fixes" },
-    { type: "Landing Page Design", investment: "$3,000 - $8,000", timeline: "1 - 3 weeks", bestFor: "Single page, conversion architecture, Figma, A/B variants" },
-    { type: "B2B Website Design (5-10 pages)", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Full Figma, all breakpoints, WCAG 2.1 AA, component library" },
-    { type: "B2B Website Design (10-20 pages)", investment: "$14,000 - $35,000", timeline: "5 - 9 weeks", bestFor: "Full site, messaging workshop, design system, handoff" },
-    { type: "SaaS Marketing Website", investment: "$12,000 - $30,000", timeline: "4 - 8 weeks", bestFor: "Pricing page, integrations, docs system, changelog, full site" },
-    { type: "Website Redesign", investment: "$12,000 - $40,000", timeline: "5 - 10 weeks", bestFor: "Analytics audit, redesign, SEO preservation, A/B rollout" },
-    { type: "Design + Build (Next.js/WordPress)", investment: "$20,000 - $70,000", timeline: "7 - 14 weeks", bestFor: "Full design then implementation one team, no handoff" },
-    { type: "Design Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "Landing pages, feature pages, A/B test variants, refresh" }
+    { type: "Website Design Audit", investment: "£3,000 - £6,000", timeline: "1 - 2 weeks", bestFor: "Heuristic eval, conversion analysis, CWV audit, priority fixes" },
+    { type: "Landing Page Design", investment: "£3,000 - £8,000", timeline: "1 - 3 weeks", bestFor: "Single page, conversion architecture, Figma, A/B variants" },
+    { type: "B2B Website Design (5-10 pages)", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Full Figma, all breakpoints, WCAG 2.1 AA, component library" },
+    { type: "B2B Website Design (10-20 pages)", investment: "£14,000 - £35,000", timeline: "5 - 9 weeks", bestFor: "Full site, messaging workshop, design system, handoff" },
+    { type: "SaaS Marketing Website", investment: "£12,000 - £30,000", timeline: "4 - 8 weeks", bestFor: "Pricing page, integrations, docs system, changelog, full site" },
+    { type: "Website Redesign", investment: "£12,000 - £40,000", timeline: "5 - 10 weeks", bestFor: "Analytics audit, redesign, SEO preservation, A/B rollout" },
+    { type: "Design + Build (Next.js/WordPress)", investment: "£20,000 - £70,000", timeline: "7 - 14 weeks", bestFor: "Full design then implementation one team, no handoff" },
+    { type: "Design Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "Landing pages, feature pages, A/B test variants, refresh" }
   ],
   industryUseCases: [
     { name: "SaaS Marketing Website", description: "Pricing page design, integration ecosystem display, documentation design system, and changelog page. Converts technical buyers." },
@@ -5673,7 +5673,7 @@ const webDesignOverride = {
     },
     {
       question: "How much does B2B website design cost?",
-      answer: "B2B website design costs range from $3,000 for a website design audit to $40,000 for a complete website redesign with messaging workshop, analytics audit, and A/B rollout strategy. A 5-10 page B2B website design in Figma costs $8,000-22,000 and takes 3-6 weeks. A 10-20 page website with design system costs $14,000-35,000. A SaaS marketing website design costs $12,000-30,000. Landing page design costs $3,000-8,000. Combined design and development (Clickmasters designs and builds) costs $20,000-70,000."
+      answer: "B2B website design costs range from £3,000 for a website design audit to £40,000 for a complete website redesign with messaging workshop, analytics audit, and A/B rollout strategy. A 5-10 page B2B website design in Figma costs £8,000-22,000 and takes 3-6 weeks. A 10-20 page website with design system costs £14,000-35,000. A SaaS marketing website design costs £12,000-30,000. Landing page design costs £3,000-8,000. Combined design and development (Clickmasters designs and builds) costs £20,000-70,000."
     },
     {
       question: "What deliverables do I receive from a web design engagement?",
@@ -5768,14 +5768,14 @@ const mobileAppDesignOverride = {
     { layer: "Handoff", technologies: "Figma Dev Mode, Zeplin, Storybook (RN), Android Studio preview" }
   ],
   pricingTiers: [
-    { type: "Mobile App UX Audit", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "HIG/Material compliance review, usability analysis, priority fixes" },
-    { type: "iOS App Design", investment: "$8,000 - $28,000", timeline: "4 - 8 weeks", bestFor: "HIG-compliant, all screens/states, SF Symbols, dark mode, handoff" },
-    { type: "Android App Design", investment: "$8,000 - $28,000", timeline: "4 - 8 weeks", bestFor: "Material 3, M3 colour scheme, all screens/states, adaptive layout" },
-    { type: "Cross-Platform Design (iOS + Android)", investment: "$12,000 - $40,000", timeline: "5 - 10 weeks", bestFor: "Both platforms from shared base, platform-specific overrides documented" },
-    { type: "App Store Screenshots (Both Stores)", investment: "$2,500 - $5,000", timeline: "1 - 2 weeks", bestFor: "All required device sizes, marketing overlay, device frames" },
-    { type: "Design + Development (iOS)", investment: "$28,000 - $80,000", timeline: "10 - 16 weeks", bestFor: "HIG design then Swift/SwiftUI build one team" },
-    { type: "Design + Development (Android)", investment: "$28,000 - $75,000", timeline: "10 - 16 weeks", bestFor: "Material 3 design then Kotlin/Compose build one team" },
-    { type: "Design + Development (Cross-Platform)", investment: "$32,000 - $85,000", timeline: "10 - 16 weeks", bestFor: "Both platform designs then React Native or Flutter build" }
+    { type: "Mobile App UX Audit", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "HIG/Material compliance review, usability analysis, priority fixes" },
+    { type: "iOS App Design", investment: "£8,000 - £28,000", timeline: "4 - 8 weeks", bestFor: "HIG-compliant, all screens/states, SF Symbols, dark mode, handoff" },
+    { type: "Android App Design", investment: "£8,000 - £28,000", timeline: "4 - 8 weeks", bestFor: "Material 3, M3 colour scheme, all screens/states, adaptive layout" },
+    { type: "Cross-Platform Design (iOS + Android)", investment: "£12,000 - £40,000", timeline: "5 - 10 weeks", bestFor: "Both platforms from shared base, platform-specific overrides documented" },
+    { type: "App Store Screenshots (Both Stores)", investment: "£2,500 - £5,000", timeline: "1 - 2 weeks", bestFor: "All required device sizes, marketing overlay, device frames" },
+    { type: "Design + Development (iOS)", investment: "£28,000 - £80,000", timeline: "10 - 16 weeks", bestFor: "HIG design then Swift/SwiftUI build one team" },
+    { type: "Design + Development (Android)", investment: "£28,000 - £75,000", timeline: "10 - 16 weeks", bestFor: "Material 3 design then Kotlin/Compose build one team" },
+    { type: "Design + Development (Cross-Platform)", investment: "£32,000 - £85,000", timeline: "10 - 16 weeks", bestFor: "Both platform designs then React Native or Flutter build" }
   ],
   industryUseCases: [
     { name: "B2B Field Worker App", description: "iOS-first design for field workers who use iPhones. Offline-first considerations, large touch targets for gloved hands, barcode scanning integration." },
@@ -5810,7 +5810,7 @@ const mobileAppDesignOverride = {
     },
     {
       question: "How much does mobile app design cost?",
-      answer: "Mobile app design costs range from $3,000 for a UX audit to $40,000 for a complete iOS + Android cross-platform design. An iOS app design costs $8,000-28,000 depending on feature complexity and screen count. An Android app design costs $8,000-28,000. Both platforms designed simultaneously costs $12,000-40,000. App Store screenshots for both stores cost $2,500-5,000. Combined design and development engagements (Clickmasters designs and builds the app) cost $28,000-85,000."
+      answer: "Mobile app design costs range from £3,000 for a UX audit to £40,000 for a complete iOS + Android cross-platform design. An iOS app design costs £8,000-28,000 depending on feature complexity and screen count. An Android app design costs £8,000-28,000. Both platforms designed simultaneously costs £12,000-40,000. App Store screenshots for both stores cost £2,500-5,000. Combined design and development engagements (Clickmasters designs and builds the app) cost £28,000-85,000."
     },
     {
       question: "What does a mobile app Figma handoff include?",
@@ -5873,7 +5873,7 @@ const uxResearchOverride = {
   ],
   // marketStats: [
   //   { label: 'Of usability issues discovered with just 5 participants (Nielsen Norman Group) research ROI peaks early', value: '85%' },
-  //   { label: 'ROI on usability investment $1 to find a problem in research vs $100 to fix it post-launch (IBM)', value: '100:1' },
+  //   { label: 'ROI on usability investment £1 to find a problem in research vs £100 to fix it post-launch (IBM)', value: '100:1' },
   //   { label: 'Time before users decide if a product is worth learning first-impression research reveals this moment', value: '5 sec' },
   //   { label: 'Internal stakeholders who should substitute for real users in product decisions opinions are not data', value: '0' },
   // ],
@@ -5885,7 +5885,7 @@ const uxResearchOverride = {
   ],
   differentiators: [
     { feature: "5-Participant Methodology", description: 'Nielsen Norman Group backed 85% of issues found | Basic: "We need 20+ participants" (unnecessarily expensive)' },
-    { feature: "Research ROI", description: "$1 in research vs $100 in post-launch fixes (IBM) | Basic: Research seen as cost, not investment" },
+    { feature: "Research ROI", description: "£1 in research vs £100 in post-launch fixes (IBM) | Basic: Research seen as cost, not investment" },
     { feature: "Journey Mapping Format", description: "3-hour collaborative workshop with product team | Basic: Document delivered in isolation (no shared understanding)" },
     { feature: "Heuristic Evaluation", description: `Nielsen's 10 heuristics + severity ratings + screenshots + recommendations | Basic: Generic "usability issues" list` },
     { feature: "Recruitment Channels", description: "Client customers + research panels (UserTesting, Respondent) | Basic: No clear recruitment methodology" }
@@ -5903,14 +5903,14 @@ const uxResearchOverride = {
     { layer: "Reporting", technologies: "Figma (report design), Loom (readout recordings), Notion/Google Slides (presentation)" }
   ],
   pricingTiers: [
-    { type: "Heuristic Evaluation", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "10 heuristics, severity ratings, 20-40 findings, design recommendations" },
-    { type: "Competitive UX Analysis", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "3-5 competitors, UX pattern analysis, gap opportunities" },
-    { type: "User Interviews (5 participants)", investment: "$6,000 - $12,000", timeline: "2 - 3 weeks", bestFor: "Screener, guide, sessions, transcription, affinity map, report" },
-    { type: "User Interviews (8 participants)", investment: "$9,000 - $16,000", timeline: "3 - 4 weeks", bestFor: "Larger sample, higher confidence, more nuanced findings" },
-    { type: "Usability Testing (5 participants)", investment: "$6,000 - $12,000", timeline: "2 - 3 weeks", bestFor: "Tasks, moderated sessions, severity ratings, design recommendations" },
-    { type: "User Journey Mapping Workshop", investment: "$5,000 - $10,000", timeline: "1 - 2 weeks", bestFor: "Full-day workshop, current-state journey, pain points, opportunities" },
-    { type: "Full Research Programme", investment: "$18,000 - $40,000", timeline: "4 - 8 weeks", bestFor: "Interviews + usability testing + journey mapping + competitive analysis" },
-    { type: "Research Retainer", investment: "$3,000 - $7,000/mo", timeline: "Ongoing", bestFor: "Monthly testing cadence, continuous discovery, sprint research support" }
+    { type: "Heuristic Evaluation", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "10 heuristics, severity ratings, 20-40 findings, design recommendations" },
+    { type: "Competitive UX Analysis", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "3-5 competitors, UX pattern analysis, gap opportunities" },
+    { type: "User Interviews (5 participants)", investment: "£6,000 - £12,000", timeline: "2 - 3 weeks", bestFor: "Screener, guide, sessions, transcription, affinity map, report" },
+    { type: "User Interviews (8 participants)", investment: "£9,000 - £16,000", timeline: "3 - 4 weeks", bestFor: "Larger sample, higher confidence, more nuanced findings" },
+    { type: "Usability Testing (5 participants)", investment: "£6,000 - £12,000", timeline: "2 - 3 weeks", bestFor: "Tasks, moderated sessions, severity ratings, design recommendations" },
+    { type: "User Journey Mapping Workshop", investment: "£5,000 - £10,000", timeline: "1 - 2 weeks", bestFor: "Full-day workshop, current-state journey, pain points, opportunities" },
+    { type: "Full Research Programme", investment: "£18,000 - £40,000", timeline: "4 - 8 weeks", bestFor: "Interviews + usability testing + journey mapping + competitive analysis" },
+    { type: "Research Retainer", investment: "£3,000 - £7,000/mo", timeline: "Ongoing", bestFor: "Monthly testing cadence, continuous discovery, sprint research support" }
   ],
   industryUseCases: [
     { name: "Pre-Product Discovery", description: "User interviews before any design or development. Understand user goals, mental models, current workarounds, and unmet needs. 5-8 interviews reveal the most important job-to-be-done." },
@@ -5935,14 +5935,14 @@ const uxResearchOverride = {
     },
     {
       heading: "How Many Users Do You Need for Usability Testing?",
-      body: "Five participants is the answer most rigorously supported by UX research literature. Nielsen Norman Group's research demonstrates that 5 participants reveal approximately 85% of a product's usability issues the 6th, 7th, and 8th participant mostly surface the same issues already discovered. This makes 5-participant usability testing an excellent investment: the cost of recruiting and testing 5 users (2-3 weeks, $6,000-12,000) is significantly lower than the cost of one sprint of engineering fixing problems that could have been identified with 5 testers. The exception: when you have clearly distinct user segments (enterprise administrators vs. end users, for example), 5 participants per segment is recommended.",
+      body: "Five participants is the answer most rigorously supported by UX research literature. Nielsen Norman Group's research demonstrates that 5 participants reveal approximately 85% of a product's usability issues the 6th, 7th, and 8th participant mostly surface the same issues already discovered. This makes 5-participant usability testing an excellent investment: the cost of recruiting and testing 5 users (2-3 weeks, £6,000-12,000) is significantly lower than the cost of one sprint of engineering fixing problems that could have been identified with 5 testers. The exception: when you have clearly distinct user segments (enterprise administrators vs. end users, for example), 5 participants per segment is recommended.",
       items: []
     }
   ],
   faqs: [
     {
       question: "How many users do I need for usability testing?",
-      answer: "Five participants is the answer most rigorously supported by UX research literature. Nielsen Norman Group's research demonstrates that 5 participants reveal approximately 85% of a product's usability issues the 6th, 7th, and 8th participant mostly surface the same issues already discovered. This makes 5-participant usability testing an excellent investment: the cost of recruiting and testing 5 users (2-3 weeks, $6,000-12,000) is significantly lower than the cost of one sprint of engineering fixing problems that could have been identified with 5 testers. The exception: when you have clearly distinct user segments (enterprise administrators vs. end users, for example), 5 participants per segment is recommended."
+      answer: "Five participants is the answer most rigorously supported by UX research literature. Nielsen Norman Group's research demonstrates that 5 participants reveal approximately 85% of a product's usability issues the 6th, 7th, and 8th participant mostly surface the same issues already discovered. This makes 5-participant usability testing an excellent investment: the cost of recruiting and testing 5 users (2-3 weeks, £6,000-12,000) is significantly lower than the cost of one sprint of engineering fixing problems that could have been identified with 5 testers. The exception: when you have clearly distinct user segments (enterprise administrators vs. end users, for example), 5 participants per segment is recommended."
     },
     {
       question: "What is the difference between user research and usability testing?",
@@ -6039,13 +6039,13 @@ const wireframingPrototypingOverride = {
     { layer: "Handoff", technologies: "Figma Dev Mode, Zeplin, Storybook (if code exists)" }
   ],
   pricingTiers: [
-    { type: "User Flow Mapping", investment: "$2,000 - $5,000", timeline: "1 - 2 weeks", bestFor: "5-10 user flows, decision trees, edge case documentation, Figma diagram" },
-    { type: "Low-Fidelity Wireframes", investment: "$4,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "All screens, all states (empty/loading/error), greyscale, review-ready" },
-    { type: "Mid-Fidelity + Prototype", investment: "$6,000 - $18,000", timeline: "2 - 5 weeks", bestFor: "Real typography, clickable Figma prototype, usability-test-ready" },
-    { type: "Investor Demo Prototype", investment: "$6,000 - $15,000", timeline: "2 - 3 weeks", bestFor: "High-fidelity, animated, demo script, shareable presentation link" },
-    { type: "Mobile App Wireframes", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "All screens, platform-correct patterns (iOS/Android), all states, clickable" },
-    { type: "Full Design (Wireframes \xE2\u2020\u2019 Visual)", investment: "$12,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "Complete journey: user flows \xE2\u2020\u2019 wireframes \xE2\u2020\u2019 visual design \xE2\u2020\u2019 handoff" },
-    { type: "Wireframing Retainer", investment: "$2,500 - $5,000/mo", timeline: "Ongoing", bestFor: "Sprint wireframing support, feature flows, iteration on research findings" }
+    { type: "User Flow Mapping", investment: "£2,000 - £5,000", timeline: "1 - 2 weeks", bestFor: "5-10 user flows, decision trees, edge case documentation, Figma diagram" },
+    { type: "Low-Fidelity Wireframes", investment: "£4,000 - £12,000", timeline: "2 - 4 weeks", bestFor: "All screens, all states (empty/loading/error), greyscale, review-ready" },
+    { type: "Mid-Fidelity + Prototype", investment: "£6,000 - £18,000", timeline: "2 - 5 weeks", bestFor: "Real typography, clickable Figma prototype, usability-test-ready" },
+    { type: "Investor Demo Prototype", investment: "£6,000 - £15,000", timeline: "2 - 3 weeks", bestFor: "High-fidelity, animated, demo script, shareable presentation link" },
+    { type: "Mobile App Wireframes", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "All screens, platform-correct patterns (iOS/Android), all states, clickable" },
+    { type: "Full Design (Wireframes \xE2\u2020\u2019 Visual)", investment: "£12,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "Complete journey: user flows \xE2\u2020\u2019 wireframes \xE2\u2020\u2019 visual design \xE2\u2020\u2019 handoff" },
+    { type: "Wireframing Retainer", investment: "£2,500 - £5,000/mo", timeline: "Ongoing", bestFor: "Sprint wireframing support, feature flows, iteration on research findings" }
   ],
   industryUseCases: [
     { name: "SaaS Product Validation", description: "Low-fidelity wireframes + clickable prototype tested with 5 users before any visual design. Identify flow problems when changes are cheap. 3-4 week engagement." },
@@ -6059,9 +6059,9 @@ const wireframingPrototypingOverride = {
       body: "Wireframe fidelity determines how much visual detail is included and therefore how much time they take to produce. The right fidelity depends on the purpose of the wireframes.",
       items: [
         "Sketch/Whiteboard: Hand-drawn boxes, arrows, placeholder labels. Quick alignment on user flows with a small team. Exploratory sessions. Not suitable for stakeholder review or user testing.",
-        "Low-Fidelity (Digital): Greyscale boxes and lines in Figma. Real labels and copy. No colour, no icons, no typography. Stakeholder alignment on layout and content hierarchy before high-fidelity. Fast to produce, fast to change. Cost: $3,000-8,000 for complete product.",
-        "Mid-Fidelity: Greyscale with real typography and spacing. Placeholder images. Interactive links in Figma. Usability testing (removes visual design as a variable users respond to layout and flow, not aesthetics). Cost: $5,000-15,000 for complete product.",
-        "High-Fidelity Prototype: Full visual design applied. Micro-interactions. Figma Smart Animate transitions. Investor demos, stakeholder sign-off, complex interaction testing, developer handoff reference. Cost: $10,000-35,000 (included in full visual design engagement)"
+        "Low-Fidelity (Digital): Greyscale boxes and lines in Figma. Real labels and copy. No colour, no icons, no typography. Stakeholder alignment on layout and content hierarchy before high-fidelity. Fast to produce, fast to change. Cost: £3,000-8,000 for complete product.",
+        "Mid-Fidelity: Greyscale with real typography and spacing. Placeholder images. Interactive links in Figma. Usability testing (removes visual design as a variable users respond to layout and flow, not aesthetics). Cost: £5,000-15,000 for complete product.",
+        "High-Fidelity Prototype: Full visual design applied. Micro-interactions. Figma Smart Animate transitions. Investor demos, stakeholder sign-off, complex interaction testing, developer handoff reference. Cost: £10,000-35,000 (included in full visual design engagement)"
       ]
     },
     {
@@ -6095,7 +6095,7 @@ const wireframingPrototypingOverride = {
   },
   caseStudy: {
     title: "Wireframing for SaaS Redesign",
-    description: "Low-fidelity wireframes + prototype tested with 8 users. Identified 3 critical flow issues before visual design saved $40,000 in development rework.",
+    description: "Low-fidelity wireframes + prototype tested with 8 users. Identified 3 critical flow issues before visual design saved £40,000 in development rework.",
     slug: "saas-wireframing",
     badge: "Wireframing"
   },
@@ -6139,7 +6139,7 @@ const designSystemsOverride = {
   // marketStats: [
   //   { label: 'Developer time saved building new features when a mature component library exists (Nielsen Norman Group)', value: '40%' },
   //   { label: 'Faster design iteration when designers work from a shared component library vs recreating components per file', value: '3x' },
-  //   { label: 'Cost per additional screen designed once components are built, screens are assembled, not designed from scratch', value: '$0' },
+  //   { label: 'Cost per additional screen designed once components are built, screens are assembled, not designed from scratch', value: '£0' },
   //   { label: 'The universal component documentation platform used by Airbnb, Dropbox, GitHub, IBM, and 30,000+ teams', value: 'Storybook' },
   // ],
   servicesCards: [
@@ -6171,13 +6171,13 @@ const designSystemsOverride = {
     { layer: "CI/CD", technologies: "GitHub Actions (token sync, Chromatic checks), Style Dictionary CLI, Figma REST API" }
   ],
   pricingTiers: [
-    { type: "Design System Audit", investment: "$4,000 - $10,000", timeline: "1 - 2 weeks", bestFor: "Component inventory, inconsistency analysis, token audit, consolidation plan" },
-    { type: "Figma Component Library (Design)", investment: "$8,000 - $25,000", timeline: "3 - 6 weeks", bestFor: "Tokens, primitives, compounds, templates, team library publish" },
-    { type: "Storybook Implementation (Code)", investment: "$10,000 - $30,000", timeline: "4 - 8 weeks", bestFor: "React+TS components, all states, Chromatic setup, npm package" },
-    { type: "Token Pipeline (Figma \xE2\u2020\u2019 Code)", investment: "$5,000 - $12,000", timeline: "2 - 3 weeks", bestFor: "Style Dictionary config, Tailwind/CSS tokens, CI automation" },
-    { type: "Full Design System (All Layers)", investment: "$22,000 - $65,000", timeline: "6 - 12 weeks", bestFor: "Figma + tokens + Storybook + Chromatic + pipeline + documentation" },
-    { type: "Design System Migration", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Audit + consolidation + migration + codemods + team enablement" },
-    { type: "Design System Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "New components, governance, Chromatic monitoring, team support" }
+    { type: "Design System Audit", investment: "£4,000 - £10,000", timeline: "1 - 2 weeks", bestFor: "Component inventory, inconsistency analysis, token audit, consolidation plan" },
+    { type: "Figma Component Library (Design)", investment: "£8,000 - £25,000", timeline: "3 - 6 weeks", bestFor: "Tokens, primitives, compounds, templates, team library publish" },
+    { type: "Storybook Implementation (Code)", investment: "£10,000 - £30,000", timeline: "4 - 8 weeks", bestFor: "React+TS components, all states, Chromatic setup, npm package" },
+    { type: "Token Pipeline (Figma \xE2\u2020\u2019 Code)", investment: "£5,000 - £12,000", timeline: "2 - 3 weeks", bestFor: "Style Dictionary config, Tailwind/CSS tokens, CI automation" },
+    { type: "Full Design System (All Layers)", investment: "£22,000 - £65,000", timeline: "6 - 12 weeks", bestFor: "Figma + tokens + Storybook + Chromatic + pipeline + documentation" },
+    { type: "Design System Migration", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Audit + consolidation + migration + codemods + team enablement" },
+    { type: "Design System Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "New components, governance, Chromatic monitoring, team support" }
   ],
   industryUseCases: [
     { name: "Multi-Product SaaS Suite", description: "Single design system across multiple products. Consistent brand and interaction patterns. Design tokens in Figma and code shared across all products rebranding changes one token, updates everything." },
@@ -6268,7 +6268,7 @@ const aiIntegrationServicesOverride = {
   ],
   // marketStats: [
   //   { label: 'OpenAI\'s most capable multimodal model text, vision, and structured output in one API', value: 'GPT-4o' },
-  //   { label: 'Cost per 1M input tokens (GPT-4o mini) production AI features for fractions of a cent per user request', value: '$0.15' },
+  //   { label: 'Cost per 1M input tokens (GPT-4o mini) production AI features for fractions of a cent per user request', value: '£0.15' },
   //   { label: 'Median time-to-first-token for GPT-4o streaming user sees response start within 1 second', value: '72ms' },
   //   { label: 'Retrieval-Augmented Generation the architecture that gives LLMs access to your proprietary data', value: 'RAG' },
   // ],
@@ -6304,14 +6304,14 @@ const aiIntegrationServicesOverride = {
     { layer: "Security", technologies: "Presidio (PII redaction), prompt injection detection, output validation against schema" }
   ],
   pricingTiers: [
-    { type: "AI Integration Scoping", investment: "$3,000 - $6,000", timeline: "1 - 2 weeks", bestFor: "Use case analysis, model selection, architecture design, cost estimate" },
-    { type: "LLM Feature (1-2 features)", investment: "$8,000 - $22,000", timeline: "3 - 5 weeks", bestFor: "API integration, prompt engineering, streaming, cost management" },
-    { type: "RAG Implementation", investment: "$12,000 - $35,000", timeline: "4 - 7 weeks", bestFor: "Chunking, embeddings, vector DB, retrieval, reranking, evaluation" },
-    { type: "Semantic Search", investment: "$8,000 - $22,000", timeline: "3 - 5 weeks", bestFor: "Embedding pipeline, pgvector/Algolia, query API, analytics" },
-    { type: "Vision AI Integration", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "Image analysis, document OCR, structured output, moderation" },
-    { type: "Speech AI (STT + TTS)", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "Whisper transcription, TTS generation, voice interface" },
-    { type: "Full AI Feature Suite", investment: "$20,000 - $70,000", timeline: "6 - 12 weeks", bestFor: "Multiple features, RAG, semantic search, observability, cost monitoring" },
-    { type: "AI Integration Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "Model updates, prompt optimisation, new features, cost monitoring" }
+    { type: "AI Integration Scoping", investment: "£3,000 - £6,000", timeline: "1 - 2 weeks", bestFor: "Use case analysis, model selection, architecture design, cost estimate" },
+    { type: "LLM Feature (1-2 features)", investment: "£8,000 - £22,000", timeline: "3 - 5 weeks", bestFor: "API integration, prompt engineering, streaming, cost management" },
+    { type: "RAG Implementation", investment: "£12,000 - £35,000", timeline: "4 - 7 weeks", bestFor: "Chunking, embeddings, vector DB, retrieval, reranking, evaluation" },
+    { type: "Semantic Search", investment: "£8,000 - £22,000", timeline: "3 - 5 weeks", bestFor: "Embedding pipeline, pgvector/Algolia, query API, analytics" },
+    { type: "Vision AI Integration", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "Image analysis, document OCR, structured output, moderation" },
+    { type: "Speech AI (STT + TTS)", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "Whisper transcription, TTS generation, voice interface" },
+    { type: "Full AI Feature Suite", investment: "£20,000 - £70,000", timeline: "6 - 12 weeks", bestFor: "Multiple features, RAG, semantic search, observability, cost monitoring" },
+    { type: "AI Integration Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "Model updates, prompt optimisation, new features, cost monitoring" }
   ],
   industryUseCases: [
     { name: "Add AI to Existing SaaS", description: "Add RAG-powered Q&A, document analysis, or content generation to existing product. 6-12 week integration. No rebuild required." },
@@ -6332,7 +6332,7 @@ const aiIntegrationServicesOverride = {
     },
     {
       heading: "Cost Management in Production AI Features",
-      body: 'Cost management requires four mechanisms: token counting and budget limits (count tokens before each API call reject or truncate requests that would exceed a per-user or per-request budget), response caching (cache responses to repeated or semantically similar queries a user asking "what is your refund policy?" should not trigger a new LLM call every time), model tiering (route requests to cheaper, faster models GPT-4o mini at $0.15/1M tokens vs GPT-4o at $2.50/1M tokens based on task complexity), and per-user rate limiting (cap the number of AI requests per user per day prevents any single user or abuse pattern from exhausting your API budget). Clickmasters implements all four mechanisms and sets up a cost monitoring dashboard (usage per model, per user, per feature with budget alert thresholds) as standard.',
+      body: 'Cost management requires four mechanisms: token counting and budget limits (count tokens before each API call reject or truncate requests that would exceed a per-user or per-request budget), response caching (cache responses to repeated or semantically similar queries a user asking "what is your refund policy?" should not trigger a new LLM call every time), model tiering (route requests to cheaper, faster models GPT-4o mini at £0.15/1M tokens vs GPT-4o at £2.50/1M tokens based on task complexity), and per-user rate limiting (cap the number of AI requests per user per day prevents any single user or abuse pattern from exhausting your API budget). Clickmasters implements all four mechanisms and sets up a cost monitoring dashboard (usage per model, per user, per feature with budget alert thresholds) as standard.',
       items: []
     },
     {
@@ -6341,7 +6341,7 @@ const aiIntegrationServicesOverride = {
       items: [
         "Text generation (complex): GPT-4o or Claude 3.5 Sonnet best reasoning, instruction following, structured output. Alternative: Gemini 1.5 Pro (large context window)",
         "Text generation (fast/cheap): GPT-4o mini or Claude 3.5 Haiku 10x cheaper, 3x faster, sufficient for classification, routing, summarisation",
-        "RAG / embeddings: text-embedding-3-small (OpenAI) best cost/performance, 1536 dimensions, $0.02/1M tokens. Alternative: Cohere embed-v3 (better for multilingual)",
+        "RAG / embeddings: text-embedding-3-small (OpenAI) best cost/performance, 1536 dimensions, £0.02/1M tokens. Alternative: Cohere embed-v3 (better for multilingual)",
         "Vision / image analysis: GPT-4o native multimodal (text + image in one request). Alternative: Claude 3.5 Sonnet (strong vision)",
         "Speech-to-text: Whisper via API best accuracy, multilingual, speaker timestamps. Alternative: Deepgram (lower latency streaming)",
         "Text-to-speech: OpenAI TTS natural voices, 6 voice options, streaming. Alternative: ElevenLabs (highest quality, voice cloning)",
@@ -6361,7 +6361,7 @@ const aiIntegrationServicesOverride = {
     },
     {
       question: "How do you manage AI API costs in production?",
-      answer: 'AI API costs in production are managed with four mechanisms: token counting and budget limits (count tokens before each API call reject or truncate requests that would exceed a per-user or per-request budget), response caching (cache responses to repeated or semantically similar queries a user asking "what is your refund policy?" should not trigger a new LLM call every time), model tiering (route requests to cheaper, faster models GPT-4o mini at $0.15/1M tokens vs GPT-4o at $2.50/1M tokens based on the complexity of the task), and per-user rate limiting (cap the number of AI requests per user per day prevents any single user or abuse pattern from exhausting your API budget). Clickmasters implements all four mechanisms and sets up a cost monitoring dashboard (usage per model, per user, per feature with budget alert thresholds) as standard on every AI integration engagement.'
+      answer: 'AI API costs in production are managed with four mechanisms: token counting and budget limits (count tokens before each API call reject or truncate requests that would exceed a per-user or per-request budget), response caching (cache responses to repeated or semantically similar queries a user asking "what is your refund policy?" should not trigger a new LLM call every time), model tiering (route requests to cheaper, faster models GPT-4o mini at £0.15/1M tokens vs GPT-4o at £2.50/1M tokens based on the complexity of the task), and per-user rate limiting (cap the number of AI requests per user per day prevents any single user or abuse pattern from exhausting your API budget). Clickmasters implements all four mechanisms and sets up a cost monitoring dashboard (usage per model, per user, per feature with budget alert thresholds) as standard on every AI integration engagement.'
     },
     {
       question: "How do you handle AI response quality and hallucinations?",
@@ -6459,14 +6459,14 @@ const llmApplicationsDevelopmentOverride = {
     { layer: "Infrastructure", technologies: "AWS ECS Fargate, RDS PostgreSQL (pgvector), Redis ElastiCache (session, cache), S3 (document storage), CloudFront" }
   ],
   pricingTiers: [
-    { type: "LLM Application Scoping", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Architecture design, RAG strategy, evaluation plan, cost model, proposal" },
-    { type: "Document Q&A System", investment: "$15,000 - $45,000", timeline: "5 - 9 weeks", bestFor: "Ingestion pipeline, RAG, streaming, source attribution, admin UI" },
-    { type: "AI Writing Assistant", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Brand-voice system prompt, generation API, React UI, streaming" },
-    { type: "Contract Analysis Platform", investment: "$20,000 - $60,000", timeline: "6 - 11 weeks", bestFor: "Clause extraction, comparison, risk scoring, bulk processing, dashboard" },
-    { type: "Report Generation System", investment: "$15,000 - $45,000", timeline: "5 - 9 weeks", bestFor: "Data-to-narrative, templates, personalisation, scheduled delivery" },
-    { type: "Code Review Tool", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "GitHub integration, diff analysis, PR comments, structured findings" },
-    { type: "Custom LLM Application", investment: "$18,000 - $80,000", timeline: "5 - 14 weeks", bestFor: "Any LLM-native product streaming + RAG + eval + observability standard" },
-    { type: "LLM Application Retainer", investment: "$4,000 - $10,000/mo", timeline: "Ongoing", bestFor: "Prompt optimisation, eval monitoring, model updates, feature development" }
+    { type: "LLM Application Scoping", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Architecture design, RAG strategy, evaluation plan, cost model, proposal" },
+    { type: "Document Q&A System", investment: "£15,000 - £45,000", timeline: "5 - 9 weeks", bestFor: "Ingestion pipeline, RAG, streaming, source attribution, admin UI" },
+    { type: "AI Writing Assistant", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Brand-voice system prompt, generation API, React UI, streaming" },
+    { type: "Contract Analysis Platform", investment: "£20,000 - £60,000", timeline: "6 - 11 weeks", bestFor: "Clause extraction, comparison, risk scoring, bulk processing, dashboard" },
+    { type: "Report Generation System", investment: "£15,000 - £45,000", timeline: "5 - 9 weeks", bestFor: "Data-to-narrative, templates, personalisation, scheduled delivery" },
+    { type: "Code Review Tool", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "GitHub integration, diff analysis, PR comments, structured findings" },
+    { type: "Custom LLM Application", investment: "£18,000 - £80,000", timeline: "5 - 14 weeks", bestFor: "Any LLM-native product streaming + RAG + eval + observability standard" },
+    { type: "LLM Application Retainer", investment: "£4,000 - £10,000/mo", timeline: "Ongoing", bestFor: "Prompt optimisation, eval monitoring, model updates, feature development" }
   ],
   industryUseCases: [
     { name: "Document Q&A / Knowledge Base", description: "Internal HR policy Q&A, product documentation assistant, regulatory compliance assistant. Users ask questions, system retrieves from knowledge base and gives cited answers." },
@@ -6571,10 +6571,10 @@ const machineLearningSolutionsOverride = {
     "Model Monitoring & Retraining"
   ],
   // marketStats: [
-  //   { label: 'Global machine learning market by 2029 (MarketsandMarkets)', value: '$209B' },
+  //   { label: 'Global machine learning market by 2029 (MarketsandMarkets)', value: '£209B' },
   //   { label: 'ROI from ML model deployment vs. analytical reporting alone', value: '3.5x' },
   //   { label: 'Of ML projects fail to reach production the \'lab to production\' gap', value: '85%' },
-  //   { label: 'Annual value of a well-deployed churn prediction model per $10M ARR', value: '$1.6M' },
+  //   { label: 'Annual value of a well-deployed churn prediction model per £10M ARR', value: '£1.6M' },
   // ],
   servicesCards: [
     { title: "Predictive Analytics Models", description: "Supervised learning models predicting continuous outcomes (regression) or classifying inputs (classification). Business applications: churn prediction, revenue forecasting, demand forecasting, CLV prediction, sales pipeline forecasting. Feature engineering drives most predictive value." },
@@ -6612,17 +6612,17 @@ const machineLearningSolutionsOverride = {
     { layer: "Data Infrastructure", technologies: "PostgreSQL, Snowflake/BigQuery, Apache Spark, dbt" }
   ],
   pricingTiers: [
-    { type: "ML Feasibility Study", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Data audit, problem definition, feasibility assessment, expected accuracy range, roadmap" },
-    { type: "Predictive Model (Single)", investment: "$12,000 - $35,000", timeline: "5 - 10 weeks", bestFor: "Feature engineering, model training + evaluation, API deployment, basic monitoring" },
-    { type: "Churn Prediction System", investment: "$15,000 - $40,000", timeline: "6 - 10 weeks", bestFor: "Full churn model, Salesforce integration, CRM alerts, 90-day accuracy review" },
-    { type: "Demand / Revenue Forecasting", investment: "$15,000 - $45,000", timeline: "6 - 12 weeks", bestFor: "Multi-model ensemble, confidence intervals, dashboard, automated retraining pipeline" },
-    { type: "Fraud / Anomaly Detection", investment: "$18,000 - $50,000", timeline: "7 - 12 weeks", bestFor: "Real-time scoring API (<100ms), threshold calibration, false positive management" },
-    { type: "Recommendation System", investment: "$20,000 - $60,000", timeline: "8 - 14 weeks", bestFor: "Collaborative/content-based/hybrid, real-time or batch serving, A/B testing" },
-    { type: "NLP Classification / Extraction", investment: "$15,000 - $45,000", timeline: "6 - 12 weeks", bestFor: "Fine-tuned transformer, pipeline, API, evaluation framework" },
-    { type: "Computer Vision Model", investment: "$20,000 - $65,000", timeline: "8 - 14 weeks", bestFor: "Custom training pipeline, transfer learning, inference API, model card, monitoring" },
-    { type: "MLOps Implementation", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "Experiment tracking, model registry, retraining pipeline, drift monitoring, dashboards" },
-    { type: "ML Model Audit & Improvement", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "Performance audit, drift analysis, feature improvement, retraining, new baseline" },
-    { type: "ML Growth Retainer", investment: "$5,000 - $15,000/mo", timeline: "Ongoing", bestFor: "Model retraining, feature engineering, new use cases, monitoring, performance reports" }
+    { type: "ML Feasibility Study", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Data audit, problem definition, feasibility assessment, expected accuracy range, roadmap" },
+    { type: "Predictive Model (Single)", investment: "£12,000 - £35,000", timeline: "5 - 10 weeks", bestFor: "Feature engineering, model training + evaluation, API deployment, basic monitoring" },
+    { type: "Churn Prediction System", investment: "£15,000 - £40,000", timeline: "6 - 10 weeks", bestFor: "Full churn model, Salesforce integration, CRM alerts, 90-day accuracy review" },
+    { type: "Demand / Revenue Forecasting", investment: "£15,000 - £45,000", timeline: "6 - 12 weeks", bestFor: "Multi-model ensemble, confidence intervals, dashboard, automated retraining pipeline" },
+    { type: "Fraud / Anomaly Detection", investment: "£18,000 - £50,000", timeline: "7 - 12 weeks", bestFor: "Real-time scoring API (<100ms), threshold calibration, false positive management" },
+    { type: "Recommendation System", investment: "£20,000 - £60,000", timeline: "8 - 14 weeks", bestFor: "Collaborative/content-based/hybrid, real-time or batch serving, A/B testing" },
+    { type: "NLP Classification / Extraction", investment: "£15,000 - £45,000", timeline: "6 - 12 weeks", bestFor: "Fine-tuned transformer, pipeline, API, evaluation framework" },
+    { type: "Computer Vision Model", investment: "£20,000 - £65,000", timeline: "8 - 14 weeks", bestFor: "Custom training pipeline, transfer learning, inference API, model card, monitoring" },
+    { type: "MLOps Implementation", investment: "£15,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "Experiment tracking, model registry, retraining pipeline, drift monitoring, dashboards" },
+    { type: "ML Model Audit & Improvement", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "Performance audit, drift analysis, feature improvement, retraining, new baseline" },
+    { type: "ML Growth Retainer", investment: "£5,000 - £15,000/mo", timeline: "Ongoing", bestFor: "Model retraining, feature engineering, new use cases, monitoring, performance reports" }
   ],
   industryUseCases: [
     { name: "Churn Prediction", description: "Identify at-risk customers 30-90 days before cancellation. Enable proactive retention outreach. 3.5x ROI vs analytical reporting." },
@@ -6719,7 +6719,7 @@ const machineLearningSolutionsOverride = {
   },
   caseStudy: {
     title: "Churn Prediction & MLOps",
-    description: "Built churn prediction system for $50M ARR SaaS company. 85% precision at 40% recall, 45-day advance warning. Integrated with Salesforce for automated alerts. Reduced churn by 28% in first year. Full MLOps pipeline with monthly retraining.",
+    description: "Built churn prediction system for £50M ARR SaaS company. 85% precision at 40% recall, 45-day advance warning. Integrated with Salesforce for automated alerts. Reduced churn by 28% in first year. Full MLOps pipeline with monthly retraining.",
     slug: "churn-prediction-mlops",
     badge: "Machine Learning"
   },
@@ -6805,14 +6805,14 @@ const predictiveAnalyticsOverride = {
     { layer: "Monitoring", technologies: "Evidently AI (drift), custom Prometheus + Grafana" }
   ],
   pricingTiers: [
-    { type: "Data Feasibility Audit", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Data review, label definition, baseline analysis, feasibility report" },
-    { type: "Churn Prediction Model", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Feature engineering, LightGBM/XGBoost, SHAP, CRM integration, monitoring" },
-    { type: "Demand Forecasting", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Time series features, model selection, quantile intervals, forecast API" },
-    { type: "Lead Scoring / CLV Model", investment: "$10,000 - $30,000", timeline: "3 - 7 weeks", bestFor: "Firmographic + behavioural features, conversion model, SHAP, CRM sync" },
-    { type: "Anomaly Detection", investment: "$10,000 - $30,000", timeline: "3 - 7 weeks", bestFor: "Isolation forest or autoencoder, streaming or batch, alert routing" },
-    { type: "Propensity Model Suite", investment: "$15,000 - $45,000", timeline: "4 - 9 weeks", bestFor: "Upsell/cross-sell/response/reactivation 2-4 models with shared feature pipeline" },
-    { type: "Full Predictive Stack", investment: "$25,000 - $80,000", timeline: "6 - 14 weeks", bestFor: "Multiple models + feature store + batch pipeline + production APIs + monitoring" },
-    { type: "ML Retainer", investment: "$4,000 - $10,000/mo", timeline: "Ongoing", bestFor: "Retraining, drift monitoring, new features, model iteration" }
+    { type: "Data Feasibility Audit", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Data review, label definition, baseline analysis, feasibility report" },
+    { type: "Churn Prediction Model", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Feature engineering, LightGBM/XGBoost, SHAP, CRM integration, monitoring" },
+    { type: "Demand Forecasting", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Time series features, model selection, quantile intervals, forecast API" },
+    { type: "Lead Scoring / CLV Model", investment: "£10,000 - £30,000", timeline: "3 - 7 weeks", bestFor: "Firmographic + behavioural features, conversion model, SHAP, CRM sync" },
+    { type: "Anomaly Detection", investment: "£10,000 - £30,000", timeline: "3 - 7 weeks", bestFor: "Isolation forest or autoencoder, streaming or batch, alert routing" },
+    { type: "Propensity Model Suite", investment: "£15,000 - £45,000", timeline: "4 - 9 weeks", bestFor: "Upsell/cross-sell/response/reactivation 2-4 models with shared feature pipeline" },
+    { type: "Full Predictive Stack", investment: "£25,000 - £80,000", timeline: "6 - 14 weeks", bestFor: "Multiple models + feature store + batch pipeline + production APIs + monitoring" },
+    { type: "ML Retainer", investment: "£4,000 - £10,000/mo", timeline: "Ongoing", bestFor: "Retraining, drift monitoring, new features, model iteration" }
   ],
   industryUseCases: [
     { name: "SaaS Churn Prediction", description: "Predict which subscription customers will cancel. 30-90 day advance warning. Feature engineering from product usage, support tickets, billing history. SHAP explanations for each at-risk account." },
@@ -6862,7 +6862,7 @@ const predictiveAnalyticsOverride = {
   },
   caseStudy: {
     title: "Churn Prediction Model",
-    description: "Built churn prediction system for $50M ARR SaaS company. 85% precision at 40% recall, 45-day advance warning. SHAP explanations for each at-risk account. Integrated with Salesforce for automated alerts. Reduced churn by 28% in first year.",
+    description: "Built churn prediction system for £50M ARR SaaS company. 85% precision at 40% recall, 45-day advance warning. SHAP explanations for each at-risk account. Integrated with Salesforce for automated alerts. Reduced churn by 28% in first year.",
     slug: "churn-prediction",
     badge: "Predictive Analytics"
   },
@@ -6942,14 +6942,14 @@ const recommendationSystemsOverride = {
     { layer: "Evaluation", technologies: "Spark (offline NDCG, MAP, Recall@K), A/B testing framework (online CTR, revenue)" }
   ],
   pricingTiers: [
-    { type: "Recommendation Scoping", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Data analysis, approach selection, architecture design, proposal" },
-    { type: "Content-Based Engine (Cold Start)", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "LLM or TF-IDF embeddings, similarity search, recommendation API" },
-    { type: "Collaborative Filtering Engine", investment: "$12,000 - $32,000", timeline: "4 - 8 weeks", bestFor: "ALS matrix factorisation, implicit feedback, real-time API, A/B framework" },
-    { type: "Hybrid Recommendation System", investment: "$15,000 - $45,000", timeline: "5 - 9 weeks", bestFor: "Collaborative + content-based, blending layer, real-time API" },
-    { type: "Two-Tower Neural Model", investment: "$20,000 - $60,000", timeline: "6 - 12 weeks", bestFor: "User + item towers, ANN retrieval (FAISS), re-ranking, API" },
-    { type: "E-commerce Recommendation Suite", investment: "$15,000 - $50,000", timeline: "5 - 10 weeks", bestFor: "'Also bought', 'similar', cart upsell, homepage personalisation" },
-    { type: "A/B Testing Framework", investment: "$5,000 - $12,000", timeline: "2 - 3 weeks", bestFor: "Experiment design, variant assignment, CTR + revenue lift measurement" },
-    { type: "Recommendation Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "Model retraining, A/B test analysis, new recommendation surfaces" }
+    { type: "Recommendation Scoping", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Data analysis, approach selection, architecture design, proposal" },
+    { type: "Content-Based Engine (Cold Start)", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "LLM or TF-IDF embeddings, similarity search, recommendation API" },
+    { type: "Collaborative Filtering Engine", investment: "£12,000 - £32,000", timeline: "4 - 8 weeks", bestFor: "ALS matrix factorisation, implicit feedback, real-time API, A/B framework" },
+    { type: "Hybrid Recommendation System", investment: "£15,000 - £45,000", timeline: "5 - 9 weeks", bestFor: "Collaborative + content-based, blending layer, real-time API" },
+    { type: "Two-Tower Neural Model", investment: "£20,000 - £60,000", timeline: "6 - 12 weeks", bestFor: "User + item towers, ANN retrieval (FAISS), re-ranking, API" },
+    { type: "E-commerce Recommendation Suite", investment: "£15,000 - £50,000", timeline: "5 - 10 weeks", bestFor: "'Also bought', 'similar', cart upsell, homepage personalisation" },
+    { type: "A/B Testing Framework", investment: "£5,000 - £12,000", timeline: "2 - 3 weeks", bestFor: "Experiment design, variant assignment, CTR + revenue lift measurement" },
+    { type: "Recommendation Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "Model retraining, A/B test analysis, new recommendation surfaces" }
   ],
   industryUseCases: [
     { name: "E-commerce Product Recommendations", description: "'Also bought', 'similar products', cart upsell. Real-time API. 35% of Amazon's revenue driven by recommendations." },
@@ -7088,14 +7088,14 @@ const modelTrainingOptimisationOverride = {
     { layer: "MLOps / Retraining", technologies: "MLflow (model registry, pipeline tracking), Apache Airflow/Prefect, GitHub Actions, Evidently AI (drift triggers)" }
   ],
   pricingTiers: [
-    { type: "Model Audit & Evaluation Review", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Evaluation methodology review, overfitting diagnosis, improvement plan" },
-    { type: "Hyperparameter Optimisation", investment: "$5,000 - $15,000", timeline: "2 - 3 weeks", bestFor: "Optuna search, search space design, result analysis, retrained model" },
-    { type: "Cross-Validation Framework", investment: "$4,000 - $10,000", timeline: "1 - 2 weeks", bestFor: "CV strategy, stratification, time series CV, calibration assessment" },
-    { type: "Feature Engineering & Selection", investment: "$6,000 - $18,000", timeline: "2 - 4 weeks", bestFor: "Feature importance, RFE, SHAP selection, dimensionality reduction" },
-    { type: "Model Distillation / Compression", investment: "$8,000 - $22,000", timeline: "2 - 5 weeks", bestFor: "Student-teacher distillation, quantisation, ONNX export, latency benchmark" },
-    { type: "Full Model Optimisation", investment: "$15,000 - $45,000", timeline: "4 - 8 weeks", bestFor: "All above: evaluation + tuning + feature + compression + deployment" },
-    { type: "MLOps Retraining Pipeline", investment: "$10,000 - $30,000", timeline: "3 - 6 weeks", bestFor: "Automated retraining, eval gate, model registry, deployment CI/CD" },
-    { type: "ML Optimisation Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "Monthly retraining, drift monitoring, continuous improvement" }
+    { type: "Model Audit & Evaluation Review", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Evaluation methodology review, overfitting diagnosis, improvement plan" },
+    { type: "Hyperparameter Optimisation", investment: "£5,000 - £15,000", timeline: "2 - 3 weeks", bestFor: "Optuna search, search space design, result analysis, retrained model" },
+    { type: "Cross-Validation Framework", investment: "£4,000 - £10,000", timeline: "1 - 2 weeks", bestFor: "CV strategy, stratification, time series CV, calibration assessment" },
+    { type: "Feature Engineering & Selection", investment: "£6,000 - £18,000", timeline: "2 - 4 weeks", bestFor: "Feature importance, RFE, SHAP selection, dimensionality reduction" },
+    { type: "Model Distillation / Compression", investment: "£8,000 - £22,000", timeline: "2 - 5 weeks", bestFor: "Student-teacher distillation, quantisation, ONNX export, latency benchmark" },
+    { type: "Full Model Optimisation", investment: "£15,000 - £45,000", timeline: "4 - 8 weeks", bestFor: "All above: evaluation + tuning + feature + compression + deployment" },
+    { type: "MLOps Retraining Pipeline", investment: "£10,000 - £30,000", timeline: "3 - 6 weeks", bestFor: "Automated retraining, eval gate, model registry, deployment CI/CD" },
+    { type: "ML Optimisation Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "Monthly retraining, drift monitoring, continuous improvement" }
   ],
   industryUseCases: [
     { name: "Overfitting Diagnosis", description: "Model with 95% training accuracy but 72% validation accuracy. Diagnosis + regularisation + cross-validation + retraining." },
@@ -7216,14 +7216,14 @@ const deepLearningSolutionsOverride = {
     { layer: "Hardware", technologies: "AWS EC2 G5 (NVIDIA A10G), P4d (A100), CUDA, DDP (distributed training)" }
   ],
   pricingTiers: [
-    { type: "Deep Learning Scoping", investment: "$4,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Use case analysis, DL vs classical decision, architecture design, data requirements" },
-    { type: "Image Classification Model", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "CNN + transfer learning, data augmentation, evaluation, deployment" },
-    { type: "Object Detection Model", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "YOLO/DETR, custom class training, evaluation, API deployment" },
-    { type: "NLP Classification (BERT fine-tune)", investment: "$10,000 - $30,000", timeline: "3 - 7 weeks", bestFor: "HuggingFace fine-tune, evaluation, batch + real-time API" },
-    { type: "Time Series Deep Learning", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "TFT/N-BEATS, probabilistic forecasts, evaluation, API" },
-    { type: "Transfer Learning (Limited Data)", investment: "$10,000 - $30,000", timeline: "3 - 7 weeks", bestFor: "Fine-tune pre-trained model, data augmentation, few-shot if needed" },
-    { type: "Custom Neural Architecture", investment: "$20,000 - $70,000", timeline: "6 - 14 weeks", bestFor: "Novel architecture, research-grade implementation, GPU training, deployment" },
-    { type: "Deep Learning Retainer", investment: "$4,000 - $12,000/mo", timeline: "Ongoing", bestFor: "Model retraining, dataset expansion, architecture iteration, monitoring" }
+    { type: "Deep Learning Scoping", investment: "£4,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Use case analysis, DL vs classical decision, architecture design, data requirements" },
+    { type: "Image Classification Model", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "CNN + transfer learning, data augmentation, evaluation, deployment" },
+    { type: "Object Detection Model", investment: "£15,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "YOLO/DETR, custom class training, evaluation, API deployment" },
+    { type: "NLP Classification (BERT fine-tune)", investment: "£10,000 - £30,000", timeline: "3 - 7 weeks", bestFor: "HuggingFace fine-tune, evaluation, batch + real-time API" },
+    { type: "Time Series Deep Learning", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "TFT/N-BEATS, probabilistic forecasts, evaluation, API" },
+    { type: "Transfer Learning (Limited Data)", investment: "£10,000 - £30,000", timeline: "3 - 7 weeks", bestFor: "Fine-tune pre-trained model, data augmentation, few-shot if needed" },
+    { type: "Custom Neural Architecture", investment: "£20,000 - £70,000", timeline: "6 - 14 weeks", bestFor: "Novel architecture, research-grade implementation, GPU training, deployment" },
+    { type: "Deep Learning Retainer", investment: "£4,000 - £12,000/mo", timeline: "Ongoing", bestFor: "Model retraining, dataset expansion, architecture iteration, monitoring" }
   ],
   industryUseCases: [
     { name: "Quality Control (CV)", description: "Detect manufacturing defects from production line images. CNN classification or YOLO detection. Transfer learning from ImageNet requires only 1,000-10,000 labelled defect images." },
@@ -7351,14 +7351,14 @@ const naturalLanguageProcessingOverride = {
     { layer: "Deployment", technologies: "FastAPI, ONNX Runtime (2-5x faster), TorchServe, AWS SageMaker" }
   ],
   pricingTiers: [
-    { type: "NLP Scoping & Data Audit", investment: "$3,000 - $6,000", timeline: "1 - 2 weeks", bestFor: "Task definition, data quality review, model selection, labelling requirements" },
-    { type: "Text Classification Model", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "BERT fine-tune, evaluation, REST API, monitoring" },
-    { type: "Named Entity Recognition", investment: "$8,08,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Token classifier, custom entity types, evaluation, API" },
-    { type: "Sentiment Analysis System", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "Doc-level or aspect-based, dashboard integration" },
-    { type: "Semantic Search Engine", investment: "$10,000 - $28,000", timeline: "4 - 7 weeks", bestFor: "Bi-encoder, pgvector/FAISS, re-ranking, search API" },
-    { type: "Summarisation Pipeline", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "T5/BART fine-tune or prompting, batch + on-demand API" },
-    { type: "Full NLP Suite", investment: "$20,000 - $65,000", timeline: "6 - 12 weeks", bestFor: "Multiple NLP tasks sharing data pipeline and API gateway" },
-    { type: "NLP Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "Model retraining, new entity types, accuracy monitoring" }
+    { type: "NLP Scoping & Data Audit", investment: "£3,000 - £6,000", timeline: "1 - 2 weeks", bestFor: "Task definition, data quality review, model selection, labelling requirements" },
+    { type: "Text Classification Model", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "BERT fine-tune, evaluation, REST API, monitoring" },
+    { type: "Named Entity Recognition", investment: "£8,08,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Token classifier, custom entity types, evaluation, API" },
+    { type: "Sentiment Analysis System", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "Doc-level or aspect-based, dashboard integration" },
+    { type: "Semantic Search Engine", investment: "£10,000 - £28,000", timeline: "4 - 7 weeks", bestFor: "Bi-encoder, pgvector/FAISS, re-ranking, search API" },
+    { type: "Summarisation Pipeline", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "T5/BART fine-tune or prompting, batch + on-demand API" },
+    { type: "Full NLP Suite", investment: "£20,000 - £65,000", timeline: "6 - 12 weeks", bestFor: "Multiple NLP tasks sharing data pipeline and API gateway" },
+    { type: "NLP Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "Model retraining, new entity types, accuracy monitoring" }
   ],
   industryUseCases: [
     { name: "Support Ticket Classification", description: "Classify 10,000+ tickets per hour by issue type, priority, sentiment. BERT fine-tuned on labelled tickets. Automate routing, priority escalation, and sentiment tracking." },
@@ -7481,13 +7481,13 @@ const speechRecognitionOverride = {
     { layer: "Infrastructure", technologies: "AWS EC2 G5 (GPU for Whisper), Lambda (serverless batch), WebSockets (real-time)" }
   ],
   pricingTiers: [
-    { type: "ASR Scoping", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "Use case analysis, model selection, diarisation plan, API design" },
-    { type: "Batch Transcription Pipeline", investment: "$8,000 - $22,000", timeline: "3 - 5 weeks", bestFor: "Whisper + diarisation, S3 ingestion, JSON output, webhook delivery" },
-    { type: "Real-Time Streaming ASR", investment: "$10,000 - $28,000", timeline: "4 - 7 weeks", bestFor: "Deepgram WebSocket, partial transcripts, React/mobile UI" },
-    { type: "Call Centre Analytics", investment: "$15,000 - $45,000", timeline: "5 - 9 weeks", bestFor: "Transcription + sentiment + topics + action items + compliance + dashboard" },
-    { type: "Voice Command Interface", investment: "$10,000 - $28,000", timeline: "4 - 7 weeks", bestFor: "Wake word + streaming ASR + intent classification + app integration" },
-    { type: "Custom Vocabulary Fine-Tuning", investment: "$6,000 - $15,000", timeline: "2 - 4 weeks", bestFor: "Domain vocabulary injection or Whisper fine-tune on specialised audio" },
-    { type: "ASR Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "Model updates, WER monitoring, new language support, feature expansion" }
+    { type: "ASR Scoping", investment: "£2,000 - £5,000", timeline: "1 week", bestFor: "Use case analysis, model selection, diarisation plan, API design" },
+    { type: "Batch Transcription Pipeline", investment: "£8,000 - £22,000", timeline: "3 - 5 weeks", bestFor: "Whisper + diarisation, S3 ingestion, JSON output, webhook delivery" },
+    { type: "Real-Time Streaming ASR", investment: "£10,000 - £28,000", timeline: "4 - 7 weeks", bestFor: "Deepgram WebSocket, partial transcripts, React/mobile UI" },
+    { type: "Call Centre Analytics", investment: "£15,000 - £45,000", timeline: "5 - 9 weeks", bestFor: "Transcription + sentiment + topics + action items + compliance + dashboard" },
+    { type: "Voice Command Interface", investment: "£10,000 - £28,000", timeline: "4 - 7 weeks", bestFor: "Wake word + streaming ASR + intent classification + app integration" },
+    { type: "Custom Vocabulary Fine-Tuning", investment: "£6,000 - £15,000", timeline: "2 - 4 weeks", bestFor: "Domain vocabulary injection or Whisper fine-tune on specialised audio" },
+    { type: "ASR Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "Model updates, WER monitoring, new language support, feature expansion" }
   ],
   industryUseCases: [
     { name: "Meeting Transcription", description: "Transcribe Zoom/Teams calls with speaker diarisation. Timestamped transcript showing who said what. Post-process: extract decisions and action items with LLM. 60-minute meeting transcribed in ~2 minutes." },
@@ -7614,14 +7614,14 @@ const textAnalyticsOverride = {
     { layer: "Dashboard", technologies: "Metabase, Looker, Tableau, or custom React + Plotly" }
   ],
   pricingTiers: [
-    { type: "Text Analytics Discovery", investment: "$3,000 - $6,000", timeline: "1 - 2 weeks", bestFor: "Data inventory, use case prioritisation, analytics architecture plan" },
-    { type: "Topic Modelling System", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "BERTopic, interactive dashboard, trend monitoring, alerts" },
-    { type: "Sentiment Monitoring Dashboard", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Multi-source, aspect-based, trend dashboard, Slack/email alerts" },
-    { type: "Contract Analytics Pipeline", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Clause extraction, risk flagging, bulk analysis, review workflow" },
-    { type: "Voice of Customer System", investment: "$10,000 - $28,000", timeline: "4 - 7 weeks", bestFor: "Transcript/survey analysis, theme taxonomy, insight report" },
-    { type: "Competitive Intelligence", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Web scraping + NLP, monitoring dashboard, change alerts" },
-    { type: "Full Text Analytics Platform", investment: "$20,000 - $65,000", timeline: "6 - 12 weeks", bestFor: "All above sharing data pipeline + BI dashboard integration" },
-    { type: "Text Analytics Retainer", investment: "$3,000 - $7,000/mo", timeline: "Ongoing", bestFor: "New data sources, topic refresh, model improvement, reporting" }
+    { type: "Text Analytics Discovery", investment: "£3,000 - £6,000", timeline: "1 - 2 weeks", bestFor: "Data inventory, use case prioritisation, analytics architecture plan" },
+    { type: "Topic Modelling System", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "BERTopic, interactive dashboard, trend monitoring, alerts" },
+    { type: "Sentiment Monitoring Dashboard", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Multi-source, aspect-based, trend dashboard, Slack/email alerts" },
+    { type: "Contract Analytics Pipeline", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Clause extraction, risk flagging, bulk analysis, review workflow" },
+    { type: "Voice of Customer System", investment: "£10,000 - £28,000", timeline: "4 - 7 weeks", bestFor: "Transcript/survey analysis, theme taxonomy, insight report" },
+    { type: "Competitive Intelligence", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Web scraping + NLP, monitoring dashboard, change alerts" },
+    { type: "Full Text Analytics Platform", investment: "£20,000 - £65,000", timeline: "6 - 12 weeks", bestFor: "All above sharing data pipeline + BI dashboard integration" },
+    { type: "Text Analytics Retainer", investment: "£3,000 - £7,000/mo", timeline: "Ongoing", bestFor: "New data sources, topic refresh, model improvement, reporting" }
   ],
   industryUseCases: [
     { name: "Customer Feedback Analysis", description: "Analyse 50,000+ support tickets, surveys, reviews. Identify top 10 recurring issues. Track sentiment by product feature. Prioritise product roadmap by customer pain point frequency." },
@@ -7637,7 +7637,7 @@ const textAnalyticsOverride = {
     },
     {
       heading: "Text Analytics ROI Real Examples",
-      body: "Text analytics ROI depends on the specific use case. Contract analytics: typical B2B legal teams spend 4-8 hours reviewing a non-standard commercial contract. An analytics system that pre-classifies and flags deviations reduces this to 1-2 hours 50-75% time reduction at the fully-loaded cost of a legal professional. At $150/hour and 500 contracts/year, that is $150,000-$300,000 in annual time savings. Customer feedback analytics: product teams manually tagging support tickets spend 15-30 minutes per ticket categorising and routing. At 2,000 tickets/week, automating this saves 500-1,000 hours/week allowing the team to spend that time acting on insights rather than generating them. Sentiment monitoring: identifying a significant sentiment drop 2 weeks before it shows in churn data gives the customer success team an intervention window that manual review cannot provide. Clickmasters estimates ROI for each specific use case as part of the discovery engagement.",
+      body: "Text analytics ROI depends on the specific use case. Contract analytics: typical B2B legal teams spend 4-8 hours reviewing a non-standard commercial contract. An analytics system that pre-classifies and flags deviations reduces this to 1-2 hours 50-75% time reduction at the fully-loaded cost of a legal professional. At £150/hour and 500 contracts/year, that is £150,000-£300,000 in annual time savings. Customer feedback analytics: product teams manually tagging support tickets spend 15-30 minutes per ticket categorising and routing. At 2,000 tickets/week, automating this saves 500-1,000 hours/week allowing the team to spend that time acting on insights rather than generating them. Sentiment monitoring: identifying a significant sentiment drop 2 weeks before it shows in churn data gives the customer success team an intervention window that manual review cannot provide. Clickmasters estimates ROI for each specific use case as part of the discovery engagement.",
       items: []
     }
   ],
@@ -7656,7 +7656,7 @@ const textAnalyticsOverride = {
     },
     {
       question: "What ROI can I expect from a text analytics system?",
-      answer: "Text analytics ROI depends on the specific use case. Contract analytics: typical B2B legal teams spend 4-8 hours reviewing a non-standard commercial contract. An analytics system that pre-classifies and flags deviations reduces this to 1-2 hours 50-75% time reduction at the fully-loaded cost of a legal professional. At $150/hour and 500 contracts/year, that is $150,000-$300,000 in annual time savings. Customer feedback analytics: product teams manually tagging support tickets spend 15-30 minutes per ticket categorising and routing. At 2,000 tickets/week, automating this saves 500-1,000 hours/week allowing the team to spend that time acting on insights rather than generating them. Sentiment monitoring: identifying a significant sentiment drop 2 weeks before it shows in churn data gives the customer success team an intervention window that manual review cannot provide. Clickmasters estimates ROI for each specific use case as part of the discovery engagement."
+      answer: "Text analytics ROI depends on the specific use case. Contract analytics: typical B2B legal teams spend 4-8 hours reviewing a non-standard commercial contract. An analytics system that pre-classifies and flags deviations reduces this to 1-2 hours 50-75% time reduction at the fully-loaded cost of a legal professional. At £150/hour and 500 contracts/year, that is £150,000-£300,000 in annual time savings. Customer feedback analytics: product teams manually tagging support tickets spend 15-30 minutes per ticket categorising and routing. At 2,000 tickets/week, automating this saves 500-1,000 hours/week allowing the team to spend that time acting on insights rather than generating them. Sentiment monitoring: identifying a significant sentiment drop 2 weeks before it shows in churn data gives the customer success team an intervention window that manual review cannot provide. Clickmasters estimates ROI for each specific use case as part of the discovery engagement."
     }
   ],
   testimonial: {
@@ -7745,14 +7745,14 @@ const computerVisionOverride = {
     { layer: "Hardware/Deployment", technologies: "TensorRT (3-5x faster), NVIDIA Jetson Orin (edge), ONNX Runtime, GigE Vision industrial cameras" }
   ],
   pricingTiers: [
-    { type: "CV Scoping & Data Audit", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Use case analysis, dataset assessment, labelling requirements, architecture plan" },
-    { type: "Image Classification Model", investment: "$10,000 - $28,000", timeline: "3 - 7 weeks", bestFor: "Transfer learning, fine-tuning, evaluation, REST API deployment" },
-    { type: "Object Detection (YOLO v8)", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Custom class training, annotation, evaluation, real-time API" },
-    { type: "Defect Detection System", investment: "$15,000 - $45,000", timeline: "5 - 9 weeks", bestFor: "Anomaly detection or classification, production line integration, alerting" },
-    { type: "Instance Segmentation", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "Mask R-CNN or YOLOv8-seg, precision boundary annotation" },
-    { type: "Document Layout Analysis", investment: "$12,000 - $32,000", timeline: "4 - 8 weeks", bestFor: "LayoutLM fine-tune, table + form extraction, PDF pipeline" },
-    { type: "Medical / Satellite Specialist", investment: "$20,000 - $65,000", timeline: "6 - 12 weeks", bestFor: "Domain-specific model, regulatory scoping, precision benchmarking" },
-    { type: "CV Retainer", investment: "$3,500 - $9,000/mo", timeline: "Ongoing", bestFor: "Model retraining, new class addition, performance monitoring" }
+    { type: "CV Scoping & Data Audit", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Use case analysis, dataset assessment, labelling requirements, architecture plan" },
+    { type: "Image Classification Model", investment: "£10,000 - £28,000", timeline: "3 - 7 weeks", bestFor: "Transfer learning, fine-tuning, evaluation, REST API deployment" },
+    { type: "Object Detection (YOLO v8)", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Custom class training, annotation, evaluation, real-time API" },
+    { type: "Defect Detection System", investment: "£15,000 - £45,000", timeline: "5 - 9 weeks", bestFor: "Anomaly detection or classification, production line integration, alerting" },
+    { type: "Instance Segmentation", investment: "£15,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "Mask R-CNN or YOLOv8-seg, precision boundary annotation" },
+    { type: "Document Layout Analysis", investment: "£12,000 - £32,000", timeline: "4 - 8 weeks", bestFor: "LayoutLM fine-tune, table + form extraction, PDF pipeline" },
+    { type: "Medical / Satellite Specialist", investment: "£20,000 - £65,000", timeline: "6 - 12 weeks", bestFor: "Domain-specific model, regulatory scoping, precision benchmarking" },
+    { type: "CV Retainer", investment: "£3,500 - £9,000/mo", timeline: "Ongoing", bestFor: "Model retraining, new class addition, performance monitoring" }
   ],
   industryUseCases: [
     { name: "Quality Control / Defect Detection", description: "Automated visual inspection on manufacturing line. YOLO v8 detection or PatchCore anomaly detection. <100ms latency. Achieves 99%+ detection accuracy. Replaces fatigued human inspectors." },
@@ -7877,14 +7877,14 @@ const imageProcessingOverride = {
     { layer: "Infrastructure", technologies: "AWS Lambda (serverless event-triggered), AWS ECS (batch), S3, CloudFront, API Gateway" }
   ],
   pricingTiers: [
-    { type: "Image Processing Scoping", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "Volume analysis, pipeline design, throughput requirements, API plan" },
-    { type: "Batch Enhancement Pipeline", investment: "$6,000 - $18,000", timeline: "2 - 5 weeks", bestFor: "OpenCV/Pillow pipeline, S3 trigger, Lambda/ECS deployment" },
-    { type: "Background Removal System", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "U2-Net/SAM, batch S3 pipeline, e-commerce platform integration" },
-    { type: "OCR Document Pipeline", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Pre-processing + Textract/Tesseract + post-processing + JSON output" },
-    { type: "Image Quality Assessment", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "BRISQUE lur detection + ML IQA, filtering API, monitoring" },
-    { type: "Super-Resolution Pipeline", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "Real-ESRGAN batch upscaling, S3 pipeline, quality validation" },
-    { type: "DICOM Medical Pipeline", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "pydicom parsing, anonymisation, windowing, MONAI preprocessing" },
-    { type: "Image Processing Retainer", investment: "$2,000 - $5,000/mo", timeline: "Ongoing", bestFor: "Pipeline maintenance, new processing steps, throughput scaling" }
+    { type: "Image Processing Scoping", investment: "£2,000 - £5,000", timeline: "1 week", bestFor: "Volume analysis, pipeline design, throughput requirements, API plan" },
+    { type: "Batch Enhancement Pipeline", investment: "£6,000 - £18,000", timeline: "2 - 5 weeks", bestFor: "OpenCV/Pillow pipeline, S3 trigger, Lambda/ECS deployment" },
+    { type: "Background Removal System", investment: "£6,000 - £16,000", timeline: "2 - 4 weeks", bestFor: "U2-Net/SAM, batch S3 pipeline, e-commerce platform integration" },
+    { type: "OCR Document Pipeline", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Pre-processing + Textract/Tesseract + post-processing + JSON output" },
+    { type: "Image Quality Assessment", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "BRISQUE lur detection + ML IQA, filtering API, monitoring" },
+    { type: "Super-Resolution Pipeline", investment: "£6,000 - £16,000", timeline: "2 - 4 weeks", bestFor: "Real-ESRGAN batch upscaling, S3 pipeline, quality validation" },
+    { type: "DICOM Medical Pipeline", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "pydicom parsing, anonymisation, windowing, MONAI preprocessing" },
+    { type: "Image Processing Retainer", investment: "£2,000 - £5,000/mo", timeline: "Ongoing", bestFor: "Pipeline maintenance, new processing steps, throughput scaling" }
   ],
   industryUseCases: [
     { name: "E-commerce Product Images", description: "Background removal + enhancement + format standardisation for 100,000+ product images. Uniform white background, consistent sizing, WebP conversion." },
@@ -7900,7 +7900,7 @@ const imageProcessingOverride = {
     },
     {
       heading: "OCR Engine Selection Guide",
-      body: "Tesseract 5 is the best open-source OCR engine free, self-hosted (data stays on your infrastructure), good accuracy on clean printed text, and supports 100+ languages. It is the right choice when: data privacy prevents using cloud APIs, the volume is very high (cloud API costs would be prohibitive), and the document quality is good (clean, well-scanned). AWS Textract is the best managed cloud OCR for structured documents it preserves table structure, identifies form fields (label + value pairs), and handles multi-column layouts with significantly better accuracy than Tesseract on complex layouts. Use when: you are already on AWS, table and form extraction matters, and a per-page cost ($0.0015-$0.015/page) is acceptable. Google Document AI has pre-built models specifically for invoices, receipts, ID documents, and custom forms use when you have a specific document type that matches a Google pre-built model.",
+      body: "Tesseract 5 is the best open-source OCR engine free, self-hosted (data stays on your infrastructure), good accuracy on clean printed text, and supports 100+ languages. It is the right choice when: data privacy prevents using cloud APIs, the volume is very high (cloud API costs would be prohibitive), and the document quality is good (clean, well-scanned). AWS Textract is the best managed cloud OCR for structured documents it preserves table structure, identifies form fields (label + value pairs), and handles multi-column layouts with significantly better accuracy than Tesseract on complex layouts. Use when: you are already on AWS, table and form extraction matters, and a per-page cost (£0.0015-£0.015/page) is acceptable. Google Document AI has pre-built models specifically for invoices, receipts, ID documents, and custom forms use when you have a specific document type that matches a Google pre-built model.",
       items: []
     }
   ],
@@ -7915,7 +7915,7 @@ const imageProcessingOverride = {
     },
     {
       question: "Which OCR engine should I use Tesseract, AWS Textract, or Google Document AI?",
-      answer: "Tesseract 5 is the best open-source OCR engine free, self-hosted (data stays on your infrastructure), good accuracy on clean printed text, and supports 100+ languages. It is the right choice when: data privacy prevents using cloud APIs, the volume is very high (cloud API costs would be prohibitive), and the document quality is good (clean, well-scanned). AWS Textract is the best managed cloud OCR for structured documents it preserves table structure, identifies form fields (label + value pairs), and handles multi-column layouts with significantly better accuracy than Tesseract on complex layouts. Use when: you are already on AWS, table and form extraction matters, and a per-page cost ($0.0015-$0.015/page) is acceptable. Google Document AI has pre-built models specifically for invoices, receipts, ID documents, and custom forms use when you have a specific document type that matches a Google pre-built model."
+      answer: "Tesseract 5 is the best open-source OCR engine free, self-hosted (data stays on your infrastructure), good accuracy on clean printed text, and supports 100+ languages. It is the right choice when: data privacy prevents using cloud APIs, the volume is very high (cloud API costs would be prohibitive), and the document quality is good (clean, well-scanned). AWS Textract is the best managed cloud OCR for structured documents it preserves table structure, identifies form fields (label + value pairs), and handles multi-column layouts with significantly better accuracy than Tesseract on complex layouts. Use when: you are already on AWS, table and form extraction matters, and a per-page cost (£0.0015-£0.015/page) is acceptable. Google Document AI has pre-built models specifically for invoices, receipts, ID documents, and custom forms use when you have a specific document type that matches a Google pre-built model."
     },
     {
       question: "Can image processing pipelines handle medical images (DICOM)?",
@@ -8008,14 +8008,14 @@ const videoAnalyticsOverride = {
     { layer: "Event Streaming", technologies: "Apache Kafka (real-time events), AWS Kinesis, RabbitMQ, Redis Streams" }
   ],
   pricingTiers: [
-    { type: "Video Analytics Scoping", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Camera inventory, use case analysis, latency requirements, infrastructure plan" },
-    { type: "Object Detection + Tracking", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "YOLO v8 + DeepSORT, custom classes, real-time stream, dashboard" },
-    { type: "Retail Analytics Platform", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "Footfall + heatmap + queue + dwell time + shift dashboard" },
-    { type: "Action Recognition System", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "SlowFast/Video Swin, custom action dataset, real-time alert API" },
-    { type: "ANPR / Licence Plate System", investment: "$12,000 - $32,000", timeline: "4 - 8 weeks", bestFor: "Plate detection + OCR + access control integration" },
-    { type: "Crowd Analytics", investment: "$10,000 - $28,000", timeline: "4 - 8 weeks", bestFor: "CSRNet density estimation, occupancy monitoring, event safety" },
-    { type: "Full Video Intelligence Platform", investment: "$25,000 - $80,000", timeline: "7 - 14 weeks", bestFor: "Multiple analytics + RTSP ingestion + Kafka events + BI dashboard" },
-    { type: "Video Analytics Retainer", investment: "$3,500 - $9,000/mo", timeline: "Ongoing", bestFor: "Model retraining, new camera integration, performance monitoring" }
+    { type: "Video Analytics Scoping", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Camera inventory, use case analysis, latency requirements, infrastructure plan" },
+    { type: "Object Detection + Tracking", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "YOLO v8 + DeepSORT, custom classes, real-time stream, dashboard" },
+    { type: "Retail Analytics Platform", investment: "£15,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "Footfall + heatmap + queue + dwell time + shift dashboard" },
+    { type: "Action Recognition System", investment: "£15,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "SlowFast/Video Swin, custom action dataset, real-time alert API" },
+    { type: "ANPR / Licence Plate System", investment: "£12,000 - £32,000", timeline: "4 - 8 weeks", bestFor: "Plate detection + OCR + access control integration" },
+    { type: "Crowd Analytics", investment: "£10,000 - £28,000", timeline: "4 - 8 weeks", bestFor: "CSRNet density estimation, occupancy monitoring, event safety" },
+    { type: "Full Video Intelligence Platform", investment: "£25,000 - £80,000", timeline: "7 - 14 weeks", bestFor: "Multiple analytics + RTSP ingestion + Kafka events + BI dashboard" },
+    { type: "Video Analytics Retainer", investment: "£3,500 - £9,000/mo", timeline: "Ongoing", bestFor: "Model retraining, new camera integration, performance monitoring" }
   ],
   industryUseCases: [
     { name: "Retail Store Analytics", description: "Footfall counting, dwell time per zone, queue length at checkout. Staffing alerts, merchandise effectiveness measurement, conversion zone analysis. CCTV only, no new hardware." },
@@ -8104,7 +8104,7 @@ const dataScienceAnalyticsOverride = {
     "Self-Service Analytics"
   ],
   // marketStats: [
-  //   { label: 'Global data analytics market size by 2026', value: '$274B' },
+  //   { label: 'Global data analytics market size by 2026', value: '£274B' },
   //   { label: 'ROI from data-driven decision making vs. intuition-driven', value: '5x' },
   //   { label: 'Data generated globally every day most organizations use <1%', value: '2.5EB' },
   //   { label: 'Of enterprise data goes unused for analytics (Forrester)', value: '73%' },
@@ -8122,7 +8122,7 @@ const dataScienceAnalyticsOverride = {
     { feature: "Data Maturity Model", description: "5-level model with investment ranges skip levels and waste money framing | Basic: One-size-fits-all analytics (wrong level = waste)" },
     { feature: "Analytics Taxonomy", description: "4-row table (Data Engineering, BI, Data Science, Analytics) | Basic: Terms used interchangeably (buyer confusion)" },
     { feature: "Modern Data Stack", description: "8-layer table with tools + what it does (Airbyte, dbt, Snowflake, Metabase, etc.) | Basic: Legacy ETL references (outdated expertise)" },
-    { feature: "ROI Quantification", description: "$90K wasted analyst capacity + churn model $500K ARR recovered | Basic: No ROI framing (CFO unconvinced)" }
+    { feature: "ROI Quantification", description: "£90K wasted analyst capacity + churn model £500K ARR recovered | Basic: No ROI framing (CFO unconvinced)" }
   ],
   processPhases: [
     { phase: "Phase 1", title: "Data Audit & Strategy", timeline: "Week 1-2", text: "Inventory all data sources (systems, data quality, access), business objective alignment (what decisions should data enable?), data maturity assessment (current level, target level, investment justification). Deliverable: Data Audit Report + Data Strategy Document with phased roadmap." },
@@ -8144,19 +8144,19 @@ const dataScienceAnalyticsOverride = {
     { layer: "Metrics Layer", technologies: "dbt Semantic Layer / MetricFlow, Cube.dev defines company-wide metric definitions consistently across all BI tools" }
   ],
   pricingTiers: [
-    { type: "Data Audit & Strategy", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Data inventory, maturity assessment, architecture recommendation, phased roadmap" },
-    { type: "Data Foundation (Modern Stack)", investment: "$15,000 - $40,000", timeline: "4 - 8 weeks", bestFor: "Warehouse setup, ingestion pipelines (3-5 sources), dbt models, data quality tests, orchestration" },
-    { type: "BI Dashboard Platform", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "3-5 dashboards, metric definitions, self-service analytics, automated reporting" },
-    { type: "Full Data Platform", investment: "$30,000 - $80,000", timeline: "8 - 14 weeks", bestFor: "Full stack: ingestion, warehouse, dbt, metrics layer, BI dashboards, documentation" },
-    { type: "Customer Analytics Platform", investment: "$20,000 - $55,000", timeline: "6 - 12 weeks", bestFor: "Cohort analysis, churn indicators, engagement scoring, retention dashboard, action integration" },
-    { type: "Churn Prediction Model", investment: "$20,000 - $50,000", timeline: "6 - 12 weeks", bestFor: "Feature engineering, model training, Salesforce deployment, monitoring, 90-day review" },
-    { type: "Revenue Intelligence", investment: "$18,000 - $50,000", timeline: "5 - 10 weeks", bestFor: "SaaS metrics (MRR/ARR/NRR/LTV), unified revenue warehouse, CFO/board dashboard" },
-    { type: "Financial Consolidation", investment: "$15,000 - $45,000", timeline: "4 - 9 weeks", bestFor: "Multi-entity ingestion, currency normalization, consolidation rules, board pack automation" },
-    { type: "Data Science Retainer", investment: "$5,000 - $18,000/mo", timeline: "Ongoing", bestFor: "Model retraining, new data sources, new dashboards, analytics iteration, data quality monitoring" }
+    { type: "Data Audit & Strategy", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Data inventory, maturity assessment, architecture recommendation, phased roadmap" },
+    { type: "Data Foundation (Modern Stack)", investment: "£15,000 - £40,000", timeline: "4 - 8 weeks", bestFor: "Warehouse setup, ingestion pipelines (3-5 sources), dbt models, data quality tests, orchestration" },
+    { type: "BI Dashboard Platform", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "3-5 dashboards, metric definitions, self-service analytics, automated reporting" },
+    { type: "Full Data Platform", investment: "£30,000 - £80,000", timeline: "8 - 14 weeks", bestFor: "Full stack: ingestion, warehouse, dbt, metrics layer, BI dashboards, documentation" },
+    { type: "Customer Analytics Platform", investment: "£20,000 - £55,000", timeline: "6 - 12 weeks", bestFor: "Cohort analysis, churn indicators, engagement scoring, retention dashboard, action integration" },
+    { type: "Churn Prediction Model", investment: "£20,000 - £50,000", timeline: "6 - 12 weeks", bestFor: "Feature engineering, model training, Salesforce deployment, monitoring, 90-day review" },
+    { type: "Revenue Intelligence", investment: "£18,000 - £50,000", timeline: "5 - 10 weeks", bestFor: "SaaS metrics (MRR/ARR/NRR/LTV), unified revenue warehouse, CFO/board dashboard" },
+    { type: "Financial Consolidation", investment: "£15,000 - £45,000", timeline: "4 - 9 weeks", bestFor: "Multi-entity ingestion, currency normalization, consolidation rules, board pack automation" },
+    { type: "Data Science Retainer", investment: "£5,000 - £18,000/mo", timeline: "Ongoing", bestFor: "Model retraining, new data sources, new dashboards, analytics iteration, data quality monitoring" }
   ],
   industryUseCases: [
     { name: "SaaS Revenue Intelligence", description: "Unified revenue warehouse from Stripe, Salesforce, product DB. MRR/ARR/NRR/churn metrics defined once. 3-day close \xE2\u2020\u2019 same-day automated reporting. Improved 90-day retention by 8%." },
-    { name: "Customer Churn Prediction", description: "Churn classifier from product usage + account data. Identifies 73% of churned accounts 30+ days before cancellation. Reduced monthly churn from 2.5% to 1.8% $500K+ ARR recovered." },
+    { name: "Customer Churn Prediction", description: "Churn classifier from product usage + account data. Identifies 73% of churned accounts 30+ days before cancellation. Reduced monthly churn from 2.5% to 1.8% £500K+ ARR recovered." },
     { name: "Operations Intelligence", description: "Real-time pipeline from TMS + GPS carriers to Snowflake. Live shipment status, exception flags, SLA alerts. Customer escalations reduced by 45%." },
     { name: "Financial Consolidation", description: "Ingest from 12 subsidiary accounting systems. Currency normalization, intercompany elimination. Month-end close reduced from 8 days to 2 days." }
   ],
@@ -8184,7 +8184,7 @@ const dataScienceAnalyticsOverride = {
     },
     {
       heading: "The True Cost of Data Infrastructure Debt",
-      body: "A B2B SaaS company with $10M ARR typically has 2 data analysts spending 50% of their time on data wrangling rather than analysis. At $90,000 average analyst salary, that is $90,000/year in wasted analytical capacity. A modern data stack built for $30,000-60,000 reallocates that capacity to actual analysis compounding returns through better decisions, earlier churn detection, and more effective growth investment.",
+      body: "A B2B SaaS company with £10M ARR typically has 2 data analysts spending 50% of their time on data wrangling rather than analysis. At £90,000 average analyst salary, that is £90,000/year in wasted analytical capacity. A modern data stack built for £30,000-60,000 reallocates that capacity to actual analysis compounding returns through better decisions, earlier churn detection, and more effective growth investment.",
       items: []
     },
     {
@@ -8199,12 +8199,12 @@ const dataScienceAnalyticsOverride = {
     },
     {
       heading: "The Data Maturity Model Where Is Your Organization?",
-      body: "Before investing in data infrastructure, it is important to understand your current maturity level. Skipping levels creates waste companies that invest in machine learning before they have reliable reporting frequently waste $200,000+ on models that cannot be trusted because the underlying data is not clean or consistent.",
+      body: "Before investing in data infrastructure, it is important to understand your current maturity level. Skipping levels creates waste companies that invest in machine learning before they have reliable reporting frequently waste £200,000+ on models that cannot be trusted because the underlying data is not clean or consistent.",
       items: [
-        "Level 1 Reactive: Decisions made on gut and spreadsheets. Data in silos, manual reporting, no data team, Excel as data warehouse. Investment: $10K-25K for data audit + modern stack foundation + first dashboard.",
-        "Level 2 Descriptive: Regular reporting on what happened. Basic BI tool, some pipelines, inconsistent definitions across teams. Investment: $20K-50K for data warehouse, dbt models, unified BI layer, metric definitions.",
-        "Level 3 Diagnostic: Understanding why things happen. Unified data warehouse, clean data models, self-service analytics, data team, some A/B testing. Investment: $30K-80K for advanced analytics, experimentation framework, customer analytics.",
-        "Level 4 Predictive: Forecasting what will happen. Reliable historical data, ML-capable infrastructure, data science team, initial models in production. Investment: $40K-120K for predictive churn, demand forecasting, recommendation systems.",
+        "Level 1 Reactive: Decisions made on gut and spreadsheets. Data in silos, manual reporting, no data team, Excel as data warehouse. Investment: £10K-25K for data audit + modern stack foundation + first dashboard.",
+        "Level 2 Descriptive: Regular reporting on what happened. Basic BI tool, some pipelines, inconsistent definitions across teams. Investment: £20K-50K for data warehouse, dbt models, unified BI layer, metric definitions.",
+        "Level 3 Diagnostic: Understanding why things happen. Unified data warehouse, clean data models, self-service analytics, data team, some A/B testing. Investment: £30K-80K for advanced analytics, experimentation framework, customer analytics.",
+        "Level 4 Predictive: Forecasting what will happen. Reliable historical data, ML-capable infrastructure, data science team, initial models in production. Investment: £40K-120K for predictive churn, demand forecasting, recommendation systems.",
         "Level 5 Prescriptive: Automated optimization recommendations. MLOps platform, real-time decisions, AI-driven product features, data product mindset. Investment: Enterprise AI platform engagement see Generative AI Solutions page."
       ]
     },
@@ -8238,7 +8238,7 @@ const dataScienceAnalyticsOverride = {
     },
     {
       question: "How much does it cost to build a data analytics platform?",
-      answer: "Building a data analytics platform costs between $15,000 for a basic modern data stack foundation (data warehouse, ingestion pipelines, initial dbt models) to $80,000 for a full platform including customer analytics, predictive models, and self-service BI. The primary cost drivers are: numbef data sources to ingest, complexity of data transformation and metric definitions, whether predictive modeling is in scope, and the number of dashboards and analytics use cases. Cloud data warehouse running costs (Snowflake, BigQuery) are typically $300-3,000/month depending on data volume. Clickmasters provides fixed-price proposals after a free data audit session."
+      answer: "Building a data analytics platform costs between £15,000 for a basic modern data stack foundation (data warehouse, ingestion pipelines, initial dbt models) to £80,000 for a full platform including customer analytics, predictive models, and self-service BI. The primary cost drivers are: numbef data sources to ingest, complexity of data transformation and metric definitions, whether predictive modeling is in scope, and the number of dashboards and analytics use cases. Cloud data warehouse running costs (Snowflake, BigQuery) are typically £300-3,000/month depending on data volume. Clickmasters provides fixed-price proposals after a free data audit session."
     },
     {
       question: "What is a data warehouse and do I need one?",
@@ -8254,7 +8254,7 @@ const dataScienceAnalyticsOverride = {
     },
     {
       question: "Do you provide ongoing data engineering and analytics support after delivery?",
-      answer: "Yes. Clickmasters offers ongoing data engineering and analytics retainers from $5,000-18,000/month covering: new data source integration (connecting additional systems as your stack grows), pipeline maintenance and incident response (fixing broken pipelines, handling source system API changes), model retraining (refreshing predictive models with new data and evaluating for drift), new dashboard and report development, data quality monitoring, and analytics iteration based on business question evolution. Most clielients transition to a retainer after initial delivery because data needs grow with the business new products, new markets, new reporting requirements."
+      answer: "Yes. Clickmasters offers ongoing data engineering and analytics retainers from £5,000-18,000/month covering: new data source integration (connecting additional systems as your stack grows), pipeline maintenance and incident response (fixing broken pipelines, handling source system API changes), model retraining (refreshing predictive models with new data and evaluating for drift), new dashboard and report development, data quality monitoring, and analytics iteration based on business question evolution. Most clielients transition to a retainer after initial delivery because data needs grow with the business new products, new markets, new reporting requirements."
     }
   ],
   testimonial: {
@@ -8346,14 +8346,14 @@ const businessIntelligenceOverride = {
     { layer: "Orchestration", technologies: "dbt Cloud (scheduling), Apache Airflow, Prefect" }
   ],
   pricingTiers: [
-    { type: "BI Discovery & Architecture", investment: "$4,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Source system audit, warehouse design, tool selection, roadmap" },
-    { type: "Data Warehouse Build (Snowflake/BQ)", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Schema design, ingestion pipelines, medallion layers, access control" },
-    { type: "dbt Data Modelling", investment: "$8,000 - $25,000", timeline: "3 - 6 weeks", bestFor: "Staging + intermediate + mart models, tests, documentation" },
-    { type: "Metabase Deployment", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Self-hosted, dashboards, row-level security, email delivery" },
-    { type: "Looker / LookML Build", investment: "$10,000 - $30,000", timeline: "3 - 7 weeks", bestFor: "LookML semantic layer, Looks, Dashboards, user permissions" },
-    { type: "Embedded Analytics", investment: "$10,000 - $28,000", timeline: "3 - 6 weeks", bestFor: "Metabase signed or Looker embedded in SaaS product, tenant isolation" },
-    { type: "KPI Monitoring System", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "Threshold + anomaly detection, Slack/email alerts, executive digest" },
-    { type: "BI Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "New metrics, dashboard maintenance, source system additions, training" }
+    { type: "BI Discovery & Architecture", investment: "£4,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Source system audit, warehouse design, tool selection, roadmap" },
+    { type: "Data Warehouse Build (Snowflake/BQ)", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Schema design, ingestion pipelines, medallion layers, access control" },
+    { type: "dbt Data Modelling", investment: "£8,000 - £25,000", timeline: "3 - 6 weeks", bestFor: "Staging + intermediate + mart models, tests, documentation" },
+    { type: "Metabase Deployment", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Self-hosted, dashboards, row-level security, email delivery" },
+    { type: "Looker / LookML Build", investment: "£10,000 - £30,000", timeline: "3 - 7 weeks", bestFor: "LookML semantic layer, Looks, Dashboards, user permissions" },
+    { type: "Embedded Analytics", investment: "£10,000 - £28,000", timeline: "3 - 6 weeks", bestFor: "Metabase signed or Looker embedded in SaaS product, tenant isolation" },
+    { type: "KPI Monitoring System", investment: "£6,000 - £16,000", timeline: "2 - 4 weeks", bestFor: "Threshold + anomaly detection, Slack/email alerts, executive digest" },
+    { type: "BI Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "New metrics, dashboard maintenance, source system additions, training" }
   ],
   industryUseCases: [
     { name: "SaaS Executive Dashboard", description: "Unified revenue view from Stripe + Salesforce + product DB. MRR, ARR, NRR, churn, LTV, CAC. Self-service for executives. Real-time KPI monitoring with Slack alerts." },
@@ -8470,14 +8470,14 @@ const dataWarehousingOverride = {
     { layer: "Migration", technologies: "AWS Schema Conversion Tool (SQL translation), Great Expectations (data validation), dbt + Airflow (pipeline migration)" }
   ],
   pricingTiers: [
-    { type: "Warehouse Assessment", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Technology selection, schema review, cost model, migration plan" },
-    { type: "Snowflake Implementation", investment: "$10,000 - $28,000", timeline: "3 - 6 weeks", bestFor: "Setup, RBAC, schema, monitoring, cost controls, dbt integration" },
-    { type: "BigQuery Implementation", investment: "$8,000 - $24,000", timeline: "3 - 6 weeks", bestFor: "Project structure, partitioning, clustering, IAM, cost monitoring" },
-    { type: "Redshift Implementation", investment: "$8,000 - $24,000", timeline: "3 - 6 weeks", bestFor: "Cluster or serverless, schema, vacuum/analyze, monitoring" },
-    { type: "Schema Design (Star/Medallion)", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "Dimensional model, SCD Type 2, naming conventions, dbt contracts" },
-    { type: "Query Optimisation", investment: "$5,000 - $14,000", timeline: "2 - 3 weeks", bestFor: "Profile top queries, add partitioning/clustering, materialised views" },
-    { type: "Warehouse Migration", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "SQL translation, ETL migration, parallel validation, cutover" },
-    { type: "Warehouse Retainer", investment: "$3,000 - $7,000/mo", timeline: "Ongoing", bestFor: "Cost monitoring, schema evolution, performance optimisation" }
+    { type: "Warehouse Assessment", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Technology selection, schema review, cost model, migration plan" },
+    { type: "Snowflake Implementation", investment: "£10,000 - £28,000", timeline: "3 - 6 weeks", bestFor: "Setup, RBAC, schema, monitoring, cost controls, dbt integration" },
+    { type: "BigQuery Implementation", investment: "£8,000 - £24,000", timeline: "3 - 6 weeks", bestFor: "Project structure, partitioning, clustering, IAM, cost monitoring" },
+    { type: "Redshift Implementation", investment: "£8,000 - £24,000", timeline: "3 - 6 weeks", bestFor: "Cluster or serverless, schema, vacuum/analyze, monitoring" },
+    { type: "Schema Design (Star/Medallion)", investment: "£6,000 - £16,000", timeline: "2 - 4 weeks", bestFor: "Dimensional model, SCD Type 2, naming conventions, dbt contracts" },
+    { type: "Query Optimisation", investment: "£5,000 - £14,000", timeline: "2 - 3 weeks", bestFor: "Profile top queries, add partitioning/clustering, materialised views" },
+    { type: "Warehouse Migration", investment: "£15,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "SQL translation, ETL migration, parallel validation, cutover" },
+    { type: "Warehouse Retainer", investment: "£3,000 - £7,000/mo", timeline: "Ongoing", bestFor: "Cost monitoring, schema evolution, performance optimisation" }
   ],
   industryUseCases: [
     { name: "SaaS Revenue Warehouse", description: "Snowflake warehouse from Stripe, Salesforce, product DB. Star schema: fact_subscription_transactions, dim_customer, dim_date, dim_product_plan. 3-day financial close \xE2\u2020\u2019 same-day automated reporting." },
@@ -8507,7 +8507,7 @@ const dataWarehousingOverride = {
     },
     {
       question: "How much does it cost to run Snowflake?",
-      answer: "Snowflake costs have two components: comcompute (virtual warehouse credits charged per second of warehouse activity) and storage (compressed data storage approximately $23/TB/month). A typical startup with one X-Small virtual warehouse running 8 hours/day, 250GB of data, and ELT pipelines costs approximately $150-400/month. A growing B2B SaaS company with multiple warehouses, 1TB data, and active BI usage costs $500-2,000/month. Enterprise deployments with multiple teams, heavy ML workloads, and terabytes of data can cost $5,000-50,000+/month. The most common Snowflake overspending pattern is virtual warehouses that do not auto-suspend (running 24/7 when queries only run for 2 hours/day). Clickmasters configures auto-suspend to 1-5 minutes on all warehouses typically reducing Snowflake spend by 40-60% on new deployments where auto-suspend was not configured."
+      answer: "Snowflake costs have two components: comcompute (virtual warehouse credits charged per second of warehouse activity) and storage (compressed data storage approximately £23/TB/month). A typical startup with one X-Small virtual warehouse running 8 hours/day, 250GB of data, and ELT pipelines costs approximately £150-400/month. A growing B2B SaaS company with multiple warehouses, 1TB data, and active BI usage costs £500-2,000/month. Enterprise deployments with multiple teams, heavy ML workloads, and terabytes of data can cost £5,000-50,000+/month. The most common Snowflake overspending pattern is virtual warehouses that do not auto-suspend (running 24/7 when queries only run for 2 hours/day). Clickmasters configures auto-suspend to 1-5 minutes on all warehouses typically reducing Snowflake spend by 40-60% on new deployments where auto-suspend was not configured."
     },
     {
       question: "What is the star schema and why is it used in data warehouses?",
@@ -8604,14 +8604,14 @@ const dataVisualizationOverride = {
     { layer: "Export", technologies: "html2canvas (render to PNG/JPEG), SVG export (native chart libraries), jsPDF (multi-chart PDF reports), Scrollama (scrollytelling)" }
   ],
   pricingTiers: [
-    { type: "Visualisation Discovery", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "Chart type selection, data model review, component architecture plan" },
-    { type: "React Dashboard (Standard)", investment: "$6,000 - $18,000", timeline: "3 - 6 weeks", bestFor: "Recharts/Nivo, KPI cards, filters, drill-down, date range, TypeScript" },
-    { type: "Custom D3.js Chart", investment: "$5,000 - $15,000", timeline: "2 - 4 weeks", bestFor: "Custom SVG layout, transitions, interactions, responsive" },
-    { type: "Real-Time Dashboard", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "WebSocket/SSE, live updates, performance optimisation" },
-    { type: "Embedded Chart Library", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "React component library, theming, TypeScript, design system integration" },
-    { type: "Geospatial Visualisation", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Mapbox/Leaflet/Deck.gl, custom layers, interactive filters" },
-    { type: "Data Storytelling / Scrollytelling", investment: "$6,000 - $16,000", timeline: "2 - 5 weeks", bestFor: "Scrollama, annotated charts, PDF export, responsive" },
-    { type: "Visualisation Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "New chart types, dataset additions, performance, design refresh" }
+    { type: "Visualisation Discovery", investment: "£2,000 - £5,000", timeline: "1 week", bestFor: "Chart type selection, data model review, component architecture plan" },
+    { type: "React Dashboard (Standard)", investment: "£6,000 - £18,000", timeline: "3 - 6 weeks", bestFor: "Recharts/Nivo, KPI cards, filters, drill-down, date range, TypeScript" },
+    { type: "Custom D3.js Chart", investment: "£5,000 - £15,000", timeline: "2 - 4 weeks", bestFor: "Custom SVG layout, transitions, interactions, responsive" },
+    { type: "Real-Time Dashboard", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "WebSocket/SSE, live updates, performance optimisation" },
+    { type: "Embedded Chart Library", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "React component library, theming, TypeScript, design system integration" },
+    { type: "Geospatial Visualisation", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Mapbox/Leaflet/Deck.gl, custom layers, interactive filters" },
+    { type: "Data Storytelling / Scrollytelling", investment: "£6,000 - £16,000", timeline: "2 - 5 weeks", bestFor: "Scrollama, annotated charts, PDF export, responsive" },
+    { type: "Visualisation Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "New chart types, dataset additions, performance, design refresh" }
   ],
   industryUseCases: [
     { name: "Executive Dashboard", description: "React + Recharts dashboard for company KPIs. MRR trend (area chart), churn by cohort (grouped bar), revenue by segment (treemap). Date range picker, drill-down to customer-level data." },
@@ -8738,14 +8738,14 @@ const bigDataSolutionsOverride = {
     { layer: "Storage", technologies: "AWS S3 (primary), GCS, ADLS, S3 Intelligent-Tiering (auto cost optimisation)" }
   ],
   pricingTiers: [
-    { type: "Big Data Architecture Review", investment: "$5,000 - $10,000", timeline: "1 - 2 weeks", bestFor: "Volume assessment, technology selection, cost model, migration plan" },
-    { type: "Spark / Databricks Setup", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Cluster config, Delta Lake, Unity Catalog, notebook environment" },
-    { type: "Kafka Infrastructure", investment: "$10,000 - $30,000", timeline: "3 - 7 weeks", bestFor: "MSK/Confluent, topic design, Connect, Schema Registry, monitoring" },
-    { type: "Data Lakehouse (Delta/Iceberg)", investment: "$12,000 - $32,000", timeline: "3 - 7 weeks", bestFor: "Storage layer, ACID transactions, time travel, query optimisation" },
-    { type: "Flink Stream Processing", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Stateful processing, event-time windows, exactly-once, deployment" },
-    { type: "AWS Glue + Athena Data Lake", investment: "$8,000 - $24,000", timeline: "3 - 6 weeks", bestFor: "Serverless ETL, Glue Catalog, Athena queries, cost optimisation" },
-    { type: "Data Governance Layer", investment: "$10,000 - $28,000", timeline: "3 - 6 weeks", bestFor: "Unity Catalog / Ranger, PII masking, lineage, access policies" },
-    { type: "Big Data Retainer", investment: "$5,000 - $12,000/mo", timeline: "Ongoing", bestFor: "Cluster optimisation, new pipeline development, governance, monitoring" }
+    { type: "Big Data Architecture Review", investment: "£5,000 - £10,000", timeline: "1 - 2 weeks", bestFor: "Volume assessment, technology selection, cost model, migration plan" },
+    { type: "Spark / Databricks Setup", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Cluster config, Delta Lake, Unity Catalog, notebook environment" },
+    { type: "Kafka Infrastructure", investment: "£10,000 - £30,000", timeline: "3 - 7 weeks", bestFor: "MSK/Confluent, topic design, Connect, Schema Registry, monitoring" },
+    { type: "Data Lakehouse (Delta/Iceberg)", investment: "£12,000 - £32,000", timeline: "3 - 7 weeks", bestFor: "Storage layer, ACID transactions, time travel, query optimisation" },
+    { type: "Flink Stream Processing", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Stateful processing, event-time windows, exactly-once, deployment" },
+    { type: "AWS Glue + Athena Data Lake", investment: "£8,000 - £24,000", timeline: "3 - 6 weeks", bestFor: "Serverless ETL, Glue Catalog, Athena queries, cost optimisation" },
+    { type: "Data Governance Layer", investment: "£10,000 - £28,000", timeline: "3 - 6 weeks", bestFor: "Unity Catalog / Ranger, PII masking, lineage, access policies" },
+    { type: "Big Data Retainer", investment: "£5,000 - £12,000/mo", timeline: "Ongoing", bestFor: "Cluster optimisation, new pipeline development, governance, monitoring" }
   ],
   industryUseCases: [
     { name: "Real-Time Fraud Detection", description: "Kafka stream of transactions (100K/sec) \xE2\u2020\u2019 Flink real-time risk scoring (stateful, event-time windows) \xE2\u2020\u2019 alert within 100ms. Debezium CDC from PostgreSQL to Kafka for immediate transaction capture. Databricks for fraud pattern analysis on historical data." },
@@ -8784,7 +8784,7 @@ const bigDataSolutionsOverride = {
   faqs: [
     {
       question: "When do I actually need big data technology like Spark?",
-      answer: "The threshold where Spark becomes appropriate is roughly: data processing tasks that take more than 2-4 hours on a single machine (Spark's distributed processing splits the work across a cluster, reducing time proportionally), datasets larger than 1-2TB that make cloud data warehouse query costs prohibitive (Snowflake and BigQuery bill by bytes scanned a 10TB full table scan on BigQuery costs $50 each time), streaming requirements with sub-second latency across millions of events per second (standard SQL databases and even Kafka Streams have throughput limits), or ML model training on datasets too large for scikit-learn on a single machine (Spark MLlib distributes the training across a cluster). If your data fits in Snowflake or BigQuery and your queries complete in under 5 minutes, Spark adds complexity without benefit."
+      answer: "The threshold where Spark becomes appropriate is roughly: data processing tasks that take more than 2-4 hours on a single machine (Spark's distributed processing splits the work across a cluster, reducing time proportionally), datasets larger than 1-2TB that make cloud data warehouse query costs prohibitive (Snowflake and BigQuery bill by bytes scanned a 10TB full table scan on BigQuery costs £50 each time), streaming requirements with sub-second latency across millions of events per second (standard SQL databases and even Kafka Streams have throughput limits), or ML model training on datasets too large for scikit-learn on a single machine (Spark MLlib distributes the training across a cluster). If your data fits in Snowflake or BigQuery and your queries complete in under 5 minutes, Spark adds complexity without benefit."
     },
     {
       question: "What is a data lakehouse and how is it different from a data lake or data warehouse?",
@@ -8889,15 +8889,15 @@ const webScrapingDataExtractionOverride = {
     { layer: "Infrastructure", technologies: "AWS Lambda (serverless, event-triggered), ECS Fargate (containerised long-running), CloudWatch (scheduling + monitoring), CloudFront" }
   ],
   pricingTiers: [
-    { type: "Scraping Feasibility Assessment", investment: "$1,500 - $4,000", timeline: "1 week", bestFor: "Target site analysis, ToS review, technical approach, cost model" },
-    { type: "Simple HTML Scraper", investment: "$3,000 - $8,000", timeline: "1 - 3 weeks", bestFor: "Single site, Scrapy/Playwright, structured output, scheduling" },
-    { type: "JavaScript SPA Scraper", investment: "$5,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "Playwright, dynamic content, state management, output pipeline" },
-    { type: "Anti-Detection Scraper", investment: "$6,000 - $16,000", timeline: "2 - 5 weeks", bestFor: "Proxy rotation, fingerprint masking, rate limiting, reliability" },
-    { type: "Price / Product Monitor", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "Multi-competitor, change detection, dashboard, daily schedule" },
-    { type: "Lead Data Pipeline", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Directory extraction, enrichment, CRM delivery, GDPR compliance" },
-    { type: "Document / PDF Extraction", investment: "$6,000 - $18,000", timeline: "2 - 5 weeks", bestFor: "Textract/OCR, structured extraction, scheduled refresh" },
-    { type: "Enterprise Scraping Infrastructure", investment: "$10,000 - $30,000", timeline: "3 - 7 weeks", bestFor: "AWS Lambda/ECS, SQS queue, S3 storage, monitoring, distributed" },
-    { type: "Scraping Retainer", investment: "$2,000 - $5,000/mo", timeline: "Ongoing", bestFor: "Maintenance, site change response, new targets, data quality monitoring" }
+    { type: "Scraping Feasibility Assessment", investment: "£1,500 - £4,000", timeline: "1 week", bestFor: "Target site analysis, ToS review, technical approach, cost model" },
+    { type: "Simple HTML Scraper", investment: "£3,000 - £8,000", timeline: "1 - 3 weeks", bestFor: "Single site, Scrapy/Playwright, structured output, scheduling" },
+    { type: "JavaScript SPA Scraper", investment: "£5,000 - £12,000", timeline: "2 - 4 weeks", bestFor: "Playwright, dynamic content, state management, output pipeline" },
+    { type: "Anti-Detection Scraper", investment: "£6,000 - £16,000", timeline: "2 - 5 weeks", bestFor: "Proxy rotation, fingerprint masking, rate limiting, reliability" },
+    { type: "Price / Product Monitor", investment: "£6,000 - £16,000", timeline: "2 - 4 weeks", bestFor: "Multi-competitor, change detection, dashboard, daily schedule" },
+    { type: "Lead Data Pipeline", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Directory extraction, enrichment, CRM delivery, GDPR compliance" },
+    { type: "Document / PDF Extraction", investment: "£6,000 - £18,000", timeline: "2 - 5 weeks", bestFor: "Textract/OCR, structured extraction, scheduled refresh" },
+    { type: "Enterprise Scraping Infrastructure", investment: "£10,000 - £30,000", timeline: "3 - 7 weeks", bestFor: "AWS Lambda/ECS, SQS queue, S3 storage, monitoring, distributed" },
+    { type: "Scraping Retainer", investment: "£2,000 - £5,000/mo", timeline: "Ongoing", bestFor: "Maintenance, site change response, new targets, data quality monitoring" }
   ],
   industryUseCases: [
     { name: "Competitor Price Monitoring", description: "Daily scrape of competitor pricing pages. Extract price, SKU, availability, promotions. Change detection alerts. Pricing intelligence dashboard. E-commerce price matching." },
@@ -8987,7 +8987,7 @@ const businessProcessAutomationOverride = {
     "AI-Augmented Automation"
   ],
   // marketStats: [
-  //   { label: 'Potential value unlocked by automation globally by 2030 (McKinsey)', value: '$15.9T' },
+  //   { label: 'Potential value unlocked by automation globally by 2030 (McKinsey)', value: '£15.9T' },
   //   { label: 'Cost reduction achievable through intelligent process automation', value: '40-75%' },
   //   { label: 'Of current work activities are automatable with existing technology', value: '45%' },
   //   { label: 'Average payback period for a well-scoped automation investment', value: '6 months' },
@@ -9002,7 +9002,7 @@ const businessProcessAutomationOverride = {
   ],
   differentiators: [
     { feature: "Zapier vs RPA vs Custom BPA", description: "11-row decision framework honest guidance on which technology fits | Basic: One-size-fits-all recommendation" },
-    { feature: "Automation ROI", description: "Specific calculation: $150K-500K/year wasted labor in top 3 automatable processes | Basic: No ROI quantification" },
+    { feature: "Automation ROI", description: "Specific calculation: £150K-500K/year wasted labor in top 3 automatable processes | Basic: No ROI quantification" },
     { feature: "Process Prioritisation", description: '10-process matrix with colour-coded priority (green/amber/gray) | Basic: "Automate everything" (no priority)' },
     { feature: "Exception Handling", description: "Documented from day one every known exception path, dead-letter queues | Basic: No exception handling (silent failures)" },
     { feature: "Parallel Run", description: "2-4 week parallel run with manual process, documented rollback plan | Basic: Cutover without validation (risk)" }
@@ -9028,17 +9028,17 @@ const businessProcessAutomationOverride = {
     { layer: "AI/LLM", technologies: "OpenAI GPT-4o (document understanding, classification, commentary), Claude 3.5 Sonnet (long-context), structured output APIs" }
   ],
   pricingTiers: [
-    { type: "Process Assessment & ROI Study", investment: "$3,000 - $6,000", timeline: "1 - 2 weeks", bestFor: "Process mapping, volume/error analysis, ROI calculation, build recommendation" },
-    { type: "Simple Workflow Automation", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "1-2 systems, linear workflow, basic conditional routing, notification, audit log" },
-    { type: "Approval Workflow Automation", investment: "$12,000 - $30,000", timeline: "4 - 7 weeks", bestFor: "Multi-step approval engine, routing rules, escalation timers, Slack/Teams, dashboard" },
-    { type: "Document Processing Automation", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "AI/rule-based extraction, validation, routing, human review, ERP/CRM integration" },
-    { type: "Multi-System Integration Workflow", investment: "$20,000 - $60,000", timeline: "6 - 12 weeks", bestFor: "3+ systems, complex conditional logic, exception handling, parallel run, monitoring" },
-    { type: "End-to-End Process Automation", investment: "$30,000 - $90,000", timeline: "8 - 16 weeks", bestFor: "Full process reimagining, multiple workflows, all exception paths, compliance audit trail" },
-    { type: "AI-Augmented Automation", investment: "$25,000 - $70,000", timeline: "7 - 14 weeks", bestFor: "LLM-based classification/extraction, HITL review, structured output validation" },
-    { type: "Automation Maintenance Retainer", investment: "$3,000 - $10,000/mo", timeline: "Ongoing", bestFor: "Monitoring, exception resolution, integration updates, new rules, enhancements" }
+    { type: "Process Assessment & ROI Study", investment: "£3,000 - £6,000", timeline: "1 - 2 weeks", bestFor: "Process mapping, volume/error analysis, ROI calculation, build recommendation" },
+    { type: "Simple Workflow Automation", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "1-2 systems, linear workflow, basic conditional routing, notification, audit log" },
+    { type: "Approval Workflow Automation", investment: "£12,000 - £30,000", timeline: "4 - 7 weeks", bestFor: "Multi-step approval engine, routing rules, escalation timers, Slack/Teams, dashboard" },
+    { type: "Document Processing Automation", investment: "£15,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "AI/rule-based extraction, validation, routing, human review, ERP/CRM integration" },
+    { type: "Multi-System Integration Workflow", investment: "£20,000 - £60,000", timeline: "6 - 12 weeks", bestFor: "3+ systems, complex conditional logic, exception handling, parallel run, monitoring" },
+    { type: "End-to-End Process Automation", investment: "£30,000 - £90,000", timeline: "8 - 16 weeks", bestFor: "Full process reimagining, multiple workflows, all exception paths, compliance audit trail" },
+    { type: "AI-Augmented Automation", investment: "£25,000 - £70,000", timeline: "7 - 14 weeks", bestFor: "LLM-based classification/extraction, HITL review, structured output validation" },
+    { type: "Automation Maintenance Retainer", investment: "£3,000 - £10,000/mo", timeline: "Ongoing", bestFor: "Monitoring, exception resolution, integration updates, new rules, enhancements" }
   ],
   industryUseCases: [
-    { name: "Contract-to-Cash Automation", description: "DocuSign signature \xE2\u2020\u2019 contract extraction \xE2\u2020\u2019 CRM update \xE2\u2020\u2019 billing schedule \xE2\u2020\u2019 welcome sequence \xE2\u2020\u2019 first invoice. Reduced 5-day process to 4 hours. Zero invoicing delays on $18M annual contract value." },
+    { name: "Contract-to-Cash Automation", description: "DocuSign signature \xE2\u2020\u2019 contract extraction \xE2\u2020\u2019 CRM update \xE2\u2020\u2019 billing schedule \xE2\u2020\u2019 welcome sequence \xE2\u2020\u2019 first invoice. Reduced 5-day process to 4 hours. Zero invoicing delays on £18M annual contract value." },
     { name: "Invoice Processing Automation", description: "Invoice ingestion \xE2\u2020\u2019 AI extraction \xE2\u2020\u2019 PO matching \xE2\u2020\u2019 tiered approval \xE2\u2020\u2019 payment scheduling. 78% of invoices processed without human touch. Error rate 6% \xE2\u2020\u2019 0.8%." },
     { name: "Employee Onboarding Automation", description: "Offer acceptance \xE2\u2020\u2019 IT equipment \xE2\u2020\u2019 access requests \xE2\u2020\u2019 facilities \xE2\u2020\u2019 payroll \xE2\u2020\u2019 training \xE2\u2020\u2019 check-ins. 22 manual steps \xE2\u2020\u2019 2 human touchpoints. Onboarding completion 71% \xE2\u2020\u2019 97%. Day 1 readiness from 12 days to 4 days." },
     { name: "Financial Reporting Automation", description: "Monthly trigger \xE2\u2020\u2019 data pull from 6 systems \xE2\u2020\u2019 dbt KPI models \xE2\u2020\u2019 LLM narrative commentary \xE2\u2020\u2019 PDF generation \xE2\u2020\u2019 board distribution. 2-day manual process \xE2\u2020\u2019 90-minute automated run." }
@@ -9074,7 +9074,7 @@ const businessProcessAutomationOverride = {
     },
     {
       question: "How much does business process automation cost?",
-      answer: "Business process automation costs range from $8,000 for a simple workflow automation to $90,000 for a full end-to-end process reimagining with multiple integrated systems. Primary cost drivers: number of systems to integrate, complexity of conditional logic and exception handling, document intelligence requirements (AI extraction costs more than rule-based), volume requirements, and compliance requirements (audit trail and documentation). Clickmasters provides a free process assessment with ROI calculation before scoping so clients know the payback period before committing."
+      answer: "Business process automation costs range from £8,000 for a simple workflow automation to £90,000 for a full end-to-end process reimagining with multiple integrated systems. Primary cost drivers: number of systems to integrate, complexity of conditional logic and exception handling, document intelligence requirements (AI extraction costs more than rule-based), volume requirements, and compliance requirements (audit trail and documentation). Clickmasters provides a free process assessment with ROI calculation before scoping so clients know the payback period before committing."
     },
     {
       question: "When should I use Zapier/Make instead of custom automation?",
@@ -9104,7 +9104,7 @@ const businessProcessAutomationOverride = {
   },
   caseStudy: {
     title: "Contract-to-Cash Automation",
-    description: "Automated contract-to-cash workflow: DocuSign \xE2\u2020\u2019 extraction \xE2\u2020\u2019 CRM \xE2\u2020\u2019 billing \xE2\u2020\u2019 welcome \xE2\u2020\u2019 invoice. Reduced 5-day, 7-handoff process to 4-hour automated run. Zero invoicing delays on $18M annual contract value.",
+    description: "Automated contract-to-cash workflow: DocuSign \xE2\u2020\u2019 extraction \xE2\u2020\u2019 CRM \xE2\u2020\u2019 billing \xE2\u2020\u2019 welcome \xE2\u2020\u2019 invoice. Reduced 5-day, 7-handoff process to 4-hour automated run. Zero invoicing delays on £18M annual contract value.",
     slug: "contract-to-cash",
     badge: "Business Process Automation"
   },
@@ -9190,14 +9190,14 @@ const workflowAutomationOverride = {
     { layer: "Monitoring", technologies: "n8n execution history, Grafana, Datadog, PagerDuty, Slack alerts" }
   ],
   pricingTiers: [
-    { type: "Automation Discovery Workshop", investment: "$2,500 - $5,000", timeline: "1 week", bestFor: "Process mapping, ROI analysis, tool selection, automation roadmap" },
-    { type: "Simple Workflow (1-3 steps)", investment: "$2,000 - $6,000", timeline: "1 - 2 weeks", bestFor: "Single trigger, 1-3 actions, error handling, monitoring" },
-    { type: "Multi-Step Workflow (3-10 steps)", investment: "$4,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "Complex logic, multiple apps, conditional branches, retry" },
-    { type: "Complex Automation Suite", investment: "$8,000 - $25,000", timeline: "3 - 6 weeks", bestFor: "Multiple connected workflows, error recovery, monitoring dashboard" },
-    { type: "n8n Self-Hosted Setup", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Docker/AWS deployment, auth, backup, monitoring, initial workflows" },
-    { type: "CRM Automation (Full)", investment: "$6,000 - $18,000", timeline: "2 - 5 weeks", bestFor: "Lead-to-customer, deal stages, onboarding, renewal workflows" },
-    { type: "HR/Finance Automation Suite", investment: "$6,000 - $18,000", timeline: "2 - 5 weeks", bestFor: "Employee lifecycle, billing events, finance sync, alert workflows" },
-    { type: "Automation Retainer", investment: "$2,000 - $6,000/mo", timeline: "Ongoing", bestFor: "New workflows, maintenance, tool updates, optimisation" }
+    { type: "Automation Discovery Workshop", investment: "£2,500 - £5,000", timeline: "1 week", bestFor: "Process mapping, ROI analysis, tool selection, automation roadmap" },
+    { type: "Simple Workflow (1-3 steps)", investment: "£2,000 - £6,000", timeline: "1 - 2 weeks", bestFor: "Single trigger, 1-3 actions, error handling, monitoring" },
+    { type: "Multi-Step Workflow (3-10 steps)", investment: "£4,000 - £12,000", timeline: "2 - 4 weeks", bestFor: "Complex logic, multiple apps, conditional branches, retry" },
+    { type: "Complex Automation Suite", investment: "£8,000 - £25,000", timeline: "3 - 6 weeks", bestFor: "Multiple connected workflows, error recovery, monitoring dashboard" },
+    { type: "n8n Self-Hosted Setup", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Docker/AWS deployment, auth, backup, monitoring, initial workflows" },
+    { type: "CRM Automation (Full)", investment: "£6,000 - £18,000", timeline: "2 - 5 weeks", bestFor: "Lead-to-customer, deal stages, onboarding, renewal workflows" },
+    { type: "HR/Finance Automation Suite", investment: "£6,000 - £18,000", timeline: "2 - 5 weeks", bestFor: "Employee lifecycle, billing events, finance sync, alert workflows" },
+    { type: "Automation Retainer", investment: "£2,000 - £6,000/mo", timeline: "Ongoing", bestFor: "New workflows, maintenance, tool updates, optimisation" }
   ],
   industryUseCases: [
     { name: "Lead-to-Customer Automation", description: "CRM lead \xE2\u2020\u2019 enrich \xE2\u2020\u2019 score \xE2\u2020\u2019 route to Slack \xE2\u2020\u2019 deal closed \xE2\u2020\u2019 Stripe billing \xE2\u2020\u2019 onboarding tasks \xE2\u2020\u2019 welcome email. Zero manual handoffs between 6 systems." },
@@ -9210,9 +9210,9 @@ const workflowAutomationOverride = {
       heading: "Workflow Automation: Tool Selection Guide",
       body: "",
       items: [
-        "n8n (Self-Hosted): Pricing free self-hosted, ~$20/mo cloud. Technical skill medium (JSON, expressions). Integration depth deep (full API access, custom nodes). Self-hosting full (runs on your VPS/AWS/Docker). Complex logic excellent (if/else, loops, sub-workflows, code nodes). AI integration native AI nodes (OpenAI, Anthropic, LangChain). Best for: data-sensitive workflows, high volume, complex logic.",
-        "Make.com: Pricing pay per operation, $9-650/mo. Technical skill low (visual builder, logic branches). Integration depth deep (modules with full API fields). Self-hosting no. Complex logic excellent (routers, iterators, aggregators). AI integration AI modules + HTTP request to LLM APIs. Best for: complex multi-app workflows, rapid deployment, Make-familiar teams.",
-        "Zapier: Pricing pay per task, $20-600+/mo. Technical skill very low (template-first). Integration depth shallow (curated fields only). Self-hosting no. Complex logic limited (basic conditionals). AI integration native OpenAI integration. Best for: simple 2-3 app triggers, non-technical teams.",
+        "n8n (Self-Hosted): Pricing free self-hosted, ~£20/mo cloud. Technical skill medium (JSON, expressions). Integration depth deep (full API access, custom nodes). Self-hosting full (runs on your VPS/AWS/Docker). Complex logic excellent (if/else, loops, sub-workflows, code nodes). AI integration native AI nodes (OpenAI, Anthropic, LangChain). Best for: data-sensitive workflows, high volume, complex logic.",
+        "Make.com: Pricing pay per operation, £9-650/mo. Technical skill low (visual builder, logic branches). Integration depth deep (modules with full API fields). Self-hosting no. Complex logic excellent (routers, iterators, aggregators). AI integration AI modules + HTTP request to LLM APIs. Best for: complex multi-app workflows, rapid deployment, Make-familiar teams.",
+        "Zapier: Pricing pay per task, £20-600+/mo. Technical skill very low (template-first). Integration depth shallow (curated fields only). Self-hosting no. Complex logic limited (basic conditionals). AI integration native OpenAI integration. Best for: simple 2-3 app triggers, non-technical teams.",
         "Custom Code: Pricing dev cost + hosting only. Technical skill high (Python/Node.js required). Integration depth unlimited (any API, any data). Self-hosting full (your infrastructure). Complex logic unlimited. AI integration full (any AI SDK). Best for: unique APIs, custom logic beyond no-code capability."
       ]
     }
@@ -9321,14 +9321,14 @@ const systemIntegrationOverride = {
     { layer: "Monitoring", technologies: "Datadog, Prometheus + Grafana, PagerDuty, Slack alerts, custom reconciliation SQL" }
   ],
   pricingTiers: [
-    { type: "Integration Architecture Review", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "System map, data flow design, pattern selection, error strategy" },
-    { type: "Simple Integration (2 systems)", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "REST/webhook, bidirectional sync, error handling, monitoring" },
-    { type: "ERP Integration (NetSuite/SAP)", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Inventory + orders + fulfillment + accounting full ERP sync" },
-    { type: "CRM Integration Suite", investment: "$8,000 - $24,000", timeline: "3 - 6 weeks", bestFor: "Salesforce/HubSpot + billing + CS + support + marketing" },
-    { type: "Legacy / EDI Integration", investment: "$10,000 - $30,000", timeline: "4 - 8 weeks", bestFor: "EDI/SOAP/flat-file adapter, transformation, modern API wrapper" },
-    { type: "Custom Middleware Service", investment: "$10,000 - $30,000", timeline: "3 - 7 weeks", bestFor: "Microservice with queue, transformation, retry, monitoring" },
-    { type: "iPaaS Implementation (Boomi/Workato)", investment: "$12,000 - $40,000", timeline: "4 - 9 weeks", bestFor: "Enterprise iPaaS setup, connector config, transformation, governance" },
-    { type: "Integration Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "New integrations, maintenance, API changes, performance monitoring" }
+    { type: "Integration Architecture Review", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "System map, data flow design, pattern selection, error strategy" },
+    { type: "Simple Integration (2 systems)", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "REST/webhook, bidirectional sync, error handling, monitoring" },
+    { type: "ERP Integration (NetSuite/SAP)", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Inventory + orders + fulfillment + accounting full ERP sync" },
+    { type: "CRM Integration Suite", investment: "£8,000 - £24,000", timeline: "3 - 6 weeks", bestFor: "Salesforce/HubSpot + billing + CS + support + marketing" },
+    { type: "Legacy / EDI Integration", investment: "£10,000 - £30,000", timeline: "4 - 8 weeks", bestFor: "EDI/SOAP/flat-file adapter, transformation, modern API wrapper" },
+    { type: "Custom Middleware Service", investment: "£10,000 - £30,000", timeline: "3 - 7 weeks", bestFor: "Microservice with queue, transformation, retry, monitoring" },
+    { type: "iPaaS Implementation (Boomi/Workato)", investment: "£12,000 - £40,000", timeline: "4 - 9 weeks", bestFor: "Enterprise iPaaS setup, connector config, transformation, governance" },
+    { type: "Integration Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "New integrations, maintenance, API changes, performance monitoring" }
   ],
   industryUseCases: [
     { name: "ERP + E-commerce Integration", description: "NetSuite + Shopify bidirectional sync. Inventory levels from ERP to e-commerce (prevent oversells). Orders from Shopify to NetSuite (fulfillment trigger). 99.5% sync accuracy." },
@@ -9351,7 +9351,7 @@ const systemIntegrationOverride = {
     },
     {
       heading: "iPaaS vs Custom Integration When to Use Which",
-      body: "iPaaS (Integration Platform as a Service) is appropriate when: the organisation has 10+ integrations to manage, the technical team lacks API development expertise, centralised integration governance is required, or target systems are large enterprise apps (SAP, Salesforce, Workday) with complex data models. iPaaS is NOT appropriate when: integrations are simple (2-3 API calls direct REST is cheaper), budget is limited (iPaaS licensing is $1,000-5,000+/month), or integration requires complex custom logic that iPaaS visual editor cannot express. Clickmasters implements iPaaS for enterprise clients and builds custom integrations for SMB clients where iPaaS licensing cost is not justified.",
+      body: "iPaaS (Integration Platform as a Service) is appropriate when: the organisation has 10+ integrations to manage, the technical team lacks API development expertise, centralised integration governance is required, or target systems are large enterprise apps (SAP, Salesforce, Workday) with complex data models. iPaaS is NOT appropriate when: integrations are simple (2-3 API calls direct REST is cheaper), budget is limited (iPaaS licensing is £1,000-5,000+/month), or integration requires complex custom logic that iPaaS visual editor cannot express. Clickmasters implements iPaaS for enterprise clients and builds custom integrations for SMB clients where iPaaS licensing cost is not justified.",
       items: []
     }
   ],
@@ -9362,7 +9362,7 @@ const systemIntegrationOverride = {
     },
     {
       question: "What is iPaaS and when should I use it?",
-      answer: "iPaaS (Integration Platform as a Service) is a managed middleware platform with pre-built connectors to hundreds of enterprise applications MuleSoft, Dell Boomi, Workato, Tray.io. iPaaS is appropriate when: the organisation has 10+ integrations to manage, the technical team lacks API development expertise, centralised integration governance is required, or target systems are large enterprise apps with complex data models that iPaaS vendors have modelled correctly (SAP, Salesforce, ServiceNow, Workday). iPaaS is NOT appropriate when: integrations are simple (2-3 API calls direct REST is cheaper), budget is limited (iPaaS licensing is $1,000-5,000+/month), or integration requires complex custom logic. Clickmasters implements iPaaS for enterprise clients and builds custom integrations for SMB clients where iPaaS licensing cost is not justified."
+      answer: "iPaaS (Integration Platform as a Service) is a managed middleware platform with pre-built connectors to hundreds of enterprise applications MuleSoft, Dell Boomi, Workato, Tray.io. iPaaS is appropriate when: the organisation has 10+ integrations to manage, the technical team lacks API development expertise, centralised integration governance is required, or target systems are large enterprise apps with complex data models that iPaaS vendors have modelled correctly (SAP, Salesforce, ServiceNow, Workday). iPaaS is NOT appropriate when: integrations are simple (2-3 API calls direct REST is cheaper), budget is limited (iPaaS licensing is £1,000-5,000+/month), or integration requires complex custom logic. Clickmasters implements iPaaS for enterprise clients and builds custom integrations for SMB clients where iPaaS licensing cost is not justified."
     },
     {
       question: "How do you ensure data integrity across integrated systems?",
@@ -9459,14 +9459,14 @@ const apiIntegrationOverride = {
     { layer: "Rate Limiting", technologies: "BullMQ rate limiter (queue-based), token bucket, sliding window, exponential backoff with jitter" }
   ],
   pricingTiers: [
-    { type: "API Integration Scoping", investment: "$1,500 - $4,000", timeline: "1 week", bestFor: "API selection, auth flow design, error strategy, cost model" },
-    { type: "Payment API (Stripe)", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Charges/subscriptions/Connect, webhooks, PCI scope, testing" },
-    { type: "Communications API (Twilio)", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "SMS/Voice/WhatsApp, templates, delivery webhooks, 10DLC" },
-    { type: "Email API (SendGrid/Postmark)", investment: "$3,000 - $8,000", timeline: "1 - 3 weeks", bestFor: "Templates, webhooks, DKIM/SPF/DMARC, suppression, analytics" },
-    { type: "CRM Integration (Salesforce/HubSpot)", investment: "$6,000 - $18,000", timeline: "2 - 5 weeks", bestFor: "CRUD, webhooks, field mapping, sync strategy, error handling" },
-    { type: "OAuth 2.0 / Social Login", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "Provider setup, PKCE, token storage, refresh rotation" },
-    { type: "Webhook Consumer Infrastructure", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "Signature verification, idempotency, async queue, DLQ, monitoring" },
-    { type: "Multi-API Integration Suite", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Multiple third-party APIs, shared error handling, monitoring dashboard" }
+    { type: "API Integration Scoping", investment: "£1,500 - £4,000", timeline: "1 week", bestFor: "API selection, auth flow design, error strategy, cost model" },
+    { type: "Payment API (Stripe)", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Charges/subscriptions/Connect, webhooks, PCI scope, testing" },
+    { type: "Communications API (Twilio)", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "SMS/Voice/WhatsApp, templates, delivery webhooks, 10DLC" },
+    { type: "Email API (SendGrid/Postmark)", investment: "£3,000 - £8,000", timeline: "1 - 3 weeks", bestFor: "Templates, webhooks, DKIM/SPF/DMARC, suppression, analytics" },
+    { type: "CRM Integration (Salesforce/HubSpot)", investment: "£6,000 - £18,000", timeline: "2 - 5 weeks", bestFor: "CRUD, webhooks, field mapping, sync strategy, error handling" },
+    { type: "OAuth 2.0 / Social Login", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "Provider setup, PKCE, token storage, refresh rotation" },
+    { type: "Webhook Consumer Infrastructure", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "Signature verification, idempotency, async queue, DLQ, monitoring" },
+    { type: "Multi-API Integration Suite", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Multiple third-party APIs, shared error handling, monitoring dashboard" }
   ],
   industryUseCases: [
     { name: "Stripe Payment Integration", description: "SaaS subscription billing: PaymentIntents for one-time charges, Subscriptions for recurring billing, Customer Portal for self-serve plan changes, webhooks for payment events. PCI SAQ A compliance." },
@@ -9512,13 +9512,13 @@ const apiIntegrationOverride = {
     }
   ],
   testimonial: {
-    quote: "Clickmasters integrated Stripe subscriptions and Twilio SMS into our SaaS product. The implementation handles webhooks, idempotency, and rate limits perfectly. We've processed $2M in subscription revenue with zero payment integration issues.",
+    quote: "Clickmasters integrated Stripe subscriptions and Twilio SMS into our SaaS product. The implementation handles webhooks, idempotency, and rate limits perfectly. We've processed £2M in subscription revenue with zero payment integration issues.",
     author: "CTO",
     role: "SaaS Startup"
   },
   caseStudy: {
     title: "Stripe + Twilio Integration",
-    description: "Integrated Stripe subscriptions (PaymentIntents, webhooks) and Twilio SMS (Verify API for 2FA). PCI SAQ A compliance. 99.99% webhook processing reliability. Zero payment issues over $2M+ processed.",
+    description: "Integrated Stripe subscriptions (PaymentIntents, webhooks) and Twilio SMS (Verify API for 2FA). PCI SAQ A compliance. 99.99% webhook processing reliability. Zero payment issues over £2M+ processed.",
     slug: "stripe-twilio-integration",
     badge: "API Integration"
   },
@@ -9566,7 +9566,7 @@ const cloudSolutionsOverride = {
   //   { label: 'Amazon Web Services 33% global cloud market share. Clickmasters\' primary cloud platform.', value: 'AWS' },
   //   { label: 'Average cloud cost reduction achievable through FinOps optimisation on an unoptimised AWS account', value: '40%' },
   //   { label: 'Uptime achievable with multi-AZ AWS architecture + health-check routing + automated failover', value: '99.99%' },
-  //   { label: 'Cloud infrastructure markup AWS, GCP, and Azure costs billed directly at provider rates', value: '$0' },
+  //   { label: 'Cloud infrastructure markup AWS, GCP, and Azure costs billed directly at provider rates', value: '£0' },
   // ],
   servicesCards: [
     { title: "Cloud Architecture Design", description: "Well-Architected cloud architecture on AWS (primary), GCP, or Azure: VPC design (network segmentation public, private, database subnets), compute selection (EC2 for legacy, ECS Fargate for containers, Lambda for serverless), database tier (RDS Multi-AZ, Aurora Serverless, DynamoDB), storage (S3, CloudFront CDN). AWS Well-Architected Framework review (five pillars)." },
@@ -9579,7 +9579,7 @@ const cloudSolutionsOverride = {
     { feature: "4 Migration Strategies", description: "Lift-and-shift, re-platform, re-architect, retire with honest guidance on when to use each | Basic: One-size-fits-all migration" },
     { feature: "FinOps Cost Reduction", description: "30-50% reduction within 60 days via right-sizing, RIs, Spot, S3 Intelligent-Tiering | Basic: No cost optimisation (waste)" },
     { feature: "AWS vs GCP vs Azure Guide", description: "Decision framework AWS default, GCP for BigQuery/Vertex AI, Azure for Microsoft-first | Basic: AWS only recommendation" },
-    { feature: "$0 Cloud Markup", description: "AWS/GCP/Azure costs billed directly at provider rates no markup | Basic: Marked up cloud costs" },
+    { feature: "£0 Cloud Markup", description: "AWS/GCP/Azure costs billed directly at provider rates no markup | Basic: Marked up cloud costs" },
     { feature: "Cloud-Native Migration", description: "Re-architect to containers + managed services for long-term operational efficiency | Basic: Lift-and-shift only (operational overhead unchanged)" }
   ],
   processPhases: [
@@ -9599,14 +9599,14 @@ const cloudSolutionsOverride = {
     { layer: "Monitoring", technologies: "CloudWatch (metrics/logs), Grafana (dashboards), PagerDuty (alerting), Sentry (errors)" }
   ],
   pricingTiers: [
-    { type: "Cloud Architecture Review", investment: "$4,000 - $10,000", timeline: "1 - 2 weeks", bestFor: "Well-Architected review, cost analysis, security baseline, roadmap" },
-    { type: "Cloud Migration (Lift & Shift)", investment: "$10,000 - $35,000", timeline: "3 - 8 weeks", bestFor: "Assessment, MGN migration, RDS migration (DMS), validation" },
-    { type: "Cloud-Native Re-architecture", investment: "$15,000 - $50,000", timeline: "5 - 10 weeks", bestFor: "Containerise, ECS Fargate, managed services, IaC (Terraform)" },
-    { type: "FinOps Optimisation", investment: "$5,000 - $15,000", timeline: "2 - 4 weeks", bestFor: "Right-sizing, RIs/Savings Plans, idle resources, tagging strategy" },
-    { type: "Security Baseline", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "IAM, MFA, CloudTrail, Config, GuardDuty, Security Hub" },
-    { type: "Multi-Cloud / Hybrid Setup", investment: "$10,000 - $30,000", timeline: "3 - 7 weeks", bestFor: "Direct Connect / Anthos, Terraform multi-cloud, unified monitoring" },
-    { type: "Managed Cloud Operations", investment: "$3,000 - $10,000/mo", timeline: "Ongoing", bestFor: "Monitoring, incident response, cost review, patching, capacity" },
-    { type: "Cloud Training Workshop", investment: "$2,500 - $6,000", timeline: "1 - 2 days", bestFor: "AWS fundamentals, Well-Architected, cost management for your team" }
+    { type: "Cloud Architecture Review", investment: "£4,000 - £10,000", timeline: "1 - 2 weeks", bestFor: "Well-Architected review, cost analysis, security baseline, roadmap" },
+    { type: "Cloud Migration (Lift & Shift)", investment: "£10,000 - £35,000", timeline: "3 - 8 weeks", bestFor: "Assessment, MGN migration, RDS migration (DMS), validation" },
+    { type: "Cloud-Native Re-architecture", investment: "£15,000 - £50,000", timeline: "5 - 10 weeks", bestFor: "Containerise, ECS Fargate, managed services, IaC (Terraform)" },
+    { type: "FinOps Optimisation", investment: "£5,000 - £15,000", timeline: "2 - 4 weeks", bestFor: "Right-sizing, RIs/Savings Plans, idle resources, tagging strategy" },
+    { type: "Security Baseline", investment: "£6,000 - £16,000", timeline: "2 - 4 weeks", bestFor: "IAM, MFA, CloudTrail, Config, GuardDuty, Security Hub" },
+    { type: "Multi-Cloud / Hybrid Setup", investment: "£10,000 - £30,000", timeline: "3 - 7 weeks", bestFor: "Direct Connect / Anthos, Terraform multi-cloud, unified monitoring" },
+    { type: "Managed Cloud Operations", investment: "£3,000 - £10,000/mo", timeline: "Ongoing", bestFor: "Monitoring, incident response, cost review, patching, capacity" },
+    { type: "Cloud Training Workshop", investment: "£2,500 - £6,000", timeline: "1 - 2 days", bestFor: "AWS fundamentals, Well-Architected, cost management for your team" }
   ],
   industryUseCases: [
     { name: "On-Premises to AWS Migration", description: "Lift-and-shift of legacy VMware workloads via AWS MGN. Re-platform databases to RDS. 50% cost reduction vs on-prem hardware + maintenance." },
@@ -9643,7 +9643,7 @@ const cloudSolutionsOverride = {
     },
     {
       question: "How much does AWS cost for a typical B2B SaaS product?",
-      answer: "A typical B2B SaaS product on AWS (ECS Fargate for application, RDS PostgreSQL Multi-AZ, ElastiCache Redis, S3 + CloudFront, ALB, Route 53) costs approximately $300-800/month for a small product with moderate traffic. A medium-sized SaaS with multiple services, more database storage, and higher traffic costs $1,000-3,000/month. A large SaaS with multiple environments, data warehouse (Snowflake or Redshift), CDN at scale, and multiple microservices costs $5,000-20,000+/month. Most common cost drivers: oversized RDS instances (often 30-40% of a SaaS AWS bill right-sizing is highest-ROI FinOps action), NAT Gateway data transfer (egress charges architecture changes can reduce significantly), and unused development environments running 24/7 instead of scheduled shutdown."
+      answer: "A typical B2B SaaS product on AWS (ECS Fargate for application, RDS PostgreSQL Multi-AZ, ElastiCache Redis, S3 + CloudFront, ALB, Route 53) costs approximately £300-800/month for a small product with moderate traffic. A medium-sized SaaS with multiple services, more database storage, and higher traffic costs £1,000-3,000/month. A large SaaS with multiple environments, data warehouse (Snowflake or Redshift), CDN at scale, and multiple microservices costs £5,000-20,000+/month. Most common cost drivers: oversized RDS instances (often 30-40% of a SaaS AWS bill right-sizing is highest-ROI FinOps action), NAT Gateway data transfer (egress charges architecture changes can reduce significantly), and unused development environments running 24/7 instead of scheduled shutdown."
     },
     {
       question: "AWS vs GCP vs Azure which cloud provider should I choose?",
@@ -9740,13 +9740,13 @@ const cloudNativeDevelopmentOverride = {
     { layer: "Observability", technologies: "Structured logging (Pino/structlog \xE2\u2020\u2019 CloudWatch), Prometheus + Grafana (metrics), OpenTelemetry + X-Ray/Jaeger (traces)" }
   ],
   pricingTiers: [
-    { type: "Cloud-Native Architecture Review", investment: "$4,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Current stack audit, cloud-native roadmap, migration sequencing" },
-    { type: "Dockerise + ECS Fargate Deployment", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "Dockerfile, ECR, ECS Task/Service, ALB, auto-scaling, CI/CD" },
-    { type: "EKS Cluster Setup", investment: "$8,000 - $22,000", timeline: "3 - 5 weeks", bestFor: "Cluster, node groups, Helm, Ingress, cert-manager, autoscaler" },
-    { type: "Event-Driven Architecture", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "SQS/SNS/EventBridge design, DLQ, Step Functions, monitoring" },
-    { type: "Service Mesh Implementation", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "App Mesh or Istio, mTLS, traffic shifting, observability" },
-    { type: "Cloud-Native Full Build", investment: "$20,000 - $60,000", timeline: "5 - 10 weeks", bestFor: "12-factor design + containers + ECS/EKS + events + observability" },
-    { type: "Cloud-Native Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "Cluster maintenance, scaling optimisation, security patches, new services" }
+    { type: "Cloud-Native Architecture Review", investment: "£4,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Current stack audit, cloud-native roadmap, migration sequencing" },
+    { type: "Dockerise + ECS Fargate Deployment", investment: "£6,000 - £16,000", timeline: "2 - 4 weeks", bestFor: "Dockerfile, ECR, ECS Task/Service, ALB, auto-scaling, CI/CD" },
+    { type: "EKS Cluster Setup", investment: "£8,000 - £22,000", timeline: "3 - 5 weeks", bestFor: "Cluster, node groups, Helm, Ingress, cert-manager, autoscaler" },
+    { type: "Event-Driven Architecture", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "SQS/SNS/EventBridge design, DLQ, Step Functions, monitoring" },
+    { type: "Service Mesh Implementation", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "App Mesh or Istio, mTLS, traffic shifting, observability" },
+    { type: "Cloud-Native Full Build", investment: "£20,000 - £60,000", timeline: "5 - 10 weeks", bestFor: "12-factor design + containers + ECS/EKS + events + observability" },
+    { type: "Cloud-Native Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "Cluster maintenance, scaling optimisation, security patches, new services" }
   ],
   industryUseCases: [
     { name: "Monolith to Microservices", description: "Decompose monolithic Rails/Django app into ECS Fargate microservices. Each service scales independently. Zero-downtime deployments. CI/CD per service." },
@@ -9876,14 +9876,14 @@ const devopsServicesOverride = {
     { layer: "SRE", technologies: "SLO definition (99.9% availability), error budgets, blameless post-mortems (five whys), toil reduction tracking" }
   ],
   pricingTiers: [
-    { type: "DevOps Audit", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Toolchain review, pipeline audit, monitoring gaps, improvement roadmap" },
-    { type: "CI/CD Pipeline (Full)", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "GitHub Actions, lint/test/build/deploy, staging + production gates" },
-    { type: "Monitoring & Alerting Setup", investment: "$5,000 - $12,000", timeline: "2 - 3 weeks", bestFor: "Prometheus, Grafana, PagerDuty, Sentry, dashboards, runbooks" },
-    { type: "Infrastructure Automation", investment: "$4,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "AMI patching, backup verification, cert monitoring, maintenance windows" },
-    { type: "SRE Programme", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "SLO definition, error budgets, toil reduction, post-mortem culture" },
-    { type: "On-Call Setup", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "PagerDuty, runbooks, escalation paths, alert tuning" },
-    { type: "DevOps Transformation", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "Full DevOps maturity uplift pipelines + IaC + monitoring + SRE" },
-    { type: "DevOps Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "Pipeline maintenance, incident response, tool updates, new services" }
+    { type: "DevOps Audit", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Toolchain review, pipeline audit, monitoring gaps, improvement roadmap" },
+    { type: "CI/CD Pipeline (Full)", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "GitHub Actions, lint/test/build/deploy, staging + production gates" },
+    { type: "Monitoring & Alerting Setup", investment: "£5,000 - £12,000", timeline: "2 - 3 weeks", bestFor: "Prometheus, Grafana, PagerDuty, Sentry, dashboards, runbooks" },
+    { type: "Infrastructure Automation", investment: "£4,000 - £12,000", timeline: "2 - 4 weeks", bestFor: "AMI patching, backup verification, cert monitoring, maintenance windows" },
+    { type: "SRE Programme", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "SLO definition, error budgets, toil reduction, post-mortem culture" },
+    { type: "On-Call Setup", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "PagerDuty, runbooks, escalation paths, alert tuning" },
+    { type: "DevOps Transformation", investment: "£15,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "Full DevOps maturity uplift pipelines + IaC + monitoring + SRE" },
+    { type: "DevOps Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "Pipeline maintenance, incident response, tool updates, new services" }
   ],
   industryUseCases: [
     { name: "Startup CI/CD Implementation", description: "From manual deployments (2 hours, error-prone) to GitHub Actions CI/CD (8 minutes, automated). PR checks catch issues before merge. Zero-downtime deployments. DORA metrics: Low \xE2\u2020\u2019 Medium performer." },
@@ -10010,14 +10010,14 @@ const devsecopsOverride = {
     { layer: "Runtime Security", technologies: "Falco (CNCF kernel-level syscall monitoring), AWS GuardDuty (ML-based threat detection), Tracee" }
   ],
   pricingTiers: [
-    { type: "DevSecOps Assessment", investment: "$4,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Pipeline security audit, gap analysis, tool selection, roadmap" },
-    { type: "SAST Integration", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Semgrep + CodeQL in GitHub Actions, custom rules, PR blocking" },
-    { type: "Container Security (Trivy + SBOM)", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Trivy scan, SBOM generation, ECR policy, critical CVE gate" },
-    { type: "Secrets Management", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "GitLeaks pre-commit, Secrets Manager rotation, env var audit" },
-    { type: "Policy-as-Code (OPA/Checkov)", investment: "$5,000 - $12,000", timeline: "2 - 3 weeks", bestFor: "Terraform/K8s policy rules, CI gate, exception workflow" },
-    { type: "DAST Pipeline Integration", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "OWASP ZAP in staging pipeline, authenticated scan, findings triage" },
-    { type: "Full DevSecOps Pipeline", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "All controls across all stages, documentation for enterprise sales" },
-    { type: "DevSecOps Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "CVE response, policy updates, new service onboarding, compliance" }
+    { type: "DevSecOps Assessment", investment: "£4,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Pipeline security audit, gap analysis, tool selection, roadmap" },
+    { type: "SAST Integration", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Semgrep + CodeQL in GitHub Actions, custom rules, PR blocking" },
+    { type: "Container Security (Trivy + SBOM)", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Trivy scan, SBOM generation, ECR policy, critical CVE gate" },
+    { type: "Secrets Management", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "GitLeaks pre-commit, Secrets Manager rotation, env var audit" },
+    { type: "Policy-as-Code (OPA/Checkov)", investment: "£5,000 - £12,000", timeline: "2 - 3 weeks", bestFor: "Terraform/K8s policy rules, CI gate, exception workflow" },
+    { type: "DAST Pipeline Integration", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "OWASP ZAP in staging pipeline, authenticated scan, findings triage" },
+    { type: "Full DevSecOps Pipeline", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "All controls across all stages, documentation for enterprise sales" },
+    { type: "DevSecOps Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "CVE response, policy updates, new service onboarding, compliance" }
   ],
   industryUseCases: [
     { name: "Enterprise SaaS Security Compliance", description: "Full DevSecOps pipeline for SOC2/HIPAA compliance. SAST in every PR, container scanning, SBOM generation, DAST in staging, runtime monitoring. Pass enterprise security reviews without remediation." },
@@ -10162,14 +10162,14 @@ const serverlessArchitectureOverride = {
     { layer: "Secrets", technologies: "AWS Secrets Manager (Lambda extension retrieve before invocation, rotate without redeployment), SSM Parameter Store" }
   ],
   pricingTiers: [
-    { type: "Serverless Architecture Review", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Workload analysis, Lambda vs Fargate decision, architecture plan" },
-    { type: "Lambda Function Development", investment: "$4,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "Handler + Powertools + Secrets Manager + Sentry + CDK deployment" },
-    { type: "API Gateway + Lambda Backend", investment: "$6,000 - $16,000", timeline: "2 - 5 weeks", bestFor: "HTTP API + JWT auth + Lambda + CDK + custom domain + monitoring" },
-    { type: "Event-Driven Lambda Pipeline", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "SQS/SNS/EventBridge/S3 triggers + DLQ + retry + monitoring" },
-    { type: "Step Functions Workflow", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "State machine design + SDK integrations + error handling + monitoring" },
-    { type: "Cold Start Optimisation", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Provisioned Concurrency + code audit + SnapStart (Java) + benchmarks" },
-    { type: "Full Serverless Application", investment: "$15,000 - $45,000", timeline: "4 - 9 weeks", bestFor: "Complete serverless architecture Lambda + API GW + Events + Step Fn + CDK" },
-    { type: "Serverless Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "Function updates, cost monitoring, dependency patches, new triggers" }
+    { type: "Serverless Architecture Review", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Workload analysis, Lambda vs Fargate decision, architecture plan" },
+    { type: "Lambda Function Development", investment: "£4,000 - £12,000", timeline: "2 - 4 weeks", bestFor: "Handler + Powertools + Secrets Manager + Sentry + CDK deployment" },
+    { type: "API Gateway + Lambda Backend", investment: "£6,000 - £16,000", timeline: "2 - 5 weeks", bestFor: "HTTP API + JWT auth + Lambda + CDK + custom domain + monitoring" },
+    { type: "Event-Driven Lambda Pipeline", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "SQS/SNS/EventBridge/S3 triggers + DLQ + retry + monitoring" },
+    { type: "Step Functions Workflow", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "State machine design + SDK integrations + error handling + monitoring" },
+    { type: "Cold Start Optimisation", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Provisioned Concurrency + code audit + SnapStart (Java) + benchmarks" },
+    { type: "Full Serverless Application", investment: "£15,000 - £45,000", timeline: "4 - 9 weeks", bestFor: "Complete serverless architecture Lambda + API GW + Events + Step Fn + CDK" },
+    { type: "Serverless Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "Function updates, cost monitoring, dependency patches, new triggers" }
   ],
   industryUseCases: [
     { name: "Serverless API Backend", description: "API Gateway HTTP API + Lambda for REST API. JWT authoriser for authentication. 71% cheaper than REST API. Scales from zero to thousands. Sub-100ms P95 latency (warm starts)." },
@@ -10197,7 +10197,7 @@ const serverlessArchitectureOverride = {
   faqs: [
     {
       question: "What is serverless architecture?",
-      answer: 'Serverless architecture is a cloud computing model where the cloud provider (AWS, GCP, or Azure) manages the infrastructure servers, operating systems, runtime environments and the application runs in stateless, event-triggered functions that scale automatically. "Serverless" does not mean there are no servers it means the developer does not manage them. AWS Lambda (the most widely deployed serverless platform) executes code in response to events (HTTP requests, queue messages, scheduled cron, file uploads) scaling from zero to thousands of concurrent invocations in seconds without any capacity planning. The billing model: pay per invocation and per millisecond of execution time a Lambda function that runs for 100ms, 1,000 times per day costs approximately $0.002/day. A Lambda function that receives zero invocations costs $0.00/day.'
+      answer: 'Serverless architecture is a cloud computing model where the cloud provider (AWS, GCP, or Azure) manages the infrastructure servers, operating systems, runtime environments and the application runs in stateless, event-triggered functions that scale automatically. "Serverless" does not mean there are no servers it means the developer does not manage them. AWS Lambda (the most widely deployed serverless platform) executes code in response to events (HTTP requests, queue messages, scheduled cron, file uploads) scaling from zero to thousands of concurrent invocations in seconds without any capacity planning. The billing model: pay per invocation and per millisecond of execution time a Lambda function that runs for 100ms, 1,000 times per day costs approximately £0.002/day. A Lambda function that receives zero invocations costs £0.00/day.'
     },
     {
       question: "What is Lambda cold start and how significant is it?",
@@ -10213,13 +10213,13 @@ const serverlessArchitectureOverride = {
     }
   ],
   testimonial: {
-    quote: "Clickmasters built our serverless backend on Lambda + API Gateway + Step Functions. We handle burst traffic of 5,000 requests/second without any capacity planning. Our monthly AWS bill for compute is $400 far less than maintaining EC2 instances.",
+    quote: "Clickmasters built our serverless backend on Lambda + API Gateway + Step Functions. We handle burst traffic of 5,000 requests/second without any capacity planning. Our monthly AWS bill for compute is £400 far less than maintaining EC2 instances.",
     author: "CTO",
     role: "B2B SaaS Platform"
   },
   caseStudy: {
     title: "Serverless API Backend",
-    description: "Built serverless API on API Gateway HTTP API + Lambda (Node.js). JWT authoriser, CDK deployment. Handles 5K requests/second burst. $400/month compute cost. Sub-100ms P95 latency (warm). Zero-downtime deployments via Lambda versions + aliases.",
+    description: "Built serverless API on API Gateway HTTP API + Lambda (Node.js). JWT authoriser, CDK deployment. Handles 5K requests/second burst. £400/month compute cost. Sub-100ms P95 latency (warm). Zero-downtime deployments via Lambda versions + aliases.",
     slug: "serverless-api-backend",
     badge: "Serverless"
   },
@@ -10301,14 +10301,14 @@ const databaseDesignOverride = {
     { layer: "Index Types", technologies: "B-tree (default, equality/range), Partial (condition subset), GIN (full-text, JSONB, array), GiST (range, geometric), expression (functions), composite (multi-column)" }
   ],
   pricingTiers: [
-    { type: "Database Design Review", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Schema audit, normalisation assessment, index analysis, improvement plan" },
-    { type: "New Schema Design (up to 20 tables)", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "ER diagram, normalised schema, indexes, constraints, data dictionary" },
-    { type: "New Schema Design (20-50 tables)", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Complex domain modelling, multiple bounded contexts, migrations" },
-    { type: "Multi-Tenant Architecture", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "RLS policy design, tenant isolation strategy, performance validation" },
-    { type: "Index Strategy Audit", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "EXPLAIN ANALYZE audit, missing indexes, redundant indexes, bloat" },
-    { type: "Schema Migration Plan", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "Zero-downtime migration strategy, scripts, rollback procedures, validation" },
-    { type: "Full Database Design Programme", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "ER model + schema + RLS + indexes + migrations + documentation" },
-    { type: "Database Design Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "Schema evolution, new entity design, migration scripts, review" }
+    { type: "Database Design Review", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Schema audit, normalisation assessment, index analysis, improvement plan" },
+    { type: "New Schema Design (up to 20 tables)", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "ER diagram, normalised schema, indexes, constraints, data dictionary" },
+    { type: "New Schema Design (20-50 tables)", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Complex domain modelling, multiple bounded contexts, migrations" },
+    { type: "Multi-Tenant Architecture", investment: "£6,000 - £16,000", timeline: "2 - 4 weeks", bestFor: "RLS policy design, tenant isolation strategy, performance validation" },
+    { type: "Index Strategy Audit", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "EXPLAIN ANALYZE audit, missing indexes, redundant indexes, bloat" },
+    { type: "Schema Migration Plan", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "Zero-downtime migration strategy, scripts, rollback procedures, validation" },
+    { type: "Full Database Design Programme", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "ER model + schema + RLS + indexes + migrations + documentation" },
+    { type: "Database Design Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "Schema evolution, new entity design, migration scripts, review" }
   ],
   industryUseCases: [
     { name: "SaaS Multi-Tenant Schema", description: "RLS-based multi-tenancy: organisation_id on every table, RLS policies enforced at database level. Single shared table approach with row-level security. Safer than application-level filtering." },
@@ -10436,14 +10436,14 @@ const databaseManagementOverride = {
     { layer: "Vacuum", technologies: "autovacuum (default daemon), custom vacuum per-table settings, pgstattuple (bloat analysis), pg_stat_user_tables (dead tuple monitoring)" }
   ],
   pricingTiers: [
-    { type: "Database Health Assessment", investment: "$3,000 - $6,000", timeline: "1 week", bestFor: "Backup review, connection audit, autovacuum, slow queries, recommendations" },
-    { type: "Backup Verification Setup", investment: "$2,500 - $6,000", timeline: "1 - 2 weeks", bestFor: "Automated restore-and-validate, S3 backup, encryption, retention policy" },
-    { type: "PgBouncer Setup", investment: "$2,500 - $5,000", timeline: "1 week", bestFor: "Transaction pooling, pool sizing, monitoring, failover configuration" },
-    { type: "RDS Multi-AZ Setup", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Multi-AZ conversion, failover test, monitoring, runbook" },
-    { type: "Autovacuum Tuning", investment: "$2,500 - $5,000", timeline: "1 week", bestFor: "Per-table autovacuum settings, bloat analysis, monitoring dashboard" },
-    { type: "Database Monitoring Setup", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "pg_stat_statements, CloudWatch, PagerDuty, Grafana dashboard, runbooks" },
-    { type: "PostgreSQL Version Upgrade", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Pre-upgrade testing, upgrade execution, post-upgrade validation" },
-    { type: "Database Management Retainer", investment: "$2,000 - $5,000/mo", timeline: "Ongoing", bestFor: "Backup verification, monitoring, patching, capacity planning, DBA support" }
+    { type: "Database Health Assessment", investment: "£3,000 - £6,000", timeline: "1 week", bestFor: "Backup review, connection audit, autovacuum, slow queries, recommendations" },
+    { type: "Backup Verification Setup", investment: "£2,500 - £6,000", timeline: "1 - 2 weeks", bestFor: "Automated restore-and-validate, S3 backup, encryption, retention policy" },
+    { type: "PgBouncer Setup", investment: "£2,500 - £5,000", timeline: "1 week", bestFor: "Transaction pooling, pool sizing, monitoring, failover configuration" },
+    { type: "RDS Multi-AZ Setup", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Multi-AZ conversion, failover test, monitoring, runbook" },
+    { type: "Autovacuum Tuning", investment: "£2,500 - £5,000", timeline: "1 week", bestFor: "Per-table autovacuum settings, bloat analysis, monitoring dashboard" },
+    { type: "Database Monitoring Setup", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "pg_stat_statements, CloudWatch, PagerDuty, Grafana dashboard, runbooks" },
+    { type: "PostgreSQL Version Upgrade", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Pre-upgrade testing, upgrade execution, post-upgrade validation" },
+    { type: "Database Management Retainer", investment: "£2,000 - £5,000/mo", timeline: "Ongoing", bestFor: "Backup verification, monitoring, patching, capacity planning, DBA support" }
   ],
   industryUseCases: [
     { name: "SaaS Database Management", description: "RDS Multi-AZ for HA, PgBouncer for connection pooling (50 ECS tasks \xC3\u2014 10 connections \xE2\u2020\u2019 20 actual DB connections), weekly backup restore validation, prometheus/grafana monitoring." },
@@ -10567,14 +10567,14 @@ const dataMigrationOverride = {
     { layer: "Migration Patterns", technologies: "Dual-write (application writes to both old and new), Blue-green (connection string switch), Expand/Contract (add new, dual-write, migrate reads, drop old), Feature flag gating" }
   ],
   pricingTiers: [
-    { type: "Migration Assessment", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Source analysis, compatibility assessment, migration plan, risk evaluation" },
-    { type: "MySQL \xE2\u2020\u2019 PostgreSQL (<50GB)", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "Schema conversion, DMS replication, validation, cutover runbook" },
-    { type: "MySQL \xE2\u2020\u2019 PostgreSQL (50GB-1TB)", investment: "$10,000 - $28,000", timeline: "3 - 6 weeks", bestFor: "As above with performance tuning, extended parallel running, validation" },
-    { type: "On-Premises \xE2\u2020\u2019 AWS RDS", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "DMS setup, network connectivity, cutover plan, validation, rollback" },
-    { type: "Zero-Downtime Schema Migration", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Expand/contract plan, dual-write scripts, validation, feature flag rollout" },
-    { type: "Application Data Migration", investment: "$6,000 - $18,000", timeline: "2 - 5 weeks", bestFor: "Transform, cleanse, consolidate, validate, reconciliation report" },
-    { type: "MongoDB \xE2\u2020\u2019 PostgreSQL", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Schema design, document flattening, migration, validation, application update" },
-    { type: "Migration Retainer", investment: "$2,500 - $5,000/mo", timeline: "Ongoing", bestFor: "Post-migration monitoring, performance tuning, data reconciliation" }
+    { type: "Migration Assessment", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Source analysis, compatibility assessment, migration plan, risk evaluation" },
+    { type: "MySQL \xE2\u2020\u2019 PostgreSQL (<50GB)", investment: "£6,000 - £16,000", timeline: "2 - 4 weeks", bestFor: "Schema conversion, DMS replication, validation, cutover runbook" },
+    { type: "MySQL \xE2\u2020\u2019 PostgreSQL (50GB-1TB)", investment: "£10,000 - £28,000", timeline: "3 - 6 weeks", bestFor: "As above with performance tuning, extended parallel running, validation" },
+    { type: "On-Premises \xE2\u2020\u2019 AWS RDS", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "DMS setup, network connectivity, cutover plan, validation, rollback" },
+    { type: "Zero-Downtime Schema Migration", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Expand/contract plan, dual-write scripts, validation, feature flag rollout" },
+    { type: "Application Data Migration", investment: "£6,000 - £18,000", timeline: "2 - 5 weeks", bestFor: "Transform, cleanse, consolidate, validate, reconciliation report" },
+    { type: "MongoDB \xE2\u2020\u2019 PostgreSQL", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Schema design, document flattening, migration, validation, application update" },
+    { type: "Migration Retainer", investment: "£2,500 - £5,000/mo", timeline: "Ongoing", bestFor: "Post-migration monitoring, performance tuning, data reconciliation" }
   ],
   industryUseCases: [
     { name: "MySQL to PostgreSQL Migration", description: "2TB e-commerce database migration. AWS DMS for initial load + CDC replication. Zero-downtime cutover with dual-write pattern. Row count + checksum validation. 6-week timeline." },
@@ -10701,14 +10701,14 @@ const sqlNosqlSolutionsOverride = {
     { layer: "CDC Sync", technologies: "Debezium (PostgreSQL WAL, MongoDB change streams \xE2\u2020\u2019 Kafka), AWS DMS" }
   ],
   pricingTiers: [
-    { type: "Database Selection Consulting", investment: "$2,500 - $6,000", timeline: "1 - 2 weeks", bestFor: "Access pattern analysis, technology selection, architecture design" },
-    { type: "PostgreSQL Implementation", investment: "$4,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "RDS, schema, PgBouncer, RLS, Prisma/SQLAlchemy, monitoring" },
-    { type: "Redis Implementation", investment: "$3,000 - $8,000", timeline: "1 - 3 weeks", bestFor: "ElastiCache, namespace design, TTL strategy, eviction policy, monitoring" },
-    { type: "MongoDB Implementation", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Atlas, schema design, indexes, aggregation pipelines, change streams" },
-    { type: "DynamoDB Single-Table Design", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Access pattern mapping, PK/SK/GSI design, NoSQL Workbench, CF export" },
-    { type: "Elasticsearch / OpenSearch Setup", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Mapping, analyser, relevance tuning, zero-downtime reindex" },
-    { type: "Polyglot Persistence Architecture", investment: "$10,000 - $28,000", timeline: "3 - 7 weeks", bestFor: "Multi-database stack + CDC sync + data ownership design" },
-    { type: "Database Stack Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "Performance monitoring, index optimisation, version upgrades, support" }
+    { type: "Database Selection Consulting", investment: "£2,500 - £6,000", timeline: "1 - 2 weeks", bestFor: "Access pattern analysis, technology selection, architecture design" },
+    { type: "PostgreSQL Implementation", investment: "£4,000 - £12,000", timeline: "2 - 4 weeks", bestFor: "RDS, schema, PgBouncer, RLS, Prisma/SQLAlchemy, monitoring" },
+    { type: "Redis Implementation", investment: "£3,000 - £8,000", timeline: "1 - 3 weeks", bestFor: "ElastiCache, namespace design, TTL strategy, eviction policy, monitoring" },
+    { type: "MongoDB Implementation", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Atlas, schema design, indexes, aggregation pipelines, change streams" },
+    { type: "DynamoDB Single-Table Design", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Access pattern mapping, PK/SK/GSI design, NoSQL Workbench, CF export" },
+    { type: "Elasticsearch / OpenSearch Setup", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Mapping, analyser, relevance tuning, zero-downtime reindex" },
+    { type: "Polyglot Persistence Architecture", investment: "£10,000 - £28,000", timeline: "3 - 7 weeks", bestFor: "Multi-database stack + CDC sync + data ownership design" },
+    { type: "Database Stack Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "Performance monitoring, index optimisation, version upgrades, support" }
   ],
   industryUseCases: [
     { name: "E-commerce Polyglot Stack", description: "PostgreSQL (orders, users, inventory ACID), Redis (session store, cart cache, rate limiting), Elasticsearch (product search indexed from PostgreSQL via CDC), ClickHouse (analytics sales aggregations, customer cohorts)." },
@@ -10811,10 +10811,10 @@ const cybersecurityServicesOverride = {
     "DevSecOps Integration"
   ],
   // marketStats: [
-  //   { label: 'Average cost of a data breach in 2024 (IBM)', value: '$4.88M' },
+  //   { label: 'Average cost of a data breach in 2024 (IBM)', value: '£4.88M' },
   //   { label: 'Average days to identify and contain a breach', value: '277' },
   //   { label: 'Organizations experienced more than one data breach in 2023', value: '83%' },
-  //   { label: 'Projected annual cybercrime cost by 2025', value: '$10.5T' },
+  //   { label: 'Projected annual cybercrime cost by 2025', value: '£10.5T' },
   // ],
   servicesCards: [
     { title: "Penetration Testing", description: "Manual and automated penetration testing of web applications, APIs, mobile applications, and network infrastructure. OWASP Testing Guide (OTG) and PTES methodology. Deliverables: executive summary, technical findings report with CVSS scores, evidence screenshots, reproduction steps, attack narrative, and re-test verification report." },
@@ -10825,7 +10825,7 @@ const cybersecurityServicesOverride = {
     { title: "Application Security Engineering", description: "Embedding security into development: secure code review of high-risk components, threat modeling (STRIDE methodology), secure coding training, security requirements definition, security architecture review, and DevSecOps pipeline integration." }
   ],
   differentiators: [
-    { feature: '"Security as Revenue Enabler"', description: "5-10x ROI framing one $200K enterprise deal pays for $20-40K security engagement | Basic: Security as cost center only" },
+    { feature: '"Security as Revenue Enabler"', description: "5-10x ROI framing one £200K enterprise deal pays for £20-40K security engagement | Basic: Security as cost center only" },
     { feature: "OWASP Top 10 with Business Impact", description: '10-row table with "Business Impact" column deal loss, GDPR fines, database compromise | Basic: Technical jargon only' },
     { feature: "Compliance Framework Comparison", description: "SOC 2 vs ISO 27001 vs HIPAA vs GDPR 8-row, 5-column decision framework | Basic: Single framework focus" },
     { feature: "Re-Test Included", description: "All pen test engagements include re-test verification at no additional cost | Basic: Re-test charged separately" },
@@ -10851,19 +10851,19 @@ const cybersecurityServicesOverride = {
     { layer: "Compliance Automation", technologies: "Vanta (SOC 2/ISO 27001 automation), Drata (compliance automation), Sprinto" }
   ],
   pricingTiers: [
-    { type: "Vulnerability Assessment", investment: "$4,000 - $10,000", timeline: "1 - 2 weeks", bestFor: "Automated scan + manual review, CVSS-scored register, remediation guidance" },
-    { type: "Web App Penetration Test", investment: "$8,000 - $25,000", timeline: "2 - 4 weeks", bestFor: "Manual pen test, OWASP Top 10, API testing, full report + exec summary, re-test" },
-    { type: "API Security Assessment", investment: "$5,000 - $15,000", timeline: "1 - 3 weeks", bestFor: "Authentication, authorization, injection, rate limiting, data exposure" },
-    { type: "Mobile App Pen Test", investment: "$8,000 - $20,000", timeline: "2 - 4 weeks", bestFor: "iOS + Android binary analysis, traffic interception, backend API testing, report" },
-    { type: "Cloud Security Audit", investment: "$6,000 - $18,000", timeline: "1 - 3 weeks", bestFor: "AWS/GCP/Azure CIS benchmark, IAM review, network exposure, encryption assessment" },
-    { type: "SOC 2 Readiness & Type I", investment: "$15,000 - $40,000", timeline: "3 - 6 months", bestFor: "Gap assessment, control design, policy docs, evidence templates, pre-audit review" },
-    { type: "SOC 2 Type II Support", investment: "$20,000 - $60,000", timeline: "6 - 12 months", bestFor: "Full year control operation support, evidence collection, auditor coordination" },
-    { type: "ISO 27001 Certification", investment: "$20,000 - $55,000", timeline: "6 - 12 months", bestFor: "ISMS design, control implementation, internal audit, certification body coordination" },
-    { type: "GDPR / HIPAA Compliance", investment: "$12,000 - $35,000", timeline: "3 - 6 months", bestFor: "Gap assessment, data mapping, control implementation, policy docs, DPA templates" },
-    { type: "Security Retainer", investment: "$4,000 - $15,000/mo", timeline: "Ongoing", bestFor: "Monthly vuln scanning, dependency updates, security review of new features, incident response SLA" }
+    { type: "Vulnerability Assessment", investment: "£4,000 - £10,000", timeline: "1 - 2 weeks", bestFor: "Automated scan + manual review, CVSS-scored register, remediation guidance" },
+    { type: "Web App Penetration Test", investment: "£8,000 - £25,000", timeline: "2 - 4 weeks", bestFor: "Manual pen test, OWASP Top 10, API testing, full report + exec summary, re-test" },
+    { type: "API Security Assessment", investment: "£5,000 - £15,000", timeline: "1 - 3 weeks", bestFor: "Authentication, authorization, injection, rate limiting, data exposure" },
+    { type: "Mobile App Pen Test", investment: "£8,000 - £20,000", timeline: "2 - 4 weeks", bestFor: "iOS + Android binary analysis, traffic interception, backend API testing, report" },
+    { type: "Cloud Security Audit", investment: "£6,000 - £18,000", timeline: "1 - 3 weeks", bestFor: "AWS/GCP/Azure CIS benchmark, IAM review, network exposure, encryption assessment" },
+    { type: "SOC 2 Readiness & Type I", investment: "£15,000 - £40,000", timeline: "3 - 6 months", bestFor: "Gap assessment, control design, policy docs, evidence templates, pre-audit review" },
+    { type: "SOC 2 Type II Support", investment: "£20,000 - £60,000", timeline: "6 - 12 months", bestFor: "Full year control operation support, evidence collection, auditor coordination" },
+    { type: "ISO 27001 Certification", investment: "£20,000 - £55,000", timeline: "6 - 12 months", bestFor: "ISMS design, control implementation, internal audit, certification body coordination" },
+    { type: "GDPR / HIPAA Compliance", investment: "£12,000 - £35,000", timeline: "3 - 6 months", bestFor: "Gap assessment, data mapping, control implementation, policy docs, DPA templates" },
+    { type: "Security Retainer", investment: "£4,000 - £15,000/mo", timeline: "Ongoing", bestFor: "Monthly vuln scanning, dependency updates, security review of new features, incident response SLA" }
   ],
   industryUseCases: [
-    { name: "Enterprise Deal Enablement", description: "Company with $200K enterprise deal stalled by security questionnaire. Vulnerability assessment + pen test + SOC 2 readiness. Report delivered within 3 weeks. Deal closed within 60 days." },
+    { name: "Enterprise Deal Enablement", description: "Company with £200K enterprise deal stalled by security questionnaire. Vulnerability assessment + pen test + SOC 2 readiness. Report delivered within 3 weeks. Deal closed within 60 days." },
     { name: "SOC 2 Type II Certification", description: "SaaS company preparing for first SOC 2 Type II. 6-month readiness programme: gap assessment, policy documentation, Vanta setup, technical controls. Clean Type II report." },
     { name: "Post-Acquisition Security", description: "Startup acquired by public company. Security posture assessment + remediation roadmap. Passed acquirer's security due diligence." },
     { name: "Security for Healthcare", description: "HealthTech company handling PHI. HIPAA Security Rule assessment + technical controls implemented + BAAs with vendors. GDPR compliance for EU patient data." }
@@ -10876,7 +10876,7 @@ const cybersecurityServicesOverride = {
     },
     {
       heading: "Security as a Revenue Enabler",
-      body: "For mid-market B2B software companies, security investment is not just risk mitigation it is a direct revenue driver. Enterprise procurement teams routinely eliminate vendors who cannot provide a current penetration test report, demonstrate SOC 2 compliance, or pass their vendor security questionnaire. A $20,000-40,000 security engagement that enables one $200,000 enterprise contract represents a 5-10x return in the first year alone before factoring in the risk reduction from the security improvements themselves.",
+      body: "For mid-market B2B software companies, security investment is not just risk mitigation it is a direct revenue driver. Enterprise procurement teams routinely eliminate vendors who cannot provide a current penetration test report, demonstrate SOC 2 compliance, or pass their vendor security questionnaire. A £20,000-40,000 security engagement that enables one £200,000 enterprise contract represents a 5-10x return in the first year alone before factoring in the risk reduction from the security improvements themselves.",
       items: []
     },
     {
@@ -10907,7 +10907,7 @@ const cybersecurityServicesOverride = {
     },
     {
       question: "What is SOC 2 compliance and how long does it take?",
-      answer: `SOC 2 (System and Organization Controls 2) is a security compliance framework managed by the AICPA that evaluates service organizations against five Trust Service Criteria: Security (mandatory), Availability, Processing Integrity, Confidentiality, and Privacy. SOC 2 Type I is a point-in-time assessment of whether security controls are designed correctly typically takes 2-4 months and costs $15,000-40,000. SOC 2 Type II is an audit of whether controls operate effectively over a 6-12 month observation period typically takes 6-12 months and costs $20,000-60,000 with an auditor. SOC 2 Type II is what most enterprise customers require when asking for "SOC 2 compliance." The observation period can begin while you are implementing controls with Clickmasters' support.`
+      answer: `SOC 2 (System and Organization Controls 2) is a security compliance framework managed by the AICPA that evaluates service organizations against five Trust Service Criteria: Security (mandatory), Availability, Processing Integrity, Confidentiality, and Privacy. SOC 2 Type I is a point-in-time assessment of whether security controls are designed correctly typically takes 2-4 months and costs £15,000-40,000. SOC 2 Type II is an audit of whether controls operate effectively over a 6-12 month observation period typically takes 6-12 months and costs £20,000-60,000 with an auditor. SOC 2 Type II is what most enterprise customers require when asking for "SOC 2 compliance." The observation period can begin while you are implementing controls with Clickmasters' support.`
     },
     {
       question: "What is the OWASP Top 10?",
@@ -10915,7 +10915,7 @@ const cybersecurityServicesOverride = {
     },
     {
       question: "How much does a penetration test cost?",
-      answer: "Penetration test costs for B2B software applications range from $8,000 for a focused web application test to $25,000 for a comprehensive engagement covering web application, APIs, mobile application, and infrastructure. Cost drivers include: scope size (number of screens, API endpoints, and test cases), test type (black box is quicker, white box is more thorough), mobile platform inclusion (iOS and Android double the mobile test scope), and re-test verification requirements. Clickmasters provides fixed-price proposals after a scoping call. All engagements include a re-test of critical and high findings at no additional cost the engagement is not complete until the critical issues are confirmed resolved."
+      answer: "Penetration test costs for B2B software applications range from £8,000 for a focused web application test to £25,000 for a comprehensive engagement covering web application, APIs, mobile application, and infrastructure. Cost drivers include: scope size (number of screens, API endpoints, and test cases), test type (black box is quicker, white box is more thorough), mobile platform inclusion (iOS and Android double the mobile test scope), and re-test verification requirements. Clickmasters provides fixed-price proposals after a scoping call. All engagements include a re-test of critical and high findings at no additional cost the engagement is not complete until the critical issues are confirmed resolved."
     },
     {
       question: "Does Clickmasters help with enterprise vendor security questionnaires?",
@@ -10923,7 +10923,7 @@ const cybersecurityServicesOverride = {
     },
     {
       question: "What is the difference between a vulnerability assessment and a penetration test?",
-      answer: "A vulnerability assessment identifies potential security weaknesses using automated scanning tools and systematic analysis it tells you what vulnerabilities exist. A penetration test goes further: a security professional manually attempts to exploit the identified vulnerabilities to determine which are actually exploitable in your specific environment, what data or systems could be accessed through exploitation, and how findings can be chained together into a realistic attack scenario. Vulnerability assessments are faster and less expensive ($4,000-10,000); penetration tests are more thorough and provide the manual exploitation evidence that enterprise customers and compliance auditors require ($8,000-25,000). Most compliance frameworks (SOC 2, ISO 27001) require penetration testing specifically, not just vulnerability assessment."
+      answer: "A vulnerability assessment identifies potential security weaknesses using automated scanning tools and systematic analysis it tells you what vulnerabilities exist. A penetration test goes further: a security professional manually attempts to exploit the identified vulnerabilities to determine which are actually exploitable in your specific environment, what data or systems could be accessed through exploitation, and how findings can be chained together into a realistic attack scenario. Vulnerability assessments are faster and less expensive (£4,000-10,000); penetration tests are more thorough and provide the manual exploitation evidence that enterprise customers and compliance auditors require (£8,000-25,000). Most compliance frameworks (SOC 2, ISO 27001) require penetration testing specifically, not just vulnerability assessment."
     },
     {
       question: "How do you handle data confidentiality during security testing?",
@@ -10931,13 +10931,13 @@ const cybersecurityServicesOverride = {
     }
   ],
   testimonial: {
-    quote: "Clickmasters helped us get SOC 2 Type II certified in 8 months. Their gap assessment identified exactly what we needed to fix, and the remediation support got it done. We closed two enterprise deals worth $500K within 90 days of receiving the report.",
+    quote: "Clickmasters helped us get SOC 2 Type II certified in 8 months. Their gap assessment identified exactly what we needed to fix, and the remediation support got it done. We closed two enterprise deals worth £500K within 90 days of receiving the report.",
     author: "CEO",
     role: "B2B SaaS Company"
   },
   caseStudy: {
     title: "SOC 2 Type II Certification",
-    description: "Guided B2B SaaS company through SOC 2 Type II certification. Gap assessment, policy documentation, technical control implementation (MFA, encryption, logging), Vanta setup. Clean Type II report in 8 months. Enabled $500K enterprise deals.",
+    description: "Guided B2B SaaS company through SOC 2 Type II certification. Gap assessment, policy documentation, technical control implementation (MFA, encryption, logging), Vanta setup. Clean Type II report in 8 months. Enabled £500K enterprise deals.",
     slug: "soc2-certification",
     badge: "Cybersecurity"
   },
@@ -10989,9 +10989,9 @@ const securityAuditsOverride = {
   ],
   // marketStats: [
   //   { label: 'Open Web Application Security Project authoritative reference for web application security risks, updated every 3-4 years', value: 'OWASP' },
-  //   { label: 'Average cost of a data breach (IBM Security 2023) the business case for proactive security audits', value: '$4.45M' },
+  //   { label: 'Average cost of a data breach (IBM Security 2023) the business case for proactive security audits', value: '£4.45M' },
   //   { label: 'Of breaches involve a human element misconfigurations, credential theft, social engineering (Verizon DBIR 2023)', value: '82%' },
-  //   { label: 'Clickmasters does not perform offensive security testing audit and remediation only', value: '$0' },
+  //   { label: 'Clickmasters does not perform offensive security testing audit and remediation only', value: '£0' },
   // ],
   servicesCards: [
     { title: "OWASP Top 10 Application Audit", description: "Structured assessment against OWASP Top 10 (2021): A01 Broken Access Control (IDOR accessing /api/orders/123 without ownership), A02 Cryptographic Failures (bcrypt/Argon2 passwords, TLS config), A03 Injection (SQL, NoSQL, OS command), A04 Insecure Design (threat modelling), A05 Security Misconfiguration (default creds, verbose errors), A06 Vulnerable Components (dependency CVEs), A07 Authentication Failures (brute force protection, session management), A08 Software Integrity Failures (CI/CD security), A09 Logging Failures, A10 SSRF. Deliverable: OWASP Top 10 assessment report with per-category findings, severity ratings, remediation guidance." },
@@ -11023,14 +11023,14 @@ const securityAuditsOverride = {
     { layer: "Dependency", technologies: "Snyk (SCA), npm audit, pip-audit, OWASP Dependency-Check" }
   ],
   pricingTiers: [
-    { type: "Security Posture Assessment", investment: "$4,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "High-level review across application, cloud, code, and processes priority findings" },
-    { type: "OWASP Top 10 Audit", investment: "$5,000 - $14,000", timeline: "2 - 3 weeks", bestFor: "Full OWASP Top 10 assessment, severity ratings, remediation guidance" },
-    { type: "Cloud Infrastructure Security", investment: "$4,000 - $10,000", timeline: "1 - 2 weeks", bestFor: "AWS IAM, VPC, S3, encryption, monitoring, GuardDuty, Security Hub" },
-    { type: "Code Security Review", investment: "$5,000 - $14,000", timeline: "2 - 3 weeks", bestFor: "SAST review, manual code review, secret scanning, dependency audit" },
-    { type: "Security Headers & TLS", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "HTTP headers, TLS config, SSL Labs, Mozilla Observatory, remediation" },
-    { type: "SOC 2 Readiness Assessment", investment: "$6,000 - $16,000", timeline: "2 - 3 weeks", bestFor: "TSC gap analysis, control inventory, remediation roadmap, evidence prep" },
-    { type: "GDPR Security Assessment", investment: "$5,000 - $12,000", timeline: "1 - 2 weeks", bestFor: "Article 32 assessment, DPIA support, data mapping, gap report" },
-    { type: "Full Security Audit Programme", investment: "$12,000 - $35,000", timeline: "4 - 7 weeks", bestFor: "All above: application + cloud + code + compliance + remediation plan" }
+    { type: "Security Posture Assessment", investment: "£4,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "High-level review across application, cloud, code, and processes priority findings" },
+    { type: "OWASP Top 10 Audit", investment: "£5,000 - £14,000", timeline: "2 - 3 weeks", bestFor: "Full OWASP Top 10 assessment, severity ratings, remediation guidance" },
+    { type: "Cloud Infrastructure Security", investment: "£4,000 - £10,000", timeline: "1 - 2 weeks", bestFor: "AWS IAM, VPC, S3, encryption, monitoring, GuardDuty, Security Hub" },
+    { type: "Code Security Review", investment: "£5,000 - £14,000", timeline: "2 - 3 weeks", bestFor: "SAST review, manual code review, secret scanning, dependency audit" },
+    { type: "Security Headers & TLS", investment: "£2,000 - £5,000", timeline: "1 week", bestFor: "HTTP headers, TLS config, SSL Labs, Mozilla Observatory, remediation" },
+    { type: "SOC 2 Readiness Assessment", investment: "£6,000 - £16,000", timeline: "2 - 3 weeks", bestFor: "TSC gap analysis, control inventory, remediation roadmap, evidence prep" },
+    { type: "GDPR Security Assessment", investment: "£5,000 - £12,000", timeline: "1 - 2 weeks", bestFor: "Article 32 assessment, DPIA support, data mapping, gap report" },
+    { type: "Full Security Audit Programme", investment: "£12,000 - £35,000", timeline: "4 - 7 weeks", bestFor: "All above: application + cloud + code + compliance + remediation plan" }
   ],
   industryUseCases: [
     { name: "Pre-Enterprise Deal Security Review", description: "Prospect sending security questionnaire. OWASP Top 10 audit + cloud security review + gap assessment. Remediation roadmap delivered in 3 weeks. Deal closed." },
@@ -11153,13 +11153,13 @@ const penetrationTestingOverride = {
     { layer: "Reporting", technologies: "CVSS 3.1 scoring, custom finding templates, screenshot/evidence management, re-test tracking" }
   ],
   pricingTiers: [
-    { type: "Web App Pen Test (Small scope)", investment: "$5,000 - $12,000", timeline: "1 - 2 weeks", bestFor: "Up to 10 authenticated flows, OWASP coverage, CVSS report, re-test" },
-    { type: "Web App Pen Test (Full scope)", investment: "$8,000 - $20,000", timeline: "2 - 3 weeks", bestFor: "Full application, all roles, all flows, CVSS, exec + tech report, re-test" },
-    { type: "API Pen Test (REST or GraphQL)", investment: "$5,000 - $14,000", timeline: "1 - 2 weeks", bestFor: "Auth bypass, injection, mass assignment, rate limits, CVSS, re-test" },
-    { type: "Cloud Pen Test (AWS)", investment: "$6,000 - $16,000", timeline: "1 - 2 weeks", bestFor: "IAM priv-esc, metadata, exposed services, S3, CVSS, remediation" },
-    { type: "Combined Web + API + Cloud", investment: "$12,000 - $30,000", timeline: "3 - 4 weeks", bestFor: "Full coverage, exec + tech report, re-test, compliance letter" },
-    { type: "PCI DSS Annual Pen Test", investment: "$8,000 - $20,000", timeline: "2 - 3 weeks", bestFor: "Internal + external, segmentation test, PCI DSS finding format" },
-    { type: "Pen Test + Remediation Support", investment: "$15,000 - $35,000", timeline: "4 - 6 weeks", bestFor: "Pen test + engineering remediation of critical and high findings" }
+    { type: "Web App Pen Test (Small scope)", investment: "£5,000 - £12,000", timeline: "1 - 2 weeks", bestFor: "Up to 10 authenticated flows, OWASP coverage, CVSS report, re-test" },
+    { type: "Web App Pen Test (Full scope)", investment: "£8,000 - £20,000", timeline: "2 - 3 weeks", bestFor: "Full application, all roles, all flows, CVSS, exec + tech report, re-test" },
+    { type: "API Pen Test (REST or GraphQL)", investment: "£5,000 - £14,000", timeline: "1 - 2 weeks", bestFor: "Auth bypass, injection, mass assignment, rate limits, CVSS, re-test" },
+    { type: "Cloud Pen Test (AWS)", investment: "£6,000 - £16,000", timeline: "1 - 2 weeks", bestFor: "IAM priv-esc, metadata, exposed services, S3, CVSS, remediation" },
+    { type: "Combined Web + API + Cloud", investment: "£12,000 - £30,000", timeline: "3 - 4 weeks", bestFor: "Full coverage, exec + tech report, re-test, compliance letter" },
+    { type: "PCI DSS Annual Pen Test", investment: "£8,000 - £20,000", timeline: "2 - 3 weeks", bestFor: "Internal + external, segmentation test, PCI DSS finding format" },
+    { type: "Pen Test + Remediation Support", investment: "£15,000 - £35,000", timeline: "4 - 6 weeks", bestFor: "Pen test + engineering remediation of critical and high findings" }
   ],
   industryUseCases: [
     { name: "Enterprise Deal Pen Test", description: "Fortune 500 customer requires pen test report. Full web app + API pen test. Report delivered in 3 weeks. Deal closed." },
@@ -11204,7 +11204,7 @@ const penetrationTestingOverride = {
   },
   caseStudy: {
     title: "Enterprise Pen Test Report",
-    description: "Conducted web app + API pen test for Fortune 500 prospect. Found 3 critical (JWT alg:none, IDOR, SQLi), 8 high. Report delivered in 3 weeks. Prospect accepted. $350K deal closed.",
+    description: "Conducted web app + API pen test for Fortune 500 prospect. Found 3 critical (JWT alg:none, IDOR, SQLi), 8 high. Report delivered in 3 weeks. Prospect accepted. £350K deal closed.",
     slug: "enterprise-pen-test",
     badge: "Penetration Testing"
   },
@@ -11283,13 +11283,13 @@ const vulnerabilityAssessmentOverride = {
     { layer: "Prioritisation", technologies: "CVSS 3.1, CISA KEV, EPSS (Exploit Prediction Scoring System), asset criticality tagging" }
   ],
   pricingTiers: [
-    { type: "Infrastructure Scan (Nessus)", investment: "$3,000 - $7,000", timeline: "1 week", bestFor: "Credentialed scan, false positive triage, top 20 findings, remediation plan" },
-    { type: "Container Image Audit", investment: "$2,500 - $6,000", timeline: "1 week", bestFor: "All images, base image recommendations, SBOM, CVE report" },
-    { type: "Dependency Audit (Snyk)", investment: "$2,500 - $6,000", timeline: "1 week", bestFor: "npm/pip SCA, reachability analysis, upgrade path for all critical/high CVEs" },
-    { type: "Cloud Misconfiguration Scan", investment: "$3,000 - $7,000", timeline: "1 week", bestFor: "Prowler + ScoutSuite, CIS benchmark, Security Hub, remediation plan" },
-    { type: "Full Vulnerability Assessment", investment: "$8,000 - $20,000", timeline: "2 - 3 weeks", bestFor: "Infrastructure + containers + dependencies + cloud + combined report" },
-    { type: "Continuous Programme (Monthly)", investment: "$2,500 - $5,000/mo", timeline: "Ongoing", bestFor: "Scheduled scans, new CVE triage, remediation tracking, monthly report" },
-    { type: "VA + Remediation Support", investment: "$12,000 - $28,000", timeline: "3 - 6 weeks", bestFor: "Full VA + engineering remediation of critical and high findings" }
+    { type: "Infrastructure Scan (Nessus)", investment: "£3,000 - £7,000", timeline: "1 week", bestFor: "Credentialed scan, false positive triage, top 20 findings, remediation plan" },
+    { type: "Container Image Audit", investment: "£2,500 - £6,000", timeline: "1 week", bestFor: "All images, base image recommendations, SBOM, CVE report" },
+    { type: "Dependency Audit (Snyk)", investment: "£2,500 - £6,000", timeline: "1 week", bestFor: "npm/pip SCA, reachability analysis, upgrade path for all critical/high CVEs" },
+    { type: "Cloud Misconfiguration Scan", investment: "£3,000 - £7,000", timeline: "1 week", bestFor: "Prowler + ScoutSuite, CIS benchmark, Security Hub, remediation plan" },
+    { type: "Full Vulnerability Assessment", investment: "£8,000 - £20,000", timeline: "2 - 3 weeks", bestFor: "Infrastructure + containers + dependencies + cloud + combined report" },
+    { type: "Continuous Programme (Monthly)", investment: "£2,500 - £5,000/mo", timeline: "Ongoing", bestFor: "Scheduled scans, new CVE triage, remediation tracking, monthly report" },
+    { type: "VA + Remediation Support", investment: "£12,000 - £28,000", timeline: "3 - 6 weeks", bestFor: "Full VA + engineering remediation of critical and high findings" }
   ],
   industryUseCases: [
     { name: "First-Time Vulnerability Assessment", description: "First-time VA of B2B SaaS. 0 critical, 5 high, 12 medium, 40 low. Remediation plan: P1 within 24h, P2 within 7 days. All critical/high fixed within 30 days." },
@@ -11421,17 +11421,17 @@ const complianceRiskManagementOverride = {
     { layer: "Frameworks", technologies: "SOC 2 TSC (Security, Availability, Confidentiality, Processing Integrity, Privacy), ISO 27001:2022 Annex A, GDPR Articles 30, 32, 35, HIPAA Security Rule" }
   ],
   pricingTiers: [
-    { type: "SOC 2 Gap Assessment", investment: "$4,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "TSC gap analysis, control inventory, remediation roadmap, auditor selection" },
-    { type: "SOC 2 Readiness Programme", investment: "$12,000 - $35,000", timeline: "3 - 6 months", bestFor: "Policies + technical controls + evidence collection + audit prep" },
-    { type: "Vanta / Drata Setup", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "Integration config, automated checks, remediation workflow, team training" },
-    { type: "GDPR Compliance Programme", investment: "$8,000 - $20,000", timeline: "2 - 4 months", bestFor: "Data mapping + DPAs + DPIAs + notices + subject rights + breach procedure" },
-    { type: "ISO 27001 Implementation", investment: "$12,000 - $35,000", timeline: "6 - 12 months", bestFor: "ISMS + SoA + risk assessment + policies + management review system" },
-    { type: "HIPAA Compliance", investment: "$6,000 - $16,000", timeline: "2 - 3 months", bestFor: "Security Rule controls + BAAs + policies + access control + audit log" },
-    { type: "Risk Register Build", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "Threat landscape + risk assessment + treatment plan + board reporting" },
-    { type: "Ongoing Compliance Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "Continuous monitoring, annual review, new requirement mapping, evidence" }
+    { type: "SOC 2 Gap Assessment", investment: "£4,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "TSC gap analysis, control inventory, remediation roadmap, auditor selection" },
+    { type: "SOC 2 Readiness Programme", investment: "£12,000 - £35,000", timeline: "3 - 6 months", bestFor: "Policies + technical controls + evidence collection + audit prep" },
+    { type: "Vanta / Drata Setup", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "Integration config, automated checks, remediation workflow, team training" },
+    { type: "GDPR Compliance Programme", investment: "£8,000 - £20,000", timeline: "2 - 4 months", bestFor: "Data mapping + DPAs + DPIAs + notices + subject rights + breach procedure" },
+    { type: "ISO 27001 Implementation", investment: "£12,000 - £35,000", timeline: "6 - 12 months", bestFor: "ISMS + SoA + risk assessment + policies + management review system" },
+    { type: "HIPAA Compliance", investment: "£6,000 - £16,000", timeline: "2 - 3 months", bestFor: "Security Rule controls + BAAs + policies + access control + audit log" },
+    { type: "Risk Register Build", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "Threat landscape + risk assessment + treatment plan + board reporting" },
+    { type: "Ongoing Compliance Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "Continuous monitoring, annual review, new requirement mapping, evidence" }
   ],
   industryUseCases: [
-    { name: "First SOC 2 Type II", description: "B2B SaaS selling to US enterprise. 6-month readiness: gap assessment, policies, Vanta setup, technical controls. Type II audit passed. $500K enterprise deals closed within 6 months." },
+    { name: "First SOC 2 Type II", description: "B2B SaaS selling to US enterprise. 6-month readiness: gap assessment, policies, Vanta setup, technical controls. Type II audit passed. £500K enterprise deals closed within 6 months." },
     { name: "GDPR for US SaaS", description: "US SaaS with EU customers. GDPR compliance: data mapping, DPA with 20 vendors, DPIA for analytics, privacy policy update. No regulatory action." },
     { name: "ISO 27001 for UK Govt", description: "UK SaaS bidding on government contract. ISO 27001 certification: ISMS design, SoA (80/114 controls), risk assessment, internal audit. Contract awarded." },
     { name: "HIPAA for HealthTech", description: "HealthTech startup handling PHI. HIPAA Security Rule: encryption, access controls, audit logging, BAAs with vendors. BAA template created." }
@@ -11441,11 +11441,11 @@ const complianceRiskManagementOverride = {
       heading: "Compliance Framework Comparison",
       body: "",
       items: [
-        "SOC 2 Type II: Who requires it US enterprise B2B customers. Governing body AICPA (US accounting standard). Certification type Audit report (Type I or Type II). Timeline Type I: 2-4 months, Type II: 6-12 months. Cost range $30K-100K (audit + prep). Key requirements 5 Trust Service Criteria: Security (CC), Availability, Confidentiality, Processing Integrity, Privacy 64 control points. Scope Specific system/service in scope. Best for US SaaS companies selling enterprise.",
-        "GDPR: Who requires it Any org processing EU personal data. Governing body EU regulators (each member state). Certification type Self-attestation + DPA regulatory review. Timeline 3-6 months for initial compliance. Cost range $15K-50K (assessment + implementation). Key requirements Lawful basis, data subject rights (access, erasure, portability), privacy notices, DPO (if required), DPIAs for high-risk processing, Article 32 security measures, breach notification (72 hours). Scope All systems handling EU personal data. Best for Any product with EU users.",
-        "ISO 27001: Who requires it EU/international enterprise customers. Governing body ISO/IEC (international standard body). Certification type Third-party certification (annual audit). Timeline 6-12 months to first certification. Cost range $25K-80K (consulting + certification body). Key requirements ISMS (Information Security Management System), Statement of Applicability mapping 114 controls across 4 themes (Organisational, People, Physical, Technological), risk assessment (Clause 6), risk treatment plan. Scope Entire ISMS scope (can be defined narrowly). Best for European market, international enterprise, public sector.",
-        "HIPAA: Who requires it US healthcare data handlers (PHI). Governing body US Dept. of Health & Human Services. Certification type Self-assessment + HHS OCR audit. Timeline 3-6 months for initial compliance. Cost range $15K-50K (assessment + implementation). Key requirements PHI safeguards: administrative (policies, training), physical (data centre), technical (access control, audit controls, encryption, integrity, transmission security), Business Associate Agreements (BAAs). Scope All systems handling PHI. Best for HealthTech, insurance, clinical platforms.",
-        "PCI DSS: Who requires it Anyone storing/processing/transmitting payment card data. Governing body PCI Security Standards Council. Certification type SAQ for smaller merchants, QSA audit for Level 1. Timeline 3-6 months for SAQ-A/SAQ-D completion. Cost range $10K-30K (assessment + tools). Key requirements 12 requirements across 6 goals, annual pen test + quarterly ASV scan, SAQ (Self-Assessment Questionnaire) for smaller merchants, QSA audit for Level 1. Scope Cardholder data environment. Best for E-commerce, payment processors, SaaS billing."
+        "SOC 2 Type II: Who requires it US enterprise B2B customers. Governing body AICPA (US accounting standard). Certification type Audit report (Type I or Type II). Timeline Type I: 2-4 months, Type II: 6-12 months. Cost range £30K-100K (audit + prep). Key requirements 5 Trust Service Criteria: Security (CC), Availability, Confidentiality, Processing Integrity, Privacy 64 control points. Scope Specific system/service in scope. Best for US SaaS companies selling enterprise.",
+        "GDPR: Who requires it Any org processing EU personal data. Governing body EU regulators (each member state). Certification type Self-attestation + DPA regulatory review. Timeline 3-6 months for initial compliance. Cost range £15K-50K (assessment + implementation). Key requirements Lawful basis, data subject rights (access, erasure, portability), privacy notices, DPO (if required), DPIAs for high-risk processing, Article 32 security measures, breach notification (72 hours). Scope All systems handling EU personal data. Best for Any product with EU users.",
+        "ISO 27001: Who requires it EU/international enterprise customers. Governing body ISO/IEC (international standard body). Certification type Third-party certification (annual audit). Timeline 6-12 months to first certification. Cost range £25K-80K (consulting + certification body). Key requirements ISMS (Information Security Management System), Statement of Applicability mapping 114 controls across 4 themes (Organisational, People, Physical, Technological), risk assessment (Clause 6), risk treatment plan. Scope Entire ISMS scope (can be defined narrowly). Best for European market, international enterprise, public sector.",
+        "HIPAA: Who requires it US healthcare data handlers (PHI). Governing body US Dept. of Health & Human Services. Certification type Self-assessment + HHS OCR audit. Timeline 3-6 months for initial compliance. Cost range £15K-50K (assessment + implementation). Key requirements PHI safeguards: administrative (policies, training), physical (data centre), technical (access control, audit controls, encryption, integrity, transmission security), Business Associate Agreements (BAAs). Scope All systems handling PHI. Best for HealthTech, insurance, clinical platforms.",
+        "PCI DSS: Who requires it Anyone storing/processing/transmitting payment card data. Governing body PCI Security Standards Council. Certification type SAQ for smaller merchants, QSA audit for Level 1. Timeline 3-6 months for SAQ-A/SAQ-D completion. Cost range £10K-30K (assessment + tools). Key requirements 12 requirements across 6 goals, annual pen test + quarterly ASV scan, SAQ (Self-Assessment Questionnaire) for smaller merchants, QSA audit for Level 1. Scope Cardholder data environment. Best for E-commerce, payment processors, SaaS billing."
       ]
     },
     {
@@ -11532,7 +11532,7 @@ const applicationSecurityOverride = {
   // ],
   servicesCards: [
     { title: "Threat Modelling (STRIDE)", description: "Identify security requirements before they become vulnerabilities: STRIDE threat modelling (Spoofing impersonating another user; Tampering modifying data; Repudiation denying an action; Information Disclosure unauthorised data access; Denial of Service making system unavailable; Elevation of Privilege gaining unauthorised access levels), data flow diagramming (DFD map all data flows, identify trust boundaries, highlight where sensitive data crosses trust boundary), threat enumeration (for each trust boundary crossing: what threats are possible? probability and impact?), countermeasure mapping (for each threat: what control mitigates it? is it implemented?). STRIDE conducted as collaborative session with development team building shared security understanding." },
-    { title: "Injection Prevention", description: "Prevent injection vulnerabilities: SQL injection (Prisma ORM and parameterised queries user input never concatenated into SQL strings; raw SQL uses positional parameters `db.query('SELECT * FROM users WHERE id = $1', [userId])`), NoSQL injection (MongoDB queries constructed from typed objects, not string interpolation; Zod/Joi validation before DB ops), OS command injection (avoid shell execution functions `exec()`, `system()` with user input; use library APIs instead of shell commands), SSTI (use auto-escaping template engines, never pass user input directly to template evaluation)." },
+    { title: "Injection Prevention", description: "Prevent injection vulnerabilities: SQL injection (Prisma ORM and parameterised queries user input never concatenated into SQL strings; raw SQL uses positional parameters `db.query('SELECT * FROM users WHERE id = £1', [userId])`), NoSQL injection (MongoDB queries constructed from typed objects, not string interpolation; Zod/Joi validation before DB ops), OS command injection (avoid shell execution functions `exec()`, `system()` with user input; use library APIs instead of shell commands), SSTI (use auto-escaping template engines, never pass user input directly to template evaluation)." },
     { title: "Authentication & Session Security", description: "Harden authentication implementation: password hashing (bcrypt with work factor 12+ or Argon2id never MD5, SHA-1, or SHA-256 without salt), brute force protection (rate limiting on login endpoints progressive delays, CAPTCHA after N failures, account lockout with unlock mechanism), secure session management (HttpOnly + Secure + SameSite=Strict cookie attributes, cryptographically random session tokens, session rotation on privilege escalation, invalidation on logout), JWT best practices (RS256 or HS256 with strong secret, short access token TTL 15 minutes, refresh token rotation, no sensitive data in JWT payload JWTs are base64 encoded, not encrypted), MFA implementation (TOTP Time-based One-Time Password RFC 6238, FIDO2/WebAuthn for phishing-resistant MFA)." },
     { title: "Content Security Policy (CSP)", description: "XSS mitigation through HTTP response headers: CSP design (strict-dynamic + nonce-based CSP most effective XSS mitigation, avoids unsafe-inline which undermines CSP), nonce generation (per-request random nonce injected into CSP header and all inline scripts prevents attacker-injected scripts from executing), CSP reporting (report-uri or report-to directive collect CSP violation reports to identify both attacks and legitimate scripts blocked), Trusted Types (emerging standard enforces type safety for DOM manipulation prevents DOM XSS by requiring all HTML assignment to use Trusted Type), incremental CSP deployment (use Content-Security-Policy-Report-Only header first to collect violations without blocking tune policy before switching to enforcement)." },
     { title: "Security Remediation Engineering", description: "Fix the specific vulnerabilities identified in a security audit or pen test: vulnerability triage (review audit findings with engineering team, clarify reproduction steps, assess fix complexity), fix implementation (Clickmasters engineers implement the fixes not advisory-only), verification (reproduce vulnerability before fixing, confirm not reproducible after fixing), regression prevention (add security test for each fixed vulnerability the test fails if vulnerability is reintroduced), re-test (for pen test findings coordinate re-testing by original provider or conduct application-level re-testing internally). Deliverable: pull requests for all fixes, verified remediation, closing report for each finding." }
@@ -11559,14 +11559,14 @@ const applicationSecurityOverride = {
     { layer: "Rate Limiting", technologies: "express-rate-limit (Node.js), with Redis store for distributed deployments, token bucket algorithm" }
   ],
   pricingTiers: [
-    { type: "Threat Modelling Workshop", investment: "$4,000 - $8,000", timeline: "1 - 2 days", bestFor: "STRIDE, DFD, threat enumeration, countermeasure mapping, findings report" },
-    { type: "Injection Prevention Audit + Fix", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "All query patterns audited, parameterisation implemented, test coverage" },
-    { type: "Authentication Security Hardening", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "Password hashing, session security, JWT hardening, MFA implementation" },
-    { type: "CSP Implementation", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Nonce-based CSP, report-only phase, enforcement, violation monitoring" },
-    { type: "Rate Limiting & Input Validation", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Per-endpoint rate limits, Zod/Joi validation, file upload security" },
-    { type: "Security Remediation (per finding)", investment: "$1,500 - $4,000", timeline: "3 - 5 days", bestFor: "Fix implementation, verification, regression test, closing report" },
-    { type: "Full AppSec Engagement", investment: "$10,000 - $28,000", timeline: "3 - 6 weeks", bestFor: "Threat model + all OWASP controls + remediation + test coverage" },
-    { type: "AppSec Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "Code review, new feature security, dependency patches, pen test prep" }
+    { type: "Threat Modelling Workshop", investment: "£4,000 - £8,000", timeline: "1 - 2 days", bestFor: "STRIDE, DFD, threat enumeration, countermeasure mapping, findings report" },
+    { type: "Injection Prevention Audit + Fix", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "All query patterns audited, parameterisation implemented, test coverage" },
+    { type: "Authentication Security Hardening", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "Password hashing, session security, JWT hardening, MFA implementation" },
+    { type: "CSP Implementation", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Nonce-based CSP, report-only phase, enforcement, violation monitoring" },
+    { type: "Rate Limiting & Input Validation", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Per-endpoint rate limits, Zod/Joi validation, file upload security" },
+    { type: "Security Remediation (per finding)", investment: "£1,500 - £4,000", timeline: "3 - 5 days", bestFor: "Fix implementation, verification, regression test, closing report" },
+    { type: "Full AppSec Engagement", investment: "£10,000 - £28,000", timeline: "3 - 6 weeks", bestFor: "Threat model + all OWASP controls + remediation + test coverage" },
+    { type: "AppSec Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "Code review, new feature security, dependency patches, pen test prep" }
   ],
   industryUseCases: [
     { name: "Security Remediation for Pen Test", description: "12 vulnerabilities from pen test (3 critical, 5 high). Threat modelling for auth system, injection fixes, CSRF protection, rate limiting. All fixed within 4 weeks. Re-test passed." },
@@ -11593,7 +11593,7 @@ const applicationSecurityOverride = {
     },
     {
       question: "How do you prevent SQL injection?",
-      answer: "SQL injection prevention is achieved through parameterised queries also called prepared statements. Instead of building an SQL string by concatenating user input (`SELECT * FROM users WHERE email = '' + userInput + ''`), a parameterised query uses a placeholder (`SELECT * FROM users WHERE email = $1`) and passes the user input as a separate parameter. The database driver handles the separation user input is never interpreted as SQL syntax, regardless of what it contains. ORMs (Prisma, Drizzle, SQLAlchemy) use parameterised queries by default for all standard operations SQL injection through ORM-generated queries is extremely rare. The risk surfaces in raw SQL queries (when developers write `db.query('SELECT * FROM ' + tableName)` never construct SQL from user input even for table names or column names use a whitelist instead), in stored procedures (parameter handling within stored procedures must also use parameterised queries), and in ORM escape functions (some developers use ORM escape functions and string interpolation less safe than parameterised queries, which should be the default)."
+      answer: "SQL injection prevention is achieved through parameterised queries also called prepared statements. Instead of building an SQL string by concatenating user input (`SELECT * FROM users WHERE email = '' + userInput + ''`), a parameterised query uses a placeholder (`SELECT * FROM users WHERE email = £1`) and passes the user input as a separate parameter. The database driver handles the separation user input is never interpreted as SQL syntax, regardless of what it contains. ORMs (Prisma, Drizzle, SQLAlchemy) use parameterised queries by default for all standard operations SQL injection through ORM-generated queries is extremely rare. The risk surfaces in raw SQL queries (when developers write `db.query('SELECT * FROM ' + tableName)` never construct SQL from user input even for table names or column names use a whitelist instead), in stored procedures (parameter handling within stored procedures must also use parameterised queries), and in ORM escape functions (some developers use ORM escape functions and string interpolation less safe than parameterised queries, which should be the default)."
     },
     {
       question: "What is Content Security Policy (CSP) and how does it prevent XSS?",
@@ -11661,7 +11661,7 @@ const qaSoftwareTestingOverride = {
     "Accessibility Testing (WCAG)"
   ],
   // marketStats: [
-  //   { label: 'Annual cost of poor software quality worldwide (CISQ 2022)', value: '$1.52T' },
+  //   { label: 'Annual cost of poor software quality worldwide (CISQ 2022)', value: '£1.52T' },
   //   { label: 'Cost multiplier of fixing a bug in production vs. design phase', value: '100x' },
   //   { label: 'Of defects are caused by 20% of the codebase testing finds them', value: '80%' },
   //   { label: 'Production bugs that escape QA cause a 4-15% customer churn event', value: '4-15%' },
@@ -11678,7 +11678,7 @@ const qaSoftwareTestingOverride = {
     { feature: "Testing Pyramid Framework", description: "60-70% unit / 20-25% integration / 10-15% E2E the architecture that determines QA ROI | Basic: Ice cream cone (slow, brittle tests)" },
     { feature: "Ice Cream Cone Anti-Pattern Callout", description: "Names the most common test suite failure mode instant recognition for engineering buyers | Basic: No diagnosis of bad test architecture" },
     { feature: "Auto vs Manual Decision Table", description: '10-row decision framework what to automate vs what to keep manual | Basic: "Automate everything" (unrealistic, wasteful)' },
-    { feature: "100x Bug Cost Multiplier", description: "$1 design \xE2\u2020\u2019 $10 dev \xE2\u2020\u2019 $100 test \xE2\u2020\u2019 $1,000-10,000 prod ROI case for QA investment | Basic: QA as cost center" },
+    { feature: "100x Bug Cost Multiplier", description: "£1 design \xE2\u2020\u2019 £10 dev \xE2\u2020\u2019 £100 test \xE2\u2020\u2019 £1,000-10,000 prod ROI case for QA investment | Basic: QA as cost center" },
     { feature: "Client-Owned Test Code", description: "Test code committed to your repository, not locked in vendor-owned tool | Basic: Vendor lock-in (test data trapped)" }
   ],
   processPhases: [
@@ -11704,15 +11704,15 @@ const qaSoftwareTestingOverride = {
     { layer: "Bug Tracking", technologies: "Jira (primary), Linear, GitHub Issues, Notion with severity, reproduction steps, environment details, test case reference" }
   ],
   pricingTiers: [
-    { type: "QA Coverage Audit", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "Test coverage assessment, gap analysis, risk register, recommended testing roadmap" },
-    { type: "Automated Test Suite (MVP)", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "Unit + integration + critical E2E, CI integration, coverage targets, contribution docs" },
-    { type: "Full Automation Suite", investment: "$20,000 - $55,000", timeline: "6 - 12 weeks", bestFor: "Full pyramid: unit, integration, E2E, API, visual regression, CI gates, reporting" },
-    { type: "API Test Suite", investment: "$6,000 - $18,000", timeline: "2 - 5 weeks", bestFor: "Endpoint coverage, auth testing, contract tests, CI integration, Newman reports" },
-    { type: "Performance Test Suite", investment: "$8,000 - $25,000", timeline: "3 - 6 weeks", bestFor: "Baseline, load, stress, soak tests, bottleneck analysis, SLAs, CI integration" },
-    { type: "Mobile App QA", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Device matrix testing, platform QA, offline testing, accessibility, store compliance" },
-    { type: "Accessibility Audit + Fix", investment: "$5,000 - $15,000", timeline: "2 - 4 weeks", bestFor: "Automated + manual WCAG 2.1 AA audit, prioritized findings, remediation support" },
-    { type: "QA Strategy Consulting", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "Test strategy doc, pyramid design, tool selection, CI design, team enablement" },
-    { type: "QA Retainer", investment: "$4,000 - $12,000/mo", timeline: "Ongoing", bestFor: "Sprint QA, suite maintenance, new feature test coverage, regression monitoring, reporting" }
+    { type: "QA Coverage Audit", investment: "£2,000 - £5,000", timeline: "1 week", bestFor: "Test coverage assessment, gap analysis, risk register, recommended testing roadmap" },
+    { type: "Automated Test Suite (MVP)", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "Unit + integration + critical E2E, CI integration, coverage targets, contribution docs" },
+    { type: "Full Automation Suite", investment: "£20,000 - £55,000", timeline: "6 - 12 weeks", bestFor: "Full pyramid: unit, integration, E2E, API, visual regression, CI gates, reporting" },
+    { type: "API Test Suite", investment: "£6,000 - £18,000", timeline: "2 - 5 weeks", bestFor: "Endpoint coverage, auth testing, contract tests, CI integration, Newman reports" },
+    { type: "Performance Test Suite", investment: "£8,000 - £25,000", timeline: "3 - 6 weeks", bestFor: "Baseline, load, stress, soak tests, bottleneck analysis, SLAs, CI integration" },
+    { type: "Mobile App QA", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Device matrix testing, platform QA, offline testing, accessibility, store compliance" },
+    { type: "Accessibility Audit + Fix", investment: "£5,000 - £15,000", timeline: "2 - 4 weeks", bestFor: "Automated + manual WCAG 2.1 AA audit, prioritized findings, remediation support" },
+    { type: "QA Strategy Consulting", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "Test strategy doc, pyramid design, tool selection, CI design, team enablement" },
+    { type: "QA Retainer", investment: "£4,000 - £12,000/mo", timeline: "Ongoing", bestFor: "Sprint QA, suite maintenance, new feature test coverage, regression monitoring, reporting" }
   ],
   industryUseCases: [
     { name: "CI/CD Pipeline Integration", description: "GitHub Actions workflow: unit tests on commit (<30s), integration on PR merge (<5min), E2E on staging deploy (<15min). Quality gates block failing deployments. Deployment frequency: weekly \xE2\u2020\u2019 daily." },
@@ -11723,7 +11723,7 @@ const qaSoftwareTestingOverride = {
   sections: [
     {
       heading: "The Hidden Cost of Treating QA as an Afterthought",
-      body: "In most software development teams, QA is the last thing added and the first thing cut when timelines slip. The result is not just more bugs it is a slower, more fragile engineering organization. Every major regression discovered in production becomes an emergency that disrupts the sprint. Every hotfix deployment bypasses the deployment process and introduces new risk. Every customer-reported bug erodes trust that takes 10x the effort to rebuild. The economics of software quality are unambiguous: a bug fixed in the design phase costs $1. The same bug fixed in development costs $10. In testing: $100. In production: $1,000-10,000, depending on the impact on customers and the complexity of the fix under production pressure. QA is not a cost it is leverage on the entire development investment.",
+      body: "In most software development teams, QA is the last thing added and the first thing cut when timelines slip. The result is not just more bugs it is a slower, more fragile engineering organization. Every major regression discovered in production becomes an emergency that disrupts the sprint. Every hotfix deployment bypasses the deployment process and introduces new risk. Every customer-reported bug erodes trust that takes 10x the effort to rebuild. The economics of software quality are unambiguous: a bug fixed in the design phase costs £1. The same bug fixed in development costs £10. In testing: £100. In production: £1,000-10,000, depending on the impact on customers and the complexity of the fix under production pressure. QA is not a cost it is leverage on the entire development investment.",
       items: []
     },
     {
@@ -11901,13 +11901,13 @@ const automatedTestingOverride = {
     { layer: "CI Integration", technologies: "GitHub Actions (primary test failures on PR diff), GitLab CI, Jenkins, CircleCI" }
   ],
   pricingTiers: [
-    { type: "Test Suite Audit", investment: "$3,000 - $6,000", timeline: "1 - 2 weeks", bestFor: "Coverage analysis, test quality review, gap identification, roadmap" },
-    { type: "Unit Test Suite", investment: "$4,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "Jest/pytest, mocking strategy, 80%+ coverage gate, CI integration" },
-    { type: "API Integration Tests", investment: "$4,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "Supertest/httpx, Testcontainers, auth helpers, CI gate" },
-    { type: "React Component Tests", investment: "$4,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "RTL, user-event, jest-axe, MSW, coverage gate" },
-    { type: "Playwright E2E Suite", investment: "$5,000 - $14,000", timeline: "2 - 5 weeks", bestFor: "Critical flows, POM, visual regression, CI with Playwright Report" },
-    { type: "Full Test Programme", investment: "$10,000 - $28,000", timeline: "4 - 8 weeks", bestFor: "All layers + coverage gate + mutation testing + CI integration" },
-    { type: "Test Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "New feature tests, test maintenance, coverage monitoring" }
+    { type: "Test Suite Audit", investment: "£3,000 - £6,000", timeline: "1 - 2 weeks", bestFor: "Coverage analysis, test quality review, gap identification, roadmap" },
+    { type: "Unit Test Suite", investment: "£4,000 - £12,000", timeline: "2 - 4 weeks", bestFor: "Jest/pytest, mocking strategy, 80%+ coverage gate, CI integration" },
+    { type: "API Integration Tests", investment: "£4,000 - £12,000", timeline: "2 - 4 weeks", bestFor: "Supertest/httpx, Testcontainers, auth helpers, CI gate" },
+    { type: "React Component Tests", investment: "£4,000 - £12,000", timeline: "2 - 4 weeks", bestFor: "RTL, user-event, jest-axe, MSW, coverage gate" },
+    { type: "Playwright E2E Suite", investment: "£5,000 - £14,000", timeline: "2 - 5 weeks", bestFor: "Critical flows, POM, visual regression, CI with Playwright Report" },
+    { type: "Full Test Programme", investment: "£10,000 - £28,000", timeline: "4 - 8 weeks", bestFor: "All layers + coverage gate + mutation testing + CI integration" },
+    { type: "Test Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "New feature tests, test maintenance, coverage monitoring" }
   ],
   industryUseCases: [
     { name: "Node.js API Test Suite", description: "Unit tests (Jest) for business logic. Integration tests (Supertest + Testcontainers PostgreSQL). API contract tests (Pact). 85% branch coverage. CI gate on every PR." },
@@ -12046,13 +12046,13 @@ const manualTestingOverride = {
     { layer: "Accessibility", technologies: "axe DevTools, WAVE, Lighthouse, manual keyboard navigation" }
   ],
   pricingTiers: [
-    { type: "Exploratory Testing Sprint", investment: "$2,500 - $6,000", timeline: "1 - 2 weeks", bestFor: "Session-based exploratory testing, bug reports, coverage notes" },
-    { type: "UAT Programme", investment: "$3,000 - $8,000", timeline: "1 - 3 weeks", bestFor: "UAT scenarios, stakeholder sessions, sign-off report, go/no-go" },
-    { type: "Regression Test Suite + Execution", investment: "$3,000 - $8,000", timeline: "1 - 3 weeks", bestFor: "Test case design, regression checklist, execution, bug reports" },
-    { type: "Cross-Browser Testing", investment: "$2,500 - $6,000", timeline: "1 - 2 weeks", bestFor: "Browser matrix, BrowserStack execution, compatibility report" },
-    { type: "Mobile Device Testing", investment: "$2,500 - $6,000", timeline: "1 - 2 weeks", bestFor: "iOS + Android, real devices, responsiveness, native behaviour" },
-    { type: "Release Testing Package", investment: "$5,000 - $14,000", timeline: "1 - 3 weeks", bestFor: "Exploratory + regression + cross-browser + bug reports + sign-off" },
-    { type: "Ongoing QA Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "Sprint testing, regression, bug verification, test documentation" }
+    { type: "Exploratory Testing Sprint", investment: "£2,500 - £6,000", timeline: "1 - 2 weeks", bestFor: "Session-based exploratory testing, bug reports, coverage notes" },
+    { type: "UAT Programme", investment: "£3,000 - £8,000", timeline: "1 - 3 weeks", bestFor: "UAT scenarios, stakeholder sessions, sign-off report, go/no-go" },
+    { type: "Regression Test Suite + Execution", investment: "£3,000 - £8,000", timeline: "1 - 3 weeks", bestFor: "Test case design, regression checklist, execution, bug reports" },
+    { type: "Cross-Browser Testing", investment: "£2,500 - £6,000", timeline: "1 - 2 weeks", bestFor: "Browser matrix, BrowserStack execution, compatibility report" },
+    { type: "Mobile Device Testing", investment: "£2,500 - £6,000", timeline: "1 - 2 weeks", bestFor: "iOS + Android, real devices, responsiveness, native behaviour" },
+    { type: "Release Testing Package", investment: "£5,000 - £14,000", timeline: "1 - 3 weeks", bestFor: "Exploratory + regression + cross-browser + bug reports + sign-off" },
+    { type: "Ongoing QA Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "Sprint testing, regression, bug verification, test documentation" }
   ],
   industryUseCases: [
     { name: "Pre-Release Release Testing", description: "2-week manual testing sprint: exploratory testing (critical workflows), regression checklist (100 core tests), cross-browser (Chrome/Firefox/Safari Edge), mobile (iOS/Android). UAT sign-off report before launch." },
@@ -12181,13 +12181,13 @@ const performanceTestingOverride = {
     { layer: "CI Integration", technologies: "GitHub Actions, Lighthouse CI CLI, k6 Cloud, InfluxDB + Grafana dashboards" }
   ],
   pricingTiers: [
-    { type: "Performance Audit", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "k6 baseline + Lighthouse + DB profiling + priority recommendations" },
-    { type: "API Performance Benchmarking", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "k6 scripts, P50/P95/P99 baselines, SLO thresholds, CI gate" },
-    { type: "Core Web Vitals Audit", investment: "$2,500 - $6,000", timeline: "1 - 2 weeks", bestFor: "Lighthouse CI, LCP/CLS/INP analysis, waterfall, fix recommendations" },
-    { type: "Database Query Profiling", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "pg_stat_statements, EXPLAIN ANALYZE, N+1 under load, remediation plan" },
-    { type: "Frontend Rendering Profiling", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Chrome DevTools, React Profiler, bundle analysis, long task identification" },
-    { type: "Full Performance Programme", investment: "$8,000 - $20,000", timeline: "2 - 4 weeks", bestFor: "All above: API + CWV + DB + frontend + CI gates + monitoring setup" },
-    { type: "Performance Retainer", investment: "$2,500 - $5,000/mo", timeline: "Ongoing", bestFor: "Monthly baseline runs, regression detection, new endpoint benchmarking" }
+    { type: "Performance Audit", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "k6 baseline + Lighthouse + DB profiling + priority recommendations" },
+    { type: "API Performance Benchmarking", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "k6 scripts, P50/P95/P99 baselines, SLO thresholds, CI gate" },
+    { type: "Core Web Vitals Audit", investment: "£2,500 - £6,000", timeline: "1 - 2 weeks", bestFor: "Lighthouse CI, LCP/CLS/INP analysis, waterfall, fix recommendations" },
+    { type: "Database Query Profiling", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "pg_stat_statements, EXPLAIN ANALYZE, N+1 under load, remediation plan" },
+    { type: "Frontend Rendering Profiling", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Chrome DevTools, React Profiler, bundle analysis, long task identification" },
+    { type: "Full Performance Programme", investment: "£8,000 - £20,000", timeline: "2 - 4 weeks", bestFor: "All above: API + CWV + DB + frontend + CI gates + monitoring setup" },
+    { type: "Performance Retainer", investment: "£2,500 - £5,000/mo", timeline: "Ongoing", bestFor: "Monthly baseline runs, regression detection, new endpoint benchmarking" }
   ],
   industryUseCases: [
     { name: "API Performance Baseline", description: "k6 baseline for critical SaaS API: authenticate, get dashboard, submit form. P95 targets: <200ms. CI gate: fail if regression >20%. Detected regression in payment endpoint (P95 150ms\xE2\u2020\u2019400ms). Root cause: missing database index." },
@@ -12317,13 +12317,13 @@ const loadTestingOverride = {
     { layer: "Auto-Scaling", technologies: "ECS Service Auto Scaling, Kubernetes HPA, Karpenter, CloudWatch Alarms, ALB target groups" }
   ],
   pricingTiers: [
-    { type: "Load Test Planning", investment: "$2,000 - $5,000", timeline: "1 week", bestFor: "Scenario design, load model, infrastructure prep, test plan" },
-    { type: "Baseline + Stress Test", investment: "$4,000 - $10,000", timeline: "1 - 2 weeks", bestFor: "k6 baseline + stress ramp, P95/P99 results, bottleneck report" },
-    { type: "Spike Test (Launch Simulation)", investment: "$3,000 - $8,000", timeline: "1 week", bestFor: "Spike scenario + recovery test + Grafana dashboard + findings" },
-    { type: "Soak Test (24-hour)", investment: "$3,500 - $8,000", timeline: "1 - 2 weeks", bestFor: "Sustained load, memory profiling, connection analysis, report" },
-    { type: "Full Load Test Suite", investment: "$8,000 - $20,000", timeline: "2 - 3 weeks", bestFor: "Baseline + stress + spike + soak + bottleneck analysis + report" },
-    { type: "Auto-Scaling Validation", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "ECS/EKS HPA triggers, scale-out timing, DB connection under scale" },
-    { type: "Pre-Launch Load Test Package", investment: "$10,000 - $25,000", timeline: "2 - 4 weeks", bestFor: "Full suite + bottleneck fixes + re-test + launch readiness sign-off" }
+    { type: "Load Test Planning", investment: "£2,000 - £5,000", timeline: "1 week", bestFor: "Scenario design, load model, infrastructure prep, test plan" },
+    { type: "Baseline + Stress Test", investment: "£4,000 - £10,000", timeline: "1 - 2 weeks", bestFor: "k6 baseline + stress ramp, P95/P99 results, bottleneck report" },
+    { type: "Spike Test (Launch Simulation)", investment: "£3,000 - £8,000", timeline: "1 week", bestFor: "Spike scenario + recovery test + Grafana dashboard + findings" },
+    { type: "Soak Test (24-hour)", investment: "£3,500 - £8,000", timeline: "1 - 2 weeks", bestFor: "Sustained load, memory profiling, connection analysis, report" },
+    { type: "Full Load Test Suite", investment: "£8,000 - £20,000", timeline: "2 - 3 weeks", bestFor: "Baseline + stress + spike + soak + bottleneck analysis + report" },
+    { type: "Auto-Scaling Validation", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "ECS/EKS HPA triggers, scale-out timing, DB connection under scale" },
+    { type: "Pre-Launch Load Test Package", investment: "£10,000 - £25,000", timeline: "2 - 4 weeks", bestFor: "Full suite + bottleneck fixes + re-test + launch readiness sign-off" }
   ],
   industryUseCases: [
     { name: "Black Friday Load Test", description: "E-commerce platform: spike test (10x normal traffic for 30 minutes), stress test (find breaking point 5x normal), auto-scaling validation (ECS scale-out timing 90 seconds). Database connection pool increased. Survived Black Friday." },
@@ -12358,7 +12358,7 @@ const loadTestingOverride = {
   faqs: [
     {
       question: "What is load testing and why is it done before launch?",
-      answer: "Load testing applies simulated user traffic to an application to observe how it behaves under load measuring response times, error rates, and resource utilisation at various concurrency levels. It is done before launch because: an application that responds in 200ms for a single developer testing it may respond in 10 seconds for 500 concurrent users if the bottleneck is the database or a shared resource that degrades under concurrency. Load testing before launch identifies these breaking points while fixes are still cheap. An outage on launch day because the application could not handle the actual traffic costs the team in emergency engineering time, user trust, and revenue, and is preventable with a load test. The cost of a pre-launch load test ($4,000-25,000) is orders of magnitude less than the cost of a launch-day outage."
+      answer: "Load testing applies simulated user traffic to an application to observe how it behaves under load measuring response times, error rates, and resource utilisation at various concurrency levels. It is done before launch because: an application that responds in 200ms for a single developer testing it may respond in 10 seconds for 500 concurrent users if the bottleneck is the database or a shared resource that degrades under concurrency. Load testing before launch identifies these breaking points while fixes are still cheap. An outage on launch day because the application could not handle the actual traffic costs the team in emergency engineering time, user trust, and revenue, and is preventable with a load test. The cost of a pre-launch load test (£4,000-25,000) is orders of magnitude less than the cost of a launch-day outage."
     },
     {
       question: "How much load should I test for?",
@@ -12458,13 +12458,13 @@ const bugFixingOverride = {
     { layer: "Database", technologies: "EXPLAIN ANALYZE, pg_stat_statements, pg_hint_plan, table partitioning" }
   ],
   pricingTiers: [
-    { type: "Bug Triage (per session)", investment: "$500 - $1,500", timeline: "2 - 4 hours", bestFor: "Initial investigation, reproduction attempt, root cause hypothesis, fix estimate" },
-    { type: "Standard Bug Fix (per bug)", investment: "$1,500 - $4,000", timeline: "1 - 5 days", bestFor: "Root cause + fix + regression test + staging validation + deployment" },
-    { type: "Complex Bug (memory/race)", investment: "$3,000 - $8,000", timeline: "3 - 7 days", bestFor: "Deep investigation (heap profiling, concurrency analysis) + fix + regression test" },
-    { type: "Performance Regression Fix", investment: "$3,000 - $8,000", timeline: "2 - 5 days", bestFor: "Git bisect + profiling + root cause + optimisation + benchmark validation" },
-    { type: "Production Incident Response", investment: "$2,000 - $6,000", timeline: "1 - 24 hours", bestFor: "Emergency investigation + hotfix + post-mortem + permanent fix plan" },
-    { type: "Bug Backlog Sprint", investment: "$5,000 - $14,000", timeline: "1 - 2 weeks", bestFor: "Triage and fix 5-15 open bugs by priority agreed scope before start" },
-    { type: "Ongoing Bug Fix Retainer", investment: "$2,000 - $5,000/mo", timeline: "Ongoing", bestFor: "Priority bug resolution, test coverage, regression prevention" }
+    { type: "Bug Triage (per session)", investment: "£500 - £1,500", timeline: "2 - 4 hours", bestFor: "Initial investigation, reproduction attempt, root cause hypothesis, fix estimate" },
+    { type: "Standard Bug Fix (per bug)", investment: "£1,500 - £4,000", timeline: "1 - 5 days", bestFor: "Root cause + fix + regression test + staging validation + deployment" },
+    { type: "Complex Bug (memory/race)", investment: "£3,000 - £8,000", timeline: "3 - 7 days", bestFor: "Deep investigation (heap profiling, concurrency analysis) + fix + regression test" },
+    { type: "Performance Regression Fix", investment: "£3,000 - £8,000", timeline: "2 - 5 days", bestFor: "Git bisect + profiling + root cause + optimisation + benchmark validation" },
+    { type: "Production Incident Response", investment: "£2,000 - £6,000", timeline: "1 - 24 hours", bestFor: "Emergency investigation + hotfix + post-mortem + permanent fix plan" },
+    { type: "Bug Backlog Sprint", investment: "£5,000 - £14,000", timeline: "1 - 2 weeks", bestFor: "Triage and fix 5-15 open bugs by priority agreed scope before start" },
+    { type: "Ongoing Bug Fix Retainer", investment: "£2,000 - £5,000/mo", timeline: "Ongoing", bestFor: "Priority bug resolution, test coverage, regression prevention" }
   ],
   industryUseCases: [
     { name: "Memory Leak in Node.js API", description: "Heap snapshot comparison: memory grew from 500MB to 2.1GB after 4-hour soak. Root cause: event listeners not removed from EventEmitter. Fix: removeListener. Regression test added." },
@@ -12556,7 +12556,7 @@ const maintenanceSupportOverride = {
   //   { label: 'Service Level Agreement Clickmasters defines response time commitments per severity: Critical 2hr, High 8hr, Medium 24hr, Low 5 days', value: 'SLA' },
   //   { label: 'Predictable monthly retainer budget for engineering support without the unpredictability of ad-hoc billing', value: 'Monthly' },
   //   { label: 'Typical knowledge transfer time for Clickmasters to onboard onto an existing codebase and begin productive work', value: '1 week' },
-  //   { label: 'Recruitment cost compared to hiring a full-time engineer for the equivalent of part-time maintenance support', value: '$0' },
+  //   { label: 'Recruitment cost compared to hiring a full-time engineer for the equivalent of part-time maintenance support', value: '£0' },
   // ],
   servicesCards: [
     { title: "Bug Fix Support", description: "SLA-backed bug fix resolution: severity classification (Critical system down or data loss risk, 2-hour response, same-day fix target; High major feature non-functional, 8-hour response, 24-hour fix target; Medium feature impaired with workaround, 24-hour response, 5-day fix target; Low cosmetic or minor, 5-day response, scheduled for next sprint), bug triage (receive bug reports via Jira/Linear/email triage severity, reproduce issue, provide ETA within SLA response window), fix implementation (root cause analysis, fix, regression test, staging verification, production deployment), monthly summary (bugs reported, resolved, mean time to resolution, open issues by severity)." },
@@ -12569,7 +12569,7 @@ const maintenanceSupportOverride = {
     { feature: "4-Tier SLA", description: "Critical 2hr, High 8hr, Medium 24hr, Low 5 days documented response times | Basic: No SLA (variable response)" },
     { feature: "CISA KEV Priority", description: "CVEs in Known Exploited Vulnerabilities catalogue patched within 48 hours regardless of schedule | Basic: Standard update cadence only" },
     { feature: "Proactive vs Reactive", description: "Clickmasters investigates anomalies proactively not waiting for client to report | Basic: Reactive only" },
-    { feature: "Codebase Onboarding", description: "Dedicated onboarding engagement ($3-8K) creates runbooks, documentation, monitoring setup | Basic: No onboarding (slow ramp-up)" },
+    { feature: "Codebase Onboarding", description: "Dedicated onboarding engagement (£3-8K) creates runbooks, documentation, monitoring setup | Basic: No onboarding (slow ramp-up)" },
     { feature: "Monthly Performance Report", description: "P95 response time, error rate, uptime, query performance trended over 30 days | Basic: No reporting" }
   ],
   processPhases: [
@@ -12587,12 +12587,12 @@ const maintenanceSupportOverride = {
     { layer: "Ticket Management", technologies: "Jira, Linear, GitHub Issues, Slack/email integration" }
   ],
   pricingTiers: [
-    { type: "Starter Support", investment: "$1,500 - $3,000/mo", timeline: "Ongoing", bestFor: "Bug fixes (Medium/Low SLA), monthly dependency review, Sentry monitoring" },
-    { type: "Standard Support", investment: "$3,000 - $6,000/mo", timeline: "Ongoing", bestFor: "Full SLA (Critical/High/Medium/Low), monitoring, quarterly updates, 8hrs features" },
-    { type: "Growth Support", investment: "$5,000 - $10,000/mo", timeline: "Ongoing", bestFor: "Full SLA, monitoring, monthly updates, 20hrs features, quarterly health review" },
-    { type: "Premium Support", investment: "$8,000 - $16,000/mo", timeline: "Ongoing", bestFor: "Priority SLA, dedicated engineer, unlimited monitoring, 40hrs features, weekly sync" },
-    { type: "Codebase Onboarding", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Documentation review, architecture walkthrough, monitoring setup, runbooks" },
-    { type: "Emergency Incident Response", investment: "$2,000 - $6,000", timeline: "Same-day", bestFor: "Production incident investigation, hotfix, root cause report, permanent fix plan" }
+    { type: "Starter Support", investment: "£1,500 - £3,000/mo", timeline: "Ongoing", bestFor: "Bug fixes (Medium/Low SLA), monthly dependency review, Sentry monitoring" },
+    { type: "Standard Support", investment: "£3,000 - £6,000/mo", timeline: "Ongoing", bestFor: "Full SLA (Critical/High/Medium/Low), monitoring, quarterly updates, 8hrs features" },
+    { type: "Growth Support", investment: "£5,000 - £10,000/mo", timeline: "Ongoing", bestFor: "Full SLA, monitoring, monthly updates, 20hrs features, quarterly health review" },
+    { type: "Premium Support", investment: "£8,000 - £16,000/mo", timeline: "Ongoing", bestFor: "Priority SLA, dedicated engineer, unlimited monitoring, 40hrs features, weekly sync" },
+    { type: "Codebase Onboarding", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Documentation review, architecture walkthrough, monitoring setup, runbooks" },
+    { type: "Emergency Incident Response", investment: "£2,000 - £6,000", timeline: "Same-day", bestFor: "Production incident investigation, hotfix, root cause report, permanent fix plan" }
   ],
   industryUseCases: [
     { name: "Post-Launch SaaS Maintenance", description: "Monthly retainer: bug fixes (SLA-backed), dependency updates (monthly), Sentry monitoring, 20hrs/month feature enhancements. No full-time engineering hire needed." },
@@ -12619,7 +12619,7 @@ const maintenanceSupportOverride = {
     },
     {
       question: "How quickly can Clickmasters get up to speed on an existing codebase?",
-      answer: "For a typical B2B web application (Node.js or Python backend, React frontend, PostgreSQL, deployed on AWS): a Clickmasters engineer can be making meaningful contributions within 1-2 weeks. The onboarding process: code review and architecture documentation (understand the data model, the application architecture, the deployment pipeline, and the monitoring setup 2-3 days), local development environment setup (get the application running locally with seed data 1 day), staging environment access (verify CI/CD pipeline access and deployment process), and first task (a low-risk but real task in the first week validates the engineer's understanding of the codebase and the team's development workflow). Clickmasters includes a codebase onboarding engagement ($3,000-8,000) as the starting point for every new maintenance retainer this creates the runbooks, documentation, and monitoring setup that makes ongoing support efficient."
+      answer: "For a typical B2B web application (Node.js or Python backend, React frontend, PostgreSQL, deployed on AWS): a Clickmasters engineer can be making meaningful contributions within 1-2 weeks. The onboarding process: code review and architecture documentation (understand the data model, the application architecture, the deployment pipeline, and the monitoring setup 2-3 days), local development environment setup (get the application running locally with seed data 1 day), staging environment access (verify CI/CD pipeline access and deployment process), and first task (a low-risk but real task in the first week validates the engineer's understanding of the codebase and the team's development workflow). Clickmasters includes a codebase onboarding engagement (£3,000-8,000) as the starting point for every new maintenance retainer this creates the runbooks, documentation, and monitoring setup that makes ongoing support efficient."
     },
     {
       question: "What is the difference between a maintenance retainer and a dedicated development team?",
@@ -12715,13 +12715,13 @@ const dedicatedDevelopmentTeamsOverride = {
   ],
   pricingTiers: [
     { type: "Team Discovery Call", investment: "Free", timeline: "30 min", bestFor: "Stack review, team composition, timeline, monthly investment estimate" },
-    { type: "Junior Developer", investment: "$3,000 - $5,000/mo", timeline: "Per engineer", bestFor: "2-4 years experience, supervised delivery, suitable for well-defined tasks" },
-    { type: "Mid-Level Developer", investment: "$5,000 - $8,000/mo", timeline: "Per engineer", bestFor: "4-7 years experience, independent delivery, owns features end-to-end" },
-    { type: "Senior Developer", investment: "$7,000 - $12,000/mo", timeline: "Per engineer", bestFor: "7+ years, architecture decisions, mentors junior engineers, tech lead capable" },
-    { type: "Tech Lead / Architect", investment: "$10,000 - $16,000/mo", timeline: "Per engineer", bestFor: "System design, cross-team coordination, roadmap technical input" },
-    { type: "QA Engineer", investment: "$3,000 - $6,000/mo", timeline: "Per engineer", bestFor: "Manual + automated testing, test plan, bug reporting, regression coverage" },
-    { type: "DevOps / Cloud Engineer", investment: "$6,000 - $10,000/mo", timeline: "Per engineer", bestFor: "CI/CD, IaC, monitoring, cloud cost, security hardening" },
-    { type: "Minimum Feature Team (2 engineers)", investment: "$12,000 - $20,000/mo", timeline: "2-person team", bestFor: "Senior + mid-level developer, full delivery capability for focused roadmap" }
+    { type: "Junior Developer", investment: "£3,000 - £5,000/mo", timeline: "Per engineer", bestFor: "2-4 years experience, supervised delivery, suitable for well-defined tasks" },
+    { type: "Mid-Level Developer", investment: "£5,000 - £8,000/mo", timeline: "Per engineer", bestFor: "4-7 years experience, independent delivery, owns features end-to-end" },
+    { type: "Senior Developer", investment: "£7,000 - £12,000/mo", timeline: "Per engineer", bestFor: "7+ years, architecture decisions, mentors junior engineers, tech lead capable" },
+    { type: "Tech Lead / Architect", investment: "£10,000 - £16,000/mo", timeline: "Per engineer", bestFor: "System design, cross-team coordination, roadmap technical input" },
+    { type: "QA Engineer", investment: "£3,000 - £6,000/mo", timeline: "Per engineer", bestFor: "Manual + automated testing, test plan, bug reporting, regression coverage" },
+    { type: "DevOps / Cloud Engineer", investment: "£6,000 - £10,000/mo", timeline: "Per engineer", bestFor: "CI/CD, IaC, monitoring, cloud cost, security hardening" },
+    { type: "Minimum Feature Team (2 engineers)", investment: "£12,000 - £20,000/mo", timeline: "2-person team", bestFor: "Senior + mid-level developer, full delivery capability for focused roadmap" }
   ],
   industryUseCases: [
     { name: "SaaS Product Development", description: "Full product team (6 engineers: tech lead + full-stack + backend + frontend + QA + DevOps) building new SaaS product. Monthly retainer, 9-month engagement. Product launched to beta." },
@@ -12744,9 +12744,9 @@ const dedicatedDevelopmentTeamsOverride = {
       heading: "Staff Augmentation vs Dedicated Team vs Full-Time Hire",
       body: "",
       items: [
-        "Staff Augmentation: Who manages Client's engineering lead manages directly. Start time 2 weeks. Cost $3,000-12,000/mo per engineer. Flexibility 30-day scale up/down notice. Expertise Individual skills matched to role. Best for Adding capacity to a strong existing team. Minimum duration 1-3 months typically.",
-        "Dedicated Team: Who manages Clickmasters tech lead manages the team. Start time 2 weeks. Cost $12,000-60,000/mo per team. Flexibility 30-day scale up/down notice. Expertise Team composition matched to product. Best for Product development with limited internal management. Minimum duration 3 months minimum.",
-        "Full-Time Hire: Who manages Client manages directly. Start time 3-6 months (recruitment + notice period). Cost $120,000-200,000+/yr (salary + benefits + overhead). Flexibility Difficult notice period, redundancy process. Expertise Single hire, skills limited to one person. Best for Core long-term team members. Minimum duration Permanent or long-term contract."
+        "Staff Augmentation: Who manages Client's engineering lead manages directly. Start time 2 weeks. Cost £3,000-12,000/mo per engineer. Flexibility 30-day scale up/down notice. Expertise Individual skills matched to role. Best for Adding capacity to a strong existing team. Minimum duration 1-3 months typically.",
+        "Dedicated Team: Who manages Clickmasters tech lead manages the team. Start time 2 weeks. Cost £12,000-60,000/mo per team. Flexibility 30-day scale up/down notice. Expertise Team composition matched to product. Best for Product development with limited internal management. Minimum duration 3 months minimum.",
+        "Full-Time Hire: Who manages Client manages directly. Start time 3-6 months (recruitment + notice period). Cost £120,000-200,000+/yr (salary + benefits + overhead). Flexibility Difficult notice period, redundancy process. Expertise Single hire, skills limited to one person. Best for Core long-term team members. Minimum duration Permanent or long-term contract."
       ]
     }
   ],
@@ -12757,7 +12757,7 @@ const dedicatedDevelopmentTeamsOverride = {
     },
     {
       question: "How quickly can a dedicated team start delivering value?",
-      answer: "Week 1: environment setup, codebase review, architecture documentation, first-sprint planning. Week 2: first tickets completed (low-complexity, well-defined tasks selected for the first sprint to build familiarity with the codebase and development workflow). Month 1: operating at approximately 60-70% of full velocity still building context for the more complex parts of the codebase. Month 2-3: full velocity on all ticket types. The most important factor in fast ramp-up: quality of documentation and developer environment setup. Clickmasters asks the client to prepare a good README, a working local development setup, and test data seeding before the team starts. The codebase onboarding engagement ($3,000-8,000) creates this if it does not already exist."
+      answer: "Week 1: environment setup, codebase review, architecture documentation, first-sprint planning. Week 2: first tickets completed (low-complexity, well-defined tasks selected for the first sprint to build familiarity with the codebase and development workflow). Month 1: operating at approximately 60-70% of full velocity still building context for the more complex parts of the codebase. Month 2-3: full velocity on all ticket types. The most important factor in fast ramp-up: quality of documentation and developer environment setup. Clickmasters asks the client to prepare a good README, a working local development setup, and test data seeding before the team starts. The codebase onboarding engagement (£3,000-8,000) creates this if it does not already exist."
     },
     {
       question: "What happens to the code and knowledge when the engagement ends?",
@@ -12822,7 +12822,7 @@ const itOutsourcingOverride = {
   //   { label: 'Time from engagement agreement to active development vs 3-6 months to build internal team', value: '2 wks' },
   //   { label: 'Cost saving vs building equivalent internal team in USA/UK including recruitment, salaries, benefits, overhead', value: '40-60%' },
   //   { label: 'Quarterly Business Reviews strategic governance, not just operational reporting', value: 'QBR' },
-  //   { label: 'Open-book cost reporting cloud and third-party tool costs billed at provider rates with no markup', value: '$0' },
+  //   { label: 'Open-book cost reporting cloud and third-party tool costs billed at provider rates with no markup', value: '£0' },
   // ],
   servicesCards: [
     { title: "Full Software Development Outsourcing", description: "Clickmasters becomes the client's technology execution partner: product roadmap execution (engineering team works from client's product roadmap regular sprint planning, backlog grooming, feature delivery), architecture ownership (senior engineers make and document architecture decisions approved by client's business stakeholders), full SDLC management (requirements \xE2\u2020\u2019 design \xE2\u2020\u2019 development \xE2\u2020\u2019 testing \xE2\u2020\u2019 deployment \xE2\u2020\u2019 monitoring), quality ownership (test coverage standards, code review process, performance SLOs accountable for quality outcomes, not just hours billed), monthly steering meeting (business stakeholders review: features delivered vs planned, velocity, quality metrics, upcoming roadmap, budget vs actual)." },
@@ -12852,11 +12852,11 @@ const itOutsourcingOverride = {
   ],
   pricingTiers: [
     { type: "IT Outsourcing Discovery", investment: "Free", timeline: "1 session", bestFor: "Scope definition, team composition, governance model, monthly investment estimate" },
-    { type: "Development Outsourcing (Small)", investment: "$8,000 - $16,000/mo", timeline: "Monthly", bestFor: "2-3 engineer team, full SDLC, QA, monthly reporting" },
-    { type: "Development Outsourcing (Medium)", investment: "$15,000 - $30,000/mo", timeline: "Monthly", bestFor: "4-6 engineer team, tech lead, QA, DevOps, monthly QBR" },
-    { type: "Development Outsourcing (Full)", investment: "$25,000 - $60,000/mo", timeline: "Monthly", bestFor: "6-10+ engineer team, full product team, CTO advisory" },
-    { type: "Infrastructure Outsourcing", investment: "$3,000 - $10,000/mo", timeline: "Monthly", bestFor: "Cloud ops, monitoring, incident response, FinOps, security patching" },
-    { type: "Combined Dev + Infra", investment: "$12,000 - $40,000/mo", timeline: "Monthly", bestFor: "Engineering team + cloud ops + governance + transparent reporting" }
+    { type: "Development Outsourcing (Small)", investment: "£8,000 - £16,000/mo", timeline: "Monthly", bestFor: "2-3 engineer team, full SDLC, QA, monthly reporting" },
+    { type: "Development Outsourcing (Medium)", investment: "£15,000 - £30,000/mo", timeline: "Monthly", bestFor: "4-6 engineer team, tech lead, QA, DevOps, monthly QBR" },
+    { type: "Development Outsourcing (Full)", investment: "£25,000 - £60,000/mo", timeline: "Monthly", bestFor: "6-10+ engineer team, full product team, CTO advisory" },
+    { type: "Infrastructure Outsourcing", investment: "£3,000 - £10,000/mo", timeline: "Monthly", bestFor: "Cloud ops, monitoring, incident response, FinOps, security patching" },
+    { type: "Combined Dev + Infra", investment: "£12,000 - £40,000/mo", timeline: "Monthly", bestFor: "Engineering team + cloud ops + governance + transparent reporting" }
   ],
   industryUseCases: [
     { name: "Full Development Outsourcing", description: "Startup with product vision but no internal engineering. Clickmasters provides full product team (6 engineers) + infrastructure management. Monthly retainer. Product launched in 6 months." },
@@ -12979,12 +12979,12 @@ const staffAugmentationOverride = {
     { layer: "QA", technologies: "Playwright, Cypress, Jest, React Testing Library, k6, manual testing, bug reporting, test plan documentation" }
   ],
   pricingTiers: [
-    { type: "Junior Engineer", investment: "$3,000 - $5,000/mo", timeline: "Monthly", bestFor: "2-4 years, guided tasks, paired with senior for complex work" },
-    { type: "Mid-Level Engineer", investment: "$5,000 - $8,000/mo", timeline: "Monthly", bestFor: "4-7 years, independent feature delivery, owns vertical slices" },
-    { type: "Senior Engineer", investment: "$7,000 - $12,000/mo", timeline: "Monthly", bestFor: "7+ years, architecture input, code review, mentorship" },
-    { type: "Lead / Principal Engineer", investment: "$10,000 - $16,000/mo", timeline: "Monthly", bestFor: "System design, cross-team impact, roadmap input" },
-    { type: "AI / ML Specialist", investment: "$7,000 - $12,000/mo", timeline: "Monthly", bestFor: "LLM, fine-tuning, MLOps, data engineering specialist" },
-    { type: "DevOps / Cloud Specialist", investment: "$6,000 - $10,000/mo", timeline: "Monthly", bestFor: "Terraform, AWS, Kubernetes, CI/CD, FinOps" }
+    { type: "Junior Engineer", investment: "£3,000 - £5,000/mo", timeline: "Monthly", bestFor: "2-4 years, guided tasks, paired with senior for complex work" },
+    { type: "Mid-Level Engineer", investment: "£5,000 - £8,000/mo", timeline: "Monthly", bestFor: "4-7 years, independent feature delivery, owns vertical slices" },
+    { type: "Senior Engineer", investment: "£7,000 - £12,000/mo", timeline: "Monthly", bestFor: "7+ years, architecture input, code review, mentorship" },
+    { type: "Lead / Principal Engineer", investment: "£10,000 - £16,000/mo", timeline: "Monthly", bestFor: "System design, cross-team impact, roadmap input" },
+    { type: "AI / ML Specialist", investment: "£7,000 - £12,000/mo", timeline: "Monthly", bestFor: "LLM, fine-tuning, MLOps, data engineering specialist" },
+    { type: "DevOps / Cloud Specialist", investment: "£6,000 - £10,000/mo", timeline: "Monthly", bestFor: "Terraform, AWS, Kubernetes, CI/CD, FinOps" }
   ],
   industryUseCases: [
     { name: "Backend Capacity Augmentation", description: "Internal team strong in frontend but weak in backend. Senior backend engineer (Node.js + PostgreSQL) added for 6 months. Backlogged API features delivered. Internal team gained backend skills." },
@@ -12997,9 +12997,9 @@ const staffAugmentationOverride = {
       heading: "Staff Augmentation vs Dedicated Team vs Full-Time Hire",
       body: "",
       items: [
-        "Staff Augmentation: Who manages Client's engineering lead manages directly. Start time 2 weeks. Cost $3,000-12,000/mo per engineer. Flexibility 30-day scale up/down notice. Expertise Individual skills matched to role. Best for Adding capacity to a strong existing team. Minimum duration 1-3 months typically.",
-        "Dedicated Team: Who manages Clickmasters tech lead manages the team. Start time 2 weeks. Cost $12,000-60,000/mo per team. Flexibility 30-day scale up/down notice. Expertise Team composition matched to product. Best for Product development with limited internal management. Minimum duration 3 months minimum.",
-        "Full-Time Hire: Who manages Client manages directly. Start time 3-6 months (recruitment + notice period). Cost $120,000-200,000+/yr (salary + benefits + overhead). Flexibility Difficult notice period, redundancy process. Expertise Single hire, skills limited to one person. Best for Core long-term team members. Minimum duration Permanent or long-term contract."
+        "Staff Augmentation: Who manages Client's engineering lead manages directly. Start time 2 weeks. Cost £3,000-12,000/mo per engineer. Flexibility 30-day scale up/down notice. Expertise Individual skills matched to role. Best for Adding capacity to a strong existing team. Minimum duration 1-3 months typically.",
+        "Dedicated Team: Who manages Clickmasters tech lead manages the team. Start time 2 weeks. Cost £12,000-60,000/mo per team. Flexibility 30-day scale up/down notice. Expertise Team composition matched to product. Best for Product development with limited internal management. Minimum duration 3 months minimum.",
+        "Full-Time Hire: Who manages Client manages directly. Start time 3-6 months (recruitment + notice period). Cost £120,000-200,000+/yr (salary + benefits + overhead). Flexibility Difficult notice period, redundancy process. Expertise Single hire, skills limited to one person. Best for Core long-term team members. Minimum duration Permanent or long-term contract."
       ]
     },
     {
@@ -13112,12 +13112,12 @@ const technicalSupportOverride = {
     { layer: "Reproduction (L2)", technologies: "Staging environment, browser dev tools, Postman (API testing), test data seeding" }
   ],
   pricingTiers: [
-    { type: "Support Programme Setup", investment: "$3,000 - $7,000", timeline: "2 - 3 weeks", bestFor: "Knowledge transfer, knowledge base, Zendesk config, SLA definition, runbooks" },
-    { type: "L1 Support (Email/Chat)", investment: "$2,000 - $5,000/mo", timeline: "Monthly", bestFor: "Trained agent, SLA-backed response, knowledge base management, weekly report" },
-    { type: "L1 + L2 Support", investment: "$4,000 - $10,000/mo", timeline: "Monthly", bestFor: "L1 + technical investigation, reproduction, log analysis, L3 escalation packages" },
-    { type: "L1 + L2 + L3 Escalation", investment: "$6,000 - $16,000/mo", timeline: "Monthly", bestFor: "Full support stack, engineering interface, bug queue management, data corrections" },
-    { type: "Dedicated Support Engineer (L2/L3)", investment: "$5,000 - $9,000/mo", timeline: "Monthly", bestFor: "Technical specialist embedded in support, knows codebase, handles L2+L3" },
-    { type: "Support Transformation", investment: "$5,000 - $14,000", timeline: "4 - 6 weeks", bestFor: "Audit + knowledge base creation + Zendesk setup + agent training + handover" }
+    { type: "Support Programme Setup", investment: "£3,000 - £7,000", timeline: "2 - 3 weeks", bestFor: "Knowledge transfer, knowledge base, Zendesk config, SLA definition, runbooks" },
+    { type: "L1 Support (Email/Chat)", investment: "£2,000 - £5,000/mo", timeline: "Monthly", bestFor: "Trained agent, SLA-backed response, knowledge base management, weekly report" },
+    { type: "L1 + L2 Support", investment: "£4,000 - £10,000/mo", timeline: "Monthly", bestFor: "L1 + technical investigation, reproduction, log analysis, L3 escalation packages" },
+    { type: "L1 + L2 + L3 Escalation", investment: "£6,000 - £16,000/mo", timeline: "Monthly", bestFor: "Full support stack, engineering interface, bug queue management, data corrections" },
+    { type: "Dedicated Support Engineer (L2/L3)", investment: "£5,000 - £9,000/mo", timeline: "Monthly", bestFor: "Technical specialist embedded in support, knows codebase, handles L2+L3" },
+    { type: "Support Transformation", investment: "£5,000 - £14,000", timeline: "4 - 6 weeks", bestFor: "Audit + knowledge base creation + Zendesk setup + agent training + handover" }
   ],
   industryUseCases: [
     { name: "SaaS Customer Support", description: "Zendesk-based L1 support for 10,000+ users. L2 investigation for bug reproduction. L3 escalation to engineering. 85% first-contact resolution rate. CSAT 4.7/5. Monthly support metrics review." },
@@ -13247,13 +13247,13 @@ const augmentedRealityDevelopmentOverride = {
     { layer: "Industrial AR", technologies: "HoloLens 2 + MRTK 3, Azure Spatial Anchors, Dynamics 365 Remote Assist, Vuforia (object recognition), CAD converters" }
   ],
   pricingTiers: [
-    { type: "AR Discovery", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Use case validation, platform selection, asset pipeline plan, prototype" },
-    { type: "WebAR (8th Wall)", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Image/surface tracking, 3D model, interactions, QR delivery" },
-    { type: "ARKit iOS App", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Plane/image/object tracking, RealityKit, USDZ, SwiftUI" },
-    { type: "ARCore Android App", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Motion tracking, Depth API, GLB models, Jetpack Compose" },
-    { type: "Cross-Platform AR (Unity AR Foundation)", investment: "$10,000 - $28,000", timeline: "4 - 7 weeks", bestFor: "iOS + Android from shared codebase, ARCore/ARKit backends" },
-    { type: "Industrial AR (Field Service)", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Work instructions, object tracking, remote expert, ERP integration" },
-    { type: "HoloLens 2 App (MRTK)", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Hand/eye/voice, spatial mapping, Azure Spatial Anchors" }
+    { type: "AR Discovery", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Use case validation, platform selection, asset pipeline plan, prototype" },
+    { type: "WebAR (8th Wall)", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Image/surface tracking, 3D model, interactions, QR delivery" },
+    { type: "ARKit iOS App", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Plane/image/object tracking, RealityKit, USDZ, SwiftUI" },
+    { type: "ARCore Android App", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Motion tracking, Depth API, GLB models, Jetpack Compose" },
+    { type: "Cross-Platform AR (Unity AR Foundation)", investment: "£10,000 - £28,000", timeline: "4 - 7 weeks", bestFor: "iOS + Android from shared codebase, ARCore/ARKit backends" },
+    { type: "Industrial AR (Field Service)", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Work instructions, object tracking, remote expert, ERP integration" },
+    { type: "HoloLens 2 App (MRTK)", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Hand/eye/voice, spatial mapping, Azure Spatial Anchors" }
   ],
   industryUseCases: [
     { name: "Industrial Maintenance AR", description: "HoloLens 2 with Azure Spatial Anchors. Step-by-step repair instructions anchored to equipment. Remote expert overlay from desktop. Reduced MTTR by 35%." },
@@ -13269,7 +13269,7 @@ const augmentedRealityDevelopmentOverride = {
     },
     {
       heading: "Industrial AR The Business Case",
-      body: "For a manufacturing or field service organisation with 500 technicians, the cost of AR deployment: HoloLens 2 hardware ($3,500/device \xC3\u2014 500 = $1.75M), AR development ($25,000-50,000 per procedure), and annual support ($50,000). ROI drivers: reduced procedure time (20-25% faster with step-by-step AR overlays technicians do not consult paper manuals or separate tablets), reduced error rate (component selection errors, missing steps, safety violations each error event costs hours or equipment damage), reduced expert travel ($2,000-5,000 per remote site visit replaced by $50-100 remote assist session), and quicker new technician onboarding (new technicians reach proficiency in weeks vs months). For a high-value equipment manufacturer with high-accuracy maintenance requirements (aeronautics, energy, medical devices), the ROI case for industrial AR is often positive within the first year of deployment.",
+      body: "For a manufacturing or field service organisation with 500 technicians, the cost of AR deployment: HoloLens 2 hardware (£3,500/device \xC3\u2014 500 = £1.75M), AR development (£25,000-50,000 per procedure), and annual support (£50,000). ROI drivers: reduced procedure time (20-25% faster with step-by-step AR overlays technicians do not consult paper manuals or separate tablets), reduced error rate (component selection errors, missing steps, safety violations each error event costs hours or equipment damage), reduced expert travel (£2,000-5,000 per remote site visit replaced by £50-100 remote assist session), and quicker new technician onboarding (new technicians reach proficiency in weeks vs months). For a high-value equipment manufacturer with high-accuracy maintenance requirements (aeronautics, energy, medical devices), the ROI case for industrial AR is often positive within the first year of deployment.",
       items: []
     }
   ],
@@ -13288,7 +13288,7 @@ const augmentedRealityDevelopmentOverride = {
     },
     {
       question: "Does AR require special glasses or hardware?",
-      answer: "For most B2B AR applications today: no. Modern smartphones provide the camera, accelerometers, gyroscope, and (on iPhone Pro) LiDAR depth sensor required for production-quality mobile AR. No dedicated hardware procurement, no training users on new devices, no hardware inventory to manage. AR glasses (Microsoft HoloLens 2 at $3,500/device, Magic Leap 2, Meta Quest 3 with colour passthrough) provide a hands-free experience significantly more valuable for industrial field service where a technician holding a repair tool cannot also hold a phone. Clickmasters builds HoloLens 2 applications using Unity and MRTK for hands-free industrial AR. The hardware cost and limited installed base make glasses appropriate for specific industrial use cases, not consumer-facing applications."
+      answer: "For most B2B AR applications today: no. Modern smartphones provide the camera, accelerometers, gyroscope, and (on iPhone Pro) LiDAR depth sensor required for production-quality mobile AR. No dedicated hardware procurement, no training users on new devices, no hardware inventory to manage. AR glasses (Microsoft HoloLens 2 at £3,500/device, Magic Leap 2, Meta Quest 3 with colour passthrough) provide a hands-free experience significantly more valuable for industrial field service where a technician holding a repair tool cannot also hold a phone. Clickmasters builds HoloLens 2 applications using Unity and MRTK for hands-free industrial AR. The hardware cost and limited installed base make glasses appropriate for specific industrial use cases, not consumer-facing applications."
     }
   ],
   testimonial: {
@@ -13379,13 +13379,13 @@ const virtualRealityDevelopmentOverride = {
     { layer: "WebVR", technologies: "A-Frame (HTML-based), Babylon.js (WebXR), Three.js (low-level), WebXR API" }
   ],
   pricingTiers: [
-    { type: "VR Discovery", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Use case validation, hardware selection, 3D pipeline plan, prototype" },
-    { type: "WebVR Experience", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "A-Frame/Babylon.js, environment, interactions, browser delivery" },
-    { type: "Meta Quest VR App", investment: "$10,000 - $28,000", timeline: "3 - 7 weeks", bestFor: "Unity XR, Quest standalone, 90FPS optimisation, store submission" },
-    { type: "PCVR (SteamVR)", investment: "$10,000 - $28,000", timeline: "3 - 7 weeks", bestFor: "Unreal/Unity, OpenXR, high-fidelity rendering, SteamVR distribution" },
-    { type: "VR Safety Training", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "Instructional design + environment + procedure + assessment + LMS" },
-    { type: "Architectural Walkthrough (UE5)", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Nanite/Lumen, material configurator, Quest + browser delivery" },
-    { type: "VR Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "New scenarios, content updates, platform OS updates, support" }
+    { type: "VR Discovery", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Use case validation, hardware selection, 3D pipeline plan, prototype" },
+    { type: "WebVR Experience", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "A-Frame/Babylon.js, environment, interactions, browser delivery" },
+    { type: "Meta Quest VR App", investment: "£10,000 - £28,000", timeline: "3 - 7 weeks", bestFor: "Unity XR, Quest standalone, 90FPS optimisation, store submission" },
+    { type: "PCVR (SteamVR)", investment: "£10,000 - £28,000", timeline: "3 - 7 weeks", bestFor: "Unreal/Unity, OpenXR, high-fidelity rendering, SteamVR distribution" },
+    { type: "VR Safety Training", investment: "£15,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "Instructional design + environment + procedure + assessment + LMS" },
+    { type: "Architectural Walkthrough (UE5)", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Nanite/Lumen, material configurator, Quest + browser delivery" },
+    { type: "VR Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "New scenarios, content updates, platform OS updates, support" }
   ],
   industryUseCases: [
     { name: "Industrial Safety Training", description: "Meta Quest 3 training simulation for lockout/tagout procedure. 90 FPS stable, xAPI reporting to LMS. 4x faster training completion. 275% confidence increase (PwC benchmark). Zero real-world risk during training." },
@@ -13396,7 +13396,7 @@ const virtualRealityDevelopmentOverride = {
   sections: [
     {
       heading: "Meta Quest vs PCVR Which Platform Should You Develop For?",
-      body: "Meta Quest 3 is the dominant VR platform globally standalone Android headset, no PC required, $500 consumer price, large installed base. Quest is appropriate for: enterprise training deployments (procure headsets, distribute to trainees, no PC infrastructure), consumer-facing experiences, and applications where wireless freedom matters. PCVR (SteamVR HTC Vive, Valve Index, Meta Quest via Air Link) requires a high-end gaming PC connected to the headset. PCVR is appropriate for: architectural visualisation requiring Unreal Engine 5's Nanite and Lumen at full quality (Quest standalone cannot run these at full quality), applications requiring maximum graphical fidelity, and enterprise deployments where high-end PCs are already in place. Clickmasters develops for Quest first (largest platform, no hardware procurement barrier) and ports to PCVR for use cases requiring higher visual fidelity.",
+      body: "Meta Quest 3 is the dominant VR platform globally standalone Android headset, no PC required, £500 consumer price, large installed base. Quest is appropriate for: enterprise training deployments (procure headsets, distribute to trainees, no PC infrastructure), consumer-facing experiences, and applications where wireless freedom matters. PCVR (SteamVR HTC Vive, Valve Index, Meta Quest via Air Link) requires a high-end gaming PC connected to the headset. PCVR is appropriate for: architectural visualisation requiring Unreal Engine 5's Nanite and Lumen at full quality (Quest standalone cannot run these at full quality), applications requiring maximum graphical fidelity, and enterprise deployments where high-end PCs are already in place. Clickmasters develops for Quest first (largest platform, no hardware procurement barrier) and ports to PCVR for use cases requiring higher visual fidelity.",
       items: []
     },
     {
@@ -13412,7 +13412,7 @@ const virtualRealityDevelopmentOverride = {
     },
     {
       question: "Meta Quest vs PCVR which platform should I develop for?",
-      answer: "Meta Quest 3 is the dominant VR platform globally standalone Android headset, no PC required, $500 consumer price, large installed base. Quest is appropriate for: enterprise training deployments (procure headsets, distribute to trainees, no PC infrastructure), consumer-facing experiences, and applications where wireless freedom matters. PCVR (SteamVR HTC Vive, Valve Index, Meta Quest via Air Link) requires a high-end gaming PC connected to the headset. PCVR is appropriate for: architectural visualisation requiring Unreal Engine 5's Nanite and Lumen at full quality (Quest standalone cannot run these at full quality), applications requiring maximum graphical fidelity, and enterprise deployments where high-end PCs are already in place. Clickmasters develops for Quest first (largest platform, no hardware procurement barrier) and ports to PCVR for use cases requiring higher visual fidelity."
+      answer: "Meta Quest 3 is the dominant VR platform globally standalone Android headset, no PC required, £500 consumer price, large installed base. Quest is appropriate for: enterprise training deployments (procure headsets, distribute to trainees, no PC infrastructure), consumer-facing experiences, and applications where wireless freedom matters. PCVR (SteamVR HTC Vive, Valve Index, Meta Quest via Air Link) requires a high-end gaming PC connected to the headset. PCVR is appropriate for: architectural visualisation requiring Unreal Engine 5's Nanite and Lumen at full quality (Quest standalone cannot run these at full quality), applications requiring maximum graphical fidelity, and enterprise deployments where high-end PCs are already in place. Clickmasters develops for Quest first (largest platform, no hardware procurement barrier) and ports to PCVR for use cases requiring higher visual fidelity."
     },
     {
       question: "What causes VR sickness and how do you prevent it?",
@@ -13420,7 +13420,7 @@ const virtualRealityDevelopmentOverride = {
     },
     {
       question: "What is the ROI of VR training compared to traditional methods?",
-      answer: "The economics of VR training favour it at scale. Traditional classroom safety training: $500-2,000 per trainee (trainer time + venue + travel + materials). VR training development: $15,000-45,000 per module (one-time cost), then effectively $0 incremental per trainee (the experience runs on a $500 headset). Break-even: at $1,000 per traditional trainee, a $20,000 VR module breaks even at 20 trainees. For a 1,000-person workforce requiring annual safety training, the VR investment delivers $980,000 in annual savings after year one. Additional benefits: consistent quality (every trainee gets the identical experience no instructor variability), higher retention (PwC: VR learners retained 4x longer), measurable outcomes (performance metrics per session identify trainees needing additional support, demonstrate compliance), and access to rare scenarios (chemical spill response, cardiac arrest practice without real risk or event frequency constraints)."
+      answer: "The economics of VR training favour it at scale. Traditional classroom safety training: £500-2,000 per trainee (trainer time + venue + travel + materials). VR training development: £15,000-45,000 per module (one-time cost), then effectively £0 incremental per trainee (the experience runs on a £500 headset). Break-even: at £1,000 per traditional trainee, a £20,000 VR module breaks even at 20 trainees. For a 1,000-person workforce requiring annual safety training, the VR investment delivers £980,000 in annual savings after year one. Additional benefits: consistent quality (every trainee gets the identical experience no instructor variability), higher retention (PwC: VR learners retained 4x longer), measurable outcomes (performance metrics per session identify trainees needing additional support, demonstrate compliance), and access to rare scenarios (chemical spill response, cardiac arrest practice without real risk or event frequency constraints)."
     }
   ],
   testimonial: {
@@ -13483,7 +13483,7 @@ const mixedRealitySolutionsOverride = {
   // ],
   servicesCards: [
     { title: "HoloLens 2 Development (MRTK 3)", description: `Enterprise mixed reality: MRTK 3 (Mixed Reality Toolkit Microsoft's open-source Unity framework hand tracking, eye tracking, voice commands, spatial awareness, FollowMe UI, hand menus, near and far interaction), spatial mapping (HoloLens scans environment in real time holograms anchored to real surfaces remain in place as user moves), Azure Spatial Anchors (persist hologram positions across sessions and share anchor positions between multiple HoloLens devices in same physical space maintenance instruction overlay stays attached to correct machine across all technician headsets), hand tracking (26-DOF articulated pinch, grab, push, ray interactions without controllers, compatible with industrial gloves), gaze + voice (eye tracking for precise UI targeting, voice commands for hands-free navigation "Next Step", "Call Expert", "Flag Issue").` },
-    { title: "Apple Vision Pro (visionOS)", description: "Spatial computing on Vision Pro: visionOS development (SwiftUI + RealityKit 2D windows float in space, volumetric 3D content, fully immersive environments), Shared Space vs Full Space (Shared Space: real environment with floating app windows spatial desktop; Full Space: application takes full display immersive experiences), enterprise use cases (3D design review, medical imaging visualisation, architectural walkthrough, remote collaboration with shared 3D content Vision Pro at $3,499 targets professional use), advantages vs HoloLens (micro-OLED displays with higher resolution and wider colour gamut, superior full-colour passthrough, eye+pinch interaction model)." },
+    { title: "Apple Vision Pro (visionOS)", description: "Spatial computing on Vision Pro: visionOS development (SwiftUI + RealityKit 2D windows float in space, volumetric 3D content, fully immersive environments), Shared Space vs Full Space (Shared Space: real environment with floating app windows spatial desktop; Full Space: application takes full display immersive experiences), enterprise use cases (3D design review, medical imaging visualisation, architectural walkthrough, remote collaboration with shared 3D content Vision Pro at £3,499 targets professional use), advantages vs HoloLens (micro-OLED displays with higher resolution and wider colour gamut, superior full-colour passthrough, eye+pinch interaction model)." },
     { title: "Remote Expert Collaboration", description: "Connect field technicians with remote subject matter experts: Dynamics 365 Remote Assist (commercial Microsoft product field technician on HoloLens calls remote expert on Teams/PC, expert sees technician's view and draws holographic annotations that appear anchored to real equipment in real time), custom remote assist (SignalR + WebRTC video layer + holographic annotation rendering in Unity tailored annotation tools, 3D model overlay, document sharing, workflow-specific UI), Azure Communication Services (Microsoft's managed real-time communication SDK video calling integrated directly into HoloLens 2 applications without third-party dependencies)." },
     { title: "Microsoft Mesh Collaboration", description: "Shared holographic workspaces for distributed teams: Microsoft Mesh (shared 3D collaborative experiences delivered to HoloLens 2, Meta Quest, and PC multiple users in the same holographic space with persistent 3D content and spatial audio), Mesh Toolkit in Unity (build custom collaborative 3D environments interactive 3D models, shared whiteboards, branching scenarios for training), enterprise use cases (3D design reviews where distributed team members interact with a shared model, virtual meeting rooms with spatial presence, MR training with instructor and multiple trainees in same holographic space)." },
     { title: "Medical + Surgical MR", description: "Mixed reality for healthcare: surgical planning (3D patient anatomy from CT/MRI DICOM data reconstructed to 3D mesh, registered to patient's body position via marker tracking surgeon reviews planned procedure overlaid on surgical field), medical training (anatomy exploration walk around life-size 3D anatomical model, select structures to see labels and explanations), procedure simulation (integrate with tactile feedback devices for hands-on practice with MR guidance), regulatory pathway (Clickmasters scopes all medical MR with client's regulatory pathway FDA 510(k) or De Novo clearance considerations for clinical diagnostic applications)." }
@@ -13510,13 +13510,13 @@ const mixedRealitySolutionsOverride = {
     { layer: "Medical", technologies: "DICOM import (fo-dicom, Orthanc), 3D mesh reconstruction (VTK, ITK), volume rendering, registration (marker tracking, ICP), Leap Motion (tactile integration)" }
   ],
   pricingTiers: [
-    { type: "MR Discovery", investment: "$4,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Use case validation, hardware selection, architecture plan, prototype" },
-    { type: "HoloLens 2 App (MRTK 3)", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Hand/eye/voice, spatial mapping, Azure Spatial Anchors, Unity" },
-    { type: "Apple Vision Pro App (visionOS)", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "SwiftUI + RealityKit, Shared/Full Space, enterprise use case" },
-    { type: "Remote Expert Solution", investment: "$10,000 - $28,000", timeline: "4 - 7 weeks", bestFor: "Dynamics 365 Remote Assist config or custom SignalR+WebRTC+annotation" },
-    { type: "Microsoft Mesh Collaboration", investment: "$12,000 - $32,000", timeline: "4 - 8 weeks", bestFor: "Mesh Toolkit, shared 3D space, multi-user, spatial audio, Teams integration" },
-    { type: "Medical / Surgical MR", investment: "$18,000 - $55,000", timeline: "6 - 12 weeks", bestFor: "DICOM reconstruction, registration, simulation, regulatory scoping" },
-    { type: "MR Retainer", investment: "$3,000 - $7,000/mo", timeline: "Ongoing", bestFor: "New experiences, hardware OS updates, new use case development" }
+    { type: "MR Discovery", investment: "£4,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Use case validation, hardware selection, architecture plan, prototype" },
+    { type: "HoloLens 2 App (MRTK 3)", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Hand/eye/voice, spatial mapping, Azure Spatial Anchors, Unity" },
+    { type: "Apple Vision Pro App (visionOS)", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "SwiftUI + RealityKit, Shared/Full Space, enterprise use case" },
+    { type: "Remote Expert Solution", investment: "£10,000 - £28,000", timeline: "4 - 7 weeks", bestFor: "Dynamics 365 Remote Assist config or custom SignalR+WebRTC+annotation" },
+    { type: "Microsoft Mesh Collaboration", investment: "£12,000 - £32,000", timeline: "4 - 8 weeks", bestFor: "Mesh Toolkit, shared 3D space, multi-user, spatial audio, Teams integration" },
+    { type: "Medical / Surgical MR", investment: "£18,000 - £55,000", timeline: "6 - 12 weeks", bestFor: "DICOM reconstruction, registration, simulation, regulatory scoping" },
+    { type: "MR Retainer", investment: "£3,000 - £7,000/mo", timeline: "Ongoing", bestFor: "New experiences, hardware OS updates, new use case development" }
   ],
   industryUseCases: [
     { name: "Hands-Free Field Service", description: "HoloLens 2 with Azure Spatial Anchors. Maintenance instructions anchored to equipment. Remote expert from desktop draws annotations in technician's view. 26-DOF hand tracking (compatible with industrial gloves). Reduced MTTR by 35%, eliminated 80% of expert travel." },
@@ -13547,11 +13547,11 @@ const mixedRealitySolutionsOverride = {
     },
     {
       question: "What is the business case for HoloLens 2 vs smartphone AR?",
-      answer: "HoloLens 2 advantages over smartphone AR for industrial and enterprise use: hands-free operation (a field technician cannot hold both tools and a phone HoloLens displays instructions in the field of view, operated by voice and hand gestures), persistent world anchors (holograms stay anchored to equipment across sessions and users smartphone AR requires holding the phone up continuously), 26-DOF hand tracking (natural interaction compatible with industrial gloves), and durability (designed for industrial environments drop resistance, IP tested, compatible with safety helmets and eye protection). The cost trade-off: HoloLens 2 costs $3,500/device. The ROI case: hands-free maintenance instructions reduce procedure time by 20-25% and error rates significantly on complex equipment. For maintenance operations on high-value assets where errors are costly, the productivity gain justifies the hardware investment. HoloLens 2 is not appropriate for consumer-facing AR or applications where the use case does not require hands-free operation."
+      answer: "HoloLens 2 advantages over smartphone AR for industrial and enterprise use: hands-free operation (a field technician cannot hold both tools and a phone HoloLens displays instructions in the field of view, operated by voice and hand gestures), persistent world anchors (holograms stay anchored to equipment across sessions and users smartphone AR requires holding the phone up continuously), 26-DOF hand tracking (natural interaction compatible with industrial gloves), and durability (designed for industrial environments drop resistance, IP tested, compatible with safety helmets and eye protection). The cost trade-off: HoloLens 2 costs £3,500/device. The ROI case: hands-free maintenance instructions reduce procedure time by 20-25% and error rates significantly on complex equipment. For maintenance operations on high-value assets where errors are costly, the productivity gain justifies the hardware investment. HoloLens 2 is not appropriate for consumer-facing AR or applications where the use case does not require hands-free operation."
     },
     {
       question: "What is visionOS and how is Apple Vision Pro different from HoloLens?",
-      answer: "visionOS is Apple's operating system for Apple Vision Pro launched in 2024 at $3,499. Applications run in Shared Space (real environment with floating app windows and 3D volumes spatial desktop) or Full Space (immersive environment application controls the entire display). Vision Pro advantages over HoloLens 2: micro-OLED displays with significantly higher resolution and colour accuracy (digital content looks photorealistic), full-colour high-quality passthrough video (more immersive than HoloLens' lower-resolution passthrough), eye+finger pinch interaction (subtle, social no hand gestures visible to others), and Apple ecosystem (Swift/SwiftUI, TestFlight, App Store distribution). HoloLens 2 advantages: more mature enterprise ecosystem (Dynamics 365 Remote Assist, Azure Spatial Anchors, MRTK production-proven across thousands of enterprise deployments), better suitability for industrial environments with safety equipment, and a wider field of view for large holograms. Clickmasters builds for both HoloLens 2 for established enterprise and industrial deployments, Vision Pro for forward-looking spatial computing applications where display quality and interaction design are differentiators."
+      answer: "visionOS is Apple's operating system for Apple Vision Pro launched in 2024 at £3,499. Applications run in Shared Space (real environment with floating app windows and 3D volumes spatial desktop) or Full Space (immersive environment application controls the entire display). Vision Pro advantages over HoloLens 2: micro-OLED displays with significantly higher resolution and colour accuracy (digital content looks photorealistic), full-colour high-quality passthrough video (more immersive than HoloLens' lower-resolution passthrough), eye+finger pinch interaction (subtle, social no hand gestures visible to others), and Apple ecosystem (Swift/SwiftUI, TestFlight, App Store distribution). HoloLens 2 advantages: more mature enterprise ecosystem (Dynamics 365 Remote Assist, Azure Spatial Anchors, MRTK production-proven across thousands of enterprise deployments), better suitability for industrial environments with safety equipment, and a wider field of view for large holograms. Clickmasters builds for both HoloLens 2 for established enterprise and industrial deployments, Vision Pro for forward-looking spatial computing applications where display quality and interaction design are differentiators."
     }
   ],
   testimonial: {
@@ -13642,13 +13642,13 @@ const iotDevelopmentOverride = {
     { layer: "OTA", technologies: "AWS IoT Jobs, A/B partition firmware (active/inactive), delta updates, signature verification (SHA256/ECDSA), staged rollout (percentage-based)" }
   ],
   pricingTiers: [
-    { type: "IoT Architecture Design", investment: "$4,000 - $9,000", timeline: "1 - 2 weeks", bestFor: "Device selection, protocol, cloud platform, data pipeline, dashboard plan" },
-    { type: "Device Firmware (per device type)", investment: "$5,000 - $14,000", timeline: "2 - 5 weeks", bestFor: "C/C++ or MicroPython, sensor drivers, MQTT/HTTPS, OTA client" },
-    { type: "AWS IoT Core Backend", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Device registry, MQTT rules, Lambda, Timestream, alerts" },
-    { type: "Telemetry Dashboard", investment: "$5,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "Grafana or custom React, real-time charts, alert rules, device management" },
-    { type: "OTA Update System", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "Delta updates, A/B rollback, version management, fleet deployment" },
-    { type: "Full IoT Platform", investment: "$15,000 - $50,000", timeline: "5 - 10 weeks", bestFor: "Firmware + cloud + dashboard + OTA + mobile + monitoring" },
-    { type: "IoT Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "Firmware updates, cloud scaling, dashboard enhancements, device support" }
+    { type: "IoT Architecture Design", investment: "£4,000 - £9,000", timeline: "1 - 2 weeks", bestFor: "Device selection, protocol, cloud platform, data pipeline, dashboard plan" },
+    { type: "Device Firmware (per device type)", investment: "£5,000 - £14,000", timeline: "2 - 5 weeks", bestFor: "C/C++ or MicroPython, sensor drivers, MQTT/HTTPS, OTA client" },
+    { type: "AWS IoT Core Backend", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Device registry, MQTT rules, Lambda, Timestream, alerts" },
+    { type: "Telemetry Dashboard", investment: "£5,000 - £12,000", timeline: "2 - 4 weeks", bestFor: "Grafana or custom React, real-time charts, alert rules, device management" },
+    { type: "OTA Update System", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "Delta updates, A/B rollback, version management, fleet deployment" },
+    { type: "Full IoT Platform", investment: "£15,000 - £50,000", timeline: "5 - 10 weeks", bestFor: "Firmware + cloud + dashboard + OTA + mobile + monitoring" },
+    { type: "IoT Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "Firmware updates, cloud scaling, dashboard enhancements, device support" }
   ],
   industryUseCases: [
     { name: "Environmental Monitoring", description: "ESP32 + DHT22/BMP280 sensors \xE2\u2020\u2019 MQTT to AWS IoT Core \xE2\u2020\u2019 Timestream \xE2\u2020\u2019 Grafana dashboard. Alerts on temperature/humidity thresholds. 1,000 devices deployed." },
@@ -13780,18 +13780,18 @@ const smartSystemsDevelopmentOverride = {
     { layer: "Integration", technologies: "CMMS (ServiceMax, IBM Maximo, UpKeep), ERP (SAP, Oracle), Grafana dashboards, PagerDuty alerts" }
   ],
   pricingTiers: [
-    { type: "Discovery", investment: "$4,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Asset inventory, protocol audit, use case prioritisation, architecture plan" },
-    { type: "BMS Integration + Automation", investment: "$8,000 - $24,000", timeline: "3 - 6 weeks", bestFor: "BACnet/Modbus, automation rules, energy dashboard, alert management" },
-    { type: "Predictive Maintenance System", investment: "$10,000 - $28,000", timeline: "4 - 8 weeks", bestFor: "Sensors, data pipeline, anomaly detection, CMMS integration" },
-    { type: "Fleet Telematics Platform", investment: "$10,000 - $28,000", timeline: "4 - 8 weeks", bestFor: "GPS + OBD-II, real-time tracking, utilisation analytics, driver scoring" },
-    { type: "Digital Twin Platform", investment: "$12,000 - $35,000", timeline: "4 - 9 weeks", bestFor: "Asset model, sensor binding, simulation, Azure/AWS TwinMaker" },
-    { type: "Energy Management System", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Sub-metering, demand response, renewable integration, reporting" },
-    { type: "Retainer", investment: "$3,000 - $8,000/mo", timeline: "Ongoing", bestFor: "Platform maintenance, new sensor integration, analytics expansion" }
+    { type: "Discovery", investment: "£4,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Asset inventory, protocol audit, use case prioritisation, architecture plan" },
+    { type: "BMS Integration + Automation", investment: "£8,000 - £24,000", timeline: "3 - 6 weeks", bestFor: "BACnet/Modbus, automation rules, energy dashboard, alert management" },
+    { type: "Predictive Maintenance System", investment: "£10,000 - £28,000", timeline: "4 - 8 weeks", bestFor: "Sensors, data pipeline, anomaly detection, CMMS integration" },
+    { type: "Fleet Telematics Platform", investment: "£10,000 - £28,000", timeline: "4 - 8 weeks", bestFor: "GPS + OBD-II, real-time tracking, utilisation analytics, driver scoring" },
+    { type: "Digital Twin Platform", investment: "£12,000 - £35,000", timeline: "4 - 9 weeks", bestFor: "Asset model, sensor binding, simulation, Azure/AWS TwinMaker" },
+    { type: "Energy Management System", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Sub-metering, demand response, renewable integration, reporting" },
+    { type: "Retainer", investment: "£3,000 - £8,000/mo", timeline: "Ongoing", bestFor: "Platform maintenance, new sensor integration, analytics expansion" }
   ],
   industryUseCases: [
     { name: "Commercial Building Energy", description: "BACnet integration to HVAC and lighting. Occupancy-based scheduling (unoccupied hours setback). 20% energy reduction. ISO 50001 reporting automated." },
-    { name: "Predictive Maintenance ROI", description: "Vibration sensors on 50 motors. FFT analysis detected bearing wear 3 weeks before failure. Avoided $100K production line stoppage. 25% maintenance cost reduction." },
-    { name: "Fleet Fuel Optimisation", description: "OBD-II telematics on 200 trucks. Harsh braking and speeding alerts. Driver scoring programme. 12% fuel reduction. $200K annual savings." },
+    { name: "Predictive Maintenance ROI", description: "Vibration sensors on 50 motors. FFT analysis detected bearing wear 3 weeks before failure. Avoided £100K production line stoppage. 25% maintenance cost reduction." },
+    { name: "Fleet Fuel Optimisation", description: "OBD-II telematics on 200 trucks. Harsh braking and speeding alerts. Driver scoring programme. 12% fuel reduction. £200K annual savings." },
     { name: "Digital Twin for Data Centre", description: "Azure Digital Twins of 10,000 sq ft data centre. Real-time PUE monitoring. Simulation of cooling setpoint changes. 15% cooling energy reduction." }
   ],
   sections: [
@@ -13802,7 +13802,7 @@ const smartSystemsDevelopmentOverride = {
     },
     {
       heading: "Predictive Maintenance The ROI Case",
-      body: "Predictive maintenance uses real-time sensor data and machine learning to assess equipment condition and predict failures before they occur replacing calendar-based preventive maintenance with condition-based maintenance. A vibration sensor on a pump motor detects bearing wear weeks before the bearing seizes. The ROI: predictive maintenance reduces maintenance costs by 25-30% (no unnecessary scheduled maintenance on equipment that does not need it), reduces unplanned downtime by catching failures before they happen (a chiller failure in a commercial building in summer costs far more than the predictive maintenance investment), and extends equipment life by catching degradation early. For a facility with 50 critical rotating assets spending $200,000/year on maintenance, a 25% reduction represents $50,000 in annual savings most smart maintenance investments pay back within 24 months.",
+      body: "Predictive maintenance uses real-time sensor data and machine learning to assess equipment condition and predict failures before they occur replacing calendar-based preventive maintenance with condition-based maintenance. A vibration sensor on a pump motor detects bearing wear weeks before the bearing seizes. The ROI: predictive maintenance reduces maintenance costs by 25-30% (no unnecessary scheduled maintenance on equipment that does not need it), reduces unplanned downtime by catching failures before they happen (a chiller failure in a commercial building in summer costs far more than the predictive maintenance investment), and extends equipment life by catching degradation early. For a facility with 50 critical rotating assets spending £200,000/year on maintenance, a 25% reduction represents £50,000 in annual savings most smart maintenance investments pay back within 24 months.",
       items: []
     }
   ],
@@ -13813,7 +13813,7 @@ const smartSystemsDevelopmentOverride = {
     },
     {
       question: "What is predictive maintenance and what is the ROI?",
-      answer: "Predictive maintenance uses real-time sensor data and machine learning to assess equipment condition and predict failures before they occur replacing calendar-based preventive maintenance with condition-based maintenance. A vibration sensor on a pump motor detects bearing wear weeks before the bearing seizes. The ROI: predictive maintenance reduces maintenance costs by 25-30% (no unnecessary scheduled maintenance on equipment that does not need it), reduces unplanned downtime by catching failures before they happen (a chiller failure in a commercial building in summer costs far more than the predictive maintenance investment), and extends equipment life by catching degradation early. For a facility with 50 critical rotating assets spending $200,000/year on maintenance, a 25% reduction represents $50,000 in annual savings most smart maintenance investments pay back within 24 months."
+      answer: "Predictive maintenance uses real-time sensor data and machine learning to assess equipment condition and predict failures before they occur replacing calendar-based preventive maintenance with condition-based maintenance. A vibration sensor on a pump motor detects bearing wear weeks before the bearing seizes. The ROI: predictive maintenance reduces maintenance costs by 25-30% (no unnecessary scheduled maintenance on equipment that does not need it), reduces unplanned downtime by catching failures before they happen (a chiller failure in a commercial building in summer costs far more than the predictive maintenance investment), and extends equipment life by catching degradation early. For a facility with 50 critical rotating assets spending £200,000/year on maintenance, a 25% reduction represents £50,000 in annual savings most smart maintenance investments pay back within 24 months."
     },
     {
       question: "What is a digital twin and what business value does it deliver?",
@@ -13911,16 +13911,16 @@ const industrialIoTOverride = {
     { layer: "Cloud Integration", technologies: "AWS IoT Core (MQTT broker, rules), Timestream (time series), Kinesis (streaming), Grafana (dashboards)" }
   ],
   pricingTiers: [
-    { type: "IIoT Discovery", investment: "$5,000 - $10,000", timeline: "1 - 2 weeks", bestFor: "Machine inventory, protocol audit, connectivity plan, OT security review" },
-    { type: "OPC-UA / Modbus Connectivity", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "PLC tags, data buffering, cloud routing, Kepware/Ignition gateway" },
-    { type: "OEE Monitoring System", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Availability + performance + quality, downtime tags, shift reports" },
-    { type: "SCADA Integration", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Ignition Sparkplug B, historian, alarm management, IT/OT bridge" },
-    { type: "Edge Computing", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "Greengrass or Jetson, local ML, aggregation, offline operation" },
-    { type: "OT Network Security", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "Segmentation, data diode, asset inventory, Claroty/Nozomi monitoring" },
-    { type: "Full IIoT Platform", investment: "$20,000 - $65,000", timeline: "6 - 12 weeks", bestFor: "Connectivity + OEE + SCADA + edge + security + analytics dashboard" }
+    { type: "IIoT Discovery", investment: "£5,000 - £10,000", timeline: "1 - 2 weeks", bestFor: "Machine inventory, protocol audit, connectivity plan, OT security review" },
+    { type: "OPC-UA / Modbus Connectivity", investment: "£6,000 - £16,000", timeline: "2 - 4 weeks", bestFor: "PLC tags, data buffering, cloud routing, Kepware/Ignition gateway" },
+    { type: "OEE Monitoring System", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Availability + performance + quality, downtime tags, shift reports" },
+    { type: "SCADA Integration", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Ignition Sparkplug B, historian, alarm management, IT/OT bridge" },
+    { type: "Edge Computing", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "Greengrass or Jetson, local ML, aggregation, offline operation" },
+    { type: "OT Network Security", investment: "£6,000 - £16,000", timeline: "2 - 4 weeks", bestFor: "Segmentation, data diode, asset inventory, Claroty/Nozomi monitoring" },
+    { type: "Full IIoT Platform", investment: "£20,000 - £65,000", timeline: "6 - 12 weeks", bestFor: "Connectivity + OEE + SCADA + edge + security + analytics dashboard" }
   ],
   industryUseCases: [
-    { name: "OEE Improvement Project", description: "10 production lines OEE monitoring. Baseline OEE 58% \xE2\u2020\u2019 72% in 6 months. Downtime Pareto identified changeover as 40% of loss. Changeover time reduced by 35 minutes. $2M annual production increase." },
+    { name: "OEE Improvement Project", description: "10 production lines OEE monitoring. Baseline OEE 58% \xE2\u2020\u2019 72% in 6 months. Downtime Pareto identified changeover as 40% of loss. Changeover time reduced by 35 minutes. £2M annual production increase." },
     { name: "Predictive Quality", description: "ML model on sensor data (temperature, pressure, spindle load) predicts quality defects before part completes. 85% defect detection rate. Rework cost reduced 40%." },
     { name: "Legacy PLC Connectivity", description: "20-year-old Modbus PLCs connected via Kepware OPC-UA server. Data now in AWS Timestream. Shift reports automated. Maintenance moved from time-based to condition-based." },
     { name: "Edge Vision Inspection", description: "NVIDIA Jetson on 5 production lines. Real-time defect detection with camera. Local ML model (<100ms inference). Defects removed from line in real time. 99.5% detection accuracy." }
@@ -13956,13 +13956,13 @@ const industrialIoTOverride = {
     }
   ],
   testimonial: {
-    quote: "Clickmasters connected our 15-year-old Siemens PLCs to OPC-UA and AWS IoT Core. Our OEE dashboard shows real-time availability, performance, and quality across 10 production lines. We increased OEE from 58% to 72% in 6 months $2M additional annual output.",
+    quote: "Clickmasters connected our 15-year-old Siemens PLCs to OPC-UA and AWS IoT Core. Our OEE dashboard shows real-time availability, performance, and quality across 10 production lines. We increased OEE from 58% to 72% in 6 months £2M additional annual output.",
     author: "Plant Manager",
     role: "Automotive Parts Manufacturer"
   },
   caseStudy: {
     title: "OEE Improvement Programme",
-    description: "OPC-UA connectivity to 20 Siemens PLCs. OEE dashboard (Availability, Performance, Quality). Downtime categorisation HMI. 10 production lines. Baseline OEE 58% \xE2\u2020\u2019 72% in 6 months. $2M annual output increase. 35% changeover time reduction.",
+    description: "OPC-UA connectivity to 20 Siemens PLCs. OEE dashboard (Availability, Performance, Quality). Downtime categorisation HMI. 10 production lines. Baseline OEE 58% \xE2\u2020\u2019 72% in 6 months. £2M annual output increase. 35% changeover time reduction.",
     slug: "oee-improvement",
     badge: "Industrial IoT"
   },
@@ -14042,13 +14042,13 @@ const embeddedSystemsDevelopmentOverride = {
     { layer: "HIL Testing", technologies: "pyOCD (flash, debug via SWD), Segger J-Link Python API (programmatic debug), GitHub Actions (HIL in CI), real test fixtures (sensor simulation)" }
   ],
   pricingTiers: [
-    { type: "Architecture Review", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "MCU selection, RTOS assessment, peripheral plan, power budget" },
-    { type: "Peripheral Driver", investment: "$2,500 - $8,000", timeline: "1 - 3 weeks", bestFor: "SPI/I2C/UART/USB driver, DMA, interrupt, HIL test" },
-    { type: "RTOS Integration", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Task design, queues, semaphores, stack sizing, overflow detection" },
-    { type: "BSP Porting + Bring-Up", investment: "$5,000 - $14,000", timeline: "2 - 5 weeks", bestFor: "Bootloader, device tree, peripheral validation, UART debug" },
-    { type: "Low Power Optimisation", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "Sleep modes, power gating, current profiling, target budget" },
-    { type: "Full Firmware Development", investment: "$12,000 - $40,000", timeline: "4 - 10 weeks", bestFor: "All peripherals, RTOS, OTA, low power, static analysis, HIL CI" },
-    { type: "Firmware Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "Bug fixes, new peripherals, OTA updates, regression testing" }
+    { type: "Architecture Review", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "MCU selection, RTOS assessment, peripheral plan, power budget" },
+    { type: "Peripheral Driver", investment: "£2,500 - £8,000", timeline: "1 - 3 weeks", bestFor: "SPI/I2C/UART/USB driver, DMA, interrupt, HIL test" },
+    { type: "RTOS Integration", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Task design, queues, semaphores, stack sizing, overflow detection" },
+    { type: "BSP Porting + Bring-Up", investment: "£5,000 - £14,000", timeline: "2 - 5 weeks", bestFor: "Bootloader, device tree, peripheral validation, UART debug" },
+    { type: "Low Power Optimisation", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "Sleep modes, power gating, current profiling, target budget" },
+    { type: "Full Firmware Development", investment: "£12,000 - £40,000", timeline: "4 - 10 weeks", bestFor: "All peripherals, RTOS, OTA, low power, static analysis, HIL CI" },
+    { type: "Firmware Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "Bug fixes, new peripherals, OTA updates, regression testing" }
   ],
   industryUseCases: [
     { name: "BLE Wearable Sensor", description: "nRF52 + Zephyr RTOS. BLE GATT services for temp/humidity. Ultra-low power: 8\xC2\xB5A average sleep, 3 years on CR2032. OTA updates via BLE. Power Profiler Kit II validation." },
@@ -14142,10 +14142,10 @@ const blockchainDevelopmentOverride = {
     "Smart Contract Security Audits"
   ],
   // marketStats: [
-  //   { label: 'Global blockchain market projected by 2030 (Grand View Research)', value: '$469B' },
-  //   { label: 'Enterprise blockchain spending in 2024', value: '$11.7B' },
+  //   { label: 'Global blockchain market projected by 2030 (Grand View Research)', value: '£469B' },
+  //   { label: 'Enterprise blockchain spending in 2024', value: '£11.7B' },
   //   { label: 'Of blockchain projects fail due to poor architecture, not technology limitations', value: '87%' },
-  //   { label: 'Value lost to smart contract exploits in 2022 security is non-negotiable', value: '$3.8B' },
+  //   { label: 'Value lost to smart contract exploits in 2022 security is non-negotiable', value: '£3.8B' },
   // ],
   servicesCards: [
     { title: "Smart Contract Development", description: "Production-grade smart contract engineering on EVM-compatible networks (Solidity) and Solana (Rust/Anchor). Security-first design: threat modeling, test-driven development, static analysis (Slither, Mythril) on every commit, formal verification for critical financial logic. Patterns: upgradeable proxies, multi-signature governance, time-locks, access control hierarchies, emergency pause mechanisms, gas optimization." },
@@ -14159,7 +14159,7 @@ const blockchainDevelopmentOverride = {
     { feature: '"When Blockchain is NOT Right" Amber Callout', description: 'Honest guidance on when blockchain adds no value builds credibility | Basic: "Blockchain for everything" (no nuance)' },
     { feature: "Network Selection Guide", description: "Ethereum vs Polygon vs Solana vs Hyperledger (9x5 table) the #1 buyer research question | Basic: One-size recommendation" },
     { feature: "Vulnerability Table (6 exploits)", description: 'Reentrancy, access control, overflow, flash loans, oracle, signature replay specific + prevention | Basic: "Security audit" (no specifics)' },
-    { feature: "$3.8B Exploit Stat", description: "Creates urgency without being alarmist security as prerequisite | Basic: No security framing" },
+    { feature: "£3.8B Exploit Stat", description: "Creates urgency without being alarmist security as prerequisite | Basic: No security framing" },
     { feature: "Post-Hype 2025 Framing", description: '"What blockchain actually delivers in 2025" speaks to battle-hardened buyers | Basic: 2021 hype language (lost credibility)' }
   ],
   processPhases: [
@@ -14183,20 +14183,20 @@ const blockchainDevelopmentOverride = {
     { layer: "Token Standards", technologies: "ERC-20, ERC-721, ERC-1155, ERC-1400, ERC-3643, EIP-2981 (royalties)" }
   ],
   pricingTiers: [
-    { type: "Blockchain Feasibility Study", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Use case assessment, network recommendation, architecture design, ROI framework" },
-    { type: "Smart Contract Development", investment: "$10,000 - $40,000", timeline: "4 - 8 weeks", bestFor: "Contract design, development, unit tests, gas optimization, testnet + mainnet deployment" },
-    { type: "Smart Contract Security Audit", investment: "$8,000 - $25,000", timeline: "2 - 4 weeks", bestFor: "Automated analysis, manual review, economic attack simulation, findings report, re-audit" },
-    { type: "NFT Collection + Mint Contract", investment: "$12,000 - $35,000", timeline: "5 - 9 weeks", bestFor: "ERC-721/1155, mint contract, IPFS metadata, reveal mechanism, royalty config, audit" },
-    { type: "NFT Marketplace Development", investment: "$25,000 - $70,000", timeline: "8 - 14 weeks", bestFor: "Listing/auction contracts, frontend, wallet integration, The Graph, creator dashboard" },
-    { type: "DApp Development (Full-Stack)", investment: "$20,000 - $60,000", timeline: "7 - 12 weeks", bestFor: "Smart contracts, React/Next.js frontend, wallet connection, The Graph, monitoring" },
-    { type: "Token Development + Launch", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "ERC-20 contract, vesting, governance, audit, deployment, Etherscan verification" },
-    { type: "Crypto Wallet Development", investment: "$20,000 - $55,000", timeline: "7 - 14 weeks", bestFor: "Non-custodial/custodial wallet, mobile or web, key management, multi-chain support" },
-    { type: "Enterprise Blockchain (Hyperledger)", investment: "$40,000 - $120,000", timeline: "3 - 9 months", bestFor: "Network setup, chaincode development, integration, admin console, consortium onboarding" },
-    { type: "Web3 Integration (existing app)", investment: "$8,000 - $25,000", timeline: "3 - 6 weeks", bestFor: "SIWE auth, NFT/token gating, on-chain verification, payment acceptance" },
-    { type: "Blockchain Retainer", investment: "$4,000 - $12,000/mo", timeline: "Ongoing", bestFor: "Contract upgrades, new features, subgraph updates, security monitoring" }
+    { type: "Blockchain Feasibility Study", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Use case assessment, network recommendation, architecture design, ROI framework" },
+    { type: "Smart Contract Development", investment: "£10,000 - £40,000", timeline: "4 - 8 weeks", bestFor: "Contract design, development, unit tests, gas optimization, testnet + mainnet deployment" },
+    { type: "Smart Contract Security Audit", investment: "£8,000 - £25,000", timeline: "2 - 4 weeks", bestFor: "Automated analysis, manual review, economic attack simulation, findings report, re-audit" },
+    { type: "NFT Collection + Mint Contract", investment: "£12,000 - £35,000", timeline: "5 - 9 weeks", bestFor: "ERC-721/1155, mint contract, IPFS metadata, reveal mechanism, royalty config, audit" },
+    { type: "NFT Marketplace Development", investment: "£25,000 - £70,000", timeline: "8 - 14 weeks", bestFor: "Listing/auction contracts, frontend, wallet integration, The Graph, creator dashboard" },
+    { type: "DApp Development (Full-Stack)", investment: "£20,000 - £60,000", timeline: "7 - 12 weeks", bestFor: "Smart contracts, React/Next.js frontend, wallet connection, The Graph, monitoring" },
+    { type: "Token Development + Launch", investment: "£15,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "ERC-20 contract, vesting, governance, audit, deployment, Etherscan verification" },
+    { type: "Crypto Wallet Development", investment: "£20,000 - £55,000", timeline: "7 - 14 weeks", bestFor: "Non-custodial/custodial wallet, mobile or web, key management, multi-chain support" },
+    { type: "Enterprise Blockchain (Hyperledger)", investment: "£40,000 - £120,000", timeline: "3 - 9 months", bestFor: "Network setup, chaincode development, integration, admin console, consortium onboarding" },
+    { type: "Web3 Integration (existing app)", investment: "£8,000 - £25,000", timeline: "3 - 6 weeks", bestFor: "SIWE auth, NFT/token gating, on-chain verification, payment acceptance" },
+    { type: "Blockchain Retainer", investment: "£4,000 - £12,000/mo", timeline: "Ongoing", bestFor: "Contract upgrades, new features, subgraph updates, security monitoring" }
   ],
   industryUseCases: [
-    { name: "DeFi Protocol", description: "Staking and liquidity pool smart contracts on Ethereum. Multi-sig treasury, time-locked upgrades. Slither + Mythril audit. $5M TVL in month 1." },
+    { name: "DeFi Protocol", description: "Staking and liquidity pool smart contracts on Ethereum. Multi-sig treasury, time-locked upgrades. Slither + Mythril audit. £5M TVL in month 1." },
     { name: "NFT Marketplace", description: "Polygon-based marketplace for digital art. ERC-721 with EIP-2981 royalties. Lazy minting, Dutch auctions, creator dashboard. 50,000 items listed in first 30 days." },
     { name: "Tokenised Real Estate", description: "ERC-1400 security token representing fractional real estate ownership. Transfer restrictions for accredited investors. Hyperledger Fabric private network for consortium." },
     { name: "Supply Chain Provenance", description: "Hyperledger Fabric network for pharmaceutical supply chain. Chaincode for batch tracking, temperature monitoring, multi-party visibility. 200+ enterprise nodes." }
@@ -14216,9 +14216,9 @@ const blockchainDevelopmentOverride = {
       heading: "Blockchain Network Selection Guide: Ethereum vs. Polygon vs. Solana vs. Hyperledger",
       body: "",
       items: [
-        "Ethereum (L1): Transaction speed ~15 TPS (mainnet). Transaction cost $1-50+ (gas, variable). Decentralization Highest most validators. Smart contract language Solidity (EVM). DeFi/NFT ecosystem Largest most liquidity. Developer maturity Highest most tooling. Regulatory posture Public, pseudonymous. Best for DeFi, high-value NFTs, maximum security/composability. Clickmasters default for high-value DeFi, flagship NFT projects.",
-        "Polygon (L2): Transaction speed ~7,000 TPS. Transaction cost $0.001-0.1 (very low). Decentralization High Ethereum security. Smart contract language Solidity (EVM-compatible). DeFi/NFT ecosystem Large Ethereum bridge. Developer maturity High Hardhat/Truffle. Regulatory posture Public, pseudonymous. Best for consumer DApps, NFT platforms, cost-sensitive applications. Clickmasters default for most DApps and NFT marketplaces best cost/security balance.",
-        "Solana: Transaction speed ~65,000 TPS. Transaction cost $0.00025 (negligible). Decentralization High 1,900+ validators. Smart contract language Rust / C (programs). DeFi/NFT ecosystem Large and growing. Developer maturity High Anchor framework. Regulatory posture Public, pseudonymous. Best for high-frequency transactions, gaming, consumer apps. Clickmasters default for gaming, real-time apps, consumer scale.",
+        "Ethereum (L1): Transaction speed ~15 TPS (mainnet). Transaction cost £1-50+ (gas, variable). Decentralization Highest most validators. Smart contract language Solidity (EVM). DeFi/NFT ecosystem Largest most liquidity. Developer maturity Highest most tooling. Regulatory posture Public, pseudonymous. Best for DeFi, high-value NFTs, maximum security/composability. Clickmasters default for high-value DeFi, flagship NFT projects.",
+        "Polygon (L2): Transaction speed ~7,000 TPS. Transaction cost £0.001-0.1 (very low). Decentralization High Ethereum security. Smart contract language Solidity (EVM-compatible). DeFi/NFT ecosystem Large Ethereum bridge. Developer maturity High Hardhat/Truffle. Regulatory posture Public, pseudonymous. Best for consumer DApps, NFT platforms, cost-sensitive applications. Clickmasters default for most DApps and NFT marketplaces best cost/security balance.",
+        "Solana: Transaction speed ~65,000 TPS. Transaction cost £0.00025 (negligible). Decentralization High 1,900+ validators. Smart contract language Rust / C (programs). DeFi/NFT ecosystem Large and growing. Developer maturity High Anchor framework. Regulatory posture Public, pseudonymous. Best for high-frequency transactions, gaming, consumer apps. Clickmasters default for gaming, real-time apps, consumer scale.",
         "Hyperledger Fabric: Transaction speed 2,000-20,000 TPS. Transaction cost Near-zero (permissioned). Decentralization None permissioned consortium. Smart contract language Go / JavaScript (chaincode). DeFi/NFT ecosystem Not applicable (private). Developer maturity High IBM-backed. Regulatory posture Private, permissioned, KYC. Best for enterprise consortia, supply chain, trade finance, interbank. Clickmasters default for enterprise, regulated industries, consortium B2B."
       ]
     },
@@ -14226,7 +14226,7 @@ const blockchainDevelopmentOverride = {
       heading: "Smart Contract Security Vulnerability Table",
       body: "",
       items: [
-        "Reentrancy: Attacker drains contract funds by recursively calling withdraw before balance is updated the classic DAO hack pattern ($60M in 2016). Prevention: Checks-Effects-Interactions pattern enforced, ReentrancyGuard (OpenZeppelin) on all value-transferring functions, reentrancy fuzzing in test suite.",
+        "Reentrancy: Attacker drains contract funds by recursively calling withdraw before balance is updated the classic DAO hack pattern (£60M in 2016). Prevention: Checks-Effects-Interactions pattern enforced, ReentrancyGuard (OpenZeppelin) on all value-transferring functions, reentrancy fuzzing in test suite.",
         "Access Control Failure: Unauthorized caller modifies contract state or drains funds because function visibility or role checks are incorrectly implemented. Prevention: Role-based access control (OpenZeppelin AccessControl) on all privileged functions, access control tests for every role boundary, static analysis for missing modifiers.",
         "Integer Overflow/Underflow: Arithmetic wraps around to unexpected values, enabling manipulation of token balances or voting weights. Prevention: Solidity 0.8+ checked arithmetic by default, SafeMath for 0.7- contracts, overflow-specific fuzz tests with edge case inputs.",
         "Flash Loan Attacks: Attacker borrows massive capital within one transaction to manipulate on-chain prices or governance votes, then repays no upfront capital required. Prevention: Time-weighted average price (TWAP) oracles instead of spot prices, governance vote delays, flash loan attack simulations in fork tests.",
@@ -14246,15 +14246,15 @@ const blockchainDevelopmentOverride = {
     },
     {
       question: "Which blockchain should I build on Ethereum, Polygon, or Solana?",
-      answer: "Network selection depends on your use case. Ethereum is the choice for high-value DeFi applications and flagship NFT projects where maximum security, decentralization, and composability with the largest ecosystem justify the higher transaction costs. Polygon is the default for most consumer DApps and NFT platforms where Ethereum security is inherited through the L2 bridge but transaction costs are negligible ($0.001-0.1 per transaction). Solana is best for high-frequency applications (gaming, real-time trading, consumer scale) requiring sub-second finality and minimal transaction costs. For enterprise consortium use cases where participants are known and full public decentralization is not required, Hyperledger Fabric provides privacy, performance, and regulatory clarity that public networks cannot. Clickmasters will assess your specific requirements and recommend the correct network before any development begins."
+      answer: "Network selection depends on your use case. Ethereum is the choice for high-value DeFi applications and flagship NFT projects where maximum security, decentralization, and composability with the largest ecosystem justify the higher transaction costs. Polygon is the default for most consumer DApps and NFT platforms where Ethereum security is inherited through the L2 bridge but transaction costs are negligible (£0.001-0.1 per transaction). Solana is best for high-frequency applications (gaming, real-time trading, consumer scale) requiring sub-second finality and minimal transaction costs. For enterprise consortium use cases where participants are known and full public decentralization is not required, Hyperledger Fabric provides privacy, performance, and regulatory clarity that public networks cannot. Clickmasters will assess your specific requirements and recommend the correct network before any development begins."
     },
     {
       question: "How much does smart contract development cost?",
-      answer: "Smart contract development costs range from $10,000 for a simple ERC-20 token or basic functionality contract to $40,000 for a complex DeFi protocol or multi-contract system with governance. A security audit for an existing contract costs $8,000-25,000 depending on contract complexity. A full DApp (smart contracts + frontend + The Graph integration) costs $20,000-60,000. An NFT marketplace costs $25,000-70,000. An enterprise Hyperledger implementation costs $40,000-120,000. All smart contract engagements at Clickmasters include security-first development practices test coverage, static analysis, and gas optimization as standard."
+      answer: "Smart contract development costs range from £10,000 for a simple ERC-20 token or basic functionality contract to £40,000 for a complex DeFi protocol or multi-contract system with governance. A security audit for an existing contract costs £8,000-25,000 depending on contract complexity. A full DApp (smart contracts + frontend + The Graph integration) costs £20,000-60,000. An NFT marketplace costs £25,000-70,000. An enterprise Hyperledger implementation costs £40,000-120,000. All smart contract engagements at Clickmasters include security-first development practices test coverage, static analysis, and gas optimization as standard."
     },
     {
       question: "Why do smart contracts need security audits?",
-      answer: "Smart contracts are immutable once deployed on a public blockchain a security vulnerability cannot be patched with an update. Funds held by a vulnerable contract can be drained by an attacker in a single transaction, with no recourse or recovery possible. The smart contract exploit ecosystem is sophisticated: automated bots continuously scan deployed contracts for known vulnerability patterns and attack within seconds of finding an exploitable target. A security audit before mainnet deployment identifies vulnerabilities including reentrancy (recursive callback before balance update), access control failures (unauthorized function calls), integer overflow, flash loan attack vectors, price oracle manipulation, and signature replay the vulnerability classes responsible for the majority of the $3.8B lost to exploits in 2022. For any contract holding significant value or serving a public audience, a security audit is not a premium option it is a prerequisite for responsible deployment."
+      answer: "Smart contracts are immutable once deployed on a public blockchain a security vulnerability cannot be patched with an update. Funds held by a vulnerable contract can be drained by an attacker in a single transaction, with no recourse or recovery possible. The smart contract exploit ecosystem is sophisticated: automated bots continuously scan deployed contracts for known vulnerability patterns and attack within seconds of finding an exploitable target. A security audit before mainnet deployment identifies vulnerabilities including reentrancy (recursive callback before balance update), access control failures (unauthorized function calls), integer overflow, flash loan attack vectors, price oracle manipulation, and signature replay the vulnerability classes responsible for the majority of the £3.8B lost to exploits in 2022. For any contract holding significant value or serving a public audience, a security audit is not a premium option it is a prerequisite for responsible deployment."
     },
     {
       question: "What is the difference between a public blockchain and enterprise blockchain?",
@@ -14300,7 +14300,7 @@ const blockchainDevelopmentOverride = {
   definedTerms: [
     { name: "Smart Contract", description: "Self-executing code on a blockchain that automatically enforces agreement terms without an intermediary." },
     { name: "DApp", description: "Decentralized Application web application whose backend logic runs on a blockchain via smart contracts." },
-    { name: "Reentrancy", description: "Smart contract vulnerability where attacker recursively calls a function before state updates drained $60M from DAO in 2016." },
+    { name: "Reentrancy", description: "Smart contract vulnerability where attacker recursively calls a function before state updates drained £60M from DAO in 2016." },
     { name: "ERC-20", description: "Ethereum token standard for fungible tokens each token is identical and interchangeable (like currency)." },
     { name: "ERC-721", description: "Ethereum token standard for non-fungible tokens (NFTs) each token has a unique ID representing distinct digital ownership." },
     { name: "ERC-1155", description: "Multi-token standard single contract can hold both fungible and non-fungible tokens, enabling batch operations." },
@@ -14344,7 +14344,7 @@ const smartContractDevelopmentOverride = {
     { feature: "ERC-20/721/1155 Distinction", description: 'Fungible vs non-fungible vs multi-token clear explanation with use cases | Basic: "Tokens" (no specificity)' },
     { feature: "Foundry Fuzzing Named", description: "Property-based invariant tests, thousands of random inputs to find unexpected behaviour | Basic: Simple unit tests only" },
     { feature: "UUPS vs Transparent Proxy", description: 'Both upgrade patterns explained storage layout safety, initialiser pattern, timelock | Basic: "Upgradeable" (no implementation detail)' },
-    { feature: "DAO Hack Reentrancy Reference", description: '$60M DAO hack (2016) cited as example specific, credible | Basic: "Reentrancy" (no context)' }
+    { feature: "DAO Hack Reentrancy Reference", description: '£60M DAO hack (2016) cited as example specific, credible | Basic: "Reentrancy" (no context)' }
   ],
   processPhases: [
     { phase: "Phase 1", title: "Contract Architecture Review", timeline: "Week 1-2", text: "Use case analysis, pattern selection (single vs proxy vs diamond), security considerations, gas estimate, upgrade planning. Deliverable: Contract Architecture + Gas Estimate." },
@@ -14362,17 +14362,17 @@ const smartContractDevelopmentOverride = {
     { layer: "Deployment", technologies: "Foundry Cast, Hardhat Deploy, deterministic deployment (same address across networks), multi-sig (Safe)" }
   ],
   pricingTiers: [
-    { type: "Contract Architecture Review", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Use case analysis, pattern selection, security considerations, gas estimate" },
-    { type: "ERC-20 Token Contract", investment: "$5,000 - $12,000", timeline: "2 - 3 weeks", bestFor: "Standard token + vesting + governance extension, Hardhat tests, audit" },
-    { type: "ERC-721 NFT Contract", investment: "$5,000 - $12,000", timeline: "2 - 3 weeks", bestFor: "NFT + metadata + ERC-2981 royalties + access control, tests, audit" },
-    { type: "ERC-1155 Multi-Token", investment: "$6,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Multi-token standard, batch mint/transfer, metadata, tests, audit" },
-    { type: "DeFi Protocol (Staking)", investment: "$10,000 - $28,000", timeline: "3 - 6 weeks", bestFor: "Staking + rewards distribution + lockup periods, fuzz tests, audit" },
-    { type: "Custom Business Logic Contract", investment: "$8,000 - $22,000", timeline: "2 - 5 weeks", bestFor: "Custom Solidity, full test coverage, gas optimisation, Slither + Mythril" },
-    { type: "Upgradeable Contract System", investment: "$10,000 - $28,000", timeline: "3 - 6 weeks", bestFor: "UUPS proxy, storage layout validation, timelock, upgrade tests" },
-    { type: "Smart Contract Audit", investment: "$5,000 - $15,000", timeline: "2 - 3 weeks", bestFor: "Manual review + Slither + Mythril + findings report + remediation support" }
+    { type: "Contract Architecture Review", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Use case analysis, pattern selection, security considerations, gas estimate" },
+    { type: "ERC-20 Token Contract", investment: "£5,000 - £12,000", timeline: "2 - 3 weeks", bestFor: "Standard token + vesting + governance extension, Hardhat tests, audit" },
+    { type: "ERC-721 NFT Contract", investment: "£5,000 - £12,000", timeline: "2 - 3 weeks", bestFor: "NFT + metadata + ERC-2981 royalties + access control, tests, audit" },
+    { type: "ERC-1155 Multi-Token", investment: "£6,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Multi-token standard, batch mint/transfer, metadata, tests, audit" },
+    { type: "DeFi Protocol (Staking)", investment: "£10,000 - £28,000", timeline: "3 - 6 weeks", bestFor: "Staking + rewards distribution + lockup periods, fuzz tests, audit" },
+    { type: "Custom Business Logic Contract", investment: "£8,000 - £22,000", timeline: "2 - 5 weeks", bestFor: "Custom Solidity, full test coverage, gas optimisation, Slither + Mythril" },
+    { type: "Upgradeable Contract System", investment: "£10,000 - £28,000", timeline: "3 - 6 weeks", bestFor: "UUPS proxy, storage layout validation, timelock, upgrade tests" },
+    { type: "Smart Contract Audit", investment: "£5,000 - £15,000", timeline: "2 - 3 weeks", bestFor: "Manual review + Slither + Mythril + findings report + remediation support" }
   ],
   industryUseCases: [
-    { name: "DeFi Staking Protocol", description: "ERC-20 staking contract with time-locked deposits, reward distribution, emergency withdrawal. 3 months of Foundry fuzz tests. 99% gas optimisation vs baseline. $2M TVL deployed." },
+    { name: "DeFi Staking Protocol", description: "ERC-20 staking contract with time-locked deposits, reward distribution, emergency withdrawal. 3 months of Foundry fuzz tests. 99% gas optimisation vs baseline. £2M TVL deployed." },
     { name: "NFT Collection Launch", description: "ERC-721 with ERC-2981 royalties. Lazy minting (gas-free until purchase). Reveal mechanism (URI updates after sale). 10,000 NFTs minted in 48 hours." },
     { name: "DAO Governance Token", description: "ERC-20 with OpenZeppelin Governor. Vesting contract for team (4-year cliff). Snapshot integration for gas-free voting. Deployed to Polygon." },
     { name: "Real-World Asset Tokenisation", description: "ERC-1400 security token for real estate. Transfer restrictions (accredited investors only). Hyperledger Fabric private network for consortium." }
@@ -14385,7 +14385,7 @@ const smartContractDevelopmentOverride = {
     },
     {
       heading: "Gas Optimisation Techniques",
-      body: "Every operation in a smart contract costs gas a fee paid to the Ethereum network in ETH to compensate validators for processing the transaction. Gas costs directly affect user experience: a poorly optimised smart contract might cost a user $50 in gas for an operation that a well-optimised contract performs for $5. Gas optimisation techniques: storage packing (storing multiple small values in a single 32-byte slot costs one SSTORE operation instead of multiple), using events instead of storage for historical data (emitting an event costs 375 gas per byte; storing 32 bytes to state costs 20,000 gas emit events for data that does not need to be read by on-chain logic), calldata instead of memory for function parameters (calldata is read-only and significantly cheaper), and unchecked arithmetic in loops where overflow is provably impossible. Clickmasters measures gas costs in tests and optimises the highest-cost operations before deployment.",
+      body: "Every operation in a smart contract costs gas a fee paid to the Ethereum network in ETH to compensate validators for processing the transaction. Gas costs directly affect user experience: a poorly optimised smart contract might cost a user £50 in gas for an operation that a well-optimised contract performs for £5. Gas optimisation techniques: storage packing (storing multiple small values in a single 32-byte slot costs one SSTORE operation instead of multiple), using events instead of storage for historical data (emitting an event costs 375 gas per byte; storing 32 bytes to state costs 20,000 gas emit events for data that does not need to be read by on-chain logic), calldata instead of memory for function parameters (calldata is read-only and significantly cheaper), and unchecked arithmetic in loops where overflow is provably impossible. Clickmasters measures gas costs in tests and optimises the highest-cost operations before deployment.",
       items: []
     }
   ],
@@ -14400,11 +14400,11 @@ const smartContractDevelopmentOverride = {
     },
     {
       question: "What is gas optimisation and why does it matter?",
-      answer: "Every operation in a smart contract costs gas a fee paid to the Ethereum network in ETH to compensate validators for processing the transaction. Gas costs directly affect the user experience: a poorly optimised smart contract might cost a user $50 in gas for an operation that a well-optimised contract performs for $5. Gas optimisation techniques reduce the gas cost of contract operations: storage packing (storing multiple small values in a single 32-byte slot costs one SSTORE operation instead of multiple), using events instead of storage for historical data (emitting an event costs 375 gas per byte; storing 32 bytes to state costs 20,000 gas emit events for data that does not need to be read by on-chain logic), and using calldata instead of memory for function parameters that are not modified (calldata is read-only and significantly cheaper). Clickmasters measures gas costs in tests and optimises the highest-cost operations before deployment."
+      answer: "Every operation in a smart contract costs gas a fee paid to the Ethereum network in ETH to compensate validators for processing the transaction. Gas costs directly affect the user experience: a poorly optimised smart contract might cost a user £50 in gas for an operation that a well-optimised contract performs for £5. Gas optimisation techniques reduce the gas cost of contract operations: storage packing (storing multiple small values in a single 32-byte slot costs one SSTORE operation instead of multiple), using events instead of storage for historical data (emitting an event costs 375 gas per byte; storing 32 bytes to state costs 20,000 gas emit events for data that does not need to be read by on-chain logic), and using calldata instead of memory for function parameters that are not modified (calldata is read-only and significantly cheaper). Clickmasters measures gas costs in tests and optimises the highest-cost operations before deployment."
     },
     {
       question: "What is a smart contract audit and do I need one?",
-      answer: "A smart contract audit is a security review of Solidity code by an expert combining automated analysis (Slither, Mythril) with manual review to identify vulnerabilities before deployment. Once a smart contract is deployed and holds funds or controls assets, bugs cannot be fixed without a migration or a pre-designed upgrade mechanism. A single reentrancy bug (the type that enabled the 2016 DAO hack $60M lost) can drain all funds from a contract. Clickmasters strongly recommends security analysis on every contract that will hold or control value, and a full third-party audit for contracts controlling significant value (>$100K). Clickmasters performs pre-audit security analysis (Slither + Mythril + manual review) as a standard step before client deployment, and can recommend specialist smart contract audit firms (Trail of Bits, OpenZeppelin, ConsenSys Diligence, Certik) for high-value contracts requiring a formal third-party audit report."
+      answer: "A smart contract audit is a security review of Solidity code by an expert combining automated analysis (Slither, Mythril) with manual review to identify vulnerabilities before deployment. Once a smart contract is deployed and holds funds or controls assets, bugs cannot be fixed without a migration or a pre-designed upgrade mechanism. A single reentrancy bug (the type that enabled the 2016 DAO hack £60M lost) can drain all funds from a contract. Clickmasters strongly recommends security analysis on every contract that will hold or control value, and a full third-party audit for contracts controlling significant value (>£100K). Clickmasters performs pre-audit security analysis (Slither + Mythril + manual review) as a standard step before client deployment, and can recommend specialist smart contract audit firms (Trail of Bits, OpenZeppelin, ConsenSys Diligence, Certik) for high-value contracts requiring a formal third-party audit report."
     }
   ],
   testimonial: {
@@ -14414,7 +14414,7 @@ const smartContractDevelopmentOverride = {
   },
   caseStudy: {
     title: "DeFi Staking Protocol",
-    description: "Built ERC-20 staking contract with time-locked deposits, reward distribution, emergency withdrawal. Foundry fuzzing (invariant tests). Gas optimisation: storage packing, calldata optimisation. Slither + Mythril audit. $2M TVL deployed.",
+    description: "Built ERC-20 staking contract with time-locked deposits, reward distribution, emergency withdrawal. Foundry fuzzing (invariant tests). Gas optimisation: storage packing, calldata optimisation. Slither + Mythril audit. £2M TVL deployed.",
     slug: "defi-staking",
     badge: "Smart Contract"
   },
@@ -14435,7 +14435,7 @@ const smartContractDevelopmentOverride = {
   definedTerms: [
     { name: "Solidity", description: "Primary smart contract language for EVM-compatible blockchains (Ethereum, Polygon, BNB Chain, Avalanche)." },
     { name: "Foundry", description: "Solidity-native testing framework fuzzing, invariant tests, mainnet fork tests, gas optimisation." },
-    { name: "Reentrancy", description: "Smart contract vulnerability where attacker recursively calls function before state update $60M DAO hack (2016)." },
+    { name: "Reentrancy", description: "Smart contract vulnerability where attacker recursively calls function before state update £60M DAO hack (2016)." },
     { name: "Gas", description: "Unit of computation cost on Ethereum each opcode costs gas paid in ETH to validators." },
     { name: "Slither", description: "Trail of Bits static analysis framework for Solidity detects 70+ vulnerability patterns." }
   ]
@@ -14496,13 +14496,13 @@ const dappDevelopmentOverride = {
     { layer: "Node Access", technologies: "Alchemy (NFT API, Token API, Transfers API), Infura, QuickNode, Public RPC" }
   ],
   pricingTiers: [
-    { type: "DApp Architecture Review", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Stack selection, wallet integration plan, data indexing strategy, UX flow" },
-    { type: "Wallet Integration", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "RainbowKit + WalletConnect + MetaMask + account abstraction option" },
-    { type: "Contract Read/Write Frontend", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "wagmi hooks, transaction lifecycle, simulate-before-send, error handling" },
-    { type: "The Graph Subgraph", investment: "$5,000 - $12,000", timeline: "2 - 3 weeks", bestFor: "Subgraph schema, mappings, deployment, GraphQL queries, subscriptions" },
-    { type: "Full DApp (Frontend + Integration)", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "React + wagmi + wallets + subgraph + IPFS + testnet + mainnet" },
-    { type: "DeFi Protocol Frontend", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "Swap, liquidity, staking UI + real-time prices + TVL + user portfolio" },
-    { type: "DApp Maintenance Retainer", investment: "$2,500 - $6,000/mo", timeline: "Ongoing", bestFor: "Dependency updates, network upgrades, new contract integrations" }
+    { type: "DApp Architecture Review", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Stack selection, wallet integration plan, data indexing strategy, UX flow" },
+    { type: "Wallet Integration", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "RainbowKit + WalletConnect + MetaMask + account abstraction option" },
+    { type: "Contract Read/Write Frontend", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "wagmi hooks, transaction lifecycle, simulate-before-send, error handling" },
+    { type: "The Graph Subgraph", investment: "£5,000 - £12,000", timeline: "2 - 3 weeks", bestFor: "Subgraph schema, mappings, deployment, GraphQL queries, subscriptions" },
+    { type: "Full DApp (Frontend + Integration)", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "React + wagmi + wallets + subgraph + IPFS + testnet + mainnet" },
+    { type: "DeFi Protocol Frontend", investment: "£15,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "Swap, liquidity, staking UI + real-time prices + TVL + user portfolio" },
+    { type: "DApp Maintenance Retainer", investment: "£2,500 - £6,000/mo", timeline: "Ongoing", bestFor: "Dependency updates, network upgrades, new contract integrations" }
   ],
   industryUseCases: [
     { name: "DeFi Dashboard", description: "Uniswap-style swap interface + liquidity pools. Wallet connection (RainbowKit), real-time prices (The Graph), transaction simulation (viem simulateContract). Multi-step: approve \xE2\u2020\u2019 swap." },
@@ -14628,13 +14628,13 @@ const web3DevelopmentOverride = {
     { layer: "Frontend", technologies: "React + Next.js, wagmi (wallet connection), viem (contract calls), TypeScript" }
   ],
   pricingTiers: [
-    { type: "Web3 Integration Discovery", investment: "$2,500 - $6,000", timeline: "1 week", bestFor: "Use case analysis, Web3 approach, node provider selection, architecture plan" },
-    { type: "SIWE Authentication", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "EIP-4361, NextAuth.js, ENS resolution, session management, combined auth" },
-    { type: "Token-Gated Access", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "ERC-20/721/1155 gates, server-side verification, snapshot support" },
-    { type: "DAO Governance Interface", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "Proposals + voting + delegation + treasury + Snapshot integration" },
-    { type: "On-Chain Identity Integration", investment: "$5,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "ENS, Lens Protocol, EAS attestations, sybil resistance" },
-    { type: "Full Web3 Integration", investment: "$12,000 - $35,000", timeline: "4 - 8 weeks", bestFor: "Combined: SIWE + gating + DAO + identity + node API + monitoring" },
-    { type: "Web3 Retainer", investment: "$2,500 - $5,000/mo", timeline: "Ongoing", bestFor: "Protocol upgrades, new integrations, dependency updates" }
+    { type: "Web3 Integration Discovery", investment: "£2,500 - £6,000", timeline: "1 week", bestFor: "Use case analysis, Web3 approach, node provider selection, architecture plan" },
+    { type: "SIWE Authentication", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "EIP-4361, NextAuth.js, ENS resolution, session management, combined auth" },
+    { type: "Token-Gated Access", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "ERC-20/721/1155 gates, server-side verification, snapshot support" },
+    { type: "DAO Governance Interface", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "Proposals + voting + delegation + treasury + Snapshot integration" },
+    { type: "On-Chain Identity Integration", investment: "£5,000 - £12,000", timeline: "2 - 4 weeks", bestFor: "ENS, Lens Protocol, EAS attestations, sybil resistance" },
+    { type: "Full Web3 Integration", investment: "£12,000 - £35,000", timeline: "4 - 8 weeks", bestFor: "Combined: SIWE + gating + DAO + identity + node API + monitoring" },
+    { type: "Web3 Retainer", investment: "£2,500 - £5,000/mo", timeline: "Ongoing", bestFor: "Protocol upgrades, new integrations, dependency updates" }
   ],
   industryUseCases: [
     { name: "Token-Gated Community Platform", description: "SIWE authentication + ERC-721 ownership gate. Content platform restricted to NFT holders. Server-side verification (Next.js middleware). Combined auth for non-wallet users." },
@@ -14762,13 +14762,13 @@ const cryptoWalletDevelopmentOverride = {
     { layer: "Compliance", technologies: "Chainalysis (transaction monitoring), Elliptic, Onfido (KYC), Jumio" }
   ],
   pricingTiers: [
-    { type: "Wallet Architecture Design", investment: "$4,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Custody model, key management approach, compliance requirements, technical spec" },
-    { type: "Embedded Wallet (Privy/Alchemy)", investment: "$8,000 - $22,000", timeline: "3 - 6 weeks", bestFor: "SDK integration, social login, multi-chain, portfolio display, transaction history" },
-    { type: "Custodial Wallet Backend", investment: "$15,000 - $45,000", timeline: "5 - 10 weeks", bestFor: "HSM/MPC key management, approval workflows, transaction monitoring" },
-    { type: "Multi-Chain Portfolio Display", investment: "$5,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Balance aggregation, transaction history, token prices, chain switching" },
-    { type: "Transaction Management", investment: "$5,000 - $12,000", timeline: "2 - 4 weeks", bestFor: "Nonce management, EIP-1559 gas, broadcasting, status tracking" },
-    { type: "Hardware Wallet Integration", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "Ledger + Trezor connect, transaction signing flow, device detection" },
-    { type: "Full Wallet Platform", investment: "$25,000 - $80,000", timeline: "6 - 12 weeks", bestFor: "Custodial + embedded + multi-chain + compliance + mobile app" }
+    { type: "Wallet Architecture Design", investment: "£4,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Custody model, key management approach, compliance requirements, technical spec" },
+    { type: "Embedded Wallet (Privy/Alchemy)", investment: "£8,000 - £22,000", timeline: "3 - 6 weeks", bestFor: "SDK integration, social login, multi-chain, portfolio display, transaction history" },
+    { type: "Custodial Wallet Backend", investment: "£15,000 - £45,000", timeline: "5 - 10 weeks", bestFor: "HSM/MPC key management, approval workflows, transaction monitoring" },
+    { type: "Multi-Chain Portfolio Display", investment: "£5,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Balance aggregation, transaction history, token prices, chain switching" },
+    { type: "Transaction Management", investment: "£5,000 - £12,000", timeline: "2 - 4 weeks", bestFor: "Nonce management, EIP-1559 gas, broadcasting, status tracking" },
+    { type: "Hardware Wallet Integration", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "Ledger + Trezor connect, transaction signing flow, device detection" },
+    { type: "Full Wallet Platform", investment: "£25,000 - £80,000", timeline: "6 - 12 weeks", bestFor: "Custodial + embedded + multi-chain + compliance + mobile app" }
   ],
   industryUseCases: [
     { name: "Exchange Custodial Wallet", description: "Centralised exchange backend: HSM key management (AWS CloudHSM), multi-sig approval for large withdrawals, KYC/AML integration (Onfido), Travel Rule compliance (Chainalysis). Processes 10K+ user withdrawals daily." },
@@ -14808,7 +14808,7 @@ const cryptoWalletDevelopmentOverride = {
     },
     {
       question: "What compliance requirements apply to crypto wallet applications?",
-      answer: "Compliance requirements for crypto wallet applications depend on the jurisdiction and business model. For custodial wallets (where the platform holds keys on behalf of users): KYC/AML (Know Your Customer / Anti-Money Laundering) requirements apply in most jurisdictions user identity verification before allowing transactions above thresholds, transaction monitoring for suspicious patterns, SAR (Suspicious Activity Report) filing obligations. Travel Rule (FATF Recommendation 16): for transactions above $1,000/$3,000 (jurisdiction-dependent) between custodial service providers, the originating VASP must transmit identifying information about the sender and recipient to the receiving VASP. For non-custodial wallets where the platform does not hold keys: less stringent requirements in most jurisdictions, but the regulatory environment is evolving rapidly. Clickmasters integrates compliance tooling (Chainalysis, Elliptic for transaction monitoring; Onfido, Jumio for KYC) but recommends the client obtain specific legal advice for their jurisdiction before launch."
+      answer: "Compliance requirements for crypto wallet applications depend on the jurisdiction and business model. For custodial wallets (where the platform holds keys on behalf of users): KYC/AML (Know Your Customer / Anti-Money Laundering) requirements apply in most jurisdictions user identity verification before allowing transactions above thresholds, transaction monitoring for suspicious patterns, SAR (Suspicious Activity Report) filing obligations. Travel Rule (FATF Recommendation 16): for transactions above £1,000/£3,000 (jurisdiction-dependent) between custodial service providers, the originating VASP must transmit identifying information about the sender and recipient to the receiving VASP. For non-custodial wallets where the platform does not hold keys: less stringent requirements in most jurisdictions, but the regulatory environment is evolving rapidly. Clickmasters integrates compliance tooling (Chainalysis, Elliptic for transaction monitoring; Onfido, Jumio for KYC) but recommends the client obtain specific legal advice for their jurisdiction before launch."
     }
   ],
   testimonial: {
@@ -14898,16 +14898,16 @@ const nftMarketplaceDevelopmentOverride = {
     { layer: "Testing", technologies: "Hardhat (TypeScript tests), Foundry (fuzzing), mainnet fork tests, slash testing (reentrancy, access control)" }
   ],
   pricingTiers: [
-    { type: "NFT Marketplace Discovery", investment: "$3,000 - $7,000", timeline: "1 - 2 weeks", bestFor: "Contract selection, marketplace model, chain selection, legal considerations" },
-    { type: "NFT Collection Contract", investment: "$5,000 - $14,000", timeline: "2 - 3 weeks", bestFor: "ERC-721A + allow list + reveal + ERC-2981 royalties + audit" },
-    { type: "Primary Drop Platform", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "Mint page, allow list UI, batch mint, countdown, reveal, analytics" },
-    { type: "Secondary Marketplace", investment: "$12,000 - $30,000", timeline: "4 - 7 weeks", bestFor: "Listing + fixed price + auction + offers + marketplace fee" },
-    { type: "IPFS Metadata Pipeline", investment: "$3,000 - $8,000", timeline: "1 - 2 weeks", bestFor: "Image upload, metadata generation, IPFS pinning, baseURI management" },
-    { type: "Analytics Dashboard", investment: "$5,000 - $12,000", timeline: "2 - 3 weeks", bestFor: "Floor price, volume, holders, rarity, transaction history" },
-    { type: "Full NFT Platform", investment: "$20,000 - $65,000", timeline: "6 - 12 weeks", bestFor: "Contracts + drop + secondary + IPFS + analytics + audit" }
+    { type: "NFT Marketplace Discovery", investment: "£3,000 - £7,000", timeline: "1 - 2 weeks", bestFor: "Contract selection, marketplace model, chain selection, legal considerations" },
+    { type: "NFT Collection Contract", investment: "£5,000 - £14,000", timeline: "2 - 3 weeks", bestFor: "ERC-721A + allow list + reveal + ERC-2981 royalties + audit" },
+    { type: "Primary Drop Platform", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "Mint page, allow list UI, batch mint, countdown, reveal, analytics" },
+    { type: "Secondary Marketplace", investment: "£12,000 - £30,000", timeline: "4 - 7 weeks", bestFor: "Listing + fixed price + auction + offers + marketplace fee" },
+    { type: "IPFS Metadata Pipeline", investment: "£3,000 - £8,000", timeline: "1 - 2 weeks", bestFor: "Image upload, metadata generation, IPFS pinning, baseURI management" },
+    { type: "Analytics Dashboard", investment: "£5,000 - £12,000", timeline: "2 - 3 weeks", bestFor: "Floor price, volume, holders, rarity, transaction history" },
+    { type: "Full NFT Platform", investment: "£20,000 - £65,000", timeline: "6 - 12 weeks", bestFor: "Contracts + drop + secondary + IPFS + analytics + audit" }
   ],
   industryUseCases: [
-    { name: "PFP Collection Drop", description: "10,000-piece generative profile picture collection on Ethereum. ERC-721A for gas-optimised batch minting. Merkle tree allow list for community presale. Reveal mechanism (24h after mint). $5M primary sales volume." },
+    { name: "PFP Collection Drop", description: "10,000-piece generative profile picture collection on Ethereum. ERC-721A for gas-optimised batch minting. Merkle tree allow list for community presale. Reveal mechanism (24h after mint). £5M primary sales volume." },
     { name: "Artists Platform", description: "Custom marketplace for artists to mint and sell digital art. Lazy minting (creators pay no gas upfront). ERC-2981 royalties (5% to creator on secondary sales). IPFS + Arweave metadata storage. Secondary marketplace with offers." },
     { name: "Gaming NFT Marketplace", description: "ERC-1155 multi-edition contract for in-game items. Primary drops with allow list. Secondary marketplace with fixed price and auctions. Lazy minting for high-quantity items. The Graph for player inventory queries." },
     { name: "Brand Loyalty Program", description: "Polygon-based NFT loyalty program. Primary drops to loyalty members via allow list. Secondary marketplace for trading. ERC-2981 royalties back to brand. Floor price analytics for value tracking." }
@@ -14954,7 +14954,7 @@ const nftMarketplaceDevelopmentOverride = {
   },
   caseStudy: {
     title: "PFP NFT Collection Launch",
-    description: "Built 10,000-piece generative PFP collection on Ethereum. ERC-721A (70% gas reduction), Merkle tree allow list, reveal mechanism (24h after mint). Primary drop platform with mint page, batch mint UI, allow list integration. $5M primary sales volume.",
+    description: "Built 10,000-piece generative PFP collection on Ethereum. ERC-721A (70% gas reduction), Merkle tree allow list, reveal mechanism (24h after mint). Primary drop platform with mint page, batch mint UI, allow list integration. £5M primary sales volume.",
     slug: "nft-collection-launch",
     badge: "NFT Marketplace"
   },
@@ -15034,16 +15034,16 @@ const tokenDevelopmentOverride = {
     { layer: "Compliance", technologies: "Legal guidance required (not automated), Howey Test analysis, MiCA framework, securities law compliance" }
   ],
   pricingTiers: [
-    { type: "Tokenomics Design", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "Supply model, allocation, vesting schedule, utility analysis, tokenomics doc" },
-    { type: "ERC-20 Token Contract", investment: "$5,000 - $12,000", timeline: "2 - 3 weeks", bestFor: "OpenZeppelin ERC-20 + roles + burn/mint + Hardhat tests + audit" },
-    { type: "Vesting Contract", investment: "$4,000 - $10,000", timeline: "2 - 3 weeks", bestFor: "Cliff + linear vesting, batch allocation, revocation option, tests" },
-    { type: "Governance Token + Governor", investment: "$8,000 - $20,000", timeline: "3 - 5 weeks", bestFor: "ERC-20Votes + OpenZeppelin Governor + Timelock + Snapshot" },
-    { type: "Staking Contract", investment: "$6,000 - $16,000", timeline: "2 - 4 weeks", bestFor: "Single/multi-reward staking, lockup periods, compound option, tests" },
-    { type: "LayerZero OFT (Multi-Chain)", investment: "$6,000 - $14,000", timeline: "2 - 4 weeks", bestFor: "Cross-chain token with lock-and-mint bridging on 2+ EVM chains" },
-    { type: "Full Token Launch Package", investment: "$18,000 - $50,000", timeline: "4 - 8 weeks", bestFor: "Tokenomics + ERC-20 + vesting + governance + staking + audit" }
+    { type: "Tokenomics Design", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "Supply model, allocation, vesting schedule, utility analysis, tokenomics doc" },
+    { type: "ERC-20 Token Contract", investment: "£5,000 - £12,000", timeline: "2 - 3 weeks", bestFor: "OpenZeppelin ERC-20 + roles + burn/mint + Hardhat tests + audit" },
+    { type: "Vesting Contract", investment: "£4,000 - £10,000", timeline: "2 - 3 weeks", bestFor: "Cliff + linear vesting, batch allocation, revocation option, tests" },
+    { type: "Governance Token + Governor", investment: "£8,000 - £20,000", timeline: "3 - 5 weeks", bestFor: "ERC-20Votes + OpenZeppelin Governor + Timelock + Snapshot" },
+    { type: "Staking Contract", investment: "£6,000 - £16,000", timeline: "2 - 4 weeks", bestFor: "Single/multi-reward staking, lockup periods, compound option, tests" },
+    { type: "LayerZero OFT (Multi-Chain)", investment: "£6,000 - £14,000", timeline: "2 - 4 weeks", bestFor: "Cross-chain token with lock-and-mint bridging on 2+ EVM chains" },
+    { type: "Full Token Launch Package", investment: "£18,000 - £50,000", timeline: "4 - 8 weeks", bestFor: "Tokenomics + ERC-20 + vesting + governance + staking + audit" }
   ],
   industryUseCases: [
-    { name: "DAO Governance Token", description: "ERC-20Votes token with delegation. OpenZeppelin Governor (7-day voting period, 4% quorum). Timelock Controller (48-hour delay). Snapshot for off-chain signalling. $50M treasury managed via governance." },
+    { name: "DAO Governance Token", description: "ERC-20Votes token with delegation. OpenZeppelin Governor (7-day voting period, 4% quorum). Timelock Controller (48-hour delay). Snapshot for off-chain signalling. £50M treasury managed via governance." },
     { name: "DeFi Protocol Token", description: "ERC-20 with mint cap (10M total). Vesting contracts: team (4-year with 1-year cliff), investors (2-year with 6-month cliff). Staking contract (earn protocol fees). Liquidity mining rewards distribution." },
     { name: "Cross-Chain Utility Token", description: "LayerZero OFT token deployed on Ethereum, Polygon, and BNB Chain. Lock-and-mint bridging (canonical supply on Ethereum, wrapped on other chains). Single token contract across all chains." },
     { name: "NFT Ecosystem Token", description: "ERC-20 utility token for NFT platform. Staking NFT holders earn tokens. Tokens used for minting discounts, governance voting on treasury allocation, and marketplace fee reduction." }

@@ -15,27 +15,38 @@ export const siteConfig = {
   },
 };
 
+function withBrandSuffix(title) {
+  const cleaned = String(title || '')
+    .replace(/\s*\|\s*Clickmasters\s*$/i, '')
+    .replace(/\s*\|\s*ClickMasters\s*$/i, '')
+    .trim();
+  return cleaned ? `${cleaned} | Clickmasters` : 'Clickmasters';
+}
+
 export const metadataConfig = {
-  serviceDetail: (title, description, slug) => ({
-    title: `${title} | Clickmasters`,
-    description: description,
-    openGraph: {
-      title: `${title} | Clickmasters`,
+  serviceDetail: (title, description, slug) => {
+    const branded = withBrandSuffix(title);
+    return {
+      title: branded,
       description: description,
-      url: `${siteConfig.url}/${slug}`,
-      siteName: siteConfig.name,
-      locale: 'en_US',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: `${title} | Clickmasters`,
-      description: description,
-    },
-    alternates: {
-      canonical: `${siteConfig.url}/${slug}`,
-    },
-  }),
+      openGraph: {
+        title: branded,
+        description: description,
+        url: `${siteConfig.url}/${slug}`,
+        siteName: siteConfig.name,
+        locale: 'en_GB',
+        type: 'website',
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: branded,
+        description: description,
+      },
+      alternates: {
+        canonical: `${siteConfig.url}/${slug}`,
+      },
+    };
+  },
 };
 
 function toAbsoluteUrl(url) {
