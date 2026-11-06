@@ -9726,19 +9726,45 @@ export function getCaseStudyBySlug(slug) {
   return caseStudies.find(cs => cs.slug === slug) || null;
 }
 
+function hashCaseStudyKey(value) {
+  let hash = 0;
+  const input = String(value || '');
+  for (let i = 0; i < input.length; i += 1) {
+    hash = (hash * 31 + input.charCodeAt(i)) >>> 0;
+  }
+  return hash;
+}
+
+function rotateCaseStudySlice(list, start, limit) {
+  if (!list.length || limit <= 0) return [];
+  const out = [];
+  const offset = ((start % list.length) + list.length) % list.length;
+  for (let i = 0; i < list.length && out.length < limit; i += 1) {
+    out.push(list[(offset + i) % list.length]);
+  }
+  return out;
+}
+
 export function getRelatedCaseStudies(slug, count = 3) {
   const current = getCaseStudyBySlug(slug);
   if (!current) return [];
   const currentSector = current.sector?.split('/')[0]?.trim();
-  const sameSector = caseStudies.filter(
-    (cs) => cs.slug !== slug && cs.sector?.split('/')[0]?.trim() === currentSector
+  const sectorAll = caseStudies.filter(
+    (cs) => cs.sector?.split('/')[0]?.trim() === currentSector
   );
-  if (sameSector.length >= count) return sameSector.slice(0, count);
+  const idx = Math.max(0, sectorAll.findIndex((cs) => cs.slug === slug));
 
-  // Fill remaining slots from other sectors so every detail page has inlinks
-  const used = new Set([slug, ...sameSector.map((cs) => cs.slug)]);
+  // Circulant next-N links within the sector so every study receives peer inlinks.
+  const related = [];
+  for (let step = 1; step < sectorAll.length && related.length < count; step += 1) {
+    related.push(sectorAll[(idx + step) % sectorAll.length]);
+  }
+  if (related.length >= count) return related;
+
+  const used = new Set([slug, ...related.map((cs) => cs.slug)]);
   const fillers = caseStudies.filter((cs) => !used.has(cs.slug));
-  return [...sameSector, ...fillers].slice(0, count);
+  const fillStart = hashCaseStudyKey(`${slug}:fill`);
+  return [...related, ...rotateCaseStudySlice(fillers, fillStart, count - related.length)];
 }
 
 export function getSectorsMeta() {

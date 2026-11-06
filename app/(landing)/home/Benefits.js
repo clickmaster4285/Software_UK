@@ -14,7 +14,7 @@ import Image from 'next/image';
 
 const benefits = [
   {
-    stat: "1,860+",
+    stat: "200+",
     label: "Projects Delivered",
     title: "Business-First Thinking",
     description: "We start with what the software needs to achieve before deciding how it should be built.",
@@ -22,8 +22,8 @@ const benefits = [
     size: "large"
   },
   {
-    stat: "3,500+",
-    label: "Happy Clients",
+    stat: "50+",
+    label: "Clients Served",
     title: "Built Around Your Requirements",
     description: "Every project has different users, objectives and technical needs. We shape the solution around them.",
     icon: Users,
@@ -139,9 +139,10 @@ export default function Benefits() {
               <Image
                 src="/landing/high-performace.webp"
                 alt="High Performance"
-                fill
+                width={640}
+                height={640}
                 sizes="(max-width: 1024px) 0vw, 640px"
-                className="object-contain"
+                className="h-full w-full object-contain"
               />
             </div>
           </motion.div>

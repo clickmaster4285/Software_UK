@@ -53,10 +53,11 @@ export default function Pricing() {
          >
             <Image
                src="/landing/pricing_1.avif"
-               alt=""
-               fill
+               alt="Clickmasters product and engineering collaboration"
+               width={320}
+               height={320}
                sizes="320px"
-               className="object-cover"
+               className="h-full w-full object-cover"
             />
          </motion.div>
 
@@ -73,10 +74,11 @@ export default function Pricing() {
          >
             <Image
                src="/landing/pricing_2.jpg"
-               alt=""
-               fill
+               alt="Clickmasters team reviewing software delivery plans"
+               width={384}
+               height={384}
                sizes="384px"
-               className="object-cover"
+               className="h-full w-full object-cover"
             />
          </motion.div>
 
@@ -160,7 +162,7 @@ export default function Pricing() {
 
                            <h3 className="text-3xl md:text-5xl font-heading font-bold text-primary mb-12 leading-[1.1] tracking-tighter">
                               Everything from <br />
-                              <span className="text-accent underline decoration-accent/20 underline-offset-8">€50 to €1000+</span>
+                              <span className="text-accent underline decoration-accent/20 underline-offset-8">£50 to £1,000+</span>
                            </h3>
 
                            <div className="space-y-10 relative">

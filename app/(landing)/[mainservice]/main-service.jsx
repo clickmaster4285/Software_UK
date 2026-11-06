@@ -25,6 +25,7 @@ const AppsSection = dynamic(() =>
     const C = mod.AppsSection; const W = (p) => <C {...p} />; W.displayName = 'AppsSection'; return W;
   }), { ssr: true }
 );
+const RelatedCaseStudies = dynamic(() => import('@/components/landing/main-service/RelatedCaseStudies'), { ssr: true });
 const IndustriesSection = dynamic(() =>
   import('@/components/landing/main-service/industries-section').then(mod => {
     const C = mod.IndustriesSection; const W = (p) => <C {...p} />; W.displayName = 'IndustriesSection'; return W;
@@ -155,6 +156,14 @@ export default function ServiceClient({ serviceData }) {
       />
 
       <div className="bg-surface">
+        <RelatedCaseStudies
+          serviceName={serviceData?.title}
+          serviceSlug={serviceData?.slug}
+          limit={5}
+        />
+      </div>
+
+      <div className="bg-background">
         <AppsSection />
       </div>
 

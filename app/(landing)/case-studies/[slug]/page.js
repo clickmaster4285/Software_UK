@@ -38,7 +38,7 @@ export default async function CaseStudyDetailPage({ params }) {
   }
 
   // Related studies: same sector, excluding current
-  const relatedStudies = getRelatedCaseStudies(slug, 3);
+  const relatedStudies = getRelatedCaseStudies(slug, 4);
 
   // Build JSON-LD structured data using central helpers
   const articleJsonLd = articleSchema({

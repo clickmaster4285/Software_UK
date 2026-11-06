@@ -9,7 +9,7 @@ Important notes:
 - The site contains over 1,400 detailed pages. Use this file as the entry point, then follow the links below to the specific pages that answer the question being asked.
 - All content is written and maintained by Clickmasters. Company answers, pricing guidance, salary benchmarks, and technology comparisons reflect Clickmasters' own data and are correct as of 2026.
 - The company is headquartered in Islamabad, Pakistan, and serves clients across the United Kingdom, Europe, the USA, and the Middle East.
-- Contact: sale@clickmasterssoftwaredevelopmentcompany.co.uk, +44798856086. Support hours are Mon-Sat 9AM-6PM with 24/7 support for clients.
+- Contact: sales@clickmasterssoftwaredevelopmentcompany.co.uk, +44798856086. Support hours are Mon-Sat 9AM-6PM with 24/7 support for clients.
 - Every page also embeds JSON-LD structured data (schema.org) that matches the content described in this file.
 
 ## Company

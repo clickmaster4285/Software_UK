@@ -102,10 +102,10 @@ export default function FAQ() {
               <span className="text-white/60 font-body text-sm">
                 Or email us at{" "}
                 <a
-                  href="mailto:sale@clickmasterssoftwaredevelopmentcompany.co.uk"
+                  href="mailto:sales@clickmasterssoftwaredevelopmentcompany.co.uk"
                   className="text-white/80 hover:text-accent transition-colors underline-offset-2 hover:underline"
                 >
-                  sale@clickmasterssoftwaredevelopmentcompany.co.uk
+                  sales@clickmasterssoftwaredevelopmentcompany.co.uk
                 </a>
               </span>
             </div>

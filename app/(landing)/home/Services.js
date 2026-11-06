@@ -196,9 +196,10 @@ function ServiceCard({ service, index }) {
                 <Image
                   src={service.image}
                   alt={service.title}
-                  fill
+                  width={224}
+                  height={224}
                   sizes="(max-width: 768px) 100vw, 224px"
-                  className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] "
+                  className="h-full w-full object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] "
                 />
               </div>
             </div>

@@ -148,9 +148,9 @@ export default function Footer() {
                   <Phone className="w-4 h-4 text-accent shrink-0" />
                   <span>+44 (7988) 56 086</span>
                 </li>
-                <Link href="mailto:sale@clickmasterssoftwaredevelopmentcompany.co.uk" className="flex items-center gap-3 text-white/60 text-sm font-body hover:text-accent transition-colors cursor-pointer">
+                <Link href="mailto:sales@clickmasterssoftwaredevelopmentcompany.co.uk" className="flex items-center gap-3 text-white/60 text-sm font-body hover:text-accent transition-colors cursor-pointer">
                   <Mail className="w-4 h-4 text-accent shrink-0" />
-                  <span>sale@clickmasterssoftwaredevelopmentcompany.co.uk</span>
+                  <span>sales@clickmasterssoftwaredevelopmentcompany.co.uk</span>
                 </Link>
               </ul>
 

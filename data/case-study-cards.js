@@ -4384,6 +4384,31 @@ export const caseStudyCards = [
   }
 ];
 
+const STOP_TOKENS = new Set([
+  'and', 'the', 'for', 'with', 'services', 'service', 'company', 'development',
+  'software', 'solutions', 'solution', 'custom', 'app', 'apps', 'application',
+  'applications', 'platform', 'systems', 'system',
+]);
+
+function hashString(value) {
+  let hash = 0;
+  const input = String(value || '');
+  for (let i = 0; i < input.length; i += 1) {
+    hash = (hash * 31 + input.charCodeAt(i)) >>> 0;
+  }
+  return hash;
+}
+
+function rotateSlice(list, start, limit) {
+  if (!list.length || limit <= 0) return [];
+  const out = [];
+  const offset = ((start % list.length) + list.length) % list.length;
+  for (let i = 0; i < list.length && out.length < limit; i += 1) {
+    out.push(list[(offset + i) % list.length]);
+  }
+  return out;
+}
+
 export function getFeaturedCaseStudyCards(count = 6) {
   const preferred = ['FinTech', 'HealthTech', 'GovTech', 'EdTech', 'PropTech', 'eCommerce'];
   const picked = [];
@@ -4405,15 +4430,55 @@ export function getFeaturedCaseStudyCards(count = 6) {
   return picked;
 }
 
-export function filterCaseStudyCardsForService(serviceName, limit = 6) {
-  if (!serviceName) return caseStudyCards.slice(0, limit);
-  const q = String(serviceName).toLowerCase();
-  const related = caseStudyCards.filter(
-    (study) =>
-      study.title?.toLowerCase().includes(q) ||
-      study.sector?.toLowerCase().includes(q) ||
-      study.industry?.toLowerCase().includes(q) ||
-      study.technologies?.some((t) => t.toLowerCase().includes(q))
-  );
-  return (related.length > 0 ? related : caseStudyCards).slice(0, limit);
+/**
+ * Pick related case studies for a service page.
+ * Prefer keyword/industry matches, then fill from a deterministic rotating window
+ * so different services do not all link the same first few cards.
+ */
+export function filterCaseStudyCardsForService(serviceName, limit = 5) {
+  const q = String(serviceName || '').toLowerCase().trim();
+  if (!caseStudyCards.length) return [];
+  if (!q) return rotateSlice(caseStudyCards, 0, limit);
+
+  const tokens = q
+    .split(/[^a-z0-9]+/)
+    .filter((token) => token.length > 2 && !STOP_TOKENS.has(token));
+
+  const scored = caseStudyCards.map((study, index) => {
+    const hay = [
+      study.title,
+      study.sector,
+      study.industry,
+      ...(study.technologies || []),
+    ]
+      .join(' ')
+      .toLowerCase();
+
+    let score = 0;
+    if (hay.includes(q)) score += 12;
+    for (const token of tokens) {
+      if (hay.includes(token)) score += token.length > 5 ? 3 : 2;
+    }
+    return { study, score, index };
+  });
+
+  scored.sort((a, b) => b.score - a.score || a.index - b.index);
+
+  const picked = [];
+  const used = new Set();
+  for (const row of scored) {
+    if (row.score <= 0 || picked.length >= limit) break;
+    picked.push(row.study);
+    used.add(row.study.slug);
+  }
+
+  const start = hashString(q) % caseStudyCards.length;
+  for (let i = 0; i < caseStudyCards.length && picked.length < limit; i += 1) {
+    const study = caseStudyCards[(start + i) % caseStudyCards.length];
+    if (used.has(study.slug)) continue;
+    picked.push(study);
+    used.add(study.slug);
+  }
+
+  return picked;
 }
