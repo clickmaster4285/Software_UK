@@ -82,7 +82,14 @@ export function RenderedBody({ body, compact, cta }) {
     .replace(/^---$/gm, '')
     .split(/\n\n+/)
     .map((p) => p.trim())
-    .filter((p) => p && !/^(Primary|Secondary)\s+CTA/i.test(p));
+    .filter(
+      (p) =>
+        p &&
+        !/^(Primary|Secondary)\s+CTA/i.test(p) &&
+        !/"@context"\s*:/i.test(p) &&
+        !/<script\b/i.test(p) &&
+        !/^\\?<script\b/i.test(p)
+    );
 
   return (
     <div className="space-y-4">

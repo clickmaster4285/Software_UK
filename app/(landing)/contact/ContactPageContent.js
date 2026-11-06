@@ -125,8 +125,8 @@ export default function ContactPageContent() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                      <a href="mailto:sale@clickmasterssoftwaredevelopmentcompany.co.uk" className="text-muted-foreground hover:text-accent transition-colors font-medium break-all">
-                        sale@clickmasterssoftwaredevelopmentcompany.co.uk
+                      <a href="mailto:sales@clickmasterssoftwaredevelopmentcompany.co.uk" className="text-muted-foreground hover:text-accent transition-colors font-medium break-all">
+                        sales@clickmasterssoftwaredevelopmentcompany.co.uk
                       </a>
                     </div>
                   </div>

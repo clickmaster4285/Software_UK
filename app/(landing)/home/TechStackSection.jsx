@@ -51,6 +51,8 @@ export function TechStackSection() {
         viewport={{ once: ANIMATE_ONCE }}
         src="/landing/man_coding.webp"
         alt="Developer Illustration"
+        width={288}
+        height={288}
         className="absolute top-40 md:top-96 left-10 w-48 md:w-72 h-auto pointer-events-none z-0 hidden lg:block"
       />
 
@@ -65,6 +67,8 @@ export function TechStackSection() {
         viewport={{ once: ANIMATE_ONCE }}
         src="/landing/coding-illustration.webp"
         alt="Coding Illustration"
+        width={384}
+        height={384}
         className="absolute bottom-10 right-10 w-64 md:w-96 h-auto pointer-events-none z-0 hidden lg:block"
       />
 

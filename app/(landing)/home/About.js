@@ -68,6 +68,8 @@ export default function About() {
                      }}
                      src="/landing/3d-illustration-man-flying.webp"
                      alt="Business Growth Illustration"
+                     width={576}
+                     height={576}
                      className="relative z-10 w-full max-w-xl h-auto drop-shadow-2xl"
                   />
                </motion.div>

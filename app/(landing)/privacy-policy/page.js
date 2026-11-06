@@ -14,7 +14,7 @@ const sections = [
     title: 'Who we are',
     body: [
       'Clickmasters Software Development Company ("Clickmasters", "we", "us") provides custom software, web, mobile, AI, and related digital services. This policy explains how we handle personal data when you use clickmasterssoftwaredevelopmentcompany.co.uk or contact us.',
-      'Controller contact: sale@clickmasterssoftwaredevelopmentcompany.co.uk · +44798856086 · Main PWD Rd, Islamabad, Punjab, Pakistan.',
+      'Controller contact: sales@clickmasterssoftwaredevelopmentcompany.co.uk · +44798856086 · Main PWD Rd, Islamabad, Punjab, Pakistan.',
     ],
   },
   {
@@ -63,7 +63,7 @@ const sections = [
     title: 'Your rights',
     body: [
       'Under UK GDPR you may request access, rectification, erasure, restriction, portability, or object to certain processing. Where processing is based on consent, you may withdraw consent at any time.',
-      'To exercise these rights, email sale@clickmasterssoftwaredevelopmentcompany.co.uk. You may also complain to the UK Information Commissioner’s Office (ICO) at ico.org.uk.',
+      'To exercise these rights, email sales@clickmasterssoftwaredevelopmentcompany.co.uk. You may also complain to the UK Information Commissioner’s Office (ICO) at ico.org.uk.',
     ],
   },
   {

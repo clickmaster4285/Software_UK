@@ -28,7 +28,7 @@
 - **Service Segments:** Custom Software, Web Development, Mobile Apps, AI & Automation, ERP Systems, Cybersecurity.
 
 ### Contact Information
-- **Emails:** sale@clickmasterssoftwaredevelopmentcompany.co.uk
+- **Emails:** sales@clickmasterssoftwaredevelopmentcompany.co.uk
 - **Phones:** +44798856086
 - **Office:** Main PWD Rd, Islamabad, Punjab, Pakistan
 - **Hours:** Mon-Sat: 9AM - 6PM (24/7 Support for clients)

@@ -9,6 +9,7 @@ import {
 import { siteConfig, breadcrumbSchema, faqSchema, serviceSchema } from '@/app/metadata-config';
 import { slugify } from '@/lib/slugify';
 import IndustrySections from '@/app/(landing)/industries/[slug]/IndustrySections';
+import RelatedCaseStudies from '@/components/landing/main-service/RelatedCaseStudies';
 
 export async function generateStaticParams() {
   return getAllIndustrySlugs().map((slug) => ({ slug }));
@@ -588,6 +589,12 @@ export default async function IndustryDetailPage({ params }) {
             FAQ — Industry-specific component
             ═══════════════════════════════════════════════════════════ */}
         {faqs.length > 0 && <IndustryFAQ faqs={faqs} industryName={industry.industry} />}
+
+        <RelatedCaseStudies
+          serviceName={industry.industry || industry.title}
+          serviceSlug={industry.slug}
+          limit={5}
+        />
 
         {/* ═══════════════════════════════════════════════════════════
             RELATED INDUSTRIES

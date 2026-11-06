@@ -4,7 +4,7 @@ export const siteConfig = {
   url: 'https://clickmasterssoftwaredevelopmentcompany.co.uk',
   description: 'Clickmasters is a software development company providing software development services that build digital products, improve systems and drive digital growth.',
   logo: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/cm-logos/logo.webp',
-  email: 'sale@clickmasterssoftwaredevelopmentcompany.co.uk',
+  email: 'sales@clickmasterssoftwaredevelopmentcompany.co.uk',
   telephone: '+44798856086',
   address: {
     '@type': 'PostalAddress',

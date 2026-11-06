@@ -97,7 +97,7 @@ export function TrustedClientsSection({ clients = defaultClients, title, subtitl
             transition={{ delay: 0.2 }}
             className="text-muted-foreground max-w-2xl mx-auto font-body text-lg"
           >
-            {subtitle || "Join 3,500+ businesses globally that leverage our engineering excellence to scale their digital infrastructure."}
+            {subtitle || "Join 50+ businesses that leverage our engineering excellence to scale their digital infrastructure."}
           </motion.p>
         </div>
 

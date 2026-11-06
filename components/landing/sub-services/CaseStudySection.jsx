@@ -25,21 +25,17 @@ export const CaseStudySection = ({ serviceName }) => {
   const { data: apiStudies = [], isLoading } = useCaseStudyList();
 
   const filteredStudies = useMemo(() => {
+    // Prefer the lightweight static cards so SSR HTML always contains crawlable
+    // case-study inlinks, even before the admin API responds.
+    const staticCards = filterCaseStudyCardsForService(serviceName, 5).map(toParallaxShape);
     const fromApi = (apiStudies || []).filter((s) => s.published !== false);
-    if (fromApi.length > 0) {
-      if (!serviceName) return fromApi.slice(0, 6).map(toParallaxShape);
-      const q = serviceName.toLowerCase();
-      const related = fromApi.filter(
-        (study) =>
-          study.title?.toLowerCase().includes(q) ||
-          study.industry?.toLowerCase().includes(q) ||
-          study.sector?.toLowerCase().includes(q) ||
-          study.technologies?.some((t) => t.toLowerCase().includes(q))
-      );
-      return (related.length > 0 ? related : fromApi).slice(0, 6).map(toParallaxShape);
-    }
+    if (fromApi.length === 0) return staticCards;
 
-    return filterCaseStudyCardsForService(serviceName, 6).map(toParallaxShape);
+    const bySlug = new Map(fromApi.map((study) => [study.slug || study._id, study]));
+    return staticCards.map((card) => {
+      const live = bySlug.get(card.slug);
+      return live ? toParallaxShape({ ...card, ...live }) : card;
+    });
   }, [apiStudies, serviceName]);
 
   return (

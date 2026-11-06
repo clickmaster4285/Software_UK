@@ -125,9 +125,10 @@ function TestimonialCard({ t, className }) {
             <Image 
               src={t.avatarUrl} 
               alt={t.authorName} 
-              fill
+              width={56}
+              height={56}
               sizes="56px"
-              className="object-cover"
+              className="h-full w-full object-cover"
             />
           </div>
         ) : (

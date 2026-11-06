@@ -31,7 +31,7 @@ const contentVariants = {
 
 export const ParallaxCaseStudiesSection = ({ caseStudies, isLoading }) => {
   const containerRef = useRef(null);
-  const [visibleCount, setVisibleCount] = useState(4);
+  const [visibleCount, setVisibleCount] = useState(5);
 
   // Transform case studies into sections with proper formatting
   const sections = useMemo(() => {
