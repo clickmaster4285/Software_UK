@@ -53,7 +53,7 @@
 **Changes:**
 - `components/landing/sub-services/TechStack.jsx` — static unique grid (no marquee DOM duplication)
 - `app/(landing)/[mainservice]/main-service.jsx` — `ssr: false` for Process, PainPoints, TrustedClients, TechStack, Industries, Testimonials, Apps, ScrollSnake
-- Sub-service page — CaseStudy / Testimonials / CeoVision client-only; TechStack stays light SSR
+- Sub-service page — CaseStudy / Testimonials / CeoVision stay dynamically imported with SSR (Server Components cannot use `ssr: false`); TechStack stays light SSR; main-service client page still uses `ssr: false` for heavy sections
 - Content list bullets — CSS dots instead of Lucide `Check` SVGs
 - Homepage `TrustedBy` — logo track not doubled until client mount
 

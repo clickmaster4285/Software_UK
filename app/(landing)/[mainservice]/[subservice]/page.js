@@ -28,24 +28,16 @@ import { ClientScrollWheel } from './ClientScrollWheel';
 // Dynamically import heavy below-the-fold components
 const ProcessSection = dynamic(() => import('@/components/landing/sub-services/ProcessSection').then(mod => mod.ProcessSection));
 const IndustriesSection = dynamic(() => import('@/components/landing/sub-services/IndustriesSection').then(mod => mod.IndustriesSection));
-const CaseStudySection = dynamic(() => import('@/components/landing/sub-services/CaseStudySection').then(mod => mod.CaseStudySection), {
-  ssr: false,
-});
+const CaseStudySection = dynamic(() => import('@/components/landing/sub-services/CaseStudySection').then(mod => mod.CaseStudySection));
 const PricingSection = dynamic(() => import('@/components/landing/sub-services/PricingSection').then(mod => mod.PricingSection));
-const TestimonialsSection = dynamic(
-  () => import('@/components/landing/sub-services/TestimonialsSection').then(mod => mod.TestimonialsSection),
-  { ssr: false }
-);
+const TestimonialsSection = dynamic(() => import('@/components/landing/sub-services/TestimonialsSection').then(mod => mod.TestimonialsSection));
 const FAQSection = dynamic(() => import('@/components/landing/sub-services/FAQSection').then(mod => mod.FAQSection));
 const ContentSections = dynamic(() => import('@/components/landing/main-service/ContentSections'), { ssr: true });
 const TechStack = dynamic(
   () => import('@/components/landing/sub-services/TechStack').then((mod) => mod.TechStack),
   { ssr: true }
 );
-const CeoVision = dynamic(
-  () => import('@/components/landing/sub-services/CeoVision').then((mod) => mod.CeoVision),
-  { ssr: false }
-);
+const CeoVision = dynamic(() => import('@/components/landing/sub-services/CeoVision').then((mod) => mod.CeoVision));
 
 // Rich MD-derived content (cost factors, why-choose, related links) — full intro lives in hero
 const ServiceRichContent = dynamic(() =>
