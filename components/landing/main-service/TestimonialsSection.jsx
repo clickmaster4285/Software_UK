@@ -67,10 +67,11 @@ export function TestimonialCard({ testimonial, isActive }) {
             >
               <Image
                 src={testimonial.avatarUrl}
-                alt=""
-                fill
+                alt={testimonial.authorName || 'Client testimonial'}
+                width={56}
+                height={56}
                 sizes="56px"
-                className="object-cover"
+                className="h-full w-full object-cover"
                 unoptimized
               />
             </motion.div>

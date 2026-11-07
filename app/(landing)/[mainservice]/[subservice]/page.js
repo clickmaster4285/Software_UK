@@ -2,7 +2,15 @@
 import dynamic from 'next/dynamic';
 import { notFound, redirect } from 'next/navigation';
 import Script from 'next/script';
-import { breadcrumbSchema, faqSchema, homepageFaqSchema, serviceSchema, siteConfig } from '@/app/metadata-config';
+import {
+  breadcrumbSchema,
+  clampDescription,
+  faqSchema,
+  homepageFaqSchema,
+  serviceSchema,
+  siteConfig,
+  withBrandSuffix,
+} from '@/app/metadata-config';
 import { getSectionId } from '@/lib/subservice-utils';
 import {
   getAllServicePages,
@@ -15,20 +23,29 @@ import DynamicSections from '@/components/landing/sub-services/DynamicSections';
 import { ServicesSection } from '@/components/landing/sub-services/ServicesSection';
 import { EngineeringBaseline } from '@/components/landing/sub-services/EngineeringBaseline';
 import { WhyChooseUs } from '@/components/landing/sub-services/WhyChooseUs';
-import { TechStack } from '@/components/landing/sub-services/TechStack';
-import { CeoVision } from '@/components/landing/sub-services/CeoVision';
 import { ClientScrollWheel } from './ClientScrollWheel';
 
 // Dynamically import heavy below-the-fold components
 const ProcessSection = dynamic(() => import('@/components/landing/sub-services/ProcessSection').then(mod => mod.ProcessSection));
 const IndustriesSection = dynamic(() => import('@/components/landing/sub-services/IndustriesSection').then(mod => mod.IndustriesSection));
 const CaseStudySection = dynamic(() => import('@/components/landing/sub-services/CaseStudySection').then(mod => mod.CaseStudySection), {
-  ssr: true,
+  ssr: false,
 });
 const PricingSection = dynamic(() => import('@/components/landing/sub-services/PricingSection').then(mod => mod.PricingSection));
-const TestimonialsSection = dynamic(() => import('@/components/landing/sub-services/TestimonialsSection').then(mod => mod.TestimonialsSection));
+const TestimonialsSection = dynamic(
+  () => import('@/components/landing/sub-services/TestimonialsSection').then(mod => mod.TestimonialsSection),
+  { ssr: false }
+);
 const FAQSection = dynamic(() => import('@/components/landing/sub-services/FAQSection').then(mod => mod.FAQSection));
 const ContentSections = dynamic(() => import('@/components/landing/main-service/ContentSections'), { ssr: true });
+const TechStack = dynamic(
+  () => import('@/components/landing/sub-services/TechStack').then((mod) => mod.TechStack),
+  { ssr: true }
+);
+const CeoVision = dynamic(
+  () => import('@/components/landing/sub-services/CeoVision').then((mod) => mod.CeoVision),
+  { ssr: false }
+);
 
 // Rich MD-derived content (cost factors, why-choose, related links) — full intro lives in hero
 const ServiceRichContent = dynamic(() =>
@@ -57,17 +74,18 @@ export async function generateMetadata({ params }) {
   const page = getServicePage(subservice);
   if (!page || page.categorySlug !== mainservice) return { title: 'Service' };
 
-  const description = page.metaDescription;
+  const description = clampDescription(page.metaDescription);
+  const title = withBrandSuffix(page.metaTitle || `${page.title} Services`);
   const canonicalPath = getCanonicalPath(page);
   const canonical = `${siteConfig.url}${canonicalPath}`;
 
   return {
-    title: page.metaTitle ?? `${page.title} Services | Clickmasters`,
+    title,
     description,
     keywords: page.metaKeywords || undefined,
     alternates: { canonical },
     openGraph: {
-      title: `${page.title} | Clickmasters`,
+      title,
       description,
       url: canonical,
       images: [
@@ -81,7 +99,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${page.title} | Clickmasters`,
+      title,
       description,
       images: [`${siteConfig.url}/og/services.webp`],
     },

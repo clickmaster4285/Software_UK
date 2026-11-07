@@ -179,6 +179,7 @@ const STATIC_PAGES = [
   { loc: `${BASE_URL}/`, changefreq: 'daily', priority: 1.0 },
   { loc: `${BASE_URL}/about`, changefreq: 'monthly', priority: 0.6 },
   { loc: `${BASE_URL}/contact`, changefreq: 'monthly', priority: 0.6 },
+  { loc: `${BASE_URL}/privacy-policy`, changefreq: 'yearly', priority: 0.3 },
   { loc: `${BASE_URL}/pricing`, changefreq: 'weekly', priority: 0.7 },
   { loc: `${BASE_URL}/projects`, changefreq: 'weekly', priority: 0.7 },
   { loc: `${BASE_URL}/solutions`, changefreq: 'weekly', priority: 0.7 },

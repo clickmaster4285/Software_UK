@@ -12,7 +12,8 @@ export async function generateMetadata({ searchParams }) {
   const page = parseInt(resolvedSearchParams?.page || '1', 10);
   const activeSector = resolvedSearchParams?.sector || '';
   const searchQuery = resolvedSearchParams?.q || '';
-  const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
+  // Consolidate filtered/paginated variants onto the main listing canonical.
+  const canonical = BASE_URL;
 
   // Compute total pages for SEO pagination links
   let filtered = [...caseStudyListings];
@@ -29,10 +30,11 @@ export async function generateMetadata({ searchParams }) {
     );
   }
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE) || 1;
+  const isVariant = page > 1 || Boolean(activeSector) || Boolean(searchQuery.trim());
 
   const sectorLabel = activeSector ? `${activeSector} ` : '';
   const pageLabel = page > 1 ? ` — Page ${page} of ${totalPages}` : '';
-  const title = `${sectorLabel}Case Studies${pageLabel} | Clickmasters`.replace(/\s+/g, ' ').trim();
+  const title = `${sectorLabel}Software Case Studies UK${pageLabel} | Clickmasters`.replace(/\s+/g, ' ').trim();
   const description = activeSector
     ? `Browse ${activeSector} software case studies from Clickmasters — measurable outcomes across UK industries.${page > 1 ? ` Page ${page} of ${totalPages}.` : ''}`
     : `Explore our portfolio of successful software development projects across FinTech, HealthTech, GovTech, EdTech, and more UK industries.${page > 1 ? ` Page ${page} of ${totalPages}.` : ''}`;
@@ -41,6 +43,9 @@ export async function generateMetadata({ searchParams }) {
     title,
     description,
     alternates: { canonical },
+    robots: isVariant
+      ? { index: false, follow: true }
+      : { index: true, follow: true },
   };
 
   const other = {};

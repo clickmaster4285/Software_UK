@@ -242,9 +242,9 @@ export function ServiceHero({ page }) {
   }, []);
 
   const stats = [
-    { icon: Award, value: "8+", label: "Years Experience" },
-    { icon: Layers3, value: "150+", label: "Projects Delivered" },
-    { icon: Users, value: "98%", label: "Client Satisfaction" },
+    { icon: Award, value: "5+", label: "Years Experience" },
+    { icon: Layers3, value: "200+", label: "Projects Delivered" },
+    { icon: Users, value: "50+", label: "Clients Served" },
     { icon: Headphones, value: "24/7", label: "Support Available" },
   ];
 
@@ -512,7 +512,7 @@ export function ServiceHero({ page }) {
                     ))}
                   </div>
                   <span>
-                    <strong className="text-white">150+</strong> clients worldwide
+                    <strong className="text-white">50+</strong> clients worldwide
                   </span>
                 </motion.div>
 

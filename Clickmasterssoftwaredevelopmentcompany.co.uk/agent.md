@@ -526,16 +526,18 @@ const Component = dynamic(() =>
 25. ✅ Route rename — Renamed `/[category]/[service]/` to `/[mainservice]/[subservice]/` to avoid confusion with industries pages.
 26. ✅ Standalone services removed — Deleted `scripts/convert-service.js` and all `/service/[slug]/` references; 11 `Service/` DOCX files were never part of the active content model.
 27. ✅ Sub-services extraction A–D (Sep 23) — Converter harden (intro ≠ metaDesc, CTA extract `**Primary CTA:**`), overlay `sections`/`cta`/`hasMdSections`, hero full intro (no Overview split), chapter ContentSections (9 groups + jump nav), CTAs on hero/FAQ/Process/Pricing/content, UK £ pricing, `normalizeCtaLabel` for main object vs sub string CTAs. Docs: `plan-sub-services-extraction.md`, `SERVICE-CONTENT-TRACKER.md`.
+28. ✅ Screaming Frog SEO remediation (Nov 2026) — CSU-01…04 + 5/6 Nov follow-ups: contact redirects, trust stats/email/GBP, case-study inlinks, JSON-LD leak strip, phone NAP, hire slug/`mo/month` fixes, pagination canonicals, sitemap privacy + hub footer links, HTML weight cuts. Full log: `seo-audit-fixes-2026-11.md`.
 
 ### In Progress
-28. 🔲 Sub Phase E — Spot-check + empty FAQ MD gaps; then ~88 override-only MDs
-29. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP removal; `sub-services.js` listings split
+29. 🔲 Sub Phase E — Spot-check + empty FAQ MD gaps; then ~88 override-only MDs
+30. 🔲 Address remaining performance items (§11.4): About page lazy-load, Contact page lazy-load, GSAP removal; `sub-services.js` listings split
+31. 🔲 Post-deploy SEO re-crawl — Mark CSU tickets Verified; confirm HTML &lt;250–300 KB sitewide
 
 ### Pending
-30. 🔲 Industry+service combos
-31. 🔲 Big data file split — Split `data/sub-services.js` into lightweight listings + full data
+32. 🔲 Industry+service combos
+33. 🔲 Big data file split — Split `data/sub-services.js` into lightweight listings + full data
 
 ---
 
-**Last Updated:** September 23, 2026  
-**See also:** `plan-industries-pages.md` (industries), `plan-sub-services-extraction.md` + `plan-main-services-extraction.md` + `SERVICE-CONTENT-TRACKER.md` (service content)
+**Last Updated:** November 7, 2026  
+**See also:** `seo-audit-fixes-2026-11.md` (SEO audit), `plan-industries-pages.md` (industries), `plan-sub-services-extraction.md` + `plan-main-services-extraction.md` + `SERVICE-CONTENT-TRACKER.md` (service content)

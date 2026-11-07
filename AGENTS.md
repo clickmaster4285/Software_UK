@@ -2,6 +2,7 @@
 
 > **Main reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md) — content migration, data layer, routes, performance audit
 > **Execution plan:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md) — full conversion plan for 1,785 DOCX files
+> **SEO audit fixes (Nov 2026):** [`Clickmasterssoftwaredevelopmentcompany.co.uk/seo-audit-fixes-2026-11.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/seo-audit-fixes-2026-11.md) — CSU-01…04 + 5/6 Nov re-crawl issues
 
 ---
 
@@ -29,7 +30,7 @@
 
 ### Contact Information
 - **Emails:** sales@clickmasterssoftwaredevelopmentcompany.co.uk
-- **Phones:** +44798856086
+- **Phones:** +44 7988 576086
 - **Office:** Main PWD Rd, Islamabad, Punjab, Pakistan
 - **Hours:** Mon-Sat: 9AM - 6PM (24/7 Support for clients)
 
@@ -309,6 +310,8 @@ const Component = dynamic(() =>
 | | 46 pages missing canonical tags — all fixed June 22, 2026 | ✅ Fixed |
 | | FAQ page had wrong title ("Softflow") — fixed June 22, 2026 | ✅ Fixed |
 | | Pagination SEO links — `rel="prev"`/`rel="next"` added to 5 listing pages | ✅ Fixed |
+| CSU-01…04 | Screaming Frog portfolio SEO tickets (Oct → Nov 2026) | ✅ Code fixed — see [`seo-audit-fixes-2026-11.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/seo-audit-fixes-2026-11.md); re-crawl to Verified after deploy |
+| CSU-04 weight | HTML documents over 250–300 KB on some service hubs | 🟡 Mitigated (tech-stack + SSR cuts); confirm on next crawl |
 
 ---
 
@@ -419,8 +422,9 @@ const blockchainConsultingOverride = {
 
 ---
 
-**Last Updated:** September 23, 2026
+**Last Updated:** November 7, 2026
 **Main Reference:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/agent.md)
 **Execution Plan:** [`Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan.md)
+**SEO audit fixes:** [`seo-audit-fixes-2026-11.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/seo-audit-fixes-2026-11.md)
 **Service content:** [`plan-sub-services-extraction.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/plan-sub-services-extraction.md) · [`SERVICE-CONTENT-TRACKER.md`](./Clickmasterssoftwaredevelopmentcompany.co.uk/SERVICE-CONTENT-TRACKER.md)
 

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const logos = [
@@ -23,11 +24,14 @@ const logos = [
 ];
 
 function MarqueeTrack({ logos: logoList, reverse = false, dimmed = false }) {
-   const doubled = [...logoList, ...logoList];
+   // Avoid doubling logos in the SSR HTML document (CSU-04 page weight).
+   const [mounted, setMounted] = useState(false);
+   useEffect(() => setMounted(true), []);
+   const track = mounted ? [...logoList, ...logoList] : logoList;
    return (
       <div className="overflow-hidden whitespace-nowrap">
          <div className={`flex items-center gap-16 md:gap-24 ${reverse ? "marquee-rtl" : "marquee-ltr"}`}>
-            {doubled.map((logo, idx) => (
+            {track.map((logo, idx) => (
                <div
                   key={`${logo.name}-${idx}`}
                   className={`shrink-0 flex items-center justify-center transition-all duration-500 ${dimmed ? "opacity-50 hover:opacity-100 hover:scale-110" : ""}`}

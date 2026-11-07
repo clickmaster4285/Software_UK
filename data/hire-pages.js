@@ -13,7 +13,7 @@ export const hirePages = [
     "city": "london",
     "title": "Hire a Senior React Developer in London — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a React Developer in London | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted React Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £5,000/mo–£8,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted React Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £5,000/mo–£8,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "london",
     "rate": "£5,000/mo",
     "rates": {
@@ -25,7 +25,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted React Developers for businesses in London and across London. Our React Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,000/mo/month for mid-level through £8,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted React Developers for businesses in London and across London. Our React Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,000/month for mid-level through £8,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Live coding (React component architecture), hooks deep-dive, performance optimisation challenge, accessibility (WCAG 2.1...",
@@ -91,7 +91,7 @@ export const hirePages = [
     "city": "london",
     "title": "Hire a Senior Node.js Developer in London — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Node.js Developer in London | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Node.js Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £5,000/mo–£7,800/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Node.js Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £5,000/mo–£7,800/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "london",
     "rate": "£5,000/mo",
     "rates": {
@@ -103,7 +103,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Node.js Developers for businesses in London and across London. Our Node.js Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,000/mo/month for mid-level through £7,800/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Node.js Developers for businesses in London and across London. Our Node.js Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,000/month for mid-level through £7,800/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Live API design exercise, database schema design, async patterns (Promises, async/await, event emitters), system design ...",
@@ -169,7 +169,7 @@ export const hirePages = [
     "city": "london",
     "title": "Hire a Senior Python Developer in London — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Python Developer in London | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Python Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £5,200/mo–£8,200/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Python Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £5,200/mo–£8,200/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "london",
     "rate": "£5,200/mo",
     "rates": {
@@ -181,7 +181,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in London and across London. Our Python Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,200/mo/month for mid-level through £8,200/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in London and across London. Our Python Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,200/month for mid-level through £8,200/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Algorithm challenge (Python-specific), async Python (asyncio/FastAPI), Django ORM optimisation, data processing pipeline...",
@@ -247,7 +247,7 @@ export const hirePages = [
     "city": "london",
     "title": "Hire a Senior Full Stack Developer in London — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Full Stack Developer in London | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Full Stack Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £5,500/mo–£9,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Full Stack Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £5,500/mo–£9,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "london",
     "rate": "£5,500/mo",
     "rates": {
@@ -259,7 +259,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in London and across London. Our Full Stack Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,500/mo/month for mid-level through £9,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in London and across London. Our Full Stack Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,500/month for mid-level through £9,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Full-stack architecture challenge (design a complete feature end-to-end), code review across both frontend and backend, ...",
@@ -325,7 +325,7 @@ export const hirePages = [
     "city": "london",
     "title": "Hire a Senior DevOps Engineer in London — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a DevOps Engineer in London | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted DevOps Engineer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £5,500/mo–£9,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted DevOps Engineer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £5,500/mo–£9,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "london",
     "rate": "£5,500/mo",
     "rates": {
@@ -337,7 +337,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted DevOps Engineers for businesses in London and across London. Our DevOps Engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,500/mo/month for mid-level through £9,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted DevOps Engineers for businesses in London and across London. Our DevOps Engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,500/month for mid-level through £9,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Live Terraform IaC challenge, Kubernetes debugging scenario, CI/CD pipeline design, incident response simulation, Cyber ...",
@@ -403,7 +403,7 @@ export const hirePages = [
     "city": "london",
     "title": "Hire a Senior Cloud Architect in London — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Cloud Architect in London | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Cloud Architect in London. IR35-compliant (our engineers are employees — zero IR35 liability). £6,500/mo–£12,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Cloud Architect in London. IR35-compliant (our engineers are employees — zero IR35 liability). £6,500/mo–£12,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "london",
     "rate": "£6,500/mo",
     "rates": {
@@ -415,7 +415,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Cloud Architects for businesses in London and across London. Our Cloud Architects are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £6,500/mo/month for mid-level through £12,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Cloud Architects for businesses in London and across London. Our Cloud Architects are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £6,500/month for mid-level through £12,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Architecture review exercise (critique an existing cloud architecture), cost optimisation scenario, UK GDPR data residen...",
@@ -481,7 +481,7 @@ export const hirePages = [
     "city": "london",
     "title": "Hire a Senior QA Engineer in London — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a QA Engineer in London | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted QA Engineer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £3,500/mo–£6,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted QA Engineer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £3,500/mo–£6,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "london",
     "rate": "£3,500/mo",
     "rates": {
@@ -493,7 +493,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted QA Engineers for businesses in London and across London. Our QA Engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £3,500/mo/month for mid-level through £6,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted QA Engineers for businesses in London and across London. Our QA Engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £3,500/month for mid-level through £6,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Live test case writing for given feature, Playwright script review and critique, WCAG 2.1 manual testing demonstration, ...",
@@ -559,7 +559,7 @@ export const hirePages = [
     "city": "london",
     "title": "Hire a Senior Mobile Developer in London — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Mobile Developer in London | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Mobile Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £5,000/mo–£8,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Mobile Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £5,000/mo–£8,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "london",
     "rate": "£5,000/mo",
     "rates": {
@@ -571,7 +571,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Mobile Developers for businesses in London and across London. Our Mobile Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,000/mo/month for mid-level through £8,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Mobile Developers for businesses in London and across London. Our Mobile Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,000/month for mid-level through £8,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Live React Native component build, performance optimisation (FlatList, memo, useMemo), offline-first architecture design...",
@@ -637,7 +637,7 @@ export const hirePages = [
     "city": "london",
     "title": "Hire a Senior Backend Developer in London — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Backend Developer in London | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Backend Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £4,500/mo–£8,500/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Backend Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £4,500/mo–£8,500/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "london",
     "rate": "£4,500/mo",
     "rates": {
@@ -649,7 +649,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Backend Developers for businesses in London and across London. Our Backend Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £4,500/mo/month for mid-level through £8,500/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Backend Developers for businesses in London and across London. Our Backend Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £4,500/month for mid-level through £8,500/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: System design (scalable backend architecture), database schema design and optimisation, API security review, distributed...",
@@ -715,7 +715,7 @@ export const hirePages = [
     "city": "london",
     "title": "Hire a Senior Frontend Developer in London — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Frontend Developer in London | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Frontend Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £4,500/mo–£8,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Frontend Developer in London. IR35-compliant (our engineers are employees — zero IR35 liability). £4,500/mo–£8,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "london",
     "rate": "£4,500/mo",
     "rates": {
@@ -727,7 +727,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Frontend Developers for businesses in London and across London. Our Frontend Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £4,500/mo/month for mid-level through £8,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Frontend Developers for businesses in London and across London. Our Frontend Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £4,500/month for mid-level through £8,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: UI component build (live coding), accessibility review (WCAG 2.1 manual check), performance audit (Core Web Vitals), Fig...",
@@ -793,7 +793,7 @@ export const hirePages = [
     "city": "london",
     "title": "Hire a Senior Software Architect in London — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Software Architect in London | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Software Architect in London. IR35-compliant (our engineers are employees — zero IR35 liability). £7,000/mo–£12,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Software Architect in London. IR35-compliant (our engineers are employees — zero IR35 liability). £7,000/mo–£12,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "london",
     "rate": "£7,000/mo",
     "rates": {
@@ -805,7 +805,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Software Architects for businesses in London and across London. Our Software Architects are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £7,000/mo/month for mid-level through £12,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Software Architects for businesses in London and across London. Our Software Architects are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £7,000/month for mid-level through £12,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Architecture review and critique of existing system, greenfield architecture design challenge, Domain-Driven Design know...",
@@ -871,7 +871,7 @@ export const hirePages = [
     "city": "manchester",
     "title": "Hire a Senior React Developer in Manchester — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a React Developer in Manchester | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted React Developer in Manchester. IR35-compliant (our engineers are employees — zero IR35 liability). £5,000/mo–£8,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted React Developer in Manchester. IR35-compliant (our engineers are employees — zero IR35 liability). £5,000/mo–£8,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "manchester",
     "rate": "£5,000/mo",
     "rates": {
@@ -883,7 +883,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Manchester and across North West. Our React Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,000/mo/month for mid-level through £8,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Manchester and across North West. Our React Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,000/month for mid-level through £8,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Live coding (React component architecture), hooks deep-dive, performance optimisation challenge, accessibility (WCAG 2.1...",
@@ -949,7 +949,7 @@ export const hirePages = [
     "city": "manchester",
     "title": "Hire a Senior Node.js Developer in Manchester — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Node.js Developer in Manchester | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Node.js Developer in Manchester. IR35-compliant (our engineers are employees — zero IR35 liability). £5,000/mo–£7,800/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Node.js Developer in Manchester. IR35-compliant (our engineers are employees — zero IR35 liability). £5,000/mo–£7,800/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "manchester",
     "rate": "£5,000/mo",
     "rates": {
@@ -961,7 +961,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Node.js Developers for businesses in Manchester and across North West. Our Node.js Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,000/mo/month for mid-level through £7,800/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Node.js Developers for businesses in Manchester and across North West. Our Node.js Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,000/month for mid-level through £7,800/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Live API design exercise, database schema design, async patterns (Promises, async/await, event emitters), system design ...",
@@ -1027,7 +1027,7 @@ export const hirePages = [
     "city": "manchester",
     "title": "Hire a Senior Python Developer in Manchester — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Python Developer in Manchester | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Python Developer in Manchester. IR35-compliant (our engineers are employees — zero IR35 liability). £5,200/mo–£8,200/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Python Developer in Manchester. IR35-compliant (our engineers are employees — zero IR35 liability). £5,200/mo–£8,200/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "manchester",
     "rate": "£5,200/mo",
     "rates": {
@@ -1039,7 +1039,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Manchester and across North West. Our Python Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,200/mo/month for mid-level through £8,200/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Manchester and across North West. Our Python Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,200/month for mid-level through £8,200/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Algorithm challenge (Python-specific), async Python (asyncio/FastAPI), Django ORM optimisation, data processing pipeline...",
@@ -1105,7 +1105,7 @@ export const hirePages = [
     "city": "manchester",
     "title": "Hire a Senior Full Stack Developer in Manchester — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Full Stack Developer in Manchester | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Full Stack Developer in Manchester. IR35-compliant (our engineers are employees — zero IR35 liability). £5,500/mo–£9,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Full Stack Developer in Manchester. IR35-compliant (our engineers are employees — zero IR35 liability). £5,500/mo–£9,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "manchester",
     "rate": "£5,500/mo",
     "rates": {
@@ -1117,7 +1117,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Manchester and across North West. Our Full Stack Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,500/mo/month for mid-level through £9,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Manchester and across North West. Our Full Stack Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,500/month for mid-level through £9,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Full-stack architecture challenge (design a complete feature end-to-end), code review across both frontend and backend, ...",
@@ -1183,7 +1183,7 @@ export const hirePages = [
     "city": "manchester",
     "title": "Hire a Senior DevOps Engineer in Manchester — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a DevOps Engineer in Manchester | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted DevOps Engineer in Manchester. IR35-compliant (our engineers are employees — zero IR35 liability). £5,500/mo–£9,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted DevOps Engineer in Manchester. IR35-compliant (our engineers are employees — zero IR35 liability). £5,500/mo–£9,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "manchester",
     "rate": "£5,500/mo",
     "rates": {
@@ -1195,7 +1195,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted DevOps Engineers for businesses in Manchester and across North West. Our DevOps Engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,500/mo/month for mid-level through £9,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted DevOps Engineers for businesses in Manchester and across North West. Our DevOps Engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,500/month for mid-level through £9,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Live Terraform IaC challenge, Kubernetes debugging scenario, CI/CD pipeline design, incident response simulation, Cyber ...",
@@ -1261,7 +1261,7 @@ export const hirePages = [
     "city": "edinburgh",
     "title": "Hire a Senior React Developer in Edinburgh — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a React Developer in Edinburgh | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted React Developer in Edinburgh. IR35-compliant (our engineers are employees — zero IR35 liability). £5,000/mo–£8,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted React Developer in Edinburgh. IR35-compliant (our engineers are employees — zero IR35 liability). £5,000/mo–£8,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "edinburgh",
     "rate": "£5,000/mo",
     "rates": {
@@ -1273,7 +1273,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Edinburgh and across Scotland. Our React Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,000/mo/month for mid-level through £8,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Edinburgh and across Scotland. Our React Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,000/month for mid-level through £8,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Live coding (React component architecture), hooks deep-dive, performance optimisation challenge, accessibility (WCAG 2.1...",
@@ -1339,7 +1339,7 @@ export const hirePages = [
     "city": "edinburgh",
     "title": "Hire a Senior Python Developer in Edinburgh — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Python Developer in Edinburgh | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Python Developer in Edinburgh. IR35-compliant (our engineers are employees — zero IR35 liability). £5,200/mo–£8,200/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Python Developer in Edinburgh. IR35-compliant (our engineers are employees — zero IR35 liability). £5,200/mo–£8,200/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "edinburgh",
     "rate": "£5,200/mo",
     "rates": {
@@ -1351,7 +1351,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Edinburgh and across Scotland. Our Python Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,200/mo/month for mid-level through £8,200/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Edinburgh and across Scotland. Our Python Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,200/month for mid-level through £8,200/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Algorithm challenge (Python-specific), async Python (asyncio/FastAPI), Django ORM optimisation, data processing pipeline...",
@@ -1417,7 +1417,7 @@ export const hirePages = [
     "city": "edinburgh",
     "title": "Hire a Senior Full Stack Developer in Edinburgh — UK-Vetted, IR35-Compliant",
     "metaTitle": "Hire a Full Stack Developer in Edinburgh | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Full Stack Developer in Edinburgh. IR35-compliant (our engineers are employees — zero IR35 liability). £5,500/mo–£9,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Full Stack Developer in Edinburgh. IR35-compliant (our engineers are employees — zero IR35 liability). £5,500/mo–£9,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "edinburgh",
     "rate": "£5,500/mo",
     "rates": {
@@ -1429,7 +1429,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Edinburgh and across Scotland. Our Full Stack Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,500/mo/month for mid-level through £9,000/mo/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Edinburgh and across Scotland. Our Full Stack Developers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. No Status Determination Statement required. No HMRC risk. Rates from £5,500/month for mid-level through £9,000/month for technical lead. UK right-to-work verified for every engineer. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Our engineers are Clickmasters employees. You engage us as a company — one monthly invoice, no SDS, no HMRC exposure.",
       "3-stage technical vetting: Full-stack architecture challenge (design a complete feature end-to-end), code review across both frontend and backend, ...",
@@ -1495,7 +1495,7 @@ export const hirePages = [
     "city": "glasgow",
     "title": "Hire a React Developer in Glasgow — UK-Vetted, IR35-Compliant, £5,000–£8,000/mo",
     "metaTitle": "Hire a React Developer in Glasgow | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted React Developer in Glasgow. IR35-compliant (our engineers are employees). £5,000–£8,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted React Developer in Glasgow. IR35-compliant (our engineers are employees). £5,000–£8,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "glasgow",
     "rate": "",
     "rates": {
@@ -1507,7 +1507,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Glasgow and Scotland. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,000–£8,000/mo/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Glasgow and Scotland. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,000–£8,000/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: React Developers are Clickmasters employees — you engage us as a company, one monthly invoice.",
       "Technical vetting: React, Next.js, TypeScript, Tailwind CSS — assessed live, not self-reported.",
@@ -1533,7 +1533,7 @@ export const hirePages = [
     "city": "glasgow",
     "title": "Hire a Python Developer in Glasgow — UK-Vetted, IR35-Compliant, £5,200–£8,200/mo",
     "metaTitle": "Hire a Python Developer in Glasgow | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Python Developer in Glasgow. IR35-compliant (our engineers are employees). £5,200–£8,200/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Python Developer in Glasgow. IR35-compliant (our engineers are employees). £5,200–£8,200/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "glasgow",
     "rate": "",
     "rates": {
@@ -1545,7 +1545,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Glasgow and Scotland. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,200–£8,200/mo/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Glasgow and Scotland. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,200–£8,200/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Python Developers are Clickmasters employees — you engage us as a company, one monthly invoice.",
       "Technical vetting: Python, Django, FastAPI, data pipelines — assessed live, not self-reported.",
@@ -1571,7 +1571,7 @@ export const hirePages = [
     "city": "glasgow",
     "title": "Hire a Full Stack Developer in Glasgow — UK-Vetted, IR35-Compliant, £5,500–£9,000/mo",
     "metaTitle": "Hire a Full Stack Developer in Glasgow | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Full Stack Developer in Glasgow. IR35-compliant (our engineers are employees). £5,500–£9,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Full Stack Developer in Glasgow. IR35-compliant (our engineers are employees). £5,500–£9,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "glasgow",
     "rate": "",
     "rates": {
@@ -1583,7 +1583,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Glasgow and Scotland. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,500–£9,000/mo/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Glasgow and Scotland. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,500–£9,000/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Full Stack Developers are Clickmasters employees — you engage us as a company, one monthly invoice.",
       "Technical vetting: React + Node.js/Python, PostgreSQL, AWS — assessed live, not self-reported.",
@@ -1609,7 +1609,7 @@ export const hirePages = [
     "city": "liverpool",
     "title": "Hire a React Developer in Liverpool — UK-Vetted, IR35-Compliant, £5,000–£8,000/mo",
     "metaTitle": "Hire a React Developer in Liverpool | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted React Developer in Liverpool. IR35-compliant (our engineers are employees). £5,000–£8,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted React Developer in Liverpool. IR35-compliant (our engineers are employees). £5,000–£8,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "liverpool",
     "rate": "",
     "rates": {
@@ -1621,7 +1621,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Liverpool and North West. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,000–£8,000/mo/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Liverpool and North West. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,000–£8,000/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: React Developers are Clickmasters employees — you engage us as a company, one monthly invoice.",
       "Technical vetting: React, Next.js, TypeScript, Tailwind CSS — assessed live, not self-reported.",
@@ -1647,7 +1647,7 @@ export const hirePages = [
     "city": "liverpool",
     "title": "Hire a Node.js Developer in Liverpool — UK-Vetted, IR35-Compliant, £5,000–£7,800/mo",
     "metaTitle": "Hire a Node.js Developer in Liverpool | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Node.js Developer in Liverpool. IR35-compliant (our engineers are employees). £5,000–£7,800/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Node.js Developer in Liverpool. IR35-compliant (our engineers are employees). £5,000–£7,800/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "liverpool",
     "rate": "",
     "rates": {
@@ -1659,7 +1659,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Node.js Developers for businesses in Liverpool and North West. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,000–£7,800/mo/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Node.js Developers for businesses in Liverpool and North West. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,000–£7,800/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Node.js Developers are Clickmasters employees — you engage us as a company, one monthly invoice.",
       "Technical vetting: Node.js, TypeScript, REST APIs, PostgreSQL — assessed live, not self-reported.",
@@ -1685,7 +1685,7 @@ export const hirePages = [
     "city": "liverpool",
     "title": "Hire a Full Stack Developer in Liverpool — UK-Vetted, IR35-Compliant, £5,500–£9,000/mo",
     "metaTitle": "Hire a Full Stack Developer in Liverpool | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Full Stack Developer in Liverpool. IR35-compliant (our engineers are employees). £5,500–£9,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Full Stack Developer in Liverpool. IR35-compliant (our engineers are employees). £5,500–£9,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "liverpool",
     "rate": "",
     "rates": {
@@ -1697,7 +1697,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Liverpool and North West. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,500–£9,000/mo/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Liverpool and North West. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,500–£9,000/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Full Stack Developers are Clickmasters employees — you engage us as a company, one monthly invoice.",
       "Technical vetting: React + Node.js/Python, PostgreSQL, AWS — assessed live, not self-reported.",
@@ -1723,7 +1723,7 @@ export const hirePages = [
     "city": "cardiff",
     "title": "Hire a React Developer in Cardiff — UK-Vetted, IR35-Compliant, £5,000–£8,000/mo",
     "metaTitle": "Hire a React Developer in Cardiff | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted React Developer in Cardiff. IR35-compliant (our engineers are employees). £5,000–£8,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted React Developer in Cardiff. IR35-compliant (our engineers are employees). £5,000–£8,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "cardiff",
     "rate": "",
     "rates": {
@@ -1735,7 +1735,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Cardiff and Wales. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,000–£8,000/mo/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Cardiff and Wales. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,000–£8,000/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: React Developers are Clickmasters employees — you engage us as a company, one monthly invoice.",
       "Technical vetting: React, Next.js, TypeScript, Tailwind CSS — assessed live, not self-reported.",
@@ -1761,7 +1761,7 @@ export const hirePages = [
     "city": "cardiff",
     "title": "Hire a Full Stack Developer in Cardiff — UK-Vetted, IR35-Compliant, £5,500–£9,000/mo",
     "metaTitle": "Hire a Full Stack Developer in Cardiff | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Full Stack Developer in Cardiff. IR35-compliant (our engineers are employees). £5,500–£9,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Full Stack Developer in Cardiff. IR35-compliant (our engineers are employees). £5,500–£9,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "cardiff",
     "rate": "",
     "rates": {
@@ -1773,7 +1773,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Cardiff and Wales. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,500–£9,000/mo/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Cardiff and Wales. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,500–£9,000/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Full Stack Developers are Clickmasters employees — you engage us as a company, one monthly invoice.",
       "Technical vetting: React + Node.js/Python, PostgreSQL, AWS — assessed live, not self-reported.",
@@ -1799,7 +1799,7 @@ export const hirePages = [
     "city": "nottingham",
     "title": "Hire a React Developer in Nottingham — UK-Vetted, IR35-Compliant, £5,000–£8,000/mo",
     "metaTitle": "Hire a React Developer in Nottingham | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted React Developer in Nottingham. IR35-compliant (our engineers are employees). £5,000–£8,000/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted React Developer in Nottingham. IR35-compliant (our engineers are employees). £5,000–£8,000/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "nottingham",
     "rate": "",
     "rates": {
@@ -1811,7 +1811,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Nottingham and East Midlands. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,000–£8,000/mo/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Nottingham and East Midlands. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,000–£8,000/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: React Developers are Clickmasters employees — you engage us as a company, one monthly invoice.",
       "Technical vetting: React, Next.js, TypeScript, Tailwind CSS — assessed live, not self-reported.",
@@ -1837,7 +1837,7 @@ export const hirePages = [
     "city": "nottingham",
     "title": "Hire a Python Developer in Nottingham — UK-Vetted, IR35-Compliant, £5,200–£8,200/mo",
     "metaTitle": "Hire a Python Developer in Nottingham | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Python Developer in Nottingham. IR35-compliant (our engineers are employees). £5,200–£8,200/mo/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
+    "metaDesc": "Hire a vetted Python Developer in Nottingham. IR35-compliant (our engineers are employees). £5,200–£8,200/month. UK right-to-work verified. 3-stage vetting. Free consultation.",
     "cityDisplay": "nottingham",
     "rate": "",
     "rates": {
@@ -1849,7 +1849,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Nottingham and East Midlands. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,200–£8,200/mo/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Nottingham and East Midlands. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates £5,200–£8,200/month. UK right-to-work verified. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [
       "Zero IR35 liability: Python Developers are Clickmasters employees — you engage us as a company, one monthly invoice.",
       "Technical vetting: Python, Django, FastAPI, data pipelines — assessed live, not self-reported.",
@@ -1875,7 +1875,7 @@ export const hirePages = [
     "city": "sheffield",
     "title": "Hire a React Developer in Sheffield — UK-Vetted, IR35-Compliant, £5,000–£8,000/mo",
     "metaTitle": "Hire a React Developer in Sheffield | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted React Developer in Sheffield. IR35-compliant — our engineers are employees, zero liability. £5,000–£8,000/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted React Developer in Sheffield. IR35-compliant — our engineers are employees, zero liability. £5,000–£8,000/month. UK right-to-work verified.",
     "cityDisplay": "sheffield",
     "rate": "",
     "rates": {
@@ -1887,7 +1887,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Sheffield and Yorkshire. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,000–£8,000/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Sheffield and Yorkshire. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,000–£8,000/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -1908,7 +1908,7 @@ export const hirePages = [
     "city": "sheffield",
     "title": "Hire a Python Developer in Sheffield — UK-Vetted, IR35-Compliant, £5,200–£8,200/mo",
     "metaTitle": "Hire a Python Developer in Sheffield | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Python Developer in Sheffield. IR35-compliant — our engineers are employees, zero liability. £5,200–£8,200/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted Python Developer in Sheffield. IR35-compliant — our engineers are employees, zero liability. £5,200–£8,200/month. UK right-to-work verified.",
     "cityDisplay": "sheffield",
     "rate": "",
     "rates": {
@@ -1920,7 +1920,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Sheffield and Yorkshire. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,200–£8,200/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Sheffield and Yorkshire. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,200–£8,200/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -1941,7 +1941,7 @@ export const hirePages = [
     "city": "sheffield",
     "title": "Hire a Full Stack Developer in Sheffield — UK-Vetted, IR35-Compliant, £5,500–£9,000/mo",
     "metaTitle": "Hire a Full Stack Developer in Sheffield | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Full Stack Developer in Sheffield. IR35-compliant — our engineers are employees, zero liability. £5,500–£9,000/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted Full Stack Developer in Sheffield. IR35-compliant — our engineers are employees, zero liability. £5,500–£9,000/month. UK right-to-work verified.",
     "cityDisplay": "sheffield",
     "rate": "",
     "rates": {
@@ -1953,7 +1953,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Sheffield and Yorkshire. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,500–£9,000/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Sheffield and Yorkshire. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,500–£9,000/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -1974,7 +1974,7 @@ export const hirePages = [
     "city": "belfast",
     "title": "Hire a React Developer in Belfast — UK-Vetted, IR35-Compliant, £5,000–£8,000/mo",
     "metaTitle": "Hire a React Developer in Belfast | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted React Developer in Belfast. IR35-compliant — our engineers are employees, zero liability. £5,000–£8,000/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted React Developer in Belfast. IR35-compliant — our engineers are employees, zero liability. £5,000–£8,000/month. UK right-to-work verified.",
     "cityDisplay": "belfast",
     "rate": "",
     "rates": {
@@ -1986,7 +1986,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Belfast and Northern Ireland. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,000–£8,000/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Belfast and Northern Ireland. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,000–£8,000/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -2007,7 +2007,7 @@ export const hirePages = [
     "city": "belfast",
     "title": "Hire a Python Developer in Belfast — UK-Vetted, IR35-Compliant, £5,200–£8,200/mo",
     "metaTitle": "Hire a Python Developer in Belfast | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Python Developer in Belfast. IR35-compliant — our engineers are employees, zero liability. £5,200–£8,200/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted Python Developer in Belfast. IR35-compliant — our engineers are employees, zero liability. £5,200–£8,200/month. UK right-to-work verified.",
     "cityDisplay": "belfast",
     "rate": "",
     "rates": {
@@ -2019,7 +2019,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Belfast and Northern Ireland. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,200–£8,200/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Belfast and Northern Ireland. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,200–£8,200/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -2040,7 +2040,7 @@ export const hirePages = [
     "city": "belfast",
     "title": "Hire a Full Stack Developer in Belfast — UK-Vetted, IR35-Compliant, £5,500–£9,000/mo",
     "metaTitle": "Hire a Full Stack Developer in Belfast | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Full Stack Developer in Belfast. IR35-compliant — our engineers are employees, zero liability. £5,500–£9,000/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted Full Stack Developer in Belfast. IR35-compliant — our engineers are employees, zero liability. £5,500–£9,000/month. UK right-to-work verified.",
     "cityDisplay": "belfast",
     "rate": "",
     "rates": {
@@ -2052,7 +2052,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Belfast and Northern Ireland. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,500–£9,000/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Belfast and Northern Ireland. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,500–£9,000/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -2073,7 +2073,7 @@ export const hirePages = [
     "city": "oxford",
     "title": "Hire a React Developer in Oxford — UK-Vetted, IR35-Compliant, £5,000–£8,000/mo",
     "metaTitle": "Hire a React Developer in Oxford | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted React Developer in Oxford. IR35-compliant — our engineers are employees, zero liability. £5,000–£8,000/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted React Developer in Oxford. IR35-compliant — our engineers are employees, zero liability. £5,000–£8,000/month. UK right-to-work verified.",
     "cityDisplay": "oxford",
     "rate": "",
     "rates": {
@@ -2085,7 +2085,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Oxford and South East England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,000–£8,000/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Oxford and South East England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,000–£8,000/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -2106,7 +2106,7 @@ export const hirePages = [
     "city": "oxford",
     "title": "Hire a Python Developer in Oxford — UK-Vetted, IR35-Compliant, £5,200–£8,200/mo",
     "metaTitle": "Hire a Python Developer in Oxford | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Python Developer in Oxford. IR35-compliant — our engineers are employees, zero liability. £5,200–£8,200/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted Python Developer in Oxford. IR35-compliant — our engineers are employees, zero liability. £5,200–£8,200/month. UK right-to-work verified.",
     "cityDisplay": "oxford",
     "rate": "",
     "rates": {
@@ -2118,7 +2118,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Oxford and South East England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,200–£8,200/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Oxford and South East England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,200–£8,200/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -2139,7 +2139,7 @@ export const hirePages = [
     "city": "oxford",
     "title": "Hire a Full Stack Developer in Oxford — UK-Vetted, IR35-Compliant, £5,500–£9,000/mo",
     "metaTitle": "Hire a Full Stack Developer in Oxford | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Full Stack Developer in Oxford. IR35-compliant — our engineers are employees, zero liability. £5,500–£9,000/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted Full Stack Developer in Oxford. IR35-compliant — our engineers are employees, zero liability. £5,500–£9,000/month. UK right-to-work verified.",
     "cityDisplay": "oxford",
     "rate": "",
     "rates": {
@@ -2151,7 +2151,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Oxford and South East England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,500–£9,000/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Oxford and South East England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,500–£9,000/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -2172,7 +2172,7 @@ export const hirePages = [
     "city": "cambridge",
     "title": "Hire a React Developer in Cambridge — UK-Vetted, IR35-Compliant, £5,000–£8,000/mo",
     "metaTitle": "Hire a React Developer in Cambridge | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted React Developer in Cambridge. IR35-compliant — our engineers are employees, zero liability. £5,000–£8,000/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted React Developer in Cambridge. IR35-compliant — our engineers are employees, zero liability. £5,000–£8,000/month. UK right-to-work verified.",
     "cityDisplay": "cambridge",
     "rate": "",
     "rates": {
@@ -2184,7 +2184,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Cambridge and East of England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,000–£8,000/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted React Developers for businesses in Cambridge and East of England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,000–£8,000/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -2205,7 +2205,7 @@ export const hirePages = [
     "city": "cambridge",
     "title": "Hire a Python Developer in Cambridge — UK-Vetted, IR35-Compliant, £5,200–£8,200/mo",
     "metaTitle": "Hire a Python Developer in Cambridge | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Python Developer in Cambridge. IR35-compliant — our engineers are employees, zero liability. £5,200–£8,200/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted Python Developer in Cambridge. IR35-compliant — our engineers are employees, zero liability. £5,200–£8,200/month. UK right-to-work verified.",
     "cityDisplay": "cambridge",
     "rate": "",
     "rates": {
@@ -2217,7 +2217,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Cambridge and East of England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,200–£8,200/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Python Developers for businesses in Cambridge and East of England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,200–£8,200/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -2238,7 +2238,7 @@ export const hirePages = [
     "city": "cambridge",
     "title": "Hire a Full Stack Developer in Cambridge — UK-Vetted, IR35-Compliant, £5,500–£9,000/mo",
     "metaTitle": "Hire a Full Stack Developer in Cambridge | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted Full Stack Developer in Cambridge. IR35-compliant — our engineers are employees, zero liability. £5,500–£9,000/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted Full Stack Developer in Cambridge. IR35-compliant — our engineers are employees, zero liability. £5,500–£9,000/month. UK right-to-work verified.",
     "cityDisplay": "cambridge",
     "rate": "",
     "rates": {
@@ -2250,7 +2250,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Cambridge and East of England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,500–£9,000/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted Full Stack Developers for businesses in Cambridge and East of England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £5,500–£9,000/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -2271,7 +2271,7 @@ export const hirePages = [
     "city": "oxford",
     "title": "Hire a AI/ML Engineer in Oxford — UK-Vetted, IR35-Compliant, £6,000–£10,000/mo",
     "metaTitle": "Hire a AI/ML Engineer in Oxford | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted AI/ML Engineer in Oxford. IR35-compliant — our engineers are employees, zero liability. £6,000–£10,000/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted AI/ML Engineer in Oxford. IR35-compliant — our engineers are employees, zero liability. £6,000–£10,000/month. UK right-to-work verified.",
     "cityDisplay": "oxford",
     "rate": "",
     "rates": {
@@ -2283,7 +2283,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted AI/ML Engineers for businesses in Oxford and South East England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £6,000–£10,000/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted AI/ML Engineers for businesses in Oxford and South East England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £6,000–£10,000/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -2304,7 +2304,7 @@ export const hirePages = [
     "city": "cambridge",
     "title": "Hire a AI/ML Engineer in Cambridge — UK-Vetted, IR35-Compliant, £6,000–£10,000/mo",
     "metaTitle": "Hire a AI/ML Engineer in Cambridge | IR35-Compliant | Clickmasters",
-    "metaDesc": "Hire a vetted AI/ML Engineer in Cambridge. IR35-compliant — our engineers are employees, zero liability. £6,000–£10,000/mo/month. UK right-to-work verified.",
+    "metaDesc": "Hire a vetted AI/ML Engineer in Cambridge. IR35-compliant — our engineers are employees, zero liability. £6,000–£10,000/month. UK right-to-work verified.",
     "cityDisplay": "cambridge",
     "rate": "",
     "rates": {
@@ -2316,7 +2316,7 @@ export const hirePages = [
     "vettingStages": "",
     "contract": "",
     "rightToWork": "",
-    "directAnswer": "Clickmasters provides vetted AI/ML Engineers for businesses in Cambridge and East of England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £6,000–£10,000/mo/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
+    "directAnswer": "Clickmasters provides vetted AI/ML Engineers for businesses in Cambridge and East of England. Our engineers are Clickmasters employees — not contractors — meaning zero IR35 liability for your business. Rates from £6,000–£10,000/month. 3-stage technical vetting. 30-day rolling contracts. 2-week replacement guarantee.",
     "benefits": [],
     "skills": [],
     "vettingProcess": [],
@@ -4248,8 +4248,8 @@ export const hirePages = [
   {
     "id": "P742",
     "slug": "full-stack-developer-stoke-on-trent",
-    "role": "full-stack-developer-stoke-on",
-    "city": "trent",
+    "role": "full-stack-developer",
+    "city": "stoke-on-trent",
     "title": "Hire Full Stack Developer Stoke-on-Trent — IR35-Safe, from £4,200/month",
     "metaTitle": "Hire Full Stack Developer Stoke-on-Trent | IR35-Safe | Clickmasters",
     "metaDesc": "Hire a Full Stack Developer in Stoke-on-Trent. IR35-safe. from £4,200/month. UK GDPR.",
@@ -4611,8 +4611,8 @@ export const hirePages = [
   {
     "id": "P802",
     "slug": "full-stack-developer-southend-on-sea",
-    "role": "full-stack-developer-southend-on",
-    "city": "sea",
+    "role": "full-stack-developer",
+    "city": "southend-on-sea",
     "title": "Hire Full Stack Developer Southend-on-Sea — IR35-Safe, from £5,000/month",
     "metaTitle": "Hire Full Stack Developer Southend-on-Sea | IR35-Safe | Clickmasters",
     "metaDesc": "Hire a Full Stack Developer in Southend-on-Sea. IR35-safe. from £5,000/month. UK GDPR.",
@@ -6789,8 +6789,8 @@ export const hirePages = [
   {
     "id": "P1296",
     "slug": "react-developer-burton-on-trent",
-    "role": "react-developer-burton-on",
-    "city": "trent",
+    "role": "react-developer",
+    "city": "burton-on-trent",
     "title": "Hire React Developer Burton-on-Trent — IR35-Safe, from £4,700/month",
     "metaTitle": "Hire React Developer Burton-on-Trent | IR35-Safe | Clickmasters",
     "metaDesc": "Hire a React Developer in Burton-on-Trent. IR35-safe. from £4,700/month. UK GDPR.",
@@ -8802,8 +8802,8 @@ export const hirePages = [
   {
     "id": "P1613",
     "slug": "react-developer-letchworth-garden-city",
-    "role": "react-developer-letchworth-garden",
-    "city": "city",
+    "role": "react-developer",
+    "city": "letchworth-garden-city",
     "title": "Hire React Developer Letchworth Garden City -- IR35-Safe, from GBP5,000/month",
     "metaTitle": "Hire React Developer Letchworth Garden City | IR35-Safe | Clickmasters",
     "metaDesc": "Hire a React Developer in Letchworth Garden City. IR35-safe. from GBP5,000/month. UK GDPR.",
@@ -9825,8 +9825,8 @@ export const hirePages = [
   {
     "id": "P1778",
     "slug": "python-developer-letchworth-garden-city",
-    "role": "python-developer-letchworth-garden",
-    "city": "city",
+    "role": "python-developer",
+    "city": "letchworth-garden-city",
     "title": "Hire Python Developer Letchworth Garden City -- IR35-Safe, from GBP5,000/month",
     "metaTitle": "Hire Python Developer Letchworth Garden City | IR35-Safe | Clickmasters",
     "metaDesc": "Hire a Python Developer in Letchworth Garden City. IR35-safe. from GBP5,000/month.",

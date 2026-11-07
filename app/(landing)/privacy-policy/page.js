@@ -14,7 +14,7 @@ const sections = [
     title: 'Who we are',
     body: [
       'Clickmasters Software Development Company ("Clickmasters", "we", "us") provides custom software, web, mobile, AI, and related digital services. This policy explains how we handle personal data when you use clickmasterssoftwaredevelopmentcompany.co.uk or contact us.',
-      'Controller contact: sales@clickmasterssoftwaredevelopmentcompany.co.uk · +44798856086 · Main PWD Rd, Islamabad, Punjab, Pakistan.',
+      'Controller contact: sales@clickmasterssoftwaredevelopmentcompany.co.uk · +44 7988 576086 · Main PWD Rd, Islamabad, Punjab, Pakistan.',
     ],
   },
   {

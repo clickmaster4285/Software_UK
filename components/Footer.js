@@ -36,10 +36,14 @@ const footerLinks = {
     { name: "All Case Studies", href: "/case-studies" },
   ],
   resources: [
+    { name: "Hire Developers", href: "/hire" },
+    { name: "Locations", href: "/locations" },
+    { name: "Industries", href: "/industries" },
+    { name: "Glossary", href: "/glossary" },
+    { name: "Salary Guide", href: "/salary-guide" },
+    { name: "Comparisons", href: "/comparison" },
+    { name: "Resource Guides", href: "/resource" },
     { name: "FAQ", href: "/faq" },
-    { name: "Client Testimonials", href: "/testimonials" },
-    { name: "Projects Gallery", href: "/projects" },
-    { name: "Support Center", href: "/contact" },
   ],
   legal: [
     { name: "Privacy Policy", href: "/privacy-policy" },
@@ -125,9 +129,9 @@ export default function Footer() {
             </div>
 
             <div>
-              <h2 className="font-heading font-bold text-white mb-6 uppercase tracking-widest text-xs opacity-50">Case Studies</h2>
+              <h2 className="font-heading font-bold text-white mb-6 uppercase tracking-widest text-xs opacity-50">Resources</h2>
               <ul className="flex flex-col gap-4">
-                {footerLinks.caseStudies.map((link) => (
+                {footerLinks.resources.map((link) => (
                   <li key={link.name}>
                     <Link href={link.href} className="text-white/60 font-body text-sm hover:text-accent transition-colors">
                       {link.name}
@@ -146,44 +150,15 @@ export default function Footer() {
                 </li>
                 <li className="flex items-center gap-3 text-white/60 text-sm font-body">
                   <Phone className="w-4 h-4 text-accent shrink-0" />
-                  <span>+44 (7988) 56 086</span>
+                  <a href="tel:+447988576086" className="hover:text-accent transition-colors">
+                    +44 7988 576086
+                  </a>
                 </li>
                 <Link href="mailto:sales@clickmasterssoftwaredevelopmentcompany.co.uk" className="flex items-center gap-3 text-white/60 text-sm font-body hover:text-accent transition-colors cursor-pointer">
                   <Mail className="w-4 h-4 text-accent shrink-0" />
                   <span>sales@clickmasterssoftwaredevelopmentcompany.co.uk</span>
                 </Link>
               </ul>
-
-              <div className="mt-8 flex gap-4">
-                <Link
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2.5 bg-white/5 rounded-xl border border-white/10 text-white/60 hover:text-accent hover:border-accent/50 hover:bg-white/10 transition-all group"
-                >
-                  <Image
-                    src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
-                    alt="LinkedIn"
-                    width={20}
-                    height={20}
-                    className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity"
-                  />
-                </Link>
-                <Link
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2.5 bg-white/5 rounded-xl border border-white/10 text-white/60 hover:text-accent hover:border-accent/50 hover:bg-white/10 transition-all group"
-                >
-                  <Image
-                    src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
-                    alt="GitHub"
-                    width={20}
-                    height={20}
-                    className="w-5 h-5 opacity-60 group-hover:opacity-100 transition-opacity"
-                  />
-                </Link>
-              </div>
 
             </div>
           </div>
