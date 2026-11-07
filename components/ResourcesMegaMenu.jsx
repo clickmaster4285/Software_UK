@@ -6,6 +6,37 @@ import { useTestimonialList } from '@/hooks/useTestimonials';
 import MegaMenu from './MegaMenu';
 import { ChevronDown } from 'lucide-react';
 
+const resourceHubItems = {
+  label: "Guides & Hubs",
+  viewAllHref: "/resource",
+  items: [
+    {
+      type: "faq",
+      question: "Hire Developers",
+      answer: "Browse IR35-safe developer hire pages by role and UK city.",
+      href: "/hire",
+    },
+    {
+      type: "faq",
+      question: "Locations",
+      answer: "Software development services for businesses across UK and international cities.",
+      href: "/locations",
+    },
+    {
+      type: "faq",
+      question: "Industries",
+      answer: "Industry-specific software delivery for FinTech, HealthTech, GovTech and more.",
+      href: "/industries",
+    },
+    {
+      type: "faq",
+      question: "Glossary & Salary Guides",
+      answer: "Technical glossary terms and UK developer salary benchmarks.",
+      href: "/glossary",
+    },
+  ],
+};
+
 const faqItems = {
   label: "FAQs",
   viewAllHref: "/faq",
@@ -71,7 +102,7 @@ export default function ResourcesMegaMenu({ hasWhiteBg, caseStudyItems }) {
       })) || []
     };
 
-    return [caseStudyItems, blogItems, faqItems, testimonialItems];
+    return [caseStudyItems, resourceHubItems, blogItems, faqItems, testimonialItems];
   }, [blogs, testimonials, caseStudyItems]);
 
   return (

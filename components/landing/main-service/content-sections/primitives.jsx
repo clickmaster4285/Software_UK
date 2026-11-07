@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Check, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { linkifyMarkdown, stripCtaArtifacts } from '@/lib/subservice-utils';
 import { isCompactSection, normalizeCtaLabel } from './lib';
 
@@ -124,9 +124,8 @@ export function ItemList({ items, compact }) {
             key={i}
             className="flex items-start gap-2 text-sm text-text-body font-body"
           >
-            <Check
-              className="mt-0.5 h-3.5 w-3.5 shrink-0 text-accent"
-              strokeWidth={2.5}
+            <span
+              className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"
               aria-hidden
             />
             <span dangerouslySetInnerHTML={{ __html: linkifyMarkdown(item) }} />
@@ -143,9 +142,8 @@ export function ItemList({ items, compact }) {
           key={i}
           className="flex items-start gap-2.5 rounded-lg border border-border/70 bg-white px-3.5 py-3 text-sm text-text-body font-body"
         >
-          <Check
-            className="mt-0.5 h-3.5 w-3.5 shrink-0 text-accent"
-            strokeWidth={2.5}
+          <span
+            className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent"
             aria-hidden
           />
           <span dangerouslySetInnerHTML={{ __html: linkifyMarkdown(item) }} />

@@ -5,7 +5,7 @@ export const siteConfig = {
   description: 'Clickmasters is a software development company providing software development services that build digital products, improve systems and drive digital growth.',
   logo: 'https://clickmasterssoftwaredevelopmentcompany.co.uk/cm-logos/logo.webp',
   email: 'sales@clickmasterssoftwaredevelopmentcompany.co.uk',
-  telephone: '+44798856086',
+  telephone: '+447988576086',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Main PWD Rd',
@@ -15,23 +15,39 @@ export const siteConfig = {
   },
 };
 
-function withBrandSuffix(title) {
-  const cleaned = String(title || '')
+export function withBrandSuffix(title, maxLen = 60) {
+  const brand = ' | Clickmasters';
+  let cleaned = String(title || '')
     .replace(/\s*\|\s*Clickmasters\s*$/i, '')
     .replace(/\s*\|\s*ClickMasters\s*$/i, '')
     .trim();
-  return cleaned ? `${cleaned} | Clickmasters` : 'Clickmasters';
+  const maxCore = Math.max(20, maxLen - brand.length);
+  if (cleaned.length > maxCore) {
+    cleaned = cleaned
+      .slice(0, maxCore)
+      .replace(/\s+\S*$/, '')
+      .replace(/[\s|,–—:-]+$/g, '')
+      .trim();
+  }
+  return cleaned ? `${cleaned}${brand}` : 'Clickmasters';
+}
+
+export function clampDescription(description, maxLen = 155) {
+  const text = String(description || '').replace(/\s+/g, ' ').trim();
+  if (text.length <= maxLen) return text;
+  return `${text.slice(0, maxLen - 1).replace(/\s+\S*$/, '').trim()}…`;
 }
 
 export const metadataConfig = {
   serviceDetail: (title, description, slug) => {
     const branded = withBrandSuffix(title);
+    const desc = clampDescription(description);
     return {
       title: branded,
-      description: description,
+      description: desc,
       openGraph: {
         title: branded,
-        description: description,
+        description: desc,
         url: `${siteConfig.url}/${slug}`,
         siteName: siteConfig.name,
         locale: 'en_GB',
@@ -40,7 +56,7 @@ export const metadataConfig = {
       twitter: {
         card: 'summary_large_image',
         title: branded,
-        description: description,
+        description: desc,
       },
       alternates: {
         canonical: `${siteConfig.url}/${slug}`,

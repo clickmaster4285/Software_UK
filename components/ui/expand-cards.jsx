@@ -52,7 +52,7 @@ export default function ExpandOnHover({
                 >
                   <Image
                     src={images[index]}
-                    alt=""
+                    alt={phase.title || `Process step ${phase.step}`}
                     fill
                     sizes="(max-width: 1024px) 100vw, 800px"
                     className="object-cover opacity-25"

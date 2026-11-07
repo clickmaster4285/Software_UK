@@ -6,13 +6,19 @@ import { Suspense, useRef } from 'react';
 import dynamic from 'next/dynamic';
 
 import { HeroSection } from '@/components/landing/main-service/hero-section';
-import { ScrollSnakeLine } from '@/components/ui/scroll-snake-line';
 
+const ScrollSnakeLine = dynamic(
+  () => import('@/components/ui/scroll-snake-line').then((mod) => mod.ScrollSnakeLine),
+  { ssr: false }
+);
+
+// SEO content stays SSR. Decorative / icon-heavy / GSAP sections load client-only
+// to keep HTML documents under the Screaming Frog weight budget.
 const OverviewSection = dynamic(() => import('@/components/landing/main-service/OverviewSection'), { ssr: true });
 const ContentSections = dynamic(() => import('@/components/landing/main-service/ContentSections'), { ssr: true });
-const PainPointsSolutions = dynamic(() => import('@/components/landing/main-service/PainPointsSolutions'), { ssr: true });
-const TrustedClientsSection = dynamic(() => import('@/components/landing/main-service/TrustedClientsSection'), { ssr: true });
-const ProcessPage = dynamic(() => import('@/components/landing/main-service/ProcessPage'), { ssr: true });
+const PainPointsSolutions = dynamic(() => import('@/components/landing/main-service/PainPointsSolutions'), { ssr: false });
+const TrustedClientsSection = dynamic(() => import('@/components/landing/main-service/TrustedClientsSection'), { ssr: false });
+const ProcessPage = dynamic(() => import('@/components/landing/main-service/ProcessPage'), { ssr: false });
 const FaqSection = dynamic(() => import('@/components/landing/main-service/FaqSection'), { ssr: true });
 
 const ExploreSection = dynamic(() =>
@@ -23,23 +29,23 @@ const ExploreSection = dynamic(() =>
 const AppsSection = dynamic(() =>
   import('@/components/landing/main-service/AppsSection').then(mod => {
     const C = mod.AppsSection; const W = (p) => <C {...p} />; W.displayName = 'AppsSection'; return W;
-  }), { ssr: true }
+  }), { ssr: false }
 );
 const RelatedCaseStudies = dynamic(() => import('@/components/landing/main-service/RelatedCaseStudies'), { ssr: true });
 const IndustriesSection = dynamic(() =>
   import('@/components/landing/main-service/industries-section').then(mod => {
     const C = mod.IndustriesSection; const W = (p) => <C {...p} />; W.displayName = 'IndustriesSection'; return W;
-  }), { ssr: true }
+  }), { ssr: false }
 );
 const TestimonialsSection = dynamic(() =>
   import('@/components/landing/main-service/TestimonialsSection').then(mod => {
     const C = mod.TestimonialsSection; const W = (p) => <C {...p} />; W.displayName = 'TestimonialsSection'; return W;
-  }), { ssr: true }
+  }), { ssr: false }
 );
 const TechStackSection = dynamic(() =>
   import('@/components/landing/main-service/TechStackSection').then(mod => {
     const C = mod.TechStackSection; const W = (p) => <C {...p} />; W.displayName = 'TechStackSection'; return W;
-  }), { ssr: true }
+  }), { ssr: false }
 );
 const WhyChooseUs = dynamic(() =>
   import('@/components/landing/main-service/whyUs').then(mod => {

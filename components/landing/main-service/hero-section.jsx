@@ -264,7 +264,7 @@ export function HeroSection({ serviceData }) {
                     width={560}
                     height={420}
                     src={heroImageUrl}
-                    alt=""
+                    alt={serviceData?.title ? `${serviceData.title} services` : 'Clickmasters service illustration'}
                     sizes="(max-width: 1024px) 0vw, 560px"
                     quality={70}
                     className="w-full h-full object-cover"

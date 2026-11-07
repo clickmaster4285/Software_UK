@@ -38,7 +38,7 @@ function Counter({ value }) {
 }
 
 export default function StatsBanner() {
-  // Conservative, site-consistent figures (aligned with About / Why Choose Us)
+  // Owner-confirmed sitewide figures (CSU-02): 200+ projects, 50+ clients, 5+ years
   const stats = [
     { value: "200+", label: "Projects Delivered" },
     { value: "50+", label: "Clients Served" },
