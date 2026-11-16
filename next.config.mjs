@@ -1,3 +1,5 @@
+import { industrySlugRedirects } from './data/industry-slug-redirects.js';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async redirects() {
@@ -13,6 +15,8 @@ const nextConfig = {
       { source: '/blockchain-web3/:path*', destination: '/blockchain-and-web3/:path*', permanent: true },
       { source: '/support-outsourcing', destination: '/support-and-outsourcing', permanent: true },
       { source: '/support-outsourcing/:path*', destination: '/support-and-outsourcing/:path*', permanent: true },
+      // Near-duplicate /industries/{slug}-{industry}[-N] aliases → lowest P-number slug
+      ...industrySlugRedirects,
     ];
   },
   images: {
@@ -60,7 +64,7 @@ const nextConfig = {
           { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains' },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://images.unsplash.com https://img.icons8.com https://cdn.jsdelivr.net https://upload.wikimedia.org https://www.transparenttextures.com; font-src 'self'; connect-src 'self'; worker-src 'self' blob:; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://images.unsplash.com https://img.icons8.com https://cdn.jsdelivr.net https://upload.wikimedia.org https://www.transparenttextures.com https://www.googletagmanager.com https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://region1.google-analytics.com; worker-src 'self' blob:; frame-src https://www.googletagmanager.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
           },
         ],
       },

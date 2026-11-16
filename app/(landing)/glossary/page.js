@@ -13,13 +13,8 @@ export async function generateMetadata({ searchParams }) {
   const page = parseInt(resolvedSearchParams?.page || '1', 10);
   const activeLetter = resolvedSearchParams?.letter || '';
   const searchQuery = resolvedSearchParams?.q || '';
-  const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
-
-  const metadata = {
-    title: 'Glossary \u2014 UK Software Development Terms | Clickmasters',
-    description: 'Comprehensive glossary of UK software development terms, technologies, and business concepts. Definitions covering APIs, MVPs, SaaS, GDPR, IR35, and more.',
-    alternates: { canonical },
-  };
+  const canonical = BASE_URL;
+  const isVariant = page > 1 || Boolean(activeLetter) || Boolean(searchQuery.trim());
 
   // Compute total pages for SEO pagination links
   let filtered = [...glossaryListings];
@@ -35,7 +30,17 @@ export async function generateMetadata({ searchParams }) {
       t.slug?.toLowerCase().includes(q)
     );
   }
-  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE) || 1;
+  const pageLabel = page > 1 ? ` — Page ${page} of ${totalPages}` : '';
+
+  const metadata = {
+    title: `Glossary — UK Software Development Terms${pageLabel} | Clickmasters`,
+    description: `Comprehensive glossary of UK software development terms, technologies, and business concepts.${page > 1 ? ` Page ${page} of ${totalPages}.` : ''}`,
+    alternates: { canonical },
+    robots: isVariant
+      ? { index: false, follow: true }
+      : { index: true, follow: true },
+  };
 
   const other = {};
   if (page > 1) {

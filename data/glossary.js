@@ -10028,24 +10028,42 @@ export function getGlossaryTermBySlug(slug) {
   return glossaryTerms.find(gt => gt.slug === slug) || null;
 }
 
-// Get related terms (same first letter or shared related pages)
+// Get related terms (shared relatedPages first, then same letter)
 export function getRelatedTerms(slug, limit = 6) {
   const current = getGlossaryTermBySlug(slug);
   if (!current) return [];
   const currentFirstLetter = current.termDisplay.charAt(0).toUpperCase();
-  const related = glossaryTerms.filter(gt => {
-    if (gt.slug === slug) return false;
-    // Same first letter
-    if (gt.termDisplay.charAt(0).toUpperCase() === currentFirstLetter) return true;
-    // Shared related pages
-    const sharedPages = gt.relatedPages.some(rp =>
-      current.relatedPages.some(cr => cr.slug === rp.slug)
-    );
-    return sharedPages;
-  });
-  return related.slice(0, limit).map(
-    ({ id, slug, term, termDisplay, metaDesc }) => ({ id, slug, term, termDisplay, metaDesc })
-  );
+  const currentRelatedSlugs = new Set((current.relatedPages || []).map((rp) => rp.slug).filter(Boolean));
+
+  const scored = glossaryTerms
+    .filter((gt) => gt.slug !== slug)
+    .map((gt) => {
+      let score = 0;
+      const sharedPages = (gt.relatedPages || []).some((rp) => currentRelatedSlugs.has(rp.slug));
+      if (sharedPages) score += 4;
+      if (currentRelatedSlugs.has(gt.slug)) score += 5;
+      if (gt.termDisplay.charAt(0).toUpperCase() === currentFirstLetter) score += 1;
+      return { gt, score };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || a.gt.termDisplay.localeCompare(b.gt.termDisplay));
+
+  const picked = scored.slice(0, limit).map(({ gt }) => gt);
+  if (picked.length < limit) {
+    for (const gt of glossaryTerms) {
+      if (gt.slug === slug || picked.some((p) => p.slug === gt.slug)) continue;
+      picked.push(gt);
+      if (picked.length >= limit) break;
+    }
+  }
+
+  return picked.map(({ id, slug: termSlug, term, termDisplay, metaDesc }) => ({
+    id,
+    slug: termSlug,
+    term,
+    termDisplay,
+    metaDesc,
+  }));
 }
 
 // Get glossary terms grouped by first letter (A-Z)

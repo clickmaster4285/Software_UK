@@ -1,6 +1,15 @@
 import { notFound } from 'next/navigation';
 import { getCityBySlug, getRelatedCities, getDedupedFaqs } from '@/data/cities';
 import { CityDetailClient } from './detail-client';
+import JsonLd from '@/components/JsonLd';
+import {
+  articleSchema,
+  breadcrumbSchema,
+  clampDescription,
+  faqSchema,
+  siteConfig,
+  withBrandSuffix,
+} from '@/app/metadata-config';
 
 export async function generateStaticParams() {
   const { cityListings } = await import('@/data/cities');
@@ -16,10 +25,12 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: city.metaTitle || city.title,
-    description: city.metaDesc || `Custom software development services in ${city.city.replace(/-/g, ' ')}.`,
+    title: withBrandSuffix(city.metaTitle || city.title),
+    description: clampDescription(
+      city.metaDesc || `Custom software development services in ${city.city.replace(/-/g, ' ')}.`
+    ),
     alternates: {
-      canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/locations/${slug}`,
+      canonical: `${siteConfig.url}/locations/${slug}`,
     },
   };
 }
@@ -33,56 +44,34 @@ export default async function CityDetailPage({ params }) {
   }
 
   const relatedCities = getRelatedCities(slug, 4);
+  const pageUrl = `${siteConfig.url}/locations/${slug}`;
+  const description = clampDescription(
+    city.metaDesc || `Custom software development in ${city.city.replace(/-/g, ' ')}.`
+  );
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: city.title,
-    description: city.metaDesc || `Custom software development in ${city.city.replace(/-/g, ' ')}.`,
-    author: {
-      '@type': 'Organization',
-      name: city.writtenBy || 'Clickmasters Team',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Clickmasters Software Development Company',
-      url: 'https://clickmasterssoftwaredevelopmentcompany.co.uk',
-    },
-    dateModified: city.lastUpdated || undefined,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `https://clickmasterssoftwaredevelopmentcompany.co.uk/locations/${slug}`,
-    },
-  };
+  const jsonLd = articleSchema({
+    title: city.title,
+    description,
+    url: pageUrl,
+    author: city.writtenBy || 'Clickmasters Team',
+    datePublished: city.lastUpdated,
+    dateModified: city.lastUpdated,
+    image: `${siteConfig.url}/og/services.webp`,
+  });
 
   const dedupedFaqs = getDedupedFaqs(city.faqs);
-  const faqJsonLd = dedupedFaqs.length > 0
-    ? {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: dedupedFaqs.map(faq => ({
-        '@type': 'Question',
-        name: faq.question.replace(/^:\s*/, ''),
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: faq.answer.replace(/^:\s*/, ''),
-        },
-      })),
-    }
-    : null;
+  const faqJsonLd = dedupedFaqs.length > 0 ? faqSchema(dedupedFaqs) : null;
+  const crumbs = breadcrumbSchema([
+    { name: 'Home', url: siteConfig.url },
+    { name: 'Locations', url: `${siteConfig.url}/locations` },
+    { name: city.cityDisplay || city.city, url: pageUrl },
+  ]);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
+      <JsonLd schema={jsonLd} />
+      <JsonLd schema={crumbs} />
+      {faqJsonLd && <JsonLd schema={faqJsonLd} />}
       <CityDetailClient city={{ ...city, faqs: dedupedFaqs }} relatedCities={relatedCities} />
     </>
   );

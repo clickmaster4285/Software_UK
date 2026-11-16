@@ -2,11 +2,12 @@
 
 **Trackers:**  
 - `clickmasters-seo-developer-tracker-2026-11-05.xlsx`  
-- `clickmasters-seo-developer-tracker-2026-11-06.xlsx` (confirmation re-crawl)
+- `clickmasters-seo-developer-tracker-2026-11-06.xlsx` (confirmation re-crawl)  
+- `clickmasters-seo-developer-tracker-2026-11-13.xlsx` (confirmation re-crawl)
 
 **Domain:** https://clickmasterssoftwaredevelopmentcompany.co.uk  
-**Last updated:** 7 November 2026  
-**Status:** Code fixes complete — deploy, then Screaming Frog re-crawl to mark tickets Verified
+**Last updated:** 16 November 2026  
+**Status:** 13 Nov follow-ups fixed in code — deploy, then uncapped Screaming Frog re-crawl to Verified
 
 ---
 
@@ -90,17 +91,32 @@
 
 ## 7. Remaining after deploy
 
-1. Run Screaming Frog with the same profile; mark tickets **Verified** when Done-when tests pass.
+1. Run Screaming Frog **without the 500-URL cap**; mark tickets **Verified** when Done-when tests pass.
 2. If any HTML pages still exceed 250–300 KB, do a second weight pass on those specific URLs.
-3. Optional: restore LinkedIn icon only with the real company profile URL.
+3. Owner: confirm non-UK `/locations` markets; thicken thin `/hire/{role}/{city}` pages or consolidate; restore LinkedIn only with a real profile URL.
+4. Confirm live `sitemap-case-studies.xml` loc count (repo already has hub + 274).
 
 ---
 
-## 8. Crawl verdict snapshot (6 Nov)
+## 8. Crawl verdict snapshot
 
-| Ticket | Verdict 5 Nov | Verdict 6 Nov |
-|--------|---------------|---------------|
-| CSU-01 | FIXED | FIXED |
-| CSU-02 | IMPROVED | FIXED |
-| CSU-03 | UNCHANGED | FIXED |
-| CSU-04 | IMPROVED | IMPROVED (further code work 7 Nov) |
+| Ticket | Verdict 5 Nov | Verdict 6 Nov | Verdict 13 Nov |
+|--------|---------------|---------------|----------------|
+| CSU-01 | FIXED | FIXED | FIXED (Verified) |
+| CSU-02 | IMPROVED | FIXED | FIXED (Verified) |
+| CSU-03 | UNCHANGED | FIXED | FIXED (Verified; new-section dupes logged separately) |
+| CSU-04 | IMPROVED | IMPROVED | IMPROVED (26 HTML &gt;300 KB still open) |
+
+---
+
+## 9. 13 Nov follow-ups (fixed 16 Nov)
+
+| Issue | Resolution |
+|-------|------------|
+| Paginated `/glossary` + `/salary-guide` (+ comparison/resource) indexable with shared titles | Hub canonical + `noindex,follow` on `?page=` / filter variants (same pattern as case-studies) |
+| 26 duplicate industry title/H1 groups (`…-fintech`, `…-fintech-2`) | Canonicalise to lowest P-number slug; 24 permanent redirects in `data/industry-slug-redirects.js`; listings/`generateStaticParams` exclude aliases |
+| Titles/descriptions over length on hire/industries/locations | `withBrandSuffix` + `clampDescription` on detail `generateMetadata` (also case-study/resource/salary) |
+| AWS Devicon 403 | Local `/icons/aws.svg` for AWS / DynamoDB / CloudFormation |
+| Article JSON-LD warnings | Locations/salary use `articleSchema`; default OG image; ISO dates; Organization `url` on publisher; empty `sameAs` omitted |
+| Shallow related links | Stronger scoring in `getRelatedCities` / `getRelatedTerms` |
+| GTM added | `app/layout.js` + CSP allows `googletagmanager.com` / `google-analytics.com` |

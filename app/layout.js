@@ -1,9 +1,12 @@
 import { Sora, DM_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Providers from "@/components/Providers";
 import { ToasterProvider } from "@/components/ToasterProvider";
 import JsonLd from "@/components/JsonLd";
 import { organizationSchema, webSiteSchema } from "@/app/metadata-config";
+
+const GTM_ID = "GTM-N4W55GFS";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -49,6 +52,25 @@ export default function RootLayout({ children }) {
     >
 
       <body className="min-h-full flex flex-col font-sans">
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
+          />
+        </noscript>
+        <Script id="gtm-datalayer" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        `}</Script>
+        <Script
+          id="gtm"
+          src={`https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`}
+          strategy="afterInteractive"
+        />
         <JsonLd schema={organizationSchema()} />
         <JsonLd schema={webSiteSchema()} />
         <ToasterProvider />

@@ -14631,18 +14631,52 @@ export function getCityBySlug(slug) {
   return cities.find(c => c.slug === slug) || null;
 }
 
-// Get related city pages
+function cityServicePrefix(citySlug) {
+  // e.g. custom-software-development-london → custom-software-development
+  const parts = String(citySlug || '').split('-');
+  if (parts.length < 2) return citySlug;
+  // drop last token (city name may be multi-word; keep shared service stem when possible)
+  const knownServices = [
+    'custom-software-development',
+    'web-development',
+    'mobile-app-development',
+    'software-development',
+  ];
+  for (const service of knownServices) {
+    if (citySlug.startsWith(`${service}-`)) return service;
+  }
+  return parts.slice(0, -1).join('-');
+}
+
+function isUkCity(entry) {
+  const badges = entry.badges || [];
+  return badges.some((b) => /uk|united kingdom|britain/i.test(String(b)));
+}
+
+// Get related city pages (same service focus first, prefer UK)
 export function getRelatedCities(slug, limit = 4) {
   const current = getCityBySlug(slug);
   if (!current) return [];
 
-  const related = cities.filter(
-    c => c.slug !== slug
-  );
+  const prefix = cityServicePrefix(current.slug);
+  const scored = cities
+    .filter((c) => c.slug !== slug)
+    .map((c) => {
+      let score = 0;
+      if (cityServicePrefix(c.slug) === prefix) score += 3;
+      if (isUkCity(c)) score += 2;
+      if ((c.relatedPages || []).some((rp) => rp.slug === slug || rp.href?.includes(slug))) score += 2;
+      return { c, score };
+    })
+    .sort((a, b) => b.score - a.score || a.c.slug.localeCompare(b.c.slug));
 
-  return related.slice(0, limit).map(
-    ({ id, slug, city, title, metaDesc }) => ({ id, slug, city, title, metaDesc })
-  );
+  return scored.slice(0, limit).map(({ c }) => ({
+    id: c.id,
+    slug: c.slug,
+    city: c.city,
+    title: c.title,
+    metaDesc: c.metaDesc,
+  }));
 }
 
 // Deduplicate FAQs by question text
