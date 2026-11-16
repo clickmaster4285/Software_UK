@@ -15792,26 +15792,71 @@ const industries = [
   }
 ];
 
-// Lightweight listing data — only fields needed for cards/lists
-export const industryListings = industries.map(
+function pNumber(id) {
+  const match = String(id || '').match(/(\d+)/);
+  return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
+}
+
+/** Strip accidental -{industry} / -N suffixes that create near-duplicate URLs. */
+function normalizeIndustrySlug(slug, industry) {
+  let normalized = String(slug || '');
+  normalized = normalized.replace(/-(?:2|3)$/, '');
+  const industryKey = String(industry || '').toLowerCase();
+  if (industryKey && normalized.endsWith(`-${industryKey}`)) {
+    normalized = normalized.slice(0, -(industryKey.length + 1));
+  }
+  return normalized;
+}
+
+function buildIndustryCanonicalMaps(entries) {
+  const groups = new Map();
+  for (const entry of entries) {
+    const key = `${entry.industry}::${normalizeIndustrySlug(entry.slug, entry.industry)}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(entry);
+  }
+
+  const canonicalSlugs = new Set();
+  const aliasToCanonical = new Map();
+
+  for (const group of groups.values()) {
+    group.sort((a, b) => pNumber(a.id) - pNumber(b.id));
+    const canonical = group[0];
+    canonicalSlugs.add(canonical.slug);
+    for (const alias of group.slice(1)) {
+      aliasToCanonical.set(alias.slug, canonical.slug);
+    }
+  }
+
+  return { canonicalSlugs, aliasToCanonical };
+}
+
+const { canonicalSlugs: industryCanonicalSlugs, aliasToCanonical: industryAliasToCanonical } =
+  buildIndustryCanonicalMaps(industries);
+
+const canonicalIndustries = industries.filter((entry) => industryCanonicalSlugs.has(entry.slug));
+
+// Lightweight listing data — only fields needed for cards/lists (canonical URLs only)
+export const industryListings = canonicalIndustries.map(
   ({ id, slug, industry, service, title, metaDesc, badges }) =>
     ({ id, slug, industry, service, title, metaDesc, badges })
 );
 
-// Lookup single entry by slug
+// Lookup single entry by slug (aliases resolve to the canonical page data)
 export function getIndustryBySlug(slug) {
-  return industries.find(i => i.slug === slug) || null;
+  const canonicalSlug = industryAliasToCanonical.get(slug) || slug;
+  return industries.find((i) => i.slug === canonicalSlug) || null;
 }
 
 // Get all services for a given industry
 export function getIndustriesByCategory(industry) {
-  return industries.filter(i => i.industry === industry);
+  return canonicalIndustries.filter((i) => i.industry === industry);
 }
 
 // Get unique industries with counts
 export function getIndustriesList() {
   const map = {};
-  industries.forEach(i => {
+  canonicalIndustries.forEach((i) => {
     if (!map[i.industry]) map[i.industry] = { industry: i.industry, count: 0, slug: i.industry };
     map[i.industry].count++;
   });
@@ -15822,14 +15867,23 @@ export function getIndustriesList() {
 export function getRelatedIndustries(slug, limit = 3) {
   const current = getIndustryBySlug(slug);
   if (!current) return [];
-  return industries
-    .filter(i => i.slug !== slug && i.industry === current.industry)
+  return canonicalIndustries
+    .filter((i) => i.slug !== current.slug && i.industry === current.industry)
     .slice(0, limit);
 }
 
-// For generateStaticParams
+// For generateStaticParams — exclude near-duplicate aliases
 export function getAllIndustrySlugs() {
-  return industries.map(i => i.slug);
+  return canonicalIndustries.map((i) => i.slug);
+}
+
+/** Permanent redirects for accidental industry×service slug variants. */
+export function getIndustrySlugRedirects() {
+  return [...industryAliasToCanonical.entries()].map(([from, to]) => ({
+    source: `/industries/${from}`,
+    destination: `/industries/${to}`,
+    permanent: true,
+  }));
 }
 
 export { industries };

@@ -131,7 +131,7 @@ export function organizationSchema() {
       email: siteConfig.email,
       availableLanguage: ['English'],
     },
-    sameAs: [],
+    // sameAs omitted until real social profile URLs are confirmed
   };
 }
 
@@ -228,6 +228,8 @@ export function articleSchema({ title, description, url, author, datePublished, 
   const absoluteUrl = toAbsoluteUrl(url);
   const published = toIsoDateTime(datePublished) || toIsoDateTime(dateModified);
   const modified = toIsoDateTime(dateModified) || published;
+  const authorName = typeof author === 'string' ? author.trim() : '';
+  const isOrgAuthor = !authorName || /team|clickmasters|company/i.test(authorName);
 
   const schema = {
     '@context': 'https://schema.org',
@@ -236,26 +238,33 @@ export function articleSchema({ title, description, url, author, datePublished, 
     headline: title,
     description: description,
     url: absoluteUrl,
-    image: image ? toAbsoluteUrl(image) : siteConfig.logo,
+    image: toAbsoluteUrl(image || siteConfig.logo),
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${absoluteUrl}/#webpage`,
     },
     publisher: {
       '@id': `${siteConfig.url}/#organization`,
+      '@type': 'Organization',
+      name: siteConfig.legalName,
+      url: siteConfig.url,
+      logo: siteConfig.logo,
     },
   };
 
-  if (author) {
+  if (isOrgAuthor) {
     schema.author = {
-      '@type': 'Person',
-      name: author,
-      url: `${siteConfig.url}/about`,
-      sameAs: [siteConfig.url],
+      '@id': `${siteConfig.url}/#organization`,
+      '@type': 'Organization',
+      name: authorName || siteConfig.legalName,
+      url: siteConfig.url,
     };
   } else {
     schema.author = {
-      '@id': `${siteConfig.url}/#organization`,
+      '@type': 'Person',
+      name: authorName,
+      url: `${siteConfig.url}/about`,
+      worksFor: { '@id': `${siteConfig.url}/#organization` },
     };
   }
 

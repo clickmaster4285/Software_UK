@@ -1,6 +1,15 @@
 import { notFound } from 'next/navigation';
 import { getSalaryGuideBySlug, getRelatedSalaryGuides, getDedupedFaqs } from '@/data/salary-guides';
 import { SalaryGuideDetailClient } from './detail-client';
+import JsonLd from '@/components/JsonLd';
+import {
+  articleSchema,
+  breadcrumbSchema,
+  clampDescription,
+  faqSchema,
+  siteConfig,
+  withBrandSuffix,
+} from '@/app/metadata-config';
 
 // Generate static params for all salary guide pages
 export async function generateStaticParams() {
@@ -18,10 +27,13 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: guide.metaTitle || guide.title,
-    description: guide.metaDesc || `Find standard UK software developer salaries and day rates for ${guide.role.replace(/-/g, ' ')} roles in ${guide.year}.`,
+    title: withBrandSuffix(guide.metaTitle || guide.title),
+    description: clampDescription(
+      guide.metaDesc ||
+        `Find standard UK software developer salaries and day rates for ${guide.role.replace(/-/g, ' ')} roles in ${guide.year}.`
+    ),
     alternates: {
-      canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/salary-guide/${slug}`,
+      canonical: `${siteConfig.url}/salary-guide/${slug}`,
     },
   };
 }
@@ -34,60 +46,35 @@ export default async function SalaryGuideDetailPage({ params }) {
     notFound();
   }
 
-  // Get related guides: same role category
   const relatedGuides = getRelatedSalaryGuides(slug, 4);
+  const pageUrl = `${siteConfig.url}/salary-guide/${slug}`;
+  const description = clampDescription(
+    guide.metaDesc || `Salary benchmarks for ${guide.role.replace(/-/g, ' ')} in the UK.`
+  );
 
-  // Build JSON-LD structured data for Article
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: guide.title,
-    description: guide.metaDesc || `Salary benchmarks for ${guide.role.replace(/-/g, ' ')} in the UK.`,
-    author: {
-      '@type': 'Organization',
-      name: guide.writtenBy || 'Clickmasters HR Team',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Clickmasters Software Development Company',
-      url: 'https://clickmasterssoftwaredevelopmentcompany.co.uk',
-    },
-    dateModified: guide.lastUpdated || undefined,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `https://clickmasterssoftwaredevelopmentcompany.co.uk/salary-guide/${slug}`,
-    },
-  };
+  const jsonLd = articleSchema({
+    title: guide.title,
+    description,
+    url: pageUrl,
+    author: guide.writtenBy || 'Clickmasters Team',
+    datePublished: guide.lastUpdated,
+    dateModified: guide.lastUpdated,
+    image: `${siteConfig.url}/og/services.webp`,
+  });
 
-  // Build FAQ structured data (deduplicated)
   const dedupedFaqs = getDedupedFaqs(guide.faqs);
-  const faqJsonLd = dedupedFaqs.length > 0
-    ? {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: dedupedFaqs.map(faq => ({
-        '@type': 'Question',
-        name: faq.question.replace(/^:\s*/, ''),
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: faq.answer.replace(/^:\s*/, ''),
-        },
-      })),
-    }
-    : null;
+  const faqJsonLd = dedupedFaqs.length > 0 ? faqSchema(dedupedFaqs, pageUrl) : null;
+  const crumbs = breadcrumbSchema([
+    { name: 'Home', url: siteConfig.url },
+    { name: 'Salary Guides', url: `${siteConfig.url}/salary-guide` },
+    { name: guide.role || guide.title, url: pageUrl },
+  ]);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      {faqJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-        />
-      )}
+      <JsonLd schema={jsonLd} />
+      <JsonLd schema={crumbs} />
+      {faqJsonLd && <JsonLd schema={faqJsonLd} />}
       <SalaryGuideDetailClient guide={{ ...guide, faqs: dedupedFaqs }} relatedGuides={relatedGuides} />
     </>
   );

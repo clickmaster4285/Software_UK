@@ -7,16 +7,19 @@ const BASE_URL = 'https://clickmasterssoftwaredevelopmentcompany.co.uk/compariso
 export async function generateMetadata({ searchParams }) {
   const resolvedSearchParams = await searchParams;
   const page = parseInt(resolvedSearchParams?.page || '1', 10);
-  const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
+  const canonical = BASE_URL;
+  const isVariant = page > 1;
+  const totalPages = Math.ceil(comparisonListings.length / ITEMS_PER_PAGE) || 1;
+  const pageLabel = page > 1 ? ` — Page ${page} of ${totalPages}` : '';
 
   const metadata = {
-    title: 'Technology Comparisons | Clickmasters UK',
-    description: 'Side-by-side comparisons of software development technologies, frameworks, and tools for UK businesses. Make informed tech stack decisions.',
+    title: `Technology Comparisons${pageLabel} | Clickmasters UK`,
+    description: `Side-by-side comparisons of software development technologies, frameworks, and tools for UK businesses.${page > 1 ? ` Page ${page} of ${totalPages}.` : ''}`,
     alternates: { canonical },
+    robots: isVariant
+      ? { index: false, follow: true }
+      : { index: true, follow: true },
   };
-
-  // Compute total pages for SEO pagination links
-  const totalPages = Math.ceil(comparisonListings.length / ITEMS_PER_PAGE);
 
   const other = {};
   if (page > 1) {

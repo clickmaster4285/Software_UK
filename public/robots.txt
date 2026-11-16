@@ -19,8 +19,8 @@ Disallow: /*?_rsc=
 Disallow: /*&_rsc=
 
 # Block unnecessary query/filter URLs
-# NOTE: ?page= is intentionally NOT blocked — paginated listing URLs are
-# linked internally and self-canonical (see listing page generateMetadata).
+# NOTE: ?page= listing variants are hub-canonical + noindex,follow in generateMetadata
+# (case-studies, glossary, salary-guide, comparison, resource).
 Disallow: /*?sort=
 Disallow: /*&sort=
 Disallow: /*?filter=

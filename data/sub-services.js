@@ -15443,7 +15443,7 @@ const allTechnologies = {
   cassandra: { name: "Cassandra", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cassandra/cassandra-original.svg" },
   firebase: { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
   elasticsearch: { name: "Elasticsearch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" },
-  dynamodb: { name: "DynamoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+  dynamodb: { name: "DynamoDB", icon: "/icons/aws.svg" },
   couchdb: { name: "CouchDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/couchdb/couchdb-original.svg" },
   neo4j: { name: "Neo4j", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original.svg" },
   influxdb: { name: "InfluxDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/influxdb/influxdb-original.svg" },
@@ -15459,7 +15459,7 @@ const allTechnologies = {
   mongoose: { name: "Mongoose", icon: "https://mongoosejs.com/docs/images/favicon.png" },
   // Custom icon
   // ==================== CLOUD PLATFORMS ====================
-  aws: { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+  aws: { name: "AWS", icon: "/icons/aws.svg" },
   azure: { name: "Azure", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
   gcp: { name: "Google Cloud", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
   cloudflare: { name: "Cloudflare", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" },
@@ -15498,7 +15498,7 @@ const allTechnologies = {
   chef: { name: "Chef", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chef/chef-original.svg" },
   puppet: { name: "Puppet", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/puppet/puppet-original.svg" },
   saltstack: { name: "SaltStack", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/saltstack/saltstack-original.svg" },
-  cloudformation: { name: "CloudFormation", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
+  cloudformation: { name: "CloudFormation", icon: "/icons/aws.svg" },
   // ==================== WEB SERVERS & PROXIES ====================
   nginx: { name: "Nginx", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" },
   apache: { name: "Apache", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" },

@@ -11,13 +11,8 @@ export async function generateMetadata({ searchParams }) {
   const page = parseInt(resolvedSearchParams?.page || '1', 10);
   const activeCategory = resolvedSearchParams?.category || '';
   const searchQuery = resolvedSearchParams?.q || '';
-  const canonical = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
-
-  const metadata = {
-    title: 'UK Software Developer Salary Guides | Clickmasters',
-    description: 'Comprehensive salary benchmarks for UK software developers by role, technology, and experience level. Day rates and permanent salaries.',
-    alternates: { canonical },
-  };
+  const canonical = BASE_URL;
+  const isVariant = page > 1 || Boolean(activeCategory) || Boolean(searchQuery.trim());
 
   // Compute total pages for SEO pagination links
   let filtered = [...salaryGuideListings];
@@ -32,7 +27,17 @@ export async function generateMetadata({ searchParams }) {
       s.role?.toLowerCase().includes(q)
     );
   }
-  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE) || 1;
+  const pageLabel = page > 1 ? ` — Page ${page} of ${totalPages}` : '';
+
+  const metadata = {
+    title: `UK Software Developer Salary Guides${pageLabel} | Clickmasters`,
+    description: `Comprehensive salary benchmarks for UK software developers by role, technology, and experience level.${page > 1 ? ` Page ${page} of ${totalPages}.` : ''}`,
+    alternates: { canonical },
+    robots: isVariant
+      ? { index: false, follow: true }
+      : { index: true, follow: true },
+  };
 
   const other = {};
   if (page > 1) {

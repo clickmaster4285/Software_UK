@@ -6,7 +6,7 @@ import {
   getAllIndustrySlugs,
   getRelatedIndustries,
 } from '@/data/industries';
-import { siteConfig, breadcrumbSchema, faqSchema, serviceSchema } from '@/app/metadata-config';
+import { siteConfig, breadcrumbSchema, clampDescription, faqSchema, serviceSchema, withBrandSuffix } from '@/app/metadata-config';
 import { slugify } from '@/lib/slugify';
 import IndustrySections from '@/app/(landing)/industries/[slug]/IndustrySections';
 import RelatedCaseStudies from '@/components/landing/main-service/RelatedCaseStudies';
@@ -22,14 +22,18 @@ export async function generateMetadata({ params }) {
 
   const canonicalPath = `/industries/${industry.slug}`;
   const canonical = `${siteConfig.url}${canonicalPath}`;
+  const title = withBrandSuffix(industry.metaTitle ?? `${industry.title} | Clickmasters`);
+  const description = clampDescription(
+    industry.metaDesc || `${industry.title} software development services for UK businesses.`
+  );
 
   return {
-    title: industry.metaTitle ?? `${industry.title} | Clickmasters`,
-    description: industry.metaDesc,
+    title,
+    description,
     alternates: { canonical },
     openGraph: {
-      title: `${industry.title} | Clickmasters`,
-      description: industry.metaDesc,
+      title,
+      description,
       url: canonical,
       images: [
         {
@@ -42,8 +46,8 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${industry.title} | Clickmasters`,
-      description: industry.metaDesc,
+      title,
+      description,
       images: [`${siteConfig.url}/og/services.webp`],
     },
   };

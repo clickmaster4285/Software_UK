@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { hirePageListings, getHirePageByRoleCity, getRelatedHirePages, getDedupedFaqs } from '@/data/hire-pages';
 import { HireDetailClient } from './detail-client';
 import JsonLd from '@/components/JsonLd';
-import { breadcrumbSchema, faqSchema, siteConfig } from '@/app/metadata-config';
+import { breadcrumbSchema, clampDescription, faqSchema, siteConfig, withBrandSuffix } from '@/app/metadata-config';
 
 // Generate static params for all hire pages
 export async function generateStaticParams() {
@@ -21,9 +21,14 @@ export async function generateMetadata({ params }) {
     return { title: 'Hire Developer Not Found | Clickmasters' };
   }
 
+  const title = withBrandSuffix(hirePage.metaTitle || hirePage.title);
+  const description = clampDescription(
+    hirePage.metaDesc || `Hire a ${role} in ${city}. IR35-compliant, vetted developers.`
+  );
+
   return {
-    title: hirePage.metaTitle || hirePage.title,
-    description: hirePage.metaDesc || `Hire a ${role} in ${city}. IR35-compliant, vetted developers.`,
+    title,
+    description,
     alternates: {
       canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/hire/${role}/${city}`,
     },

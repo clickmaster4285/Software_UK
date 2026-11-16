@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { getResourceGuideBySlug, getRelatedResourceGuides, getDedupedFaqs } from '@/data/resource-guides';
 import ResourceGuideDetailClient from './detail-client';
 import JsonLd from '@/components/JsonLd';
-import { articleSchema, breadcrumbSchema, faqSchema } from '@/app/metadata-config';
+import { articleSchema, breadcrumbSchema, clampDescription, faqSchema, siteConfig, withBrandSuffix } from '@/app/metadata-config';
 
 // Generate static params for all resource guide pages
 export async function generateStaticParams() {
@@ -20,10 +20,12 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: guide.metaTitle || guide.title,
-    description: guide.metaDesc || `UK software development resource guide: ${guide.title}.`,
+    title: withBrandSuffix(guide.metaTitle || guide.title),
+    description: clampDescription(
+      guide.metaDesc || `UK software development resource guide: ${guide.title}.`
+    ),
     alternates: {
-      canonical: `https://clickmasterssoftwaredevelopmentcompany.co.uk/resource/${slug}`,
+      canonical: `${siteConfig.url}/resource/${slug}`,
     },
   };
 }
@@ -45,7 +47,9 @@ export default async function ResourceGuideDetailPage({ params }) {
     description: guide.metaDesc || `UK software development resource guide: ${guide.title}.`,
     url: `/resource/${slug}`,
     author: guide.writtenBy || guide.author || 'Clickmasters',
+    datePublished: guide.lastUpdated || undefined,
     dateModified: guide.lastUpdated || undefined,
+    image: `${siteConfig.url}/og/services.webp`,
   });
 
   const breadcrumbsLd = breadcrumbSchema([
