@@ -46,7 +46,7 @@ export default function Hero() {
                         href="/case-studies"
                         className="px-8 py-4 border-2 border-white text-white font-body font-bold text-lg rounded-lg hover:bg-white hover:text-primary transition-all transform hover:scale-105 shadow-xl"
                      >
-                        View Our case studies
+                        View Our Work
                      </Link>
                   </div>
                   <div className="flex items-center gap-4">
